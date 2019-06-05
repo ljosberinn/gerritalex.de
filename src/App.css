@@ -1,0 +1,15 @@
+@import "https://github.githubassets.com/assets/frameworks-41c2037bf12f1e46d8f08b88a04a8d8f.css";
+@import "https://github.githubassets.com/assets/github-e9f63d2ae6f069da3f43272fafc83aee.css";
+
+[class*="js-"] {
+  border: 1px solid red;
+}
+
+.Counter {
+  margin-left: 4px;
+}
+
+svg.octicon,
+.repo-language-color {
+  margin-right: 3px;
+}
