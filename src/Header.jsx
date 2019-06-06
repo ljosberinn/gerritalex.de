@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export const Header = () => (
   <div className="position-relative">
@@ -175,19 +175,19 @@ export const Header = () => (
           </summary>
           <details-menu className="dropdown-menu dropdown-menu-sw" role="menu">
             {[
-              { title: "New repository", url: "https://github.com/new" },
+              { title: 'New repository', url: 'https://github.com/new' },
               {
-                title: "Import repository",
-                url: "https://github.com/new/import"
+                title: 'Import repository',
+                url: 'https://github.com/new/import'
               },
-              { title: "New gist", url: "https://gist.github.com/" },
+              { title: 'New gist', url: 'https://gist.github.com/' },
               {
-                title: "New organizationt",
-                url: "https://github.com/organizations/new"
+                title: 'New organizationt',
+                url: 'https://github.com/organizations/new'
               },
               {
-                title: "New project",
-                url: "https://github.com/new/project"
+                title: 'New project',
+                url: 'https://github.com/new/project'
               }
             ].map(({ title, url }) => (
               <a

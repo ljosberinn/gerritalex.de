@@ -1,11 +1,10 @@
-import React from "react";
-import { Biography } from "./Biography";
-import { Homepage } from "./Homepage";
-import { Location } from "./Location";
-import { Avatar } from "./Avatar";
-import { Status } from "./Status";
+import React from 'react';
+import { Biography } from './Biography';
+import { Homepage } from './Homepage';
+import { Location } from './Location';
+import { Avatar } from './Avatar';
 
-export const Person = () => (
+export const Person = ({ ctaText, name, userName }) => (
   <div
     className="h-card col-lg-3 col-md-4 col-12 float-md-left pr-md-3 pr-xl-6"
     itemScope
@@ -23,47 +22,48 @@ export const Person = () => (
           />
         </span>
         <span className="d-table-cell v-align-middle lh-condensed">
-          <strong>ljosberinn</strong>
+          <strong>{userName}</strong>
         </span>
       </div>
     </div>
-    <Avatar />
-    <Status />
-    <div className="float-left col-9 col-md-12 pl-2 pl-md-0">
-      <div className="vcard-names-container pt-1 pt-md-3 pb-1 pb-md-3">
-        <h1 className="vcard-names">
-          <span
-            className="p-name vcard-fullname d-block overflow-hidden"
-            itemProp="name"
-          >
-            Gerrit Alex
-          </span>
-          <span
-            className="p-nickname vcard-username d-block"
-            itemProp="additionalName"
-          >
-            ljosberinn
-          </span>
-        </h1>
-      </div>
-      <div className="d-none d-md-block">
-        <div className="hide-sm hide-md">
-          <button
-            name="button"
-            type="button"
-            className="btn btn-block mt-2 mb-3"
-          >
-            applying as JavaScript Developer
-          </button>
+    <div className="clearfix mb-2">
+      <Avatar />
+      <div className="float-left col-9 col-md-12 pl-2 pl-md-0">
+        <div className="vcard-names-container pt-1 pt-md-3 pb-1 pb-md-3">
+          <h1 className="vcard-names">
+            <span
+              className="p-name vcard-fullname d-block overflow-hidden"
+              itemProp="name"
+            >
+              {name}
+            </span>
+            <span
+              className="p-nickname vcard-username d-block"
+              itemProp="additionalName"
+            >
+              {userName}
+            </span>
+          </h1>
         </div>
+        <div className="d-none d-md-block">
+          <div className="hide-sm hide-md">
+            <button
+              name="button"
+              type="button"
+              className="btn btn-block mt-2 mb-3"
+            >
+              {ctaText}
+            </button>
+          </div>
 
-        <Biography />
+          <Biography />
 
-        <ul className="vcard-details mb-3">
-          <Location />
+          <ul className="vcard-details mb-3">
+            <Location />
 
-          <Homepage />
-        </ul>
+            <Homepage />
+          </ul>
+        </div>
       </div>
     </div>
   </div>

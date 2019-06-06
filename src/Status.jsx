@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export const Status = () => (
   <div className="user-status-container position-relative hide-sm hide-md">
@@ -9,16 +9,14 @@ export const Status = () => (
             <div className="d-flex">
               <div className="f6 lh-condensed user-status-header d-inline-flex user-status-emoji-only-header circle">
                 <div className="user-status-emoji-container flex-shrink-0 mr-1">
-                  <div>
-                    <g-emoji
-                      className="g-emoji"
-                      alias="dart"
-                      aria-hidden="true"
-                      fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3af.png"
-                    >
-                      🎯
-                    </g-emoji>
-                  </div>
+                  <g-emoji
+                    className="g-emoji"
+                    alias="dart"
+                    aria-hidden="true"
+                    fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3af.png"
+                  >
+                    🎯
+                  </g-emoji>
                 </div>
                 <div className="pt-1 ws-normal user-status-message-wrapper f6">
                   <div className="d-inline-block text-gray-dark">
