@@ -14,3 +14,7 @@ svg.octicon,
 .repo-language-color {
   margin-right: 3px;
 }
+
+.cv {
+  width: calc(100% - 8px);
+}

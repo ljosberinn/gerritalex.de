@@ -1,6 +1,5 @@
 import React from 'react';
 import { ContributionChart } from './ContributionChart';
-import { OcticonCheck } from './icons/OcticonCheck';
 
 export const ContributionOverview = ({ amount, history }) => (
   <div className="position-relative">
@@ -29,11 +28,11 @@ export const ContributionOverview = ({ amount, history }) => (
         >
           Less
           <ul className="legend">
-            <li style={{ backgroundColor: '#ebedf0' }} />
-            <li style={{ backgroundColor: '#c6e48b' }} />
-            <li style={{ backgroundColor: '#7bc96f' }} />
-            <li style={{ backgroundColor: '#239a3b' }} />
-            <li style={{ backgroundColor: '#196127' }} />
+            {['#ebedf0', '#c6e48b', '#7bc96f', '#239a3b', '#196127'].map(
+              (backgroundColor, key) => (
+                <li style={{ backgroundColor }} key={key} />
+              )
+            )}
           </ul>
           More
         </div>
