@@ -1,15 +1,15 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { ContributionOverview } from './ContributionOverview';
-import { ActivityOverview } from './ActivityOverview';
+import { ContributionActivity } from './ContributionActivity';
 
 export const DynamicActivityContent = ({ userName }) => {
   const [
-    { contributionHistory, contributionAmount, activityOverview },
+    { contributionHistory, contributionAmount, contributionActivity },
     setData
   ] = useState({
     contributionHistory: '',
     contributionAmount: 0,
-    activityOverview: ''
+    contributionActivity: ''
   });
 
   const getData = useCallback(async () => {
@@ -28,14 +28,10 @@ export const DynamicActivityContent = ({ userName }) => {
   return (
     <>
       <ContributionOverview
-        contributionAmount={contributionAmount}
-        contributionHistory={contributionHistory}
+        amount={contributionAmount}
+        history={contributionHistory}
       />
-
-      <ActivityOverview
-        userName={userName}
-        activityOverview={activityOverview}
-      />
+      <ContributionActivity data={contributionActivity} />
     </>
   );
 };
