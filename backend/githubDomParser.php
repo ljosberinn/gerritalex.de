@@ -23,15 +23,13 @@ try {
 
 $main = $DOM->getElementById('js-pjax-container');
 
-header('Content-type: application/json');
-
-echo json_encode([
+return [
     'contributionHistory'  => sanitize(getContributionHistory($main)),
     'contributionAmount'   => getContributionAmount($main),
     'contributionActivity' => sanitize(getContributionActivity($main)),
     'repositories'         => sanitize(getPinnedRepos($main)),
     'subNavStats'          => getSubNavStats($main),
-]);
+];
 
 final class Reducer {
 
@@ -73,7 +71,7 @@ final class Reducer {
      * @return int
      */
     public static function contributionAmount(int $carry, DOMElement $h2): int {
-        if($h2->getAttribute('class') !== self::CONTRIBUTION_AMOUNT_VALIDATION_CLASS || $h2->nodeValue === self::CONTRIBUTION_AMOUNT_VALIDATION_NODE_VALUE) {
+        if($h2->nodeValue === self::CONTRIBUTION_AMOUNT_VALIDATION_NODE_VALUE || $h2->getAttribute('class') !== self::CONTRIBUTION_AMOUNT_VALIDATION_CLASS) {
             return $carry;
         }
 
@@ -139,7 +137,7 @@ function getSubNavStats(DOMElement $main): array {
         // Following
     ];
 
-    $subNavSpans = array_filter(iterator_to_array($main->getElementsByTagName('span')), function($span) {
+    $subNavSpans = array_filter(iterator_to_array($main->getElementsByTagName('span')), static function(DOMElement $span): bool {
         return $span->getAttribute('class') === 'Counter hide-lg hide-md hide-sm';
     });
 
