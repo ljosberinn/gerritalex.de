@@ -13,7 +13,7 @@ const userName = 'ljosberinn';
 
 const App = () => (
   <>
-    <Header />
+    <Header userName={userName} name={name} />
     <div className="application-main">
       <main>
         <div className="container-xl clearfix px-3 mt-4">
