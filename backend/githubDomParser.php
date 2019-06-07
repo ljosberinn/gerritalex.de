@@ -26,27 +26,32 @@ $main = $DOM->getElementById('js-pjax-container');
 header('Content-type: application/json');
 
 echo json_encode([
-    'contributionHistory' => getContributionHistory($main),
-    'contributionAmount'  => getContributionAmount($main),
-    'activityOverview'    => getActivityOverview($main),
+    'contributionHistory'  => getContributionHistory($main),
+    'contributionAmount'   => getContributionAmount($main),
+    'contributionActivity' => getContributionActivity($main),
 ]);
 
-function getActivityOverview(DOMElement $main): string {
+/**
+ * @param DOMElement $main
+ *
+ * @return string
+ */
+function getContributionActivity(DOMElement $main): string {
     return array_reduce(iterator_to_array($main->getElementsByTagName('div')), function(string $carry, DOMElement $div): string {
-        if($div->getAttribute('class') !== 'Box mb-5 p-3 activity-overview-box border-top border-xl-top-0') {
+        if(strpos($div->getAttribute('class'), 'contribution-activity') === false) {
             return $carry;
         }
 
-        return $carry . getInnerHTML($div);
+        return getInnerHTML($div);
     }, '');
 }
 
 /**
  * Searches through h2s for the relevant heading, parses it properly and returns its value
- * 
+ *
  * @param DOMElement $main
- * 
- * @returns int
+ *
+ * @return int
  */
 function getContributionAmount(DOMElement $main): int {
     return array_reduce(iterator_to_array($main->getElementsByTagName('h2')), function(int $carry, DOMElement $h2): int {
@@ -66,13 +71,13 @@ function getContributionAmount(DOMElement $main): int {
 
 
 /**
- * Searches through SVGs for the relevant svg, extracts its contents concatinated onto its outer HTML
- * 
+ * Searches through SVGs for the relevant svg, extracts its contents concatenated onto its outer HTML
+ *
  * @param DOMElement $main
- * 
- * @returns string
+ *
+ * @return string
  */
-function getContributionHistory(DOMElement $main) : string {
+function getContributionHistory(DOMElement $main): string {
     return array_reduce(iterator_to_array($main->getElementsByTagName('svg')), function(string $carry, DOMElement $svg): string {
         if($svg->getAttribute('class') !== 'mx-auto js-calendar-graph-svg') {
             return $carry;
@@ -82,8 +87,15 @@ function getContributionHistory(DOMElement $main) : string {
     }, '');
 }
 
-function getInnerHTML(DOMElement $node) : string {
-    return preg_replace('', '', array_reduce(iterator_to_array($node->childNodes), function(string $carry, $child): string {
+/**
+ * Extracts the inner HTML of an DOMElement
+ *
+ * @param DOMElement $node
+ *
+ * @return string
+ */
+function getInnerHTML(DOMElement $node): string {
+    return array_reduce(iterator_to_array($node->childNodes), function(string $carry, $child): string {
         return $carry . $child->ownerDocument->saveXML($child);
-    }, ''));
+    }, '');
 }
