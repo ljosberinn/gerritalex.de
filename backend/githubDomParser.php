@@ -30,6 +30,7 @@ echo json_encode([
     'contributionAmount'   => getContributionAmount($main),
     'contributionActivity' => sanitize(getContributionActivity($main)),
     'repositories'         => sanitize(getPinnedRepos($main)),
+    'subNavStats'          => getSubNavStats($main),
 ]);
 
 final class Reducer {
@@ -112,7 +113,7 @@ function sanitize(string $html): string {
 
     ];
 
-    $html    = str_replace($search, $replace, $html);
+    $html = str_replace($search, $replace, $html);
 
     $search = [
         '/(js-\w+)/', // github uses many "js-" classes that have no styling purpose
@@ -127,6 +128,26 @@ function sanitize(string $html): string {
     ];
 
     return preg_replace($search, $replace, $html);
+}
+
+function getSubNavStats(DOMElement $main): array {
+    $stats = [
+        // Repositories
+        // Projects
+        // Stars
+        // Followers
+        // Following
+    ];
+
+    $subNavSpans = array_filter(iterator_to_array($main->getElementsByTagName('span')), function($span) {
+        return $span->getAttribute('class') === 'Counter hide-lg hide-md hide-sm';
+    });
+
+    foreach($subNavSpans as $index => $span) {
+        $stats[] = (int) $span->nodeValue;
+    }
+
+    return empty($stats) ? [0, 0, 0, 0, 0] : $stats;
 }
 
 function getPinnedRepos(DOMElement $main): string {
