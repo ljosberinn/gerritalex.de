@@ -1,14 +1,12 @@
 import React from 'react';
 import { Status } from './Status';
 
-const imageLabel = 'Gerrit Alex, 2017, Hohenpeißenberg';
-
-export const Avatar = () => (
+export const Avatar = ({ userName }) => (
   <div className="float-left col-3 col-md-12 pr-3 pr-md-0">
     <a
       className="u-photo d-block tooltipped tooltipped-s"
-      aria-label={imageLabel}
-      href="https://github.com/ljosberinn"
+      aria-label="2017, Hohenpeißenberg"
+      href={`https://github.com/${userName}`}
     >
       <img
         alt=""

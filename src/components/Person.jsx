@@ -27,7 +27,7 @@ export const Person = ({ ctaText, name, userName }) => (
       </div>
     </div>
     <div className="clearfix mb-2">
-      <Avatar />
+      <Avatar userName={userName} />
       <div className="float-left col-9 col-md-12 pl-2 pl-md-0">
         <div className="vcard-names-container pt-1 pt-md-3 pb-1 pb-md-3">
           <h1 className="vcard-names">

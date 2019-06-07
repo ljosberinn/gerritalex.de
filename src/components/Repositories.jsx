@@ -10,7 +10,7 @@ const getClasses = withSpinner =>
 export const Repositories = ({ data }) => (
   <div className="mt-4">
     <h2 className="f4 mb-2 text-normal">
-      Pinned
+      Pinned Repositories
       <img
         src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif"
         width="13"
