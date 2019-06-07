@@ -3,6 +3,14 @@ import { ContributionOverview } from './ContributionOverview';
 import { ContributionActivity } from './ContributionActivity';
 import { Repositories } from './Repositories';
 
+const DEFAULT_STATE = {
+  contributionHistory: '',
+  contributionAmount: 0,
+  contributionActivity: '',
+  repositories: '',
+  subNavStats: [0, 0, 0, 0, 0]
+};
+
 export const DynamicContent = ({ userName }) => {
   const [
     {
@@ -12,17 +20,10 @@ export const DynamicContent = ({ userName }) => {
       repositories
     },
     setData
-  ] = useState({
-    contributionHistory: '',
-    contributionAmount: 0,
-    contributionActivity: '',
-    repositories: ''
-  });
+  ] = useState(DEFAULT_STATE);
 
   const getData = useCallback(async () => {
-    const response = await fetch(
-      'https://dev.gerritalex.de/githubDomParser.php'
-    );
+    const response = await fetch('https://dev.gerritalex.de/html.json');
     const json = await response.json();
 
     setData(json);
