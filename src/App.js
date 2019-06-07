@@ -1,11 +1,11 @@
 import React from 'react';
 import './assets/App.css';
 
-import { Header } from './Header';
-import { Person } from './Person';
-import { DynamicContent } from './DynamicContent';
-import { DynamicSubNav } from './DynamicSubNav';
-import { CurriculumVitae } from './CurriculumVitae';
+import { Header } from './components/Header';
+import { Person } from './components/Person';
+import { DynamicContent } from './components/DynamicContent';
+import { DynamicSubNav } from './components/DynamicSubNav';
+import { CurriculumVitae } from './components/CurriculumVitae';
 
 const ctaText = 'applying as JavaScript Developer';
 const name = 'Gerrit Alex';
