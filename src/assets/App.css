@@ -10,11 +10,15 @@
   margin-left: 4px;
 }
 
-svg.octicon,
 .repo-language-color {
   margin-right: 3px;
 }
 
 .cv {
   width: 100%;
+}
+
+/* folding icons in ContributionActivity */
+span.d-inline-block.float-right {
+  display: none !important;
 }
