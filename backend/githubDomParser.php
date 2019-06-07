@@ -100,18 +100,15 @@ final class Reducer {
 }
 
 function sanitize(string $html): string {
-    $search = [
-        '/ljosberinn', // currently, links point to github internally
-        'a href',
+
+    $strReplacePairs = [
+        'a href="/'              => 'a target="_blank" rel="noreferrer noopener" href="https://github.com/ljosberinn/', // currently, links point to github internally
+        '/>
+  <span itemprop'        => '></span><span itemprop', // github has invalid html in span.repo-language-color
+        '/ljosberinn/ljosberinn' => '/ljosberinn', // todo: remove this dirty hack
     ];
 
-    $replace = [
-        'https://github.com/ljosberinn',
-        'a target="_blank" href',
-
-    ];
-
-    $html = str_replace($search, $replace, $html);
+    $html = str_replace(array_keys($strReplacePairs), array_values($strReplacePairs), $html);
 
     $search = [
         '/(js-\w+)/', // github uses many "js-" classes that have no styling purpose
@@ -149,12 +146,7 @@ function getSubNavStats(DOMElement $main): array {
 }
 
 function getPinnedRepos(DOMElement $main): string {
-    // github has invalid html in span.repo-language-color
-    $search  = '/>
-  <span itemprop';
-    $replace = '></span><span itemprop';
-
-    return str_replace($search, $replace, getInnerHTML($main->getElementsByTagName('ol')[0]));
+    return getInnerHTML($main->getElementsByTagName('ol')[0]);
 }
 
 /**
