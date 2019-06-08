@@ -1,0 +1,45 @@
+@import url('https://github.githubassets.com/assets/frameworks-41c2037bf12f1e46d8f08b88a04a8d8f.css');
+@import url('https://github.githubassets.com/assets/github-e9f63d2ae6f069da3f43272fafc83aee.css');
+
+[class*='js-'],
+[attr*='data-pjax-'] {
+  border: 1px solid red;
+}
+
+.Counter {
+  margin-left: 4px;
+}
+
+.repo-language-color {
+  margin-right: 3px;
+}
+
+.cv {
+  width: 100%;
+}
+
+/* folding icons in ContributionActivity */
+.profile-rollup-wrapper .d-inline-block.float-right {
+  display: none !important;
+}
+
+ul.dashed {
+  list-style: none;
+
+  li {
+    &:before {
+      content: '- ';
+    }
+  }
+}
+
+.signup-prompt-bg {
+  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 50%, #fff),
+    linear-gradient(70deg, #eaf5ff 32%, #f6fff8);
+}
+
+.signup-prompt {
+  background-clip: padding-box;
+  background-repeat: no-repeat;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+}
