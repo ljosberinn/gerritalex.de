@@ -1,140 +1,240 @@
 import React from 'react';
+import { Time } from './Time';
+import { Achievements } from './Achievements';
+import { Tags } from './Tags';
 
 const cv = [
   {
     position: 'Web Developer',
     employer: 'mpunkt GmbH',
+    url: 'https://mpunkt.com',
     location: 'Augsburg',
-    from: '2018-07-23',
-    to: '',
+    dates: {
+      from: '2018-07-20',
+      to: undefined
+    },
     achievements: [
       'project lead & continued development after takeover of a customer-tailored web application',
       'leading a SCRUM-like team of up to five developers',
       'using Code Review- and Pair Programming-like processes',
       'client contact concerning SDLC via mail, phone as well as on site',
-      'modernizing the development processes with tools such as, but not limited to IDE plugins, npm, composer, Sentry, SCSS, React, TypeScript, webpack and Jenkins',
+      'modernizing the development processes with tools such as IDE plugins, npm, composer, Sentry, SCSS, React, TypeScript, webpack and Jenkins',
       'supervising and coordinating work students and trainees',
       'held internal trainings (e.g. ES2015+, Chrome Developer Tools Deep Dive)'
+    ],
+    tags: [
+      'PHP 5.2-7.1',
+      'jQuery',
+      'MySQL',
+      'HTML5',
+      'CSS3',
+      'SCSS',
+      'composer',
+      'npm',
+      'PHPStorm',
+      'Sentry'
     ]
   },
   {
-    position: 'Voactional training as media designer',
+    position: 'Self study: Web Development & Software Engineering',
+    employer: undefined,
+    location: undefined,
+    url: undefined,
+    dates: { from: '2016-09-01', to: undefined },
+    achievements: [
+      'moderator of the official reddit.com/r/webdev Discord channel with several thousand learning developers',
+      'built and maintained several versions of World of Warcraft-related tools (Advanced Guild Statistics, Advanced Armory Access, Artifact Power Rating)',
+      'built and maintained several versions of Resources Helper, a data-driven calculation-heavy spreadsheet on steroids for a mobile game',
+      'during my training as media designer, developed and improved several versions of a company internal PDF generator for time tracking'
+    ],
+    tags: [
+      'PHP 5.6-7.3',
+      'Debugging',
+      'HTML5',
+      'CSS3',
+      'SCSS',
+      'jQuery',
+      'vanilla JavaScript',
+      'ES2015+',
+      'React',
+      'TypeScript',
+      'MySQL',
+      'Jenkins',
+      'Git',
+      'Sentry',
+      'npm',
+      'composer',
+      'webpack',
+      'Performance optimization',
+      'Code quality',
+      'Readability',
+      'Atom',
+      'VSCode',
+      'several APIs',
+      'Node.js basics'
+    ]
+  },
+  {
+    position: 'Vocational training as media designer',
     employer: 'Printery Joh. Walch',
+    url: 'https://www.walchdruck.de/',
     location: 'Haunstetten',
-    from: '2015-09-01',
-    to: '2018-07-22',
-    achievements: []
+    dates: { from: '2015-09-01', to: '2018-07-19' },
+    achievements: [],
+    tags: ['Print & digital design', 'Insight into printing processes']
   },
   {
     position: 'Philosophy',
     employer: 'University of Augsburg',
+    url: undefined,
     location: 'Augsburg',
-    from: '2014-10-01',
-    to: '2015-08-30',
-    achievements: []
+    dates: {
+      from: '2014-10-01',
+      to: '2015-08-30'
+    },
+    achievements: [],
+    tags: []
   },
   {
     position: 'Teachers Education: German language & philosophy',
     employer: 'University of Trier',
+    url: undefined,
     location: 'Trier',
-    from: '2012-10-01',
-    to: '2014-09-30',
-    achievements: []
+    dates: {
+      from: '2012-10-01',
+      to: '2014-09-30'
+    },
+    achievements: [
+      'Member of the Philosophy student council Summer 2013 - Summer 2014',
+      'Website management of the Philosophy student council',
+      'Poster design for Philosophy student council events'
+    ],
+    tags: [
+      'Scientific work',
+      'Educational techniques',
+      'Test lesssons at school',
+      'Stoicism',
+      'Far-eastern philosophy',
+      'Taoism',
+      'Buddhism',
+      'Middle high german',
+      'Old high german'
+    ]
+  },
+  {
+    position: 'Graduation',
+    employer: 'Gymnasium Königsbrunn',
+    url: undefined,
+    location: 'Königsbrunn',
+    dates: {
+      from: undefined,
+      to: '2012-07-31'
+    },
+    achievements: [],
+    tags: ['English', 'Economics', 'Biology', 'German', 'Mathematics']
+  },
+  {
+    position: 'Birth',
+    employer: undefined,
+    url: undefined,
+    location: 'Augsburg',
+    dates: {
+      from: '1992-05-26',
+      to: undefined
+    },
+    achievements: [],
+    tags: []
   }
 ];
+
+/**
+ *
+ * @param {string|undefined} employer
+ * @param {string|undefined} location
+ */
+const getEmploymentLocationText = (employer, location) =>
+  employer && location
+    ? `${employer}, ${location}`
+    : location || employer || '';
+
+const LanguageChange = () => (
+  <details className="details-reset details-overlay details-overlay-dark">
+    <summary className="btn-link muted-link float-right mt-1 pinned-items-setting-link ">
+      Change language
+    </summary>
+  </details>
+);
+
+const RepoIcon = () => (
+  <svg
+    className="octicon octicon-repo mr-2 text-gray"
+    viewBox="0 0 12 16"
+    version="1.1"
+    width="12"
+    height="16"
+    aria-hidden="true"
+  >
+    <path
+      fillRule="evenodd"
+      d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"
+    />
+  </svg>
+);
 
 export const CurriculumVitae = () => {
   const handleClick = e => e.preventDefault();
 
   return (
     <div className="mt-4">
-      <details className="details-reset details-overlay details-overlay-dark">
-        <summary className="btn-link muted-link float-right mt-1 pinned-items-setting-link ">
-          Change language
-        </summary>
-      </details>
       <h2 className="f4 mb-2 text-normal">Curriculum Vitae</h2>
       <ol className="pinned-items-list mb-4">
         {cv.map(
-          ({ position, employer, from, to, location, achievements }, key) => {
-            const dates = {
-              from: new Date(from).toLocaleDateString(),
-              to: to.length > 0 ? new Date(to).toLocaleDateString() : ''
-            };
+          (
+            { position, employer, url, dates, location, achievements, tags },
+            key
+          ) => {
+            const employmentLocation = getEmploymentLocationText(
+              employer,
+              location
+            );
+
+            const employmentTitle = `${position}${
+              employer !== undefined ? ` at ${employmentLocation}` : ''
+            }`;
 
             return (
               <li
-                className="pinned-item-list-item d-flex p-3 border border-gray-dark rounded-1 -item-list-item public source sortable-button-item cv"
+                className="pinned-item-list-item d-flex p-3 border border-gray-dark rounded-1 cv"
                 key={key}
               >
                 <div className="pinned-item-list-item-content">
                   <div className="d-flex width-full flex-items-center position-relative">
-                    <svg
-                      className="octicon octicon-repo mr-2 text-gray"
-                      viewBox="0 0 12 16"
-                      version="1.1"
-                      width="12"
-                      height="16"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"
-                      />
-                    </svg>
+                    <RepoIcon />
                     <a
                       href=""
                       className="text-bold flex-auto"
                       onClick={handleClick}
+                      title={`${employmentTitle}`}
                     >
-                      <span
-                        className="repo -item"
-                        title={`${position} at ${employer}, ${location}`}
-                      >
-                        {position} at {employer}, {location}
-                      </span>
+                      {position}
                     </a>
+                    <Time dates={dates} />
                   </div>
+                  {employmentLocation.length > 0 && (
+                    <strong className="pinned-item-desc text-gray text-small d-block mt-2 mb-1">
+                      {url !== undefined ? (
+                        <a href={url} target="_blank" rel="noreferrer noopener">
+                          {employmentLocation}
+                        </a>
+                      ) : (
+                        employmentLocation
+                      )}
+                    </strong>
+                  )}
 
-                  <p className="pinned-item-desc text-gray text-small d-block mt-2 mb-3">
-                    {dates.from} - {dates.to}
-                    {achievements.map((achievement, key) => (
-                      <span key={key}>
-                        {achievement}
-                        <br />
-                      </span>
-                    ))}
-                  </p>
+                  <Achievements achievements={achievements} />
 
-                  <p className="mb-0 f6 text-gray">
-                    <span className="d-inline-block mr-3">
-                      <span
-                        className="repo-language-color"
-                        style={{ backgroundColor: '#2b7489' }}
-                      />
-                      <span itemProp="programmingLanguage">TypeScript</span>
-                    </span>
-
-                    {achievements.length > 0 && (
-                      <span className="pinned-item-meta muted-link">
-                        <svg
-                          aria-label="stars"
-                          className="octicon octicon-star"
-                          viewBox="0 0 14 16"
-                          version="1.1"
-                          width="14"
-                          height="16"
-                          role="img"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"
-                          />
-                        </svg>
-                        {` ${achievements.length + 1}`}
-                      </span>
-                    )}
-                  </p>
+                  <Tags tags={tags} handleClick={handleClick} />
                 </div>
               </li>
             );
