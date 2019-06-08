@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Header = ({ userName, name }) => (
+export const Header = ({ name, repoLink }) => (
   <div className="position-relative">
     <header
       className="Header-old header-logged-out Details position-relative f4 py-2"
@@ -10,7 +10,7 @@ export const Header = ({ userName, name }) => (
         <div className="d-flex flex-justify-between flex-items-center">
           <a
             className="mr-4"
-            href={`https://github.com/${userName}/gerritalex.de`}
+            href={repoLink}
             aria-label="Repository"
             target="_blank"
             rel="noreferrer noopener"

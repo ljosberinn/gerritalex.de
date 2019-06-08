@@ -1,6 +1,6 @@
 import React from 'react';
 import { Biography } from './Biography';
-import { Homepage } from './Homepage';
+import { Profiles } from './Profiles';
 import { Location } from './Location';
 import { Avatar } from './Avatar';
 
@@ -60,8 +60,7 @@ export const Person = ({ ctaText, name, userName }) => (
 
           <ul className="vcard-details mb-3">
             <Location />
-
-            <Homepage />
+            <Profiles />
           </ul>
         </div>
       </div>
