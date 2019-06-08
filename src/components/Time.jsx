@@ -21,22 +21,8 @@ export const Time = ({ dates }) => {
       className="d-inline-block float-right"
       aria-label={`${durationInDays}d`}
     >
-      {from && to ? (
-        <>
-          <time dateTime={from}>{start.toLocaleDateString()}</time> -{' '}
-          <time dateTime={to}>{end.toLocaleDateString()}</time>
-        </>
-      ) : from && !to ? (
-        <>
-          <time dateTime={from}>{start.toLocaleDateString()}</time>
-          {' - '}
-        </>
-      ) : (
-        <>
-          {' - '}
-          <time dateTime={to}>{end.toLocaleDateString()}</time>
-        </>
-      )}
+      {from && <time dateTime={from}>{start.toLocaleDateString()}</time>} -
+      {to && <time dateTime={to}>{end.toLocaleDateString()}</time>}
     </span>
   );
 };
