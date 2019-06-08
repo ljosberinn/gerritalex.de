@@ -2,6 +2,7 @@ import React from 'react';
 import { Time } from './Time';
 import { Achievements } from './Achievements';
 import { Tags } from './Tags';
+import { OcticonBook, OcticonRepo, OcticonCode, OcticonStar } from './icons';
 
 const cv = [
   {
@@ -13,6 +14,7 @@ const cv = [
       from: '2018-07-20',
       to: undefined
     },
+    icon: 'code',
     achievements: [
       'project lead & continued development after takeover of a customer-tailored web application',
       'leading a SCRUM-like team of up to five developers',
@@ -41,6 +43,7 @@ const cv = [
     location: undefined,
     url: undefined,
     dates: { from: '2016-09-01', to: undefined },
+    icon: 'code',
     achievements: [
       'moderator of the official reddit.com/r/webdev Discord channel with several thousand learning developers',
       'built and maintained several versions of World of Warcraft-related tools (Advanced Guild Statistics, Advanced Armory Access, Artifact Power Rating)',
@@ -80,6 +83,7 @@ const cv = [
     url: 'https://www.walchdruck.de/',
     location: 'Haunstetten',
     dates: { from: '2015-09-01', to: '2018-07-19' },
+    icon: 'book',
     achievements: [],
     tags: ['Print & digital design', 'Insight into printing processes']
   },
@@ -92,6 +96,7 @@ const cv = [
       from: '2014-10-01',
       to: '2015-08-30'
     },
+    icon: 'book',
     achievements: [],
     tags: []
   },
@@ -104,6 +109,7 @@ const cv = [
       from: '2012-10-01',
       to: '2014-09-30'
     },
+    icon: 'book',
     achievements: [
       'Member of the Philosophy student council Summer 2013 - Summer 2014',
       'Website management of the Philosophy student council',
@@ -130,6 +136,7 @@ const cv = [
       from: undefined,
       to: '2012-07-31'
     },
+    icon: 'book',
     achievements: [],
     tags: ['English', 'Economics', 'Biology', 'German', 'Mathematics']
   },
@@ -142,6 +149,7 @@ const cv = [
       from: '1992-05-26',
       to: undefined
     },
+    icon: 'star',
     achievements: [],
     tags: []
   }
@@ -165,21 +173,18 @@ const LanguageChange = () => (
   </details>
 );
 
-const RepoIcon = () => (
-  <svg
-    className="octicon octicon-repo mr-2 text-gray"
-    viewBox="0 0 12 16"
-    version="1.1"
-    width="12"
-    height="16"
-    aria-hidden="true"
-  >
-    <path
-      fillRule="evenodd"
-      d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"
-    />
-  </svg>
-);
+const resolveIcon = iconName => {
+  switch (iconName) {
+    case 'book':
+      return <OcticonBook />;
+    case 'code':
+      return <OcticonCode />;
+    case 'star':
+      return <OcticonStar extraClasses="mr-2 text-gray" />;
+    default:
+      return <OcticonRepo />;
+  }
+};
 
 export const CurriculumVitae = () => {
   const handleClick = e => e.preventDefault();
@@ -190,7 +195,16 @@ export const CurriculumVitae = () => {
       <ol className="pinned-items-list mb-4">
         {cv.map(
           (
-            { position, employer, url, dates, location, achievements, tags },
+            {
+              position,
+              employer,
+              url,
+              dates,
+              location,
+              icon,
+              achievements,
+              tags
+            },
             key
           ) => {
             const employmentLocation = getEmploymentLocationText(
@@ -209,15 +223,13 @@ export const CurriculumVitae = () => {
               >
                 <div className="pinned-item-list-item-content">
                   <div className="d-flex width-full flex-items-center position-relative">
-                    <RepoIcon />
-                    <a
-                      href=""
+                    {resolveIcon(icon)}
+                    <span
                       className="text-bold flex-auto"
-                      onClick={handleClick}
                       title={`${employmentTitle}`}
                     >
                       {position}
-                    </a>
+                    </span>
                     <Time dates={dates} />
                   </div>
                   {employmentLocation.length > 0 && (
