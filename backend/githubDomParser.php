@@ -103,8 +103,6 @@ function sanitize(string $html): string {
 
     $strReplacePairs = [
         'a href="/'              => 'a target="_blank" rel="noreferrer noopener" href="https://github.com/ljosberinn/', // currently, links point to github internally
-        '/>
-  <span itemprop'        => '></span><span itemprop', // github has invalid html in span.repo-language-color
         '/ljosberinn/ljosberinn' => '/ljosberinn', // todo: remove this dirty hack
     ];
 
@@ -114,12 +112,14 @@ function sanitize(string $html): string {
         '/(js-\w+)/', // github uses many "js-" classes that have no styling purpose
         '/([[:blank:]]{2,})/', // also many "  " in classes
         '([[:blank:]]")', // and some dangling spaces
+        '/(\/>)(\s)+(<span itemprop)/m',// github has invalid html in span.repo-language-color
     ];
 
     $replace = [
         '',
         ' ',
         '"',
+        '></span><span itemprop',
     ];
 
     return preg_replace($search, $replace, $html);
