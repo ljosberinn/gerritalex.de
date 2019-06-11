@@ -40,7 +40,7 @@ export const Header = ({ name, repoLink }) => (
                     className="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap d-block d-lg-inline-block"
                     style={{ cursor: 'default' }}
                   >
-                    {name} - Software Developer
+                    {name} - Software Engineer
                   </summary>
                 </details>
               </li>
