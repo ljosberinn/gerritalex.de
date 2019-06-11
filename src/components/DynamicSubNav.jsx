@@ -54,7 +54,7 @@ export const DynamicSubNav = ({ userName }) => {
   const [{ subNavStats }, setStats] = useState(DEFAULT_STATE);
 
   const getStats = useCallback(async () => {
-    const response = await fetch('https://dev.gerritalex.de/stats.json');
+    const response = await fetch('/stats.json');
     const json = await response.json();
 
     setStats(json);
@@ -77,9 +77,11 @@ export const DynamicSubNav = ({ userName }) => {
             href: createHref(userName, title),
             key
           };
+
           if (key === 0) {
             attributes['aria-current'] = 'page';
           }
+
           return (
             <a {...attributes}>
               {title}

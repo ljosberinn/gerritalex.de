@@ -11,7 +11,7 @@ const DEFAULT_STATE = {
   subNavStats: [0, 0, 0, 0, 0]
 };
 
-export const DynamicContent = ({ userName }) => {
+export const DynamicContent = () => {
   const [
     {
       contributionHistory,
@@ -23,7 +23,7 @@ export const DynamicContent = ({ userName }) => {
   ] = useState(DEFAULT_STATE);
 
   const getData = useCallback(async () => {
-    const response = await fetch('https://dev.gerritalex.de/html.json');
+    const response = await fetch('html.json');
     const json = await response.json();
 
     setData(json);

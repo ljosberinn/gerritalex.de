@@ -14,7 +14,7 @@ const userName = 'ljosberinn';
 const repoLink = `https://github.com/${userName}/gerritalex.de`;
 
 (async () => {
-  const response = await fetch('https://dev.gerritalex.de/updater.php');
+  const response = await fetch('/updater.php');
   const text = await response.text();
 
   if (text === 'Update successful.') {
@@ -26,21 +26,19 @@ const repoLink = `https://github.com/${userName}/gerritalex.de`;
 const App = () => (
   <>
     <Header repoLink={repoLink} name={name} />
-    <div className="application-main">
-      <main>
-        <div className="container-xl clearfix px-3 mt-4">
-          <Banner repoLink={repoLink} />
-          <Person name={name} userName={userName} />
-          <div className="col-lg-9 col-md-8 col-12 float-md-left pl-md-2">
-            <DynamicSubNav userName={userName} />
-            <div className="position-relative">
-              <CurriculumVitae />
-              <DynamicContent userName={userName} />
-            </div>
+    <main className="application-main">
+      <div className="container-xl clearfix px-3 mt-4">
+        <Banner repoLink={repoLink} />
+        <Person name={name} userName={userName} />
+        <div className="col-lg-9 col-md-8 col-12 float-md-left pl-md-2">
+          <DynamicSubNav userName={userName} />
+          <div className="position-relative">
+            <CurriculumVitae />
+            <DynamicContent />
           </div>
         </div>
-      </main>
-    </div>
+      </div>
+    </main>
     <Footer />
   </>
 );
