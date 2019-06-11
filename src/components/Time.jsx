@@ -9,33 +9,44 @@ const getDurationInDays = (from, to) =>
   Math.ceil(Math.abs(to.getTime() - from.getTime()) / (1000 * 60 * 60 * 24));
 
 export const Time = ({ dates, currentLanguage }) => {
-  const { from, to } = dates;
+  let { from, to } = dates;
 
   // convert to dates
-  const start = from ? new Date(from) : null;
-  const end = to ? new Date(to) : new Date();
+  from = from ? new Date(from) : null;
+  to = to ? new Date(to) : null;
 
-  let [formattedStart, formattedEnd] = [null, null];
+  let formattedStart;
+  let formattedEnd;
 
   try {
     const formatter = new Intl.DateTimeFormat(currentLanguage);
-    formattedStart = from ? formatter.format(start) : null;
-    formattedEnd = formatter.format(end);
+    formattedStart = from ? formatter.format(from) : null;
+    formattedEnd = formatter.format(to);
   } catch {
-    formattedStart = from && start.toLocaleDateString();
-    formattedEnd = to && end.toLocaleDateString();
+    // fallback for browsers where Intl.DateTimeFormat isnt available
+    formattedStart = from && from.toLocaleDateString();
+    formattedEnd = to && to.toLocaleDateString();
   }
 
-  const durationInDays = from && getDurationInDays(start, end);
+  const attributes = {
+    className: 'd-inline-block float-right'
+  };
+
+  if (from && to) {
+    attributes['aria-label'] = `${getDurationInDays(from, to)}d`;
+  }
 
   return (
-    <span
-      className="d-inline-block float-right"
-      aria-label={`${durationInDays}d`}
-    >
-      {from && <time dateTime={from}>{formattedStart}</time>}
+    <span {...attributes}>
+      {from && (
+        <time dateTime={from.toISOString().split('T')[0]}>
+          {formattedStart}
+        </time>
+      )}
       {' - '}
-      {to && <time dateTime={to}>{formattedEnd}</time>}
+      {to && (
+        <time dateTime={to.toISOString().split('T')[0]}>{formattedEnd}</time>
+      )}
     </span>
   );
 };
