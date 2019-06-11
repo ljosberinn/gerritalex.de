@@ -234,7 +234,7 @@ export const CurriculumVitae = () => {
                     >
                       {position}
                     </span>
-                    <Time dates={dates} />
+                    <Time dates={dates} currentLanguage={i18next.language} />
                   </div>
                   {employmentLocation.length > 0 && (
                     <strong className="pinned-item-desc text-gray text-small d-block mt-2 mb-1">
