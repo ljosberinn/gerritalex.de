@@ -18,7 +18,7 @@
   width: 100%;
 }
 
-/* folding icons in ContributionActivity */
+// folding icons in ContributionActivity
 .profile-rollup-wrapper .d-inline-block.float-right {
   display: none !important;
 }
@@ -48,11 +48,13 @@ ul.dashed {
   label {
     background-color: #f1f8ff;
     border-radius: 5px;
-    transition: 150ms ease-in-out;
+    transition: 0.15s ease-in-out;
     width: 5%;
     text-align: center;
     cursor: pointer;
+    font-weight: inherit;
 
+    // these float, hence last-of-type
     &:last-of-type {
       margin-right: 8px;
     }
@@ -69,10 +71,52 @@ ul.dashed {
   }
 }
 
-.pinned-item-meta svg.octicon {
+// align "centered to text
+.pinned-item-meta svg.octicon,
+button svg.octicon {
   vertical-align: sub;
 }
 
-.cv a.topic-tag {
+.cv button.topic-tag {
+  // remove seemingly available interaction
   cursor: default;
+
+  // remove focus from dead tag-buttons
+  &:focus {
+    outline: none;
+  }
+}
+
+// due to the hacks github uses to get details-dialog working...
+dialog {
+  left: 50%;
+  top: 0;
+  right: auto;
+  margin: 10vh auto;
+  max-height: 80vh;
+  max-width: 90vw;
+  position: fixed;
+  transform: translateX(-50%);
+  width: 448px;
+  z-index: 999;
+  padding: 0;
+
+  &::backdrop {
+    background: rgba(27, 31, 35, 0.5);
+    z-index: 99;
+  }
+
+  &[open] {
+    display: flex;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }

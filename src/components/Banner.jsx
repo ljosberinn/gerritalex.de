@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { OcticonX } from './icons';
+import i18next from 'i18next';
 
 export const Banner = ({ repoLink }) => {
   const [isVisible, setIsVisible] = useState(true);
@@ -16,7 +18,7 @@ export const Banner = ({ repoLink }) => {
             onClick={handleClick}
             className="position-absolute top-0 right-0 btn-link link-gray"
           >
-            {t('disclaimer-4')}
+            <OcticonX /> {t('disclaimer-4')}
           </button>
           <h3 className="pt-4 pt-lg-2">{t('disclaimer-1')}</h3>
           <p className="col-8 mx-auto">
@@ -24,7 +26,7 @@ export const Banner = ({ repoLink }) => {
             <br />
             {t('disclaimer-3')}{' '}
             <a href={repoLink} target="_blank" rel="noreferrer noopener">
-              repo
+              {i18next.language.indexOf('de') > -1 ? 'Repo' : 'repo'}
             </a>
             .
           </p>

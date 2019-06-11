@@ -34,7 +34,6 @@ const resolveIcon = iconName => {
 export const CurriculumVitae = () => {
   const { t } = useTranslation('cv');
 
-  const handleClick = e => e.preventDefault();
   const handleLanguageChange = e => i18next.changeLanguage(e.target.value);
 
   const translatedAchievements = t('achievements');
@@ -253,7 +252,7 @@ export const CurriculumVitae = () => {
                     translatedAchievements={translatedAchievements}
                   />
 
-                  <Tags tags={tags} handleClick={handleClick} />
+                  <Tags tags={tags} />
                 </div>
               </li>
             );

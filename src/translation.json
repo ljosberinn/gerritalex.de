@@ -3,11 +3,14 @@
     "translation": {
       "disclaimer-1": "Disclaimer",
       "disclaimer-2": "This is a reactified GitHub profile.",
-      "disclaimer-3": "You can find my real profile in the section on the left or jump directly to this",
+      "disclaimer-3": "You can find my real profile in the section on the left or jump directly to this sites ",
       "disclaimer-4": "Dismiss",
       "cta-text": "Drop me a message",
       "biography": "Self taught web-based software engineer, /r/webdev discord moderator",
-      "location": "Augsburg, Bavaria, Germany"
+      "location": "Augsburg, Bavaria, Germany",
+      "mail": "admin@gerritalex.de",
+      "contact-dialog-1": "Choose channel",
+      "software-engineer": "Software Engineer"
     },
     "cv": {
       "achievements": "Achievements",
@@ -45,8 +48,11 @@
       "disclaimer-3": "Du findest das echte im Abschnitt links unter dem Button, hier geht es direkt zum ",
       "disclaimer-4": "Verbergen",
       "cta-text": "Kontakt aufnehmen",
-      "biography": "Websprachenbasierter Software Engineer im Eigenstudium, /r/webdev Discord-Moderator",
-      "location": "Augsburg, Bayern, Deutschland"
+      "biography": "Webbasierter Softwareentwickler, Eigenstudium, /r/webdev Discord-Moderator",
+      "location": "Augsburg, Bayern, Deutschland",
+      "mail": "admin@gerritalex.de",
+      "contact-dialog-1": "Kontaktaufnahme möglich via...",
+      "software-engineer": "Softwareentwickler"
     },
     "cv": {
       "achievements": "Erfolge",
