@@ -127,11 +127,9 @@ export const Person = ({ name, userName }) => {
                   <OcticonX />
                 </button>
                 <h3 className="mb-2">{t('contact-dialog-1')}</h3>
-                <p className="text-gray mb-0">
-                  <ul className="vcard-details">
-                    <Profiles mail={t('mail')} />
-                  </ul>
-                </p>
+                <ul className="vcard-details text-gray mb-0">
+                  <Profiles mail={t('mail')} />
+                </ul>
               </div>
             </dialog>
             <Biography />

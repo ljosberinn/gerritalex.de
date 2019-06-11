@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Tag = ({ text }) => (
-  <button className="btn-link topic-tag topic-tag-link f6-my1" type="button">
+  <button className="btn-link topic-tag topic-tag-link" type="button">
     {text}
   </button>
 );

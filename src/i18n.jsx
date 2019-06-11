@@ -36,6 +36,5 @@ export default i18n
       'de-DE': translations['de-DE'],
       de: translations['de-DE']
     },
-    fallbackLng: 'en-US',
-    debug: process.env.NODE_ENV === 'development'
+    fallbackLng: 'en-US'
   });
