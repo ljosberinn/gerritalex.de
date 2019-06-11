@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export const Banner = ({ repoLink }) => {
   const [isVisible, setIsVisible] = useState(true);
+  const { t } = useTranslation();
 
   const handleClick = () => setIsVisible(false);
 
@@ -14,16 +16,15 @@ export const Banner = ({ repoLink }) => {
             onClick={handleClick}
             className="position-absolute top-0 right-0 btn-link link-gray"
           >
-            Dismiss
+            {t('disclaimer-4')}
           </button>
-          <h3 className="pt-4 pt-lg-2">Disclaimer</h3>
+          <h3 className="pt-4 pt-lg-2">{t('disclaimer-1')}</h3>
           <p className="col-8 mx-auto">
-            This is a reactified GitHub profile.
+            {t('disclaimer-2')}
             <br />
-            You can find my real profile in the section on the left.
-            Alternatively, you can find the repo{' '}
+            {t('disclaimer-3')}{' '}
             <a href={repoLink} target="_blank" rel="noreferrer noopener">
-              here
+              repo
             </a>
             .
           </p>

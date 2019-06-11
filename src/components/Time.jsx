@@ -21,7 +21,8 @@ export const Time = ({ dates }) => {
       className="d-inline-block float-right"
       aria-label={`${durationInDays}d`}
     >
-      {from && <time dateTime={from}>{start.toLocaleDateString()}</time>} -
+      {from && <time dateTime={from}>{start.toLocaleDateString()}</time>}
+      {' - '}
       {to && <time dateTime={to}>{end.toLocaleDateString()}</time>}
     </span>
   );

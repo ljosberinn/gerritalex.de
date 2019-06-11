@@ -3,158 +3,9 @@ import { Time } from './Time';
 import { Achievements } from './Achievements';
 import { Tags } from './Tags';
 import { OcticonBook, OcticonRepo, OcticonCode, OcticonStar } from './icons';
+import { useTranslation } from 'react-i18next';
 
-const cv = [
-  {
-    position: 'Web Developer',
-    employer: 'mpunkt GmbH',
-    url: 'https://mpunkt.com',
-    location: 'Augsburg',
-    dates: {
-      from: '2018-07-20',
-      to: undefined
-    },
-    icon: 'code',
-    achievements: [
-      'project lead & continued development after takeover of a customer-tailored web application',
-      'leading a SCRUM-like team of up to five developers',
-      'using Code Review- and Pair Programming-like processes',
-      'client contact concerning SDLC via mail, phone as well as on site',
-      'modernizing the development processes with tools such as IDE plugins, npm, composer, Sentry, SCSS, React, TypeScript, webpack and Jenkins',
-      'supervising and coordinating work students and trainees',
-      'held internal trainings (e.g. ES2015+, Chrome Developer Tools Deep Dive)'
-    ],
-    tags: [
-      'PHP 5.2-7.1',
-      'jQuery',
-      'MySQL',
-      'HTML5',
-      'CSS3',
-      'SCSS',
-      'composer',
-      'npm',
-      'PHPStorm',
-      'Sentry'
-    ]
-  },
-  {
-    position: 'Self study: Web Development & Software Engineering',
-    employer: undefined,
-    location: undefined,
-    url: undefined,
-    dates: { from: '2016-09-01', to: undefined },
-    icon: 'code',
-    achievements: [
-      'moderator of the official reddit.com/r/webdev Discord channel with several thousand learning developers',
-      'built and maintained several versions of World of Warcraft-related tools (Advanced Guild Statistics, Advanced Armory Access, Artifact Power Rating)',
-      'built and maintained several versions of Resources Helper, a data-driven calculation-heavy spreadsheet on steroids for a mobile game',
-      'during my training as media designer, developed and improved several versions of a company internal PDF generator for time tracking'
-    ],
-    tags: [
-      'PHP 5.6-7.3',
-      'Debugging',
-      'HTML5',
-      'CSS3',
-      'SCSS',
-      'jQuery',
-      'vanilla JavaScript',
-      'ES2015+',
-      'React',
-      'TypeScript',
-      'MySQL',
-      'Jenkins',
-      'Git',
-      'Sentry',
-      'npm',
-      'composer',
-      'webpack',
-      'Performance optimization',
-      'Code quality',
-      'Readability',
-      'Atom',
-      'VSCode',
-      'several APIs',
-      'Node.js basics'
-    ]
-  },
-  {
-    position: 'Vocational training as media designer',
-    employer: 'Printery Joh. Walch',
-    url: 'https://www.walchdruck.de/',
-    location: 'Haunstetten',
-    dates: { from: '2015-09-01', to: '2018-07-19' },
-    icon: 'book',
-    achievements: [],
-    tags: ['Print & digital design', 'Insight into printing processes']
-  },
-  {
-    position: 'Philosophy',
-    employer: 'University of Augsburg',
-    url: undefined,
-    location: 'Augsburg',
-    dates: {
-      from: '2014-10-01',
-      to: '2015-08-30'
-    },
-    icon: 'book',
-    achievements: [],
-    tags: []
-  },
-  {
-    position: 'Teachers Education: German language & philosophy',
-    employer: 'University of Trier',
-    url: undefined,
-    location: 'Trier',
-    dates: {
-      from: '2012-10-01',
-      to: '2014-09-30'
-    },
-    icon: 'book',
-    achievements: [
-      'Member of the Philosophy student council Summer 2013 - Summer 2014',
-      'Website management of the Philosophy student council',
-      'Poster design for Philosophy student council events'
-    ],
-    tags: [
-      'Scientific work',
-      'Educational techniques',
-      'Test lesssons at school',
-      'Stoicism',
-      'Far-eastern philosophy',
-      'Taoism',
-      'Buddhism',
-      'Middle high german',
-      'Old high german'
-    ]
-  },
-  {
-    position: 'Graduation',
-    employer: 'Gymnasium Königsbrunn',
-    url: undefined,
-    location: 'Königsbrunn',
-    dates: {
-      from: undefined,
-      to: '2012-07-31'
-    },
-    icon: 'book',
-    achievements: [],
-    tags: ['English', 'Economics', 'Biology', 'German', 'Mathematics']
-  },
-  {
-    position: 'Birth',
-    employer: undefined,
-    url: undefined,
-    location: 'Augsburg',
-    dates: {
-      from: '1992-05-26',
-      to: undefined
-    },
-    icon: 'star',
-    achievements: [],
-    tags: []
-  }
-];
-
+import i18next from 'i18next';
 /**
  *
  * @param {string|undefined} employer
@@ -165,13 +16,37 @@ const getEmploymentLocationText = (employer, location) =>
     ? `${employer}, ${location}`
     : location || employer || '';
 
-const LanguageChange = () => (
-  <details className="details-reset details-overlay details-overlay-dark">
-    <summary className="btn-link muted-link float-right mt-1 pinned-items-setting-link ">
-      Change language
-    </summary>
-  </details>
-);
+const LanguageChange = ({ currentLanguage, handleChange }) => {
+  const languages =
+    currentLanguage.indexOf('-') > -1 ? ['en-US', 'de-DE'] : ['en', 'de'];
+
+  return (
+    <div className="input-group-radio">
+      {languages.map(language => {
+        const classList = [
+          'float-right',
+          'mt-1',
+          language === currentLanguage ? 'active' : null
+        ]
+          .join(' ')
+          .trim();
+
+        return (
+          <label key={language} className={classList}>
+            <input
+              type="radio"
+              name="language"
+              value={language}
+              checked={language === currentLanguage}
+              onChange={handleChange}
+            />{' '}
+            {language.split('-')[0].toUpperCase()}
+          </label>
+        );
+      })}
+    </div>
+  );
+};
 
 const resolveIcon = iconName => {
   switch (iconName) {
@@ -187,10 +62,166 @@ const resolveIcon = iconName => {
 };
 
 export const CurriculumVitae = () => {
+  const { t } = useTranslation('cv');
+
   const handleClick = e => e.preventDefault();
+  const handleLanguageChange = e => i18next.changeLanguage(e.target.value);
+
+  const translatedAchievements = t('achievements');
+
+  const cv = [
+    {
+      position: t('mpunkt-title'),
+      employer: 'mpunkt GmbH',
+      url: 'https://mpunkt.com',
+      location: 'Augsburg',
+      dates: {
+        from: '2018-07-20',
+        to: undefined
+      },
+      icon: 'code',
+      achievements: [
+        t('mpunkt-1'),
+        t('mpunkt-2'),
+        t('mpunkt-3'),
+        t('mpunkt-4'),
+        t('mpunkt-5'),
+        t('mpunkt-6'),
+        t('mpunkt-7')
+      ],
+      tags: [
+        'PHP 5.2-7.1',
+        'jQuery',
+        'MySQL',
+        'HTML5',
+        'CSS3',
+        'SCSS',
+        'composer',
+        'npm',
+        'PHPStorm',
+        'Sentry'
+      ]
+    },
+    {
+      position: t('self-study-title'),
+      employer: undefined,
+      location: undefined,
+      url: undefined,
+      dates: { from: '2016-09-01', to: undefined },
+      icon: 'code',
+      achievements: [
+        t('self-study-1'),
+        t('self-study-2'),
+        t('self-study-3'),
+        t('self-study-4')
+      ],
+      tags: [
+        'PHP 5.6-7.3',
+        'Debugging',
+        'HTML5',
+        'CSS3',
+        'SCSS',
+        'jQuery',
+        'vanilla JavaScript',
+        'ES2015+',
+        'React',
+        'TypeScript',
+        'MySQL',
+        'Jenkins',
+        'Git',
+        'Sentry',
+        'npm',
+        'composer',
+        'webpack',
+        'Performance optimization',
+        'Code quality',
+        'Readability',
+        'Atom',
+        'VSCode',
+        'several APIs',
+        'Node.js basics'
+      ]
+    },
+    {
+      position: t('walch-title'),
+      employer: t('walch-employer'),
+      url: 'https://www.walchdruck.de/',
+      location: 'Haunstetten',
+      dates: { from: '2015-09-01', to: '2018-07-19' },
+      icon: 'book',
+      achievements: [],
+      tags: ['Print & digital design', 'Insight into printing processes']
+    },
+    {
+      position: t('uni-augsburg-title'),
+      employer: t('uni-augsburg-employer'),
+      url: undefined,
+      location: 'Augsburg',
+      dates: {
+        from: '2014-10-01',
+        to: '2015-08-30'
+      },
+      icon: 'book',
+      achievements: [],
+      tags: []
+    },
+    {
+      position: t('uni-trier-title'),
+      employer: t('uni-trier-employer'),
+      url: undefined,
+      location: 'Trier',
+      dates: {
+        from: '2012-10-01',
+        to: '2014-09-30'
+      },
+      icon: 'book',
+      achievements: [t('uni-trier-1'), t('uni-trier-2'), t('uni-trier-3')],
+      tags: [
+        'Scientific work',
+        'Educational techniques',
+        'Test lesssons at school',
+        'Stoicism',
+        'Far-eastern philosophy',
+        'Taoism',
+        'Buddhism',
+        'Middle high german',
+        'Old high german'
+      ]
+    },
+    {
+      position: t('abitur-title'),
+      employer: 'Gymnasium Königsbrunn',
+      url: undefined,
+      location: 'Königsbrunn',
+      dates: {
+        from: undefined,
+        to: '2012-07-31'
+      },
+      icon: 'book',
+      achievements: [],
+      tags: ['English', 'Economics', 'Biology', 'German', 'Mathematics']
+    },
+    {
+      position: t('birth-title'),
+      employer: undefined,
+      url: undefined,
+      location: 'Augsburg',
+      dates: {
+        from: '1992-05-26',
+        to: undefined
+      },
+      icon: 'star',
+      achievements: [],
+      tags: []
+    }
+  ];
 
   return (
     <div className="mt-4">
+      <LanguageChange
+        currentLanguage={i18next.language}
+        handleChange={handleLanguageChange}
+      />
       <h2 className="f4 mb-2 text-normal">Curriculum Vitae</h2>
       <ol className="pinned-items-list mb-4">
         {cv.map(
@@ -244,7 +275,10 @@ export const CurriculumVitae = () => {
                     </strong>
                   )}
 
-                  <Achievements achievements={achievements} />
+                  <Achievements
+                    achievements={achievements}
+                    translatedAchievements={translatedAchievements}
+                  />
 
                   <Tags tags={tags} handleClick={handleClick} />
                 </div>
