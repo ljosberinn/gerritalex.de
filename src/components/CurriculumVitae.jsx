@@ -2,10 +2,12 @@ import React from 'react';
 import { Time } from './Time';
 import { Achievements } from './Achievements';
 import { Tags } from './Tags';
+import { LanguageChange } from './LanguageChange';
 import { OcticonBook, OcticonRepo, OcticonCode, OcticonStar } from './icons';
 import { useTranslation } from 'react-i18next';
-
+import { achievementLengths } from '../i18n';
 import i18next from 'i18next';
+
 /**
  *
  * @param {string|undefined} employer
@@ -15,38 +17,6 @@ const getEmploymentLocationText = (employer, location) =>
   employer && location
     ? `${employer}, ${location}`
     : location || employer || '';
-
-const LanguageChange = ({ currentLanguage, handleChange }) => {
-  const languages =
-    currentLanguage.indexOf('-') > -1 ? ['en-US', 'de-DE'] : ['en', 'de'];
-
-  return (
-    <div className="input-group-radio">
-      {languages.map(language => {
-        const classList = [
-          'float-right',
-          'mt-1',
-          language === currentLanguage ? 'active' : null
-        ]
-          .join(' ')
-          .trim();
-
-        return (
-          <label key={language} className={classList}>
-            <input
-              type="radio"
-              name="language"
-              value={language}
-              checked={language === currentLanguage}
-              onChange={handleChange}
-            />{' '}
-            {language.split('-')[0].toUpperCase()}
-          </label>
-        );
-      })}
-    </div>
-  );
-};
 
 const resolveIcon = iconName => {
   switch (iconName) {
@@ -71,6 +41,7 @@ export const CurriculumVitae = () => {
 
   const cv = [
     {
+      key: 'mpunkt',
       position: t('mpunkt-title'),
       employer: 'mpunkt GmbH',
       url: 'https://mpunkt.com',
@@ -80,15 +51,7 @@ export const CurriculumVitae = () => {
         to: undefined
       },
       icon: 'code',
-      achievements: [
-        t('mpunkt-1'),
-        t('mpunkt-2'),
-        t('mpunkt-3'),
-        t('mpunkt-4'),
-        t('mpunkt-5'),
-        t('mpunkt-6'),
-        t('mpunkt-7')
-      ],
+      achievements: [],
       tags: [
         'PHP 5.2-7.1',
         'jQuery',
@@ -103,18 +66,14 @@ export const CurriculumVitae = () => {
       ]
     },
     {
+      key: 'self-study',
       position: t('self-study-title'),
       employer: undefined,
       location: undefined,
       url: undefined,
       dates: { from: '2016-09-01', to: undefined },
       icon: 'code',
-      achievements: [
-        t('self-study-1'),
-        t('self-study-2'),
-        t('self-study-3'),
-        t('self-study-4')
-      ],
+      achievements: [],
       tags: [
         'PHP 5.6-7.3',
         'Debugging',
@@ -122,7 +81,7 @@ export const CurriculumVitae = () => {
         'CSS3',
         'SCSS',
         'jQuery',
-        'vanilla JavaScript',
+        'Vanilla JavaScript',
         'ES2015+',
         'React',
         'TypeScript',
@@ -143,6 +102,7 @@ export const CurriculumVitae = () => {
       ]
     },
     {
+      key: 'walch',
       position: t('walch-title'),
       employer: t('walch-employer'),
       url: 'https://www.walchdruck.de/',
@@ -153,6 +113,7 @@ export const CurriculumVitae = () => {
       tags: ['Print & digital design', 'Insight into printing processes']
     },
     {
+      key: 'uni-augsbug',
       position: t('uni-augsburg-title'),
       employer: t('uni-augsburg-employer'),
       url: undefined,
@@ -166,6 +127,7 @@ export const CurriculumVitae = () => {
       tags: []
     },
     {
+      key: 'uni-trier',
       position: t('uni-trier-title'),
       employer: t('uni-trier-employer'),
       url: undefined,
@@ -175,7 +137,7 @@ export const CurriculumVitae = () => {
         to: '2014-09-30'
       },
       icon: 'book',
-      achievements: [t('uni-trier-1'), t('uni-trier-2'), t('uni-trier-3')],
+      achievements: [],
       tags: [
         'Scientific work',
         'Educational techniques',
@@ -189,6 +151,7 @@ export const CurriculumVitae = () => {
       ]
     },
     {
+      key: 'abitur',
       position: t('abitur-title'),
       employer: 'Gymnasium Königsbrunn',
       url: undefined,
@@ -202,6 +165,7 @@ export const CurriculumVitae = () => {
       tags: ['English', 'Economics', 'Biology', 'German', 'Mathematics']
     },
     {
+      key: 'birth',
       position: t('birth-title'),
       employer: undefined,
       url: undefined,
@@ -215,6 +179,15 @@ export const CurriculumVitae = () => {
       tags: []
     }
   ];
+
+  // translate achievements
+  for (const [position, amount] of Object.entries(achievementLengths)) {
+    const index = cv.findIndex(obj => obj.key === position);
+
+    for (let i = 1; i <= amount; ++i) {
+      cv[index].achievements.push(t(`${position}-${i}`));
+    }
+  }
 
   return (
     <div className="mt-4">

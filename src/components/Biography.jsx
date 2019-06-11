@@ -1,7 +1,8 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
-export const Biography = () => (
-  <div className="p-note user-profile-bio">
-    Self taught software developer developer, /r/webdev discord moderator
-  </div>
-);
+export const Biography = () => {
+  const { t } = useTranslation();
+
+  return <div className="p-note user-profile-bio">{t('biography')}</div>;
+};
