@@ -4,6 +4,9 @@ import { OcticonCode } from './OcticonCode';
 import { OcticonStar } from './OcticonStar';
 import { OcticonLocation } from './OcticonLocation';
 import { OcticonLink } from './OcticonLink';
+import { Twitter } from './Twitter';
+import { LinkedIn } from './LinkedIn';
+import { Reddit } from './Reddit';
 
 export {
   OcticonBook,
@@ -11,5 +14,8 @@ export {
   OcticonCode,
   OcticonStar,
   OcticonLocation,
-  OcticonLink
+  OcticonLink,
+  Reddit,
+  Twitter,
+  LinkedIn
 };
