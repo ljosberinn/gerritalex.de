@@ -68,3 +68,11 @@ ul.dashed {
     display: none;
   }
 }
+
+.pinned-item-meta svg.octicon-star {
+  vertical-align: sub;
+}
+
+.cv a.topic-tag {
+  cursor: default;
+}
