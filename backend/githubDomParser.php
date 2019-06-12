@@ -8,17 +8,21 @@ const URI = 'https://github.com/ljosberinn';
 
 try {
     $curl = curl_init();
+
     curl_setopt_array($curl, [
         CURLOPT_URL            => URI,
         CURLOPT_FOLLOWLOCATION => true,
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_SSL_VERIFYPEER => true,
     ]);
-    $response = curl_exec($curl);
+
+    $html = curl_exec($curl);
     curl_close($curl);
-    $DOM->loadHTML($response);
+
+    $DOM->loadHTML($html);
 } catch(Error $error) {
-    die($error->getMessage());
+    echo json_encode(['success' => false, 'curl failed']);
+    die;
 }
 
 $main = $DOM->getElementById('js-pjax-container');
@@ -138,7 +142,7 @@ function getSubNavStats(DOMElement $main): array {
         return $span->getAttribute('class') === 'Counter hide-lg hide-md hide-sm';
     });
 
-    foreach($subNavSpans as $index => $span) {
+    foreach($subNavSpans as $span) {
         $stats[] = (int) $span->nodeValue;
     }
 
