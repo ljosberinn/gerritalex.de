@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { Status } from './Status';
 
-export const Avatar = ({ userName }) => (
+export const Avatar = memo(({ userName }) => (
   <div className="float-left col-3 col-md-12 pr-3 pr-md-0">
     <a
       className="u-photo d-block tooltipped tooltipped-s"
@@ -18,4 +18,4 @@ export const Avatar = ({ userName }) => (
       <Status />
     </a>
   </div>
-);
+));

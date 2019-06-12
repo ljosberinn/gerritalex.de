@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { memo } from 'react';
 
-export const Footer = () => (
+export const Footer = memo(() => (
   <div
     className="footer container-lg width-full p-responsive"
     role="contentinfo"
@@ -14,4 +14,4 @@ export const Footer = () => (
     </div>
     <div className="d-flex flex-justify-center pb-6" />
   </div>
-);
+));

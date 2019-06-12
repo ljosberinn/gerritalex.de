@@ -1,0 +1,140 @@
+[
+  {
+    "key": "mpunkt",
+    "position": "t.mpunkt-title",
+    "employer": "mpunkt GmbH",
+    "url": "https://mpunkt.com",
+    "location": "Augsburg",
+    "dates": {
+      "from": "2018-07-20",
+      "to": null
+    },
+    "icon": "code",
+    "achievements": [],
+    "tags": [
+      "PHP 5.2-7.1",
+      "jQuery",
+      "MySQL",
+      "HTML5",
+      "CSS3",
+      "SCSS",
+      "composer",
+      "npm",
+      "PHPStorm",
+      "Sentry"
+    ]
+  },
+  {
+    "key": "self-study",
+    "position": "t.self-study-title",
+    "employer": null,
+    "location": null,
+    "url": null,
+    "dates": { "from": "2016-09-01", "to": null },
+    "icon": "code",
+    "achievements": [],
+    "tags": [
+      "PHP 5.6-7.3",
+      "Debugging",
+      "HTML5",
+      "CSS3",
+      "SCSS",
+      "jQuery",
+      "Vanilla JavaScript",
+      "ES2015+",
+      "React",
+      "TypeScript",
+      "MySQL",
+      "Jenkins",
+      "Git",
+      "Sentry",
+      "npm",
+      "composer",
+      "webpack",
+      "Performance optimization",
+      "Code quality",
+      "Readability",
+      "Atom",
+      "VSCode",
+      "several APIs",
+      "Node.js basics"
+    ]
+  },
+  {
+    "key": "walch",
+    "position": "t.walch-title",
+    "employer": "t.walch-employer",
+    "url": "https://www.walchdruck.de/",
+    "location": "Haunstetten",
+    "dates": { "from": "2015-09-01", "to": "2018-07-19" },
+    "icon": "book",
+    "achievements": [],
+    "tags": ["Print & digital design", "Insight into printing processes"]
+  },
+  {
+    "key": "uni-augsbug",
+    "position": "t.uni-augsburg-title",
+    "employer": "t.uni-augsburg-employer",
+    "url": null,
+    "location": "Augsburg",
+    "dates": {
+      "from": "2014-10-01",
+      "to": "2015-08-30"
+    },
+    "icon": "book",
+    "achievements": [],
+    "tags": []
+  },
+  {
+    "key": "uni-trier",
+    "position": "t.uni-trier-title",
+    "employer": "t.uni-trier-employer",
+    "url": null,
+    "location": "Trier",
+    "dates": {
+      "from": "2012-10-01",
+      "to": "2014-09-30"
+    },
+    "icon": "book",
+    "achievements": [],
+    "tags": [
+      "Scientific work",
+      "Educational techniques",
+      "Test lesssons at school",
+      "Stoicism",
+      "Far-eastern philosophy",
+      "Taoism",
+      "Buddhism",
+      "Middle high german",
+      "Old high german"
+    ]
+  },
+  {
+    "key": "abitur",
+    "position": "t.abitur-title",
+    "employer": "Gymnasium Königsbrunn",
+    "url": null,
+    "location": "Königsbrunn",
+    "dates": {
+      "from": null,
+      "to": "2012-07-31"
+    },
+    "icon": "book",
+    "achievements": [],
+    "tags": ["English", "Economics", "Biology", "German", "Mathematics"]
+  },
+  {
+    "key": "birth",
+    "position": "t.birth-title",
+    "employer": null,
+    "url": null,
+    "location": "Augsburg",
+    "dates": {
+      "from": "1992-05-26",
+      "to": null
+    },
+    "icon": "star",
+    "achievements": [],
+    "tags": []
+  }
+]
