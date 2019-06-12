@@ -15,9 +15,9 @@ const repoLink = `https://github.com/${userName}/gerritalex.de`;
 
 (async () => {
   const response = await fetch('/updater.php');
-  const text = await response.text();
+  const { success, msg } = await response.json();
 
-  if (text === 'Update successful.') {
+  if (success && msg === 'Update successful.') {
     // eslint-disable-next-line
     location.reload();
   }

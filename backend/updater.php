@@ -7,12 +7,16 @@ const JSON = [
 
 const THRESHOLD = 24 * 60 * 60;
 
+header('Content-type: application/json');
+
 $now        = time();
 $lastUpdate = filemtime(JSON['html']);
+$response   = ['success' => false, 'msg' => 'No update required.'];
 
 // file exists && no update required
 if($lastUpdate && $now - THRESHOLD <= $lastUpdate) {
-    die('No update required.');
+    echo json_encode($response);
+    die;
 }
 
 $data = require 'githubDomParser.php';
@@ -42,5 +46,9 @@ foreach(JSON as $name => $json) {
     fclose($handle);
 }
 
-echo 'Update successful.';
+$response['success'] = true;
+$response['msg']     = 'Update successful.';
+
+echo json_encode($response);
+
 
