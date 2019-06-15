@@ -13,7 +13,7 @@ export const ContributionChart = ({ svg }) =>
     <svg
       width="722"
       height="112"
-      className="mx-auto "
+      className="mx-auto"
       dangerouslySetInnerHTML={{ __html: svg }}
     />
   );

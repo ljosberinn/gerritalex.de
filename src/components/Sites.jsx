@@ -12,6 +12,17 @@ const sites = [
     url: 'https://resources-helper.de',
     title: 'Resources Helper',
     repository: 'https://github.com/ljosberinn/resources-helper'
+  },
+  {
+    url: 'https://wahl2017.gerritalex.de',
+    title: 'Wahlorientierungshilfe',
+    repository: 'https://github.com/ljosberinn/Wahlorientierungshilfe'
+  },
+  {
+    url:
+      'https://chrome.google.com/webstore/detail/github-vs-code-one-dark-v/ifhihbeapkbahaelfppkncgmmmeidapl',
+    title: 'Github One Dark Vivid',
+    repository: 'https://github.com/ljosberinn/github-one-dark-vivid'
   }
 ];
 
