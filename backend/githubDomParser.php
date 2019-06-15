@@ -38,7 +38,7 @@ return [
 final class Reducer {
 
     private const CONTRIBUTION_ACTIVITY_VALIDATION_CLASS = 'contribution-activity';
-    private const CONTRIBUTION_HISTORY_VALIDATION_CLASS = 'mx-auto js-calendar-graph-svg';
+    private const CONTRIBUTION_HISTORY_VALIDATION_CLASS = 'js-calendar-graph-svg';
 
     private const CONTRIBUTION_AMOUNT_VALIDATION_CLASS = 'f4 text-normal mb-2';
     private const CONTRIBUTION_AMOUNT_VALIDATION_NODE_VALUE = 'Contribution activity';
@@ -95,7 +95,7 @@ final class Reducer {
      * @return string
      */
     public static function contributionHistory(string $carry, DOMElement $svg): string {
-        if($svg->getAttribute('class') !== self::CONTRIBUTION_HISTORY_VALIDATION_CLASS) {
+        if(strpos($svg->getAttribute('class'), self::CONTRIBUTION_HISTORY_VALIDATION_CLASS) === false) {
             return $carry;
         }
 
