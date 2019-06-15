@@ -23,8 +23,40 @@ const sites = [
       'https://chrome.google.com/webstore/detail/github-vs-code-one-dark-v/ifhihbeapkbahaelfppkncgmmmeidapl',
     title: 'Github One Dark Vivid',
     repository: 'https://github.com/ljosberinn/github-one-dark-vivid'
+  },
+  {
+    title: 'Advanced Guild Statistics',
+    repository:
+      'https://github.com/xepheris/World-of-Warcraft--Legion---Advanced-Guild-Statistics'
+  },
+  {
+    title: 'Advanced Armory Access',
+    repository:
+      'https://github.com/ljosberinn/World-of-Warcraft-Advanced-Armory-Access'
+  },
+  {
+    title: 'Artifact Power Ranking',
+    repository:
+      'https://github.com/ljosberinn/World-of-Warcraft-Artifact-Power-World-Ranking'
   }
 ];
+
+const RepoLink = ({ link }) => (
+  <a
+    className="has-icon-right"
+    href={link}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <OcticonRepo />
+  </a>
+);
+
+const RegularLink = ({ url, title }) => (
+  <a href={url} target="_blank" rel="noopener noreferrer">
+    <OcticonLink /> {title}
+  </a>
+);
 
 export const Sites = () => {
   const { t } = useTranslation();
@@ -39,17 +71,17 @@ export const Sites = () => {
       <ul className="vcard-details mb-3">
         {sites.map(({ url, title, repository }) => (
           <li className="vcard-detail pt-1 css-truncate css-truncate-target">
-            <a href={url} target="_blank" rel="noopener noreferrer">
-              <OcticonLink /> {title}
-            </a>
-            <a
-              className="has-icon-right"
-              href={repository}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <OcticonRepo />
-            </a>
+            {url && repository ? (
+              <>
+                <RegularLink url={url} title={title} />
+                <RepoLink link={repository} />
+              </>
+            ) : (
+              <>
+                {title}
+                {repository && <RepoLink link={repository} />}
+              </>
+            )}
           </li>
         ))}
       </ul>
