@@ -129,3 +129,8 @@ dialog {
     opacity: 1;
   }
 }
+
+.has-icon-right svg {
+  float: none !important;
+  margin-left: 6px !important;
+}

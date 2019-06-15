@@ -10,7 +10,8 @@
       "location": "Augsburg, Bavaria, Germany",
       "mail": "admin@gerritalex.de",
       "contact-dialog-1": "Choose a channel",
-      "software-engineer": "Software Engineer"
+      "software-engineer": "Software Engineer",
+      "sites-title": "Author of"
     },
     "cv": {
       "achievements": "Achievements",
@@ -52,7 +53,8 @@
       "location": "Augsburg, Bayern, Deutschland",
       "mail": "admin@gerritalex.de",
       "contact-dialog-1": "Kontaktaufnahme möglich via...",
-      "software-engineer": "Softwareentwickler"
+      "software-engineer": "Softwareentwickler",
+      "sites-title": "Autor von"
     },
     "cv": {
       "achievements": "Erfolge",

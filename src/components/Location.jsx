@@ -6,13 +6,15 @@ export const Location = () => {
   const { t } = useTranslation();
 
   return (
-    <li
-      itemProp="homeLocation"
-      aria-label="Home location: Augsburg, Bavaria"
-      className="vcard-detail pt-1 css-truncate css-truncate-target"
-    >
-      <OcticonLocation />
-      <span className="p-label">{t('location')}</span>
-    </li>
+    <ul className="vcard-details mb-3">
+      <li
+        itemProp="homeLocation"
+        aria-label="Home location: Augsburg, Bavaria"
+        className="vcard-detail pt-1 css-truncate css-truncate-target"
+      >
+        <OcticonLocation />
+        <span className="p-label">{t('location')}</span>
+      </li>
+    </ul>
   );
 };

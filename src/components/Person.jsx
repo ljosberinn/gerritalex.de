@@ -5,6 +5,7 @@ import { Location } from './Location';
 import { Avatar } from './Avatar';
 import { useTranslation } from 'react-i18next';
 import { OcticonX } from './icons';
+import { Sites } from './Sites';
 
 const body = document.querySelector('body');
 const { style } = body;
@@ -133,9 +134,8 @@ export const Person = ({ name, userName }) => {
               </div>
             </dialog>
             <Biography />
-            <ul className="vcard-details mb-3">
-              <Location />
-            </ul>
+            <Location />
+            <Sites />
           </div>
         </div>
       </div>
