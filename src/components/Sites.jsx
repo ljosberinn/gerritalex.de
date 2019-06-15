@@ -1,5 +1,5 @@
 import React from 'react';
-import { OcticonLink, OcticonRepo } from './icons';
+import { OcticonLink, OcticonRepo, OcticonCode } from './icons';
 import { useTranslation } from 'react-i18next';
 
 const sites = [
@@ -21,15 +21,7 @@ export const Sites = () => {
   return (
     <>
       <div class="d-flex width-full flex-items-center position-relative">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="octicon mr-2 text-gray"
-          width="14"
-          height="16"
-          aria-hidden="true"
-        >
-          <path d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z" />
-        </svg>
+        <OcticonCode />
         <span class="text-bold flex-auto">{t('sites-title')}</span>
       </div>
 
