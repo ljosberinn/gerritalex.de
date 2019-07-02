@@ -63,14 +63,17 @@ export const Sites = () => {
 
   return (
     <>
-      <div class="d-flex width-full flex-items-center position-relative">
+      <div className="d-flex width-full flex-items-center position-relative">
         <OcticonCode />
-        <span class="text-bold flex-auto">{t('sites-title')}</span>
+        <span className="text-bold flex-auto">{t('sites-title')}</span>
       </div>
 
       <ul className="vcard-details mb-3">
         {sites.map(({ url, title, repository }) => (
-          <li className="vcard-detail pt-1 css-truncate css-truncate-target">
+          <li
+            className="vcard-detail pt-1 css-truncate css-truncate-target"
+            key={title}
+          >
             {url && repository ? (
               <>
                 <RegularLink url={url} title={title} />
