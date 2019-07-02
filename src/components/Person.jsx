@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { Biography } from './Biography';
 import { Profiles } from './Profiles';
-import { Location } from './Location';
+import { Meta } from './Meta';
 import { Avatar } from './Avatar';
 import { useTranslation } from 'react-i18next';
 import { OcticonX } from './icons';
@@ -134,7 +134,7 @@ export const Person = ({ name, userName }) => {
               </div>
             </dialog>
             <Biography />
-            <Location />
+            <Meta />
             <Sites />
           </div>
         </div>
