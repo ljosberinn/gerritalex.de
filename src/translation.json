@@ -6,12 +6,17 @@
       "disclaimer-3": "You can find my real profile by clicking the Contact button or jump directly to this sites ",
       "disclaimer-4": "Dismiss",
       "cta-text": "Drop me a message",
-      "biography": "Self taught web-based software engineer, /r/webdev discord moderator",
+      "biography-1": "Frontend / Software Engineer",
+      "biography-2": "Backend enthusiast",
+      "biography-3": "100% self-taught",
+      "biography-4": "/r/webdev discord moderator",
+      "biography-5": "interested in anything Open Source & Cutting Edge Frontend technologies",
       "location": "Augsburg, Bavaria, Germany",
       "mail": "admin@gerritalex.de",
       "contact-dialog-1": "Choose a channel",
-      "software-engineer": "Software Engineer",
-      "sites-title": "Author of"
+      "software-engineer": "Frontend / Software Engineer",
+      "sites-title": "Author of",
+      "aria-phone": "Phone number"
     },
     "cv": {
       "achievements": "Achievements",
@@ -49,12 +54,17 @@
       "disclaimer-3": "Du findest das echte im Kontaktaufnahmebutton, hier geht es direkt zum ",
       "disclaimer-4": "Verbergen",
       "cta-text": "Kontakt aufnehmen",
-      "biography": "Webbasierter Softwareentwickler, Eigenstudium, /r/webdev Discord-Moderator",
+      "biography-1": "Frontend / Software Engineer",
+      "biography-2": "Backend enthusiast",
+      "biography-3": "Eigenstudium",
+      "biography-4": "/r/webdev Discord-Moderator",
+      "biography-5": "interessiert an Open Source & Cutting-Edge-Frontendtechnologie",
       "location": "Augsburg, Bayern, Deutschland",
       "mail": "admin@gerritalex.de",
       "contact-dialog-1": "Kontaktaufnahme möglich via...",
-      "software-engineer": "Softwareentwickler",
-      "sites-title": "Autor von"
+      "software-engineer": "Frontend- / Softwareentwickler",
+      "sites-title": "Autor von",
+      "aria-phone": "Handynummer"
     },
     "cv": {
       "achievements": "Erfolge",
