@@ -9,6 +9,7 @@ import { LinkedIn } from './LinkedIn';
 import { Reddit } from './Reddit';
 import { OcticonX } from './OcticonX';
 import { Mail } from './Mail';
+import { OcticonPhone } from './OcticonPhone';
 
 export {
   OcticonBook,
@@ -19,6 +20,7 @@ export {
   OcticonLink,
   Reddit,
   Twitter,
+  OcticonPhone,
   LinkedIn,
   OcticonX,
   Mail
