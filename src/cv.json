@@ -12,7 +12,9 @@
     "icon": "code",
     "achievements": [],
     "tags": [
-      "PHP 5.2-7.1",
+      "PHP 5.2-7.3.5",
+      "React",
+      "TypeScript",
       "jQuery",
       "MySQL",
       "HTML5",
@@ -34,7 +36,7 @@
     "icon": "code",
     "achievements": [],
     "tags": [
-      "PHP 5.6-7.3",
+      "PHP 5.6-7.3.5",
       "Debugging",
       "HTML5",
       "CSS3",

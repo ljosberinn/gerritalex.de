@@ -3,7 +3,7 @@ import React, { useCallback } from 'react';
 import { LanguageChange } from './LanguageChange';
 import { useTranslation } from 'react-i18next';
 import { achievementLengths } from '../i18n';
-import i18next from 'i18next';
+import { changeLanguage, language } from 'i18next';
 import { CurriculumVitaeItem } from './CurriculumVitaeItem';
 
 /**
@@ -23,13 +23,13 @@ const cv = require('./../cv.json');
 export const CurriculumVitae = () => {
   const { t } = useTranslation('cv');
 
-  const handleLanguageChange = e => i18next.changeLanguage(e.target.value);
+  const handleLanguageChange = e => changeLanguage(e.target.value);
 
   const translatedAchievements = t('achievements');
 
   // translate achievements
   for (const [position, amount] of Object.entries(achievementLengths)) {
-    const index = cv.findIndex(obj => obj.key === position);
+    const index = cv.findIndex(({ key }) => key === position);
 
     for (let i = 1; i <= amount; ++i) {
       // usage of i here instead of push because cv isnt redefined on language change
@@ -63,7 +63,7 @@ export const CurriculumVitae = () => {
   return (
     <div className="mt-4">
       <LanguageChange
-        currentLanguage={i18next.language}
+        currentLanguage={language}
         handleChange={handleLanguageChange}
       />
       <h2 className="f4 mb-2 text-normal">Curriculum Vitae</h2>
@@ -85,7 +85,7 @@ export const CurriculumVitae = () => {
             employmentLocation,
             employmentTitle,
             icon,
-            language: i18next.language,
+            language,
             achievements,
             url,
             tags,

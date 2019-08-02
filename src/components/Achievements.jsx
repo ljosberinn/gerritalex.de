@@ -5,7 +5,7 @@ const Stars = ({ achievements }) =>
   achievements.length > 0 && (
     <span className="pinned-item-meta muted-link">
       <OcticonStar />
-      {` ${achievements.length}`}
+      {` ${achievements.length - 1}`}
     </span>
   );
 
