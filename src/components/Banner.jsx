@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { OcticonX } from './icons';
-import { language } from 'i18next';
+import i18next from 'i18next';
 
 export const Banner = ({ repoLink }) => {
   const [isVisible, setIsVisible] = useState(true);
@@ -26,7 +26,7 @@ export const Banner = ({ repoLink }) => {
             <br />
             {t('disclaimer-3')}{' '}
             <a href={repoLink} target="_blank" rel="noreferrer noopener">
-              {language.indexOf('de') > -1 ? 'Repo' : 'repo'}
+              {i18next.language.indexOf('de') > -1 ? 'Repo' : 'repo'}
             </a>
             .
           </p>
