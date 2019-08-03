@@ -23,7 +23,7 @@ export const DynamicContent = () => {
   ] = useState(DEFAULT_STATE);
 
   const getData = useCallback(async () => {
-    const response = await fetch('html.json');
+    const response = await fetch('//cdn.gerritalex.de/gerritalex.de/html.json');
     const json = await response.json();
 
     setData(json);

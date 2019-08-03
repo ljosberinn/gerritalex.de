@@ -14,7 +14,7 @@ const userName = 'ljosberinn';
 const repoLink = `https://github.com/${userName}/gerritalex.de`;
 
 (async () => {
-  const response = await fetch('/updater.php');
+  const response = await fetch('//cdn.gerritalex.de/gerritalex.de/updater.php');
   const { success, msg } = await response.json();
 
   if (success && msg === 'Update successful.') {

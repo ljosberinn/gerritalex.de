@@ -54,7 +54,9 @@ export const DynamicSubNav = ({ userName }) => {
   const [{ subNavStats }, setStats] = useState(DEFAULT_STATE);
 
   const getStats = useCallback(async () => {
-    const response = await fetch('/stats.json');
+    const response = await fetch(
+      '//cdn.gerritalex.de/gerritalex.de/stats.json'
+    );
     const json = await response.json();
 
     setStats(json);
