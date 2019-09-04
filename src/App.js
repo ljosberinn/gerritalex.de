@@ -1,13 +1,15 @@
 import React from 'react';
 import './assets/App.scss';
 
-import { Header } from './components/Header';
-import { Footer } from './components/Footer';
-import { Banner } from './components/Banner';
-import { Person } from './components/Person';
-import { DynamicContent } from './components/DynamicContent';
-import { DynamicSubNav } from './components/DynamicSubNav';
-import { CurriculumVitae } from './components/CurriculumVitae';
+import {
+  Header,
+  Footer,
+  Banner,
+  Person,
+  DynamicContent,
+  DynamicSubNav,
+  CurriculumVitae
+} from './components';
 
 const name = 'Gerrit Alex';
 const userName = 'ljosberinn';

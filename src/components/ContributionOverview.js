@@ -1,7 +1,7 @@
 import React from 'react';
-import { ContributionChart } from './ContributionChart';
+import { ContributionChart } from '.';
 
-export const ContributionOverview = ({ amount, history }) => (
+const ContributionOverview = ({ amount, history }) => (
   <div className="position-relative">
     <h2 className="f4 text-normal mb-2">
       {amount} contributions in the last year
@@ -40,3 +40,5 @@ export const ContributionOverview = ({ amount, history }) => (
     </div>
   </div>
 );
+
+export default ContributionOverview;

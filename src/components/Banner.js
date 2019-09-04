@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { OcticonX } from './icons';
 import i18next from 'i18next';
 
-export const Banner = ({ repoLink }) => {
+const Banner = ({ repoLink }) => {
   const [isVisible, setIsVisible] = useState(true);
   const { t } = useTranslation();
 
@@ -35,3 +35,5 @@ export const Banner = ({ repoLink }) => {
     </div>
   ) : null;
 };
+
+export default Banner;

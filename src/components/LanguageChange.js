@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const LanguageChange = ({ currentLanguage, handleChange }) => {
+const LanguageChange = ({ currentLanguage, handleChange }) => {
   const languages =
     currentLanguage.indexOf('-') > -1 ? ['en-US', 'de-DE'] : ['en', 'de'];
 
@@ -31,3 +31,5 @@ export const LanguageChange = ({ currentLanguage, handleChange }) => {
     </div>
   );
 };
+
+export default LanguageChange;

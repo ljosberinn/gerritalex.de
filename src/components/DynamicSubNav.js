@@ -50,7 +50,7 @@ const DEFAULT_STATE = {
   subNavStats: [0, 0, 0, 0, 0]
 };
 
-export const DynamicSubNav = ({ userName }) => {
+const DynamicSubNav = ({ userName }) => {
   const [{ subNavStats }, setStats] = useState(DEFAULT_STATE);
 
   const getStats = useCallback(async () => {
@@ -99,3 +99,4 @@ export const DynamicSubNav = ({ userName }) => {
     </div>
   );
 };
+export default DynamicSubNav;

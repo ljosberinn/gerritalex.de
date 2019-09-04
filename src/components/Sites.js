@@ -58,7 +58,7 @@ const RegularLink = ({ url, title }) => (
   </a>
 );
 
-export const Sites = () => {
+const Sites = () => {
   const { t } = useTranslation();
 
   return (
@@ -91,3 +91,5 @@ export const Sites = () => {
     </>
   );
 };
+
+export default Sites;

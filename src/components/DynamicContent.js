@@ -1,7 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { ContributionOverview } from './ContributionOverview';
-import { ContributionActivity } from './ContributionActivity';
-import { Repositories } from './Repositories';
+import { ContributionOverview, ContributionActivity, Repositories } from '.';
 
 const DEFAULT_STATE = {
   contributionHistory: '',
@@ -11,7 +9,7 @@ const DEFAULT_STATE = {
   subNavStats: [0, 0, 0, 0, 0]
 };
 
-export const DynamicContent = () => {
+const DynamicContent = () => {
   const [
     {
       contributionHistory,
@@ -50,3 +48,5 @@ export const DynamicContent = () => {
     </>
   );
 };
+
+export default DynamicContent;

@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 
-export const Footer = memo(() => (
+const Footer = memo(() => (
   <div
     className="footer container-lg width-full p-responsive"
     role="contentinfo"
@@ -15,3 +15,5 @@ export const Footer = memo(() => (
     <div className="d-flex flex-justify-center pb-6" />
   </div>
 ));
+
+export default Footer;

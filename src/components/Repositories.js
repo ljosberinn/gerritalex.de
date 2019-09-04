@@ -7,7 +7,7 @@ import React from 'react';
 const getClasses = withSpinner =>
   ['pinned-items-spinner', withSpinner ? 'spinner' : null].join(' ').trim();
 
-export const Repositories = ({ data }) => (
+const Repositories = ({ data }) => (
   <div className="mt-4">
     <h2 className="f4 mb-2 text-normal">
       Pinned Repositories
@@ -24,3 +24,5 @@ export const Repositories = ({ data }) => (
     />
   </div>
 );
+
+export default Repositories;

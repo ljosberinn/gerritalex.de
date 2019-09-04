@@ -24,6 +24,13 @@
       "npm",
       "PHPStorm",
       "Sentry"
+    ],
+    "talks": [
+      "ES2015+",
+      "Jenkins",
+      "Component Based Software Engineering",
+      "Chrome Developer Tools Deep Dive",
+      "React Crashkurs"
     ]
   },
   {
@@ -60,7 +67,8 @@
       "VSCode",
       "several APIs",
       "Node.js basics"
-    ]
+    ],
+    "talks": []
   },
   {
     "key": "walch",
@@ -71,7 +79,8 @@
     "dates": { "from": "2015-09-01", "to": "2018-07-19" },
     "icon": "book",
     "achievements": [],
-    "tags": ["Print & digital design", "Insight into printing processes"]
+    "tags": ["Print & digital design", "Insight into printing processes"],
+    "talks": []
   },
   {
     "key": "uni-augsbug",
@@ -85,7 +94,8 @@
     },
     "icon": "book",
     "achievements": [],
-    "tags": []
+    "tags": [],
+    "talks": []
   },
   {
     "key": "uni-trier",
@@ -109,7 +119,8 @@
       "Buddhism",
       "Middle high german",
       "Old high german"
-    ]
+    ],
+    "talks": []
   },
   {
     "key": "abitur",
@@ -123,7 +134,8 @@
     },
     "icon": "book",
     "achievements": [],
-    "tags": ["English", "Economics", "Biology", "German", "Mathematics"]
+    "tags": ["English", "Economics", "Biology", "German", "Mathematics"],
+    "talks": []
   },
   {
     "key": "birth",
@@ -137,6 +149,7 @@
     },
     "icon": "star",
     "achievements": [],
-    "tags": []
+    "tags": [],
+    "talks": []
   }
 ]

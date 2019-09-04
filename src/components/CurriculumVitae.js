@@ -1,10 +1,9 @@
 import React, { useCallback } from 'react';
 
-import { LanguageChange } from './LanguageChange';
 import { useTranslation } from 'react-i18next';
 import { achievementLengths } from '../i18n';
 import i18next from 'i18next';
-import { CurriculumVitaeItem } from './CurriculumVitaeItem';
+import { CurriculumVitaeItem, LanguageChange } from '.';
 
 /**
  *
@@ -20,7 +19,7 @@ const TRANSLATE_INDICATOR = 't.';
 
 const cv = require('./../cv.json');
 
-export const CurriculumVitae = () => {
+const CurriculumVitae = () => {
   const { t } = useTranslation('cv');
 
   const handleLanguageChange = e => i18next.changeLanguage(e.target.value);
@@ -69,7 +68,15 @@ export const CurriculumVitae = () => {
       <h2 className="f4 mb-2 text-normal">Curriculum Vitae</h2>
       <ol className="pinned-items-list mb-4">
         {cv.map((dataset, key) => {
-          const { url, dates, location, icon, achievements, tags } = dataset;
+          const {
+            url,
+            dates,
+            location,
+            icon,
+            achievements,
+            tags,
+            talks
+          } = dataset;
           const { employer, position } = translateCVDataset(dataset);
 
           const employmentLocation = getEmploymentLocationText(
@@ -92,6 +99,7 @@ export const CurriculumVitae = () => {
             dates,
             translatedAchievements,
             position,
+            talks,
             key
           };
 
@@ -101,3 +109,5 @@ export const CurriculumVitae = () => {
     </div>
   );
 };
+
+export default CurriculumVitae;
