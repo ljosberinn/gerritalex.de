@@ -134,3 +134,17 @@ dialog {
   float: right !important;
   margin-left: 6px !important;
 }
+
+@media (min-width: 768px) {
+  .pr-md-3 {
+    padding-left: 16px !important;
+    padding-right: 0 !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .pr-xl-6 {
+    padding-left: 40px !important;
+    padding-right: 0 !important;
+  }
+}

@@ -38,7 +38,6 @@ const App = () => {
       <main className="application-main">
         <div className="container-xl clearfix px-3 mt-4">
           <Banner repoLink={repoLink} />
-          <Person name={name} userName={userName} />
           <div className="col-lg-9 col-md-8 col-12 float-md-left pl-md-2">
             <DynamicSubNav userName={userName} />
             <div className="position-relative">
@@ -46,6 +45,7 @@ const App = () => {
               <DynamicContent />
             </div>
           </div>
+          <Person name={name} userName={userName} />
         </div>
       </main>
       <Footer />
