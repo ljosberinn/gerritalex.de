@@ -36,7 +36,7 @@ const ANCHOR_CLASSES = ['UnderlineNav-item', 'mr-0', 'mr-md-1', 'mr-lg-3'];
  */
 const createHref = (userName, title) =>
   `https://github.com/${userName}/${
-    title !== 'Overview' ? title.toLowerCase() : ''
+    title !== 'Overview' ? `?tab=${title.toLowerCase()}` : ''
   }`;
 
 /**
