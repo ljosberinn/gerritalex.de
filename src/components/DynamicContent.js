@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { ContributionOverview, ContributionActivity, Repositories } from '.';
 
 const DEFAULT_STATE = {
-  contributionHistory: '',
-  contributionAmount: 0,
+  contributionHistory: undefined,
+  contributionAmount: undefined,
   contributionActivity: undefined,
   repositories: '',
   subNavStats: [0, 0, 0, 0, 0]
