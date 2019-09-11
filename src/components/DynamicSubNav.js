@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const navTypes = [
   {
@@ -53,18 +53,18 @@ const DEFAULT_STATE = {
 const DynamicSubNav = ({ userName }) => {
   const [{ subNavStats }, setStats] = useState(DEFAULT_STATE);
 
-  const getStats = useCallback(async () => {
-    const response = await fetch(
-      '//cdn.gerritalex.de/gerritalex.de/stats.json'
-    );
-    const json = await response.json();
-
-    setStats(json);
-  }, []);
-
   useEffect(() => {
+    const getStats = async () => {
+      const response = await fetch(
+        '//cdn.gerritalex.de/gerritalex.de/stats.json'
+      );
+      const json = await response.json();
+
+      setStats(json);
+    };
+
     getStats();
-  }, [getStats]);
+  }, []);
 
   return (
     <div

@@ -1,9 +1,5 @@
 import React from 'react';
 
-/**
- *
- * @param {boolean} withSpinner
- */
 const getClasses = withSpinner =>
   ['pinned-items-spinner', withSpinner ? 'spinner' : null].join(' ').trim();
 

@@ -13,7 +13,7 @@ const Talks = ({ data }) => {
   return (
     data.length > 0 && (
       <>
-        <p class="pinned-item-desc mt-2 text-gray">{t('talks-held')}:</p>
+        <p className="pinned-item-desc mt-2 text-gray">{t('talks-held')}:</p>
         <p className="mb-0 f6 text-gray d-inline-flex flex-wrap flex-items-center f6 my-1">
           {data.map(text => (
             <Talk text={text} key={text} />

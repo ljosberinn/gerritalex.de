@@ -1,10 +1,10 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ContributionOverview, ContributionActivity, Repositories } from '.';
 
 const DEFAULT_STATE = {
   contributionHistory: '',
   contributionAmount: 0,
-  contributionActivity: '',
+  contributionActivity: undefined,
   repositories: '',
   subNavStats: [0, 0, 0, 0, 0]
 };
@@ -20,16 +20,18 @@ const DynamicContent = () => {
     setData
   ] = useState(DEFAULT_STATE);
 
-  const getData = useCallback(async () => {
-    const response = await fetch('//cdn.gerritalex.de/gerritalex.de/html.json');
-    const json = await response.json();
-
-    setData(json);
-  }, []);
-
   useEffect(() => {
+    const getData = async () => {
+      const response = await fetch(
+        '//cdn.gerritalex.de/gerritalex.de/html.json'
+      );
+      const json = await response.json();
+
+      setData(json);
+    };
+
     getData();
-  }, [getData]);
+  }, []);
 
   return (
     <>
@@ -37,11 +39,15 @@ const DynamicContent = () => {
       <div className="mt-4 position-relative">
         <div className="d-flex">
           <div className="col-12">
-            <ContributionOverview
-              amount={contributionAmount}
-              history={contributionHistory}
-            />
-            <ContributionActivity data={contributionActivity} />
+            {contributionAmount && contributionHistory && (
+              <ContributionOverview
+                amount={contributionAmount}
+                history={contributionHistory}
+              />
+            )}
+            {contributionActivity && (
+              <ContributionActivity data={contributionActivity} />
+            )}
           </div>
         </div>
       </div>

@@ -13,7 +13,7 @@ const Tags = ({ tags }) => {
   return (
     tags.length > 0 && (
       <>
-        <p class="pinned-item-desc mt-2 text-gray">{t('tools-used')}:</p>
+        <p className="pinned-item-desc mt-2 text-gray">{t('tools-used')}:</p>
         <p className="mb-0 f6 text-gray d-inline-flex flex-wrap flex-items-center f6 my-1">
           {tags.map((text, key) => (
             <Tag text={text} key={key} />
