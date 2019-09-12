@@ -39,7 +39,6 @@ const App = () => {
         <div className="container-xl clearfix px-3 mt-4">
           <Banner repoLink={repoLink} />
           <div className="col-lg-9 col-md-8 col-12 float-md-left pl-md-2">
-            <DynamicSubNav userName={userName} />
             <div className="position-relative">
               <CurriculumVitae />
               <DynamicContent />
