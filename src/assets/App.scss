@@ -100,6 +100,7 @@ dialog {
   width: 448px;
   z-index: 999;
   padding: 0;
+  display: none;
 
   &::backdrop {
     background: rgba(27, 31, 35, 0.5);
