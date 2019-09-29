@@ -23,7 +23,8 @@
       "composer",
       "npm",
       "PHPStorm",
-      "Sentry"
+      "Sentry",
+      "Docker"
     ],
     "talks": [
       "ES2015+",
@@ -50,7 +51,7 @@
       "SCSS",
       "jQuery",
       "Vanilla JavaScript",
-      "ES2015+",
+      "ES6+",
       "React",
       "TypeScript",
       "MySQL",
@@ -66,7 +67,9 @@
       "Atom",
       "VSCode",
       "several APIs",
-      "Node.js basics"
+      "Node.js",
+      "Express",
+      "Docker"
     ],
     "talks": []
   },

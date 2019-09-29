@@ -7,7 +7,6 @@ import {
   Banner,
   Person,
   DynamicContent,
-  DynamicSubNav,
   CurriculumVitae
 } from './components';
 
