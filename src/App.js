@@ -1,13 +1,21 @@
 import React, { useEffect } from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect
+} from 'react-router-dom';
 import './assets/App.scss';
-
 import {
   Header,
   Footer,
   Banner,
   Person,
   DynamicContent,
-  CurriculumVitae
+  Concerts,
+  CurriculumVitae,
+  Navigation,
+  LanguageChange
 } from './components';
 
 const name = 'Gerrit Alex';
@@ -38,10 +46,27 @@ const App = () => {
         <div className="container-xl clearfix px-3 mt-4">
           <Banner repoLink={repoLink} />
           <div className="col-lg-9 col-md-8 col-12 float-md-left pl-md-2">
-            <div className="position-relative">
-              <CurriculumVitae />
-              <DynamicContent />
-            </div>
+            <LanguageChange />
+            <Router>
+              <Navigation />
+
+              <div className="position-relative">
+                <Switch>
+                  <Route path="/" exact>
+                    <CurriculumVitae />
+                    <DynamicContent />
+                  </Route>
+
+                  <Route path="/concerts" exact>
+                    <Concerts />
+                  </Route>
+
+                  <Route>
+                    <Redirect to="/" />
+                  </Route>
+                </Switch>
+              </div>
+            </Router>
           </div>
           <Person name={name} userName={userName} />
         </div>

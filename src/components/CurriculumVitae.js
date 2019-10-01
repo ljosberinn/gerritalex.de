@@ -22,8 +22,6 @@ const cv = require('./../cv.json');
 const CurriculumVitae = () => {
   const { t } = useTranslation('cv');
 
-  const handleLanguageChange = e => i18next.changeLanguage(e.target.value);
-
   const translatedAchievements = t('achievements');
 
   // translate achievements
@@ -61,10 +59,6 @@ const CurriculumVitae = () => {
 
   return (
     <div className="mt-4">
-      <LanguageChange
-        currentLanguage={i18next.language}
-        handleChange={handleLanguageChange}
-      />
       <h2 className="f4 mb-2 text-normal">Curriculum Vitae</h2>
       <ol className="pinned-items-list mb-4">
         {cv.map((dataset, key) => {
