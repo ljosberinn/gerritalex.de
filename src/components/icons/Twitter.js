@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Twitter = () => (
+const Twitter = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className="octicon"
@@ -15,3 +15,5 @@ export const Twitter = () => (
     />
   </svg>
 );
+
+export default Twitter;

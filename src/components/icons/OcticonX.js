@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const OcticonX = () => (
+const OcticonX = () => (
   <svg
     className="octicon octicon-x"
     viewBox="0 0 12 16"
@@ -15,3 +15,5 @@ export const OcticonX = () => (
     />
   </svg>
 );
+
+export default OcticonX;
