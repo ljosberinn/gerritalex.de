@@ -58,49 +58,46 @@ const CurriculumVitae = () => {
   );
 
   return (
-    <div className="mt-4">
-      <h2 className="f4 mb-2 text-normal">Curriculum Vitae</h2>
-      <ol className="pinned-items-list mb-4">
-        {cv.map((dataset, key) => {
-          const {
-            url,
-            dates,
-            location,
-            icon,
-            achievements,
-            tags,
-            talks
-          } = dataset;
-          const { employer, position } = translateCVDataset(dataset);
+    <ol className="pinned-items-list mb-4">
+      {cv.map((dataset, key) => {
+        const {
+          url,
+          dates,
+          location,
+          icon,
+          achievements,
+          tags,
+          talks
+        } = dataset;
+        const { employer, position } = translateCVDataset(dataset);
 
-          const employmentLocation = getEmploymentLocationText(
-            employer,
-            location
-          );
+        const employmentLocation = getEmploymentLocationText(
+          employer,
+          location
+        );
 
-          const employmentTitle = `${position}${
-            employer ? ` at ${employmentLocation}` : ''
-          }`;
+        const employmentTitle = `${position}${
+          employer ? ` at ${employmentLocation}` : ''
+        }`;
 
-          const itemProps = {
-            employmentLocation,
-            employmentTitle,
-            icon,
-            language: i18next.language,
-            achievements,
-            url,
-            tags,
-            dates,
-            translatedAchievements,
-            position,
-            talks,
-            key
-          };
+        const itemProps = {
+          employmentLocation,
+          employmentTitle,
+          icon,
+          language: i18next.language,
+          achievements,
+          url,
+          tags,
+          dates,
+          translatedAchievements,
+          position,
+          talks,
+          key
+        };
 
-          return <CurriculumVitaeItem {...itemProps} />;
-        })}
-      </ol>
-    </div>
+        return <CurriculumVitaeItem {...itemProps} />;
+      })}
+    </ol>
   );
 };
 

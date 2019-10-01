@@ -164,3 +164,17 @@ table tbody tr:hover {
     flex-direction: column-reverse;
   }
 }
+
+.user-profile-nav {
+  position: sticky !important;
+  z-index: 1;
+}
+
+.albums {
+  display: flex;
+  flex-wrap: wrap;
+
+  > div {
+    flex: 1 0 25%;
+  }
+}

@@ -1,6 +1,6 @@
 import React, { useState, memo } from 'react';
 import { useTranslation } from 'react-i18next';
-import OcticonSearch from '../components/icons/OcticonSearch.js';
+import { OcticonSearch } from '../components/icons';
 
 const concerts = require('../concerts.json')
   .reduce((carry, { artist, venue, date, concert }) => {
@@ -114,70 +114,67 @@ const ConcertPage = () => {
   );
 
   return (
-    <div className="mt-4">
-      <table className="files">
-        <thead>
-          <tr>
-            <th>{t('artist')}</th>
-            <th className="age">{t('date')}</th>
-            <th>{t('venue')}</th>
-            <th>{t('concert')}</th>
-          </tr>
-          <tr>
-            <td colSpan={4} className="">
-              <div className="subnav-search pr-2">
-                <input
-                  className="form-control input-block subnav-search-input"
-                  type="search"
-                  placeholder="Filter artists..."
-                  autoFocus
-                  onChange={handleChange}
-                  autoComplete="off"
-                  spellCheck="false"
-                />
-                <OcticonSearch />
-              </div>
-            </td>
-          </tr>
-        </thead>
-        <tbody>
-          {filteredConcerts.map(({ shows, artist }) =>
-            shows.map(({ date, venue, concert }) => (
-              <Row
-                {...{
-                  date,
-                  artist,
-                  venue,
-                  concert,
-                  isFirstShow:
-                    shows.findIndex(show => show.date === date) === 0,
-                  amountOfShows: shows.length
-                }}
-                key={`${date}-${artist}`}
+    <table className="files">
+      <thead>
+        <tr>
+          <th>{t('artist')}</th>
+          <th className="age">{t('date')}</th>
+          <th>{t('venue')}</th>
+          <th>{t('concert')}</th>
+        </tr>
+        <tr>
+          <td colSpan={4} className="">
+            <div className="subnav-search pr-2">
+              <input
+                className="form-control input-block subnav-search-input"
+                type="search"
+                placeholder="Filter artists..."
+                autoFocus
+                onChange={handleChange}
+                autoComplete="off"
+                spellCheck="false"
               />
-            ))
-          )}
-        </tbody>
-        <tfoot>
-          <tr>
-            <td colSpan={2}>
-              {[
-                filteredConcerts.length,
-                filteredConcerts.length === 1
-                  ? t('artist').toLowerCase()
-                  : t('artist-plural')
-              ].join(' ')}
-            </td>
-            <td colSpan={2}>
-              {[
-                amountOfShows,
-                amountOfShows === 1 ? t('show-single') : t('show-plural')
-              ].join(' ')}
-            </td>
-          </tr>
-        </tfoot>
-      </table>
-    </div>
+              <OcticonSearch />
+            </div>
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        {filteredConcerts.map(({ shows, artist }) =>
+          shows.map(({ date, venue, concert }) => (
+            <Row
+              {...{
+                date,
+                artist,
+                venue,
+                concert,
+                isFirstShow: shows.findIndex(show => show.date === date) === 0,
+                amountOfShows: shows.length
+              }}
+              key={`${date}-${artist}`}
+            />
+          ))
+        )}
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colSpan={2}>
+            {[
+              filteredConcerts.length,
+              filteredConcerts.length === 1
+                ? t('artist').toLowerCase()
+                : t('artist-plural')
+            ].join(' ')}
+          </td>
+          <td colSpan={2}>
+            {[
+              amountOfShows,
+              amountOfShows === 1 ? t('show-single') : t('show-plural')
+            ].join(' ')}
+          </td>
+        </tr>
+      </tfoot>
+    </table>
   );
 };
 

@@ -23,6 +23,7 @@ const Loader = () => null;
 
 const LandingPage = lazy(() => import('./pages/LandingPage'));
 const ConcertPage = lazy(() => import('./pages/ConcertPage'));
+const MusicPage = lazy(() => import('./pages/MusicPage'));
 
 const App = () => {
   useEffect(() => {
@@ -53,7 +54,7 @@ const App = () => {
               <Router>
                 <Navigation />
 
-                <div className="position-relative">
+                <div className="position-relative mt-4">
                   <Suspense fallback={<Loader />}>
                     <Switch>
                       <Route path="/" exact>
@@ -66,6 +67,10 @@ const App = () => {
 
                       <Route>
                         <Redirect to="/" />
+                      </Route>
+
+                      <Route path="/music" exact>
+                        <MusicPage />
                       </Route>
                     </Switch>
                   </Suspense>

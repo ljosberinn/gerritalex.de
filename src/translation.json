@@ -50,7 +50,8 @@
     },
     "navigation": {
       "cv": "CV",
-      "concerts": "Concerts I attended"
+      "concerts": "Concerts I attended",
+      "music": "Music I own"
     },
     "concerts": {
       "artist": "Artist",
@@ -114,7 +115,8 @@
     },
     "navigation": {
       "cv": "Lebenslauf",
-      "concerts": "Besuchte Konzerte"
+      "concerts": "Besuchte Konzerte",
+      "music": "Gesammelte Alben"
     },
     "concerts": {
       "artist": "Interpret",
