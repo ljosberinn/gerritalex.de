@@ -2,7 +2,7 @@
   "en-US": {
     "translation": {
       "disclaimer-1": "Disclaimer",
-      "disclaimer-2": "This is a reactified and enhanced GitHub profile.",
+      "disclaimer-2": "This is a reactified and heavily customized GitHub profile.",
       "disclaimer-3": "You can find my real profile by clicking the Contact button or jump directly to this sites ",
       "disclaimer-4": "Dismiss",
       "cta-text": "Drop me a message",
@@ -66,7 +66,7 @@
   "de-DE": {
     "translation": {
       "disclaimer-1": "Hinweis",
-      "disclaimer-2": "Dies ist ein reactifiziertes und erweitertes GitHub-Profil.",
+      "disclaimer-2": "Dies ist ein reactifiziertes und stark angepasstes GitHub-Profil.",
       "disclaimer-3": "Du findest das echte im Kontaktaufnahmebutton, hier geht es direkt zum ",
       "disclaimer-4": "Verbergen",
       "cta-text": "Kontakt aufnehmen",
