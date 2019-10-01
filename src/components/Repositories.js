@@ -15,7 +15,7 @@ const Repositories = ({ data }) => (
       />
     </h2>
     <ol
-      className="pinned-items-list mb-4"
+      className="pinned-items-list mb-4 gutter-condensed"
       dangerouslySetInnerHTML={{ __html: data }}
     />
   </div>
