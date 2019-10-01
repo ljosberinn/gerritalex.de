@@ -36,7 +36,7 @@ const DynamicContent = () => {
   return (
     <>
       <Repositories data={repositories} />
-      <div className="mt-4 position-relative">
+      <div className="position-relative">
         <div className="d-flex">
           <div className="col-12">
             {contributionAmount && contributionHistory && (

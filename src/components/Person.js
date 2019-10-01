@@ -65,74 +65,56 @@ const Person = ({ name, userName }) => {
       itemScope
       itemType="http://schema.org/Person"
     >
-      <div className="user-profile-sticky-bar">
-        <div className="user-profile-mini-vcard d-table">
-          <span className="user-profile-mini-avatar d-table-cell v-align-middle lh-condensed-ultra pr-2">
-            <img
-              className="rounded-1"
-              height="32"
-              width="32"
-              alt="@ljosberinn"
-              src="https://avatars0.githubusercontent.com/u/29307652?s=180;v=4"
-            />
-          </span>
-          <span className="d-table-cell v-align-middle lh-condensed">
-            <strong>{userName}</strong>
-          </span>
+      <Avatar userName={userName} />
+      <div className="float-left col-12 pl-2 pl-md-0">
+        <div className="vcard-names-container pt-1 pt-md-3 pb-1 pb-md-3">
+          <h1 className="vcard-names">
+            <span
+              className="p-name vcard-fullname d-block overflow-hidden"
+              itemProp="name"
+            >
+              {name}
+            </span>
+            <span
+              className="p-nickname vcard-username d-block"
+              itemProp="additionalName"
+            >
+              {userName}
+            </span>
+          </h1>
         </div>
-      </div>
-      <div className="clearfix mb-2">
-        <Avatar userName={userName} />
-        <div className="float-left col-12 pl-2 pl-md-0">
-          <div className="vcard-names-container pt-1 pt-md-3 pb-1 pb-md-3">
-            <h1 className="vcard-names">
-              <span
-                className="p-name vcard-fullname d-block overflow-hidden"
-                itemProp="name"
+        <div className="d-md-block">
+          <button
+            name="button"
+            type="button"
+            className="btn btn-primary btn-block mt-2 mb-3"
+            onClick={handleClick}
+          >
+            {t('cta-text')}
+          </button>
+          <dialog
+            ref={dialog}
+            className="anim-fade-in fast Box Box--overlay flex-column"
+            aria-modal="true"
+          >
+            <div className="Box-header">
+              <button
+                className="Box-btn-octicon btn-octicon float-right"
+                type="button"
+                aria-label="Close dialog"
+                onClick={handleDialogClose}
               >
-                {name}
-              </span>
-              <span
-                className="p-nickname vcard-username d-block"
-                itemProp="additionalName"
-              >
-                {userName}
-              </span>
-            </h1>
-          </div>
-          <div className="d-md-block">
-            <button
-              name="button"
-              type="button"
-              className="btn btn-primary btn-block mt-2 mb-3"
-              onClick={handleClick}
-            >
-              {t('cta-text')}
-            </button>
-            <dialog
-              ref={dialog}
-              className="anim-fade-in fast Box Box--overlay flex-column"
-              aria-modal="true"
-            >
-              <div className="Box-header">
-                <button
-                  className="Box-btn-octicon btn-octicon float-right"
-                  type="button"
-                  aria-label="Close dialog"
-                  onClick={handleDialogClose}
-                >
-                  <OcticonX />
-                </button>
-                <h3 className="mb-2">{t('contact-dialog-1')}</h3>
-                <ul className="vcard-details text-gray mb-0">
-                  <Profiles mail={t('mail')} />
-                </ul>
-              </div>
-            </dialog>
-            <Biography />
-            <Meta />
-            <Sites />
-          </div>
+                <OcticonX />
+              </button>
+              <h3 className="mb-2">{t('contact-dialog-1')}</h3>
+              <ul className="vcard-details text-gray mb-0">
+                <Profiles mail={t('mail')} />
+              </ul>
+            </div>
+          </dialog>
+          <Biography />
+          <Meta />
+          <Sites />
         </div>
       </div>
     </div>

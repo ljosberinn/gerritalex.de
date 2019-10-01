@@ -8,7 +8,7 @@ const ContributionOverview = ({ amount, history }) => (
     </h2>
 
     <div className="border border-gray-dark py-2 graph-before-activity-overview">
-      <div className=" mx-3 d-flex flex-column flex-items-end overflow-hidden pt-1 is-graph-loading graph-canvas calendar-graph height-full text-center">
+      <div className="mx-3 d-flex flex-column flex-items-end overflow-hidden pt-1 is-graph-loading graph-canvas calendar-graph height-full text-center">
         <ContributionChart svg={history} />
       </div>
       <div className="contrib-footer clearfix mt-1 mx-3 px-3 pb-1">
