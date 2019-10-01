@@ -1,13 +1,16 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const routes = [
-  { to: '/', title: 'CV' },
-  { to: '/concerts', title: 'Concerts I attended' }
+  { to: '/', title: 'cv' },
+  { to: '/concerts', title: 'concerts' }
   //{ to: '/music', title: 'Music I own' }
 ];
 
 const Navigation = () => {
+  const { t } = useTranslation('navigation');
+
   return (
     <div
       className="UnderlineNav width-full user-profile-nav top-0"
@@ -22,7 +25,7 @@ const Navigation = () => {
             exact
             key={to}
           >
-            {title}
+            {t(title)}
           </NavLink>
         ))}
       </nav>

@@ -22,7 +22,6 @@ import Tags from './Tags';
 import Time from './Time';
 import Talks from './Talks';
 import Navigation from './Navigation';
-import Concerts from './Concerts';
 
 export {
   Achievements,
@@ -48,6 +47,5 @@ export {
   Tags,
   Time,
   Status,
-  Navigation,
-  Concerts
+  Navigation
 };
