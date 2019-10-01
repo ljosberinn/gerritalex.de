@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, lazy, Suspense } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,16 +11,18 @@ import {
   Footer,
   Banner,
   Person,
-  DynamicContent,
-  Concerts,
-  CurriculumVitae,
   Navigation,
   LanguageChange
 } from './components';
 
 const name = 'Gerrit Alex';
 const userName = 'ljosberinn';
-const repoLink = `https://github.com/${userName}/gerritalex.de`;
+const repoLink = `//github.com/${userName}/gerritalex.de`;
+
+const Loader = () => null;
+
+const LandingPage = lazy(() => import('./pages/LandingPage'));
+const ConcertPage = lazy(() => import('./pages/ConcertPage'));
 
 const App = () => {
   useEffect(() => {
@@ -51,20 +53,21 @@ const App = () => {
               <Navigation />
 
               <div className="position-relative">
-                <Switch>
-                  <Route path="/" exact>
-                    <CurriculumVitae />
-                    <DynamicContent />
-                  </Route>
+                <Suspense fallback={<Loader />}>
+                  <Switch>
+                    <Route path="/" exact>
+                      <LandingPage />
+                    </Route>
 
-                  <Route path="/concerts" exact>
-                    <Concerts />
-                  </Route>
+                    <Route path="/concerts" exact>
+                      <ConcertPage />
+                    </Route>
 
-                  <Route>
-                    <Redirect to="/" />
-                  </Route>
-                </Switch>
+                    <Route>
+                      <Redirect to="/" />
+                    </Route>
+                  </Switch>
+                </Suspense>
               </div>
             </Router>
           </div>

@@ -47,6 +47,20 @@
       "uni-trier-3": "Poster design for Philosophy student council events",
       "abitur-title": "Graduation",
       "birth-title": "Birth"
+    },
+    "navigation": {
+      "cv": "CV",
+      "concerts": "Concerts I attended"
+    },
+    "concerts": {
+      "artist": "Artist",
+      "venue": "Venue",
+      "date": "Date",
+      "concert": "Concert",
+      "artist-single": "artist",
+      "artist-plural": "artists",
+      "show-single": "show",
+      "show-plural": "shows"
     }
   },
   "de-DE": {
@@ -97,6 +111,19 @@
       "uni-trier-3": "Gestaltung diverser Poster für studentische Veranstaltungen des Fachschaftsrates Philosophie",
       "abitur-title": "Abitur",
       "birth-title": "Geburt"
+    },
+    "navigation": {
+      "cv": "Lebenslauf",
+      "concerts": "Besuchte Konzerte"
+    },
+    "concerts": {
+      "artist": "Interpret",
+      "venue": "Örtlichkeit",
+      "date": "Datum",
+      "concert": "Veranstaltung",
+      "artist-plural": "Interpreten",
+      "show-single": "Konzert",
+      "show-plural": "Konzerte"
     }
   }
 }

@@ -1,0 +1,1268 @@
+[
+  {
+    "artist": "(DOLCH)",
+    "venue": "Milla, München",
+    "date": "2016-02-25",
+    "concert": "King Dude and His Demon Brothers"
+  },
+  {
+    "artist": "Adulescens",
+    "venue": "Kantine Augsburg",
+    "date": "2011-01-21",
+    "concert": "Band of the Year"
+  },
+  {
+    "artist": "Agalloch",
+    "venue": "Stadthalle Lichtenfels",
+    "date": "2012-04-13",
+    "concert": "Ragnarök Festival 2012"
+  },
+  {
+    "artist": "Agrypnie",
+    "venue": "Stadthalle Lichtenfels",
+    "date": "2011-04-30",
+    "concert": "Ragnarök Festival 8"
+  },
+  {
+    "artist": "Agrypnie",
+    "venue": "Stadthalle Lichtenfels",
+    "date": "2013-04-05",
+    "concert": "Ragnarök Festival 2013"
+  },
+  {
+    "artist": "Ahab",
+    "venue": "Halle 101 Speyer",
+    "date": "2011-09-10",
+    "concert": "Sinister Howling 2011"
+  },
+  {
+    "artist": "Ahab",
+    "venue": "bei Dinkelsbühl",
+    "date": "2014-08-15",
+    "concert": "Summer Breeze Festival 2014"
+  },
+  {
+    "artist": "Alcest",
+    "venue": "Stadthalle Lichtenfels",
+    "date": "2011-04-30",
+    "concert": "Ragnarök Festival 8"
+  },
+  {
+    "artist": "Aloha From Hell",
+    "venue": "Schwabenhalle, Augsburg",
+    "date": "2009-10-03",
+    "concert": "Masters of Rock Antenne 2009"
+  },
+  {
+    "artist": "Aluk Todolo",
+    "venue": "Halle 101 Speyer",
+    "date": "2011-09-10",
+    "concert": "Sinister Howling 2011"
+  },
+  {
+    "artist": "Angantyr",
+    "venue": "Kradhalle Augsburg",
+    "date": "2014-05-31",
+    "concert": "Nacht des schwarzen Todes III"
+  },
+  {
+    "artist": "Apoptose",
+    "venue": "Theaterfabrik Leipzig",
+    "date": "2011-12-31",
+    "concert": "Neofolk Rauhnacht"
+  },
+  {
+    "artist": "Arising Fear",
+    "venue": "Königsbrunn",
+    "date": "2010-01-16",
+    "concert": "New Rock Generation Festival"
+  },
+  {
+    "artist": "Arkona (RUS)",
+    "venue": "Backstage München",
+    "date": "2010-02-26",
+    "concert": "Paganfest Tour 2010"
+  },
+  {
+    "artist": "Arkona (POL)",
+    "venue": "Kradhalle Augsburg",
+    "date": "2014-05-31",
+    "concert": "Nacht des schwarzen Todes III"
+  },
+  {
+    "artist": "Art Abscon(s)",
+    "venue": "Theaterfabrik Leipzig",
+    "date": "2011-12-31",
+    "concert": "Neofolk Rauhnacht"
+  },
+  {
+    "artist": "Ascension",
+    "venue": "Motorcrossstreke Pößneck",
+    "date": "2011-07-23",
+    "concert": "Hell's Pleasure Festival 2011"
+  },
+  {
+    "artist": "Asmodeus",
+    "venue": "Grasselmühle bei Reichenthal",
+    "date": "2011-06-25",
+    "concert": "Northern Lights Festival 2011"
+  },
+  {
+    "artist": "Asphagor",
+    "venue": "Backstage München",
+    "date": "2010-10-23",
+    "concert": "Helion Festival 2010"
+  },
+  {
+    "artist": "Asphyx",
+    "venue": "bei Dinkelsbühl",
+    "date": "2010-08-18",
+    "concert": "Summer Breeze Festival 2010"
+  },
+  {
+    "artist": "Attic",
+    "venue": "Markthalle Hamburg",
+    "date": "2013-03-03",
+    "concert": "Hell over Hammaburg"
+  },
+  {
+    "artist": "Beastmilk",
+    "venue": "Feierwerk München",
+    "date": "2014-10-21",
+    "concert": ""
+  },
+  {
+    "artist": "Beerhammer",
+    "venue": "Circus Augsburg",
+    "date": "2012-02-21",
+    "concert": "Carnival of Death"
+  },
+  {
+    "artist": "Being as an Ocean",
+    "venue": "Kantine Augsburg",
+    "date": "2016-07-04",
+    "concert": "Stick to Your Guns"
+  },
+  {
+    "artist": "Belphegor",
+    "venue": "Kantine Augsburg",
+    "date": "2010-12-30",
+    "concert": "Blackfest Over X-Mas"
+  },
+  {
+    "artist": "Bethlehem",
+    "venue": "Halle 101 Speyer",
+    "date": "2011-09-10",
+    "concert": "Sinister Howling 2011"
+  },
+  {
+    "artist": "Bethlehem",
+    "venue": "Exzellenzhaus Trier",
+    "date": "2012-09-29",
+    "concert": "The Devil's Asylum Tour 2012"
+  },
+  {
+    "artist": "Black Light Ascension",
+    "venue": "Theaterfabrik Leipzig",
+    "date": "2011-12-31",
+    "concert": "Neofolk Rauhnacht"
+  },
+  {
+    "artist": "Black Salvation",
+    "venue": "7er Club Mannheim",
+    "date": "2012-01-14",
+    "concert": ""
+  },
+  {
+    "artist": "Blood Fire Death",
+    "venue": "Halle 101 Speyer",
+    "date": "2011-02-19",
+    "concert": "Nacht der drohenden Schatten IX"
+  },
+  {
+    "artist": "Bölzer",
+    "venue": "Club from Hell, Erfurt",
+    "date": "2016-04-10",
+    "concert": "D666, Bölzer, Trepaneringsritualen"
+  },
+  {
+    "artist": "Burden of Life",
+    "venue": "Backstage München",
+    "date": "2010-10-23",
+    "concert": "Helion Festival 2010"
+  },
+  {
+    "artist": "Candlemass",
+    "venue": "Motorcrossstreke Pößneck",
+    "date": "2011-07-23",
+    "concert": "Hell's Pleasure Festival 2011"
+  },
+  {
+    "artist": "Carpathian Forest",
+    "venue": "Stadthalle Lichtenfels",
+    "date": "2013-04-05",
+    "concert": "Ragnarök Festival 2013"
+  },
+  {
+    "artist": "Chaos Invocation",
+    "venue": "Halle 101 Speyer",
+    "date": "2011-02-19",
+    "concert": "Nacht der drohenden Schatten IX"
+  },
+  {
+    "artist": "Chordotomy",
+    "venue": "Circus Augsburg",
+    "date": "2012-02-21",
+    "concert": "Carnival of Death"
+  },
+  {
+    "artist": "Cult of the Black Moon Rising",
+    "venue": "Backstage München",
+    "date": "2015-09-29",
+    "concert": "Live in Concert – European Tour 2015"
+  },
+  {
+    "artist": "Daniel Bay",
+    "venue": "Feierwerk München",
+    "date": "2014-10-21",
+    "concert": ""
+  },
+  {
+    "artist": "Dark Fortress",
+    "venue": "Backstage München",
+    "date": "2012-04-25",
+    "concert": ""
+  },
+  {
+    "artist": "Dark Tranquillity",
+    "venue": "bei Dinkelsbühl",
+    "date": "2010-08-19",
+    "concert": "Summer Breeze Festival 2010"
+  },
+  {
+    "artist": "Death in Rome",
+    "venue": "Soho Stage Augsburg",
+    "date": "2015-10-23",
+    "concert": ""
+  },
+  {
+    "artist": "Deep Frying Pan",
+    "venue": "Kantine Augsburg",
+    "date": "2011-01-21",
+    "concert": "Band of the Year"
+  },
+  {
+    "artist": "Desaster",
+    "venue": "Markthalle Hamburg",
+    "date": "2013-03-03",
+    "concert": "Hell over Hammaburg"
+  },
+  {
+    "artist": "Deströyer 666",
+    "venue": "Club from Hell, Erfurt",
+    "date": "2016-04-10",
+    "concert": "D666, Bölzer, Trepaneringsritualen"
+  },
+  {
+    "artist": "Dies Ater",
+    "venue": "Grasselmühle bei Reichenthal",
+    "date": "2011-06-24",
+    "concert": "Northern Lights Festival 2011"
+  },
+  {
+    "artist": "Dordeduh",
+    "venue": "Stadthalle Lichtenfels",
+    "date": "2012-04-13",
+    "concert": "Ragnarök Festival 2012"
+  },
+  {
+    "artist": "Dordeduh",
+    "venue": "Exzellenzhaus Trier",
+    "date": "2012-09-29",
+    "concert": "The Devil's Asylum Tour 2012"
+  },
+  {
+    "artist": "Dornenreich",
+    "venue": "Backstage München",
+    "date": "2010-02-26",
+    "concert": "Paganfest Tour 2010"
+  },
+  {
+    "artist": "Dornenreich",
+    "venue": "Grasselmühle bei Reichenthal",
+    "date": "2011-06-24",
+    "concert": "Northern Lights Festival 2011"
+  },
+  {
+    "artist": "Doro",
+    "venue": "Schwabenhalle, Augsburg",
+    "date": "2009-10-03",
+    "concert": "Masters of Rock Antenne 2009"
+  },
+  {
+    "artist": "Eisregen",
+    "venue": "bei Dinkelsbühl",
+    "date": "2010-08-21",
+    "concert": "Summer Breeze Festival 2010"
+  },
+  {
+    "artist": "Eïs",
+    "venue": "Stadthalle Lichtenfels",
+    "date": "2011-04-30",
+    "concert": "Ragnarök Festival 8"
+  },
+  {
+    "artist": "Eïs",
+    "venue": "Kramladen Kaiserslautern",
+    "date": "2012-10-13",
+    "concert": "Geisterasche III"
+  },
+  {
+    "artist": "Ekstasis",
+    "venue": "Kramladen Kaiserslautern",
+    "date": "2012-10-13",
+    "concert": "Geisterasche III"
+  },
+  {
+    "artist": "Eluveitie",
+    "venue": "Backstage München",
+    "date": "2010-02-26",
+    "concert": "Paganfest Tour 2010"
+  },
+  {
+    "artist": "Endstille",
+    "venue": "bei Dinkelsbühl",
+    "date": "2010-08-19",
+    "concert": "Summer Breeze Festival 2010"
+  },
+  {
+    "artist": "Endstille",
+    "venue": "Backstage München",
+    "date": "2010-10-23",
+    "concert": "Helion Festival 2010"
+  },
+  {
+    "artist": "Ensiferum",
+    "venue": "bei Dinkelsbühl",
+    "date": "2010-08-20",
+    "concert": "Summer Breeze Festival 2010"
+  },
+  {
+    "artist": "Enslaved",
+    "venue": "Stadthalle Lichtenfels",
+    "date": "2011-04-30",
+    "concert": "Ragnarök Festival 8"
+  },
+  {
+    "artist": "Enthroned",
+    "venue": "Backstage München",
+    "date": "2010-11-06",
+    "concert": "Pentagrammaton World Tour"
+  },
+  {
+    "artist": "Equilibrium",
+    "venue": "bei Dinkelsbühl",
+    "date": "2010-08-18",
+    "concert": "Summer Breeze Festival 2010"
+  },
+  {
+    "artist": "Equilibrium",
+    "venue": "Backstage München",
+    "date": "2010-10-23",
+    "concert": "Helion Festival 2010"
+  },
+  {
+    "artist": "Ereb Altor",
+    "venue": "bei Dinkelsbühl",
+    "date": "2014-08-13",
+    "concert": "Summer Breeze Festival 2014"
+  },
+  {
+    "artist": "Essenz",
+    "venue": "Halle 101 Speyer",
+    "date": "2011-09-10",
+    "concert": "Sinister Howling 2011"
+  },
+  {
+    "artist": "Essenz",
+    "venue": "Markthalle Hamburg",
+    "date": "2013-03-03",
+    "concert": "Hell over Hammaburg"
+  },
+  {
+    "artist": "Exhumed",
+    "venue": "Flughafen Obermehler",
+    "date": "2011-08-13",
+    "concert": "Party.San Festival 2011"
+  },
+  {
+    "artist": "Finntroll",
+    "venue": "Backstage München",
+    "date": "2010-02-26",
+    "concert": "Paganfest Tour 2010"
+  },
+  {
+    "artist": "Flammensturm",
+    "venue": "Schloss Reichenthal",
+    "date": "2010-06-25",
+    "concert": "Northern Lights Festival 2010"
+  },
+  {
+    "artist": "Floor",
+    "venue": "Feierwerk München",
+    "date": "2015-04-16",
+    "concert": ""
+  },
+  {
+    "artist": "Furor Gallico",
+    "venue": "Grasselmühle bei Reichenthal",
+    "date": "2011-06-25",
+    "concert": "Northern Lights Festival 2011"
+  },
+  {
+    "artist": "Gehenna",
+    "venue": "Halle 101 Speyer",
+    "date": "2011-02-19",
+    "concert": "Nacht der drohenden Schatten IX"
+  },
+  {
+    "artist": "Ghost",
+    "venue": "Motorcrossstreke Pößneck",
+    "date": "2011-07-23",
+    "concert": "Hell's Pleasure Festival 2011"
+  },
+  {
+    "artist": "GoatPenis",
+    "venue": "Göllnitz",
+    "date": "2013-05-19",
+    "concert": "Deathkult Festival 2013"
+  },
+  {
+    "artist": "Gorgoroth",
+    "venue": "Kantine Augsburg",
+    "date": "2010-12-30",
+    "concert": "Blackfest Over X-Mas"
+  },
+  {
+    "artist": "Gorrch",
+    "venue": "Kradhalle Augsburg",
+    "date": "2014-05-31",
+    "concert": "Nacht des schwarzen Todes III"
+  },
+  {
+    "artist": "Gotthard",
+    "venue": "Schwabenhalle, Augsburg",
+    "date": "2009-10-03",
+    "concert": "Masters of Rock Antenne 2009"
+  },
+  {
+    "artist": "Heaven Shall Burn",
+    "venue": "bei Dinkelsbühl",
+    "date": "2014-08-15",
+    "concert": "Summer Breeze Festival 2014"
+  },
+  {
+    "artist": "Heimdalls Wacht",
+    "venue": "Schloss Reichenthal",
+    "date": "2010-06-26",
+    "concert": "Northern Lights Festival 2010"
+  },
+  {
+    "artist": "Heimdalls Wacht",
+    "venue": "",
+    "date": "2010-09-30",
+    "concert": "Wolfszeit Festival 2010"
+  },
+  {
+    "artist": "Helrunar",
+    "venue": "Stadthalle Lichtenfels",
+    "date": "2011-04-30",
+    "concert": "Ragnarök Festival 8"
+  },
+  {
+    "artist": "Heretoir",
+    "venue": "Zeche Carl Essen",
+    "date": "2011-10-14",
+    "concert": "Autumn Depression"
+  },
+  {
+    "artist": "Huss & Hodn",
+    "venue": "Suite 15, Regensburg",
+    "date": "2014-03-21",
+    "concert": "Morlockk Dilemma & Hiob"
+  },
+  {
+    "artist": "Impiety",
+    "venue": "Kantine Augsburg",
+    "date": "2010-12-30",
+    "concert": "Blackfest Over X-Mas"
+  },
+  {
+    "artist": "Impiety",
+    "venue": "Stadthalle Lichtenfels",
+    "date": "2012-04-13",
+    "concert": "Ragnarök Festival 2012"
+  },
+  {
+    "artist": "In Solitude",
+    "venue": "Feierwerk München",
+    "date": "2014-10-21",
+    "concert": ""
+  },
+  {
+    "artist": "In the Nursery",
+    "venue": "Kantine Augsburg",
+    "date": "2011-11-19",
+    "concert": "November Noir Festeival"
+  },
+  {
+    "artist": "Infinity",
+    "venue": "Halle 101 Speyer",
+    "date": "2011-02-19",
+    "concert": "Nacht der drohenden Schatten IX"
+  },
+  {
+    "artist": "Jess and the Ancient Ones",
+    "venue": "Markthalle Hamburg",
+    "date": "2013-03-03",
+    "concert": "Hell over Hammaburg"
+  },
+  {
+    "artist": "Jex Thoth",
+    "venue": "Motorcrossstreke Pößneck",
+    "date": "2011-07-23",
+    "concert": "Hell's Pleasure Festival 2011"
+  },
+  {
+    "artist": "Jex Thoth",
+    "venue": "Feierwerk München",
+    "date": "2012-05-30",
+    "concert": "Purify with Pyra - European Tour 2012"
+  },
+  {
+    "artist": "Jex Thoth",
+    "venue": "Backstage München",
+    "date": "2014-10-02",
+    "concert": ""
+  },
+  {
+    "artist": "Jex Thoth",
+    "venue": "Backstage München",
+    "date": "2015-09-28",
+    "concert": "Live in Concert – European Tour 2015"
+  },
+  {
+    "artist": "Kadavrik",
+    "venue": "Kantine Augsburg",
+    "date": "2010-12-30",
+    "concert": "Blackfest Over X-Mas"
+  },
+  {
+    "artist": "Karg",
+    "venue": "Grasselmühle bei Reichenthal",
+    "date": "2011-06-25",
+    "concert": "Northern Lights Festival 2011"
+  },
+  {
+    "artist": "King Dude",
+    "venue": "Milla, München",
+    "date": "2016-02-25",
+    "concert": "King Dude and His Demon Brothers"
+  },
+  {
+    "artist": "King Dude",
+    "venue": "Backstage München",
+    "date": "2016-08-15",
+    "concert": ""
+  },
+  {
+    "artist": "Korpiklaani",
+    "venue": "",
+    "date": "2010-09-04",
+    "concert": "Wolfszeit Festival 2010"
+  },
+  {
+    "artist": "Kromlek",
+    "venue": "Backstage München",
+    "date": "2010-10-23",
+    "concert": "Helion Festival 2010"
+  },
+  {
+    "artist": "Lantlôs",
+    "venue": "Barth",
+    "date": "2013-08-17",
+    "concert": "Barther Metal Open Air Festival 2013"
+  },
+  {
+    "artist": "Leiche Rustikal",
+    "venue": "Nerodom München",
+    "date": "2015-01-29",
+    "concert": ""
+  },
+  {
+    "artist": "Lethes Fluten",
+    "venue": "Kramladen Kaiserslautern",
+    "date": "2012-10-13",
+    "concert": "Geisterasche III"
+  },
+  {
+    "artist": "Lifelover",
+    "venue": "Zeche Carl Essen",
+    "date": "2011-10-14",
+    "concert": "Autumn Depression"
+  },
+  {
+    "artist": "Livingston",
+    "venue": "Schwabenhalle, Augsburg",
+    "date": "2009-10-03",
+    "concert": "Masters of Rock Antenne 2009"
+  },
+  {
+    "artist": "Malverion",
+    "venue": "You-Z Königsbrunn",
+    "date": "2010-09-18",
+    "concert": ""
+  },
+  {
+    "artist": "Maya Nadir",
+    "venue": "Kantine Augsburg",
+    "date": "2011-11-19",
+    "concert": "November Noir Festeival"
+  },
+  {
+    "artist": "Minas Morgul",
+    "venue": "",
+    "date": "2010-09-04",
+    "concert": "Wolfszeit Festival 2010"
+  },
+  {
+    "artist": "Minas Morgul",
+    "venue": "Backstage München",
+    "date": "2010-10-23",
+    "concert": "Helion Festival 2010"
+  },
+  {
+    "artist": "Minsk",
+    "venue": "Feierwerk München",
+    "date": "2015-04-16",
+    "concert": ""
+  },
+  {
+    "artist": "Mistur",
+    "venue": "Stadthalle Lichtenfels",
+    "date": "2012-04-13",
+    "concert": "Ragnarök Festival 2012"
+  },
+  {
+    "artist": "Moonsorrow",
+    "venue": "Stadthalle Lichtenfels",
+    "date": "2012-04-13",
+    "concert": "Ragnarök Festival 2012"
+  },
+  {
+    "artist": "Moredhel",
+    "venue": "Schloss Reichenthal",
+    "date": "2010-06-26",
+    "concert": "Northern Lights Festival 2010"
+  },
+  {
+    "artist": "Moredhel",
+    "venue": "Grasselmühle bei Reichenthal",
+    "date": "2011-06-25",
+    "concert": "Northern Lights Festival 2011"
+  },
+  {
+    "artist": "Morlockk Dilemma & Hiob",
+    "venue": "Suite 15, Regensburg",
+    "date": "2014-03-21",
+    "concert": "Morlockk Dilemma & Hiob"
+  },
+  {
+    "artist": "Nachtmystium",
+    "venue": "Flughafen Obermehler",
+    "date": "2011-08-13",
+    "concert": "Party.San Festival 2011"
+  },
+  {
+    "artist": "Nachtmystium",
+    "venue": "Stadthalle Lichtenfels",
+    "date": "2012-04-13",
+    "concert": "Ragnarök Festival 2012"
+  },
+  {
+    "artist": "Nachtmystium",
+    "venue": "Backstage München",
+    "date": "2012-04-25",
+    "concert": ""
+  },
+  {
+    "artist": "Nargaroth",
+    "venue": "Schloss Reichenthal",
+    "date": "2010-06-26",
+    "concert": "Northern Lights Festival 2010"
+  },
+  {
+    "artist": "Necrophagist",
+    "venue": "bei Dinkelsbühl",
+    "date": "2010-08-19",
+    "concert": "Summer Breeze Festival 2010"
+  },
+  {
+    "artist": "Negative Plane",
+    "venue": "Motorcrossstreke Pößneck",
+    "date": "2011-07-23",
+    "concert": "Hell's Pleasure Festival 2011"
+  },
+  {
+    "artist": "Nehëmah",
+    "venue": "Halle 101 Speyer",
+    "date": "2011-02-19",
+    "concert": "Nacht der drohenden Schatten IX"
+  },
+  {
+    "artist": "Nifelheim",
+    "venue": "Göllnitz",
+    "date": "2013-05-19",
+    "concert": "Deathkult Festival 2013"
+  },
+  {
+    "artist": "Nocte Obducta",
+    "venue": "Stadthalle Lichtenfels",
+    "date": "2013-04-05",
+    "concert": "Ragnarök Festival 2013"
+  },
+  {
+    "artist": "Nocturnal Depression",
+    "venue": "Schloss Reichenthal",
+    "date": "2010-06-26",
+    "concert": "Northern Lights Festival 2010"
+  },
+  {
+    "artist": "Nocturnal Depression",
+    "venue": "Grasselmühle bei Reichenthal",
+    "date": "2011-06-25",
+    "concert": "Northern Lights Festival 2011"
+  },
+  {
+    "artist": "NoGander",
+    "venue": "Königsbrunn",
+    "date": "2010-01-16",
+    "concert": "New Rock Generation Festival"
+  },
+  {
+    "artist": "NoSpam",
+    "venue": "Königsbrunn",
+    "date": "2010-01-16",
+    "concert": "New Rock Generation Festival"
+  },
+  {
+    "artist": "Odem Arcanum",
+    "venue": "Kramladen Kaiserslautern",
+    "date": "2012-10-13",
+    "concert": "Geisterasche III"
+  },
+  {
+    "artist": "Ohrenfeindt",
+    "venue": "Schwabenhalle, Augsburg",
+    "date": "2009-10-03",
+    "concert": "Masters of Rock Antenne 2009"
+  },
+  {
+    "artist": "Our Last Night",
+    "venue": "Kantine Augsburg",
+    "date": "2016-07-04",
+    "concert": "Stick to Your Guns"
+  },
+  {
+    "artist": "Ordo Rosarius Equilibrio",
+    "venue": "Kantine Augsburg",
+    "date": "2011-11-19",
+    "concert": "November Noir Festeival"
+  },
+  {
+    "artist": "Path of Samsara",
+    "venue": "Backstage München",
+    "date": "2014-10-02",
+    "concert": ""
+  },
+  {
+    "artist": "PiXie Meet",
+    "venue": "You-Z Königsbrunn",
+    "date": "2010-09-18",
+    "concert": ""
+  },
+  {
+    "artist": "PiXie Meet",
+    "venue": "Rockfabrik Augsburg",
+    "date": "2010-11-28",
+    "concert": ""
+  },
+  {
+    "artist": "PiXie Meet",
+    "venue": "Kantine Augsburg",
+    "date": "2011-01-21",
+    "concert": "Band of the Year"
+  },
+  {
+    "artist": "PiXie Meet",
+    "venue": "Königsplatz Augsburg",
+    "date": "2011-02-26",
+    "concert": ""
+  },
+  {
+    "artist": "PiXie Meet",
+    "venue": "You-Z Königsbrunn",
+    "date": "2011-04-16",
+    "concert": ""
+  },
+  {
+    "artist": "PiXie Meet",
+    "venue": "You-Z Königsbrunn",
+    "date": "2011-09-24",
+    "concert": ""
+  },
+  {
+    "artist": "Prezident",
+    "venue": "Suite 15, Regensburg",
+    "date": "2014-03-21",
+    "concert": "Morlockk Dilemma & Hiob"
+  },
+  {
+    "artist": "Rabenwolf",
+    "venue": "Schloss Reichenthal",
+    "date": "2010-06-25",
+    "concert": "Northern Lights Festival 2010"
+  },
+  {
+    "artist": "Rage",
+    "venue": "bei Dinkelsbühl",
+    "date": "2010-08-18",
+    "concert": "Summer Breeze Festival 2010"
+  },
+  {
+    "artist": "Rebleeding",
+    "venue": "Circus Augsburg",
+    "date": "2012-02-21",
+    "concert": "Carnival of Death"
+  },
+  {
+    "artist": "Repulse",
+    "venue": "Königsbrunn",
+    "date": "2010-01-16",
+    "concert": "New Rock Generation Festival"
+  },
+  {
+    "artist": "Rome",
+    "venue": "Kantine Augsburg",
+    "date": "2011-11-19",
+    "concert": "November Noir Festeival"
+  },
+  {
+    "artist": "Rome",
+    "venue": "Kulturfabrik Esch-sur-Alzette",
+    "date": "2012-10-27",
+    "concert": "Album Release Concert"
+  },
+  {
+    "artist": "Rome",
+    "venue": "opderschmelz Dudelange",
+    "date": "2013-10-17",
+    "concert": "ROME feat. André Mergenthaler"
+  },
+  {
+    "artist": "Rome",
+    "venue": "Nerodom München",
+    "date": "2015-01-29",
+    "concert": ""
+  },
+  {
+    "artist": "Rome",
+    "venue": "Soho Stage, Augsburg",
+    "date": "2017-02-12",
+    "concert": ""
+  },
+  {
+    "artist": "Ronny & the Rollers",
+    "venue": "Abraxas (Raben)",
+    "date": "2012-08-14",
+    "concert": ""
+  },
+  {
+    "artist": "Rotting Christ",
+    "venue": "Motorcrossstreke Pößneck",
+    "date": "2011-07-23",
+    "concert": "Hell's Pleasure Festival 2011"
+  },
+  {
+    "artist": "Salvation Road",
+    "venue": "Abraxas Augsburg",
+    "date": "2011-11-12",
+    "concert": ""
+  },
+  {
+    "artist": "Sargeist",
+    "venue": "Barth",
+    "date": "2013-08-17",
+    "concert": "Barther Metal Open Air Festival 2013"
+  },
+  {
+    "artist": "Sarkrista",
+    "venue": "Kradhalle Augsburg",
+    "date": "2014-05-31",
+    "concert": "Nacht des schwarzen Todes III"
+  },
+  {
+    "artist": "Secrets of the Moon",
+    "venue": "Exzellenzhaus Trier",
+    "date": "2012-09-29",
+    "concert": "The Devil's Asylum Tour 2012"
+  },
+  {
+    "artist": "Secrets of the Moon",
+    "venue": "Göllnitz",
+    "date": "2013-05-19",
+    "concert": "Deathkult Festival 2013"
+  },
+  {
+    "artist": "Secrets of the Moon",
+    "venue": "bei Dinkelsbühl",
+    "date": "2014-08-14",
+    "concert": "Summer Breeze Festival 2014"
+  },
+  {
+    "artist": "Shawn the Savage Kid",
+    "venue": "Suite 15, Regensburg",
+    "date": "2014-03-21",
+    "concert": "Morlockk Dilemma & Hiob"
+  },
+  {
+    "artist": "shEver",
+    "venue": "Feierwerk München",
+    "date": "2012-05-30",
+    "concert": "Purify with Pyra - European Tour 2012"
+  },
+  {
+    "artist": "Shining",
+    "venue": "",
+    "date": "2010-09-04",
+    "concert": "Wolfszeit Festival 2010"
+  },
+  {
+    "artist": "Shining",
+    "venue": "Backstage München",
+    "date": "2010-11-06",
+    "concert": "Pentagrammaton World Tour"
+  },
+  {
+    "artist": "Shining",
+    "venue": "Stadthalle Lichtenfels",
+    "date": "2013-04-05",
+    "concert": "Ragnarök Festival 2013"
+  },
+  {
+    "artist": "Skogen",
+    "venue": "Barth",
+    "date": "2013-08-17",
+    "concert": "Barther Metal Open Air Festival 2013"
+  },
+  {
+    "artist": "Stick to Your Guns",
+    "venue": "Kantine Augsburg",
+    "date": "2016-07-04",
+    "concert": "Stick to Your Guns"
+  },
+  {
+    "artist": "Strid",
+    "venue": "Halle 101 Speyer",
+    "date": "2011-02-19",
+    "concert": "Nacht der drohenden Schatten IX"
+  },
+  {
+    "artist": "Subway to Sally",
+    "venue": "bei Dinkelsbühl",
+    "date": "2010-08-19",
+    "concert": "Summer Breeze Festival 2010"
+  },
+  {
+    "artist": "Surthurs Lohe",
+    "venue": "Barth",
+    "date": "2013-08-17",
+    "concert": "Barther Metal Open Air Festival 2013"
+  },
+  {
+    "artist": "Svart Crown",
+    "venue": "Backstage München",
+    "date": "2010-11-06",
+    "concert": "Pentagrammaton World Tour"
+  },
+  {
+    "artist": "Taake",
+    "venue": "Flughafen Obermehler",
+    "date": "2011-08-13",
+    "concert": "Party.San Festival 2011"
+  },
+  {
+    "artist": "Taake",
+    "venue": "Barth",
+    "date": "2013-08-20",
+    "concert": "Barther Metal Open Air Festival 2013"
+  },
+  {
+    "artist": "The 58 Cajon Rollers",
+    "venue": "Madhouse, Augsburg",
+    "date": "2009-12-31",
+    "concert": ""
+  },
+  {
+    "artist": "The 58 Cajon Rollers",
+    "venue": "privat",
+    "date": "2010-08-14",
+    "concert": ""
+  },
+  {
+    "artist": "The 58 Cajon Rollers",
+    "venue": "Riegele Augsburg",
+    "date": "2010-09-25",
+    "concert": ""
+  },
+  {
+    "artist": "The 58 Cajon Rollers",
+    "venue": "privat",
+    "date": "2011-11-05",
+    "concert": "Geburstag G 60."
+  },
+  {
+    "artist": "The Devil's Blood",
+    "venue": "bei Dinkelsbühl",
+    "date": "2010-08-19",
+    "concert": "Summer Breeze Festival 2010"
+  },
+  {
+    "artist": "The Devil's Blood",
+    "venue": "7er Club Mannheim",
+    "date": "2012-01-14",
+    "concert": ""
+  },
+  {
+    "artist": "The Rangers",
+    "venue": "Riegele Augsburg",
+    "date": "2010-09-25",
+    "concert": ""
+  },
+  {
+    "artist": "The Rangers",
+    "venue": "privat",
+    "date": "2011-11-05",
+    "concert": "Geburstag G 60."
+  },
+  {
+    "artist": "The Ruins of Beverast",
+    "venue": "Göllnitz",
+    "date": "2013-05-19",
+    "concert": "Deathkult Festival 2013"
+  },
+  {
+    "artist": "The Way of Purity",
+    "venue": "Kantine Augsburg",
+    "date": "2010-12-30",
+    "concert": "Blackfest Over X-Mas"
+  },
+  {
+    "artist": "Theory of a Deadman",
+    "venue": "Schwabenhalle, Augsburg",
+    "date": "2009-10-03",
+    "concert": "Masters of Rock Antenne 2009"
+  },
+  {
+    "artist": "Thormesis",
+    "venue": "",
+    "date": "2010-09-04",
+    "concert": "Wolfszeit Festival 2010"
+  },
+  {
+    "artist": "Thorngoth",
+    "venue": "Grasselmühle bei Reichenthal",
+    "date": "2011-06-24",
+    "concert": "Northern Lights Festival 2011"
+  },
+  {
+    "artist": "Throne of Katharsis",
+    "venue": "Halle 101 Speyer",
+    "date": "2011-02-19",
+    "concert": "Nacht der drohenden Schatten IX"
+  },
+  {
+    "artist": "Thulcandra",
+    "venue": "Backstage München",
+    "date": "2010-10-23",
+    "concert": "Helion Festival 2010"
+  },
+  {
+    "artist": "Todtgelichter",
+    "venue": "Stadthalle Lichtenfels",
+    "date": "2011-04-30",
+    "concert": "Ragnarök Festival 8"
+  },
+  {
+    "artist": "Trepaneringsritualen",
+    "venue": "Club from Hell, Erfurt",
+    "date": "2016-04-10",
+    "concert": "D666, Bölzer, Trepaneringsritualen"
+  },
+  {
+    "artist": "Triarii",
+    "venue": "Theaterfabrik Leipzig",
+    "date": "2011-12-31",
+    "concert": "Neofolk Rauhnacht"
+  },
+  {
+    "artist": "Triarii",
+    "venue": "Kantine Augsburg",
+    "date": "2012-04-07",
+    "concert": ""
+  },
+  {
+    "artist": "Trist",
+    "venue": "Zeche Carl Essen",
+    "date": "2011-10-14",
+    "concert": "Autumn Depression"
+  },
+  {
+    "artist": "Truppensturm",
+    "venue": "Flughafen Obermehler",
+    "date": "2011-08-13",
+    "concert": "Party.San Festival 2011"
+  },
+  {
+    "artist": "Tränen der Sehnsucht",
+    "venue": "Soho Stage Augsburg",
+    "date": "2015-10-23",
+    "concert": ""
+  },
+  {
+    "artist": "Twilight of the Gods",
+    "venue": "Stadthalle Lichtenfels",
+    "date": "2011-04-30",
+    "concert": "Ragnarök Festival 8"
+  },
+  {
+    "artist": "Twilight of the Gods",
+    "venue": "bei Dinkelsbühl",
+    "date": "2014-08-14",
+    "concert": "Summer Breeze Festival 2014"
+  },
+  {
+    "artist": "Urfaust",
+    "venue": "7er Club Mannheim",
+    "date": "2012-01-14",
+    "concert": ""
+  },
+  {
+    "artist": "Varg",
+    "venue": "Backstage München",
+    "date": "2010-02-26",
+    "concert": "Paganfest Tour 2010"
+  },
+  {
+    "artist": "Venenum",
+    "venue": "Markthalle Hamburg",
+    "date": "2013-03-03",
+    "concert": "Hell over Hammaburg"
+  },
+  {
+    "artist": "Verdelet",
+    "venue": "Backstage München",
+    "date": "2012-04-25",
+    "concert": ""
+  },
+  {
+    "artist": "Waldgeflüster",
+    "venue": "Stadthalle Lichtenfels",
+    "date": "2012-04-13",
+    "concert": "Ragnarök Festival 2012"
+  },
+  {
+    "artist": "Watain",
+    "venue": "Flughafen Obermehler",
+    "date": "2011-08-13",
+    "concert": "Party.San Festival 2011"
+  },
+  {
+    "artist": "Wolf Down",
+    "venue": "Kantine Augsburg",
+    "date": "2016-07-04",
+    "concert": "Stick to Your Guns"
+  },
+  {
+    "artist": "Wolves in the Throne Room",
+    "venue": "Kranhalle München",
+    "date": "2011-10-17",
+    "concert": ""
+  },
+  {
+    "artist": "Wolvserpent",
+    "venue": "Kranhalle München",
+    "date": "2011-10-17",
+    "concert": ""
+  },
+  {
+    "artist": "Wraithcult",
+    "venue": "Backstage München",
+    "date": "2012-04-25",
+    "concert": ""
+  },
+  {
+    "artist": "XIV Dark Centuries",
+    "venue": "",
+    "date": "2010-09-03",
+    "concert": "Wolfszeit Festival 2010"
+  },
+  {
+    "artist": "XIV Dark Centuries",
+    "venue": "Stadthalle Lichtenfels",
+    "date": "2012-04-13",
+    "concert": "Ragnarök Festival 2012"
+  },
+  {
+    "artist": "Zatokrev",
+    "venue": "Feierwerk München",
+    "date": "2015-04-16",
+    "concert": ""
+  },
+  {
+    "artist": "Me And That Man",
+    "venue": "Backstage München",
+    "date": "2017-04-05",
+    "concert": "Songs of Love and Death - European Tour 2017"
+  },
+  {
+    "artist": "Dool",
+    "venue": "Backstage München",
+    "date": "2017-04-05",
+    "concert": "Songs of Love and Death - European Tour 2017"
+  },
+  {
+    "artist": "Jex Thoth",
+    "venue": "Backstage München",
+    "date": "2018-05-15",
+    "concert": ""
+  },
+  {
+    "artist": "Pertubator",
+    "venue": "Backstage München",
+    "date": "2019-03-05",
+    "concert": ""
+  },
+  {
+    "artist": "Rome",
+    "venue": "Kantine Augsburg",
+    "date": "2019-10-12",
+    "concert": ""
+  },
+  {
+    "artist": "Prezident",
+    "venue": "Backstage München",
+    "date": "2020-05-08",
+    "concert": "Alles ist voll von Göttern Tour 2020"
+  }
+]
