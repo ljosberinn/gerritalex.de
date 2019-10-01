@@ -47,31 +47,33 @@ const App = () => {
       <main className="application-main">
         <div className="container-xl clearfix px-3 mt-4">
           <Banner repoLink={repoLink} />
-          <div className="col-lg-9 col-md-8 col-12 float-md-left pl-md-2">
-            <LanguageChange />
-            <Router>
-              <Navigation />
+          <div className="reverse-col-mobile">
+            <div className="col-lg-9 col-md-8 col-12 float-md-left pl-md-2">
+              <LanguageChange />
+              <Router>
+                <Navigation />
 
-              <div className="position-relative">
-                <Suspense fallback={<Loader />}>
-                  <Switch>
-                    <Route path="/" exact>
-                      <LandingPage />
-                    </Route>
+                <div className="position-relative">
+                  <Suspense fallback={<Loader />}>
+                    <Switch>
+                      <Route path="/" exact>
+                        <LandingPage />
+                      </Route>
 
-                    <Route path="/concerts" exact>
-                      <ConcertPage />
-                    </Route>
+                      <Route path="/concerts" exact>
+                        <ConcertPage />
+                      </Route>
 
-                    <Route>
-                      <Redirect to="/" />
-                    </Route>
-                  </Switch>
-                </Suspense>
-              </div>
-            </Router>
+                      <Route>
+                        <Redirect to="/" />
+                      </Route>
+                    </Switch>
+                  </Suspense>
+                </div>
+              </Router>
+            </div>
+            <Person name={name} userName={userName} />
           </div>
-          <Person name={name} userName={userName} />
         </div>
       </main>
       <Footer />

@@ -157,3 +157,10 @@ dialog {
 table tbody tr:hover {
   background: #f6f8fa;
 }
+
+@media (max-width: 768px) {
+  .reverse-col-mobile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
