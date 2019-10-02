@@ -1038,40 +1038,34 @@
     "album": "Ich bin 3 Berliner"
   },
   {
+    "month": "6",
+    "year": "2017",
+    "artist": "Morlockk Dilemma",
+    "album": "Circus Maximus"
+  },
+  {
     "month": "8",
     "year": "2017",
     "artist": "Capo",
     "album": "Alles auf Rot"
   },
   {
-    "month": "10",
-    "year": "2019",
-    "artist": "Danger Dan",
-    "album": "Reflexionen aus dem beschönigten Leben"
+    "month": "4",
+    "year": "2018",
+    "artist": "Isis",
+    "album": "Panopticon"
   },
   {
-    "month": "6",
-    "year": "2019",
-    "artist": "Bausa",
-    "album": "Dreifarbenhaus"
-  },
-  {
-    "month": "6",
-    "year": "2019",
-    "artist": "Health",
-    "album": "Vol. 4 :: Slaves of Fear"
+    "month": "12",
+    "year": "2018",
+    "artist": "Les Discrets",
+    "album": "Septembre et Ses Dernières Pensées"
   },
   {
     "month": "5",
     "year": "2019",
     "artist": "Prezident",
     "album": "Kunst ist eine besitzergreifende Geliebte"
-  },
-  {
-    "month": "5",
-    "year": "2019",
-    "artist": "Prezident",
-    "album": "Limbus"
   },
   {
     "month": "5",
@@ -1086,21 +1080,27 @@
     "album": "Mariner"
   },
   {
-    "month": "12",
-    "year": "2018",
-    "artist": "Les Discrets",
-    "album": "Septembre et Ses Dernières Pensées"
-  },
-  {
-    "month": "4",
-    "year": "2018",
-    "artist": "Isis",
-    "album": "Panopticon"
+    "month": "5",
+    "year": "2019",
+    "artist": "Prezident",
+    "album": "Limbus"
   },
   {
     "month": "6",
-    "year": "2017",
-    "artist": "Morlockk Dilemma",
-    "album": "Circus Maximus"
+    "year": "2019",
+    "artist": "Bausa",
+    "album": "Dreifarbenhaus"
+  },
+  {
+    "month": "6",
+    "year": "2019",
+    "artist": "Health",
+    "album": "Vol. 4 :: Slaves of Fear"
+  },
+  {
+    "month": "10",
+    "year": "2019",
+    "artist": "Danger Dan",
+    "album": "Reflexionen aus dem beschönigten Leben"
   }
 ]
