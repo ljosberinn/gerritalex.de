@@ -2,11 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { ContributionOverview, ContributionActivity, Repositories } from '.';
 
 const DEFAULT_STATE = {
-  contributionHistory: undefined,
-  contributionAmount: undefined,
-  contributionActivity: undefined,
+  contributionHistory: '',
+  contributionAmount: '',
+  contributionActivity: '',
   repositories: '',
-  subNavStats: [0, 0, 0, 0, 0],
 };
 
 export default function DynamicContent() {
@@ -22,9 +21,7 @@ export default function DynamicContent() {
 
   useEffect(() => {
     const getData = async () => {
-      const response = await fetch(
-        '//cdn.gerritalex.de/gerritalex.de/html.json',
-      );
+      const response = await fetch('/.netlify/functions/index');
       const json = await response.json();
 
       setData(json);

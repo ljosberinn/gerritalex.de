@@ -1,9 +1,9 @@
-import React, { useEffect, lazy, Suspense } from 'react';
+import React, { lazy, Suspense } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Redirect
+  Redirect,
 } from 'react-router-dom';
 import './assets/App.scss';
 import {
@@ -12,7 +12,7 @@ import {
   Banner,
   Person,
   Navigation,
-  LanguageChange
+  LanguageChange,
 } from './components';
 
 const name = 'Gerrit Alex';
@@ -26,22 +26,6 @@ const ConcertPage = lazy(() => import('./pages/ConcertPage'));
 //const MusicPage = lazy(() => import('./pages/Other/MusicPage/'));
 
 export default function App() {
-  useEffect(() => {
-    const verifyDataIntegrity = async () => {
-      const response = await fetch(
-        '//cdn.gerritalex.de/gerritalex.de/updater.php'
-      );
-      const { success, msg } = await response.json();
-
-      if (success && msg === 'Update successful.') {
-        // eslint-disable-next-line
-        location.reload();
-      }
-    };
-
-    verifyDataIntegrity();
-  }, []);
-
   return (
     <>
       <Header repoLink={repoLink} name={name} />
