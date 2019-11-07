@@ -27,15 +27,17 @@ const concerts = require('../concerts.json')
   )
   .map(dataset => ({ ...dataset, shows: dataset.shows.reverse() })); // reverse shows
 
-const ArtistAnchor = ({ artist }) => (
-  <a
-    href={`//last.fm/music/${artist}`}
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    {artist}
-  </a>
-);
+function ArtistAnchor({ artist }) {
+  return (
+    <a
+      href={`//last.fm/music/${artist}`}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {artist}
+    </a>
+  );
+}
 
 const Row = memo(
   ({ date, artist, amountOfShows, venue, concert, isFirstShow }) => (
@@ -54,7 +56,7 @@ const Row = memo(
   )
 );
 
-const ConcertPage = () => {
+export default function ConcertPage() {
   const { t } = useTranslation('concerts');
   const [filter, setFilter] = useState('');
 
@@ -176,6 +178,4 @@ const ConcertPage = () => {
       </tfoot>
     </table>
   );
-};
-
-export default ConcertPage;
+}

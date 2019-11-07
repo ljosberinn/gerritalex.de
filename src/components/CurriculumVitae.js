@@ -19,7 +19,7 @@ const TRANSLATE_INDICATOR = 't.';
 
 const cv = require('./../cv.json');
 
-const CurriculumVitae = () => {
+export default function CurriculumVitae() {
   const { t } = useTranslation('cv');
 
   const translatedAchievements = t('achievements');
@@ -99,6 +99,4 @@ const CurriculumVitae = () => {
       })}
     </ol>
   );
-};
-
-export default CurriculumVitae;
+}

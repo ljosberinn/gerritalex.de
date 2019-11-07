@@ -6,24 +6,24 @@ const DEFAULT_STATE = {
   contributionAmount: undefined,
   contributionActivity: undefined,
   repositories: '',
-  subNavStats: [0, 0, 0, 0, 0]
+  subNavStats: [0, 0, 0, 0, 0],
 };
 
-const DynamicContent = () => {
+export default function DynamicContent() {
   const [
     {
       contributionHistory,
       contributionAmount,
       contributionActivity,
-      repositories
+      repositories,
     },
-    setData
+    setData,
   ] = useState(DEFAULT_STATE);
 
   useEffect(() => {
     const getData = async () => {
       const response = await fetch(
-        '//cdn.gerritalex.de/gerritalex.de/html.json'
+        '//cdn.gerritalex.de/gerritalex.de/html.json',
       );
       const json = await response.json();
 
@@ -53,6 +53,4 @@ const DynamicContent = () => {
       </div>
     </>
   );
-};
-
-export default DynamicContent;
+}

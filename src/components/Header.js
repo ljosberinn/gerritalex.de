@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-const Header = ({ name, repoLink }) => {
+export default function Header({ name, repoLink }) {
   const { t } = useTranslation();
 
   return (
@@ -50,6 +50,4 @@ const Header = ({ name, repoLink }) => {
       </header>
     </div>
   );
-};
-
-export default Header;
+}

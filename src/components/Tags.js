@@ -1,13 +1,15 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-const Tag = ({ text }) => (
-  <button className="btn-link topic-tag topic-tag-link" type="button">
-    {text}
-  </button>
-);
+function Tag({ text }) {
+  return (
+    <button className="btn-link topic-tag topic-tag-link" type="button">
+      {text}
+    </button>
+  );
+}
 
-const Tags = ({ tags }) => {
+export default function Tags({ tags }) {
   const { t } = useTranslation();
 
   return (
@@ -22,6 +24,4 @@ const Tags = ({ tags }) => {
       </>
     )
   );
-};
-
-export default Tags;
+}

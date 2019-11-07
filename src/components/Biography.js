@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 const currentBiographyParagraphs = 5;
 
-const Biography = () => {
+export default function Biography() {
   const { t } = useTranslation();
 
   return (
@@ -15,6 +15,4 @@ const Biography = () => {
       </ul>
     </div>
   );
-};
-
-export default Biography;
+}

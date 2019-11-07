@@ -50,7 +50,7 @@ const DEFAULT_STATE = {
   subNavStats: [0, 0, 0, 0, 0]
 };
 
-const DynamicSubNav = ({ userName }) => {
+export default function DynamicSubNav({ userName }) {
   const [{ subNavStats }, setStats] = useState(DEFAULT_STATE);
 
   useEffect(() => {
@@ -98,5 +98,4 @@ const DynamicSubNav = ({ userName }) => {
       </nav>
     </div>
   );
-};
-export default DynamicSubNav;
+}

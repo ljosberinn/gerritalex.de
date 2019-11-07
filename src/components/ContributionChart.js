@@ -1,7 +1,7 @@
 import React from 'react';
 
-const ContributionChart = ({ svg }) =>
-  svg.length === 0 ? (
+export default function ContributionChart({ svg }) {
+  return svg.length === 0 ? (
     <img
       className="d-block mx-auto mt-4"
       alt="Loading"
@@ -17,5 +17,4 @@ const ContributionChart = ({ svg }) =>
       dangerouslySetInnerHTML={{ __html: svg }}
     />
   );
-
-export default ContributionChart;
+}

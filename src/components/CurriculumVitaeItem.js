@@ -15,7 +15,7 @@ const resolveIcon = iconName => {
   }
 };
 
-const CurriculumVitaeItem = ({
+export default function CurriculumVitaeItem({
   employmentTitle,
   position,
   dates,
@@ -27,39 +27,39 @@ const CurriculumVitaeItem = ({
   url,
   tags,
   talks
-}) => (
-  <li className="pinned-item-list-item d-flex p-3 border border-gray-dark rounded-1 cv">
-    <div className="pinned-item-list-item-content">
-      <div className="d-flex width-full flex-items-center position-relative">
-        {resolveIcon(icon)}
-        <span className="text-bold flex-auto" title={`${employmentTitle}`}>
-          {position}
-        </span>
-        <Time dates={dates} currentLanguage={language} />
+}) {
+  return (
+    <li className="pinned-item-list-item d-flex p-3 border border-gray-dark rounded-1 cv">
+      <div className="pinned-item-list-item-content">
+        <div className="d-flex width-full flex-items-center position-relative">
+          {resolveIcon(icon)}
+          <span className="text-bold flex-auto" title={`${employmentTitle}`}>
+            {position}
+          </span>
+          <Time dates={dates} currentLanguage={language} />
+        </div>
+
+        {employmentLocation.length > 0 && (
+          <strong className="pinned-item-desc text-gray text-small d-block mt-2 mb-1">
+            {url ? (
+              <a href={url} target="_blank" rel="noreferrer noopener">
+                {employmentLocation}
+              </a>
+            ) : (
+              employmentLocation
+            )}
+          </strong>
+        )}
+
+        <Achievements
+          achievements={achievements}
+          translatedAchievements={translatedAchievements}
+        />
+
+        <Talks data={talks} />
+
+        <Tags tags={tags} />
       </div>
-
-      {employmentLocation.length > 0 && (
-        <strong className="pinned-item-desc text-gray text-small d-block mt-2 mb-1">
-          {url ? (
-            <a href={url} target="_blank" rel="noreferrer noopener">
-              {employmentLocation}
-            </a>
-          ) : (
-            employmentLocation
-          )}
-        </strong>
-      )}
-
-      <Achievements
-        achievements={achievements}
-        translatedAchievements={translatedAchievements}
-      />
-
-      <Talks data={talks} />
-
-      <Tags tags={tags} />
-    </div>
-  </li>
-);
-
-export default CurriculumVitaeItem;
+    </li>
+  );
+}

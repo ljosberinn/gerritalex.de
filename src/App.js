@@ -23,9 +23,9 @@ const Loader = () => null;
 
 const LandingPage = lazy(() => import('./pages/LandingPage'));
 const ConcertPage = lazy(() => import('./pages/ConcertPage'));
-const MusicPage = lazy(() => import('./pages/MusicPage'));
+//const MusicPage = lazy(() => import('./pages/Other/MusicPage/'));
 
-const App = () => {
+export default function App() {
   useEffect(() => {
     const verifyDataIntegrity = async () => {
       const response = await fetch(
@@ -57,21 +57,9 @@ const App = () => {
                 <div className="position-relative mt-4">
                   <Suspense fallback={<Loader />}>
                     <Switch>
-                      <Route path="/" exact>
-                        <LandingPage />
-                      </Route>
-
-                      <Route path="/concerts" exact>
-                        <ConcertPage />
-                      </Route>
-
-                      <Route>
-                        <Redirect to="/" />
-                      </Route>
-
-                      <Route path="/music" exact>
-                        <MusicPage />
-                      </Route>
+                      <Route path="/" exact component={LandingPage} />
+                      <Route path="/concerts" exact component={ConcertPage} />
+                      <Route render={() => <Redirect to="/" />} />
                     </Switch>
                   </Suspense>
                 </div>
@@ -84,6 +72,4 @@ const App = () => {
       <Footer />
     </>
   );
-};
-
-export default App;
+}

@@ -23,26 +23,26 @@ const resolveIcon = name => {
   }
 };
 
-const Profiles = ({ mail }) => (
-  <>
-    <li className="vcard-detail pt-1 css-truncate css-truncate-target">
-      <a href={`mailto:${mail}`}>
-        <Mail /> {mail}
-      </a>
-    </li>
-    {profiles.map(({ url, icon }, key) => (
-      <li
-        itemProp="url"
-        className="vcard-detail pt-1 css-truncate css-truncate-target"
-        key={key}
-      >
-        {resolveIcon(icon)}
-        <a rel="nofollow me noopener noreferrer" target="_blank" href={url}>
-          {url}
+export default function Profiles({ mail }) {
+  return (
+    <>
+      <li className="vcard-detail pt-1 css-truncate css-truncate-target">
+        <a href={`mailto:${mail}`}>
+          <Mail /> {mail}
         </a>
       </li>
-    ))}
-  </>
-);
-
-export default Profiles;
+      {profiles.map(({ url, icon }, key) => (
+        <li
+          itemProp="url"
+          className="vcard-detail pt-1 css-truncate css-truncate-target"
+          key={key}
+        >
+          {resolveIcon(icon)}
+          <a rel="nofollow me noopener noreferrer" target="_blank" href={url}>
+            {url}
+          </a>
+        </li>
+      ))}
+    </>
+  );
+}

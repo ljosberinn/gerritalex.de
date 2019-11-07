@@ -41,24 +41,28 @@ const sites = [
   }
 ];
 
-const RepoLink = ({ link }) => (
-  <a
-    className="has-icon-right"
-    href={link}
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <OcticonRepo />
-  </a>
-);
+function RepoLink({ link }) {
+  return (
+    <a
+      className="has-icon-right"
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <OcticonRepo />
+    </a>
+  );
+}
 
-const RegularLink = ({ url, title }) => (
-  <a href={url} target="_blank" rel="noopener noreferrer">
-    <OcticonLink /> {title}
-  </a>
-);
+function RegularLink({ url, title }) {
+  return (
+    <a href={url} target="_blank" rel="noopener noreferrer">
+      <OcticonLink /> {title}
+    </a>
+  );
+}
 
-const Sites = () => {
+export default function Sites() {
   const { t } = useTranslation();
 
   return (
@@ -90,6 +94,4 @@ const Sites = () => {
       </ul>
     </>
   );
-};
-
-export default Sites;
+}

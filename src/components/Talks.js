@@ -1,13 +1,15 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-const Talk = ({ text }) => (
-  <button className="btn-link topic-tag topic-tag-link" type="button">
-    {text}
-  </button>
-);
+function Talk({ text }) {
+  return (
+    <button className="btn-link topic-tag topic-tag-link" type="button">
+      {text}
+    </button>
+  );
+}
 
-const Talks = ({ data }) => {
+export default function Talks({ data }) {
   const { t } = useTranslation();
 
   return (
@@ -22,6 +24,4 @@ const Talks = ({ data }) => {
       </>
     )
   );
-};
-
-export default Talks;
+}

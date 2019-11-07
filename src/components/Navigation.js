@@ -4,8 +4,10 @@ import { useTranslation } from 'react-i18next';
 
 const routes = [
   { to: '/', title: 'cv' },
-  { to: '/concerts', title: 'concerts' }
-  //{ to: '/music', title: 'music' }
+  { to: '/blog', title: 'blog' },
+  { to: '/other', title: 'other' },
+  { to: '/concerts', title: 'concerts' },
+  { to: '/music', title: 'music' }
 ];
 
 const Navigation = () => {

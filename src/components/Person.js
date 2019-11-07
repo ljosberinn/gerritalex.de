@@ -39,7 +39,7 @@ const removeCloseListeners = () => {
 const toggleOverflowY = () =>
   (style.overflowY = style.overflowY === '' ? 'hidden' : '');
 
-const Person = ({ name, userName }) => {
+export default function Person({ name, userName }) {
   const { t } = useTranslation();
   const dialog = useRef(null);
 
@@ -119,6 +119,4 @@ const Person = ({ name, userName }) => {
       </div>
     </div>
   );
-};
-
-export default Person;
+}

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import i18next from 'i18next';
 
-const LanguageChange = () => {
+export default function LanguageChange() {
   const [currentLanguage, setCurrentLanguage] = useState(i18next.language);
 
   const languages =
@@ -38,6 +38,4 @@ const LanguageChange = () => {
       })}
     </div>
   );
-};
-
-export default LanguageChange;
+}
