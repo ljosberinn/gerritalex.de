@@ -64,7 +64,9 @@ export async function handler() {
 
     return {
       statusCode: 200,
-      body: JSON.stringify(body).replace(/(\s)+/gs, ' '),
+      body: JSON.stringify(body)
+        .replace(/(\s)+/gs, ' ')
+        .replace(/(js-\w+)/g, ''),
       headers: {
         'Content-Type': 'application/json',
       },
