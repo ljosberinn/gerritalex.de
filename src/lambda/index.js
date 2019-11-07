@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+import axios from 'axios';
 import DOMParser from 'dom-parser';
 
 const URI = 'https://github.com/ljosberinn';
@@ -52,8 +52,7 @@ export async function handler() {
   };
 
   try {
-    const response = await fetch(URI);
-    const html = await response.text();
+    const { data: html } = await axios.get(URI, { responseType: 'text' });
 
     const parser = new DOMParser();
     const document = parser.parseFromString(html);
