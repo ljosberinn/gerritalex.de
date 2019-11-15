@@ -21,9 +21,13 @@ const repoLink = `//github.com/${userName}/gerritalex.de`;
 
 const Loader = () => null;
 
-const LandingPage = lazy(() => import('./pages/LandingPage'));
-const ConcertPage = lazy(() => import('./pages/ConcertPage'));
-//const MusicPage = lazy(() => import('./pages/Other/MusicPage/'));
+const LandingPage = lazy(() =>
+  import(/* webpackChunkName: "landingpage" */ './pages/LandingPage'),
+);
+const ConcertPage = lazy(() =>
+  import(/* webpackChunkName: "concertpage" */ './pages/ConcertPage'),
+);
+//const MusicPage = lazy(() => import(/* webpackChunkName: "musicpage" */'./pages/Other/MusicPage/'));
 
 export default function App() {
   return (
