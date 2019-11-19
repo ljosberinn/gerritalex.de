@@ -1,5 +1,20 @@
 [
   {
+    "key": "job-search",
+    "position": "t.job-search-title",
+    "employer": "Javascript Developer | Frontend Developer (React) | UI / UX Engineer",
+    "url": null,
+    "location": "München / Munich",
+    "dates": {
+      "from": null,
+      "to": null
+    },
+    "icon": "code",
+    "achievements": [],
+    "tags": [],
+    "talks": []
+  },
+  {
     "key": "mpunkt",
     "position": "t.mpunkt-title",
     "employer": "mpunkt GmbH",
@@ -7,7 +22,7 @@
     "location": "Augsburg",
     "dates": {
       "from": "2018-07-20",
-      "to": null
+      "to": "2019-11-30"
     },
     "icon": "code",
     "achievements": [],
