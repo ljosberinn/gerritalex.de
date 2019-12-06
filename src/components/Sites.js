@@ -4,41 +4,46 @@ import { useTranslation } from 'react-i18next';
 
 const sites = [
   {
+    url: 'https://github.com/ljosberinn/discord-mdn-bot',
+    title: 'MDN Discord Bot',
+    repository: 'https://github.com/ljosberinn/discord-mdn-bot',
+  },
+  {
     url: 'https://auctioncraftsniper.com',
     title: 'AuctionCraftSniper',
-    repository: 'https://github.com/ljosberinn/auctioncraftsniper'
+    repository: 'https://github.com/ljosberinn/auctioncraftsniper',
   },
   {
     url: 'https://resources-helper.de',
     title: 'Resources Helper',
-    repository: 'https://github.com/ljosberinn/resources-helper'
+    repository: 'https://github.com/ljosberinn/resources-helper',
   },
   {
     url: 'https://wahl2017.gerritalex.de',
     title: 'Wahlorientierungshilfe',
-    repository: 'https://github.com/ljosberinn/Wahlorientierungshilfe'
+    repository: 'https://github.com/ljosberinn/Wahlorientierungshilfe',
   },
   {
     url:
       'https://chrome.google.com/webstore/detail/github-vs-code-one-dark-v/ifhihbeapkbahaelfppkncgmmmeidapl',
     title: 'Github One Dark Vivid',
-    repository: 'https://github.com/ljosberinn/github-one-dark-vivid'
+    repository: 'https://github.com/ljosberinn/github-one-dark-vivid',
   },
   {
     title: 'Advanced Guild Statistics',
     repository:
-      'https://github.com/xepheris/World-of-Warcraft--Legion---Advanced-Guild-Statistics'
+      'https://github.com/xepheris/World-of-Warcraft--Legion---Advanced-Guild-Statistics',
   },
   {
     title: 'Advanced Armory Access',
     repository:
-      'https://github.com/ljosberinn/World-of-Warcraft-Advanced-Armory-Access'
+      'https://github.com/ljosberinn/World-of-Warcraft-Advanced-Armory-Access',
   },
   {
     title: 'Artifact Power Ranking',
     repository:
-      'https://github.com/ljosberinn/World-of-Warcraft-Artifact-Power-World-Ranking'
-  }
+      'https://github.com/ljosberinn/World-of-Warcraft-Artifact-Power-World-Ranking',
+  },
 ];
 
 function RepoLink({ link }) {
