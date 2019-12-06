@@ -1,5 +1,5 @@
 {
-  "en-US": {
+  "en": {
     "translation": {
       "disclaimer-1": "Disclaimer",
       "disclaimer-2": "This is a reactified and heavily customized GitHub profile.",
@@ -65,7 +65,7 @@
       "show-plural": "shows"
     }
   },
-  "de-DE": {
+  "de": {
     "translation": {
       "disclaimer-1": "Hinweis",
       "disclaimer-2": "Dies ist ein reactifiziertes und stark angepasstes GitHub-Profil.",

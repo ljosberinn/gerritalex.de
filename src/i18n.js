@@ -7,11 +7,9 @@ const translations = require('./translation.json');
 // finds occurences of "-number"
 const regExp = new RegExp(/[-]\d+/);
 
-export const achievementLengths = Object.keys(translations['de-DE'].cv)
-  .map(key => {
-    return regExp.test(key) ? key : null;
-  })
-  .filter(key => key !== null)
+export const achievementLengths = Object.keys(translations.de.cv)
+  .map(key => (regExp.test(key) ? key : null))
+  .filter(Boolean)
   .reduce((carry, value) => {
     const parts = value.split('-');
     // take all save the affix
@@ -30,11 +28,11 @@ export default i18n
   .use(initReactI18next)
   .use(LanduageDetector)
   .init({
-    resources: {
-      'en-US': translations['en-US'],
-      en: translations['en-US'],
-      'de-DE': translations['de-DE'],
-      de: translations['de-DE']
+    resources: translations,
+    fallbackLng: 'en',
+    interpolation: {
+      escapeValue: false,
     },
-    fallbackLng: 'en-US'
+    debug: process.env.NODE_ENV === 'development',
+    load: 'languageOnly',
   });
