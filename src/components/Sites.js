@@ -4,9 +4,9 @@ import { useTranslation } from 'react-i18next';
 
 const sites = [
   {
-    url: 'https://github.com/ljosberinn/discord-mdn-bot',
-    title: 'MDN Discord Bot',
-    repository: 'https://github.com/ljosberinn/discord-mdn-bot',
+    url: 'https://github.com/ljosberinn/webdev-support-bot',
+    title: '/r/webdev Support Discord Bot',
+    repository: 'https://github.com/ljosberinn/webdev-support-bot',
   },
   {
     url: 'https://auctioncraftsniper.com',
