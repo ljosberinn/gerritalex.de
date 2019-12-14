@@ -32,7 +32,17 @@ const ConcertPage = lazy(() =>
 
 export default function App() {
   return (
-    <>
+    <Router>
+      {profiles.map(({ icon: path, url }) => (
+        <Route
+          path={`/${path}`}
+          exact
+          render={() => {
+            window.location.href = url;
+            return null;
+          }}
+        />
+      ))}
       <Header repoLink={repoLink} name={name} />
       <main className="application-main">
         <div className="container-xl clearfix px-3 mt-4">
@@ -40,31 +50,23 @@ export default function App() {
           <div className="reverse-col-mobile">
             <div className="col-lg-9 col-md-8 col-12 float-md-left pl-md-2">
               <LanguageChange />
-              <Router>
-                <Navigation />
-                <div className="position-relative mt-4">
-                  <Suspense fallback={<Loader />}>
-                    <Switch>
-                      <Route path="/" exact component={LandingPage} />
-                      <Route path="/concerts" exact component={ConcertPage} />
-                      {profiles.map(({ icon: path, url }) => (
-                        <Route
-                          path={`/${path}`}
-                          exact
-                          render={() => (window.location.href = url)}
-                        />
-                      ))}
-                      <Route render={() => <Redirect to="/" />} />
-                    </Switch>
-                  </Suspense>
-                </div>
-              </Router>
+              <Navigation />
+              <div className="position-relative mt-4">
+                <Suspense fallback={<Loader />}>
+                  <Switch>
+                    <Route path="/" exact component={LandingPage} />
+                    <Route path="/concerts" exact component={ConcertPage} />
+
+                    <Router render={() => <Redirect to="/" />} />
+                  </Switch>
+                </Suspense>
+              </div>
             </div>
             <Person name={name} userName={userName} />
           </div>
         </div>
       </main>
       <Footer />
-    </>
+    </Router>
   );
 }
