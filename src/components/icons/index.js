@@ -11,6 +11,7 @@ import OcticonX from './OcticonX';
 import Mail from './Mail';
 import OcticonPhone from './OcticonPhone';
 import OcticonSearch from './OcticonSearch';
+import OcticonGit from './OcticonGit';
 
 export {
   OcticonBook,
@@ -25,5 +26,6 @@ export {
   LinkedIn,
   OcticonX,
   Mail,
-  OcticonSearch
+  OcticonSearch,
+  OcticonGit,
 };

@@ -1,14 +1,31 @@
 import React from 'react';
 import { OcticonLink } from './icons';
-import { Twitter, Reddit, LinkedIn, Mail } from './icons';
+import { Twitter, Reddit, LinkedIn, Mail, OcticonGit } from './icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faLastfm,
+  faTwitch,
+  faSpotify,
+  faFacebook,
+  faYoutube,
+} from '@fortawesome/free-brands-svg-icons';
 
 export const profiles = [
   { icon: 'github', url: 'https://github.com/ljosberinn' },
   { icon: 'twitter', url: 'https://twitter.com/@gerrit_alex' },
   { icon: 'reddit', url: 'https://reddit.com/user/careseite' },
   { icon: 'linkedin', url: 'https://linkedin.com/in/gerrit-alex/' },
-  { icon: 'lastfm', url: 'https://lastfm.com/user/xhs207ga' },
+  { icon: 'lastfm', url: 'https://last.fm/user/xhs207ga' },
   { icon: 'twitch', url: 'https://twitch.tv/gerrit_alex' },
+  {
+    icon: 'spotify',
+    url: 'https://open.spotify.com/user/21fchbw5qcdxgyiqxis3otdgq',
+  },
+  { icon: 'facebook', url: 'https://www.facebook.com/Exenkoenig' },
+  {
+    icon: 'youtube',
+    url: 'https://www.youtube.com/channel/UCTsp9ZCJw8k9NkaBvybAjGQ',
+  },
 ];
 
 const resolveIcon = name => {
@@ -20,6 +37,17 @@ const resolveIcon = name => {
     case 'linkedin':
       return <LinkedIn />;
     case 'github':
+      return <OcticonGit />;
+    case 'twitch':
+      return <FontAwesomeIcon icon={faTwitch} className="octicon" />;
+    case 'lastfm':
+      return <FontAwesomeIcon icon={faLastfm} className="octicon" />;
+    case 'spotify':
+      return <FontAwesomeIcon icon={faSpotify} className="octicon" />;
+    case 'facebook':
+      return <FontAwesomeIcon icon={faFacebook} className="octicon" />;
+    case 'youtube':
+      return <FontAwesomeIcon icon={faYoutube} className="octicon" />;
     default:
       return <OcticonLink />;
   }
