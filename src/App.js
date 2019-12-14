@@ -37,6 +37,7 @@ export default function App() {
         <Route
           path={`/${path}`}
           exact
+          key={path}
           render={() => {
             window.location.href = url;
             return null;
