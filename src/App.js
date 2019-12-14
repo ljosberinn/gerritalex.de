@@ -14,6 +14,7 @@ import {
   Navigation,
   LanguageChange,
 } from './components';
+import { profiles } from './components/Profiles';
 
 const name = 'Gerrit Alex';
 const userName = 'ljosberinn';
@@ -41,12 +42,18 @@ export default function App() {
               <LanguageChange />
               <Router>
                 <Navigation />
-
                 <div className="position-relative mt-4">
                   <Suspense fallback={<Loader />}>
                     <Switch>
                       <Route path="/" exact component={LandingPage} />
                       <Route path="/concerts" exact component={ConcertPage} />
+                      {profiles.map(({ icon: path, url }) => (
+                        <Route
+                          path={`/${path}`}
+                          exact
+                          render={() => (window.location.href = url)}
+                        />
+                      ))}
                       <Route render={() => <Redirect to="/" />} />
                     </Switch>
                   </Suspense>
