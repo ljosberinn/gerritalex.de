@@ -30,20 +30,11 @@ const ConcertPage = lazy(() =>
 );
 //const MusicPage = lazy(() => import(/* webpackChunkName: "musicpage" */'./pages/Other/MusicPage/'));
 
+const RedirectToHome = () => <Redirect to="/" />;
+
 export default function App() {
   return (
     <Router>
-      {profiles.map(({ icon: path, url }) => (
-        <Route
-          path={`/${path}`}
-          exact
-          key={path}
-          render={() => {
-            window.location.href = url;
-            return null;
-          }}
-        />
-      ))}
       <Header repoLink={repoLink} name={name} />
       <main className="application-main">
         <div className="container-xl clearfix px-3 mt-4">
@@ -53,14 +44,24 @@ export default function App() {
               <LanguageChange />
               <Navigation />
               <div className="position-relative mt-4">
-                <Suspense fallback={<Loader />}>
-                  <Switch>
+                <Switch>
+                  <Suspense fallback={<Loader />}>
                     <Route path="/" exact component={LandingPage} />
                     <Route path="/concerts" exact component={ConcertPage} />
-
-                    <Router render={() => <Redirect to="/" />} />
-                  </Switch>
-                </Suspense>
+                    {profiles.map(({ icon: path, url }) => (
+                      <Route
+                        path={`/${path}`}
+                        exact
+                        render={() => {
+                          window.location.href = url;
+                          return null;
+                        }}
+                        key={path}
+                      />
+                    ))}
+                    <Route component={RedirectToHome} />
+                  </Suspense>
+                </Switch>
               </div>
             </div>
             <Person name={name} userName={userName} />
