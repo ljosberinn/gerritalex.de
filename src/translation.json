@@ -22,7 +22,7 @@
     },
     "cv": {
       "achievements": "Achievements",
-      "job-search-title": "Looking for a full-time position in Munich!",
+      "interhyp-title": "Engineer",
       "mpunkt-title": "Web Developer",
       "mpunkt-1": "Project lead & continued development after takeover of a customer-tailored web application",
       "mpunkt-2": "Leading a SCRUM-like team of up to five developers",
@@ -88,7 +88,7 @@
     },
     "cv": {
       "achievements": "Erfolge",
-      "job-search-title": "Auf Jobsuche für eine Vollzeitstelle in München!",
+      "interhyp-title": "Engineer",
       "mpunkt-title": "Webentwickler",
       "mpunkt-1": "Projektübernahme und -fortentwicklung einer maßgeschneiderten webbasierten Anwendung",
       "mpunkt-2": "Leitung eines SCRUM-ähnlichen Teams mit zeitweise fünf Mitgliedern",

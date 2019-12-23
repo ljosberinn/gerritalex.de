@@ -1,17 +1,17 @@
 [
   {
-    "key": "job-search",
-    "position": "t.job-search-title",
-    "employer": "Javascript Developer | Frontend Developer (React) | UI / UX Engineer",
-    "url": null,
+    "key": "interhyp",
+    "position": "t.interhyp-title",
+    "employer": "Interhyp",
+    "url": "https://interhyp.de",
     "location": "München / Munich",
     "dates": {
-      "from": null,
+      "from": "2020-01-01",
       "to": null
     },
     "icon": "code",
     "achievements": [],
-    "tags": [],
+    "tags": ["React", "TypeScript"],
     "talks": []
   },
   {
@@ -70,6 +70,7 @@
       "Docker",
       "Netlify",
       "Serverless/Lambda",
+      "FaunaDB",
       "PHP 5.6-7.3.5",
       "Debugging",
       "HTML5",
