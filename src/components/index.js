@@ -22,6 +22,7 @@ import Tags from './Tags';
 import Time from './Time';
 import Talks from './Talks';
 import Navigation from './Navigation';
+import ArtistLink from './ArtistLink';
 
 export {
   Achievements,
@@ -47,5 +48,6 @@ export {
   Tags,
   Time,
   Status,
-  Navigation
+  Navigation,
+  ArtistLink,
 };

@@ -63,6 +63,11 @@
       "artist-plural": "artists",
       "show-single": "show",
       "show-plural": "shows"
+    },
+    "music": {
+      "album": "album",
+      "album-plural": "albums",
+      "years": "years"
     }
   },
   "de": {
@@ -128,6 +133,11 @@
       "artist-plural": "Interpreten",
       "show-single": "Konzert",
       "show-plural": "Konzerte"
+    },
+    "music": {
+      "album": "Album",
+      "album-plural": "Alben",
+      "years": "Jahre"
     }
   }
 }

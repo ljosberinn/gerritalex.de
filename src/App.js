@@ -28,7 +28,9 @@ const LandingPage = lazy(() =>
 const ConcertPage = lazy(() =>
   import(/* webpackChunkName: "concertpage" */ './pages/ConcertPage'),
 );
-//const MusicPage = lazy(() => import(/* webpackChunkName: "musicpage" */'./pages/Other/MusicPage/'));
+const MusicPage = lazy(() =>
+  import(/* webpackChunkName: "musicpage" */ './pages/MusicPage/'),
+);
 
 const RedirectToHome = () => <Redirect to="/" />;
 
@@ -48,6 +50,7 @@ export default function App() {
                   <Suspense fallback={<Loader />}>
                     <Route path="/" exact component={LandingPage} />
                     <Route path="/concerts" exact component={ConcertPage} />
+                    <Route path="/music" exact component={MusicPage} />
                     {profiles.map(({ icon: path, url }) => (
                       <Route
                         path={`/${path}`}

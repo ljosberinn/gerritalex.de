@@ -3,1104 +3,1281 @@
     "month": "2",
     "year": "2010",
     "artist": "Lunar Aurora",
-    "album": "Andacht"
+    "album": "Andacht",
+    "hidden": false
   },
   {
     "month": "2",
     "year": "2010",
     "artist": "Anarion",
-    "album": "Fragility"
+    "album": "Fragility",
+    "hidden": false
   },
   {
     "month": "3",
     "year": "2010",
     "artist": "Division Germania",
-    "album": "Manifest"
+    "album": "Manifest",
+    "hidden": true
   },
   {
     "month": "6",
     "year": "2010",
     "artist": "Kratein",
-    "album": "Trauma"
+    "album": "Trauma",
+    "hidden": false
   },
   {
     "month": "6",
     "year": "2010",
     "artist": "Nagelfar",
-    "album": "Virus West"
+    "album": "Virus West",
+    "hidden": false
   },
   {
     "month": "6",
     "year": "2010",
     "artist": "Nagelfar",
-    "album": "Hünengrab im Herbst"
+    "album": "Hünengrab im Herbst",
+    "hidden": false
   },
   {
     "month": "6",
     "year": "2010",
     "artist": "The Ruins of Beverast",
-    "album": "Rain Upon the Impure"
+    "album": "Rain Upon the Impure",
+    "hidden": false
   },
   {
     "month": "6",
     "year": "2010",
     "artist": "Kermania",
-    "album": "Ahnenwerk"
+    "album": "Ahnenwerk",
+    "hidden": false
   },
   {
     "month": "6",
     "year": "2010",
     "artist": "Nagelfar",
-    "album": "Srontgorrth"
+    "album": "Srontgorrth",
+    "hidden": false
   },
   {
     "month": "8",
     "year": "2010",
     "artist": "V.A.",
-    "album": "Voices of the Underground Vol. IV"
+    "album": "Voices of the Underground Vol. IV",
+    "hidden": true
   },
   {
     "month": "8",
     "year": "2010",
     "artist": "Dissection",
-    "album": "Reinkaos"
+    "album": "Reinkaos",
+    "hidden": false
   },
   {
     "month": "8",
     "year": "2010",
     "artist": "The Devil's Blood",
-    "album": "Come, Reap"
+    "album": "Come, Reap",
+    "hidden": false
   },
   {
     "month": "8",
     "year": "2010",
     "artist": "Nachtmystium",
-    "album": "Addicts: Black Meddle Pt. II"
+    "album": "Addicts: Black Meddle Pt. II",
+    "hidden": false
   },
   {
     "month": "9",
     "year": "2010",
     "artist": "PiXie Meet",
-    "album": "Waste Your Time"
+    "album": "Waste Your Time",
+    "hidden": false
   },
   {
     "month": "10",
     "year": "2010",
     "artist": "Bluttaufe",
-    "album": "Mein Fleisch an deinen Lippen"
+    "album": "Mein Fleisch an deinen Lippen",
+    "hidden": false
   },
   {
     "month": "11",
     "year": "2010",
     "artist": "Nocte Obducta",
-    "album": "Nektar - Teil 1: Zwölf Monde, eine Hand voll Träum"
+    "album": "Nektar - Teil 1: Zwölf Monde, eine Hand voll Träume",
+    "hidden": false
   },
   {
     "month": "11",
     "year": "2010",
     "artist": "The Devil's Blood",
-    "album": "The Time of No Time Evermore"
+    "album": "The Time of No Time Evermore",
+    "hidden": false
   },
   {
     "month": "11",
     "year": "2010",
     "artist": "Weh",
-    "album": "Origins"
+    "album": "Origins",
+    "hidden": false
   },
   {
     "month": "11",
     "year": "2010",
     "artist": "Endstille",
-    "album": "Navigator"
+    "album": "Navigator",
+    "hidden": false
   },
   {
     "month": "12",
     "year": "2010",
     "artist": "The Devil's Blood",
-    "album": "I'll Be Your Ghost"
+    "album": "I'll Be Your Ghost",
+    "hidden": false
   },
   {
     "month": "12",
     "year": "2010",
     "artist": "Nocte Obducta",
-    "album": "Aschefrühling"
+    "album": "Aschefrühling",
+    "hidden": false
   },
   {
     "month": "12",
     "year": "2010",
     "artist": "Simple Existenz",
-    "album": "Das Leben vor dem Tod"
+    "album": "Das Leben vor dem Tod",
+    "hidden": false
   },
   {
     "month": "4",
     "year": "2010",
     "artist": "Lyrinx",
-    "album": "Ending  the Circle of Life"
+    "album": "Ending  the Circle of Life",
+    "hidden": false
   },
   {
     "month": "12",
     "year": "2010",
     "artist": "The Devil's Blood",
-    "album": "The Graveyard Shuffle"
+    "album": "The Graveyard Shuffle",
+    "hidden": false
   },
   {
     "month": "12",
     "year": "2010",
     "artist": "The Ruins of Beverast",
-    "album": "Foulest Semen of a Sheltered Elite"
+    "album": "Foulest Semen of a Sheltered Elite",
+    "hidden": false
   },
   {
     "month": "6",
     "year": "2010",
     "artist": "Ascension",
-    "album": "Consolamentum"
+    "album": "Consolamentum",
+    "hidden": false
   },
   {
     "month": "11",
     "year": "2010",
     "artist": "Dark Embraace",
-    "album": "Demos"
+    "album": "Demos",
+    "hidden": false
   },
   {
     "month": "11",
     "year": "2010",
     "artist": "Bluttaufe",
-    "album": "Schwarze Dornen"
+    "album": "Schwarze Dornen",
+    "hidden": false
   },
   {
     "month": "1",
     "year": "2011",
     "artist": "Nachtmystium",
-    "album": "Doomsday Derelicts"
+    "album": "Doomsday Derelicts",
+    "hidden": false
   },
   {
     "month": "1",
     "year": "2011",
     "artist": "The Heroine Whores",
-    "album": "EP 2010"
+    "album": "EP 2010",
+    "hidden": false
   },
   {
     "month": "1",
     "year": "2011",
     "artist": "EgoNoir",
-    "album": "Reste... (was vom Sturm übrig blieb)"
+    "album": "Reste... (was vom Sturm übrig blieb)",
+    "hidden": false
   },
   {
     "month": "1",
     "year": "2011",
     "artist": "Madrugada",
-    "album": "The Deep End"
+    "album": "The Deep End",
+    "hidden": false
   },
   {
     "month": "2",
     "year": "2011",
     "artist": "V.A.",
-    "album": "Only Death is Real Vol. 2"
+    "album": "Only Death is Real Vol. 2",
+    "hidden": true
   },
   {
     "month": "2",
     "year": "2011",
     "artist": "Verdunkeln",
-    "album": "Einblick in den Qualenfall"
+    "album": "Einblick in den Qualenfall",
+    "hidden": false
   },
   {
     "month": "2",
     "year": "2011",
     "artist": "Bluttaufe",
-    "album": "Demo2000"
+    "album": "Demo2000",
+    "hidden": false
   },
   {
     "month": "2",
     "year": "2011",
     "artist": "Bluttaufe",
-    "album": "Dem Untergang verpflichtet Promo 99"
+    "album": "Dem Untergang verpflichtet Promo 99",
+    "hidden": false
   },
   {
     "month": "2",
     "year": "2011",
     "artist": "Nagelfar",
-    "album": "Srontgorrth"
+    "album": "Srontgorrth",
+    "hidden": false
   },
   {
     "month": "3",
     "year": "2011",
     "artist": "Herbstregen",
-    "album": "Leben gescheitert"
+    "album": "Leben gescheitert",
+    "hidden": false
   },
   {
     "month": "3",
     "year": "2011",
     "artist": "The Doors",
-    "album": "The Doors"
+    "album": "The Doors",
+    "hidden": false
   },
   {
     "month": "3",
     "year": "2011",
     "artist": "PiXie Meet",
-    "album": "On the Ground"
+    "album": "On the Ground",
+    "hidden": false
   },
   {
     "month": "5",
     "year": "2011",
     "artist": "Alastor",
-    "album": "Noble North"
+    "album": "Noble North",
+    "hidden": false
   },
   {
     "month": "5",
     "year": "2011",
     "artist": "Nachtmystium",
-    "album": "Instinct: Decay"
+    "album": "Instinct: Decay",
+    "hidden": false
   },
   {
     "month": "5",
     "year": "2011",
     "artist": "Nargaroth",
-    "album": "Semper Fi"
+    "album": "Semper Fi",
+    "hidden": false
   },
   {
     "month": "5",
     "year": "2011",
     "artist": "Drowning the Light",
-    "album": "An Alignment of Dead Stars"
+    "album": "An Alignment of Dead Stars",
+    "hidden": false
   },
   {
     "month": "5",
     "year": "2011",
     "artist": "Drowning the Light",
-    "album": "Blood of the Ancients"
+    "album": "Blood of the Ancients",
+    "hidden": false
   },
   {
     "month": "6",
     "year": "2011",
     "artist": "Weird Fate/Membaris",
-    "album": "Conspiracy"
+    "album": "Conspiracy",
+    "hidden": false
   },
   {
     "month": "6",
     "year": "2011",
     "artist": "Winds of the Black Mountains",
-    "album": "Sing thou Unholy Servants"
+    "album": "Sing thou Unholy Servants",
+    "hidden": false
   },
   {
     "month": "6",
     "year": "2011",
     "artist": "Sun of the Sleepless/Nachtmahr",
-    "album": "I"
+    "album": "I",
+    "hidden": false
   },
   {
     "month": "7",
     "year": "2011",
     "artist": "Iut de Asken",
-    "album": "Compilation"
+    "album": "Compilation",
+    "hidden": true
   },
   {
     "month": "7",
     "year": "2011",
     "artist": "Ascension",
-    "album": "With Burning Tongues"
+    "album": "With Burning Tongues",
+    "hidden": false
   },
   {
     "month": "7",
     "year": "2011",
     "artist": "Katharsis",
-    "album": "Fourth Reich"
+    "album": "Fourth Reich",
+    "hidden": false
   },
   {
     "month": "7",
     "year": "2011",
     "artist": "Katharsis",
-    "album": "VVorld VVithout End"
+    "album": "VVorld VVithout End",
+    "hidden": false
   },
   {
     "month": "8",
     "year": "2011",
     "artist": "Urgewalt",
-    "album": "Geisterhain"
+    "album": "Geisterhain",
+    "hidden": false
   },
   {
     "month": "8",
     "year": "2011",
     "artist": "The Flight of Sleipnir",
-    "album": "Essence of Nine"
+    "album": "Essence of Nine",
+    "hidden": false
   },
   {
     "month": "10",
     "year": "2011",
     "artist": "Wolves in the Throne Room",
-    "album": "Two Hunters"
+    "album": "Two Hunters",
+    "hidden": false
   },
   {
     "month": "11",
     "year": "2011",
     "artist": "Rome",
-    "album": "Die AEsthetik der Herrschaftsfreiheit"
+    "album": "Die AEsthetik der Herrschaftsfreiheit",
+    "hidden": false
   },
   {
     "month": "11",
     "year": "2011",
     "artist": "The Devil's Blood",
-    "album": "The Thousandfold Epicentre"
+    "album": "The Thousandfold Epicentre",
+    "hidden": false
   },
   {
     "month": "11",
     "year": "2011",
     "artist": "Rome",
-    "album": "Confessions d'un voleur d'âmes"
+    "album": "Confessions d'un voleur d'âmes",
+    "hidden": false
   },
   {
     "month": "5",
     "year": "2011",
     "artist": "Nachtmystium",
-    "album": "Eulogy IV"
+    "album": "Eulogy IV",
+    "hidden": false
   },
   {
     "month": "5",
     "year": "2011",
     "artist": "Nargaroth",
-    "album": "Spectral Visions of Mental Warfare"
+    "album": "Spectral Visions of Mental Warfare",
+    "hidden": false
   },
   {
     "month": "5",
     "year": "2011",
     "artist": "Nargaroth",
-    "album": "Jahreszeiten"
+    "album": "Jahreszeiten",
+    "hidden": false
   },
   {
     "month": "6",
     "year": "2011",
     "artist": "Rome",
-    "album": "Our Holy Rue/The Merchant Fleet"
+    "album": "Our Holy Rue/The Merchant Fleet",
+    "hidden": false
   },
   {
     "month": "7",
     "year": "2011",
     "artist": "Jex Thoth",
-    "album": "Jex Thoth"
+    "album": "Jex Thoth",
+    "hidden": false
   },
   {
     "month": "9",
     "year": "2011",
     "artist": "The Ruins of Beverast",
-    "album": "Enchanted by Gravemould"
+    "album": "Enchanted by Gravemould",
+    "hidden": false
   },
   {
     "month": "10",
     "year": "2011",
     "artist": "The Devil's Blood",
-    "album": "Fire Burning"
+    "album": "Fire Burning",
+    "hidden": false
   },
   {
     "month": "11",
     "year": "2011",
     "artist": "Nocte Obducta",
-    "album": "Verderbnis (Der Schnitter kratzt an jeder Tür)"
+    "album": "Verderbnis (Der Schnitter kratzt an jeder Tür)",
+    "hidden": false
   },
   {
     "month": "1",
     "year": "2011",
     "artist": "Asuras",
-    "album": "Demo 2009"
+    "album": "Demo 2009",
+    "hidden": false
   },
   {
     "month": "2",
     "year": "2011",
     "artist": "Nagelfar",
-    "album": "Jagd"
+    "album": "Jagd",
+    "hidden": false
   },
   {
     "month": "1",
     "year": "2012",
     "artist": "Triarii",
-    "album": "Exile"
+    "album": "Exile",
+    "hidden": false
   },
   {
     "month": "1",
     "year": "2012",
     "artist": "Triarii",
-    "album": "Pièce Héroique"
+    "album": "Pièce Héroique",
+    "hidden": false
   },
   {
     "month": "3",
     "year": "2012",
     "artist": "Secrets of the Moon",
-    "album": "Seven Bells"
+    "album": "Seven Bells",
+    "hidden": false
   },
   {
     "month": "3",
     "year": "2012",
     "artist": "Von Thronstahl",
-    "album": "Germanium Metallicum"
+    "album": "Germanium Metallicum",
+    "hidden": false
   },
   {
     "month": "3",
     "year": "2012",
     "artist": "Rome",
-    "album": "Berlin"
+    "album": "Berlin",
+    "hidden": false
   },
   {
     "month": "3",
     "year": "2012",
     "artist": "Rome",
-    "album": "Flowers from Exile"
+    "album": "Flowers from Exile",
+    "hidden": false
   },
   {
     "month": "3",
     "year": "2012",
     "artist": "Rome",
-    "album": "Masse Mensch Material"
+    "album": "Masse Mensch Material",
+    "hidden": false
   },
   {
     "month": "3",
     "year": "2012",
     "artist": "Rome",
-    "album": "Nera"
+    "album": "Nera",
+    "hidden": false
   },
   {
     "month": "3",
     "year": "2012",
     "artist": "Fields of the Nephilim",
-    "album": "Mourning Sun"
+    "album": "Mourning Sun",
+    "hidden": false
   },
   {
     "month": "4",
     "year": "2012",
     "artist": "Nachtmystium",
-    "album": "Worldfall"
+    "album": "Worldfall",
+    "hidden": false
   },
   {
     "month": "7",
     "year": "2012",
     "artist": "Rome",
-    "album": "Fester"
+    "album": "Fester",
+    "hidden": false
   },
   {
     "month": "7",
     "year": "2012",
     "artist": "Sterbeklang",
-    "album": "Cosmoderne"
+    "album": "Cosmoderne",
+    "hidden": false
   },
   {
     "month": "7",
     "year": "2012",
     "artist": "Membaris",
-    "album": "Entartet"
+    "album": "Entartet",
+    "hidden": false
   },
   {
     "month": "7",
     "year": "2012",
     "artist": "Nachtmystium",
-    "album": "Silencing Machine"
+    "album": "Silencing Machine",
+    "hidden": false
   },
   {
     "month": "7",
     "year": "2012",
     "artist": "Burzum",
-    "album": "Hvis Lyset Tar Oss"
+    "album": "Hvis Lyset Tar Oss",
+    "hidden": false
   },
   {
     "month": "7",
     "year": "2012",
     "artist": "Burzum",
-    "album": "Belus"
+    "album": "Belus",
+    "hidden": false
   },
   {
     "month": "7",
     "year": "2012",
     "artist": "Leonard Cohen",
-    "album": "Old Ideas"
+    "album": "Old Ideas",
+    "hidden": false
   },
   {
     "month": "7",
     "year": "2012",
     "artist": "Leviathan",
-    "album": "Massive Conspiracy Against All Life"
+    "album": "Massive Conspiracy Against All Life",
+    "hidden": false
   },
   {
     "month": "8",
     "year": "2012",
     "artist": "Rome",
-    "album": "Nos chants perdus"
+    "album": "Nos chants perdus",
+    "hidden": false
   },
   {
     "month": "9",
     "year": "2012",
     "artist": "Dordeduh",
-    "album": "Dar Deh Duh"
+    "album": "Dar Deh Duh",
+    "hidden": false
   },
   {
     "month": "10",
     "year": "2012",
     "artist": "Gratwanderung",
-    "album": "Anthropozaen"
+    "album": "Anthropozaen",
+    "hidden": false
   },
   {
     "month": "10",
     "year": "2012",
     "artist": "Rome",
-    "album": "Hell Money"
+    "album": "Hell Money",
+    "hidden": false
   },
   {
     "month": "10",
     "year": "2012",
     "artist": "Wallachia",
-    "album": "Ceremony of Ascension"
+    "album": "Ceremony of Ascension",
+    "hidden": false
   },
   {
     "month": "10",
     "year": "2012",
     "artist": "Nachtmystium",
-    "album": "Assassins - Black Meddle Part 1"
+    "album": "Assassins - Black Meddle Part 1",
+    "hidden": false
   },
   {
     "month": "10",
     "year": "2012",
     "artist": "Mack Murphy & the Inmates",
-    "album": "The Early Years"
+    "album": "The Early Years",
+    "hidden": false
   },
   {
     "month": "10",
     "year": "2012",
     "artist": "Mack Murphy & the Inmates",
-    "album": "Summer's Cemetery Dawns"
+    "album": "Summer's Cemetery Dawns",
+    "hidden": false
   },
   {
     "month": "10",
     "year": "2012",
     "artist": "Mack Murphy & the Inmates",
-    "album": "Distant"
+    "album": "Distant",
+    "hidden": false
   },
   {
     "month": "10",
     "year": "2012",
     "artist": "Rome",
-    "album": "August Spies"
+    "album": "August Spies",
+    "hidden": false
   },
   {
     "month": "10",
     "year": "2012",
     "artist": "Casper",
-    "album": "Auf und Davon"
+    "album": "Auf und Davon",
+    "hidden": false
   },
   {
     "month": "10",
     "year": "2012",
     "artist": "Casper",
-    "album": "XOXO"
+    "album": "XOXO",
+    "hidden": false
   },
   {
     "month": "11",
     "year": "2012",
     "artist": "Wallachia",
-    "album": "Shunya"
+    "album": "Shunya",
+    "hidden": false
   },
   {
     "month": "11",
     "year": "2012",
     "artist": "Wallachia",
-    "album": "Shunya (Promo)"
+    "album": "Shunya (Promo)",
+    "hidden": false
   },
   {
     "month": "11",
     "year": "2012",
     "artist": "Darkwood",
-    "album": "Notwendfeuer"
+    "album": "Notwendfeuer",
+    "hidden": false
   },
   {
     "month": "11",
     "year": "2012",
     "artist": "Of the Wand & the Moon",
-    "album": "The Lone Descent"
+    "album": "The Lone Descent",
+    "hidden": false
   },
   {
     "month": "11",
     "year": "2012",
     "artist": "Rome",
-    "album": "L'assassin"
+    "album": "L'assassin",
+    "hidden": false
   },
   {
     "month": "11",
     "year": "2012",
     "artist": "Jännerwein",
-    "album": "Abendläuten"
+    "album": "Abendläuten",
+    "hidden": false
   },
   {
     "month": "11",
     "year": "2012",
     "artist": "Von Thronstahl",
-    "album": "Corona Imperialis"
+    "album": "Corona Imperialis",
+    "hidden": false
   },
   {
     "month": "11",
     "year": "2012",
     "artist": "Lana del Rey",
-    "album": "Born to Die: Paradise Edition"
+    "album": "Born to Die: Paradise Edition",
+    "hidden": false
   },
   {
     "month": "12",
     "year": "2012",
     "artist": "Leger des Heils",
-    "album": ":Licht:"
+    "album": ":Licht:",
+    "hidden": false
   },
   {
     "month": "12",
     "year": "2012",
     "artist": "Madrugada",
-    "album": "Industrial Silence"
+    "album": "Industrial Silence",
+    "hidden": false
   },
   {
     "month": "12",
     "year": "2012",
     "artist": "Dagnir en Gwann",
-    "album": "Verloren"
+    "album": "Verloren",
+    "hidden": false
   },
   {
     "month": "12",
     "year": "2012",
     "artist": "Lykke Li",
-    "album": "Wounded Rhymes"
+    "album": "Wounded Rhymes",
+    "hidden": false
   },
   {
     "month": "12",
     "year": "2012",
     "artist": "Madrugada",
-    "album": "The Nightly Disease"
+    "album": "The Nightly Disease",
+    "hidden": false
   },
   {
     "month": "12",
     "year": "2012",
     "artist": "Finster",
-    "album": "Existenz"
+    "album": "Existenz",
+    "hidden": false
   },
   {
     "month": "12",
     "year": "2012",
     "artist": "The Doors",
-    "album": "Strange Days"
+    "album": "Strange Days",
+    "hidden": false
   },
   {
     "month": "12",
     "year": "2012",
     "artist": "Lykke Li",
-    "album": "Youth Novels"
+    "album": "Youth Novels",
+    "hidden": false
   },
   {
     "month": "1",
     "year": "2012",
     "artist": "Nachtmytium/Murmur",
-    "album": "Split"
+    "album": "Split",
+    "hidden": false
   },
   {
     "month": "6",
     "year": "2012",
     "artist": "Leonard Cohen",
-    "album": "Songs of Love and Hate"
+    "album": "Songs of Love and Hate",
+    "hidden": false
   },
   {
     "month": "6",
     "year": "2012",
     "artist": "Leonard Cohen",
-    "album": "New Skin for the Old Ceremony"
+    "album": "New Skin for the Old Ceremony",
+    "hidden": false
   },
   {
     "month": "7",
     "year": "2012",
     "artist": "Leonard Cohen",
-    "album": "Death of a Ladies Man"
+    "album": "Death of a Ladies Man",
+    "hidden": false
   },
   {
     "month": "11",
     "year": "2012",
     "artist": "Wallachia",
-    "album": "Ceremony of Ascension"
+    "album": "Ceremony of Ascension",
+    "hidden": false
   },
   {
     "month": "2",
     "year": "2013",
     "artist": "Motörhead",
-    "album": "Ace of Spades"
+    "album": "Ace of Spades",
+    "hidden": false
   },
   {
     "month": "2",
     "year": "2013",
     "artist": "The Doors",
-    "album": "An American Prayer"
+    "album": "An American Prayer",
+    "hidden": false
   },
   {
     "month": "4",
     "year": "2013",
     "artist": "Leonard Cohen",
-    "album": "I'm Your Man"
+    "album": "I'm Your Man",
+    "hidden": false
   },
   {
     "month": "4",
     "year": "2013",
     "artist": "Leonard Cohen",
-    "album": "Songs from a Room"
+    "album": "Songs from a Room",
+    "hidden": false
   },
   {
     "month": "4",
     "year": "2013",
     "artist": "Leonard Cohen",
-    "album": "Ten New Songs"
+    "album": "Ten New Songs",
+    "hidden": false
   },
   {
     "month": "4",
     "year": "2013",
     "artist": "Isis",
-    "album": "Wavering Radiant"
+    "album": "Wavering Radiant",
+    "hidden": false
   },
   {
     "month": "5",
     "year": "2013",
     "artist": "The Devil's Blood",
-    "album": "III. Tabula Rasa or Death and the Seven Pillars"
+    "album": "III. Tabula Rasa or Death and the Seven Pillars",
+    "hidden": false
   },
   {
     "month": "5",
     "year": "2013",
     "artist": "Selim Lemouchi & his Enemies",
-    "album": "Mens Animus Corpus"
+    "album": "Mens Animus Corpus",
+    "hidden": false
   },
   {
     "month": "6",
     "year": "2013",
     "artist": "Rome",
-    "album": "Hate Us and See if We Mind"
+    "album": "Hate Us and See if We Mind",
+    "hidden": false
   },
   {
     "month": "8",
     "year": "2013",
     "artist": "The Ruins of Beverast",
-    "album": "Blood Vaults: The Blazing Gospel of Heinrich Kramer"
+    "album": "Blood Vaults: The Blazing Gospel of Heinrich Kramer",
+    "hidden": false
   },
   {
     "month": "10",
     "year": "2013",
     "artist": "Nokturnal Mortum",
-    "album": "Voice of Steel"
+    "album": "Voice of Steel",
+    "hidden": false
   },
   {
     "month": "12",
     "year": "2013",
     "artist": "Selim Lemouchi & his Enemies",
-    "album": "Earth Air Spirit Water Fire"
+    "album": "Earth Air Spirit Water Fire",
+    "hidden": false
   },
   {
     "month": "5",
     "year": "2014",
     "artist": "Black Salvation",
-    "album": "Lunia..."
+    "album": "Lunia...",
+    "hidden": false
   },
   {
     "month": "5",
     "year": "2014",
     "artist": "Black Salvation",
-    "album": "In Deep Circles"
+    "album": "In Deep Circles",
+    "hidden": false
   },
   {
     "month": "8",
     "year": "2014",
     "artist": "Rome",
-    "album": "A Passage to Rhodesia"
+    "album": "A Passage to Rhodesia",
+    "hidden": false
   },
   {
     "month": "8",
     "year": "2014",
     "artist": "Rome",
-    "album": "House of Stone"
+    "album": "House of Stone",
+    "hidden": false
   },
   {
     "month": "8",
     "year": "2014",
     "artist": "Nachtmystium",
-    "album": "The World We Left Behind"
+    "album": "The World We Left Behind",
+    "hidden": false
   },
   {
     "month": "8",
     "year": "2014",
     "artist": "Kollegah",
-    "album": "Boss der Bosse"
+    "album": "Boss der Bosse",
+    "hidden": false
   },
   {
     "month": "8",
     "year": "2014",
     "artist": "Lana del Rey",
-    "album": "Ultraviolence"
+    "album": "Ultraviolence",
+    "hidden": false
   },
   {
     "month": "8",
     "year": "2014",
     "artist": "In Solitude",
-    "album": "Sister"
+    "album": "Sister",
+    "hidden": false
   },
   {
     "month": "8",
     "year": "2014",
     "artist": "Jex Thoth",
-    "album": "Blood Moon Rise"
+    "album": "Blood Moon Rise",
+    "hidden": false
   },
   {
     "month": "8",
     "year": "2014",
     "artist": "Rome",
-    "album": "Braii the Beloved Country/My Traitor's Heart"
+    "album": "Braii the Beloved Country/My Traitor's Heart",
+    "hidden": false
   },
   {
     "month": "12",
     "year": "2015",
     "artist": "Bring Me the Horizon",
-    "album": "That's the Spirit"
+    "album": "That's the Spirit",
+    "hidden": false
   },
   {
     "month": "5",
     "year": "2015",
     "artist": "Black Salvation",
-    "album": "In Deep Circles"
+    "album": "In Deep Circles",
+    "hidden": false
   },
   {
     "month": "2",
     "year": "2016",
     "artist": "Prinz Pi",
-    "album": "Rebell ohne Grund"
+    "album": "Rebell ohne Grund",
+    "hidden": false
   },
   {
     "month": "2",
     "year": "2016",
     "artist": "Prinz Pi",
-    "album": "Im Westen nichts Neues"
+    "album": "Im Westen nichts Neues",
+    "hidden": false
   },
   {
     "month": "2",
     "year": "2016",
     "artist": "Kollegah",
-    "album": "Bossaura"
+    "album": "Bossaura",
+    "hidden": false
   },
   {
     "month": "2",
     "year": "2016",
     "artist": "Lana del Rey",
-    "album": "Honeymoon"
+    "album": "Honeymoon",
+    "hidden": false
   },
   {
     "month": "2",
     "year": "2016",
     "artist": "King Dude",
-    "album": "Fear"
+    "album": "Fear",
+    "hidden": false
   },
   {
     "month": "2",
     "year": "2016",
     "artist": "King Dude",
-    "album": "Songs of Flesh & Blood - In the Key of Light"
+    "album": "Songs of Flesh & Blood - In the Key of Light",
+    "hidden": false
   },
   {
     "month": "3",
     "year": "2016",
     "artist": "FJØRT",
-    "album": "Kontakt"
+    "album": "Kontakt",
+    "hidden": false
   },
   {
     "month": "4",
     "year": "2016",
     "artist": "Anorexia Nervosa",
-    "album": "Drudenhaus"
+    "album": "Drudenhaus",
+    "hidden": false
   },
   {
     "month": "4",
     "year": "2016",
     "artist": "Anorexia Nervosa",
-    "album": "The September E.P."
+    "album": "The September E.P.",
+    "hidden": false
   },
   {
     "month": "4",
     "year": "2016",
     "artist": "Anorexia Nervosa",
-    "album": "New Obscurantis Order"
+    "album": "New Obscurantis Order",
+    "hidden": false
   },
   {
     "month": "5",
     "year": "2016",
     "artist": "Kontra K",
-    "album": "Aus dem Schatten in das Licht"
+    "album": "Aus dem Schatten in das Licht",
+    "hidden": false
   },
   {
     "month": "5",
     "year": "2016",
     "artist": "Kontra K",
-    "album": "Labyrinth"
+    "album": "Labyrinth",
+    "hidden": false
   },
   {
     "month": "5",
     "year": "2016",
     "artist": "FJØRT",
-    "album": "d'accord"
+    "album": "d'accord",
+    "hidden": false
   },
   {
     "month": "7",
     "year": "2016",
     "artist": "Stick to Your Guns",
-    "album": "Diamonds"
+    "album": "Diamonds",
+    "hidden": false
   },
   {
     "month": "8",
     "year": "2016",
     "artist": "Rome",
-    "album": "The Hyperion Machine"
+    "album": "The Hyperion Machine",
+    "hidden": false
   },
   {
     "month": "8",
     "year": "2016",
     "artist": "King Dude",
-    "album": "Sex"
+    "album": "Sex",
+    "hidden": false
   },
   {
     "month": "11",
     "year": "2016",
     "artist": "Die Antwoord",
-    "album": "Mount Ninji And Da Nice Time Kid"
+    "album": "Mount Ninji And Da Nice Time Kid",
+    "hidden": false
   },
   {
     "month": "12",
     "year": "2016",
     "artist": "Triarii",
-    "album": "Muse in Arms"
+    "album": "Muse in Arms",
+    "hidden": false
   },
   {
     "month": "12",
     "year": "2016",
     "artist": "Triarii",
-    "album": "ars militaria"
+    "album": "ars militaria",
+    "hidden": false
   },
   {
     "month": "2",
     "year": "2017",
     "artist": "Porta Nigra",
-    "album": "Kaiserschnitt"
+    "album": "Kaiserschnitt",
+    "hidden": false
   },
   {
     "month": "2",
     "year": "2017",
     "artist": "Haftbefehl",
-    "album": "Russisch Roulette"
+    "album": "Russisch Roulette",
+    "hidden": false
   },
   {
     "month": "2",
     "year": "2017",
     "artist": "Being as an Ocean",
-    "album": "Being as an Ocean"
+    "album": "Being as an Ocean",
+    "hidden": false
   },
   {
     "month": "2",
     "year": "2017",
     "artist": "Being as an Ocean",
-    "album": "How We Both Wondrously Perish"
+    "album": "How We Both Wondrously Perish",
+    "hidden": false
   },
   {
     "month": "2",
     "year": "2017",
     "artist": "DOOL",
-    "album": "Here Now There Then"
+    "album": "Here Now There Then",
+    "hidden": false
   },
   {
     "month": "2",
     "year": "2017",
     "artist": "DOOL",
-    "album": "Oweynagat"
-  },
-  {
-    "month": "7",
-    "year": "2017",
-    "artist": "Lana del Rey",
-    "album": "Lust for Life"
-  },
-  {
-    "month": "6",
-    "year": "2017",
-    "artist": "Morlockk Dilemma",
-    "album": "Circus Maximus"
+    "album": "Oweynagat",
+    "hidden": false
   },
   {
     "month": "4",
     "year": "2017",
     "artist": "Ra Al Dee Experience",
-    "album": "Diatessaron"
+    "album": "Diatessaron",
+    "hidden": false
   },
   {
     "month": "4",
     "year": "2017",
     "artist": "Kontra K",
-    "album": "Gute Nacht"
+    "album": "Gute Nacht",
+    "hidden": false
   },
   {
     "month": "4",
     "year": "2017",
     "artist": "Ufo361",
-    "album": "Ich bin 3 Berliner"
+    "album": "Ich bin 3 Berliner",
+    "hidden": false
   },
   {
     "month": "6",
     "year": "2017",
     "artist": "Morlockk Dilemma",
-    "album": "Circus Maximus"
+    "album": "Circus Maximus",
+    "hidden": false
+  },
+  {
+    "month": "7",
+    "year": "2017",
+    "artist": "Lana del Rey",
+    "album": "Lust for Life",
+    "hidden": false
   },
   {
     "month": "8",
     "year": "2017",
     "artist": "Capo",
-    "album": "Alles auf Rot"
+    "album": "Alles auf Rot",
+    "hidden": false
   },
   {
     "month": "4",
     "year": "2018",
     "artist": "Isis",
-    "album": "Panopticon"
+    "album": "Panopticon",
+    "hidden": false
   },
   {
     "month": "12",
     "year": "2018",
     "artist": "Les Discrets",
-    "album": "Septembre et Ses Dernières Pensées"
+    "album": "Septembre et Ses Dernières Pensées",
+    "hidden": false
   },
   {
     "month": "5",
     "year": "2019",
     "artist": "Prezident",
-    "album": "Kunst ist eine besitzergreifende Geliebte"
+    "album": "Kunst ist eine besitzergreifende Geliebte",
+    "hidden": false
   },
   {
     "month": "5",
     "year": "2019",
     "artist": "Glaciation",
-    "album": "Sur les Falaises de Marbre"
+    "album": "Sur les Falaises de Marbre",
+    "hidden": false
   },
   {
     "month": "5",
     "year": "2019",
     "artist": "Cult of Luna",
-    "album": "Mariner"
+    "album": "Mariner",
+    "hidden": false
   },
   {
     "month": "5",
     "year": "2019",
     "artist": "Prezident",
-    "album": "Limbus"
+    "album": "Limbus",
+    "hidden": false
   },
   {
     "month": "6",
     "year": "2019",
     "artist": "Bausa",
-    "album": "Dreifarbenhaus"
+    "album": "Dreifarbenhaus",
+    "hidden": false
   },
   {
     "month": "6",
     "year": "2019",
     "artist": "Health",
-    "album": "Vol. 4 :: Slaves of Fear"
+    "album": "Vol. 4 :: Slaves of Fear",
+    "hidden": false
   },
   {
     "month": "10",
     "year": "2019",
     "artist": "Danger Dan",
-    "album": "Reflexionen aus dem beschönigten Leben"
+    "album": "Reflexionen aus dem beschönigten Leben",
+    "hidden": false
   }
 ]

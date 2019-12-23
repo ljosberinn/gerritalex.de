@@ -170,11 +170,6 @@ table tbody tr:hover {
   z-index: 1;
 }
 
-.albums {
-  display: flex;
-  flex-wrap: wrap;
-
-  > div {
-    flex: 1 0 25%;
-  }
+.has-text-right {
+  text-align: right;
 }
