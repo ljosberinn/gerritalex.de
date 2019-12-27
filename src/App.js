@@ -62,8 +62,8 @@ export default function App() {
                         key={path}
                       />
                     ))}
-                    <Route component={RedirectToHome} />
                   </Suspense>
+                  <Route component={RedirectToHome} />
                 </Switch>
               </div>
             </div>
