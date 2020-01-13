@@ -1,9 +1,6 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 
 export default function Header({ name, repoLink }) {
-  const { t } = useTranslation();
-
   return (
     <div className="position-relative">
       <header
@@ -39,7 +36,7 @@ export default function Header({ name, repoLink }) {
                       className="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap d-block d-lg-inline-block"
                       style={{ cursor: 'default' }}
                     >
-                      {name} - {t('software-engineer')}
+                      {name} - Fullstack Web Software Engineer
                     </summary>
                   </details>
                 </li>
