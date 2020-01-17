@@ -11,7 +11,7 @@
     "dom-parser": "^0.1.6",
     "i18next": "^19.0.3",
     "i18next-browser-languagedetector": "^4.0.1",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "react": "^16.12.0",
     "react-debounce-input": "^3.2.2",
     "react-dom": "^16.12.0",
