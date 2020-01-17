@@ -2,7 +2,7 @@
   {
     "key": "interhyp",
     "position": "t.interhyp-title",
-    "employer": "Interhyp",
+    "employer": "Interhyp Gruppe",
     "url": "https://interhyp.de",
     "location": "München / Munich",
     "dates": {
@@ -11,7 +11,21 @@
     },
     "icon": "code",
     "achievements": [],
-    "tags": ["React", "TypeScript"],
+    "tags": [
+      "React",
+      "TypeScript",
+      "Redux",
+      "Web Components",
+      "OpenShift",
+      "Java",
+      "Spring Boot",
+      "Scrum",
+      "Bitbucket",
+      "Jira",
+      "Confluence",
+      "Pair Programming",
+      "Code Review"
+    ],
     "talks": []
   },
   {
@@ -39,7 +53,8 @@
       "npm",
       "PHPStorm",
       "Sentry",
-      "Docker"
+      "Docker",
+      "PHPStorm"
     ],
     "talks": [
       "ES2015+",
@@ -84,6 +99,7 @@
       "npm",
       "composer",
       "webpack",
+      "parcel",
       "Performance optimization",
       "Code quality",
       "Readability",
