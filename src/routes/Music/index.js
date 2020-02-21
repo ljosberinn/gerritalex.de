@@ -2,8 +2,7 @@ import React, { useState, memo } from 'react';
 import { OcticonSearch } from '../../components/icons';
 import { ArtistLink } from '../../components';
 import { DebounceInput } from 'react-debounce-input';
-import { faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FaYoutube } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 
 const music = require('./music.json')
@@ -21,7 +20,7 @@ function AlbumLink({ artist, album }) {
       target="_blank"
       rel="noopener noreferrer"
     >
-      {album} <FontAwesomeIcon icon={faYoutube} />
+      {album} <FaYoutube />
     </a>
   );
 }
