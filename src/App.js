@@ -20,16 +20,14 @@ const name = 'Gerrit Alex';
 const userName = 'ljosberinn';
 const repoLink = `//github.com/${userName}/gerritalex.de`;
 
-const Loader = () => null;
-
 const LandingPage = lazy(() =>
-  import(/* webpackChunkName: "landingpage" */ './pages/LandingPage'),
+  import(/* webpackChunkName: "landing" */ './routes/Landing'),
 );
 const ConcertPage = lazy(() =>
-  import(/* webpackChunkName: "concertpage" */ './pages/ConcertPage'),
+  import(/* webpackChunkName: "concert" */ './routes/Concert'),
 );
 const MusicPage = lazy(() =>
-  import(/* webpackChunkName: "musicpage" */ './pages/MusicPage/'),
+  import(/* webpackChunkName: "music" */ './routes/Music/'),
 );
 
 const RedirectToHome = () => <Redirect to="/" />;
@@ -47,7 +45,7 @@ export default function App() {
               <Navigation />
               <div className="position-relative mt-4">
                 <Switch>
-                  <Suspense fallback={<Loader />}>
+                  <Suspense fallback={null}>
                     <Route path="/" exact component={LandingPage} />
                     <Route path="/concerts" exact component={ConcertPage} />
                     <Route path="/music" exact component={MusicPage} />

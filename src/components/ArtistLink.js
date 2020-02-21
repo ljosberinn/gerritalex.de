@@ -1,6 +1,5 @@
 import React from 'react';
-import { faLastfm } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FaLastfm } from 'react-icons/fa';
 
 export default function ArtistLink({ artist }) {
   return (
@@ -9,7 +8,7 @@ export default function ArtistLink({ artist }) {
       target="_blank"
       rel="noopener noreferrer"
     >
-      {artist} <FontAwesomeIcon icon={faLastfm} />
+      {artist} <FaLastfm />
     </a>
   );
 }

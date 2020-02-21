@@ -1,14 +1,13 @@
 import React from 'react';
 import { OcticonLink } from './icons';
 import { Twitter, Reddit, LinkedIn, Mail, OcticonGit } from './icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faLastfm,
-  faTwitch,
-  faSpotify,
-  faFacebook,
-  faYoutube,
-} from '@fortawesome/free-brands-svg-icons';
+  FaLastfm,
+  FaTwitch,
+  FaSpotify,
+  FaFacebook,
+  FaYoutube,
+} from 'react-icons/fa';
 
 export const profiles = [
   { icon: 'github', url: 'https://github.com/ljosberinn' },
@@ -39,15 +38,15 @@ const resolveIcon = name => {
     case 'github':
       return <OcticonGit />;
     case 'twitch':
-      return <FontAwesomeIcon icon={faTwitch} className="octicon" />;
+      return <FaTwitch className="octicon" />;
     case 'lastfm':
-      return <FontAwesomeIcon icon={faLastfm} className="octicon" />;
+      return <FaLastfm className="octicon" />;
     case 'spotify':
-      return <FontAwesomeIcon icon={faSpotify} className="octicon" />;
+      return <FaSpotify className="octicon" />;
     case 'facebook':
-      return <FontAwesomeIcon icon={faFacebook} className="octicon" />;
+      return <FaFacebook className="octicon" />;
     case 'youtube':
-      return <FontAwesomeIcon icon={faYoutube} className="octicon" />;
+      return <FaYoutube className="octicon" />;
     default:
       return <OcticonLink />;
   }
