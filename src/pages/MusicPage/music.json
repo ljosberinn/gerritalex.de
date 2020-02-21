@@ -1279,5 +1279,12 @@
     "artist": "Danger Dan",
     "album": "Reflexionen aus dem beschönigten Leben",
     "hidden": false
+  },
+  {
+    "month": "02",
+    "year": "2020",
+    "artist": "Heilung",
+    "album": "Futha",
+    "hidden": false
   }
 ]
