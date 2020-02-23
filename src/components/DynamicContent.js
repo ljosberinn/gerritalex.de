@@ -1,13 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ContributionOverview, ContributionActivity, Repositories } from '.';
 
-const DEFAULT_STATE = {
-  contributionHistory: '',
-  contributionAmount: '',
-  contributionActivity: '',
-  repositories: '',
-};
-
 export default function DynamicContent() {
   const [
     {
@@ -17,7 +10,12 @@ export default function DynamicContent() {
       repositories,
     },
     setData,
-  ] = useState(DEFAULT_STATE);
+  ] = useState({
+    contributionHistory: '',
+    contributionAmount: '',
+    contributionActivity: '',
+    repositories: '',
+  });
 
   useEffect(() => {
     fetch('/.netlify/functions/index')
