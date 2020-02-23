@@ -20,14 +20,10 @@ export default function DynamicContent() {
   ] = useState(DEFAULT_STATE);
 
   useEffect(() => {
-    const getData = async () => {
-      const response = await fetch('/.netlify/functions/index');
-      const json = await response.json();
-
-      setData(json);
-    };
-
-    getData();
+    fetch('/.netlify/functions/index')
+      .then(response => response.json())
+      .then(setData)
+      .catch(console.error);
   }, []);
 
   return (
