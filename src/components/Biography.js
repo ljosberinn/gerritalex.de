@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-const currentBiographyParagraphs = 3;
+const currentBiographyParagraphs = 4;
 
 export default function Biography() {
   const { t } = useTranslation();
