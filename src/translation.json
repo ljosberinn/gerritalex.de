@@ -21,6 +21,9 @@
     "cv": {
       "achievements": "Achievements",
       "interhyp-title": "Engineer",
+      "interhyp-1": "Modernized major parts of the application shell during dedicated tech debt sprints",
+      "interhyp-2": "Developed a central, configurable routing solution",
+      "interhyp-3": "With 4 colleagues, participated in the #wirvsvirus-Hackathon, creating help-at-home.org in 48 hours",
       "mpunkt-title": "Web Developer",
       "mpunkt-1": "Project lead & continued development after takeover of a customer-tailored web application",
       "mpunkt-2": "Leading a SCRUM-like team of up to five developers",
@@ -90,6 +93,9 @@
     "cv": {
       "achievements": "Erfolge",
       "interhyp-title": "Engineer",
+      "interhyp-1": "Modernisierung diverser zentraler Elemente der Anwendungshülle im Rahmen von Tech Debt-Sprints",
+      "interhyp-2": "Entwicklung einer zentralen, konfigurierbaren Routinglösung",
+      "interhyp-3": "Teilnahme am #wirvsvirus-Hackathon mit 4 Kollegen - help-at-home.org in 48 Stunden auf die Beine gestellt",
       "mpunkt-title": "Webentwickler",
       "mpunkt-1": "Projektübernahme und -fortentwicklung einer maßgeschneiderten webbasierten Anwendung",
       "mpunkt-2": "Leitung eines SCRUM-ähnlichen Teams mit zeitweise fünf Mitgliedern",
