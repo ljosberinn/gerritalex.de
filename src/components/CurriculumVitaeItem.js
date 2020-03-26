@@ -1,6 +1,6 @@
 import React from 'react';
 import { OcticonBook, OcticonRepo, OcticonCode, OcticonStar } from './icons';
-import { Achievements, Time, Tags, Talks } from '.';
+import { Achievements, Time, Tags, Talks, Articles } from '.';
 
 const resolveIcon = iconName => {
   switch (iconName) {
@@ -26,7 +26,8 @@ export default function CurriculumVitaeItem({
   icon,
   url,
   tags,
-  talks
+  talks,
+  articles,
 }) {
   return (
     <li className="pinned-item-list-item d-flex p-3 border border-gray-dark rounded-1 cv">
@@ -55,9 +56,8 @@ export default function CurriculumVitaeItem({
           achievements={achievements}
           translatedAchievements={translatedAchievements}
         />
-
+        <Articles articles={articles} />
         <Talks data={talks} />
-
         <Tags tags={tags} />
       </div>
     </li>

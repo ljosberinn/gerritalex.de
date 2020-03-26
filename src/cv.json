@@ -24,7 +24,8 @@
       "Pair Programming",
       "Code Review"
     ],
-    "talks": []
+    "talks": [],
+    "articles": []
   },
   {
     "key": "mpunkt",
@@ -61,7 +62,8 @@
       "Chrome Developer Tools Deep Dive",
       "React Crashcourse",
       "Sessions in React via Context API"
-    ]
+    ],
+    "articles": []
   },
   {
     "key": "self-study",
@@ -110,7 +112,8 @@
       "Semantic CSS",
       "CSS-in-JS"
     ],
-    "talks": []
+    "talks": [],
+    "articles": []
   },
   {
     "key": "walch",
@@ -122,7 +125,8 @@
     "icon": "book",
     "achievements": [],
     "tags": ["Print & digital design", "Insight into printing processes"],
-    "talks": []
+    "talks": [],
+    "articles": []
   },
   {
     "key": "uni-augsbug",
@@ -137,7 +141,8 @@
     "icon": "book",
     "achievements": [],
     "tags": [],
-    "talks": []
+    "talks": [],
+    "articles": []
   },
   {
     "key": "uni-trier",
@@ -162,7 +167,8 @@
       "Middle high german",
       "Old high german"
     ],
-    "talks": []
+    "talks": [],
+    "articles": []
   },
   {
     "key": "abitur",
@@ -177,7 +183,8 @@
     "icon": "book",
     "achievements": [],
     "tags": ["English", "Economics", "Biology", "German", "Mathematics"],
-    "talks": []
+    "talks": [],
+    "articles": []
   },
   {
     "key": "birth",
@@ -192,6 +199,7 @@
     "icon": "star",
     "achievements": [],
     "tags": [],
-    "talks": []
+    "talks": [],
+    "articles": []
   }
 ]

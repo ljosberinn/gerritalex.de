@@ -16,7 +16,8 @@
       "sites-title": "Author of",
       "aria-phone": "Phone number",
       "talks-held": "Talks held",
-      "tools-used": "Tools used/learnt"
+      "tools-used": "Tools used/learnt",
+      "articles-published": "Articles published"
     },
     "cv": {
       "achievements": "Achievements",
@@ -88,7 +89,8 @@
       "sites-title": "Autor von",
       "aria-phone": "Handynummer",
       "talks-held": "Gehaltene Talks",
-      "tools-used": "Gearbeitet mit/Erlernt"
+      "tools-used": "Gearbeitet mit/Erlernt",
+      "articles-published": "Veröffentlichte Artikel"
     },
     "cv": {
       "achievements": "Erfolge",

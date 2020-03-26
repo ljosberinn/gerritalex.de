@@ -40,7 +40,7 @@ export default function CurriculumVitae() {
       // proxy returned value because of static cv import via json
       const response = {
         employer: dataset.employer,
-        position: dataset.position
+        position: dataset.position,
       };
 
       Object.keys(response).forEach(key => {
@@ -54,7 +54,7 @@ export default function CurriculumVitae() {
 
       return response;
     },
-    [t]
+    [t],
   );
 
   return (
@@ -67,13 +67,14 @@ export default function CurriculumVitae() {
           icon,
           achievements,
           tags,
-          talks
+          talks,
+          articles,
         } = dataset;
         const { employer, position } = translateCVDataset(dataset);
 
         const employmentLocation = getEmploymentLocationText(
           employer,
-          location
+          location,
         );
 
         const employmentTitle = `${position}${
@@ -92,7 +93,8 @@ export default function CurriculumVitae() {
           translatedAchievements,
           position,
           talks,
-          key
+          articles,
+          key,
         };
 
         return <CurriculumVitaeItem {...itemProps} />;

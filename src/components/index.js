@@ -23,3 +23,5 @@ export { default as Time } from './Time';
 export { default as Talks } from './Talks';
 export { default as Navigation } from './Navigation';
 export { default as ArtistLink } from './ArtistLink';
+export { default as ExternalLink } from './ExternalLink';
+export { default as Articles } from './Articles';
