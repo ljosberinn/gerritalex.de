@@ -87,12 +87,16 @@
       "PHP 5.6-7.4.2",
       "Debugging",
       "HTML5",
+      "Semantic HTML",
+      "Accessibility",
+      "Modern Browser APIs",
+      "LogRocket",
       "CSS3",
       "SCSS",
       "jQuery",
       "MySQL",
       "Jenkins",
-      "Git",
+      "Git (via GitHub, GitLab & BitBucket)",
       "Sentry",
       "npm",
       "composer",
@@ -102,7 +106,9 @@
       "Code quality",
       "Readability",
       "Atom",
-      "VSCode"
+      "VSCode",
+      "Semantic CSS",
+      "CSS-in-JS"
     ],
     "talks": []
   },
