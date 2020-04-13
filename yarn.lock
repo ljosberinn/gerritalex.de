@@ -4329,10 +4329,10 @@ detect-port-alt@1.1.6:
     address "^1.0.1"
     debug "^2.6.0"
 
-dialog-polyfill@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/dialog-polyfill/-/dialog-polyfill-0.5.0.tgz#bf67bc67abaf538e44fff80f2f71ff132befadd7"
-  integrity sha512-fOj68T8KB6UIsDFmK7zYbmORJMLYkRmtsLM1W6wbCVUWu4Hdcud5bqbvuueTxO84JXtK9HcpCHV9vNwlWUdCIw==
+dialog-polyfill@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/dialog-polyfill/-/dialog-polyfill-0.5.1.tgz#31a81a36dbefcccadf168ad37ff292c1dd070ddf"
+  integrity sha512-1+VxuUxUz1aUpVoZZADSx/PAtMJedtvOFzLJ/HYWboXxmWwtxBPnYzK8IDgxvojcpetewaJJg30f2pIvo4zbLw==
 
 diff-sequences@^24.9.0:
   version "24.9.0"
