@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { ContributionChart } from '.';
 
 export default function ContributionOverview({ amount, history }) {

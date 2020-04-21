@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Status } from '.';
 
 export default function Avatar({ userName }) {

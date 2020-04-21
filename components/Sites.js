@@ -1,6 +1,7 @@
 import React from 'react';
-import { OcticonLink, OcticonRepo, OcticonCode } from './icons';
 import { useTranslation } from 'react-i18next';
+
+import { OcticonLink, OcticonRepo, OcticonCode } from './icons';
 
 const sites = [
   {

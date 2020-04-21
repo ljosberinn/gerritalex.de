@@ -1,4 +1,5 @@
 import React from 'react';
+
 import '../i18n';
 import {
   Header,
@@ -9,7 +10,6 @@ import {
   Footer,
 } from '../components';
 import '../assets/App.scss';
-import Head from 'next/head';
 
 const name = 'Gerrit Alex';
 const userName = 'ljosberinn';

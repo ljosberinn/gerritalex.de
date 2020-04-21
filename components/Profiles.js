@@ -1,6 +1,4 @@
 import React from 'react';
-import { OcticonLink } from './icons';
-import { Twitter, Reddit, LinkedIn, Mail, OcticonGit } from './icons';
 import {
   FaLastfm,
   FaTwitch,
@@ -8,6 +6,9 @@ import {
   FaFacebook,
   FaYoutube,
 } from 'react-icons/fa';
+
+import { OcticonLink } from './icons';
+import { Twitter, Reddit, LinkedIn, Mail, OcticonGit } from './icons';
 
 export const profiles = [
   { icon: 'github', url: 'https://github.com/ljosberinn' },

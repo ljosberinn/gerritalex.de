@@ -1,7 +1,7 @@
-import React, { forwardRef } from 'react';
 import Link from 'next/link';
-import { useTranslation } from 'react-i18next';
 import { useRouter } from 'next/router';
+import React, { forwardRef } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const routes = [
   { to: '/', title: 'cv' },
@@ -32,6 +32,7 @@ const NavLink = forwardRef(({ onClick, href, label }, ref) => {
   const { pathname } = useRouter();
 
   return (
+    // eslint-disable-next-line jsx-a11y/anchor-is-valid
     <a
       className={[
         'UnderlineNav-item mr-0 mr-md-1 mr-lg-3',

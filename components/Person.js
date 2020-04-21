@@ -1,7 +1,9 @@
 import React, { useRef } from 'react';
-import { Biography, Profiles, Meta, Avatar, Sites } from '.';
 import { useTranslation } from 'react-i18next';
+
 import { OcticonX } from './icons';
+
+import { Biography, Profiles, Meta, Avatar, Sites } from '.';
 
 const escapeListener = (e) => {
   if (e.keyCode === 27) {

@@ -3,7 +3,7 @@ import React from 'react';
 export default function Header({ name, repoLink }) {
   return (
     <header
-      className="Header-old header-logged-out Details position-relative f4 py-2"
+      className="Header-old Details position-relative f4 py-2"
       role="banner"
     >
       <div className="container-xl d-flex flex-items-center p-responsive">
@@ -26,7 +26,7 @@ export default function Header({ name, repoLink }) {
           </a>
         </div>
 
-        <div className="HeaderMenu HeaderMenu--logged-out d-flex flex-lg-justify-between flex-items-center flex-auto">
+        <div className="HeaderMenu d-flex flex-lg-justify-between flex-items-center flex-auto">
           <nav className="mt-0 px-3 px-lg-0 mb-0" aria-label="Global">
             <ul className="d-lg-flex list-style-none">
               <li className="d-block d-lg-flex flex-lg-nowrap flex-lg-items-center mr-0 mr-lg-3 edge-item-fix position-relative flex-wrap flex-justify-between d-flex flex-items-center">

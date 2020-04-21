@@ -1,6 +1,6 @@
 import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
 import LanduageDetector from 'i18next-browser-languagedetector';
+import { initReactI18next } from 'react-i18next';
 
 const translations = require('./translation.json');
 

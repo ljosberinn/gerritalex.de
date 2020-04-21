@@ -1,5 +1,7 @@
 import React from 'react';
+
 import { OcticonBook, OcticonRepo, OcticonCode, OcticonStar } from './icons';
+
 import { Achievements, Time, Tags, Talks, Articles } from '.';
 
 const resolveIcon = iconName => {

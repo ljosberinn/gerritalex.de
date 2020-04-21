@@ -1,11 +1,12 @@
 import React, { useState, memo, useCallback } from 'react';
-import { OcticonSearch } from '../components/icons';
-import { ArtistLink } from '../components';
 import { DebounceInput } from 'react-debounce-input';
-import { FaYoutube } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
-import fetcher from '../util/fetcher';
+import { FaYoutube } from 'react-icons/fa';
 import useSWR from 'swr';
+
+import { ArtistLink } from '../components';
+import { OcticonSearch } from '../components/icons';
+import fetcher from '../util/fetcher';
 
 function AlbumLink({ artist, album }) {
   return (

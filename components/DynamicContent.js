@@ -1,7 +1,9 @@
 import React from 'react';
-import { ContributionOverview, ContributionActivity, Repositories } from '.';
 import useSWR from 'swr';
+
 import fetcher from '../util/fetcher';
+
+import { ContributionOverview, ContributionActivity, Repositories } from '.';
 
 export default function DynamicContent() {
   const { data } = useSWR(() => '/api/github', fetcher);

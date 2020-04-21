@@ -1,6 +1,7 @@
 import React from 'react';
-import { ExternalLink } from '.';
 import { useTranslation } from 'react-i18next';
+
+import { ExternalLink } from '.';
 
 export default function Articles({ articles }) {
   const { t } = useTranslation();

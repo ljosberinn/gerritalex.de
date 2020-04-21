@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+
 import { OcticonLocation, OcticonPhone } from './icons';
 
 const mobile = '+49 (0)176 64 74 84 14';

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { OcticonStar } from './icons';
 
 const Stars = ({ achievements }) =>

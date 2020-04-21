@@ -1,7 +1,8 @@
+import i18next from 'i18next';
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+
 import { OcticonX } from './icons';
-import i18next from 'i18next';
 
 export default function Banner({ repoLink }) {
   const [isVisible, setIsVisible] = useState(true);

@@ -1,5 +1,5 @@
-import fetch from 'node-fetch';
 import DOMParser from 'dom-parser';
+import fetch from 'node-fetch';
 
 const cache = {
   contributionActivity: '',

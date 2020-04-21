@@ -1,9 +1,10 @@
 import React, { useState, memo, useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
-import { OcticonSearch } from '../components/icons';
-import { ArtistLink } from '../components';
 import { DebounceInput } from 'react-debounce-input';
+import { useTranslation } from 'react-i18next';
 import useSWR from 'swr';
+
+import { ArtistLink } from '../components';
+import { OcticonSearch } from '../components/icons';
 import fetcher from '../util/fetcher';
 
 const Row = memo(

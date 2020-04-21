@@ -1,17 +1,17 @@
-import OcticonBook from './OcticonBook';
-import OcticonRepo from './OcticonRepo';
-import OcticonCode from './OcticonCode';
-import OcticonStar from './OcticonStar';
-import OcticonLocation from './OcticonLocation';
-import OcticonLink from './OcticonLink';
-import Twitter from './Twitter';
 import LinkedIn from './LinkedIn';
-import Reddit from './Reddit';
-import OcticonX from './OcticonX';
 import Mail from './Mail';
-import OcticonPhone from './OcticonPhone';
-import OcticonSearch from './OcticonSearch';
+import OcticonBook from './OcticonBook';
+import OcticonCode from './OcticonCode';
 import OcticonGit from './OcticonGit';
+import OcticonLink from './OcticonLink';
+import OcticonLocation from './OcticonLocation';
+import OcticonPhone from './OcticonPhone';
+import OcticonRepo from './OcticonRepo';
+import OcticonSearch from './OcticonSearch';
+import OcticonStar from './OcticonStar';
+import OcticonX from './OcticonX';
+import Reddit from './Reddit';
+import Twitter from './Twitter';
 
 export {
   OcticonBook,
