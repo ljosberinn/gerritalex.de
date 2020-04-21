@@ -1,33 +1,10 @@
-import React, { useState, memo } from 'react';
+import React, { useState, memo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
-import { OcticonSearch } from '../../components/icons';
-import { ArtistLink } from '../../components';
+import { OcticonSearch } from '../components/icons';
+import { ArtistLink } from '../components';
 import { DebounceInput } from 'react-debounce-input';
-
-const concerts = require('./concerts.json')
-  .reduce((carry, { artist, venue, date, concert }) => {
-    // reduce to {artist: ..., shows: [showArr]}
-    const previousEntry = carry.find(dataset => dataset.artist === artist);
-
-    if (!previousEntry) {
-      return carry.concat({ artist, shows: [{ venue, date, concert }] });
-    }
-
-    return carry.map(dataset => {
-      if (dataset.artist === artist) {
-        return {
-          ...dataset,
-          shows: dataset.shows.concat({ venue, date, concert }),
-        };
-      }
-
-      return dataset;
-    });
-  }, [])
-  .sort(
-    (a, b) => (new Date(a.shows[0].date) < new Date(b.shows[0].date) ? 1 : -1), // sort DESC
-  )
-  .map(dataset => ({ ...dataset, shows: dataset.shows.reverse() })); // reverse shows
+import useSWR from 'swr';
+import fetcher from '../util/fetcher';
 
 const Row = memo(
   ({ date, artist, amountOfShows, venue, concert, isFirstShow }) => (
@@ -46,61 +23,59 @@ const Row = memo(
   ),
 );
 
-const getFilteredData = (data, filter) => {
-  if (!filter) {
-    return data;
-  }
-
-  return concerts.reduce((carry, { artist, shows }) => {
-    // search within artist
-    if (
-      artist
-        .toLowerCase()
-        .trim()
-        .includes(filter)
-    ) {
-      return [...carry, { artist, shows }];
-    }
-
-    // search within shows
-    const filteredShows = shows.filter(show => {
-      let isMatch = false;
-
-      Object.values(show).forEach(value => {
-        if (
-          value
-            .toLowerCase()
-            .trim()
-            .includes(filter)
-        ) {
-          isMatch = true;
-        }
-      });
-
-      return isMatch;
-    });
-
-    // no shows === no match
-    if (filteredShows.length === 0) {
-      return carry;
-    }
-
-    return [...carry, { artist, shows: filteredShows }];
-  }, []);
-};
-
 export default function ConcertPage() {
+  const { data: concerts } = useSWR(() => '/api/concerts', fetcher);
   const { t } = useTranslation('concerts');
   const [filter, setFilter] = useState('');
 
-  const handleChange = ({ target }) => {
-    const value = target.value.trim().toLowerCase();
+  const handleChange = useCallback(
+    ({ target }) => {
+      const value = target.value.trim().toLowerCase();
 
-    if (filter === value) {
-      return;
+      if (filter === value) {
+        return;
+      }
+
+      setFilter(value);
+    },
+    [filter],
+  );
+
+  if (!concerts) {
+    return null;
+  }
+
+  const getFilteredData = (data, filter) => {
+    if (!filter) {
+      return data;
     }
 
-    setFilter(value);
+    return concerts.reduce((carry, { artist, shows }) => {
+      // search within artist
+      if (artist.toLowerCase().trim().includes(filter)) {
+        return [...carry, { artist, shows }];
+      }
+
+      // search within shows
+      const filteredShows = shows.filter((show) => {
+        let isMatch = false;
+
+        Object.values(show).forEach((value) => {
+          if (value.toLowerCase().trim().includes(filter)) {
+            isMatch = true;
+          }
+        });
+
+        return isMatch;
+      });
+
+      // no shows === no match
+      if (filteredShows.length === 0) {
+        return carry;
+      }
+
+      return [...carry, { artist, shows: filteredShows }];
+    }, []);
   };
 
   const filteredConcerts = getFilteredData(concerts, filter);
@@ -146,7 +121,8 @@ export default function ConcertPage() {
                 artist,
                 venue,
                 concert,
-                isFirstShow: shows.findIndex(show => show.date === date) === 0,
+                isFirstShow:
+                  shows.findIndex((show) => show.date === date) === 0,
                 amountOfShows: shows.length,
               }}
               key={`${date}-${artist}`}

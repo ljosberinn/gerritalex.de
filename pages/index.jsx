@@ -1,7 +1,7 @@
 import React from 'react';
-import { CurriculumVitae, DynamicContent } from '../../components';
+import { CurriculumVitae, DynamicContent } from '../components';
 
-export default function LandingPage() {
+export default function Index() {
   return (
     <>
       <CurriculumVitae />

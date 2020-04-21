@@ -1,15 +1,11 @@
-import React, { useState, memo } from 'react';
-import { OcticonSearch } from '../../components/icons';
-import { ArtistLink } from '../../components';
+import React, { useState, memo, useCallback } from 'react';
+import { OcticonSearch } from '../components/icons';
+import { ArtistLink } from '../components';
 import { DebounceInput } from 'react-debounce-input';
 import { FaYoutube } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
-
-const music = require('./music.json')
-  .filter(dataset => !dataset.hidden)
-  .reverse();
-
-const yearsCollecting = music[0].year - music[music.length - 1].year;
+import fetcher from '../util/fetcher';
+import useSWR from 'swr';
 
 function AlbumLink({ artist, album }) {
   return (
@@ -50,31 +46,32 @@ const getFilteredData = (data, filter) => {
 
   return data.filter(
     ({ artist, album }) =>
-      artist
-        .toLowerCase()
-        .trim()
-        .includes(filter) ||
-      album
-        .toLowerCase()
-        .trim()
-        .includes(filter),
+      artist.toLowerCase().trim().includes(filter) ||
+      album.toLowerCase().trim().includes(filter),
   );
 };
 
-export default function MusicPage() {
+export default function Music() {
+  const { data: music } = useSWR(() => '/api/music', fetcher);
   const { t } = useTranslation(['music', 'concerts']);
-
   const [filter, setFilter] = useState('');
 
-  const handleChange = ({ target: { value } }) => {
-    const newFilter = value.trim().toLowerCase();
+  const handleChange = useCallback(
+    ({ target: { value } }) => {
+      const newFilter = value.trim().toLowerCase();
 
-    if (newFilter === filter) {
-      return;
-    }
+      if (newFilter === filter) {
+        return;
+      }
 
-    setFilter(newFilter);
-  };
+      setFilter(newFilter);
+    },
+    [filter],
+  );
+
+  if (!music) {
+    return null;
+  }
 
   const filteredData = getFilteredData(music, filter);
 
@@ -87,13 +84,15 @@ export default function MusicPage() {
   const amountOfUniqueAlbums = filteredData.reduce(
     (carry, { album, artist }) => {
       return carry.find(
-        dataset => dataset.album === album && dataset.artist === artist,
+        (dataset) => dataset.album === album && dataset.artist === artist,
       )
         ? carry
         : [...carry, { album, artist }];
     },
     [],
   ).length;
+
+  const yearsCollecting = music[0].year - music[music.length - 1].year;
 
   return (
     <table className="files">
@@ -122,7 +121,7 @@ export default function MusicPage() {
         </tr>
       </thead>
       <tbody>
-        {filteredData.map(dataset => (
+        {filteredData.map((dataset) => (
           <Row key={Object.values(dataset).join('-')} {...dataset} />
         ))}
       </tbody>

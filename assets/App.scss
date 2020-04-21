@@ -1,9 +1,8 @@
-@import url('https://github.githubassets.com/assets/frameworks-41c2037bf12f1e46d8f08b88a04a8d8f.css');
-@import url('https://github.githubassets.com/assets/github-e9f63d2ae6f069da3f43272fafc83aee.css');
+@import url('//github.githubassets.com/assets/frameworks-41c2037bf12f1e46d8f08b88a04a8d8f.css');
+@import url('//github.githubassets.com/assets/github-e9f63d2ae6f069da3f43272fafc83aee.css');
 
-[class*='js-'],
-[attr*='data-pjax-'] {
-  border: 1px solid red;
+a {
+  cursor: pointer;
 }
 
 .Counter {
