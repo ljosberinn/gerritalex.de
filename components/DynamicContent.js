@@ -1,28 +1,27 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { ContributionOverview, ContributionActivity, Repositories } from '.';
+import useSWR from 'swr';
+
+const fetcher = async (url) => {
+  const res = await fetch(url);
+  const data = await res.json();
+
+  return data;
+};
 
 export default function DynamicContent() {
-  const [
-    {
-      contributionHistory,
-      contributionAmount,
-      contributionActivity,
-      repositories,
-    },
-    setData,
-  ] = useState({
-    contributionHistory: '',
-    contributionAmount: '',
-    contributionActivity: '',
-    repositories: '',
-  });
+  const { data } = useSWR(() => '/api/github', fetcher);
 
-  useEffect(() => {
-    fetch('/.netlify/functions/index')
-      .then(response => response.json())
-      .then(setData)
-      .catch(console.error);
-  }, []);
+  if (!data) {
+    return null;
+  }
+
+  const {
+    contributionActivity,
+    contributionAmount,
+    contributionHistory,
+    repositories,
+  } = data;
 
   return (
     <>

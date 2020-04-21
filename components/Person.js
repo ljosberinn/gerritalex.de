@@ -3,10 +3,7 @@ import { Biography, Profiles, Meta, Avatar, Sites } from '.';
 import { useTranslation } from 'react-i18next';
 import { OcticonX } from './icons';
 
-const body = document.querySelector('body');
-const { style } = body;
-
-const escapeListener = e => {
+const escapeListener = (e) => {
   if (e.keyCode === 27) {
     const dialog = document.querySelector('dialog[open]');
     // triggers removal through close-listener
@@ -15,7 +12,7 @@ const escapeListener = e => {
   }
 };
 
-const outOfBoundsListener = e => {
+const outOfBoundsListener = (e) => {
   const dialog = document.querySelector('dialog[open]');
 
   const { bottom, left, right, top } = dialog.getBoundingClientRect();
@@ -32,18 +29,26 @@ const outOfBoundsListener = e => {
 };
 
 const removeCloseListeners = () => {
+  const body = document.querySelector('body');
+
   body.removeEventListener('keydown', escapeListener);
   body.removeEventListener('click', outOfBoundsListener);
 };
 
-const toggleOverflowY = () =>
-  (style.overflowY = style.overflowY === '' ? 'hidden' : '');
+const toggleOverflowY = () => {
+  const body = document.querySelector('body');
+  const { style } = body;
+
+  return (style.overflowY = style.overflowY === '' ? 'hidden' : '');
+};
 
 export default function Person({ name, userName }) {
   const { t } = useTranslation();
   const dialog = useRef(null);
 
   const handleClick = () => {
+    const body = document.querySelector('body');
+
     dialog.current.showModal();
     body.addEventListener('keydown', escapeListener);
     body.addEventListener('click', outOfBoundsListener);
