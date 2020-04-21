@@ -1,13 +1,7 @@
 import React from 'react';
 import { ContributionOverview, ContributionActivity, Repositories } from '.';
 import useSWR from 'swr';
-
-const fetcher = async (url) => {
-  const res = await fetch(url);
-  const data = await res.json();
-
-  return data;
-};
+import fetcher from '../util/fetcher';
 
 export default function DynamicContent() {
   const { data } = useSWR(() => '/api/github', fetcher);
