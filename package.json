@@ -18,7 +18,7 @@
     "react": "16.13.1",
     "react-debounce-input": "^3.2.2",
     "react-dom": "16.13.1",
-    "react-i18next": "^11.3.5",
+    "react-i18next": "^11.4.0",
     "react-icons": "^3.10.0",
     "swr": "^0.2.0"
   },
