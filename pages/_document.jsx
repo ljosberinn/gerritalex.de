@@ -8,7 +8,6 @@ export default class Document extends NextDocument {
         <Head>
           <link rel="shortcut icon" href="/favicon.ico" />
           <link rel="canonical" href="https://gerritalex.de" />
-          <title>Gerrit Alex - Fullstack Web Software Engineer</title>
           <meta name="description" content="Gerrit Alex - Fullstack Web Sotware Engineer, Munich. Working mainly with JavaScript, TypeScript, React, Next.js and Node.js." />
         </Head>
         <body>

@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import React from 'react';
 
 import '../i18n';
@@ -9,6 +10,7 @@ import {
   Person,
   Footer,
 } from '../components';
+
 import '../assets/App.scss';
 
 const name = 'Gerrit Alex';
@@ -18,6 +20,9 @@ const repoLink = `//github.com/${userName}/gerritalex.de`;
 export default function App({ Component, pageProps }) {
   return (
     <>
+      <Head>
+        <title>Gerrit Alex - Fullstack Web Software Engineer</title>
+      </Head>
       <Header repoLink={repoLink} name={name} />
       <main className="application-main">
         <div className="container-xl clearfix px-3 mt-4">
