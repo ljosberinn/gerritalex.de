@@ -111,7 +111,6 @@ export default function Music() {
                 className="form-control input-block subnav-search-input"
                 type="search"
                 placeholder="Filter albums..."
-                autoFocus
                 onChange={handleChange}
                 autoComplete="off"
                 spellCheck="false"

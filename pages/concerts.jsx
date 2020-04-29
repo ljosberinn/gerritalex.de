@@ -103,7 +103,6 @@ export default function ConcertPage() {
                 className="form-control input-block subnav-search-input"
                 type="search"
                 placeholder="Filter artists..."
-                autoFocus
                 onChange={handleChange}
                 autoComplete="off"
                 spellCheck="false"
