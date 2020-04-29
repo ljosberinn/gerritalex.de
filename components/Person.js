@@ -1,41 +1,9 @@
-import React, { useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { OcticonX } from './icons';
 
 import { Biography, Profiles, Meta, Avatar, Sites } from '.';
-
-const escapeListener = (e) => {
-  if (e.keyCode === 27) {
-    const dialog = document.querySelector('dialog[open]');
-    // triggers removal through close-listener
-    dialog.close();
-    toggleOverflowY();
-  }
-};
-
-const outOfBoundsListener = (e) => {
-  const dialog = document.querySelector('dialog[open]');
-
-  const { bottom, left, right, top } = dialog.getBoundingClientRect();
-  const { clientX, clientY } = e;
-
-  const isXOutside = clientX < left || clientX > right;
-  const isYOutside = clientY < top || clientY > bottom;
-
-  if (isXOutside || isYOutside) {
-    // triggers removal through close-listener
-    dialog.close();
-    toggleOverflowY();
-  }
-};
-
-const removeCloseListeners = () => {
-  const body = document.querySelector('body');
-
-  body.removeEventListener('keydown', escapeListener);
-  body.removeEventListener('click', outOfBoundsListener);
-};
 
 const toggleOverflowY = () => {
   const body = document.querySelector('body');
@@ -46,25 +14,58 @@ const toggleOverflowY = () => {
 
 export default function Person({ name, userName }) {
   const { t } = useTranslation();
-  const dialog = useRef(null);
+  const [open, setOpen] = useState(false);
 
-  const handleClick = () => {
-    const body = document.querySelector('body');
+  const toggleDialog = () => {
+    setOpen(!open);
 
-    dialog.current.showModal();
-    body.addEventListener('keydown', escapeListener);
-    body.addEventListener('click', outOfBoundsListener);
-    dialog.current.addEventListener('close', removeCloseListeners);
-
-    toggleOverflowY();
+    if (open) {
+      toggleOverflowY();
+    }
   };
 
-  const handleDialogClose = () => {
-    dialog.current.close();
-    toggleOverflowY();
-    removeCloseListeners();
-    dialog.current.removeEventListener('close', removeCloseListeners);
-  };
+  useEffect(() => {
+    if (open) {
+      const body = document.querySelector('body');
+
+      toggleOverflowY();
+
+      const escapeListener = (e) => {
+        if (e.keyCode === 27) {
+          toggleOverflowY();
+          setOpen(false);
+        }
+      };
+
+      const outOfBoundsListener = (e) => {
+        const dialog = document.querySelector('dialog[open]');
+
+        if (!dialog) {
+          return;
+        }
+
+        const { bottom, left, right, top } = dialog.getBoundingClientRect();
+        const { clientX, clientY } = e;
+
+        const isXOutside = clientX < left || clientX > right;
+        const isYOutside = clientY < top || clientY > bottom;
+
+        if (isXOutside || isYOutside) {
+          // triggers removal through close-listener
+          toggleOverflowY();
+          setOpen(false);
+        }
+      };
+
+      body.addEventListener('keydown', escapeListener);
+      body.addEventListener('click', outOfBoundsListener);
+
+      return () => {
+        body.removeEventListener('keydown', escapeListener);
+        body.removeEventListener('click', outOfBoundsListener);
+      };
+    }
+  }, [open]);
 
   return (
     <div
@@ -95,30 +96,36 @@ export default function Person({ name, userName }) {
             name="button"
             type="button"
             className="btn btn-primary btn-block mt-2 mb-3"
-            onClick={handleClick}
+            onClick={toggleDialog}
           >
             {t('cta-text')}
           </button>
-          <dialog
-            ref={dialog}
-            className="anim-fade-in fast Box Box--overlay flex-column"
-            aria-modal="true"
-          >
-            <div className="Box-header">
-              <button
-                className="Box-btn-octicon btn-octicon float-right"
-                type="button"
-                aria-label="Close dialog"
-                onClick={handleDialogClose}
+
+          {open && (
+            <>
+              <div className="dialog-backdrop" />
+              <dialog
+                open={open}
+                className="anim-fade-in fast Box Box--overlay flex-column"
+                aria-modal="true"
               >
-                <OcticonX />
-              </button>
-              <h3 className="mb-2">{t('contact-dialog-1')}</h3>
-              <ul className="vcard-details text-gray mb-0">
-                <Profiles mail={t('mail')} />
-              </ul>
-            </div>
-          </dialog>
+                <div className="Box-header">
+                  <button
+                    className="Box-btn-octicon btn-octicon float-right"
+                    type="button"
+                    aria-label="Close dialog"
+                    onClick={toggleDialog}
+                  >
+                    <OcticonX />
+                  </button>
+                  <h3 className="mb-2">{t('contact-dialog-1')}</h3>
+                  <ul className="vcard-details text-gray mb-0">
+                    <Profiles mail={t('mail')} />
+                  </ul>
+                </div>
+              </dialog>
+            </>
+          )}
           <Biography />
           <Meta />
           <Sites />

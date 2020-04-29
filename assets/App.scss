@@ -1,5 +1,5 @@
-@import url('//github.githubassets.com/assets/frameworks-41c2037bf12f1e46d8f08b88a04a8d8f.css');
-@import url('//github.githubassets.com/assets/github-e9f63d2ae6f069da3f43272fafc83aee.css');
+@import './frameworks.css';
+@import './primer.css';
 
 a {
   cursor: pointer;
@@ -11,10 +11,6 @@ a {
 
 .repo-language-color {
   margin-right: 3px;
-}
-
-.cv {
-  width: 100%;
 }
 
 // folding icons in ContributionActivity
@@ -76,13 +72,16 @@ button svg.octicon {
   vertical-align: sub;
 }
 
-.cv button.topic-tag {
-  // remove seemingly available interaction
-  cursor: default;
+.cv {
+  width: 100% !important;
+  button.topic-tag {
+    // remove seemingly available interaction
+    cursor: default;
 
-  // remove focus from dead tag-buttons
-  &:focus {
-    outline: none;
+    // remove focus from dead tag-buttons
+    &:focus {
+      outline: none;
+    }
   }
 }
 
@@ -99,25 +98,19 @@ dialog {
   width: 448px;
   z-index: 999;
   padding: 0;
-  display: none;
+  display: flex;
+}
 
-  &::backdrop {
-    background: rgba(27, 31, 35, 0.5);
-    z-index: 99;
-  }
-
-  & + .backdrop {
-    background: rgba(27, 31, 35, 0.5);
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  &[open] {
-    display: flex;
-  }
+.dialog-backdrop {
+  z-index: 99;
+  background: rgba(27, 31, 35, 0.5);
+  width: 100vw;
+  // yeah yeah i know
+  min-height: 200vh;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 @keyframes fade-in {
@@ -150,7 +143,7 @@ dialog {
 }
 
 .subnav-search-input {
-  width: 100%;
+  width: 100% !important;
 }
 
 table tbody tr:hover {
@@ -171,4 +164,8 @@ table tbody tr:hover {
 
 .has-text-right {
   text-align: right;
+}
+
+.h-card dialog::backdrop {
+  background: rgba(27, 31, 35, 0.5);
 }
