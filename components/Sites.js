@@ -47,13 +47,14 @@ const sites = [
   },
 ];
 
-function RepoLink({ link }) {
+function RepoLink({ link, title }) {
   return (
     <a
       className="has-icon-right"
       href={link}
       target="_blank"
       rel="noopener noreferrer"
+      title={title ? [title, 'Repository'].join(' ') : undefined}
     >
       <OcticonRepo />
     </a>
@@ -87,12 +88,12 @@ export default function Sites() {
             {url && repository ? (
               <>
                 <RegularLink url={url} title={title} />
-                <RepoLink link={repository} />
+                <RepoLink link={repository} title={title} />
               </>
             ) : (
               <>
                 {title}
-                {repository && <RepoLink link={repository} />}
+                {repository && <RepoLink link={repository} title={title} />}
               </>
             )}
           </li>
