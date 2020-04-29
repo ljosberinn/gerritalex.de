@@ -1,2 +1,3 @@
 User-agent: *
+Sitemap: https://gerritalex.de/sitemap.xml
 Disallow:
