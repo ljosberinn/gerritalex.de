@@ -1,5 +1,5 @@
 import i18next from 'i18next';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const languages = ['en', 'de'];
 
@@ -11,9 +11,15 @@ export default function LanguageChange() {
     setCurrentLanguage(value);
   };
 
+  useEffect(() => {
+    if (typeof window !== undefined) {
+      document.querySelector('html').setAttribute('lang', currentLanguage);
+    }
+  }, [currentLanguage]);
+
   return (
     <div className="input-group-radio">
-      {languages.map(language => {
+      {languages.map((language) => {
         const classList = [
           'float-right',
           'mt-1',
