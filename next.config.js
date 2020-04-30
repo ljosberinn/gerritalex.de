@@ -4,7 +4,7 @@ module.exports = (phase, { defaultConfig }) =>
   withSass({
     ...defaultConfig,
     experimental: {
-      modern: true,
+      //modern: true,
       polyfillsOptimization: true,
     },
 
