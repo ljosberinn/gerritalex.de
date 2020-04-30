@@ -92,7 +92,6 @@
       "Semantic HTML",
       "Accessibility",
       "Modern Browser APIs",
-      "LogRocket",
       "CSS3",
       "SCSS",
       "jQuery",
@@ -110,7 +109,10 @@
       "Atom",
       "VSCode",
       "Semantic CSS",
-      "CSS-in-JS"
+      "CSS-in-JS",
+      "styled-system",
+      "Next.js",
+      "Fastify"
     ],
     "talks": [],
     "articles": []
