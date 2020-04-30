@@ -11,7 +11,7 @@ import {
   Footer,
 } from '../components';
 
-import '../assets/App.scss';
+import '../assets/App.css';
 
 const name = 'Gerrit Alex';
 const userName = 'ljosberinn';

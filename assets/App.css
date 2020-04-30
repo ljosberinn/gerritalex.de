@@ -13,19 +13,17 @@ a {
   margin-right: 3px;
 }
 
-// folding icons in ContributionActivity
+/* folding icons in ContributionActivity */
 .profile-rollup-wrapper .d-inline-block.float-right {
   display: none !important;
 }
 
 ul.dashed {
   list-style: none;
+}
 
-  li {
-    &:before {
-      content: '- ';
-    }
-  }
+ul.dashed li:before {
+  content: '- ';
 }
 
 .signup-prompt-bg {
@@ -39,34 +37,31 @@ ul.dashed {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
 }
 
-.input-group-radio {
-  label {
-    background-color: #f1f8ff;
-    border-radius: 5px;
-    transition: 0.15s ease-in-out;
-    width: 5%;
-    text-align: center;
-    cursor: pointer;
-    font-weight: inherit;
-
-    // these float, hence last-of-type
-    &:last-of-type {
-      margin-right: 8px;
-    }
-
-    &.active,
-    &:hover {
-      color: #f1f8ff;
-      background-color: darken(#f1f8ff, 25%);
-    }
-  }
-
-  input[type='radio'] {
-    display: none;
-  }
+.input-group-radio label {
+  background-color: #f1f8ff;
+  border-radius: 5px;
+  transition: 0.15s ease-in-out;
+  width: 5%;
+  text-align: center;
+  cursor: pointer;
+  font-weight: inherit;
 }
 
-// align "centered to text
+.input-group-radio label:last-of-type {
+  margin-right: 8px;
+}
+
+.input-group-radio label.active,
+.input-group-radio label:hover {
+  color: #f1f8ff;
+  background-color: #72b8ff;
+}
+
+input[type='radio'] {
+  display: none;
+}
+
+/* align "centered to text */
 .pinned-item-meta svg.octicon,
 button svg.octicon {
   vertical-align: sub;
@@ -74,18 +69,19 @@ button svg.octicon {
 
 .cv {
   width: 100% !important;
-  button.topic-tag {
-    // remove seemingly available interaction
-    cursor: default;
-
-    // remove focus from dead tag-buttons
-    &:focus {
-      outline: none;
-    }
-  }
 }
 
-// due to the hacks github uses to get details-dialog working...
+.cv button.topic-tag {
+  /* remove seemingly available interaction */
+  cursor: default;
+}
+
+/* remove focus from dead tag-buttons */
+.cv button.topic-tag:focus {
+  outline: none;
+}
+
+/* due to the hacks github uses to get details-dialog working... */
 dialog {
   left: 50%;
   top: 0;
@@ -105,7 +101,7 @@ dialog {
   z-index: 99;
   background: rgba(27, 31, 35, 0.5);
   width: 100vw;
-  // yeah yeah i know
+  /* yeah yeah i know */
   min-height: 200vh;
   height: 100%;
   position: absolute;
