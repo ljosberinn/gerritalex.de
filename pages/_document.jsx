@@ -1,8 +1,8 @@
 import NextDocument, { Html, Head, Main, NextScript } from 'next/document';
 import React from 'react';
 
-const description =
-  'Personal website of Munich based Fullstack Web Software Engineer Gerrit Alex. Mainly working with JavaScript, TypeScript, React, Next.js and Node.js.';
+const name = 'Gerrit Alex';
+const description = `Personal website of Munich based Fullstack Web Software Engineer ${name}. Mainly working with JavaScript, TypeScript, React, Next.js and Node.js.`;
 const mail = 'admin@gerritalex.de';
 const url = '//gerritalex.de';
 const keywords = [
@@ -14,8 +14,7 @@ const keywords = [
   'software engineering',
 ];
 
-const title = 'Gerrit Alex - Fullstack Web Software Engineer';
-
+const title = `${name} - Fullstack Web Software Engineer`;
 const img = '//avatars3.githubusercontent.com/u/29307652?s=400';
 
 export default class Document extends NextDocument {
@@ -31,8 +30,9 @@ export default class Document extends NextDocument {
           <meta name="reply-to" content={mail} />
           <meta name="distribution" content="global" />
           <meta name="revisit-after" content="7 days" />
-          <meta name="author" content="Gerrit Alex" />
+          <meta name="author" content={name} />
           <meta name="description" content={description} />
+          <meta itemprop="name" content={name} />
           <meta itemprop="description" content={description} />
           <meta name="keywords" content={keywords.join(', ')} />
 

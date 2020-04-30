@@ -2,10 +2,7 @@ import React from 'react';
 
 export default function Header({ name, repoLink }) {
   return (
-    <header
-      className="Header-old Details position-relative f4 py-2"
-      role="banner"
-    >
+    <header className="Header-old Details position-relative f4 py-2">
       <div className="container-xl d-flex flex-items-center p-responsive">
         <div className="d-flex flex-justify-between flex-items-center">
           <a
