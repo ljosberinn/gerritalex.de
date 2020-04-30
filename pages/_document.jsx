@@ -24,7 +24,7 @@ export default class Document extends NextDocument {
       <Html>
         <Head>
           <link rel="shortcut icon" href="/favicon.ico" />
-          <link rel="canonical" href={url} />
+          <link rel="canonical" href={url + '/'} />
           <meta name="robots" content="index,nofollow" />
           <link rel="me" href={`mailto:${mail}`} />
           <meta name="reply-to" content={mail} />
