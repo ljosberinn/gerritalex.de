@@ -2,7 +2,7 @@ import NextDocument, { Html, Head, Main, NextScript } from 'next/document';
 import React from 'react';
 
 const description =
-  'Personal website of Munich based Fullstack Web Software Engineer & Gerrit Alex. Mainly working with JavaScript, TypeScript, React, Next.js and Node.js.';
+  'Personal website of Munich based Fullstack Web Software Engineer Gerrit Alex. Mainly working with JavaScript, TypeScript, React, Next.js and Node.js.';
 const mail = 'admin@gerritalex.de';
 const url = '//gerritalex.de';
 const keywords = [
