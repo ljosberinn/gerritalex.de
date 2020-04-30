@@ -11,6 +11,8 @@ import {
   Footer,
 } from '../components';
 
+import '../assets/frameworks.css';
+import '../assets/primer.css';
 import '../assets/App.css';
 
 const name = 'Gerrit Alex';
