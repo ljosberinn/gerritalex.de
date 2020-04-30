@@ -1,7 +1,7 @@
 module.exports = (phase, { defaultConfig }) => ({
   ...defaultConfig,
   experimental: {
-    //modern: true,
+    modern: true,
     polyfillsOptimization: true,
   },
 
