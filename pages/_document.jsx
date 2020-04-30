@@ -23,6 +23,7 @@ export default class Document extends NextDocument {
     return (
       <Html>
         <Head>
+          <link rel="preconnect" href="https://github.githubassets.com/" />
           <link rel="shortcut icon" href="/favicon.ico" />
           <link rel="canonical" href={url + '/'} />
           <meta name="robots" content="index,nofollow" />
