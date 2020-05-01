@@ -3137,10 +3137,10 @@ eslint-plugin-jsx-a11y@^6.2.3:
     has "^1.0.3"
     jsx-ast-utils "^2.2.1"
 
-eslint-plugin-react-hooks@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-3.0.0.tgz#9e80c71846eb68dd29c3b21d832728aa66e5bd35"
-  integrity sha512-EjxTHxjLKIBWFgDJdhKKzLh5q+vjTFrqNZX36uIxWS4OfyXe5DawqPj3U5qeJ1ngLwatjzQnmR0Lz0J0YH3kxw==
+eslint-plugin-react-hooks@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.0.0.tgz#81196b990043cde339e25c6662aeebe32ac52d01"
+  integrity sha512-YKBY+kilK5wrwIdQnCF395Ya6nDro3EAMoe+2xFkmyklyhF16fH83TrQOo9zbZIDxBsXFgBbywta/0JKRNFDkw==
 
 eslint-plugin-react@^7.19.0:
   version "7.19.0"
@@ -4547,10 +4547,10 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-lint-staged@^10.2.0:
-  version "10.2.0"
-  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-10.2.0.tgz#e0356ab593ddc2cd4205d7f880c2205bb01f5e48"
-  integrity sha512-4Dw2XMtEOGpICl0wvicE5KT/eFlt/kmwMmpNS4v09I/ywRWuR5udbMWjdfZez24jE6r0bQmPpkLZ1+wUGE1S+w==
+lint-staged@^10.2.2:
+  version "10.2.2"
+  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-10.2.2.tgz#901403c120eb5d9443a0358b55038b04c8a7db9b"
+  integrity sha512-78kNqNdDeKrnqWsexAmkOU3Z5wi+1CsQmUmfCuYgMTE8E4rAIX8RHW7xgxwAZ+LAayb7Cca4uYX4P3LlevzjVg==
   dependencies:
     chalk "^4.0.0"
     commander "^5.0.0"
@@ -7649,10 +7649,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^4.0.0-dev.20200429:
-  version "4.0.0-dev.20200429"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.0.0-dev.20200429.tgz#8af7f4e8aca5e91bb7cfef69b4ba96b3deedf4f3"
-  integrity sha512-r5LFE13k+4K3Zw2YNa30McHp4EtQzGTibFBib7yQWkO6oNftBlwEzgHcX2+KBA1S1FI0uZEoUOuo6l82R5sYgA==
+typescript@^4.0.0-dev.20200430:
+  version "4.0.0-dev.20200501"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.0.0-dev.20200501.tgz#9a54727bd719102d947a5ecf584ccc985dccb94b"
+  integrity sha512-RQvw3/R3//3hNxzeTJ4sbiuX9qjrpoIU6VxD+QquHHaJXf67P3yfIcV9hNFqd2QvrUiFPGM3KN08ahWkEN56bA==
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
