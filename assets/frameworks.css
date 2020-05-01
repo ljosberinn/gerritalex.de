@@ -1,28 +1,9 @@
-/*!
- * GitHub Light v0.4.1
- * Copyright (c) 2012 - 2017 GitHub, Inc.
- * Licensed under MIT (https://github.com/primer/github-syntax-theme-generator/blob/master/LICENSE)
- */
-
-/*!
- * GitHub Light v0.4.2
- * Copyright (c) 2012 - 2017 GitHub, Inc.
- * Licensed under MIT (https://github.com/primer/github-syntax-theme-generator/blob/master/LICENSE)
- */
-
 .octicon {
   display: inline-block;
   fill: currentColor;
   vertical-align: text-top;
 }
 
-/*!
- * Primer-core
- * http://primer.github.io
- *
- * Released under MIT license. Copyright (c) 2019 GitHub Inc.
- */
-/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -85,10 +66,6 @@ select,
 textarea {
   font: inherit;
   margin: 0;
-}
-
-optgroup {
-  font-weight: 700;
 }
 
 button,
@@ -828,10 +805,6 @@ label {
   margin-top: 4px !important;
 }
 
-.m-2 {
-  margin: 8px !important;
-}
-
 .mt-2 {
   margin-top: 8px !important;
 }
@@ -959,10 +932,6 @@ label {
 
 .pr-3 {
   padding-right: 16px !important;
-}
-
-.pb-3 {
-  padding-bottom: 16px !important;
 }
 
 .pl-3,
