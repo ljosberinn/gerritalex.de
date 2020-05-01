@@ -45,6 +45,7 @@ const extractContributionAmount = (document) => {
       .find((h2) => h2.textContent.indexOf(strToLookFor) > -1)
       .textContent.replace(strToLookFor, '')
       .replace(newLinePattern, '') // kill new lines
+      .replace(',', '') // kill thousands separator
       .trim(), // leading & trailing spaces
   );
 };
