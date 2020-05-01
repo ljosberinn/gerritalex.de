@@ -2,10 +2,6 @@ a {
   cursor: pointer;
 }
 
-.Counter {
-  margin-left: 4px;
-}
-
 .repo-language-color {
   margin-right: 3px;
 }
@@ -157,8 +153,4 @@ table tbody tr:hover {
 
 .has-text-right {
   text-align: right;
-}
-
-.h-card dialog::backdrop {
-  background: rgba(27, 31, 35, 0.5);
 }
