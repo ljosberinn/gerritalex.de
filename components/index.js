@@ -8,7 +8,6 @@ export { default as ContributionOverview } from './ContributionOverview';
 export { default as CurriculumVitae } from './CurriculumVitae';
 export { default as CurriculumVitaeItem } from './CurriculumVitaeItem';
 export { default as DynamicContent } from './DynamicContent';
-export { default as DynamicSubNav } from './DynamicSubNav';
 export { default as Footer } from './Footer';
 export { default as Header } from './Header';
 export { default as LanguageChange } from './LanguageChange';
