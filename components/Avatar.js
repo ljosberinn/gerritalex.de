@@ -7,7 +7,7 @@ export default function Avatar({ userName }) {
     <div className="float-left col-3 col-md-12 pr-3 pr-md-0">
       <a
         className="u-photo d-block tooltipped tooltipped-s"
-        aria-label="2017, Hohenpeißenberg"
+        aria-label="Jan 2020"
         href={`https://github.com/${userName}`}
       >
         <img
