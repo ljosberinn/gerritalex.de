@@ -18,11 +18,6 @@ const name = 'Gerrit Alex';
 const userName = 'ljosberinn';
 const repoLink = `//github.com/${userName}/gerritalex.de`;
 
-export function reportWebVitals(metric) {
-  // These metrics can be sent to any analytics service
-  console.log(metric);
-}
-
 export default function App({ Component, pageProps }) {
   return (
     <>
