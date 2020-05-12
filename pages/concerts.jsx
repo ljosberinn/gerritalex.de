@@ -1,11 +1,9 @@
 import React, { useState, memo, useCallback } from 'react';
 import { DebounceInput } from 'react-debounce-input';
 import { useTranslation } from 'react-i18next';
-import useSWR from 'swr';
 
 import { ArtistLink } from '../components';
 import { OcticonSearch } from '../components/icons';
-import fetcher from '../util/fetcher';
 
 const Row = memo(
   ({ date, artist, amountOfShows, venue, concert, isFirstShow }) => (
@@ -24,8 +22,40 @@ const Row = memo(
   ),
 );
 
-export default function ConcertPage() {
-  const { data: concerts } = useSWR(() => '/api/concerts', fetcher);
+const getFilteredData = (data, filter) => {
+  if (!filter) {
+    return data;
+  }
+
+  return data.reduce((carry, { artist, shows }) => {
+    // search within artist
+    if (artist.toLowerCase().trim().includes(filter)) {
+      return [...carry, { artist, shows }];
+    }
+
+    // search within shows
+    const filteredShows = shows.filter((show) => {
+      let isMatch = false;
+
+      Object.values(show).forEach((value) => {
+        if (value.toLowerCase().trim().includes(filter)) {
+          isMatch = true;
+        }
+      });
+
+      return isMatch;
+    });
+
+    // no shows === no match
+    if (filteredShows.length === 0) {
+      return carry;
+    }
+
+    return [...carry, { artist, shows: filteredShows }];
+  }, []);
+};
+
+export default function ConcertPage({ concerts }) {
   const { t } = useTranslation('concerts');
   const [filter, setFilter] = useState('');
 
@@ -45,39 +75,6 @@ export default function ConcertPage() {
   if (!concerts) {
     return null;
   }
-
-  const getFilteredData = (data, filter) => {
-    if (!filter) {
-      return data;
-    }
-
-    return concerts.reduce((carry, { artist, shows }) => {
-      // search within artist
-      if (artist.toLowerCase().trim().includes(filter)) {
-        return [...carry, { artist, shows }];
-      }
-
-      // search within shows
-      const filteredShows = shows.filter((show) => {
-        let isMatch = false;
-
-        Object.values(show).forEach((value) => {
-          if (value.toLowerCase().trim().includes(filter)) {
-            isMatch = true;
-          }
-        });
-
-        return isMatch;
-      });
-
-      // no shows === no match
-      if (filteredShows.length === 0) {
-        return carry;
-      }
-
-      return [...carry, { artist, shows: filteredShows }];
-    }, []);
-  };
 
   const filteredConcerts = getFilteredData(concerts, filter);
 
@@ -150,4 +147,38 @@ export default function ConcertPage() {
       </tfoot>
     </table>
   );
+}
+
+export function getStaticProps() {
+  const concerts = require('../concerts.json')
+    .reduce((carry, { artist, venue, date, concert }) => {
+      // reduce to {artist: ..., shows: [showArr]}
+      const previousEntry = carry.find((dataset) => dataset.artist === artist);
+
+      if (!previousEntry) {
+        return carry.concat({ artist, shows: [{ venue, date, concert }] });
+      }
+
+      return carry.map((dataset) => {
+        if (dataset.artist === artist) {
+          return {
+            ...dataset,
+            shows: dataset.shows.concat({ venue, date, concert }),
+          };
+        }
+
+        return dataset;
+      });
+    }, [])
+    .sort(
+      (a, b) =>
+        new Date(a.shows[0].date) < new Date(b.shows[0].date) ? 1 : -1, // sort DESC
+    )
+    .map((dataset) => ({ ...dataset, shows: dataset.shows.reverse() })); // reverse shows
+
+  return {
+    props: {
+      concerts,
+    },
+  };
 }

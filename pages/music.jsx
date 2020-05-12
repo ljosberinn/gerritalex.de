@@ -2,11 +2,9 @@ import React, { useState, memo, useCallback } from 'react';
 import { DebounceInput } from 'react-debounce-input';
 import { useTranslation } from 'react-i18next';
 import { FaYoutube } from 'react-icons/fa';
-import useSWR from 'swr';
 
 import { ArtistLink } from '../components';
 import { OcticonSearch } from '../components/icons';
-import fetcher from '../util/fetcher';
 
 function AlbumLink({ artist, album }) {
   return (
@@ -52,8 +50,7 @@ const getFilteredData = (data, filter) => {
   );
 };
 
-export default function Music() {
-  const { data: music } = useSWR(() => '/api/music', fetcher);
+export default function Music({ music }) {
   const { t } = useTranslation(['music', 'concerts']);
   const [filter, setFilter] = useState('');
 
@@ -148,4 +145,16 @@ export default function Music() {
       </tfoot>
     </table>
   );
+}
+
+export function getStaticProps() {
+  const music = require('../music.json')
+    .filter((dataset) => !dataset.hidden)
+    .reverse();
+
+  return {
+    props: {
+      music,
+    },
+  };
 }
