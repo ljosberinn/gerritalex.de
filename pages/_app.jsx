@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import React from 'react';
 
 import '../i18n';
@@ -17,10 +18,14 @@ import '../assets/App.css';
 const name = 'Gerrit Alex';
 const userName = 'ljosberinn';
 const repoLink = `//github.com/${userName}/gerritalex.de`;
+const title = `${name} - Fullstack Web Software Engineer`;
 
 export default function App({ Component, pageProps }) {
   return (
     <>
+      <Head>
+        <title>{title}</title>
+      </Head>
       <Header repoLink={repoLink} name={name} />
       <main className="application-main">
         <div className="container-xl clearfix px-3 mt-4">

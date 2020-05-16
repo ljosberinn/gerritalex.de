@@ -56,8 +56,6 @@ export default class Document extends NextDocument {
             name="google-site-verification"
             content="Vlh1Gz6viUFYfAKYfZuNPq6gD7ffi7TZL9bLkbi7jL0"
           />
-
-          <title>{title}</title>
         </Head>
         <body>
           <Main />
