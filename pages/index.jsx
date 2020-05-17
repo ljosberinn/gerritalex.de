@@ -18,18 +18,20 @@ const fixExternalLinks = (string) =>
   string
     .replace(newLinePattern, '')
     .replace(
-      new RegExp('href="/ljosberinn', 'g'),
-      'target="_blank" rel="noopener noreferrer" href="https://github.com/ljosberinn',
+      /(href="\/)/g,
+      'target="_blank" rel="noopener noreferrer" href="https://github.com/',
     )
+
     .trim();
 
 const newLinePattern = /\r?\n|\r/g;
 
 const extractContributionActivity = (document) => {
-  return fixExternalLinks(
-    document.getElementsByClassName('contribution-activity-listing')[0]
-      .innerHTML,
-  );
+  const content = document.getElementsByClassName(
+    'contribution-activity-listing',
+  )[0].innerHTML;
+
+  return fixExternalLinks(content);
 };
 
 const extractContributionHistory = (document) =>
