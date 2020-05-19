@@ -13,7 +13,7 @@
     "i18next-browser-languagedetector": "^4.1.1",
     "next": "9.4.1",
     "node-sass": "^4.14.1",
-    "preact": "^10.4.1",
+    "preact": "^10.4.4",
     "preact-render-to-string": "^5.1.8",
     "react": "github:preact-compat/react#1.0.0",
     "react-debounce-input": "^3.2.2",
