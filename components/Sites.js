@@ -6,7 +6,7 @@ import { OcticonLink, OcticonRepo, OcticonCode } from './icons';
 const sites = [
   {
     repository: '//github.com/ljosberinn/eslint-config-galex',
-    title: 'Personal ESLint config',
+    title: 'eslint-config-galex',
     url: '//github.com/ljosberinn/eslint-config-galex',
   },
   {
