@@ -10,7 +10,7 @@ function AlbumLink({ artist, album }) {
   return (
     <a
       href={`//www.youtube.com/results?search_query=${encodeURIComponent(
-        artist,
+        artist
       )} ${encodeURIComponent(album)}`}
       target="_blank"
       rel="noopener noreferrer"
@@ -46,7 +46,7 @@ const getFilteredData = (data, filter) => {
   return data.filter(
     ({ artist, album }) =>
       artist.toLowerCase().trim().includes(filter) ||
-      album.toLowerCase().trim().includes(filter),
+      album.toLowerCase().trim().includes(filter)
   );
 };
 
@@ -64,7 +64,7 @@ export default function Music({ music }) {
 
       setFilter(newFilter);
     },
-    [filter],
+    [filter]
   );
 
   if (!music) {
@@ -76,18 +76,18 @@ export default function Music({ music }) {
   const amountOfUniqueArists = filteredData.reduce(
     (carry, { artist }) =>
       carry.includes(artist) ? carry : [...carry, artist],
-    [],
+    []
   ).length;
 
   const amountOfUniqueAlbums = filteredData.reduce(
     (carry, { album, artist }) => {
       return carry.find(
-        (dataset) => dataset.album === album && dataset.artist === artist,
+        dataset => dataset.album === album && dataset.artist === artist
       )
         ? carry
         : [...carry, { album, artist }];
     },
-    [],
+    []
   ).length;
 
   const yearsCollecting = music[0].year - music[music.length - 1].year;
@@ -118,7 +118,7 @@ export default function Music({ music }) {
         </tr>
       </thead>
       <tbody>
-        {filteredData.map((dataset) => (
+        {filteredData.map(dataset => (
           <Row key={Object.values(dataset).join('-')} {...dataset} />
         ))}
       </tbody>
@@ -149,7 +149,7 @@ export default function Music({ music }) {
 
 export function getStaticProps() {
   const music = require('../music.json')
-    .filter((dataset) => !dataset.hidden)
+    .filter(dataset => !dataset.hidden)
     .reverse();
 
   return {

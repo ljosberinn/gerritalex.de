@@ -5,45 +5,50 @@ import { OcticonLink, OcticonRepo, OcticonCode } from './icons';
 
 const sites = [
   {
-    url: 'https://github.com/ljosberinn/webdev-support-bot',
+    repository: '//github.com/ljosberinn/eslint-config-galex',
+    title: 'Personal ESLint config',
+    url: '//github.com/ljosberinn/eslint-config-galex',
+  },
+  {
+    repository: '//github.com/ljosberinn/webdev-support-bot',
     title: '/r/webdev Support Discord Bot',
-    repository: 'https://github.com/ljosberinn/webdev-support-bot',
+    url: '//github.com/ljosberinn/webdev-support-bot',
   },
   {
-    url: 'https://auctioncraftsniper.com',
+    repository: '//github.com/ljosberinn/auctioncraftsniper',
     title: 'AuctionCraftSniper',
-    repository: 'https://github.com/ljosberinn/auctioncraftsniper',
+    url: '//auctioncraftsniper.com',
   },
   {
-    url: 'https://resources-helper.de',
+    repository: '//github.com/ljosberinn/resources-helper',
     title: 'Resources Helper',
-    repository: 'https://github.com/ljosberinn/resources-helper',
+    url: '//resources-helper.de',
   },
   {
-    url: 'https://wahl2017.gerritalex.de',
+    repository: '//github.com/ljosberinn/Wahlorientierungshilfe',
     title: 'Wahlorientierungshilfe',
-    repository: 'https://github.com/ljosberinn/Wahlorientierungshilfe',
+    url: '//wahl2017.gerritalex.de',
   },
   {
-    url:
-      'https://chrome.google.com/webstore/detail/github-vs-code-one-dark-v/ifhihbeapkbahaelfppkncgmmmeidapl',
+    repository: '//github.com/ljosberinn/github-one-dark-vivid',
     title: 'Github One Dark Vivid',
-    repository: 'https://github.com/ljosberinn/github-one-dark-vivid',
+    url:
+      '//chrome.google.com/webstore/detail/github-vs-code-one-dark-v/ifhihbeapkbahaelfppkncgmmmeidapl',
   },
   {
+    repository:
+      '//github.com/xepheris/World-of-Warcraft--Legion---Advanced-Guild-Statistics',
     title: 'Advanced Guild Statistics',
-    repository:
-      'https://github.com/xepheris/World-of-Warcraft--Legion---Advanced-Guild-Statistics',
   },
   {
+    repository:
+      '//github.com/ljosberinn/World-of-Warcraft-Advanced-Armory-Access',
     title: 'Advanced Armory Access',
-    repository:
-      'https://github.com/ljosberinn/World-of-Warcraft-Advanced-Armory-Access',
   },
   {
-    title: 'Artifact Power Ranking',
     repository:
-      'https://github.com/ljosberinn/World-of-Warcraft-Artifact-Power-World-Ranking',
+      '//github.com/ljosberinn/World-of-Warcraft-Artifact-Power-World-Ranking',
+    title: 'Artifact Power Ranking',
   },
 ];
 

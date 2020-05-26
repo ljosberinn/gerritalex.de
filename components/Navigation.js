@@ -4,9 +4,9 @@ import React, { forwardRef } from 'react';
 import { useTranslation } from 'react-i18next';
 
 const routes = [
-  { to: '/', title: 'cv' },
-  { to: '/concerts', title: 'concerts' },
-  { to: '/music', title: 'music' },
+  { title: 'cv', to: '/' },
+  { title: 'concerts', to: '/concerts' },
+  { title: 'music', to: '/music' },
 ];
 
 const Navigation = () => {

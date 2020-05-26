@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint components && eslint pages",
+    "lint-fix": "eslint components --fix && eslint pages --fix && prettier --write pages && prettier --write components"
   },
   "dependencies": {
     "dom-parser": "^0.1.6",
@@ -25,16 +27,9 @@
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
-    "@typescript-eslint/eslint-plugin": "^2.34.0",
-    "@typescript-eslint/parser": "^2.34.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.1.0",
-    "eslint-config-react-app": "^5.2.1",
-    "eslint-plugin-flowtype": "^5.1.0",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.20.0",
-    "eslint-plugin-react-hooks": "^4.0.2",
+    "eslint-config-galex": "^0.2.1",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.6",
     "prettier": "^2.0.5",
@@ -54,32 +49,5 @@
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": "prettier --write",
     "*.jsx": "eslint --fix"
-  },
-  "eslintConfig": {
-    "extends": "react-app",
-    "rules": {
-      "import/order": [
-        "error",
-        {
-          "groups": [
-            [
-              "builtin",
-              "external",
-              "internal"
-            ],
-            [
-              "unknown",
-              "parent",
-              "sibling"
-            ],
-            "index"
-          ],
-          "alphabetize": {
-            "order": "asc"
-          },
-          "newlines-between": "always"
-        }
-      ]
-    }
   }
 }

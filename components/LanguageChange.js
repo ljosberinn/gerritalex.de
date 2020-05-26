@@ -19,7 +19,7 @@ export default function LanguageChange() {
 
   return (
     <div className="input-group-radio">
-      {languages.map((language) => {
+      {languages.map(language => {
         const classList = [
           'float-right',
           'mt-1',

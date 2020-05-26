@@ -55,7 +55,7 @@ export default function CurriculumVitae() {
 
       return response;
     },
-    [t],
+    [t]
   );
 
   return (
@@ -75,7 +75,7 @@ export default function CurriculumVitae() {
 
         const employmentLocation = getEmploymentLocationText(
           employer,
-          location,
+          location
         );
 
         const employmentTitle = `${position}${
@@ -83,19 +83,19 @@ export default function CurriculumVitae() {
         }`;
 
         const itemProps = {
+          achievements,
+          articles,
+          dates,
           employmentLocation,
           employmentTitle,
           icon,
-          language: i18next.language,
-          achievements,
-          url,
-          tags,
-          dates,
-          translatedAchievements,
-          position,
-          talks,
-          articles,
           key,
+          language: i18next.language,
+          position,
+          tags,
+          talks,
+          translatedAchievements,
+          url,
         };
 
         return <CurriculumVitaeItem {...itemProps} />;

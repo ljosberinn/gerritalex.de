@@ -29,7 +29,7 @@ export default function Time({ dates, currentLanguage }) {
   }
 
   const attributes = {
-    className: 'd-inline-block float-right'
+    className: 'd-inline-block float-right',
   };
 
   if (from && to) {

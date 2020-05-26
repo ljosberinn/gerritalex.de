@@ -14,47 +14,47 @@ export default function Index({ data }) {
 
 const URI = 'https://github.com/ljosberinn';
 
-const fixExternalLinks = (string) =>
+const fixExternalLinks = string =>
   string
     .replace(newLinePattern, '')
     .replace(
       /(href="\/)/g,
-      'target="_blank" rel="noopener noreferrer" href="https://github.com/',
+      'target="_blank" rel="noopener noreferrer" href="https://github.com/'
     )
 
     .trim();
 
 const newLinePattern = /\r?\n|\r/g;
 
-const extractContributionActivity = (document) => {
+const extractContributionActivity = document => {
   const content = document.getElementsByClassName(
-    'contribution-activity-listing',
+    'contribution-activity-listing'
   )[0].innerHTML;
 
   return fixExternalLinks(content);
 };
 
-const extractContributionHistory = (document) =>
+const extractContributionHistory = document =>
   fixExternalLinks(
-    document.getElementsByClassName('js-calendar-graph-svg')[0].innerHTML,
+    document.getElementsByClassName('js-calendar-graph-svg')[0].innerHTML
   );
 
-const extractContributionAmount = (document) => {
+const extractContributionAmount = document => {
   const strToLookFor = ' contributions\n in the last year\n';
 
   return parseInt(
     Array.from(document.getElementsByTagName('h2'))
-      .find((h2) => h2.textContent.indexOf(strToLookFor) > -1)
+      .find(h2 => h2.textContent.indexOf(strToLookFor) > -1)
       .textContent.replace(strToLookFor, '')
       .replace(newLinePattern, '') // kill new lines
       .replace(',', '') // kill thousands separator
-      .trim(), // leading & trailing spaces
+      .trim() // leading & trailing spaces
   );
 };
 
-const extractRepositories = (document) =>
+const extractRepositories = document =>
   fixExternalLinks(
-    Array.from(document.getElementsByTagName('ol'))[0].innerHTML,
+    Array.from(document.getElementsByTagName('ol'))[0].innerHTML
   );
 
 export async function getServerSideProps() {
@@ -77,7 +77,7 @@ export async function getServerSideProps() {
         data: JSON.parse(
           JSON.stringify(data)
             .replace(/(\s)+/gs, ' ')
-            .replace(/(js-\w+)/g, ''),
+            .replace(/(js-\w+)/g, '')
         ),
       },
     };

@@ -30,14 +30,14 @@ export default function Person({ name, userName }) {
 
       toggleOverflowY();
 
-      const escapeListener = (e) => {
+      const escapeListener = e => {
         if (e.keyCode === 27) {
           toggleOverflowY();
           setOpen(false);
         }
       };
 
-      const outOfBoundsListener = (e) => {
+      const outOfBoundsListener = e => {
         const dialog = document.querySelector('dialog[open]');
 
         if (!dialog) {

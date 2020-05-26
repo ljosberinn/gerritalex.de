@@ -1,6 +1,6 @@
 import React from 'react';
 
-const getClasses = (withSpinner) =>
+const getClasses = withSpinner =>
   ['pinned-items-spinner', withSpinner ? 'spinner' : null].join(' ').trim();
 
 export default function Repositories({ data = [] }) {
