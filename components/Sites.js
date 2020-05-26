@@ -27,7 +27,6 @@ const sites = [
   {
     repository: '//github.com/ljosberinn/Wahlorientierungshilfe',
     title: 'Wahlorientierungshilfe',
-    url: '//wahl2017.gerritalex.de',
   },
   {
     repository: '//github.com/ljosberinn/github-one-dark-vivid',
