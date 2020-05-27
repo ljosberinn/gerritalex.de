@@ -7950,10 +7950,10 @@ typescript@3.9.3:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.3.tgz#d3ac8883a97c26139e42df5e93eeece33d610b8a"
   integrity sha512-D/wqnB2xzNFIcoBG9FG8cXRDjiqSTbG2wd8DMZeQyJlP1vfTkIxH4GKveWaEBYySKIg+USu+E+EDIR47SqnaMQ==
 
-typescript@^4.0.0-dev.20200525:
-  version "4.0.0-dev.20200525"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.0.0-dev.20200525.tgz#ac9a9c3d2858bbff9c7368cb19624a53fef201e3"
-  integrity sha512-xW9nN6RLFMEI+wB6gt7Zen2+GFjEaSSParMbxQFysPU0nuSa6P3zft9zJ/MUkG0nrjvFsh5hrg3712+z015PPg==
+typescript@^4.0.0-dev.20200527:
+  version "4.0.0-dev.20200527"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.0.0-dev.20200527.tgz#5735f4ae7271ff8ffc2eff2fef4eeeb4c2d2a779"
+  integrity sha512-k2onGAKKwXPSFnVKERteLrnq1F+C5h9vXBLRofCt+Sk/vx7+NHSPYaR+OokI90B9GdoiFdVPJ0gzxJdmebfm9Q==
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
