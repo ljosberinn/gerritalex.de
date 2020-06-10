@@ -1,3 +1,4 @@
+// /* eslint-disable unicorn/prefer-query-selector */
 import DOMParser from 'dom-parser';
 import React from 'react';
 
@@ -42,9 +43,9 @@ const extractContributionHistory = document =>
 const extractContributionAmount = document => {
   const strToLookFor = ' contributions\n in the last year\n';
 
-  return parseInt(
-    Array.from(document.getElementsByTagName('h2'))
-      .find(h2 => h2.textContent.indexOf(strToLookFor) > -1)
+  return Number.parseInt(
+    [...document.getElementsByTagName('h2')]
+      .find(h2 => h2.textContent.includes(strToLookFor))
       .textContent.replace(strToLookFor, '')
       .replace(newLinePattern, '') // kill new lines
       .replace(',', '') // kill thousands separator
@@ -53,9 +54,7 @@ const extractContributionAmount = document => {
 };
 
 const extractRepositories = document =>
-  fixExternalLinks(
-    Array.from(document.getElementsByTagName('ol'))[0].innerHTML
-  );
+  fixExternalLinks([...document.getElementsByTagName('ol')][0].innerHTML);
 
 export async function getServerSideProps() {
   try {
@@ -81,7 +80,7 @@ export async function getServerSideProps() {
         ),
       },
     };
-  } catch (error) {
+  } catch {
     return {
       props: {
         data: {

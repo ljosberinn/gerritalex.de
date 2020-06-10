@@ -47,7 +47,7 @@ export default function CurriculumVitae() {
       Object.keys(response).forEach(key => {
         if (
           dataset[key] !== null &&
-          dataset[key].indexOf(TRANSLATE_INDICATOR) > -1
+          dataset[key].includes(TRANSLATE_INDICATOR)
         ) {
           response[key] = t(dataset[key].split(TRANSLATE_INDICATOR)[1]);
         }

@@ -27,7 +27,7 @@ export default function Banner({ repoLink }) {
             <br />
             {t('disclaimer-3')}{' '}
             <a href={repoLink} target="_blank" rel="noreferrer noopener">
-              {i18next.language.indexOf('de') > -1 ? 'Repo' : 'repo'}
+              {i18next.language.includes('de') ? 'Repo' : 'repo'}
             </a>
             .
           </p>
