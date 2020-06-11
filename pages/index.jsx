@@ -1,4 +1,4 @@
-// /* eslint-disable unicorn/prefer-query-selector */
+/* eslint-disable unicorn/prefer-query-selector */
 import DOMParser from 'dom-parser';
 import React from 'react';
 
