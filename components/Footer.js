@@ -10,7 +10,7 @@ export default function Footer() {
         <ul className="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
           <li className="mr-3 mr-lg-0">
             Design © 2019-{new Date().getFullYear()} GitHub, Inc., modifications
-            by myself
+            by Gerrit Alex
           </li>
         </ul>
       </div>
