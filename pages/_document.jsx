@@ -46,7 +46,7 @@ export default class Document extends NextDocument {
           <meta property="og:description" content={description} />
 
           <meta name="twitter:image:src" content={img} />
-          <meta name="twitter:site" content="@gerrit_alex" />
+          <meta name="twitter:creator" content="@gerrit_alex" />
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:title" content={title} />
           <meta name="twitter:description" content={title} />

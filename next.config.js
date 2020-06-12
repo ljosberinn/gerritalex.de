@@ -9,7 +9,7 @@ module.exports = (phase, { defaultConfig }) => ({
     const splitChunks = config.optimization && config.optimization.splitChunks;
     if (splitChunks) {
       const cacheGroups = splitChunks.cacheGroups;
-      const preactModules = /[\\/]node_modules[\\/](preact|preact-render-to-string|preact-context-provider)[\\/]/;
+      const preactModules = /[/\\]node_modules[/\\](preact|preact-render-to-string|preact-context-provider)[/\\]/;
       if (cacheGroups.framework) {
         cacheGroups.preact = Object.assign({}, cacheGroups.framework, {
           test: preactModules,
@@ -17,8 +17,8 @@ module.exports = (phase, { defaultConfig }) => ({
         cacheGroups.commons.name = 'framework';
       } else {
         cacheGroups.preact = {
-          name: 'commons',
           chunks: 'all',
+          name: 'commons',
           test: preactModules,
         };
       }
@@ -30,9 +30,9 @@ module.exports = (phase, { defaultConfig }) => ({
     if (dev && !isServer) {
       const entry = config.entry;
       config.entry = () =>
-        entry().then((entries) => {
+        entry().then(entries => {
           entries['main.js'] = ['preact/debug'].concat(
-            entries['main.js'] || [],
+            entries['main.js'] || []
           );
           return entries;
         });
