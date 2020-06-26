@@ -33,7 +33,7 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "prettier": "^2.0.5",
-    "typescript": "^4.0.0-dev.20200624"
+    "typescript": "^4.0.0-dev.20200625"
   },
   "commitlint": {
     "extends": [
