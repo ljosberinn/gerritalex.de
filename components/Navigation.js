@@ -20,7 +20,7 @@ const Navigation = () => {
       <nav className="UnderlineNav-body" aria-label="User profile">
         {routes.map(({ to, title }) => (
           <Link href={to} passHref key={to}>
-            <NavLink label={t(title)}></NavLink>
+            <NavLink label={t(title)} />
           </Link>
         ))}
       </nav>

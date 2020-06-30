@@ -30,6 +30,7 @@ export default function LanguageChange() {
 
         return (
           <label key={language} className={classList}>
+            {/* eslint-disable-next-line jsx-a11y/control-has-associated-label */}
             <input
               type="radio"
               name="language"

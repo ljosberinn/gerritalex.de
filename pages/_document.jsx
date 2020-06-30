@@ -32,8 +32,8 @@ export default class Document extends NextDocument {
           <meta name="revisit-after" content="7 days" />
           <meta name="author" content={name} />
           <meta name="description" content={description} />
-          <meta itemprop="name" content={name} />
-          <meta itemprop="description" content={description} />
+          <meta itemProp="name" content={name} />
+          <meta itemProp="description" content={description} />
           <meta name="keywords" content={keywords.join(', ')} />
 
           <meta property="og:locale" content="de_DE" />

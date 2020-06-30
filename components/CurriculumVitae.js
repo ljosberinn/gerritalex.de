@@ -89,7 +89,6 @@ export default function CurriculumVitae() {
           employmentLocation,
           employmentTitle,
           icon,
-          key,
           language: i18next.language,
           position,
           tags,
@@ -98,7 +97,7 @@ export default function CurriculumVitae() {
           url,
         };
 
-        return <CurriculumVitaeItem {...itemProps} />;
+        return <CurriculumVitaeItem {...itemProps} key={key} />;
       })}
     </ol>
   );

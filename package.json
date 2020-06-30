@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint components && eslint pages",
-    "lint-fix": "eslint components --fix && eslint pages --fix && prettier --write pages && prettier --write components"
+    "lint:fix": "eslint components --fix && eslint pages --fix && prettier --write pages && prettier --write components"
   },
   "dependencies": {
     "dom-parser": "^0.1.6",
@@ -15,7 +15,7 @@
     "i18next-browser-languagedetector": "^5.0.0",
     "next": "9.4.4",
     "node-sass": "^4.14.1",
-    "preact": "^10.4.4",
+    "preact": "^10.4.5",
     "preact-render-to-string": "^5.1.9",
     "react": "github:preact-compat/react#1.0.0",
     "react-debounce-input": "^3.2.2",
@@ -29,11 +29,11 @@
     "@commitlint/config-conventional": "^9.0.1",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.3.1",
-    "eslint-config-galex": "^0.4.12",
+    "eslint-config-galex": "^0.5.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "prettier": "^2.0.5",
-    "typescript": "^4.0.0-dev.20200625"
+    "typescript": "^4.0.0-dev.20200630"
   },
   "commitlint": {
     "extends": [
