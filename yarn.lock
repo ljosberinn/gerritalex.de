@@ -3284,13 +3284,14 @@ eslint-ast-utils@^1.1.0:
     lodash.get "^4.4.2"
     lodash.zip "^4.2.0"
 
-eslint-config-galex@^0.5.1:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/eslint-config-galex/-/eslint-config-galex-0.5.1.tgz#7af759321df4a84bc89a9e00871e7a05b177d2e3"
-  integrity sha512-H0hD3HrMNn5BnDekP68vvAFE8j/meGkXG3EI9yB7DM4T8XUZaaNXI5Yz5eT9hZvG/rfc7Mf6CfsAkOcCUBnvVg==
+eslint-config-galex@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-galex/-/eslint-config-galex-0.6.1.tgz#481610c60dc674e050d180f5d316708689f0df2c"
+  integrity sha512-CyorYbqBMNA9XpZ893CUMUF7QbWUvtgHOwHxF50Nw3Z6t3xtiLMfRsIMxUyMauC5O3WaTnGeZZGH7BMcrhVdMA==
   dependencies:
     "@typescript-eslint/eslint-plugin" "3.5.0"
     "@typescript-eslint/parser" "3.5.0"
+    babel-eslint "^10.1.0"
     eslint-config-kentcdodds "^14.14.1"
     eslint-config-prettier "^6.11.0"
     eslint-config-react-app "^5.2.1"
@@ -3540,10 +3541,10 @@ eslint-visitor-keys@^1.0.0, eslint-visitor-keys@^1.1.0, eslint-visitor-keys@^1.2
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.3.0.tgz#30ebd1ef7c2fdff01c3a4f151044af25fab0523e"
   integrity sha512-6J72N8UNa462wa/KFODt/PJ3IU60SDpC3QXC1Hjc1BXXpfL2C9R5+AU7jhe0F6GREqVMh4Juu+NY7xn+6dipUQ==
 
-eslint@^7.3.1:
-  version "7.3.1"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.3.1.tgz#76392bd7e44468d046149ba128d1566c59acbe19"
-  integrity sha512-cQC/xj9bhWUcyi/RuMbRtC3I0eW8MH0jhRELSvpKYkWep3C6YZ2OkvcvJVUeO6gcunABmzptbXBuDoXsjHmfTA==
+eslint@^7.4.0:
+  version "7.4.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.4.0.tgz#4e35a2697e6c1972f9d6ef2b690ad319f80f206f"
+  integrity sha512-gU+lxhlPHu45H3JkEGgYhWhkR9wLHHEXC9FbWFnTlEkbKyZKWgWRLgf61E8zWmBuI6g5xKBph9ltg3NtZMVF8g==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     ajv "^6.10.0"
@@ -4306,10 +4307,10 @@ i18next-browser-languagedetector@^5.0.0:
   dependencies:
     "@babel/runtime" "^7.5.5"
 
-i18next@^19.5.1:
-  version "19.5.1"
-  resolved "https://registry.yarnpkg.com/i18next/-/i18next-19.5.1.tgz#d5fdc7b2dafd1a183f2188d65dfdb78ef9f35264"
-  integrity sha512-e6lGMiTyb51F9PPInUTTDg8YbwcWXZYX18svaX2NUUWEphJKP7oG5HMlbZ+K84AXqw4AeBnwRrOlS9ickqcCBg==
+i18next@^19.5.4:
+  version "19.5.4"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-19.5.4.tgz#86e4b44993621f39ab53f95a24afa69caea0a452"
+  integrity sha512-fty+v8v0Unn8KufOajoZ6OR5aKme/lP+BdbT5rirTXE8wdj6LbsbG9DwtI9VtMeru1PEf+L530Cq3IRmovMJGQ==
   dependencies:
     "@babel/runtime" "^7.10.1"
 
@@ -8197,10 +8198,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^4.0.0-dev.20200630:
-  version "4.0.0-dev.20200630"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.0.0-dev.20200630.tgz#73539856a18e6a417556833b35b1c0a8daf3fb3e"
-  integrity sha512-m7Eu6QG0FgdHE8nGFsHqwzo8XM6Fp/QNZMY1JYWFSYTD7bk4dHACd8gQrhTfQe1FPM6EbfHxB9rExPtQ7FGe9w==
+typescript@^4.0.0-dev.20200703:
+  version "4.0.0-dev.20200703"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.0.0-dev.20200703.tgz#18a169ce8cc29d49f329262c665f03c7c27e8ead"
+  integrity sha512-xoluPKssy9HuHbbyc6cMB/xv8JPezBjBO0dpyR5O9WEvUYF4QVu+3TtaGcdG/d+NpwgGBqo0cR6IAeHxJuGmXw==
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
