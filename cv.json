@@ -112,7 +112,11 @@
       "CSS-in-JS",
       "styled-system",
       "Next.js",
-      "Fastify"
+      "Fastify",
+      "Deno",
+      "OAuth2",
+      "Jest",
+      "@testing-library"
     ],
     "talks": [],
     "articles": []
