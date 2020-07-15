@@ -16,7 +16,7 @@
     "next": "9.4.4",
     "node-sass": "^4.14.1",
     "preact": "^10.4.6",
-    "preact-render-to-string": "^5.1.9",
+    "preact-render-to-string": "^5.1.10",
     "react": "github:preact-compat/react#1.0.0",
     "react-debounce-input": "^3.2.2",
     "react-dom": "github:preact-compat/react-dom#1.0.0",
