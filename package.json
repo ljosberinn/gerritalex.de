@@ -7,22 +7,24 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint components && eslint pages",
-    "lint:fix": "eslint components --fix && eslint pages --fix && prettier --write pages && prettier --write components"
+    "lint:fix": "eslint components --fix && eslint pages --fix && prettier --write pages && prettier --write components",
+    "install:clean": "rm -rf node_modules && rm yarn.lock && yarn"
   },
   "dependencies": {
+    "@prefresh/next": "^0.3.2",
     "dom-parser": "^0.1.6",
     "i18next": "^19.6.3",
-    "i18next-browser-languagedetector": "^5.0.0",
+    "i18next-browser-languagedetector": "^5.0.1",
     "next": "9.5.1",
     "node-sass": "^4.14.1",
-    "preact": "^10.4.6",
+    "preact": "^10.4.7",
     "preact-render-to-string": "^5.1.10",
     "react": "github:preact-compat/react#1.0.0",
     "react-debounce-input": "^3.2.2",
     "react-dom": "github:preact-compat/react-dom#1.0.0",
     "react-i18next": "^11.7.0",
     "react-icons": "^3.10.0",
-    "react-ssr-prepass": "1.2.1"
+    "react-ssr-prepass": "npm:preact-ssr-prepass@1.1.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^9.1.1",
@@ -33,7 +35,7 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "prettier": "^2.0.5",
-    "typescript": "^4.0.0-dev.20200803"
+    "typescript": "^4.1.0-dev.20200806"
   },
   "commitlint": {
     "extends": [

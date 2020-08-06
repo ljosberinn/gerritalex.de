@@ -1,32 +1,31 @@
-module.exports = (phase, { defaultConfig }) => ({
-  ...defaultConfig,
-  experimental: {
-    modern: true,
-    polyfillsOptimization: true,
-  },
+const withPrefresh = require('@prefresh/next');
 
-  webpack: (config, { dev, isServer }) => {
+module.exports = withPrefresh({
+  webpack(config, { dev, isServer }) {
+    // Move Preact into the framework chunk instead of duplicating in routes:
     const splitChunks = config.optimization && config.optimization.splitChunks;
     if (splitChunks) {
       const cacheGroups = splitChunks.cacheGroups;
-      const preactModules = /[/\\]node_modules[/\\](preact|preact-render-to-string|preact-context-provider)[/\\]/;
+      const test = /[/\\]node_modules[/\\](preact|preact-render-to-string|preact-context-provider)[/\\]/;
       if (cacheGroups.framework) {
-        cacheGroups.preact = Object.assign({}, cacheGroups.framework, {
-          test: preactModules,
-        });
-        cacheGroups.commons.name = 'framework';
-      } else {
-        cacheGroups.preact = {
-          chunks: 'all',
-          name: 'commons',
-          test: preactModules,
-        };
+        cacheGroups.preact = Object.assign({}, cacheGroups.framework, { test });
+        // if you want to merge the 2 small commons+framework chunks:
+        // cacheGroups.commons.name = 'framework';
       }
     }
 
+    if (isServer) {
+      // mark `preact` stuffs as external for server bundle to prevent duplicate copies of preact
+      config.externals.push(
+        /^(preact|preact-render-to-string|preact-context-provider)([/\\]|$)/
+      );
+    }
+
+    // Install webpack aliases:
     const aliases = config.resolve.alias || (config.resolve.alias = {});
     aliases.react = aliases['react-dom'] = 'preact/compat';
 
+    // Automatically inject Preact DevTools:
     if (dev && !isServer) {
       const entry = config.entry;
       config.entry = () =>
