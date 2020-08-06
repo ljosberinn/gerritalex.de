@@ -12,7 +12,7 @@ const toggleOverflowY = () => {
   return (style.overflowY = style.overflowY === '' ? 'hidden' : '');
 };
 
-export default function Person({ name, userName }) {
+export function Person({ name, userName }) {
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);
 

@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 import { ExternalLink } from '.';
 
-export default function Articles({ articles }) {
+export function Articles({ articles }) {
   const { t } = useTranslation();
 
   if (articles.length === 0) {

@@ -2,7 +2,7 @@ import React from 'react';
 
 import { ContributionChart } from '.';
 
-export default function ContributionOverview({ amount, history }) {
+export function ContributionOverview({ amount, history }) {
   return (
     <div className="position-relative">
       <h2 className="f4 text-normal mb-2">

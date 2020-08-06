@@ -8,7 +8,7 @@ import React from 'react';
 const getDurationInDays = (from, to) =>
   Math.ceil(Math.abs(to.getTime() - from.getTime()) / (1000 * 60 * 60 * 24));
 
-export default function Time({ dates, currentLanguage }) {
+export function Time({ dates, currentLanguage }) {
   let { from, to } = dates;
 
   // convert to dates

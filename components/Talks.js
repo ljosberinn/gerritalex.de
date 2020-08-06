@@ -9,7 +9,7 @@ function Talk({ text }) {
   );
 }
 
-export default function Talks({ data }) {
+export function Talks({ data }) {
   const { t } = useTranslation();
 
   return (

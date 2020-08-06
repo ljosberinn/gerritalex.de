@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function ContributionChart({ svg }) {
+export function ContributionChart({ svg }) {
   return svg.length === 0 ? (
     <img
       className="d-block mx-auto mt-4"

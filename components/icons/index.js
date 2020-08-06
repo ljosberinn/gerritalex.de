@@ -1,31 +1,14 @@
-import LinkedIn from './LinkedIn';
-import Mail from './Mail';
-import OcticonBook from './OcticonBook';
-import OcticonCode from './OcticonCode';
-import OcticonGit from './OcticonGit';
-import OcticonLink from './OcticonLink';
-import OcticonLocation from './OcticonLocation';
-import OcticonPhone from './OcticonPhone';
-import OcticonRepo from './OcticonRepo';
-import OcticonSearch from './OcticonSearch';
-import OcticonStar from './OcticonStar';
-import OcticonX from './OcticonX';
-import Reddit from './Reddit';
-import Twitter from './Twitter';
-
-export {
-  OcticonBook,
-  OcticonRepo,
-  OcticonCode,
-  OcticonStar,
-  OcticonLocation,
-  OcticonLink,
-  Reddit,
-  Twitter,
-  OcticonPhone,
-  LinkedIn,
-  OcticonX,
-  Mail,
-  OcticonSearch,
-  OcticonGit,
-};
+export { LinkedIn } from './LinkedIn';
+export { Mail } from './Mail';
+export { OcticonBook } from './OcticonBook';
+export { OcticonCode } from './OcticonCode';
+export { OcticonGit } from './OcticonGit';
+export { OcticonLink } from './OcticonLink';
+export { OcticonLocation } from './OcticonLocation';
+export { OcticonPhone } from './OcticonPhone';
+export { OcticonRepo } from './OcticonRepo';
+export { OcticonSearch } from './OcticonSearch';
+export { OcticonStar } from './OcticonStar';
+export { OcticonX } from './OcticonX';
+export { Reddit } from './Reddit';
+export { Twitter } from './Twitter';

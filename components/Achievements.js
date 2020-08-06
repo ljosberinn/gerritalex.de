@@ -10,8 +10,12 @@ const Stars = ({ achievements }) =>
     </span>
   );
 
-const Achievements = ({ achievements, translatedAchievements }) =>
-  achievements.length > 0 && (
+export function Achievements({ achievements, translatedAchievements }) {
+  if (achievements.length === 0) {
+    return null;
+  }
+
+  return (
     <>
       <p className="pinned-item-desc mt-2 text-gray">
         <Stars achievements={achievements} /> {translatedAchievements}
@@ -23,5 +27,4 @@ const Achievements = ({ achievements, translatedAchievements }) =>
       </ul>
     </>
   );
-
-export default Achievements;
+}

@@ -50,6 +50,7 @@ const getFilteredData = (data, filter) => {
   );
 };
 
+// eslint-disable-next-line import/no-default-export
 export default function Music({ music }) {
   const { t } = useTranslation(['music', 'concerts']);
   const [filter, setFilter] = useState('');

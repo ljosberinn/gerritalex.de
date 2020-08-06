@@ -9,7 +9,7 @@ const routes = [
   { title: 'music', to: '/music' },
 ];
 
-const Navigation = () => {
+export function Navigation() {
   const { t } = useTranslation('navigation');
 
   return (
@@ -26,7 +26,7 @@ const Navigation = () => {
       </nav>
     </div>
   );
-};
+}
 
 const NavLink = forwardRef(({ onClick, href, label }, ref) => {
   const { pathname } = useRouter();
@@ -47,5 +47,3 @@ const NavLink = forwardRef(({ onClick, href, label }, ref) => {
     </a>
   );
 });
-
-export default Navigation;

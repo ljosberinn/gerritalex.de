@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 import { OcticonX } from './icons';
 
-export default function Banner({ repoLink }) {
+export function Banner({ repoLink }) {
   const [isVisible, setIsVisible] = useState(true);
   const { t } = useTranslation();
 

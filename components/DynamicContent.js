@@ -2,7 +2,7 @@ import React from 'react';
 
 import { ContributionOverview, ContributionActivity, Repositories } from '.';
 
-export default function DynamicContent({
+export function DynamicContent({
   contributionActivity,
   contributionAmount,
   contributionHistory,

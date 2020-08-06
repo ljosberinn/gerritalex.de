@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 const languages = ['en', 'de'];
 
-export default function LanguageChange() {
+export function LanguageChange() {
   const [currentLanguage, setCurrentLanguage] = useState(i18next.language);
 
   const handleLanguageChange = ({ target: { value } }) => {

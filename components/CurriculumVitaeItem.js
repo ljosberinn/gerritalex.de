@@ -17,7 +17,7 @@ const resolveIcon = iconName => {
   }
 };
 
-export default function CurriculumVitaeItem({
+export function CurriculumVitaeItem({
   employmentTitle,
   position,
   dates,

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Header({ name, repoLink }) {
+export function Header({ name, repoLink }) {
   return (
     <header className="Header-old Details position-relative f4 py-2">
       <div className="container-xl d-flex flex-items-center p-responsive">

@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Status } from '.';
 
-export default function Avatar({ userName }) {
+export function Avatar({ userName }) {
   return (
     <div className="float-left col-3 col-md-12 pr-3 pr-md-0">
       <a

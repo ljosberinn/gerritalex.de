@@ -6,7 +6,7 @@ import { OcticonLocation, OcticonPhone } from './icons';
 const mobile = '+49 (0)176 64 74 84 14';
 const sanitizedMobile = 4917664748414;
 
-export default function Meta() {
+export function Meta() {
   const { t } = useTranslation();
 
   return (

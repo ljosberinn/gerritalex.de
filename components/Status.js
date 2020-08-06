@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Status() {
+export function Status() {
   return (
     <div className="user-status-container position-relative hide-sm hide-md">
       <div className="f5">

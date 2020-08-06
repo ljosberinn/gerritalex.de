@@ -73,7 +73,7 @@ function RegularLink({ url, title }) {
   );
 }
 
-export default function Sites() {
+export function Sites() {
   const { t } = useTranslation();
 
   return (

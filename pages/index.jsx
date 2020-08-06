@@ -4,6 +4,7 @@ import React from 'react';
 
 import { CurriculumVitae, DynamicContent } from '../components';
 
+// eslint-disable-next-line import/no-default-export
 export default function Index({ data }) {
   return (
     <>

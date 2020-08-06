@@ -53,7 +53,7 @@ const resolveIcon = name => {
   }
 };
 
-export default function Profiles({ mail }) {
+export function Profiles({ mail }) {
   return (
     <>
       <li className="vcard-detail pt-1 css-truncate css-truncate-target">

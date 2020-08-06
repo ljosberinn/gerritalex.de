@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Footer() {
+export function Footer() {
   return (
     <div
       className="footer container-lg width-full p-responsive"

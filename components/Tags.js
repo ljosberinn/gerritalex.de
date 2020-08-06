@@ -9,7 +9,7 @@ function Tag({ text }) {
   );
 }
 
-export default function Tags({ tags }) {
+export function Tags({ tags }) {
   const { t } = useTranslation();
 
   if (tags.length === 0) {

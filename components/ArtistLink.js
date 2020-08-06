@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaLastfm } from 'react-icons/fa';
 
-export default function ArtistLink({ artist }) {
+export function ArtistLink({ artist }) {
   return (
     <a
       href={`//last.fm/music/${encodeURIComponent(artist)}`}
