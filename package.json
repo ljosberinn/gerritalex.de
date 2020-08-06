@@ -28,7 +28,7 @@
     "@commitlint/cli": "^9.1.1",
     "@commitlint/config-conventional": "^9.1.1",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.5.0",
+    "eslint": "^7.6.0",
     "eslint-config-galex": "^0.8.3",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
