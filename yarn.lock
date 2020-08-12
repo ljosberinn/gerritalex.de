@@ -8220,10 +8220,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^4.1.0-dev.20200806:
-  version "4.1.0-dev.20200806"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.1.0-dev.20200806.tgz#e19c40c93100bdc05a9d9ebff50e1ee72be6e34d"
-  integrity sha512-2K5lVWdkDuL1Szt8E2Kh4EWum1R0hMYsnjh+/iYXfIGi8PNdttVid+J4LQ2TzpGVg33EWv6fcK2dkNRSsBofcg==
+typescript@^4.1.0-dev.20200811:
+  version "4.1.0-dev.20200811"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.1.0-dev.20200811.tgz#4ef777d3f3cd8eb3e4badfa9c332c0bf025c1d6e"
+  integrity sha512-k2W4Wyi2y40ISWLqRo+g+bv9euIt77zvYtB3vlNQtRMHSj9S84nOzlML3lXQeRlimK9TeCbxcv3hORDeXo+jhA==
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
