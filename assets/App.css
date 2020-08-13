@@ -165,3 +165,9 @@ table tbody tr:hover {
   border-width: 0 0 1px;
   margin: 0;
 }
+
+.imprint::after {
+  white-space: pre-wrap;
+  content: 'Imprint: ' attr(data-name) ' - ' attr(data-street) ' - '
+    attr(data-city);
+}

@@ -12,6 +12,12 @@ export function Footer() {
             Design © 2019-{new Date().getFullYear()} GitHub, Inc., modifications
             by Gerrit Alex
           </li>
+          <li
+            className="mr-3 mr-lg-0 imprint"
+            data-name="Gerrit Alex"
+            data-street="Appenzeller Straße 97"
+            data-city="81475 Munich"
+          />
         </ul>
       </div>
       <div className="d-flex flex-justify-center pb-6" />
