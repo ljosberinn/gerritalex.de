@@ -168,6 +168,6 @@ table tbody tr:hover {
 
 .imprint::after {
   white-space: pre-wrap;
-  content: 'Imprint: ' attr(data-name) ' - ' attr(data-street) ' - '
+  content: 'Legal Notice ' attr(data-name) ' - ' attr(data-street) ' - '
     attr(data-city);
 }
