@@ -11,7 +11,7 @@
     "install:clean": "rm -rf node_modules && rm yarn.lock && yarn"
   },
   "dependencies": {
-    "@prefresh/next": "0.4.0",
+    "@prefresh/next": "1.0.0",
     "dom-parser": "0.1.6",
     "i18next": "19.6.3",
     "i18next-browser-languagedetector": "6.0.0",
