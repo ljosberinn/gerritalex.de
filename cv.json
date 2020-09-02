@@ -50,7 +50,6 @@
       "SCSS",
       "composer",
       "npm",
-      "PHPStorm",
       "Sentry",
       "Docker",
       "PHPStorm"
@@ -77,6 +76,7 @@
     "tags": [
       "Vanilla JavaScript",
       "ES6+",
+      "ESNext",
       "React",
       "TypeScript",
       "API Usage & Build Process",
@@ -116,7 +116,8 @@
       "Deno",
       "OAuth2",
       "Jest",
-      "@testing-library"
+      "@testing-library",
+      "ESLint"
     ],
     "talks": [],
     "articles": []
