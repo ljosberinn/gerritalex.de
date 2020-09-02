@@ -17,6 +17,7 @@ export function Repositories({ data = [] }) {
       </h2>
       <ol
         className="pinned-items-list gutter-condensed"
+        // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: data }}
       />
     </div>

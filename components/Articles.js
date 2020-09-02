@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { ExternalLink } from '.';
+import { ExternalLink } from './ExternalLink';
 
 export function Articles({ articles }) {
   const { t } = useTranslation();
@@ -17,8 +17,8 @@ export function Articles({ articles }) {
       </p>
 
       <ul className="pinned-item-desc text-gray text-small d-block mb-3 dashed">
-        {articles.map(({ title, url }, key) => (
-          <li key={key}>
+        {articles.map(({ title, url }) => (
+          <li key={title}>
             <ExternalLink href={url}>{title}</ExternalLink>
           </li>
         ))}

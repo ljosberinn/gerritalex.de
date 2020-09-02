@@ -1,8 +1,11 @@
 import React from 'react';
 
+import { Achievements } from './Achievements';
+import { Articles } from './Articles';
+import { Tags } from './Tags';
+import { Talks } from './Talks';
+import { Time } from './Time';
 import { OcticonBook, OcticonRepo, OcticonCode, OcticonStar } from './icons';
-
-import { Achievements, Time, Tags, Talks, Articles } from '.';
 
 const resolveIcon = iconName => {
   switch (iconName) {

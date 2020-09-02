@@ -20,8 +20,8 @@ export function Tags({ tags }) {
     <>
       <p className="pinned-item-desc mt-2 text-gray">{t('tools-used')}:</p>
       <p className="mb-0 f6 text-gray d-inline-flex flex-wrap flex-items-center f6 my-1">
-        {tags.map((text, key) => (
-          <Tag text={text} key={key} />
+        {tags.map(text => (
+          <Tag text={text} key={text} />
         ))}
       </p>
     </>

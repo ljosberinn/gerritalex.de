@@ -3,8 +3,7 @@ import React, { useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { achievementLengths } from '../i18n';
-
-import { CurriculumVitaeItem } from '.';
+import { CurriculumVitaeItem } from './CurriculumVitaeItem';
 
 /**
  *
@@ -60,7 +59,7 @@ export function CurriculumVitae() {
 
   return (
     <ol className="pinned-items-list mb-4">
-      {cv.map((dataset, key) => {
+      {cv.map(dataset => {
         const {
           url,
           dates,
@@ -97,7 +96,7 @@ export function CurriculumVitae() {
           url,
         };
 
-        return <CurriculumVitaeItem {...itemProps} key={key} />;
+        return <CurriculumVitaeItem {...itemProps} key={url} />;
       })}
     </ol>
   );

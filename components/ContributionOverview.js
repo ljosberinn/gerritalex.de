@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ContributionChart } from '.';
+import { ContributionChart } from './ContributionChart';
 
 export function ContributionOverview({ amount, history }) {
   return (
@@ -31,8 +31,8 @@ export function ContributionOverview({ amount, history }) {
             Less
             <ul className="legend">
               {['#ebedf0', '#c6e48b', '#7bc96f', '#239a3b', '#196127'].map(
-                (backgroundColor, key) => (
-                  <li style={{ backgroundColor }} key={key} />
+                backgroundColor => (
+                  <li style={{ backgroundColor }} key={backgroundColor} />
                 )
               )}
             </ul>

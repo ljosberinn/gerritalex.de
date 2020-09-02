@@ -7,8 +7,14 @@ import {
   FaYoutube,
 } from 'react-icons/fa';
 
-import { OcticonLink } from './icons';
-import { Twitter, Reddit, LinkedIn, Mail, OcticonGit } from './icons';
+import {
+  OcticonLink,
+  Twitter,
+  Reddit,
+  LinkedIn,
+  Mail,
+  OcticonGit,
+} from './icons';
 
 export const profiles = [
   { icon: 'github', url: 'https://github.com/ljosberinn' },
@@ -63,11 +69,11 @@ export function Profiles({ mail }) {
       </li>
       {profiles
         .filter(dataset => !!dataset.icon)
-        .map(({ url, icon }, key) => (
+        .map(({ url, icon }) => (
           <li
             itemProp="url"
             className="vcard-detail pt-1 css-truncate css-truncate-target"
-            key={key}
+            key={url}
           >
             {resolveIcon(icon)}
             <a rel="nofollow me noopener noreferrer" target="_blank" href={url}>

@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import { Avatar } from './Avatar';
+import { Biography } from './Biography';
+import { Meta } from './Meta';
+import { Profiles } from './Profiles';
+import { Sites } from './Sites';
 import { OcticonX } from './icons';
-
-import { Biography, Profiles, Meta, Avatar, Sites } from '.';
 
 const toggleOverflowY = () => {
   const body = document.querySelector('body');

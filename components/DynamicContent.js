@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { ContributionOverview, ContributionActivity, Repositories } from '.';
+import { ContributionActivity } from './ContributionActivity';
+import { ContributionOverview } from './ContributionOverview';
+import { Repositories } from './Repositories';
 
 export function DynamicContent({
   contributionActivity,

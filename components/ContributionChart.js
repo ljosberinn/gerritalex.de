@@ -14,6 +14,7 @@ export function ContributionChart({ svg }) {
       width="722"
       height="112"
       className="mx-auto"
+      // eslint-disable-next-line react/no-danger
       dangerouslySetInnerHTML={{ __html: svg }}
     />
   );

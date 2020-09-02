@@ -20,13 +20,13 @@ const fixExternalLinks = string =>
   string
     .replace(newLinePattern, '')
     .replace(
-      /(href="\/)/g,
+      /(href="\/)/gu,
       'target="_blank" rel="noopener noreferrer" href="https://github.com/'
     )
 
     .trim();
 
-const newLinePattern = /\r?\n|\r/g;
+const newLinePattern = /\r?\n|\r/gu;
 
 const extractContributionActivity = document => {
   const content = document.getElementsByClassName(
@@ -76,8 +76,8 @@ export async function getServerSideProps() {
       props: {
         data: JSON.parse(
           JSON.stringify(data)
-            .replace(/(\s)+/gs, ' ')
-            .replace(/(js-\w+)/g, '')
+            .replace(/(\s)+/gsu, ' ')
+            .replace(/(js-\w+)/gu, '')
         ),
       },
     };

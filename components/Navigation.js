@@ -34,6 +34,8 @@ const NavLink = forwardRef(({ onClick, href, label }, ref) => {
   return (
     // eslint-disable-next-line jsx-a11y/anchor-is-valid
     <a
+      role="link"
+      tabIndex="-1"
       className={[
         'UnderlineNav-item mr-0 mr-md-1 mr-lg-3',
         pathname === href ? 'selected' : undefined,
@@ -41,6 +43,7 @@ const NavLink = forwardRef(({ onClick, href, label }, ref) => {
         .filter(Boolean)
         .join(' ')}
       onClick={onClick}
+      onKeyUp={onClick}
       ref={ref}
     >
       {label}

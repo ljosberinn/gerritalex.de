@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Status } from '.';
+import { Status } from './Status';
 
 export function Avatar({ userName }) {
   return (
