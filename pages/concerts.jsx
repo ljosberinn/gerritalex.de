@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 import { ArtistLink } from '../components';
 import { OcticonSearch } from '../components/icons';
+import concerts from '../concerts.json';
 
 const Row = memo(
   ({ date, artist, amountOfShows, venue, concert, isFirstShow }) => (
@@ -150,7 +151,7 @@ export default function ConcertPage({ concerts }) {
 }
 
 export function getStaticProps() {
-  const concerts = require('../concerts.json')
+  concerts
     .reduce((carry, { artist, venue, date, concert }) => {
       // reduce to {artist: ..., shows: [showArr]}
       const previousEntry = carry.find(dataset => dataset.artist === artist);

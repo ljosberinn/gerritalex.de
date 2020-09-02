@@ -2,6 +2,7 @@ import i18next from 'i18next';
 import React, { useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import cv from '../cv.json';
 import { achievementLengths } from '../i18n';
 import { CurriculumVitaeItem } from './CurriculumVitaeItem';
 
@@ -16,8 +17,6 @@ const getEmploymentLocationText = (employer, location) =>
     : location || employer || '';
 
 const TRANSLATE_INDICATOR = 't.';
-
-const cv = require('./../cv.json');
 
 export function CurriculumVitae() {
   const { t } = useTranslation('cv');

@@ -5,6 +5,7 @@ import { FaYoutube } from 'react-icons/fa';
 
 import { ArtistLink } from '../components';
 import { OcticonSearch } from '../components/icons';
+import music from '../music.json';
 
 function AlbumLink({ artist, album }) {
   return (
@@ -149,13 +150,9 @@ export default function Music({ music }) {
 }
 
 export function getStaticProps() {
-  const music = require('../music.json')
-    .filter(dataset => !dataset.hidden)
-    .reverse();
-
   return {
     props: {
-      music,
+      music: music.filter(dataset => !dataset.hidden).reverse(),
     },
   };
 }
