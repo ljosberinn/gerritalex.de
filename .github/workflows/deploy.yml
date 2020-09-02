@@ -32,7 +32,6 @@ jobs:
     name: Deploy to Production
     runs-on: ubuntu-latest
     # only deploy given successful tests
-    needs: test-coverage
     # on master exclusively
     if: github.ref == 'refs/heads/master'
     steps:
