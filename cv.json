@@ -83,10 +83,8 @@
       "Node.js",
       "Express",
       "Docker",
-      "Netlify",
       "Serverless/Lambda",
-      "FaunaDB",
-      "PHP 5.6-7.4.2",
+      "PHP 5.3-7.4.2",
       "Debugging",
       "HTML5",
       "Semantic HTML",
@@ -96,7 +94,6 @@
       "SCSS",
       "jQuery",
       "MySQL",
-      "Jenkins",
       "Git (via GitHub, GitLab & BitBucket)",
       "Sentry",
       "npm",
@@ -117,7 +114,10 @@
       "OAuth2",
       "Jest",
       "@testing-library",
-      "ESLint"
+      "ESLint",
+      "GitHub Actions",
+      "CI/CD (via GitHub, Vercel, Netlify, Jenkins)",
+      "Internationalization"
     ],
     "talks": [],
     "articles": []
