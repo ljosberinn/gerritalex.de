@@ -181,5 +181,6 @@ export function getStaticProps() {
         )
         .map(dataset => ({ ...dataset, shows: dataset.shows.reverse() })), // reverse shows,
     },
+    revalidate: 28800,
   };
 }

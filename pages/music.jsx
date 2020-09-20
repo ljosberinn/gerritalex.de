@@ -154,5 +154,6 @@ export function getStaticProps() {
     props: {
       music: music.filter(dataset => !dataset.hidden).reverse(),
     },
+    revalidate: 28800,
   };
 }

@@ -57,7 +57,7 @@ const extractContributionAmount = document => {
 const extractRepositories = document =>
   fixExternalLinks([...document.getElementsByTagName('ol')][0].innerHTML);
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   try {
     const response = await fetch(URI);
     const html = await response.text();
@@ -80,10 +80,11 @@ export async function getServerSideProps() {
             .replace(/(js-\w+)/gu, '')
         ),
       },
+      revalidate: 28800,
     };
   } catch {
     return {
-      props: {
+    props: {
         data: {
           contributionActivity: '',
           contributionAmount: '',
@@ -91,6 +92,7 @@ export async function getServerSideProps() {
           repositories: [],
         },
       },
+      revalidate: 28800,
     };
   }
 }

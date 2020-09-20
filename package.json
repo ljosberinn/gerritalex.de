@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "eslint components && eslint pages",
     "lint:fix": "eslint components --fix && eslint pages --fix && prettier --write pages && prettier --write components",
