@@ -22,7 +22,7 @@
     "react": "github:preact-compat/react#1.0.0",
     "react-debounce-input": "3.2.2",
     "react-dom": "github:preact-compat/react-dom#1.0.0",
-    "react-i18next": "11.7.2",
+    "react-i18next": "11.7.3",
     "react-icons": "3.11.0",
     "react-ssr-prepass": "npm:preact-ssr-prepass@1.1.1"
   },
