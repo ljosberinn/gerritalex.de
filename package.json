@@ -31,7 +31,7 @@
     "@commitlint/config-conventional": "11.0.0",
     "babel-eslint": "10.1.0",
     "eslint": "7.10.0",
-    "eslint-config-galex": "2.4.8",
+    "eslint-config-galex": "2.4.9",
     "husky": "4.3.0",
     "lint-staged": "10.4.0",
     "prettier": "2.1.2",
