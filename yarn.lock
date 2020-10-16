@@ -3323,17 +3323,17 @@ eslint-ast-utils@^1.1.0:
     lodash.get "^4.4.2"
     lodash.zip "^4.2.0"
 
-eslint-config-galex@2.5.6:
-  version "2.5.6"
-  resolved "https://registry.yarnpkg.com/eslint-config-galex/-/eslint-config-galex-2.5.6.tgz#58f9452febaf41ba02e8c8d4d4c0914e339993cc"
-  integrity sha512-gDWOR2kzA+NUw+iiV8UfzZAdgzeGL40przlLLaFVZBuKRIbMtVp+gMweyyynbKVzuRMkhlI87Bs2pw4q+zQ86w==
+eslint-config-galex@2.5.7:
+  version "2.5.7"
+  resolved "https://registry.yarnpkg.com/eslint-config-galex/-/eslint-config-galex-2.5.7.tgz#aa606595191e69c75155b21eb719475ad8718b08"
+  integrity sha512-gVSZfn+zxYGmb7JTwob4PFfHbi/1uysA1opY84KFmx6pcqUoO47mAuOJovcQEXWmRetz+eZZx9WzEt0k+vr4Tw==
   dependencies:
     "@next/eslint-plugin-next" "^9.5.3"
     "@typescript-eslint/eslint-plugin" "4.4.1"
     "@typescript-eslint/parser" "4.4.1"
     babel-eslint "10.1.0"
     confusing-browser-globals "1.0.9"
-    eslint-config-prettier "6.12.0"
+    eslint-config-prettier "6.13.0"
     eslint-plugin-import "2.22.1"
     eslint-plugin-inclusive-language "1.2.1"
     eslint-plugin-jest "24.1.0"
@@ -3351,10 +3351,10 @@ eslint-config-galex@2.5.6:
     read-pkg-up "7.0.1"
     typescript "4.0.3"
 
-eslint-config-prettier@6.12.0:
-  version "6.12.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-6.12.0.tgz#9eb2bccff727db1c52104f0b49e87ea46605a0d2"
-  integrity sha512-9jWPlFlgNwRUYVoujvWTQ1aMO8o6648r+K7qU7K5Jmkbyqav1fuEZC0COYpGBxyiAJb65Ra9hrmFx19xRGwXWw==
+eslint-config-prettier@6.13.0:
+  version "6.13.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-6.13.0.tgz#207d88796b5624e5bb815bbbdfc5891ceb9ebffa"
+  integrity sha512-LcT0i0LSmnzqK2t764pyIt7kKH2AuuqKRTtJTdddWxOiUja9HdG5GXBVF2gmCTvVYWVsTu8J2MhJLVGRh+pj8w==
   dependencies:
     get-stdin "^6.0.0"
 
