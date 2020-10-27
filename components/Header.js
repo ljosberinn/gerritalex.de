@@ -1,5 +1,3 @@
-import React from 'react';
-
 export function Header({ name, repoLink }) {
   return (
     <header className="Header-old Details position-relative f4 py-2">

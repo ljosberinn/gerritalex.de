@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { ContributionChart } from './ContributionChart';
 
 export function ContributionOverview({ amount, history }) {

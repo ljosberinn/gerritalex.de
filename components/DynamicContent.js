@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { ContributionActivity } from './ContributionActivity';
 import { ContributionOverview } from './ContributionOverview';
 import { Repositories } from './Repositories';

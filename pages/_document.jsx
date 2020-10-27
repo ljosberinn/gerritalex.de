@@ -1,5 +1,5 @@
 import NextDocument, { Html, Head, Main, NextScript } from 'next/document';
-import React from 'react';
+
 
 const name = 'Gerrit Alex';
 const description = `Personal website of Munich based Fullstack Web Software Engineer ${name}. Mainly working with JavaScript, TypeScript, React, Next.js and Node.js.`;

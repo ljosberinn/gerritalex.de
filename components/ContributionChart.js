@@ -1,5 +1,3 @@
-import React from 'react';
-
 export function ContributionChart({ svg }) {
   return svg.length === 0 ? (
     <img

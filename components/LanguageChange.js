@@ -1,5 +1,5 @@
 import i18next from 'i18next';
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const languages = ['en', 'de'];
 

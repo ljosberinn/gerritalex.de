@@ -1,5 +1,3 @@
-import React from 'react';
-
 export function OcticonStar({ extraClasses = '' }) {
   return (
     <svg

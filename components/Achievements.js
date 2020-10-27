@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { OcticonStar } from './icons';
 
 function Stars({ achievements }) {

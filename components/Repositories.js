@@ -1,5 +1,3 @@
-import React from 'react';
-
 const getClasses = withSpinner =>
   ['pinned-items-spinner', withSpinner ? 'spinner' : null].join(' ').trim();
 

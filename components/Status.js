@@ -1,5 +1,3 @@
-import React from 'react';
-
 export function Status() {
   return (
     <div className="user-status-container position-relative hide-sm hide-md">

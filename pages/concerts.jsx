@@ -1,4 +1,4 @@
-import React, { useState, memo, useCallback } from 'react';
+import  { useState, memo, useCallback } from 'react';
 import { DebounceInput } from 'react-debounce-input';
 import { useTranslation } from 'react-i18next';
 
@@ -181,6 +181,6 @@ export function getStaticProps() {
         )
         .map(dataset => ({ ...dataset, shows: dataset.shows.reverse() })), // reverse shows,
     },
-    revalidate: 28800,
+    revalidate: 28_800,
   };
 }

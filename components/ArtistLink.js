@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaLastfm } from 'react-icons/fa';
 
 export function ArtistLink({ artist }) {

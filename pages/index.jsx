@@ -1,6 +1,6 @@
 /* eslint-disable unicorn/prefer-query-selector */
 import DOMParser from 'dom-parser';
-import React from 'react';
+
 
 import { CurriculumVitae, DynamicContent } from '../components';
 
@@ -80,7 +80,7 @@ export async function getStaticProps() {
             .replace(/(js-\w+)/gu, '')
         ),
       },
-      revalidate: 28800,
+      revalidate: 28_800,
     };
   } catch {
     return {
@@ -92,7 +92,7 @@ export async function getStaticProps() {
           repositories: [],
         },
       },
-      revalidate: 28800,
+      revalidate: 28_800,
     };
   }
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import Image from 'next/image';
 
 import { Status } from './Status';
 
@@ -10,10 +10,10 @@ export function Avatar({ userName }) {
         aria-label="Jan 2020"
         href={`https://github.com/${userName}`}
       >
-        <img
-          alt=""
-          width="260"
-          height="260"
+        <Image
+          alt="Gerrit Alex"
+          width="272"
+          height="272"
           className="avatar width-full height-full avatar-before-user-status"
           src="https://avatars3.githubusercontent.com/u/29307652?s=460;v=4"
         />

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Achievements } from './Achievements';
 import { Articles } from './Articles';
 import { Tags } from './Tags';

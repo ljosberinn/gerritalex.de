@@ -1,4 +1,4 @@
-import React, { useState, memo, useCallback } from 'react';
+import  { useState, memo, useCallback } from 'react';
 import { DebounceInput } from 'react-debounce-input';
 import { useTranslation } from 'react-i18next';
 import { FaYoutube } from 'react-icons/fa';
@@ -154,6 +154,6 @@ export function getStaticProps() {
     props: {
       music: music.filter(dataset => !dataset.hidden).reverse(),
     },
-    revalidate: 28800,
+    revalidate: 28_800,
   };
 }

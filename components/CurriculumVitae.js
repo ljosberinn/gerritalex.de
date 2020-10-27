@@ -1,5 +1,5 @@
 import i18next from 'i18next';
-import React, { useCallback } from 'react';
+import { useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import cv from '../cv.json';

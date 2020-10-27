@@ -1,5 +1,3 @@
-import React from 'react';
-
 export function ContributionActivity({ data }) {
   return (
     <div
