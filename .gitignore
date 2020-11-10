@@ -17,6 +17,8 @@
 
 # misc
 .DS_Store
+*.pem
+.secret
 
 # debug
 npm-debug.log*
@@ -29,5 +31,5 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 
-/__deprecated
+# vercel
 .vercel

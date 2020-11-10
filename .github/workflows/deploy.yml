@@ -1,6 +1,17 @@
 name: Deploy to Vercel
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
+
+# used actions
+# https://github.com/actions/setup-node - sets up node env
+# https://github.com/actions/cache - caches build deps
+# https://github.com/actions/checkout - checks out repo
+# https://github.com/amondnet/vercel-action - initiates deploy to vercel
+# https://github.com/foo-software/lighthouse-check-action - lighthouse post-deploy
+# https://github.com/foo-software/lighthouse-check-status-action - lighthouse check
 
 jobs:
   setup-environment:
@@ -11,7 +22,8 @@ jobs:
       - name: Installing node.js
         uses: actions/setup-node@v1
         with:
-          node-version: 14.6.0
+          # Use the same node.js version as the one Vercel's uses (currently node12.x)
+          node-version: '12.x'
 
   lint:
     name: ESLint
@@ -32,31 +44,57 @@ jobs:
       - name: Installing dependencies
         if: steps.cache-modules.outputs.cache-hit != 'true'
         run: yarn --frozen-lockfile
-      - run: yarn lint
+      - run: yarn lint:code
 
-  deploy-staging:
-    name: Deploy to Staging
+  types:
+    name: TypeScript
     runs-on: ubuntu-latest
-    needs: lint
-    # on every branch that isnt master
-    if: github.ref != 'refs/heads/master'
     steps:
+      - name: Get Yarn cache path
+        id: yarn-cache
+        run: echo "::set-output name=dir::$(yarn cache dir)"
       - uses: actions/checkout@master
-      - uses: amondnet/vercel-action@v19
+      - name: Load Yarn cache
+        uses: actions/cache@master
         with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          github-comment: true
+          path: ${{ steps.yarn-cache.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+      - name: Installing dependencies
+        if: steps.cache-modules.outputs.cache-hit != 'true'
+        run: yarn --frozen-lockfile
+      - run: yarn lint:types
 
-  deploy-prod:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    # only run after lint and tsc completed successfully
+    needs: [lint, types]
+    steps:
+      - name: Get Yarn cache path
+        id: yarn-cache
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - uses: actions/checkout@master
+      - name: Load Yarn cache
+        uses: actions/cache@master
+        with:
+          path: ${{ steps.yarn-cache.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+      - name: Installing dependencies
+        if: steps.cache-modules.outputs.cache-hit != 'true'
+        run: yarn --frozen-lockfile
+      - name: Running tests
+        run: yarn test --ci --coverage
+
+  deploy:
     name: Deploy to Production
     runs-on: ubuntu-latest
-    needs: lint
     # only deploy given successful tests
-    # on master exclusively
-    if: github.ref == 'refs/heads/master'
+    needs: test
     steps:
       - uses: actions/checkout@master
       - uses: amondnet/vercel-action@v19
@@ -64,6 +102,8 @@ jobs:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
+          # SET THIS 👇 OR YOU WILL DEPLOY TO YOUR PERSONAL VERCEL NAMESPACE
+          # scope: ${{ secrets.VERCEL_TEAM_ID }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
           github-comment: true
           vercel-args: "--prod"
@@ -73,7 +113,7 @@ jobs:
   run-lighthouse-tests:
     name: Run LightHouse
     runs-on: ubuntu-latest
-    needs: deploy-prod
+    needs: deploy
     steps:
       - uses: actions/checkout@master
       - name: Resolving deployment url from Vercel
@@ -85,7 +125,7 @@ jobs:
         run: |
           apt update -y >/dev/null && apt install -y jq >/dev/null
           VERCEL_DEPLOYMENT=`curl -H 'Accept: application/json' -H 'Content-Type: application/json' -H 'Authorization: Bearer ${{ secrets.VERCEL_TOKEN }}' "https://api.zeit.co/v5/now/deployments?limit=1&meta-githubCommitRef=refs/heads/master" | jq '.deployments [0].url' | tr -d \"`
-          echo "::set-env name=VERCEL_DEPLOYMENT_URL::https://$VERCEL_DEPLOYMENT"
+          echo "VERCEL_DEPLOYMENT_URL=https://$VERCEL_DEPLOYMENT" >> $GITHUB_ENV
         env:
           # Passing github's secret to the worker
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
@@ -117,8 +157,8 @@ jobs:
         uses: foo-software/lighthouse-check-status-action@master
         with:
           lighthouseCheckResults: ${{ steps.lighthouseCheck.outputs.lighthouseCheckResults }}
-          minAccessibilityScore: "80"
-          minBestPracticesScore: "80"
-          minPerformanceScore: "80"
-          minSeoScore: "80"
-          minProgressiveWebAppScore: "50"
+          minAccessibilityScore: "85"
+          minBestPracticesScore: "85"
+          minPerformanceScore: "85"
+          minProgressiveWebAppScore: "85"
+          minSeoScore: "85"
