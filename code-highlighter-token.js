@@ -1,28 +1,34 @@
 // needed to map token to tailwind classes
+
+const teal = 'text-code-teal';
+const green = 'text-code-green';
+const red = 'text-code-red';
+const blue = 'text-code-blue';
+
 const tokenClassNames = {
-  tag: 'text-code-red',
   'attr-name': 'text-code-yellow',
-  'attr-value': 'text-code-green',
-  deleted: 'text-code-red',
-  inserted: 'text-code-green',
-  punctuation: 'text-code-white',
-  'template-punctuation': 'text-code-green',
-  keyword: 'text-code-purple',
-  string: 'text-code-green',
-  'template-string': 'text-code-green',
-  function: 'text-code-blue',
-  boolean: 'text-code-red',
-  comment: 'text-gray-400 italic',
-  property: 'text-code-teal',
-  'property-access': 'text-code-teal',
-  dom: 'text-code-blue',
-  method: 'text-code-teal',
+  'attr-value': green,
+  boolean: red,
   class: 'text-code-yellow',
   color: 'text-code-purple',
-  'function-variable': 'text-code-blue',
-  variable: 'text-code-blue',
-  'interpolation-punctuation': 'text-code-teal',
-  interpolation: 'text-code-red',
+  comment: 'text-gray-400 italic',
+  deleted: red,
+  dom: blue,
+  function: blue,
+  'function-variable': blue,
+  inserted: green,
+  interpolation: red,
+  'interpolation-punctuation': teal,
+  keyword: 'text-code-purple',
+  method: teal,
+  property: teal,
+  'property-access': teal,
+  punctuation: 'text-code-white',
+  string: green,
+  tag: red,
+  'template-punctuation': green,
+  'template-string': green,
+  variable: blue,
 };
 
 module.exports = tokenClassNames;

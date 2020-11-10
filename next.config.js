@@ -68,38 +68,31 @@ const offlineConfig = {
  * this reduces the bundle size by approx. 32 kB
  */
 const withPreact = (config, options) => {
-  // Move Preact into the framework chunk instead of duplicating in routes:
-  const splitChunks = config.optimization && config.optimization.splitChunks;
-  if (splitChunks) {
-    const { cacheGroups } = splitChunks;
-    const test = /[/\\]node_modules[/\\](preact|preact-render-to-string|preact-context-provider)[/\\]/u;
-    if (cacheGroups.framework) {
-      cacheGroups.preact = { ...cacheGroups.framework, test };
-      // if you want to merge the 2 small commons+framework chunks:
-      // cacheGroups.commons.name = 'framework';
+  if (!options.dev) {
+    // Move Preact into the framework chunk instead of duplicating in routes:
+    const splitChunks = config.optimization && config.optimization.splitChunks;
+
+    if (splitChunks) {
+      const { cacheGroups } = splitChunks;
+      const test = /[/\\]node_modules[/\\](preact|preact-render-to-string|preact-context-provider)[/\\]/u;
+      if (cacheGroups.framework) {
+        cacheGroups.preact = { ...cacheGroups.framework, test };
+        // if you want to merge the 2 small commons+framework chunks:
+        // cacheGroups.commons.name = 'framework';
+      }
     }
-  }
 
-  if (options.isServer) {
-    // mark `preact` stuffs as external for server bundle to prevent duplicate copies of preact
-    config.externals.push(
-      /^(preact|preact-render-to-string|preact-context-provider)([/\\]|$)/u,
-    );
-  }
+    if (options.isServer) {
+      // mark `preact` stuffs as external for server bundle to prevent duplicate copies of preact
+      config.externals.push(
+        /^(preact|preact-render-to-string|preact-context-provider)([/\\]|$)/u,
+      );
+    }
 
-  // Install webpack aliases:
-  const aliases = config.resolve.alias || (config.resolve.alias = {});
-  // eslint-disable-next-line no-multi-assign
-  aliases.react = aliases['react-dom'] = 'preact/compat';
-
-  // Automatically inject Preact DevTools:
-  if (options.dev && !options.isServer) {
-    const { entry } = config;
-    config.entry = () =>
-      entry().then((entries) => {
-        entries['main.js'] = ['preact/debug'].concat(entries['main.js'] || []);
-        return entries;
-      });
+    // Install webpack aliases:
+    const aliases = config.resolve.alias || (config.resolve.alias = {});
+    // eslint-disable-next-line no-multi-assign
+    aliases.react = aliases['react-dom'] = 'preact/compat';
   }
 };
 
@@ -117,7 +110,7 @@ const withMdx = (config, options) => {
           rehypePrism,
           () => {
             return (tree) => {
-              visit(tree, 'element', (node, index, parent) => {
+              visit(tree, 'element', (node) => {
                 const [token, type] = node.properties.className || [];
 
                 // console.log({ token, type, children: JSON.stringify(node.children.map(({ value }) => value).join(' | '), null, 2) });
