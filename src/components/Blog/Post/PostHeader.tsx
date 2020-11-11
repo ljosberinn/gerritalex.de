@@ -5,11 +5,11 @@ import tinytime from 'tinytime';
 const postDateTemplate = tinytime('{MM} {DD}, {YYYY}');
 const postDateTemplateXl = tinytime('{MMMM} {DD}, {YYYY}');
 
-type Props = {
+type PostHeaderProps = {
   meta: PostMeta;
 };
 
-export function PostHeader({ meta }: Props) {
+export function PostHeader({ meta }: PostHeaderProps): JSX.Element {
   return (
     <>
       <header>

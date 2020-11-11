@@ -157,7 +157,7 @@ const withMdx = (config, options) => {
           createLoader(function (src) {
             // we add getStaticProps function to get the post contents for each posts
             const content = [
-              'import Post from "@/components/Blog/Post/Post"',
+              'import { Post } from "@/components/Blog/Post/Post"',
               'export { getStaticProps } from "@/blog/getStaticProps"',
               src,
               'export default (props) => <Post meta={meta} {...props} />',
@@ -200,7 +200,6 @@ const defaultConfig = {
   experimental: {
     // enable experimental module/nomodule optimisation
     modern: true,
-
     // bugged with Sentry, see https://github.com/vercel/next.js/issues/17073
     // scrollRestoration: true,
     productionBrowserSourceMaps: true,
@@ -223,13 +222,6 @@ const defaultConfig = {
     return config;
   },
 };
-
-// module.exports = flowRight(
-//   withPrefresh,
-//   withImages,
-//   withOffline,
-//   withBundleAnalyzer,
-// )(conf);
 
 module.exports = withPlugins(
   [withImages, [withOffline, offlineConfig], withBundleAnalyzer],

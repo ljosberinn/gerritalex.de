@@ -8,12 +8,12 @@ const initialOptions = {
 };
 
 type Params = {
-  onIntersect: Function;
+  onIntersect: () => void;
   onlyOnce?: boolean;
   optionsData?: typeof initialOptions;
 };
 
-export const useIntersect = <T>({
+export const useIntersect = <T extends HTMLElement>({
   onIntersect,
   onlyOnce = false,
   optionsData = initialOptions,
@@ -24,9 +24,9 @@ export const useIntersect = <T>({
 
   const options = optionsData || initialOptions;
 
-  const handleIntersect = useCallback(
+  const handleIntersect: IntersectionObserverCallback = useCallback(
     (entries) => {
-      const isIntersecting = (entries[0] && entries[0].isIntersecting) || false;
+      const isIntersecting = entries[0]?.isIntersecting || false;
 
       if (isIntersecting) {
         onIntersect();
@@ -45,7 +45,6 @@ export const useIntersect = <T>({
     if (!intersected.current && !observer.current && targetRef.current) {
       observer.current = new IntersectionObserver(handleIntersect, options);
 
-      // @ts-expect-error
       observer.current.observe(targetRef.current);
     }
 

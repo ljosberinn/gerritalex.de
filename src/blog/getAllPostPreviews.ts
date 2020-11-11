@@ -1,21 +1,24 @@
+import type { ComponentType } from 'react';
+
 import type { Author } from './authors';
 
-function importAll(r: any) {
-  return r.keys().map((fileName: string) => ({
-    link: fileName.slice(1).replace(/\/index\.mdx$/, ''),
+const importAll = (r: __WebpackModuleApi.RequireContext) =>
+  r.keys().map((fileName) => ({
+    link: fileName.slice(1).replace(/\/index\.mdx$/u, ''),
     module: r(fileName),
   }));
-}
 
-function dateSortDesc(a: string, b: string) {
+const dateSortDesc = (a: string, b: string) => {
   if (a > b) {
     return -1;
   }
+
   if (a < b) {
     return 1;
   }
+
   return 0;
-}
+};
 
 export type PostMeta = {
   title: string;
@@ -30,15 +33,15 @@ export type PostMeta = {
 export type Post = {
   link: string;
   module: {
-    default: React.ComponentType;
+    default: ComponentType;
     meta: PostMeta;
   };
 };
 
-export default function getAllPostPreviews(): Post[] {
+export function getAllPostPreviews(): Post[] {
   return importAll(
-    require.context('../pages/?preview', true, /\.mdx$/),
-  ).sort((a: any, b: any) =>
+    require.context('../pages/?preview', true, /\.mdx$/u),
+  ).sort((a: Post, b: Post) =>
     dateSortDesc(a.module.meta.date, b.module.meta.date),
   );
 }

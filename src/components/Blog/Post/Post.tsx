@@ -11,21 +11,23 @@ import tinytime from 'tinytime';
 
 import { PostHeader } from './PostHeader';
 
+type PropsWithClassName = object & { className: string };
+
 const mdxComponents = {
-  pre: ({ className, ...props }: any) => (
+  pre: ({ className, ...props }: PropsWithClassName) => (
     <pre
       className={`${className} rounded-md bg-gray-800 py-3 px-4 overflow-x-auto`}
       {...props}
     />
   ),
-  'pre.code': ({ className, ...props }: any) => (
+  'pre.code': ({ className, ...props }: PropsWithClassName) => (
     <code className={`${className} text-gray-200`} {...props} />
   ),
 };
 
 const postDateTemplate = tinytime('{MM} {DD}, {YYYY}');
 
-type Props = {
+type PostProps = {
   meta: PostMeta;
   children: React.ReactChildren;
   posts: {
@@ -34,7 +36,7 @@ type Props = {
   }[];
 };
 
-export default function Post({ meta, children, posts }: Props) {
+export function Post({ meta, children, posts }: PostProps): JSX.Element {
   const router = useRouter();
   const postIndex = posts.findIndex((post) => post.link === router.pathname);
   const previous = posts[postIndex + 1];
@@ -57,9 +59,7 @@ export default function Post({ meta, children, posts }: Props) {
           <div className="prose max-w-none pb-8">
             <MDXProvider components={mdxComponents}>{children}</MDXProvider>
           </div>
-
           <HorizontalDivider />
-
           <IOWrapper>
             {(show) =>
               show ? <LazyWebmentionWidget url={fullUrl} meta={meta} /> : null

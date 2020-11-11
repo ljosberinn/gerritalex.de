@@ -3,7 +3,6 @@ import { PageMetaTags } from '@/components/Seo/PageMetaTags';
 import { SectionTitle } from '@/components/Typography/SectionTitle';
 
 import { HorizontalDivider } from '../components/Divider';
-import { PageContainer } from '../components/Page/PageContainer';
 import { ExternalLink } from '../components/Typography/ExternalLink';
 import { InternalLink } from '../components/Typography/InternalLink';
 import { PageTitle } from '../components/Typography/PageTitle';
@@ -12,7 +11,7 @@ import { Paragraph } from '../components/Typography/Paragraph';
 // eslint-disable-next-line import/no-default-export
 export default function Home(): JSX.Element {
   return (
-    <PageContainer>
+    <div>
       <PageMetaTags />
       <PageTitle>Hi, I am Gerrit! 👋</PageTitle>
       <Paragraph>
@@ -37,6 +36,6 @@ export default function Home(): JSX.Element {
 
       <SectionTitle>Latest writings ✍️</SectionTitle>
       <PostPreviewList />
-    </PageContainer>
+    </div>
   );
 }

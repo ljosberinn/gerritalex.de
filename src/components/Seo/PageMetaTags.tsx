@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import * as React from 'react';
 
 export const publicUrl = 'https://gerritalex.de';
 const defaultTitle = 'gerritalex.de';
@@ -9,7 +8,7 @@ const defaultDescription =
 const defaultOgImage =
   'https://jackyef-og-img.vercel.app/Hi%2C%20I%20am%20**Jacky**!%20%20%F0%9F%91%8B.png?fontSize=150px';
 
-type Props = {
+type PageMetaTagsProps = {
   image?: string;
   title?: string;
   description?: string;
@@ -17,13 +16,13 @@ type Props = {
   readingTime?: string;
 };
 
-export const PageMetaTags: React.FC<Props> = ({
+export function PageMetaTags({
   image = defaultOgImage,
   title = defaultTitle,
   description = defaultDescription,
   publishDate = '',
   readingTime = '',
-}) => {
+}: PageMetaTagsProps): JSX.Element {
   const router = useRouter();
   const url = `${publicUrl}${router.pathname}`;
 
@@ -64,6 +63,7 @@ export const PageMetaTags: React.FC<Props> = ({
       ) : null}
       <script
         type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{
           __html: `{
           "@context": "https://schema.org",
@@ -93,4 +93,4 @@ export const PageMetaTags: React.FC<Props> = ({
       />
     </Head>
   );
-};
+}

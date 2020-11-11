@@ -1,6 +1,4 @@
-import React from 'react';
-
-import Carousel from '../Carousel';
+import { Carousel } from '../Carousel';
 import { GitHubRepoCard } from './RepoCard';
 import RepoList from './repo-list.json';
 

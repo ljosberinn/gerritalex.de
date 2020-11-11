@@ -1,3 +1,4 @@
+import type { QueryResult } from 'react-query';
 import { useQuery } from 'react-query';
 
 type Author = {
@@ -9,62 +10,77 @@ type Author = {
 
 const endpoint = 'https://webmention.io/api/mentions.jf2?per-page=1000';
 
-export const useWebmention = (url: string) => {
+export type Webmentions = {
+  authors: Author[];
+  discussions: FeedItem[];
+  reposts: FeedItem[];
+  likes: FeedItem[];
+};
+
+type FeedItem = {
+  type: 'entry';
+  name: 'string';
+  photo: 'string';
+  author: Author;
+  published: null | string;
+  'wm-received': string;
+  'wm-id': number;
+  'wm-source': string;
+  'wm-target': string;
+  'like-of': string;
+  'wm-property': string;
+  'wm-private': string;
+  content: {
+    text: string;
+  };
+};
+
+type Feed = {
+  tyee: 'feed';
+  name: 'Webmentions';
+  children: FeedItem[];
+};
+
+export const useWebmention = (url: string): QueryResult<Webmentions> => {
   const finalUrl = `${endpoint}&target=${url}`;
 
-  const { isLoading, isError, data, error, refetch } = useQuery(
-    finalUrl,
-    () => {
-      return fetch(finalUrl)
-        .then((res) => res.json())
-        .then((data) => {
-          const likes: any[] = [];
-          const discussions: any[] = [];
-          const reposts: any[] = [];
-          const authors: Map<string, Author> = new Map();
-
-          if (data && data.children) {
-            data.children.forEach((v: any) => {
-              const wmProp = v?.['wm-property'];
-
-              // someone liked a tweet with this url
-              if (wmProp === 'like-of') {
-                likes.push(v);
-              }
-
-              // someone replied to a tweet with this url
-              // OR
-              // when someone made their own tweet containing this url
-              else if (wmProp === 'in-reply-to' || wmProp === 'mention-of') {
-                discussions.push(v);
-              }
-
-              // retweets
-              else if (wmProp === 'repost-of') {
-                reposts.push(v);
-              }
-
-              if (v?.author?.url) {
-                authors.set(v.author.url, v.author);
-              }
-            });
-          }
-
-          return {
-            authors: [...authors].map(([, value]) => value),
-            discussions,
-            likes,
-            reposts,
-          };
-        });
-    },
-  );
-
-  return {
-    data,
-    error,
-    isError,
-    isLoading,
-    refetch,
+  const initialState = {
+    authors: [],
+    discussions: [],
+    likes: [],
+    reposts: [],
   };
+
+  return useQuery(finalUrl, async () => {
+    try {
+      const response = await fetch(finalUrl);
+      const data: Feed = await response.json();
+
+      return data?.children.reduce<Webmentions>((carry, dataset) => {
+        const wmProperty = dataset?.['wm-property'];
+
+        if (wmProperty) {
+          switch (wmProperty) {
+            case 'like-of':
+              carry.likes.push(dataset);
+              break;
+            case 'in-reply-to':
+            case 'mention-of':
+              carry.discussions.push(dataset);
+              break;
+            case 'repost-of':
+              carry.reposts.push(dataset);
+          }
+        }
+
+        if (dataset.author.url) {
+          carry.authors.push(dataset.author);
+        }
+
+        return carry;
+      }, initialState);
+    } catch {
+      return initialState;
+    }
+  });
 };

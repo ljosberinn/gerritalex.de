@@ -2,7 +2,6 @@ import { PageMetaTags } from '@/components/Seo/PageMetaTags';
 
 import { HorizontalDivider } from '../components/Divider';
 import { GitHubList } from '../components/GitHub/List';
-import { PageContainer } from '../components/Page/PageContainer';
 import { Code } from '../components/Typography/Code';
 import { ExternalLink } from '../components/Typography/ExternalLink';
 import { PageTitle } from '../components/Typography/PageTitle';
@@ -12,7 +11,7 @@ import { SectionTitle } from '../components/Typography/SectionTitle';
 // eslint-disable-next-line import/no-default-export
 export default function About(): JSX.Element {
   return (
-    <PageContainer>
+    <div>
       <PageMetaTags />
       <PageTitle>About me 👨‍💻</PageTitle>
       <Paragraph>
@@ -98,6 +97,6 @@ export default function About(): JSX.Element {
         more talks about the web. Who knows, I might add a <Code>/talk</Code>{' '}
         page on this site with the materials if it turns out to be a good idea!
       </Paragraph>
-    </PageContainer>
+    </div>
   );
 }

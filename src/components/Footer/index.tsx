@@ -1,4 +1,4 @@
-export function Footer() {
+export function Footer(): JSX.Element {
   return (
     <footer className="text-sm text-center py-8">
       <a href="https://github.com/ljosberinn" rel="me">

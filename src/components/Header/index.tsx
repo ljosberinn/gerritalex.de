@@ -20,7 +20,7 @@ function Logo() {
   );
 }
 
-export default function Header() {
+export function Header(): JSX.Element {
   const { isReady, trigger } = usePwaInstall();
 
   return (
@@ -32,6 +32,7 @@ export default function Header() {
           </a>
         </Link>
         <button
+          type="button"
           style={{
             cursor: isReady ? 'auto' : 'none',
             opacity: isReady ? 1 : 0,
@@ -42,7 +43,8 @@ export default function Header() {
           }}
           className="self-center w-5 h-5"
           onClick={() => {
-            trigger();
+            // eslint-disable-next-line no-console
+            trigger().catch(console.error);
           }}
         >
           <img

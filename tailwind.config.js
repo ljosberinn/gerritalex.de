@@ -10,20 +10,16 @@ module.exports = {
     require('@tailwindcss/ui'),
     require('@tailwindcss/typography'),
     require('tailwindcss-typography')({
-      
       // whether to generate utilities to unset text properties
-componentPrefix: 'c-', 
-      
-// all these options default to the values specified here
-ellipsis: true, 
-      
-// whether to generate ellipsis utilities
-hyphens: true, 
-      
-// whether to generate hyphenation utilities
-kerning: true, 
+      componentPrefix: 'c-',
+      // all these options default to the values specified here
+      ellipsis: true,
+      // whether to generate ellipsis utilities
+      hyphens: true,
+      // whether to generate hyphenation utilities
+      kerning: true,
       // whether to generate kerning utilities
-textUnset: true, // the prefix to use for text style classes
+      textUnset: true, // the prefix to use for text style classes
     }),
   ],
   purge: {
@@ -32,11 +28,6 @@ textUnset: true, // the prefix to use for text style classes
        * We need to extract the classnames used for mdx tokens to a separate `code-highlighter-token.js` file
        * Previously, we put it in the `next.config.js` file, but the token got purged.
        * It was caused by vercel renaming our original next.config.js file during build.
-       *
-       * Log from debugging:
-       * 16:27:51.948  	-rw-r--r--   1 root root    908 Sep 26 09:27 next.config.js
-       * 16:27:51.948  	-rw-r--r--   1 root root   6595 Sep 26 09:27 next.config.original.1601112471648.js
-       * https://vercel.com/jackyef/jackyef/ekvzdkthq
        * https://github.com/tailwindlabs/blog.tailwindcss.com/issues/13#issuecomment-699470309
        */
       './next.config.js',
@@ -49,10 +40,12 @@ textUnset: true, // the prefix to use for text style classes
         {
           extensions: ['mdx'],
           extractor: (content) => {
+            // eslint-disable-next-line no-param-reassign
             content = mdx.sync(content);
 
             // Capture as liberally as possible, including things like `h-(screen-1.5)`
-            const broadMatches = content.match(/[^\s"'<>`]*[^\s"':<>`]/gu) || [];
+            const broadMatches =
+              content.match(/[^\s"'<>`]*[^\s"':<>`]/gu) || [];
 
             // Capture classes within other delimiters like .block(class="w-1/2") in Pug
             const innerMatches =
@@ -87,8 +80,8 @@ textUnset: true, // the prefix to use for text style classes
         },
         theme: {
           background: 'var(--color-bg)',
-          heading: 'var(--color-heading)',
           backgroundOffset: 'var(--color-bg-offset)',
+          heading: 'var(--color-heading)',
           link: 'var(--color-link)',
           subtitle: 'var(--color-subtitle)',
           text: 'var(--color-text)',
@@ -124,10 +117,10 @@ textUnset: true, // the prefix to use for text style classes
         },
       },
       lineHeight: {
-        '11': '2.75rem',
-        '12': '3rem',
-        '13': '3.25rem',
-        '14': '3.5rem',
+        11: '2.75rem',
+        12: '3rem',
+        13: '3.25rem',
+        14: '3.5rem',
       },
       spacing: {
         '9/16': '56.25%',

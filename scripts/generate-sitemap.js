@@ -1,3 +1,4 @@
+// eslint-disable-next-line inclusive-language/use-inclusive-words
 /**
  * Helpful references to read when working with sitemaps
  *
@@ -5,9 +6,9 @@
  * - https://support.google.com/webmasters/answer/183668?hl=en
  */
 
-const path = require('path');
-const fs = require('fs');
+const { writeFileSync } = require('fs');
 const globby = require('globby');
+const { resolve } = require('path');
 const xmlFormat = require('xml-formatter');
 
 async function generateSiteMap() {
@@ -34,7 +35,7 @@ async function generateSiteMap() {
             const route =
               path === '/index'
                 ? ''
-                : path.replace(/^\//, '').replace(/\/index$/, '');
+                : path.replace(/^\//u, '').replace(/\/index$/u, '');
 
             return `
                   <url>
@@ -45,8 +46,8 @@ async function generateSiteMap() {
       </urlset>
   `;
 
-  fs.writeFileSync(
-    path.resolve(__dirname, '../.next/static/sitemap.xml'),
+  writeFileSync(
+    resolve(__dirname, '../.next/static/sitemap.xml'),
     xmlFormat(sitemap),
   );
 }

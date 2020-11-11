@@ -1,12 +1,18 @@
-import getAllPostPreviews from './getAllPostPreviews';
+import type { GetStaticPropsResult } from 'next';
 
-export async function getStaticProps() {
+import { getAllPostPreviews } from './getAllPostPreviews';
+
+export function getStaticProps(): GetStaticPropsResult<{
+  posts: { link: string; title: string }[];
+}> {
   return {
     props: {
-      posts: getAllPostPreviews().map((post: any) => ({
-        link: post.link,
-        title: post.module.meta.title,
-      })),
+      posts: getAllPostPreviews().map((post) => {
+        return {
+          link: post.link,
+          title: post.module.meta.title,
+        };
+      }),
     },
   };
 }

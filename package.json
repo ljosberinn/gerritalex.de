@@ -17,10 +17,6 @@
   },
   "dependencies": {
     "@mdx-js/react": "1.6.21",
-    "@next/bundle-analyzer": "10.0.1",
-    "@prefresh/next": "1.4.0",
-    "autotrack": "2.4.1",
-    "cross-env": "7.0.2",
     "next": "10.0.1",
     "next-images": "1.6.2",
     "next-offline": "5.0.3",
@@ -33,6 +29,7 @@
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
+    "@next/bundle-analyzer": "10.0.1",
     "@mapbox/rehype-prism": "0.5.0",
     "@mdx-js/loader": "1.6.21",
     "@mdx-js/mdx": "1.6.21",
@@ -43,6 +40,7 @@
     "@types/react": "16.9.56",
     "@types/react-query": "^1.1.2",
     "@types/webpack-env": "1.15.3",
+    "cross-env": "7.0.2",
     "eslint": "7.13.0",
     "eslint-config-galex": "2.7.0",
     "globby": "11.0.1",

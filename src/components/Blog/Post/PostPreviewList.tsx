@@ -1,12 +1,11 @@
-import getAllPostPreviews from '@/blog/getAllPostPreviews';
+import { getAllPostPreviews } from '@/blog/getAllPostPreviews';
 import { InternalLink } from '@/components/Typography/InternalLink';
 import tinytime from 'tinytime';
 
 const posts = getAllPostPreviews();
-
 const postDateTemplate = tinytime('{MMMM} {DD}, {YYYY}');
 
-export function PostPreviewList() {
+export function PostPreviewList(): JSX.Element {
   return (
     <ul className="divide-y divide-gray-200">
       {posts.map(({ link, module: { default: Component, meta } }) => {

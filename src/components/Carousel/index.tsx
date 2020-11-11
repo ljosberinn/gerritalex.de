@@ -1,4 +1,5 @@
-import * as React from 'react';
+import type { WithChildren } from '@/types';
+import { useRef, useCallback } from 'react';
 
 const baseButtonClasses =
   'opacity-0 md:opacity-100 flex items-center content-center absolute bg-theme-background w-12 h-12 rounded-full border-none shadow-md z-10 items-center justify-center font-bold text-3xl';
@@ -7,12 +8,12 @@ const baseButtonStyles = {
   transition: `transform 0.2s ease-in, opacity 0.2s ease-in`,
 };
 
-const Carousel: React.FC = ({ children }) => {
-  const carouselRef = React.useRef<HTMLDivElement>(null);
-  const prevRef = React.useRef<HTMLButtonElement>(null);
-  const nextRef = React.useRef<HTMLButtonElement>(null);
+export function Carousel({ children }: WithChildren): JSX.Element {
+  const carouselRef = useRef<HTMLDivElement>(null);
+  const prevRef = useRef<HTMLButtonElement>(null);
+  const nextRef = useRef<HTMLButtonElement>(null);
 
-  const handlePrev = React.useCallback(() => {
+  const handlePrev = useCallback(() => {
     if (carouselRef.current) {
       carouselRef.current.scrollBy({
         behavior: 'smooth',
@@ -21,7 +22,7 @@ const Carousel: React.FC = ({ children }) => {
     }
   }, []);
 
-  const handleNext = React.useCallback(() => {
+  const handleNext = useCallback(() => {
     if (carouselRef.current) {
       carouselRef.current.scrollBy({
         behavior: 'smooth',
@@ -30,7 +31,7 @@ const Carousel: React.FC = ({ children }) => {
     }
   }, []);
 
-  const handleScroll = React.useCallback(() => {
+  const handleScroll = useCallback(() => {
     requestAnimationFrame(() => {
       if (carouselRef.current && prevRef.current && nextRef.current) {
         const sl = carouselRef.current.scrollLeft;
@@ -55,6 +56,7 @@ const Carousel: React.FC = ({ children }) => {
   return (
     <section className="relative overflow-x-hidden md:overflow-x-visible">
       <button
+        type="button"
         className={`${baseButtonClasses} transform scale-0`}
         style={{
           ...baseButtonStyles,
@@ -67,6 +69,7 @@ const Carousel: React.FC = ({ children }) => {
         &larr;
       </button>
       <button
+        type="button"
         className={`${baseButtonClasses} transform`}
         style={{
           ...baseButtonStyles,
@@ -87,6 +90,4 @@ const Carousel: React.FC = ({ children }) => {
       </div>
     </section>
   );
-};
-
-export default Carousel;
+}

@@ -1,15 +1,19 @@
-type Props = {
+import type { WithChildren } from '@/types';
+import type { MouseEvent, HTMLProps } from 'react';
+
+type ExternalLinkProps = WithChildren<{
   href: string;
   className?: string;
-  onClick?: (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void;
-} & React.HTMLProps<HTMLAnchorElement>;
+  onClick?: (event: MouseEvent<HTMLAnchorElement, MouseEvent>) => void;
+}> &
+  HTMLProps<HTMLAnchorElement>;
 
-export const ExternalLink: React.FC<Props> = ({
+export function ExternalLink({
   href,
   className = `text-theme-link underline`,
   onClick,
   children,
-}) => {
+}: ExternalLinkProps): JSX.Element {
   return (
     <a
       className={className}
@@ -21,4 +25,4 @@ export const ExternalLink: React.FC<Props> = ({
       {children}
     </a>
   );
-};
+}

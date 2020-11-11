@@ -11,6 +11,7 @@ type Props = {
  */
 export function IOWrapper({ children }: Props): JSX.Element {
   const [show, setShow] = useState(false);
+
   const wrapperRef = useIntersect<HTMLDivElement>({
     onIntersect: () => {
       setShow(true);

@@ -1,5 +1,4 @@
 import type { WithChildren } from '@/types';
-import React from 'react';
 
 export function Tag({ children }: WithChildren): JSX.Element {
   return (

@@ -1,24 +1,25 @@
-import fs from 'fs';
+import { writeFileSync } from 'fs';
 import RSS from 'rss';
-import getAllPostPreviews from '../src/blog/getAllPostPreviews';
+
+import { getAllPostPreviews } from '../src/blog/getAllPostPreviews';
 
 const feed = new RSS({
-  title: 'gerritalex.de',
-  site_url: 'https://gerritalex.de',
   feed_url: 'https://gerritalex.de/feed.xml',
+  site_url: 'https://gerritalex.de',
+  title: 'gerritalex.de',
 });
 
 getAllPostPreviews().forEach(({ link, module: { meta } }) => {
   feed.item({
-    title: meta.title,
-    guid: link,
-    url: `https://gerritalex.de${link}`,
-    date: meta.date,
-    description: meta.description,
     custom_elements: [].concat(
       meta.authors.map((author) => ({ author: [{ name: author.name }] })),
     ),
+    date: meta.date,
+    description: meta.description,
+    guid: link,
+    title: meta.title,
+    url: `https://gerritalex.de${link}`,
   });
 });
 
-fs.writeFileSync('./.next/static/feed.xml', feed.xml({ indent: true }));
+writeFileSync('./.next/static/feed.xml', feed.xml({ indent: true }));
