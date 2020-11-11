@@ -9,18 +9,17 @@ import { SectionTitle } from '../components/SectionTitle';
 // eslint-disable-next-line import/no-default-export
 export default function About(): JSX.Element {
   return (
-    <div>
+    <>
       <PageMetaTags />
       <PageTitle>About me</PageTitle>
       <Paragraph>Lorem ipsum dolor sit amet.</Paragraph>
-
       <Paragraph>Lorem ipsum dolor sit amet.</Paragraph>
+
       <HorizontalDivider />
 
       <SectionTitle>Professional summary 💼</SectionTitle>
       <Paragraph>Lorem ipsum dolor sit amet.</Paragraph>
-      <Paragraph>Lorem ipsum dolor sit amet.</Paragraph>
-      <Paragraph>Lorem ipsum dolor sit amet.</Paragraph>
+
       <HorizontalDivider />
 
       <SectionTitle>I write, kinda ✍️</SectionTitle>
@@ -33,11 +32,11 @@ export default function About(): JSX.Element {
         Lorem ipsum dolor sit amet.
         <GitHubList />
       </Paragraph>
+
       <HorizontalDivider />
 
       <SectionTitle>I speak too, sometimes 🎤</SectionTitle>
       <Paragraph>Lorem ipsum dolor sit amet.</Paragraph>
-      <Paragraph>Lorem ipsum dolor sit amet.</Paragraph>
-    </div>
+    </>
   );
 }

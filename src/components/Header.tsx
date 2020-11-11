@@ -55,15 +55,27 @@ export function Header(): JSX.Element {
           />
         </button>
       </div>
-      <div className="text-base leading-5 flex items-center">
+      <nav className="text-base leading-5 flex items-center">
         <InternalLink
           href="/blog"
           className="font-medium text-theme-text hover:text-theme-text"
         >
           Blog
         </InternalLink>
+        <InternalLink
+          href="/music"
+          className="font-medium text-theme-text hover:text-theme-text"
+        >
+          Music Collection
+        </InternalLink>
+        <InternalLink
+          href="/concerts"
+          className="font-medium text-theme-text hover:text-theme-text"
+        >
+          Attended Concerts
+        </InternalLink>
         <ThemeToggle />
-      </div>
+      </nav>
     </header>
   );
 }

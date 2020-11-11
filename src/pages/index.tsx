@@ -11,7 +11,7 @@ import { Paragraph } from '../components/Paragraph';
 // eslint-disable-next-line import/no-default-export
 export default function Home(): JSX.Element {
   return (
-    <div>
+    <>
       <PageMetaTags />
       <PageTitle>Lorem ipsum dolor sit amet.</PageTitle>
       <Paragraph>Lorem ipsum dolor sit amet.</Paragraph>
@@ -29,6 +29,6 @@ export default function Home(): JSX.Element {
 
       <SectionTitle>Latest writings ✍️</SectionTitle>
       <PostPreviewList />
-    </div>
+    </>
   );
 }

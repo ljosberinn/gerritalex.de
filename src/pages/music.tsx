@@ -1,15 +1,15 @@
-import { PostPreviewList } from '@/components/Blog/Post/PostPreviewList';
 import { PageMetaTags } from '@/components/PageMetaTags';
 
+import { HorizontalDivider } from '../components/HorizontalDivider';
 import { PageTitle } from '../components/PageTitle';
 
 // eslint-disable-next-line import/no-default-export
-export default function Home(): JSX.Element {
+export default function Music(): JSX.Element {
   return (
     <>
       <PageMetaTags />
-      <PageTitle>Blog ✍️</PageTitle>
-      <PostPreviewList />
+      <PageTitle>Music Collection</PageTitle>
+      <HorizontalDivider />
     </>
   );
 }

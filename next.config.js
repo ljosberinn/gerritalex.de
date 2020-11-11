@@ -184,7 +184,7 @@ const withMdx = (config, options) => {
     const originalEntry = config.entry;
 
     config.entry = async () => {
-      const entries = { ...(await originalEntry()) };
+      const entries = await originalEntry();
 
       // we want to build this script as well, and run it on build to generate feed.xml file
       entries['./scripts/build-rss.js'] = './scripts/build-rss.js';

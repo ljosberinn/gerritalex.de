@@ -22,7 +22,9 @@ export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
         <Header />
       </SectionContainer>
       <SectionContainer>
-        <Component {...pageProps} />
+        <main>
+          <Component {...pageProps} />
+        </main>
       </SectionContainer>
       <SectionContainer>
         <Footer />
