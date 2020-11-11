@@ -13,7 +13,8 @@
     "lint:code:fix": "eslint src --fix && prettier --write src",
     "lint:types": "tsc --noEmit",
     "postinstall": "yarn-deduplicate -l",
-    "start": "next start"
+    "start": "next start",
+    "test": "exit 0"
   },
   "dependencies": {
     "@mdx-js/react": "1.6.21",
