@@ -1,5 +1,5 @@
 import type { PostMeta } from '@/blog/getAllPostPreviews';
-import { PageTitle } from '@/components/Typography/PageTitle';
+import { PageTitle } from '@/components/PageTitle';
 import tinytime from 'tinytime';
 
 const postDateTemplate = tinytime('{MM} {DD}, {YYYY}');

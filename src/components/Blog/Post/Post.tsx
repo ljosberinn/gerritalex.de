@@ -1,15 +1,23 @@
 import type { PostMeta } from '@/blog/getAllPostPreviews';
-import { HorizontalDivider } from '@/components/Divider';
-import { IOWrapper } from '@/components/IntersectionObserver/Wrapper';
-import { PageMetaTags, publicUrl } from '@/components/Seo/PageMetaTags';
-import { InternalLink } from '@/components/Typography/InternalLink';
+import { HorizontalDivider } from '@/components/HorizontalDivider';
+import { IOWrapper } from '@/components/IOWrapper';
+import { InternalLink } from '@/components/InternalLink';
+import { PageMetaTags, publicUrl } from '@/components/PageMetaTags';
 // import { TwitterShare } from '@/components/Social/TwitterShare';
-import { LazyWebmentionWidget } from '@/components/Webmention/LazyWebmentionWidget';
 import { MDXProvider } from '@mdx-js/react';
+import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
 import tinytime from 'tinytime';
 
 import { PostHeader } from './PostHeader';
+
+const LazyWebmentionWidget = dynamic(
+  () => import(/* webpackChunkName: "webmention-widget" */ '../../Webmention'),
+  {
+    loading: () => <h3 className="text-lg font-bold mb-2">Webmentions</h3>,
+    ssr: false,
+  },
+);
 
 type PropsWithClassName = object & { className: string };
 

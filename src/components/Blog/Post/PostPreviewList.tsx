@@ -1,5 +1,5 @@
 import { getAllPostPreviews } from '@/blog/getAllPostPreviews';
-import { InternalLink } from '@/components/Typography/InternalLink';
+import { InternalLink } from '@/components/InternalLink';
 import tinytime from 'tinytime';
 
 const posts = getAllPostPreviews();

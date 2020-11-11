@@ -1,9 +1,9 @@
+import PwaInstallIcon from '@/assets/icon-plus.svg';
 import { usePwaInstall } from '@/hooks/usePwaInstall';
 import Link from 'next/link';
 
-import { ThemeToggle } from '../Theme/ThemeToggle';
-import { InternalLink } from '../Typography/InternalLink';
-import PwaInstallIcon from './assets/icon-plus.svg';
+import { InternalLink } from './InternalLink';
+import { ThemeToggle } from './ThemeToggle';
 
 function Logo() {
   return (

@@ -4,11 +4,11 @@ import { useState } from 'react';
 import type { QueryResult } from 'react-query';
 import tinytime from 'tinytime';
 
-import { publicUrl } from '../Seo/PageMetaTags';
-import { TwitterShare } from '../Social/TwitterShare';
-import { ExternalLink } from '../Typography/ExternalLink';
-import { useWebmention } from './hooks/useWebmention';
-import type { Webmentions } from './hooks/useWebmention';
+import { useWebmention } from '../hooks/useWebmention';
+import type { Webmentions } from '../hooks/useWebmention';
+import { ExternalLink } from './ExternalLink';
+import { publicUrl } from './PageMetaTags';
+import { TwitterShare } from './TwitterShare';
 
 type WebmentionWidgetProps = {
   url: string;

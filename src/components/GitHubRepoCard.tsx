@@ -1,5 +1,5 @@
-import { ExternalLink } from '../Typography/ExternalLink';
-import { Tag } from '../common/Tag';
+import { ExternalLink } from './ExternalLink';
+import { Tag } from './Tag';
 
 type GitHubRepoCardProps = {
   title: string;
@@ -26,7 +26,7 @@ export function GitHubRepoCard({
       <h3 className="px-4 py-2 text-lg font-bold">
         <ExternalLink href={url} className="text-theme-text">
           {title}
-        </ExternalLink>{' '}
+        </ExternalLink>
       </h3>
       <p className="px-4 py-2 pt-0 text-sm">{description}</p>
       {tags.length > 0 ? (
