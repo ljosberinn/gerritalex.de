@@ -18,7 +18,7 @@
     "react-debounce-input": "3.2.3",
     "react-i18next": "11.7.3",
     "react-icons": "3.11.0",
-    "preact": "10.5.5",
+    "preact": "10.5.7",
     "preact-render-to-string": "5.1.11",
     "preact-ssr-prepass": "1.1.2"
   },
