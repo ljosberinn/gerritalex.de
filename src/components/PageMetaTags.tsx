@@ -1,10 +1,7 @@
+import { gerritalex } from '@/blog/authors';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-export const publicUrl = 'https://gerritalex.de';
-const defaultTitle = 'gerritalex.de';
-const defaultDescription =
-  'Personal site of Gerrit Alex. I work with JavaScript and all things web. 🌐';
 const defaultOgImage =
   'https://jackyef-og-img.vercel.app/Hi%2C%20I%20am%20**Jacky**!%20%20%F0%9F%91%8B.png?fontSize=150px';
 
@@ -18,13 +15,13 @@ type PageMetaTagsProps = {
 
 export function PageMetaTags({
   image = defaultOgImage,
-  title = defaultTitle,
-  description = defaultDescription,
+  title = gerritalex.rawUrl,
+  description = gerritalex.defaultDescription,
   publishDate = '',
   readingTime = '',
 }: PageMetaTagsProps): JSX.Element {
-  const router = useRouter();
-  const url = `${publicUrl}${router.pathname}`;
+  const { pathname } = useRouter();
+  const url = `${gerritalex.domain}${pathname}`;
 
   return (
     <Head>
@@ -42,7 +39,7 @@ export function PageMetaTags({
       {/* Twitter Meta Tags  */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:site" content={url} />
-      <meta property="twitter:creator" content="@gerrit_alex" />
+      <meta property="twitter:creator" content={gerritalex.twitter} />
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
       <meta property="twitter:image" content={image} />
@@ -74,19 +71,19 @@ export function PageMetaTags({
           "dateModified": "${publishDate}",
           "author": {
             "@type": "Person",
-            "@id": "https://twitter.com/gerrit_alex",
-            "name": "Gerrit Alex",
-            "url": "https://twitter.com/gerrit_alex"
+            "@id": "https://twitter.com/${gerritalex.twitter}",
+            "name": "${gerritalex.name}",
+            "url": "https://twitter.com/${gerritalex.twitter}"
           },
           "publisher": {
               "@type": "Person",
-              "@id": "https://twitter.com/gerrit_alex",
-              "name": "Gerrit Alex",
-              "url": "https://twitter.com/gerrit_alex"
+              "@id": "https://twitter.com/${gerritalex.twitter}",
+              "name": "${gerritalex.name}",
+              "url": "https://twitter.com/${gerritalex.twitter}"
           },
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://gerritalex.de/"
+            "@id": ${gerritalex.domain}
           }
         }`,
         }}

@@ -1,12 +1,14 @@
+import { gerritalex } from '@/blog/authors';
 import type { PostMeta } from '@/blog/getAllPostPreviews';
 import { HorizontalDivider } from '@/components/HorizontalDivider';
 import { IOWrapper } from '@/components/IOWrapper';
 import { InternalLink } from '@/components/InternalLink';
-import { PageMetaTags, publicUrl } from '@/components/PageMetaTags';
+import { PageMetaTags } from '@/components/PageMetaTags';
 // import { TwitterShare } from '@/components/Social/TwitterShare';
 import { MDXProvider } from '@mdx-js/react';
 import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
+import type { ReactChildren } from 'react';
 import tinytime from 'tinytime';
 
 import { PostHeader } from './PostHeader';
@@ -37,7 +39,7 @@ const postDateTemplate = tinytime('{MM} {DD}, {YYYY}');
 
 type PostProps = {
   meta: PostMeta;
-  children: React.ReactChildren;
+  children: ReactChildren;
   posts: {
     title: string;
     link: string;
@@ -45,11 +47,11 @@ type PostProps = {
 };
 
 export function Post({ meta, children, posts }: PostProps): JSX.Element {
-  const router = useRouter();
-  const postIndex = posts.findIndex((post) => post.link === router.pathname);
+  const { pathname } = useRouter();
+  const postIndex = posts.findIndex((post) => post.link === pathname);
   const previous = posts[postIndex + 1];
   const next = posts[postIndex - 1];
-  const fullUrl = `${publicUrl}${router.pathname}`;
+  const fullUrl = `${gerritalex.domain}${pathname}`;
 
   return (
     <article>

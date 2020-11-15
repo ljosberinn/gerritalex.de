@@ -1,7 +1,7 @@
+import { gerritalex } from '@/blog/authors';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
-const domainName = 'gerritalex.de';
-export const publicUrl = `https://${domainName}`;
+const [, rawDomainName] = gerritalex.domain.split('//');
 
 // eslint-disable-next-line import/no-default-export
 export default function CustomDocument(): JSX.Element {
@@ -82,22 +82,28 @@ export default function CustomDocument(): JSX.Element {
         />
 
         {/* Used for webmention */}
-        <link href="https://twitter.com/gerrit_alex" rel="me" />
+        <link
+          href={`https://twitter.com/${gerritalex.twitter.slice(1)}`}
+          rel="me"
+        />
         <link
           rel="webmention"
-          href={`https://webmention.io/${domainName}/webmention`}
+          href={`https://webmention.io/${rawDomainName}/webmention`}
         />
         <link
           rel="pingback"
-          href={`https://webmention.io/${domainName}/xmlrpc`}
+          href={`https://webmention.io/${rawDomainName}/xmlrpc`}
         />
 
         <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-        <meta name="apple-mobile-web-app-title" content="gerrit_alex" />
-        <meta name="application-name" content="Gerrit Alex" />
+        <meta
+          name="apple-mobile-web-app-title"
+          content={gerritalex.twitter.slice(1)}
+        />
+        <meta name="application-name" content={gerritalex.name} />
       </Head>
       <script
         // eslint-disable-next-line react/no-danger

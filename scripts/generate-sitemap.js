@@ -11,6 +11,8 @@ const globby = require('globby');
 const { resolve } = require('path');
 const xmlFormat = require('xml-formatter');
 
+const config = require('../src/config.json');
+
 async function generateSiteMap() {
   const pages = await globby([
     'src/pages/**/*.tsx',
@@ -39,7 +41,7 @@ async function generateSiteMap() {
 
             return `
                   <url>
-                    <loc>${`https://gerritalex.de/${route}`}</loc>
+                    <loc>${`${config.domain}/${route}`}</loc>
                   </url>`;
           })
           .join('')}

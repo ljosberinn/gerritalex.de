@@ -2,11 +2,12 @@ import { writeFileSync } from 'fs';
 import RSS from 'rss';
 
 import { getAllPostPreviews } from '../src/blog/getAllPostPreviews';
+import config from '../src/config.json';
 
 const feed = new RSS({
-  feed_url: 'https://gerritalex.de/feed.xml',
-  site_url: 'https://gerritalex.de',
-  title: 'gerritalex.de',
+  feed_url: `${config.domain}/feed.xml`,
+  site_url: config.domain,
+  title: config.domain.split('//')[1],
 });
 
 getAllPostPreviews().forEach(({ link, module: { meta } }) => {
@@ -18,7 +19,7 @@ getAllPostPreviews().forEach(({ link, module: { meta } }) => {
     description: meta.description,
     guid: link,
     title: meta.title,
-    url: `https://gerritalex.de${link}`,
+    url: `${config.domain}${link}`,
   });
 });
 

@@ -1,3 +1,4 @@
+import { gerritalex } from '@/blog/authors';
 import type { PostMeta } from '@/blog/getAllPostPreviews';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
@@ -7,7 +8,6 @@ import tinytime from 'tinytime';
 import { useWebmention } from '../hooks/useWebmention';
 import type { Webmentions } from '../hooks/useWebmention';
 import { ExternalLink } from './ExternalLink';
-import { publicUrl } from './PageMetaTags';
 import { TwitterShare } from './TwitterShare';
 
 type WebmentionWidgetProps = {
@@ -124,7 +124,7 @@ function Content({ isError, isLoading, data, refetch, meta }: ContentProps) {
         </div>
 
         <TwitterShare
-          text={`${meta.title} ${publicUrl}${pathname} via @gerrit_alex`}
+          text={`${meta.title} ${gerritalex.domain}${pathname} via ${gerritalex.twitter}`}
         >
           Discuss on Twitter
         </TwitterShare>
