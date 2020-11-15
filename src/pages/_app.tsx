@@ -16,7 +16,7 @@ export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <meta data-next-head-bugfix />
+        <meta name="next-head-bugfix" content="true" />
       </Head>
       <div className="bg-orange-400 h-1" />
       <SectionContainer>

@@ -51,7 +51,7 @@ function Widget({
           {image && album && <img src={image} alt={album} loading="lazy" />}
         </div>
         <div className="flex-1 space-y-4 py-1">
-          <div className={classNames('h-6', loading && 'rounded bg-gray-400')}>
+          <div className={classNames('h-5', loading && 'rounded bg-gray-400')}>
             {loading ? null : nowPlaying ? (
               'Now Playing on Last.fm'
             ) : timestamp ? (

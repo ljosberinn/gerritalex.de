@@ -37,7 +37,12 @@ export default function About(): JSX.Element {
           Outside of work I help maintain{' '}
           <ExternalLink href="//chakra-ui.com/">@chakra-ui/react</ExternalLink>{' '}
           as well as moderate multiple developer related Discord server, such as
-          Next.js, /r/webdev and webdesign and of course Chakra.
+          <ExternalLink href="//discord.gg/NjCUAf4">Next.js</ExternalLink>,
+          <ExternalLink href="//discord.gg/hUvVKWd">
+            /r/webdev and webdesign
+          </ExternalLink>{' '}
+          and of course{' '}
+          <ExternalLink href="//discord.gg/D6UKVxxzqN">Chakra</ExternalLink>.
         </Paragraph>
 
         <Paragraph>

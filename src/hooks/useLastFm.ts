@@ -31,9 +31,7 @@ export const useLastFm = (): UseLastFmReturn => {
       });
   }, []);
 
-  useEffect(() => {
-    get();
-  }, [get]);
+  useEffect(get, [get]);
 
   useEffect(() => {
     const interval = setInterval(get, 5 * 60 * 1000);

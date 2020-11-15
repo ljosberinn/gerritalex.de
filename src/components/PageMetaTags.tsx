@@ -2,9 +2,6 @@ import { gerritalex } from '@/blog/authors';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-const defaultOgImage =
-  'https://jackyef-og-img.vercel.app/Hi%2C%20I%20am%20**Jacky**!%20%20%F0%9F%91%8B.png?fontSize=150px';
-
 type PageMetaTagsProps = {
   image?: string;
   title?: string;
@@ -14,7 +11,7 @@ type PageMetaTagsProps = {
 };
 
 export function PageMetaTags({
-  image = defaultOgImage,
+  image = gerritalex.defaultOgImage,
   title = gerritalex.rawUrl,
   description = gerritalex.defaultDescription,
   publishDate = '',

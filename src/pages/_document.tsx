@@ -104,28 +104,28 @@ export default function CustomDocument(): JSX.Element {
           content={gerritalex.twitter.slice(1)}
         />
         <meta name="application-name" content={gerritalex.name} />
+        <script
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{
+            __html: [
+              // set initial theme
+              `var __storedPerf = localStorage.getItem('theme') || '';`,
+
+              `if (__storedPerf) {`,
+              `document.documentElement.setAttribute('data-theme', __storedPerf);`,
+              `}`,
+
+              // setup listener to make it reactive
+              `var darkQuery = window.matchMedia('(prefers-color-scheme: dark)');`,
+              `darkQuery.addListener(function(e) {`,
+              `var __newTheme = e.matches ? 'dark' : 'default';`,
+              `document.documentElement.setAttribute('data-theme', __newTheme);`,
+              `typeof window.__themeBinding === 'function' && window.__themeBinding(__newTheme);`,
+              `});`,
+            ].join(''),
+          }}
+        />
       </Head>
-      <script
-        // eslint-disable-next-line react/no-danger
-        dangerouslySetInnerHTML={{
-          __html: [
-            // set initial theme
-            `var __storedPerf = localStorage.getItem('theme') || '';`,
-
-            `if (__storedPerf) {`,
-            `document.documentElement.setAttribute('data-theme', __storedPerf);`,
-            `}`,
-
-            // setup listener to make it reactive
-            `var darkQuery = window.matchMedia('(prefers-color-scheme: dark)');`,
-            `darkQuery.addListener(function(e) {`,
-            `var __newTheme = e.matches ? 'dark' : 'default';`,
-            `document.documentElement.setAttribute('data-theme', __newTheme);`,
-            `typeof window.__themeBinding === 'function' && window.__themeBinding(__newTheme);`,
-            `});`,
-          ].join(''),
-        }}
-      />
       <body>
         <Main />
         <NextScript />

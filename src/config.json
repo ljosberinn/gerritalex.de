@@ -6,5 +6,7 @@
   "twitter": "@gerrit_alex",
   "github": "ljosberinn",
   "linkedin": "gerrit-alex",
-  "defaultDescription": "Gerrit Alex - Full Stack Web Software Engineer"
+  "defaultDescription": "Gerrit Alex - Full Stack Web Software Engineer",
+  "ogImageSource": "https://og-image-six-sigma.vercel.app/",
+  "defaultOgImage": "https://og-image-six-sigma.vercel.app/Hi%2C%20I'm%20Gerrit%20Alex.png?theme=dark&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fvercel-triangle-white.svg"
 }
