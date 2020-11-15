@@ -10,13 +10,13 @@ type ExternalLinkProps = WithChildren<{
 
 export function ExternalLink({
   href,
-  className = `text-theme-link underline`,
+  className = '',
   onClick,
   children,
 }: ExternalLinkProps): JSX.Element {
   return (
     <a
-      className={className}
+      className={`${className} text-theme-link`}
       href={href}
       onClick={onClick}
       target="_blank"

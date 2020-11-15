@@ -8,7 +8,7 @@ export default function Home(): JSX.Element {
   return (
     <>
       <PageMetaTags />
-      <PageTitle>Blog ✍️</PageTitle>
+      <PageTitle>Blog</PageTitle>
       <PostPreviewList />
     </>
   );

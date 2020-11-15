@@ -18,6 +18,7 @@ export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
         />
         <meta data-next-head-bugfix />
       </Head>
+      <div className="bg-orange-400 h-1" />
       <SectionContainer>
         <Header />
       </SectionContainer>

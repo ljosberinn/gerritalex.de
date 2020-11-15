@@ -9,12 +9,15 @@ type InternalLinkProps = WithChildren<{
 export function InternalLink({
   href,
   children,
-  className = 'text-theme-link underline',
+  className = '',
   ...rest
 }: InternalLinkProps): JSX.Element {
   return (
     <Link href={href}>
-      <a className={className} {...rest}>
+      <a
+        className={`text-orange-400 hover:text-orange-500 ${className}`}
+        {...rest}
+      >
         {children}
       </a>
     </Link>
