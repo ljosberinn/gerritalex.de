@@ -3,13 +3,12 @@ import { useState, useEffect } from 'react';
 
 type Theme = 'dark' | 'default';
 
-/**
- * @TODO: Support multiple theme, not just light and dark mode.
- */
 export function ThemeToggle(): JSX.Element {
   const [theme, setTheme] = useState<Theme>(
     IS_BROWSER
-      ? (getComputedStyle(document.body).getPropertyValue('--theme') as Theme)
+      ? (getComputedStyle(document.body)
+          .getPropertyValue('--theme')
+          .trim() as Theme)
       : 'default',
   );
 
