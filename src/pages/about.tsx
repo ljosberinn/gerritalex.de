@@ -1,5 +1,6 @@
 import { ExternalLink } from '@/components/ExternalLink';
 import { PageMetaTags } from '@/components/PageMetaTags';
+import { usePageView } from '@/hooks/usePageView';
 
 // import { GitHubList } from '../components/GitHubList';
 import { HorizontalDivider } from '../components/HorizontalDivider';
@@ -9,6 +10,8 @@ import { SectionTitle } from '../components/SectionTitle';
 
 // eslint-disable-next-line import/no-default-export
 export default function About(): JSX.Element {
+  usePageView();
+
   return (
     <>
       <PageMetaTags />

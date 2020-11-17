@@ -81,6 +81,12 @@ export function Header(): JSX.Element {
                 </InternalLink>
               </li>
               <li className="px-2">
+                <InternalLink href="/about" className="font-medium">
+                  About
+                </InternalLink>
+              </li>
+
+              {/* <li className="px-2">
                 <InternalLink href="/music" className="font-medium">
                   Music Collection
                 </InternalLink>
@@ -89,7 +95,7 @@ export function Header(): JSX.Element {
                 <InternalLink href="/concerts" className="font-medium">
                   Attended Concerts
                 </InternalLink>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

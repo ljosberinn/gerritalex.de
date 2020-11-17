@@ -1,14 +1,20 @@
 import { gerritalex } from '@/blog/authors';
+import type { ViewData } from '@/components/Blog/Post/PostPreviewList';
 import { PostPreviewList } from '@/components/Blog/Post/PostPreviewList';
 import { PageMetaTags } from '@/components/PageMetaTags';
-import { SectionTitle } from '@/components/SectionTitle';
+import { usePageView } from '@/hooks/usePageView';
+import { getStaticBlogViewData } from '@/utils/db';
 
 import { HorizontalDivider } from '../components/HorizontalDivider';
 import { InternalLink } from '../components/InternalLink';
 import { Paragraph } from '../components/Paragraph';
 
+type HomeProps = { viewData: ViewData[] };
+
 // eslint-disable-next-line import/no-default-export
-export default function Home(): JSX.Element {
+export default function Home({ viewData }: HomeProps): JSX.Element {
+  usePageView();
+
   return (
     <>
       <PageMetaTags />
@@ -22,8 +28,10 @@ export default function Home(): JSX.Element {
       </Paragraph>
 
       <HorizontalDivider />
-      <SectionTitle>Latest posts</SectionTitle>
-      <PostPreviewList />
+
+      <PostPreviewList onlyPopular viewData={viewData} />
     </>
   );
 }
+
+export const getStaticProps = getStaticBlogViewData;

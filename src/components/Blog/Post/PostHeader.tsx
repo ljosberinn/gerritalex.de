@@ -7,9 +7,10 @@ const postDateTemplateXl = tinytime('{MMMM} {DD}, {YYYY}');
 
 type PostHeaderProps = {
   meta: PostMeta;
+  views: number;
 };
 
-export function PostHeader({ meta }: PostHeaderProps): JSX.Element {
+export function PostHeader({ meta, views }: PostHeaderProps): JSX.Element {
   return (
     <>
       <header>
@@ -29,10 +30,18 @@ export function PostHeader({ meta }: PostHeaderProps): JSX.Element {
                 </time>
               </dd>
               <div className="mx-1">&middot;</div>
+
               <dt className="sr-only">Time to read</dt>
               <dd className="leading-6 font text-theme-subtitle">
                 {meta.readingTime} ☕
               </dd>
+
+              {views > -1 && (
+                <>
+                  <div className="mx-1">&middot;</div>
+                  <dd>{views.toLocaleString()} views</dd>
+                </>
+              )}
             </div>
           </dl>
         </div>

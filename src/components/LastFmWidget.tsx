@@ -53,7 +53,9 @@ function Widget({
         <div className="flex-1 space-y-4 py-1">
           <div className={classNames('h-5', loading && 'rounded bg-gray-400')}>
             {loading ? null : nowPlaying ? (
-              'Now Playing on Last.fm'
+              <ExternalLink href="//last.fm/user/XHS207GA">
+                Now Playing on Last.fm
+              </ExternalLink>
             ) : timestamp ? (
               <time dateTime={new Date(timestamp).toISOString()}>
                 Last Song ({date})

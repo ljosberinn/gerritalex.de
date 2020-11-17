@@ -5,6 +5,7 @@ import { IOWrapper } from '@/components/IOWrapper';
 import { InternalLink } from '@/components/InternalLink';
 import { PageMetaTags } from '@/components/PageMetaTags';
 // import { TwitterShare } from '@/components/Social/TwitterShare';
+import { usePageView } from '@/hooks/usePageView';
 import { MDXProvider } from '@mdx-js/react';
 import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
@@ -53,6 +54,8 @@ export function Post({ meta, children, posts }: PostProps): JSX.Element {
   const next = posts[postIndex - 1];
   const fullUrl = `${gerritalex.domain}${pathname}`;
 
+  const views = usePageView();
+
   return (
     <article>
       <PageMetaTags
@@ -62,7 +65,7 @@ export function Post({ meta, children, posts }: PostProps): JSX.Element {
         readingTime={meta.readingTime}
         publishDate={postDateTemplate.render(new Date(meta.date))}
       />
-      <PostHeader meta={meta} />
+      <PostHeader meta={meta} views={views} />
 
       <div className="pb-16 xl:pb-20">
         <div className="xl:pb-0 xl:col-span-3 xl:row-span-2">
