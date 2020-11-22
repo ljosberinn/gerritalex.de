@@ -1,35 +1,35 @@
-import type { NextApiRequest, NextApiResponse } from 'next';
-import { URLSearchParams } from 'url';
+import type { NextApiRequest, NextApiResponse } from "next";
+import { URLSearchParams } from "url";
 
 type Track = {
   album: {
     mbid: string;
-    '#text': string;
+    "#text": string;
   };
   artist: {
     mbid: string;
-    '#text': string;
+    "#text": string;
   };
   date: {
     uts: string;
-    '#text': string;
+    "#text": string;
   };
   mbid: string;
   url: string;
-  streamable: '0' | '1';
+  streamable: "0" | "1";
   name: string;
   image: {
-    size: 'small' | 'medium' | 'large' | 'extralarge';
-    '#text': string;
+    size: "small" | "medium" | "large" | "extralarge";
+    "#text": string;
   }[];
-  '@attr'?: {
-    nowplaying: 'true';
+  "@attr"?: {
+    nowplaying: "true";
   };
 };
 
 type LastFmRecentTracks = {
   recenttracks: {
-    '@attr': {
+    "@attr": {
       page: string;
       perPage: string;
       total: string;
@@ -41,11 +41,11 @@ type LastFmRecentTracks = {
 };
 
 const extractRelevantTrackData = (track: Track) => ({
-  album: track.album['#text'],
-  artist: track.artist['#text'],
+  album: track.album["#text"],
+  artist: track.artist["#text"],
   image:
-    track.image.find((image) => image.size === 'medium')?.['#text'] ?? null,
-  nowPlaying: track['@attr']?.nowplaying === 'true',
+    track.image.find((image) => image.size === "medium")?.["#text"] ?? null,
+  nowPlaying: track["@attr"]?.nowplaying === "true",
   timestamp: track.date ? Number.parseInt(track.date.uts) * 1000 : null,
   track: track.name,
 });
@@ -61,15 +61,15 @@ export type LatestTrack =
       timestamp: null;
     };
 
-const baseUrl = 'http://ws.audioscrobbler.com/2.0';
+const baseUrl = "http://ws.audioscrobbler.com/2.0";
 
 const getCurrentTrack = async () => {
   const params = new URLSearchParams({
     api_key: process.env.LAST_FM_API_KEY,
-    format: 'json',
-    limit: '2',
-    method: 'user.getrecenttracks',
-    user: 'XHS207GA',
+    format: "json",
+    limit: "2",
+    method: "user.getrecenttracks",
+    user: "XHS207GA",
   }).toString();
 
   const url = `${baseUrl}?${params}`;
@@ -78,25 +78,27 @@ const getCurrentTrack = async () => {
   const json: LastFmRecentTracks = await response.json();
 
   if (json.recenttracks.track.length === 0) {
-    throw new Error('something went wrong');
+    throw new Error("something went wrong");
   }
 
   const currentlyPlayingTrack = json.recenttracks.track.find(
-    (track) => track['@attr']?.nowplaying === 'true',
+    (track) => track["@attr"]?.nowplaying === "true"
   );
 
   return extractRelevantTrackData(
-    currentlyPlayingTrack ? currentlyPlayingTrack : json.recenttracks.track[0],
+    currentlyPlayingTrack ? currentlyPlayingTrack : json.recenttracks.track[0]
   );
 };
 
 // eslint-disable-next-line import/no-default-export
 export default async function handler(
   _: NextApiRequest,
-  res: NextApiResponse,
+  res: NextApiResponse
 ): Promise<void> {
   try {
     const data = await getCurrentTrack();
+
+    res.setHeader("Cache-Control", "max-age=300");
 
     res.json(data);
   } catch {

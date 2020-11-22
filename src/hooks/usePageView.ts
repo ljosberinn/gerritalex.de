@@ -1,30 +1,18 @@
-/* eslint-disable promise/prefer-await-to-then */
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 
-const endpoint = '/api/views';
+const visitedCache = new Set<string>();
 
-export function usePageView(): number {
-  const [views, setViews] = useState(-1);
-
+export function usePageView(): void {
   const { pathname } = useRouter();
 
   useEffect(() => {
-    const params = new URLSearchParams({
-      pathname,
-    }).toString();
+    const visited = visitedCache.has(pathname);
 
-    const url = `${endpoint}?${params}`;
-
-    // eslint-disable-next-line no-console
-    fetch(url)
-      .then((response) => response.json())
-      .then((json) => {
-        setViews(json.total);
-      })
+    if (!visited) {
+      visitedCache.add(pathname);
       // eslint-disable-next-line no-console
-      .catch(console.error);
+      fetch(`/api/views?pathname=${pathname}`).catch(console.error);
+    }
   }, [pathname]);
-
-  return views;
 }
