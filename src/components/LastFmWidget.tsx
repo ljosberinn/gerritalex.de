@@ -16,9 +16,7 @@ const useLastFm = () => {
       // eslint-disable-next-line promise/prefer-await-to-then
       .then((response) => response.json())
       // eslint-disable-next-line promise/prefer-await-to-then
-      .then((data) => {
-        setData(data);
-      })
+      .then(setData)
       // eslint-disable-next-line no-console
       .catch(console.error)
       .finally(() => {

@@ -1,7 +1,15 @@
+import type { QueryBuilder } from "knex";
 import knex from "knex";
-import type { GetStaticPropsResult } from "next";
 
-export const createInstance = (): knex =>
+export type Schema = {
+  id: number;
+  pathname: string;
+  first: number;
+  last: number;
+  total: number;
+};
+
+export const createInstance = (): QueryBuilder<Schema> =>
   knex({
     client: "mysql",
     connection: {
@@ -10,12 +18,12 @@ export const createInstance = (): knex =>
       password: process.env.DB_PW,
       user: process.env.DB_USER,
     },
-  });
+  })(tableName);
 
-export const promisify = <T>(thenable: Promise<T>): Promise<T> =>
+export const safePromisify = <T>(thenable: Promise<T>): Promise<T> =>
   new Promise<T>((resolve, reject) => {
     // eslint-disable-next-line promise/prefer-await-to-then
     thenable.then(resolve).catch(reject);
   });
 
-export const tableName = "gerritalex-de";
+const tableName = "gerritalex-de";

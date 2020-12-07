@@ -1,8 +1,12 @@
+/* eslint-disable sonarjs/no-duplicate-string */
+const typography = require("@tailwindcss/typography");
 const colors = require("tailwindcss/colors");
+
+const { a } = require("./customization");
 
 module.exports = {
   darkMode: "media",
-  plugins: [],
+  plugins: [typography],
   presets: [],
   purge: ["./src/**/*.{tsx,mdx}"],
   theme: {
@@ -91,6 +95,7 @@ module.exports = {
       gray: colors.warmGray,
       green: colors.emerald,
       indigo: colors.indigo,
+      orange: colors.orange,
       pink: colors.pink,
       purple: colors.violet,
       red: colors.red,
@@ -111,6 +116,29 @@ module.exports = {
     divideColor: (theme) => theme("borderColor"),
     divideOpacity: (theme) => theme("borderOpacity"),
     divideWidth: (theme) => theme("borderWidth"),
+    extend: {
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            a: {
+              color: theme(`colors.${a.light}`),
+            },
+            "a:hover": {
+              color: theme(`colors.${a.hover.light}`),
+            },
+            code: {
+              backgroundColor: theme("colors.gray.100"),
+            },
+            "code::after": {
+              content: "",
+            },
+            "code::before": {
+              content: "",
+            },
+          },
+        },
+      }),
+    },
     fill: { current: "currentColor" },
     flex: {
       1: "1 1 0%",
@@ -905,6 +933,7 @@ module.exports = {
     transitionProperty: ["responsive"],
     transitionTimingFunction: ["responsive"],
     translate: ["responsive", "hover", "focus"],
+    typography: ["dark"],
     userSelect: ["responsive"],
     verticalAlign: ["responsive"],
     visibility: ["responsive"],

@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
-import { createInstance, promisify, tableName } from "../../utils/db";
+import { createInstance, safePromisify } from "../../utils/db";
 import {
   CREATED,
   INTERNAL_SERVER_ERROR,
@@ -19,18 +19,22 @@ export default async function handler(
   ) {
     const { pathname } = req.query;
 
+    if (Array.isArray(pathname)) {
+      return;
+    }
+
     try {
       const instance = createInstance();
 
-      const [{ total = 0 } = {}] = await promisify<{ total: number }[]>(
-        instance(tableName).select("total").where("pathname", pathname)
+      const [{ total = 0 } = {}] = await safePromisify<{ total: number }[]>(
+        instance.select("total").where("pathname", pathname)
       );
 
       const now = Date.now() / 1000;
 
       if (!total) {
-        await promisify(
-          instance(tableName).insert({
+        await safePromisify(
+          instance.insert({
             first: now,
             last: now,
             pathname,
@@ -42,8 +46,8 @@ export default async function handler(
         return;
       }
 
-      await promisify(
-        instance(tableName)
+      await safePromisify(
+        instance
           .increment("total", 1)
           .update("last", now)
           .where("pathname", pathname)

@@ -2,6 +2,7 @@ import type { LinkProps } from "next/link";
 import Link from "next/link";
 import type { ReactNode } from "react";
 
+import { a } from "../../customization";
 import { useLinkAria } from "../hooks/useLinkAria";
 import { cs } from "../utils/classNames";
 
@@ -15,6 +16,16 @@ type InternalLinkProps = WithChildren<Omit<LinkProps, "as">> & {
   className?: string;
 };
 
+const dashedObjAccessor = (str: string) => str.split(".").join("-");
+
+export const defaultFontSize = "font-medium";
+export const defaultColor = `text-${dashedObjAccessor(
+  a.light
+)} dark:text-${dashedObjAccessor(a.dark)}`;
+export const defaultHoverColor = `hover:text-${dashedObjAccessor(
+  a.hover.light
+)} dark:hover:text-${dashedObjAccessor(a.hover.dark)}`;
+
 export function InternalLink({
   href,
   locale,
@@ -24,8 +35,8 @@ export function InternalLink({
   scroll,
   shallow,
   children,
-  color = "text-orange-500 dark:text-yellow-500",
-  hoverColor = "text-orange-600 dark:hover:text-yellow-600",
+  color = defaultColor,
+  hoverColor = defaultHoverColor,
   className,
   ...rest
 }: InternalLinkProps): JSX.Element {
@@ -48,7 +59,7 @@ export function InternalLink({
     <Link {...linkProps}>
       <a
         aria-current={ariaCurrent}
-        className={cs("font-medium", color, hoverColor, className)}
+        className={cs(defaultFontSize, color, hoverColor, className)}
         {...rest}
       >
         {children}

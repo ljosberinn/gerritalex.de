@@ -53,7 +53,7 @@ const defaultConfig = {
     // in case of a barebones karma install, this reduces build time by ~ 25%
     config.plugins.push(new options.webpack.IgnorePlugin(/\/__tests__\//u));
 
-    // withPreact(config, options);
+    withPreact(config, options);
 
     return config;
   },

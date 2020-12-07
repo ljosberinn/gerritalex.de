@@ -1,0 +1,168 @@
+---
+title: "Moving from getInitialProps to reusable getServerSideProps / getStaticProps functions"
+description: "Foo Bar Baz"
+date: "2020-11-15T02:18:02.372Z"
+icons: ["nextjs", "typescript"]
+tags: ["nextjs", "typescript", "react"]
+---
+
+A frequently asked question in the GitHub discussion section of Next.js is how
+to create reusable `getStaticProps` (gSP) and/or `getServerSideProps` (gSSP)
+handler for Next.js pages.
+
+People also often reach for `getInitialProps` instead, which disables <ExternalLink href="https://nextjs.org/docs/advanced-features/automatic-static-optimization">
+static optimization </ExternalLink> and <ExternalLink href="https://nextjs.org/docs/api-reference/data-fetching/getInitialProps">
+is not recommended anymore since the introduction of `gSP`/`gSSP`</ExternalLink>.
+
+There's clearly a void to be filled here - so let's explore our options.
+
+<!--more-->
+
+## A quick recap - global authentication in getInitialProps of \_app
+
+Let's assume we have a setup which globally checks whether an user is
+authenticated. Before Next 9.3, this may have looked like this:
+
+```tsx:pages/_app.tsx
+import type { NextComponentType, NextPageContext } from "next";
+import type { AppContext } from "next/app";
+import NextApp from "next/app";
+import type { NextRouter } from "next/router";
+import Router from "next/router";
+// your utilities
+import type { User } from "../client/context/AuthContext/types";
+import { getSession } from "../server/auth/cookie";
+import { TEMPORARY_REDIRECT } from "../utils/statusCodes";
+
+type UnknownProps = Record<string, unknown>;
+
+type AppProps = {
+  router: NextRouter;
+  Component: NextComponentType<NextPageContext, UnknownProps, UnknownProps>;
+  pageProps: UnknownProps & { session: User | null };
+  err?: Error;
+};
+
+export default function App({ Component, pageProps }: AppProps): JSX.Element {
+  const { session, ...rest } = pageProps;
+
+  return (
+    // or any other state management
+    <AuthContextProvider session={session}>
+      <Component {...rest} />
+    </AuthContextProvider>
+  );
+}
+
+const redirectDestination = "/login";
+const protectedRoutes = new Set(["/dashboard"]);
+const routesRequiringNoAuthentication = new Set([
+  "/",
+  redirectDestination,
+  "/signup",
+]);
+
+App.getInitialProps = async (appContext: AppContext) => {
+  const appProps = await NextApp.getInitialProps(appContext);
+
+  const { req, res, pathname } = appContext.ctx;
+
+  // we don't want to redirect if you're already visiting a page that's
+  // freely accessible
+  if (
+    !routesRequiringNoAuthentication.has(pathname) &&
+    protectedRoutes.has(pathname)
+  ) {
+    // `req` and `res` are only available on initial requests/server-side,
+    // not when navigating between pages
+    if (req && res) {
+      const session = await getSession(req);
+
+      if (!session) {
+        res.writeHead(TEMPORARY_REDIRECT, {
+          Location: redirectDestination,
+        });
+
+        res.end();
+
+        return {};
+      }
+
+      return {
+        ...appProps,
+        session,
+      };
+    } else {
+      Router.replace(redirectDestination);
+      return {};
+    }
+  }
+
+  return {
+    ...appProps,
+    session: null,
+  };
+};
+```
+
+This is nice and cool and works reliably, but forces your entire app to be
+rendered server-side.
+
+## Cleaning up \_app.tsx in preparation for `getServerSideProps`
+
+We're past that, it's 2020, static rendering is a thing so we should move this
+to `getServerSideProps` as a first step. As a result, only pages requiring
+authentication will be server-side rendered, leading to all routes in
+`routesRequiringNoAuthentication` being totally static! 🎉
+
+Let's clean up `_app.tsx` first:
+
+```tsx:pages/_app.tsx
+import type { NextComponentType, NextPageContext } from "next";
+import type { NextRouter } from "next/router";
+// your utilities
+import type { User } from "../client/context/AuthContext/types";
+
+type UnknownProps = Record<string, unknown>;
+
+type AppProps = {
+  router: NextRouter;
+  Component: NextComponentType<NextPageContext, UnknownProps, UnknownProps>;
+  pageProps: UnknownProps & { session: User | null };
+  err?: Error;
+};
+
+export default function CustomApp({
+  Component,
+  pageProps,
+}: AppProps): JSX.Element {
+  const { session, ...rest } = pageProps;
+
+  return (
+    // or any other state management
+    <AuthContextProvider session={session}>
+      <Component {...rest} />
+    </AuthContextProvider>
+  );
+}
+```
+
+An immediate concern comes up - now that `getInitialProps` is gone, where do
+we get `pageProps.session` from?
+
+`_app` is a wrapper for all pages, always has been. Although its data
+requirement isn't directly within the file anymore, props you return within
+`getServerSideProps` / `getStaticProps` go through `_app` first!
+
+Now as we saw above, we right now only have a single protected route. Let's take
+a look at it:
+
+```tsx:pages/dashboard.tsx
+export default function Dashboard(): JSX.Element {
+  const { user } = useAuth();
+
+  return <h1>Hi {user.firstName}</h1>;
+}
+
+export async function getServerSideProps(context) {}
+```

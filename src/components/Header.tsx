@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import { config } from "../config";
 import { useLinkAria } from "../hooks/useLinkAria";
+import { cs } from "../utils/classNames";
 import type { WithChildren } from "./InternalLink";
 import { InternalLink } from "./InternalLink";
 
@@ -23,8 +24,8 @@ export function Header(): JSX.Element {
             </a>
           </Link>
           <div className="h-16 md:h-24 flex flex-col justify-between">
-            <h2>Hi, I'm {config.name}</h2>
-            <ul className="flex">
+            <h1 className="text-2xl md:text-3xl">Hi, I'm {config.name}</h1>
+            <ul className="flex space-x-1">
               <li>
                 <NavLink href="/blog">Blog</NavLink>
               </li>
@@ -50,13 +51,16 @@ function NavLink({ href, children }: NavLinkProps) {
 
   return (
     <InternalLink
-      className="transition-colors duration-200 relative px-3 py-2"
+      className={cs(
+        "px-3 py-2 relative transition-color rounded duration-200 ease-in",
+        ariaCurrent
+          ? "bg-gray-300 dark:bg-green-800"
+          : "hover:bg-gray-300 dark:hover:bg-green-800"
+      )}
       href={href}
     >
-      {ariaCurrent && (
-        <span className="rounded inset-0 absolute bg-green-800 opacity-50" />
-      )}
-      {ariaCurrent ? <span className="relative">{children}</span> : children}
+      <span className="absolute opacity-50" />
+      <span className="relative">{children}</span>
     </InternalLink>
   );
 }

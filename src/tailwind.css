@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.prose {
+  --remark-code-title-color: #cacaca;
+}
+
+.remark-code-title {
+  @apply font-mono;
+  @apply rounded-tl-lg;
+  @apply rounded-tr-lg;
+  @apply pl-4;
+  @apply font-mono;
+  background-color: var(--remark-code-title-color);
+}
+
+.remark-code-title + pre[class*="language-"] {
+  @apply rounded-tl-none;
+  @apply rounded-tr-none;
+  @apply mt-0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .remark-code-title + pre[class*="language-"] {
+    border: 1px solid var(--remark-code-title-color);
+  }
+}

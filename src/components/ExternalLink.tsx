@@ -19,7 +19,7 @@ export function ExternalLink({
     <a
       rel="noopener noreferrer"
       target="_blank"
-      className={`font-medium ${cs(color, hoverColor, className)}`}
+      className={cs("font-medium", color, hoverColor, className)}
       {...rest}
     >
       {children}

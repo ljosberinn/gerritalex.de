@@ -6,6 +6,7 @@ import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { PageViewTracker } from "../components/PageViewTracker";
 import "../tailwind.css";
+import "../prism.css";
 
 type AppProps = {
   Component: NextComponentType<

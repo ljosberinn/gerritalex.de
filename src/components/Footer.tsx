@@ -4,7 +4,7 @@ import { LastFmWidget } from "./LastFmWidget";
 
 export function Footer(): JSX.Element {
   return (
-    <footer className="text-sm text-center pt-8">
+    <footer className="text-sm text-center pt-8 pb-8">
       <LastFmWidget />
       <ul className="flex justify-center pt-4">
         {config.profiles.map(({ url, icon: Icon, alt }) => (
