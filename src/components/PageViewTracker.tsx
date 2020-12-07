@@ -4,17 +4,17 @@ import { useEffect } from "react";
 const visitedCache = new Set<string>();
 
 export function PageViewTracker(): null {
-  const { pathname } = useRouter();
+  const { asPath } = useRouter();
 
   useEffect(() => {
-    const visited = visitedCache.has(pathname);
+    const visited = visitedCache.has(asPath);
 
     if (!visited) {
-      visitedCache.add(pathname);
+      visitedCache.add(asPath);
       // eslint-disable-next-line no-console
-      fetch(`/api/views?pathname=${pathname}`).catch(console.error);
+      fetch(`/api/views?pathname=${asPath}`).catch(console.error);
     }
-  }, [pathname]);
+  }, [asPath]);
 
   return null;
 }
