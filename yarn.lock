@@ -1159,7 +1159,7 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@jsdevtools/rehype-toc@^3.0.2":
+"@jsdevtools/rehype-toc@3.0.2":
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/@jsdevtools/rehype-toc/-/rehype-toc-3.0.2.tgz#29c32e6b40cd4b5dafd96cb90d5057ac5dab4a51"
   integrity sha512-n5JEf16Wr4mdkRMZ8wMP/wN9/sHmTjRPbouXjJH371mZ2LEGDl72t8tEsMRNFerQN/QJtivOxqK1frdGa4QK5Q==
@@ -1256,7 +1256,7 @@
     "@nodelib/fs.scandir" "2.1.3"
     fastq "^1.6.0"
 
-"@tailwindcss/typography@^0.3.1":
+"@tailwindcss/typography@0.3.1":
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/@tailwindcss/typography/-/typography-0.3.1.tgz#253ce580c8e06b6163d9a288edd24f25e1d0dfee"
   integrity sha512-HyZ+3Eay8SGaPq7kcFoANZLr4EjeXQ19yjjb9fp6B0PHHpvZoe00jdsnpnooMEbx9J5rQ93nxPUG3MQmXVxGMQ==
@@ -3439,10 +3439,10 @@ eslint-ast-utils@^1.1.0:
     lodash.get "^4.4.2"
     lodash.zip "^4.2.0"
 
-eslint-config-galex@2.9.0:
-  version "2.9.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-galex/-/eslint-config-galex-2.9.0.tgz#d2302319ee12962cc05ed00a0b93c6336d21e031"
-  integrity sha512-5yjDPNrxtx6ikukbIMSLOZXE0hpp3jG+o+6Z7tYOonzjw30kAyHlVm2UJy7wxyeHhypA4Wp1VAU5zGUeB6PDYw==
+eslint-config-galex@2.9.1:
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-galex/-/eslint-config-galex-2.9.1.tgz#30f605e850434744c9e854b6c09e8f8ba3feef53"
+  integrity sha512-nlhHGn4EOnhoPU5/AyqcunAYQb7Rihl9FbvL2uTle+MOIwCdrVyCbNmp898XY7BWSgmYG1Ragir0qFHEZcbpLw==
   dependencies:
     "@next/eslint-plugin-next" "10.0.3"
     "@typescript-eslint/eslint-plugin" "4.9.0"
@@ -3453,7 +3453,7 @@ eslint-config-galex@2.9.0:
     eslint-plugin-import "2.22.1"
     eslint-plugin-inclusive-language "1.2.1"
     eslint-plugin-jest "24.1.3"
-    eslint-plugin-jest-dom "3.6.2"
+    eslint-plugin-jest-dom "3.6.3"
     eslint-plugin-jest-formatting "2.0.0"
     eslint-plugin-jsx-a11y "6.4.1"
     eslint-plugin-prettier "3.2.0"
@@ -3512,10 +3512,10 @@ eslint-plugin-inclusive-language@1.2.1:
   resolved "https://registry.yarnpkg.com/eslint-plugin-inclusive-language/-/eslint-plugin-inclusive-language-1.2.1.tgz#57229372d21779ec11803b7353ac969a29583910"
   integrity sha512-WFXME2g/rEm/ex9HCfptZXJVm6/IrBks4+0rZft24zve4RH196PPuCFvd36aidc2IaHrvVAZHeyahODc7ueoNw==
 
-eslint-plugin-jest-dom@3.6.2:
-  version "3.6.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest-dom/-/eslint-plugin-jest-dom-3.6.2.tgz#770008cb1bae12a9cd7c212d86414046c4b6f882"
-  integrity sha512-1jtdqcaL+eRl1D/S9Jhf8+NYGdJnu8wRMb2Qm/OdtNttdjiMNBrj1/GD4tQ/JjWiyADiL+8TbIkBRkmYoBp5mQ==
+eslint-plugin-jest-dom@3.6.3:
+  version "3.6.3"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest-dom/-/eslint-plugin-jest-dom-3.6.3.tgz#d395e6727fd1923c4f1b5d5752a8c84ded2cde1a"
+  integrity sha512-GYipB8RrAO4tu97pP7sl5uGMNrlAqtf4YiFadyVj4g89qrXJ4G1BuBV688V30tkK8EVv3p22AXYoBrP0vXrnjQ==
   dependencies:
     "@babel/runtime" "^7.9.6"
     "@testing-library/dom" "^7.28.1"
@@ -4591,10 +4591,10 @@ human-signals@^1.1.1:
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-1.1.1.tgz#c5b1cd14f50aeae09ab6c59fe63ba3395fe4dfa3"
   integrity sha512-SEQu7vl8KjNL2eoGBLF3+wAjpsNfA9XMlXAYj/3EdaNfAlxKthD1xjEQfGOUhllCGGJVNY34bRr6lPINhNjyZw==
 
-husky@4.3.4:
-  version "4.3.4"
-  resolved "https://registry.yarnpkg.com/husky/-/husky-4.3.4.tgz#676275a10ec5be2e893bd6ff71113bb829cc1f5b"
-  integrity sha512-wykHsss5kQtmbFrjQv0R7YyW1uFd7fv7gT1sA54potoDYmOTENJtBC/X1/AyoSAi1obp8CiGODOIdOGnPxSmFg==
+husky@4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-4.3.0.tgz#0b2ec1d66424e9219d359e26a51c58ec5278f0de"
+  integrity sha512-tTMeLCLqSBqnflBZnlVDhpaIMucSGaYyX6855jM4AguGeWCeSzNdb1mfyWduTZ3pe3SJVvVWGL0jO1iKZVPfTA==
   dependencies:
     chalk "^4.0.0"
     ci-info "^2.0.0"
@@ -7050,7 +7050,7 @@ rehype-parse@^7.0.0:
     hast-util-from-parse5 "^6.0.0"
     parse5 "^6.0.0"
 
-rehype-slug@^4.0.1:
+rehype-slug@4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/rehype-slug/-/rehype-slug-4.0.1.tgz#313274501cffa997bd52dd57bf2da5851959747a"
   integrity sha512-KIlJALf9WfHFF21icwTd2yI2IP+RQRweaxH9ChVGQwRYy36+hiomG4ZSe0yQRyCt+D/vE39LbAcOI/h4O4GPhA==
@@ -7077,7 +7077,7 @@ rehype@^11.0.0:
     rehype-stringify "^8.0.0"
     unified "^9.0.0"
 
-remark-code-titles@^0.1.1:
+remark-code-titles@0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/remark-code-titles/-/remark-code-titles-0.1.1.tgz#2a039528a0d29d07b59d2b35a4edbc73f9308e24"
   integrity sha512-awum0jvd3JA6lewaVSeuX1wBwDH6Ro7iWre41ughhRBaADczSq2u3TxFVsxcqsKaNIqEpqY6QJpLhGPpvUE3Ag==
