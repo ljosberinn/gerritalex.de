@@ -2383,10 +2383,10 @@ eslint-ast-utils@^1.1.0:
     lodash.get "^4.4.2"
     lodash.zip "^4.2.0"
 
-eslint-config-galex@2.9.2:
-  version "2.9.2"
-  resolved "https://registry.yarnpkg.com/eslint-config-galex/-/eslint-config-galex-2.9.2.tgz#73ca7813ad4b85953ef5f47a5130e207fda213ed"
-  integrity sha512-bz2FqOUdt3ZSHE78ZrrZslFgcaO22k2PN+znIljxvJjBz8SIGJDCRWic4vywUQBPDaH8Xoa4K1RfmrbTZSw1dg==
+eslint-config-galex@2.9.3:
+  version "2.9.3"
+  resolved "https://registry.yarnpkg.com/eslint-config-galex/-/eslint-config-galex-2.9.3.tgz#50af94cdc7393cce0b2f3803d022f4c4ba41d17d"
+  integrity sha512-IdUHfS10TXDqo3768CeHDltJRykxZAnOcVl/Rdb2cfEEsaHa6VAtYwNhvwbuVpuEIzhzs5+fcBGkvlv4Ja7QuA==
   dependencies:
     "@next/eslint-plugin-next" "10.0.3"
     "@typescript-eslint/eslint-plugin" "4.9.1"
@@ -2397,7 +2397,7 @@ eslint-config-galex@2.9.2:
     eslint-plugin-import "2.22.1"
     eslint-plugin-inclusive-language "1.2.1"
     eslint-plugin-jest "24.1.3"
-    eslint-plugin-jest-dom "3.6.3"
+    eslint-plugin-jest-dom "3.6.4"
     eslint-plugin-jest-formatting "2.0.0"
     eslint-plugin-jsx-a11y "6.4.1"
     eslint-plugin-prettier "3.2.0"
@@ -2456,10 +2456,10 @@ eslint-plugin-inclusive-language@1.2.1:
   resolved "https://registry.yarnpkg.com/eslint-plugin-inclusive-language/-/eslint-plugin-inclusive-language-1.2.1.tgz#57229372d21779ec11803b7353ac969a29583910"
   integrity sha512-WFXME2g/rEm/ex9HCfptZXJVm6/IrBks4+0rZft24zve4RH196PPuCFvd36aidc2IaHrvVAZHeyahODc7ueoNw==
 
-eslint-plugin-jest-dom@3.6.3:
-  version "3.6.3"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest-dom/-/eslint-plugin-jest-dom-3.6.3.tgz#d395e6727fd1923c4f1b5d5752a8c84ded2cde1a"
-  integrity sha512-GYipB8RrAO4tu97pP7sl5uGMNrlAqtf4YiFadyVj4g89qrXJ4G1BuBV688V30tkK8EVv3p22AXYoBrP0vXrnjQ==
+eslint-plugin-jest-dom@3.6.4:
+  version "3.6.4"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest-dom/-/eslint-plugin-jest-dom-3.6.4.tgz#233b70a9a244d73602815bcf986264d6fd7ecaad"
+  integrity sha512-410BlkLNIkR2Xvy5woN1JkrYxGVbdOXzpB21zlf++Y8NzaubhsPxpw9+Cem85KxZyZe9oKjkMtfaa8wxPPC1xg==
   dependencies:
     "@babel/runtime" "^7.9.6"
     "@testing-library/dom" "^7.28.1"
