@@ -83,7 +83,7 @@ export default function Music({ music }) {
 
   const amountOfUniqueAlbums = filteredData.reduce(
     (carry, { album, artist }) => {
-      return carry.find(
+      return carry.some(
         dataset => dataset.album === album && dataset.artist === artist
       )
         ? carry
