@@ -1,4 +1,4 @@
-import  { useState, memo, useCallback } from 'react';
+import { useState, memo, useCallback } from 'react';
 import { DebounceInput } from 'react-debounce-input';
 import { useTranslation } from 'react-i18next';
 
@@ -161,14 +161,14 @@ export function getStaticProps() {
           );
 
           if (!previousEntry) {
-            return carry.concat({ artist, shows: [{ concert, date, venue }] });
+            return [...carry, { artist, shows: [{ concert, date, venue }] }];
           }
 
           return carry.map(dataset => {
             if (dataset.artist === artist) {
               return {
                 ...dataset,
-                shows: dataset.shows.concat({ concert, date, venue }),
+                shows: [...dataset.shows, { concert, date, venue }],
               };
             }
 
