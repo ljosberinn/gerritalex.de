@@ -2568,10 +2568,10 @@ escape-string-regexp@^1.0.5:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
-eslint-config-galex@2.11.6:
-  version "2.11.6"
-  resolved "https://registry.yarnpkg.com/eslint-config-galex/-/eslint-config-galex-2.11.6.tgz#7a419cf49e2b055f941a6a0c7aa929d96361938b"
-  integrity sha512-3eZgFmPH5BXo+OB9SYkGBS0hqya04ReeLiiJYDgv5+IWkf0afi+ILvfwRwU0Cw2vjkhRAaf4YuqonGIAHo0jUw==
+eslint-config-galex@2.11.7:
+  version "2.11.7"
+  resolved "https://registry.yarnpkg.com/eslint-config-galex/-/eslint-config-galex-2.11.7.tgz#3843abe8d739db0aab3e9ebdf3735e382a8481ef"
+  integrity sha512-MoFpcYWICZfFEHIr56k743WdOFCm7Hdwi2w8LfAWct7ehm0QM6wlO8PMX41ABQ1G7KSX7XAN0oOfVQdURfXULA==
   dependencies:
     "@babel/core" "7.13.10"
     "@babel/eslint-parser" "7.13.10"
@@ -6524,11 +6524,6 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
-
-typescript@4.2.2:
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.2.2.tgz#1450f020618f872db0ea17317d16d8da8ddb8c4c"
-  integrity sha512-tbb+NVrLfnsJy3M59lsDgrzWIflR4d4TIUjz+heUnHZwdF7YsrMTKoRERiIvI2lvBG95dfpLxB21WZhys1bgaQ==
 
 typescript@4.2.3:
   version "4.2.3"
