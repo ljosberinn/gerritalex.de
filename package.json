@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "dom-parser": "0.1.6",
-    "i18next": "19.9.2",
+    "i18next": "20.0.0",
     "i18next-browser-languagedetector": "6.0.1",
     "next": "10.0.9",
     "next-plugin-preact": "3.0.3",
