@@ -16,7 +16,7 @@
     "i18next": "20.1.0",
     "i18next-browser-languagedetector": "6.1.0",
     "next": "10.0.9",
-    "next-plugin-preact": "3.0.3",
+    "next-plugin-preact": "3.0.4",
     "preact": "10.5.13",
     "preact-render-to-string": "5.1.17",
     "preact-ssr-prepass": "1.1.3",
