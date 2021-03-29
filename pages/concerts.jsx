@@ -56,7 +56,6 @@ const getFilteredData = (data, filter) => {
   }, []);
 };
 
-// eslint-disable-next-line import/no-default-export
 export default function ConcertPage({ concerts }) {
   const { t } = useTranslation('concerts');
   const [filter, setFilter] = useState('');

@@ -4,7 +4,6 @@ import DOMParser from 'dom-parser';
 
 import { CurriculumVitae, DynamicContent } from '../components';
 
-// eslint-disable-next-line import/no-default-export
 export default function Index({ data }) {
   return (
     <>

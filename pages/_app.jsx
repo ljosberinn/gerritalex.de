@@ -20,7 +20,6 @@ const userName = 'ljosberinn';
 const repoLink = `//github.com/${userName}/gerritalex.de`;
 const title = `${name} - Fullstack Web Software Engineer`;
 
-// eslint-disable-next-line import/no-default-export
 export default function App({ Component, pageProps }) {
   return (
     <>

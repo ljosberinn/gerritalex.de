@@ -17,7 +17,6 @@ const keywords = [
 const title = `${name} - Fullstack Web Software Engineer`;
 const img = '//avatars3.githubusercontent.com/u/29307652?s=400';
 
-// eslint-disable-next-line import/no-default-export
 export default function CustomDocument() {
   return (
     <Html>
