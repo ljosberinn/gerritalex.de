@@ -28,7 +28,7 @@
       "TypeScript - Basics to Intermediate"
     ],
     "articles": [
-      { title: "Performance mit React-Bordmitteln verbessern", url: "https://digital.interhyp.de/2020/12/04/performance-mit-react-bordmitteln-verbessern/" }
+      { "title": "Performance mit React-Bordmitteln verbessern", "url": "https://digital.interhyp.de/2020/12/04/performance-mit-react-bordmitteln-verbessern/" }
     ]
   },
   {
