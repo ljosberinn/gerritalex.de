@@ -3607,10 +3607,10 @@ postcss@^7.0.32:
     source-map "^0.6.1"
     supports-color "^6.1.0"
 
-preact-render-to-string@5.1.17:
-  version "5.1.17"
-  resolved "https://registry.yarnpkg.com/preact-render-to-string/-/preact-render-to-string-5.1.17.tgz#4ae85520928165cb725acba747017d1d1c77c636"
-  integrity sha512-njguygfbkOBSTG7O9L2pwXfLqmeBHCP6MKOUAus+tJNqBUbmYY1mOUK2MtkmIwjddBafafo48ylOFvXVQKushA==
+preact-render-to-string@5.1.18:
+  version "5.1.18"
+  resolved "https://registry.yarnpkg.com/preact-render-to-string/-/preact-render-to-string-5.1.18.tgz#c57fe62642981db47e95edda2354873e6b799a1a"
+  integrity sha512-jTL6iTZeheYOhb54r7KuyrNCf33lc+Z52Wos5P1z2wGZ/dREfhBVwrK1qGOrl4fboBN1KxC1lxhBchDHNZr8Uw==
   dependencies:
     pretty-format "^3.8.0"
 
