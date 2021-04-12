@@ -23,7 +23,7 @@
     "react": "npm:@preact/compat",
     "react-debounce-input": "3.2.3",
     "react-dom": "npm:@preact/compat",
-    "react-i18next": "11.8.12",
+    "react-i18next": "11.8.13",
     "react-icons": "4.2.0",
     "react-ssr-prepass": "npm:preact-ssr-prepass"
   },
