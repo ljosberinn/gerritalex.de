@@ -57,6 +57,18 @@ const extractRepositories = document =>
   fixExternalLinks([...document.getElementsByTagName('ol')][0].innerHTML);
 
 export async function getStaticProps() {
+  return {
+    props: {
+        data: {
+          contributionActivity: '',
+          contributionAmount: '',
+          contributionHistory: '',
+          repositories: [],
+        },
+      },
+      revalidate: 28_800,
+    };
+
   try {
     const response = await fetch(URI);
     const html = await response.text();
