@@ -97,8 +97,8 @@ export function CurriculumVitae() {
 
         return (
           <CurriculumVitaeItem
-            {...itemProps}
             key={url ?? dates.from + dates.to}
+            {...itemProps}
           />
         );
       })}

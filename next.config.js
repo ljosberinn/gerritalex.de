@@ -1,12 +1,10 @@
 module.exports = {
-  images: {
-    domains: ['avatars3.githubusercontent.com'],
-  },
   experimental: {
     turboMode: true,
     reactRoot: true,
   },
-  async headers() {
+  eslint: false,
+  headers: () => {
     return [
       {
         source: '/(.*)',

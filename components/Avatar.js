@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 import { Status } from './Status';
 
 export function Avatar({ userName }) {
@@ -10,7 +8,7 @@ export function Avatar({ userName }) {
         aria-label="Jan 2020"
         href={`https://github.com/${userName}`}
       >
-        <Image
+        <img
           alt="Gerrit Alex"
           width="272"
           height="272"

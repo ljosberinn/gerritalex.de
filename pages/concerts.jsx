@@ -114,6 +114,7 @@ export default function ConcertPage({ concerts }) {
         {filteredConcerts.map(({ shows, artist }) =>
           shows.map(({ date, venue, concert }) => (
             <Row
+            key={`${date}-${artist}`}
               {...{
                 amountOfShows: shows.length,
                 artist,
@@ -122,7 +123,6 @@ export default function ConcertPage({ concerts }) {
                 isFirstShow: shows.findIndex(show => show.date === date) === 0,
                 venue,
               }}
-              key={`${date}-${artist}`}
             />
           ))
         )}
