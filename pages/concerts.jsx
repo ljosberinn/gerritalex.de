@@ -1,5 +1,4 @@
-import { useState, memo, useCallback } from 'react';
-import { DebounceInput } from 'react-debounce-input';
+import { useState, memo, useCallback, startTransition } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { ArtistLink } from '../components';
@@ -68,7 +67,9 @@ export default function ConcertPage({ concerts }) {
         return;
       }
 
-      setFilter(value);
+      startTransition(() => {
+        setFilter(value);
+      })
     },
     [filter]
   );
@@ -96,14 +97,14 @@ export default function ConcertPage({ concerts }) {
         <tr>
           <td colSpan={4} className="">
             <div className="subnav-search pr-2">
-              <DebounceInput
-                debounceTimeout={300}
+              <input
                 className="form-control input-block subnav-search-input"
                 type="search"
                 placeholder="Filter artists..."
                 onChange={handleChange}
                 autoComplete="off"
                 spellCheck="false"
+                aria-label="Filter artists..."
               />
               <OcticonSearch />
             </div>

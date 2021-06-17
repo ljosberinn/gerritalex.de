@@ -1,5 +1,4 @@
-import  { useState, memo, useCallback } from 'react';
-import { DebounceInput } from 'react-debounce-input';
+import  { useState, memo, useCallback , startTransition} from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaYoutube } from 'react-icons/fa';
 
@@ -63,7 +62,11 @@ export default function Music({ music }) {
         return;
       }
 
-      setFilter(newFilter);
+      startTransition(() => {
+
+        setFilter(newFilter);
+      })
+
     },
     [filter]
   );
@@ -104,11 +107,11 @@ export default function Music({ music }) {
         <tr>
           <td colSpan={3}>
             <div className="subnav-search pr-2">
-              <DebounceInput
-                debounceTimeout={300}
+              <input
                 className="form-control input-block subnav-search-input"
                 type="search"
                 placeholder="Filter albums..."
+                aria-label="Filter albums..."
                 onChange={handleChange}
                 autoComplete="off"
                 spellCheck="false"
