@@ -16,8 +16,8 @@
     "i18next": "20.3.2",
     "i18next-browser-languagedetector": "6.1.2",
     "next": "11.0.1",
-    "react": "18.0.0-alpha-e6be2d531",
-    "react-dom": "18.0.0-alpha-e6be2d531",
+    "react": "18.0.0-alpha-ed6c091fe-20210701",
+    "react-dom": "18.0.0-alpha-ed6c091fe-20210701",
     "react-i18next": "11.11.0",
     "react-icons": "4.2.0"
   },
