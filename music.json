@@ -1314,5 +1314,26 @@
     "artist": "Dinner auf Uranos",
     "album": "50 Sommer - 50 Winter",
     "hidden": false
+  },
+  {
+    "month": "08",
+    "year": "2021",
+    "artist": "Tame Impala",
+    "album": "Currents",
+    "hidden": false
+  },
+  {
+    "month": "08",
+    "year": "2021",
+    "artist": "Modest Mouse",
+    "album": "Strangers to Ourselves",
+    "hidden": false
+  },
+  {
+    "month": "08",
+    "year": "2021",
+    "artist": "Tribulation",
+    "album": "The Children of the Night",
+    "hidden": false
   }
 ]
