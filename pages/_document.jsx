@@ -1,5 +1,4 @@
-import NextDocument, { Html, Head, Main, NextScript } from 'next/document';
-
+import  { Html, Head, Main, NextScript } from 'next/document';
 
 const name = 'Gerrit Alex';
 const description = `Personal website of Munich based Fullstack Web Software Engineer ${name}. Mainly working with JavaScript, TypeScript, React, Next.js and Node.js.`;
@@ -63,6 +62,3 @@ export default function CustomDocument() {
     </Html>
   );
 }
-
-CustomDocument.renderDocument = NextDocument.renderDocument;
-CustomDocument.getInitialProps = NextDocument.getInitialProps;
