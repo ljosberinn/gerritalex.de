@@ -33,7 +33,7 @@
     "lint-staged": "11.1.2",
     "prettier": "2.4.1",
     "typescript": "4.4.3",
-    "webpack": "5.55.0"
+    "webpack": "5.55.1"
   },
   "commitlint": {
     "extends": [
