@@ -1,9 +1,13 @@
+/** @type {import('next').NextConfig} */
 module.exports = {
   experimental: {
-    turboMode: true,
     reactRoot: true,
   },
-  eslint: false,
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  productionBrowserSourceMaps: true,
+  reactStrictMode: true,
   headers: () => {
     return [
       {
@@ -12,6 +16,7 @@ module.exports = {
       },
     ];
   },
+  swcMinify: true,
 };
 
 // https://securityheaders.com
