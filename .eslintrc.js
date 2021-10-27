@@ -1,3 +1,4 @@
 module.exports = {
-  extends: ['galex'],
+  extends: "galex",
+  root: true,
 };
