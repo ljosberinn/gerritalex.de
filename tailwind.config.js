@@ -1,5 +1,20 @@
 module.exports = {
-  mode: "jit",
-  purge: ["./src/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}"],
-  darkMode: "media",
+  content: ["./app/**/*.{js,jsx,ts,tsx}"],
+  darkMode: "class",
+  important: true,
+  theme: {
+    extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            pre: {
+              backgroundColor: "#22272e",
+            },
+          },
+        },
+      },
+    },
+  },
+  variants: {},
+  plugins: [require("@tailwindcss/typography")],
 };
