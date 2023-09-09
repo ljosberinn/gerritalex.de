@@ -1,4 +1,4 @@
-import  { type MetaFunction } from "@remix-run/node";
+import { type MetaFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import { useLoaderData, useParams } from "@remix-run/react";
 
@@ -6,13 +6,13 @@ import { PostsList } from "~/components/PostsList";
 import { SearchForm } from "~/components/SearchForm";
 import { siteMetadata } from "~/siteMetadata";
 import { getPagingData } from "~/utils/paging.server";
-import  { type Frontmatter } from "~/utils/posts.server";
+import { type Frontmatter } from "~/utils/posts.server";
 import { filterPostsByTitle } from "~/utils/posts.server";
 import { getPostsSortedByDate } from "~/utils/posts.server";
 
 type Params = {
   tag: string;
-}
+};
 
 type LoaderData = {
   posts: Frontmatter[];
@@ -21,7 +21,7 @@ type LoaderData = {
   totalPages: number;
   page: number;
   query: string | null;
-}
+};
 
 export const meta: MetaFunction = ({ params }) => {
   const { tag } = params;
@@ -56,7 +56,7 @@ export const loader = async ({
   return json<LoaderData>({ ...data, query });
 };
 
-export default function Tag() {
+export default function Tag(): JSX.Element {
   const { tag } = useParams();
   const { posts, nextPage, previousPage, totalPages, page, query } =
     useLoaderData<LoaderData>();
