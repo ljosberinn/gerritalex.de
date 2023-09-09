@@ -1,15 +1,16 @@
-import type {
-  LinksFunction,
-  LoaderFunction,
-  MetaFunction,
+import  {
+  type LinksFunction,
+  type LoaderFunction,
+  type MetaFunction,
 } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import { Outlet, useLoaderData } from "@remix-run/react";
 import styles from "highlight.js/styles/github-dark-dimmed.css";
-import type { DynamicLinksFunction } from "~/components/DynamicLinks";
+
+import  { type DynamicLinksFunction } from "~/components/DynamicLinks";
 import { PostHeader } from "~/components/PostHeader";
 import { siteMetadata } from "~/siteMetadata";
-import type { Frontmatter } from "~/utils/posts.server";
+import  { type Frontmatter } from "~/utils/posts.server";
 import { POSTS } from "~/utils/posts.server";
 
 export const meta: MetaFunction = ({ data }) => {
@@ -17,7 +18,7 @@ export const meta: MetaFunction = ({ data }) => {
   const postImage = `${siteMetadata.url}${image}`;
 
   return {
-    title: title,
+    title,
     description: summary,
     "og:title": title,
     "og:description": summary,
@@ -37,7 +38,7 @@ export const links: LinksFunction = () => {
   ];
 };
 
-// eslint-disable-next-line @typescript-eslint/consistent-type-imports
+ 
 const dynamicLinks: DynamicLinksFunction<typeof import("*.mdx")> = ({
   data,
 }) => {

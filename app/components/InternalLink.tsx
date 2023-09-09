@@ -1,12 +1,12 @@
 import { Link } from "@remix-run/react";
-import type { ReactNode } from "react";
+import  { type ReactNode } from "react";
 
-interface Props {
+type Props = {
   to: string;
   children: ReactNode;
 }
 
-export const InternalLink = ({ to, children }: Props) => {
+export function InternalLink({ to, children }: Props) {
   const beforeClasses =
     "before:content-[''] before:absolute before:block before:w-full before:h-0.5 before:bottom-0 before:left-0 before:bg-black dark:before:bg-white before:scale-x-0 before:transition-transform duration-300";
 
@@ -14,9 +14,9 @@ export const InternalLink = ({ to, children }: Props) => {
     <Link
       to={to}
       prefetch="intent"
-      className={`relative no-underline w-fit ${beforeClasses} hover:before:scale-x-100`}
+      className={`relative w-fit no-underline ${beforeClasses} hover:before:scale-x-100`}
     >
       {children}
     </Link>
   );
-};
+}

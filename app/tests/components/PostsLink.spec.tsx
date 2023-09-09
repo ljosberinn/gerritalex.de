@@ -1,6 +1,7 @@
 import { render, screen } from "@testing-library/react";
-import { PostsList } from "~/components/PostsList";
 import { BrowserRouter } from "react-router-dom";
+
+import { PostsList } from "~/components/PostsList";
 
 describe("PostsList", () => {
   test("renders 'No results' if there are no posts", () => {

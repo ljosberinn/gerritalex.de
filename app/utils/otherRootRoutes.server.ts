@@ -1,5 +1,6 @@
-import type { EntryContext } from "@remix-run/node";
 import { generateRobotsTxt, generateSitemap } from "@balavishnuvj/remix-seo";
+import  { type EntryContext } from "@remix-run/node";
+
 import { siteMetadata } from "~/siteMetadata";
 
 type Handler = (
@@ -20,11 +21,11 @@ export const otherRootRoutes: Record<string, Handler> = {
   },
 };
 
-export const otherRootRouteHandlers: Array<Handler> = [
-  ...Object.entries(otherRootRoutes).map(([path, handler]) => {
+export const otherRootRouteHandlers: Handler[] = 
+  Object.entries(otherRootRoutes).map(([path, handler]) => {
     return (request: Request, remixContext: EntryContext) => {
-      if (new URL(request.url).pathname !== path) return null;
+      if (new URL(request.url).pathname !== path) {return null;}
       return handler(request, remixContext);
     };
-  }),
-];
+  })
+;

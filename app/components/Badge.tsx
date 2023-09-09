@@ -1,23 +1,23 @@
 import { Link } from "@remix-run/react";
 
-interface Props {
+type Props = {
   label: string;
   linkTo: string;
 }
 
-export const Badge = ({ label, linkTo }: Props) => {
+export function Badge({ label, linkTo }: Props) {
   return (
     <div className="not-prose">
       <Link
         to={linkTo}
-        className="no-underline relative inline-block text-sm font-medium text-blue-700 group"
+        className="group relative inline-block text-sm font-medium text-blue-700 no-underline"
       >
-        <span className="absolute inset-0 transition-transform translate-x-0.5 translate-y-0.5 bg-blue-700 group-hover:translate-y-0 group-hover:translate-x-0"></span>
+        <span className="absolute inset-0 translate-x-0.5 translate-y-0.5 bg-blue-700 transition-transform group-hover:translate-x-0 group-hover:translate-y-0" />
 
-        <span className="relative block px-4 py-2 bg-white border border-current">
+        <span className="relative block border border-current bg-white px-4 py-2">
           {label}
         </span>
       </Link>
     </div>
   );
-};
+}

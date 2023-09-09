@@ -548,12 +548,13 @@
         "plugin:jest-formatting/strict"
       ],
       "files": [
-        "**/*.ts?(x)",
-        "**/*.js?(x)"
+        "**/*.ts?(x)"
       ],
       "parserOptions": {
-        "ecmaVersion": 2020
+        "ecmaVersion": 2020,
+        "project": "./tsconfig.json"
       },
+      "parser": "@typescript-eslint/parser",
       "plugins": [
         "jest",
         "testing-library"

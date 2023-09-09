@@ -1,9 +1,10 @@
-import type { Frontmatter } from "~/utils/posts.server";
+import  { type Frontmatter } from "~/utils/posts.server";
+
 import { InternalLink } from "./InternalLink";
 
 type Props = Pick<Frontmatter, "title" | "summary" | "slug" | "formattedDate">;
 
-export const Card = ({ title, summary, slug, formattedDate }: Props) => {
+export function Card({ title, summary, slug, formattedDate }: Props) {
   return (
     <div>
       <div className="text-sm text-gray-500 dark:text-gray-400">
@@ -20,4 +21,4 @@ export const Card = ({ title, summary, slug, formattedDate }: Props) => {
       </InternalLink>
     </div>
   );
-};
+}

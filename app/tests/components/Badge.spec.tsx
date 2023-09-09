@@ -1,6 +1,7 @@
-import { Badge } from "~/components/Badge";
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
+
+import { Badge } from "~/components/Badge";
 
 describe("Badge", () => {
   test("renders a link with a label", () => {

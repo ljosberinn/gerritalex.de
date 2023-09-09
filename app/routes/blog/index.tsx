@@ -1,13 +1,14 @@
 import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
-import type { Frontmatter } from "~/utils/posts.server";
+
+import { PostsList } from "~/components/PostsList";
+import { SearchForm } from "~/components/SearchForm";
+import { getPagingData } from "~/utils/paging.server";
+import  { type Frontmatter } from "~/utils/posts.server";
 import { filterPostsByTitle } from "~/utils/posts.server";
 import { getPostsSortedByDate } from "~/utils/posts.server";
-import { PostsList } from "~/components/PostsList";
-import { getPagingData } from "~/utils/paging.server";
-import { SearchForm } from "~/components/SearchForm";
 
-interface LoaderData {
+type LoaderData = {
   page: number;
   posts: Frontmatter[];
   nextPage: number | null;
@@ -32,7 +33,7 @@ export default function Blog() {
 
   return (
     <div className="w-full">
-      <div className="md:flex md:justify-between md:items-center">
+      <div className="md:flex md:items-center md:justify-between">
         <h1>All posts</h1>
         <SearchForm query={query} />
       </div>

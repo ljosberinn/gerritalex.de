@@ -1,6 +1,7 @@
 import { render, screen } from "@testing-library/react";
-import { InternalLink } from "~/components/InternalLink";
 import { BrowserRouter } from "react-router-dom";
+
+import { InternalLink } from "~/components/InternalLink";
 
 describe("InternalLink", () => {
   test("renders link", () => {

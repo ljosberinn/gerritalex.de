@@ -1,6 +1,7 @@
-import type { EntryContext, HandleDataRequestFunction } from "@remix-run/node";
+import  { type EntryContext, type HandleDataRequestFunction } from "@remix-run/node";
 import { RemixServer } from "@remix-run/react";
 import { renderToString } from "react-dom/server";
+
 import { otherRootRouteHandlers } from "./utils/otherRootRoutes.server";
 
 export default async function handleRequest(
@@ -11,7 +12,7 @@ export default async function handleRequest(
 ) {
   for (const handler of otherRootRouteHandlers) {
     const otherRouteResponse = await handler(request, remixContext);
-    if (otherRouteResponse) return otherRouteResponse;
+    if (otherRouteResponse) {return otherRouteResponse;}
   }
 
   const markup = renderToString(
@@ -23,7 +24,7 @@ export default async function handleRequest(
     responseHeaders.set("Cache-Control", "max-age=300, s-maxage=31556952");
   }
 
-  return new Response("<!DOCTYPE html>" + markup, {
+  return new Response(`<!DOCTYPE html>${  markup}`, {
     status: responseStatusCode,
     headers: responseHeaders,
   });

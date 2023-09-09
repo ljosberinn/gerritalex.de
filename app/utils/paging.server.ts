@@ -1,4 +1,4 @@
-import type { Frontmatter } from "./posts.server";
+import  { type Frontmatter } from "./posts.server";
 
 export const getPagingData = (request: Request, posts: Frontmatter[]) => {
   const url = new URL(request.url);

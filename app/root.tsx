@@ -1,4 +1,4 @@
-import type { LinksFunction, MetaFunction } from "@remix-run/node";
+import  { type LinksFunction, type MetaFunction } from "@remix-run/node";
 import {
   Links,
   LiveReload,
@@ -8,6 +8,7 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import { useEffect } from "react";
+
 import { DynamicLinks } from "./components/DynamicLinks";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
@@ -70,7 +71,7 @@ export default function App() {
         <Links />
       </head>
       <body
-        className={`dark:bg-slate-900 overflow-y-scroll ${proseClasses} ${flexClasses} ${spacingClasses}`}
+        className={`overflow-y-scroll dark:bg-slate-900 ${proseClasses} ${flexClasses} ${spacingClasses}`}
       >
         <Header />
         <Outlet />

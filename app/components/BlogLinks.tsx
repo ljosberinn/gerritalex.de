@@ -1,6 +1,6 @@
 import { InternalLink } from "./InternalLink";
 
-export const BlogLinks = () => {
+export function BlogLinks() {
   return (
     <>
       <InternalLink to="/blog">Blog</InternalLink>
@@ -8,4 +8,4 @@ export const BlogLinks = () => {
       <InternalLink to="/about">About</InternalLink>
     </>
   );
-};
+}

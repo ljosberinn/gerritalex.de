@@ -1,4 +1,5 @@
 import { getPostsSortedByDate } from "~/utils/posts.server";
+
 import { siteMetadata } from "../siteMetadata";
 
 export async function loader() {

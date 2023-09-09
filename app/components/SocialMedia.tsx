@@ -1,12 +1,13 @@
 import { siteMetadata } from "~/siteMetadata";
+
 import githubLogo from "../assets/github.webp";
 import linkedinLogo from "../assets/linkedin.webp";
 import twitterLogo from "../assets/twitter.webp";
 import { ExternalLink } from "./ExternalLink";
 
-export const SocialMedia = () => {
+export function SocialMedia() {
   return (
-    <div className="flex justify-center gap-4 not-prose">
+    <div className="not-prose flex justify-center gap-4">
       <Icon
         href={`https://github.com/${siteMetadata.github}`}
         alt="GitHub profile"
@@ -24,15 +25,15 @@ export const SocialMedia = () => {
       />
     </div>
   );
-};
+}
 
-interface IconProps {
+type IconProps = {
   href: string;
   alt: string;
   src: string;
 }
 
-const Icon = ({ href, alt, src }: IconProps) => {
+function Icon({ href, alt, src }: IconProps) {
   return (
     <ExternalLink href={href}>
       <img
@@ -45,4 +46,4 @@ const Icon = ({ href, alt, src }: IconProps) => {
       />
     </ExternalLink>
   );
-};
+}

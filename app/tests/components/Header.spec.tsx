@@ -1,10 +1,11 @@
-import { Header } from "~/components/Header";
 import { render, screen } from "@testing-library/react";
-import { siteMetadata } from "~/siteMetadata";
 import { BrowserRouter } from "react-router-dom";
+
+import { Header } from "~/components/Header";
+import { siteMetadata } from "~/siteMetadata";
 import { isDarkMode } from "~/utils/darkMode";
 
-jest.mock("~/utils/darkMode", () => ({
+jest.mock<typeof import("~/utils/darkMode")>("~/utils/darkMode", () => ({
   isDarkMode: jest.fn().mockReturnValue(false),
 }));
 

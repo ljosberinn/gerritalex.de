@@ -52,6 +52,7 @@
     "concurrently": "7.3.0",
     "eslint": "8.49.0",
     "eslint-config-galex": "4.5.2",
+    "eslint-plugin-etc": "2.0.3",
     "husky": "8.0.3",
     "jest": "29.6.4",
     "jest-environment-jsdom": "29.6.4",

@@ -1,19 +1,20 @@
-import type { MetaFunction } from "@remix-run/node";
+import  { type MetaFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import { useLoaderData, useParams } from "@remix-run/react";
-import type { Frontmatter } from "~/utils/posts.server";
+
+import { PostsList } from "~/components/PostsList";
+import { SearchForm } from "~/components/SearchForm";
+import { siteMetadata } from "~/siteMetadata";
+import { getPagingData } from "~/utils/paging.server";
+import  { type Frontmatter } from "~/utils/posts.server";
 import { filterPostsByTitle } from "~/utils/posts.server";
 import { getPostsSortedByDate } from "~/utils/posts.server";
-import { PostsList } from "~/components/PostsList";
-import { getPagingData } from "~/utils/paging.server";
-import { siteMetadata } from "~/siteMetadata";
-import { SearchForm } from "~/components/SearchForm";
 
-interface Params {
+type Params = {
   tag: string;
 }
 
-interface LoaderData {
+type LoaderData = {
   posts: Frontmatter[];
   nextPage: number | null;
   previousPage: number | null;
@@ -28,7 +29,7 @@ export const meta: MetaFunction = ({ params }) => {
   const summary = `Posts about ${tag} of ${siteMetadata.author}.`;
 
   return {
-    title: title,
+    title,
     description: summary,
     "og:title": title,
     "og:description": summary,
@@ -62,7 +63,7 @@ export default function Tag() {
 
   return (
     <div className="w-full">
-      <div className="md:flex md:justify-between md:items-center">
+      <div className="md:flex md:items-center md:justify-between">
         <h1>#{tag}</h1>
         <SearchForm query={query} />
       </div>

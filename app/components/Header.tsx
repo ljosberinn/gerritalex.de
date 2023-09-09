@@ -1,17 +1,19 @@
 import Drawer from "@mui/material/Drawer";
 import { Link } from "@remix-run/react";
 import { useEffect, useState } from "react";
+
 import { siteMetadata } from "~/siteMetadata";
 import { isDarkMode } from "~/utils/darkMode";
+
 import menuIcon from "../assets/menu.webp";
 import { BlogLinks } from "./BlogLinks";
 
-export const Header = () => {
+export function Header() {
   const [shouldShowDrawer, setShouldShowDrawer] = useState(false);
   const [siteLogo, setSiteLogo] = useState(siteMetadata.logo);
 
-  const openDrawer = () => setShouldShowDrawer(true);
-  const closeDrawer = () => setShouldShowDrawer(false);
+  const openDrawer = () => { setShouldShowDrawer(true); };
+  const closeDrawer = () => { setShouldShowDrawer(false); };
 
   useEffect(() => {
     if (isDarkMode() && siteMetadata.logo_dark_mode) {
@@ -20,9 +22,9 @@ export const Header = () => {
   }, []);
 
   return (
-    <header className="flex justify-between items-center max-w-full w-full py-8 gap-x-12 md:gap-x-0">
+    <header className="flex w-full max-w-full items-center justify-between gap-x-12 py-8 md:gap-x-0">
       <Link
-        className="home text-3xl font-medium no-underline flex-1 m-0 not-prose md:my-4"
+        className="home not-prose m-0 flex-1 text-3xl font-medium no-underline md:my-4"
         to="/"
       >
         {siteLogo ? (
@@ -32,11 +34,11 @@ export const Header = () => {
         )}
       </Link>
 
-      <div className="sm:flex items-center gap-4 hidden flex-1 justify-end">
+      <div className="hidden flex-1 items-center justify-end gap-4 sm:flex">
         <BlogLinks />
       </div>
 
-      <div className="sm:hidden not-prose" onClick={openDrawer}>
+      <div className="not-prose sm:hidden" onClick={openDrawer}>
         <img
           alt="Menu"
           src={menuIcon}
@@ -53,10 +55,10 @@ export const Header = () => {
         onClose={closeDrawer}
         onClick={closeDrawer}
       >
-        <div className="flex flex-col pr-8 pl-4 pt-8 gap-4 dark:bg-slate-900 h-full min-w-[125px]">
+        <div className="flex h-full min-w-[125px] flex-col gap-4 pl-4 pr-8 pt-8 dark:bg-slate-900">
           <BlogLinks />
         </div>
       </Drawer>
     </header>
   );
-};
+}

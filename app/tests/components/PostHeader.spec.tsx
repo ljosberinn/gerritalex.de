@@ -1,6 +1,7 @@
 import { render, screen } from "@testing-library/react";
-import { PostHeader } from "~/components/PostHeader";
 import { BrowserRouter } from "react-router-dom";
+
+import { PostHeader } from "~/components/PostHeader";
 
 describe("PostHeader", () => {
   test("renders post metadata", () => {

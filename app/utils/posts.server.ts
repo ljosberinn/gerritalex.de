@@ -4,7 +4,7 @@ import * as ExamplePost3 from "../routes/posts/example-post-3.mdx";
 import * as ExamplePost4 from "../routes/posts/example-post-4.mdx";
 import { formatDate } from "./date";
 
-export interface Frontmatter {
+export type Frontmatter = {
   title: string;
   summary: string;
   slug: string;

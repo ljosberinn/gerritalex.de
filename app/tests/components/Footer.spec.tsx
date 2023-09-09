@@ -1,7 +1,8 @@
 import { render, screen } from "@testing-library/react";
+import { BrowserRouter } from "react-router-dom";
+
 import { Footer } from "~/components/Footer";
 import { siteMetadata } from "~/siteMetadata";
-import { BrowserRouter } from "react-router-dom";
 
 describe("Footer", () => {
   test("renders site metadata", () => {

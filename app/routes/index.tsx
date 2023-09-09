@@ -1,12 +1,13 @@
 import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
+
 import { Card } from "~/components/Card";
 import { InternalLink } from "~/components/InternalLink";
 import { siteMetadata } from "~/siteMetadata";
-import type { Frontmatter } from "~/utils/posts.server";
+import  { type Frontmatter } from "~/utils/posts.server";
 import { getPostsSortedByDate } from "~/utils/posts.server";
 
-interface LoaderData {
+type LoaderData = {
   posts: Frontmatter[];
 }
 
@@ -14,7 +15,7 @@ export const loader = async () => {
   const posts = getPostsSortedByDate().slice(0, 4);
 
   return json<LoaderData>({
-    posts: posts,
+    posts,
   });
 };
 
@@ -22,25 +23,25 @@ export default function Index() {
   const { posts } = useLoaderData<LoaderData>();
 
   return (
-    <div className="max-w-full prose-h1:mb-0 lg:prose-h1:mb-0  prose-h3:mb-0 lg:prose-h3:mb-0 prose-p:my-2 lg:prose-p:my-2">
+    <div className="max-w-full prose-h1:mb-0 prose-h3:mb-0  prose-p:my-2 lg:prose-h1:mb-0 lg:prose-h3:mb-0 lg:prose-p:my-2">
       <div className="flex flex-row items-center">
-        <div className="flex items-center w-32 h-32 not-prose">
+        <div className="not-prose flex h-32 w-32 items-center">
           <img
-            src={"https://avatars.githubusercontent.com/u/29307652?s=96&v=4"}
+            src="https://avatars.githubusercontent.com/u/29307652?s=96&v=4"
             alt="Author's avatar"
-            className="rounded-[50%] my-0"
+            className="my-0 rounded-[50%]"
             loading="lazy"
           />
         </div>
-        <h1 className="font-medium pl-4 xl:pl-8">Lorem Ipsum</h1>
+        <h1 className="pl-4 font-medium xl:pl-8">Lorem Ipsum</h1>
       </div>
 
       <p className="pt-4">{siteMetadata.description}</p>
 
       <div className="mt-16">
-        <div className="not-prose sm:flex flex-wrap">
+        <div className="not-prose flex-wrap sm:flex">
           {posts.map((post, index) => (
-            <div key={post.slug} className="sm:w-1/2 mb-12">
+            <div key={post.slug} className="mb-12 sm:w-1/2">
               <div className={index % 2 === 0 ? "sm:mr-6" : "sm:ml-6"}>
                 <Card {...post} />
               </div>
