@@ -8,7 +8,7 @@
     "dev": "concurrently \"yarn dev:css\" \"remix dev\"",
     "dev:css": "tailwindcss -o ./app/tailwind.css --watch",
     "e2e": "playwright test",
-    "postinstall": "sort-package-json && yarn-deduplicate -l && rm .eslintrc.json && node node_modules/eslint-config-galex/dist/generateStandalone",
+    "postinstall": "sort-package-json && yarn-deduplicate -l",
     "lint": "eslint .",
     "test": "jest --config jest.config.ts",
     "typecheck": "tsc -b"
