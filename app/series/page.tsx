@@ -1,5 +1,5 @@
 import { generatePageMetadata } from 'app/seo';
-import data from 'data/series/data.json';
+import data from 'data/series.json';
 import Image from 'components/Image';
 import clsx from 'clsx';
 import { globSync } from 'glob';
@@ -32,6 +32,9 @@ const getImages = async (pattern: string): Promise<Record<string, string>> => {
 export default async function SeriesPage() {
   const images = await getImages('./public/static/images/series/*-cover.jpg');
 
+  // todo: default sort by recommended
+  // allow secondary grouping by year OR genre
+
   return (
     <div className="center flex justify-center sm:block">
       <div className="grid grid-cols-4 gap-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10">
@@ -50,9 +53,13 @@ export default async function SeriesPage() {
           .map((series) => {
             const classes = clsx({
               'opacity-25 grayscale hover:grayscale-0': !series.completed,
-              'rounded-md border-2 border-slate-300 dark:border-slate-800 hover:border-slate-900 hover:dark:border-primary-700 transition ease-in-out hover:opacity-100 shadow-inner hover:shadow-none':
+              'rounded-md border-2 transition ease-in-out hover:opacity-100 shadow-inner hover:shadow-none':
                 true,
               'opacity-75': series.completed,
+              'border-yellow-500 hover:border-yellow-600 dark:border-amber-400 hover:dark:border-amber-500':
+                series.favorite,
+              'border-slate-300 dark:border-slate-700 hover:border-slate-800 hover:dark:border-primary-700':
+                !series.favorite,
             });
 
             if (series.id === null) {

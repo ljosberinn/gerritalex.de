@@ -7,12 +7,9 @@
       "genres": ["Drama", "Mystery"],
       "seasons": 4,
       "tagline": "If you're listening, you're too late.",
-      "release": {
-        "day": 5,
-        "month": 6,
-        "year": 2020
-      }
-    }
+      "release": { "day": 5, "month": 6, "year": 2020 }
+    },
+    "favorite": false
   },
   {
     "title": "Altered Carbon",
@@ -22,12 +19,9 @@
       "genres": ["Sci-Fi & Fantasy", "Drama"],
       "seasons": 2,
       "tagline": "No body lives forever.",
-      "release": {
-        "day": 27,
-        "month": 2,
-        "year": 2020
-      }
-    }
+      "release": { "day": 27, "month": 2, "year": 2020 }
+    },
+    "favorite": false
   },
   {
     "title": "American Gods",
@@ -37,12 +31,9 @@
       "genres": ["Drama", "Mystery", "Sci-Fi & Fantasy"],
       "seasons": 4,
       "tagline": "Believe.",
-      "release": {
-        "day": 21,
-        "month": 3,
-        "year": 2021
-      }
-    }
+      "release": { "day": 21, "month": 3, "year": 2021 }
+    },
+    "favorite": false
   },
   {
     "title": "American Horror Story",
@@ -52,12 +43,9 @@
       "genres": ["Drama", "Mystery", "Sci-Fi & Fantasy"],
       "seasons": 13,
       "tagline": "What to suspect when you're expecting.",
-      "release": {
-        "day": 24,
-        "month": 4,
-        "year": 2024
-      }
-    }
+      "release": { "day": 24, "month": 4, "year": 2024 }
+    },
+    "favorite": false
   },
   {
     "title": "Andor",
@@ -67,12 +55,9 @@
       "genres": ["Sci-Fi & Fantasy", "Action & Adventure", "Drama"],
       "seasons": 3,
       "tagline": "The Rebellion begins.",
-      "release": {
-        "day": 23,
-        "month": 11,
-        "year": 2022
-      }
-    }
+      "release": { "day": 23, "month": 11, "year": 2022 }
+    },
+    "favorite": false
   },
   {
     "title": "Arcane",
@@ -82,12 +67,9 @@
       "genres": ["Animation", "Sci-Fi & Fantasy", "Action & Adventure", "Mystery", "Drama"],
       "seasons": 3,
       "tagline": "The hunt is on.",
-      "release": {
-        "day": 23,
-        "month": 11,
-        "year": 2024
-      }
-    }
+      "release": { "day": 23, "month": 11, "year": 2024 }
+    },
+    "favorite": true
   },
   {
     "title": "Ahsoka",
@@ -97,12 +79,9 @@
       "genres": ["Sci-Fi & Fantasy", "Action & Adventure"],
       "seasons": 1,
       "tagline": "Warrior. Outcast. Rebel. Jedi.",
-      "release": {
-        "day": 3,
-        "month": 10,
-        "year": 2023
-      }
-    }
+      "release": { "day": 3, "month": 10, "year": 2023 }
+    },
+    "favorite": false
   },
   {
     "title": "Atypical",
@@ -112,12 +91,9 @@
       "genres": ["Drama", "Comedy"],
       "seasons": 4,
       "tagline": "Normal is overrated.",
-      "release": {
-        "day": 9,
-        "month": 7,
-        "year": 2021
-      }
-    }
+      "release": { "day": 9, "month": 7, "year": 2021 }
+    },
+    "favorite": false
   },
   {
     "title": "Away",
@@ -127,12 +103,9 @@
       "genres": ["Sci-Fi & Fantasy", "Drama"],
       "seasons": 1,
       "tagline": "Home can never leave you.",
-      "release": {
-        "day": 4,
-        "month": 9,
-        "year": 2020
-      }
-    }
+      "release": { "day": 4, "month": 9, "year": 2020 }
+    },
+    "favorite": false
   },
   {
     "title": "Behind Her Eyes",
@@ -142,12 +115,9 @@
       "genres": ["Drama"],
       "seasons": 1,
       "tagline": "",
-      "release": {
-        "day": 17,
-        "month": 2,
-        "year": 2021
-      }
-    }
+      "release": { "day": 17, "month": 2, "year": 2021 }
+    },
+    "favorite": true
   },
   {
     "title": "Black Bird",
@@ -157,12 +127,9 @@
       "genres": ["Drama", "Crime"],
       "seasons": 1,
       "tagline": "One man's freedom hides in another man's darkness.",
-      "release": {
-        "day": 4,
-        "month": 8,
-        "year": 2022
-      }
-    }
+      "release": { "day": 4, "month": 8, "year": 2022 }
+    },
+    "favorite": false
   },
   {
     "title": "Black Mirror",
@@ -172,12 +139,9 @@
       "genres": ["Sci-Fi & Fantasy", "Drama", "Mystery"],
       "seasons": 8,
       "tagline": "The future is bright.",
-      "release": {
-        "day": 15,
-        "month": 6,
-        "year": 2023
-      }
-    }
+      "release": { "day": 15, "month": 6, "year": 2023 }
+    },
+    "favorite": true
   },
   {
     "title": "Breaking Bad",
@@ -187,12 +151,9 @@
       "genres": ["Drama", "Crime"],
       "seasons": 6,
       "tagline": "Change the equation.",
-      "release": {
-        "day": 29,
-        "month": 9,
-        "year": 2013
-      }
-    }
+      "release": { "day": 29, "month": 9, "year": 2013 }
+    },
+    "favorite": false
   },
   {
     "title": "Chance",
@@ -202,12 +163,9 @@
       "genres": ["Drama"],
       "seasons": 2,
       "tagline": "",
-      "release": {
-        "day": 29,
-        "month": 11,
-        "year": 2017
-      }
-    }
+      "release": { "day": 29, "month": 11, "year": 2017 }
+    },
+    "favorite": false
   },
   {
     "title": "Chernobyl",
@@ -217,12 +175,9 @@
       "genres": ["Drama"],
       "seasons": 1,
       "tagline": "What is the cost of lies?",
-      "release": {
-        "day": 3,
-        "month": 6,
-        "year": 2019
-      }
-    }
+      "release": { "day": 3, "month": 6, "year": 2019 }
+    },
+    "favorite": true
   },
   {
     "title": "Constellation",
@@ -232,12 +187,9 @@
       "genres": ["Sci-Fi & Fantasy", "Mystery", "Drama"],
       "seasons": 1,
       "tagline": "Reality is a conspiracy.",
-      "release": {
-        "day": 27,
-        "month": 3,
-        "year": 2024
-      }
-    }
+      "release": { "day": 27, "month": 3, "year": 2024 }
+    },
+    "favorite": false
   },
   {
     "title": "DEVS",
@@ -247,12 +199,9 @@
       "genres": ["Sci-Fi & Fantasy", "Drama", "Mystery"],
       "seasons": 1,
       "tagline": "Reality is stranger than dreams.",
-      "release": {
-        "day": 16,
-        "month": 4,
-        "year": 2020
-      }
-    }
+      "release": { "day": 16, "month": 4, "year": 2020 }
+    },
+    "favorite": true
   },
   {
     "title": "Dark",
@@ -262,12 +211,9 @@
       "genres": ["Crime", "Drama", "Sci-Fi & Fantasy", "Mystery"],
       "seasons": 4,
       "tagline": "Everything is connected.",
-      "release": {
-        "day": 27,
-        "month": 6,
-        "year": 2020
-      }
-    }
+      "release": { "day": 27, "month": 6, "year": 2020 }
+    },
+    "favorite": true
   },
   {
     "title": "Dark Matter",
@@ -277,12 +223,9 @@
       "genres": ["Sci-Fi & Fantasy", "Drama"],
       "seasons": 1,
       "tagline": "One life. Infinite possibilities.",
-      "release": {
-        "day": 25,
-        "month": 6,
-        "year": 2024
-      }
-    }
+      "release": { "day": 25, "month": 6, "year": 2024 }
+    },
+    "favorite": false
   },
   {
     "title": "Debris",
@@ -292,12 +235,9 @@
       "genres": ["Sci-Fi & Fantasy", "Drama"],
       "seasons": 1,
       "tagline": "Every piece holds the power to change our world.",
-      "release": {
-        "day": 24,
-        "month": 5,
-        "year": 2021
-      }
-    }
+      "release": { "day": 24, "month": 5, "year": 2021 }
+    },
+    "favorite": false
   },
   {
     "title": "Dexter",
@@ -307,12 +247,9 @@
       "genres": ["Crime", "Drama", "Mystery"],
       "seasons": 9,
       "tagline": "A serial killer with a heart..... just pray it's not yours",
-      "release": {
-        "day": 22,
-        "month": 9,
-        "year": 2013
-      }
-    }
+      "release": { "day": 22, "month": 9, "year": 2013 }
+    },
+    "favorite": false
   },
   {
     "title": "Doctor Who",
@@ -322,12 +259,9 @@
       "genres": ["Action & Adventure", "Drama", "Sci-Fi & Fantasy"],
       "seasons": 14,
       "tagline": "Space. For all.",
-      "release": {
-        "day": 5,
-        "month": 12,
-        "year": 2021
-      }
-    }
+      "release": { "day": 5, "month": 12, "year": 2021 }
+    },
+    "favorite": false
   },
   {
     "title": "Euphoria",
@@ -337,12 +271,9 @@
       "genres": ["Drama"],
       "seasons": 3,
       "tagline": "Remember this feeling.",
-      "release": {
-        "day": 27,
-        "month": 2,
-        "year": 2022
-      }
-    }
+      "release": { "day": 27, "month": 2, "year": 2022 }
+    },
+    "favorite": false
   },
   {
     "title": "Evil",
@@ -352,12 +283,9 @@
       "genres": ["Crime", "Drama", "Mystery"],
       "seasons": 4,
       "tagline": "Some mysteries can’t be explained.",
-      "release": {
-        "day": 22,
-        "month": 8,
-        "year": 2024
-      }
-    }
+      "release": { "day": 22, "month": 8, "year": 2024 }
+    },
+    "favorite": false
   },
   {
     "title": "Fargo",
@@ -367,12 +295,9 @@
       "genres": ["Crime", "Drama"],
       "seasons": 6,
       "tagline": "Consequence comes knocking.",
-      "release": {
-        "day": 16,
-        "month": 1,
-        "year": 2024
-      }
-    }
+      "release": { "day": 16, "month": 1, "year": 2024 }
+    },
+    "favorite": false
   },
   {
     "title": "Fallout",
@@ -382,12 +307,9 @@
       "genres": ["Sci-Fi & Fantasy", "Action & Adventure", "Drama"],
       "seasons": 2,
       "tagline": "The world deserves a better ending.",
-      "release": {
-        "day": 10,
-        "month": 4,
-        "year": 2024
-      }
-    }
+      "release": { "day": 10, "month": 4, "year": 2024 }
+    },
+    "favorite": true
   },
   {
     "title": "For All Mankind",
@@ -397,12 +319,9 @@
       "genres": ["Drama", "Sci-Fi & Fantasy", "War & Politics"],
       "seasons": 5,
       "tagline": "A new gold rush begins.",
-      "release": {
-        "day": 11,
-        "month": 1,
-        "year": 2024
-      }
-    }
+      "release": { "day": 11, "month": 1, "year": 2024 }
+    },
+    "favorite": false
   },
   {
     "title": "Foundation",
@@ -412,12 +331,9 @@
       "genres": ["Sci-Fi & Fantasy", "Drama"],
       "seasons": 2,
       "tagline": "All empires fall.",
-      "release": {
-        "day": 14,
-        "month": 9,
-        "year": 2023
-      }
-    }
+      "release": { "day": 14, "month": 9, "year": 2023 }
+    },
+    "favorite": true
   },
   {
     "title": "From",
@@ -427,12 +343,9 @@
       "genres": ["Mystery", "Drama", "Sci-Fi & Fantasy"],
       "seasons": 4,
       "tagline": "",
-      "release": {
-        "day": 24,
-        "month": 11,
-        "year": 2024
-      }
-    }
+      "release": { "day": 24, "month": 11, "year": 2024 }
+    },
+    "favorite": false
   },
   {
     "title": "Gen V",
@@ -442,12 +355,9 @@
       "genres": ["Action & Adventure", "Drama", "Sci-Fi & Fantasy"],
       "seasons": 1,
       "tagline": "",
-      "release": {
-        "day": 2,
-        "month": 11,
-        "year": 2023
-      }
-    }
+      "release": { "day": 2, "month": 11, "year": 2023 }
+    },
+    "favorite": false
   },
   {
     "title": "Guillermo del Toro's Cabinet of Curiosities",
@@ -457,12 +367,9 @@
       "genres": ["Drama", "Mystery", "Sci-Fi & Fantasy"],
       "seasons": 1,
       "tagline": "Open your mind to fear.",
-      "release": {
-        "day": 28,
-        "month": 10,
-        "year": 2022
-      }
-    }
+      "release": { "day": 28, "month": 10, "year": 2022 }
+    },
+    "favorite": false
   },
   {
     "title": "Gyeongseong Creature",
@@ -472,12 +379,9 @@
       "genres": ["Sci-Fi & Fantasy", "Mystery", "Action & Adventure", "Drama"],
       "seasons": 2,
       "tagline": "Behold, the powers of destiny. Beware, the powers of karma.",
-      "release": {
-        "day": 27,
-        "month": 9,
-        "year": 2024
-      }
-    }
+      "release": { "day": 27, "month": 9, "year": 2024 }
+    },
+    "favorite": false
   },
   {
     "title": "Halo",
@@ -487,12 +391,9 @@
       "genres": ["Sci-Fi & Fantasy", "Action & Adventure"],
       "seasons": 3,
       "tagline": "Rise from the fall.",
-      "release": {
-        "day": 21,
-        "month": 3,
-        "year": 2024
-      }
-    }
+      "release": { "day": 21, "month": 3, "year": 2024 }
+    },
+    "favorite": false
   },
   {
     "title": "Hanna",
@@ -502,12 +403,9 @@
       "genres": ["Action & Adventure", "Drama"],
       "seasons": 3,
       "tagline": "",
-      "release": {
-        "day": 23,
-        "month": 11,
-        "year": 2021
-      }
-    }
+      "release": { "day": 23, "month": 11, "year": 2021 }
+    },
+    "favorite": false
   },
   {
     "title": "Hannibal",
@@ -517,12 +415,9 @@
       "genres": ["Drama", "Crime"],
       "seasons": 4,
       "tagline": "Savor the hunt.",
-      "release": {
-        "day": 27,
-        "month": 8,
-        "year": 2015
-      }
-    }
+      "release": { "day": 27, "month": 8, "year": 2015 }
+    },
+    "favorite": false
   },
   {
     "title": "Happy!",
@@ -532,12 +427,9 @@
       "genres": ["Animation", "Kids", "Comedy", "Sci-Fi & Fantasy", "Action & Adventure"],
       "seasons": 20,
       "tagline": "",
-      "release": {
-        "day": 10,
-        "month": 5,
-        "year": 2023
-      }
-    }
+      "release": { "day": 10, "month": 5, "year": 2023 }
+    },
+    "favorite": true
   },
   {
     "title": "Hellbound",
@@ -547,12 +439,9 @@
       "genres": ["Drama", "Mystery", "Sci-Fi & Fantasy"],
       "seasons": 2,
       "tagline": "They were resurrected into a hellbound world.",
-      "release": {
-        "day": 25,
-        "month": 10,
-        "year": 2024
-      }
-    }
+      "release": { "day": 25, "month": 10, "year": 2024 }
+    },
+    "favorite": false
   },
   {
     "title": "Heroes",
@@ -562,12 +451,9 @@
       "genres": ["Sci-Fi & Fantasy", "Drama"],
       "seasons": 5,
       "tagline": "You can't choose your family, you can choose a side.",
-      "release": {
-        "day": 8,
-        "month": 2,
-        "year": 2010
-      }
-    }
+      "release": { "day": 8, "month": 2, "year": 2010 }
+    },
+    "favorite": false
   },
   {
     "title": "Heroes Reborn",
@@ -577,12 +463,9 @@
       "genres": ["Sci-Fi & Fantasy"],
       "seasons": 2,
       "tagline": "A new phenomenon begins",
-      "release": {
-        "day": 21,
-        "month": 1,
-        "year": 2016
-      }
-    }
+      "release": { "day": 21, "month": 1, "year": 2016 }
+    },
+    "favorite": false
   },
   {
     "title": "House MD",
@@ -592,12 +475,9 @@
       "genres": ["Drama", "Mystery", "Comedy"],
       "seasons": 9,
       "tagline": "Feel better?",
-      "release": {
-        "day": 21,
-        "month": 5,
-        "year": 2012
-      }
-    }
+      "release": { "day": 21, "month": 5, "year": 2012 }
+    },
+    "favorite": false
   },
   {
     "title": "House of Cards",
@@ -607,12 +487,9 @@
       "genres": ["Drama"],
       "seasons": 7,
       "tagline": "There are two kinds of pain.",
-      "release": {
-        "day": 2,
-        "month": 11,
-        "year": 2018
-      }
-    }
+      "release": { "day": 2, "month": 11, "year": 2018 }
+    },
+    "favorite": true
   },
   {
     "title": "House of the Dragon",
@@ -622,12 +499,9 @@
       "genres": ["Sci-Fi & Fantasy", "Drama", "Action & Adventure"],
       "seasons": 3,
       "tagline": "All must choose.",
-      "release": {
-        "day": 4,
-        "month": 8,
-        "year": 2024
-      }
-    }
+      "release": { "day": 4, "month": 8, "year": 2024 }
+    },
+    "favorite": false
   },
   {
     "title": "Impulse",
@@ -637,12 +511,9 @@
       "genres": ["Sci-Fi & Fantasy", "Action & Adventure", "Drama"],
       "seasons": 2,
       "tagline": "You can’t control what you don’t understand.",
-      "release": {
-        "day": 16,
-        "month": 10,
-        "year": 2019
-      }
-    }
+      "release": { "day": 16, "month": 10, "year": 2019 }
+    },
+    "favorite": false
   },
   {
     "title": "Invasion",
@@ -652,12 +523,9 @@
       "genres": ["Sci-Fi & Fantasy", "Drama"],
       "seasons": 2,
       "tagline": "Fight together or fall apart.",
-      "release": {
-        "day": 24,
-        "month": 10,
-        "year": 2023
-      }
-    }
+      "release": { "day": 24, "month": 10, "year": 2023 }
+    },
+    "favorite": false
   },
   {
     "title": "Jeffrey Dahmer - Monster",
@@ -667,12 +535,9 @@
       "genres": ["Crime", "Drama"],
       "seasons": 2,
       "tagline": "",
-      "release": {
-        "day": 21,
-        "month": 9,
-        "year": 2022
-      }
-    }
+      "release": { "day": 21, "month": 9, "year": 2022 }
+    },
+    "favorite": false
   },
   {
     "title": "Katla",
@@ -682,12 +547,9 @@
       "genres": ["Drama", "Mystery", "Sci-Fi & Fantasy"],
       "seasons": 1,
       "tagline": "",
-      "release": {
-        "day": 17,
-        "month": 6,
-        "year": 2021
-      }
-    }
+      "release": { "day": 17, "month": 6, "year": 2021 }
+    },
+    "favorite": false
   },
   {
     "title": "Kingdom",
@@ -697,12 +559,9 @@
       "genres": ["Drama", "Mystery"],
       "seasons": 2,
       "tagline": "",
-      "release": {
-        "day": 13,
-        "month": 3,
-        "year": 2020
-      }
-    }
+      "release": { "day": 13, "month": 3, "year": 2020 }
+    },
+    "favorite": false
   },
   {
     "title": "Legion",
@@ -712,12 +571,9 @@
       "genres": ["Action & Adventure", "Sci-Fi & Fantasy", "Drama"],
       "seasons": 3,
       "tagline": "Open your third eye.",
-      "release": {
-        "day": 12,
-        "month": 8,
-        "year": 2019
-      }
-    }
+      "release": { "day": 12, "month": 8, "year": 2019 }
+    },
+    "favorite": false
   },
   {
     "title": "Lie To Me",
@@ -727,12 +583,9 @@
       "genres": ["Crime", "Drama", "Mystery"],
       "seasons": 3,
       "tagline": "They're undeceivable.",
-      "release": {
-        "day": 31,
-        "month": 1,
-        "year": 2011
-      }
-    }
+      "release": { "day": 31, "month": 1, "year": 2011 }
+    },
+    "favorite": false
   },
   {
     "title": "Loki",
@@ -742,12 +595,9 @@
       "genres": ["Drama", "Sci-Fi & Fantasy"],
       "seasons": 2,
       "tagline": "Loki's time has come.",
-      "release": {
-        "day": 9,
-        "month": 11,
-        "year": 2023
-      }
-    }
+      "release": { "day": 9, "month": 11, "year": 2023 }
+    },
+    "favorite": false
   },
   {
     "title": "Love, Death & Robots",
@@ -757,12 +607,9 @@
       "genres": ["Animation", "Sci-Fi & Fantasy"],
       "seasons": 3,
       "tagline": "The threesome you've been waiting for.",
-      "release": {
-        "day": 20,
-        "month": 5,
-        "year": 2022
-      }
-    }
+      "release": { "day": 20, "month": 5, "year": 2022 }
+    },
+    "favorite": false
   },
   {
     "title": "Lovecraft Country",
@@ -772,12 +619,9 @@
       "genres": ["Drama", "Mystery", "Sci-Fi & Fantasy"],
       "seasons": 2,
       "tagline": "Take back your legacy.",
-      "release": {
-        "day": 18,
-        "month": 10,
-        "year": 2020
-      }
-    }
+      "release": { "day": 18, "month": 10, "year": 2020 }
+    },
+    "favorite": true
   },
   {
     "title": "Manifest",
@@ -787,12 +631,9 @@
       "genres": ["Sci-Fi & Fantasy", "Mystery", "Drama"],
       "seasons": 4,
       "tagline": "Make the final connection.",
-      "release": {
-        "day": 2,
-        "month": 6,
-        "year": 2023
-      }
-    }
+      "release": { "day": 2, "month": 6, "year": 2023 }
+    },
+    "favorite": false
   },
   {
     "title": "Mare of Easttown",
@@ -802,12 +643,9 @@
       "genres": ["Drama", "Mystery", "Crime"],
       "seasons": 1,
       "tagline": "All truths come to light.",
-      "release": {
-        "day": 30,
-        "month": 5,
-        "year": 2021
-      }
-    }
+      "release": { "day": 30, "month": 5, "year": 2021 }
+    },
+    "favorite": false
   },
   {
     "title": "Midnight Mass",
@@ -817,12 +655,9 @@
       "genres": ["Mystery", "Drama"],
       "seasons": 1,
       "tagline": "Be not afraid.",
-      "release": {
-        "day": 24,
-        "month": 9,
-        "year": 2021
-      }
-    }
+      "release": { "day": 24, "month": 9, "year": 2021 }
+    },
+    "favorite": true
   },
   {
     "title": "Mindhunter",
@@ -832,12 +667,9 @@
       "genres": ["Drama", "Crime"],
       "seasons": 2,
       "tagline": "History. Pattern. Profile.",
-      "release": {
-        "day": 16,
-        "month": 8,
-        "year": 2019
-      }
-    }
+      "release": { "day": 16, "month": 8, "year": 2019 }
+    },
+    "favorite": false
   },
   {
     "title": "Monarch: Legacy of Monsters",
@@ -847,12 +679,9 @@
       "genres": ["Sci-Fi & Fantasy", "Drama", "Action & Adventure"],
       "seasons": 1,
       "tagline": "Some secrets cannot be contained.",
-      "release": {
-        "day": 11,
-        "month": 1,
-        "year": 2024
-      }
-    }
+      "release": { "day": 11, "month": 1, "year": 2024 }
+    },
+    "favorite": false
   },
   {
     "title": "Moon Knight",
@@ -862,12 +691,9 @@
       "genres": ["Action & Adventure", "Sci-Fi & Fantasy", "Mystery"],
       "seasons": 1,
       "tagline": "Embrace the chaos.",
-      "release": {
-        "day": 4,
-        "month": 5,
-        "year": 2022
-      }
-    }
+      "release": { "day": 4, "month": 5, "year": 2022 }
+    },
+    "favorite": false
   },
   {
     "title": "Nancy Drew",
@@ -877,12 +703,9 @@
       "genres": ["Mystery", "Drama", "Sci-Fi & Fantasy"],
       "seasons": 4,
       "tagline": "You can't bury the truth.",
-      "release": {
-        "day": 23,
-        "month": 8,
-        "year": 2023
-      }
-    }
+      "release": { "day": 23, "month": 8, "year": 2023 }
+    },
+    "favorite": false
   },
   {
     "title": "Night Sky",
@@ -892,12 +715,9 @@
       "genres": ["Sci-Fi & Fantasy", "Drama"],
       "seasons": 1,
       "tagline": "",
-      "release": {
-        "day": 19,
-        "month": 5,
-        "year": 2022
-      }
-    }
+      "release": { "day": 19, "month": 5, "year": 2022 }
+    },
+    "favorite": false
   },
   {
     "title": "Obi-Wan Kenobi",
@@ -907,12 +727,9 @@
       "genres": ["Sci-Fi & Fantasy", "Action & Adventure", "Drama"],
       "seasons": 1,
       "tagline": "Between darkness and defeat, hope survives.",
-      "release": {
-        "day": 22,
-        "month": 6,
-        "year": 2022
-      }
-    }
+      "release": { "day": 22, "month": 6, "year": 2022 }
+    },
+    "favorite": false
   },
   {
     "title": "Old Man",
@@ -922,12 +739,9 @@
       "genres": ["Action & Adventure", "Drama"],
       "seasons": 2,
       "tagline": "The lines are blurred, the mission is clear.",
-      "release": {
-        "day": 24,
-        "month": 10,
-        "year": 2024
-      }
-    }
+      "release": { "day": 24, "month": 10, "year": 2024 }
+    },
+    "favorite": false
   },
   {
     "title": "Only Murders in the Building",
@@ -937,12 +751,9 @@
       "genres": ["Comedy", "Mystery", "Crime"],
       "seasons": 5,
       "tagline": "They're ready for their close call.",
-      "release": {
-        "day": 29,
-        "month": 10,
-        "year": 2024
-      }
-    }
+      "release": { "day": 29, "month": 10, "year": 2024 }
+    },
+    "favorite": false
   },
   {
     "title": "Outer Range",
@@ -952,12 +763,9 @@
       "genres": ["Drama", "Mystery", "Sci-Fi & Fantasy"],
       "seasons": 2,
       "tagline": "The land has its secrets.",
-      "release": {
-        "day": 16,
-        "month": 5,
-        "year": 2024
-      }
-    }
+      "release": { "day": 16, "month": 5, "year": 2024 }
+    },
+    "favorite": false
   },
   {
     "title": "Ozark",
@@ -967,12 +775,9 @@
       "genres": ["Crime", "Drama"],
       "seasons": 4,
       "tagline": "No one gets out clean.",
-      "release": {
-        "day": 29,
-        "month": 4,
-        "year": 2022
-      }
-    }
+      "release": { "day": 29, "month": 4, "year": 2022 }
+    },
+    "favorite": false
   },
   {
     "title": "Peacemaker",
@@ -982,12 +787,9 @@
       "genres": ["Action & Adventure", "Sci-Fi & Fantasy", "Drama"],
       "seasons": 3,
       "tagline": "Give peace a f#cking chance.",
-      "release": {
-        "day": 17,
-        "month": 2,
-        "year": 2022
-      }
-    }
+      "release": { "day": 17, "month": 2, "year": 2022 }
+    },
+    "favorite": true
   },
   {
     "title": "Picard",
@@ -997,12 +799,9 @@
       "genres": ["Sci-Fi & Fantasy", "Action & Adventure", "Drama"],
       "seasons": 4,
       "tagline": "The end is only the beginning.",
-      "release": {
-        "day": 20,
-        "month": 4,
-        "year": 2023
-      }
-    }
+      "release": { "day": 20, "month": 4, "year": 2023 }
+    },
+    "favorite": false
   },
   {
     "title": "Poker Face",
@@ -1012,12 +811,9 @@
       "genres": ["Mystery", "Crime"],
       "seasons": 2,
       "tagline": "Murder mysteries can take detours.",
-      "release": {
-        "day": 9,
-        "month": 3,
-        "year": 2023
-      }
-    }
+      "release": { "day": 9, "month": 3, "year": 2023 }
+    },
+    "favorite": false
   },
   {
     "title": "Presumed Innocent",
@@ -1027,12 +823,9 @@
       "genres": ["Drama", "Mystery"],
       "seasons": 2,
       "tagline": "Presume nothing.",
-      "release": {
-        "day": 23,
-        "month": 7,
-        "year": 2024
-      }
-    }
+      "release": { "day": 23, "month": 7, "year": 2024 }
+    },
+    "favorite": false
   },
   {
     "title": "Project Blue Book",
@@ -1042,12 +835,9 @@
       "genres": ["Sci-Fi & Fantasy", "Mystery", "Drama"],
       "seasons": 2,
       "tagline": "Where the conspiracy began.",
-      "release": {
-        "day": 24,
-        "month": 3,
-        "year": 2020
-      }
-    }
+      "release": { "day": 24, "month": 3, "year": 2020 }
+    },
+    "favorite": false
   },
   {
     "title": "Raised By Wolves",
@@ -1057,12 +847,9 @@
       "genres": ["Sci-Fi & Fantasy", "Drama"],
       "seasons": 2,
       "tagline": "Sacrifice for survival.",
-      "release": {
-        "day": 17,
-        "month": 3,
-        "year": 2022
-      }
-    }
+      "release": { "day": 17, "month": 3, "year": 2022 }
+    },
+    "favorite": false
   },
   {
     "title": "Resident Alien",
@@ -1072,12 +859,9 @@
       "genres": ["Sci-Fi & Fantasy"],
       "seasons": 3,
       "tagline": "Beam this up.",
-      "release": {
-        "day": 3,
-        "month": 4,
-        "year": 2024
-      }
-    }
+      "release": { "day": 3, "month": 4, "year": 2024 }
+    },
+    "favorite": false
   },
   {
     "title": "Resident Evil",
@@ -1087,12 +871,9 @@
       "genres": ["Drama", "Sci-Fi & Fantasy"],
       "seasons": 1,
       "tagline": "Evil has evolved. Again.",
-      "release": {
-        "day": 14,
-        "month": 7,
-        "year": 2022
-      }
-    }
+      "release": { "day": 14, "month": 7, "year": 2022 }
+    },
+    "favorite": false
   },
   {
     "title": "Riverdale",
@@ -1102,12 +883,9 @@
       "genres": ["Crime", "Drama", "Mystery"],
       "seasons": 7,
       "tagline": "To save the future, they must survive the past.",
-      "release": {
-        "day": 23,
-        "month": 8,
-        "year": 2023
-      }
-    }
+      "release": { "day": 23, "month": 8, "year": 2023 }
+    },
+    "favorite": false
   },
   {
     "title": "Sandman",
@@ -1117,12 +895,9 @@
       "genres": ["Sci-Fi & Fantasy", "Drama", "Action & Adventure"],
       "seasons": 3,
       "tagline": "Dream the world anew.",
-      "release": {
-        "day": 19,
-        "month": 8,
-        "year": 2022
-      }
-    }
+      "release": { "day": 19, "month": 8, "year": 2022 }
+    },
+    "favorite": true
   },
   {
     "title": "Secret Invasion",
@@ -1132,12 +907,9 @@
       "genres": ["Drama", "Sci-Fi & Fantasy", "Action & Adventure"],
       "seasons": 1,
       "tagline": "Who do you trust?",
-      "release": {
-        "day": 26,
-        "month": 7,
-        "year": 2023
-      }
-    }
+      "release": { "day": 26, "month": 7, "year": 2023 }
+    },
+    "favorite": false
   },
   {
     "title": "See",
@@ -1147,12 +919,9 @@
       "genres": ["Drama", "Sci-Fi & Fantasy", "Action & Adventure"],
       "seasons": 3,
       "tagline": "A new vision of the future.",
-      "release": {
-        "day": 13,
-        "month": 10,
-        "year": 2022
-      }
-    }
+      "release": { "day": 13, "month": 10, "year": 2022 }
+    },
+    "favorite": false
   },
   {
     "title": "Severance",
@@ -1162,12 +931,9 @@
       "genres": ["Drama", "Mystery", "Sci-Fi & Fantasy"],
       "seasons": 2,
       "tagline": "Things look a little different around Lumon.",
-      "release": {
-        "day": 7,
-        "month": 4,
-        "year": 2022
-      }
-    }
+      "release": { "day": 7, "month": 4, "year": 2022 }
+    },
+    "favorite": true
   },
   {
     "title": "Shadow and Bone",
@@ -1177,12 +943,9 @@
       "genres": ["Drama", "Sci-Fi & Fantasy"],
       "seasons": 2,
       "tagline": "Every power has a price.",
-      "release": {
-        "day": 16,
-        "month": 3,
-        "year": 2023
-      }
-    }
+      "release": { "day": 16, "month": 3, "year": 2023 }
+    },
+    "favorite": false
   },
   {
     "title": "Silo",
@@ -1192,12 +955,9 @@
       "genres": ["Sci-Fi & Fantasy", "Drama"],
       "seasons": 3,
       "tagline": "The truth will surface.",
-      "release": {
-        "day": 12,
-        "month": 12,
-        "year": 2024
-      }
-    }
+      "release": { "day": 12, "month": 12, "year": 2024 }
+    },
+    "favorite": false
   },
   {
     "title": "Snowfall",
@@ -1207,12 +967,9 @@
       "genres": ["Drama", "Crime"],
       "seasons": 6,
       "tagline": "This is how crack began.",
-      "release": {
-        "day": 19,
-        "month": 4,
-        "year": 2023
-      }
-    }
+      "release": { "day": 19, "month": 4, "year": 2023 }
+    },
+    "favorite": false
   },
   {
     "title": "Squid Game",
@@ -1222,12 +979,9 @@
       "genres": ["Action & Adventure", "Mystery", "Drama"],
       "seasons": 2,
       "tagline": "Let the new games begin.",
-      "release": {
-        "day": 17,
-        "month": 9,
-        "year": 2021
-      }
-    }
+      "release": { "day": 17, "month": 9, "year": 2021 }
+    },
+    "favorite": false
   },
   {
     "title": "Star Trek: Discovery",
@@ -1237,12 +991,9 @@
       "genres": ["Sci-Fi & Fantasy", "Action & Adventure", "Drama"],
       "seasons": 6,
       "tagline": "At the edge of the universe, discovery begins.",
-      "release": {
-        "day": 30,
-        "month": 5,
-        "year": 2024
-      }
-    }
+      "release": { "day": 30, "month": 5, "year": 2024 }
+    },
+    "favorite": false
   },
   {
     "title": "Star Trek: Strange New Worlds",
@@ -1252,12 +1003,9 @@
       "genres": ["Sci-Fi & Fantasy"],
       "seasons": 4,
       "tagline": "The frontier awaits.",
-      "release": {
-        "day": 10,
-        "month": 8,
-        "year": 2023
-      }
-    }
+      "release": { "day": 10, "month": 8, "year": 2023 }
+    },
+    "favorite": true
   },
   {
     "title": "Stranger Things",
@@ -1267,12 +1015,9 @@
       "genres": ["Drama", "Sci-Fi & Fantasy", "Mystery", "Action & Adventure"],
       "seasons": 5,
       "tagline": "Every ending has a beginning.",
-      "release": {
-        "day": 1,
-        "month": 7,
-        "year": 2022
-      }
-    }
+      "release": { "day": 1, "month": 7, "year": 2022 }
+    },
+    "favorite": false
   },
   {
     "title": "Supergirl",
@@ -1282,12 +1027,9 @@
       "genres": ["Drama", "Sci-Fi & Fantasy", "Action & Adventure"],
       "seasons": 6,
       "tagline": "Better. Stronger. Together.",
-      "release": {
-        "day": 9,
-        "month": 11,
-        "year": 2021
-      }
-    }
+      "release": { "day": 9, "month": 11, "year": 2021 }
+    },
+    "favorite": false
   },
   {
     "title": "The Terror",
@@ -1297,12 +1039,9 @@
       "genres": ["Mystery", "Drama", "Sci-Fi & Fantasy"],
       "seasons": 2,
       "tagline": "",
-      "release": {
-        "day": 14,
-        "month": 10,
-        "year": 2019
-      }
-    }
+      "release": { "day": 14, "month": 10, "year": 2019 }
+    },
+    "favorite": false
   },
   {
     "title": "The Bear",
@@ -1312,12 +1051,9 @@
       "genres": ["Drama", "Comedy"],
       "seasons": 3,
       "tagline": "Back for seconds.",
-      "release": {
-        "day": 26,
-        "month": 6,
-        "year": 2024
-      }
-    }
+      "release": { "day": 26, "month": 6, "year": 2024 }
+    },
+    "favorite": false
   },
   {
     "title": "The Blacklist",
@@ -1327,12 +1063,9 @@
       "genres": ["Drama", "Crime", "Mystery"],
       "seasons": 11,
       "tagline": "Never trust a criminal... Until you have to.",
-      "release": {
-        "day": 13,
-        "month": 7,
-        "year": 2023
-      }
-    }
+      "release": { "day": 13, "month": 7, "year": 2023 }
+    },
+    "favorite": false
   },
   {
     "title": "The End of the F****** World",
@@ -1342,12 +1075,9 @@
       "genres": ["Comedy", "Drama", "Crime"],
       "seasons": 3,
       "tagline": "Some love stories begin at the end.",
-      "release": {
-        "day": 7,
-        "month": 11,
-        "year": 2019
-      }
-    }
+      "release": { "day": 7, "month": 11, "year": 2019 }
+    },
+    "favorite": false
   },
   {
     "title": "The Exorcist",
@@ -1357,12 +1087,9 @@
       "genres": ["Mystery", "Drama"],
       "seasons": 2,
       "tagline": "Every soul is a battlefield.",
-      "release": {
-        "day": 15,
-        "month": 12,
-        "year": 2017
-      }
-    }
+      "release": { "day": 15, "month": 12, "year": 2017 }
+    },
+    "favorite": false
   },
   {
     "title": "The Expanse",
@@ -1372,12 +1099,9 @@
       "genres": ["Drama", "Mystery", "Sci-Fi & Fantasy"],
       "seasons": 7,
       "tagline": "The stars are better off without us.",
-      "release": {
-        "day": 13,
-        "month": 1,
-        "year": 2022
-      }
-    }
+      "release": { "day": 13, "month": 1, "year": 2022 }
+    },
+    "favorite": false
   },
   {
     "title": "The Fall of the House of Usher",
@@ -1387,12 +1111,9 @@
       "genres": ["Crime", "Drama", "Mystery"],
       "seasons": 1,
       "tagline": "She's coming for them all.",
-      "release": {
-        "day": 12,
-        "month": 10,
-        "year": 2023
-      }
-    }
+      "release": { "day": 12, "month": 10, "year": 2023 }
+    },
+    "favorite": false
   },
   {
     "title": "The Good Place",
@@ -1402,12 +1123,9 @@
       "genres": ["Sci-Fi & Fantasy", "Comedy"],
       "seasons": 5,
       "tagline": "What the fork?!",
-      "release": {
-        "day": 30,
-        "month": 1,
-        "year": 2020
-      }
-    }
+      "release": { "day": 30, "month": 1, "year": 2020 }
+    },
+    "favorite": true
   },
   {
     "title": "The Haunting of Bly Manor",
@@ -1417,12 +1135,9 @@
       "genres": ["Mystery", "Drama"],
       "seasons": 1,
       "tagline": "Dead doesn't mean gone.",
-      "release": {
-        "day": 9,
-        "month": 10,
-        "year": 2020
-      }
-    }
+      "release": { "day": 9, "month": 10, "year": 2020 }
+    },
+    "favorite": true
   },
   {
     "title": "The Haunting of Hill House",
@@ -1432,12 +1147,9 @@
       "genres": ["Mystery", "Drama"],
       "seasons": 1,
       "tagline": "You're expected.",
-      "release": {
-        "day": 12,
-        "month": 10,
-        "year": 2018
-      }
-    }
+      "release": { "day": 12, "month": 10, "year": 2018 }
+    },
+    "favorite": true
   },
   {
     "title": "The Hot Zone",
@@ -1447,12 +1159,9 @@
       "genres": ["Drama"],
       "seasons": 2,
       "tagline": "The headlines you remember, the ending you don't.",
-      "release": {
-        "day": 30,
-        "month": 11,
-        "year": 2021
-      }
-    }
+      "release": { "day": 30, "month": 11, "year": 2021 }
+    },
+    "favorite": true
   },
   {
     "title": "The Lord of the Rings: The Rings of Power",
@@ -1462,12 +1171,9 @@
       "genres": ["Action & Adventure", "Sci-Fi & Fantasy", "Drama"],
       "seasons": 3,
       "tagline": "Evil has had many names.",
-      "release": {
-        "day": 3,
-        "month": 10,
-        "year": 2024
-      }
-    }
+      "release": { "day": 3, "month": 10, "year": 2024 }
+    },
+    "favorite": false
   },
   {
     "title": "The Lost Symbol",
@@ -1477,12 +1183,9 @@
       "genres": ["Action & Adventure", "Drama", "Mystery"],
       "seasons": 1,
       "tagline": "",
-      "release": {
-        "day": 18,
-        "month": 11,
-        "year": 2021
-      }
-    }
+      "release": { "day": 18, "month": 11, "year": 2021 }
+    },
+    "favorite": false
   },
   {
     "title": "The Loudest Voice",
@@ -1492,12 +1195,9 @@
       "genres": ["War & Politics", "Drama"],
       "seasons": 1,
       "tagline": "",
-      "release": {
-        "day": 11,
-        "month": 8,
-        "year": 2019
-      }
-    }
+      "release": { "day": 11, "month": 8, "year": 2019 }
+    },
+    "favorite": false
   },
   {
     "title": "The Man Who Fell To Earth",
@@ -1507,12 +1207,9 @@
       "genres": ["Sci-Fi & Fantasy"],
       "seasons": 1,
       "tagline": "",
-      "release": {
-        "day": 3,
-        "month": 7,
-        "year": 2022
-      }
-    }
+      "release": { "day": 3, "month": 7, "year": 2022 }
+    },
+    "favorite": false
   },
   {
     "title": "The New Pope",
@@ -1522,12 +1219,9 @@
       "genres": ["Drama"],
       "seasons": 1,
       "tagline": "Everyone can be a saint.",
-      "release": {
-        "day": 7,
-        "month": 2,
-        "year": 2020
-      }
-    }
+      "release": { "day": 7, "month": 2, "year": 2020 }
+    },
+    "favorite": false
   },
   {
     "title": "The Night Manager",
@@ -1537,12 +1231,9 @@
       "genres": ["Drama", "Mystery", "Crime"],
       "seasons": 1,
       "tagline": "",
-      "release": {
-        "day": 27,
-        "month": 3,
-        "year": 2016
-      }
-    }
+      "release": { "day": 27, "month": 3, "year": 2016 }
+    },
+    "favorite": false
   },
   {
     "title": "The Outsider",
@@ -1552,12 +1243,9 @@
       "genres": ["Crime", "Drama", "Mystery"],
       "seasons": 1,
       "tagline": "Fear has many faces.",
-      "release": {
-        "day": 8,
-        "month": 3,
-        "year": 2020
-      }
-    }
+      "release": { "day": 8, "month": 3, "year": 2020 }
+    },
+    "favorite": false
   },
   {
     "title": "The Punisher",
@@ -1567,12 +1255,9 @@
       "genres": ["Action & Adventure", "Crime", "Drama"],
       "seasons": 2,
       "tagline": "The truth must be taken.",
-      "release": {
-        "day": 18,
-        "month": 1,
-        "year": 2019
-      }
-    }
+      "release": { "day": 18, "month": 1, "year": 2019 }
+    },
+    "favorite": false
   },
   {
     "title": "The Twilight Zone",
@@ -1582,12 +1267,9 @@
       "genres": ["Sci-Fi & Fantasy", "Mystery", "Drama"],
       "seasons": 2,
       "tagline": "What dimension are you even in?",
-      "release": {
-        "day": 25,
-        "month": 6,
-        "year": 2020
-      }
-    }
+      "release": { "day": 25, "month": 6, "year": 2020 }
+    },
+    "favorite": false
   },
   {
     "title": "The Umbrella Academy",
@@ -1597,12 +1279,9 @@
       "genres": ["Action & Adventure", "Sci-Fi & Fantasy", "Drama"],
       "seasons": 5,
       "tagline": "Too many siblings. Not enough timeline.",
-      "release": {
-        "day": 8,
-        "month": 8,
-        "year": 2024
-      }
-    }
+      "release": { "day": 8, "month": 8, "year": 2024 }
+    },
+    "favorite": false
   },
   {
     "title": "The War of the Worlds",
@@ -1612,12 +1291,9 @@
       "genres": ["Sci-Fi & Fantasy", "Drama"],
       "seasons": 3,
       "tagline": "Doomed to survive.",
-      "release": {
-        "day": 26,
-        "month": 9,
-        "year": 2022
-      }
-    }
+      "release": { "day": 26, "month": 9, "year": 2022 }
+    },
+    "favorite": false
   },
   {
     "title": "The Wheel of Time",
@@ -1627,12 +1303,9 @@
       "genres": ["Sci-Fi & Fantasy", "Drama"],
       "seasons": 5,
       "tagline": "",
-      "release": {
-        "day": 5,
-        "month": 10,
-        "year": 2023
-      }
-    }
+      "release": { "day": 5, "month": 10, "year": 2023 }
+    },
+    "favorite": false
   },
   {
     "title": "Three-Body Problem",
@@ -1642,12 +1315,9 @@
       "genres": ["Drama", "Mystery", "Sci-Fi & Fantasy"],
       "seasons": 1,
       "tagline": "",
-      "release": {
-        "day": 17,
-        "month": 2,
-        "year": 2023
-      }
-    }
+      "release": { "day": 17, "month": 2, "year": 2023 }
+    },
+    "favorite": false
   },
   {
     "title": "Three-Body Problem",
@@ -1657,12 +1327,9 @@
       "genres": ["Sci-Fi & Fantasy", "Mystery", "Drama"],
       "seasons": 1,
       "tagline": "",
-      "release": {
-        "day": 21,
-        "month": 3,
-        "year": 2024
-      }
-    }
+      "release": { "day": 21, "month": 3, "year": 2024 }
+    },
+    "favorite": false
   },
   {
     "title": "Tiger King",
@@ -1672,12 +1339,9 @@
       "genres": ["Documentary", "Crime"],
       "seasons": 2,
       "tagline": "We've only scratched the surface.",
-      "release": {
-        "day": 17,
-        "month": 11,
-        "year": 2021
-      }
-    }
+      "release": { "day": 17, "month": 11, "year": 2021 }
+    },
+    "favorite": false
   },
   {
     "title": "Vikings",
@@ -1687,12 +1351,9 @@
       "genres": ["Action & Adventure", "Drama", "War & Politics"],
       "seasons": 7,
       "tagline": "",
-      "release": {
-        "day": 30,
-        "month": 12,
-        "year": 2020
-      }
-    }
+      "release": { "day": 30, "month": 12, "year": 2020 }
+    },
+    "favorite": false
   },
   {
     "title": "WandaVision",
@@ -1702,12 +1363,9 @@
       "genres": ["Sci-Fi & Fantasy", "Mystery", "Drama"],
       "seasons": 2,
       "tagline": "Experience a new vision of reality.",
-      "release": {
-        "day": 5,
-        "month": 3,
-        "year": 2021
-      }
-    }
+      "release": { "day": 5, "month": 3, "year": 2021 }
+    },
+    "favorite": false
   },
   {
     "title": "Watchmen",
@@ -1717,12 +1375,9 @@
       "genres": ["Drama", "Crime", "Sci-Fi & Fantasy"],
       "seasons": 1,
       "tagline": "Nothing ever ends...",
-      "release": {
-        "day": 15,
-        "month": 12,
-        "year": 2019
-      }
-    }
+      "release": { "day": 15, "month": 12, "year": 2019 }
+    },
+    "favorite": false
   },
   {
     "title": "Wayward Pines",
@@ -1732,12 +1387,9 @@
       "genres": ["Drama", "Mystery", "Sci-Fi & Fantasy"],
       "seasons": 2,
       "tagline": "One road in. No road out.",
-      "release": {
-        "day": 27,
-        "month": 7,
-        "year": 2016
-      }
-    }
+      "release": { "day": 27, "month": 7, "year": 2016 }
+    },
+    "favorite": false
   },
   {
     "title": "Westworld",
@@ -1747,12 +1399,9 @@
       "genres": ["Sci-Fi & Fantasy", "Western"],
       "seasons": 5,
       "tagline": "These violent delights have violent ends.",
-      "release": {
-        "day": 14,
-        "month": 8,
-        "year": 2022
-      }
-    }
+      "release": { "day": 14, "month": 8, "year": 2022 }
+    },
+    "favorite": false
   },
   {
     "title": "Y: The Last Man",
@@ -1762,12 +1411,9 @@
       "genres": ["Sci-Fi & Fantasy", "Drama"],
       "seasons": 1,
       "tagline": "The future will be one of a kind.",
-      "release": {
-        "day": 1,
-        "month": 11,
-        "year": 2021
-      }
-    }
+      "release": { "day": 1, "month": 11, "year": 2021 }
+    },
+    "favorite": false
   },
   {
     "title": "Yellowjackets",
@@ -1777,12 +1423,9 @@
       "genres": ["Drama", "Mystery"],
       "seasons": 4,
       "tagline": "We hear the wilderness and it hears us.",
-      "release": {
-        "day": 28,
-        "month": 5,
-        "year": 2023
-      }
-    }
+      "release": { "day": 28, "month": 5, "year": 2023 }
+    },
+    "favorite": false
   },
   {
     "title": "sense8",
@@ -1792,11 +1435,8 @@
       "genres": ["Sci-Fi & Fantasy", "Drama"],
       "seasons": 2,
       "tagline": "I am we.",
-      "release": {
-        "day": 8,
-        "month": 6,
-        "year": 2018
-      }
-    }
+      "release": { "day": 8, "month": 6, "year": 2018 }
+    },
+    "favorite": true
   }
 ]

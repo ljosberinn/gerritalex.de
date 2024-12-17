@@ -1,11 +1,6 @@
 import { withContentlayer } from 'next-contentlayer2';
-import createWithBundleAnalyzer from '@next/bundle-analyzer';
 import withPlaiceholder from '@plaiceholder/next';
 import type { NextConfig } from 'next';
-
-const withBundleAnalyzer = createWithBundleAnalyzer({
-  enabled: process.env.ANALYZE === 'true',
-});
 
 // You might need to insert additional domains in script-src if you are using external services
 const ContentSecurityPolicy = `
@@ -61,7 +56,7 @@ const basePath = process.env.BASE_PATH || undefined;
 const unoptimized = process.env.UNOPTIMIZED ? true : undefined;
 
 const config = (): NextConfig => {
-  const plugins = [withPlaiceholder, withContentlayer, withBundleAnalyzer];
+  const plugins = [withPlaiceholder, withContentlayer];
 
   return plugins.reduce((acc, next) => next(acc), {
     output,
