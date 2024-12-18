@@ -85,7 +85,7 @@ export default function ListLayoutWithTags({
             </h1>
           </div>
         ) : null}
-        <div className=" flex space-x-0 sm:space-x-12 xl:space-x-24">
+        <div className="flex space-x-0 sm:space-x-12 xl:space-x-24">
           {sortedTags.length > 0 ? (
             <div className="hidden h-full max-h-screen min-w-[280px] max-w-[280px] flex-wrap overflow-auto rounded bg-gray-50 pt-5 shadow-md dark:bg-gray-900/70 dark:shadow-gray-800/40 sm:flex">
               <div className="w-full py-4 pl-6">

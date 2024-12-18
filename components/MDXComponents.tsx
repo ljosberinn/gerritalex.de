@@ -9,8 +9,10 @@ import TableWrapper from './TableWrapper';
 export const components: MDXComponents = {
   Image,
   TOCInline,
+  // @ts-expect-error
   a: CustomLink,
   pre: Pre,
+  // @ts-expect-error
   table: TableWrapper,
   BlogNewsletterForm,
 };

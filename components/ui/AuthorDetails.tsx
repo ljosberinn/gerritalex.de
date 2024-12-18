@@ -26,7 +26,7 @@ export default function AuthorDetails({
         </div>
       ) : null}
       <div>
-        <h3 className="pb-2 pt-4  text-2xl font-bold leading-8 tracking-tight sm:text-3xl md:text-4xl">
+        <h3 className="pb-2 pt-4 text-2xl font-bold leading-8 tracking-tight sm:text-3xl md:text-4xl">
           {author}
         </h3>
         <div className="md:text-md text-base text-gray-500 dark:text-gray-400">{occupation}</div>

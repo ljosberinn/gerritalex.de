@@ -3,6 +3,7 @@
 const siteMetadata = {
   title: 'gerritalex.de',
   author: 'Gerrit Alex',
+  image: '',
   description: 'This website is a personal blog for Gerrit Alex',
   // avatar: '/static/images/avatar.jpg',
   // image: '/static/images/twitter-card.png',
