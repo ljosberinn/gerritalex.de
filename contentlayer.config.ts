@@ -232,7 +232,7 @@ async function importTmdbData() {
         dataset.metadata.release.month = Number.parseInt(month);
         dataset.metadata.release.year = Number.parseInt(year);
       } else if (result.last_episode_to_air !== null) {
-        const [year, month, day] = result.last_episode_to_air.split('-');
+        const [year, month, day] = result.last_episode_to_air.air_date.split('-');
         dataset.metadata.release.day = Number.parseInt(day);
         dataset.metadata.release.month = Number.parseInt(month);
         dataset.metadata.release.year = Number.parseInt(year);
