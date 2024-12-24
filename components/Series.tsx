@@ -107,7 +107,7 @@ export function Series({ data, placeholderImages }: SeriesProps) {
         <div className="flex w-full items-end justify-center gap-8 xl:w-1/12 xl:flex-col xl:justify-end xl:gap-1">
           <div className="flex items-center gap-2">
             <label
-              className="block pb-2 text-sm font-medium text-gray-700 dark:text-gray-300 xl:pb-0"
+              className="block text-sm font-medium text-gray-700 dark:text-gray-300 xl:pb-0 xl:pb-2"
               htmlFor="display-art"
             >
               Art
@@ -123,7 +123,7 @@ export function Series({ data, placeholderImages }: SeriesProps) {
           </div>
           <div className="flex items-center gap-2">
             <label
-              className="block pb-2 text-sm font-medium text-gray-700 dark:text-gray-300 xl:pb-0"
+              className="block text-sm font-medium text-gray-700 dark:text-gray-300 xl:pb-0 xl:pb-2"
               htmlFor="display-table"
             >
               Table
