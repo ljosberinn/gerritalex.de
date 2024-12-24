@@ -2,34 +2,9 @@ import { Series } from '@/components/Series';
 import { generatePageMetadata } from 'app/seo';
 import data from 'data/series.json';
 
-import { globSync } from 'glob';
-import fs from 'node:fs/promises';
-import { getPlaiceholder } from 'plaiceholder';
-
 export const metadata = generatePageMetadata({ title: 'Series' });
 
 export type Series = (typeof data)[0];
-
-async function getPlaceholderImages(pattern: string): Promise<Record<string, string>> {
-  return Promise.all(
-    globSync(pattern).map(async (file) => {
-      const src = file.replace('./public', '').split('\\');
-      const buffer = await fs.readFile(file);
-
-      const plaiceholder = await getPlaiceholder(buffer);
-
-      return {
-        src: src[src.length - 1],
-        base64: plaiceholder.base64,
-      };
-    })
-  ).then((images) =>
-    images.reduce((acc, image) => {
-      acc[image.src] = image.base64;
-      return acc;
-    }, {})
-  );
-}
 
 const description = [
   'Ordered by latest episode release date.',
@@ -41,8 +16,6 @@ const description = [
 ];
 
 export default async function SeriesPage() {
-  const placeholderImages = await getPlaceholderImages('./public/static/images/series/*-cover.jpg');
-
   // todo: default sort by recommended
   // allow secondary grouping by year OR genre
 
@@ -96,7 +69,7 @@ export default async function SeriesPage() {
         ))}
       </ul>
 
-      <Series placeholderImages={placeholderImages} data={data} />
+      <Series data={data} />
     </section>
   );
 }

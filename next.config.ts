@@ -1,5 +1,4 @@
 import { withContentlayer } from 'next-contentlayer2';
-import withPlaiceholder from '@plaiceholder/next';
 import type { NextConfig } from 'next';
 
 // You might need to insert additional domains in script-src if you are using external services
@@ -56,7 +55,7 @@ const basePath = process.env.BASE_PATH || undefined;
 const unoptimized = process.env.UNOPTIMIZED ? true : undefined;
 
 const config = (): NextConfig => {
-  const plugins = [withPlaiceholder, withContentlayer];
+  const plugins = [withContentlayer];
 
   return plugins.reduce((acc, next) => next(acc), {
     output,

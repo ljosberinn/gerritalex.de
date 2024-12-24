@@ -64,10 +64,9 @@ const filters: Record<Filter, (data: SeriesType[]) => SeriesType[]> = {
 
 type SeriesProps = {
   data: SeriesType[];
-  placeholderImages: Record<string, string>;
 };
 
-export function Series({ data, placeholderImages }: SeriesProps) {
+export function Series({ data }: SeriesProps) {
   const [filterKind, setFilterKind] = useState<Filter>('year-desc');
   const [displayKind, setDisplayKind] = useState<'table' | 'art'>('art');
 
@@ -231,16 +230,12 @@ export function Series({ data, placeholderImages }: SeriesProps) {
                   ? 0
                   : 1 - series.episodesSeen / series.metadata.episodes;
 
-            const base64 = placeholderImages[`${series.id}-cover.jpg`];
-
             const mainImage = (
               <Image
                 title={series.title}
                 alt={series.title}
                 width={96}
                 height={144}
-                placeholder={base64 ? 'blur' : undefined}
-                blurDataURL={base64}
                 className={classString}
                 loading="lazy"
                 quality={75}
