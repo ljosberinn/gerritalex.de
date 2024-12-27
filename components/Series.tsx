@@ -106,7 +106,7 @@ export function Series({ data }: SeriesProps) {
         <div className="flex w-full items-end justify-center gap-8 xl:w-1/12 xl:flex-col xl:justify-end xl:gap-1">
           <div className="flex items-center gap-2">
             <label
-              className="block text-sm font-medium text-gray-700 dark:text-gray-300 xl:pb-0 xl:pb-2"
+              className="block text-sm font-medium text-gray-700 dark:text-gray-300 xl:pb-0"
               htmlFor="display-art"
             >
               Art
@@ -122,7 +122,7 @@ export function Series({ data }: SeriesProps) {
           </div>
           <div className="flex items-center gap-2">
             <label
-              className="block text-sm font-medium text-gray-700 dark:text-gray-300 xl:pb-0 xl:pb-2"
+              className="block text-sm font-medium text-gray-700 dark:text-gray-300 xl:pb-0"
               htmlFor="display-table"
             >
               Table
@@ -234,8 +234,8 @@ export function Series({ data }: SeriesProps) {
               <Image
                 title={series.title}
                 alt={series.title}
-                width={96}
-                height={144}
+                width={120}
+                height={180}
                 className={classString}
                 loading="lazy"
                 quality={75}
@@ -261,8 +261,8 @@ export function Series({ data }: SeriesProps) {
                       <Image
                         alt=""
                         title={series.title}
-                        width={96}
-                        height={144}
+                        width={120}
+                        height={180}
                         className={classString + ' grayscale'}
                         loading="lazy"
                         quality={75}
