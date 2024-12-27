@@ -287,7 +287,14 @@ async function importTmdbData() {
       })
     );
 
-    await writeFile('./data/series.json', JSON.stringify(data, null, 2));
+    await writeFile(
+      './data/series.json',
+      JSON.stringify(
+        data.sort((a, b) => a.title.localeCompare(b.title)),
+        null,
+        2
+      )
+    );
   }
 
   console.timeEnd('importTmdbData');
