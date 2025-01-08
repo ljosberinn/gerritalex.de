@@ -46,37 +46,55 @@ async function doFetch<T>(url: string): Promise<T | null> {
   }
 }
 
-async function findTmdbMovieByName(name: string) {
-  return doFetch(
-    `https://api.themoviedb.org/3/search/movie?query=${name}&include_adult=false&language=en-US&page=1`
-  );
-}
-
-type PaginatedShowResults = {
+type PaginatedResult<T> = {
   page: number;
-  results: {
-    adult: boolean;
-    backdrop_path: string | null;
-    genre_ids: number[];
-    id: number;
-    origin_country: string[];
-    original_language: string;
-    original_name: string;
-    overview: string;
-    popularity: number;
-    poster_path: string | null;
-    first_air_date: string;
-    name: string;
-    vote_average: number;
-    vote_count: number;
-  }[];
+  results: T[];
   total_pages: number;
   total_results: number;
 };
 
+type PaginatedShowResults = PaginatedResult<{
+  adult: boolean;
+  backdrop_path: string | null;
+  genre_ids: number[];
+  id: number;
+  origin_country: string[];
+  original_language: string;
+  original_name: string;
+  overview: string;
+  popularity: number;
+  poster_path: string | null;
+  first_air_date: string;
+  name: string;
+  vote_average: number;
+  vote_count: number;
+}>;
+
+type PaginatedMovieResults = PaginatedResult<{
+  adult: boolean;
+  backdrop_path: string | null;
+  genre_ids: number[];
+  id: number;
+  original_language: string;
+  original_title: string;
+  overview: string;
+  popularity: number;
+  poster_path: string | null;
+  release_date: string;
+  video: false;
+  vote_average: number;
+  vote_count: number;
+}>;
+
 async function findTmdbSeriesByName(name: string): Promise<PaginatedShowResults | null> {
   return doFetch(
     `https://api.themoviedb.org/3/search/tv?query=${name.toLowerCase()}&include_adult=false&language=en-US&page=1`
+  );
+}
+
+async function findTmdbMovieByName(name: string): Promise<PaginatedMovieResults | null> {
+  return doFetch(
+    `https://api.themoviedb.org/3/search/movie?query=${name.toLowerCase()}&include_adult=false&language=en-US&page=1`
   );
 }
 
@@ -169,6 +187,12 @@ async function getTmdbSeriesById(id: number): Promise<Series | null> {
   return doFetch(`https://api.themoviedb.org/3/tv/${id}?language=en-US`);
 }
 
+type Movie = {};
+
+async function getTmdbMovieById(id: number): Promise<Movie | null> {
+  return doFetch(`https://api.themoviedb.org/3/tv/${id}?language=en-US`);
+}
+
 type ArtKind = 'cover' | 'backdrop';
 
 function resolvePathForImageId(id: number, kind: ArtKind) {
@@ -177,8 +201,8 @@ function resolvePathForImageId(id: number, kind: ArtKind) {
 
 const FORCE_REFRESH = false;
 
-async function importTmdbData() {
-  console.time('importTmdbData');
+async function importTmdbSeriesData() {
+  console.time('importTmdbSeriesData');
   const json = await readFile('./data/series.json', 'utf-8');
   const data = JSON.parse(json);
 
@@ -297,7 +321,12 @@ async function importTmdbData() {
     );
   }
 
-  console.timeEnd('importTmdbData');
+  console.timeEnd('importTmdbSeriesData');
+}
+
+async function importTmdbMoviesData() {
+  console.time('importTmdbMoviesData');
+  console.timeEnd('importTmdbMoviesData');
 }
 
 const root = process.cwd();
@@ -457,6 +486,11 @@ export default makeSource({
   onSuccess: async (importData) => {
     const { allBlogs } = await importData();
 
-    await Promise.all([createTagCount(allBlogs), createSearchIndex(allBlogs), importTmdbData()]);
+    await Promise.all([
+      createTagCount(allBlogs),
+      createSearchIndex(allBlogs),
+      importTmdbSeriesData(),
+      importTmdbMoviesData(),
+    ]);
   },
 });
