@@ -201,7 +201,7 @@ export function ListLayoutBase({
                         </div>
                       </div>
                     </Link>
-                    <div className="flex flex-row flex-wrap gap-1">
+                    <div className="flex flex-row flex-wrap gap-1 pb-2">
                       {tags.map((tag) => (
                         <Tag key={tag} text={tag} />
                       ))}
