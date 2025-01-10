@@ -1,9 +1,7 @@
 import 'css/tailwind.css';
-// import 'pliny/search/algolia.css';
 import 'remark-github-blockquote-alert/alert.css';
 
 import { Space_Grotesk } from 'next/font/google';
-import { Analytics } from 'pliny/analytics';
 import { SearchProvider } from 'pliny/search';
 import Header from '@/components/Header';
 import SectionContainer from '@/components/SectionContainer';
@@ -91,7 +89,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <link rel="alternate" type="application/rss+xml" href={`${basePath}/feed.xml`} />
       <body className="bg-white p-0.5 pl-[calc(100vw-100%)] text-black antialiased dark:bg-gray-950 dark:text-white">
         <ThemeProviders>
-          {siteMetadata.analytics ? <Analytics analyticsConfig={siteMetadata.analytics} /> : null}
           <SectionContainer as="div">
             <div className="flex h-screen flex-col justify-between font-sans">
               {siteMetadata.search ? (

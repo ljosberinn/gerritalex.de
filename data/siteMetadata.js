@@ -9,7 +9,7 @@ const siteMetadata = {
   // image: '/static/images/twitter-card.png',
   occupation: 'Software Engineer',
   company: 'Archon.gg',
-  headerTitle: 'Xeph',
+  headerTitle: 'Xepheris',
   location: 'Munich, Germany',
   language: 'en-us',
   theme: 'system', // system, dark or light
