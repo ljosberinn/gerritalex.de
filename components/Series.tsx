@@ -239,7 +239,7 @@ export function Series({ data }: SeriesProps) {
                 className={classString}
                 loading="lazy"
                 quality={75}
-                src={`/static/images/series/${series.id}-cover.jpg`}
+                src={`/static/images/tv/${series.id}-cover.jpg`}
               />
             );
 
@@ -266,7 +266,7 @@ export function Series({ data }: SeriesProps) {
                         className={classString + ' grayscale'}
                         loading="lazy"
                         quality={75}
-                        src={`/static/images/series/${series.id}-cover.jpg`}
+                        src={`/static/images/tv/${series.id}-cover.jpg`}
                       />
                     </div>
                     <div>{mainImage}</div>

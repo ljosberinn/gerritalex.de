@@ -24,8 +24,10 @@ import rehypePresetMinify from 'rehype-preset-minify';
 import siteMetadata from './data/siteMetadata';
 import { allCoreContent, MDXDocumentDate, sortPosts } from 'pliny/utils/contentlayer.js';
 import { createWriteStream } from 'fs';
-import { readFile, stat, writeFile } from 'fs/promises';
+import { stat, writeFile } from 'fs/promises';
 import { resolve as resolvePath } from 'path';
+import series from './series.json' with { type: 'json' };
+import movies from './movies.json' with { type: 'json' };
 
 const options = {
   method: 'GET',
@@ -36,6 +38,7 @@ const options = {
 };
 
 async function doFetch<T>(url: string): Promise<T | null> {
+  console.time(url);
   try {
     const response = await fetch(url, options);
     const data = await response.json();
@@ -43,6 +46,8 @@ async function doFetch<T>(url: string): Promise<T | null> {
   } catch (error) {
     console.error(error);
     return null;
+  } finally {
+    console.timeEnd(url);
   }
 }
 
@@ -86,21 +91,63 @@ type PaginatedMovieResults = PaginatedResult<{
   vote_count: number;
 }>;
 
-async function findTmdbSeriesByName(name: string): Promise<PaginatedShowResults | null> {
-  return doFetch(
-    `https://api.themoviedb.org/3/search/tv?query=${name.toLowerCase()}&include_adult=false&language=en-US&page=1`
+type Nullable<T> = T | null;
+
+async function findTmdbEntryByName<Kind extends 'movie' | 'tv'>(
+  name: string,
+  kind: Kind
+): Promise<Nullable<Kind extends 'movie' ? PaginatedMovieResults : PaginatedShowResults>> {
+  return doFetch<Nullable<Kind extends 'movie' ? PaginatedMovieResults : PaginatedShowResults>>(
+    `https://api.themoviedb.org/3/search/${kind}?query=${name.toLowerCase()}&include_adult=false&language=en-US&page=1`
   );
 }
 
-async function findTmdbMovieByName(name: string): Promise<PaginatedMovieResults | null> {
-  return doFetch(
-    `https://api.themoviedb.org/3/search/movie?query=${name.toLowerCase()}&include_adult=false&language=en-US&page=1`
+async function getTmdbEntryById<Kind extends 'movie' | 'tv'>(
+  id: number,
+  kind: Kind
+): Promise<Nullable<Kind extends 'movie' ? Movie : Series>> {
+  return doFetch<Nullable<Kind extends 'movie' ? Movie : Series>>(
+    `https://api.themoviedb.org/3/${kind}/${id}?language=en-US`
   );
 }
 
-type Series = {
+type TmdbApiResponseShared = {
   adult: boolean;
   backdrop_path: string;
+  popularity: number;
+  poster_path: string | null;
+  production_companies: {
+    id: number;
+    logo_path: string | null;
+    name: string;
+    origin_country: string;
+  }[];
+  production_countries: {
+    iso_3166_1: string;
+    name: string;
+  }[];
+  genres: {
+    id: number;
+    name: string;
+  }[];
+  id: number;
+  original_language: string;
+  original_name: string;
+  overview: string;
+  spoken_languages: {
+    english_name: string;
+    iso_639_1: string;
+    name: string;
+  }[];
+  status: string;
+  tagline: string;
+  vote_average: number;
+  vote_count: number;
+  origin_country: string[];
+  homepage: string;
+};
+
+type Series = TmdbApiResponseShared & {
   created_by: {
     id: number;
     credit_id: string;
@@ -111,12 +158,6 @@ type Series = {
   }[];
   episode_run_time: number[];
   first_air_date: string;
-  genres: {
-    id: number;
-    name: string;
-  }[];
-  homepage: string;
-  id: number;
   in_production: boolean;
   languages: string[];
   last_air_date: string;
@@ -145,22 +186,6 @@ type Series = {
   }[];
   number_of_episodes: number;
   number_of_seasons: number;
-  origin_country: string[];
-  original_language: string;
-  original_name: string;
-  overview: string;
-  popularity: number;
-  poster_path: string | null;
-  production_companies: {
-    id: number;
-    logo_path: string | null;
-    name: string;
-    origin_country: string;
-  }[];
-  production_countries: {
-    iso_3166_1: string;
-    name: string;
-  }[];
   seasons: {
     air_date: string;
     episode_count: number;
@@ -171,50 +196,70 @@ type Series = {
     season_number: number;
     vote_average: number;
   }[];
-  spoken_languages: {
-    english_name: string;
-    iso_639_1: string;
-    name: string;
-  }[];
-  status: string;
-  tagline: string;
+
   type: string;
-  vote_average: number;
-  vote_count: number;
 };
 
-async function getTmdbSeriesById(id: number): Promise<Series | null> {
-  return doFetch(`https://api.themoviedb.org/3/tv/${id}?language=en-US`);
-}
+type Movie = TmdbApiResponseShared & {
+  imdb_id: string;
+  budget: number;
+  revenue: number;
+  runtime: number;
+  video: boolean;
+  release_date: string;
+};
 
-type Movie = {};
-
-async function getTmdbMovieById(id: number): Promise<Movie | null> {
-  return doFetch(`https://api.themoviedb.org/3/tv/${id}?language=en-US`);
-}
-
-type ArtKind = 'cover' | 'backdrop';
-
-function resolvePathForImageId(id: number, kind: ArtKind) {
-  return resolvePath('./public/static/images/series', `${id}-${kind}.jpg`);
+function resolvePathForImageId(id: number) {
+  return resolvePath('./public/static/images/tv', `${id}-cover.jpg`);
 }
 
 const FORCE_REFRESH = false;
 
+async function downloadImages(images: Array<{ id: number; cover: string; backdrop: string }>) {
+  await Promise.all(
+    images.map((image) => {
+      // eslint-disable-next-line no-async-promise-executor
+      return new Promise(async (resolve, reject) => {
+        const url = `https://image.tmdb.org/t/p/w220_and_h330_face${image.cover}`;
+        const response = await fetch(url);
+
+        if (response.ok) {
+          const stream = createWriteStream(resolvePathForImageId(image.id));
+
+          stream.on('finish', resolve);
+          stream.on('close', reject);
+          stream.on('error', reject);
+
+          response.body?.pipeTo(
+            new WritableStream({
+              write(chunk) {
+                stream.write(chunk);
+              },
+              close() {
+                stream.end();
+              },
+            })
+          );
+        } else {
+          reject(`Response for ${image.id} was not ok, fetching cover [${response.status}]`);
+        }
+      });
+    })
+  );
+}
+
 async function importTmdbSeriesData() {
   console.time('importTmdbSeriesData');
-  const json = await readFile('./data/series.json', 'utf-8');
-  const data = JSON.parse(json);
 
   const newImages: Array<{ id: number; cover: string; backdrop: string }> = [];
 
-  for await (const dataset of data) {
+  for await (const dataset of series) {
     if (dataset.metadata !== null) {
       continue;
     }
 
     if (dataset.id === null) {
-      const result = await findTmdbSeriesByName(dataset.title);
+      const result = await findTmdbEntryByName(dataset.title, 'tv');
 
       if (result === null || result.results.length === 0) {
         continue;
@@ -223,7 +268,7 @@ async function importTmdbSeriesData() {
       dataset.id = result.results[0].id;
     }
 
-    const path = resolvePathForImageId(dataset.id, 'cover');
+    const path = resolvePathForImageId(dataset.id);
 
     try {
       await stat(path);
@@ -232,7 +277,7 @@ async function importTmdbSeriesData() {
         throw new Error('Refreshing anyway.');
       }
     } catch {
-      const result = await getTmdbSeriesById(dataset.id);
+      const result = await getTmdbEntryById(dataset.id, 'tv');
 
       if (result === null) {
         continue;
@@ -278,43 +323,12 @@ async function importTmdbSeriesData() {
   }
 
   if (newImages.length > 0) {
-    await Promise.all(
-      ['cover', 'backdrop'].flatMap((kind: ArtKind) => {
-        return newImages.map((image) => {
-          // eslint-disable-next-line no-async-promise-executor
-          return new Promise(async (resolve, reject) => {
-            const url = `https://image.tmdb.org/t/p/w220_and_h330_face${image[kind]}`;
-            const response = await fetch(url);
-
-            if (response.ok) {
-              const stream = createWriteStream(resolvePathForImageId(image.id, kind));
-
-              stream.on('finish', resolve);
-              stream.on('close', reject);
-              stream.on('error', reject);
-
-              response.body?.pipeTo(
-                new WritableStream({
-                  write(chunk) {
-                    stream.write(chunk);
-                  },
-                  close() {
-                    stream.end();
-                  },
-                })
-              );
-            } else {
-              reject(`Response for ${image.id} was not ok, fetching ${kind} [${response.status}]`);
-            }
-          });
-        });
-      })
-    );
+    await downloadImages(newImages);
 
     await writeFile(
-      './data/series.json',
+      './series.json',
       JSON.stringify(
-        data.sort((a, b) => a.title.localeCompare(b.title)),
+        series.sort((a, b) => a.title.localeCompare(b.title)),
         null,
         2
       )
@@ -326,6 +340,83 @@ async function importTmdbSeriesData() {
 
 async function importTmdbMoviesData() {
   console.time('importTmdbMoviesData');
+
+  const newImages: Array<{ id: number; cover: string; backdrop: string }> = [];
+
+  for await (const dataset of movies) {
+    if (dataset.metadata !== null) {
+      continue;
+    }
+
+    if (dataset.id === null) {
+      const result = await findTmdbEntryByName(dataset.title, 'movie');
+
+      if (result === null || result.results.length === 0) {
+        continue;
+      }
+
+      dataset.id = result.results[0].id;
+    }
+
+    const path = resolvePathForImageId(dataset.id);
+
+    try {
+      await stat(path);
+
+      if (FORCE_REFRESH) {
+        throw new Error('Refreshing anyway.');
+      }
+    } catch {
+      const result = await getTmdbEntryById(dataset.id, 'movie');
+
+      if (result === null) {
+        continue;
+      }
+
+      dataset.metadata = {
+        genres: result.genres.map((genre) => genre.name),
+        tagline: result.tagline,
+        release: {
+          day: -1,
+          month: -1,
+          year: -1,
+        },
+        runtime: result.runtime,
+      };
+
+      const [year, month, day] = result.release_date.split('-');
+      dataset.metadata.release.day = Number.parseInt(day);
+      dataset.metadata.release.month = Number.parseInt(month);
+      dataset.metadata.release.year = Number.parseInt(year);
+
+      if (result.poster_path === null) {
+        continue;
+      }
+
+      console.log(
+        `[PREBUILD] enqueuing cover download of "${dataset.title}" (https://www.themoviedb.org/tv/${dataset.id})`
+      );
+      newImages.push({
+        id: dataset.id,
+        cover: result.poster_path,
+        backdrop: result.backdrop_path,
+      });
+    }
+  }
+
+  if (newImages.length > 0) {
+    await downloadImages(newImages);
+
+    await writeFile(
+      './movies.json',
+      JSON.stringify(
+        movies.sort((a, b) => a.title.localeCompare(b.title)),
+        null,
+        2
+      )
+    );
+  }
+
   console.timeEnd('importTmdbMoviesData');
 }
 

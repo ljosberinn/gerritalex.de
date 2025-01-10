@@ -1,6 +1,6 @@
 import { Series } from '@/components/Series';
 import { generatePageMetadata } from 'app/seo';
-import data from 'data/series.json';
+import data from '../../series.json';
 
 export const metadata = generatePageMetadata({ title: 'Series' });
 
