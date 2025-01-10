@@ -1,8 +1,8 @@
 import 'css/tailwind.css';
-import 'pliny/search/algolia.css';
+// import 'pliny/search/algolia.css';
 import 'remark-github-blockquote-alert/alert.css';
 
-import { Noto_Sans, Space_Grotesk } from 'next/font/google';
+import { Space_Grotesk } from 'next/font/google';
 import { Analytics } from 'pliny/analytics';
 import { SearchProvider } from 'pliny/search';
 import Header from '@/components/Header';
@@ -16,12 +16,6 @@ const space_grotesk = Space_Grotesk({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-space-grotesk',
-});
-
-const notoSans = Noto_Sans({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-noto-sans',
 });
 
 export const metadata: Metadata = {
@@ -70,7 +64,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang={siteMetadata.language}
-      className={`${notoSans.variable} scroll-smooth`}
+      className={`${space_grotesk.variable} scroll-smooth`}
       suppressHydrationWarning
     >
       <link

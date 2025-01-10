@@ -15,9 +15,6 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
-      screens: {
-        xs: '480px',
-      },
       lineHeight: {
         11: '2.75rem',
         12: '3rem',
@@ -25,10 +22,10 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['var(--font-noto-sans)', ...fontFamily.sans],
+        sans: ['var(--font-space-grotesk)', ...fontFamily.sans],
       },
       colors: {
-        primary: colors.teal,
+        primary: colors.pink,
         gray: colors.gray,
       },
       zIndex: {
@@ -73,52 +70,6 @@ module.exports = {
           },
         },
       }),
-      keyframes: {
-        'flutter-left': {
-          '10%': {
-            transform: 'scale(1, 0.9)',
-          },
-          '20%': {
-            transform: 'scale(0.5, 1)',
-          },
-          '40%': {
-            transform: 'scale(0.9, 0.95)',
-          },
-          '60%': {
-            transform: 'scale(0.3, 1)',
-          },
-          '80%': {
-            transform: 'scale(0.9, 0.95)',
-          },
-          '100%': {
-            transform: 'scale(1, 1)',
-          },
-        },
-        'flutter-right': {
-          '10%': {
-            transform: 'scale(-1, 0.9)',
-          },
-          '20%': {
-            transform: 'scale(-0.5, 1)',
-          },
-          '40%': {
-            transform: 'scale(-0.9, 0.95)',
-          },
-          '60%': {
-            transform: 'scale(-0.3, 1)',
-          },
-          '80%': {
-            transform: 'scale(-0.9, 0.95)',
-          },
-          '100%': {
-            transform: 'scale(-1, 1)',
-          },
-        },
-      },
-      animation: {
-        'flutter-left': 'flutter-left 430ms ease-in-out',
-        'flutter-right': 'flutter-right 500ms ease-in-out',
-      },
     },
   },
   plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],

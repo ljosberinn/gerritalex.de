@@ -5,11 +5,12 @@ import type { AnchorHTMLAttributes } from 'react';
 
 const CustomLink = ({ href, ...rest }: LinkProps & AnchorHTMLAttributes<HTMLAnchorElement>) => {
   const isInternalLink = href && href.startsWith('/');
-  const isAnchorLink = href && href.startsWith('#');
 
   if (isInternalLink) {
     return <Link className="break-words" href={href} {...rest} />;
   }
+
+  const isAnchorLink = href && href.startsWith('#');
 
   if (isAnchorLink) {
     return <a className="break-words" href={href} {...rest} />;
