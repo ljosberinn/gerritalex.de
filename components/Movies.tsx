@@ -143,7 +143,10 @@ export function Movies({ data }: SeriesProps) {
                 Genres
               </th>
               <th className="hidden border-b p-2 pb-3 pl-8 pt-0 text-left font-medium text-slate-400 dark:border-slate-600 dark:text-slate-200 md:table-cell">
-                Last Release
+                Released
+              </th>
+              <th className="hidden border-b p-2 pb-3 pl-8 pt-0 text-left font-medium text-slate-400 dark:border-slate-600 dark:text-slate-200 md:table-cell">
+                Runtime
               </th>
               {filterKind !== 'favorites' ? (
                 <th className="border-b p-2 pb-3 pl-8 pt-0 text-right font-medium text-slate-400 dark:border-slate-600 dark:text-slate-200">
@@ -173,6 +176,9 @@ export function Movies({ data }: SeriesProps) {
                   </td>
                   <td className="hidden border-b border-slate-100 p-2 text-slate-500 dark:border-slate-700 dark:text-slate-400 md:table-cell md:p-2 xl:pl-4">
                     <time dateTime={date}>{date}</time>
+                  </td>
+                  <td className="hidden border-b border-slate-100 p-2 text-right text-slate-500 dark:border-slate-700 dark:text-slate-400 md:table-cell md:p-2 xl:pl-4">
+                    {movie.metadata.runtime}m
                   </td>
                   {filterKind !== 'favorites' ? (
                     <td className="border-b border-slate-100 p-2 text-right text-slate-500 dark:border-slate-700 dark:text-slate-400 md:p-2 xl:pl-4">

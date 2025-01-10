@@ -60,7 +60,7 @@ export default async function MoviesPage() {
 
       <p>
         Pretty exhaustive list of movies I've watched, ever. The most common genres among these{' '}
-        {data.length} series are <b>{readableGenresCombinedWithAnd}</b>. Total runtime amounts to{' '}
+        {data.length} movies are <b>{readableGenresCombinedWithAnd}</b>. Total runtime amounts to{' '}
         <b>{totalRuntime.toFixed(2)}</b> days.
       </p>
 
