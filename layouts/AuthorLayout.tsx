@@ -19,7 +19,7 @@ export default function AuthorLayout({ children, content }: Props) {
           </h1>
         </div>
         <div className="items-start space-y-2">
-          <div className="flex flex-col items-center justify-center space-x-2 pt-8 xs:flex-row xl:flex-col">
+          <div className="xs:flex-row flex flex-col items-center justify-center space-x-2 pt-8 xl:flex-col">
             <div className="text-center">
               <h3 className="pb-2 pt-4 text-2xl font-bold leading-8 tracking-tight">{name}</h3>
               <div className="text-gray-500 dark:text-gray-400">{occupation}</div>

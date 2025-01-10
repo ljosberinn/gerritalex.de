@@ -63,11 +63,11 @@ export function Bluesky(svgProps: SVGProps<SVGSVGElement>) {
       </defs>
       <use
         xlinkHref="#wing"
-        className="origin-center animate-[flutter_430ms_ease-in-out] group-hover:animate-flutter-left group-focus:animate-flutter-left"
+        className="group-hover:animate-flutter-left group-focus:animate-flutter-left origin-center animate-[flutter_430ms_ease-in-out]"
       />
       <use
         xlinkHref="#wing"
-        className="origin-center scale-x-[-1] animate-[flutter_500ms_ease-in-out] group-hover:animate-flutter-right group-focus:animate-flutter-right"
+        className="group-hover:animate-flutter-right group-focus:animate-flutter-right origin-center scale-x-[-1] animate-[flutter_500ms_ease-in-out]"
       />
     </svg>
   );

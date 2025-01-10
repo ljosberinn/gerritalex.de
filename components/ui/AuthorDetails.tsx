@@ -13,7 +13,7 @@ export default function AuthorDetails({
   youtube,
 }) {
   return (
-    <div className="flex flex-col items-center justify-center space-x-2 pt-8 xs:flex-row xl:flex-col">
+    <div className="xs:flex-row flex flex-col items-center justify-center space-x-2 pt-8 xl:flex-col">
       {avatar ? (
         <div className="pr-2 xl:pr-4">
           <Image
