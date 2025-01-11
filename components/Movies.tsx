@@ -192,12 +192,12 @@ export function Movies({ data }: SeriesProps) {
         </table>
       ) : (
         <div className="flex flex-wrap justify-center gap-8 pt-8">
-          {filteredData.map((series) => {
+          {filteredData.map((movie) => {
             const classes = [
               'rounded-md border-2 transition ease-in-out hover:opacity-100 shadow-inner hover:shadow-none',
             ];
 
-            if (series.favorite) {
+            if (movie.favorite) {
               classes.push(
                 'border-yellow-500 hover:border-yellow-600 dark:border-amber-400 hover:dark:border-amber-500'
               );
@@ -211,23 +211,23 @@ export function Movies({ data }: SeriesProps) {
 
             return (
               <a
-                href={`https://www.themoviedb.org/movie/${series.id}`}
+                href={`https://www.themoviedb.org/movie/${movie.id}`}
                 target="_blank"
-                key={series.id}
+                key={movie.id}
                 className="opacity-80 hover:opacity-100"
               >
                 <Image
-                  title={series.title}
-                  alt={series.title}
+                  title={movie.title}
+                  alt={movie.title}
                   width={120}
                   height={180}
                   className={classString}
                   loading="lazy"
                   quality={75}
-                  src={`/static/images/tv/${series.id}-cover.jpg`}
+                  src={`/static/images/tv/${movie.id}-cover.jpg`}
                 />
 
-                <span className="sr-only">{series.metadata.tagline}</span>
+                <span className="sr-only">{movie.metadata.tagline}</span>
               </a>
             );
           })}

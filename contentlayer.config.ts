@@ -209,42 +209,48 @@ type Movie = TmdbApiResponseShared & {
   release_date: string;
 };
 
-function resolvePathForImageId(id: number) {
-  return resolvePath('./public/static/images/tv', `${id}-cover.jpg`);
+type ImageKind = 'cover' | 'backdrop';
+
+function resolvePathForImageId(id: number, kind: ImageKind) {
+  return resolvePath('./public/static/images/tv', `${id}-${kind}.jpg`);
 }
 
 const FORCE_REFRESH = false;
 
 async function downloadImages(images: Array<{ id: number; cover: string; backdrop: string }>) {
+  const imageKinds: ImageKind[] = ['cover', 'backdrop'];
+
   await Promise.all(
-    images.map((image) => {
-      // eslint-disable-next-line no-async-promise-executor
-      return new Promise(async (resolve, reject) => {
-        const url = `https://image.tmdb.org/t/p/w220_and_h330_face${image.cover}`;
-        const response = await fetch(url);
+    imageKinds.flatMap((kind) =>
+      images.map((image) => {
+        // eslint-disable-next-line no-async-promise-executor
+        return new Promise(async (resolve, reject) => {
+          const url = `https://image.tmdb.org/t/p/w220_and_h330_face${image[kind]}`;
+          const response = await fetch(url);
 
-        if (response.ok) {
-          const stream = createWriteStream(resolvePathForImageId(image.id));
+          if (response.ok) {
+            const stream = createWriteStream(resolvePathForImageId(image.id, kind));
 
-          stream.on('finish', resolve);
-          stream.on('close', reject);
-          stream.on('error', reject);
+            stream.on('finish', resolve);
+            stream.on('close', reject);
+            stream.on('error', reject);
 
-          response.body?.pipeTo(
-            new WritableStream({
-              write(chunk) {
-                stream.write(chunk);
-              },
-              close() {
-                stream.end();
-              },
-            })
-          );
-        } else {
-          reject(`Response for ${image.id} was not ok, fetching cover [${response.status}]`);
-        }
-      });
-    })
+            response.body?.pipeTo(
+              new WritableStream({
+                write(chunk) {
+                  stream.write(chunk);
+                },
+                close() {
+                  stream.end();
+                },
+              })
+            );
+          } else {
+            reject(`Response for ${image.id} was not ok, fetching cover [${response.status}]`);
+          }
+        });
+      })
+    )
   );
 }
 
@@ -268,7 +274,7 @@ async function importTmdbSeriesData() {
       dataset.id = result.results[0].id;
     }
 
-    const path = resolvePathForImageId(dataset.id);
+    const path = resolvePathForImageId(dataset.id, 'backdrop');
 
     try {
       await stat(path);
@@ -358,7 +364,7 @@ async function importTmdbMoviesData() {
       dataset.id = result.results[0].id;
     }
 
-    const path = resolvePathForImageId(dataset.id);
+    const path = resolvePathForImageId(dataset.id, 'backdrop');
 
     try {
       await stat(path);
