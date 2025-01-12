@@ -1,4 +1,5 @@
 import Link from '@/components/Link';
+import RestrainedMaxWidth from '@/components/RestrainedMaxWidth';
 import Tag from '@/components/Tag';
 import siteMetadata from '@/data/siteMetadata';
 import { formatDate } from 'pliny/utils/formatDate';
@@ -7,7 +8,7 @@ const MAX_DISPLAY = 5;
 
 export default function Home({ posts }) {
   return (
-    <>
+    <RestrainedMaxWidth>
       <div className="my-6 flex flex-col gap-x-12 xl:mb-12 xl:flex-row">
         <div className="pt-6">
           <h1 className="pb-6 text-3xl font-bold leading-9 tracking-tight text-gray-700 dark:text-gray-300 sm:text-4xl sm:leading-10 md:text-4xl md:leading-14">
@@ -85,6 +86,6 @@ export default function Home({ posts }) {
           </Link>
         </div>
       )}
-    </>
+    </RestrainedMaxWidth>
   );
 }

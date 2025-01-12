@@ -6,7 +6,8 @@ import ThemeSwitch from './ThemeSwitch';
 import SearchButton from './SearchButton';
 
 export default function Header() {
-  let headerClass = 'flex items-center w-full bg-white dark:bg-gray-950 justify-between py-10';
+  let headerClass =
+    'xl:max-w-7xl mx-auto flex items-center w-full bg-white dark:bg-gray-950 justify-between py-10';
 
   if (siteMetadata.stickyNav) {
     headerClass += ' sticky top-0 z-50';

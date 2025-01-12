@@ -7,6 +7,7 @@ import tagData from 'app/tag-data.json';
 import { generatePageMetadata } from 'app/seo';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import RestrainedMaxWidth from '@/components/RestrainedMaxWidth';
 
 export async function generateMetadata(props: {
   params: Promise<{ tag: string }>;
@@ -45,5 +46,9 @@ export default async function TagPage(props: { params: Promise<{ tag: string }> 
   if (filteredPosts.length === 0) {
     return notFound();
   }
-  return <ListLayout posts={filteredPosts} title={title} />;
+  return (
+    <RestrainedMaxWidth>
+      <ListLayout posts={filteredPosts} title={title} />
+    </RestrainedMaxWidth>
+  );
 }
