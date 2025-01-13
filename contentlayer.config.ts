@@ -685,123 +685,130 @@ async function importTmdbMoviesData() {
   console.timeEnd('importTmdbMoviesData');
 }
 
+const discogsEnabled = false;
+
 async function importDiscogsData() {
   console.time('importDiscogsData');
 
-  const newImages: Array<{ id: number; front: string; back: string | null }> = [];
-  let processed = 0;
-  let hasChanges = false;
+  if (discogsEnabled) {
+    const newImages: Array<{ id: number; front: string; back: string | null }> = [];
+    let processed = 0;
+    let hasChanges = false;
 
-  for await (const dataset of music) {
-    if (!dataset.visible) {
-      continue;
-    }
-
-    if (processed == 10) {
-      console.warn('Sleeping for 65s');
-      await new Promise((resolve) => setTimeout(resolve, 65 * 1000));
-      processed = 0;
-    }
-
-    if (!dataset.id) {
-      continue;
-    }
-
-    let mainReleaseData: Nullable<DiscogsReleaseResponse> = null;
-
-    if (dataset.id) {
-      mainReleaseData = await getDiscogsMainReleaseById(dataset.id);
-    } else {
-      const searchResponse = await getDiscogsEntryByArtistAndRelease(dataset.artist, dataset.album);
-
-      if (searchResponse === null) {
+    for await (const dataset of music) {
+      if (!dataset.visible) {
         continue;
       }
 
-      if (searchResponse.results.length === 0) {
-        console.error(`No results for ${dataset.artist} ${dataset.album}`);
+      if (processed == 10) {
+        console.warn('Sleeping for 65s');
+        await new Promise((resolve) => setTimeout(resolve, 65 * 1000));
+        processed = 0;
+      }
+
+      if (!dataset.id) {
         continue;
       }
 
-      const [topResult] = searchResponse.results;
+      let mainReleaseData: Nullable<DiscogsReleaseResponse> = null;
 
-      if (topResult.master_id > 0) {
-        const masterData = await getDiscogsMasterEntryById(searchResponse.results[0].master_id);
+      if (dataset.id) {
+        mainReleaseData = await getDiscogsMainReleaseById(dataset.id);
+      } else {
+        const searchResponse = await getDiscogsEntryByArtistAndRelease(
+          dataset.artist,
+          dataset.album
+        );
 
-        if (!masterData) {
+        if (searchResponse === null) {
           continue;
         }
 
-        mainReleaseData = await getDiscogsMainReleaseById(masterData.main_release);
-      } else {
-        mainReleaseData = await getDiscogsMainReleaseById(topResult.id);
-      }
-    }
+        if (searchResponse.results.length === 0) {
+          console.error(`No results for ${dataset.artist} ${dataset.album}`);
+          continue;
+        }
 
-    if (!mainReleaseData) {
-      continue;
-    }
+        const [topResult] = searchResponse.results;
 
-    const totalRuntimeInSeconds = mainReleaseData.tracklist.reduce((acc, track) => {
-      const [minutes, seconds] = track.duration.split(':');
-      return acc + Number.parseInt(minutes) * 60 + Number.parseInt(seconds);
-    }, 0);
+        if (topResult.master_id > 0) {
+          const masterData = await getDiscogsMasterEntryById(searchResponse.results[0].master_id);
 
-    dataset.id = mainReleaseData.id;
-
-    dataset.metadata = {
-      genres: mainReleaseData.styles,
-      release: {
-        year: mainReleaseData.year,
-      },
-      runtime: totalRuntimeInSeconds,
-    };
-
-    hasChanges = true;
-
-    let frontCover = mainReleaseData.images.find((image) => image.type === 'primary');
-
-    if (!frontCover && mainReleaseData.images.length === 1) {
-      frontCover = mainReleaseData.images[0];
-    }
-
-    if (!frontCover) {
-      console.warn(`No primary image found for ${dataset.artist} - ${dataset.album}`);
-      continue;
-    }
-
-    const backCover = mainReleaseData.images.find((image) => image.type === 'secondary');
-
-    newImages.push({
-      id: mainReleaseData.id,
-      front: frontCover.uri,
-      back: backCover?.uri ?? null,
-    });
-
-    processed += 1;
-  }
-
-  if (newImages.length > 0) {
-    await downloadDiscogsImages(newImages);
-  }
-
-  if (hasChanges) {
-    await writeFile(
-      './music.json',
-      JSON.stringify(
-        music.sort((a, b) => {
-          const byArtist = a.artist.localeCompare(b.artist);
-
-          if (byArtist === 0) {
-            return a.album.localeCompare(b.album);
+          if (!masterData) {
+            continue;
           }
 
-          return byArtist;
-        }),
-        null,
-        2
-      )
-    );
+          mainReleaseData = await getDiscogsMainReleaseById(masterData.main_release);
+        } else {
+          mainReleaseData = await getDiscogsMainReleaseById(topResult.id);
+        }
+      }
+
+      if (!mainReleaseData) {
+        continue;
+      }
+
+      const totalRuntimeInSeconds = mainReleaseData.tracklist.reduce((acc, track) => {
+        const [minutes, seconds] = track.duration.split(':');
+        return acc + Number.parseInt(minutes) * 60 + Number.parseInt(seconds);
+      }, 0);
+
+      dataset.id = mainReleaseData.id;
+
+      dataset.metadata = {
+        genres: mainReleaseData.styles,
+        release: {
+          year: mainReleaseData.year,
+        },
+        runtime: totalRuntimeInSeconds,
+      };
+
+      hasChanges = true;
+
+      let frontCover = mainReleaseData.images.find((image) => image.type === 'primary');
+
+      if (!frontCover && mainReleaseData.images.length === 1) {
+        frontCover = mainReleaseData.images[0];
+      }
+
+      if (!frontCover) {
+        console.warn(`No primary image found for ${dataset.artist} - ${dataset.album}`);
+        continue;
+      }
+
+      const backCover = mainReleaseData.images.find((image) => image.type === 'secondary');
+
+      newImages.push({
+        id: mainReleaseData.id,
+        front: frontCover.uri,
+        back: backCover?.uri ?? null,
+      });
+
+      processed += 1;
+    }
+
+    if (newImages.length > 0) {
+      await downloadDiscogsImages(newImages);
+    }
+
+    if (hasChanges) {
+      await writeFile(
+        './music.json',
+        JSON.stringify(
+          music.sort((a, b) => {
+            const byArtist = a.artist.localeCompare(b.artist);
+
+            if (byArtist === 0) {
+              return a.album.localeCompare(b.album);
+            }
+
+            return byArtist;
+          }),
+          null,
+          2
+        )
+      );
+    }
   }
 
   console.timeEnd('importDiscogsData');
