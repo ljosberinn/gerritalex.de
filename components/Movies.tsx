@@ -57,11 +57,11 @@ const filters: Record<Filter, (data: MoviesType[]) => MoviesType[]> = {
   'year-desc': filterToYearDesc,
 };
 
-type SeriesProps = {
+type MoviesProps = {
   data: MoviesType[];
 };
 
-export function Movies({ data }: SeriesProps) {
+export function Movies({ data }: MoviesProps) {
   const [filterKind, setFilterKind] = useState<Filter>('year-desc');
   const [displayKind, setDisplayKind] = useState<'table' | 'art'>('art');
 

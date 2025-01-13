@@ -28,8 +28,16 @@ import { stat, writeFile } from 'fs/promises';
 import { resolve as resolvePath } from 'path';
 import series from './series.json' with { type: 'json' };
 import movies from './movies.json' with { type: 'json' };
+import music from './music.json' with { type: 'json' };
 
-const options = {
+const discogsOptions: RequestInit = {
+  method: 'GET',
+  headers: {
+    'User-Agent': 'XepherisPersonalWebsite/1.0 +https://gerritalex.de/music',
+  },
+};
+
+const tmdbOptions: RequestInit = {
   method: 'GET',
   headers: {
     accept: 'application/json',
@@ -37,10 +45,14 @@ const options = {
   },
 };
 
-async function doFetch<T>(url: string): Promise<T | null> {
+async function doFetch<T>(url: string, options: RequestInit): Promise<T | null> {
+  url = url.replaceAll(' ', '%20');
   console.time(url);
   try {
     const response = await fetch(url, options);
+    if (!response.ok) {
+      console.log(response.status);
+    }
     const data = await response.json();
     return data;
   } catch (error) {
@@ -98,7 +110,8 @@ async function findTmdbEntryByName<Kind extends 'movie' | 'tv'>(
   kind: Kind
 ): Promise<Nullable<Kind extends 'movie' ? PaginatedMovieResults : PaginatedShowResults>> {
   return doFetch<Nullable<Kind extends 'movie' ? PaginatedMovieResults : PaginatedShowResults>>(
-    `https://api.themoviedb.org/3/search/${kind}?query=${name.toLowerCase()}&include_adult=false&language=en-US&page=1`
+    `https://api.themoviedb.org/3/search/${kind}?query=${name.toLowerCase()}&include_adult=false&language=en-US&page=1`,
+    tmdbOptions
   );
 }
 
@@ -107,11 +120,228 @@ async function getTmdbEntryById<Kind extends 'movie' | 'tv'>(
   kind: Kind
 ): Promise<Nullable<Kind extends 'movie' ? Movie : Series>> {
   return doFetch<Nullable<Kind extends 'movie' ? Movie : Series>>(
-    `https://api.themoviedb.org/3/${kind}/${id}?language=en-US`
+    `https://api.themoviedb.org/3/${kind}/${id}?language=en-US`,
+    tmdbOptions
   );
 }
 
-type TmdbApiResponseShared = {
+type DiscogsSearchResponse = {
+  pagination: {
+    items: number;
+    page: number;
+    pages: number;
+    per_page: number;
+    urls: Record<string, unknown>;
+  };
+  results: Array<{
+    barcode: string[];
+    catno: string;
+    community: {
+      want: number;
+      have: number;
+    };
+    country: string;
+    cover_image: string;
+    format: string[];
+    format_quantity: number;
+    genre: string[];
+    formats: { namme: string; qty: string; text: string; descriptions: string[] };
+    id: number;
+    label: string[];
+    master_id: number;
+    master_url: string;
+    resource_url: string;
+    style: string[];
+    thumb: string;
+    title: string;
+    type: string;
+    uri: string;
+    user_data: {
+      in_wantlist: boolean;
+      in_collection: boolean;
+    };
+    year: string;
+  }>;
+};
+
+type DiscogsMasterResponse = {
+  id: number;
+  main_release: number;
+  most_recent_release: number;
+  resource_url: string;
+  uri: string;
+  versions_url: string;
+  main_release_url: string;
+  most_recent_release_url: string;
+  num_for_sale: number;
+  lowest_price: number;
+  images: [
+    {
+      type: string;
+      uri: string;
+      resource_url: string;
+      uri150: number;
+      width: number;
+      height: number;
+    },
+  ];
+  genres: string[];
+  styles: string[];
+  year: number;
+  tracklist: {
+    position: string;
+    type_: string;
+    title: string;
+    duration: string;
+    extraartists?: {
+      name: string;
+      anv: string;
+      join: string;
+      role: string;
+      tracks: string;
+      id: number;
+      resource_url: string;
+    }[];
+  }[];
+  artists: {
+    name: string;
+    anv: string;
+    join: string;
+    role: string;
+    tracks: string;
+    id: number;
+    resource_url: string;
+  }[];
+  title: string;
+  data_quality: string;
+  videos: {
+    uri: string;
+    title: string;
+    description: null | string;
+    duration: number;
+    embed: boolean;
+  }[];
+};
+
+type DiscogsReleaseResponse = {
+  id: number;
+  status: string;
+  year: number;
+  resource_url: string;
+  uri: string;
+  artists: {
+    name: string;
+    anv: string;
+    join: string;
+    role: string;
+    tracks: string;
+    id: number;
+    resource_url: string;
+    thumbnail_url: string;
+  }[];
+  artists_sort: string;
+  labels: {
+    name: string;
+    catno: string;
+    entity_type: string;
+    entity_type_name: string;
+    id: number;
+    resource_url: string;
+    thumbnail_url: string;
+  }[];
+  series: unknown[];
+  companies: {
+    name: string;
+    catno: string;
+    entity_type: string;
+    entity_type_name: string;
+    id: number;
+    resource_url: string;
+    thumbnail_url: string;
+  }[];
+  formats: { namme: string; qty: string; text: string; descriptions: string[] }[];
+  data_quality: string;
+  community: {
+    have: number;
+    want: number;
+    rating: {
+      count: number;
+      average: number;
+    };
+    submitter: {
+      username: string;
+      resource_url: string;
+    };
+    contributors: { username: string; resource_url: string }[];
+    data_quality: string;
+    status: string;
+  };
+  format_quantity: number;
+  date_added: string;
+  date_changed: string;
+  num_for_sale: number;
+  lowest_price: number;
+  master_id: number;
+  master_url: string;
+  title: string;
+  country: string;
+  released: string;
+  notes: string;
+  released_formatted: string;
+  identifiers: { type: string; value: string; description?: string }[];
+  videos: { uri: string; title: string; description: string; embed: boolean }[];
+  genres: string[];
+  styles: string[];
+  tracklist: {
+    position: string;
+    type_: string;
+    title: string;
+    duration: string;
+  }[];
+  extraartists: {
+    name: string;
+    anv: string;
+    join: string;
+    role: string;
+    tracks: string;
+    id: number;
+    resource_url: string;
+  }[];
+  images: {
+    type: string;
+    uri: string;
+    resource_url: string;
+    uri150: string;
+    width: number;
+    height: number;
+  }[];
+  thumb: string;
+  estimated_weight: number;
+  blocked_from_sale: boolean;
+};
+
+async function getDiscogsEntryByArtistAndRelease(artist: string, album: string) {
+  return doFetch<Nullable<DiscogsSearchResponse>>(
+    `https://api.discogs.com/database/search?q=${artist}%20${album}&type=release&token=${process.env.DISCOGS_API_KEY}`,
+    discogsOptions
+  );
+}
+
+async function getDiscogsMasterEntryById(id: number) {
+  return doFetch<Nullable<DiscogsMasterResponse>>(
+    `https://api.discogs.com/masters/${id}?token=${process.env.DISCOGS_API_KEY}`,
+    discogsOptions
+  );
+}
+
+async function getDiscogsMainReleaseById(id: number) {
+  return doFetch<Nullable<DiscogsReleaseResponse>>(
+    `https://api.discogs.com/releases/${id}?token=${process.env.DISCOGS_API_KEY}`,
+    discogsOptions
+  );
+}
+
+type TmdbApiSharedResponseFields = {
   adult: boolean;
   backdrop_path: string;
   popularity: number;
@@ -147,7 +377,7 @@ type TmdbApiResponseShared = {
   homepage: string;
 };
 
-type Series = TmdbApiResponseShared & {
+type Series = TmdbApiSharedResponseFields & {
   created_by: {
     id: number;
     credit_id: string;
@@ -200,7 +430,7 @@ type Series = TmdbApiResponseShared & {
   type: string;
 };
 
-type Movie = TmdbApiResponseShared & {
+type Movie = TmdbApiSharedResponseFields & {
   imdb_id: string;
   budget: number;
   revenue: number;
@@ -210,45 +440,77 @@ type Movie = TmdbApiResponseShared & {
 };
 
 type ImageKind = 'cover' | 'backdrop';
+type DiscogsImageKind = 'front' | 'back';
 
-function resolvePathForImageId(id: number, kind: ImageKind) {
+function resolvePathForTmdbImage(id: number, kind: ImageKind) {
   return resolvePath('./public/static/images/tv', `${id}-${kind}.jpg`);
+}
+
+function resolvePathForDiscogsImage(id: number, kind: DiscogsImageKind) {
+  return resolvePath('./public/static/images/music', `${id}-${kind}.jpg`);
 }
 
 const FORCE_REFRESH = false;
 
-async function downloadImages(images: Array<{ id: number; cover: string; backdrop: string }>) {
+async function downloadAndStoreImage(url: string, storagePath: string): Promise<void> {
+  // eslint-disable-next-line no-async-promise-executor
+  return new Promise(async (resolve, reject) => {
+    const response = await fetch(url);
+
+    if (response.ok) {
+      const stream = createWriteStream(storagePath);
+
+      stream.on('finish', resolve);
+      stream.on('close', reject);
+      stream.on('error', reject);
+
+      response.body?.pipeTo(
+        new WritableStream({
+          write(chunk) {
+            stream.write(chunk);
+          },
+          close() {
+            stream.end();
+          },
+        })
+      );
+    } else {
+      reject(`Response for ${url} was not ok [${response.status}]`);
+    }
+  });
+}
+
+async function downloadDiscogsImages(
+  images: Array<{ id: number; front: string; back: string | null }>
+): Promise<void> {
+  const imageKinds: DiscogsImageKind[] = ['front', 'back'];
+
+  await Promise.all(
+    imageKinds.flatMap((kind) =>
+      images.map((image) => {
+        const url = image[kind];
+        if (!url) {
+          return Promise.resolve();
+        }
+
+        return downloadAndStoreImage(url, resolvePathForDiscogsImage(image.id, kind));
+      })
+    )
+  );
+}
+
+async function downloadTmdbImages(
+  images: Array<{ id: number; cover: string; backdrop: string | null }>
+) {
   const imageKinds: ImageKind[] = ['cover', 'backdrop'];
 
   await Promise.all(
     imageKinds.flatMap((kind) =>
       images.map((image) => {
-        // eslint-disable-next-line no-async-promise-executor
-        return new Promise(async (resolve, reject) => {
-          const url = `https://image.tmdb.org/t/p/w220_and_h330_face${image[kind]}`;
-          const response = await fetch(url);
-
-          if (response.ok) {
-            const stream = createWriteStream(resolvePathForImageId(image.id, kind));
-
-            stream.on('finish', resolve);
-            stream.on('close', reject);
-            stream.on('error', reject);
-
-            response.body?.pipeTo(
-              new WritableStream({
-                write(chunk) {
-                  stream.write(chunk);
-                },
-                close() {
-                  stream.end();
-                },
-              })
-            );
-          } else {
-            reject(`Response for ${image.id} was not ok, fetching cover [${response.status}]`);
-          }
-        });
+        return downloadAndStoreImage(
+          `https://image.tmdb.org/t/p/w220_and_h330_face${image[kind]}`,
+          resolvePathForTmdbImage(image.id, kind)
+        );
       })
     )
   );
@@ -274,7 +536,7 @@ async function importTmdbSeriesData() {
       dataset.id = result.results[0].id;
     }
 
-    const path = resolvePathForImageId(dataset.id, 'backdrop');
+    const path = resolvePathForTmdbImage(dataset.id, 'backdrop');
 
     try {
       await stat(path);
@@ -317,9 +579,6 @@ async function importTmdbSeriesData() {
         continue;
       }
 
-      console.log(
-        `[PREBUILD] enqueuing cover download of "${dataset.title}" (https://www.themoviedb.org/tv/${dataset.id})`
-      );
       newImages.push({
         id: dataset.id,
         cover: result.poster_path,
@@ -329,7 +588,7 @@ async function importTmdbSeriesData() {
   }
 
   if (newImages.length > 0) {
-    await downloadImages(newImages);
+    await downloadTmdbImages(newImages);
 
     await writeFile(
       './series.json',
@@ -364,7 +623,7 @@ async function importTmdbMoviesData() {
       dataset.id = result.results[0].id;
     }
 
-    const path = resolvePathForImageId(dataset.id, 'backdrop');
+    const path = resolvePathForTmdbImage(dataset.id, 'backdrop');
 
     try {
       await stat(path);
@@ -400,7 +659,7 @@ async function importTmdbMoviesData() {
       }
 
       console.log(
-        `[PREBUILD] enqueuing cover download of "${dataset.title}" (https://www.themoviedb.org/tv/${dataset.id})`
+        `enqueuing cover download of "${dataset.title}" (https://www.themoviedb.org/tv/${dataset.id})`
       );
       newImages.push({
         id: dataset.id,
@@ -411,7 +670,7 @@ async function importTmdbMoviesData() {
   }
 
   if (newImages.length > 0) {
-    await downloadImages(newImages);
+    await downloadTmdbImages(newImages);
 
     await writeFile(
       './movies.json',
@@ -424,6 +683,134 @@ async function importTmdbMoviesData() {
   }
 
   console.timeEnd('importTmdbMoviesData');
+}
+
+const forceLoadIds = new Set([5505395]);
+
+async function importDiscogsData() {
+  console.time('importDiscogsData');
+
+  const newImages: Array<{ id: number; front: string; back: string | null }> = [];
+  let processed = 0;
+  let hasChanges = false;
+
+  for await (const dataset of music) {
+    if (!dataset.visible) {
+      continue;
+    }
+
+    if (processed == 10) {
+      console.warn('Sleeping for 65s');
+      await new Promise((resolve) => setTimeout(resolve, 65 * 1000));
+      processed = 0;
+    }
+
+    if (dataset.id && !forceLoadIds.has(dataset.id)) {
+      continue;
+    }
+
+    if (!dataset.id) {
+      continue;
+    }
+
+    let mainReleaseData: Nullable<DiscogsReleaseResponse> = null;
+
+    if (dataset.id) {
+      mainReleaseData = await getDiscogsMainReleaseById(dataset.id);
+    } else {
+      const searchResponse = await getDiscogsEntryByArtistAndRelease(dataset.artist, dataset.album);
+
+      if (searchResponse === null) {
+        continue;
+      }
+
+      if (searchResponse.results.length === 0) {
+        console.error(`No results for ${dataset.artist} ${dataset.album}`);
+        continue;
+      }
+
+      const [topResult] = searchResponse.results;
+
+      if (topResult.master_id > 0) {
+        const masterData = await getDiscogsMasterEntryById(searchResponse.results[0].master_id);
+
+        if (!masterData) {
+          continue;
+        }
+
+        mainReleaseData = await getDiscogsMainReleaseById(masterData.main_release);
+      } else {
+        mainReleaseData = await getDiscogsMainReleaseById(topResult.id);
+      }
+    }
+
+    if (!mainReleaseData) {
+      continue;
+    }
+
+    const totalRuntimeInSeconds = mainReleaseData.tracklist.reduce((acc, track) => {
+      const [minutes, seconds] = track.duration.split(':');
+      return acc + Number.parseInt(minutes) * 60 + Number.parseInt(seconds);
+    }, 0);
+
+    dataset.id = mainReleaseData.id;
+
+    dataset.metadata = {
+      genres: mainReleaseData.styles,
+      release: {
+        year: mainReleaseData.year,
+      },
+      runtime: totalRuntimeInSeconds,
+    };
+
+    hasChanges = true;
+
+    let frontCover = mainReleaseData.images.find((image) => image.type === 'primary');
+
+    if (!frontCover && mainReleaseData.images.length === 1) {
+      frontCover = mainReleaseData.images[0];
+    }
+
+    if (!frontCover) {
+      console.warn(`No primary image found for ${dataset.artist} - ${dataset.album}`);
+      continue;
+    }
+
+    const backCover = mainReleaseData.images.find((image) => image.type === 'secondary');
+
+    newImages.push({
+      id: mainReleaseData.id,
+      front: frontCover.uri,
+      back: backCover?.uri ?? null,
+    });
+
+    processed += 1;
+  }
+
+  if (newImages.length > 0) {
+    await downloadDiscogsImages(newImages);
+  }
+
+  if (hasChanges) {
+    await writeFile(
+      './music.json',
+      JSON.stringify(
+        music.sort((a, b) => {
+          const byArtist = a.artist.localeCompare(b.artist);
+
+          if (byArtist === 0) {
+            return a.album.localeCompare(b.album);
+          }
+
+          return byArtist;
+        }),
+        null,
+        2
+      )
+    );
+  }
+
+  console.timeEnd('importDiscogsData');
 }
 
 const root = process.cwd();
@@ -588,6 +975,7 @@ export default makeSource({
       createSearchIndex(allBlogs),
       importTmdbSeriesData(),
       importTmdbMoviesData(),
+      importDiscogsData(),
     ]);
   },
 });
