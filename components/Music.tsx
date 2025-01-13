@@ -12,10 +12,6 @@ export function Music({ data }: MusicProps) {
     <>
       <div className="flex flex-wrap justify-center gap-8 pt-8">
         {data.map((album) => {
-          if (!album.visible) {
-            return null;
-          }
-
           return (
             <a
               href={
