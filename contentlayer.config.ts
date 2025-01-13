@@ -685,8 +685,6 @@ async function importTmdbMoviesData() {
   console.timeEnd('importTmdbMoviesData');
 }
 
-const forceLoadIds = new Set([5505395]);
-
 async function importDiscogsData() {
   console.time('importDiscogsData');
 
@@ -703,10 +701,6 @@ async function importDiscogsData() {
       console.warn('Sleeping for 65s');
       await new Promise((resolve) => setTimeout(resolve, 65 * 1000));
       processed = 0;
-    }
-
-    if (dataset.id && !forceLoadIds.has(dataset.id)) {
-      continue;
     }
 
     if (!dataset.id) {
