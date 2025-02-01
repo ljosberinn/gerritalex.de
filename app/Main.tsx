@@ -6,17 +6,82 @@ import { formatDate } from 'pliny/utils/formatDate';
 
 const MAX_DISPLAY = 5;
 
+function RandomLyrics() {
+  const lyrics = [
+    {
+      lines: [
+        'On the other side, I have survived',
+        "Didn't think it'd be",
+        "The hardest path I've ever walked",
+        'Alive again... alive as me',
+      ],
+      source: 'Nachtmystium - On The Other Side',
+      link: 'https://www.youtube.com/watch?v=JIcxAbkHElI',
+    },
+    {
+      lines: [
+        'So go and kneel and wait',
+        'And join the herd',
+        'You know a million sheep',
+        'Will be dispersed',
+        "By one lion's roar",
+      ],
+      source: "Rome - One Lion's Roar",
+      link: 'https://www.youtube.com/watch?v=eKafdEM3z5I',
+    },
+    {
+      lines: [
+        "Remember you're unique",
+        'Just like anybody else',
+        "So don't grow wishbones",
+        'Where the backbone ought to be',
+        'Before all else be armed',
+      ],
+      source: 'Rome - Der Wolfsmantel',
+      link: 'https://www.youtube.com/watch?v=O2crwL7yw5c',
+    },
+    {
+      lines: [
+        'You can find the answer',
+        'The solution lies within the problem',
+        'The answer is in every question',
+        'Dig it?',
+        'An attitude is all you need to rise and walk away',
+        'Inspire yourself',
+        'Your life is yours',
+        'It fits you like your skin',
+      ],
+      source: 'Funkadelic - Good Thoughts, Bad Thoughts',
+      link: 'https://www.youtube.com/watch?v=UGGVy4RkUs0',
+    },
+  ];
+
+  // pick a random entry from the lyrics array
+  const randomIndex = Math.floor(Math.random() * lyrics.length);
+  const randomLyrics = lyrics[randomIndex];
+
+  return (
+    <>
+      {randomLyrics.lines.map((line, index) => (
+        <span key={index} className="block italic">
+          {line}
+        </span>
+      ))}
+      <br />
+      <a href={randomLyrics.link}>{randomLyrics.source}</a>
+    </>
+  );
+}
+
 export default function Home({ posts }) {
   return (
     <RestrainedMaxWidth>
-      <div className="my-6 flex flex-col gap-x-12 xl:mb-12 xl:flex-row">
-        <div className="pt-6">
-          <h1 className="pb-6 text-3xl font-bold leading-9 tracking-tight text-gray-700 dark:text-gray-300 sm:text-4xl sm:leading-10 md:text-4xl md:leading-14">
-            Hi, I'm Xeph!
-          </h1>
-          <h2 className="w-3/4 text-lg text-gray-600 dark:text-gray-300">
-            Just a bunch of things I kept thinking about and felt worth sharing.
-          </h2>
+      <div className="pt-6">
+        <h1 className="pb-6 text-3xl font-bold leading-9 tracking-tight text-gray-700 dark:text-gray-300 sm:text-4xl sm:leading-10 md:text-4xl md:leading-14">
+          Hi, I'm Xeph!
+        </h1>
+        <div className="text-right text-lg text-gray-600 dark:text-gray-300">
+          <RandomLyrics />
         </div>
       </div>
       <div className="divide-y divide-gray-300 dark:divide-gray-700">
