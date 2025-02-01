@@ -1,0 +1,99 @@
+---
+title: WeakAura patterns
+date: '2025-02-02'
+tags: ['lua', 'wow']
+draft: false
+summary: 'WeakAuras patterns I often use'
+authors: ['default']
+---
+
+Some of the patterns I use in or for my [WeakAuras](https://weakauras.wtf/). This will grow over time.
+
+# Queueing & Custom Events
+
+It's technically a basic pattern once you've dabbled with WeakAuras and custom code in general but absolutely worth documennting.
+
+You may find yourself in a situation where:
+
+- you need to listen to loads of events, but updating on every single of them is unperformant
+- you need to listen to an unknown amount of events and you don't know when the last one occurs within a window
+
+It's advisable to enqueue a custom event with your possibly aggregated data and then react to said event in a separate branch.
+
+This would be a TSU trigger:
+
+```lua
+function (states, event, ...)
+  if states == "COMBAT_LOG_EVENT_UNFILTERED" then -- for the sake of a high-frequency example
+    -- do evil
+    if matchesCriteria or aggregatedData then -- whatever your criteria are
+      aura_env.queue()
+    end
+
+    return false -- important to prevent these events from updating the aura
+  end
+
+  if event == aura_env.customEventName then
+    local id = ...
+
+    if id ~= aura_env.id then -- make sure the event is actually from us
+      return false
+    end
+
+    -- perform state update based on either the payload from the custom event or aggregated data
+    return true
+  end
+
+  return false -- ignore STATUS, OPTIONS etc.
+end
+```
+
+and in `aura_env`:
+
+```lua
+aura_env.customEventName = "SOMETHING_DEFINITELY_UNIQUE"
+aura_env.timer = nil
+
+function aura_env.queue()
+    if aura_env.timer then
+		if not aura_env.timer:IsCancelled() then
+			aura_env.timer:Cancel()
+		end
+
+		aura_env.timer = nil
+	end
+
+	aura_env.timer = C_Timer.NewTimer(3, function() -- 3 is seconds here, whatever you need
+		WeakAuras.ScanEvents(aura_env.customEventName, aura_env.id)
+	end)
+end
+```
+
+Don't forget to include the custom event name in your events to trigger from!
+
+# Write your code in some editor
+
+Seriously. The amount of badly indented custom WA code out there that _clearly_ wasn't written in an editor without formatting, autocompletion etc. is mind-boggling.
+
+I understand there's obviously a gap both in expectation and experience between professional developers and hobbyists but in my opinion, especially as hobbyist the gains are even larger.
+
+Some tooling I use:
+
+- [VS Code](https://code.visualstudio.com/) is obviously a good and easy choice for this
+  - use the [Lua](https://marketplace.visualstudio.com/items?itemName=sumneko.lua) extension
+  - as well as [StyLua](https://marketplace.visualstudio.com/items?itemName=JohnnyMorganz.stylua) for formatting
+  - naturally [WoW API](https://marketplace.visualstudio.com/items?itemName=ketho.wow-api) for autocompletion where possible
+
+You'll avoid:
+
+- accidental shadowing
+- accidental global variables
+- headaches from limited editing options ingame
+  - no shade to the WA team, but editing quality is naturally better in an environment made for it. WoW is not that environment!
+
+You'll gain:
+
+- general quality of life you gain from using a tool that's made for it
+- versioning if you wanna use git
+- an actual file system that you can search and copy from
+- types, if you're into that (please be)
