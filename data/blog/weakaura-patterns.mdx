@@ -24,7 +24,7 @@ This would be a TSU trigger:
 
 ```lua
 function (states, event, ...)
-  if states == "COMBAT_LOG_EVENT_UNFILTERED" then -- for the sake of a high-frequency example
+  if event == "COMBAT_LOG_EVENT_UNFILTERED" then -- for the sake of a high-frequency example
     -- do evil
     if matchesCriteria or aggregatedData then -- whatever your criteria are
       aura_env.queue()
@@ -55,7 +55,7 @@ aura_env.customEventName = "SOMETHING_DEFINITELY_UNIQUE"
 aura_env.timer = nil
 
 function aura_env.queue()
-    if aura_env.timer then
+  if aura_env.timer then
 		if not aura_env.timer:IsCancelled() then
 			aura_env.timer:Cancel()
 		end
