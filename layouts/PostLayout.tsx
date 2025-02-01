@@ -9,7 +9,7 @@ import Tag from '@/components/Tag';
 import siteMetadata from '@/data/siteMetadata';
 import ScrollTopAndComment from '@/components/ScrollTopAndComment';
 
-const editUrl = (path: string) => `${siteMetadata.siteRepo}/blob/main/data/${path}`;
+const editUrl = (path: string) => `${siteMetadata.siteRepo}/blob/master/data/${path}`;
 
 const postDateTemplate: Intl.DateTimeFormatOptions = {
   weekday: 'long',
