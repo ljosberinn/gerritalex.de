@@ -1652,6 +1652,24 @@
     "favorite": false
   },
   {
+    "title": "Gandhi",
+    "id": 783,
+    "metadata": {
+      "genres": [
+        "Drama",
+        "History"
+      ],
+      "tagline": "His triumph changed the world forever.",
+      "release": {
+        "day": 1,
+        "month": 12,
+        "year": 1982
+      },
+      "runtime": 191
+    },
+    "favorite": false
+  },
+  {
     "title": "Gattaca",
     "id": 782,
     "metadata": {

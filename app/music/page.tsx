@@ -47,14 +47,14 @@ export default async function MusicPage() {
     .join(' ');
 
   return (
-    <section>
+    <section className="px-2">
       <h1 className="pb-6 text-3xl font-bold leading-9 tracking-tight text-gray-700 dark:text-gray-300 sm:text-4xl sm:leading-10 md:text-4xl md:leading-14">
         Music
       </h1>
 
       <p>
-        The most common genres among these {filteredData.length} albums are{' '}
-        <b>{readableGenresCombinedWithAnd}</b>.
+        Albums I own either on LP or CD. The most common genres among these {filteredData.length}{' '}
+        albums are <b>{readableGenresCombinedWithAnd}</b>.
       </p>
 
       <Music data={filteredData} />

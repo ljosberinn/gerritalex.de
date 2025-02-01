@@ -17,7 +17,7 @@ export default function Home({ posts }) {
 
         <RandomLyrics />
 
-        <p className="pt-4">
+        <p className="pt-8">
           This new page is still a bit rough layouting wise but functional and I finally wanted to
           get it over the finishing line for now so forgive me while I work on that.
         </p>
