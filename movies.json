@@ -1171,6 +1171,25 @@
     "favorite": false
   },
   {
+    "title": "Dunkirk",
+    "id": 374720,
+    "metadata": {
+      "genres": [
+        "War",
+        "Action",
+        "Drama"
+      ],
+      "tagline": "When 400,000 men couldn't get home, home came for them.",
+      "release": {
+        "day": 19,
+        "month": 7,
+        "year": 2017
+      },
+      "runtime": 107
+    },
+    "favorite": false
+  },
+  {
     "title": "Edge of Tomorrow",
     "id": 137113,
     "metadata": {
@@ -2849,6 +2868,23 @@
     "favorite": false
   },
   {
+    "title": "Memento",
+    "id": 77,
+    "metadata": {
+      "genres": [
+        "Mystery",
+        "Thriller"
+      ],
+      "tagline": "Some memories are best forgotten.",
+      "release": {
+        "day": 11,
+        "month": 10,
+        "year": 2000
+      },
+      "runtime": 113
+    }
+  },
+  {
     "title": "Men in Black 3",
     "id": 41154,
     "metadata": {
@@ -4182,6 +4218,24 @@
     "favorite": false
   },
   {
+    "title": "The Big Short",
+    "id": 318846,
+    "favorite": true,
+    "metadata": {
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "tagline": "This is a true story.",
+      "release": {
+        "day": 11,
+        "month": 12,
+        "year": 2015
+      },
+      "runtime": 131
+    }
+  },
+  {
     "title": "The Boondock Saints",
     "id": 8374,
     "metadata": {
@@ -4385,6 +4439,25 @@
       "runtime": 134
     },
     "favorite": false
+  },
+  {
+    "title": "The Dark Knight",
+    "id": 155,
+    "metadata": {
+      "genres": [
+        "Drama",
+        "Action",
+        "Crime",
+        "Thriller"
+      ],
+      "tagline": "Welcome to a world without rules.",
+      "release": {
+        "day": 16,
+        "month": 7,
+        "year": 2008
+      },
+      "runtime": 152
+    }
   },
   {
     "title": "The Dictator",
