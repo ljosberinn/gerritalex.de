@@ -1,77 +1,11 @@
 import Link from '@/components/Link';
+import { RandomLyrics } from '@/components/RandomLyrics.';
 import RestrainedMaxWidth from '@/components/RestrainedMaxWidth';
 import Tag from '@/components/Tag';
 import siteMetadata from '@/data/siteMetadata';
 import { formatDate } from 'pliny/utils/formatDate';
 
 const MAX_DISPLAY = 5;
-
-function RandomLyrics() {
-  const lyrics = [
-    {
-      lines: [
-        'On the other side, I have survived',
-        "Didn't think it'd be",
-        "The hardest path I've ever walked",
-        'Alive again... alive as me',
-      ],
-      source: 'Nachtmystium - On The Other Side',
-      link: 'https://www.youtube.com/watch?v=JIcxAbkHElI',
-    },
-    {
-      lines: [
-        'So go and kneel and wait',
-        'And join the herd',
-        'You know a million sheep',
-        'Will be dispersed',
-        "By one lion's roar",
-      ],
-      source: "Rome - One Lion's Roar",
-      link: 'https://www.youtube.com/watch?v=eKafdEM3z5I',
-    },
-    {
-      lines: [
-        "Remember you're unique",
-        'Just like anybody else',
-        "So don't grow wishbones",
-        'Where the backbone ought to be',
-        'Before all else be armed',
-      ],
-      source: 'Rome - Der Wolfsmantel',
-      link: 'https://www.youtube.com/watch?v=O2crwL7yw5c',
-    },
-    {
-      lines: [
-        'You can find the answer',
-        'The solution lies within the problem',
-        'The answer is in every question',
-        'Dig it?',
-        'An attitude is all you need to rise and walk away',
-        'Inspire yourself',
-        'Your life is yours',
-        'It fits you like your skin',
-      ],
-      source: 'Funkadelic - Good Thoughts, Bad Thoughts',
-      link: 'https://www.youtube.com/watch?v=UGGVy4RkUs0',
-    },
-  ];
-
-  // pick a random entry from the lyrics array
-  const randomIndex = Math.floor(Math.random() * lyrics.length);
-  const randomLyrics = lyrics[randomIndex];
-
-  return (
-    <>
-      {randomLyrics.lines.map((line, index) => (
-        <span key={index} className="block italic">
-          {line}
-        </span>
-      ))}
-      <br />
-      <a href={randomLyrics.link}>{randomLyrics.source}</a>
-    </>
-  );
-}
 
 export default function Home({ posts }) {
   return (
@@ -80,18 +14,22 @@ export default function Home({ posts }) {
         <h1 className="pb-6 text-3xl font-bold leading-9 tracking-tight text-gray-700 dark:text-gray-300 sm:text-4xl sm:leading-10 md:text-4xl md:leading-14">
           Hi, I'm Xeph!
         </h1>
-        <div className="text-right text-lg text-gray-600 dark:text-gray-300">
-          <RandomLyrics />
-        </div>
+
+        <RandomLyrics />
+
+        <p className="pt-4">
+          This new page is still a bit rough layouting wise but functional and I finally wanted to
+          get it over the finishing line for now so forgive me while I work on that.
+        </p>
       </div>
       <div className="divide-y divide-gray-300 dark:divide-gray-700">
-        <div className="space-y-2 pb-8 pt-6 md:space-y-5" />
+        <div className="space-y-2 py-4 md:space-y-5" />
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {posts.length === 0
             ? 'No posts found.'
             : posts.slice(0, MAX_DISPLAY).map(({ slug, date, title, summary, tags }) => {
                 return (
-                  <li key={slug} className="py-12">
+                  <li key={slug} className="py-10">
                     <article>
                       <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
                         <dl>
