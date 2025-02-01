@@ -1,7 +1,7 @@
 // @ts-check
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'gerritalex.de',
+  title: 'Xepheris | gerritalex.de',
   author: 'Gerrit Alex',
   image: '',
   description: 'This website is a personal blog for Gerrit Alex',
@@ -15,7 +15,7 @@ const siteMetadata = {
   theme: 'system', // system, dark or light
   siteUrl: 'https://gerritalex.de/',
   siteRepo: 'https://github.com/ljosberinn/gerritalex.de',
-  siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
+  siteLogo: `${process.env.BASE_PATH || ''}/static/images/scalecommander.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
   email: 'admin@gerritalex.de',
   github: 'https://github.com/ljosberinn',
@@ -23,7 +23,7 @@ const siteMetadata = {
   bluesky: 'https://bsky.app/profile/xepheris.bsky.social',
   locale: 'en-US',
   // set to true if you want a navbar fixed to the top
-  stickyNav: false,
+  stickyNav: true,
   analytics: {
     // If you want to use an analytics provider you have to add it to the
     // content security policy in the `next.config.js` file.

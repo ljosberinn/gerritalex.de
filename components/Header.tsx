@@ -4,6 +4,11 @@ import Link from './Link';
 import MobileNav from './MobileNav';
 import ThemeSwitch from './ThemeSwitch';
 import SearchButton from './SearchButton';
+import Image from 'next/image';
+
+function Logo() {
+  return <Image src={siteMetadata.siteLogo} width="32" height="32" className="h-8" alt="logo" />;
+}
 
 export default function Header() {
   let headerClass =
@@ -18,8 +23,11 @@ export default function Header() {
       <div className="flex flex-row items-center">
         <Link href="/" aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center justify-between">
+            <div className="mr-3">
+              <Logo />
+            </div>
             {typeof siteMetadata.headerTitle === 'string' ? (
-              <div className="hidden h-6 text-2xl font-semibold sm:block">
+              <div className="hidden h-6 h-full text-2xl font-semibold sm:block">
                 {siteMetadata.headerTitle}
               </div>
             ) : (
