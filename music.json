@@ -1,1353 +1,2632 @@
 [
   {
-    "month": "2",
-    "year": "2010",
-    "artist": "Lunar Aurora",
-    "album": "Andacht",
-    "hidden": false
-  },
-  {
-    "month": "2",
-    "year": "2010",
-    "artist": "Anarion",
-    "album": "Fragility",
-    "hidden": false
-  },
-  {
-    "month": "3",
-    "year": "2010",
-    "artist": "Division Germania",
-    "album": "Manifest",
-    "hidden": true
-  },
-  {
-    "month": "6",
-    "year": "2010",
-    "artist": "Kratein",
-    "album": "Trauma",
-    "hidden": false
-  },
-  {
-    "month": "6",
-    "year": "2010",
-    "artist": "Nagelfar",
-    "album": "Virus West",
-    "hidden": false
-  },
-  {
-    "month": "6",
-    "year": "2010",
-    "artist": "Nagelfar",
-    "album": "Hünengrab im Herbst",
-    "hidden": false
-  },
-  {
-    "month": "6",
-    "year": "2010",
-    "artist": "The Ruins of Beverast",
-    "album": "Rain Upon the Impure",
-    "hidden": false
-  },
-  {
-    "month": "6",
-    "year": "2010",
-    "artist": "Kermania",
-    "album": "Ahnenwerk",
-    "hidden": false
-  },
-  {
-    "month": "6",
-    "year": "2010",
-    "artist": "Nagelfar",
-    "album": "Srontgorrth",
-    "hidden": false
-  },
-  {
-    "month": "8",
-    "year": "2010",
-    "artist": "V.A.",
-    "album": "Voices of the Underground Vol. IV",
-    "hidden": true
-  },
-  {
-    "month": "8",
-    "year": "2010",
-    "artist": "Dissection",
-    "album": "Reinkaos",
-    "hidden": false
-  },
-  {
-    "month": "8",
-    "year": "2010",
-    "artist": "The Devil's Blood",
-    "album": "Come, Reap",
-    "hidden": false
-  },
-  {
-    "month": "8",
-    "year": "2010",
-    "artist": "Nachtmystium",
-    "album": "Addicts: Black Meddle Pt. II",
-    "hidden": false
-  },
-  {
-    "month": "9",
-    "year": "2010",
-    "artist": "PiXie Meet",
-    "album": "Waste Your Time",
-    "hidden": false
-  },
-  {
-    "month": "10",
-    "year": "2010",
-    "artist": "Bluttaufe",
-    "album": "Mein Fleisch an deinen Lippen",
-    "hidden": false
-  },
-  {
-    "month": "11",
-    "year": "2010",
-    "artist": "Nocte Obducta",
-    "album": "Nektar - Teil 1: Zwölf Monde, eine Hand voll Träume",
-    "hidden": false
-  },
-  {
-    "month": "11",
-    "year": "2010",
-    "artist": "The Devil's Blood",
-    "album": "The Time of No Time Evermore",
-    "hidden": false
-  },
-  {
-    "month": "11",
-    "year": "2010",
-    "artist": "Weh",
-    "album": "Origins",
-    "hidden": false
-  },
-  {
-    "month": "11",
-    "year": "2010",
-    "artist": "Endstille",
-    "album": "Navigator",
-    "hidden": false
-  },
-  {
-    "month": "12",
-    "year": "2010",
-    "artist": "The Devil's Blood",
-    "album": "I'll Be Your Ghost",
-    "hidden": false
-  },
-  {
-    "month": "12",
-    "year": "2010",
-    "artist": "Nocte Obducta",
-    "album": "Aschefrühling",
-    "hidden": false
-  },
-  {
-    "month": "12",
-    "year": "2010",
-    "artist": "Simple Existenz",
-    "album": "Das Leben vor dem Tod",
-    "hidden": false
-  },
-  {
-    "month": "4",
-    "year": "2010",
-    "artist": "Lyrinx",
-    "album": "Ending  the Circle of Life",
-    "hidden": false
-  },
-  {
-    "month": "12",
-    "year": "2010",
-    "artist": "The Devil's Blood",
-    "album": "The Graveyard Shuffle",
-    "hidden": false
-  },
-  {
-    "month": "12",
-    "year": "2010",
-    "artist": "The Ruins of Beverast",
-    "album": "Foulest Semen of a Sheltered Elite",
-    "hidden": false
-  },
-  {
-    "month": "6",
-    "year": "2010",
-    "artist": "Ascension",
-    "album": "Consolamentum",
-    "hidden": false
-  },
-  {
-    "month": "11",
-    "year": "2010",
-    "artist": "Dark Embrace",
-    "album": "Demos",
-    "hidden": false
-  },
-  {
-    "month": "11",
-    "year": "2010",
-    "artist": "Bluttaufe",
-    "album": "Schwarze Dornen",
-    "hidden": false
-  },
-  {
-    "month": "1",
-    "year": "2011",
-    "artist": "Nachtmystium",
-    "album": "Doomsday Derelicts",
-    "hidden": false
-  },
-  {
-    "month": "1",
-    "year": "2011",
-    "artist": "The Heroine Whores",
-    "album": "EP 2010",
-    "hidden": false
-  },
-  {
-    "month": "1",
-    "year": "2011",
-    "artist": "EgoNoir",
-    "album": "Reste... (was vom Sturm übrig blieb)",
-    "hidden": false
-  },
-  {
-    "month": "1",
-    "year": "2011",
-    "artist": "Madrugada",
-    "album": "The Deep End",
-    "hidden": false
-  },
-  {
-    "month": "2",
-    "year": "2011",
-    "artist": "V.A.",
-    "album": "Only Death is Real Vol. 2",
-    "hidden": true
-  },
-  {
-    "month": "2",
-    "year": "2011",
-    "artist": "Verdunkeln",
-    "album": "Einblick in den Qualenfall",
-    "hidden": false
-  },
-  {
-    "month": "2",
-    "year": "2011",
-    "artist": "Bluttaufe",
-    "album": "Demo2000",
-    "hidden": false
-  },
-  {
-    "month": "2",
-    "year": "2011",
-    "artist": "Bluttaufe",
-    "album": "Dem Untergang verpflichtet Promo 99",
-    "hidden": false
-  },
-  {
-    "month": "2",
-    "year": "2011",
-    "artist": "Nagelfar",
-    "album": "Srontgorrth",
-    "hidden": false
-  },
-  {
-    "month": "3",
-    "year": "2011",
-    "artist": "Herbstregen",
-    "album": "Leben gescheitert",
-    "hidden": false
-  },
-  {
-    "month": "3",
-    "year": "2011",
-    "artist": "The Doors",
-    "album": "The Doors",
-    "hidden": false
-  },
-  {
-    "month": "3",
-    "year": "2011",
-    "artist": "PiXie Meet",
-    "album": "On the Ground",
-    "hidden": false
-  },
-  {
-    "month": "5",
-    "year": "2011",
+    "acquired": "05-01-2011",
     "artist": "Alastor",
     "album": "Noble North",
-    "hidden": false
-  },
-  {
-    "month": "5",
-    "year": "2011",
-    "artist": "Nachtmystium",
-    "album": "Instinct: Decay",
-    "hidden": false
-  },
-  {
-    "month": "5",
-    "year": "2011",
-    "artist": "Nargaroth",
-    "album": "Semper Fi",
-    "hidden": false
-  },
-  {
-    "month": "5",
-    "year": "2011",
-    "artist": "Drowning the Light",
-    "album": "An Alignment of Dead Stars",
-    "hidden": false
-  },
-  {
-    "month": "5",
-    "year": "2011",
-    "artist": "Drowning the Light",
-    "album": "Blood of the Ancients",
-    "hidden": false
-  },
-  {
-    "month": "6",
-    "year": "2011",
-    "artist": "Weird Fate/Membaris",
-    "album": "Conspiracy",
-    "hidden": false
-  },
-  {
-    "month": "6",
-    "year": "2011",
-    "artist": "Winds of the Black Mountains",
-    "album": "Sing thou Unholy Servants",
-    "hidden": false
-  },
-  {
-    "month": "6",
-    "year": "2011",
-    "artist": "Sun of the Sleepless/Nachtmahr",
-    "album": "I",
-    "hidden": false
-  },
-  {
-    "month": "7",
-    "year": "2011",
-    "artist": "Iut de Asken",
-    "album": "Compilation",
-    "hidden": true
-  },
-  {
-    "month": "7",
-    "year": "2011",
-    "artist": "Ascension",
-    "album": "With Burning Tongues",
-    "hidden": false
-  },
-  {
-    "month": "7",
-    "year": "2011",
-    "artist": "Katharsis",
-    "album": "Fourth Reich",
-    "hidden": false
-  },
-  {
-    "month": "7",
-    "year": "2011",
-    "artist": "Katharsis",
-    "album": "VVorld VVithout End",
-    "hidden": false
-  },
-  {
-    "month": "8",
-    "year": "2011",
-    "artist": "Urgewalt",
-    "album": "Geisterhain",
-    "hidden": false
-  },
-  {
-    "month": "8",
-    "year": "2011",
-    "artist": "The Flight of Sleipnir",
-    "album": "Essence of Nine",
-    "hidden": false
-  },
-  {
-    "month": "10",
-    "year": "2011",
-    "artist": "Wolves in the Throne Room",
-    "album": "Two Hunters",
-    "hidden": false
-  },
-  {
-    "month": "11",
-    "year": "2011",
-    "artist": "Rome",
-    "album": "Die AEsthetik der Herrschaftsfreiheit",
-    "hidden": false
-  },
-  {
-    "month": "11",
-    "year": "2011",
-    "artist": "The Devil's Blood",
-    "album": "The Thousandfold Epicentre",
-    "hidden": false
-  },
-  {
-    "month": "11",
-    "year": "2011",
-    "artist": "Rome",
-    "album": "Confessions d'un voleur d'âmes",
-    "hidden": false
-  },
-  {
-    "month": "5",
-    "year": "2011",
-    "artist": "Nachtmystium",
-    "album": "Eulogy IV",
-    "hidden": false
-  },
-  {
-    "month": "5",
-    "year": "2011",
-    "artist": "Nargaroth",
-    "album": "Spectral Visions of Mental Warfare",
-    "hidden": false
-  },
-  {
-    "month": "5",
-    "year": "2011",
-    "artist": "Nargaroth",
-    "album": "Jahreszeiten",
-    "hidden": false
-  },
-  {
-    "month": "6",
-    "year": "2011",
-    "artist": "Rome",
-    "album": "Our Holy Rue/The Merchant Fleet",
-    "hidden": false
-  },
-  {
-    "month": "7",
-    "year": "2011",
-    "artist": "Jex Thoth",
-    "album": "Jex Thoth",
-    "hidden": false
-  },
-  {
-    "month": "9",
-    "year": "2011",
-    "artist": "The Ruins of Beverast",
-    "album": "Enchanted by Gravemould",
-    "hidden": false
-  },
-  {
-    "month": "10",
-    "year": "2011",
-    "artist": "The Devil's Blood",
-    "album": "Fire Burning",
-    "hidden": false
-  },
-  {
-    "month": "11",
-    "year": "2011",
-    "artist": "Nocte Obducta",
-    "album": "Verderbnis (Der Schnitter kratzt an jeder Tür)",
-    "hidden": false
-  },
-  {
-    "month": "1",
-    "year": "2011",
-    "artist": "Asuras",
-    "album": "Demo 2009",
-    "hidden": false
-  },
-  {
-    "month": "2",
-    "year": "2011",
-    "artist": "Nagelfar",
-    "album": "Jagd",
-    "hidden": false
-  },
-  {
-    "month": "1",
-    "year": "2012",
-    "artist": "Triarii",
-    "album": "Exile",
-    "hidden": false
-  },
-  {
-    "month": "1",
-    "year": "2012",
-    "artist": "Triarii",
-    "album": "Pièce Héroique",
-    "hidden": false
-  },
-  {
-    "month": "3",
-    "year": "2012",
-    "artist": "Secrets of the Moon",
-    "album": "Seven Bells",
-    "hidden": false
-  },
-  {
-    "month": "3",
-    "year": "2012",
-    "artist": "Von Thronstahl",
-    "album": "Germanium Metallicum",
-    "hidden": false
-  },
-  {
-    "month": "3",
-    "year": "2012",
-    "artist": "Rome",
-    "album": "Berlin",
-    "hidden": false
-  },
-  {
-    "month": "3",
-    "year": "2012",
-    "artist": "Rome",
-    "album": "Flowers from Exile",
-    "hidden": false
-  },
-  {
-    "month": "3",
-    "year": "2012",
-    "artist": "Rome",
-    "album": "Masse Mensch Material",
-    "hidden": false
-  },
-  {
-    "month": "3",
-    "year": "2012",
-    "artist": "Rome",
-    "album": "Nera",
-    "hidden": false
-  },
-  {
-    "month": "3",
-    "year": "2012",
-    "artist": "Fields of the Nephilim",
-    "album": "Mourning Sun",
-    "hidden": false
-  },
-  {
-    "month": "4",
-    "year": "2012",
-    "artist": "Nachtmystium",
-    "album": "Worldfall",
-    "hidden": false
-  },
-  {
-    "month": "7",
-    "year": "2012",
-    "artist": "Rome",
-    "album": "Fester",
-    "hidden": false
-  },
-  {
-    "month": "7",
-    "year": "2012",
-    "artist": "Sterbeklang",
-    "album": "Cosmoderne",
-    "hidden": false
-  },
-  {
-    "month": "7",
-    "year": "2012",
-    "artist": "Membaris",
-    "album": "Entartet",
-    "hidden": false
-  },
-  {
-    "month": "7",
-    "year": "2012",
-    "artist": "Nachtmystium",
-    "album": "Silencing Machine",
-    "hidden": false
-  },
-  {
-    "month": "7",
-    "year": "2012",
-    "artist": "Burzum",
-    "album": "Hvis Lyset Tar Oss",
-    "hidden": false
-  },
-  {
-    "month": "7",
-    "year": "2012",
-    "artist": "Burzum",
-    "album": "Belus",
-    "hidden": false
-  },
-  {
-    "month": "7",
-    "year": "2012",
-    "artist": "Leonard Cohen",
-    "album": "Old Ideas",
-    "hidden": false
-  },
-  {
-    "month": "7",
-    "year": "2012",
-    "artist": "Leviathan",
-    "album": "Massive Conspiracy Against All Life",
-    "hidden": false
-  },
-  {
-    "month": "8",
-    "year": "2012",
-    "artist": "Rome",
-    "album": "Nos chants perdus",
-    "hidden": false
-  },
-  {
-    "month": "9",
-    "year": "2012",
-    "artist": "Dordeduh",
-    "album": "Dar Deh Duh",
-    "hidden": false
-  },
-  {
-    "month": "10",
-    "year": "2012",
-    "artist": "Gratwanderung",
-    "album": "Anthropozaen",
-    "hidden": false
-  },
-  {
-    "month": "10",
-    "year": "2012",
-    "artist": "Rome",
-    "album": "Hell Money",
-    "hidden": false
-  },
-  {
-    "month": "10",
-    "year": "2012",
-    "artist": "Wallachia",
-    "album": "Ceremony of Ascension",
-    "hidden": false
-  },
-  {
-    "month": "10",
-    "year": "2012",
-    "artist": "Nachtmystium",
-    "album": "Assassins - Black Meddle Part 1",
-    "hidden": false
-  },
-  {
-    "month": "10",
-    "year": "2012",
-    "artist": "Mack Murphy & the Inmates",
-    "album": "The Early Years",
-    "hidden": false
-  },
-  {
-    "month": "10",
-    "year": "2012",
-    "artist": "Mack Murphy & the Inmates",
-    "album": "Summer's Cemetery Dawns",
-    "hidden": false
-  },
-  {
-    "month": "10",
-    "year": "2012",
-    "artist": "Mack Murphy & the Inmates",
-    "album": "Distant",
-    "hidden": false
-  },
-  {
-    "month": "10",
-    "year": "2012",
-    "artist": "Rome",
-    "album": "August Spies",
-    "hidden": false
-  },
-  {
-    "month": "10",
-    "year": "2012",
-    "artist": "Casper",
-    "album": "Auf und Davon",
-    "hidden": false
-  },
-  {
-    "month": "10",
-    "year": "2012",
-    "artist": "Casper",
-    "album": "XOXO",
-    "hidden": false
-  },
-  {
-    "month": "11",
-    "year": "2012",
-    "artist": "Wallachia",
-    "album": "Shunya",
-    "hidden": false
-  },
-  {
-    "month": "11",
-    "year": "2012",
-    "artist": "Wallachia",
-    "album": "Shunya (Promo)",
-    "hidden": false
-  },
-  {
-    "month": "11",
-    "year": "2012",
-    "artist": "Darkwood",
-    "album": "Notwendfeuer",
-    "hidden": false
-  },
-  {
-    "month": "11",
-    "year": "2012",
-    "artist": "Of the Wand & the Moon",
-    "album": "The Lone Descent",
-    "hidden": false
-  },
-  {
-    "month": "11",
-    "year": "2012",
-    "artist": "Rome",
-    "album": "L'assassin",
-    "hidden": false
-  },
-  {
-    "month": "11",
-    "year": "2012",
-    "artist": "Jännerwein",
-    "album": "Abendläuten",
-    "hidden": false
-  },
-  {
-    "month": "11",
-    "year": "2012",
-    "artist": "Von Thronstahl",
-    "album": "Corona Imperialis",
-    "hidden": false
-  },
-  {
-    "month": "11",
-    "year": "2012",
-    "artist": "Lana del Rey",
-    "album": "Born to Die: Paradise Edition",
-    "hidden": false
-  },
-  {
-    "month": "12",
-    "year": "2012",
-    "artist": "Leger des Heils",
-    "album": ":Licht:",
-    "hidden": false
-  },
-  {
-    "month": "12",
-    "year": "2012",
-    "artist": "Madrugada",
-    "album": "Industrial Silence",
-    "hidden": false
-  },
-  {
-    "month": "12",
-    "year": "2012",
-    "artist": "Dagnir en Gwann",
-    "album": "Verloren",
-    "hidden": false
-  },
-  {
-    "month": "12",
-    "year": "2012",
-    "artist": "Lykke Li",
-    "album": "Wounded Rhymes",
-    "hidden": false
-  },
-  {
-    "month": "12",
-    "year": "2012",
-    "artist": "Madrugada",
-    "album": "The Nightly Disease",
-    "hidden": false
-  },
-  {
-    "month": "12",
-    "year": "2012",
-    "artist": "Finster",
-    "album": "Existenz",
-    "hidden": false
-  },
-  {
-    "month": "12",
-    "year": "2012",
-    "artist": "The Doors",
-    "album": "Strange Days",
-    "hidden": false
-  },
-  {
-    "month": "12",
-    "year": "2012",
-    "artist": "Lykke Li",
-    "album": "Youth Novels",
-    "hidden": false
-  },
-  {
-    "month": "1",
-    "year": "2012",
-    "artist": "Nachtmytium/Murmur",
-    "album": "Split",
-    "hidden": false
-  },
-  {
-    "month": "6",
-    "year": "2012",
-    "artist": "Leonard Cohen",
-    "album": "Songs of Love and Hate",
-    "hidden": false
-  },
-  {
-    "month": "6",
-    "year": "2012",
-    "artist": "Leonard Cohen",
-    "album": "New Skin for the Old Ceremony",
-    "hidden": false
-  },
-  {
-    "month": "7",
-    "year": "2012",
-    "artist": "Leonard Cohen",
-    "album": "Death of a Ladies Man",
-    "hidden": false
-  },
-  {
-    "month": "11",
-    "year": "2012",
-    "artist": "Wallachia",
-    "album": "Ceremony of Ascension",
-    "hidden": false
-  },
-  {
-    "month": "2",
-    "year": "2013",
-    "artist": "Motörhead",
-    "album": "Ace of Spades",
-    "hidden": false
-  },
-  {
-    "month": "2",
-    "year": "2013",
-    "artist": "The Doors",
-    "album": "An American Prayer",
-    "hidden": false
-  },
-  {
-    "month": "4",
-    "year": "2013",
-    "artist": "Leonard Cohen",
-    "album": "I'm Your Man",
-    "hidden": false
-  },
-  {
-    "month": "4",
-    "year": "2013",
-    "artist": "Leonard Cohen",
-    "album": "Songs from a Room",
-    "hidden": false
-  },
-  {
-    "month": "4",
-    "year": "2013",
-    "artist": "Leonard Cohen",
-    "album": "Ten New Songs",
-    "hidden": false
-  },
-  {
-    "month": "4",
-    "year": "2013",
-    "artist": "Isis",
-    "album": "Wavering Radiant",
-    "hidden": false
-  },
-  {
-    "month": "5",
-    "year": "2013",
-    "artist": "The Devil's Blood",
-    "album": "III. Tabula Rasa or Death and the Seven Pillars",
-    "hidden": false
-  },
-  {
-    "month": "5",
-    "year": "2013",
-    "artist": "Selim Lemouchi & his Enemies",
-    "album": "Mens Animus Corpus",
-    "hidden": false
-  },
-  {
-    "month": "6",
-    "year": "2013",
-    "artist": "Rome",
-    "album": "Hate Us and See if We Mind",
-    "hidden": false
-  },
-  {
-    "month": "8",
-    "year": "2013",
-    "artist": "The Ruins of Beverast",
-    "album": "Blood Vaults: The Blazing Gospel of Heinrich Kramer",
-    "hidden": false
-  },
-  {
-    "month": "10",
-    "year": "2013",
-    "artist": "Nokturnal Mortum",
-    "album": "Voice of Steel",
-    "hidden": false
-  },
-  {
-    "month": "12",
-    "year": "2013",
-    "artist": "Selim Lemouchi & his Enemies",
-    "album": "Earth Air Spirit Water Fire",
-    "hidden": false
-  },
-  {
-    "month": "5",
-    "year": "2014",
-    "artist": "Black Salvation",
-    "album": "Lunia...",
-    "hidden": false
-  },
-  {
-    "month": "5",
-    "year": "2014",
-    "artist": "Black Salvation",
-    "album": "In Deep Circles",
-    "hidden": false
-  },
-  {
-    "month": "8",
-    "year": "2014",
-    "artist": "Rome",
-    "album": "A Passage to Rhodesia",
-    "hidden": false
-  },
-  {
-    "month": "8",
-    "year": "2014",
-    "artist": "Rome",
-    "album": "House of Stone",
-    "hidden": false
-  },
-  {
-    "month": "8",
-    "year": "2014",
-    "artist": "Nachtmystium",
-    "album": "The World We Left Behind",
-    "hidden": false
-  },
-  {
-    "month": "8",
-    "year": "2014",
-    "artist": "Kollegah",
-    "album": "Boss der Bosse",
-    "hidden": false
-  },
-  {
-    "month": "8",
-    "year": "2014",
-    "artist": "Lana del Rey",
-    "album": "Ultraviolence",
-    "hidden": false
-  },
-  {
-    "month": "8",
-    "year": "2014",
-    "artist": "In Solitude",
-    "album": "Sister",
-    "hidden": false
-  },
-  {
-    "month": "8",
-    "year": "2014",
-    "artist": "Jex Thoth",
-    "album": "Blood Moon Rise",
-    "hidden": false
-  },
-  {
-    "month": "8",
-    "year": "2014",
-    "artist": "Rome",
-    "album": "Braii the Beloved Country/My Traitor's Heart",
-    "hidden": false
-  },
-  {
-    "month": "12",
-    "year": "2015",
-    "artist": "Bring Me the Horizon",
-    "album": "That's the Spirit",
-    "hidden": false
-  },
-  {
-    "month": "5",
-    "year": "2015",
-    "artist": "Black Salvation",
-    "album": "In Deep Circles",
-    "hidden": false
-  },
-  {
-    "month": "2",
-    "year": "2016",
-    "artist": "Prinz Pi",
-    "album": "Rebell ohne Grund",
-    "hidden": false
-  },
-  {
-    "month": "2",
-    "year": "2016",
-    "artist": "Prinz Pi",
-    "album": "Im Westen nichts Neues",
-    "hidden": false
-  },
-  {
-    "month": "2",
-    "year": "2016",
-    "artist": "Kollegah",
-    "album": "Bossaura",
-    "hidden": false
-  },
-  {
-    "month": "2",
-    "year": "2016",
-    "artist": "Lana del Rey",
-    "album": "Honeymoon",
-    "hidden": false
-  },
-  {
-    "month": "2",
-    "year": "2016",
-    "artist": "King Dude",
-    "album": "Fear",
-    "hidden": false
-  },
-  {
-    "month": "2",
-    "year": "2016",
-    "artist": "King Dude",
-    "album": "Songs of Flesh & Blood - In the Key of Light",
-    "hidden": false
-  },
-  {
-    "month": "3",
-    "year": "2016",
-    "artist": "FJØRT",
-    "album": "Kontakt",
-    "hidden": false
-  },
-  {
-    "month": "4",
-    "year": "2016",
+    "id": 3322760,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2007
+      },
+      "runtime": 2603
+    },
+    "visible": false
+  },
+  {
+    "acquired": "02-01-2010",
+    "artist": "Anariõn",
+    "album": "Fragility...",
+    "id": 8495300,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2009
+      },
+      "runtime": 1296
+    },
+    "visible": false
+  },
+  {
+    "acquired": "04-01-2016",
     "artist": "Anorexia Nervosa",
     "album": "Drudenhaus",
-    "hidden": false
+    "id": 604304,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2000
+      },
+      "runtime": 2796
+    },
+    "visible": true
   },
   {
-    "month": "4",
-    "year": "2016",
-    "artist": "Anorexia Nervosa",
-    "album": "The September E.P.",
-    "hidden": false
-  },
-  {
-    "month": "4",
-    "year": "2016",
+    "acquired": "04-01-2016",
     "artist": "Anorexia Nervosa",
     "album": "New Obscurantis Order",
-    "hidden": false
+    "id": 2942201,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2001
+      },
+      "runtime": 2657
+    },
+    "visible": true
   },
   {
-    "month": "5",
-    "year": "2016",
-    "artist": "Kontra K",
-    "album": "Aus dem Schatten in das Licht",
-    "hidden": false
+    "acquired": "04-01-2016",
+    "artist": "Anorexia Nervosa",
+    "album": "The September E.P.",
+    "id": 630509,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2005
+      },
+      "runtime": 2771
+    },
+    "visible": true
   },
   {
-    "month": "5",
-    "year": "2016",
-    "artist": "Kontra K",
-    "album": "Labyrinth",
-    "hidden": false
+    "acquired": "06-01-2010",
+    "artist": "Ascension",
+    "album": "Consolamentum",
+    "id": 2799529,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2011
+      },
+      "runtime": 2913
+    },
+    "visible": true
   },
   {
-    "month": "5",
-    "year": "2016",
-    "artist": "FJØRT",
-    "album": "d'accord",
-    "hidden": false
+    "acquired": "07-01-2011",
+    "artist": "Ascension",
+    "album": "With Burning Tongues",
+    "id": 1986199,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2009
+      },
+      "runtime": 5504
+    },
+    "visible": true
   },
   {
-    "month": "7",
-    "year": "2016",
-    "artist": "Stick to Your Guns",
-    "album": "Diamonds",
-    "hidden": false
+    "acquired": "01-01-2011",
+    "artist": "Asuras",
+    "album": "Demo 2009",
+    "id": 2138075,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2009
+      },
+      "runtime": 1455
+    },
+    "visible": false
   },
   {
-    "month": "8",
-    "year": "2016",
-    "artist": "Rome",
-    "album": "The Hyperion Machine",
-    "hidden": false
-  },
-  {
-    "month": "8",
-    "year": "2016",
-    "artist": "King Dude",
-    "album": "Sex",
-    "hidden": false
-  },
-  {
-    "month": "11",
-    "year": "2016",
-    "artist": "Die Antwoord",
-    "album": "Mount Ninji And Da Nice Time Kid",
-    "hidden": false
-  },
-  {
-    "month": "12",
-    "year": "2016",
-    "artist": "Triarii",
-    "album": "Muse in Arms",
-    "hidden": false
-  },
-  {
-    "month": "12",
-    "year": "2016",
-    "artist": "Triarii",
-    "album": "ars militaria",
-    "hidden": false
-  },
-  {
-    "month": "2",
-    "year": "2017",
-    "artist": "Porta Nigra",
-    "album": "Kaiserschnitt",
-    "hidden": false
-  },
-  {
-    "month": "2",
-    "year": "2017",
-    "artist": "Haftbefehl",
-    "album": "Russisch Roulette",
-    "hidden": false
-  },
-  {
-    "month": "2",
-    "year": "2017",
-    "artist": "Being as an Ocean",
-    "album": "Being as an Ocean",
-    "hidden": false
-  },
-  {
-    "month": "2",
-    "year": "2017",
-    "artist": "Being as an Ocean",
-    "album": "How We Both Wondrously Perish",
-    "hidden": false
-  },
-  {
-    "month": "2",
-    "year": "2017",
-    "artist": "DOOL",
-    "album": "Here Now There Then",
-    "hidden": false
-  },
-  {
-    "month": "2",
-    "year": "2017",
-    "artist": "DOOL",
-    "album": "Oweynagat",
-    "hidden": false
-  },
-  {
-    "month": "4",
-    "year": "2017",
-    "artist": "Ra Al Dee Experience",
-    "album": "Diatessaron",
-    "hidden": false
-  },
-  {
-    "month": "4",
-    "year": "2017",
-    "artist": "Kontra K",
-    "album": "Gute Nacht",
-    "hidden": false
-  },
-  {
-    "month": "4",
-    "year": "2017",
-    "artist": "Ufo361",
-    "album": "Ich bin 3 Berliner",
-    "hidden": false
-  },
-  {
-    "month": "6",
-    "year": "2017",
-    "artist": "Morlockk Dilemma",
-    "album": "Circus Maximus",
-    "hidden": false
-  },
-  {
-    "month": "7",
-    "year": "2017",
-    "artist": "Lana del Rey",
-    "album": "Lust for Life",
-    "hidden": false
-  },
-  {
-    "month": "8",
-    "year": "2017",
-    "artist": "Capo",
-    "album": "Alles auf Rot",
-    "hidden": false
-  },
-  {
-    "month": "4",
-    "year": "2018",
-    "artist": "Isis",
-    "album": "Panopticon",
-    "hidden": false
-  },
-  {
-    "month": "12",
-    "year": "2018",
-    "artist": "Les Discrets",
-    "album": "Septembre et Ses Dernières Pensées",
-    "hidden": false
-  },
-  {
-    "month": "5",
-    "year": "2019",
-    "artist": "Prezident",
-    "album": "Kunst ist eine besitzergreifende Geliebte",
-    "hidden": false
-  },
-  {
-    "month": "5",
-    "year": "2019",
-    "artist": "Glaciation",
-    "album": "Sur les Falaises de Marbre",
-    "hidden": false
-  },
-  {
-    "month": "5",
-    "year": "2019",
-    "artist": "Cult of Luna",
-    "album": "Mariner",
-    "hidden": false
-  },
-  {
-    "month": "5",
-    "year": "2019",
-    "artist": "Prezident",
-    "album": "Limbus",
-    "hidden": false
-  },
-  {
-    "month": "6",
-    "year": "2019",
+    "acquired": "06-01-2019",
     "artist": "Bausa",
     "album": "Dreifarbenhaus",
-    "hidden": false
+    "id": 10735520,
+    "metadata": {
+      "genres": [],
+      "release": {
+        "year": 2017
+      },
+      "runtime": null
+    },
+    "visible": true
   },
   {
-    "month": "6",
-    "year": "2019",
-    "artist": "Health",
-    "album": "Vol. 4 :: Slaves of Fear",
-    "hidden": false
+    "acquired": "02-01-2017",
+    "artist": "Being as an Ocean",
+    "album": "Being as an Ocean",
+    "id": 6985217,
+    "metadata": {
+      "genres": ["Melodic Hardcore"],
+      "release": {
+        "year": 2015
+      },
+      "runtime": 2387
+    },
+    "visible": true
   },
   {
-    "month": "10",
-    "year": "2019",
+    "acquired": "02-01-2017",
+    "artist": "Being as an Ocean",
+    "album": "How We Both Wondrously Perish",
+    "id": 5685303,
+    "metadata": {
+      "genres": ["Melodic Hardcore"],
+      "release": {
+        "year": 2014
+      },
+      "runtime": 2351
+    },
+    "visible": true
+  },
+  {
+    "acquired": "05-01-2014",
+    "artist": "Black Salvation",
+    "album": "In Deep Circles",
+    "id": 5463843,
+    "metadata": {
+      "genres": ["Psychedelic Rock"],
+      "release": {
+        "year": 2014
+      },
+      "runtime": 2435
+    },
+    "visible": true
+  },
+  {
+    "acquired": "05-01-2014",
+    "artist": "Black Salvation",
+    "album": "Lunia...",
+    "id": 4570564,
+    "metadata": {
+      "genres": ["Doom Metal"],
+      "release": {
+        "year": 2011
+      },
+      "runtime": 3621
+    },
+    "visible": true
+  },
+  {
+    "acquired": "02-01-2011",
+    "artist": "Bluttaufe",
+    "album": "Dem Untergang verpflichtet",
+    "visible": true,
+    "id": 11214101,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 1999
+      },
+      "runtime": 1619
+    }
+  },
+  {
+    "acquired": "02-01-2011",
+    "artist": "Bluttaufe",
+    "album": "Demo2000",
+    "visible": false
+  },
+  {
+    "acquired": "10-01-2010",
+    "artist": "Bluttaufe",
+    "album": "Mein Fleisch an deinen Lippen",
+    "id": 1759096,
+    "metadata": {
+      "genres": ["Black Metal", "Thrash"],
+      "release": {
+        "year": 2000
+      },
+      "runtime": 2402
+    },
+    "visible": true
+  },
+  {
+    "acquired": "11-01-2010",
+    "artist": "Bluttaufe",
+    "album": "Schwarze Dornen",
+    "visible": false
+  },
+  {
+    "acquired": "12-01-2015",
+    "artist": "Bring Me the Horizon",
+    "album": "That's the Spirit",
+    "id": 15858966,
+    "metadata": {
+      "genres": ["Alternative Rock", "Nu Metal", "Metalcore"],
+      "release": {
+        "year": 2015
+      },
+      "runtime": 2703
+    },
+    "visible": true
+  },
+  {
+    "acquired": "07-01-2012",
+    "artist": "Burzum",
+    "album": "Belus",
+    "id": 2261343,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2010
+      },
+      "runtime": 3136
+    },
+    "visible": true
+  },
+  {
+    "acquired": "07-01-2012",
+    "artist": "Burzum",
+    "album": "Hvis Lyset Tar Oss",
+    "id": 367480,
+    "metadata": {
+      "genres": ["Black Metal", "Dark Ambient"],
+      "release": {
+        "year": 1994
+      },
+      "runtime": 2671
+    },
+    "visible": true
+  },
+  {
+    "acquired": "08-01-2017",
+    "artist": "Capo",
+    "album": "Alles auf Rot",
+    "id": 13057749,
+    "metadata": {
+      "genres": [],
+      "release": {
+        "year": 2017
+      },
+      "runtime": null
+    },
+    "visible": true
+  },
+  {
+    "acquired": "10-01-2012",
+    "artist": "Casper",
+    "album": "Auf und Davon",
+    "id": 3278781,
+    "visible": true
+  },
+  {
+    "acquired": "10-01-2012",
+    "artist": "Casper",
+    "album": "XOXO",
+    "id": 2947847,
+    "metadata": {
+      "genres": ["Pop Rap", "Indie Rock"],
+      "release": {
+        "year": 2011
+      },
+      "runtime": 2909
+    },
+    "visible": true
+  },
+  {
+    "acquired": "05-01-2019",
+    "artist": "Cult of Luna",
+    "album": "Mariner",
+    "id": 8366964,
+    "metadata": {
+      "genres": ["Sludge Metal", "Post-Metal"],
+      "release": {
+        "year": 2016
+      },
+      "runtime": 3274
+    },
+    "visible": true
+  },
+  {
+    "acquired": "12-01-2012",
+    "artist": "Dagnir en Gwann",
+    "album": "Verloren",
+    "id": 5188462,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2013
+      },
+      "runtime": 2329
+    },
+    "visible": false
+  },
+  {
+    "acquired": "10-01-2019",
     "artist": "Danger Dan",
     "album": "Reflexionen aus dem beschönigten Leben",
-    "hidden": false
+    "id": 12121480,
+    "metadata": {
+      "genres": ["Conscious"],
+      "release": {
+        "year": 2018
+      },
+      "runtime": null
+    },
+    "visible": true
   },
   {
-    "month": "02",
-    "year": "2020",
-    "artist": "Heilung",
-    "album": "Futha",
-    "hidden": false
+    "acquired": "11-01-2010",
+    "artist": "Dark Embrace",
+    "album": "Melting Snow Revealing Ancient Beauty",
+    "id": 11087212,
+    "visible": false
   },
   {
-    "month": "06",
-    "year": "2020",
-    "artist": "Nocte Obducta",
-    "album": "Stille - Das nagende Schweigen",
-    "hidden": false
+    "acquired": "11-01-2012",
+    "artist": "Darkwood",
+    "album": "Notwendfeuer",
+    "id": 859542,
+    "metadata": {
+      "genres": ["Neofolk", "Industrial"],
+      "release": {
+        "year": 2006
+      },
+      "runtime": 2531
+    },
+    "visible": true
   },
   {
-    "month": "06",
-    "year": "2020",
+    "acquired": "06-01-2020",
     "artist": "Deathstars",
     "album": "Termination Bliss",
-    "hidden": false
+    "id": 2695581,
+    "metadata": {
+      "genres": ["Industrial", "Goth Rock"],
+      "release": {
+        "year": 2006
+      },
+      "runtime": 3146
+    },
+    "visible": true
   },
   {
-    "month": "06",
-    "year": "2020",
-    "artist": "In Flames",
-    "album": "A Sense of Purpose",
-    "hidden": false
+    "acquired": "11-01-2016",
+    "artist": "Die Antwoord",
+    "album": "Mount Ninji And Da Nice Time Kid",
+    "id": 9044479,
+    "metadata": {
+      "genres": ["Hip Hop", "Electro"],
+      "release": {
+        "year": 2016
+      },
+      "runtime": 3252
+    },
+    "visible": true
   },
   {
-    "month": "06",
-    "year": "2020",
+    "acquired": "06-01-2020",
     "artist": "Dinner auf Uranos",
     "album": "50 Sommer - 50 Winter",
-    "hidden": false
+    "id": 2808348,
+    "metadata": {
+      "genres": ["Avantgarde", "Prog Rock"],
+      "release": {
+        "year": 2010
+      },
+      "runtime": 2727
+    },
+    "visible": true
   },
   {
-    "month": "08",
-    "year": "2021",
-    "artist": "Tame Impala",
-    "album": "Currents",
-    "hidden": false
+    "acquired": "08-01-2010",
+    "artist": "Dissection",
+    "album": "Reinkaos",
+    "id": 1102528,
+    "metadata": {
+      "genres": ["Black Metal", "Death Metal"],
+      "release": {
+        "year": 2006
+      },
+      "runtime": null
+    },
+    "visible": true
   },
   {
-    "month": "08",
-    "year": "2021",
-    "artist": "Modest Mouse",
-    "album": "Strangers to Ourselves",
-    "hidden": false
+    "acquired": "03-01-2010",
+    "artist": "Division Germania",
+    "album": "Manifest",
+    "id": 2321906,
+    "metadata": {
+      "genres": ["Hard Rock"],
+      "release": {
+        "year": 2009
+      },
+      "runtime": 2614
+    },
+    "visible": false
   },
   {
-    "month": "08",
-    "year": "2021",
-    "artist": "Tribulation",
-    "album": "The Children of the Night",
-    "hidden": false
+    "acquired": "02-01-2017",
+    "artist": "DOOL",
+    "album": "Here Now There Then",
+    "id": 9854027,
+    "metadata": {
+      "genres": ["Psychedelic Rock", "Goth Rock", "Shoegaze", "Gothic Metal"],
+      "release": {
+        "year": 2017
+      },
+      "runtime": null
+    },
+    "visible": true
   },
   {
-    "month": "08",
-    "year": "2021",
+    "acquired": "02-01-2017",
+    "artist": "DOOL",
+    "album": "Oweynagat",
+    "id": 9120771,
+    "metadata": {
+      "genres": ["Psychedelic Rock"],
+      "release": {
+        "year": 2016
+      },
+      "runtime": 817
+    },
+    "visible": true
+  },
+  {
+    "acquired": "09-01-2012",
+    "artist": "Dordeduh",
+    "album": "Dar De Duh",
+    "id": 3907676,
+    "metadata": {
+      "genres": ["Black Metal", "Folk"],
+      "release": {
+        "year": 2012
+      },
+      "runtime": 4674
+    },
+    "visible": true
+  },
+  {
+    "acquired": "05-01-2011",
+    "artist": "Drowning the Light",
+    "album": "An Alignment of Dead Stars",
+    "id": 2449849,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2009
+      },
+      "runtime": null
+    },
+    "visible": true
+  },
+  {
+    "acquired": "05-01-2011",
+    "artist": "Drowning the Light",
+    "album": "Blood of the Ancients",
+    "id": 2015942,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2009
+      },
+      "runtime": 2457
+    },
+    "visible": true
+  },
+  {
+    "acquired": "01-01-2011",
+    "artist": "EgoNoir",
+    "album": "Reste... (was vom Sturm übrig blieb)",
+    "id": 2979728,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2010
+      },
+      "runtime": 2725
+    },
+    "visible": true
+  },
+  {
+    "acquired": "11-01-2010",
+    "artist": "Endstille",
+    "album": "Navigator",
+    "id": 514450,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2005
+      },
+      "runtime": null
+    },
+    "visible": true
+  },
+  {
+    "acquired": "03-01-2012",
+    "artist": "Fields of the Nephilim",
+    "album": "Mourning Sun",
+    "id": 712763,
+    "metadata": {
+      "genres": ["Goth Rock"],
+      "release": {
+        "year": 2005
+      },
+      "runtime": 3297
+    },
+    "visible": true
+  },
+  {
+    "acquired": "12-01-2012",
+    "artist": "Finster",
+    "album": "Existenz",
+    "id": 4429819,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2012
+      },
+      "runtime": 3017
+    },
+    "visible": true
+  },
+  {
+    "acquired": "05-01-2016",
+    "artist": "FJØRT",
+    "album": "d'accord",
+    "id": 5620615,
+    "metadata": {
+      "genres": ["Punk", "Hardcore", "Emo"],
+      "release": {
+        "year": 2014
+      },
+      "runtime": 2168
+    },
+    "visible": true
+  },
+  {
+    "acquired": "03-01-2016",
+    "artist": "FJØRT",
+    "album": "Kontakt",
+    "id": 8002838,
+    "metadata": {
+      "genres": ["Punk", "Hardcore", "Emo"],
+      "release": {
+        "year": 2016
+      },
+      "runtime": 2606
+    },
+    "visible": true
+  },
+  {
+    "acquired": "05-01-2019",
+    "artist": "Glaciation",
+    "album": "Sur les Falaises de Marbre",
+    "id": 6681260,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2015
+      },
+      "runtime": null
+    },
+    "visible": true
+  },
+  {
+    "acquired": "10-01-2012",
+    "artist": "Gratwanderung",
+    "album": "Anthropozaen",
+    "visible": false
+  },
+  {
+    "acquired": "02-01-2017",
+    "artist": "Haftbefehl",
+    "album": "Russisch Roulette",
+    "id": 7992030,
+    "metadata": {
+      "genres": ["Gangsta"],
+      "release": {
+        "year": 2014
+      },
+      "runtime": 2502
+    },
+    "visible": true
+  },
+  {
+    "acquired": "06-01-2019",
+    "artist": "Health",
+    "album": "Vol. 4 :: Slaves of Fear",
+    "id": 13109186,
+    "metadata": {
+      "genres": ["Industrial"],
+      "release": {
+        "year": 2019
+      },
+      "runtime": 2238
+    },
+    "visible": true
+  },
+  {
+    "acquired": "02-01-2020",
+    "artist": "Heilung",
+    "album": "Futha",
+    "id": 13817539,
+    "metadata": {
+      "genres": ["Folk"],
+      "release": {
+        "year": 2019
+      },
+      "runtime": 4412
+    },
+    "visible": true
+  },
+  {
+    "acquired": "03-01-2011",
+    "artist": "Herbstregen",
+    "album": "Leben gescheitert",
+    "id": 4756768,
+    "metadata": {
+      "genres": ["Depressive Black Metal"],
+      "release": {
+        "year": 2011
+      },
+      "runtime": 3060
+    },
+    "visible": false
+  },
+  {
+    "acquired": "06-01-2020",
+    "artist": "In Flames",
+    "album": "A Sense of Purpose",
+    "id": 3915601,
+    "metadata": {
+      "genres": ["Heavy Metal", "Melodic Death Metal"],
+      "release": {
+        "year": 2008
+      },
+      "runtime": 2882
+    },
+    "visible": true
+  },
+  {
+    "acquired": "08-01-2014",
+    "artist": "In Solitude",
+    "album": "Sister",
+    "id": 4963213,
+    "metadata": {
+      "genres": ["Heavy Metal"],
+      "release": {
+        "year": 2013
+      },
+      "runtime": 2763
+    },
+    "visible": true
+  },
+  {
+    "acquired": "04-01-2018",
+    "artist": "Isis",
+    "album": "Panopticon",
+    "id": 377605,
+    "metadata": {
+      "genres": ["Alternative Rock", "Hardcore", "Post Rock"],
+      "release": {
+        "year": 2004
+      },
+      "runtime": 3544
+    },
+    "visible": true
+  },
+  {
+    "acquired": "04-01-2013",
+    "artist": "Isis",
+    "album": "Wavering Radiant",
+    "id": 1759834,
+    "metadata": {
+      "genres": ["Alternative Rock", "Hardcore", "Post Rock", "Post-Metal"],
+      "release": {
+        "year": 2009
+      },
+      "runtime": 3248
+    },
+    "visible": true
+  },
+  {
+    "acquired": "07-01-2011",
+    "artist": "Iut de Asken",
+    "album": "Compilation",
+    "id": 1984341,
+    "metadata": {
+      "genres": ["Thrash", "Folk Rock", "Viking Metal", "Death Metal", "Black Metal"],
+      "release": {
+        "year": 2007
+      },
+      "runtime": null
+    },
+    "visible": false
+  },
+  {
+    "acquired": "11-01-2012",
+    "artist": "Jännerwein",
+    "album": "Abendläuten",
+    "id": 1482581,
+    "metadata": {
+      "genres": ["Folk", "Neofolk"],
+      "release": {
+        "year": 2008
+      },
+      "runtime": 3036
+    },
+    "visible": true
+  },
+  {
+    "acquired": "08-01-2014",
+    "artist": "Jex Thoth",
+    "album": "Blood Moon Rise",
+    "id": 4637218,
+    "metadata": {
+      "genres": ["Psychedelic Rock", "Hard Rock", "Doom Metal"],
+      "release": {
+        "year": 2013
+      },
+      "runtime": null
+    },
+    "visible": true
+  },
+  {
+    "acquired": "07-01-2011",
+    "artist": "Jex Thoth",
+    "album": "Jex Thoth",
+    "id": 1281818,
+    "metadata": {
+      "genres": ["Stoner Rock", "Doom Metal"],
+      "release": {
+        "year": 2008
+      },
+      "runtime": null
+    },
+    "visible": true
+  },
+  {
+    "acquired": "07-01-2011",
+    "artist": "Katharsis",
+    "album": "Fourth Reich",
+    "id": 1782996,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2009
+      },
+      "runtime": 2755
+    },
+    "visible": true
+  },
+  {
+    "acquired": "07-01-2011",
+    "artist": "Katharsis",
+    "album": "VVorld VVithout End",
+    "id": 986168,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2006
+      },
+      "runtime": 3132
+    },
+    "visible": true
+  },
+  {
+    "acquired": "06-01-2010",
+    "artist": "Kermania",
+    "album": "Ahnenwerk",
+    "id": 2442675,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2006
+      },
+      "runtime": 3410
+    },
+    "visible": true
+  },
+  {
+    "acquired": "02-01-2016",
+    "artist": "King Dude",
+    "album": "Fear",
+    "id": 5810686,
+    "metadata": {
+      "genres": ["Folk Rock", "Indie Rock", "Neofolk"],
+      "release": {
+        "year": 2014
+      },
+      "runtime": 2524
+    },
+    "visible": true
+  },
+  {
+    "acquired": "08-01-2016",
+    "artist": "King Dude",
+    "album": "Sex",
+    "id": 9345125,
+    "metadata": {
+      "genres": ["Folk Rock", "Neofolk"],
+      "release": {
+        "year": 2016
+      },
+      "runtime": null
+    },
+    "visible": true
+  },
+  {
+    "acquired": "02-01-2016",
+    "artist": "King Dude",
+    "album": "Songs of Flesh & Blood - In the Key of Light",
+    "id": 7199424,
+    "metadata": {
+      "genres": ["Folk Rock", "Alternative Rock", "Neofolk"],
+      "release": {
+        "year": 2015
+      },
+      "runtime": 2444
+    },
+    "visible": true
+  },
+  {
+    "acquired": "08-01-2014",
+    "artist": "Kollegah",
+    "album": "Boss der Bosse",
+    "id": 2631724,
+    "metadata": {
+      "genres": ["Thug Rap", "Gangsta"],
+      "release": {
+        "year": 2006
+      },
+      "runtime": 3376
+    },
+    "visible": true
+  },
+  {
+    "acquired": "02-01-2016",
+    "artist": "Kollegah",
+    "album": "Bossaura",
+    "id": 3162310,
+    "metadata": {
+      "genres": ["Crunk", "Gangsta"],
+      "release": {
+        "year": 2011
+      },
+      "runtime": 4151
+    },
+    "visible": true
+  },
+  {
+    "acquired": "05-01-2016",
+    "artist": "Kontra K",
+    "album": "Aus dem Schatten ins Licht",
+    "id": 8540049,
+    "metadata": {
+      "genres": [],
+      "release": {
+        "year": 2015
+      },
+      "runtime": 3397
+    },
+    "visible": true
+  },
+  {
+    "acquired": "04-01-2017",
+    "artist": "Kontra K",
+    "album": "Gute Nacht",
+    "id": 10219082,
+    "metadata": {
+      "genres": ["Conscious"],
+      "release": {
+        "year": 2017
+      },
+      "runtime": 4150
+    },
+    "visible": true
+  },
+  {
+    "acquired": "05-01-2016",
+    "artist": "Kontra K",
+    "album": "Labyrinth",
+    "id": 8816648,
+    "metadata": {
+      "genres": ["Pop Rap", "Drum n Bass"],
+      "release": {
+        "year": 2016
+      },
+      "runtime": 4133
+    },
+    "visible": true
+  },
+  {
+    "acquired": "06-01-2010",
+    "artist": "Kratein",
+    "album": "Trauma",
+    "id": 2129509,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2010
+      },
+      "runtime": 2118
+    },
+    "visible": true
+  },
+  {
+    "acquired": "11-01-2012",
+    "artist": "Lana del Rey",
+    "album": "Born to Die: Paradise Edition",
+    "id": 3365117,
+    "metadata": {
+      "genres": ["Baroque Pop", "Dream Pop", "Indie Pop", "Trip Hop", "Alt-Pop", "Slowcore"],
+      "release": {
+        "year": 2012
+      },
+      "runtime": 2976
+    },
+    "visible": true
+  },
+  {
+    "acquired": "02-01-2016",
+    "artist": "Lana del Rey",
+    "album": "Honeymoon",
+    "id": 7490228,
+    "metadata": {
+      "genres": ["Downtempo", "Indie Pop", "Ballad", "Trip Hop", "Soft Rock"],
+      "release": {
+        "year": 2015
+      },
+      "runtime": 3906
+    },
+    "visible": true
+  },
+  {
+    "acquired": "07-01-2017",
+    "artist": "Lana del Rey",
+    "album": "Lust for Life",
+    "id": 10597185,
+    "metadata": {
+      "genres": ["Indie Pop", "Indie Rock"],
+      "release": {
+        "year": 2017
+      },
+      "runtime": 4325
+    },
+    "visible": true
+  },
+  {
+    "acquired": "08-01-2014",
+    "artist": "Lana del Rey",
+    "album": "Ultraviolence",
+    "id": 14624570,
+    "metadata": {
+      "genres": ["Psychedelic Rock", "Dream Pop", "Indie Rock", "Indie Pop", "Ballad"],
+      "release": {
+        "year": 2014
+      },
+      "runtime": 3084
+    },
+    "visible": true
+  },
+  {
+    "acquired": "12-01-2012",
+    "artist": "Leger des Heils",
+    "album": ":Licht:",
+    "id": 4084327,
+    "metadata": {
+      "genres": ["Modern Classical", "Neofolk"],
+      "release": {
+        "year": 2012
+      },
+      "runtime": 2636
+    },
+    "visible": true
+  },
+  {
+    "acquired": "07-01-2012",
+    "artist": "Leonard Cohen",
+    "album": "Death of a Ladies Man",
+    "id": 688913,
+    "metadata": {
+      "genres": ["Folk Rock"],
+      "release": {
+        "year": 1977
+      },
+      "runtime": 2538
+    },
+    "visible": true
+  },
+  {
+    "acquired": "04-01-2013",
+    "artist": "Leonard Cohen",
+    "album": "I'm Your Man",
+    "id": 2159182,
+    "metadata": {
+      "genres": ["Folk Rock", "Synth-pop"],
+      "release": {
+        "year": 1988
+      },
+      "runtime": 2441
+    },
+    "visible": true
+  },
+  {
+    "acquired": "06-01-2012",
+    "artist": "Leonard Cohen",
+    "album": "New Skin for the Old Ceremony",
+    "id": 564274,
+    "metadata": {
+      "genres": ["Folk Rock"],
+      "release": {
+        "year": 1974
+      },
+      "runtime": 2193
+    },
+    "visible": true
+  },
+  {
+    "acquired": "07-01-2012",
+    "artist": "Leonard Cohen",
+    "album": "Old Ideas",
+    "id": 3381466,
+    "metadata": {
+      "genres": ["Acoustic", "Art Rock"],
+      "release": {
+        "year": 2012
+      },
+      "runtime": 2501
+    },
+    "visible": true
+  },
+  {
+    "acquired": "04-01-2013",
+    "artist": "Leonard Cohen",
+    "album": "Songs from a Room",
+    "id": 2989752,
+    "metadata": {
+      "genres": ["Ballad", "Folk", "Folk Rock"],
+      "release": {
+        "year": 1969
+      },
+      "runtime": null
+    },
+    "visible": true
+  },
+  {
+    "acquired": "06-01-2012",
+    "artist": "Leonard Cohen",
+    "album": "Songs of Love and Hate",
+    "id": 483725,
+    "metadata": {
+      "genres": ["Folk Rock", "Folk", "Ballad"],
+      "release": {
+        "year": 1971
+      },
+      "runtime": 2653
+    },
+    "visible": true
+  },
+  {
+    "acquired": "04-01-2013",
+    "artist": "Leonard Cohen",
+    "album": "Ten New Songs",
+    "id": 378458,
+    "metadata": {
+      "genres": ["Folk Rock", "Ballad"],
+      "release": {
+        "year": 2001
+      },
+      "runtime": 3162
+    },
+    "visible": true
+  },
+  {
+    "acquired": "12-01-2018",
+    "artist": "Les Discrets",
+    "album": "Septembre et Ses Dernières Pensées",
+    "id": 2243326,
+    "metadata": {
+      "genres": ["Post Rock", "Post-Metal", "Shoegaze"],
+      "release": {
+        "year": 2010
+      },
+      "runtime": 2600
+    },
+    "visible": true
+  },
+  {
+    "acquired": "07-01-2012",
+    "artist": "Leviathan",
+    "album": "Massive Conspiracy Against All Life",
+    "id": 1285218,
+    "metadata": {
+      "genres": ["Black Metal", "Ambient"],
+      "release": {
+        "year": 2008
+      },
+      "runtime": 3738
+    },
+    "visible": true
+  },
+  {
+    "acquired": "02-01-2010",
+    "artist": "Lunar Aurora",
+    "album": "Andacht",
+    "id": 1091390,
+    "metadata": {
+      "genres": ["Dark Ambient", "Black Metal"],
+      "release": {
+        "year": 2007
+      },
+      "runtime": 3238
+    },
+    "visible": true
+  },
+  {
+    "acquired": "12-01-2012",
+    "artist": "Lykke Li",
+    "album": "Wounded Rhymes",
+    "id": 3313895,
+    "metadata": {
+      "genres": ["Pop Rock", "Indie Rock"],
+      "release": {
+        "year": 2011
+      },
+      "runtime": 2453
+    },
+    "visible": true
+  },
+  {
+    "acquired": "12-01-2012",
+    "artist": "Lykke Li",
+    "album": "Youth Novels",
+    "id": 1224062,
+    "metadata": {
+      "genres": [],
+      "release": {
+        "year": 2008
+      },
+      "runtime": 2689
+    },
+    "visible": true
+  },
+  {
+    "acquired": "04-01-2010",
+    "artist": "Lyrinx",
+    "album": "Ending the Circle of Life",
+    "metadata": {
+      "genres": ["Depressive Black Metal"],
+      "release": {
+        "year": 2009
+      },
+      "runtime": 2097
+    },
+    "id": 1736833,
+    "visible": true
+  },
+  {
+    "acquired": "10-01-2012",
+    "artist": "Mack Murphy & the Inmates",
+    "album": "Distant",
+    "id": 2649185,
+    "metadata": {
+      "genres": ["Neofolk"],
+      "release": {
+        "year": 2006
+      },
+      "runtime": null
+    },
+    "visible": true
+  },
+  {
+    "acquired": "10-01-2012",
+    "artist": "Mack Murphy & the Inmates",
+    "album": "Summer's Cemetery Dawns",
+    "id": 2649155,
+    "metadata": {
+      "genres": ["Neofolk"],
+      "release": {
+        "year": 2006
+      },
+      "runtime": 3514
+    },
+    "visible": true
+  },
+  {
+    "acquired": "10-01-2012",
+    "artist": "Mack Murphy & the Inmates",
+    "album": "The Early Years",
+    "id": 2649091,
+    "metadata": {
+      "genres": ["Neofolk"],
+      "release": {
+        "year": 2003
+      },
+      "runtime": 3503
+    },
+    "visible": true
+  },
+  {
+    "acquired": "12-01-2012",
+    "artist": "Madrugada",
+    "album": "Industrial Silence",
+    "id": 2645853,
+    "metadata": {
+      "genres": ["Alternative Rock", "Folk Rock"],
+      "release": {
+        "year": 1999
+      },
+      "runtime": 3817
+    },
+    "visible": true
+  },
+  {
+    "acquired": "01-01-2011",
+    "artist": "Madrugada",
+    "album": "The Deep End",
+    "id": 1530574,
+    "metadata": {
+      "genres": ["Alternative Rock"],
+      "release": {
+        "year": 2005
+      },
+      "runtime": null
+    },
+    "visible": true
+  },
+  {
+    "acquired": "12-01-2012",
+    "artist": "Madrugada",
+    "album": "The Nightly Disease",
+    "id": 512675,
+    "metadata": {
+      "genres": ["Blues Rock", "Emo", "Soft Rock"],
+      "release": {
+        "year": 2001
+      },
+      "runtime": 3890
+    },
+    "visible": true
+  },
+  {
+    "acquired": "07-01-2012",
+    "artist": "Membaris",
+    "album": "Entartet",
+    "id": 4322321,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2012
+      },
+      "runtime": 4224
+    },
+    "visible": true
+  },
+  {
+    "acquired": "08-01-2021",
     "artist": "Modest Mouse",
     "album": "Good News For People Who Love Bad News",
-    "hidden": false
+    "id": 397686,
+    "metadata": {
+      "genres": ["Indie Rock"],
+      "release": {
+        "year": 2004
+      },
+      "runtime": 2918
+    },
+    "visible": true
   },
   {
-    "month": "08",
-    "year": "2021",
+    "acquired": "08-01-2021",
+    "artist": "Modest Mouse",
+    "album": "Strangers to Ourselves",
+    "id": 6767041,
+    "metadata": {
+      "genres": ["Indie Rock"],
+      "release": {
+        "year": 2015
+      },
+      "runtime": null
+    },
+    "visible": true
+  },
+  {
+    "acquired": "08-01-2021",
+    "artist": "Modest Mouse",
+    "album": "This Is a Long Drive for Someone with Nothing to Think About",
+    "id": 805654,
+    "metadata": {
+      "genres": ["Indie Rock"],
+      "release": {
+        "year": 1996
+      },
+      "runtime": null
+    },
+    "visible": true
+  },
+  {
+    "acquired": "08-01-2021",
     "artist": "Modest Mouse",
     "album": "We Were Dead Before The Ship Even Sank",
-    "hidden": false
+    "id": 939894,
+    "metadata": {
+      "genres": ["Indie Rock"],
+      "release": {
+        "year": 2007
+      },
+      "runtime": 3748
+    },
+    "visible": true
+  },
+  {
+    "acquired": "06-01-2017",
+    "artist": "Morlockk Dilemma",
+    "album": "Circus Maximus",
+    "id": 2746436,
+    "metadata": {
+      "genres": ["Jazzy Hip-Hop", "Horrorcore", "Conscious", "Hardcore Hip-Hop"],
+      "release": {
+        "year": 2011
+      },
+      "runtime": null
+    },
+    "visible": true
+  },
+  {
+    "acquired": "02-01-2013",
+    "artist": "Motörhead",
+    "album": "Ace of Spades",
+    "id": 807566,
+    "metadata": {
+      "genres": ["Rock & Roll", "Heavy Metal", "Hard Rock", "Speed Metal"],
+      "release": {
+        "year": 1980
+      },
+      "runtime": null
+    },
+    "visible": true
+  },
+  {
+    "acquired": "04-01-2024",
+    "artist": "Nachtmahr",
+    "album": "Flamme",
+    "id": 14728380,
+    "metadata": {
+      "genres": ["Neofolk"],
+      "release": {
+        "year": 2020
+      },
+      "runtime": 2809
+    },
+    "visible": true
+  },
+  {
+    "acquired": "08-01-2010",
+    "artist": "Nachtmystium",
+    "album": "Addicts: Black Meddle Pt. II",
+    "id": 2318025,
+    "metadata": {
+      "genres": ["Black Metal", "Psychedelic Rock", "Experimental"],
+      "release": {
+        "year": 2010
+      },
+      "runtime": 2881
+    },
+    "visible": true
+  },
+  {
+    "acquired": "10-01-2012",
+    "artist": "Nachtmystium",
+    "album": "Assassins - Black Meddle Part 1",
+    "id": 1503328,
+    "metadata": {
+      "genres": ["Black Metal", "Experimental", "Prog Rock"],
+      "release": {
+        "year": 2008
+      },
+      "runtime": 2708
+    },
+    "visible": true
+  },
+  {
+    "acquired": "01-01-2011",
+    "artist": "Nachtmystium",
+    "album": "Doomsday Derelicts",
+    "id": 1808114,
+    "metadata": {
+      "genres": ["Black Metal", "Experimental"],
+      "release": {
+        "year": 2009
+      },
+      "runtime": 1000
+    },
+    "visible": true
+  },
+  {
+    "acquired": "05-01-2011",
+    "artist": "Nachtmystium",
+    "album": "Eulogy IV",
+    "id": 585634,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2004
+      },
+      "runtime": 1312
+    },
+    "visible": true
+  },
+  {
+    "acquired": "05-01-2011",
+    "artist": "Nachtmystium",
+    "album": "Instinct: Decay",
+    "id": 787200,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2006
+      },
+      "runtime": 2572
+    },
+    "visible": true
+  },
+  {
+    "acquired": "07-01-2012",
+    "artist": "Nachtmystium",
+    "album": "Silencing Machine",
+    "id": 3786580,
+    "metadata": {
+      "genres": ["Black Metal", "Psychedelic Rock", "Experimental", "Industrial"],
+      "release": {
+        "year": 2012
+      },
+      "runtime": null
+    },
+    "visible": true
+  },
+  {
+    "acquired": "08-01-2014",
+    "artist": "Nachtmystium",
+    "album": "The World We Left Behind",
+    "id": 5957068,
+    "metadata": {
+      "genres": ["Black Metal", "Experimental", "Psychedelic Rock"],
+      "release": {
+        "year": 2014
+      },
+      "runtime": 3284
+    },
+    "visible": true
+  },
+  {
+    "acquired": "04-01-2012",
+    "artist": "Nachtmystium",
+    "album": "Worldfall",
+    "id": 1385771,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2008
+      },
+      "runtime": 1578
+    },
+    "visible": true
+  },
+  {
+    "acquired": "01-01-2012",
+    "artist": "Nachtmytium / Murmur",
+    "album": "I Wait In Hell / Shuttle I",
+    "id": 3155322,
+    "metadata": {
+      "genres": ["Black Metal", "Psychedelic Rock", "Experimental"],
+      "release": {
+        "year": 2011
+      },
+      "runtime": 780
+    },
+    "visible": true
+  },
+  {
+    "acquired": "06-01-2010",
+    "artist": "Nagelfar",
+    "album": "Hünengrab im Herbst",
+    "id": 5289480,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 1997
+      },
+      "runtime": 3316
+    },
+    "visible": true
+  },
+  {
+    "acquired": "02-01-2011",
+    "artist": "Nagelfar",
+    "album": "Jagd",
+    "id": 2306205,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 1996
+      },
+      "runtime": 2261
+    },
+    "visible": true
+  },
+  {
+    "acquired": "06-01-2010",
+    "artist": "Nagelfar",
+    "album": "Srontgorrth",
+    "id": 855103,
+    "metadata": {
+      "genres": ["Black Metal", "Industrial", "Ambient"],
+      "release": {
+        "year": 1999
+      },
+      "runtime": null
+    },
+    "visible": true
+  },
+  {
+    "acquired": "02-01-2011",
+    "artist": "Nagelfar",
+    "album": "Srontgorrth",
+    "id": 3102065,
+    "metadata": {
+      "genres": ["Black Metal", "Industrial", "Ambient"],
+      "release": {
+        "year": 2010
+      },
+      "runtime": null
+    },
+    "visible": true
+  },
+  {
+    "acquired": "06-01-2010",
+    "artist": "Nagelfar",
+    "album": "Virus West",
+    "id": 855137,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2001
+      },
+      "runtime": 3720
+    },
+    "visible": true
+  },
+  {
+    "acquired": "05-01-2011",
+    "artist": "Nargaroth",
+    "album": "Jahreszeiten",
+    "id": 1955872,
+    "metadata": {
+      "genres": ["Dark Ambient", "Black Metal"],
+      "release": {
+        "year": 2009
+      },
+      "runtime": 3963
+    },
+    "visible": true
+  },
+  {
+    "acquired": "05-01-2011",
+    "artist": "Nargaroth",
+    "album": "Semper Fi",
+    "id": 1283131,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2007
+      },
+      "runtime": 4791
+    },
+    "visible": true
+  },
+  {
+    "acquired": "05-01-2011",
+    "artist": "Nargaroth",
+    "album": "Spectral Visions of Mental Warfare",
+    "id": 2993241,
+    "metadata": {
+      "genres": ["Black Metal", "Ambient"],
+      "release": {
+        "year": 2011
+      },
+      "runtime": 3486
+    },
+    "visible": true
+  },
+  {
+    "acquired": "12-01-2010",
+    "artist": "Nocte Obducta",
+    "album": "Aschefrühling",
+    "id": 1361304,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2005
+      },
+      "runtime": null
+    },
+    "visible": true
+  },
+  {
+    "acquired": "11-01-2010",
+    "artist": "Nocte Obducta",
+    "album": "Nektar - Teil 1: Zwölf Monde, eine Hand voll Träume",
+    "id": 964750,
+    "metadata": {
+      "genres": ["Black Metal", "Avantgarde"],
+      "release": {
+        "year": 2004
+      },
+      "runtime": 3085
+    },
+    "visible": true
+  },
+  {
+    "acquired": "06-01-2020",
+    "artist": "Nocte Obducta",
+    "album": "Stille - Das nagende Schweigen",
+    "id": 1070708,
+    "metadata": {
+      "genres": ["Black Metal", "Avantgarde", "Shoegaze"],
+      "release": {
+        "year": 2003
+      },
+      "runtime": 1917
+    },
+    "visible": true
+  },
+  {
+    "acquired": "11-01-2011",
+    "artist": "Nocte Obducta",
+    "album": "Verderbnis (Der Schnitter kratzt an jeder Tür)",
+    "id": 3327385,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2011
+      },
+      "runtime": 2411
+    },
+    "visible": true
+  },
+  {
+    "acquired": "10-01-2013",
+    "artist": "Nokturnal Mortum",
+    "album": "Voice of Steel",
+    "id": 2077031,
+    "metadata": {
+      "genres": ["Black Metal", "Folk Metal", "Progressive Metal"],
+      "release": {
+        "year": 2009
+      },
+      "runtime": 4181
+    },
+    "visible": true
+  },
+  {
+    "acquired": "11-01-2012",
+    "artist": "Of the Wand & the Moon",
+    "album": "The Lone Descent",
+    "id": 3109249,
+    "metadata": {
+      "genres": ["Neofolk"],
+      "release": {
+        "year": 2011
+      },
+      "runtime": 3589
+    },
+    "visible": true
+  },
+  {
+    "acquired": "03-01-2011",
+    "artist": "PiXie Meet",
+    "album": "On the Ground",
+    "visible": false
+  },
+  {
+    "acquired": "09-01-2010",
+    "artist": "PiXie Meet",
+    "album": "Waste Your Time",
+    "visible": false
+  },
+  {
+    "acquired": "02-01-2017",
+    "artist": "Porta Nigra",
+    "album": "Kaiserschnitt",
+    "id": 6693654,
+    "metadata": {
+      "genres": ["Black Metal", "Avantgarde", "Heavy Metal"],
+      "release": {
+        "year": 2015
+      },
+      "runtime": 2782
+    },
+    "visible": true
+  },
+  {
+    "acquired": "05-01-2019",
+    "artist": "Prezident",
+    "album": "Kunst ist eine besitzergreifende Geliebte",
+    "id": 4965186,
+    "metadata": {
+      "genres": ["Conscious"],
+      "release": {
+        "year": 2013
+      },
+      "runtime": 3252
+    },
+    "visible": true
+  },
+  {
+    "acquired": "05-01-2019",
+    "artist": "Prezident",
+    "album": "Limbus",
+    "id": 8360774,
+    "metadata": {
+      "genres": ["Conscious"],
+      "release": {
+        "year": 2016
+      },
+      "runtime": 5291
+    },
+    "visible": true
+  },
+  {
+    "acquired": "02-01-2016",
+    "artist": "Prinz Pi",
+    "album": "Im Westen Nix Neues",
+    "id": 8079921,
+    "metadata": {
+      "genres": [],
+      "release": {
+        "year": 2016
+      },
+      "runtime": 3804
+    },
+    "visible": true
+  },
+  {
+    "acquired": "02-01-2016",
+    "artist": "Prinz Pi",
+    "album": "Rebell ohne Grund",
+    "id": 2676615,
+    "metadata": {
+      "genres": [],
+      "release": {
+        "year": 2011
+      },
+      "runtime": 17899
+    },
+    "visible": true
+  },
+  {
+    "acquired": "04-01-2017",
+    "artist": "Ra Al Dee Experience",
+    "album": "Diatessaron",
+    "id": 9209202,
+    "metadata": {
+      "genres": ["Religious"],
+      "release": {
+        "year": 2016
+      },
+      "runtime": 1684
+    },
+    "visible": true
+  },
+  {
+    "acquired": "08-01-2014",
+    "artist": "Rome",
+    "album": "A Passage to Rhodesia",
+    "id": 5915368,
+    "metadata": {
+      "genres": ["Neofolk", "Industrial", "Experimental"],
+      "release": {
+        "year": 2014
+      },
+      "runtime": null
+    },
+    "visible": true
+  },
+  {
+    "acquired": "10-01-2012",
+    "artist": "Rome",
+    "album": "August Spies",
+    "id": 3496177,
+    "metadata": {
+      "genres": ["Folk", "Neofolk"],
+      "release": {
+        "year": 2012
+      },
+      "runtime": 202
+    },
+    "visible": true
+  },
+  {
+    "acquired": "03-01-2012",
+    "artist": "Rome",
+    "album": "Berlin",
+    "id": 2471689,
+    "metadata": {
+      "genres": ["Modern Classical", "Experimental", "Neofolk"],
+      "release": {
+        "year": 2010
+      },
+      "runtime": 1068
+    },
+    "visible": true
+  },
+  {
+    "acquired": "11-01-2011",
+    "artist": "Rome",
+    "album": "Confessions d'un voleur d'âmes",
+    "id": 949358,
+    "metadata": {
+      "genres": ["Modern Classical", "Experimental", "Neofolk"],
+      "release": {
+        "year": 2007
+      },
+      "runtime": 2580
+    },
+    "visible": true
+  },
+  {
+    "acquired": "11-01-2011",
+    "artist": "Rome",
+    "album": "Die AEsthetik der Herrschaftsfreiheit",
+    "id": 3203145,
+    "metadata": {
+      "genres": ["Military", "Industrial", "Neofolk", "Spoken Word", "Ambient", "Acoustic"],
+      "release": {
+        "year": 2011
+      },
+      "runtime": null
+    },
+    "visible": true
+  },
+  {
+    "acquired": "07-01-2012",
+    "artist": "Rome",
+    "album": "Fester",
+    "id": 3889837,
+    "metadata": {
+      "genres": ["Neofolk"],
+      "release": {
+        "year": 2012
+      },
+      "runtime": 887
+    },
+    "visible": true
+  },
+  {
+    "acquired": "03-01-2012",
+    "artist": "Rome",
+    "album": "Flowers from Exile",
+    "id": 1826803,
+    "metadata": {
+      "genres": ["Military", "Neofolk"],
+      "release": {
+        "year": 2009
+      },
+      "runtime": null
+    },
+    "visible": true
+  },
+  {
+    "acquired": "09-01-2023",
+    "artist": "Rome",
+    "album": "Gates of Europe",
+    "id": 27935784,
+    "metadata": {
+      "genres": ["Neofolk"],
+      "release": {
+        "year": 2023
+      },
+      "runtime": null
+    },
+    "visible": true
+  },
+  {
+    "acquired": "06-01-2013",
+    "artist": "Rome",
+    "album": "Hate Us and See if We Mind",
+    "id": 4687668,
+    "metadata": {
+      "genres": ["Neofolk", "Experimental", "Industrial"],
+      "release": {
+        "year": 2013
+      },
+      "runtime": 2794
+    },
+    "visible": true
+  },
+  {
+    "acquired": "10-01-2012",
+    "artist": "Rome",
+    "album": "Hell Money",
+    "id": 3975397,
+    "metadata": {
+      "genres": ["Folk", "Neofolk"],
+      "release": {
+        "year": 2012
+      },
+      "runtime": 2585
+    },
+    "visible": true
+  },
+  {
+    "acquired": "08-01-2014",
+    "artist": "Rome",
+    "album": "House of Stone",
+    "id": 19926427,
+    "visible": true,
+    "metadata": {
+      "genres": ["Neofolk", "Industrial", "Experimental"],
+      "release": {
+        "year": 2021
+      },
+      "runtime": null
+    }
+  },
+  {
+    "acquired": "11-01-2012",
+    "artist": "Rome",
+    "album": "L'assassin",
+    "id": 2112438,
+    "metadata": {
+      "genres": ["Modern Classical", "Neofolk"],
+      "release": {
+        "year": 2010
+      },
+      "runtime": 1080
+    },
+    "visible": true
+  },
+  {
+    "acquired": "03-01-2012",
+    "artist": "Rome",
+    "album": "Masse Mensch Material",
+    "id": 1282916,
+    "metadata": {
+      "genres": ["Neofolk"],
+      "release": {
+        "year": 2008
+      },
+      "runtime": 2782
+    },
+    "visible": true
+  },
+  {
+    "acquired": "03-01-2012",
+    "artist": "Rome",
+    "album": "Nera",
+    "id": 818834,
+    "metadata": {
+      "genres": ["Modern Classical", "Experimental", "Neofolk"],
+      "release": {
+        "year": 2006
+      },
+      "runtime": 2672
+    },
+    "visible": true
+  },
+  {
+    "acquired": "08-01-2012",
+    "artist": "Rome",
+    "album": "Nos chants perdus",
+    "id": 2274856,
+    "metadata": {
+      "genres": ["Acoustic", "Neofolk"],
+      "release": {
+        "year": 2010
+      },
+      "runtime": null
+    },
+    "visible": true
+  },
+  {
+    "acquired": "06-01-2011",
+    "artist": "Rome",
+    "album": "Our Holy Rue / The Merchant Fleet",
+    "visible": true,
+    "id": 2916009,
+    "metadata": {
+      "genres": ["Neofolk"],
+      "release": {
+        "year": 2011
+      },
+      "runtime": 701
+    }
+  },
+  {
+    "acquired": "08-01-2016",
+    "artist": "Rome",
+    "album": "The Hyperion Machine",
+    "id": 8887753,
+    "metadata": {
+      "genres": ["Modern Classical", "Neofolk"],
+      "release": {
+        "year": 2016
+      },
+      "runtime": 2839
+    },
+    "visible": true
+  },
+  {
+    "acquired": "03-01-2012",
+    "artist": "Secrets of the Moon",
+    "album": "Seven Bells",
+    "id": 3477634,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2012
+      },
+      "runtime": 4016
+    },
+    "visible": true
+  },
+  {
+    "acquired": "12-01-2013",
+    "artist": "Selim Lemouchi & his Enemies",
+    "album": "Earth Air Spirit Water Fire",
+    "id": 5170691,
+    "metadata": {
+      "genres": ["Psychedelic Rock"],
+      "release": {
+        "year": 2013
+      },
+      "runtime": 2688
+    },
+    "visible": true
+  },
+  {
+    "acquired": "05-01-2013",
+    "artist": "Selim Lemouchi & his Enemies",
+    "album": "Mens Animus Corpus",
+    "id": 4480963,
+    "metadata": {
+      "genres": ["Psychedelic Rock"],
+      "release": {
+        "year": 2013
+      },
+      "runtime": 1728
+    },
+    "visible": true
+  },
+  {
+    "acquired": "12-01-2010",
+    "artist": "Simple Existenz",
+    "album": "Das Leben vor dem Tod",
+    "id": 3615420,
+    "metadata": {
+      "genres": ["Black Metal", "Heavy Metal"],
+      "release": {
+        "year": 2010
+      },
+      "runtime": 2631
+    },
+    "visible": true
+  },
+  {
+    "acquired": "07-01-2012",
+    "artist": "Sterbeklang",
+    "album": "Cosmoderne",
+    "visible": true,
+    "id": 6771600,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2012
+      },
+      "runtime": 3059
+    }
+  },
+  {
+    "acquired": "07-01-2016",
+    "artist": "Stick to Your Guns",
+    "album": "Diamonds",
+    "id": 8800955,
+    "metadata": {
+      "genres": ["Hardcore", "Melodic Hardcore", "Metalcore"],
+      "release": {
+        "year": 2012
+      },
+      "runtime": null
+    },
+    "visible": true
+  },
+  {
+    "acquired": "12-01-2024",
+    "artist": "Summoning",
+    "album": "Oath Bound",
+    "id": 638490,
+    "metadata": {
+      "genres": ["Atmospheric Black Metal"],
+      "release": {
+        "year": 2006
+      },
+      "runtime": 4145
+    },
+    "visible": true
+  },
+  {
+    "acquired": "06-01-2011",
+    "artist": "Sun of the Sleepless/Nachtmahr",
+    "album": "I",
+    "id": 2750281,
+    "metadata": {
+      "genres": ["Black Metal", "Trip Hop", "Experimental"],
+      "release": {
+        "year": 2004
+      },
+      "runtime": 2729
+    },
+    "visible": true
+  },
+  {
+    "acquired": "08-01-2021",
+    "artist": "Tame Impala",
+    "album": "Currents",
+    "id": 7268943,
+    "metadata": {
+      "genres": ["Indie Rock", "Psychedelic Rock"],
+      "release": {
+        "year": 2015
+      },
+      "runtime": null
+    },
+    "visible": true
+  },
+  {
+    "acquired": "08-01-2010",
+    "artist": "The Devil's Blood",
+    "album": "Come, Reap",
+    "id": 1546392,
+    "metadata": {
+      "genres": ["Stoner Rock", "Psychedelic Rock", "Classic Rock"],
+      "release": {
+        "year": 2008
+      },
+      "runtime": 1665
+    },
+    "visible": true
+  },
+  {
+    "acquired": "10-01-2011",
+    "artist": "The Devil's Blood",
+    "album": "Fire Burning",
+    "id": 3156254,
+    "metadata": {
+      "genres": ["Hard Rock", "Psychedelic Rock"],
+      "release": {
+        "year": 2011
+      },
+      "runtime": 528
+    },
+    "visible": true
+  },
+  {
+    "acquired": "12-01-2010",
+    "artist": "The Devil's Blood",
+    "album": "I'll Be Your Ghost",
+    "id": 1889036,
+    "metadata": {
+      "genres": ["Hard Rock", "Psychedelic Rock"],
+      "release": {
+        "year": 2009
+      },
+      "runtime": 970
+    },
+    "visible": true
+  },
+  {
+    "acquired": "05-01-2013",
+    "artist": "The Devil's Blood",
+    "album": "III: Tabula Rasa or Death and the Seven Pillars",
+    "id": 4925370,
+    "metadata": {
+      "genres": ["Hard Rock", "Psychedelic Rock"],
+      "release": {
+        "year": 2013
+      },
+      "runtime": 3895
+    },
+    "visible": true
+  },
+  {
+    "acquired": "12-01-2010",
+    "artist": "The Devil's Blood",
+    "album": "The Graveyard Shuffle",
+    "id": 1424588,
+    "metadata": {
+      "genres": ["Psychedelic Rock"],
+      "release": {
+        "year": 2008
+      },
+      "runtime": 459
+    },
+    "visible": true
+  },
+  {
+    "acquired": "11-01-2011",
+    "artist": "The Devil's Blood",
+    "album": "The Thousandfold Epicentre",
+    "id": 3130170,
+    "metadata": {
+      "genres": ["Hard Rock", "Psychedelic Rock"],
+      "release": {
+        "year": 2011
+      },
+      "runtime": 4428
+    },
+    "visible": true
+  },
+  {
+    "acquired": "11-01-2010",
+    "artist": "The Devil's Blood",
+    "album": "The Time of No Time Evermore",
+    "id": 1974792,
+    "metadata": {
+      "genres": ["Hard Rock", "Psychedelic Rock"],
+      "release": {
+        "year": 2009
+      },
+      "runtime": 3280
+    },
+    "visible": true
+  },
+  {
+    "acquired": "02-01-2013",
+    "artist": "The Doors",
+    "album": "An American Prayer",
+    "id": 692394,
+    "metadata": {
+      "genres": ["Psychedelic Rock", "Spoken Word", "Experimental", "Classic Rock"],
+      "release": {
+        "year": 1978
+      },
+      "runtime": null
+    },
+    "visible": true
+  },
+  {
+    "acquired": "12-01-2012",
+    "artist": "The Doors",
+    "album": "Strange Days",
+    "id": 3966962,
+    "metadata": {
+      "genres": ["Psychedelic Rock"],
+      "release": {
+        "year": 1967
+      },
+      "runtime": 2029
+    },
+    "visible": true
+  },
+  {
+    "acquired": "03-01-2011",
+    "artist": "The Doors",
+    "album": "The Doors",
+    "id": 3395317,
+    "metadata": {
+      "genres": ["Psychedelic Rock"],
+      "release": {
+        "year": 1967
+      },
+      "runtime": 2605
+    },
+    "visible": true
+  },
+  {
+    "acquired": "08-01-2011",
+    "artist": "The Flight of Sleipnir",
+    "album": "Essence of Nine",
+    "id": 3393602,
+    "metadata": {
+      "genres": ["Doom Metal"],
+      "release": {
+        "year": 2011
+      },
+      "runtime": 2251
+    },
+    "visible": true
+  },
+  {
+    "acquired": "01-01-2011",
+    "artist": "The Heroine Whores",
+    "album": "EP 2010",
+    "visible": false
+  },
+  {
+    "acquired": "08-01-2013",
+    "artist": "The Ruins of Beverast",
+    "album": "Blood Vaults: The Blazing Gospel of Heinrich Kramer",
+    "id": 4889886,
+    "metadata": {
+      "genres": ["Black Metal", "Doom Metal"],
+      "release": {
+        "year": 2013
+      },
+      "runtime": 4701
+    },
+    "visible": true
+  },
+  {
+    "acquired": "09-01-2011",
+    "artist": "The Ruins of Beverast",
+    "album": "Enchanted by Gravemould",
+    "id": 3114892,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2011
+      },
+      "runtime": 3187
+    },
+    "visible": true
+  },
+  {
+    "acquired": "12-01-2010",
+    "artist": "The Ruins of Beverast",
+    "album": "Foulest Semen of a Sheltered Elite",
+    "id": 3067954,
+    "metadata": {
+      "genres": ["Doom Metal", "Black Metal", "Death Metal", "Avantgarde", "Experimental"],
+      "release": {
+        "year": 2009
+      },
+      "runtime": null
+    },
+    "visible": true
+  },
+  {
+    "acquired": "06-01-2010",
+    "artist": "The Ruins of Beverast",
+    "album": "Rain Upon the Impure",
+    "id": 1213906,
+    "metadata": {
+      "genres": ["Dark Ambient", "Black Metal", "Doom Metal", "Ethereal"],
+      "release": {
+        "year": 2006
+      },
+      "runtime": 4791
+    },
+    "visible": true
+  },
+  {
+    "acquired": "12-01-2016",
+    "artist": "Triarii",
+    "album": "ars militaria",
+    "id": 436210,
+    "metadata": {
+      "genres": ["Industrial", "Neo-Classical"],
+      "release": {
+        "year": 2005
+      },
+      "runtime": 3101
+    },
+    "visible": true
+  },
+  {
+    "acquired": "01-01-2012",
+    "artist": "Triarii",
+    "album": "Exile",
+    "id": 3276311,
+    "metadata": {
+      "genres": ["Modern Classical", "Industrial"],
+      "release": {
+        "year": 2011
+      },
+      "runtime": 1800
+    },
+    "visible": true
+  },
+  {
+    "acquired": "12-01-2016",
+    "artist": "Triarii",
+    "album": "Muse in Arms",
+    "id": 1540961,
+    "metadata": {
+      "genres": ["Modern Classical", "Industrial"],
+      "release": {
+        "year": 2008
+      },
+      "runtime": 3037
+    },
+    "visible": true
+  },
+  {
+    "acquired": "01-01-2012",
+    "artist": "Triarii",
+    "album": "Pièce Héroique",
+    "id": 663413,
+    "metadata": {
+      "genres": ["Modern Classical", "Industrial"],
+      "release": {
+        "year": 2006
+      },
+      "runtime": 3261
+    },
+    "visible": true
+  },
+  {
+    "acquired": "08-01-2021",
+    "artist": "Tribulation",
+    "album": "The Children of the Night",
+    "id": 6915731,
+    "metadata": {
+      "genres": ["Black Metal", "Doom Metal", "Gothic Metal"],
+      "release": {
+        "year": 2015
+      },
+      "runtime": 3392
+    },
+    "visible": true
+  },
+  {
+    "acquired": "04-01-2017",
+    "artist": "Ufo361",
+    "album": "Ich bin 3 Berliner",
+    "id": 10222796,
+    "metadata": {
+      "genres": ["Trap"],
+      "release": {
+        "year": 2017
+      },
+      "runtime": null
+    },
+    "visible": true
+  },
+  {
+    "acquired": "08-01-2011",
+    "artist": "Urgewalt",
+    "album": "Geisterhain",
+    "id": 4041190,
+    "visible": true,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2010
+      },
+      "runtime": null
+    }
+  },
+  {
+    "acquired": "02-01-2011",
+    "artist": "V.A.",
+    "album": "Only Death is Real Vol. 2",
+    "visible": false
+  },
+  {
+    "acquired": "08-01-2010",
+    "artist": "V.A.",
+    "album": "Voices of the Underground Vol. IV",
+    "visible": false
+  },
+  {
+    "acquired": "02-01-2011",
+    "artist": "Verdunkeln",
+    "album": "Einblick in den Qualenfall",
+    "id": 1655078,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2007
+      },
+      "runtime": 3779
+    },
+    "visible": true
+  },
+  {
+    "acquired": "11-01-2012",
+    "artist": "Von Thronstahl",
+    "album": "Corona Imperialis",
+    "id": 4017453,
+    "metadata": {
+      "genres": ["Military", "Neo-Classical"],
+      "release": {
+        "year": 2012
+      },
+      "runtime": null
+    },
+    "visible": true
+  },
+  {
+    "acquired": "03-01-2012",
+    "artist": "Von Thronstahl",
+    "album": "Germanium Metallicum",
+    "id": 1739565,
+    "metadata": {
+      "genres": ["Modern Classical", "Industrial", "Synth-pop", "Neofolk"],
+      "release": {
+        "year": 2009
+      },
+      "runtime": 4135
+    },
+    "visible": true
+  },
+  {
+    "acquired": "10-01-2012",
+    "artist": "Wallachia",
+    "album": "Ceremony of Ascension",
+    "id": 2878113,
+    "metadata": {
+      "genres": ["Black Metal", "Symphonic Metal"],
+      "release": {
+        "year": 2009
+      },
+      "runtime": 2153
+    },
+    "visible": true
+  },
+  {
+    "acquired": "11-01-2012",
+    "artist": "Wallachia",
+    "album": "Shunya",
+    "id": 4107950,
+    "metadata": {
+      "genres": ["Black Metal", "Symphonic Metal"],
+      "release": {
+        "year": 2012
+      },
+      "runtime": 2391
+    },
+    "visible": true
+  },
+  {
+    "acquired": "11-01-2012",
+    "artist": "Wallachia",
+    "album": "Shunya",
+    "id": 5505395,
+    "visible": false,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2012
+      },
+      "runtime": null
+    }
+  },
+  {
+    "acquired": "11-01-2010",
+    "artist": "Weh",
+    "album": "Origins",
+    "visible": true,
+    "id": 2571013,
+    "metadata": {
+      "genres": ["Neofolk"],
+      "release": {
+        "year": 2010
+      },
+      "runtime": null
+    }
+  },
+  {
+    "acquired": "06-01-2011",
+    "artist": "Weird Fate / Membaris",
+    "album": "Conspiracy",
+    "visible": true,
+    "id": 3564178,
+    "metadata": {
+      "genres": ["Black Metal"],
+      "release": {
+        "year": 2008
+      },
+      "runtime": 2651
+    }
+  },
+  {
+    "acquired": "06-01-2011",
+    "artist": "Winds of the Black Mountains",
+    "album": "Sing thou Unholy Servants",
+    "visible": false
+  },
+  {
+    "acquired": "10-01-2011",
+    "artist": "Wolves in the Throne Room",
+    "album": "Two Hunters",
+    "id": 1090067,
+    "metadata": {
+      "genres": ["Atmospheric Black Metal", "Doom Metal"],
+      "release": {
+        "year": 2007
+      },
+      "runtime": 2781
+    },
+    "visible": true
   }
 ]
