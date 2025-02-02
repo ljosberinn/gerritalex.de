@@ -65,7 +65,7 @@ function Blank() {
   return <svg className="h-6 w-6" />;
 }
 
-const ThemeSwitch = () => {
+export function ThemeSwitch() {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme, resolvedTheme } = useTheme();
 
@@ -147,6 +147,4 @@ const ThemeSwitch = () => {
       </Menu>
     </div>
   );
-};
-
-export default ThemeSwitch;
+}

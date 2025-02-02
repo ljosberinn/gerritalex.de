@@ -1,16 +1,16 @@
 import siteMetadata from '@/data/siteMetadata';
 import headerNavLinks from '@/data/headerNavLinks';
-import Link from './Link';
-import MobileNav from './MobileNav';
-import ThemeSwitch from './ThemeSwitch';
-import SearchButton from './SearchButton';
+import { CustomLink } from './CustomLink';
+import { MobileNav } from './MobileNav';
+import { ThemeSwitch } from './ThemeSwitch';
+import { SearchButton } from './SearchButton';
 import Image from 'next/image';
 
 function Logo() {
   return <Image src={siteMetadata.siteLogo} width="32" height="32" className="h-8" alt="logo" />;
 }
 
-export default function Header() {
+export function Header() {
   let headerClass =
     'xl:max-w-7xl mx-auto flex items-center w-full bg-white dark:bg-gray-950 justify-between py-10';
 
@@ -21,7 +21,7 @@ export default function Header() {
   return (
     <header className={headerClass}>
       <div className="flex flex-row items-center">
-        <Link href="/" aria-label={siteMetadata.headerTitle}>
+        <CustomLink href="/" aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center justify-between">
             <div className="mr-3">
               <Logo />
@@ -34,20 +34,20 @@ export default function Header() {
               siteMetadata.headerTitle
             )}
           </div>
-        </Link>
+        </CustomLink>
       </div>
       <div className="flex items-center space-x-4 leading-5 sm:space-x-6">
         <div className="no-scrollbar hidden items-center space-x-4 overflow-x-auto sm:flex sm:space-x-6">
           {headerNavLinks
             .filter((link) => link.href !== '/')
             .map((link) => (
-              <Link
+              <CustomLink
                 key={link.title}
                 href={link.href}
                 className="block font-medium text-gray-900 hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-400"
               >
                 {link.title}
-              </Link>
+              </CustomLink>
             ))}
         </div>
         <SearchButton />

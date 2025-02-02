@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'components/Image';
+import { Image } from 'components/Image';
 import clsx from 'clsx';
 import { ChangeEvent, useState } from 'react';
 import { type Series as SeriesType } from 'app/series/page';

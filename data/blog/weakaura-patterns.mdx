@@ -274,3 +274,16 @@ You'll gain:
 - versioning if you wanna use git
 - an actual file system that you can search and copy from
 - types, if you're into that (please be)
+
+# Finding Spell IDs
+
+Regardless of whether you're working with custom code or just create some auras that should work across locales, you have to get your game ids from somewhere.
+For things like auras, talents, cast ids, anything that is immediately visible in game, addons fill that gap nicely - personally I'm just using [idTip](https://www.curseforge.com/wow/addons/idtip).
+
+But what about damage/healing ids? Debuffs on players in a dungeon, fleeting things you either can't look at directly or effectively not in the heat of the moment?
+The answer at this point is obvious: use [logs](https://www.warcraftlogs.com).
+
+Any spell icon is a link to wowhead, e.g. this <WowheadLink id={395160} icon="ability_evoker_eruption" kind="spell">Eruption</WowheadLink>.
+The id is directly in the url: `395160`. This only leaves you with having to find a log but chances are, you're not the first one to use use that spell or play the content it's used in so luckily that won't be an issue.
+
+For fringe cases like early alpha/beta/ptr cycles, you can always log target dummies in some capital yourself.

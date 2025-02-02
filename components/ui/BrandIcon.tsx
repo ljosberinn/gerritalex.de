@@ -21,7 +21,7 @@ type BrandIconProps = {
   className?: string;
 };
 
-export default function BrandIcon({
+export function BrandIcon({
   type,
   className = 'h-16 w-16 lg:h-14 lg:w-14 xl:h-20 xl:w-20',
 }: BrandIconProps) {

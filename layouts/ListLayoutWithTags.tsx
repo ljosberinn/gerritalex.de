@@ -5,8 +5,8 @@ import { slug } from 'github-slugger';
 import { formatDate } from 'pliny/utils/formatDate';
 import { CoreContent } from 'pliny/utils/contentlayer';
 import type { Blog } from 'contentlayer/generated';
-import Link from '@/components/Link';
-import Tag from '@/components/Tag';
+import { CustomLink } from '@/components/CustomLink';
+import { Tag } from '@/components/Tag';
 import siteMetadata from '@/data/siteMetadata';
 import tagData from 'app/tag-data.json';
 
@@ -35,12 +35,12 @@ function Pagination({ totalPages, currentPage }: PaginationProps) {
           </button>
         )}
         {prevPage && (
-          <Link
+          <CustomLink
             href={currentPage - 1 === 1 ? `${pathname}/` : `${pathname}/?page=${currentPage - 1}`}
             rel="prev"
           >
             Previous
-          </Link>
+          </CustomLink>
         )}
         <span>
           {currentPage} of {totalPages}
@@ -51,9 +51,9 @@ function Pagination({ totalPages, currentPage }: PaginationProps) {
           </button>
         )}
         {nextPage && (
-          <Link href={`${pathname}/?page=${currentPage + 1}`} rel="next">
+          <CustomLink href={`${pathname}/?page=${currentPage + 1}`} rel="next">
             Next
-          </Link>
+          </CustomLink>
         )}
       </nav>
     </div>
@@ -86,12 +86,12 @@ export default function ListLayoutWithTags({
               {pathname.startsWith('/blog') ? (
                 <h3 className="font-bold uppercase text-primary-500">All Posts</h3>
               ) : (
-                <Link
+                <CustomLink
                   href={`/blog`}
                   className="font-bold uppercase text-gray-700 hover:text-primary-500 dark:text-gray-300 dark:hover:text-primary-500"
                 >
                   All Posts
-                </Link>
+                </CustomLink>
               )}
               <ul>
                 {sortedTags.map((t) => {
@@ -102,13 +102,13 @@ export default function ListLayoutWithTags({
                           {`${t} (${tagCounts[t]})`}
                         </h3>
                       ) : (
-                        <Link
+                        <CustomLink
                           href={`/tags/${slug(t)}`}
                           className="px-3 py-2 text-sm font-medium uppercase text-gray-500 hover:text-primary-500 dark:text-gray-300 dark:hover:text-primary-500"
                           aria-label={`View posts tagged ${t}`}
                         >
                           {`${t} (${tagCounts[t]})`}
-                        </Link>
+                        </CustomLink>
                       )}
                     </li>
                   );
@@ -135,9 +135,12 @@ export default function ListLayoutWithTags({
                       <div className="space-y-3">
                         <div>
                           <h2 className="text-2xl font-bold leading-8 tracking-tight">
-                            <Link href={`/${path}`} className="text-gray-900 dark:text-gray-100">
+                            <CustomLink
+                              href={`/${path}`}
+                              className="text-gray-900 dark:text-gray-100"
+                            >
                               {title}
-                            </Link>
+                            </CustomLink>
                           </h2>
                           <div className="flex flex-wrap">
                             {tags?.map((tag) => <Tag key={tag} text={tag} />)}

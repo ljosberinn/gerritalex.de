@@ -2,11 +2,11 @@ import { ReactNode } from 'react';
 import { formatDate } from 'pliny/utils/formatDate';
 import { CoreContent } from 'pliny/utils/contentlayer';
 import type { Blog } from 'contentlayer/generated';
-import Link from '@/components/Link';
-import PageTitle from '@/components/PageTitle';
-import SectionContainer from '@/components/SectionContainer';
+import { CustomLink } from '@/components/CustomLink';
+import { PageTitle } from '@/components/PageTitle';
+import { SectionContainer } from '@/components/SectionContainer';
 import siteMetadata from '@/data/siteMetadata';
-import ScrollTopAndComment from '@/components/ScrollTopAndComment';
+import { ScrollTopAndComment } from '@/components/ScrollTopAndComment';
 
 interface LayoutProps {
   content: CoreContent<Blog>;
@@ -46,24 +46,24 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
               <div className="flex flex-col text-sm font-medium sm:flex-row sm:justify-between sm:text-base">
                 {prev && prev.path && (
                   <div className="pt-4 xl:pt-8">
-                    <Link
+                    <CustomLink
                       href={`/${prev.path}`}
                       className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                       aria-label={`Previous post: ${prev.title}`}
                     >
                       &larr; {prev.title}
-                    </Link>
+                    </CustomLink>
                   </div>
                 )}
                 {next && next.path && (
                   <div className="pt-4 xl:pt-8">
-                    <Link
+                    <CustomLink
                       href={`/${next.path}`}
                       className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                       aria-label={`Next post: ${next.title}`}
                     >
                       {next.title} &rarr;
-                    </Link>
+                    </CustomLink>
                   </div>
                 )}
               </div>

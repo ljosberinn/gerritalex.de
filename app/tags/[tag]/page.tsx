@@ -7,7 +7,7 @@ import tagData from 'app/tag-data.json';
 import { generatePageMetadata } from 'app/seo';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import RestrainedMaxWidth from '@/components/RestrainedMaxWidth';
+import { RestrainedMaxWidth } from '@/components/RestrainedMaxWidth';
 
 export async function generateMetadata(props: {
   params: Promise<{ tag: string }>;

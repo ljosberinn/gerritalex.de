@@ -1,12 +1,12 @@
 import { ReactNode } from 'react';
-import Image from '@/components/Image';
+import { Image } from '@/components/Image';
 import Bleed from 'pliny/ui/Bleed';
 import { CoreContent } from 'pliny/utils/contentlayer';
 import type { Blog } from 'contentlayer/generated';
-import Link from '@/components/Link';
-import PageTitle from '@/components/PageTitle';
-import SectionContainer from '@/components/SectionContainer';
-import ScrollTopAndComment from '@/components/ScrollTopAndComment';
+import { CustomLink } from '@/components/CustomLink';
+import { PageTitle } from '@/components/PageTitle';
+import { SectionContainer } from '@/components/SectionContainer';
+import { ScrollTopAndComment } from '@/components/ScrollTopAndComment';
 
 interface LayoutProps {
   content: CoreContent<Blog>;
@@ -38,28 +38,28 @@ export default function PostMinimal({ content, next, prev, children }: LayoutPro
             </div>
           </div>
           <div className="prose max-w-none py-4 dark:prose-invert">{children}</div>
-          <footer>
+          <footer className="mb-8">
             <div className="flex flex-col text-sm font-medium sm:flex-row sm:justify-between sm:text-base">
               {prev && prev.path && (
                 <div className="pt-4 xl:pt-8">
-                  <Link
+                  <CustomLink
                     href={`/${prev.path}`}
                     className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                     aria-label={`Previous post: ${prev.title}`}
                   >
                     &larr; {prev.title}
-                  </Link>
+                  </CustomLink>
                 </div>
               )}
               {next && next.path && (
                 <div className="pt-4 xl:pt-8">
-                  <Link
+                  <CustomLink
                     href={`/${next.path}`}
                     className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                     aria-label={`Next post: ${next.title}`}
                   >
                     {next.title} &rarr;
-                  </Link>
+                  </CustomLink>
                 </div>
               )}
             </div>

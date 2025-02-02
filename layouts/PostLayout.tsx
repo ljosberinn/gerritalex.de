@@ -1,13 +1,13 @@
 import { type ReactNode } from 'react';
 import { type CoreContent } from 'pliny/utils/contentlayer';
 import type { Blog, Authors } from 'contentlayer/generated';
-import Link from '@/components/Link';
-import PageTitle from '@/components/PageTitle';
-import SectionContainer from '@/components/SectionContainer';
-import Image from '@/components/Image';
-import Tag from '@/components/Tag';
+import { CustomLink } from '@/components/CustomLink';
+import { PageTitle } from '@/components/PageTitle';
+import { SectionContainer } from '@/components/SectionContainer';
+import { Image } from '@/components/Image';
+import { Tag } from '@/components/Tag';
 import siteMetadata from '@/data/siteMetadata';
-import ScrollTopAndComment from '@/components/ScrollTopAndComment';
+import { ScrollTopAndComment } from '@/components/ScrollTopAndComment';
 
 const editUrl = (path: string) => `${siteMetadata.siteRepo}/blob/master/data/${path}`;
 
@@ -77,12 +77,12 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                             <>
                               <dt className="sr-only">Bluesky</dt>
                               <dd>
-                                <Link
+                                <CustomLink
                                   href={author.bluesky}
                                   className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                                 >
                                   {author.bluesky.replace('https://bsky.app/profile/', '@')}
-                                </Link>
+                                </CustomLink>
                               </dd>
                             </>
                           ) : null}
@@ -96,7 +96,7 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
               <div className="prose max-w-none pb-8 pt-10 dark:prose-invert">{children}</div>
               <div className="flex justify-center pb-6 pt-6 text-sm text-gray-700 dark:text-gray-300">
-                <Link href={editUrl(filePath)}>View source on GitHub</Link>
+                <CustomLink href={editUrl(filePath)}>View source on GitHub</CustomLink>
               </div>
             </div>
             <footer>
@@ -121,7 +121,7 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                           Previous Article
                         </h2>
                         <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
-                          <Link href={`/${prev.path}`}>{prev.title}</Link>
+                          <CustomLink href={`/${prev.path}`}>{prev.title}</CustomLink>
                         </div>
                       </div>
                     )}
@@ -131,7 +131,7 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                           Next Article
                         </h2>
                         <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
-                          <Link href={`/${next.path}`}>{next.title}</Link>
+                          <CustomLink href={`/${next.path}`}>{next.title}</CustomLink>
                         </div>
                       </div>
                     )}
@@ -139,13 +139,13 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                 )}
               </div>
               <div className="pt-4 xl:pt-8">
-                <Link
+                <CustomLink
                   href={`/${basePath}`}
                   className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                   aria-label="Back to the blog"
                 >
                   &larr; Back to the blog
-                </Link>
+                </CustomLink>
               </div>
             </footer>
           </div>

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Link from './Link';
+import { CustomLink } from './CustomLink';
 
 const lyrics = [
   {
@@ -95,12 +95,12 @@ export function RandomLyrics() {
         </span>
       ))}
       <br />
-      <Link
+      <CustomLink
         className="text-blue-700 underline hover:text-yellow-900 dark:text-blue-200 dark:hover:text-yellow-100"
         href={randomLyrics.link}
       >
         {randomLyrics.source}
-      </Link>
+      </CustomLink>
     </div>
   );
 }

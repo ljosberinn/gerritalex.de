@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'components/Image';
+import { Image } from 'components/Image';
 import { Music as MusicType } from 'app/music/page';
 
 type MusicProps = {

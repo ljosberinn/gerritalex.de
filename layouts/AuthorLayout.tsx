@@ -1,7 +1,7 @@
 import { type ReactNode } from 'react';
 import { type Authors } from 'contentlayer/generated';
 import SocialIcon from '@/components/social-icons';
-import RestrainedMaxWidth from '@/components/RestrainedMaxWidth';
+import { RestrainedMaxWidth } from '@/components/RestrainedMaxWidth';
 
 interface Props {
   children: ReactNode;

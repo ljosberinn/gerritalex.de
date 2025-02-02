@@ -1,7 +1,7 @@
 import { KBarButton } from 'pliny/search/KBarButton';
 import siteMetadata from '@/data/siteMetadata';
 
-export default function SearchButton() {
+export function SearchButton() {
   if (!siteMetadata.search) {
     return null;
   }

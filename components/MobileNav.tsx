@@ -3,10 +3,10 @@
 import { Dialog, DialogPanel, Transition, TransitionChild } from '@headlessui/react';
 import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 import { Fragment, useState, useEffect, useRef } from 'react';
-import Link from './Link';
+import { CustomLink } from './CustomLink';
 import headerNavLinks from '@/data/headerNavLinks';
 
-export default function MobileNav() {
+export function MobileNav() {
   const [navShow, setNavShow] = useState(false);
   const navRef = useRef(null);
 
@@ -72,14 +72,14 @@ export default function MobileNav() {
                 className="mt-8 flex h-full basis-0 flex-col items-start overflow-y-auto pl-12 pt-2 text-left"
               >
                 {headerNavLinks.map((link) => (
-                  <Link
+                  <CustomLink
                     key={link.title}
                     href={link.href}
                     className="mb-4 py-2 pr-4 text-2xl font-bold tracking-widest text-gray-900 outline outline-0 hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-400"
                     onClick={onToggleNav}
                   >
                     {link.title}
-                  </Link>
+                  </CustomLink>
                 ))}
               </nav>
 

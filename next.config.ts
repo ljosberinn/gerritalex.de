@@ -52,7 +52,6 @@ const securityHeaders = [
 
 const output = process.env.EXPORT ? 'export' : undefined;
 const basePath = process.env.BASE_PATH || undefined;
-const unoptimized = process.env.UNOPTIMIZED ? true : undefined;
 
 const config = (): NextConfig => {
   const plugins = [withContentlayer];
@@ -69,10 +68,9 @@ const config = (): NextConfig => {
       remotePatterns: [
         {
           protocol: 'https',
-          hostname: 'picsum.photos',
+          hostname: 'wow.zamimg.com',
         },
       ],
-      unoptimized,
     },
     async headers() {
       return [

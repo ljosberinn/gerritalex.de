@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
-const ScrollTopAndComment = () => {
+export function ScrollTopAndComment() {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
@@ -37,6 +37,4 @@ const ScrollTopAndComment = () => {
       </button>
     </div>
   );
-};
-
-export default ScrollTopAndComment;
+}

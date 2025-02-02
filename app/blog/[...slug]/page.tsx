@@ -11,7 +11,7 @@ import PostBanner from '@/layouts/PostBanner';
 import { Metadata } from 'next';
 import siteMetadata from '@/data/siteMetadata';
 import { notFound } from 'next/navigation';
-import RestrainedMaxWidth from '@/components/RestrainedMaxWidth';
+import { RestrainedMaxWidth } from '@/components/RestrainedMaxWidth';
 
 const defaultLayout = 'PostLayout';
 const layouts = {

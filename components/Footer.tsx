@@ -2,7 +2,7 @@ import siteMetadata from '@/data/siteMetadata';
 import SocialIcon from '@/components/social-icons';
 import BuiltWith from './ui/BuiltWith';
 
-export default function Footer() {
+export function Footer() {
   return (
     <footer className="mx-auto w-full px-2 xl:max-w-7xl">
       <div className="flex h-24 flex-col items-center justify-between py-2 md:h-auto md:flex-row">

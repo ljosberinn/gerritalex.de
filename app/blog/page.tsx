@@ -2,7 +2,7 @@ import ListLayout from '@/layouts/ListLayoutWithTags';
 import { allCoreContent, sortPosts } from 'pliny/utils/contentlayer';
 import { allBlogs } from 'contentlayer/generated';
 import { generatePageMetadata } from 'app/seo';
-import RestrainedMaxWidth from '@/components/RestrainedMaxWidth';
+import { RestrainedMaxWidth } from '@/components/RestrainedMaxWidth';
 
 const POSTS_PER_PAGE = 5;
 
