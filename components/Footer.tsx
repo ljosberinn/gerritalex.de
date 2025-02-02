@@ -5,7 +5,7 @@ import BuiltWith from './ui/BuiltWith';
 export default function Footer() {
   return (
     <footer className="mx-auto w-full px-2 xl:max-w-7xl">
-      <div className="flex h-24 flex-col items-center justify-between py-4 md:h-auto md:flex-row">
+      <div className="flex h-24 flex-col items-center justify-between py-2 md:h-auto md:flex-row">
         <BuiltWith />
 
         <div className="flex space-x-4">
