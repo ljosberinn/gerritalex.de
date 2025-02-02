@@ -55,17 +55,17 @@ aura_env.customEventName = "SOMETHING_DEFINITELY_UNIQUE"
 aura_env.timer = nil
 
 function aura_env.queue()
-  if aura_env.timer then
-    if not aura_env.timer:IsCancelled() then
-		   	aura_env.timer:Cancel()
-    end
+ if aura_env.timer then
+  if not aura_env.timer:IsCancelled() then
+   aura_env.timer:Cancel()
+  end
 
-	   aura_env.timer = nil
-  	end
+  aura_env.timer = nil
+ end
 
 	aura_env.timer = C_Timer.NewTimer(3, function() -- 3 is seconds here, whatever you need
 		WeakAuras.ScanEvents(aura_env.customEventName, aura_env.id)
-	end)
+ end)
 end
 ```
 
