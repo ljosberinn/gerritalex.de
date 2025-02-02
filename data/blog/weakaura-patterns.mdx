@@ -63,13 +63,185 @@ function aura_env.queue()
   aura_env.timer = nil
  end
 
- aura_env.timer = C_Timer.NewTimer(3, function() -- 3 is seconds here, whatever you need
+ -- 3 is seconds here, whatever you need. 0 means next frame
+ aura_env.timer = C_Timer.NewTimer(3, function()
   WeakAuras.ScanEvents(aura_env.customEventName, aura_env.id)
  end)
 end
 ```
 
 Don't forget to include the custom event name in your events to trigger from!
+
+## Example: Breath of Eons
+
+[Breath of Eons](https://www.wowhead.com/spell=409632/breath-of-eons) applies a debuff with a dynamic duration on every target the casting Evoker his flying over, meaning we have a variable application time, duration and amount of affected targets.
+
+Eventually, if at least one target lives for the duration of the debuff, it'll expire and do some damage.
+
+Goal here is to announce the total damage done by the spell, no visual.
+
+We'll need to listen to [`COMBAT_LOG_EVENT_UNFILTERED`](https://warcraft.wiki.gg/wiki/COMBAT_LOG_EVENT) filtering for `SPELL_DAMAGE` and `SPELL_MISSED` (to catch full absorbs) in the trigger:
+
+```lua
+--- CLEU:SPELL_DAMAGE:SPELL_MISSED, XEPHUI_BREATH_OF_EONS_ANNOUNCER
+function (event, ...)
+ if event == "COMBAT_LOG_EVENT_UNFILTERED" then
+  local _, subEvent = ...
+  local key = nil
+  local addition = 0
+
+  if subEvent == "SPELL_DAMAGE" then
+   local _, _, _, sourceGUID, _, _, _, _, _, _, _, spellId, _, _, amount, _, _, _, _, absorbed = ...
+
+   if spellId == 409632 then
+    key = sourceGUID
+    addition = amount + (absorbed or 0) -- to account for partial absorbs
+   end
+  elseif subEvent == "SPELL_MISSED" then
+   local _, _, _, sourceGUID, _, _, _, _, _, _, _, spellId, _, _, missType, _, amount = ...
+
+   if missType == "ABSORB" and spellId == 409632 then
+    key = sourceGUID
+    addition = amount
+   end
+  end
+
+  if addition > 0 and key then
+   aura_env.bySource[key] = aura_env.bySource[key] or 0
+   aura_env.bySource[key] = aura_env.bySource[key] + addition
+   aura_env.queue()
+  end
+
+  return false
+ end
+
+ if event == aura_env.customEventName then
+  local id = ...
+
+  if id ~= aura_env.id then
+   return false
+  end
+
+  aura_env.timer = nil
+
+  local message = aura_env.getMessage()
+
+  if aura_env.config.announce then
+   SendChatMessage(message, "SAY")
+  else
+    print(message)
+  end
+
+  return false
+ end
+
+ return false
+end
+```
+
+and its accompanying Init Action:
+
+```lua
+aura_env.customEventName = "XEPHUI_BREATH_OF_EONS_ANNOUNCER"
+aura_env.timer = nil
+
+---@type table<string, number>
+aura_env.bySource = {}
+
+function aura_env.queue()
+ if aura_env.timer then
+  if not aura_env.timer:IsCancelled() then
+   aura_env.timer:Cancel()
+  end
+
+  aura_env.timer = nil
+ end
+
+ -- 3 seconds here to definitely catch all events which may be significantly delayed based on debuff application time
+ aura_env.timer = C_Timer.NewTimer(3, function()
+  WeakAuras.ScanEvents(aura_env.customEventName, aura_env.id)
+ end)
+end
+
+-- custom formatter for float precision purposes, Blizz provides a similar function but it truncates
+---@param number number
+---@return string
+local function formatNumber(number)
+ if number > 1000000 then
+  return string.format("%1.fM", number / 1000000)
+ end
+
+ if number > 1000 then
+  return string.format("%1.fK", number / 1000)
+ end
+
+ return number
+end
+
+local baseBlueprint = C_Spell.GetSpellName(403631) .. " hit for %s!"
+local maxContributorBlueprint = "Highest contributor: %s with %s (%s%%)"
+
+---@return string
+function aura_env.getMessage()
+ local total = 0
+ local individualMax = 0
+ local maxSource = nil
+
+ for sourceGUID, amount in pairs(aura_env.bySource) do
+   total = total + amount
+
+   if amount > individualMax then
+    individualMax = amount
+    maxSource = sourceGUID
+   end
+ end
+
+ table.wipe(aura_env.bySource)
+
+ local base = string.format(baseBlueprint, formatNumber(total))
+
+ if aura_env.config.includeContributor and individualMax > 0 and maxSource ~= nil then
+  local token = UnitTokenFromGUID(maxSource)
+  local name = token and UnitName(token) or nil
+
+  if name then
+   return string.format(
+    base .. " " .. maxContributorBlueprint,
+    name,
+    formatNumber(individualMax),
+    string.format("%1.f", individualMax / total * 100)
+   )
+  end
+ end
+
+ return base
+end
+```
+
+Why does this work?
+
+The order of events is as follows:
+- multiple, slightly delayed CLEU from player 1
+  -> store values
+  -> queue
+- multiple, slightly delayed CLEU from player 2
+  -> store values
+  -> kill timer
+  -> queue again
+- multiple, slightly delayed CLEU from player 3
+  -> store values
+  -> kill timer
+  -> queue again
+- multiple, slightly delayed CLEU from player 4
+  -> store values
+  -> kill timer
+  -> queue again
+- note these will very most likely also be in entirely variable orders  
+- eventually there's no new CLEU events
+- custom event
+  -> read values
+  -> clear state
+  -> announce
 
 # Write your code in some editor
 
