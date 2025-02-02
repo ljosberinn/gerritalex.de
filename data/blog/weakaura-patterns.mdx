@@ -11,7 +11,7 @@ Some of the patterns I use in or for my [WeakAuras](https://weakauras.wtf/). Thi
 
 # Queueing & Custom Events
 
-It's technically a basic pattern once you've dabbled with WeakAuras and custom code in general but absolutely worth documennting.
+It's technically a basic pattern once you've dabbled with WeakAuras and custom code in general but absolutely worth documenting.
 
 You may find yourself in a situation where:
 
@@ -56,11 +56,11 @@ aura_env.timer = nil
 
 function aura_env.queue()
   if aura_env.timer then
-		if not aura_env.timer:IsCancelled() then
-			aura_env.timer:Cancel()
-		end
+    if not aura_env.timer:IsCancelled() then
+		   	aura_env.timer:Cancel()
+    end
 
-		aura_env.timer = nil
+	  aura_env.timer = nil
 	end
 
 	aura_env.timer = C_Timer.NewTimer(3, function() -- 3 is seconds here, whatever you need
