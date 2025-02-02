@@ -13,7 +13,7 @@ const siteMetadata = {
   location: 'Munich, Germany',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://gerritalex.de/',
+  siteUrl: 'https://gerritalex.de',
   siteRepo: 'https://github.com/ljosberinn/gerritalex.de',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/scalecommander.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
