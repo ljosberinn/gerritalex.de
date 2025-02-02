@@ -63,8 +63,8 @@ function aura_env.queue()
   aura_env.timer = nil
  end
 
-	aura_env.timer = C_Timer.NewTimer(3, function() -- 3 is seconds here, whatever you need
-		WeakAuras.ScanEvents(aura_env.customEventName, aura_env.id)
+ aura_env.timer = C_Timer.NewTimer(3, function() -- 3 is seconds here, whatever you need
+  WeakAuras.ScanEvents(aura_env.customEventName, aura_env.id)
  end)
 end
 ```
