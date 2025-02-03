@@ -4625,6 +4625,86 @@
     "favorite": false
   },
   {
+    "title": "The Girl Who Kicked the Hornets' Nest",
+    "id": 33613,
+    "metadata": {
+      "genres": [
+        "Action",
+        "Thriller",
+        "Crime",
+        "Mystery"
+      ],
+      "tagline": "There's A Storm Coming",
+      "release": {
+        "day": 27,
+        "month": 11,
+        "year": 2009
+      },
+      "runtime": 147
+    },
+    "favorite": false
+  },
+  {
+    "title": "The Girl Who Played with Fire",
+    "id": 24253,
+    "metadata": {
+      "genres": [
+        "Drama",
+        "Action",
+        "Thriller",
+        "Crime",
+        "Mystery"
+      ],
+      "tagline": "Fight Fire with Fire",
+      "release": {
+        "day": 18,
+        "month": 9,
+        "year": 2009
+      },
+      "runtime": 129
+    },
+    "favorite": false
+  },
+  {
+    "title": "The Girl with the Dragon Tattoo",
+    "id": 15472,
+    "metadata": {
+      "genres": [
+        "Drama",
+        "Thriller",
+        "Crime",
+        "Mystery"
+      ],
+      "tagline": "Based on the Worldwide Best Seller",
+      "release": {
+        "day": 27,
+        "month": 2,
+        "year": 2009
+      },
+      "runtime": 152
+    },
+    "favorite": false
+  },
+  {
+    "title": "The Girl with the Dragon Tattoo",
+    "id": 65754,
+    "metadata": {
+      "genres": [
+        "Thriller",
+        "Crime",
+        "Mystery"
+      ],
+      "tagline": "What is hidden in snow, comes forth in the thaw.",
+      "release": {
+        "day": 14,
+        "month": 12,
+        "year": 2011
+      },
+      "runtime": 158
+    },
+    "favorite": false
+  },
+  {
     "title": "The Grand Budapest Hotel",
     "id": 120467,
     "metadata": {

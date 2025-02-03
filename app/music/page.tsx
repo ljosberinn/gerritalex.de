@@ -54,7 +54,8 @@ export default async function MusicPage() {
 
       <p>
         Albums I own either on LP or CD. The most common genres among these {filteredData.length}{' '}
-        albums are <b>{readableGenresCombinedWithAnd}</b>.
+        albums are <b>{readableGenresCombinedWithAnd}</b>. Beyond that, I enjoy{' '}
+        <b>Vaporwave, Goth Rock and some Trance</b>.
       </p>
 
       <Music data={filteredData} />
