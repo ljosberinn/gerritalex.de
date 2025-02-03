@@ -657,6 +657,25 @@
     "favorite": false
   },
   {
+    "title": "Casino Royale",
+    "id": 36557,
+    "metadata": {
+      "genres": [
+        "Adventure",
+        "Action",
+        "Thriller"
+      ],
+      "tagline": "Everyone has a past. Every legend has a beginning.",
+      "release": {
+        "day": 14,
+        "month": 11,
+        "year": 2006
+      },
+      "runtime": 144
+    },
+    "favorite": false
+  },
+  {
     "title": "Chappie",
     "id": 198184,
     "metadata": {
@@ -2734,6 +2753,26 @@
     "favorite": false
   },
   {
+    "title": "Lara Croft: Tomb Raider",
+    "id": 1995,
+    "metadata": {
+      "genres": [
+        "Adventure",
+        "Fantasy",
+        "Action",
+        "Thriller"
+      ],
+      "tagline": "Born into Wealth. Groomed by the Elite. Trained for Combat.",
+      "release": {
+        "day": 11,
+        "month": 6,
+        "year": 2001
+      },
+      "runtime": 100
+    },
+    "favorite": false
+  },
+  {
     "title": "Léon: The Professional",
     "id": 101,
     "metadata": {
@@ -2994,6 +3033,25 @@
         "year": 2022
       },
       "runtime": 105
+    },
+    "favorite": false
+  },
+  {
+    "title": "Mr. & Mrs. Smith",
+    "id": 95179,
+    "metadata": {
+      "genres": [
+        "Music",
+        "Comedy",
+        "Drama"
+      ],
+      "tagline": "",
+      "release": {
+        "day": 3,
+        "month": 11,
+        "year": 2011
+      },
+      "runtime": 113
     },
     "favorite": false
   },
@@ -3931,6 +3989,25 @@
         "year": 2024
       },
       "runtime": 108
+    },
+    "favorite": false
+  },
+  {
+    "title": "Spectre",
+    "id": 206647,
+    "metadata": {
+      "genres": [
+        "Action",
+        "Adventure",
+        "Thriller"
+      ],
+      "tagline": "",
+      "release": {
+        "day": 26,
+        "month": 10,
+        "year": 2015
+      },
+      "runtime": 148
     },
     "favorite": false
   },
