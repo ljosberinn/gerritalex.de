@@ -1,5 +1,5 @@
 import { generatePageMetadata } from 'app/seo';
-import data from '../../movies.json';
+import data from '../../prebuild/movies/data.json' with { type: 'json' };
 import { Movies } from '@/components/Movies';
 
 export const metadata = generatePageMetadata({ title: 'Movies' });

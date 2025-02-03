@@ -24,106 +24,10 @@ import rehypePresetMinify from 'rehype-preset-minify';
 import siteMetadata from './data/siteMetadata';
 import { allCoreContent, MDXDocumentDate, sortPosts } from 'pliny/utils/contentlayer.js';
 import { createWriteStream } from 'fs';
-import { stat, writeFile } from 'fs/promises';
+import { writeFile } from 'fs/promises';
 import { resolve as resolvePath } from 'path';
-import series from './series.json' with { type: 'json' };
-import movies from './movies.json' with { type: 'json' };
 import music from './music.json' with { type: 'json' };
-
-const discogsOptions: RequestInit = {
-  method: 'GET',
-  headers: {
-    'User-Agent': 'XepherisPersonalWebsite/1.0 +https://gerritalex.de/music',
-  },
-};
-
-const tmdbOptions: RequestInit = {
-  method: 'GET',
-  headers: {
-    accept: 'application/json',
-    Authorization: `Bearer ${process.env.TMDB_API_KEY}`,
-  },
-};
-
-async function doFetch<T>(url: string, options: RequestInit): Promise<T | null> {
-  url = url.replaceAll(' ', '%20');
-  console.time(url);
-  try {
-    const response = await fetch(url, options);
-    if (!response.ok) {
-      console.log(response.status);
-    }
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error(error);
-    return null;
-  } finally {
-    console.timeEnd(url);
-  }
-}
-
-type PaginatedResult<T> = {
-  page: number;
-  results: T[];
-  total_pages: number;
-  total_results: number;
-};
-
-type PaginatedShowResults = PaginatedResult<{
-  adult: boolean;
-  backdrop_path: string | null;
-  genre_ids: number[];
-  id: number;
-  origin_country: string[];
-  original_language: string;
-  original_name: string;
-  overview: string;
-  popularity: number;
-  poster_path: string | null;
-  first_air_date: string;
-  name: string;
-  vote_average: number;
-  vote_count: number;
-}>;
-
-type PaginatedMovieResults = PaginatedResult<{
-  adult: boolean;
-  backdrop_path: string | null;
-  genre_ids: number[];
-  id: number;
-  original_language: string;
-  original_title: string;
-  overview: string;
-  popularity: number;
-  poster_path: string | null;
-  release_date: string;
-  video: false;
-  vote_average: number;
-  vote_count: number;
-}>;
-
-type Nullable<T> = T | null;
-
-async function findTmdbEntryByName<Kind extends 'movie' | 'tv'>(
-  name: string,
-  kind: Kind
-): Promise<Nullable<Kind extends 'movie' ? PaginatedMovieResults : PaginatedShowResults>> {
-  return doFetch<Nullable<Kind extends 'movie' ? PaginatedMovieResults : PaginatedShowResults>>(
-    `https://api.themoviedb.org/3/search/${kind}?query=${name.toLowerCase()}&include_adult=false&language=en-US&page=1`,
-    tmdbOptions
-  );
-}
-
-async function getTmdbEntryById<Kind extends 'movie' | 'tv'>(
-  id: number,
-  kind: Kind
-): Promise<Nullable<Kind extends 'movie' ? Movie : Series>> {
-  return doFetch<Nullable<Kind extends 'movie' ? Movie : Series>>(
-    `https://api.themoviedb.org/3/${kind}/${id}?language=en-US`,
-    tmdbOptions
-  );
-}
+import { doMoviesImport } from './prebuild/movies';
 
 type DiscogsSearchResponse = {
   pagination: {
@@ -341,116 +245,11 @@ async function getDiscogsMainReleaseById(id: number) {
   );
 }
 
-type TmdbApiSharedResponseFields = {
-  adult: boolean;
-  backdrop_path: string;
-  popularity: number;
-  poster_path: string | null;
-  production_companies: {
-    id: number;
-    logo_path: string | null;
-    name: string;
-    origin_country: string;
-  }[];
-  production_countries: {
-    iso_3166_1: string;
-    name: string;
-  }[];
-  genres: {
-    id: number;
-    name: string;
-  }[];
-  id: number;
-  original_language: string;
-  original_name: string;
-  overview: string;
-  spoken_languages: {
-    english_name: string;
-    iso_639_1: string;
-    name: string;
-  }[];
-  status: string;
-  tagline: string;
-  vote_average: number;
-  vote_count: number;
-  origin_country: string[];
-  homepage: string;
-};
-
-type Series = TmdbApiSharedResponseFields & {
-  created_by: {
-    id: number;
-    credit_id: string;
-    name: string;
-    original_name: string;
-    gender: number;
-    profile_path: string | null;
-  }[];
-  episode_run_time: number[];
-  first_air_date: string;
-  in_production: boolean;
-  languages: string[];
-  last_air_date: string;
-  last_episode_to_air: {
-    id: number;
-    name: string;
-    overview: string;
-    vote_average: number;
-    vote_count: number;
-    air_date: string;
-    episode_number: number;
-    episode_type: string;
-    production_code: string;
-    runtime: number;
-    season_number: number;
-    show_id: number;
-    still_path: string | null;
-  };
-  name: string;
-  next_episode_to_air: null;
-  networks: {
-    id: number;
-    logo_path: string | null;
-    name: string;
-    origin_country: string;
-  }[];
-  number_of_episodes: number;
-  number_of_seasons: number;
-  seasons: {
-    air_date: string;
-    episode_count: number;
-    id: number;
-    name: string;
-    overview: string;
-    poster_path: string | null;
-    season_number: number;
-    vote_average: number;
-  }[];
-
-  type: string;
-};
-
-type Movie = TmdbApiSharedResponseFields & {
-  imdb_id: string;
-  budget: number;
-  revenue: number;
-  runtime: number;
-  video: boolean;
-  release_date: string;
-};
-
-type ImageKind = 'cover' | 'backdrop';
 type DiscogsImageKind = 'front' | 'back';
-
-function resolvePathForTmdbImage(id: number, kind: ImageKind) {
-  return resolvePath('./public/static/images/tv', `${id}-${kind}.jpg`);
-}
 
 function resolvePathForDiscogsImage(id: number, kind: DiscogsImageKind) {
   return resolvePath('./public/static/images/music', `${id}-${kind}.jpg`);
 }
-
-const FORCE_REFRESH = false;
 
 async function downloadAndStoreImage(url: string, storagePath: string): Promise<void> {
   // eslint-disable-next-line no-async-promise-executor
@@ -499,191 +298,22 @@ async function downloadDiscogsImages(
   );
 }
 
-async function downloadTmdbImages(
-  images: Array<{ id: number; cover: string; backdrop: string | null }>
-) {
-  const imageKinds: ImageKind[] = ['cover', 'backdrop'];
+// async function downloadTmdbImages(
+//   images: Array<{ id: number; cover: string; backdrop: string | null }>
+// ) {
+//   const imageKinds: ImageKind[] = ['cover', 'backdrop'];
 
-  await Promise.all(
-    imageKinds.flatMap((kind) =>
-      images.map((image) => {
-        return downloadAndStoreImage(
-          `https://image.tmdb.org/t/p/w220_and_h330_face${image[kind]}`,
-          resolvePathForTmdbImage(image.id, kind)
-        );
-      })
-    )
-  );
-}
-
-async function importTmdbSeriesData() {
-  console.time('importTmdbSeriesData');
-
-  const newImages: Array<{ id: number; cover: string; backdrop: string }> = [];
-
-  for await (const dataset of series) {
-    if (dataset.metadata !== null) {
-      continue;
-    }
-
-    if (dataset.id === null) {
-      const result = await findTmdbEntryByName(dataset.title, 'tv');
-
-      if (result === null || result.results.length === 0) {
-        continue;
-      }
-
-      dataset.id = result.results[0].id;
-    }
-
-    const path = resolvePathForTmdbImage(dataset.id, 'backdrop');
-
-    try {
-      await stat(path);
-
-      if (FORCE_REFRESH) {
-        throw new Error('Refreshing anyway.');
-      }
-    } catch {
-      const result = await getTmdbEntryById(dataset.id, 'tv');
-
-      if (result === null) {
-        continue;
-      }
-
-      dataset.metadata = {
-        genres: result.genres.map((genre) => genre.name),
-        seasons: result.number_of_seasons,
-        tagline: result.tagline,
-        release: {
-          day: -1,
-          month: -1,
-          year: -1,
-        },
-        episodes: result.number_of_episodes,
-      };
-
-      if (result.last_air_date) {
-        const [year, month, day] = result.last_air_date.split('-');
-        dataset.metadata.release.day = Number.parseInt(day);
-        dataset.metadata.release.month = Number.parseInt(month);
-        dataset.metadata.release.year = Number.parseInt(year);
-      } else if (result.last_episode_to_air !== null) {
-        const [year, month, day] = result.last_episode_to_air.air_date.split('-');
-        dataset.metadata.release.day = Number.parseInt(day);
-        dataset.metadata.release.month = Number.parseInt(month);
-        dataset.metadata.release.year = Number.parseInt(year);
-      }
-
-      if (result.poster_path === null) {
-        continue;
-      }
-
-      newImages.push({
-        id: dataset.id,
-        cover: result.poster_path,
-        backdrop: result.backdrop_path,
-      });
-    }
-  }
-
-  if (newImages.length > 0) {
-    await downloadTmdbImages(newImages);
-
-    await writeFile(
-      './series.json',
-      JSON.stringify(
-        series.sort((a, b) => a.title.localeCompare(b.title)),
-        null,
-        2
-      )
-    );
-  }
-
-  console.timeEnd('importTmdbSeriesData');
-}
-
-async function importTmdbMoviesData() {
-  console.time('importTmdbMoviesData');
-
-  const newImages: Array<{ id: number; cover: string; backdrop: string }> = [];
-
-  for await (const dataset of movies) {
-    if (dataset.metadata !== null) {
-      continue;
-    }
-
-    if (dataset.id === null) {
-      const result = await findTmdbEntryByName(dataset.title, 'movie');
-
-      if (result === null || result.results.length === 0) {
-        continue;
-      }
-
-      dataset.id = result.results[0].id;
-    }
-
-    const path = resolvePathForTmdbImage(dataset.id, 'backdrop');
-
-    try {
-      await stat(path);
-
-      if (FORCE_REFRESH) {
-        throw new Error('Refreshing anyway.');
-      }
-    } catch {
-      const result = await getTmdbEntryById(dataset.id, 'movie');
-
-      if (result === null) {
-        continue;
-      }
-
-      dataset.metadata = {
-        genres: result.genres.map((genre) => genre.name),
-        tagline: result.tagline,
-        release: {
-          day: -1,
-          month: -1,
-          year: -1,
-        },
-        runtime: result.runtime,
-      };
-
-      const [year, month, day] = result.release_date.split('-');
-      dataset.metadata.release.day = Number.parseInt(day);
-      dataset.metadata.release.month = Number.parseInt(month);
-      dataset.metadata.release.year = Number.parseInt(year);
-
-      if (result.poster_path === null) {
-        continue;
-      }
-
-      console.log(
-        `enqueuing cover download of "${dataset.title}" (https://www.themoviedb.org/tv/${dataset.id})`
-      );
-      newImages.push({
-        id: dataset.id,
-        cover: result.poster_path,
-        backdrop: result.backdrop_path,
-      });
-    }
-  }
-
-  if (newImages.length > 0) {
-    await downloadTmdbImages(newImages);
-
-    await writeFile(
-      './movies.json',
-      JSON.stringify(
-        movies.sort((a, b) => a.title.localeCompare(b.title)),
-        null,
-        2
-      )
-    );
-  }
-
-  console.timeEnd('importTmdbMoviesData');
-}
+//   await Promise.all(
+//     imageKinds.flatMap((kind) =>
+//       images.map((image) => {
+//         return downloadAndStoreImage(
+//           `https://image.tmdb.org/t/p/w220_and_h330_face${image[kind]}`,
+//           resolvePathForTmdbImage(image.id, kind)
+//         );
+//       })
+//     )
+//   );
+// }
 
 const discogsEnabled = false;
 
@@ -974,9 +604,8 @@ export default makeSource({
     await Promise.all([
       createTagCount(allBlogs),
       createSearchIndex(allBlogs),
-      importTmdbSeriesData(),
-      importTmdbMoviesData(),
       importDiscogsData(),
+      doMoviesImport(),
     ]);
   },
 });

@@ -1,0 +1,144 @@
+import {
+  tmdbOptions,
+  PaginatedTMDBResult,
+  doFetch,
+  Nullable,
+  TMDBSharedResponseFields,
+} from '../common';
+import data from './data.json' with { type: 'json' };
+import { resolve } from 'path';
+import { writeFile } from 'fs/promises';
+
+function warn(...args: unknown[]) {
+  console.log(`[Movies]`, ...args);
+}
+
+type PaginatedMovieResults = PaginatedTMDBResult<{
+  adult: boolean;
+  backdrop_path: string | null;
+  genre_ids: number[];
+  id: number;
+  original_language: string;
+  original_title: string;
+  overview: string;
+  popularity: number;
+  poster_path: string | null;
+  release_date: string;
+  video: false;
+  vote_average: number;
+  vote_count: number;
+}>;
+
+async function findEntryByName(name: string): Promise<Nullable<PaginatedMovieResults>> {
+  return doFetch<Nullable<PaginatedMovieResults>>(
+    `https://api.themoviedb.org/3/search/movie?query=${name.toLowerCase()}&include_adult=false&language=en-US&page=1`,
+    tmdbOptions
+  );
+}
+
+async function establishId(dataset: (typeof data)[number]): Promise<null | number> {
+  if ('id' in dataset && dataset.id !== null) {
+    return dataset.id;
+  }
+
+  if (!('title' in dataset)) {
+    throw new Error(`Insufficent info given.`);
+  }
+
+  const response = await findEntryByName(dataset.title);
+
+  if (response === null || response.results.length === 0) {
+    warn(
+      response === null
+        ? `no response for "${dataset.title}"`
+        : `ambiguous response, found multiple entries for "${dataset.title}"`,
+      response?.results.map((result) => `https://www.themoviedb.org/movie/${result.id}`)
+    );
+    return null;
+  }
+
+  return response.results[0].id;
+}
+
+const TMDB_IMAGE_BASE = 'https://image.tmdb.org/t/p/w220_and_h330_face';
+
+type Movie = TMDBSharedResponseFields & {
+  imdb_id: string;
+  budget: number;
+  revenue: number;
+  runtime: number;
+  video: boolean;
+  release_date: string;
+};
+
+async function getEntry(id: number): Promise<Movie | null> {
+  return doFetch<Nullable<Movie>>(
+    `https://api.themoviedb.org/3/movie/${id}?language=en-US`,
+    tmdbOptions
+  );
+}
+
+export async function doMoviesImport(): Promise<{ from: string; to: string }[]> {
+  console.time('doMoviesImport');
+
+  const images: { from: string; to: string }[] = [];
+
+  for await (const dataset of data.slice(0, 5)) {
+    if (typeof dataset.metadata === 'object' && dataset.metadata !== null) {
+      continue;
+    }
+
+    const id = await establishId(dataset);
+
+    if (!id) {
+      continue;
+    }
+
+    const response = await getEntry(id);
+
+    if (response === null) {
+      warn(`no response for ${dataset.title}`);
+      continue;
+    }
+
+    dataset.metadata = {
+      genres: response.genres.map((genre) => genre.name),
+      tagline: response.tagline,
+      release: {
+        day: -1,
+        month: -1,
+        year: -1,
+      },
+      runtime: response.runtime,
+    };
+
+    const [year, month, day] = response.release_date.split('-');
+    dataset.metadata.release.day = Number.parseInt(day);
+    dataset.metadata.release.month = Number.parseInt(month);
+    dataset.metadata.release.year = Number.parseInt(year);
+
+    images.push(
+      {
+        from: `${TMDB_IMAGE_BASE}${response.poster_path}`,
+        to: resolve('./public/static/images/tv', `${id}-cover.jpg`),
+      },
+      {
+        from: `${TMDB_IMAGE_BASE}${response.backdrop_path}`,
+        to: resolve('./public/static/images/tv', `${id}-backdrop.jpg`),
+      }
+    );
+  }
+
+  await writeFile(
+    './contentlayer/movies/data.json',
+    JSON.stringify(
+      data.sort((a, b) => a.title.localeCompare(b.title)),
+      null,
+      2
+    )
+  );
+
+  console.timeEnd('doMoviesImport');
+
+  return images;
+}
