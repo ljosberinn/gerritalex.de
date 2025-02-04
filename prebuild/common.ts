@@ -13,6 +13,8 @@ export const discogsOptions: RequestInit = {
   },
 };
 
+export const TMDB_IMAGE_BASE = 'https://image.tmdb.org/t/p/w220_and_h330_face';
+
 export type Nullable<T> = T | null;
 
 export type PaginatedTMDBResult<T> = {

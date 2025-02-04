@@ -28,6 +28,7 @@ import { writeFile } from 'fs/promises';
 import { resolve as resolvePath } from 'path';
 import music from './music.json' with { type: 'json' };
 import { doMoviesImport } from './prebuild/movies';
+import { doSeriesImport } from './prebuild/series';
 
 type DiscogsSearchResponse = {
   pagination: {
@@ -601,11 +602,10 @@ export default makeSource({
   onSuccess: async (importData) => {
     const { allBlogs } = await importData();
 
-    await Promise.all([
-      createTagCount(allBlogs),
-      createSearchIndex(allBlogs),
-      importDiscogsData(),
-      doMoviesImport(),
-    ]);
+    const [seriesImages, movieImages] = await Promise.all([doSeriesImport(), doMoviesImport()]);
+
+    console.log(seriesImages, movieImages);
+
+    await Promise.all([createTagCount(allBlogs), createSearchIndex(allBlogs), importDiscogsData()]);
   },
 });

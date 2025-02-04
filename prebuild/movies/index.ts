@@ -4,6 +4,7 @@ import {
   doFetch,
   Nullable,
   TMDBSharedResponseFields,
+  TMDB_IMAGE_BASE,
 } from '../common';
 import data from './data.json' with { type: 'json' };
 import { resolve } from 'path';
@@ -60,8 +61,6 @@ async function establishId(dataset: (typeof data)[number]): Promise<null | numbe
   return response.results[0].id;
 }
 
-const TMDB_IMAGE_BASE = 'https://image.tmdb.org/t/p/w220_and_h330_face';
-
 type Movie = TMDBSharedResponseFields & {
   imdb_id: string;
   budget: number;
@@ -101,6 +100,8 @@ export async function doMoviesImport(): Promise<{ from: string; to: string }[]> 
       continue;
     }
 
+    dataset.id = id;
+
     dataset.metadata = {
       genres: response.genres.map((genre) => genre.name),
       tagline: response.tagline,
@@ -111,6 +112,10 @@ export async function doMoviesImport(): Promise<{ from: string; to: string }[]> 
       },
       runtime: response.runtime,
     };
+
+    if (!('favorite' in dataset)) {
+      dataset.favorite = false;
+    }
 
     const [year, month, day] = response.release_date.split('-');
     dataset.metadata.release.day = Number.parseInt(day);
@@ -130,7 +135,7 @@ export async function doMoviesImport(): Promise<{ from: string; to: string }[]> 
   }
 
   await writeFile(
-    './contentlayer/movies/data.json',
+    './prebuild/movies/data.json',
     JSON.stringify(
       data.sort((a, b) => a.title.localeCompare(b.title)),
       null,
