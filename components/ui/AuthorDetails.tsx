@@ -21,12 +21,12 @@ export default function AuthorDetails({
             alt="avatar"
             width={224}
             height={224}
-            className="h-48 w-48 min-w-48 rounded-full border-2 border-primary-400 bg-gradient-to-b from-white to-teal-500 dark:from-slate-900 dark:to-teal-500 md:h-52 md:w-52"
+            className="border-primary-400 h-48 w-48 min-w-48 rounded-full border-2 bg-linear-to-b from-white to-teal-500 md:h-52 md:w-52 dark:from-slate-900 dark:to-teal-500"
           />
         </div>
       ) : null}
       <div>
-        <h3 className="pb-2 pt-4 text-2xl font-bold leading-8 tracking-tight sm:text-3xl md:text-4xl">
+        <h3 className="pt-4 pb-2 text-2xl leading-8 font-bold tracking-tight sm:text-3xl md:text-4xl">
           {author}
         </h3>
         <div className="md:text-md text-base text-gray-500 dark:text-gray-400">{occupation}</div>
