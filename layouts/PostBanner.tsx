@@ -1,12 +1,12 @@
 import { ReactNode } from 'react';
-import { Image } from '@/components/Image';
 import Bleed from 'pliny/ui/Bleed';
 import { CoreContent } from 'pliny/utils/contentlayer';
-import type { Blog } from 'contentlayer/generated';
-import { CustomLink } from '@/components/CustomLink';
-import { PageTitle } from '@/components/PageTitle';
-import { SectionContainer } from '@/components/SectionContainer';
-import { ScrollTopAndComment } from '@/components/ScrollTopAndComment';
+import { type Blog } from '../.contentlayer/generated';
+import { CustomLink } from '../components/CustomLink';
+import { Image } from '../components/Image';
+import { PageTitle } from '../components/PageTitle';
+import { ScrollTopAndComment } from '../components/ScrollTopAndComment';
+import { SectionContainer } from '../components/SectionContainer';
 
 interface LayoutProps {
   content: CoreContent<Blog>;

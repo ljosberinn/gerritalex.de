@@ -1,9 +1,9 @@
-import { CustomLink } from '@/components/CustomLink';
-import { RandomLyrics } from '@/components/RandomLyrics.';
-import { RestrainedMaxWidth } from '@/components/RestrainedMaxWidth';
-import { Tag } from '@/components/Tag';
-import siteMetadata from '@/data/siteMetadata';
 import { formatDate } from 'pliny/utils/formatDate';
+import { CustomLink } from '../components/CustomLink';
+import { RandomLyrics } from '../components/RandomLyrics.';
+import { RestrainedMaxWidth } from '../components/RestrainedMaxWidth';
+import { Tag } from '../components/Tag';
+import siteMetadata from '../data/siteMetadata';
 
 const MAX_DISPLAY = 5;
 

@@ -1,5 +1,5 @@
-import { Series } from '@/components/Series';
-import { generatePageMetadata } from 'app/seo';
+import { Series } from 'components/Series';
+import { generatePageMetadata } from '../seo';
 import data from '../../prebuild/series/data.json' with { type: 'json' };
 
 export const metadata = generatePageMetadata({ title: 'Series' });

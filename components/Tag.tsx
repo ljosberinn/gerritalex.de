@@ -1,4 +1,4 @@
-import { CustomLink } from '@/components/CustomLink';
+import { CustomLink } from './CustomLink';
 import { slug } from 'github-slugger';
 
 interface TagProps {

@@ -1,7 +1,7 @@
-import siteMetadata from '@/data/siteMetadata';
+import siteMetadata from 'data/siteMetadata';
 
-import { BrandIcon } from '@/components/ui/BrandIcon';
-import { CustomLink } from '@/components/CustomLink';
+import { BrandIcon } from 'components/ui/BrandIcon';
+import { CustomLink } from 'components/CustomLink';
 
 const BuiltWith = () => (
   <div className="flex items-center space-x-1">

@@ -1,5 +1,5 @@
-import { CustomLink } from '@/components/CustomLink';
-import { RestrainedMaxWidth } from '@/components/RestrainedMaxWidth';
+import { CustomLink } from '../components/CustomLink';
+import { RestrainedMaxWidth } from '../components/RestrainedMaxWidth';
 
 export default function NotFound() {
   return (

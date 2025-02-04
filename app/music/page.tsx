@@ -1,6 +1,6 @@
 import data from '../../prebuild/music/data.json' assert { type: 'json' };
-import { generatePageMetadata } from 'app/seo';
-import { Music } from '@/components/Music';
+import { generatePageMetadata } from '../seo';
+import { Music } from '../../components/Music';
 
 export const metadata = generatePageMetadata({ title: 'Music' });
 

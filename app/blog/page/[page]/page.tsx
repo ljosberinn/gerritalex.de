@@ -1,7 +1,7 @@
-import ListLayout from '@/layouts/ListLayoutWithTags';
 import { allCoreContent, sortPosts } from 'pliny/utils/contentlayer';
-import { allBlogs } from 'contentlayer/generated';
-import { RestrainedMaxWidth } from '@/components/RestrainedMaxWidth';
+import { allBlogs } from '../../../../.contentlayer/generated';
+import { RestrainedMaxWidth } from '../../../../components/RestrainedMaxWidth';
+import { ListLayoutWithTags } from '../../../../layouts/ListLayoutWithTags';
 
 const POSTS_PER_PAGE = 5;
 
@@ -27,7 +27,7 @@ export default async function Page(props: { params: Promise<{ page: string }> })
 
   return (
     <RestrainedMaxWidth>
-      <ListLayout
+      <ListLayoutWithTags
         posts={posts}
         initialDisplayPosts={initialDisplayPosts}
         pagination={pagination}

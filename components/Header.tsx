@@ -1,5 +1,5 @@
-import siteMetadata from '@/data/siteMetadata';
-import headerNavLinks from '@/data/headerNavLinks';
+import siteMetadata from 'data/siteMetadata';
+import headerNavLinks from 'data/headerNavLinks';
 import { CustomLink } from './CustomLink';
 import { MobileNav } from './MobileNav';
 import { ThemeSwitch } from './ThemeSwitch';

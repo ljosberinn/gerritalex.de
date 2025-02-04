@@ -4,11 +4,11 @@ import { usePathname } from 'next/navigation';
 import { slug } from 'github-slugger';
 import { formatDate } from 'pliny/utils/formatDate';
 import { CoreContent } from 'pliny/utils/contentlayer';
-import type { Blog } from 'contentlayer/generated';
-import { CustomLink } from '@/components/CustomLink';
-import { Tag } from '@/components/Tag';
-import siteMetadata from '@/data/siteMetadata';
-import tagData from 'app/tag-data.json';
+import tagData from '../app/tag-data.json' with { type: 'json' };
+import { type Blog } from '../.contentlayer/generated';
+import { CustomLink } from '../components/CustomLink';
+import siteMetadata from '../data/siteMetadata';
+import { Tag } from '../components/Tag';
 
 interface PaginationProps {
   totalPages: number;
@@ -60,7 +60,7 @@ function Pagination({ totalPages, currentPage }: PaginationProps) {
   );
 }
 
-export default function ListLayoutWithTags({
+export function ListLayoutWithTags({
   posts,
   title,
   initialDisplayPosts = [],

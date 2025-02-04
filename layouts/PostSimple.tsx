@@ -1,12 +1,12 @@
 import { ReactNode } from 'react';
 import { formatDate } from 'pliny/utils/formatDate';
 import { CoreContent } from 'pliny/utils/contentlayer';
-import type { Blog } from 'contentlayer/generated';
-import { CustomLink } from '@/components/CustomLink';
-import { PageTitle } from '@/components/PageTitle';
-import { SectionContainer } from '@/components/SectionContainer';
-import siteMetadata from '@/data/siteMetadata';
-import { ScrollTopAndComment } from '@/components/ScrollTopAndComment';
+import { type Blog } from '../.contentlayer/generated';
+import { CustomLink } from '../components/CustomLink';
+import { PageTitle } from '../components/PageTitle';
+import { ScrollTopAndComment } from '../components/ScrollTopAndComment';
+import { SectionContainer } from '../components/SectionContainer';
+import siteMetadata from '../data/siteMetadata';
 
 interface LayoutProps {
   content: CoreContent<Blog>;

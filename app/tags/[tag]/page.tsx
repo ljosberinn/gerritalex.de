@@ -1,13 +1,13 @@
 import { slug } from 'github-slugger';
 import { allCoreContent, sortPosts } from 'pliny/utils/contentlayer';
-import siteMetadata from '@/data/siteMetadata';
-import ListLayout from '@/layouts/ListLayoutWithTags';
-import { allBlogs } from 'contentlayer/generated';
+import siteMetadata from 'data/siteMetadata';
+import { ListLayoutWithTags } from 'layouts/ListLayoutWithTags';
 import tagData from 'app/tag-data.json';
 import { generatePageMetadata } from 'app/seo';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { RestrainedMaxWidth } from '@/components/RestrainedMaxWidth';
+import { RestrainedMaxWidth } from 'components/RestrainedMaxWidth';
+import { allBlogs } from '../../../.contentlayer/generated';
 
 export async function generateMetadata(props: {
   params: Promise<{ tag: string }>;
@@ -48,7 +48,7 @@ export default async function TagPage(props: { params: Promise<{ tag: string }> 
   }
   return (
     <RestrainedMaxWidth>
-      <ListLayout posts={filteredPosts} title={title} />
+      <ListLayoutWithTags posts={filteredPosts} title={title} />
     </RestrainedMaxWidth>
   );
 }
