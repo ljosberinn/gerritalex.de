@@ -1,8 +1,8 @@
-import ListLayout from '@/layouts/ListLayoutWithTags';
+import { ListLayoutWithTags } from '../../layouts/ListLayoutWithTags';
 import { allCoreContent, sortPosts } from 'pliny/utils/contentlayer';
-import { allBlogs } from 'contentlayer/generated';
-import { generatePageMetadata } from 'app/seo';
-import { RestrainedMaxWidth } from '@/components/RestrainedMaxWidth';
+import { allBlogs } from '../../.contentlayer/generated';
+import { generatePageMetadata } from '../seo';
+import { RestrainedMaxWidth } from '../../components/RestrainedMaxWidth';
 
 const POSTS_PER_PAGE = 5;
 
@@ -22,7 +22,7 @@ export default function BlogPage() {
 
   return (
     <RestrainedMaxWidth>
-      <ListLayout
+      <ListLayoutWithTags
         posts={posts}
         initialDisplayPosts={initialDisplayPosts}
         pagination={pagination}

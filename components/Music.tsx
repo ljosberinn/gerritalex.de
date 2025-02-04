@@ -1,7 +1,7 @@
 'use client';
 
-import { Image } from 'components/Image';
-import { Music as MusicType } from 'app/music/page';
+import { Image } from './Image';
+import { Music as MusicType } from '../app/music/page';
 
 type MusicProps = {
   data: MusicType[];
@@ -29,7 +29,7 @@ export function Music({ data }: MusicProps) {
                 width={120}
                 height={120}
                 className={
-                  'h-full rounded-md border-2 border-slate-300 object-cover shadow-inner transition ease-in-out hover:border-slate-800 hover:opacity-100 hover:shadow-none dark:border-slate-700 hover:dark:border-primary-700'
+                  'dark:hover:border-primary-700 h-full rounded-md border-2 border-slate-300 object-cover shadow-inner transition ease-in-out hover:border-slate-800 hover:opacity-100 hover:shadow-none dark:border-slate-700'
                 }
                 loading="lazy"
                 quality={75}

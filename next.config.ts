@@ -70,6 +70,10 @@ const config = (): NextConfig => {
           protocol: 'https',
           hostname: 'wow.zamimg.com',
         },
+        {
+          protocol: 'https',
+          hostname: 'picsum.photos',
+        },
       ],
     },
     async headers() {

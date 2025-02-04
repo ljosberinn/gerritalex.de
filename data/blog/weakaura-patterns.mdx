@@ -29,19 +29,24 @@ This would be a TSU trigger:
 
 ```lua
 function (states, event, ...)
-  if event == "COMBAT_LOG_EVENT_UNFILTERED" then -- for the sake of a high-frequency example
+  -- for the sake of a high-frequency example
+  if event == "COMBAT_LOG_EVENT_UNFILTERED" then 
     -- do evil
-    if matchesCriteria or aggregatedData then -- whatever your criteria are
+
+    -- whatever your criteria are
+    if matchesCriteria or aggregatedData then
       aura_env.queue()
     end
 
-    return false -- important to prevent these events from updating the aura
+    -- important to prevent these events from updating the aura
+    return false
   end
 
   if event == aura_env.customEventName then
     local id = ...
 
-    if id ~= aura_env.id then -- make sure the event is actually from us
+    -- make sure the event is actually from us
+    if id ~= aura_env.id then
       return false
     end
 
@@ -49,7 +54,8 @@ function (states, event, ...)
     return true
   end
 
-  return false -- ignore STATUS, OPTIONS etc.
+  -- ignore STATUS, OPTIONS etc.
+  return false
 end
 ```
 
@@ -284,6 +290,6 @@ But what about damage/healing ids? Debuffs on players in a dungeon, fleeting thi
 The answer at this point is obvious: use [logs](https://www.warcraftlogs.com).
 
 Any spell icon is a link to wowhead, e.g. this <WowheadLink id={395160} icon="ability_evoker_eruption" kind="spell">Eruption</WowheadLink>.
-The id is directly in the url: `395160`. This only leaves you with having to find a log but chances are, you're not the first one to use use that spell or play the content it's used in so luckily that won't be an issue.
+The id is directly in the url: `395160`. This only leaves you with having to find a log but chances are, you're not the first one to use that spell or play the content it's used in so luckily that won't be an issue.
 
 For fringe cases like early alpha/beta/ptr cycles, you can always log target dummies in some capital yourself.

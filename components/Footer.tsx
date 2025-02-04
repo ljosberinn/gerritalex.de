@@ -1,6 +1,6 @@
-import siteMetadata from '@/data/siteMetadata';
-import SocialIcon from '@/components/social-icons';
+import siteMetadata from 'data/siteMetadata';
 import BuiltWith from './ui/BuiltWith';
+import SocialIcon from './social-icons';
 
 export function Footer() {
   return (

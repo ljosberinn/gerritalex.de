@@ -1,9 +1,9 @@
 'use client';
 
-import { Image } from 'components/Image';
+import { Image } from './Image';
 import clsx from 'clsx';
 import { ChangeEvent, useState } from 'react';
-import { type Movies as MoviesType } from 'app/movies/page';
+import { type Movies as MoviesType } from '../app/movies/page';
 
 type Filter = 'year-desc' | 'favorites' | 'year-asc';
 
@@ -82,7 +82,7 @@ export function Movies({ data }: MoviesProps) {
         <div className="w-full xl:w-1/6">
           <label
             htmlFor="filter"
-            className="block pb-2 text-sm font-medium text-gray-700 dark:text-gray-300 xl:pb-0"
+            className="block pb-2 text-sm font-medium text-gray-700 xl:pb-0 dark:text-gray-300"
           >
             Filter & Sorting
           </label>
@@ -100,7 +100,7 @@ export function Movies({ data }: MoviesProps) {
         <div className="flex w-full items-end justify-center gap-8 xl:w-1/12 xl:flex-col xl:justify-end xl:gap-1">
           <div className="flex items-center gap-2">
             <label
-              className="block text-sm font-medium text-gray-700 dark:text-gray-300 xl:pb-0"
+              className="block text-sm font-medium text-gray-700 xl:pb-0 dark:text-gray-300"
               htmlFor="display-art"
             >
               Art
@@ -116,7 +116,7 @@ export function Movies({ data }: MoviesProps) {
           </div>
           <div className="flex items-center gap-2">
             <label
-              className="block text-sm font-medium text-gray-700 dark:text-gray-300 xl:pb-0"
+              className="block text-sm font-medium text-gray-700 xl:pb-0 dark:text-gray-300"
               htmlFor="display-table"
             >
               Table
@@ -136,20 +136,20 @@ export function Movies({ data }: MoviesProps) {
         <table className="w-full border-collapse text-sm">
           <thead>
             <tr>
-              <th className="border-b p-2 pb-3 pl-8 pt-0 text-left font-medium text-slate-400 dark:border-slate-600 dark:text-slate-200">
+              <th className="border-b p-2 pt-0 pb-3 pl-8 text-left font-medium text-slate-400 dark:border-slate-600 dark:text-slate-200">
                 Title
               </th>
-              <th className="border-b p-2 pb-3 pl-8 pt-0 text-left font-medium text-slate-400 dark:border-slate-600 dark:text-slate-200">
+              <th className="border-b p-2 pt-0 pb-3 pl-8 text-left font-medium text-slate-400 dark:border-slate-600 dark:text-slate-200">
                 Genres
               </th>
-              <th className="hidden border-b p-2 pb-3 pl-8 pt-0 text-left font-medium text-slate-400 dark:border-slate-600 dark:text-slate-200 md:table-cell">
+              <th className="hidden border-b p-2 pt-0 pb-3 pl-8 text-left font-medium text-slate-400 md:table-cell dark:border-slate-600 dark:text-slate-200">
                 Released
               </th>
-              <th className="hidden border-b p-2 pb-3 pl-8 pt-0 text-left font-medium text-slate-400 dark:border-slate-600 dark:text-slate-200 md:table-cell">
+              <th className="hidden border-b p-2 pt-0 pb-3 pl-8 text-left font-medium text-slate-400 md:table-cell dark:border-slate-600 dark:text-slate-200">
                 Runtime
               </th>
               {filterKind !== 'favorites' ? (
-                <th className="border-b p-2 pb-3 pl-8 pt-0 text-right font-medium text-slate-400 dark:border-slate-600 dark:text-slate-200">
+                <th className="border-b p-2 pt-0 pb-3 pl-8 text-right font-medium text-slate-400 dark:border-slate-600 dark:text-slate-200">
                   Favorite
                 </th>
               ) : null}
@@ -160,7 +160,7 @@ export function Movies({ data }: MoviesProps) {
               const date = `${movie.metadata.release.year}-${movie.metadata.release.month.toString().padStart(2, '0  ')}-${movie.metadata.release.day.toString().padStart(2, '0')}`;
               return (
                 <tr key={movie.id}>
-                  <td className="border-b border-slate-100 p-2 text-slate-500 dark:border-slate-700 dark:text-slate-400 md:p-2 xl:pl-4">
+                  <td className="border-b border-slate-100 p-2 text-slate-500 md:p-2 xl:pl-4 dark:border-slate-700 dark:text-slate-400">
                     <a
                       className="underline"
                       href={`https://www.themoviedb.org/movie/${movie.id}`}
@@ -171,17 +171,17 @@ export function Movies({ data }: MoviesProps) {
                     <br />
                     <i className="hidden md:inline-block">{movie.metadata.tagline}</i>
                   </td>
-                  <td className="border-b border-slate-100 p-2 text-slate-500 dark:border-slate-700 dark:text-slate-400 md:table-cell md:p-2 xl:pl-4">
+                  <td className="border-b border-slate-100 p-2 text-slate-500 md:table-cell md:p-2 xl:pl-4 dark:border-slate-700 dark:text-slate-400">
                     {movie.metadata.genres.slice(0, 3).join(', ')}
                   </td>
-                  <td className="hidden border-b border-slate-100 p-2 text-slate-500 dark:border-slate-700 dark:text-slate-400 md:table-cell md:p-2 xl:pl-4">
+                  <td className="hidden border-b border-slate-100 p-2 text-slate-500 md:table-cell md:p-2 xl:pl-4 dark:border-slate-700 dark:text-slate-400">
                     <time dateTime={date}>{date}</time>
                   </td>
-                  <td className="hidden border-b border-slate-100 p-2 text-right text-slate-500 dark:border-slate-700 dark:text-slate-400 md:table-cell md:p-2 xl:pl-4">
+                  <td className="hidden border-b border-slate-100 p-2 text-right text-slate-500 md:table-cell md:p-2 xl:pl-4 dark:border-slate-700 dark:text-slate-400">
                     {movie.metadata.runtime}m
                   </td>
                   {filterKind !== 'favorites' ? (
-                    <td className="border-b border-slate-100 p-2 text-right text-slate-500 dark:border-slate-700 dark:text-slate-400 md:p-2 xl:pl-4">
+                    <td className="border-b border-slate-100 p-2 text-right text-slate-500 md:p-2 xl:pl-4 dark:border-slate-700 dark:text-slate-400">
                       {movie.favorite ? '✅' : '❌'}
                     </td>
                   ) : null}
@@ -199,11 +199,11 @@ export function Movies({ data }: MoviesProps) {
 
             if (movie.favorite) {
               classes.push(
-                'border-yellow-500 hover:border-yellow-600 dark:border-amber-400 hover:dark:border-amber-500'
+                'border-yellow-500 hover:border-yellow-600 dark:border-amber-400 dark:hover:border-amber-500'
               );
             } else {
               classes.push(
-                'border-slate-300 dark:border-slate-700 hover:border-slate-800 hover:dark:border-primary-700'
+                'border-slate-300 dark:border-slate-700 hover:border-slate-800 dark:hover:border-primary-700'
               );
             }
 

@@ -1,7 +1,7 @@
-import siteMetadata from '@/data/siteMetadata';
+import siteMetadata from 'data/siteMetadata';
 
-import { BrandIcon } from '@/components/ui/BrandIcon';
-import { CustomLink } from '@/components/CustomLink';
+import { BrandIcon } from './BrandIcon';
+import { CustomLink } from '../CustomLink';
 
 const BuiltWith = () => (
   <div className="flex items-center space-x-1">
@@ -21,7 +21,7 @@ const BuiltWith = () => (
     <span className="px-1 text-gray-400 dark:text-gray-500">-</span>
     <CustomLink
       href={siteMetadata.siteRepo}
-      className="text-gray-500 underline underline-offset-4 hover:text-primary-500 dark:text-gray-400 hover:dark:text-primary-500"
+      className="hover:text-primary-500 dark:hover:text-primary-500 text-gray-500 underline underline-offset-4 dark:text-gray-400"
     >
       <span>View source</span>
     </CustomLink>
