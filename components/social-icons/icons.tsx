@@ -39,7 +39,7 @@ export function Bluesky(svgProps: SVGProps<SVGSVGElement>) {
       viewBox="0 0 566 500"
       {...props}
       className={clsx(
-        'inline-flex items-center gap-2 transition-transform duration-500 hover:rotate-[-5deg] group-focus:rotate-[-5deg]',
+        'inline-flex items-center gap-2 transition-transform duration-500 group-focus:rotate-[-5deg] hover:rotate-[-5deg]',
         className
       )}
     >

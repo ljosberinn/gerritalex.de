@@ -54,7 +54,7 @@ export default async function SeriesPage() {
 
   return (
     <section className="px-2">
-      <h1 className="pb-6 text-3xl font-bold leading-9 tracking-tight text-gray-700 dark:text-gray-300 sm:text-4xl sm:leading-10 md:text-4xl md:leading-14">
+      <h1 className="pb-6 text-3xl leading-9 font-bold tracking-tight text-gray-700 sm:text-4xl sm:leading-10 md:text-4xl md:leading-14 dark:text-gray-300">
         Series
       </h1>
 
@@ -63,7 +63,7 @@ export default async function SeriesPage() {
         {data.length} series are <b>{readableGenresCombinedWithAnd}</b>.
       </p>
 
-      <ul className="list-disc pl-8 pt-4">
+      <ul className="list-disc pt-4 pl-8">
         {description.map((text, index) => (
           <li key={index}>{text}</li>
         ))}

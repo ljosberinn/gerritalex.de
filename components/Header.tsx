@@ -44,7 +44,7 @@ export function Header() {
               <CustomLink
                 key={link.title}
                 href={link.href}
-                className="block font-medium text-gray-900 hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-400"
+                className="hover:text-primary-500 dark:hover:text-primary-400 block font-medium text-gray-900 dark:text-gray-100"
               >
                 {link.title}
               </CustomLink>
