@@ -16,8 +16,6 @@ import {
 // Rehype packages
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
-import rehypeKatex from 'rehype-katex';
-import rehypeKatexNoTranslate from 'rehype-katex-notranslate';
 import rehypeCitation from 'rehype-citation';
 import rehypePrismPlus from 'rehype-prism-plus';
 import rehypePresetMinify from 'rehype-preset-minify';
@@ -212,17 +210,14 @@ export default makeSource({
           content: icon,
         },
       ],
-      rehypeKatex,
-      rehypeKatexNoTranslate,
       [rehypeCitation, { path: path.join(root, 'data') }],
       [rehypePrismPlus, { defaultLanguage: 'js', ignoreMissing: true }],
       rehypePresetMinify,
     ],
   },
   onSuccess: async (importData) => {
-    const { allBlogs } = await importData();
-
-    const [seriesImages, movieImages, musicImages] = await Promise.all([
+    const [allBlogs, ...images] = await Promise.all([
+      importData().then(({ allBlogs }) => allBlogs),
       doSeriesImport(),
       doMoviesImport(),
       doDiscogsImport(),
@@ -231,7 +226,7 @@ export default makeSource({
     await Promise.all([
       createTagCount(allBlogs),
       createSearchIndex(allBlogs),
-      downloadImages([...seriesImages, ...movieImages, ...musicImages]),
+      downloadImages(images.flat()),
     ]);
   },
 });
