@@ -123,7 +123,7 @@ export async function doSeriesImport(): Promise<{ from: string; to: string }[]> 
 
   const images: { from: string; to: string }[] = [];
 
-  for await (const dataset of data.slice(0, 5)) {
+  for await (const dataset of data) {
     if (typeof dataset.metadata === 'object' && dataset.metadata !== null) {
       continue;
     }
