@@ -1,5 +1,5 @@
 import SocialIcon from '../social-icons';
-import { Image } from 'components/Image';
+import { Image } from '../Image';
 
 export default function AuthorDetails({
   author,

@@ -1,7 +1,7 @@
 import { slug } from 'github-slugger';
 import tagData from '../tag-data.json' with { type: 'json' };
 import { generatePageMetadata } from 'app/seo';
-import { RestrainedMaxWidth } from 'components/RestrainedMaxWidth';
+import { RestrainedMaxWidth } from '../../components/RestrainedMaxWidth';
 import { CustomLink } from '../../components/CustomLink';
 import { Tag } from '../../components/Tag';
 

@@ -1,4 +1,4 @@
-import { Series } from 'components/Series';
+import { Series } from '../../components/Series';
 import { generatePageMetadata } from '../seo';
 import data from '../../prebuild/series/data.json' with { type: 'json' };
 

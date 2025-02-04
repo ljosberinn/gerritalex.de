@@ -1,13 +1,13 @@
 import { slug } from 'github-slugger';
 import { allCoreContent, sortPosts } from 'pliny/utils/contentlayer';
-import siteMetadata from 'data/siteMetadata';
-import { ListLayoutWithTags } from 'layouts/ListLayoutWithTags';
-import tagData from 'app/tag-data.json';
-import { generatePageMetadata } from 'app/seo';
+import tagData from '../../tag-data.json' with { type: 'json' };
+import { generatePageMetadata } from '../../seo';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { RestrainedMaxWidth } from 'components/RestrainedMaxWidth';
 import { allBlogs } from '../../../.contentlayer/generated';
+import { RestrainedMaxWidth } from '../../../components/RestrainedMaxWidth';
+import siteMetadata from '../../../data/siteMetadata';
+import { ListLayoutWithTags } from '../../../layouts/ListLayoutWithTags';
 
 export async function generateMetadata(props: {
   params: Promise<{ tag: string }>;
