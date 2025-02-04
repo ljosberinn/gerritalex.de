@@ -10,11 +10,11 @@ authors: ['default']
 layout: PostBanner
 ---
 
-<TOCInline toc={props.toc} toHeading={2} />
+<TOCInline toc={props.toc} toHeading={3} />
 
 Some of the patterns I use in or for my [WeakAuras](https://weakauras.wtf/). This will grow over time.
 
-# Queueing & Custom Events
+## Queueing & Custom Events
 
 It's technically a basic pattern once you've dabbled with WeakAuras and custom code in general but absolutely worth documenting.
 
@@ -83,7 +83,7 @@ end
 
 Don't forget to include the custom event name in your events to trigger from!
 
-## Example: Breath of Eons
+### Example: Breath of Eons
 
 [Breath of Eons](https://www.wowhead.com/spell=409632/breath-of-eons) applies a debuff with a dynamic duration on every target the casting Evoker is flying over, meaning we have a variable application time, duration and amount of affected targets.
 
@@ -254,7 +254,7 @@ The order of events is as follows:
   -> clear state
   -> announce
 
-# Write your code in some editor
+## Write your code in some editor
 
 Seriously. The amount of badly indented custom WA code out there that _clearly_ wasn't written in an editor without formatting, autocompletion etc. is mind-boggling.
 
@@ -281,7 +281,7 @@ You'll gain:
 - an actual file system that you can search and copy from
 - types, if you're into that (please be)
 
-# Finding Spell IDs
+## Finding Spell IDs
 
 Regardless of whether you're working with custom code or just create some auras that should work across locales, you have to get your game ids from somewhere.
 For things like auras, talents, cast ids, anything that is immediately visible in game, addons fill that gap nicely - personally I'm just using [idTip](https://www.curseforge.com/wow/addons/idtip).
