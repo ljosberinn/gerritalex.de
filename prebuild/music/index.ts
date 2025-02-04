@@ -315,16 +315,6 @@ export async function doDiscogsImport(): Promise<{ from: string; to: string }[]>
         to: resolve('./public/static/images/music', `${id}-front.jpg`),
       });
     }
-
-    const backCover =
-      mainReleaseData.images.find((image) => image.type === 'secondary')?.uri ?? null;
-
-    if (backCover) {
-      images.push({
-        from: backCover,
-        to: resolve('./public/static/images/music', `${id}-back.jpg`),
-      });
-    }
   }
 
   await writeFile(

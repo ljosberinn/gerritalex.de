@@ -187,16 +187,10 @@ export async function doSeriesImport(): Promise<{ from: string; to: string }[]> 
     dataset.metadata.release.month = Number.parseInt(month);
     dataset.metadata.release.year = Number.parseInt(year);
 
-    images.push(
-      {
-        from: `${TMDB_IMAGE_BASE}${response.poster_path}`,
-        to: resolve('./public/static/images/tv', `${id}-cover.jpg`),
-      },
-      {
-        from: `${TMDB_IMAGE_BASE}${response.backdrop_path}`,
-        to: resolve('./public/static/images/tv', `${id}-backdrop.jpg`),
-      }
-    );
+    images.push({
+      from: `${TMDB_IMAGE_BASE}${response.poster_path}`,
+      to: resolve('./public/static/images/tv', `${id}-cover.jpg`),
+    });
   }
 
   await writeFile(
