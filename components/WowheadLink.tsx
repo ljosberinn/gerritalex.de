@@ -20,7 +20,7 @@ export function WowheadLink({ id, icon, children, kind }: WowheadLinkProps) {
           alt=""
           width="24"
           height="24"
-          className="my-0 self-center"
+          className="mt-0 mb-0 self-center"
         />
       ) : null}
       {children}
