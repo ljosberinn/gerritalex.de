@@ -265,7 +265,7 @@ export async function doDiscogsImport(): Promise<{ from: string; to: string }[]>
     }
 
     if (typeof dataset.metadata === 'object' && dataset.metadata !== null) {
-      //continue;
+      continue;
     }
 
     await new Promise((resolve) => setTimeout(resolve, 5 * 1000));

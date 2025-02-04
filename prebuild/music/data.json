@@ -5,7 +5,9 @@
     "album": "Noble North",
     "id": 3322760,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2007
       },
@@ -19,7 +21,9 @@
     "album": "Fragility...",
     "id": 8495300,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2009
       },
@@ -33,7 +37,9 @@
     "album": "Drudenhaus",
     "id": 604304,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2000
       },
@@ -47,7 +53,9 @@
     "album": "New Obscurantis Order",
     "id": 2942201,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2001
       },
@@ -61,7 +69,9 @@
     "album": "The September E.P.",
     "id": 630509,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2005
       },
@@ -75,7 +85,9 @@
     "album": "Consolamentum",
     "id": 2799529,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2011
       },
@@ -89,7 +101,9 @@
     "album": "With Burning Tongues",
     "id": 1986199,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2009
       },
@@ -103,7 +117,9 @@
     "album": "Demo 2009",
     "id": 2138075,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2009
       },
@@ -131,7 +147,9 @@
     "album": "Being as an Ocean",
     "id": 6985217,
     "metadata": {
-      "genres": ["Melodic Hardcore"],
+      "genres": [
+        "Melodic Hardcore"
+      ],
       "release": {
         "year": 2015
       },
@@ -145,7 +163,9 @@
     "album": "How We Both Wondrously Perish",
     "id": 5685303,
     "metadata": {
-      "genres": ["Melodic Hardcore"],
+      "genres": [
+        "Melodic Hardcore"
+      ],
       "release": {
         "year": 2014
       },
@@ -159,7 +179,9 @@
     "album": "In Deep Circles",
     "id": 5463843,
     "metadata": {
-      "genres": ["Psychedelic Rock"],
+      "genres": [
+        "Psychedelic Rock"
+      ],
       "release": {
         "year": 2014
       },
@@ -173,7 +195,9 @@
     "album": "Lunia...",
     "id": 4570564,
     "metadata": {
-      "genres": ["Doom Metal"],
+      "genres": [
+        "Doom Metal"
+      ],
       "release": {
         "year": 2011
       },
@@ -188,7 +212,9 @@
     "visible": true,
     "id": 11214101,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 1999
       },
@@ -207,7 +233,10 @@
     "album": "Mein Fleisch an deinen Lippen",
     "id": 1759096,
     "metadata": {
-      "genres": ["Black Metal", "Thrash"],
+      "genres": [
+        "Black Metal",
+        "Thrash"
+      ],
       "release": {
         "year": 2000
       },
@@ -227,7 +256,11 @@
     "album": "That's the Spirit",
     "id": 15858966,
     "metadata": {
-      "genres": ["Alternative Rock", "Nu Metal", "Metalcore"],
+      "genres": [
+        "Alternative Rock",
+        "Nu Metal",
+        "Metalcore"
+      ],
       "release": {
         "year": 2015
       },
@@ -241,7 +274,9 @@
     "album": "Belus",
     "id": 2261343,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2010
       },
@@ -255,7 +290,10 @@
     "album": "Hvis Lyset Tar Oss",
     "id": 367480,
     "metadata": {
-      "genres": ["Black Metal", "Dark Ambient"],
+      "genres": [
+        "Black Metal",
+        "Dark Ambient"
+      ],
       "release": {
         "year": 1994
       },
@@ -282,7 +320,18 @@
     "artist": "Casper",
     "album": "Auf und Davon",
     "id": 3278781,
-    "visible": true
+    "visible": true,
+    "metadata": {
+      "genres": [
+        "Screw",
+        "Hip Hop",
+        "Indie Rock"
+      ],
+      "release": {
+        "year": 2011
+      },
+      "runtime": 1364
+    }
   },
   {
     "acquired": "10-01-2012",
@@ -290,7 +339,10 @@
     "album": "XOXO",
     "id": 2947847,
     "metadata": {
-      "genres": ["Pop Rap", "Indie Rock"],
+      "genres": [
+        "Pop Rap",
+        "Indie Rock"
+      ],
       "release": {
         "year": 2011
       },
@@ -304,7 +356,10 @@
     "album": "Mariner",
     "id": 8366964,
     "metadata": {
-      "genres": ["Sludge Metal", "Post-Metal"],
+      "genres": [
+        "Sludge Metal",
+        "Post-Metal"
+      ],
       "release": {
         "year": 2016
       },
@@ -318,7 +373,9 @@
     "album": "Verloren",
     "id": 5188462,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2013
       },
@@ -332,7 +389,9 @@
     "album": "Reflexionen aus dem beschönigten Leben",
     "id": 12121480,
     "metadata": {
-      "genres": ["Conscious"],
+      "genres": [
+        "Conscious"
+      ],
       "release": {
         "year": 2018
       },
@@ -353,7 +412,10 @@
     "album": "Notwendfeuer",
     "id": 859542,
     "metadata": {
-      "genres": ["Neofolk", "Industrial"],
+      "genres": [
+        "Neofolk",
+        "Industrial"
+      ],
       "release": {
         "year": 2006
       },
@@ -367,7 +429,10 @@
     "album": "Termination Bliss",
     "id": 2695581,
     "metadata": {
-      "genres": ["Industrial", "Goth Rock"],
+      "genres": [
+        "Industrial",
+        "Goth Rock"
+      ],
       "release": {
         "year": 2006
       },
@@ -381,7 +446,10 @@
     "album": "Mount Ninji And Da Nice Time Kid",
     "id": 9044479,
     "metadata": {
-      "genres": ["Hip Hop", "Electro"],
+      "genres": [
+        "Hip Hop",
+        "Electro"
+      ],
       "release": {
         "year": 2016
       },
@@ -395,7 +463,10 @@
     "album": "50 Sommer - 50 Winter",
     "id": 2808348,
     "metadata": {
-      "genres": ["Avantgarde", "Prog Rock"],
+      "genres": [
+        "Avantgarde",
+        "Prog Rock"
+      ],
       "release": {
         "year": 2010
       },
@@ -409,7 +480,10 @@
     "album": "Reinkaos",
     "id": 1102528,
     "metadata": {
-      "genres": ["Black Metal", "Death Metal"],
+      "genres": [
+        "Black Metal",
+        "Death Metal"
+      ],
       "release": {
         "year": 2006
       },
@@ -423,7 +497,9 @@
     "album": "Manifest",
     "id": 2321906,
     "metadata": {
-      "genres": ["Hard Rock"],
+      "genres": [
+        "Hard Rock"
+      ],
       "release": {
         "year": 2009
       },
@@ -437,7 +513,12 @@
     "album": "Here Now There Then",
     "id": 9854027,
     "metadata": {
-      "genres": ["Psychedelic Rock", "Goth Rock", "Shoegaze", "Gothic Metal"],
+      "genres": [
+        "Psychedelic Rock",
+        "Goth Rock",
+        "Shoegaze",
+        "Gothic Metal"
+      ],
       "release": {
         "year": 2017
       },
@@ -451,7 +532,9 @@
     "album": "Oweynagat",
     "id": 9120771,
     "metadata": {
-      "genres": ["Psychedelic Rock"],
+      "genres": [
+        "Psychedelic Rock"
+      ],
       "release": {
         "year": 2016
       },
@@ -465,7 +548,10 @@
     "album": "Dar De Duh",
     "id": 3907676,
     "metadata": {
-      "genres": ["Black Metal", "Folk"],
+      "genres": [
+        "Black Metal",
+        "Folk"
+      ],
       "release": {
         "year": 2012
       },
@@ -479,7 +565,9 @@
     "album": "An Alignment of Dead Stars",
     "id": 2449849,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2009
       },
@@ -493,7 +581,9 @@
     "album": "Blood of the Ancients",
     "id": 2015942,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2009
       },
@@ -507,7 +597,9 @@
     "album": "Reste... (was vom Sturm übrig blieb)",
     "id": 2979728,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2010
       },
@@ -521,7 +613,9 @@
     "album": "Navigator",
     "id": 514450,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2005
       },
@@ -535,7 +629,9 @@
     "album": "Mourning Sun",
     "id": 712763,
     "metadata": {
-      "genres": ["Goth Rock"],
+      "genres": [
+        "Goth Rock"
+      ],
       "release": {
         "year": 2005
       },
@@ -549,7 +645,9 @@
     "album": "Existenz",
     "id": 4429819,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2012
       },
@@ -563,7 +661,11 @@
     "album": "d'accord",
     "id": 5620615,
     "metadata": {
-      "genres": ["Punk", "Hardcore", "Emo"],
+      "genres": [
+        "Punk",
+        "Hardcore",
+        "Emo"
+      ],
       "release": {
         "year": 2014
       },
@@ -577,7 +679,11 @@
     "album": "Kontakt",
     "id": 8002838,
     "metadata": {
-      "genres": ["Punk", "Hardcore", "Emo"],
+      "genres": [
+        "Punk",
+        "Hardcore",
+        "Emo"
+      ],
       "release": {
         "year": 2016
       },
@@ -591,7 +697,9 @@
     "album": "Sur les Falaises de Marbre",
     "id": 6681260,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2015
       },
@@ -611,7 +719,9 @@
     "album": "Russisch Roulette",
     "id": 7992030,
     "metadata": {
-      "genres": ["Gangsta"],
+      "genres": [
+        "Gangsta"
+      ],
       "release": {
         "year": 2014
       },
@@ -625,7 +735,9 @@
     "album": "Vol. 4 :: Slaves of Fear",
     "id": 13109186,
     "metadata": {
-      "genres": ["Industrial"],
+      "genres": [
+        "Industrial"
+      ],
       "release": {
         "year": 2019
       },
@@ -639,7 +751,9 @@
     "album": "Futha",
     "id": 13817539,
     "metadata": {
-      "genres": ["Folk"],
+      "genres": [
+        "Folk"
+      ],
       "release": {
         "year": 2019
       },
@@ -653,7 +767,9 @@
     "album": "Leben gescheitert",
     "id": 4756768,
     "metadata": {
-      "genres": ["Depressive Black Metal"],
+      "genres": [
+        "Depressive Black Metal"
+      ],
       "release": {
         "year": 2011
       },
@@ -667,7 +783,10 @@
     "album": "A Sense of Purpose",
     "id": 3915601,
     "metadata": {
-      "genres": ["Heavy Metal", "Melodic Death Metal"],
+      "genres": [
+        "Heavy Metal",
+        "Melodic Death Metal"
+      ],
       "release": {
         "year": 2008
       },
@@ -681,7 +800,9 @@
     "album": "Sister",
     "id": 4963213,
     "metadata": {
-      "genres": ["Heavy Metal"],
+      "genres": [
+        "Heavy Metal"
+      ],
       "release": {
         "year": 2013
       },
@@ -695,7 +816,11 @@
     "album": "Panopticon",
     "id": 377605,
     "metadata": {
-      "genres": ["Alternative Rock", "Hardcore", "Post Rock"],
+      "genres": [
+        "Alternative Rock",
+        "Hardcore",
+        "Post Rock"
+      ],
       "release": {
         "year": 2004
       },
@@ -709,7 +834,12 @@
     "album": "Wavering Radiant",
     "id": 1759834,
     "metadata": {
-      "genres": ["Alternative Rock", "Hardcore", "Post Rock", "Post-Metal"],
+      "genres": [
+        "Alternative Rock",
+        "Hardcore",
+        "Post Rock",
+        "Post-Metal"
+      ],
       "release": {
         "year": 2009
       },
@@ -723,7 +853,13 @@
     "album": "Compilation",
     "id": 1984341,
     "metadata": {
-      "genres": ["Thrash", "Folk Rock", "Viking Metal", "Death Metal", "Black Metal"],
+      "genres": [
+        "Thrash",
+        "Folk Rock",
+        "Viking Metal",
+        "Death Metal",
+        "Black Metal"
+      ],
       "release": {
         "year": 2007
       },
@@ -737,7 +873,10 @@
     "album": "Abendläuten",
     "id": 1482581,
     "metadata": {
-      "genres": ["Folk", "Neofolk"],
+      "genres": [
+        "Folk",
+        "Neofolk"
+      ],
       "release": {
         "year": 2008
       },
@@ -751,7 +890,11 @@
     "album": "Blood Moon Rise",
     "id": 4637218,
     "metadata": {
-      "genres": ["Psychedelic Rock", "Hard Rock", "Doom Metal"],
+      "genres": [
+        "Psychedelic Rock",
+        "Hard Rock",
+        "Doom Metal"
+      ],
       "release": {
         "year": 2013
       },
@@ -765,7 +908,10 @@
     "album": "Jex Thoth",
     "id": 1281818,
     "metadata": {
-      "genres": ["Stoner Rock", "Doom Metal"],
+      "genres": [
+        "Stoner Rock",
+        "Doom Metal"
+      ],
       "release": {
         "year": 2008
       },
@@ -779,7 +925,9 @@
     "album": "Fourth Reich",
     "id": 1782996,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2009
       },
@@ -793,7 +941,9 @@
     "album": "VVorld VVithout End",
     "id": 986168,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2006
       },
@@ -807,7 +957,9 @@
     "album": "Ahnenwerk",
     "id": 2442675,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2006
       },
@@ -821,7 +973,11 @@
     "album": "Fear",
     "id": 5810686,
     "metadata": {
-      "genres": ["Folk Rock", "Indie Rock", "Neofolk"],
+      "genres": [
+        "Folk Rock",
+        "Indie Rock",
+        "Neofolk"
+      ],
       "release": {
         "year": 2014
       },
@@ -835,7 +991,10 @@
     "album": "Sex",
     "id": 9345125,
     "metadata": {
-      "genres": ["Folk Rock", "Neofolk"],
+      "genres": [
+        "Folk Rock",
+        "Neofolk"
+      ],
       "release": {
         "year": 2016
       },
@@ -849,7 +1008,11 @@
     "album": "Songs of Flesh & Blood - In the Key of Light",
     "id": 7199424,
     "metadata": {
-      "genres": ["Folk Rock", "Alternative Rock", "Neofolk"],
+      "genres": [
+        "Folk Rock",
+        "Alternative Rock",
+        "Neofolk"
+      ],
       "release": {
         "year": 2015
       },
@@ -863,7 +1026,10 @@
     "album": "Boss der Bosse",
     "id": 2631724,
     "metadata": {
-      "genres": ["Thug Rap", "Gangsta"],
+      "genres": [
+        "Thug Rap",
+        "Gangsta"
+      ],
       "release": {
         "year": 2006
       },
@@ -877,7 +1043,10 @@
     "album": "Bossaura",
     "id": 3162310,
     "metadata": {
-      "genres": ["Crunk", "Gangsta"],
+      "genres": [
+        "Crunk",
+        "Gangsta"
+      ],
       "release": {
         "year": 2011
       },
@@ -905,7 +1074,9 @@
     "album": "Gute Nacht",
     "id": 10219082,
     "metadata": {
-      "genres": ["Conscious"],
+      "genres": [
+        "Conscious"
+      ],
       "release": {
         "year": 2017
       },
@@ -919,7 +1090,10 @@
     "album": "Labyrinth",
     "id": 8816648,
     "metadata": {
-      "genres": ["Pop Rap", "Drum n Bass"],
+      "genres": [
+        "Pop Rap",
+        "Drum n Bass"
+      ],
       "release": {
         "year": 2016
       },
@@ -933,7 +1107,9 @@
     "album": "Trauma",
     "id": 2129509,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2010
       },
@@ -947,7 +1123,14 @@
     "album": "Born to Die: Paradise Edition",
     "id": 3365117,
     "metadata": {
-      "genres": ["Baroque Pop", "Dream Pop", "Indie Pop", "Trip Hop", "Alt-Pop", "Slowcore"],
+      "genres": [
+        "Baroque Pop",
+        "Dream Pop",
+        "Indie Pop",
+        "Trip Hop",
+        "Alt-Pop",
+        "Slowcore"
+      ],
       "release": {
         "year": 2012
       },
@@ -961,7 +1144,13 @@
     "album": "Honeymoon",
     "id": 7490228,
     "metadata": {
-      "genres": ["Downtempo", "Indie Pop", "Ballad", "Trip Hop", "Soft Rock"],
+      "genres": [
+        "Downtempo",
+        "Indie Pop",
+        "Ballad",
+        "Trip Hop",
+        "Soft Rock"
+      ],
       "release": {
         "year": 2015
       },
@@ -975,7 +1164,10 @@
     "album": "Lust for Life",
     "id": 10597185,
     "metadata": {
-      "genres": ["Indie Pop", "Indie Rock"],
+      "genres": [
+        "Indie Pop",
+        "Indie Rock"
+      ],
       "release": {
         "year": 2017
       },
@@ -989,7 +1181,13 @@
     "album": "Ultraviolence",
     "id": 14624570,
     "metadata": {
-      "genres": ["Psychedelic Rock", "Dream Pop", "Indie Rock", "Indie Pop", "Ballad"],
+      "genres": [
+        "Psychedelic Rock",
+        "Dream Pop",
+        "Indie Rock",
+        "Indie Pop",
+        "Ballad"
+      ],
       "release": {
         "year": 2014
       },
@@ -1003,7 +1201,10 @@
     "album": ":Licht:",
     "id": 4084327,
     "metadata": {
-      "genres": ["Modern Classical", "Neofolk"],
+      "genres": [
+        "Modern Classical",
+        "Neofolk"
+      ],
       "release": {
         "year": 2012
       },
@@ -1017,7 +1218,9 @@
     "album": "Death of a Ladies Man",
     "id": 688913,
     "metadata": {
-      "genres": ["Folk Rock"],
+      "genres": [
+        "Folk Rock"
+      ],
       "release": {
         "year": 1977
       },
@@ -1031,7 +1234,10 @@
     "album": "I'm Your Man",
     "id": 2159182,
     "metadata": {
-      "genres": ["Folk Rock", "Synth-pop"],
+      "genres": [
+        "Folk Rock",
+        "Synth-pop"
+      ],
       "release": {
         "year": 1988
       },
@@ -1045,7 +1251,9 @@
     "album": "New Skin for the Old Ceremony",
     "id": 564274,
     "metadata": {
-      "genres": ["Folk Rock"],
+      "genres": [
+        "Folk Rock"
+      ],
       "release": {
         "year": 1974
       },
@@ -1059,7 +1267,10 @@
     "album": "Old Ideas",
     "id": 3381466,
     "metadata": {
-      "genres": ["Acoustic", "Art Rock"],
+      "genres": [
+        "Acoustic",
+        "Art Rock"
+      ],
       "release": {
         "year": 2012
       },
@@ -1073,7 +1284,11 @@
     "album": "Songs from a Room",
     "id": 2989752,
     "metadata": {
-      "genres": ["Ballad", "Folk", "Folk Rock"],
+      "genres": [
+        "Ballad",
+        "Folk",
+        "Folk Rock"
+      ],
       "release": {
         "year": 1969
       },
@@ -1087,7 +1302,11 @@
     "album": "Songs of Love and Hate",
     "id": 483725,
     "metadata": {
-      "genres": ["Folk Rock", "Folk", "Ballad"],
+      "genres": [
+        "Folk Rock",
+        "Folk",
+        "Ballad"
+      ],
       "release": {
         "year": 1971
       },
@@ -1101,7 +1320,10 @@
     "album": "Ten New Songs",
     "id": 378458,
     "metadata": {
-      "genres": ["Folk Rock", "Ballad"],
+      "genres": [
+        "Folk Rock",
+        "Ballad"
+      ],
       "release": {
         "year": 2001
       },
@@ -1115,7 +1337,11 @@
     "album": "Septembre et Ses Dernières Pensées",
     "id": 2243326,
     "metadata": {
-      "genres": ["Post Rock", "Post-Metal", "Shoegaze"],
+      "genres": [
+        "Post Rock",
+        "Post-Metal",
+        "Shoegaze"
+      ],
       "release": {
         "year": 2010
       },
@@ -1129,7 +1355,10 @@
     "album": "Massive Conspiracy Against All Life",
     "id": 1285218,
     "metadata": {
-      "genres": ["Black Metal", "Ambient"],
+      "genres": [
+        "Black Metal",
+        "Ambient"
+      ],
       "release": {
         "year": 2008
       },
@@ -1143,7 +1372,10 @@
     "album": "Andacht",
     "id": 1091390,
     "metadata": {
-      "genres": ["Dark Ambient", "Black Metal"],
+      "genres": [
+        "Dark Ambient",
+        "Black Metal"
+      ],
       "release": {
         "year": 2007
       },
@@ -1157,7 +1389,10 @@
     "album": "Wounded Rhymes",
     "id": 3313895,
     "metadata": {
-      "genres": ["Pop Rock", "Indie Rock"],
+      "genres": [
+        "Pop Rock",
+        "Indie Rock"
+      ],
       "release": {
         "year": 2011
       },
@@ -1184,7 +1419,9 @@
     "artist": "Lyrinx",
     "album": "Ending the Circle of Life",
     "metadata": {
-      "genres": ["Depressive Black Metal"],
+      "genres": [
+        "Depressive Black Metal"
+      ],
       "release": {
         "year": 2009
       },
@@ -1199,7 +1436,9 @@
     "album": "Distant",
     "id": 2649185,
     "metadata": {
-      "genres": ["Neofolk"],
+      "genres": [
+        "Neofolk"
+      ],
       "release": {
         "year": 2006
       },
@@ -1213,7 +1452,9 @@
     "album": "Summer's Cemetery Dawns",
     "id": 2649155,
     "metadata": {
-      "genres": ["Neofolk"],
+      "genres": [
+        "Neofolk"
+      ],
       "release": {
         "year": 2006
       },
@@ -1227,7 +1468,9 @@
     "album": "The Early Years",
     "id": 2649091,
     "metadata": {
-      "genres": ["Neofolk"],
+      "genres": [
+        "Neofolk"
+      ],
       "release": {
         "year": 2003
       },
@@ -1241,7 +1484,10 @@
     "album": "Industrial Silence",
     "id": 2645853,
     "metadata": {
-      "genres": ["Alternative Rock", "Folk Rock"],
+      "genres": [
+        "Alternative Rock",
+        "Folk Rock"
+      ],
       "release": {
         "year": 1999
       },
@@ -1255,7 +1501,9 @@
     "album": "The Deep End",
     "id": 1530574,
     "metadata": {
-      "genres": ["Alternative Rock"],
+      "genres": [
+        "Alternative Rock"
+      ],
       "release": {
         "year": 2005
       },
@@ -1269,7 +1517,11 @@
     "album": "The Nightly Disease",
     "id": 512675,
     "metadata": {
-      "genres": ["Blues Rock", "Emo", "Soft Rock"],
+      "genres": [
+        "Blues Rock",
+        "Emo",
+        "Soft Rock"
+      ],
       "release": {
         "year": 2001
       },
@@ -1283,7 +1535,9 @@
     "album": "Entartet",
     "id": 4322321,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2012
       },
@@ -1297,7 +1551,9 @@
     "album": "Good News For People Who Love Bad News",
     "id": 397686,
     "metadata": {
-      "genres": ["Indie Rock"],
+      "genres": [
+        "Indie Rock"
+      ],
       "release": {
         "year": 2004
       },
@@ -1311,7 +1567,9 @@
     "album": "Strangers to Ourselves",
     "id": 6767041,
     "metadata": {
-      "genres": ["Indie Rock"],
+      "genres": [
+        "Indie Rock"
+      ],
       "release": {
         "year": 2015
       },
@@ -1325,7 +1583,9 @@
     "album": "This Is a Long Drive for Someone with Nothing to Think About",
     "id": 805654,
     "metadata": {
-      "genres": ["Indie Rock"],
+      "genres": [
+        "Indie Rock"
+      ],
       "release": {
         "year": 1996
       },
@@ -1339,7 +1599,9 @@
     "album": "We Were Dead Before The Ship Even Sank",
     "id": 939894,
     "metadata": {
-      "genres": ["Indie Rock"],
+      "genres": [
+        "Indie Rock"
+      ],
       "release": {
         "year": 2007
       },
@@ -1353,7 +1615,12 @@
     "album": "Circus Maximus",
     "id": 2746436,
     "metadata": {
-      "genres": ["Jazzy Hip-Hop", "Horrorcore", "Conscious", "Hardcore Hip-Hop"],
+      "genres": [
+        "Jazzy Hip-Hop",
+        "Horrorcore",
+        "Conscious",
+        "Hardcore Hip-Hop"
+      ],
       "release": {
         "year": 2011
       },
@@ -1367,7 +1634,12 @@
     "album": "Ace of Spades",
     "id": 807566,
     "metadata": {
-      "genres": ["Rock & Roll", "Heavy Metal", "Hard Rock", "Speed Metal"],
+      "genres": [
+        "Rock & Roll",
+        "Heavy Metal",
+        "Hard Rock",
+        "Speed Metal"
+      ],
       "release": {
         "year": 1980
       },
@@ -1381,7 +1653,9 @@
     "album": "Flamme",
     "id": 14728380,
     "metadata": {
-      "genres": ["Neofolk"],
+      "genres": [
+        "Neofolk"
+      ],
       "release": {
         "year": 2020
       },
@@ -1395,7 +1669,11 @@
     "album": "Addicts: Black Meddle Pt. II",
     "id": 2318025,
     "metadata": {
-      "genres": ["Black Metal", "Psychedelic Rock", "Experimental"],
+      "genres": [
+        "Black Metal",
+        "Psychedelic Rock",
+        "Experimental"
+      ],
       "release": {
         "year": 2010
       },
@@ -1409,7 +1687,11 @@
     "album": "Assassins - Black Meddle Part 1",
     "id": 1503328,
     "metadata": {
-      "genres": ["Black Metal", "Experimental", "Prog Rock"],
+      "genres": [
+        "Black Metal",
+        "Experimental",
+        "Prog Rock"
+      ],
       "release": {
         "year": 2008
       },
@@ -1423,7 +1705,10 @@
     "album": "Doomsday Derelicts",
     "id": 1808114,
     "metadata": {
-      "genres": ["Black Metal", "Experimental"],
+      "genres": [
+        "Black Metal",
+        "Experimental"
+      ],
       "release": {
         "year": 2009
       },
@@ -1437,7 +1722,9 @@
     "album": "Eulogy IV",
     "id": 585634,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2004
       },
@@ -1451,7 +1738,9 @@
     "album": "Instinct: Decay",
     "id": 787200,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2006
       },
@@ -1465,7 +1754,12 @@
     "album": "Silencing Machine",
     "id": 3786580,
     "metadata": {
-      "genres": ["Black Metal", "Psychedelic Rock", "Experimental", "Industrial"],
+      "genres": [
+        "Black Metal",
+        "Psychedelic Rock",
+        "Experimental",
+        "Industrial"
+      ],
       "release": {
         "year": 2012
       },
@@ -1479,7 +1773,11 @@
     "album": "The World We Left Behind",
     "id": 5957068,
     "metadata": {
-      "genres": ["Black Metal", "Experimental", "Psychedelic Rock"],
+      "genres": [
+        "Black Metal",
+        "Experimental",
+        "Psychedelic Rock"
+      ],
       "release": {
         "year": 2014
       },
@@ -1493,7 +1791,9 @@
     "album": "Worldfall",
     "id": 1385771,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2008
       },
@@ -1507,7 +1807,11 @@
     "album": "I Wait In Hell / Shuttle I",
     "id": 3155322,
     "metadata": {
-      "genres": ["Black Metal", "Psychedelic Rock", "Experimental"],
+      "genres": [
+        "Black Metal",
+        "Psychedelic Rock",
+        "Experimental"
+      ],
       "release": {
         "year": 2011
       },
@@ -1521,7 +1825,9 @@
     "album": "Hünengrab im Herbst",
     "id": 5289480,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 1997
       },
@@ -1535,7 +1841,9 @@
     "album": "Jagd",
     "id": 2306205,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 1996
       },
@@ -1549,7 +1857,11 @@
     "album": "Srontgorrth",
     "id": 855103,
     "metadata": {
-      "genres": ["Black Metal", "Industrial", "Ambient"],
+      "genres": [
+        "Black Metal",
+        "Industrial",
+        "Ambient"
+      ],
       "release": {
         "year": 1999
       },
@@ -1563,7 +1875,11 @@
     "album": "Srontgorrth",
     "id": 3102065,
     "metadata": {
-      "genres": ["Black Metal", "Industrial", "Ambient"],
+      "genres": [
+        "Black Metal",
+        "Industrial",
+        "Ambient"
+      ],
       "release": {
         "year": 2010
       },
@@ -1577,7 +1893,9 @@
     "album": "Virus West",
     "id": 855137,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2001
       },
@@ -1591,7 +1909,10 @@
     "album": "Jahreszeiten",
     "id": 1955872,
     "metadata": {
-      "genres": ["Dark Ambient", "Black Metal"],
+      "genres": [
+        "Dark Ambient",
+        "Black Metal"
+      ],
       "release": {
         "year": 2009
       },
@@ -1605,7 +1926,9 @@
     "album": "Semper Fi",
     "id": 1283131,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2007
       },
@@ -1619,7 +1942,10 @@
     "album": "Spectral Visions of Mental Warfare",
     "id": 2993241,
     "metadata": {
-      "genres": ["Black Metal", "Ambient"],
+      "genres": [
+        "Black Metal",
+        "Ambient"
+      ],
       "release": {
         "year": 2011
       },
@@ -1633,7 +1959,9 @@
     "album": "Aschefrühling",
     "id": 1361304,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2005
       },
@@ -1647,7 +1975,10 @@
     "album": "Nektar - Teil 1: Zwölf Monde, eine Hand voll Träume",
     "id": 964750,
     "metadata": {
-      "genres": ["Black Metal", "Avantgarde"],
+      "genres": [
+        "Black Metal",
+        "Avantgarde"
+      ],
       "release": {
         "year": 2004
       },
@@ -1661,7 +1992,11 @@
     "album": "Stille - Das nagende Schweigen",
     "id": 1070708,
     "metadata": {
-      "genres": ["Black Metal", "Avantgarde", "Shoegaze"],
+      "genres": [
+        "Black Metal",
+        "Avantgarde",
+        "Shoegaze"
+      ],
       "release": {
         "year": 2003
       },
@@ -1675,7 +2010,9 @@
     "album": "Verderbnis (Der Schnitter kratzt an jeder Tür)",
     "id": 3327385,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2011
       },
@@ -1689,7 +2026,11 @@
     "album": "Voice of Steel",
     "id": 2077031,
     "metadata": {
-      "genres": ["Black Metal", "Folk Metal", "Progressive Metal"],
+      "genres": [
+        "Black Metal",
+        "Folk Metal",
+        "Progressive Metal"
+      ],
       "release": {
         "year": 2009
       },
@@ -1703,7 +2044,9 @@
     "album": "The Lone Descent",
     "id": 3109249,
     "metadata": {
-      "genres": ["Neofolk"],
+      "genres": [
+        "Neofolk"
+      ],
       "release": {
         "year": 2011
       },
@@ -1729,7 +2072,11 @@
     "album": "Kaiserschnitt",
     "id": 6693654,
     "metadata": {
-      "genres": ["Black Metal", "Avantgarde", "Heavy Metal"],
+      "genres": [
+        "Black Metal",
+        "Avantgarde",
+        "Heavy Metal"
+      ],
       "release": {
         "year": 2015
       },
@@ -1743,7 +2090,9 @@
     "album": "Kunst ist eine besitzergreifende Geliebte",
     "id": 4965186,
     "metadata": {
-      "genres": ["Conscious"],
+      "genres": [
+        "Conscious"
+      ],
       "release": {
         "year": 2013
       },
@@ -1757,7 +2106,9 @@
     "album": "Limbus",
     "id": 8360774,
     "metadata": {
-      "genres": ["Conscious"],
+      "genres": [
+        "Conscious"
+      ],
       "release": {
         "year": 2016
       },
@@ -1799,7 +2150,9 @@
     "album": "Diatessaron",
     "id": 9209202,
     "metadata": {
-      "genres": ["Religious"],
+      "genres": [
+        "Religious"
+      ],
       "release": {
         "year": 2016
       },
@@ -1813,7 +2166,11 @@
     "album": "A Passage to Rhodesia",
     "id": 5915368,
     "metadata": {
-      "genres": ["Neofolk", "Industrial", "Experimental"],
+      "genres": [
+        "Neofolk",
+        "Industrial",
+        "Experimental"
+      ],
       "release": {
         "year": 2014
       },
@@ -1827,7 +2184,10 @@
     "album": "August Spies",
     "id": 3496177,
     "metadata": {
-      "genres": ["Folk", "Neofolk"],
+      "genres": [
+        "Folk",
+        "Neofolk"
+      ],
       "release": {
         "year": 2012
       },
@@ -1841,7 +2201,11 @@
     "album": "Berlin",
     "id": 2471689,
     "metadata": {
-      "genres": ["Modern Classical", "Experimental", "Neofolk"],
+      "genres": [
+        "Modern Classical",
+        "Experimental",
+        "Neofolk"
+      ],
       "release": {
         "year": 2010
       },
@@ -1855,7 +2219,11 @@
     "album": "Confessions d'un voleur d'âmes",
     "id": 949358,
     "metadata": {
-      "genres": ["Modern Classical", "Experimental", "Neofolk"],
+      "genres": [
+        "Modern Classical",
+        "Experimental",
+        "Neofolk"
+      ],
       "release": {
         "year": 2007
       },
@@ -1869,7 +2237,14 @@
     "album": "Die AEsthetik der Herrschaftsfreiheit",
     "id": 3203145,
     "metadata": {
-      "genres": ["Military", "Industrial", "Neofolk", "Spoken Word", "Ambient", "Acoustic"],
+      "genres": [
+        "Military",
+        "Industrial",
+        "Neofolk",
+        "Spoken Word",
+        "Ambient",
+        "Acoustic"
+      ],
       "release": {
         "year": 2011
       },
@@ -1883,7 +2258,9 @@
     "album": "Fester",
     "id": 3889837,
     "metadata": {
-      "genres": ["Neofolk"],
+      "genres": [
+        "Neofolk"
+      ],
       "release": {
         "year": 2012
       },
@@ -1897,7 +2274,10 @@
     "album": "Flowers from Exile",
     "id": 1826803,
     "metadata": {
-      "genres": ["Military", "Neofolk"],
+      "genres": [
+        "Military",
+        "Neofolk"
+      ],
       "release": {
         "year": 2009
       },
@@ -1911,7 +2291,9 @@
     "album": "Gates of Europe",
     "id": 27935784,
     "metadata": {
-      "genres": ["Neofolk"],
+      "genres": [
+        "Neofolk"
+      ],
       "release": {
         "year": 2023
       },
@@ -1925,7 +2307,11 @@
     "album": "Hate Us and See if We Mind",
     "id": 4687668,
     "metadata": {
-      "genres": ["Neofolk", "Experimental", "Industrial"],
+      "genres": [
+        "Neofolk",
+        "Experimental",
+        "Industrial"
+      ],
       "release": {
         "year": 2013
       },
@@ -1939,7 +2325,10 @@
     "album": "Hell Money",
     "id": 3975397,
     "metadata": {
-      "genres": ["Folk", "Neofolk"],
+      "genres": [
+        "Folk",
+        "Neofolk"
+      ],
       "release": {
         "year": 2012
       },
@@ -1954,7 +2343,11 @@
     "id": 19926427,
     "visible": true,
     "metadata": {
-      "genres": ["Neofolk", "Industrial", "Experimental"],
+      "genres": [
+        "Neofolk",
+        "Industrial",
+        "Experimental"
+      ],
       "release": {
         "year": 2021
       },
@@ -1967,7 +2360,10 @@
     "album": "L'assassin",
     "id": 2112438,
     "metadata": {
-      "genres": ["Modern Classical", "Neofolk"],
+      "genres": [
+        "Modern Classical",
+        "Neofolk"
+      ],
       "release": {
         "year": 2010
       },
@@ -1981,7 +2377,9 @@
     "album": "Masse Mensch Material",
     "id": 1282916,
     "metadata": {
-      "genres": ["Neofolk"],
+      "genres": [
+        "Neofolk"
+      ],
       "release": {
         "year": 2008
       },
@@ -1995,7 +2393,11 @@
     "album": "Nera",
     "id": 818834,
     "metadata": {
-      "genres": ["Modern Classical", "Experimental", "Neofolk"],
+      "genres": [
+        "Modern Classical",
+        "Experimental",
+        "Neofolk"
+      ],
       "release": {
         "year": 2006
       },
@@ -2009,7 +2411,10 @@
     "album": "Nos chants perdus",
     "id": 2274856,
     "metadata": {
-      "genres": ["Acoustic", "Neofolk"],
+      "genres": [
+        "Acoustic",
+        "Neofolk"
+      ],
       "release": {
         "year": 2010
       },
@@ -2024,7 +2429,9 @@
     "visible": true,
     "id": 2916009,
     "metadata": {
-      "genres": ["Neofolk"],
+      "genres": [
+        "Neofolk"
+      ],
       "release": {
         "year": 2011
       },
@@ -2037,7 +2444,10 @@
     "album": "The Hyperion Machine",
     "id": 8887753,
     "metadata": {
-      "genres": ["Modern Classical", "Neofolk"],
+      "genres": [
+        "Modern Classical",
+        "Neofolk"
+      ],
       "release": {
         "year": 2016
       },
@@ -2051,7 +2461,9 @@
     "album": "Seven Bells",
     "id": 3477634,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2012
       },
@@ -2065,7 +2477,9 @@
     "album": "Earth Air Spirit Water Fire",
     "id": 5170691,
     "metadata": {
-      "genres": ["Psychedelic Rock"],
+      "genres": [
+        "Psychedelic Rock"
+      ],
       "release": {
         "year": 2013
       },
@@ -2079,7 +2493,9 @@
     "album": "Mens Animus Corpus",
     "id": 4480963,
     "metadata": {
-      "genres": ["Psychedelic Rock"],
+      "genres": [
+        "Psychedelic Rock"
+      ],
       "release": {
         "year": 2013
       },
@@ -2093,7 +2509,10 @@
     "album": "Das Leben vor dem Tod",
     "id": 3615420,
     "metadata": {
-      "genres": ["Black Metal", "Heavy Metal"],
+      "genres": [
+        "Black Metal",
+        "Heavy Metal"
+      ],
       "release": {
         "year": 2010
       },
@@ -2108,7 +2527,9 @@
     "visible": true,
     "id": 6771600,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2012
       },
@@ -2121,7 +2542,11 @@
     "album": "Diamonds",
     "id": 8800955,
     "metadata": {
-      "genres": ["Hardcore", "Melodic Hardcore", "Metalcore"],
+      "genres": [
+        "Hardcore",
+        "Melodic Hardcore",
+        "Metalcore"
+      ],
       "release": {
         "year": 2012
       },
@@ -2135,7 +2560,9 @@
     "album": "Oath Bound",
     "id": 638490,
     "metadata": {
-      "genres": ["Atmospheric Black Metal"],
+      "genres": [
+        "Atmospheric Black Metal"
+      ],
       "release": {
         "year": 2006
       },
@@ -2149,7 +2576,11 @@
     "album": "I",
     "id": 2750281,
     "metadata": {
-      "genres": ["Black Metal", "Trip Hop", "Experimental"],
+      "genres": [
+        "Black Metal",
+        "Trip Hop",
+        "Experimental"
+      ],
       "release": {
         "year": 2004
       },
@@ -2163,7 +2594,10 @@
     "album": "Currents",
     "id": 7268943,
     "metadata": {
-      "genres": ["Indie Rock", "Psychedelic Rock"],
+      "genres": [
+        "Indie Rock",
+        "Psychedelic Rock"
+      ],
       "release": {
         "year": 2015
       },
@@ -2177,7 +2611,11 @@
     "album": "Come, Reap",
     "id": 1546392,
     "metadata": {
-      "genres": ["Stoner Rock", "Psychedelic Rock", "Classic Rock"],
+      "genres": [
+        "Stoner Rock",
+        "Psychedelic Rock",
+        "Classic Rock"
+      ],
       "release": {
         "year": 2008
       },
@@ -2191,7 +2629,10 @@
     "album": "Fire Burning",
     "id": 3156254,
     "metadata": {
-      "genres": ["Hard Rock", "Psychedelic Rock"],
+      "genres": [
+        "Hard Rock",
+        "Psychedelic Rock"
+      ],
       "release": {
         "year": 2011
       },
@@ -2205,7 +2646,10 @@
     "album": "I'll Be Your Ghost",
     "id": 1889036,
     "metadata": {
-      "genres": ["Hard Rock", "Psychedelic Rock"],
+      "genres": [
+        "Hard Rock",
+        "Psychedelic Rock"
+      ],
       "release": {
         "year": 2009
       },
@@ -2219,7 +2663,10 @@
     "album": "III: Tabula Rasa or Death and the Seven Pillars",
     "id": 4925370,
     "metadata": {
-      "genres": ["Hard Rock", "Psychedelic Rock"],
+      "genres": [
+        "Hard Rock",
+        "Psychedelic Rock"
+      ],
       "release": {
         "year": 2013
       },
@@ -2233,7 +2680,9 @@
     "album": "The Graveyard Shuffle",
     "id": 1424588,
     "metadata": {
-      "genres": ["Psychedelic Rock"],
+      "genres": [
+        "Psychedelic Rock"
+      ],
       "release": {
         "year": 2008
       },
@@ -2247,7 +2696,10 @@
     "album": "The Thousandfold Epicentre",
     "id": 3130170,
     "metadata": {
-      "genres": ["Hard Rock", "Psychedelic Rock"],
+      "genres": [
+        "Hard Rock",
+        "Psychedelic Rock"
+      ],
       "release": {
         "year": 2011
       },
@@ -2261,7 +2713,10 @@
     "album": "The Time of No Time Evermore",
     "id": 1974792,
     "metadata": {
-      "genres": ["Hard Rock", "Psychedelic Rock"],
+      "genres": [
+        "Hard Rock",
+        "Psychedelic Rock"
+      ],
       "release": {
         "year": 2009
       },
@@ -2275,7 +2730,12 @@
     "album": "An American Prayer",
     "id": 692394,
     "metadata": {
-      "genres": ["Psychedelic Rock", "Spoken Word", "Experimental", "Classic Rock"],
+      "genres": [
+        "Psychedelic Rock",
+        "Spoken Word",
+        "Experimental",
+        "Classic Rock"
+      ],
       "release": {
         "year": 1978
       },
@@ -2289,7 +2749,9 @@
     "album": "Strange Days",
     "id": 3966962,
     "metadata": {
-      "genres": ["Psychedelic Rock"],
+      "genres": [
+        "Psychedelic Rock"
+      ],
       "release": {
         "year": 1967
       },
@@ -2303,7 +2765,9 @@
     "album": "The Doors",
     "id": 3395317,
     "metadata": {
-      "genres": ["Psychedelic Rock"],
+      "genres": [
+        "Psychedelic Rock"
+      ],
       "release": {
         "year": 1967
       },
@@ -2317,7 +2781,9 @@
     "album": "Essence of Nine",
     "id": 3393602,
     "metadata": {
-      "genres": ["Doom Metal"],
+      "genres": [
+        "Doom Metal"
+      ],
       "release": {
         "year": 2011
       },
@@ -2337,7 +2803,10 @@
     "album": "Blood Vaults: The Blazing Gospel of Heinrich Kramer",
     "id": 4889886,
     "metadata": {
-      "genres": ["Black Metal", "Doom Metal"],
+      "genres": [
+        "Black Metal",
+        "Doom Metal"
+      ],
       "release": {
         "year": 2013
       },
@@ -2351,7 +2820,9 @@
     "album": "Enchanted by Gravemould",
     "id": 3114892,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2011
       },
@@ -2365,7 +2836,13 @@
     "album": "Foulest Semen of a Sheltered Elite",
     "id": 3067954,
     "metadata": {
-      "genres": ["Doom Metal", "Black Metal", "Death Metal", "Avantgarde", "Experimental"],
+      "genres": [
+        "Doom Metal",
+        "Black Metal",
+        "Death Metal",
+        "Avantgarde",
+        "Experimental"
+      ],
       "release": {
         "year": 2009
       },
@@ -2379,7 +2856,12 @@
     "album": "Rain Upon the Impure",
     "id": 1213906,
     "metadata": {
-      "genres": ["Dark Ambient", "Black Metal", "Doom Metal", "Ethereal"],
+      "genres": [
+        "Dark Ambient",
+        "Black Metal",
+        "Doom Metal",
+        "Ethereal"
+      ],
       "release": {
         "year": 2006
       },
@@ -2393,7 +2875,10 @@
     "album": "ars militaria",
     "id": 436210,
     "metadata": {
-      "genres": ["Industrial", "Neo-Classical"],
+      "genres": [
+        "Industrial",
+        "Neo-Classical"
+      ],
       "release": {
         "year": 2005
       },
@@ -2407,7 +2892,10 @@
     "album": "Exile",
     "id": 3276311,
     "metadata": {
-      "genres": ["Modern Classical", "Industrial"],
+      "genres": [
+        "Modern Classical",
+        "Industrial"
+      ],
       "release": {
         "year": 2011
       },
@@ -2421,7 +2909,10 @@
     "album": "Muse in Arms",
     "id": 1540961,
     "metadata": {
-      "genres": ["Modern Classical", "Industrial"],
+      "genres": [
+        "Modern Classical",
+        "Industrial"
+      ],
       "release": {
         "year": 2008
       },
@@ -2435,7 +2926,10 @@
     "album": "Pièce Héroique",
     "id": 663413,
     "metadata": {
-      "genres": ["Modern Classical", "Industrial"],
+      "genres": [
+        "Modern Classical",
+        "Industrial"
+      ],
       "release": {
         "year": 2006
       },
@@ -2449,7 +2943,11 @@
     "album": "The Children of the Night",
     "id": 6915731,
     "metadata": {
-      "genres": ["Black Metal", "Doom Metal", "Gothic Metal"],
+      "genres": [
+        "Black Metal",
+        "Doom Metal",
+        "Gothic Metal"
+      ],
       "release": {
         "year": 2015
       },
@@ -2463,7 +2961,9 @@
     "album": "Ich bin 3 Berliner",
     "id": 10222796,
     "metadata": {
-      "genres": ["Trap"],
+      "genres": [
+        "Trap"
+      ],
       "release": {
         "year": 2017
       },
@@ -2478,7 +2978,9 @@
     "id": 4041190,
     "visible": true,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2010
       },
@@ -2503,7 +3005,9 @@
     "album": "Einblick in den Qualenfall",
     "id": 1655078,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2007
       },
@@ -2517,7 +3021,10 @@
     "album": "Corona Imperialis",
     "id": 4017453,
     "metadata": {
-      "genres": ["Military", "Neo-Classical"],
+      "genres": [
+        "Military",
+        "Neo-Classical"
+      ],
       "release": {
         "year": 2012
       },
@@ -2531,7 +3038,12 @@
     "album": "Germanium Metallicum",
     "id": 1739565,
     "metadata": {
-      "genres": ["Modern Classical", "Industrial", "Synth-pop", "Neofolk"],
+      "genres": [
+        "Modern Classical",
+        "Industrial",
+        "Synth-pop",
+        "Neofolk"
+      ],
       "release": {
         "year": 2009
       },
@@ -2545,7 +3057,10 @@
     "album": "Ceremony of Ascension",
     "id": 2878113,
     "metadata": {
-      "genres": ["Black Metal", "Symphonic Metal"],
+      "genres": [
+        "Black Metal",
+        "Symphonic Metal"
+      ],
       "release": {
         "year": 2009
       },
@@ -2559,7 +3074,10 @@
     "album": "Shunya",
     "id": 4107950,
     "metadata": {
-      "genres": ["Black Metal", "Symphonic Metal"],
+      "genres": [
+        "Black Metal",
+        "Symphonic Metal"
+      ],
       "release": {
         "year": 2012
       },
@@ -2574,7 +3092,9 @@
     "id": 5505395,
     "visible": false,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2012
       },
@@ -2588,7 +3108,9 @@
     "visible": true,
     "id": 2571013,
     "metadata": {
-      "genres": ["Neofolk"],
+      "genres": [
+        "Neofolk"
+      ],
       "release": {
         "year": 2010
       },
@@ -2602,7 +3124,9 @@
     "visible": true,
     "id": 3564178,
     "metadata": {
-      "genres": ["Black Metal"],
+      "genres": [
+        "Black Metal"
+      ],
       "release": {
         "year": 2008
       },
@@ -2621,7 +3145,10 @@
     "album": "Two Hunters",
     "id": 1090067,
     "metadata": {
-      "genres": ["Atmospheric Black Metal", "Doom Metal"],
+      "genres": [
+        "Atmospheric Black Metal",
+        "Doom Metal"
+      ],
       "release": {
         "year": 2007
       },
