@@ -168,14 +168,17 @@ export async function doSeriesImport(): Promise<{ from: string; to: string }[]> 
     }
 
     if (!('favorite' in dataset)) {
+      // @ts-expect-error this is fine
       dataset.favorite = false;
     }
 
     if (!('abandoned' in dataset)) {
+      // @ts-expect-error this is fine
       dataset.abandoned = false;
     }
 
     if (!('episodesSeen' in dataset)) {
+      // @ts-expect-error this is fine
       dataset.episodesSeen = 0;
     }
 

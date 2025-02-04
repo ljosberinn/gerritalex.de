@@ -290,6 +290,7 @@ export async function doDiscogsImport(): Promise<{ from: string; to: string }[]>
       return acc + Number.parseInt(minutes) * 60 + Number.parseInt(seconds);
     }, 0);
 
+    // @ts-expect-error this is fine
     dataset.metadata = {
       genres: mainReleaseData.styles,
       release: {

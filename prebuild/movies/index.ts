@@ -114,6 +114,7 @@ export async function doMoviesImport(): Promise<{ from: string; to: string }[]> 
     };
 
     if (!('favorite' in dataset)) {
+      // @ts-expect-error this is fine
       dataset.favorite = false;
     }
 
