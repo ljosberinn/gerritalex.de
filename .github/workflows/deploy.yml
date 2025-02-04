@@ -2,7 +2,7 @@ name: CI - JS
 
 on:
   pull_request:
-    branches: [main]
+    branches: [master]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -37,7 +37,7 @@ jobs:
     if: github.ref != 'refs/heads/master'
     steps:
       - uses: actions/checkout@master
-      - uses: amondnet/vercel-action@v20
+      - uses: amondnet/vercel-action@v25
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
@@ -51,7 +51,7 @@ jobs:
     if: github.ref == 'refs/heads/master'
     steps:
       - uses: actions/checkout@master
-      - uses: amondnet/vercel-action@v20
+      - uses: amondnet/vercel-action@v25
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}

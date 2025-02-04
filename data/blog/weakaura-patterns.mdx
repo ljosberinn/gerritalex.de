@@ -29,19 +29,24 @@ This would be a TSU trigger:
 
 ```lua
 function (states, event, ...)
-  if event == "COMBAT_LOG_EVENT_UNFILTERED" then -- for the sake of a high-frequency example
+  -- for the sake of a high-frequency example
+  if event == "COMBAT_LOG_EVENT_UNFILTERED" then 
     -- do evil
-    if matchesCriteria or aggregatedData then -- whatever your criteria are
+
+    -- whatever your criteria are
+    if matchesCriteria or aggregatedData then
       aura_env.queue()
     end
 
-    return false -- important to prevent these events from updating the aura
+    -- important to prevent these events from updating the aura
+    return false
   end
 
   if event == aura_env.customEventName then
     local id = ...
 
-    if id ~= aura_env.id then -- make sure the event is actually from us
+    -- make sure the event is actually from us
+    if id ~= aura_env.id then
       return false
     end
 
@@ -49,7 +54,8 @@ function (states, event, ...)
     return true
   end
 
-  return false -- ignore STATUS, OPTIONS etc.
+  -- ignore STATUS, OPTIONS etc.
+  return false
 end
 ```
 
