@@ -15,12 +15,12 @@ export default function Home({ posts }) {
           Hi, I'm Xeph!
         </h1>
 
-        <RandomLyrics />
-
-        <p className="pt-8">
+        <p className="pb-8">
           This new page is still a bit rough layouting wise but functional and I finally wanted to
           get it over the finishing line for now so forgive me while I work on that.
         </p>
+
+        <RandomLyrics />
       </div>
       <div className="divide-y divide-gray-300 dark:divide-gray-700">
         <div className="space-y-2 py-4 md:space-y-5" />

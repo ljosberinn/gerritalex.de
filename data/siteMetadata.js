@@ -16,7 +16,7 @@ const siteMetadata = {
   siteUrl: 'https://gerritalex.de',
   siteRepo: 'https://github.com/ljosberinn/gerritalex.de',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/scalecommander.png`,
-  socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
+  socialBanner: `${process.env.BASE_PATH || ''}/static/images/scalecommander.png`,
   email: 'admin@gerritalex.de',
   github: 'https://github.com/ljosberinn',
   youtube: 'https://youtube.com/@xepher1s',

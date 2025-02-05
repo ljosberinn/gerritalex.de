@@ -6,6 +6,7 @@ import { Image } from './Image';
 import { CustomLink } from './CustomLink';
 import { TableWrapper } from './TableWrapper';
 import { WowheadLink } from './WowheadLink';
+import { WowheadIcon } from './WowheadIcon';
 
 export const components: MDXComponents = {
   Image,
@@ -17,4 +18,5 @@ export const components: MDXComponents = {
   table: TableWrapper,
   BlogNewsletterForm,
   WowheadLink,
+  WowheadIcon,
 };
