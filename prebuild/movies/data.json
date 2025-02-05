@@ -152,6 +152,25 @@
     "favorite": false
   },
   {
+    "title": "A Quiet Place: Day One",
+    "id": 762441,
+    "metadata": {
+      "genres": [
+        "Horror",
+        "Science Fiction",
+        "Thriller"
+      ],
+      "tagline": "Hear how it all began.",
+      "release": {
+        "day": 26,
+        "month": 6,
+        "year": 2024
+      },
+      "runtime": 99
+    },
+    "favorite": false
+  },
+  {
     "title": "Alien",
     "id": 348,
     "metadata": {

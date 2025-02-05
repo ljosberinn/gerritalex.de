@@ -204,8 +204,18 @@ export default makeSource({
         rehypeAutolinkHeadings,
         {
           behavior: 'prepend',
-          headingProperties: {
-            className: ['content-header'],
+          headingProperties: (element) => {
+            const className = ['content-header'];
+
+            if (element.tagName === 'h2') {
+              className.push(
+                '[&:not(:first-of-type)]:border-t-1 [&:not(:first-of-type)]:pt-8 border-dashed border-gray-200'
+              );
+            }
+
+            return {
+              className: className,
+            };
           },
           content: icon,
         },
