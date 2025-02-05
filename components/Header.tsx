@@ -4,7 +4,7 @@ import { CustomLink } from './CustomLink';
 import { MobileNav } from './MobileNav';
 import { ThemeSwitch } from './ThemeSwitch';
 import { SearchButton } from './SearchButton';
-import Image from 'next/image';
+import { Image } from './Image';
 
 function Logo() {
   return <Image src={siteMetadata.siteLogo} width="32" height="32" className="h-8" alt="logo" />;

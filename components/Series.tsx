@@ -237,8 +237,6 @@ export function Series({ data }: SeriesProps) {
                 width={120}
                 height={180}
                 className={classString}
-                loading="lazy"
-                quality={75}
                 src={`/static/images/tv/${series.id}-cover.jpg`}
               />
             );
@@ -265,7 +263,6 @@ export function Series({ data }: SeriesProps) {
                         height={180}
                         className={classString + ' grayscale'}
                         loading="lazy"
-                        quality={75}
                         src={`/static/images/tv/${series.id}-cover.jpg`}
                       />
                     </div>
