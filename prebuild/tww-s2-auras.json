@@ -1,0 +1,568 @@
+{
+  "sources": {
+    "cinderbrew-meadery": {
+      "icon": "inv_achievement_dungeon_cinderbrewmeadery",
+      "name": "Cinderbrew Meadery"
+    },
+    "theater-of-pain": {
+      "icon": "achievement_dungeon_theatreofpain",
+      "name": "Theater of Pain"
+    },
+    "darkflame-cleft": {
+      "icon": "inv_achievement_dungeon_darkflamecleft",
+      "name": "Darkflame Cleft"
+    },
+    "operation-mechagon-workshop": {
+      "icon": "achievement_boss_mechagon",
+      "name": "Operation: Mechagon - Workshop"
+    },
+    "operation-floodgate": {
+      "icon": "inv_achievement_dungeon_waterworks",
+      "name": "Operation: Floodgate"
+    },
+    "priory-of-the-sacred-flame": {
+      "icon": "inv_achievement_dungeon_prioryofthesacredflame",
+      "name": "Priory of the Sacred Flame"
+    },
+    "the-motherlode": {
+      "icon": "achievement_dungeon_kezan",
+      "name": "The MOTHERLODE!!"
+    },
+    "the-rookery": {
+      "icon": "inv_achievement_dungeon_rookery",
+      "name": "The Rookery"
+    }
+  },
+  "spells": [
+    {
+      "id": 434773,
+      "kind": "bleed",
+      "source": "cinderbrew-meadery",
+      "name": "Mean Mug",
+      "icon": "inv_misc_1h_earthenmug_b_01",
+      "notes": ["High damage, low amount of stacks debuff on tank in the first room"]
+    },
+    {
+      "id": 441413,
+      "kind": "bleed",
+      "source": "cinderbrew-meadery",
+      "name": "Shredding Sting",
+      "icon": "inv_beemount",
+      "notes": [
+        "Used by Worker Bees in the right side of the dungeon towards <WowheadLink id={218002} kind='npc'>Benk Buzzbee</WowheadLink>"
+      ]
+    },
+    {
+      "id": 438975,
+      "kind": "bleed",
+      "source": "cinderbrew-meadery",
+      "name": "Shredding Sting",
+      "icon": "inv_beemount",
+      "notes": [
+        "Stacking bleed from Ravenous Cinderbee during the <WowheadLink id={218002} kind='npc'>Benk Buzzbee</WowheadLink> encounter"
+      ]
+    },
+    {
+      "id": 425555,
+      "kind": "bleed",
+      "source": "darkflame-cleft",
+      "name": "Crude Weapons",
+      "icon": "inv_axe_1h_miningpick_a_01",
+      "notes": [
+        "Fast stacking tank debuff that is entirely irrelevant on low stacks. wouldn't consider removing below 15 stacks",
+        "Applied by autohots of Menial Laborers"
+      ]
+    },
+    {
+      "id": 1215411,
+      "kind": "bleed",
+      "source": "operation-mechagon-workshop",
+      "name": "Puncture",
+      "icon": "spell_shadow_lifedrain"
+    },
+    {
+      "id": 293670,
+      "kind": "bleed",
+      "source": "operation-mechagon-workshop",
+      "name": "Chainblade",
+      "icon": "ability_rogue_garrote"
+    },
+    {
+      "id": 468631,
+      "kind": "bleed",
+      "source": "operation-floodgate",
+      "name": "Harpoon",
+      "icon": "inv_polearm_2h_kultirasharpoon_a_01"
+    },
+    {
+      "id": 1213803,
+      "kind": "bleed",
+      "source": "operation-floodgate",
+      "name": "Nailed",
+      "icon": "inv_eng_puresteelbolts"
+    },
+    {
+      "id": 427635,
+      "kind": "bleed",
+      "source": "priory-of-the-sacred-flame",
+      "name": "Grievous Rip",
+      "icon": "ability_druid_ferociousbite",
+      "notes": [
+        "Works identical to <WowheadIcon icon='achievement_dungeon_darkheartthicket'>Darkheart Thicket</WowheadIcon> cat jumps"
+      ]
+    },
+    {
+      "id": 424426,
+      "kind": "bleed",
+      "source": "priory-of-the-sacred-flame",
+      "name": "Lunging Strike",
+      "icon": "inv_spear_11",
+      "notes": [
+        "Via <WowheadLink id={211291} kind='npc'>Sergeant Shaynemail</WowheadLink>, miniboss"
+      ]
+    },
+    {
+      "id": 453461,
+      "kind": "bleed",
+      "source": "priory-of-the-sacred-flame",
+      "name": "Caltrops",
+      "icon": "ability_hunter_traplauncher",
+      "notes": ["Avoidable by not stepping into them"]
+    },
+    {
+      "id": 424414,
+      "kind": "bleed",
+      "source": "priory-of-the-sacred-flame",
+      "name": "Pierce Armor",
+      "icon": "inv_polearm_2h_arathoroutdoor_d_01",
+      "notes": ["Via <WowheadLink id={207946} kind='npc'>Captain Dailcry</WowheadLink>, first boss"]
+    },
+    {
+      "id": 257544,
+      "kind": "bleed",
+      "source": "the-motherlode",
+      "name": "Jagged Cut",
+      "icon": "inv_artifact_bloodoftheassassinated",
+      "notes": ["Stacking debuff on tank via Earthrager, adds during the Azerokk encounter"]
+    },
+    {
+      "id": 1213141,
+      "kind": "bleed",
+      "source": "the-motherlode",
+      "name": "Heavy Slash",
+      "icon": "ability_gouge",
+      "notes": ["Via Taskmaster Askari, miniboss"]
+    },
+    {
+      "id": 342675,
+      "kind": "bleed",
+      "source": "theater-of-pain",
+      "name": "Bone Spear",
+      "icon": "ability_maldraxxus_rogue",
+      "notes": ["Interruptible", "oneshots non-tanks in high keys"]
+    },
+    {
+      "id": 333861,
+      "kind": "bleed",
+      "source": "theater-of-pain",
+      "name": "Ricocheting Blade",
+      "icon": "inv_axe_1h_maldraxxus_d_01",
+      "notes": [
+        "Via Advent Nevermore or Harugia the Bloodthirsty minibosses",
+        "Cleave avoidable by not stacking"
+      ]
+    },
+    {
+      "id": 332836,
+      "kind": "bleed",
+      "source": "theater-of-pain",
+      "name": "Chop",
+      "icon": "warrior_talent_icon_mastercleaver",
+      "notes": [
+        "Tankbuster, used to be outrangeable in Shadowlands and wouldn't recast. range seems unchanged, so maybe still possible"
+      ]
+    },
+    {
+      "id": 330532,
+      "kind": "bleed",
+      "source": "theater-of-pain",
+      "name": "Jagged Quarrel",
+      "icon": "inv_bow_2h_crossbow_pvpdraenors1_d_01"
+    },
+    {
+      "id": 323406,
+      "kind": "bleed",
+      "source": "theater-of-pain",
+      "name": "Jagged Gash",
+      "icon": "ability_gouge"
+    },
+    {
+      "id": 269298,
+      "kind": "poison",
+      "source": "the-motherlode",
+      "name": "Toxic Blades",
+      "icon": "ability_poisons"
+    },
+    {
+      "id": 262270,
+      "kind": "poison",
+      "source": "the-motherlode",
+      "name": "Caustic Compound",
+      "icon": "spell_nature_acid_01"
+    },
+    {
+      "id": 427929,
+      "kind": "disease",
+      "source": "darkflame-cleft",
+      "name": "Nasty Nibble",
+      "icon": "ability_creature_poison_01"
+    },
+    {
+      "id": 1215415,
+      "kind": "disease",
+      "source": "operation-mechagon-workshop",
+      "name": "Sticky Sludge",
+      "icon": "spell_yorsahj_bloodboil_black"
+    },
+    {
+      "id": 320248,
+      "kind": "disease",
+      "source": "theater-of-pain",
+      "name": "Genetic Alteration",
+      "icon": "spell_deathknight_necroticplague",
+      "notes": ["via Paceran the Virulent, first boss"]
+    },
+    {
+      "id": 330700,
+      "kind": "disease",
+      "source": "theater-of-pain",
+      "name": "Decaying Blight",
+      "icon": "ability_creature_disease_03"
+    },
+    {
+      "id": 341949,
+      "kind": "disease",
+      "source": "theater-of-pain",
+      "name": "Withering Blight",
+      "icon": "ability_deathknight_decomposingaura",
+      "notes": ["Interruptible", "Near-oneshots or oneshots in high keys"]
+    },
+    {
+      "id": 330608,
+      "kind": "disease",
+      "source": "theater-of-pain",
+      "name": "Vile Eruption",
+      "icon": "spell_shadow_plaguecloud",
+      "notes": [
+        "Avoidable by not standing in front/behind of the Rancid Gasbag when the casts finishes",
+        "Oneshots in high keys"
+      ]
+    },
+    {
+      "id": 430179,
+      "kind": "curse",
+      "source": "the-rookery",
+      "name": "Seeping Corruption",
+      "icon": "inv_enchant_voidsphere"
+    },
+    {
+      "id": 333299,
+      "kind": "curse",
+      "source": "theater-of-pain",
+      "name": "Curse of Desolation",
+      "icon": "ability_rogue_envelopingshadows"
+    },
+    {
+      "id": 330725,
+      "kind": "curse",
+      "source": "theater-of-pain",
+      "name": "Shadow Vulnerability",
+      "icon": "spell_shadow_curseofachimonde"
+    },
+
+    {
+      "id": 439325,
+      "kind": "magic",
+      "source": "cinderbrew-meadery",
+      "name": "Burning Fermentation",
+      "icon": "spell_brew_bolt_wheat"
+    },
+    {
+      "id": 436640,
+      "kind": "magic",
+      "source": "cinderbrew-meadery",
+      "name": "Burning Ricochet",
+      "icon": "ability_vehicle_demolisherflamecatapult"
+    },
+    {
+      "id": 437956,
+      "kind": "magic",
+      "source": "cinderbrew-meadery",
+      "name": "Erupting Inferno",
+      "icon": "ability_mage_livingbomb",
+      "notes": ["Interruptible"]
+    },
+    {
+      "id": 441397,
+      "kind": "magic",
+      "source": "cinderbrew-meadery",
+      "name": "Bee Venom",
+      "icon": "inv_bee_default"
+    },
+    {
+      "id": 426145,
+      "kind": "magic",
+      "source": "darkflame-cleft",
+      "name": "Paranoid Mind",
+      "icon": "spell_nzinsanity_fearofdeath"
+    },
+    {
+      "id": 428019,
+      "kind": "magic",
+      "source": "darkflame-cleft",
+      "name": "Flashpoint",
+      "icon": "ability_mage_hotstreak",
+      "notes": ["Interruptible"]
+    },
+    {
+      "id": 426295,
+      "kind": "magic",
+      "source": "darkflame-cleft",
+      "name": "Flaming Tether",
+      "icon": "spell_fire_playingwithfire"
+    },
+    {
+      "id": 294929,
+      "kind": "magic",
+      "source": "operation-mechagon-workshop",
+      "name": "Blazing Chomp",
+      "icon": "inv_firecatmount"
+    },
+    {
+      "id": 285460,
+      "kind": "magic",
+      "source": "operation-mechagon-workshop",
+      "name": "Discom-BOMB-ulator",
+      "icon": "ability_argus_soulbombdebufflarge"
+    },
+    {
+      "id": 294195,
+      "kind": "magic",
+      "source": "operation-mechagon-workshop",
+      "name": "Arcing Zap",
+      "icon": "spell_priest_divinestar",
+      "notes": ["Interruptible"]
+    },
+    {
+      "id": 295183,
+      "kind": "magic",
+      "source": "operation-mechagon-workshop",
+      "name": "Capacitor Discharge",
+      "icon": "ability_thunderking_overcharge",
+      "notes": ["Avoidab,e don't stand in bad"]
+    },
+    {
+      "id": 1217821,
+      "kind": "magic",
+      "source": "operation-mechagon-workshop",
+      "name": "Fiery Jaws",
+      "icon": "spell_fire_incinerate"
+    },
+    {
+      "id": 473713,
+      "kind": "magic",
+      "source": "operation-floodgate",
+      "name": "Kinetic Explosive Gel",
+      "icon": "inv_ammo_firetar",
+      "notes": ["Dispelling deals damage to the group and knocks up bombs."]
+    },
+    {
+      "id": 462737,
+      "kind": "magic",
+      "source": "operation-floodgate",
+      "name": "Black Blood Wound",
+      "icon": "spell_yorsahj_bloodboil_purple",
+      "notes": ["If not dispelled, player is stunned for 5 seconds"]
+    },
+    {
+      "id": 469799,
+      "kind": "magic",
+      "source": "operation-floodgate",
+      "name": "Overcharge",
+      "icon": "spell_nature_lightningoverload"
+    },
+    {
+      "id": 428170,
+      "kind": "magic",
+      "source": "priory-of-the-sacred-flame",
+      "name": "Blinding Light",
+      "icon": "inv_ability_holyfire_nova",
+      "notes": ["Face away to avoid"]
+    },
+    {
+      "id": 451606,
+      "kind": "magic",
+      "source": "priory-of-the-sacred-flame",
+      "name": "Holy Flame",
+      "icon": "inv_ability_holyfire_missile",
+      "notes": ["Avoidable, dodge the swirly"]
+    },
+    {
+      "id": 427583,
+      "kind": "magic",
+      "source": "priory-of-the-sacred-flame",
+      "name": "Repentance",
+      "icon": "spell_holy_prayerofhealing",
+      "notes": ["Interruptible"]
+    },
+    {
+      "id": 427897,
+      "kind": "magic",
+      "source": "priory-of-the-sacred-flame",
+      "name": "Heat Wave",
+      "icon": "ability_rhyolith_lavapool"
+    },
+    {
+      "id": 435148,
+      "kind": "magic",
+      "source": "priory-of-the-sacred-flame",
+      "name": "Blazing Strike",
+      "icon": "spell_holy_crusaderstrike"
+    },
+    {
+      "id": 263215,
+      "kind": "magic",
+      "source": "the-motherlode",
+      "name": "Tectonic Barrier",
+      "icon": "shaman_pvp_rockshield",
+      "notes": ["Interruptible"]
+    },
+    {
+      "id": 268797,
+      "kind": "magic",
+      "source": "the-motherlode",
+      "name": "Transmute: Enemy to Goo",
+      "icon": "ability_creature_poison_06",
+      "notes": ["Interruptible"]
+    },
+    {
+      "id": 280604,
+      "kind": "magic",
+      "source": "the-motherlode",
+      "name": "Iced Spritzer",
+      "icon": "ability_mage_waterjet",
+      "notes": ["Interruptible"]
+    },
+    {
+      "id": 268846,
+      "kind": "magic",
+      "source": "the-motherlode",
+      "name": "Echo Blade",
+      "icon": "inv_sword_142"
+    },
+    {
+      "id": 429493,
+      "kind": "magic",
+      "source": "the-rookery",
+      "name": "Unstable Corruption",
+      "icon": "inv_cosmicvoid_debuff",
+      "notes": ["Creates a puddle upon dispel"]
+    },
+    {
+      "id": 1214523,
+      "kind": "magic",
+      "source": "the-rookery",
+      "name": "Feasting Void",
+      "icon": "spell_priest_voidsear"
+    },
+    {
+      "id": 1215600,
+      "kind": "magic",
+      "source": "theater-of-pain",
+      "name": "Withering Touch",
+      "icon": "spell_necro_deathall",
+      "notes": ["Interruptible"]
+    },
+    {
+      "id": 441627,
+      "kind": "purge",
+      "source": "cinderbrew-meadery",
+      "name": "Rejuvenating Honey",
+      "icon": "spell_brew_wheat",
+      "notes": ["Interruptible"]
+    },
+    {
+      "id": 293930,
+      "kind": "purge",
+      "source": "operation-mechagon-workshop",
+      "name": "Overclock",
+      "icon": "inv_misc_pocketwatch_01"
+    },
+    {
+      "id": 297133,
+      "kind": "purge",
+      "source": "operation-mechagon-workshop",
+      "name": "Defensive Countermeasure",
+      "icon": "ability_warrior_shieldreflection"
+    },
+    {
+      "id": 471733,
+      "kind": "purge",
+      "source": "operation-floodgate",
+      "name": "Restorative Algae",
+      "icon": "spell_lfieblood"
+    },
+    {
+      "id": 465604,
+      "kind": "purge",
+      "source": "operation-floodgate",
+      "name": "Battery Bolt",
+      "icon": "trade_engineering"
+    },
+    {
+      "id": 427346,
+      "kind": "purge",
+      "source": "priory-of-the-sacred-flame",
+      "name": "Inner Fire",
+      "icon": "spell_holy_devineaegis",
+      "notes": ["Stuns target upon removal"]
+    },
+    {
+      "id": 444728,
+      "kind": "purge",
+      "source": "priory-of-the-sacred-flame",
+      "name": "Templar's Wrath",
+      "icon": "spell_holy_avenginewrath"
+    },
+    {
+      "id": 469956,
+      "kind": "purge",
+      "source": "the-rookery",
+      "name": "Lightning-Infused",
+      "icon": "spell_shaman_crashlightning"
+    },
+    {
+      "id": 430754,
+      "kind": "purge",
+      "source": "the-rookery",
+      "name": "Void Shell",
+      "icon": "spell_shadow_mindtwisting",
+      "notes": ["Interruptible"]
+    },
+    {
+      "id": 333293,
+      "kind": "purge",
+      "source": "theater-of-pain",
+      "name": "Bone Shield",
+      "icon": "ability_deathknight_boneshield"
+    },
+    {
+      "id": 341902,
+      "kind": "purge",
+      "source": "theater-of-pain",
+      "name": "Unholy Fervor",
+      "icon": "spell_necro_inevitableend",
+      "notes": ["Interruptible"]
+    }
+  ]
+}
