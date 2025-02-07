@@ -185,6 +185,10 @@ function ByDungeon({ data }: SeasonalAuraOverviewProps) {
 
 export function SeasonalAuraOverview({ data }: SeasonalAuraOverviewProps) {
   const [displayKind, setDisplayKind] = useState<'byKind' | 'byDungeon'>(() => {
+    if (typeof window === 'undefined') {
+      return 'byKind';
+    }
+
     // @ts-expect-error this is valid
     const url = new URL(location);
 
