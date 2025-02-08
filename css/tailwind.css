@@ -79,7 +79,7 @@ input:-webkit-autofill:focus {
 
 /* gracefully stolen from mythicstats.com */
 .wowhead-tooltip {
-  @apply backdrop-blur p-[6px] overflow-hidden rounded-sm border-1 border-solid border-slate-800 bg-slate-800;
+  @apply backdrop-blur p-[6px] overflow-hidden rounded-sm border-1 border-solid border-slate-800 bg-slate-200 dark:bg-slate-800;
 }
 
 .wowhead-tooltip > .whtt-tooltip-icon {
