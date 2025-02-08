@@ -1,6 +1,6 @@
 'use client';
 
-import { Fragment, useEffect, useState } from 'react';
+import { Fragment, useEffect, useRef, useState } from 'react';
 import { WowheadIcon, WowheadIconProps } from './WowheadIcon';
 import { WowheadLink, WowheadLinkProps } from './WowheadLink';
 import { CustomLink } from './CustomLink';
@@ -10,7 +10,7 @@ type SeasonalAuraOverviewDataset = {
   sources: Record<string, { icon: string; name: string }>;
   spells: {
     id: number;
-    kind: string;
+    type: string;
     source: string;
     name: string;
     icon: string;
@@ -74,6 +74,8 @@ function Spells({ spells }: SpellsProps) {
                                 <WowheadLink {...notePart.props} />
                               ) : notePart.component === 'WowheadIcon' ? (
                                 <WowheadIcon {...notePart.props} />
+                              ) : notePart.component === 'b' ? (
+                                <b {...notePart.props} />
                               ) : null}
                             </Fragment>
                           );
@@ -93,53 +95,71 @@ function Spells({ spells }: SpellsProps) {
   );
 }
 
-function ByKind({ data }: SeasonalAuraOverviewProps) {
+function ByType({ data }: SeasonalAuraOverviewProps) {
   const grouped = data.spells.reduce<
     Record<string, Record<string, SeasonalAuraOverviewDataset['spells']>>
   >((acc, spell) => {
-    if (!(spell.kind in acc)) {
-      acc[spell.kind] = {};
+    if (!(spell.type in acc)) {
+      acc[spell.type] = {};
     }
 
-    if (!(spell.source in acc[spell.kind])) {
-      acc[spell.kind][spell.source] = [];
+    if (!(spell.source in acc[spell.type])) {
+      acc[spell.type][spell.source] = [];
     }
 
-    acc[spell.kind][spell.source].push(spell);
+    acc[spell.type][spell.source].push(spell);
 
     return acc;
   }, {});
 
-  const kinds = Object.keys(grouped).sort();
+  const types = Object.keys(grouped).sort();
 
   return (
     <>
-      {kinds.map((kind) => {
-        const sources = Object.keys(grouped[kind]).sort();
-        const totalForKind = sources.reduce((acc, source) => {
-          return acc + grouped[kind][source].length;
+      <p>Table of Contents</p>
+      <ul>
+        {types.map((type) => {
+          const sources = Object.keys(grouped[type]);
+          const totalForType = sources.reduce((acc, source) => {
+            return acc + grouped[type][source].length;
+          }, 0);
+
+          return (
+            <li key={type}>
+              <a href={`#${type}`}>
+                {type.slice(0, 1).toUpperCase()}
+                {type.slice(1)} ({totalForType})
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+      {types.map((type) => {
+        const sources = Object.keys(grouped[type]).sort();
+        const totalForType = sources.reduce((acc, source) => {
+          return acc + grouped[type][source].length;
         }, 0);
 
         return (
-          <Fragment key={kind}>
+          <Fragment key={type}>
             <h2
-              id={kind}
+              id={type}
               className="content-header border-dashed border-gray-200 [&:not(:first-of-type)]:border-t-1 [&:not(:first-of-type)]:pt-8"
             >
-              <CustomLink href={`#${kind}`}>
+              <CustomLink href={`#${type}`}>
                 <ContentHeaderLink />
               </CustomLink>
-              {kind.slice(0, 1).toUpperCase()}
-              {kind.slice(1)} ({totalForKind})
+              {type.slice(0, 1).toUpperCase()}
+              {type.slice(1)} ({totalForType})
             </h2>
             {sources.map((source) => {
               const sourceInfo = data.sources[source];
-              const spells = grouped[kind][source].sort((a, b) => a.name.localeCompare(b.name));
+              const spells = grouped[type][source].sort((a, b) => a.name.localeCompare(b.name));
 
               return (
                 <Fragment key={source}>
-                  <h3 id={`${kind}-${source}`}>
-                    <CustomLink href={`#${kind}-${source}`}>
+                  <h3 id={`${type}-${source}`}>
+                    <CustomLink href={`#${type}-${source}`}>
                       <ContentHeaderLink />
                     </CustomLink>
                     <WowheadIcon icon={sourceInfo.icon}>{sourceInfo.name}</WowheadIcon> (
@@ -164,11 +184,11 @@ function ByDungeon({ data }: SeasonalAuraOverviewProps) {
       acc[spell.source] = {};
     }
 
-    if (!(spell.kind in acc[spell.source])) {
-      acc[spell.source][spell.kind] = [];
+    if (!(spell.type in acc[spell.source])) {
+      acc[spell.source][spell.type] = [];
     }
 
-    acc[spell.source][spell.kind].push(spell);
+    acc[spell.source][spell.type].push(spell);
 
     return acc;
   }, {});
@@ -177,9 +197,22 @@ function ByDungeon({ data }: SeasonalAuraOverviewProps) {
 
   return (
     <>
+      <p>Table of Contents</p>
+      <ul>
+        {sources.map((source) => {
+          const sourceInfo = data.sources[source];
+          return (
+            <li key={source}>
+              <a href={`#${source}`}>
+                <WowheadIcon icon={sourceInfo.icon}>{sourceInfo.name}</WowheadIcon>
+              </a>
+            </li>
+          );
+        })}
+      </ul>
       {sources.map((source) => {
         const sourceInfo = data.sources[source];
-        const kinds = Object.keys(grouped[source]).sort();
+        const types = Object.keys(grouped[source]).sort();
 
         return (
           <Fragment key={source}>
@@ -192,17 +225,17 @@ function ByDungeon({ data }: SeasonalAuraOverviewProps) {
               </CustomLink>
               <WowheadIcon icon={sourceInfo.icon}>{sourceInfo.name}</WowheadIcon>
             </h2>
-            {kinds.map((kind) => {
-              const spells = grouped[source][kind].sort((a, b) => a.name.localeCompare(b.name));
+            {types.map((type) => {
+              const spells = grouped[source][type].sort((a, b) => a.name.localeCompare(b.name));
 
               return (
-                <Fragment key={kind}>
-                  <h3 id={`${source}-${kind}`}>
-                    <CustomLink href={`#${source}-${kind}`}>
+                <Fragment key={type}>
+                  <h3 id={`${source}-${type}`}>
+                    <CustomLink href={`#${source}-${type}`}>
                       <ContentHeaderLink />
                     </CustomLink>
-                    {kind.slice(0, 1).toUpperCase()}
-                    {kind.slice(1)} ({spells.length})
+                    {type.slice(0, 1).toUpperCase()}
+                    {type.slice(1)} ({spells.length})
                   </h3>
                   <Spells spells={spells} />
                 </Fragment>
@@ -216,53 +249,85 @@ function ByDungeon({ data }: SeasonalAuraOverviewProps) {
 }
 
 export function SeasonalAuraOverview({ data }: SeasonalAuraOverviewProps) {
-  const [displayKind, setDisplayKind] = useState<'byKind' | 'byDungeon'>(() => {
-    if (typeof window === 'undefined') {
-      return 'byDungeon';
-    }
+  const [by, setBy] = useState<'type' | 'dungeon'>('dungeon');
+  const intialRenderRef = useRef(true);
 
-    // @ts-expect-error this is valid
-    const url = new URL(location);
+  useEffect(
+    function restoreStateFromUrl() {
+      if (!intialRenderRef.current) {
+        return;
+      }
 
-    if (!url.searchParams.has('displayKind')) {
-      return 'byDungeon';
-    }
+      intialRenderRef.current = false;
+      // @ts-expect-error this is valid
+      const url = new URL(location);
 
-    return url.searchParams.get('displayKind') === 'byDungeon' ? 'byDungeon' : 'byKind';
-  });
+      if (!url.searchParams.has('by')) {
+        return;
+      }
 
-  useEffect(() => {
-    // @ts-expect-error this is valid
-    const url = new URL(location);
+      const storedBy = url.searchParams.get('by');
 
-    if (
-      url.searchParams.has('displayKind') &&
-      url.searchParams.get('displayKind') === displayKind
-    ) {
-      return;
-    }
+      if (storedBy === by) {
+        return;
+      }
 
-    url.hash = '';
-    url.searchParams.set('displayKind', displayKind);
+      const hash = url.hash;
 
-    window.history.pushState({}, '', url);
-  }, [displayKind]);
+      if (hash) {
+        setTimeout(() => {
+          const element = document.querySelector(hash);
+
+          if (element) {
+            element.scrollIntoView({
+              behavior: 'smooth',
+            });
+          }
+        }, 350);
+      }
+
+      if (storedBy === 'type' || storedBy === 'dungeon') {
+        setBy(storedBy);
+      }
+    },
+    [by]
+  );
 
   return (
     <TabGroup
-      selectedIndex={displayKind === 'byDungeon' ? 0 : 1}
-      onChange={(index) => setDisplayKind(index === 0 ? 'byDungeon' : 'byKind')}
+      selectedIndex={by === 'dungeon' ? 0 : 1}
+      onChange={(index) => {
+        const next = index === 0 ? 'dungeon' : 'type';
+
+        // @ts-expect-error this is valid
+        const url = new URL(location);
+
+        url.hash = '';
+        url.searchParams.set('by', next);
+        window.history.pushState({}, '', url);
+
+        setBy(next);
+      }}
+      className="w-full"
     >
-      <TabList>
-        <Tab>By Dungeon</Tab>
-        <Tab>By Kind</Tab>
+      <TabList className="flex w-full flex-col justify-between gap-8 md:flex-row md:gap-4">
+        <Tab
+          className={`w-full cursor-pointer rounded-sm border-1 border-solid py-2 text-center ${by === 'dungeon' ? 'bg-teal-500 font-bold dark:bg-teal-950' : 'hover:bg-teal-400 dark:hover:bg-teal-900'}`}
+        >
+          By Dungeon
+        </Tab>
+        <Tab
+          className={`w-full cursor-pointer rounded-sm border-1 border-solid py-2 text-center ${by === 'type' ? 'bg-teal-500 font-bold dark:bg-teal-950' : 'hover:bg-teal-400 dark:hover:bg-teal-900'}`}
+        >
+          By Type
+        </Tab>
       </TabList>
       <TabPanels>
         <TabPanel>
           <ByDungeon data={data} />
         </TabPanel>
         <TabPanel>
-          <ByKind data={data} />
+          <ByType data={data} />
         </TabPanel>
       </TabPanels>
     </TabGroup>

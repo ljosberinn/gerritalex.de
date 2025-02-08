@@ -36,7 +36,7 @@
   "spells": [
     {
       "id": 434773,
-      "kind": "bleed",
+      "type": "bleed",
       "source": "cinderbrew-meadery",
       "name": "Mean Mug",
       "icon": "inv_misc_1h_earthenmug_b_01",
@@ -44,7 +44,7 @@
     },
     {
       "id": 441413,
-      "kind": "bleed",
+      "type": "bleed",
       "source": "cinderbrew-meadery",
       "name": "Shredding Sting",
       "icon": "inv_beemount",
@@ -60,13 +60,18 @@
     },
     {
       "id": 438975,
-      "kind": "bleed",
+      "type": "bleed",
       "source": "cinderbrew-meadery",
       "name": "Shredding Sting",
       "icon": "inv_beemount",
       "notes": [
         [
-          "Stacking bleed from Ravenous Cinderbee during the ",
+          "Stacking bleed from ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 218016, "kind": "npc", "children": "Ravenous Cinderbee" }
+          },
+          " during the ",
           {
             "component": "WowheadLink",
             "props": { "id": 218002, "kind": "npc", "children": "Benk Buzzbee" }
@@ -77,13 +82,13 @@
     },
     {
       "id": 425555,
-      "kind": "bleed",
+      "type": "bleed",
       "source": "darkflame-cleft",
       "name": "Crude Weapons",
       "icon": "inv_axe_1h_miningpick_a_01",
       "notes": [
         "Fast stacking tank debuff that is entirely irrelevant on low stacks. wouldn't consider removing below 15 stacks",
-        "Applied by autohots of Menial Laborers",
+        "Applied by autohits of Menial Laborers",
         [
           "Dangerous in conjunction with the disease ",
           {
@@ -95,28 +100,28 @@
     },
     {
       "id": 1215411,
-      "kind": "bleed",
+      "type": "bleed",
       "source": "operation-mechagon-workshop",
       "name": "Puncture",
       "icon": "spell_shadow_lifedrain"
     },
     {
       "id": 293670,
-      "kind": "bleed",
+      "type": "bleed",
       "source": "operation-mechagon-workshop",
       "name": "Chainblade",
       "icon": "ability_rogue_garrote"
     },
     {
       "id": 468631,
-      "kind": "bleed",
+      "type": "bleed",
       "source": "operation-floodgate",
       "name": "Harpoon",
       "icon": "inv_polearm_2h_kultirasharpoon_a_01"
     },
     {
       "id": 1213803,
-      "kind": "bleed",
+      "type": "bleed",
       "source": "operation-floodgate",
       "name": "Nailed",
       "icon": "inv_eng_puresteelbolts",
@@ -124,7 +129,7 @@
     },
     {
       "id": 427635,
-      "kind": "bleed",
+      "type": "bleed",
       "source": "priory-of-the-sacred-flame",
       "name": "Grievous Rip",
       "icon": "ability_druid_ferociousbite",
@@ -144,7 +149,7 @@
     },
     {
       "id": 424426,
-      "kind": "bleed",
+      "type": "bleed",
       "source": "priory-of-the-sacred-flame",
       "name": "Lunging Strike",
       "icon": "inv_spear_11",
@@ -161,7 +166,7 @@
     },
     {
       "id": 453461,
-      "kind": "bleed",
+      "type": "bleed",
       "source": "priory-of-the-sacred-flame",
       "name": "Caltrops",
       "icon": "ability_hunter_traplauncher",
@@ -169,7 +174,7 @@
     },
     {
       "id": 424414,
-      "kind": "bleed",
+      "type": "bleed",
       "source": "priory-of-the-sacred-flame",
       "name": "Pierce Armor",
       "icon": "inv_polearm_2h_arathoroutdoor_d_01",
@@ -186,7 +191,7 @@
     },
     {
       "id": 257544,
-      "kind": "bleed",
+      "type": "bleed",
       "source": "the-motherlode",
       "name": "Jagged Cut",
       "icon": "inv_artifact_bloodoftheassassinated",
@@ -208,7 +213,7 @@
     },
     {
       "id": 1213141,
-      "kind": "bleed",
+      "type": "bleed",
       "source": "the-motherlode",
       "name": "Heavy Slash",
       "icon": "ability_gouge",
@@ -225,7 +230,7 @@
     },
     {
       "id": 342675,
-      "kind": "bleed",
+      "type": "bleed",
       "source": "theater-of-pain",
       "name": "Bone Spear",
       "icon": "ability_maldraxxus_rogue",
@@ -233,7 +238,7 @@
     },
     {
       "id": 333861,
-      "kind": "bleed",
+      "type": "bleed",
       "source": "theater-of-pain",
       "name": "Ricocheting Blade",
       "icon": "inv_axe_1h_maldraxxus_d_01",
@@ -256,7 +261,7 @@
     },
     {
       "id": 332836,
-      "kind": "bleed",
+      "type": "bleed",
       "source": "theater-of-pain",
       "name": "Chop",
       "icon": "warrior_talent_icon_mastercleaver",
@@ -266,7 +271,7 @@
     },
     {
       "id": 330532,
-      "kind": "bleed",
+      "type": "bleed",
       "source": "theater-of-pain",
       "name": "Jagged Quarrel",
       "icon": "inv_bow_2h_crossbow_pvpdraenors1_d_01",
@@ -274,42 +279,42 @@
     },
     {
       "id": 323406,
-      "kind": "bleed",
+      "type": "bleed",
       "source": "theater-of-pain",
       "name": "Jagged Gash",
       "icon": "ability_gouge"
     },
     {
       "id": 269298,
-      "kind": "poison",
+      "type": "poison",
       "source": "the-motherlode",
       "name": "Toxic Blades",
       "icon": "ability_poisons"
     },
     {
       "id": 262270,
-      "kind": "poison",
+      "type": "poison",
       "source": "the-motherlode",
       "name": "Caustic Compound",
       "icon": "spell_nature_acid_01"
     },
     {
       "id": 427929,
-      "kind": "disease",
+      "type": "disease",
       "source": "darkflame-cleft",
       "name": "Nasty Nibble",
       "icon": "ability_creature_poison_01"
     },
     {
       "id": 1215415,
-      "kind": "disease",
+      "type": "disease",
       "source": "operation-mechagon-workshop",
       "name": "Sticky Sludge",
       "icon": "spell_yorsahj_bloodboil_black"
     },
     {
       "id": 320248,
-      "kind": "disease",
+      "type": "disease",
       "source": "theater-of-pain",
       "name": "Genetic Alteration",
       "icon": "spell_deathknight_necroticplague",
@@ -326,14 +331,14 @@
     },
     {
       "id": 330700,
-      "kind": "disease",
+      "type": "disease",
       "source": "theater-of-pain",
       "name": "Decaying Blight",
       "icon": "ability_creature_disease_03"
     },
     {
       "id": 341949,
-      "kind": "disease",
+      "type": "disease",
       "source": "theater-of-pain",
       "name": "Withering Blight",
       "icon": "ability_deathknight_decomposingaura",
@@ -341,7 +346,7 @@
     },
     {
       "id": 330608,
-      "kind": "disease",
+      "type": "disease",
       "source": "theater-of-pain",
       "name": "Vile Eruption",
       "icon": "spell_shadow_plaguecloud",
@@ -359,21 +364,21 @@
     },
     {
       "id": 430179,
-      "kind": "curse",
+      "type": "curse",
       "source": "the-rookery",
       "name": "Seeping Corruption",
       "icon": "inv_enchant_voidsphere"
     },
     {
       "id": 333299,
-      "kind": "curse",
+      "type": "curse",
       "source": "theater-of-pain",
       "name": "Curse of Desolation",
       "icon": "ability_rogue_envelopingshadows"
     },
     {
       "id": 330725,
-      "kind": "curse",
+      "type": "curse",
       "source": "theater-of-pain",
       "name": "Shadow Vulnerability",
       "icon": "spell_shadow_curseofachimonde"
@@ -381,21 +386,21 @@
 
     {
       "id": 439325,
-      "kind": "magic",
+      "type": "magic",
       "source": "cinderbrew-meadery",
       "name": "Burning Fermentation",
       "icon": "spell_brew_bolt_wheat"
     },
     {
       "id": 436640,
-      "kind": "magic",
+      "type": "magic",
       "source": "cinderbrew-meadery",
       "name": "Burning Ricochet",
       "icon": "ability_vehicle_demolisherflamecatapult"
     },
     {
       "id": 437956,
-      "kind": "magic",
+      "type": "magic",
       "source": "cinderbrew-meadery",
       "name": "Erupting Inferno",
       "icon": "ability_mage_livingbomb",
@@ -403,21 +408,21 @@
     },
     {
       "id": 441397,
-      "kind": "magic",
+      "type": "magic",
       "source": "cinderbrew-meadery",
       "name": "Bee Venom",
       "icon": "inv_bee_default"
     },
     {
       "id": 426145,
-      "kind": "magic",
+      "type": "magic",
       "source": "darkflame-cleft",
       "name": "Paranoid Mind",
       "icon": "spell_nzinsanity_fearofdeath"
     },
     {
       "id": 428019,
-      "kind": "magic",
+      "type": "magic",
       "source": "darkflame-cleft",
       "name": "Flashpoint",
       "icon": "ability_mage_hotstreak",
@@ -425,28 +430,28 @@
     },
     {
       "id": 426295,
-      "kind": "magic",
+      "type": "magic",
       "source": "darkflame-cleft",
       "name": "Flaming Tether",
       "icon": "spell_fire_playingwithfire"
     },
     {
       "id": 294929,
-      "kind": "magic",
+      "type": "magic",
       "source": "operation-mechagon-workshop",
       "name": "Blazing Chomp",
       "icon": "inv_firecatmount"
     },
     {
       "id": 285460,
-      "kind": "magic",
+      "type": "magic",
       "source": "operation-mechagon-workshop",
       "name": "Discom-BOMB-ulator",
       "icon": "ability_argus_soulbombdebufflarge"
     },
     {
       "id": 294195,
-      "kind": "magic",
+      "type": "magic",
       "source": "operation-mechagon-workshop",
       "name": "Arcing Zap",
       "icon": "spell_priest_divinestar",
@@ -454,7 +459,7 @@
     },
     {
       "id": 295183,
-      "kind": "magic",
+      "type": "magic",
       "source": "operation-mechagon-workshop",
       "name": "Capacitor Discharge",
       "icon": "ability_thunderking_overcharge",
@@ -462,14 +467,14 @@
     },
     {
       "id": 1217821,
-      "kind": "magic",
+      "type": "magic",
       "source": "operation-mechagon-workshop",
       "name": "Fiery Jaws",
       "icon": "spell_fire_incinerate"
     },
     {
       "id": 473713,
-      "kind": "magic",
+      "type": "magic",
       "source": "operation-floodgate",
       "name": "Kinetic Explosive Gel",
       "icon": "inv_ammo_firetar",
@@ -477,7 +482,7 @@
     },
     {
       "id": 462737,
-      "kind": "magic",
+      "type": "magic",
       "source": "operation-floodgate",
       "name": "Black Blood Wound",
       "icon": "spell_yorsahj_bloodboil_purple",
@@ -485,14 +490,14 @@
     },
     {
       "id": 469799,
-      "kind": "magic",
+      "type": "magic",
       "source": "operation-floodgate",
       "name": "Overcharge",
       "icon": "spell_nature_lightningoverload"
     },
     {
       "id": 428170,
-      "kind": "magic",
+      "type": "magic",
       "source": "priory-of-the-sacred-flame",
       "name": "Blinding Light",
       "icon": "inv_ability_holyfire_nova",
@@ -500,7 +505,7 @@
     },
     {
       "id": 451606,
-      "kind": "magic",
+      "type": "magic",
       "source": "priory-of-the-sacred-flame",
       "name": "Holy Flame",
       "icon": "inv_ability_holyfire_missile",
@@ -508,7 +513,7 @@
     },
     {
       "id": 427583,
-      "kind": "magic",
+      "type": "magic",
       "source": "priory-of-the-sacred-flame",
       "name": "Repentance",
       "icon": "spell_holy_prayerofhealing",
@@ -516,21 +521,21 @@
     },
     {
       "id": 427897,
-      "kind": "magic",
+      "type": "magic",
       "source": "priory-of-the-sacred-flame",
       "name": "Heat Wave",
       "icon": "ability_rhyolith_lavapool"
     },
     {
       "id": 435148,
-      "kind": "magic",
+      "type": "magic",
       "source": "priory-of-the-sacred-flame",
       "name": "Blazing Strike",
       "icon": "spell_holy_crusaderstrike"
     },
     {
       "id": 263215,
-      "kind": "magic",
+      "type": "magic",
       "source": "the-motherlode",
       "name": "Tectonic Barrier",
       "icon": "shaman_pvp_rockshield",
@@ -538,7 +543,7 @@
     },
     {
       "id": 268797,
-      "kind": "magic",
+      "type": "magic",
       "source": "the-motherlode",
       "name": "Transmute: Enemy to Goo",
       "icon": "ability_creature_poison_06",
@@ -546,7 +551,7 @@
     },
     {
       "id": 280604,
-      "kind": "magic",
+      "type": "magic",
       "source": "the-motherlode",
       "name": "Iced Spritzer",
       "icon": "ability_mage_waterjet",
@@ -554,14 +559,14 @@
     },
     {
       "id": 268846,
-      "kind": "magic",
+      "type": "magic",
       "source": "the-motherlode",
       "name": "Echo Blade",
       "icon": "inv_sword_142"
     },
     {
       "id": 429493,
-      "kind": "magic",
+      "type": "magic",
       "source": "the-rookery",
       "name": "Unstable Corruption",
       "icon": "inv_cosmicvoid_debuff",
@@ -569,14 +574,14 @@
     },
     {
       "id": 1214523,
-      "kind": "magic",
+      "type": "magic",
       "source": "the-rookery",
       "name": "Feasting Void",
       "icon": "spell_priest_voidsear"
     },
     {
       "id": 1215600,
-      "kind": "magic",
+      "type": "magic",
       "source": "theater-of-pain",
       "name": "Withering Touch",
       "icon": "spell_necro_deathall",
@@ -584,7 +589,7 @@
     },
     {
       "id": 441627,
-      "kind": "purge",
+      "type": "purge",
       "source": "cinderbrew-meadery",
       "name": "Rejuvenating Honey",
       "icon": "spell_brew_wheat",
@@ -592,35 +597,35 @@
     },
     {
       "id": 293930,
-      "kind": "purge",
+      "type": "purge",
       "source": "operation-mechagon-workshop",
       "name": "Overclock",
       "icon": "inv_misc_pocketwatch_01"
     },
     {
       "id": 297133,
-      "kind": "purge",
+      "type": "purge",
       "source": "operation-mechagon-workshop",
       "name": "Defensive Countermeasure",
       "icon": "ability_warrior_shieldreflection"
     },
     {
       "id": 471733,
-      "kind": "purge",
+      "type": "purge",
       "source": "operation-floodgate",
       "name": "Restorative Algae",
       "icon": "spell_lfieblood"
     },
     {
       "id": 465604,
-      "kind": "purge",
+      "type": "purge",
       "source": "operation-floodgate",
       "name": "Battery Bolt",
       "icon": "trade_engineering"
     },
     {
       "id": 427346,
-      "kind": "purge",
+      "type": "purge",
       "source": "priory-of-the-sacred-flame",
       "name": "Inner Fire",
       "icon": "spell_holy_devineaegis",
@@ -628,21 +633,21 @@
     },
     {
       "id": 444728,
-      "kind": "purge",
+      "type": "purge",
       "source": "priory-of-the-sacred-flame",
       "name": "Templar's Wrath",
       "icon": "spell_holy_avenginewrath"
     },
     {
       "id": 469956,
-      "kind": "purge",
+      "type": "purge",
       "source": "the-rookery",
       "name": "Lightning-Infused",
       "icon": "spell_shaman_crashlightning"
     },
     {
       "id": 430754,
-      "kind": "purge",
+      "type": "purge",
       "source": "the-rookery",
       "name": "Void Shell",
       "icon": "spell_shadow_mindtwisting",
@@ -650,18 +655,35 @@
     },
     {
       "id": 333293,
-      "kind": "purge",
+      "type": "purge",
       "source": "theater-of-pain",
       "name": "Bone Shield",
       "icon": "ability_deathknight_boneshield"
     },
     {
       "id": 341902,
-      "kind": "purge",
+      "type": "purge",
       "source": "theater-of-pain",
       "name": "Unholy Fervor",
       "icon": "spell_necro_inevitableend",
       "notes": ["Interruptible"]
+    },
+    {
+      "id": 427342,
+      "type": "purge",
+      "source": "priory-of-the-sacred-flame",
+      "name": "Defend",
+      "icon": "ability_defend",
+      "notes": [
+        [
+          "Honorable mention - when ",
+          {
+            "component": "b",
+            "props": { "children": "stopped" }
+          },
+          ", target takes 50% of damage taken for x seconds"
+        ]
+      ]
     }
   ]
 }
