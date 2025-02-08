@@ -7,6 +7,7 @@ import { CustomLink } from './CustomLink';
 import { TableWrapper } from './TableWrapper';
 import { WowheadLink } from './WowheadLink';
 import { WowheadIcon } from './WowheadIcon';
+import { SeasonalAuraOverview } from './SeasonalAuraOverview';
 
 export const components: MDXComponents = {
   Image,
@@ -19,4 +20,5 @@ export const components: MDXComponents = {
   BlogNewsletterForm,
   WowheadLink,
   WowheadIcon,
+  SeasonalAuraOverview,
 };
