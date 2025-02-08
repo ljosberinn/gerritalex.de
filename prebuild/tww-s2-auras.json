@@ -49,7 +49,13 @@
       "name": "Shredding Sting",
       "icon": "inv_beemount",
       "notes": [
-        "Used by Worker Bees in the right side of the dungeon towards <WowheadLink id={218002} kind='npc'>Benk Buzzbee</WowheadLink>"
+        [
+          "Used by Worker Bees in the right side of the dungeon towards ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 218002, "kind": "npc", "children": "Benk Buzzbee" }
+          }
+        ]
       ]
     },
     {
@@ -59,7 +65,14 @@
       "name": "Shredding Sting",
       "icon": "inv_beemount",
       "notes": [
-        "Stacking bleed from Ravenous Cinderbee during the <WowheadLink id={218002} kind='npc'>Benk Buzzbee</WowheadLink> encounter"
+        [
+          "Stacking bleed from Ravenous Cinderbee during the ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 218002, "kind": "npc", "children": "Benk Buzzbee" }
+          },
+          " encounter"
+        ]
       ]
     },
     {
@@ -70,7 +83,14 @@
       "icon": "inv_axe_1h_miningpick_a_01",
       "notes": [
         "Fast stacking tank debuff that is entirely irrelevant on low stacks. wouldn't consider removing below 15 stacks",
-        "Applied by autohots of Menial Laborers"
+        "Applied by autohots of Menial Laborers",
+        [
+          "Dangerous in conjunction with the disease ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 1215415, "kind": "npc", "children": "Nasty Nibble" }
+          }
+        ]
       ]
     },
     {
@@ -99,7 +119,8 @@
       "kind": "bleed",
       "source": "operation-floodgate",
       "name": "Nailed",
-      "icon": "inv_eng_puresteelbolts"
+      "icon": "inv_eng_puresteelbolts",
+      "notes": ["Roots"]
     },
     {
       "id": 427635,
@@ -108,7 +129,17 @@
       "name": "Grievous Rip",
       "icon": "ability_druid_ferociousbite",
       "notes": [
-        "Works identical to <WowheadIcon icon='achievement_dungeon_darkheartthicket'>Darkheart Thicket</WowheadIcon> cat jumps"
+        [
+          "Works identical to ",
+          {
+            "component": "WowheadIcon",
+            "props": {
+              "icon": "achievement_dungeon_darkheartthicket",
+              "children": "Darkheart Thicket"
+            }
+          },
+          " cat jumps"
+        ]
       ]
     },
     {
@@ -118,7 +149,14 @@
       "name": "Lunging Strike",
       "icon": "inv_spear_11",
       "notes": [
-        "Via <WowheadLink id={211291} kind='npc'>Sergeant Shaynemail</WowheadLink>, miniboss"
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 211291, "kind": "npc", "children": "Sergeant Shaynemail" }
+          },
+          ", miniboss"
+        ]
       ]
     },
     {
@@ -135,7 +173,16 @@
       "source": "priory-of-the-sacred-flame",
       "name": "Pierce Armor",
       "icon": "inv_polearm_2h_arathoroutdoor_d_01",
-      "notes": ["Via <WowheadLink id={207946} kind='npc'>Captain Dailcry</WowheadLink>, first boss"]
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 207946, "kind": "npc", "children": "Captain Dailcry" }
+          },
+          ", first boss"
+        ]
+      ]
     },
     {
       "id": 257544,
@@ -143,7 +190,21 @@
       "source": "the-motherlode",
       "name": "Jagged Cut",
       "icon": "inv_artifact_bloodoftheassassinated",
-      "notes": ["Stacking debuff on tank via Earthrager, adds during the Azerokk encounter"]
+      "notes": [
+        [
+          "Stacking debuff on tank via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 129802, "kind": "npc", "children": "Earthrager" }
+          },
+          ", adds during the ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 129227, "kind": "npc", "children": "Azerokk" }
+          },
+          " encounter"
+        ]
+      ]
     },
     {
       "id": 1213141,
@@ -151,7 +212,16 @@
       "source": "the-motherlode",
       "name": "Heavy Slash",
       "icon": "ability_gouge",
-      "notes": ["Via Taskmaster Askari, miniboss"]
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 134012, "kind": "npc", "children": "Taskmaster Askari" }
+          },
+          ", miniboss"
+        ]
+      ]
     },
     {
       "id": 342675,
@@ -168,7 +238,19 @@
       "name": "Ricocheting Blade",
       "icon": "inv_axe_1h_maldraxxus_d_01",
       "notes": [
-        "Via Advent Nevermore or Harugia the Bloodthirsty minibosses",
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 167533, "kind": "npc", "children": "Advent Nevermore" }
+          },
+          " or ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 167536, "kind": "npc", "children": "Harugia the Bloodthirsty" }
+          },
+          " minibosses"
+        ],
         "Cleave avoidable by not stacking"
       ]
     },
@@ -187,7 +269,8 @@
       "kind": "bleed",
       "source": "theater-of-pain",
       "name": "Jagged Quarrel",
-      "icon": "inv_bow_2h_crossbow_pvpdraenors1_d_01"
+      "icon": "inv_bow_2h_crossbow_pvpdraenors1_d_01",
+      "notes": ["Prefers to target dps"]
     },
     {
       "id": 323406,
@@ -230,7 +313,16 @@
       "source": "theater-of-pain",
       "name": "Genetic Alteration",
       "icon": "spell_deathknight_necroticplague",
-      "notes": ["via Paceran the Virulent, first boss"]
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 164463, "kind": "npc", "children": "Paceran the Virulent" }
+          },
+          ", first boss"
+        ]
+      ]
     },
     {
       "id": 330700,
@@ -254,7 +346,14 @@
       "name": "Vile Eruption",
       "icon": "spell_shadow_plaguecloud",
       "notes": [
-        "Avoidable by not standing in front/behind of the Rancid Gasbag when the casts finishes",
+        [
+          "Avoidable by not standing in front/behind of the ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 163086, "kind": "npc", "children": "Rancid Gasbag" }
+          },
+          " when the casts finishes"
+        ],
         "Oneshots in high keys"
       ]
     },
@@ -359,7 +458,7 @@
       "source": "operation-mechagon-workshop",
       "name": "Capacitor Discharge",
       "icon": "ability_thunderking_overcharge",
-      "notes": ["Avoidab,e don't stand in bad"]
+      "notes": ["Avoidable, don't stand in bad"]
     },
     {
       "id": 1217821,

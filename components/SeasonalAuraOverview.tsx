@@ -1,8 +1,8 @@
 'use client';
 
 import { Fragment, useEffect, useState } from 'react';
-import { WowheadIcon } from './WowheadIcon';
-import { WowheadLink } from './WowheadLink';
+import { WowheadIcon, WowheadIconProps } from './WowheadIcon';
+import { WowheadLink, WowheadLinkProps } from './WowheadLink';
 import { CustomLink } from './CustomLink';
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react';
 
@@ -14,7 +14,11 @@ type SeasonalAuraOverviewDataset = {
     source: string;
     name: string;
     icon: string;
-    notes?: string[];
+    notes?: (
+      | string
+      | { component: 'WowheadLink'; props: WowheadLinkProps; children: string }
+      | { component: 'WowheadIcon'; props: WowheadIconProps; children: string }
+    )[];
   }[];
 };
 
@@ -54,7 +58,31 @@ function Spells({ spells }: SpellsProps) {
             {spell.notes ? (
               <ul>
                 {spell.notes.map((note, i) => {
-                  return <li key={i}>{note}</li>;
+                  if (typeof note === 'string') {
+                    return <li key={i}>{note}</li>;
+                  }
+
+                  if (Array.isArray(note)) {
+                    return (
+                      <li key={i}>
+                        {note.map((notePart, j) => {
+                          return (
+                            <Fragment key={j}>
+                              {typeof notePart === 'string' ? (
+                                notePart
+                              ) : notePart.component === 'WowheadLink' ? (
+                                <WowheadLink {...notePart.props} />
+                              ) : notePart.component === 'WowheadIcon' ? (
+                                <WowheadIcon {...notePart.props} />
+                              ) : null}
+                            </Fragment>
+                          );
+                        })}
+                      </li>
+                    );
+                  }
+
+                  return null;
                 })}
               </ul>
             ) : null}
@@ -88,6 +116,9 @@ function ByKind({ data }: SeasonalAuraOverviewProps) {
     <>
       {kinds.map((kind) => {
         const sources = Object.keys(grouped[kind]).sort();
+        const totalForKind = sources.reduce((acc, source) => {
+          return acc + grouped[kind][source].length;
+        }, 0);
 
         return (
           <Fragment key={kind}>
@@ -99,7 +130,7 @@ function ByKind({ data }: SeasonalAuraOverviewProps) {
                 <ContentHeaderLink />
               </CustomLink>
               {kind.slice(0, 1).toUpperCase()}
-              {kind.slice(1)}
+              {kind.slice(1)} ({totalForKind})
             </h2>
             {sources.map((source) => {
               const sourceInfo = data.sources[source];
@@ -111,7 +142,8 @@ function ByKind({ data }: SeasonalAuraOverviewProps) {
                     <CustomLink href={`#${kind}-${source}`}>
                       <ContentHeaderLink />
                     </CustomLink>
-                    <WowheadIcon icon={sourceInfo.icon}>{sourceInfo.name}</WowheadIcon>
+                    <WowheadIcon icon={sourceInfo.icon}>{sourceInfo.name}</WowheadIcon> (
+                    {spells.length})
                   </h3>
                   <Spells spells={spells} />
                 </Fragment>
@@ -170,7 +202,7 @@ function ByDungeon({ data }: SeasonalAuraOverviewProps) {
                       <ContentHeaderLink />
                     </CustomLink>
                     {kind.slice(0, 1).toUpperCase()}
-                    {kind.slice(1)}
+                    {kind.slice(1)} ({spells.length})
                   </h3>
                   <Spells spells={spells} />
                 </Fragment>
@@ -186,14 +218,14 @@ function ByDungeon({ data }: SeasonalAuraOverviewProps) {
 export function SeasonalAuraOverview({ data }: SeasonalAuraOverviewProps) {
   const [displayKind, setDisplayKind] = useState<'byKind' | 'byDungeon'>(() => {
     if (typeof window === 'undefined') {
-      return 'byKind';
+      return 'byDungeon';
     }
 
     // @ts-expect-error this is valid
     const url = new URL(location);
 
     if (!url.searchParams.has('displayKind')) {
-      return 'byKind';
+      return 'byDungeon';
     }
 
     return url.searchParams.get('displayKind') === 'byDungeon' ? 'byDungeon' : 'byKind';
@@ -212,26 +244,25 @@ export function SeasonalAuraOverview({ data }: SeasonalAuraOverviewProps) {
 
     url.hash = '';
     url.searchParams.set('displayKind', displayKind);
-    console.log(url.searchParams.toString());
 
     window.history.pushState({}, '', url);
   }, [displayKind]);
 
   return (
     <TabGroup
-      selectedIndex={displayKind === 'byKind' ? 0 : 1}
-      onChange={(index) => setDisplayKind(index === 0 ? 'byKind' : 'byDungeon')}
+      selectedIndex={displayKind === 'byDungeon' ? 0 : 1}
+      onChange={(index) => setDisplayKind(index === 0 ? 'byDungeon' : 'byKind')}
     >
       <TabList>
-        <Tab>By Kind</Tab>
         <Tab>By Dungeon</Tab>
+        <Tab>By Kind</Tab>
       </TabList>
       <TabPanels>
         <TabPanel>
-          <ByKind data={data} />
+          <ByDungeon data={data} />
         </TabPanel>
         <TabPanel>
-          <ByDungeon data={data} />
+          <ByKind data={data} />
         </TabPanel>
       </TabPanels>
     </TabGroup>

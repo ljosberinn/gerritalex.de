@@ -1,7 +1,7 @@
 import { CustomLink } from './CustomLink';
 import { Image } from './Image';
 
-type WowheadLinkProps = {
+export type WowheadLinkProps = {
   id: number;
   kind: 'spell' | 'item' | 'npc' | 'achievement';
   icon: string;

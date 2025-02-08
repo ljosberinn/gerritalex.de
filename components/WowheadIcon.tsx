@@ -1,6 +1,6 @@
 import { Image } from './Image';
 
-type WowheadIconProps = {
+export type WowheadIconProps = {
   icon: string;
   children: string;
 };
