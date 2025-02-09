@@ -92,6 +92,20 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <script>
           {`const whTooltips = {colorLinks: false, iconizeLinks: false, renameLinks: false}; `}
         </script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function () {
+        window.counterscale = {
+            q: [["set", "siteId", "gerritalex"], ["trackPageview"]],
+        };
+    })();`,
+          }}
+        />
+        <script
+          id="counterscale-script"
+          defer
+          src="https://counterscale.gerritalex.workers.dev/tracker.js"
+        />
       </head>
 
       <body className="bg-white p-0.5 text-black antialiased dark:bg-gray-950 dark:text-white">

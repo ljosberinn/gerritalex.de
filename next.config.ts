@@ -4,7 +4,7 @@ import type { NextConfig } from 'next';
 // You might need to insert additional domains in script-src if you are using external services
 const ContentSecurityPolicy = `
   default-src 'self';
-  script-src wow.zamimg.com 'self' 'unsafe-eval' 'unsafe-inline';
+  script-src wow.zamimg.com counterscale.gerritalex.workers.dev 'self' 'unsafe-eval' 'unsafe-inline';
   style-src 'self' wow.zamimg.com 'unsafe-inline';
   img-src * blob: data:;
   media-src *.s3.amazonaws.com;
