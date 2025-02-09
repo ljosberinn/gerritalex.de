@@ -93,7 +93,7 @@
           "Dangerous in conjunction with the disease ",
           {
             "component": "WowheadLink",
-            "props": { "id": 1215415, "kind": "npc", "children": "Nasty Nibble" }
+            "props": { "id": 427929, "kind": "spell", "children": "Nasty Nibble" }
           }
         ]
       ]
