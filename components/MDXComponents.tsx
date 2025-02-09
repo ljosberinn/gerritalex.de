@@ -8,6 +8,7 @@ import { TableWrapper } from './TableWrapper';
 import { WowheadLink } from './WowheadLink';
 import { WowheadIcon } from './WowheadIcon';
 import { SeasonalAuraOverview } from './SeasonalAuraOverview';
+import { WowheadSpecIcon } from './WowheadSpecIcon';
 
 export const components: MDXComponents = {
   Image,
@@ -21,4 +22,5 @@ export const components: MDXComponents = {
   WowheadLink,
   WowheadIcon,
   SeasonalAuraOverview,
+  WowheadSpecIcon,
 };
