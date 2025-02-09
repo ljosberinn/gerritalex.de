@@ -76,7 +76,14 @@
             "component": "WowheadLink",
             "props": { "id": 218002, "kind": "npc", "children": "Benk Buzzbee" }
           },
-          " encounter"
+          " encounter on right side"
+        ],
+        [
+          "Targets randomly, be aware of overlaps of multiple stacks with ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 439586, "kind": "spell", "children": "Fluttering Wing" }
+          }
         ]
       ]
     },
@@ -282,7 +289,17 @@
       "type": "bleed",
       "source": "theater-of-pain",
       "name": "Jagged Gash",
-      "icon": "ability_gouge"
+      "icon": "ability_gouge",
+      "notes": [
+        [
+          "Avoidable by not getting hooked by the chains during the ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 162317, "kind": "npc", "children": "Gorechop" }
+          },
+          " encounter"
+        ]
+      ]
     },
     {
       "id": 269298,
@@ -303,7 +320,17 @@
       "type": "disease",
       "source": "darkflame-cleft",
       "name": "Nasty Nibble",
-      "icon": "ability_creature_poison_01"
+      "icon": "ability_creature_poison_01",
+      "notes": [
+        [
+          "Used by ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 211977, "kind": "npc", "children": "Pack Mole" }
+          },
+          "s"
+        ]
+      ]
     },
     {
       "id": 1215415,
@@ -381,7 +408,21 @@
       "type": "curse",
       "source": "theater-of-pain",
       "name": "Shadow Vulnerability",
-      "icon": "spell_shadow_curseofachimonde"
+      "icon": "spell_shadow_curseofachimonde",
+      "notes": [
+        [
+          "Applied by ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 167998, "kind": "npc", "children": "Portal Guardian" }
+          },
+          " commonly briefly before their ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 330716, "kind": "spell", "children": "Soulstorm" }
+          }
+        ]
+      ]
     },
 
     {
@@ -389,14 +430,34 @@
       "type": "magic",
       "source": "cinderbrew-meadery",
       "name": "Burning Fermentation",
-      "icon": "spell_brew_bolt_wheat"
+      "icon": "spell_brew_bolt_wheat",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 210267, "kind": "npc", "children": "I'pa" }
+          },
+          ", left side boss"
+        ]
+      ]
     },
     {
       "id": 436640,
       "type": "magic",
       "source": "cinderbrew-meadery",
       "name": "Burning Ricochet",
-      "icon": "ability_vehicle_demolisherflamecatapult"
+      "icon": "ability_vehicle_demolisherflamecatapult",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 214661, "kind": "npc", "children": "Goldie Baronbottom" }
+          },
+          ", last boss"
+        ]
+      ]
     },
     {
       "id": 437956,
@@ -418,7 +479,17 @@
       "type": "magic",
       "source": "darkflame-cleft",
       "name": "Paranoid Mind",
-      "icon": "spell_nzinsanity_fearofdeath"
+      "icon": "spell_nzinsanity_fearofdeath",
+      "notes": [
+        [
+          "Via the ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 208745, "kind": "npc", "children": "The Candle King" }
+          },
+          ", third boss"
+        ]
+      ]
     },
     {
       "id": 428019,
@@ -433,21 +504,42 @@
       "type": "magic",
       "source": "darkflame-cleft",
       "name": "Flaming Tether",
-      "icon": "spell_fire_playingwithfire"
+      "icon": "spell_fire_playingwithfire",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 212412, "kind": "npc", "children": "Sootsnout" }
+          },
+          ", miniboss before third boss"
+        ]
+      ]
     },
     {
       "id": 294929,
       "type": "magic",
       "source": "operation-mechagon-workshop",
       "name": "Blazing Chomp",
-      "icon": "inv_firecatmount"
+      "icon": "inv_firecatmount",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 144246, "kind": "npc", "children": "K.U.-J.0." }
+          },
+          ", second boss"
+        ]
+      ]
     },
     {
       "id": 285460,
       "type": "magic",
       "source": "operation-mechagon-workshop",
       "name": "Discom-BOMB-ulator",
-      "icon": "ability_argus_soulbombdebufflarge"
+      "icon": "ability_argus_soulbombdebufflarge",
+      "notes": ["Avoidable, don't stand in bad"]
     },
     {
       "id": 294195,
@@ -463,14 +555,24 @@
       "source": "operation-mechagon-workshop",
       "name": "Capacitor Discharge",
       "icon": "ability_thunderking_overcharge",
-      "notes": ["Avoidable, don't stand in bad"]
+      "notes": ["Avoidable, don't stand in frontal"]
     },
     {
       "id": 1217821,
       "type": "magic",
       "source": "operation-mechagon-workshop",
       "name": "Fiery Jaws",
-      "icon": "spell_fire_incinerate"
+      "icon": "spell_fire_incinerate",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 151773, "kind": "npc", "children": "Junkyard D.0.G." }
+          },
+          ", around second boss"
+        ]
+      ]
     },
     {
       "id": 473713,
@@ -485,15 +587,15 @@
       "type": "magic",
       "source": "operation-floodgate",
       "name": "Black Blood Wound",
-      "icon": "spell_yorsahj_bloodboil_purple",
-      "notes": ["If not dispelled, player is stunned for 5 seconds"]
+      "icon": "spell_yorsahj_bloodboil_purple"
     },
     {
       "id": 469799,
       "type": "magic",
       "source": "operation-floodgate",
       "name": "Overcharge",
-      "icon": "spell_nature_lightningoverload"
+      "icon": "spell_nature_lightningoverload",
+      "notes": ["If not dispelled, player is stunned for 5 seconds"]
     },
     {
       "id": 428170,
@@ -501,7 +603,17 @@
       "source": "priory-of-the-sacred-flame",
       "name": "Blinding Light",
       "icon": "inv_ability_holyfire_nova",
-      "notes": ["Face away to avoid"]
+      "notes": [
+        "Face away to avoid",
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 207940, "kind": "npc", "children": "Prioress Murrpray" }
+          },
+          ", last boss"
+        ]
+      ]
     },
     {
       "id": 451606,
@@ -509,7 +621,17 @@
       "source": "priory-of-the-sacred-flame",
       "name": "Holy Flame",
       "icon": "inv_ability_holyfire_missile",
-      "notes": ["Avoidable, dodge the swirly"]
+      "notes": [
+        "Avoidable, dodge the swirly",
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 207940, "kind": "npc", "children": "Prioress Murrpray" }
+          },
+          ", last boss"
+        ]
+      ]
     },
     {
       "id": 427583,
@@ -629,21 +751,23 @@
       "source": "priory-of-the-sacred-flame",
       "name": "Inner Fire",
       "icon": "spell_holy_devineaegis",
-      "notes": ["Stuns target upon removal"]
+      "notes": ["Stuns target upon removal", "Not available while charmed"]
     },
     {
       "id": 444728,
       "type": "purge",
       "source": "priory-of-the-sacred-flame",
       "name": "Templar's Wrath",
-      "icon": "spell_holy_avenginewrath"
+      "icon": "spell_holy_avenginewrath",
+      "notes": ["Not available while charmed"]
     },
     {
       "id": 469956,
       "type": "purge",
       "source": "the-rookery",
       "name": "Lightning-Infused",
-      "icon": "spell_shaman_crashlightning"
+      "icon": "spell_shaman_crashlightning",
+      "notes": ["Cannot be spellstolen"]
     },
     {
       "id": 430754,
@@ -658,7 +782,16 @@
       "type": "purge",
       "source": "theater-of-pain",
       "name": "Bone Shield",
-      "icon": "ability_deathknight_boneshield"
+      "icon": "ability_deathknight_boneshield",
+      "notes": [
+        [
+          {
+            "component": "WowheadLink",
+            "props": { "id": 170882, "kind": "npc", "children": "Bone Magus" }
+          },
+          " spawns with it active"
+        ]
+      ]
     },
     {
       "id": 341902,
