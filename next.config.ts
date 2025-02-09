@@ -5,7 +5,7 @@ import type { NextConfig } from 'next';
 const ContentSecurityPolicy = `
   default-src 'self';
   script-src wow.zamimg.com 'self' 'unsafe-eval' 'unsafe-inline';
-  style-src 'self' 'unsafe-inline';
+  style-src 'self' wow.zamimg.com 'unsafe-inline';
   img-src * blob: data:;
   media-src *.s3.amazonaws.com;
   connect-src *;
