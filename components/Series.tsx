@@ -201,7 +201,7 @@ export function Series({ data }: SeriesProps) {
           </tbody>
         </table>
       ) : (
-        <div className="flex flex-wrap justify-center gap-8 pt-8">
+        <div className="flex flex-wrap justify-center gap-4 pt-4 md:gap-6">
           {filteredData.map((series) => {
             const classes = [
               'rounded-md border-2 transition ease-in-out hover:opacity-100 shadow-inner hover:shadow-none',

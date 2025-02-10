@@ -7,7 +7,23 @@ export const metadata = generatePageMetadata({ title: 'Music' });
 export type Music = (typeof data)[0];
 
 export default async function MusicPage() {
-  const filteredData = data.filter((dataset) => dataset.visible);
+  const filteredData = data
+    .filter((dataset) => dataset.visible)
+    .sort((a, b) => {
+      const acquired = new Date(b.acquired).getTime() - new Date(a.acquired).getTime();
+
+      if (acquired !== 0) {
+        return acquired;
+      }
+
+      const artist = b.artist.localeCompare(b.artist);
+
+      if (artist !== 0) {
+        return artist;
+      }
+
+      return b.album.localeCompare(a.album);
+    });
 
   const genresByOccurence = filteredData.reduce<Record<string, number>>((acc, album) => {
     if (!album.metadata) {
@@ -55,7 +71,8 @@ export default async function MusicPage() {
       <p>
         Albums I own either on LP or CD. The most common genres among these {filteredData.length}{' '}
         albums are <b>{readableGenresCombinedWithAnd}</b>. Beyond that, I enjoy{' '}
-        <b>Vaporwave, Goth Rock and some Trance</b>.
+        <b>Vaporwave, Goth Rock and some Trance</b>. Ordered by acquisition date, beginning with the
+        latest.
       </p>
 
       <Music data={filteredData} />
