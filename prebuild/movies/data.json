@@ -4988,6 +4988,24 @@
     "favorite": false
   },
   {
+    "title": "The Killer",
+    "id": 800158,
+    "metadata": {
+      "genres": [
+        "Crime",
+        "Thriller"
+      ],
+      "tagline": "Execution is everything.",
+      "release": {
+        "day": 25,
+        "month": 10,
+        "year": 2023
+      },
+      "runtime": 118
+    },
+    "favorite": false
+  },
+  {
     "title": "The Lazarus Effect",
     "id": 243940,
     "metadata": {
