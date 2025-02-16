@@ -38,6 +38,25 @@
     "favorite": false
   },
   {
+    "title": "28 Years Later",
+    "id": 1100988,
+    "metadata": {
+      "genres": [
+        "Horror",
+        "Science Fiction",
+        "Thriller"
+      ],
+      "tagline": "In 28 days it began. In 28 weeks it spread. In 28 years it evolved.",
+      "release": {
+        "day": 16,
+        "month": 6,
+        "year": 2025
+      },
+      "runtime": 0
+    },
+    "favorite": false
+  },
+  {
     "title": "300",
     "id": 1271,
     "metadata": {
@@ -562,6 +581,23 @@
         "year": 2017
       },
       "runtime": 105
+    },
+    "favorite": false
+  },
+  {
+    "title": "Black Bag",
+    "id": 1233575,
+    "metadata": {
+      "genres": [
+        "Thriller"
+      ],
+      "tagline": "It takes a spy to hunt one.",
+      "release": {
+        "day": 21,
+        "month": 2,
+        "year": 2025
+      },
+      "runtime": 94
     },
     "favorite": false
   },
@@ -4519,6 +4555,23 @@
     "favorite": false
   },
   {
+    "title": "The Conjuring 4: Last Rites",
+    "id": 1038392,
+    "metadata": {
+      "genres": [
+        "Horror"
+      ],
+      "tagline": "",
+      "release": {
+        "day": 4,
+        "month": 9,
+        "year": 2025
+      },
+      "runtime": 0
+    },
+    "favorite": false
+  },
+  {
     "title": "The Conjuring: The Devil Made Me Do It",
     "id": 423108,
     "metadata": {
@@ -5871,6 +5924,23 @@
         "year": 2023
       },
       "runtime": 127
+    },
+    "favorite": false
+  },
+  {
+    "title": "Tron: Ares",
+    "id": 533533,
+    "metadata": {
+      "genres": [
+        "Science Fiction"
+      ],
+      "tagline": "",
+      "release": {
+        "day": 8,
+        "month": 10,
+        "year": 2025
+      },
+      "runtime": 0
     },
     "favorite": false
   },
