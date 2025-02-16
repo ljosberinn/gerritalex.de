@@ -6,12 +6,13 @@ export type WowheadLinkProps = {
   kind: 'spell' | 'item' | 'npc' | 'achievement';
   icon: string;
   children: string;
+  branch?: 'ptr-2' | 'ptr' | 'classic';
 };
 
-export function WowheadLink({ id, icon, children, kind }: WowheadLinkProps) {
+export function WowheadLink({ id, icon, children, kind, branch }: WowheadLinkProps) {
   return (
     <CustomLink
-      href={`https://www.wowhead.com/${kind}=${id}`}
+      href={`https://www.wowhead.com/${branch ? `${branch}/` : ''}${kind}=${id}`}
       className="inline-flex items-baseline gap-2"
     >
       {icon ? (

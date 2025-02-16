@@ -7,6 +7,14 @@ import { CustomLink } from './CustomLink';
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react';
 import { useScript } from '../hooks/useScript';
 
+function getWowheadBranch(): WowheadLinkProps['branch'] {
+  if (new Date() >= new Date('2025-03-04T15:00:00Z')) {
+    return;
+  }
+
+  return 'ptr-2';
+}
+
 type SeasonalAuraOverviewDataset = {
   sources: Record<string, { icon: string; name: string }>;
   spells: {
@@ -55,7 +63,7 @@ function Spells({ spells }: SpellsProps) {
       {spells.map((spell) => {
         return (
           <li key={spell.id}>
-            <WowheadLink kind="spell" id={spell.id} icon={spell.icon}>
+            <WowheadLink branch={getWowheadBranch()} kind="spell" id={spell.id} icon={spell.icon}>
               {spell.name}
             </WowheadLink>
             {spell.notes ? (
@@ -74,7 +82,7 @@ function Spells({ spells }: SpellsProps) {
                               {typeof notePart === 'string' ? (
                                 notePart
                               ) : notePart.component === 'WowheadLink' ? (
-                                <WowheadLink {...notePart.props} />
+                                <WowheadLink branch={getWowheadBranch()} {...notePart.props} />
                               ) : notePart.component === 'WowheadIcon' ? (
                                 <WowheadIcon {...notePart.props} />
                               ) : notePart.component === 'b' ? (
