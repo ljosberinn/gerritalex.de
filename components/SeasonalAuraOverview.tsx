@@ -1,6 +1,6 @@
 'use client';
 
-import { Fragment, useEffect, useRef, useState } from 'react';
+import { DetailedHTMLProps, Fragment, HTMLAttributes, useEffect, useRef, useState } from 'react';
 import { WowheadIcon, WowheadIconProps } from './WowheadIcon';
 import { WowheadLink, WowheadLinkProps } from './WowheadLink';
 import { CustomLink } from './CustomLink';
@@ -18,6 +18,8 @@ type SeasonalAuraOverviewDataset = {
       | string
       | { component: 'WowheadLink'; props: WowheadLinkProps; children: string }
       | { component: 'WowheadIcon'; props: WowheadIconProps; children: string }
+      | { component: 'i'; props: DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> }
+      | { component: 'b'; props: DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> }
     )[];
   }[];
 };
@@ -76,6 +78,8 @@ function Spells({ spells }: SpellsProps) {
                                 <WowheadIcon {...notePart.props} />
                               ) : notePart.component === 'b' ? (
                                 <b {...notePart.props} />
+                              ) : notePart.component === 'i' ? (
+                                <i {...notePart.props} />
                               ) : null}
                             </Fragment>
                           );
