@@ -5,6 +5,7 @@ import { WowheadIcon, WowheadIconProps } from './WowheadIcon';
 import { WowheadLink, WowheadLinkProps } from './WowheadLink';
 import { CustomLink } from './CustomLink';
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react';
+import { useScript } from '../hooks/useScript';
 
 type SeasonalAuraOverviewDataset = {
   sources: Record<string, { icon: string; name: string }>;
@@ -255,6 +256,8 @@ function ByDungeon({ data }: SeasonalAuraOverviewProps) {
 export function SeasonalAuraOverview({ data }: SeasonalAuraOverviewProps) {
   const [by, setBy] = useState<'type' | 'dungeon'>('dungeon');
   const intialRenderRef = useRef(true);
+
+  useScript('https://wow.zamimg.com/js/tooltips.js');
 
   useEffect(
     function restoreStateFromUrl() {
