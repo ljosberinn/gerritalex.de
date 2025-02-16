@@ -1,4 +1,4 @@
-import siteMetadata from 'data/siteMetadata';
+import siteMetadata from '../../data/siteMetadata';
 
 import { BrandIcon } from './BrandIcon';
 import { CustomLink } from '../CustomLink';
@@ -18,12 +18,23 @@ const BuiltWith = () => (
         <BrandIcon type="Typescript" className="h-5 w-5" />
       </CustomLink>
     </div>
+
     <span className="px-1 text-gray-400 dark:text-gray-500">-</span>
+
     <CustomLink
       href={siteMetadata.siteRepo}
       className="hover:text-primary-500 dark:hover:text-primary-500 text-gray-500 underline underline-offset-4 dark:text-gray-400"
     >
       <span>View source</span>
+    </CustomLink>
+
+    <span className="px-1 text-gray-400 dark:text-gray-500">-</span>
+
+    <CustomLink
+      href={siteMetadata.counterscale}
+      className="hover:text-primary-500 dark:hover:text-primary-500 text-gray-500 underline underline-offset-4 dark:text-gray-400"
+    >
+      <span>Counterscale</span>
     </CustomLink>
   </div>
 );

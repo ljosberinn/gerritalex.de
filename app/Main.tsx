@@ -25,57 +25,66 @@ export default function Home({ posts }) {
       <div className="divide-y divide-gray-300 dark:divide-gray-700">
         <div className="space-y-2 py-4 md:space-y-5" />
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
-          {posts.length === 0
-            ? 'No posts found.'
-            : posts.slice(0, MAX_DISPLAY).map(({ slug, date, title, summary, tags }) => {
-                return (
-                  <li key={slug} className="py-10">
-                    <article>
-                      <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
-                        <dl>
-                          <dt className="sr-only">Published on</dt>
-                          <dd className="text-base leading-6 font-medium text-gray-500 dark:text-gray-300">
-                            <time dateTime={date}>{formatDate(date, siteMetadata.locale)}</time>
+          {posts.slice(0, MAX_DISPLAY).map(({ slug, date, title, summary, tags, lastmod }) => {
+            return (
+              <li key={slug} className="py-10">
+                <article>
+                  <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
+                    <dl>
+                      <dt className="sr-only">Published on</dt>
+                      <dd className="text-base leading-6 font-medium text-gray-500 dark:text-gray-300">
+                        <time dateTime={date}>{formatDate(date, siteMetadata.locale)}</time>
+                      </dd>
+
+                      {lastmod ? (
+                        <>
+                          <dt className="sr-only">Last updated</dt>
+                          <dd className="text-base text-xs leading-6 text-gray-500 dark:text-gray-300">
+                            <time className="italic" dateTime={lastmod}>
+                              updated {formatDate(lastmod, siteMetadata.locale)}
+                            </time>
                           </dd>
-                        </dl>
-                        <div className="space-y-5 xl:col-span-3">
-                          <div className="space-y-6">
-                            <div>
-                              <h2 className="text-2xl leading-8 font-bold tracking-tight">
-                                <CustomLink
-                                  href={`/blog/${slug}`}
-                                  className="text-red-500 dark:text-yellow-100 dark:hover:text-blue-200"
-                                >
-                                  {title}
-                                </CustomLink>
-                              </h2>
-                              {tags.length > 0 ? (
-                                <div className="flex flex-wrap">
-                                  {tags.map((tag) => (
-                                    <Tag key={tag} text={tag} />
-                                  ))}
-                                </div>
-                              ) : null}
-                            </div>
-                            <div className="prose max-w-none text-gray-500 dark:text-gray-300">
-                              {summary}
-                            </div>
-                          </div>
-                          <div className="text-base leading-6 font-medium">
+                        </>
+                      ) : null}
+                    </dl>
+                    <div className="space-y-5 xl:col-span-3">
+                      <div className="space-y-6">
+                        <div>
+                          <h2 className="text-2xl leading-8 font-bold tracking-tight">
                             <CustomLink
                               href={`/blog/${slug}`}
-                              className="text-blue-700 hover:text-yellow-900 dark:text-blue-200 dark:hover:text-yellow-100"
-                              aria-label={`Read more: "${title}"`}
+                              className="text-red-500 dark:text-yellow-100 dark:hover:text-blue-200"
                             >
-                              Read more &rarr;
+                              {title}
                             </CustomLink>
-                          </div>
+                          </h2>
+                          {tags.length > 0 ? (
+                            <div className="flex flex-wrap">
+                              {tags.map((tag) => (
+                                <Tag key={tag} text={tag} />
+                              ))}
+                            </div>
+                          ) : null}
+                        </div>
+                        <div className="prose max-w-none text-gray-500 dark:text-gray-300">
+                          {summary}
                         </div>
                       </div>
-                    </article>
-                  </li>
-                );
-              })}
+                      <div className="text-base leading-6 font-medium">
+                        <CustomLink
+                          href={`/blog/${slug}`}
+                          className="text-blue-700 hover:text-yellow-900 dark:text-blue-200 dark:hover:text-yellow-100"
+                          aria-label={`Read more: "${title}"`}
+                        >
+                          Read more &rarr;
+                        </CustomLink>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            );
+          })}
         </ul>
       </div>
       {posts.length > MAX_DISPLAY && (
