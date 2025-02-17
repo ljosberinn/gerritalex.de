@@ -72,6 +72,13 @@
       "name": "Thirsty"
     },
     {
+      "id": 1213139,
+      "type": "enrage",
+      "name": "Overtime!",
+      "icon": "achievement_guildperk_workingovertime_rank2",
+      "source": "the-motherlode"
+    },
+    {
       "id": 441214,
       "type": "enrage",
       "source": "cinderbrew-meadery",
