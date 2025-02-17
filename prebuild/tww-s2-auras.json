@@ -35,6 +35,78 @@
   },
   "spells": [
     {
+      "id": 463061,
+      "type": "enrage",
+      "source": "operation-floodgate",
+      "icon": "ability_druid_challangingroar",
+      "name": "Bloodthirsty Cackle",
+      "notes": ["Interruptible"]
+    },
+    {
+      "id": 331510,
+      "type": "enrage",
+      "source": "theater-of-pain",
+      "icon": "spell_shadow_deathpact",
+      "name": "Death Wish"
+    },
+    {
+      "id": 262092,
+      "type": "enrage",
+      "source": "the-motherlode",
+      "icon": "ability_warrior_intensifyrage",
+      "name": "Inhale Vapors"
+    },
+    {
+      "id": 333241,
+      "type": "enrage",
+      "source": "theater-of-pain",
+      "icon": "ability_druid_enrage",
+      "name": "Raging Tantrum",
+      "notes": ["Soothing this instantly stops party-wide AoE damage"]
+    },
+    {
+      "id": 441408,
+      "type": "enrage",
+      "source": "cinderbrew-meadery",
+      "icon": "ability_fomor_boss_shout",
+      "name": "Thirsty"
+    },
+    {
+      "id": 441214,
+      "type": "enrage",
+      "source": "cinderbrew-meadery",
+      "icon": "inv_drink_13",
+      "name": "Spill Drink"
+    },
+    {
+      "id": 441353,
+      "type": "enrage",
+      "source": "cinderbrew-meadery",
+      "icon": "ability_druid_ferociousbite",
+      "name": "Bee-stial Wrath"
+    },
+    {
+      "id": 425704,
+      "type": "enrage",
+      "source": "darkflame-cleft",
+      "icon": "spell_shadow_unholyfrenzy",
+      "name": "Enrage"
+    },
+    {
+      "id": 424650,
+      "type": "enrage",
+      "source": "darkflame-cleft",
+      "icon": "spell_nzinsanity_panicattack",
+      "name": "Panicked!"
+    },
+    {
+      "id": 427260,
+      "type": "enrage",
+      "source": "the-rookery",
+      "icon": "ability_hunter_beasttaming",
+      "name": "Lightning Surge"
+    },
+    {
       "id": 434773,
       "type": "bleed",
       "source": "cinderbrew-meadery",
