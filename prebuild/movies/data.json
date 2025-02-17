@@ -38,6 +38,25 @@
     "favorite": false
   },
   {
+    "title": "28 Years Later",
+    "id": 1100988,
+    "metadata": {
+      "genres": [
+        "Horror",
+        "Science Fiction",
+        "Thriller"
+      ],
+      "tagline": "In 28 days it began. In 28 weeks it spread. In 28 years it evolved.",
+      "release": {
+        "day": 16,
+        "month": 6,
+        "year": 2025
+      },
+      "runtime": 0
+    },
+    "favorite": false
+  },
+  {
     "title": "300",
     "id": 1271,
     "metadata": {
@@ -562,6 +581,23 @@
         "year": 2017
       },
       "runtime": 105
+    },
+    "favorite": false
+  },
+  {
+    "title": "Black Bag",
+    "id": 1233575,
+    "metadata": {
+      "genres": [
+        "Thriller"
+      ],
+      "tagline": "It takes a spy to hunt one.",
+      "release": {
+        "day": 21,
+        "month": 2,
+        "year": 2025
+      },
+      "runtime": 94
     },
     "favorite": false
   },
@@ -4088,6 +4124,27 @@
     "favorite": false
   },
   {
+    "title": "Star Trek: Section 31",
+    "id": 1114894,
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Adventure",
+        "Action",
+        "Drama",
+        "TV Movie"
+      ],
+      "tagline": "To protect the light, they fight in shadow.",
+      "release": {
+        "day": 15,
+        "month": 1,
+        "year": 2025
+      },
+      "runtime": 96
+    },
+    "favorite": false
+  },
+  {
     "title": "Stargate",
     "id": 2164,
     "metadata": {
@@ -4494,6 +4551,23 @@
         "year": 2016
       },
       "runtime": 134
+    },
+    "favorite": false
+  },
+  {
+    "title": "The Conjuring 4: Last Rites",
+    "id": 1038392,
+    "metadata": {
+      "genres": [
+        "Horror"
+      ],
+      "tagline": "",
+      "release": {
+        "day": 4,
+        "month": 9,
+        "year": 2025
+      },
+      "runtime": 0
     },
     "favorite": false
   },
@@ -4984,6 +5058,24 @@
         "year": 2015
       },
       "runtime": 137
+    },
+    "favorite": false
+  },
+  {
+    "title": "The Killer",
+    "id": 800158,
+    "metadata": {
+      "genres": [
+        "Crime",
+        "Thriller"
+      ],
+      "tagline": "Execution is everything.",
+      "release": {
+        "day": 25,
+        "month": 10,
+        "year": 2023
+      },
+      "runtime": 118
     },
     "favorite": false
   },
@@ -5832,6 +5924,23 @@
         "year": 2023
       },
       "runtime": 127
+    },
+    "favorite": false
+  },
+  {
+    "title": "Tron: Ares",
+    "id": 533533,
+    "metadata": {
+      "genres": [
+        "Science Fiction"
+      ],
+      "tagline": "",
+      "release": {
+        "day": 8,
+        "month": 10,
+        "year": 2025
+      },
+      "runtime": 0
     },
     "favorite": false
   },

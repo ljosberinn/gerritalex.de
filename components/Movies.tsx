@@ -191,13 +191,25 @@ export function Movies({ data }: MoviesProps) {
           </tbody>
         </table>
       ) : (
-        <div className="flex flex-wrap justify-center gap-8 pt-8">
+        <div className="flex flex-wrap justify-center gap-4 pt-4 md:gap-6">
           {filteredData.map((movie) => {
             const classes = [
               'rounded-md border-2 transition ease-in-out hover:opacity-100 shadow-inner hover:shadow-none',
             ];
 
-            if (movie.favorite) {
+            const releaseDate = new Date(
+              [
+                movie.metadata.release.year,
+                movie.metadata.release.month,
+                movie.metadata.release.day,
+              ].join('-')
+            );
+
+            const isUpcoming = releaseDate > new Date();
+
+            if (isUpcoming) {
+              classes.push('grayscale dark:border-slate-700');
+            } else if (movie.favorite) {
               classes.push(
                 'border-yellow-500 hover:border-yellow-600 dark:border-amber-400 dark:hover:border-amber-500'
               );
@@ -217,7 +229,11 @@ export function Movies({ data }: MoviesProps) {
                 className="opacity-80 hover:opacity-100"
               >
                 <Image
-                  title={movie.title}
+                  title={
+                    isUpcoming
+                      ? `${movie.title} (releasing ${releaseDate.toISOString().split('T')[0]})`
+                      : movie.title
+                  }
                   alt={movie.title}
                   width={120}
                   height={180}

@@ -10,7 +10,7 @@ type MusicProps = {
 export function Music({ data }: MusicProps) {
   return (
     <>
-      <div className="flex flex-wrap justify-center gap-8 pt-8">
+      <div className="flex flex-wrap justify-center gap-4 pt-4 md:gap-6">
         {data.map((album) => {
           return (
             <a
@@ -21,7 +21,7 @@ export function Music({ data }: MusicProps) {
               }
               target="_blank"
               key={album.id ?? `${album.acquired}-${album.artist}-${album.album}`}
-              className="h-[120px] w-[120px] opacity-80 hover:opacity-100"
+              className="h-[120px] w-[120px] opacity-90 hover:opacity-100"
             >
               <Image
                 alt={`${album.artist} - ${album.album}`}
