@@ -685,7 +685,19 @@
       "icon": "inv_misc_bomb_09",
       "source": "liberation-of-undermine",
       "type": "stix-bunkjunker",
-      "notes": ["Avoidable by dealing with the Territorial Bombshell"]
+      "notes": [
+        [
+          "Avoidable by dealing with the ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 231531,
+              "kind": "npc",
+              "children": "Territorial Bombshell"
+            }
+          }
+        ]
+      ]
     },
     {
       "id": 467135,
@@ -701,7 +713,30 @@
       "icon": "spell_mage_flameorb",
       "source": "liberation-of-undermine",
       "type": "stix-bunkjunker",
-      "notes": ["Triggered by Rolling Rubbish colliding with the Discarded Doomsplosive"]
+      "notes": [
+        [
+          "Triggered by ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 461536,
+              "kind": "spell",
+              "icon": "inv_misc_soccerball",
+              "children": "Rolling Rubbish"
+            }
+          },
+          " colliding with the ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 464865,
+              "kind": "spell",
+              "icon": "inv_eng_bombfire",
+              "children": "Discarded Doomsplosive"
+            }
+          }
+        ]
+      ]
     },
     {
       "id": 464559,
@@ -710,14 +745,6 @@
       "source": "liberation-of-undermine",
       "type": "stix-bunkjunker",
       "notes": ["Upon Stix reaching 100 energy"]
-    },
-    {
-      "id": 467149,
-      "name": "Overcharged Bolt",
-      "icon": "spell_nature_stormreach",
-      "source": "liberation-of-undermine",
-      "type": "stix-bunkjunker",
-      "notes": ["Avoidable by not standing in the impact zone"]
     },
     {
       "id": 460164,
@@ -773,14 +800,6 @@
       "notes": ["Whenever a coin reaches a wall"]
     },
     {
-      "id": 465010,
-      "name": "Explosive Gaze",
-      "icon": "spell_fire_felflamering_red",
-      "source": "liberation-of-undermine",
-      "type": "one-armed-bandit",
-      "notes": ["Avoidable by not soaking the bombs"]
-    },
-    {
       "id": 474665,
       "name": "Coin Magnet",
       "icon": "inv_ore_gold_nugget",
@@ -802,14 +821,6 @@
       ]
     },
     {
-      "id": 1219047,
-      "name": "Polarized Catastro-Blast",
-      "icon": "inv_gizmo_supersappercharge",
-      "source": "liberation-of-undermine",
-      "type": "sprocketmonger-lockenstock",
-      "notes": ["Avoidable by not mixing polarizations"]
-    },
-    {
       "id": 465232,
       "name": "Sonic Ba-Boom",
       "icon": "inv_sonic_debuff",
@@ -829,7 +840,7 @@
       "icon": "inv_summerfest_groundflower",
       "source": "liberation-of-undermine",
       "type": "sprocketmonger-lockenstock",
-      "note": ["Tank debuff with falloff damage"]
+      "notes": ["Tank debuff with falloff damage"]
     },
     {
       "id": 1218319,
@@ -837,7 +848,7 @@
       "icon": "ability_priest_voidentropy",
       "source": "liberation-of-undermine",
       "type": "sprocketmonger-lockenstock",
-      "note": [
+      "notes": [
         "Healing absorb",
         [
           "Periodic damage during ",
@@ -922,7 +933,7 @@
       "icon": "inv_gizmo_supersappercharge",
       "source": "liberation-of-undermine",
       "type": "rik-reverb",
-      "note": ["Avoidable by meeting the damage check on pyrotechnics"]
+      "notes": ["Avoidable by meeting the damage check on pyrotechnics"]
     }
   ]
 }
