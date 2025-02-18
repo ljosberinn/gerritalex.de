@@ -552,22 +552,6 @@
       "notes": ["Prefers ranged, does not exempt healers nor tanks"]
     },
     {
-      "id": 468223,
-      "name": "Incendiary Fire",
-      "icon": "spell_shaman_improvedfirenova",
-      "source": "liberation-of-undermine",
-      "type": "vexie-and-the-geargrinders",
-      "notes": ["Avoidable by not standing in the impact zone"]
-    },
-    {
-      "id": 460625,
-      "name": "Burning Shrapnel",
-      "icon": "inv_wildfirebomb_shrapnel",
-      "source": "liberation-of-undermine",
-      "type": "vexie-and-the-geargrinders",
-      "notes": ["Avoidable by not standing in the impact zone"]
-    },
-    {
       "id": 1214035,
       "name": "Molten Phlegm",
       "icon": "inv_11_arenaboss_jawsplosion",
@@ -575,28 +559,11 @@
       "type": "cauldron-of-carnage"
     },
     {
-      "id": 474322,
-      "name": "Thunderdrum Salvo",
-      "icon": "inv_11_arenaboss_thunderdrumsalvo",
-      "source": "liberation-of-undermine",
-      "type": "cauldron-of-carnage",
-      "notes": ["Avoidable by not standing in the impact zone"]
-    },
-
-    {
       "id": 473652,
       "name": "Scrapbomb",
       "icon": "inv_10_engineering2_boxofbombs_friendly_color1",
       "source": "liberation-of-undermine",
       "type": "cauldron-of-carnage"
-    },
-    {
-      "id": 463803,
-      "name": "Zapbolt",
-      "icon": "spell_nature_lightning",
-      "source": "liberation-of-undermine",
-      "type": "cauldron-of-carnage",
-      "notes": ["Avoidable by not standing in the impact zone"]
     },
     {
       "id": 464487,
