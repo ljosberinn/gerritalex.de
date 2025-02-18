@@ -86,7 +86,9 @@ export function Zephyr({ data }: ZephyrProps) {
 
               return acc;
             },
-            {}
+            {
+              Trash: 'trash',
+            }
           );
 
           return (
