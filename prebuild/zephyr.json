@@ -1,5 +1,6 @@
 {
-  "current-dungeon-rotation": [
+  "current-rotation": [
+    "liberation-of-undermine",
     "cinderbrew-meadery",
     "theater-of-pain",
     "darkflame-cleft",
@@ -10,6 +11,29 @@
     "the-rookery"
   ],
   "sources": {
+    "liberation-of-undermine": {
+      "icon": "inv_achievement_zone_undermine",
+      "name": "Liberation of Undermine",
+      "encounters": [
+        {
+          "icon": "inv_111_raid_achievement_vexieandthegeargrinders",
+          "name": "Vexie and the Geargrinders"
+        },
+        { "icon": "inv_11_arenaboss_colossalclash", "name": "Cauldron of Carnage" },
+        { "icon": "inv_111_raid_achievement_rikreverb", "name": "Rik Reverb" },
+        { "icon": "inv_111_raid_achievement_stixbunkjunker", "name": "Stix Bunkjunker" },
+        {
+          "icon": "inv_111_raid_achievement_sprocketmongerlocknstock",
+          "name": "Sprocketmonger Lockenstock"
+        },
+        { "icon": "inv_111_raid_achievement_onearmedbandit", "name": "One-Armed Bandit" },
+        {
+          "icon": "inv_111_raid_achievement_mugzeeheadsofsecurity",
+          "name": "Mug'Zee, Heads of Security"
+        },
+        { "icon": "inv_111_raid_achievement_chromekinggallywix", "name": "Chrome King Gallywix" }
+      ]
+    },
     "cinderbrew-meadery": {
       "icon": "inv_achievement_dungeon_cinderbrewmeadery",
       "name": "Cinderbrew Meadery",
@@ -494,6 +518,411 @@
       "icon": "spell_nature_earthquake",
       "source": "theater-of-pain",
       "type": "trash"
+    },
+    {
+      "id": 460388,
+      "name": "Backfire",
+      "icon": "inv_gizmo_supersappercharge",
+      "source": "liberation-of-undermine",
+      "type": "vexie-and-the-geargrinders",
+      "notes": ["Periodic damage during intermission"]
+    },
+    {
+      "id": 468147,
+      "name": "Exhaust Fumes",
+      "icon": "inv_misc_dust",
+      "source": "liberation-of-undermine",
+      "type": "vexie-and-the-geargrinders",
+      "notes": ["Periodic damage while Vexie is active", "Ramps for each cast"]
+    },
+    {
+      "id": 460633,
+      "name": "Blaze of Glory",
+      "icon": "ability_racial_rocketbarrage",
+      "source": "liberation-of-undermine",
+      "type": "vexie-and-the-geargrinders",
+      "notes": ["Whenever a bike is sent into the boss"]
+    },
+    {
+      "id": 459678,
+      "name": "Spew Oil",
+      "icon": "spell_yorsahj_bloodboil_black",
+      "source": "liberation-of-undermine",
+      "type": "vexie-and-the-geargrinders",
+      "notes": ["Prefers ranged, does not exempt healers nor tanks"]
+    },
+    {
+      "id": 468223,
+      "name": "Incendiary Fire",
+      "icon": "spell_shaman_improvedfirenova",
+      "source": "liberation-of-undermine",
+      "type": "vexie-and-the-geargrinders",
+      "notes": ["Avoidable by not standing in the impact zone"]
+    },
+    {
+      "id": 460625,
+      "name": "Burning Shrapnel",
+      "icon": "inv_wildfirebomb_shrapnel",
+      "source": "liberation-of-undermine",
+      "type": "vexie-and-the-geargrinders",
+      "notes": ["Avoidable by not standing in the impact zone"]
+    },
+    {
+      "id": 1214035,
+      "name": "Molten Phlegm",
+      "icon": "inv_11_arenaboss_jawsplosion",
+      "source": "liberation-of-undermine",
+      "type": "cauldron-of-carnage"
+    },
+    {
+      "id": 474322,
+      "name": "Thunderdrum Salvo",
+      "icon": "inv_11_arenaboss_thunderdrumsalvo",
+      "source": "liberation-of-undermine",
+      "type": "cauldron-of-carnage",
+      "notes": ["Avoidable by not standing in the impact zone"]
+    },
+
+    {
+      "id": 473652,
+      "name": "Scrapbomb",
+      "icon": "inv_10_engineering2_boxofbombs_friendly_color1",
+      "source": "liberation-of-undermine",
+      "type": "cauldron-of-carnage"
+    },
+    {
+      "id": 463803,
+      "name": "Zapbolt",
+      "icon": "spell_nature_lightning",
+      "source": "liberation-of-undermine",
+      "type": "cauldron-of-carnage",
+      "notes": ["Avoidable by not standing in the impact zone"]
+    },
+    {
+      "id": 464487,
+      "name": "Sonic Blast",
+      "icon": "inv_sonic_missile",
+      "source": "liberation-of-undermine",
+      "type": "rik-reverb"
+    },
+    {
+      "id": 472990,
+      "name": "Haywire",
+      "icon": "inv_misc_ear_human_01",
+      "source": "liberation-of-undermine",
+      "type": "rik-reverb",
+      "notes": ["Avoidable by channeling on the amplifier to reduce its energy"]
+    },
+    {
+      "id": 465795,
+      "name": "Noise Pollution",
+      "icon": "inv_sonic_debuff",
+      "source": "liberation-of-undermine",
+      "type": "rik-reverb",
+      "notes": ["Periodic damage, increasing for each present amplifier"]
+    },
+    {
+      "id": 467297,
+      "name": "Static Jolt",
+      "icon": "ability_thunderking_thunderstruck",
+      "source": "liberation-of-undermine",
+      "type": "rik-reverb",
+      "notes": ["Riks melee"]
+    },
+    {
+      "id": 467020,
+      "name": "Faulty Zap",
+      "icon": "ability_thunderking_overcharge",
+      "source": "liberation-of-undermine",
+      "type": "rik-reverb",
+      "notes": [
+        [
+          "Both initial damage and the dot ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 467048,
+              "kind": "spell",
+              "icon": "ability_thunderking_overcharge",
+              "children": "Faulty Zap"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 472849,
+      "name": "Incineration",
+      "icon": "ability_warlock_inferno",
+      "source": "liberation-of-undermine",
+      "type": "stix-bunkjunker",
+      "notes": [
+        "Avoidable by not standing in the circle of other players",
+        [
+          "This is the friendly fire part of ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 464165,
+              "kind": "spell",
+              "icon": "ability_ironmaidens_bombardment",
+              "children": "Incinerator"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 464165,
+      "name": "Incinerator",
+      "icon": "ability_ironmaidens_bombardment",
+      "source": "liberation-of-undermine",
+      "type": "stix-bunkjunker"
+    },
+    {
+      "id": 473119,
+      "name": "Short Fuse",
+      "icon": "inv_misc_bomb_09",
+      "source": "liberation-of-undermine",
+      "type": "stix-bunkjunker",
+      "notes": ["Avoidable by dealing with the Territorial Bombshell"]
+    },
+    {
+      "id": 467135,
+      "name": "Trash Compactor",
+      "icon": "spell_nature_unrelentingstorm",
+      "source": "liberation-of-undermine",
+      "type": "stix-bunkjunker",
+      "notes": ["When Stix lands"]
+    },
+    {
+      "id": 465747,
+      "name": "Muffled Doomsplosion",
+      "icon": "spell_mage_flameorb",
+      "source": "liberation-of-undermine",
+      "type": "stix-bunkjunker",
+      "notes": ["Triggered by Rolling Rubbish colliding with the Discarded Doomsplosive"]
+    },
+    {
+      "id": 464559,
+      "name": "Electromagnetic Sorting",
+      "icon": "inv_10_engineering_manufacturedparts_mechanicalparts_color3",
+      "source": "liberation-of-undermine",
+      "type": "stix-bunkjunker",
+      "notes": ["Upon Stix reaching 100 energy"]
+    },
+    {
+      "id": 467149,
+      "name": "Overcharged Bolt",
+      "icon": "spell_nature_stormreach",
+      "source": "liberation-of-undermine",
+      "type": "stix-bunkjunker",
+      "notes": ["Avoidable by not standing in the impact zone"]
+    },
+    {
+      "id": 460164,
+      "name": "Foul Exhaust",
+      "icon": "inv_elemental_mote_shadow01",
+      "source": "liberation-of-undermine",
+      "type": "one-armed-bandit",
+      "notes": ["Healing absorb"]
+    },
+    {
+      "id": 461390,
+      "name": "Flame and Coin",
+      "icon": "ability_creature_cursed_01",
+      "source": "liberation-of-undermine",
+      "type": "one-armed-bandit",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 464806,
+              "kind": "spell",
+              "icon": "ability_creature_cursed_01",
+              "children": "Reward: Flame and Coin"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 460582,
+      "name": "Overload!",
+      "icon": "spell_nature_stormreach",
+      "source": "liberation-of-undermine",
+      "type": "one-armed-bandit",
+      "notes": ["Interruptible"]
+    },
+    {
+      "id": 465388,
+      "name": "Hot Hot Heat",
+      "icon": "spell_fire_felflamering_red",
+      "source": "liberation-of-undermine",
+      "type": "one-armed-bandit",
+      "notes": ["Stage Two: This Game Is Rigged! lines"]
+    },
+    {
+      "id": 460427,
+      "name": "Pay-Line",
+      "icon": "inv_10_fishing_dragonislescoins_gold",
+      "source": "liberation-of-undermine",
+      "type": "one-armed-bandit",
+      "notes": ["Whenever a coin reaches a wall"]
+    },
+    {
+      "id": 465010,
+      "name": "Explosive Gaze",
+      "icon": "spell_fire_felflamering_red",
+      "source": "liberation-of-undermine",
+      "type": "one-armed-bandit",
+      "notes": ["Avoidable by not soaking the bombs"]
+    },
+    {
+      "id": 474665,
+      "name": "Coin Magnet",
+      "icon": "inv_ore_gold_nugget",
+      "source": "liberation-of-undermine",
+      "type": "one-armed-bandit",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 464809,
+              "kind": "spell",
+              "icon": "inv_misc_enggizmos_13",
+              "children": "Reward: Coin and Shock"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1219047,
+      "name": "Polarized Catastro-Blast",
+      "icon": "inv_gizmo_supersappercharge",
+      "source": "liberation-of-undermine",
+      "type": "sprocketmonger-lockenstock",
+      "notes": ["Avoidable by not mixing polarizations"]
+    },
+    {
+      "id": 465232,
+      "name": "Sonic Ba-Boom",
+      "icon": "inv_sonic_debuff",
+      "source": "liberation-of-undermine",
+      "type": "sprocketmonger-lockenstock"
+    },
+    {
+      "id": 1216406,
+      "name": "Unstable Explosion",
+      "icon": "spell_shaman_improvedfirenova",
+      "source": "liberation-of-undermine",
+      "type": "sprocketmonger-lockenstock"
+    },
+    {
+      "id": 1214910,
+      "name": "Pyro Party Pack",
+      "icon": "inv_summerfest_groundflower",
+      "source": "liberation-of-undermine",
+      "type": "sprocketmonger-lockenstock",
+      "note": ["Tank debuff with falloff damage"]
+    },
+    {
+      "id": 1218319,
+      "name": "Voidsplosion",
+      "icon": "ability_priest_voidentropy",
+      "source": "liberation-of-undermine",
+      "type": "sprocketmonger-lockenstock",
+      "note": [
+        "Healing absorb",
+        [
+          "Periodic damage during ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 466860,
+              "kind": "spell",
+              "icon": "spell_yorsahj_bloodboil_purple",
+              "children": "Bleeding Edge"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1219055,
+      "name": "Foot-Blasters",
+      "icon": "inv_10_engineering2_boxofbombs_friendly_color1",
+      "source": "liberation-of-undermine",
+      "type": "sprocketmonger-lockenstock"
+    },
+    {
+      "id": 469708,
+      "name": "Uncontrolled Destruction",
+      "icon": "ability_siege_engineer_detonate",
+      "source": "liberation-of-undermine",
+      "type": "mugzee-heads-of-security",
+      "notes": [
+        [
+          "Both initial damage and the dot ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 469719,
+              "kind": "spell",
+              "icon": "ability_siege_engineer_detonate",
+              "children": "Uncontrolled Burn"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 467381,
+      "name": "Goblin-guided Rocket",
+      "icon": "inv_gizmo_supersappercharge",
+      "source": "liberation-of-undermine",
+      "type": "mugzee-heads-of-security"
+    },
+    {
+      "id": 1221224,
+      "name": "Unstable Cluster Bomb",
+      "icon": "inv_eng_bombfire",
+      "source": "liberation-of-undermine",
+      "type": "mugzee-heads-of-security"
+    },
+    {
+      "id": 1221079,
+      "name": "Frostshatter Boots",
+      "icon": "spell_hunter_icetrap",
+      "source": "liberation-of-undermine",
+      "type": "mugzee-heads-of-security"
+    },
+    {
+      "id": 466546,
+      "name": "Spray and Pray",
+      "icon": "ability_hunter_markedshot",
+      "source": "liberation-of-undermine",
+      "type": "mugzee-heads-of-security"
+    },
+    {
+      "id": 470910,
+      "name": "Gaol Break",
+      "icon": "spell_nature_earthquake",
+      "source": "liberation-of-undermine",
+      "type": "mugzee-heads-of-security"
+    },
+    {
+      "id": 472294,
+      "name": "Grand Finale",
+      "icon": "inv_gizmo_supersappercharge",
+      "source": "liberation-of-undermine",
+      "type": "rik-reverb",
+      "note": ["Avoidable by meeting the damage check on pyrotechnics"]
     }
   ]
 }

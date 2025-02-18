@@ -8,9 +8,12 @@ import { CustomLink } from '../CustomLink';
 import { ContentHeaderLink } from './ContentHeaderLink';
 
 type ZephyrDataset = {
-  sources: Record<string, { icon: string; name: string; encounters: string[] }>;
+  sources: Record<
+    string,
+    { icon: string; name: string; encounters: string[] | { icon: string; name: string }[] }
+  >;
   spells: SpellsProps['spells'];
-  'current-dungeon-rotation': string[];
+  'current-rotation': string[];
 };
 
 type ZephyrProps = {
@@ -18,14 +21,19 @@ type ZephyrProps = {
 };
 
 function slugify(str: string) {
-  return str.replaceAll(' ', '-').replaceAll("'", '').replaceAll('.', '').toLowerCase();
+  return str
+    .replaceAll(' ', '-')
+    .replaceAll("'", '')
+    .replaceAll('.', '')
+    .replaceAll(',', '')
+    .toLowerCase();
 }
 
 export function Zephyr({ data }: ZephyrProps) {
   useScript('https://wow.zamimg.com/js/tooltips.js');
 
-  const currentDungeonRotation = new Set(data['current-dungeon-rotation']);
-  const spells = data.spells.filter((spell) => currentDungeonRotation.has(spell.source));
+  const currentRotation = new Set(data['current-rotation']);
+  const spells = data.spells.filter((spell) => currentRotation.has(spell.source));
 
   const grouped = spells.reduce<Record<string, Record<string, SpellsProps['spells']>>>(
     (acc, spell) => {
@@ -53,25 +61,56 @@ export function Zephyr({ data }: ZephyrProps) {
         {sources.map((source) => {
           const sourceInfo = data.sources[source];
 
+          const encounterNames = sourceInfo.encounters.map((encounter) => {
+            if (typeof encounter === 'string') {
+              return encounter;
+            }
+
+            return encounter.name;
+          });
+
+          const encounterIconsByName = sourceInfo.encounters.reduce((acc, encounter) => {
+            if (typeof encounter === 'string') {
+              return acc;
+            }
+
+            acc[encounter.name] = encounter.icon;
+
+            return acc;
+          }, {});
+
+          const encounterToSlugMap = sourceInfo.encounters.reduce<Record<string, string>>(
+            (acc, encounter) => {
+              const name = typeof encounter === 'string' ? encounter : encounter.name;
+              acc[name] = slugify(name);
+
+              return acc;
+            },
+            {}
+          );
+
           return (
             <li key={source}>
               <a href={`#${source}`}>
                 <WowheadIcon icon={sourceInfo.icon}>{sourceInfo.name}</WowheadIcon>
               </a>
               <ul>
-                {sourceInfo.encounters
+                {encounterNames
                   .concat('Trash')
                   .filter((encounter) => {
-                    const slug = slugify(encounter);
+                    const slug = encounterToSlugMap[encounter];
 
                     return grouped[source][slug] !== undefined;
                   })
                   .map((encounter) => {
-                    const slug = slugify(encounter);
+                    const slug = encounterToSlugMap[encounter];
+                    const icon = encounterIconsByName[encounter];
 
                     return (
                       <li key={slug}>
-                        <a href={`#${source}-${slug}`}>{encounter}</a>
+                        <a href={`#${source}-${slug}`}>
+                          {icon ? <WowheadIcon icon={icon}>{encounter}</WowheadIcon> : encounter}
+                        </a>
                       </li>
                     );
                   })}
@@ -84,14 +123,16 @@ export function Zephyr({ data }: ZephyrProps) {
         const encounters = data.sources[source].encounters.concat('Trash');
 
         const encounterToSlugMap = encounters.reduce<Record<string, string>>((acc, encounter) => {
-          acc[encounter] = slugify(encounter);
+          const name = typeof encounter === 'string' ? encounter : encounter.name;
+          acc[name] = slugify(name);
 
           return acc;
         }, {});
 
         const spellsByType = encounters.reduce<Record<string, SpellsProps['spells']>>(
           (acc, encounter) => {
-            const slug = slugify(encounter);
+            const name = typeof encounter === 'string' ? encounter : encounter.name;
+            const slug = encounterToSlugMap[name];
 
             if (grouped[source][slug] === undefined) {
               return acc;
@@ -128,12 +169,14 @@ export function Zephyr({ data }: ZephyrProps) {
             </h2>
             {encounters
               .filter((encounter) => {
-                const slug = encounterToSlugMap[encounter];
+                const slug =
+                  encounterToSlugMap[typeof encounter === 'string' ? encounter : encounter.name];
 
                 return grouped[source][slug] !== undefined;
               })
               .map((encounter) => {
-                const slug = encounterToSlugMap[encounter];
+                const slug =
+                  encounterToSlugMap[typeof encounter === 'string' ? encounter : encounter.name];
                 const spells = spellsByType[slug].sort((a, b) => a.name.localeCompare(b.name));
 
                 return (
@@ -142,7 +185,12 @@ export function Zephyr({ data }: ZephyrProps) {
                       <CustomLink href={`#${source}-${slug}`}>
                         <ContentHeaderLink />
                       </CustomLink>
-                      {encounter} {spells.length > 1 ? `(${spells.length})` : null}
+                      {typeof encounter === 'string' ? (
+                        encounter
+                      ) : (
+                        <WowheadIcon icon={encounter.icon}>{encounter.name}</WowheadIcon>
+                      )}
+                      {spells.length > 1 ? ` (${spells.length})` : null}
                     </h3>
 
                     <Spells spells={spells} />
