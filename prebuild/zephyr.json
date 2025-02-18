@@ -449,6 +449,85 @@
       "type": "gorechop"
     },
     {
+      "id": 330693,
+      "name": "Leaping Thrash",
+      "icon": "ability_racial_flayer",
+      "source": "theater-of-pain",
+      "type": "trash"
+    },
+    {
+      "id": 341969,
+      "name": "Withering Discharge",
+      "icon": "ability_rogue_deviouspoisons",
+      "source": "theater-of-pain",
+      "type": "trash",
+      "notes": ["Interruptible"]
+    },
+    {
+      "id": 330973,
+      "name": "Disease Cloud",
+      "icon": "ui_darkshore_warfront_horde_abomination",
+      "source": "theater-of-pain",
+      "type": "trash"
+    },
+    {
+      "id": 1222949,
+      "name": "Well of Darkness",
+      "icon": "spell_necro_dischargenecroticcore",
+      "source": "theater-of-pain",
+      "type": "kultharok"
+    },
+    {
+      "id": 323825,
+      "name": "Grasping Rift",
+      "icon": "spell_necro_deathsdoor",
+      "source": "theater-of-pain",
+      "type": "mordretha-the-endless-empress"
+    },
+    {
+      "id": 333292,
+      "name": "Searing Death",
+      "icon": "spell_necro_deathrift",
+      "source": "theater-of-pain",
+      "type": "an-affront-of-challengers"
+    },
+    {
+      "id": 324514,
+      "name": "Manifest Death",
+      "icon": "spell_necro_deathlyecho",
+      "source": "theater-of-pain",
+      "type": "mordretha-the-endless-empress"
+    },
+    {
+      "id": 333242,
+      "name": "Raging Tantrum",
+      "icon": "inv_misc_monsterhorn_07",
+      "source": "theater-of-pain",
+      "type": "trash",
+      "notes": ["Soothe to avoid additional ticks"]
+    },
+    {
+      "id": 333841,
+      "name": "Swift Strike",
+      "icon": "ability_rogue_slicedice",
+      "source": "theater-of-pain",
+      "type": "trash",
+      "notes": [
+        "UNCONFIRMED, but spell data indicates this works",
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 167534,
+              "kind": "npc",
+              "children": "Rek the Hardened"
+            }
+          }
+        ]
+      ]
+    },
+    {
       "id": 448935,
       "name": "Reckless Delivery",
       "icon": "ability_warrior_victoryrush",
