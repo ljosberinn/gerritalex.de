@@ -394,7 +394,10 @@
       "icon": "spell_shaman_firenova",
       "source": "operation-floodgate",
       "type": "demolition-duo",
-      "notes": ["Initial damage only, not the dot"]
+      "notes": [
+        "Initial damage only, not the dot",
+        "Avoidable by properly dealing with the bomb mechanic via dispel & charge"
+      ]
     },
     {
       "id": 468815,
