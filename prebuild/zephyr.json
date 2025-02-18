@@ -960,6 +960,13 @@
       "type": "trash"
     },
     {
+      "id": 473177,
+      "name": "Rapid Extraction",
+      "icon": "inv_staff_2h_goblin_d_01",
+      "source": "the-motherlode",
+      "type": "trash"
+    },
+    {
       "id": 428126,
       "name": "Null Upheaval",
       "icon": "inv_chest_armor_voidelf_d_01",
