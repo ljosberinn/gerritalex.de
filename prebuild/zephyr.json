@@ -181,6 +181,14 @@
       "type": "big-momma"
     },
     {
+      "id": 1215504,
+      "name": "Kill-o-Block Barrier",
+      "icon": "spell_nature_lightningshield",
+      "source": "operation-floodgate",
+      "type": "big-momma",
+      "notes": ["Avoidable by killing the drones fast enough."]
+    },
+    {
       "id": 465830,
       "name": "Warp Blood",
       "icon": "ability_warlock_soulswap",
