@@ -238,7 +238,29 @@
       "name": "Jumpstart",
       "icon": "inv_battery_02",
       "source": "operation-floodgate",
-      "type": "big-momma"
+      "type": "big-momma",
+      "notes": ["Periodic damage during intermission"]
+    },
+    {
+      "id": 460158,
+      "name": "Crabsplosion",
+      "icon": "inv_crabbomb_black",
+      "source": "operation-floodgate",
+      "type": "trash",
+      "notes": [
+        "Stacks",
+        [
+          "On-death effect of ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "children": "Bombshell Crab",
+              "id": 231497,
+              "kind": "npc"
+            }
+          }
+        ]
+      ]
     },
     {
       "id": 1215504,
