@@ -404,7 +404,8 @@
       "name": "Gigazap",
       "icon": "spell_shaman_crashlightning",
       "source": "operation-floodgate",
-      "type": "geezle-gigazap"
+      "type": "geezle-gigazap",
+      "notes": ["Initial damage only, not the dot"]
     },
     {
       "id": 260838,
