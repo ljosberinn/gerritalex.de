@@ -114,11 +114,41 @@
       "type": "trash"
     },
     {
+      "id": 441344,
+      "name": "Bee-Zooka",
+      "icon": "inv_10_engineering2_pvpflaregun_color1",
+      "source": "cinderbrew-meadery",
+      "type": "trash"
+    },
+    {
+      "id": 463218,
+      "name": "Volatile Keg",
+      "icon": "ability_vehicle_liquidpyrite",
+      "source": "cinderbrew-meadery",
+      "type": "trash"
+    },
+    {
+      "id": 440687,
+      "name": "Honey Volley",
+      "icon": "misc_2h_honeydipper_b_01_icon",
+      "source": "cinderbrew-meadery",
+      "type": "trash",
+      "notes": ["Interruptible"]
+    },
+    {
       "id": 427609,
       "name": "Disrupting Shout",
       "icon": "warrior_disruptingshout",
       "source": "priory-of-the-sacred-flame",
       "type": "trash"
+    },
+    {
+      "id": 446657,
+      "name": "Burning Light",
+      "icon": "paladin_holy",
+      "source": "priory-of-the-sacred-flame",
+      "type": "baron-braunpyke",
+      "notes": ["Interruptible"]
     },
     {
       "id": 1218149,
@@ -158,11 +188,29 @@
       ]
     },
     {
+      "id": 423665,
+      "name": "Embrace the Light",
+      "icon": "ability_priest_holywordlife",
+      "source": "priory-of-the-sacred-flame",
+      "type": "prioress-murrpray",
+      "notes": ["Intermission channel until you break her shield"]
+    },
+    {
       "id": 428169,
       "name": "Blinding Light",
       "icon": "inv_ability_holyfire_nova",
       "source": "priory-of-the-sacred-flame",
-      "type": "prioress-murrpray"
+      "type": "prioress-murrpray",
+      "notes": [
+        [
+          "Players facing ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 207940, "kind": "npc", "children": "Prioress Murrpray" }
+          },
+          " at cast end take double the damage"
+        ]
+      ]
     },
     {
       "id": 423547,
@@ -220,6 +268,22 @@
       "icon": "inv_tradeskillitem_sorcerersearth_tong",
       "source": "operation-floodgate",
       "type": "swampface"
+    },
+    {
+      "id": 424432,
+      "name": "Holy Radiance",
+      "icon": "ability_paladin_gaurdedbythelight",
+      "source": "priory-of-the-sacred-flame",
+      "type": "trash",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 239833, "kind": "npc", "children": "Elaena Emberlanz" }
+          }
+        ]
+      ]
     },
     {
       "id": 465462,
@@ -478,6 +542,13 @@
       "type": "kultharok"
     },
     {
+      "id": 1222949,
+      "name": "Enkindling Inferno",
+      "icon": "inv_summerfest_firespirit",
+      "source": "darkflame-cleft",
+      "type": "blazikon"
+    },
+    {
       "id": 323825,
       "name": "Grasping Rift",
       "icon": "spell_necro_deathsdoor",
@@ -552,23 +623,41 @@
       "id": 448492,
       "name": "Thunderclap",
       "icon": "ability_thunderclap",
-
       "source": "priory-of-the-sacred-flame",
-      "type": "trash"
+      "type": "trash",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 212826, "kind": "npc", "children": "Guard Captain Suleyman" }
+          }
+        ]
+      ]
     },
     {
       "id": 424426,
       "name": "Lunging Strike",
       "icon": "inv_spear_11",
       "source": "priory-of-the-sacred-flame",
-      "type": "trash"
+      "type": "trash",
+      "notes": ["Cleave avoidable by not stacking."]
     },
     {
       "id": 427897,
       "name": "Heat Wave",
       "icon": "ability_rhyolith_lavapool",
       "source": "priory-of-the-sacred-flame",
-      "type": "trash"
+      "type": "trash",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 212831, "kind": "npc", "children": "Forge Master Damian" }
+          }
+        ]
+      ]
     },
     {
       "id": 448791,
@@ -576,6 +665,44 @@
       "icon": "ability_bastion_paladin",
       "source": "priory-of-the-sacred-flame",
       "type": "trash"
+    },
+    {
+      "id": 435156,
+      "name": "Light Expulsion",
+      "icon": "spell_holy_holyguidance",
+      "source": "priory-of-the-sacred-flame",
+      "type": "trash",
+      "notes": [
+        [
+          "On-death effect of ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "children": "Risen Footman",
+              "id": 212835,
+              "kind": "npc"
+            }
+          },
+          ", ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "children": "Risen Mage",
+              "id": 221760,
+              "kind": "npc"
+            }
+          },
+          " and ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "children": "Sir Braunpyke",
+              "id": 217658,
+              "kind": "npc"
+            }
+          }
+        ]
+      ]
     },
     {
       "id": 1215850,
