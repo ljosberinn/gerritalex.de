@@ -66,11 +66,12 @@
       "source": "darkflame-cleft",
       "notes": [
         [
-          "Periodic damage on ",
+          "Periodic damage whenever ",
           {
             "component": "WowheadLink",
-            "props": { "id": 208745, "kind": "npc", "children": "The Candle King" }
-          }
+            "props": { "id": 209603, "kind": "npc", "children": "Wax Statue" }
+          },
+          "s are active."
         ]
       ]
     },
@@ -137,20 +138,7 @@
       "name": "Blinding Light",
       "icon": "inv_ability_holyfire_nova",
       "source": "priory-of-the-sacred-flame",
-      "type": "prioress-murrpray",
-      "notes": [
-        [
-          "Via ",
-          {
-            "component": "WowheadLink",
-            "props": {
-              "id": 207940,
-              "kind": "npc",
-              "children": "Prioress Murrpray"
-            }
-          }
-        ]
-      ]
+      "type": "prioress-murrpray"
     },
     {
       "id": 423547,
