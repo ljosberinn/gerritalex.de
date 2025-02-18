@@ -965,6 +965,23 @@
           ", target takes 50% of damage taken for x seconds"
         ]
       ]
+    },
+    {
+      "id": 424419,
+      "type": "enrage",
+      "source": "priory-of-the-sacred-flame",
+      "icon": "warrior_disruptingshout",
+      "name": "Battle Cry",
+      "notes": [
+        "Interruptible",
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 207946, "kind": "npc", "children": "Captain Dailcry" }
+          }
+        ]
+      ]
     }
   ]
 }

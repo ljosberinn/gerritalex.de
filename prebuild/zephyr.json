@@ -343,6 +343,157 @@
           "."
         ]
       ]
+    },
+    {
+      "id": 425394,
+      "name": "Dousing Breath",
+      "icon": "ability_skyreach_four_wind",
+      "source": "darkflame-cleft",
+      "type": "blazikon"
+    },
+    {
+      "id": 427011,
+      "name": "Shadowblast",
+      "icon": "inv_elemental_primal_shadow",
+      "source": "darkflame-cleft",
+      "type": "the-darkness"
+    },
+    {
+      "id": 294961,
+      "name": "Blazing Chomp",
+      "icon": "inv_gizmo_supersappercharge",
+      "source": "operation-mechagon-workshop",
+      "type": "kujo",
+      "notes": ["The dispel, not the initial damage"]
+    },
+    {
+      "id": 291928,
+      "name": "Mega-Zap (P1)",
+      "icon": "ability_siege_engineer_magnetic_lasso",
+      "type": "king-mechagon",
+      "source": "operation-mechagon-workshop"
+    },
+    {
+      "id": 292267,
+      "name": "Mega-Zap (P2)",
+      "icon": "ability_siege_engineer_magnetic_lasso",
+      "type": "king-mechagon",
+      "source": "operation-mechagon-workshop"
+    },
+    {
+      "id": 460814,
+      "name": "Deflagration",
+      "icon": "spell_shaman_firenova",
+      "source": "operation-floodgate",
+      "type": "demolition-duo",
+      "notes": ["Initial damage only, not the dot"]
+    },
+    {
+      "id": 468815,
+      "name": "Gigazap",
+      "icon": "spell_shaman_crashlightning",
+      "source": "operation-floodgate",
+      "type": "geezle-gigazap"
+    },
+    {
+      "id": 260838,
+      "name": "Homing Missile",
+      "icon": "ability_racial_rocketbarrage",
+      "source": "the-motherlode",
+      "type": "mogul-razdunk"
+    },
+    {
+      "id": 260202,
+      "name": "Drill Smash",
+      "icon": "ability_siege_engineer_sockwave_missile",
+      "source": "the-motherlode",
+      "type": "trash"
+    },
+    {
+      "id": 1215741,
+      "name": "Mighty Smash",
+      "icon": "ability_smash",
+
+      "source": "theater-of-pain",
+      "type": "an-affront-of-challengers"
+    },
+    {
+      "id": 323110,
+      "name": "Leaping Thrash",
+      "icon": "ability_racial_flayer",
+      "source": "theater-of-pain",
+      "type": "gorechop"
+    },
+    {
+      "id": 448935,
+      "name": "Reckless Delivery",
+      "icon": "ability_warrior_victoryrush",
+      "type": "trash",
+      "source": "cinderbrew-meadery"
+    },
+    {
+      "id": 442995,
+      "name": "Swarming Surprise",
+      "icon": "inv_ability_honey_nova",
+      "type": "trash",
+      "source": "cinderbrew-meadery"
+    },
+    {
+      "id": 428066,
+      "name": "Overpowering Roar",
+      "icon": "ability_druid_tigersroar",
+      "type": "trash",
+      "source": "darkflame-cleft"
+    },
+    {
+      "id": 448492,
+      "name": "Thunderclap",
+      "icon": "ability_thunderclap",
+
+      "source": "priory-of-the-sacred-flame",
+      "type": "trash"
+    },
+    {
+      "id": 424426,
+      "name": "Lunging Strike",
+      "icon": "inv_spear_11",
+      "source": "priory-of-the-sacred-flame",
+      "type": "trash"
+    },
+    {
+      "id": 427897,
+      "name": "Heat Wave",
+      "icon": "ability_rhyolith_lavapool",
+      "source": "priory-of-the-sacred-flame",
+      "type": "trash"
+    },
+    {
+      "id": 448791,
+      "name": "Sacred Toll",
+      "icon": "ability_bastion_paladin",
+      "source": "priory-of-the-sacred-flame",
+      "type": "trash"
+    },
+    {
+      "id": 1215850,
+      "name": "Earthcrusher",
+      "icon": "spell_nature_earthquake",
+      "source": "theater-of-pain",
+      "type": "trash"
+    },
+    {
+      "id": 342135,
+      "name": "Interrupting Roar",
+      "icon": "warrior_disruptingshout",
+      "source": "theater-of-pain",
+      "type": "trash"
+    },
+    {
+      "id": 333827,
+      "name": "Seismic Stomp",
+      "icon": "spell_nature_earthquake",
+      "source": "theater-of-pain",
+      "type": "trash"
     }
   ]
 }
