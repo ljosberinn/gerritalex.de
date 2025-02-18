@@ -1,0 +1,348 @@
+{
+  "current-dungeon-rotation": [
+    "cinderbrew-meadery",
+    "theater-of-pain",
+    "darkflame-cleft",
+    "operation-mechagon-workshop",
+    "operation-floodgate",
+    "priory-of-the-sacred-flame",
+    "the-motherlode",
+    "the-rookery"
+  ],
+  "sources": {
+    "cinderbrew-meadery": {
+      "icon": "inv_achievement_dungeon_cinderbrewmeadery",
+      "name": "Cinderbrew Meadery",
+      "encounters": ["Brewmaster Aldryr", "I'pa", "Benk Buzzbee", "Goldie Baronbottom"]
+    },
+    "theater-of-pain": {
+      "icon": "achievement_dungeon_theatreofpain",
+      "name": "Theater of Pain",
+      "encounters": [
+        "An Affront of Challengers",
+        "Xav the Unfallen",
+        "Gorechop",
+        "Kul'tharok",
+        "Mordretha, the Endless Empress"
+      ]
+    },
+    "darkflame-cleft": {
+      "icon": "inv_achievement_dungeon_darkflamecleft",
+      "name": "Darkflame Cleft",
+      "encounters": ["Ol' Waxbeard", "Blazikon", "The Candle King", "The Darkness"]
+    },
+    "operation-mechagon-workshop": {
+      "icon": "achievement_boss_mechagon",
+      "name": "Operation: Mechagon - Workshop",
+      "encounters": ["Tussle Tonks", "K.U.J.O.", "Manastorm", "King Mechagon"]
+    },
+    "operation-floodgate": {
+      "icon": "inv_achievement_dungeon_waterworks",
+      "name": "Operation: Floodgate",
+      "encounters": ["Big M.O.M.M.A.", "Demolition Duo", "Swampface", "Geezle Gigazap"]
+    },
+    "priory-of-the-sacred-flame": {
+      "icon": "inv_achievement_dungeon_prioryofthesacredflame",
+      "name": "Priory of the Sacred Flame",
+      "encounters": ["Captain Dailcry", "Baron Braunpyke", "Prioress Murrpray"]
+    },
+    "the-motherlode": {
+      "icon": "achievement_dungeon_kezan",
+      "name": "The MOTHERLODE!!",
+      "encounters": ["Coin-Operated Crowd Pummeler", "Azerokk", "Rixxa Fluxfume", "Mogul Razdunk"]
+    },
+    "the-rookery": {
+      "icon": "inv_achievement_dungeon_rookery",
+      "name": "The Rookery",
+      "encounters": ["Kyrioss", "Stormguard Gorren", "Voidstone Monstrosity"]
+    }
+  },
+  "spells": [
+    {
+      "id": 420919,
+      "type": "the-candle-king",
+      "name": "Eerie Molds",
+      "icon": "spell_fire_incinerate",
+      "source": "darkflame-cleft",
+      "notes": [
+        [
+          "Periodic damage on ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 208745, "kind": "npc", "children": "The Candle King" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 430171,
+      "name": "Quenching Blast",
+      "icon": "spell_fire_felflamering_red",
+      "source": "darkflame-cleft",
+      "type": "trash"
+    },
+    {
+      "id": 1218117,
+      "name": "Massive Stomp",
+      "icon": "ability_earthen_pillar",
+      "source": "darkflame-cleft",
+      "type": "trash"
+    },
+    {
+      "id": 427609,
+      "name": "Disrupting Shout",
+      "icon": "warrior_disruptingshout",
+      "source": "priory-of-the-sacred-flame",
+      "type": "trash"
+    },
+    {
+      "id": 1218149,
+      "name": "Sacrificial Pyre",
+      "icon": "ability_paladin_blessedmending",
+      "source": "priory-of-the-sacred-flame",
+      "type": "baron-braunpyke",
+      "notes": [
+        [
+          "Both initial damage and the dot ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 446403,
+              "kind": "spell",
+              "icon": "ability_paladin_blessedmending",
+              "children": "Sacrificial Pyre"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 451764,
+      "name": "Radiant Flame",
+      "icon": "spell_holy_auramastery",
+      "source": "priory-of-the-sacred-flame",
+      "type": "trash",
+      "notes": [
+        [
+          "Aura of ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 217658, "kind": "npc", "children": "Sir Braunpyke" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 428169,
+      "name": "Blinding Light",
+      "icon": "inv_ability_holyfire_nova",
+      "source": "priory-of-the-sacred-flame",
+      "type": "prioress-murrpray",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 207940,
+              "kind": "npc",
+              "children": "Prioress Murrpray"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 423547,
+      "name": "Inner Fire",
+      "icon": "inv_ability_holyfire_buff",
+      "source": "priory-of-the-sacred-flame",
+      "type": "prioress-murrpray"
+    },
+    {
+      "id": 437733,
+      "name": "Boiling Flames",
+      "icon": "ability_mage_firestarter",
+      "source": "cinderbrew-meadery",
+      "type": "trash"
+    },
+    {
+      "id": 463206,
+      "name": "Tenderize",
+      "icon": "spell_nature_earthquake",
+      "source": "cinderbrew-meadery",
+      "type": "trash"
+    },
+    {
+      "id": 460158,
+      "name": "Jumpstart",
+      "icon": "inv_battery_02",
+      "source": "operation-floodgate",
+      "type": "big-momma"
+    },
+    {
+      "id": 465830,
+      "name": "Warp Blood",
+      "icon": "ability_warlock_soulswap",
+      "source": "operation-floodgate",
+      "type": "trash"
+    },
+    {
+      "id": 1216611,
+      "name": "Battery Discharge",
+      "icon": "inv_battery_01",
+      "source": "operation-floodgate",
+      "type": "trash"
+    },
+    {
+      "id": 473081,
+      "name": "Awaken the Swamp",
+      "icon": "inv_tradeskillitem_sorcerersearth_tong",
+      "source": "operation-floodgate",
+      "type": "swampface"
+    },
+    {
+      "id": 465462,
+      "name": "Turbo Charge",
+      "icon": "inv_10_engineering_manufacturedparts_electricalparts_color1",
+      "source": "operation-floodgate",
+      "type": "geezle-gigazap"
+    },
+    {
+      "id": 431897,
+      "name": "Rowdy Yell",
+      "icon": "ability_fomor_boss_shout",
+      "source": "cinderbrew-meadery",
+      "type": "brewmaster-aldryr"
+    },
+    {
+      "id": 439645,
+      "name": "Spouting Stout",
+      "icon": "ability_creature_amber_01",
+      "source": "cinderbrew-meadery",
+      "type": "ipa"
+    },
+    {
+      "id": 440138,
+      "name": "Honey Marinade",
+      "icon": "inv_mace_1h_honeystick_a_01_fire",
+      "source": "cinderbrew-meadery",
+      "type": "benk-buzzbee"
+    },
+    {
+      "id": 435789,
+      "name": "Cindering Wounds",
+      "icon": "inv_misc_volatilefire",
+      "source": "cinderbrew-meadery",
+      "type": "goldie-baronbottom"
+    },
+    {
+      "id": 320789,
+      "name": "Seismic Leap",
+      "icon": "ability_heroicleap",
+      "source": "theater-of-pain",
+      "type": "xav-the-unfallen"
+    },
+    {
+      "id": 330720,
+      "name": "Soulstorm",
+      "icon": "spell_animamaldraxxus_nova",
+      "source": "theater-of-pain",
+      "type": "trash"
+    },
+    {
+      "id": 339573,
+      "name": "Echoes of Carnage",
+      "icon": "ability_deathknight_soulreaper",
+      "source": "theater-of-pain",
+      "type": "mordretha-the-endless-empress",
+      "notes": [
+        [
+          "Both initial damage and the periodic damage ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 339759,
+              "kind": "spell",
+              "icon": "ability_deathknight_soulreaper",
+              "children": "Echoes of Carnage"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 427439,
+      "name": "Localized Storm",
+      "icon": "spell_nature_unrelentingstorm",
+      "source": "the-rookery",
+      "type": "trash"
+    },
+    {
+      "id": 1214323,
+      "name": "Lightning Torrent",
+      "icon": "ability_vehicle_electrocharge",
+      "source": "the-rookery",
+      "type": "kyrioss"
+    },
+    {
+      "id": 425113,
+      "name": "Crush Reality",
+      "icon": "spell_priest_void-blast",
+      "source": "the-rookery",
+      "type": "stormguard-gorren"
+    },
+    {
+      "id": 426171,
+      "name": "Chaotic Explosion",
+      "icon": "inv_artifact_powerofthedarkside",
+      "source": "the-rookery",
+      "type": "stormguard-gorren"
+    },
+    {
+      "id": 262347,
+      "name": "Static Pulse",
+      "icon": "spell_nature_lightningoverload",
+      "source": "the-motherlode",
+      "type": "coin-operated-crowd-pummeler"
+    },
+    {
+      "id": 471894,
+      "name": "Resonant Quake",
+      "icon": "spell_shaman_earthquake",
+      "source": "the-motherlode",
+      "type": "azerokk"
+    },
+    {
+      "id": 258627,
+      "name": "Resonant Aftershock",
+      "icon": "spell_shaman_earthquake",
+      "source": "the-motherlode",
+      "type": "azerokk",
+      "notes": [
+        [
+          "Avoidable by killing the empowered ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 129802,
+              "kind": "npc",
+              "children": "Earthrager"
+            }
+          },
+          " before the boss casts ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 471894,
+              "kind": "spell",
+              "icon": "spell_shaman_earthquake",
+              "children": "Resonant Quake"
+            }
+          },
+          "."
+        ]
+      ]
+    }
+  ]
+}

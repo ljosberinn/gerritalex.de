@@ -7,7 +7,8 @@ import { CustomLink } from './CustomLink';
 import { TableWrapper } from './TableWrapper';
 import { WowheadLink } from './WowheadLink';
 import { WowheadIcon } from './WowheadIcon';
-import { SeasonalAuraOverview } from './SeasonalAuraOverview';
+import { Auras } from './seasonal-content/Auras';
+import { Zephyr } from './seasonal-content/Zephyr';
 import { WowheadSpecIcon } from './WowheadSpecIcon';
 
 export const components: MDXComponents = {
@@ -21,6 +22,7 @@ export const components: MDXComponents = {
   BlogNewsletterForm,
   WowheadLink,
   WowheadIcon,
-  SeasonalAuraOverview,
+  Auras,
+  Zephyr,
   WowheadSpecIcon,
 };
