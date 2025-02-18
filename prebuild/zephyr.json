@@ -798,7 +798,8 @@
       "name": "Sonic Blast",
       "icon": "inv_sonic_missile",
       "source": "liberation-of-undermine",
-      "type": "rik-reverb"
+      "type": "rik-reverb",
+      "notes": ["Riks melee"]
     },
     {
       "id": 472990,
@@ -821,8 +822,7 @@
       "name": "Static Jolt",
       "icon": "ability_thunderking_thunderstruck",
       "source": "liberation-of-undermine",
-      "type": "rik-reverb",
-      "notes": ["Riks melee"]
+      "type": "rik-reverb"
     },
     {
       "id": 467020,
