@@ -901,6 +901,84 @@
       "source": "liberation-of-undermine",
       "type": "rik-reverb",
       "notes": ["Avoidable by meeting the damage check on pyrotechnics"]
+    },
+    {
+      "id": 1215103,
+      "name": "Ground Point",
+      "icon": "spell_nature_earthquake",
+      "source": "operation-mechagon-workshop",
+      "type": "tussle-tonks"
+    },
+    {
+      "id": 1215103,
+      "name": "Mega Drill",
+      "icon": "ability_racial_molemachine",
+      "source": "operation-mechagon-workshop",
+      "type": "trash"
+    },
+    {
+      "id": 1215412,
+      "name": "Corrosive Gunk",
+      "icon": "ability_vehicle_oiljets",
+      "source": "operation-mechagon-workshop",
+      "type": "trash"
+    },
+    {
+      "id": 297127,
+      "name": "Short Out",
+      "icon": "ability_priest_cascade",
+      "source": "operation-mechagon-workshop",
+      "type": "trash"
+    },
+    {
+      "id": 283534,
+      "name": "Magneto-Arm",
+      "icon": "ability_siege_engineer_magnetic_crush",
+      "source": "operation-mechagon-workshop",
+      "type": "king-mechagon"
+    },
+    {
+      "id": 429029,
+      "name": "Corruption Overlord",
+      "icon": "spell_shadow_summonvoidwalker",
+      "source": "the-rookery",
+      "type": "voidstone-monstrosity",
+      "notes": ["Avoidable by clearing the voidstones in time"]
+    },
+    {
+      "id": 430814,
+      "name": "Attracting Shadows",
+      "icon": "spell_mage_arcaneorb",
+      "source": "the-rookery",
+      "type": "trash"
+    },
+    {
+      "id": 429493,
+      "name": "Unstable Curruption",
+      "icon": "inv_cosmicvoid_debuff",
+      "source": "the-rookery",
+      "type": "trash"
+    },
+    {
+      "id": 428126,
+      "name": "Null Upheaval",
+      "icon": "inv_chest_armor_voidelf_d_01",
+      "source": "the-rookery",
+      "type": "voidstone-monstrosity",
+      "notes": [
+        [
+          "Knockback damage of ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 423305,
+              "kind": "spell",
+              "icon": "inv_chest_armor_voidelf_d_01",
+              "children": "Null Upheaval"
+            }
+          }
+        ]
+      ]
     }
   ]
 }
