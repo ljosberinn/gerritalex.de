@@ -98,24 +98,10 @@
   },
   "spells": [
     {
-      "id": 423393,
-      "type": "voidstone-monstrosity",
-      "name": "Entropy",
-      "icon": "ability_priest_voidentropy",
-      "source": "the-rookery"
-    },
-    {
       "id": 425052,
       "type": "stormguard-gorren",
       "name": "Dark Gravity",
       "icon": "inv_cosmicvoid_groundsate",
-      "source": "the-rookery"
-    },
-    {
-      "id": 430186,
-      "type": "trash",
-      "name": "Seeping Corruption",
-      "icon": "inv_enchant_voidsphere",
       "source": "the-rookery"
     },
     {
@@ -695,13 +681,6 @@
       "id": 425113,
       "name": "Crush Reality",
       "icon": "spell_priest_void-blast",
-      "source": "the-rookery",
-      "type": "stormguard-gorren"
-    },
-    {
-      "id": 426171,
-      "name": "Chaotic Explosion",
-      "icon": "inv_artifact_powerofthedarkside",
       "source": "the-rookery",
       "type": "stormguard-gorren"
     },
