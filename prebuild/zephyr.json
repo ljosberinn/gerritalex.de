@@ -1133,13 +1133,6 @@
       "type": "cauldron-of-carnage"
     },
     {
-      "id": 473652,
-      "name": "Scrapbomb",
-      "icon": "inv_10_engineering2_boxofbombs_friendly_color1",
-      "source": "liberation-of-undermine",
-      "type": "cauldron-of-carnage"
-    },
-    {
       "id": 464487,
       "name": "Sonic Blast",
       "icon": "inv_sonic_missile",
@@ -1209,16 +1202,10 @@
               "icon": "ability_ironmaidens_bombardment",
               "children": "Incinerator"
             }
-          }
+          },
+          " and both are AoE."
         ]
       ]
-    },
-    {
-      "id": 464165,
-      "name": "Incinerator",
-      "icon": "ability_ironmaidens_bombardment",
-      "source": "liberation-of-undermine",
-      "type": "stix-bunkjunker"
     },
     {
       "id": 473119,
@@ -1406,13 +1393,6 @@
       ]
     },
     {
-      "id": 1219055,
-      "name": "Foot-Blasters",
-      "icon": "inv_10_engineering2_boxofbombs_friendly_color1",
-      "source": "liberation-of-undermine",
-      "type": "sprocketmonger-lockenstock"
-    },
-    {
       "id": 469708,
       "name": "Uncontrolled Destruction",
       "icon": "ability_siege_engineer_detonate",
@@ -1434,30 +1414,9 @@
       ]
     },
     {
-      "id": 467381,
-      "name": "Goblin-guided Rocket",
-      "icon": "inv_gizmo_supersappercharge",
-      "source": "liberation-of-undermine",
-      "type": "mugzee-heads-of-security"
-    },
-    {
-      "id": 1221224,
-      "name": "Unstable Cluster Bomb",
-      "icon": "inv_eng_bombfire",
-      "source": "liberation-of-undermine",
-      "type": "mugzee-heads-of-security"
-    },
-    {
       "id": 1221079,
       "name": "Frostshatter Boots",
       "icon": "spell_hunter_icetrap",
-      "source": "liberation-of-undermine",
-      "type": "mugzee-heads-of-security"
-    },
-    {
-      "id": 466546,
-      "name": "Spray and Pray",
-      "icon": "ability_hunter_markedshot",
       "source": "liberation-of-undermine",
       "type": "mugzee-heads-of-security"
     },
@@ -1560,6 +1519,125 @@
           }
         ]
       ]
+    },
+    {
+      "id": 470032,
+      "type": "cauldron-of-carnage",
+      "name": "Colossal Clash",
+      "icon": "inv_11_arenaboss_colossalclash",
+      "source": "liberation-of-undermine",
+      "notes": [
+        [
+          "One damage source per boss, the other is ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 470034,
+              "kind": "spell",
+              "children": "Colossal Clash",
+              "icon": "inv_11_arenaboss_colossalclash"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 473653,
+      "type": "cauldron-of-carnage",
+      "name": "Scrapbomb",
+      "icon": "inv_10_engineering2_boxofbombs_friendly_color1",
+      "source": "liberation-of-undermine"
+    },
+    {
+      "id": 473958,
+      "type": "sprocketmonger-lockenstock",
+      "name": "Fire Laser",
+      "icon": "ability_mage_firestarter",
+      "source": "liberation-of-undermine"
+    },
+    {
+      "id": 1217673,
+      "type": "sprocketmonger-lockenstock",
+      "name": "Voidsplash",
+      "icon": "spell_priest_divinestar_shadow2",
+      "source": "liberation-of-undermine"
+    },
+    {
+      "id": 460873,
+      "type": "one-armed-bandit",
+      "name": "Electric Blast",
+      "icon": "spell_shaman_staticshock",
+      "source": "liberation-of-undermine"
+    },
+    {
+      "id": 468660,
+      "type": "mugzee-heads-of-security",
+      "name": "Elemental Carnage",
+      "icon": "spell_nature_elementalprecision_2",
+      "source": "liberation-of-undermine"
+    },
+    {
+      "id": 468817,
+      "type": "mugzee-heads-of-security",
+      "name": "Goblin-guided Rocket",
+      "icon": "inv_gizmo_supersappercharge",
+      "source": "liberation-of-undermine"
+    },
+    {
+      "id": 469061,
+      "type": "mugzee-heads-of-security",
+      "name": "Unstable Crawler Mines",
+      "icon": "inv_wildfirebomb",
+      "source": "liberation-of-undermine",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "kind": "spell",
+              "id": 472458,
+              "icon": "inv_misc_bomb_02",
+              "children": "Unstable Crawler Mines"
+            }
+          }
+        ],
+        [
+          "Fire damage portion via ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "kind": "spell",
+              "id": 469062,
+              "icon": "inv_wildfirebomb",
+              "children": "Unstable Crawler Mines"
+            }
+          },
+          " is also AoE."
+        ]
+      ]
+    },
+    {
+      "id": 1215903,
+      "type": "mugzee-heads-of-security",
+      "name": "Storming Impact",
+      "icon": "ability_thunderking_overcharge",
+      "source": "liberation-of-undermine"
+    },
+    {
+      "id": 1220551,
+      "type": "mugzee-heads-of-security",
+      "name": "Unstable Cluster Bomb",
+      "icon": "inv_eng_bombfire",
+      "source": "liberation-of-undermine",
+      "notes": ["When soaking"]
+    },
+    {
+      "id": 1220769,
+      "type": "mugzee-heads-of-security",
+      "name": "Earthshaker Gaol",
+      "icon": "inv_elementalearth2",
+      "source": "liberation-of-undermine"
     }
   ]
 }
