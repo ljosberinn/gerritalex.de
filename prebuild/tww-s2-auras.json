@@ -418,7 +418,8 @@
       "type": "poison",
       "source": "the-motherlode",
       "name": "Toxic Blades",
-      "icon": "ability_poisons"
+      "icon": "ability_poisons",
+      "notes": ["Interruptible"]
     },
     {
       "id": 262270,
