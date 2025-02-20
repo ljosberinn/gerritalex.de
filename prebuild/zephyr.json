@@ -98,13 +98,6 @@
   },
   "spells": [
     {
-      "id": 419871,
-      "type": "kyrioss",
-      "name": "Lightning Dash",
-      "icon": "inv_cosmicvoid_groundsate",
-      "source": "the-rookery"
-    },
-    {
       "id": 423393,
       "type": "voidstone-monstrosity",
       "name": "Entropy",
