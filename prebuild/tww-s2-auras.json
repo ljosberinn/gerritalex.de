@@ -35,6 +35,14 @@
   },
   "spells": [
     {
+      "id": 442589,
+      "type": "magic",
+      "source": "cinderbrew-meadery",
+      "icon": "inv_cooking_80_honeyglazedhaunch",
+      "name": "Beeswax",
+      "notes": ["Avoidable by not standing in bad."]
+    },
+    {
       "id": 463061,
       "type": "enrage",
       "source": "operation-floodgate",
