@@ -119,7 +119,8 @@
       "type": "enrage",
       "source": "the-rookery",
       "icon": "ability_hunter_beasttaming",
-      "name": "Lightning Surge"
+      "name": "Lightning Surge",
+      "notes": ["Interruptible"]
     },
     {
       "id": 434773,
@@ -446,31 +447,6 @@
       ]
     },
     {
-      "id": 1215415,
-      "type": "disease",
-      "source": "operation-mechagon-workshop",
-      "name": "Sticky Sludge",
-      "icon": "spell_yorsahj_bloodboil_black",
-      "notes": ["Stacking debuff on the tank"]
-    },
-    {
-      "id": 320248,
-      "type": "disease",
-      "source": "theater-of-pain",
-      "name": "Genetic Alteration",
-      "icon": "spell_deathknight_necroticplague",
-      "notes": [
-        [
-          "Via ",
-          {
-            "component": "WowheadLink",
-            "props": { "id": 164463, "kind": "npc", "children": "Paceran the Virulent" }
-          },
-          ", first boss"
-        ]
-      ]
-    },
-    {
       "id": 330700,
       "type": "disease",
       "source": "theater-of-pain",
@@ -539,7 +515,31 @@
       "type": "curse",
       "source": "theater-of-pain",
       "name": "Curse of Desolation",
-      "icon": "ability_rogue_envelopingshadows"
+      "icon": "ability_rogue_envelopingshadows",
+      "notes": [
+        [
+          "Nearly identical to ",
+
+          " the ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 451613, "kind": "spell", "children": "Twilight Flame" }
+          },
+          " debuff of ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 224609, "kind": "npc", "children": "Twilight Destroyer" }
+          },
+          "s in ",
+          {
+            "component": "WowheadIcon",
+            "props": {
+              "icon": "achievement_dungeon_grimbatol",
+              "children": "Grim Batol"
+            }
+          }
+        ]
+      ]
     },
     {
       "id": 330725,
@@ -894,13 +894,6 @@
       "name": "Restorative Algae",
       "icon": "spell_lfieblood",
       "notes": ["Interruptible", "Can be spellstolen"]
-    },
-    {
-      "id": 465604,
-      "type": "purge",
-      "source": "operation-floodgate",
-      "name": "Battery Bolt",
-      "icon": "inv_battery_01"
     },
     {
       "id": 427346,
