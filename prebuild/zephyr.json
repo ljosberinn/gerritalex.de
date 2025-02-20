@@ -324,13 +324,6 @@
       "notes": ["Interruptible"]
     },
     {
-      "id": 291613,
-      "type": "king-mechagon",
-      "name": "Take Off!",
-      "icon": "inv_gizmo_rocketboot_01",
-      "source": "operation-mechagon-workshop"
-    },
-    {
       "id": 292035,
       "type": "kujo",
       "name": "Explosive Leap",
