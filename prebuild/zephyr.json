@@ -98,6 +98,22 @@
   },
   "spells": [
     {
+      "id": 1217456,
+      "name": "Jettison Kelp",
+      "icon": "inv_misc_herb_stranglekelp_blade",
+      "source": "operation-floodgate",
+      "type": "trash",
+      "notes": ["NOT AOE!!!"]
+    },
+    {
+      "id": 442484,
+      "name": "Let It Hail!",
+      "icon": "inv_legendary_gun",
+      "source": "cinderbrew-meadery",
+      "type": "goldie-baronbottom",
+      "notes": ["NOT AOE!!!"]
+    },
+    {
       "id": 425052,
       "type": "stormguard-gorren",
       "name": "Dark Gravity",
