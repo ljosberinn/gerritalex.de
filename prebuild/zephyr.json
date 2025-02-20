@@ -19,19 +19,34 @@
           "icon": "inv_111_raid_achievement_vexieandthegeargrinders",
           "name": "Vexie and the Geargrinders"
         },
-        { "icon": "inv_11_arenaboss_colossalclash", "name": "Cauldron of Carnage" },
-        { "icon": "inv_111_raid_achievement_rikreverb", "name": "Rik Reverb" },
-        { "icon": "inv_111_raid_achievement_stixbunkjunker", "name": "Stix Bunkjunker" },
+        {
+          "icon": "inv_11_arenaboss_colossalclash",
+          "name": "Cauldron of Carnage"
+        },
+        {
+          "icon": "inv_111_raid_achievement_rikreverb",
+          "name": "Rik Reverb"
+        },
+        {
+          "icon": "inv_111_raid_achievement_stixbunkjunker",
+          "name": "Stix Bunkjunker"
+        },
         {
           "icon": "inv_111_raid_achievement_sprocketmongerlocknstock",
           "name": "Sprocketmonger Lockenstock"
         },
-        { "icon": "inv_111_raid_achievement_onearmedbandit", "name": "One-Armed Bandit" },
+        {
+          "icon": "inv_111_raid_achievement_onearmedbandit",
+          "name": "One-Armed Bandit"
+        },
         {
           "icon": "inv_111_raid_achievement_mugzeeheadsofsecurity",
           "name": "Mug'Zee, Heads of Security"
         },
-        { "icon": "inv_111_raid_achievement_chromekinggallywix", "name": "Chrome King Gallywix" }
+        {
+          "icon": "inv_111_raid_achievement_chromekinggallywix",
+          "name": "Chrome King Gallywix"
+        }
       ]
     },
     "cinderbrew-meadery": {
@@ -83,6 +98,276 @@
   },
   "spells": [
     {
+      "id": 419871,
+      "type": "kyrioss",
+      "name": "Lightning Dash",
+      "icon": "inv_cosmicvoid_groundsate",
+      "source": "the-rookery"
+    },
+    {
+      "id": 423356,
+      "type": "voidstone-monstrosity",
+      "name": "Null Upheaval",
+      "icon": "inv_chest_armor_voidelf_d_01",
+      "source": "the-rookery"
+    },
+    {
+      "id": 423393,
+      "type": "voidstone-monstrosity",
+      "name": "Entropy",
+      "icon": "ability_priest_voidentropy",
+      "source": "the-rookery"
+    },
+    {
+      "id": 425052,
+      "type": "stormguard-gorren",
+      "name": "Dark Gravity",
+      "icon": "inv_cosmicvoid_groundsate",
+      "source": "the-rookery"
+    },
+    {
+      "id": 430186,
+      "type": "trash",
+      "name": "Seeping Corruption",
+      "icon": "inv_enchant_voidsphere",
+      "source": "the-rookery"
+    },
+    {
+      "id": 443847,
+      "type": "trash",
+      "name": "Instability",
+      "icon": "inv_cosmicvoid_groundsate",
+      "source": "the-rookery"
+    },
+    {
+      "id": 452932,
+      "type": "trash",
+      "name": "Attracting Shadows",
+      "icon": "spell_mage_arcaneorb",
+      "source": "the-rookery"
+    },
+    {
+      "id": 472549,
+      "type": "trash",
+      "name": "Volatile Void",
+      "icon": "inv_cosmicvoid_nova",
+      "source": "the-rookery",
+      "notes": ["Small cleave (3y) around tank, avoid standing on the tank"]
+    },
+    {
+      "id": 474032,
+      "type": "trash",
+      "name": "Void Crush",
+      "icon": "ability_warlock_voidzone",
+      "source": "the-rookery"
+    },
+    {
+      "id": 1214631,
+      "type": "trash",
+      "name": "Unleash Darkness",
+      "icon": "inv_cosmicvoid_wave",
+      "source": "the-rookery"
+    },
+    {
+      "id": 424419,
+      "type": "captain-dailcry",
+      "name": "Battle Cry",
+      "icon": "warrior_disruptingshout",
+      "source": "priory-of-the-sacred-flame",
+      "notes": ["Interruptible"]
+    },
+    {
+      "id": 425018,
+      "type": "prioress-murrpray",
+      "name": "Overwhelming Power",
+      "icon": "inv_ability_holyfire_debuff",
+      "source": "priory-of-the-sacred-flame",
+      "notes": [
+        "Intermission, buff on adds",
+        "Avoid by either ccing the adds and/or not being in melee"
+      ]
+    },
+    {
+      "id": 444743,
+      "type": "trash",
+      "name": "Fireball Volley",
+      "icon": "spell_fire_fireball02",
+      "source": "priory-of-the-sacred-flame",
+      "notes": ["Interruptible"]
+    },
+    {
+      "id": 421146,
+      "type": "the-candle-king",
+      "name": "Throw Darkflame",
+      "icon": "spell_shadow_painspike",
+      "source": "darkflame-cleft"
+    },
+    {
+      "id": 422692,
+      "type": "trash",
+      "name": "Drain Light",
+      "icon": "ability_demonhunter_darkness",
+      "source": "darkflame-cleft"
+    },
+    {
+      "id": 424322,
+      "type": "trash",
+      "name": "Explosive Flame",
+      "icon": "spell_fire_elemental_totem",
+      "source": "darkflame-cleft"
+    },
+    {
+      "id": 426259,
+      "type": "trash",
+      "name": "Pyro-pummel",
+      "icon": "ability_monk_palmstrike",
+      "source": "darkflame-cleft",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 212411,
+              "kind": "npc",
+              "children": "Torchsnarl"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 439010,
+      "type": "trash",
+      "name": "Drain Light",
+      "icon": "ability_demonhunter_darkness",
+      "source": "darkflame-cleft"
+    },
+    {
+      "id": 441518,
+      "type": "trash",
+      "name": "Explosive Brew",
+      "icon": "ability_vehicle_liquidpyrite",
+      "source": "cinderbrew-meadery",
+      "notes": ["Avoidable by focusing the keg fast enough"]
+    },
+    {
+      "id": 473719,
+      "type": "demolition-duo",
+      "name": "Kinetic Explosive Gel",
+      "icon": "inv_ammo_firetar",
+      "source": "operation-floodgate"
+    },
+    {
+      "id": 267357,
+      "type": "trash",
+      "name": "Fan of Knives",
+      "icon": "inv_throwingknife_03",
+      "source": "the-motherlode"
+    },
+    {
+      "id": 268702,
+      "type": "trash",
+      "name": "Furious Quake",
+      "icon": "spell_shaman_earthquake",
+      "source": "the-motherlode",
+      "notes": ["Interruptible"]
+    },
+    {
+      "id": 275907,
+      "type": "azerokk",
+      "name": "Tectonic Smash",
+      "icon": "spell_nature_earthquake",
+      "source": "the-motherlode"
+    },
+    {
+      "id": 473304,
+      "type": "trash",
+      "name": "Brainstorm",
+      "icon": "ability_mage_studentofthemind",
+      "source": "the-motherlode"
+    },
+    {
+      "id": 1213142,
+      "type": "azerokk",
+      "name": "Pulsing Azerite",
+      "icon": "inv__azerite-explosion",
+      "source": "the-motherlode"
+    },
+    {
+      "id": 1214673,
+      "type": "azerokk",
+      "name": "Azerite Aftershock",
+      "icon": "spell_azerite_essence_15",
+      "source": "the-motherlode"
+    },
+    {
+      "id": 1215916,
+      "type": "trash",
+      "name": "Mind Lash",
+      "icon": "spell_azerite_essence_15",
+      "source": "the-motherlode"
+    },
+    {
+      "id": 1217280,
+      "type": "trash",
+      "name": "Uppercut",
+      "icon": "inv_relics_totemofrage",
+      "source": "the-motherlode"
+    },
+    {
+      "id": 330868,
+      "type": "trash",
+      "name": "Necrotic Bolt Volley",
+      "icon": "spell_necro_necroticsmash",
+      "source": "theater-of-pain",
+      "notes": ["Interruptible"]
+    },
+    {
+      "id": 291613,
+      "type": "king-mechagon",
+      "name": "Take Off!",
+      "icon": "inv_gizmo_rocketboot_01",
+      "source": "operation-mechagon-workshop"
+    },
+    {
+      "id": 292035,
+      "type": "kujo",
+      "name": "Explosive Leap",
+      "icon": "inv_misc_trinket6oih_wolf1",
+      "source": "operation-mechagon-workshop"
+    },
+    {
+      "id": 296331,
+      "type": "king-mechagon",
+      "name": "Cutting Beam",
+      "icon": "ability_thunderking_thunderstruck",
+      "source": "operation-mechagon-workshop"
+    },
+    {
+      "id": 301088,
+      "type": "trash",
+      "name": "Detonate",
+      "icon": "inv_eng_bombfire",
+      "source": "operation-mechagon-workshop",
+      "notes": ["Interruptible"]
+    },
+    {
+      "id": 473440,
+      "type": "trash",
+      "name": "High Explosive Rockets",
+      "icon": "inv_misc_missilelarge_white",
+      "source": "operation-mechagon-workshop"
+    },
+    {
+      "id": 1216446,
+      "type": "tussle-tonks",
+      "name": "Electrical Storm",
+      "icon": "inv_engineering_90_lightningbox",
+      "source": "operation-mechagon-workshop",
+      "notes": ["Avoidable by defeating both bosses around the same time", "Stacks"]
+    },
+    {
       "id": 420919,
       "type": "the-candle-king",
       "name": "Eerie Molds",
@@ -93,7 +378,11 @@
           "Periodic damage whenever ",
           {
             "component": "WowheadLink",
-            "props": { "id": 209603, "kind": "npc", "children": "Wax Statue" }
+            "props": {
+              "id": 209603,
+              "kind": "npc",
+              "children": "Wax Statue"
+            }
           },
           "s are active."
         ]
@@ -111,7 +400,20 @@
       "name": "Massive Stomp",
       "icon": "ability_earthen_pillar",
       "source": "darkflame-cleft",
-      "type": "trash"
+      "type": "trash",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 212411,
+              "kind": "npc",
+              "children": "Torchsnarl"
+            }
+          }
+        ]
+      ]
     },
     {
       "id": 441344,
@@ -148,7 +450,21 @@
       "icon": "paladin_holy",
       "source": "priory-of-the-sacred-flame",
       "type": "baron-braunpyke",
-      "notes": ["Interruptible"]
+      "notes": [
+        "Interruptible",
+        [
+          "Both initial damage and the dot ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 423051,
+              "kind": "spell",
+              "icon": "paladin_holy",
+              "children": "Burning Light"
+            }
+          }
+        ]
+      ]
     },
     {
       "id": 1218149,
@@ -182,7 +498,11 @@
           "Aura of ",
           {
             "component": "WowheadLink",
-            "props": { "id": 217658, "kind": "npc", "children": "Sir Braunpyke" }
+            "props": {
+              "id": 217658,
+              "kind": "npc",
+              "children": "Sir Braunpyke"
+            }
           }
         ]
       ]
@@ -206,9 +526,13 @@
           "Players facing ",
           {
             "component": "WowheadLink",
-            "props": { "id": 207940, "kind": "npc", "children": "Prioress Murrpray" }
+            "props": {
+              "id": 207940,
+              "kind": "npc",
+              "children": "Prioress Murrpray"
+            }
           },
-          " at cast end take double the damage"
+          " at cast end take ~110% the damage, but get disoriented for 4 seconds"
         ]
       ]
     },
@@ -242,7 +566,7 @@
       "notes": ["Periodic damage during intermission"]
     },
     {
-      "id": 460158,
+      "id": 468680,
       "name": "Crabsplosion",
       "icon": "inv_crabbomb_black",
       "source": "operation-floodgate",
@@ -302,7 +626,11 @@
           "Via ",
           {
             "component": "WowheadLink",
-            "props": { "id": 239833, "kind": "npc", "children": "Elaena Emberlanz" }
+            "props": {
+              "id": 239833,
+              "kind": "npc",
+              "children": "Elaena Emberlanz"
+            }
           }
         ]
       ]
@@ -523,9 +851,21 @@
       "id": 1215741,
       "name": "Mighty Smash",
       "icon": "ability_smash",
-
       "source": "theater-of-pain",
-      "type": "an-affront-of-challengers"
+      "type": "an-affront-of-challengers",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 164451,
+              "kind": "npc",
+              "children": "Dessia the Decapitator"
+            }
+          }
+        ]
+      ]
     },
     {
       "id": 323110,
@@ -564,7 +904,7 @@
       "type": "kultharok"
     },
     {
-      "id": 1222949,
+      "id": 1218308,
       "name": "Enkindling Inferno",
       "icon": "inv_summerfest_firespirit",
       "source": "darkflame-cleft",
@@ -600,27 +940,6 @@
       "notes": ["Soothe to avoid additional ticks"]
     },
     {
-      "id": 333841,
-      "name": "Swift Strike",
-      "icon": "ability_rogue_slicedice",
-      "source": "theater-of-pain",
-      "type": "trash",
-      "notes": [
-        "UNCONFIRMED, but spell data indicates this works",
-        [
-          "Via ",
-          {
-            "component": "WowheadLink",
-            "props": {
-              "id": 167534,
-              "kind": "npc",
-              "children": "Rek the Hardened"
-            }
-          }
-        ]
-      ]
-    },
-    {
       "id": 448935,
       "name": "Reckless Delivery",
       "icon": "ability_warrior_victoryrush",
@@ -652,7 +971,11 @@
           "Via ",
           {
             "component": "WowheadLink",
-            "props": { "id": 212826, "kind": "npc", "children": "Guard Captain Suleyman" }
+            "props": {
+              "id": 212826,
+              "kind": "npc",
+              "children": "Guard Captain Suleyman"
+            }
           }
         ]
       ]
@@ -676,7 +999,11 @@
           "Via ",
           {
             "component": "WowheadLink",
-            "props": { "id": 212831, "kind": "npc", "children": "Forge Master Damian" }
+            "props": {
+              "id": 212831,
+              "kind": "npc",
+              "children": "Forge Master Damian"
+            }
           }
         ]
       ]
@@ -731,7 +1058,20 @@
       "name": "Earthcrusher",
       "icon": "spell_nature_earthquake",
       "source": "theater-of-pain",
-      "type": "trash"
+      "type": "trash",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 167538,
+              "kind": "npc",
+              "children": "Dokigg the Brutalizer"
+            }
+          }
+        ]
+      ]
     },
     {
       "id": 342135,
@@ -745,7 +1085,20 @@
       "name": "Seismic Stomp",
       "icon": "spell_nature_earthquake",
       "source": "theater-of-pain",
-      "type": "trash"
+      "type": "trash",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 167533,
+              "kind": "npc",
+              "children": "Advent Nevermore"
+            }
+          }
+        ]
+      ]
     },
     {
       "id": 460388,
@@ -1138,7 +1491,7 @@
       "type": "tussle-tonks"
     },
     {
-      "id": 1215103,
+      "id": 1215410,
       "name": "Mega Drill",
       "icon": "ability_racial_molemachine",
       "source": "operation-mechagon-workshop",
@@ -1182,10 +1535,10 @@
     },
     {
       "id": 429493,
-      "name": "Unstable Curruption",
+      "name": "Unstable Corruption",
       "icon": "inv_cosmicvoid_debuff",
       "source": "the-rookery",
-      "type": "trash"
+      "type": "voidstone-monstrosity"
     },
     {
       "id": 473177,
