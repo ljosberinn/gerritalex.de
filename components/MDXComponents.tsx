@@ -10,6 +10,7 @@ import { WowheadIcon } from './WowheadIcon';
 import { Auras } from './seasonal-content/Auras';
 import { Zephyr } from './seasonal-content/Zephyr';
 import { WowheadSpecIcon } from './WowheadSpecIcon';
+import * as WowheadLinks from './WowheadLinks';
 
 export const components: MDXComponents = {
   Image,
@@ -25,4 +26,18 @@ export const components: MDXComponents = {
   Auras,
   Zephyr,
   WowheadSpecIcon,
+  ...Object.fromEntries(
+    Object.entries(WowheadLinks).map(([key, Component]) => {
+      return [
+        key,
+        (props) => {
+          return (
+            <>
+              <Component {...props} />{' '}
+            </>
+          );
+        },
+      ];
+    })
+  ),
 };

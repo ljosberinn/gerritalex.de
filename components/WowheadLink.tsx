@@ -1,23 +1,39 @@
 import { CustomLink } from './CustomLink';
 import { Image } from './Image';
 
-export type WowheadLinkProps = {
-  id: number;
-  kind: 'spell' | 'item' | 'npc' | 'achievement';
-  icon: string;
-  children: string;
-  branch?: 'ptr-2' | 'ptr' | 'classic';
+type Achievement = {
+  kind: 'achievement';
 };
 
-export function WowheadLink({ id, icon, children, kind, branch }: WowheadLinkProps) {
+type Spell = {
+  kind: 'spell';
+  icon: string;
+};
+
+type Npc = {
+  kind: 'npc';
+};
+
+type Item = {
+  kind: 'item';
+  icon: string;
+};
+
+export type WowheadLinkProps = {
+  id: number;
+  children: string;
+  branch?: 'ptr-2' | 'ptr' | 'classic';
+} & (Achievement | Spell | Npc | Item);
+
+export function WowheadLink({ id, children, kind, branch, ...props }: WowheadLinkProps) {
   return (
     <CustomLink
       href={`https://www.wowhead.com/${branch ? `${branch}/` : ''}${kind}=${id}`}
       className="inline-flex items-baseline gap-2"
     >
-      {icon ? (
+      {'icon' in props ? (
         <Image
-          src={`https://wow.zamimg.com/images/wow/icons/medium/${icon}.jpg`}
+          src={`https://wow.zamimg.com/images/wow/icons/medium/${props.icon}.jpg`}
           alt=""
           width="24"
           height="24"

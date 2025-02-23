@@ -2,8 +2,8 @@ import { DetailedHTMLProps, Fragment, HTMLAttributes } from 'react';
 import { WowheadIcon, WowheadIconProps } from '../WowheadIcon';
 import { WowheadLinkProps, WowheadLink } from '../WowheadLink';
 
-function getWowheadBranch(): WowheadLinkProps['branch'] {
-  if (new Date() >= new Date('2025-03-04T15:00:00Z')) {
+export function getWowheadBranch(): WowheadLinkProps['branch'] {
+  if (new Date() >= new Date('2025-02-25T15:00:00Z')) {
     return;
   }
 

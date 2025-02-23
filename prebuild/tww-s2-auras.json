@@ -451,7 +451,8 @@
       "type": "disease",
       "source": "theater-of-pain",
       "name": "Decaying Blight",
-      "icon": "ability_creature_disease_03"
+      "icon": "ability_creature_disease_03",
+      "notes": ["Interruptible"]
     },
     {
       "id": 341949,
