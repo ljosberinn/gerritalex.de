@@ -153,3 +153,89 @@ export function Scrapbomb() {
     </WowheadLink>
   );
 }
+
+export function RollingRubbish() {
+  return (
+    <WowheadLink kind="spell" branch={getWowheadBranch()} id={461536} icon="inv_misc_soccerball">
+      Rolling Rubbish
+    </WowheadLink>
+  );
+}
+
+export function PrototypePowercoil() {
+  return (
+    <WowheadLink
+      kind="spell"
+      branch={getWowheadBranch()}
+      id={1218706}
+      icon="ability_siege_engineer_magnetic_crush"
+    >
+      Prototype Powercoil
+    </WowheadLink>
+  );
+}
+
+export function Incinerator() {
+  return (
+    <WowheadLink
+      kind="spell"
+      branch={getWowheadBranch()}
+      id={464165}
+      icon="ability_ironmaidens_bombardment"
+    >
+      Incinerator
+    </WowheadLink>
+  );
+}
+
+export function ScrapRockets() {
+  return (
+    <WowheadLink
+      kind="spell"
+      branch={getWowheadBranch()}
+      id={1219386}
+      icon="ability_racial_rocketbarrage"
+    >
+      Scrap Rockets
+    </WowheadLink>
+  );
+}
+
+export function TrashCompactor() {
+  return (
+    <WowheadLink
+      kind="spell"
+      branch={getWowheadBranch()}
+      id={467135}
+      icon="spell_nature_unrelentingstorm"
+    >
+      Trash Compactor
+    </WowheadLink>
+  );
+}
+
+export function ElectromagneticSorting() {
+  return (
+    <WowheadLink
+      kind="spell"
+      branch={getWowheadBranch()}
+      id={464559}
+      icon="inv_10_engineering_manufacturedparts_mechanicalparts_color3"
+    >
+      Electromagnetic Sorting
+    </WowheadLink>
+  );
+}
+
+export function Overdrive() {
+  return (
+    <WowheadLink
+      kind="spell"
+      branch={getWowheadBranch()}
+      id={467117}
+      icon="spell_shaman_crashlightning"
+    >
+      Overdrive
+    </WowheadLink>
+  );
+}
