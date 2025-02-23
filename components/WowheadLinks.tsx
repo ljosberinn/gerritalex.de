@@ -67,7 +67,7 @@ export function Pyrotechnics() {
 
 export function DeepBreath() {
   return (
-    <WowheadLink id={4338740} kind="spell" icon="ability_evoker_deepbreath">
+    <WowheadLink id={433874} kind="spell" icon="ability_evoker_deepbreath">
       Deep Breath
     </WowheadLink>
   );
