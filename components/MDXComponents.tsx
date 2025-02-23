@@ -8,7 +8,7 @@ import { TableWrapper } from './TableWrapper';
 import { WowheadLink } from './WowheadLink';
 import { WowheadIcon } from './WowheadIcon';
 import { Auras } from './seasonal-content/Auras';
-import { Zephyr } from './seasonal-content/Zephyr';
+import { AoeSpells } from './seasonal-content/AoeSpells';
 import { WowheadSpecIcon } from './WowheadSpecIcon';
 import * as WowheadLinks from './WowheadLinks';
 
@@ -24,7 +24,7 @@ export const components: MDXComponents = {
   WowheadLink,
   WowheadIcon,
   Auras,
-  Zephyr,
+  AoeSpells,
   WowheadSpecIcon,
   ...Object.fromEntries(
     Object.entries(WowheadLinks).map(([key, Component]) => {

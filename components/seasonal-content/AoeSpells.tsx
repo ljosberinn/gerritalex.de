@@ -16,7 +16,7 @@ type ZephyrDataset = {
   'current-rotation': string[];
 };
 
-type ZephyrProps = {
+type AoeSpellsProps = {
   data: ZephyrDataset;
 };
 
@@ -29,7 +29,7 @@ function slugify(str: string) {
     .toLowerCase();
 }
 
-export function Zephyr({ data }: ZephyrProps) {
+export function AoeSpells({ data }: AoeSpellsProps) {
   useScript('https://wow.zamimg.com/js/tooltips.js');
 
   const currentRotation = new Set(data['current-rotation']);
