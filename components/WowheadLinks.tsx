@@ -1,4 +1,3 @@
-import { getWowheadBranch } from './seasonal-content/Spells';
 import { WowheadLink } from './WowheadLink';
 
 export function Dragonrage() {
@@ -59,7 +58,7 @@ export function MassDisintegrate() {
 
 export function Pyrotechnics() {
   return (
-    <WowheadLink id={1214688} kind="spell" icon="inv_wildfirebomb" branch={getWowheadBranch()}>
+    <WowheadLink id={1214688} kind="spell" icon="inv_wildfirebomb">
       Pyrotechnics
     </WowheadLink>
   );
@@ -75,12 +74,7 @@ export function DeepBreath() {
 
 export function StaticJolt() {
   return (
-    <WowheadLink
-      id={467297}
-      kind="spell"
-      icon="ability_thunderking_thunderstruck"
-      branch={getWowheadBranch()}
-    >
+    <WowheadLink id={467297} kind="spell" icon="ability_thunderking_thunderstruck">
       Static Jolt
     </WowheadLink>
   );
@@ -88,7 +82,7 @@ export function StaticJolt() {
 
 export function Torq() {
   return (
-    <WowheadLink id={229177} kind="npc" branch={getWowheadBranch()}>
+    <WowheadLink id={229177} kind="npc">
       Torq
     </WowheadLink>
   );
@@ -96,7 +90,7 @@ export function Torq() {
 
 export function Flarendo() {
   return (
-    <WowheadLink id={229181} kind="npc" branch={getWowheadBranch()}>
+    <WowheadLink id={229181} kind="npc">
       Flarendo
     </WowheadLink>
   );
@@ -104,12 +98,7 @@ export function Flarendo() {
 
 export function MoltenPhlegm() {
   return (
-    <WowheadLink
-      id={1213688}
-      kind="spell"
-      icon="inv_11_arenaboss_jawsplosion"
-      branch={getWowheadBranch()}
-    >
+    <WowheadLink id={1213688} kind="spell" icon="inv_11_arenaboss_jawsplosion">
       Molten Phlegm
     </WowheadLink>
   );
@@ -117,12 +106,7 @@ export function MoltenPhlegm() {
 
 export function GalvanizedSpite() {
   return (
-    <WowheadLink
-      id={472223}
-      kind="spell"
-      icon="inv_11_arenaboss_galvanizedspite"
-      branch={getWowheadBranch()}
-    >
+    <WowheadLink id={472223} kind="spell" icon="inv_11_arenaboss_galvanizedspite">
       Galvanized Spite
     </WowheadLink>
   );
@@ -130,12 +114,7 @@ export function GalvanizedSpite() {
 
 export function StaticCharge() {
   return (
-    <WowheadLink
-      id={473951}
-      kind="spell"
-      icon="spell_shaman_staticshock"
-      branch={getWowheadBranch()}
-    >
+    <WowheadLink id={473951} kind="spell" icon="spell_shaman_staticshock">
       Static Charge
     </WowheadLink>
   );
@@ -143,12 +122,7 @@ export function StaticCharge() {
 
 export function Scrapbomb() {
   return (
-    <WowheadLink
-      id={473650}
-      icon="inv_10_engineering2_boxofbombs_friendly_color1"
-      kind="spell"
-      branch={getWowheadBranch()}
-    >
+    <WowheadLink id={473650} icon="inv_10_engineering2_boxofbombs_friendly_color1" kind="spell">
       Scrapbomb
     </WowheadLink>
   );
@@ -156,7 +130,7 @@ export function Scrapbomb() {
 
 export function RollingRubbish() {
   return (
-    <WowheadLink kind="spell" branch={getWowheadBranch()} id={461536} icon="inv_misc_soccerball">
+    <WowheadLink kind="spell" id={461536} icon="inv_misc_soccerball">
       Rolling Rubbish
     </WowheadLink>
   );
@@ -164,12 +138,7 @@ export function RollingRubbish() {
 
 export function PrototypePowercoil() {
   return (
-    <WowheadLink
-      kind="spell"
-      branch={getWowheadBranch()}
-      id={1218706}
-      icon="ability_siege_engineer_magnetic_crush"
-    >
+    <WowheadLink kind="spell" id={1218706} icon="ability_siege_engineer_magnetic_crush">
       Prototype Powercoil
     </WowheadLink>
   );
@@ -177,12 +146,7 @@ export function PrototypePowercoil() {
 
 export function Incinerator() {
   return (
-    <WowheadLink
-      kind="spell"
-      branch={getWowheadBranch()}
-      id={464165}
-      icon="ability_ironmaidens_bombardment"
-    >
+    <WowheadLink kind="spell" id={464165} icon="ability_ironmaidens_bombardment">
       Incinerator
     </WowheadLink>
   );
@@ -190,12 +154,7 @@ export function Incinerator() {
 
 export function ScrapRockets() {
   return (
-    <WowheadLink
-      kind="spell"
-      branch={getWowheadBranch()}
-      id={1219386}
-      icon="ability_racial_rocketbarrage"
-    >
+    <WowheadLink kind="spell" id={1219386} icon="ability_racial_rocketbarrage">
       Scrap Rockets
     </WowheadLink>
   );
@@ -203,12 +162,7 @@ export function ScrapRockets() {
 
 export function TrashCompactor() {
   return (
-    <WowheadLink
-      kind="spell"
-      branch={getWowheadBranch()}
-      id={467135}
-      icon="spell_nature_unrelentingstorm"
-    >
+    <WowheadLink kind="spell" id={467135} icon="spell_nature_unrelentingstorm">
       Trash Compactor
     </WowheadLink>
   );
@@ -218,7 +172,6 @@ export function ElectromagneticSorting() {
   return (
     <WowheadLink
       kind="spell"
-      branch={getWowheadBranch()}
       id={464559}
       icon="inv_10_engineering_manufacturedparts_mechanicalparts_color3"
     >
@@ -229,13 +182,112 @@ export function ElectromagneticSorting() {
 
 export function Overdrive() {
   return (
-    <WowheadLink
-      kind="spell"
-      branch={getWowheadBranch()}
-      id={467117}
-      icon="spell_shaman_crashlightning"
-    >
+    <WowheadLink kind="spell" id={467117} icon="spell_shaman_crashlightning">
       Overdrive
+    </WowheadLink>
+  );
+}
+
+export function BleedingEdge() {
+  return (
+    <WowheadLink kind="spell" id={1215218} icon="ability_siege_engineer_pattern_recognition">
+      Bleeding Edge
+    </WowheadLink>
+  );
+}
+
+export function SonicBaBoom() {
+  return (
+    <WowheadLink kind="spell" id={465232} icon="inv_sonic_debuff">
+      Sonic Ba-Boom
+    </WowheadLink>
+  );
+}
+
+export function UnstableExplosion() {
+  return (
+    <WowheadLink kind="spell" id={1216406} icon="spell_shaman_improvedfirenova">
+      Unstable Explosion
+    </WowheadLink>
+  );
+}
+
+export function ProductDeployment() {
+  return (
+    <WowheadLink kind="spell" id={1216411} icon="inv_10_engineering2_boxofbombs_friendly_color1">
+      Product Deployment
+    </WowheadLink>
+  );
+}
+
+export function UnstableShrapnel() {
+  return (
+    <WowheadLink kind="spell" id={1218342} icon="ability_deathwing_shrapnel">
+      Unstable Shrapnel
+    </WowheadLink>
+  );
+}
+
+export function Voidsplosion() {
+  return (
+    <WowheadLink kind="spell" id={1218319} icon="ability_priest_voidentropy">
+      Voidsplosion
+    </WowheadLink>
+  );
+}
+
+export function PayLine() {
+  return (
+    <WowheadLink kind="spell" id={460181} icon="inv_10_fishing_dragonislescoins_gold">
+      Pay Line
+    </WowheadLink>
+  );
+}
+
+export function HighRoller() {
+  return (
+    <WowheadLink kind="spell" id={460444} icon="spell_misc_emotionhappy">
+      High Roller
+    </WowheadLink>
+  );
+}
+
+export function FlameAndCoin() {
+  return (
+    <WowheadLink kind="spell" id={461390} icon="ability_creature_cursed_01">
+      Flame and Coin
+    </WowheadLink>
+  );
+}
+
+export function ElectricBlast() {
+  return (
+    <WowheadLink kind="spell" id={460873} icon="spell_shaman_staticshock">
+      Electric Blast
+    </WowheadLink>
+  );
+}
+
+export function CoinMagnet() {
+  return (
+    <WowheadLink kind="spell" id={474665} icon="inv_ore_gold_nugget">
+      Coin Magnet
+    </WowheadLink>
+  );
+}
+
+export function FoulExhaust() {
+  return (
+    <WowheadLink kind="spell" id={460164} icon="inv_elemental_mote_shadow01">
+      Foul Exhaust
+    </WowheadLink>
+  );
+}
+
+export function HotHotHeat() {
+  return (
+    <WowheadLink kind="spell" id={465388} icon="spell_fire_felflamering_red">
+      Hot Hot Heat
     </WowheadLink>
   );
 }

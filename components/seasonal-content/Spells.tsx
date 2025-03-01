@@ -2,14 +2,6 @@ import { DetailedHTMLProps, Fragment, HTMLAttributes } from 'react';
 import { WowheadIcon, WowheadIconProps } from '../WowheadIcon';
 import { WowheadLinkProps, WowheadLink } from '../WowheadLink';
 
-export function getWowheadBranch(): WowheadLinkProps['branch'] {
-  if (new Date() >= new Date('2025-02-25T15:00:00Z')) {
-    return;
-  }
-
-  return 'ptr-2';
-}
-
 export type SpellsProps = {
   spells: {
     id: number;
@@ -36,7 +28,7 @@ export function Spells({ spells }: SpellsProps) {
       {spells.map((spell) => {
         return (
           <li key={spell.id}>
-            <WowheadLink branch={getWowheadBranch()} kind="spell" id={spell.id} icon={spell.icon}>
+            <WowheadLink kind="spell" id={spell.id} icon={spell.icon}>
               {spell.name}
             </WowheadLink>
             {spell.notes ? (
@@ -55,7 +47,7 @@ export function Spells({ spells }: SpellsProps) {
                               {typeof notePart === 'string' ? (
                                 notePart
                               ) : notePart.component === 'WowheadLink' ? (
-                                <WowheadLink branch={getWowheadBranch()} {...notePart.props} />
+                                <WowheadLink {...notePart.props} />
                               ) : notePart.component === 'WowheadIcon' ? (
                                 <WowheadIcon {...notePart.props} />
                               ) : notePart.component === 'b' ? (
