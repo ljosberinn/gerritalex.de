@@ -9,6 +9,7 @@ const ContentSecurityPolicy = `
   img-src * blob: data:;
   media-src *.s3.amazonaws.com 'self';
   connect-src *;
+  frame-src clips.twitch.tv;
   font-src 'self';
 `;
 
