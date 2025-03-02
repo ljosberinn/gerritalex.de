@@ -1,0 +1,164 @@
+---
+title: Highlighter WeakAura Documentation
+date: '2025-03-02'
+tags: ['wow', 'lua']
+summary: 'How to setup my Highlighter WeakAura'
+authors: ['default']
+images: ['/static/images/highlighter/banner.png']
+layout: PostBanner
+includeImageInPreview: true
+---
+
+Photo by [Nathan Jennings](https://unsplash.com/@nathjennings_?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on [Unsplash](https://unsplash.com/photos/a-lighthouse-under-a-night-sky-filled-with-stars-VsPsf4F5Pi0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash).  
+
+## Table of Contents
+
+<TOCInline toc={props.toc} exclude="Table of Contents" />
+
+This is the documentation for my [Highlighter WeakAura](https://wago.io/ZaoqRVhYX).
+
+<script src="https://wow.zamimg.com/js/tooltips.js"></script>
+
+## What's a "Highlighter WeakAura"?
+
+Initially conceived as a theorycrafting / debugging tool for Alpha/Beta/PTR content, it's a tool listening to the combat log to _highlight_ specific abilities only.
+
+> What does highlighting mean, exactly?
+
+Well, it's as simple as it sounds: show the icon of the ability and how much it did. This works for both damage and healing done, although the primary use case has been damage.
+
+<div className="flex justify-center">
+    ![](https://placehold.co/200?text=?&font=roboto)
+</div>
+
+> Ok cool, but where's the difference to the default UI scrolling combat text, MSBT, Details, Logs, etc.?
+
+- the default UI has no customizability and numbers may appear in any position they want.
+- MSBT hasn't been updated for a while and especially by now, the number filter values are way too low so it's just spammy noise
+  - here's a side by side comparison of how it looked with MSBT on the left, and an implementation of this WeakAura on the right:
+    <div className="-mx-2 flex flex-wrap overflow-hidden xl:-mx-2">
+        <div className="my-1 w-full overflow-hidden px-2 xl:my-1 xl:w-1/2 xl:px-2">
+            ![](/static/images/highlighter/highlighter-comparison-msbt.png)
+        </div>
+        <div className="my-1 w-full overflow-hidden px-2 xl:my-1 xl:w-1/2 xl:px-2">
+            ![](/static/images/highlighter/highlighter-comparison-msbt-2.png)
+        </div>
+    </div>
+- Details can be valuable for this, but you wouldn't want to look at Details in real time during a fight.
+- Logs are the tool for post-fight analysis. Can't look at it in real time at all however for obvious reasons.
+
+Since this implementation is a WeakAura, you can visually alter and position it in any way you'd like.
+
+But wait, there's more! Features none of the above support at all or only partially:
+
+- [x] combine an arbitrary amount of ids into one
+- [x] override shown icon
+- [x] reset individual ability values on a custom-defined per-cast basis
+- [x] ability to single out numbers done only while a certain buff is active on you or debuff is active on the target
+- [x] ability to calculate throughput increases by modifiers such as <WowheadLink icon="ability_evoker_chargedblast" id={370452} kind="spell">Shattering Star</WowheadLink>
+- [x] it's a WeakAura and when you export it, all your configuration is included!
+
+> Uuuuh, performance footprint?
+
+Surprisingly low, but obviously not zero. It's built with performance in mind, profiled from the start on. I have it disabled in raid, not because of performance problems but because I don't care about it there. I'd expect it to be more impactful there naturally.
+
+## Showcases via Clips
+
+- [Critcake, Arms Warrior](https://www.twitch.tv/critcakeeu/clip/AltruisticYummyShrimpPanicVis-zPj_3tUrS4LAEQiP)
+  - above the target/below the focus frame
+  - display duration seems to be reduced to 3 seconds
+  - most abilities, like Overpower, Mortal Strike have their cast id added so values shown are on a per-cast basis
+- [Nomeratur, Arms Warrior](https://www.twitch.tv/nomeratur/clip/IgnorantRoundAsparagusPhilosoraptor-oSmMzSxhhKq_pC5w)
+  - above the target frame
+  - display duration seems to  be reduced to 3 seconds
+- [Jixzy, Destruction Warlock](https://www.twitch.tv/onetrickponyr/clip/ResilientGleamingRingKappaWealth-A9S0gDhLQxXDbA_x?filter=clips&range=all&sort=time)
+  - above details
+  - default settings
+  - combined all damage sources of `Dimensional Rift`  
+- [Xephyris, Augmentation Evoker](https://www.twitch.tv/xepher_1s/clip/BlushingDiligentBaboonSmoocherZ-X72wOUvR3C39LC9k)
+  - centered above the spec auras
+  - `Own only` is disabled for `Breath of Eons` to be able to see party damage too
+
+## Setup
+
+A plethora of features was mentioned above and this documentation will _eventually_ cover them all. For now, we'll focus on the basics only.
+
+### Example 1: Living Flame
+
+<WowheadLink icon="ability_evoker_livingflame" id={361500} kind="spell">Living Flame</WowheadLink> is a rotational filler for all Evoker specializations. You can hard cast it or spend procs to instant cast it.
+
+It doesn't do much damage, but is as simple as it gets as example.
+
+As first step, navigate to the `Custom Options` tab of the WeakAura and click `Add Entry`:
+
+<div className="flex justify-center">
+    ![](/static/images/highlighter/highlighter-instructions-1.png)
+</div>
+
+Give this entry a name. You can of course name it whatever you want but as best practice I recommend giving it a clear and recognizable name.
+
+<div className="flex justify-center">
+    ![](/static/images/highlighter/highlighter-instructions-2.png)
+</div>
+
+- `Active` allows you to toggle this entry without having to remove it entirely. By default this is on.
+- `Own only` allows you to include _other_ peoples abilities in the calculations. By default this is off, its use case is extremely limited to e.g. `Breath of Eons`-like abilities.
+
+<div className="flex justify-center">
+    ![](/static/images/highlighter/highlighter-instructions-3.png)
+</div>
+
+Everything here stays as its defaults for this case.
+
+- `Cast Spell ID` refers to the spell id of the cast that should _reset_ this counter
+- `Icon ID` allows you to override the display icon - some abilities, especially trinkets, use different icons than what you may be used to.
+- `Has Dots` surfaces a performance optimization under the hood. If none of the added abilities has dots, all periodic events will automatically be ignored.
+  - naturally, enable this only if your ability actually _has_ dots
+- `Has Hots` works identical to `Has Dots`... but for hots.
+<div className="flex justify-center">
+    ![](/static/images/highlighter/highlighter-instructions-4.png)
+</div>
+
+<WowheadLink icon="ability_evoker_livingflame" id={361500} kind="spell">Living Flame</WowheadLink> can do both damage and healing. For this example we only want to highlight damage done, so we need to find out its damage id.
+
+How do we get ids?
+- all tooltips in logs link to wowhead for the corresponding ability and tab. note the URL in the bottom, it includes the id:
+    <div className="flex justify-center">
+        ![](/static/images/highlighter/highlighter-instructions-5.png)
+    </div>
+- using Details and [idTip](https://www.curseforge.com/wow/addons/idtip), you can see it in the damage breakdown:
+    <div className="flex justify-center">
+        ![](/static/images/highlighter/highlighter-instructions-6.png)
+    </div>
+
+Which allows us to add this _damage_ entry:
+<div className="flex justify-center">
+    ![](/static/images/highlighter/highlighter-instructions-7.png)
+</div>
+
+Now all that is left to do here is to actually load this ability for this spec, another performance optimization, but it also allows you to _share_ entries, e.g. trinkets you have on multiple characters and/or specs.
+
+<div className="flex justify-center">
+    ![](/static/images/highlighter/highlighter-instructions-8.png)
+</div>
+
+And voilá, we have our first working entry!
+
+<div className="flex justify-center">
+  ![](/static/images/highlighter/highlighter-instructions-9.png)
+</div>
+
+You've already seen the default duration value of 5 seconds at the top before adding any entry - this now becomes problematic with a spammable ability such as <WowheadLink icon="ability_evoker_livingflame" id={361500} kind="spell">Living Flame</WowheadLink>.
+It would make sense for it to reset its value on every cast.
+
+For this, we have two options:
+- use the id from the spellbook ingame. this works for most abilities but... let's say spells in World of Warcraft work in miraculous ways, so if you want to avoid confusions, just use logs.
+  ![](/static/images/highlighter/highlighter-instructions-11.png)
+- in logs, you'd have to swap to the `Casts` tab and look for <WowheadLink icon="ability_evoker_livingflame" id={361500} kind="spell">Living Flame</WowheadLink> there, then proceed as above hovering or clicking the icon.
+  ![](/static/images/highlighter/highlighter-instructions-10.png)
+
+Now this works as expected:
+
+<div className="flex justify-center">
+    <video src="/static/images/highlighter/highlighter-living-flame-cast.mp4" controls="controls" muted="muted" loop="loop" />
+</div>
