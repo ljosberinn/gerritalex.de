@@ -291,3 +291,35 @@ export function HotHotHeat() {
     </WowheadLink>
   );
 }
+
+export function ElementalCalamity() {
+  return (
+    <WowheadLink kind="spell" id={468665} icon="spell_fire_masterofelements">
+      Elemental Calamity
+    </WowheadLink>
+  );
+}
+
+export function UncontrolledBurn() {
+  return (
+    <WowheadLink kind="spell" id={469719} icon="ability_siege_engineer_detonate">
+      Uncontrolled Burn
+    </WowheadLink>
+  );
+}
+
+export function EarthshakerGaol() {
+  return (
+    <WowheadLink kind="spell" id={1220769} icon="inv_elementalearth2">
+      Earthshaker Gaol
+    </WowheadLink>
+  );
+}
+
+export function Hover() {
+  return (
+    <WowheadLink kind="spell" id={358267} icon="ability_evoker_hover">
+      Hover
+    </WowheadLink>
+  );
+}
