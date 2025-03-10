@@ -10,7 +10,7 @@ const MAX_DISPLAY = 10;
 export default function Home({ posts }) {
   return (
     <RestrainedMaxWidth>
-      <div className="pt-6">
+      <div className="px-2 pt-6">
         <h1 className="pb-6 text-3xl leading-9 font-bold tracking-tight text-gray-700 sm:text-4xl sm:leading-10 md:text-4xl md:leading-14 dark:text-gray-300">
           Hi, I'm Xeph!
         </h1>
@@ -46,7 +46,7 @@ export default function Home({ posts }) {
                         background-repeat: no-repeat;
                         background-size: cover;
                         background-position: center;
-                        filter: grayscale(100%);
+                        filter: grayscale(25%);
                         opacity: 0.15;
                         transition: opacity 0.25s ease-in-out;
                       }

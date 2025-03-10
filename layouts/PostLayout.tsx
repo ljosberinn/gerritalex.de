@@ -12,13 +12,6 @@ import { formatDate } from 'pliny/utils/formatDate';
 
 const editUrl = (path: string) => `${siteMetadata.siteRepo}/blob/master/data/${path}`;
 
-const postDateTemplate: Intl.DateTimeFormatOptions = {
-  weekday: 'long',
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
-};
-
 interface LayoutProps {
   content: CoreContent<Blog>;
   authorDetails: CoreContent<Authors>[];
