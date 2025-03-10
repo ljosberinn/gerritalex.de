@@ -323,3 +323,79 @@ export function Hover() {
     </WowheadLink>
   );
 }
+
+export function ScatterblastCanisters() {
+  return (
+    <WowheadLink kind="spell" id={466419} icon="spell_mage_infernoblast">
+      Scatterblast Canisters
+    </WowheadLink>
+  );
+}
+
+export function GallybuxFinaleBlast() {
+  return (
+    <WowheadLink kind="spell" id={1219333} icon="spell_nature_lightningoverload">
+      Gallybux Finale Blast
+    </WowheadLink>
+  );
+}
+
+export function Rescue() {
+  return (
+    <WowheadLink kind="spell" id={370665} icon="ability_evoker_flywithme">
+      Rescue
+    </WowheadLink>
+  );
+}
+
+export function TwinGuardian() {
+  return (
+    <WowheadLink kind="spell" id={370889} icon="ability_skyreach_shielded">
+      Twin Guardian
+    </WowheadLink>
+  );
+}
+
+export function FusedCanisters() {
+  return (
+    <WowheadLink kind="spell" id={466489} icon="inv_misc_blackironbomb">
+      Fused Canisters
+    </WowheadLink>
+  );
+}
+
+export function TickTockCanisters() {
+  return (
+    <WowheadLink kind="spell" id={466578} icon="inv_eng_bombstonestun">
+      Tick-Tock Canisters
+    </WowheadLink>
+  );
+}
+
+export function TotalDestruction() {
+  return (
+    <WowheadLink kind="spell" id={1214448} icon="ui_majorfactions_rocket">
+      TOTAL DESTRUCTION!!!
+    </WowheadLink>
+  );
+}
+
+export function CanisterDetonation() {
+  return (
+    <WowheadLink kind="spell" id={474447} icon="inv_elemental_primal_shadow">
+      Canister Detonation
+    </WowheadLink>
+  );
+}
+
+export function GigaCoils() {
+  return (
+    <WowheadLink
+      kind="spell"
+      id={469295}
+      icon="inv_10_engineering_manufacturedparts_electricalparts_color1"
+    >
+      Giga Coils
+    </WowheadLink>
+  );
+}
