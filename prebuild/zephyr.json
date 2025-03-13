@@ -518,13 +518,6 @@
       "type": "prioress-murrpray"
     },
     {
-      "id": 437733,
-      "name": "Boiling Flames",
-      "icon": "ability_mage_firestarter",
-      "source": "cinderbrew-meadery",
-      "type": "trash"
-    },
-    {
       "id": 463206,
       "name": "Tenderize",
       "icon": "spell_nature_earthquake",
