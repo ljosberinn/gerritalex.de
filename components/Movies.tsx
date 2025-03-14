@@ -25,29 +25,55 @@ function filterToFavorites(data: MoviesType[]) {
 
 function filterToYearDesc(data: MoviesType[]) {
   return data.sort((a, b) => {
-    if (a.metadata.release.year !== b.metadata.release.year) {
-      return b.metadata.release.year - a.metadata.release.year;
+    const aYear = a.metadata.release.year ?? new Date().getFullYear();
+    const bYear = b.metadata.release.year ?? new Date().getFullYear();
+
+    if (aYear !== bYear) {
+      return bYear - aYear;
     }
 
-    if (a.metadata.release.month !== b.metadata.release.month) {
-      return b.metadata.release.month - a.metadata.release.month;
+    const aMonth = a.metadata.release.month ?? 12;
+    const bMonth = b.metadata.release.month ?? 12;
+
+    if (aMonth !== bMonth) {
+      return bMonth - aMonth;
     }
 
-    return b.metadata.release.day - a.metadata.release.day;
+    const aDay = a.metadata.release.day ?? 31;
+    const bDay = b.metadata.release.day ?? 31;
+
+    if (aDay !== bDay) {
+      return bDay - aDay;
+    }
+
+    return 0;
   });
 }
 
 function filterToYearAsc(data: MoviesType[]) {
   return data.sort((a, b) => {
-    if (a.metadata.release.year !== b.metadata.release.year) {
-      return a.metadata.release.year - b.metadata.release.year;
+    const aYear = a.metadata.release.year ?? new Date().getFullYear();
+    const bYear = b.metadata.release.year ?? new Date().getFullYear();
+
+    if (aYear !== bYear) {
+      return aYear - bYear;
     }
 
-    if (a.metadata.release.month !== b.metadata.release.month) {
-      return a.metadata.release.month - b.metadata.release.month;
+    const aMonth = a.metadata.release.month ?? 12;
+    const bMonth = b.metadata.release.month ?? 12;
+
+    if (aMonth !== bMonth) {
+      return aMonth - bMonth;
     }
 
-    return a.metadata.release.day - b.metadata.release.day;
+    const aDay = a.metadata.release.day ?? 31;
+    const bDay = b.metadata.release.day ?? 31;
+
+    if (aDay !== bDay) {
+      return aDay - bDay;
+    }
+
+    return 0;
   });
 }
 

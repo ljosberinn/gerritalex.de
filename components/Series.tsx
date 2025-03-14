@@ -29,29 +29,55 @@ function filterToAbandoned(data: SeriesType[]) {
 
 function filterToYearDesc(data: SeriesType[]) {
   return data.sort((a, b) => {
-    if (a.metadata.release.year !== b.metadata.release.year) {
-      return b.metadata.release.year - a.metadata.release.year;
+    const aYear = a.metadata.release.year ?? new Date().getFullYear();
+    const bYear = b.metadata.release.year ?? new Date().getFullYear();
+
+    if (aYear !== bYear) {
+      return bYear - aYear;
     }
 
-    if (a.metadata.release.month !== b.metadata.release.month) {
-      return b.metadata.release.month - a.metadata.release.month;
+    const aMonth = a.metadata.release.month ?? 12;
+    const bMonth = b.metadata.release.month ?? 12;
+
+    if (aMonth !== bMonth) {
+      return bMonth - aMonth;
     }
 
-    return b.metadata.release.day - a.metadata.release.day;
+    const aDay = a.metadata.release.day ?? 31;
+    const bDay = b.metadata.release.day ?? 31;
+
+    if (aDay !== bDay) {
+      return bDay - aDay;
+    }
+
+    return 0;
   });
 }
 
 function filterToYearAsc(data: SeriesType[]) {
   return data.sort((a, b) => {
-    if (a.metadata.release.year !== b.metadata.release.year) {
-      return a.metadata.release.year - b.metadata.release.year;
+    const aYear = a.metadata.release.year ?? new Date().getFullYear();
+    const bYear = b.metadata.release.year ?? new Date().getFullYear();
+
+    if (aYear !== bYear) {
+      return aYear - bYear;
     }
 
-    if (a.metadata.release.month !== b.metadata.release.month) {
-      return a.metadata.release.month - b.metadata.release.month;
+    const aMonth = a.metadata.release.month ?? 12;
+    const bMonth = b.metadata.release.month ?? 12;
+
+    if (aMonth !== bMonth) {
+      return aMonth - bMonth;
     }
 
-    return a.metadata.release.day - b.metadata.release.day;
+    const aDay = a.metadata.release.day ?? 31;
+    const bDay = b.metadata.release.day ?? 31;
+
+    if (aDay !== bDay) {
+      return aDay - bDay;
+    }
+
+    return 0;
   });
 }
 
@@ -165,7 +191,8 @@ export function Series({ data }: SeriesProps) {
           </thead>
           <tbody className="bg-white dark:bg-slate-800">
             {filteredData.map((series) => {
-              const date = `${series.metadata.release.year}-${series.metadata.release.month.toString().padStart(2, '0  ')}-${series.metadata.release.day.toString().padStart(2, '0')}`;
+              const date = `${series.metadata.release.year ?? new Date().getFullYear()}-${(series.metadata.release.month ?? 12).toString().padStart(2, '0  ')}-${(series.metadata.release.day ?? 31).toString().padStart(2, '0')}`;
+
               return (
                 <tr key={series.id}>
                   <td className="border-b border-slate-100 p-2 text-slate-500 md:p-2 xl:pl-4 dark:border-slate-700 dark:text-slate-400">
