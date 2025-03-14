@@ -219,7 +219,7 @@
     },
     {
       "id": 439010,
-      "type": "trash",
+      "type": "the-darkness",
       "name": "Drain Light",
       "icon": "ability_demonhunter_darkness",
       "source": "darkflame-cleft"
@@ -516,13 +516,6 @@
       "icon": "inv_ability_holyfire_buff",
       "source": "priory-of-the-sacred-flame",
       "type": "prioress-murrpray"
-    },
-    {
-      "id": 437733,
-      "name": "Boiling Flames",
-      "icon": "ability_mage_firestarter",
-      "source": "cinderbrew-meadery",
-      "type": "trash"
     },
     {
       "id": 463206,
