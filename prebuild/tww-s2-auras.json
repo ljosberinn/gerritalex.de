@@ -35,6 +35,94 @@
   },
   "spells": [
     {
+      "id": 442589,
+      "type": "magic",
+      "source": "cinderbrew-meadery",
+      "icon": "inv_cooking_80_honeyglazedhaunch",
+      "name": "Beeswax",
+      "notes": ["Avoidable by not standing in bad."]
+    },
+    {
+      "id": 463061,
+      "type": "enrage",
+      "source": "operation-floodgate",
+      "icon": "ability_druid_challangingroar",
+      "name": "Bloodthirsty Cackle",
+      "notes": ["Interruptible"]
+    },
+    {
+      "id": 331510,
+      "type": "enrage",
+      "source": "theater-of-pain",
+      "icon": "spell_shadow_deathpact",
+      "name": "Death Wish"
+    },
+    {
+      "id": 262092,
+      "type": "enrage",
+      "source": "the-motherlode",
+      "icon": "ability_warrior_intensifyrage",
+      "name": "Inhale Vapors"
+    },
+    {
+      "id": 333241,
+      "type": "enrage",
+      "source": "theater-of-pain",
+      "icon": "ability_druid_enrage",
+      "name": "Raging Tantrum",
+      "notes": ["Soothing this instantly stops party-wide AoE damage"]
+    },
+    {
+      "id": 441408,
+      "type": "enrage",
+      "source": "cinderbrew-meadery",
+      "icon": "ability_fomor_boss_shout",
+      "name": "Thirsty"
+    },
+    {
+      "id": 1213139,
+      "type": "enrage",
+      "name": "Overtime!",
+      "icon": "achievement_guildperk_workingovertime_rank2",
+      "source": "the-motherlode"
+    },
+    {
+      "id": 441214,
+      "type": "enrage",
+      "source": "cinderbrew-meadery",
+      "icon": "inv_drink_13",
+      "name": "Spill Drink"
+    },
+    {
+      "id": 441353,
+      "type": "enrage",
+      "source": "cinderbrew-meadery",
+      "icon": "ability_druid_ferociousbite",
+      "name": "Bee-stial Wrath"
+    },
+    {
+      "id": 425704,
+      "type": "enrage",
+      "source": "darkflame-cleft",
+      "icon": "spell_shadow_unholyfrenzy",
+      "name": "Enrage"
+    },
+    {
+      "id": 424650,
+      "type": "enrage",
+      "source": "darkflame-cleft",
+      "icon": "spell_nzinsanity_panicattack",
+      "name": "Panicked!"
+    },
+    {
+      "id": 427260,
+      "type": "enrage",
+      "source": "the-rookery",
+      "icon": "ability_hunter_beasttaming",
+      "name": "Lightning Surge",
+      "notes": ["Interruptible"]
+    },
+    {
       "id": 434773,
       "type": "bleed",
       "source": "cinderbrew-meadery",
@@ -94,7 +182,7 @@
       "name": "Crude Weapons",
       "icon": "inv_axe_1h_miningpick_a_01",
       "notes": [
-        "Fast stacking tank debuff that is entirely irrelevant on low stacks. wouldn't consider removing below 15 stacks",
+        "Fast stacking debuff that is entirely irrelevant on low stacks. wouldn't consider removing below 15 stacks",
         "Applied by autohits of Menial Laborers",
         [
           "Dangerous in conjunction with the disease ",
@@ -102,29 +190,58 @@
             "component": "WowheadLink",
             "props": { "id": 427929, "kind": "spell", "children": "Nasty Nibble" }
           }
+        ],
+        [
+          {
+            "component": "i",
+            "props": { "children": "Also" }
+          },
+          " applied during ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 210153, "kind": "npc", "children": "Ol' Waxbeard" }
+          },
+          " (first boss) by adds on non-tanks too if meleed during the ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 423693, "kind": "spell", "children": "Luring Candleflame" }
+          },
+          " fixate"
         ]
       ]
     },
     {
       "id": 1215411,
       "type": "bleed",
-      "source": "operation-mechagon-workshop",
+      "source": "the-motherlode",
       "name": "Puncture",
-      "icon": "spell_shadow_lifedrain"
-    },
-    {
-      "id": 293670,
-      "type": "bleed",
-      "source": "operation-mechagon-workshop",
-      "name": "Chainblade",
-      "icon": "ability_rogue_garrote"
+      "icon": "spell_shadow_lifedrain",
+      "notes": [
+        [
+          "Moderately ticking tank debuff via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 136643, "kind": "npc", "children": "Azerite Extractor" }
+          }
+        ]
+      ]
     },
     {
       "id": 468631,
       "type": "bleed",
       "source": "operation-floodgate",
       "name": "Harpoon",
-      "icon": "inv_polearm_2h_kultirasharpoon_a_01"
+      "icon": "inv_polearm_2h_kultirasharpoon_a_01",
+      "notes": [
+        "Interruptible",
+        [
+          "Grips you towards the casting ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 231496, "kind": "npc", "children": "Venture Co. Diver" }
+          }
+        ]
+      ]
     },
     {
       "id": 1213803,
@@ -132,7 +249,10 @@
       "source": "operation-floodgate",
       "name": "Nailed",
       "icon": "inv_eng_puresteelbolts",
-      "notes": ["Roots"]
+      "notes": [
+        "Roots",
+        "You can blink out of it but you stay rooted. Evoker breath variants cannot be casted to free you from this either"
+      ]
     },
     {
       "id": 427635,
@@ -168,7 +288,8 @@
             "props": { "id": 211291, "kind": "npc", "children": "Sergeant Shaynemail" }
           },
           ", miniboss"
-        ]
+        ],
+        "Prefers dps"
       ]
     },
     {
@@ -204,7 +325,7 @@
       "icon": "inv_artifact_bloodoftheassassinated",
       "notes": [
         [
-          "Stacking debuff on tank via ",
+          "Stacking debuff via ",
           {
             "component": "WowheadLink",
             "props": { "id": 129802, "kind": "npc", "children": "Earthrager" }
@@ -241,7 +362,7 @@
       "source": "theater-of-pain",
       "name": "Bone Spear",
       "icon": "ability_maldraxxus_rogue",
-      "notes": ["Interruptible", "oneshots non-tanks in high keys"]
+      "notes": ["Interruptible", "Oneshots non-tanks in high keys"]
     },
     {
       "id": 333861,
@@ -263,17 +384,9 @@
           },
           " minibosses"
         ],
+        "Targets randomly",
+        "Can be line-of-sighted, does not recast",
         "Cleave avoidable by not stacking"
-      ]
-    },
-    {
-      "id": 332836,
-      "type": "bleed",
-      "source": "theater-of-pain",
-      "name": "Chop",
-      "icon": "warrior_talent_icon_mastercleaver",
-      "notes": [
-        "Tankbuster, used to be outrangeable in Shadowlands and wouldn't recast. range seems unchanged, so maybe still possible"
       ]
     },
     {
@@ -306,7 +419,8 @@
       "type": "poison",
       "source": "the-motherlode",
       "name": "Toxic Blades",
-      "icon": "ability_poisons"
+      "icon": "ability_poisons",
+      "notes": ["Interruptible"]
     },
     {
       "id": 262270,
@@ -333,35 +447,12 @@
       ]
     },
     {
-      "id": 1215415,
-      "type": "disease",
-      "source": "operation-mechagon-workshop",
-      "name": "Sticky Sludge",
-      "icon": "spell_yorsahj_bloodboil_black"
-    },
-    {
-      "id": 320248,
-      "type": "disease",
-      "source": "theater-of-pain",
-      "name": "Genetic Alteration",
-      "icon": "spell_deathknight_necroticplague",
-      "notes": [
-        [
-          "Via ",
-          {
-            "component": "WowheadLink",
-            "props": { "id": 164463, "kind": "npc", "children": "Paceran the Virulent" }
-          },
-          ", first boss"
-        ]
-      ]
-    },
-    {
       "id": 330700,
       "type": "disease",
       "source": "theater-of-pain",
       "name": "Decaying Blight",
-      "icon": "ability_creature_disease_03"
+      "icon": "ability_creature_disease_03",
+      "notes": ["Interruptible"]
     },
     {
       "id": 341949,
@@ -394,14 +485,62 @@
       "type": "curse",
       "source": "the-rookery",
       "name": "Seeping Corruption",
-      "icon": "inv_enchant_voidsphere"
+      "icon": "inv_enchant_voidsphere",
+      "notes": [
+        [
+          "Nearly identical to ",
+
+          " the ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 451613, "kind": "spell", "children": "Twilight Flame" }
+          },
+          " debuff of ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 224609, "kind": "npc", "children": "Twilight Destroyer" }
+          },
+          "s in ",
+          {
+            "component": "WowheadIcon",
+            "props": {
+              "icon": "achievement_dungeon_grimbatol",
+              "children": "Grim Batol"
+            }
+          }
+        ]
+      ]
     },
     {
       "id": 333299,
       "type": "curse",
       "source": "theater-of-pain",
       "name": "Curse of Desolation",
-      "icon": "ability_rogue_envelopingshadows"
+      "icon": "ability_rogue_envelopingshadows",
+      "notes": [
+        [
+          "Nearly identical to ",
+
+          " the ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 451613, "kind": "spell", "children": "Twilight Flame" }
+          },
+          " debuff of ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 224609, "kind": "npc", "children": "Twilight Destroyer" }
+          },
+          "s in ",
+          {
+            "component": "WowheadIcon",
+            "props": {
+              "icon": "achievement_dungeon_grimbatol",
+              "children": "Grim Batol"
+            }
+          }
+        ]
+      ]
     },
     {
       "id": 330725,
@@ -416,7 +555,7 @@
             "component": "WowheadLink",
             "props": { "id": 167998, "kind": "npc", "children": "Portal Guardian" }
           },
-          " commonly briefly before their ",
+          " on a single target before each ",
           {
             "component": "WowheadLink",
             "props": { "id": 330716, "kind": "spell", "children": "Soulstorm" }
@@ -488,7 +627,8 @@
             "props": { "id": 208745, "kind": "npc", "children": "The Candle King" }
           },
           ", third boss"
-        ]
+        ],
+        "Interruptible, cannot be solo kicked by the tank, you need to rotate"
       ]
     },
     {
@@ -513,7 +653,8 @@
             "props": { "id": 212412, "kind": "npc", "children": "Sootsnout" }
           },
           ", miniboss before third boss"
-        ]
+        ],
+        "Interruptible"
       ]
     },
     {
@@ -580,14 +721,19 @@
       "source": "operation-floodgate",
       "name": "Kinetic Explosive Gel",
       "icon": "inv_ammo_firetar",
-      "notes": ["Dispelling deals damage to the group and knocks up bombs."]
+      "notes": [
+        "Second boss core mechanic to deal with bombs",
+        "You get 2 per set of bombs, one early, one late. Preposition accordingly",
+        "Dispelling deals damage to the group and knocks up bombs"
+      ]
     },
     {
       "id": 462737,
       "type": "magic",
       "source": "operation-floodgate",
       "name": "Black Blood Wound",
-      "icon": "spell_yorsahj_bloodboil_purple"
+      "icon": "spell_yorsahj_bloodboil_purple",
+      "notes": ["Stacking debuff on tank"]
     },
     {
       "id": 469799,
@@ -692,7 +838,17 @@
       "source": "the-rookery",
       "name": "Unstable Corruption",
       "icon": "inv_cosmicvoid_debuff",
-      "notes": ["Creates a puddle upon dispel"]
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 207207, "kind": "npc", "children": "Voidstone Monstrosity" }
+          },
+          ", last boss"
+        ],
+        "Creates a puddle upon dispel. Preposition accordingly in the back, these last for ~2 minutes and grow!"
+      ]
     },
     {
       "id": 1214523,
@@ -722,7 +878,8 @@
       "type": "purge",
       "source": "operation-mechagon-workshop",
       "name": "Overclock",
-      "icon": "inv_misc_pocketwatch_01"
+      "icon": "inv_misc_pocketwatch_01",
+      "notes": ["Can be spellstolen"]
     },
     {
       "id": 297133,
@@ -736,14 +893,8 @@
       "type": "purge",
       "source": "operation-floodgate",
       "name": "Restorative Algae",
-      "icon": "spell_lfieblood"
-    },
-    {
-      "id": 465604,
-      "type": "purge",
-      "source": "operation-floodgate",
-      "name": "Battery Bolt",
-      "icon": "trade_engineering"
+      "icon": "spell_lfieblood",
+      "notes": ["Interruptible", "Can be spellstolen"]
     },
     {
       "id": 427346,
@@ -815,6 +966,23 @@
             "props": { "children": "stopped" }
           },
           ", target takes 50% of damage taken for x seconds"
+        ]
+      ]
+    },
+    {
+      "id": 424419,
+      "type": "enrage",
+      "source": "priory-of-the-sacred-flame",
+      "icon": "warrior_disruptingshout",
+      "name": "Battle Cry",
+      "notes": [
+        "Interruptible",
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 207946, "kind": "npc", "children": "Captain Dailcry" }
+          }
         ]
       ]
     }

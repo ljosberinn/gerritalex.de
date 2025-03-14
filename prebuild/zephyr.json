@@ -1,0 +1,1610 @@
+{
+  "current-rotation": [
+    "liberation-of-undermine",
+    "cinderbrew-meadery",
+    "theater-of-pain",
+    "darkflame-cleft",
+    "operation-mechagon-workshop",
+    "operation-floodgate",
+    "priory-of-the-sacred-flame",
+    "the-motherlode",
+    "the-rookery"
+  ],
+  "sources": {
+    "liberation-of-undermine": {
+      "icon": "inv_achievement_zone_undermine",
+      "name": "Liberation of Undermine",
+      "encounters": [
+        {
+          "icon": "inv_111_raid_achievement_vexieandthegeargrinders",
+          "name": "Vexie and the Geargrinders"
+        },
+        {
+          "icon": "inv_11_arenaboss_colossalclash",
+          "name": "Cauldron of Carnage"
+        },
+        {
+          "icon": "inv_111_raid_achievement_rikreverb",
+          "name": "Rik Reverb"
+        },
+        {
+          "icon": "inv_111_raid_achievement_stixbunkjunker",
+          "name": "Stix Bunkjunker"
+        },
+        {
+          "icon": "inv_111_raid_achievement_sprocketmongerlocknstock",
+          "name": "Sprocketmonger Lockenstock"
+        },
+        {
+          "icon": "inv_111_raid_achievement_onearmedbandit",
+          "name": "One-Armed Bandit"
+        },
+        {
+          "icon": "inv_111_raid_achievement_mugzeeheadsofsecurity",
+          "name": "Mug'Zee, Heads of Security"
+        },
+        {
+          "icon": "inv_111_raid_achievement_chromekinggallywix",
+          "name": "Chrome King Gallywix"
+        }
+      ]
+    },
+    "cinderbrew-meadery": {
+      "icon": "inv_achievement_dungeon_cinderbrewmeadery",
+      "name": "Cinderbrew Meadery",
+      "encounters": ["Brewmaster Aldryr", "I'pa", "Benk Buzzbee", "Goldie Baronbottom"]
+    },
+    "theater-of-pain": {
+      "icon": "achievement_dungeon_theatreofpain",
+      "name": "Theater of Pain",
+      "encounters": [
+        "An Affront of Challengers",
+        "Xav the Unfallen",
+        "Gorechop",
+        "Kul'tharok",
+        "Mordretha, the Endless Empress"
+      ]
+    },
+    "darkflame-cleft": {
+      "icon": "inv_achievement_dungeon_darkflamecleft",
+      "name": "Darkflame Cleft",
+      "encounters": ["Ol' Waxbeard", "Blazikon", "The Candle King", "The Darkness"]
+    },
+    "operation-mechagon-workshop": {
+      "icon": "achievement_boss_mechagon",
+      "name": "Operation: Mechagon - Workshop",
+      "encounters": ["Tussle Tonks", "K.U.J.O.", "Manastorm", "King Mechagon"]
+    },
+    "operation-floodgate": {
+      "icon": "inv_achievement_dungeon_waterworks",
+      "name": "Operation: Floodgate",
+      "encounters": ["Big M.O.M.M.A.", "Demolition Duo", "Swampface", "Geezle Gigazap"]
+    },
+    "priory-of-the-sacred-flame": {
+      "icon": "inv_achievement_dungeon_prioryofthesacredflame",
+      "name": "Priory of the Sacred Flame",
+      "encounters": ["Captain Dailcry", "Baron Braunpyke", "Prioress Murrpray"]
+    },
+    "the-motherlode": {
+      "icon": "achievement_dungeon_kezan",
+      "name": "The MOTHERLODE!!",
+      "encounters": ["Coin-Operated Crowd Pummeler", "Azerokk", "Rixxa Fluxfume", "Mogul Razdunk"]
+    },
+    "the-rookery": {
+      "icon": "inv_achievement_dungeon_rookery",
+      "name": "The Rookery",
+      "encounters": ["Kyrioss", "Stormguard Gorren", "Voidstone Monstrosity"]
+    }
+  },
+  "spells": [
+    {
+      "id": 1217456,
+      "name": "Jettison Kelp",
+      "icon": "inv_misc_herb_stranglekelp_blade",
+      "source": "operation-floodgate",
+      "type": "trash",
+      "notes": ["NOT AOE!!!"]
+    },
+    {
+      "id": 442484,
+      "name": "Let It Hail!",
+      "icon": "inv_legendary_gun",
+      "source": "cinderbrew-meadery",
+      "type": "goldie-baronbottom",
+      "notes": ["NOT AOE!!!"]
+    },
+    {
+      "id": 425052,
+      "type": "stormguard-gorren",
+      "name": "Dark Gravity",
+      "icon": "inv_cosmicvoid_groundsate",
+      "source": "the-rookery"
+    },
+    {
+      "id": 443847,
+      "type": "trash",
+      "name": "Instability",
+      "icon": "inv_cosmicvoid_groundsate",
+      "source": "the-rookery"
+    },
+    {
+      "id": 472549,
+      "type": "trash",
+      "name": "Volatile Void",
+      "icon": "inv_cosmicvoid_nova",
+      "source": "the-rookery",
+      "notes": ["Small cleave (3y) around tank, avoid standing on the tank"]
+    },
+    {
+      "id": 474032,
+      "type": "trash",
+      "name": "Void Crush",
+      "icon": "ability_warlock_voidzone",
+      "source": "the-rookery"
+    },
+    {
+      "id": 1214631,
+      "type": "trash",
+      "name": "Unleash Darkness",
+      "icon": "inv_cosmicvoid_wave",
+      "source": "the-rookery"
+    },
+    {
+      "id": 424419,
+      "type": "captain-dailcry",
+      "name": "Battle Cry",
+      "icon": "warrior_disruptingshout",
+      "source": "priory-of-the-sacred-flame",
+      "notes": ["Interruptible"]
+    },
+    {
+      "id": 425018,
+      "type": "prioress-murrpray",
+      "name": "Overwhelming Power",
+      "icon": "inv_ability_holyfire_debuff",
+      "source": "priory-of-the-sacred-flame",
+      "notes": [
+        "Intermission, buff on adds",
+        "Avoid by either ccing the adds and/or not being in melee"
+      ]
+    },
+    {
+      "id": 444743,
+      "type": "trash",
+      "name": "Fireball Volley",
+      "icon": "spell_fire_fireball02",
+      "source": "priory-of-the-sacred-flame",
+      "notes": ["Interruptible"]
+    },
+    {
+      "id": 421146,
+      "type": "the-candle-king",
+      "name": "Throw Darkflame",
+      "icon": "spell_shadow_painspike",
+      "source": "darkflame-cleft"
+    },
+    {
+      "id": 422692,
+      "type": "trash",
+      "name": "Drain Light",
+      "icon": "ability_demonhunter_darkness",
+      "source": "darkflame-cleft"
+    },
+    {
+      "id": 424322,
+      "type": "trash",
+      "name": "Explosive Flame",
+      "icon": "spell_fire_elemental_totem",
+      "source": "darkflame-cleft"
+    },
+    {
+      "id": 426259,
+      "type": "trash",
+      "name": "Pyro-pummel",
+      "icon": "ability_monk_palmstrike",
+      "source": "darkflame-cleft",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 212411,
+              "kind": "npc",
+              "children": "Torchsnarl"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 439010,
+      "type": "the-darkness",
+      "name": "Drain Light",
+      "icon": "ability_demonhunter_darkness",
+      "source": "darkflame-cleft"
+    },
+    {
+      "id": 441518,
+      "type": "trash",
+      "name": "Explosive Brew",
+      "icon": "ability_vehicle_liquidpyrite",
+      "source": "cinderbrew-meadery",
+      "notes": ["Avoidable by focusing the keg fast enough"]
+    },
+    {
+      "id": 473719,
+      "type": "demolition-duo",
+      "name": "Kinetic Explosive Gel",
+      "icon": "inv_ammo_firetar",
+      "source": "operation-floodgate"
+    },
+    {
+      "id": 267357,
+      "type": "trash",
+      "name": "Fan of Knives",
+      "icon": "inv_throwingknife_03",
+      "source": "the-motherlode"
+    },
+    {
+      "id": 268702,
+      "type": "trash",
+      "name": "Furious Quake",
+      "icon": "spell_shaman_earthquake",
+      "source": "the-motherlode",
+      "notes": ["Interruptible"]
+    },
+    {
+      "id": 275907,
+      "type": "azerokk",
+      "name": "Tectonic Smash",
+      "icon": "spell_nature_earthquake",
+      "source": "the-motherlode"
+    },
+    {
+      "id": 473304,
+      "type": "trash",
+      "name": "Brainstorm",
+      "icon": "ability_mage_studentofthemind",
+      "source": "the-motherlode"
+    },
+    {
+      "id": 1213142,
+      "type": "azerokk",
+      "name": "Pulsing Azerite",
+      "icon": "inv__azerite-explosion",
+      "source": "the-motherlode"
+    },
+    {
+      "id": 1214673,
+      "type": "azerokk",
+      "name": "Azerite Aftershock",
+      "icon": "spell_azerite_essence_15",
+      "source": "the-motherlode"
+    },
+    {
+      "id": 1215916,
+      "type": "trash",
+      "name": "Mind Lash",
+      "icon": "spell_azerite_essence_15",
+      "source": "the-motherlode"
+    },
+    {
+      "id": 1217280,
+      "type": "trash",
+      "name": "Uppercut",
+      "icon": "inv_relics_totemofrage",
+      "source": "the-motherlode"
+    },
+    {
+      "id": 330868,
+      "type": "trash",
+      "name": "Necrotic Bolt Volley",
+      "icon": "spell_necro_necroticsmash",
+      "source": "theater-of-pain",
+      "notes": ["Interruptible"]
+    },
+    {
+      "id": 292035,
+      "type": "kujo",
+      "name": "Explosive Leap",
+      "icon": "inv_misc_trinket6oih_wolf1",
+      "source": "operation-mechagon-workshop"
+    },
+    {
+      "id": 296331,
+      "type": "king-mechagon",
+      "name": "Cutting Beam",
+      "icon": "ability_thunderking_thunderstruck",
+      "source": "operation-mechagon-workshop"
+    },
+    {
+      "id": 301088,
+      "type": "trash",
+      "name": "Detonate",
+      "icon": "inv_eng_bombfire",
+      "source": "operation-mechagon-workshop",
+      "notes": ["Interruptible"]
+    },
+    {
+      "id": 473440,
+      "type": "trash",
+      "name": "High Explosive Rockets",
+      "icon": "inv_misc_missilelarge_white",
+      "source": "operation-mechagon-workshop"
+    },
+    {
+      "id": 1216446,
+      "type": "tussle-tonks",
+      "name": "Electrical Storm",
+      "icon": "inv_engineering_90_lightningbox",
+      "source": "operation-mechagon-workshop",
+      "notes": ["Avoidable by defeating both bosses around the same time", "Stacks"]
+    },
+    {
+      "id": 420919,
+      "type": "the-candle-king",
+      "name": "Eerie Molds",
+      "icon": "spell_fire_incinerate",
+      "source": "darkflame-cleft",
+      "notes": [
+        [
+          "Periodic damage whenever ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 209603,
+              "kind": "npc",
+              "children": "Wax Statue"
+            }
+          },
+          "s are active."
+        ]
+      ]
+    },
+    {
+      "id": 430171,
+      "name": "Quenching Blast",
+      "icon": "spell_fire_felflamering_red",
+      "source": "darkflame-cleft",
+      "type": "trash"
+    },
+    {
+      "id": 1218117,
+      "name": "Massive Stomp",
+      "icon": "ability_earthen_pillar",
+      "source": "darkflame-cleft",
+      "type": "trash",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 212411,
+              "kind": "npc",
+              "children": "Torchsnarl"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 441344,
+      "name": "Bee-Zooka",
+      "icon": "inv_10_engineering2_pvpflaregun_color1",
+      "source": "cinderbrew-meadery",
+      "type": "trash"
+    },
+    {
+      "id": 463218,
+      "name": "Volatile Keg",
+      "icon": "ability_vehicle_liquidpyrite",
+      "source": "cinderbrew-meadery",
+      "type": "trash"
+    },
+    {
+      "id": 440687,
+      "name": "Honey Volley",
+      "icon": "misc_2h_honeydipper_b_01_icon",
+      "source": "cinderbrew-meadery",
+      "type": "trash",
+      "notes": ["Interruptible"]
+    },
+    {
+      "id": 427609,
+      "name": "Disrupting Shout",
+      "icon": "warrior_disruptingshout",
+      "source": "priory-of-the-sacred-flame",
+      "type": "trash"
+    },
+    {
+      "id": 446657,
+      "name": "Burning Light",
+      "icon": "paladin_holy",
+      "source": "priory-of-the-sacred-flame",
+      "type": "baron-braunpyke",
+      "notes": [
+        "Interruptible",
+        [
+          "Both initial damage and the dot ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 423051,
+              "kind": "spell",
+              "icon": "paladin_holy",
+              "children": "Burning Light"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1218149,
+      "name": "Sacrificial Pyre",
+      "icon": "ability_paladin_blessedmending",
+      "source": "priory-of-the-sacred-flame",
+      "type": "baron-braunpyke",
+      "notes": [
+        [
+          "Both initial damage and the dot ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 446403,
+              "kind": "spell",
+              "icon": "ability_paladin_blessedmending",
+              "children": "Sacrificial Pyre"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 451764,
+      "name": "Radiant Flame",
+      "icon": "spell_holy_auramastery",
+      "source": "priory-of-the-sacred-flame",
+      "type": "trash",
+      "notes": [
+        [
+          "Aura of ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 217658,
+              "kind": "npc",
+              "children": "Sir Braunpyke"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 423665,
+      "name": "Embrace the Light",
+      "icon": "ability_priest_holywordlife",
+      "source": "priory-of-the-sacred-flame",
+      "type": "prioress-murrpray",
+      "notes": ["Intermission channel until you break her shield"]
+    },
+    {
+      "id": 428169,
+      "name": "Blinding Light",
+      "icon": "inv_ability_holyfire_nova",
+      "source": "priory-of-the-sacred-flame",
+      "type": "prioress-murrpray",
+      "notes": [
+        [
+          "Players facing ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 207940,
+              "kind": "npc",
+              "children": "Prioress Murrpray"
+            }
+          },
+          " at cast end take ~110% the damage, but get disoriented for 4 seconds"
+        ]
+      ]
+    },
+    {
+      "id": 423547,
+      "name": "Inner Fire",
+      "icon": "inv_ability_holyfire_buff",
+      "source": "priory-of-the-sacred-flame",
+      "type": "prioress-murrpray"
+    },
+    {
+      "id": 463206,
+      "name": "Tenderize",
+      "icon": "spell_nature_earthquake",
+      "source": "cinderbrew-meadery",
+      "type": "trash"
+    },
+    {
+      "id": 460158,
+      "name": "Jumpstart",
+      "icon": "inv_battery_02",
+      "source": "operation-floodgate",
+      "type": "big-momma",
+      "notes": ["Periodic damage during intermission"]
+    },
+    {
+      "id": 468680,
+      "name": "Crabsplosion",
+      "icon": "inv_crabbomb_black",
+      "source": "operation-floodgate",
+      "type": "trash",
+      "notes": [
+        "Stacks",
+        [
+          "On-death effect of ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "children": "Bombshell Crab",
+              "id": 231497,
+              "kind": "npc"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1215504,
+      "name": "Kill-o-Block Barrier",
+      "icon": "spell_nature_lightningshield",
+      "source": "operation-floodgate",
+      "type": "big-momma",
+      "notes": ["Avoidable by killing the drones fast enough."]
+    },
+    {
+      "id": 465830,
+      "name": "Warp Blood",
+      "icon": "ability_warlock_soulswap",
+      "source": "operation-floodgate",
+      "type": "trash"
+    },
+    {
+      "id": 1216611,
+      "name": "Battery Discharge",
+      "icon": "inv_battery_01",
+      "source": "operation-floodgate",
+      "type": "trash"
+    },
+    {
+      "id": 473081,
+      "name": "Awaken the Swamp",
+      "icon": "inv_tradeskillitem_sorcerersearth_tong",
+      "source": "operation-floodgate",
+      "type": "swampface"
+    },
+    {
+      "id": 424432,
+      "name": "Holy Radiance",
+      "icon": "ability_paladin_gaurdedbythelight",
+      "source": "priory-of-the-sacred-flame",
+      "type": "trash",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 239833,
+              "kind": "npc",
+              "children": "Elaena Emberlanz"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 465462,
+      "name": "Turbo Charge",
+      "icon": "inv_10_engineering_manufacturedparts_electricalparts_color1",
+      "source": "operation-floodgate",
+      "type": "geezle-gigazap"
+    },
+    {
+      "id": 431897,
+      "name": "Rowdy Yell",
+      "icon": "ability_fomor_boss_shout",
+      "source": "cinderbrew-meadery",
+      "type": "brewmaster-aldryr"
+    },
+    {
+      "id": 439645,
+      "name": "Spouting Stout",
+      "icon": "ability_creature_amber_01",
+      "source": "cinderbrew-meadery",
+      "type": "ipa"
+    },
+    {
+      "id": 440138,
+      "name": "Honey Marinade",
+      "icon": "inv_mace_1h_honeystick_a_01_fire",
+      "source": "cinderbrew-meadery",
+      "type": "benk-buzzbee"
+    },
+    {
+      "id": 435789,
+      "name": "Cindering Wounds",
+      "icon": "inv_misc_volatilefire",
+      "source": "cinderbrew-meadery",
+      "type": "goldie-baronbottom"
+    },
+    {
+      "id": 320789,
+      "name": "Seismic Leap",
+      "icon": "ability_heroicleap",
+      "source": "theater-of-pain",
+      "type": "xav-the-unfallen"
+    },
+    {
+      "id": 330720,
+      "name": "Soulstorm",
+      "icon": "spell_animamaldraxxus_nova",
+      "source": "theater-of-pain",
+      "type": "trash"
+    },
+    {
+      "id": 339573,
+      "name": "Echoes of Carnage",
+      "icon": "ability_deathknight_soulreaper",
+      "source": "theater-of-pain",
+      "type": "mordretha-the-endless-empress",
+      "notes": [
+        [
+          "Both initial damage and the periodic damage ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 339759,
+              "kind": "spell",
+              "icon": "ability_deathknight_soulreaper",
+              "children": "Echoes of Carnage"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 427439,
+      "name": "Localized Storm",
+      "icon": "spell_nature_unrelentingstorm",
+      "source": "the-rookery",
+      "type": "trash"
+    },
+    {
+      "id": 1214323,
+      "name": "Lightning Torrent",
+      "icon": "ability_vehicle_electrocharge",
+      "source": "the-rookery",
+      "type": "kyrioss"
+    },
+    {
+      "id": 425113,
+      "name": "Crush Reality",
+      "icon": "spell_priest_void-blast",
+      "source": "the-rookery",
+      "type": "stormguard-gorren"
+    },
+    {
+      "id": 262347,
+      "name": "Static Pulse",
+      "icon": "spell_nature_lightningoverload",
+      "source": "the-motherlode",
+      "type": "coin-operated-crowd-pummeler"
+    },
+    {
+      "id": 471894,
+      "name": "Resonant Quake",
+      "icon": "spell_shaman_earthquake",
+      "source": "the-motherlode",
+      "type": "azerokk"
+    },
+    {
+      "id": 258627,
+      "name": "Resonant Aftershock",
+      "icon": "spell_shaman_earthquake",
+      "source": "the-motherlode",
+      "type": "azerokk",
+      "notes": [
+        [
+          "Avoidable by killing the empowered ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 129802,
+              "kind": "npc",
+              "children": "Earthrager"
+            }
+          },
+          " before the boss casts ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 471894,
+              "kind": "spell",
+              "icon": "spell_shaman_earthquake",
+              "children": "Resonant Quake"
+            }
+          },
+          "."
+        ]
+      ]
+    },
+    {
+      "id": 425394,
+      "name": "Dousing Breath",
+      "icon": "ability_skyreach_four_wind",
+      "source": "darkflame-cleft",
+      "type": "blazikon"
+    },
+    {
+      "id": 427011,
+      "name": "Shadowblast",
+      "icon": "inv_elemental_primal_shadow",
+      "source": "darkflame-cleft",
+      "type": "the-darkness"
+    },
+    {
+      "id": 294961,
+      "name": "Blazing Chomp",
+      "icon": "inv_gizmo_supersappercharge",
+      "source": "operation-mechagon-workshop",
+      "type": "kujo",
+      "notes": ["The dispel, not the initial damage"]
+    },
+    {
+      "id": 291928,
+      "name": "Mega-Zap (P1)",
+      "icon": "ability_siege_engineer_magnetic_lasso",
+      "type": "king-mechagon",
+      "source": "operation-mechagon-workshop"
+    },
+    {
+      "id": 292267,
+      "name": "Mega-Zap (P2)",
+      "icon": "ability_siege_engineer_magnetic_lasso",
+      "type": "king-mechagon",
+      "source": "operation-mechagon-workshop"
+    },
+    {
+      "id": 460814,
+      "name": "Deflagration",
+      "icon": "spell_shaman_firenova",
+      "source": "operation-floodgate",
+      "type": "demolition-duo",
+      "notes": [
+        "Initial damage only, not the dot",
+        "Avoidable by properly dealing with the bomb mechanic via dispel & charge"
+      ]
+    },
+    {
+      "id": 468815,
+      "name": "Gigazap",
+      "icon": "spell_shaman_crashlightning",
+      "source": "operation-floodgate",
+      "type": "geezle-gigazap",
+      "notes": ["Initial damage only, not the dot"]
+    },
+    {
+      "id": 260838,
+      "name": "Homing Missile",
+      "icon": "ability_racial_rocketbarrage",
+      "source": "the-motherlode",
+      "type": "mogul-razdunk"
+    },
+    {
+      "id": 260202,
+      "name": "Drill Smash",
+      "icon": "ability_siege_engineer_sockwave_missile",
+      "source": "the-motherlode",
+      "type": "mogul-razdunk"
+    },
+    {
+      "id": 1215741,
+      "name": "Mighty Smash",
+      "icon": "ability_smash",
+      "source": "theater-of-pain",
+      "type": "an-affront-of-challengers",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 164451,
+              "kind": "npc",
+              "children": "Dessia the Decapitator"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 323110,
+      "name": "Leaping Thrash",
+      "icon": "ability_racial_flayer",
+      "source": "theater-of-pain",
+      "type": "gorechop"
+    },
+    {
+      "id": 330693,
+      "name": "Leaping Thrash",
+      "icon": "ability_racial_flayer",
+      "source": "theater-of-pain",
+      "type": "trash"
+    },
+    {
+      "id": 341969,
+      "name": "Withering Discharge",
+      "icon": "ability_rogue_deviouspoisons",
+      "source": "theater-of-pain",
+      "type": "trash",
+      "notes": ["Interruptible"]
+    },
+    {
+      "id": 330973,
+      "name": "Disease Cloud",
+      "icon": "ui_darkshore_warfront_horde_abomination",
+      "source": "theater-of-pain",
+      "type": "trash"
+    },
+    {
+      "id": 1222949,
+      "name": "Well of Darkness",
+      "icon": "spell_necro_dischargenecroticcore",
+      "source": "theater-of-pain",
+      "type": "kultharok"
+    },
+    {
+      "id": 1218308,
+      "name": "Enkindling Inferno",
+      "icon": "inv_summerfest_firespirit",
+      "source": "darkflame-cleft",
+      "type": "blazikon"
+    },
+    {
+      "id": 323825,
+      "name": "Grasping Rift",
+      "icon": "spell_necro_deathsdoor",
+      "source": "theater-of-pain",
+      "type": "mordretha-the-endless-empress"
+    },
+    {
+      "id": 333292,
+      "name": "Searing Death",
+      "icon": "spell_necro_deathrift",
+      "source": "theater-of-pain",
+      "type": "an-affront-of-challengers"
+    },
+    {
+      "id": 324514,
+      "name": "Manifest Death",
+      "icon": "spell_necro_deathlyecho",
+      "source": "theater-of-pain",
+      "type": "mordretha-the-endless-empress"
+    },
+    {
+      "id": 333242,
+      "name": "Raging Tantrum",
+      "icon": "inv_misc_monsterhorn_07",
+      "source": "theater-of-pain",
+      "type": "trash",
+      "notes": ["Soothe to avoid additional ticks"]
+    },
+    {
+      "id": 448935,
+      "name": "Reckless Delivery",
+      "icon": "ability_warrior_victoryrush",
+      "type": "trash",
+      "source": "cinderbrew-meadery"
+    },
+    {
+      "id": 442995,
+      "name": "Swarming Surprise",
+      "icon": "inv_ability_honey_nova",
+      "type": "trash",
+      "source": "cinderbrew-meadery"
+    },
+    {
+      "id": 428066,
+      "name": "Overpowering Roar",
+      "icon": "ability_druid_tigersroar",
+      "type": "trash",
+      "source": "darkflame-cleft"
+    },
+    {
+      "id": 448492,
+      "name": "Thunderclap",
+      "icon": "ability_thunderclap",
+      "source": "priory-of-the-sacred-flame",
+      "type": "trash",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 212826,
+              "kind": "npc",
+              "children": "Guard Captain Suleyman"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 424426,
+      "name": "Lunging Strike",
+      "icon": "inv_spear_11",
+      "source": "priory-of-the-sacred-flame",
+      "type": "trash",
+      "notes": ["Cleave avoidable by not stacking."]
+    },
+    {
+      "id": 427897,
+      "name": "Heat Wave",
+      "icon": "ability_rhyolith_lavapool",
+      "source": "priory-of-the-sacred-flame",
+      "type": "trash",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 212831,
+              "kind": "npc",
+              "children": "Forge Master Damian"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 448791,
+      "name": "Sacred Toll",
+      "icon": "ability_bastion_paladin",
+      "source": "priory-of-the-sacred-flame",
+      "type": "trash"
+    },
+    {
+      "id": 435156,
+      "name": "Light Expulsion",
+      "icon": "spell_holy_holyguidance",
+      "source": "priory-of-the-sacred-flame",
+      "type": "trash",
+      "notes": [
+        [
+          "On-death effect of ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "children": "Risen Footman",
+              "id": 212835,
+              "kind": "npc"
+            }
+          },
+          ", ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "children": "Risen Mage",
+              "id": 221760,
+              "kind": "npc"
+            }
+          },
+          " and ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "children": "Sir Braunpyke",
+              "id": 217658,
+              "kind": "npc"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1215850,
+      "name": "Earthcrusher",
+      "icon": "spell_nature_earthquake",
+      "source": "theater-of-pain",
+      "type": "trash",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 167538,
+              "kind": "npc",
+              "children": "Dokigg the Brutalizer"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 342135,
+      "name": "Interrupting Roar",
+      "icon": "warrior_disruptingshout",
+      "source": "theater-of-pain",
+      "type": "trash"
+    },
+    {
+      "id": 333827,
+      "name": "Seismic Stomp",
+      "icon": "spell_nature_earthquake",
+      "source": "theater-of-pain",
+      "type": "trash",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 167533,
+              "kind": "npc",
+              "children": "Advent Nevermore"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 460388,
+      "name": "Backfire",
+      "icon": "inv_gizmo_supersappercharge",
+      "source": "liberation-of-undermine",
+      "type": "vexie-and-the-geargrinders",
+      "notes": ["Periodic damage during intermission"]
+    },
+    {
+      "id": 468147,
+      "name": "Exhaust Fumes",
+      "icon": "inv_misc_dust",
+      "source": "liberation-of-undermine",
+      "type": "vexie-and-the-geargrinders",
+      "notes": ["Periodic damage while Vexie is active", "Ramps for each cast"]
+    },
+    {
+      "id": 460633,
+      "name": "Blaze of Glory",
+      "icon": "ability_racial_rocketbarrage",
+      "source": "liberation-of-undermine",
+      "type": "vexie-and-the-geargrinders",
+      "notes": ["Whenever a bike is sent into the boss"]
+    },
+    {
+      "id": 459678,
+      "name": "Spew Oil",
+      "icon": "spell_yorsahj_bloodboil_black",
+      "source": "liberation-of-undermine",
+      "type": "vexie-and-the-geargrinders",
+      "notes": ["Prefers ranged, does not exempt healers nor tanks"]
+    },
+    {
+      "id": 1214035,
+      "name": "Molten Phlegm",
+      "icon": "inv_11_arenaboss_jawsplosion",
+      "source": "liberation-of-undermine",
+      "type": "cauldron-of-carnage"
+    },
+    {
+      "id": 464487,
+      "name": "Sonic Blast",
+      "icon": "inv_sonic_missile",
+      "source": "liberation-of-undermine",
+      "type": "rik-reverb",
+      "notes": ["Riks melee"]
+    },
+    {
+      "id": 472990,
+      "name": "Haywire",
+      "icon": "inv_misc_ear_human_01",
+      "source": "liberation-of-undermine",
+      "type": "rik-reverb",
+      "notes": ["Avoidable by channeling on the amplifier to reduce its energy"]
+    },
+    {
+      "id": 465795,
+      "name": "Noise Pollution",
+      "icon": "inv_sonic_debuff",
+      "source": "liberation-of-undermine",
+      "type": "rik-reverb",
+      "notes": ["Periodic damage, increasing for each present amplifier"]
+    },
+    {
+      "id": 467297,
+      "name": "Static Jolt",
+      "icon": "ability_thunderking_thunderstruck",
+      "source": "liberation-of-undermine",
+      "type": "rik-reverb"
+    },
+    {
+      "id": 467020,
+      "name": "Faulty Zap",
+      "icon": "ability_thunderking_overcharge",
+      "source": "liberation-of-undermine",
+      "type": "rik-reverb",
+      "notes": [
+        [
+          "Both initial damage and the dot ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 467048,
+              "kind": "spell",
+              "icon": "ability_thunderking_overcharge",
+              "children": "Faulty Zap"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 472849,
+      "name": "Incineration",
+      "icon": "ability_warlock_inferno",
+      "source": "liberation-of-undermine",
+      "type": "stix-bunkjunker",
+      "notes": [
+        "Avoidable by not standing in the circle of other players",
+        [
+          "This is the friendly fire part of ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 464165,
+              "kind": "spell",
+              "icon": "ability_ironmaidens_bombardment",
+              "children": "Incinerator"
+            }
+          },
+          " and both are AoE."
+        ]
+      ]
+    },
+    {
+      "id": 473119,
+      "name": "Short Fuse",
+      "icon": "inv_misc_bomb_09",
+      "source": "liberation-of-undermine",
+      "type": "stix-bunkjunker",
+      "notes": [
+        [
+          "Avoidable by dealing with the ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 231531,
+              "kind": "npc",
+              "children": "Territorial Bombshell"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 467135,
+      "name": "Trash Compactor",
+      "icon": "spell_nature_unrelentingstorm",
+      "source": "liberation-of-undermine",
+      "type": "stix-bunkjunker",
+      "notes": ["When Stix lands"]
+    },
+    {
+      "id": 465747,
+      "name": "Muffled Doomsplosion",
+      "icon": "spell_mage_flameorb",
+      "source": "liberation-of-undermine",
+      "type": "stix-bunkjunker",
+      "notes": [
+        [
+          "Triggered by ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 461536,
+              "kind": "spell",
+              "icon": "inv_misc_soccerball",
+              "children": "Rolling Rubbish"
+            }
+          },
+          " colliding with the ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 464865,
+              "kind": "spell",
+              "icon": "inv_eng_bombfire",
+              "children": "Discarded Doomsplosive"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 464559,
+      "name": "Electromagnetic Sorting",
+      "icon": "inv_10_engineering_manufacturedparts_mechanicalparts_color3",
+      "source": "liberation-of-undermine",
+      "type": "stix-bunkjunker",
+      "notes": ["Upon Stix reaching 100 energy"]
+    },
+    {
+      "id": 460164,
+      "name": "Foul Exhaust",
+      "icon": "inv_elemental_mote_shadow01",
+      "source": "liberation-of-undermine",
+      "type": "one-armed-bandit",
+      "notes": ["Healing absorb"]
+    },
+    {
+      "id": 461390,
+      "name": "Flame and Coin",
+      "icon": "ability_creature_cursed_01",
+      "source": "liberation-of-undermine",
+      "type": "one-armed-bandit",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 464806,
+              "kind": "spell",
+              "icon": "ability_creature_cursed_01",
+              "children": "Reward: Flame and Coin"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 460582,
+      "name": "Overload!",
+      "icon": "spell_nature_stormreach",
+      "source": "liberation-of-undermine",
+      "type": "one-armed-bandit",
+      "notes": ["Interruptible"]
+    },
+    {
+      "id": 465388,
+      "name": "Hot Hot Heat",
+      "icon": "spell_fire_felflamering_red",
+      "source": "liberation-of-undermine",
+      "type": "one-armed-bandit",
+      "notes": ["Stage Two: This Game Is Rigged! lines"]
+    },
+    {
+      "id": 460427,
+      "name": "Pay-Line",
+      "icon": "inv_10_fishing_dragonislescoins_gold",
+      "source": "liberation-of-undermine",
+      "type": "one-armed-bandit",
+      "notes": ["Whenever a coin reaches a wall"]
+    },
+    {
+      "id": 474665,
+      "name": "Coin Magnet",
+      "icon": "inv_ore_gold_nugget",
+      "source": "liberation-of-undermine",
+      "type": "one-armed-bandit",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 464809,
+              "kind": "spell",
+              "icon": "inv_misc_enggizmos_13",
+              "children": "Reward: Coin and Shock"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 465232,
+      "name": "Sonic Ba-Boom",
+      "icon": "inv_sonic_debuff",
+      "source": "liberation-of-undermine",
+      "type": "sprocketmonger-lockenstock"
+    },
+    {
+      "id": 1216406,
+      "name": "Unstable Explosion",
+      "icon": "spell_shaman_improvedfirenova",
+      "source": "liberation-of-undermine",
+      "type": "sprocketmonger-lockenstock"
+    },
+    {
+      "id": 1214910,
+      "name": "Pyro Party Pack",
+      "icon": "inv_summerfest_groundflower",
+      "source": "liberation-of-undermine",
+      "type": "sprocketmonger-lockenstock",
+      "notes": ["Tank debuff with falloff damage"]
+    },
+    {
+      "id": 1218319,
+      "name": "Voidsplosion",
+      "icon": "ability_priest_voidentropy",
+      "source": "liberation-of-undermine",
+      "type": "sprocketmonger-lockenstock",
+      "notes": [
+        "Healing absorb",
+        [
+          "Periodic damage during ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 466860,
+              "kind": "spell",
+              "icon": "spell_yorsahj_bloodboil_purple",
+              "children": "Bleeding Edge"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 469708,
+      "name": "Uncontrolled Destruction",
+      "icon": "ability_siege_engineer_detonate",
+      "source": "liberation-of-undermine",
+      "type": "mugzee-heads-of-security",
+      "notes": [
+        [
+          "Both initial damage and the dot ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 469719,
+              "kind": "spell",
+              "icon": "ability_siege_engineer_detonate",
+              "children": "Uncontrolled Burn"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1221079,
+      "name": "Frostshatter Boots",
+      "icon": "spell_hunter_icetrap",
+      "source": "liberation-of-undermine",
+      "type": "mugzee-heads-of-security"
+    },
+    {
+      "id": 470910,
+      "name": "Gaol Break",
+      "icon": "spell_nature_earthquake",
+      "source": "liberation-of-undermine",
+      "type": "mugzee-heads-of-security"
+    },
+    {
+      "id": 472294,
+      "name": "Grand Finale",
+      "icon": "inv_gizmo_supersappercharge",
+      "source": "liberation-of-undermine",
+      "type": "rik-reverb",
+      "notes": ["Avoidable by meeting the damage check on pyrotechnics"]
+    },
+    {
+      "id": 1215103,
+      "name": "Ground Point",
+      "icon": "spell_nature_earthquake",
+      "source": "operation-mechagon-workshop",
+      "type": "tussle-tonks"
+    },
+    {
+      "id": 1215410,
+      "name": "Mega Drill",
+      "icon": "ability_racial_molemachine",
+      "source": "operation-mechagon-workshop",
+      "type": "trash"
+    },
+    {
+      "id": 1215412,
+      "name": "Corrosive Gunk",
+      "icon": "ability_vehicle_oiljets",
+      "source": "operation-mechagon-workshop",
+      "type": "trash"
+    },
+    {
+      "id": 297127,
+      "name": "Short Out",
+      "icon": "ability_priest_cascade",
+      "source": "operation-mechagon-workshop",
+      "type": "trash"
+    },
+    {
+      "id": 283534,
+      "name": "Magneto-Arm",
+      "icon": "ability_siege_engineer_magnetic_crush",
+      "source": "operation-mechagon-workshop",
+      "type": "king-mechagon"
+    },
+    {
+      "id": 429029,
+      "name": "Corruption Overlord",
+      "icon": "spell_shadow_summonvoidwalker",
+      "source": "the-rookery",
+      "type": "voidstone-monstrosity",
+      "notes": ["Avoidable by clearing the voidstones in time"]
+    },
+    {
+      "id": 430814,
+      "name": "Attracting Shadows",
+      "icon": "spell_mage_arcaneorb",
+      "source": "the-rookery",
+      "type": "trash"
+    },
+    {
+      "id": 429493,
+      "name": "Unstable Corruption",
+      "icon": "inv_cosmicvoid_debuff",
+      "source": "the-rookery",
+      "type": "voidstone-monstrosity"
+    },
+    {
+      "id": 473177,
+      "name": "Rapid Extraction",
+      "icon": "inv_staff_2h_goblin_d_01",
+      "source": "the-motherlode",
+      "type": "trash"
+    },
+    {
+      "id": 428126,
+      "name": "Null Upheaval",
+      "icon": "inv_chest_armor_voidelf_d_01",
+      "source": "the-rookery",
+      "type": "voidstone-monstrosity",
+      "notes": [
+        [
+          "Knockback damage of ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 423305,
+              "kind": "spell",
+              "icon": "inv_chest_armor_voidelf_d_01",
+              "children": "Null Upheaval"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 470032,
+      "type": "cauldron-of-carnage",
+      "name": "Colossal Clash",
+      "icon": "inv_11_arenaboss_colossalclash",
+      "source": "liberation-of-undermine",
+      "notes": [
+        [
+          "One damage source per boss, the other is ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 470034,
+              "kind": "spell",
+              "children": "Colossal Clash",
+              "icon": "inv_11_arenaboss_colossalclash"
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 473653,
+      "type": "cauldron-of-carnage",
+      "name": "Scrapbomb",
+      "icon": "inv_10_engineering2_boxofbombs_friendly_color1",
+      "source": "liberation-of-undermine"
+    },
+    {
+      "id": 473958,
+      "type": "sprocketmonger-lockenstock",
+      "name": "Fire Laser",
+      "icon": "ability_mage_firestarter",
+      "source": "liberation-of-undermine"
+    },
+    {
+      "id": 1217673,
+      "type": "sprocketmonger-lockenstock",
+      "name": "Voidsplash",
+      "icon": "spell_priest_divinestar_shadow2",
+      "source": "liberation-of-undermine"
+    },
+    {
+      "id": 460873,
+      "type": "one-armed-bandit",
+      "name": "Electric Blast",
+      "icon": "spell_shaman_staticshock",
+      "source": "liberation-of-undermine"
+    },
+    {
+      "id": 468660,
+      "type": "mugzee-heads-of-security",
+      "name": "Elemental Carnage",
+      "icon": "spell_nature_elementalprecision_2",
+      "source": "liberation-of-undermine"
+    },
+    {
+      "id": 468817,
+      "type": "mugzee-heads-of-security",
+      "name": "Goblin-guided Rocket",
+      "icon": "inv_gizmo_supersappercharge",
+      "source": "liberation-of-undermine"
+    },
+    {
+      "id": 469061,
+      "type": "mugzee-heads-of-security",
+      "name": "Unstable Crawler Mines",
+      "icon": "inv_wildfirebomb",
+      "source": "liberation-of-undermine",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "kind": "spell",
+              "id": 472458,
+              "icon": "inv_misc_bomb_02",
+              "children": "Unstable Crawler Mines"
+            }
+          }
+        ],
+        [
+          "Fire damage portion via ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "kind": "spell",
+              "id": 469062,
+              "icon": "inv_wildfirebomb",
+              "children": "Unstable Crawler Mines"
+            }
+          },
+          " is also AoE."
+        ]
+      ]
+    },
+    {
+      "id": 1215903,
+      "type": "mugzee-heads-of-security",
+      "name": "Storming Impact",
+      "icon": "ability_thunderking_overcharge",
+      "source": "liberation-of-undermine"
+    },
+    {
+      "id": 1220551,
+      "type": "mugzee-heads-of-security",
+      "name": "Unstable Cluster Bomb",
+      "icon": "inv_eng_bombfire",
+      "source": "liberation-of-undermine",
+      "notes": ["When soaking"]
+    },
+    {
+      "id": 1220769,
+      "type": "mugzee-heads-of-security",
+      "name": "Earthshaker Gaol",
+      "icon": "inv_elementalearth2",
+      "source": "liberation-of-undermine"
+    }
+  ]
+}

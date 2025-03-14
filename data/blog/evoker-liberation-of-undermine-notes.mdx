@@ -1,0 +1,300 @@
+---
+title: Encounter Notes for Liberation of Undermine
+date: '2025-02-23'
+lastmod: '2025-03-10'
+tags: ['wow', 'evoker']
+draft: false
+summary: 'Personal encounter notes for the 11.1 tier as Evoker'
+authors: ['default']
+images: ['/static/images/undermine-banner.jpg']
+layout: PostBanner
+includeImageInPreview: true
+---
+
+<TOCInline toc={props.toc} asDisclosure collapse />
+
+My personal encounter notes. Some of this is generic in regards to e.g. intermission timers and cooldown decisions so others may also find it helpful.
+
+**Note that these are updated as we progress through Mythic. Unless it has a dedicated Mythic section, everything is for Heroic!**
+
+<script src="https://wow.zamimg.com/js/tooltips.js"></script>
+
+## Vexie and the Geargrinders
+
+- <RenewingBlaze /> on cd
+- <Zephyr /> has most value during the intermission but by far doesn't cover it
+- nothing specific for <ObsidianScales />
+
+### Devastation
+
+- <Dragonrage /> on pull
+- 2nd <Dragonrage /> on intermission (~2:00 to 2:10)
+- 3rd <Dragonrage /> hold until intermission (~4:30 to 5:00)
+- 4th <Dragonrage /> hold until intermission (~7:10)
+
+### Augmentation
+
+- <BreathOfEons/> on pull
+- hold <BreathOfEons/> for intermission (~2:00)
+- hold <BreathOfEons/> for intermission (~4:30)
+- hold <BreathOfEons/> for intermission (~7:10)
+- due to holding cds and variable phasing time, this might be a Chronowarden angle. the intermission lasts usually longer than 40s
+
+#### Scalecommander
+- spreading <Bombardments /> on the bikers isn't worth, they shouldn't live that long
+- spreading <Bombardments /> during the intermission may be worth, will have to see
+
+#### Chronowarden
+
+- make sure you have empowers for <BreathOfEons />
+
+## Cauldron of Carnage
+
+- intermissions are
+  - 1:15
+  - 2:50
+
+#### Heroic
+- on <Torq/> side, <RenewingBlaze /> on cd due to <GalvanizedSpite /> and <StaticCharge />
+- on <Flarendo /> side, hold <RenewingBlaze /> for <MoltenPhlegm />
+- <Zephyr /> has most value during intermissions
+  - can alternatively be used to mitigate <MoltenPhlegm /> or <Scrapbomb />
+- <ObsidianScales /> <Scrapbomb />
+
+#### Mythic
+
+There's a lot of damage happening here, so having a defensive script greatly helped. Thanks to [Vollmer](https://www.warcraftlogs.com/character/eu/ragnaros/Vollmer) for creating it.
+
+You can use this as MRT note with the [Kaze MRT TTS aura](https://wago.io/n7l5uN3YM) or [TimelineReminders](https://www.youtube.com/watch?v=iPhauios7A4). Obviously replace `Xephyris` with your character name.
+
+<Zephyr /> is likely assigned by your raid leader, we have it during each intermission.
+
+```
+{time:0:22}0:22{spell:473650}|cffbf5700Scrapbomb|r - Xephyris {spell:374348} 
+{time:0:46}0:46{spell:473650}|cffbf5700Scrapbomb|r - Xephyris {spell:363916} 
+{time:1:09}1:09{spell:473650}|cffbf5700Scrapbomb|r - Xephyris {spell:374227} 
+{time:1:57}1:57{spell:473650}|cffbf5700Scrapbomb|r - Xephyris {spell:374348} 
+{time:2:21}2:21{spell:473650}|cffbf5700Scrapbomb|r - Xephyris {spell:363916} 
+{time:3:32}3:32{spell:473650}|cffbf5700Scrapbomb|r - Xephyris {spell:374348} 
+{time:3:56}3:56{spell:473650}|cffbf5700Scrapbomb|r - Xephyris {spell:363916} 
+{time:4:19}4:19{spell:473650}|cffbf5700Scrapbomb|r - Xephyris {spell:374227} 
+{time:5:07}5:07{spell:473650}|cffbf5700Scrapbomb|r - Xephyris {spell:374348} 
+{time:5:31}5:31{spell:473650}|cffbf5700Scrapbomb|r - Xephyris {spell:363916} 
+{time:5:54}5:54{spell:473650}|cffbf5700Scrapbomb|r - Xephyris {spell:363916} 
+{time:6:42}6:42{spell:473650}|cffbf5700Scrapbomb|r - Xephyris {spell:374348} 
+{time:7:06}7:06{spell:473650}|cffbf5700Scrapbomb|r - Xephyris {spell:363916} 
+{time:7:29}7:29{spell:473650}|cffbf5700Scrapbomb|r - Xephyris {spell:374227} 
+{time:8:17}8:17{spell:473650}|cffbf5700Scrapbomb|r - Xephyris {spell:374348} 
+{time:8:41}8:41{spell:473650}|cffbf5700Scrapbomb|r - Xephyris {spell:363916} 
+{time:9:40}9:40{spell:463900}|cff6aa84fThunderdrum Salvo|r - Xephyris {spell:374348} 
+{time:9:42}9:42{spell:473650}|cff6aa84fScrapbomb|r - Xephyris {spell:374227} 
+```
+
+### Devastation
+
+- no specific cd windows due to intermissions, full send
+
+#### Scalecommander
+
+- save empowers briefly before intermission to <MassDisintegrate /> both bosses
+
+### Augmentation
+
+- probably also just full send
+- likely terrible fight for Aug on <Torq />s side due to spread
+
+#### Scalecommander
+
+- 2nd <BreathOfEons/> is during intermission but it's probably sketchy to execute on prog without wall
+- spread <Bombardments /> during intermission for extra cdr
+
+## Rik Reverb
+
+- can wall <StaticJolt />? there's not much going on individual damage wise and these are the largest hits unless <Pyrotechnics /> explode
+- <Zephyr /> also kinda yolo for <StaticJolt />
+
+- intermissions from
+  - 2:00 to 2:30
+  - 4:30 to 5:00
+- <Pyrotechnics /> spawn 3x per main phase
+
+#### Heroic Pyrotechnics Timings
+- first set
+  - 0:22
+  - 1:05 (+43)
+  - 1:46 (+41)
+- second set
+  - 2:51
+  - 3:35 (+43)
+  - 4:16 (+41)
+- third set
+  - 5:19
+  - 6:02 (+43)
+  - 6:44 (+41)
+
+#### Mythic Pyrotechnics Timings
+- first set
+  - 0:20
+  - 1:20 (+60)
+  - 1:40 (+20)
+- second set
+  - 2:50
+  - 3:50 (+60)
+  - 4:10 (+20)
+- third set
+  - not there yet :)
+
+### Devastation
+
+#### Heroic
+- precast <DeepBreath /> on the adds
+- <Dragonrage /> every first set of adds on pull/after intermission
+
+#### Mythic
+
+- full send. you'll lust on pull anyway and first cd window will cover first set of adds largely. fight, especially early on, is very hectic so better to get used to timers
+
+### Augmentation
+
+- <BreathOfEons /> on pull and basically on cd unless it'll overlap with intermission. adds won't/shouldn't live long enough to hold for them
+
+## Stix Bunkjunker
+
+- <RollingRubbish /> timings, sets of 4, does not exclude healers, always picks one tank:
+  - ~0:27
+  - ~1:48 (+1:21)
+  - ~2:39 (+0:51)
+  - ~3:29 (+0:50)
+  - ~4:20 (+0:51)
+- adds spawn roughly 10s before each set of <RollingRubbish />
+- <RenewingBlaze /> <Incinerator /> or <ScrapRockets />
+- <Zephyr /> <TrashCompactor /> at ~1:20
+  - after that, can be used for <ElectromagneticSorting /> which should occur nearly identically to add spawn waves from above
+- <ObsidianScales /> -> <PrototypePowercoil />
+- first <Overdrive /> is at ~1:05, making him immune for 10 seconds
+
+### Devastation
+- unless you care about padding on adds, you just use <Dragonrage /> on cooldown, so far it never conflicts with <RollingRubbish /> or <Overdrive />
+
+### Augmentation
+- likely identical to Devastation, full send
+- good chances this fight sucks big time for Aug if you're unlucky and your current buff targets get picked for <RollingRubbish />
+
+## Sprocketmonger Lockenstock
+
+- <BleedingEdge /> intermissions are at
+  - ~02:05
+  - ~04:30
+  - note that these are heroic, possibly different timers on normal/mythic
+
+- debuff overlaps of <SonicBaBoom /> and <UnstableExplosion /> hurt
+  - this is probably nearly entirely avoidable with correct timing of <ProductDeployment /> triggers but be prepared for these while learning the fight
+  - very good value for <RenewingBlaze />
+- <ObsidianScales /> your assignments of <ProductDeployment />
+  - due to <UnstableShrapnel /> you need to reserve one charge only once every 2 minutes so you can liberally use the other
+- <Zephyr /> has good value on both <SonicBaBoom /> and <Voidsplosion /> but the latter only occurs during the intermission
+  - can likely use on pull for first <SonicBaBoom />, then both intermissions
+
+### Devastation
+- <Dragonrage /> on pull
+- and then either during or after each intermission
+  - if the second is **after** intermission, say 2:30, then next is at ~4:55
+  - if the second is **during** intermission, say 2:20, then next is at ~4:45
+  - so either way, not a large difference that would allow you to get another one in
+  - imo very awkward for 2 minutes. the reason you're not sending on cooldown is that on intermission start, the boss jumps away and also knocks the entire raid to the opposite side of the room, so you're out of range for a considerable time
+
+### Augmentation
+- <BreathOfEons /> on pull
+- same pattern as Devastation. adjust based on buff target cds
+
+## One-Armed Bandit
+
+- <WowheadLink kind="npc" id={228463}>Reel Assistant</WowheadLink> add sets spawn at 0:20 and then every 60 seconds thereafter 
+- coins via <PayLine /> occur at
+  - 0:05
+  - 0:37 (+32)
+  - 1:09 (+32)
+  - 1:41 (+32)
+  - 2:13 (+32)
+  - ... you get the idea. it's one before each set of adds and one during or after if you're fast
+- very important (some might say BIS) [WA playing Kaching! when you're buffed](https://wago.io/rhXgebc7g) by <HighRoller />
+  - you can easily have high uptime of this, watch out for it
+
+- <FlameAndCoin /> has most value for <Zephyr />
+  - since it depends on the combo, can't set a timer for this
+- <Zephyr /> P2 <HotHotHeat />
+- <ElectricBlast />, <CoinMagnet /> and any overlap of <PayLine /> with <FoulExhaust /> are good <RenewingBlaze /> cases so kinda send whenever
+
+
+### Devastation
+
+- assignments to pick up coins may influence your timings, so these suggestions are based on the assumption that you have no assignments at the given time
+- make sure you have empowers for each add set, or at the very least, <MassDisintegrate />
+- <Dragonrage /> on pull
+  - note there's a first <HighRoller /> window at ~0:10
+  - also note that it only lasts 15s so barely into adds. obviously still a gain during cds so watch out
+- hold <Dragonrage /> for 30% of the boss if close to it and/or played through the combos
+  - this should be around 4:30 on Heroic at least
+
+### Augmentation
+
+- <BreathOfEons /> on pull and on cd except for holding one for phase 2
+  - breathing the adds is probably only useful on Mythic
+  - they're the damage check but the priority targets will very most likely die before breath pops, so you'd only get in some cleave and boss isn't focused
+
+## Mug'Zee, Heads of Security
+
+- primary damage taken is, like on Cauldron, passive damage via <ElementalCalamity /> and <UncontrolledBurn />
+  - miraculously, <RenewingBlaze /> syncs with the side swaps every minute so this is largely a send-on-cd angle
+- <ObsidianScales /> the <EarthshakerGaol /> prisons
+  - it looks like whoever has aggro of the elementals is the target of the frontal so with proper <Hover /> usage and ability timings you can make this easy for others
+- <Zephyr /> the group soak(s)
+
+### Devastation
+
+- <Dragonrage /> on pull
+  - and on cd pretty much. on Mythic you likely want to hold at some point for Intermission / P2
+- on the left side, make sure to cleave the <WowheadLink kind="npc" id={230316}>Mk II Electro Shocker</WowheadLink> with <MassDisintegrate /> 
+
+### Augmentation
+
+lmao respec :skull:
+
+in all seriousness, the only thing you want to watch out for is not to <BreathOfEons /> briefly before <EarthshakerGaol />
+
+## Chrome King Gallywix
+
+#### Heroic
+
+- we have <Zephyr /> assigned for:
+  - first <ScatterblastCanisters /> at 0:25
+  - first <GallybuxFinaleBlast /> at ~5:20 -- note that these timers will be different for you based when you push
+    - not massively high value here when outranging properly but also for the movement speed
+  - another <GallybuxFinaleBlast /> whenever its ready again around ~8:10
+- <ObsidianScales /> per phase:
+  - Phase 1: The House of Chrome
+    - liberally for <ScatterblastCanisters />
+  - Phase 2: Mechanical Maniac
+    - first set of <FusedCanisters /> as it seems to overlap with <GigaCoils /> around 3:15
+  - Intermission: Docked and Loaded
+    - didn't personally use it here but if you're struggling here, definitely a good candidate
+  - Stage Three: What an Arsenal!
+    - I used on all <TickTockCanisters /> which also covers <CanisterDetonation /> and <GigaCoils />
+      - this is the soak in melee
+- <Rescue /> quadrant swaps in Phase 1, grab a priest or some other immobile ranged, but grab _something_ as it has big value here with <TwinGuardian />
+  - similarily, <Rescue /> in Phase 3 to get away from <GallybuxFinaleBlast /> or back into range
+- <RenewingBlaze /> for <ScatterblastCanisters /> when you didn't press something else
+  - also during intermission for <TotalDestruction /> -- use around 10 seconds into the intermission
+  - liberal use beyond that, there's a couple spikes and lots of rot, most spikes should be covered by above however
+
+### Devastation
+
+- <Dragonrage /> on pull
+- <Dragonrage /> on first set of adds at ~2:05
+- on cd, it'll align with next set of adds around ~6:10 (P3 start)
+- use <DeepBreath /> to navigate between quadrants in P1 when you don't have <Rescue />
+- use <DeepBreath /> in P2 to navigate between boss positions on the edge of the platform to save hover
+
+### Augmentation
+
+likely full send with a possible hold for intermission. not worth holding for adds outside of maybe Mythic

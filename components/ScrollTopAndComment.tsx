@@ -2,6 +2,10 @@
 
 import { useEffect, useState } from 'react';
 
+function handleScrollTop() {
+  window.scrollTo({ top: 0 });
+}
+
 export function ScrollTopAndComment() {
   const [show, setShow] = useState(false);
 
@@ -13,10 +17,6 @@ export function ScrollTopAndComment() {
     window.addEventListener('scroll', handleWindowScroll);
     return () => window.removeEventListener('scroll', handleWindowScroll);
   }, []);
-
-  const handleScrollTop = () => {
-    window.scrollTo({ top: 0 });
-  };
 
   return (
     <div

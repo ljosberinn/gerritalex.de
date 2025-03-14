@@ -7,8 +7,9 @@ const ContentSecurityPolicy = `
   script-src wow.zamimg.com counterscale.gerritalex.workers.dev 'self' 'unsafe-eval' 'unsafe-inline';
   style-src 'self' wow.zamimg.com 'unsafe-inline';
   img-src * blob: data:;
-  media-src *.s3.amazonaws.com;
+  media-src *.s3.amazonaws.com 'self';
   connect-src *;
+  frame-src clips.twitch.tv;
   font-src 'self';
 `;
 

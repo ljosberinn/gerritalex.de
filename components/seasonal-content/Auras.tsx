@@ -1,116 +1,40 @@
 'use client';
 
-import { Fragment, useEffect, useRef, useState } from 'react';
-import { WowheadIcon, WowheadIconProps } from './WowheadIcon';
-import { WowheadLink, WowheadLinkProps } from './WowheadLink';
-import { CustomLink } from './CustomLink';
+import { Fragment, useCallback, useState } from 'react';
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react';
+import { useScript } from '../../hooks/useScript';
+import { CustomLink } from '../CustomLink';
+import { WowheadIcon } from '../WowheadIcon';
+import { useRestoreStateFromUrl } from './useRestoreStateFromUrl';
+import { ContentHeaderLink } from './ContentHeaderLink';
+import { type SpellsProps, Spells } from './Spells';
 
-type SeasonalAuraOverviewDataset = {
+type AuraDataset = {
   sources: Record<string, { icon: string; name: string }>;
-  spells: {
-    id: number;
-    type: string;
-    source: string;
-    name: string;
-    icon: string;
-    notes?: (
-      | string
-      | { component: 'WowheadLink'; props: WowheadLinkProps; children: string }
-      | { component: 'WowheadIcon'; props: WowheadIconProps; children: string }
-    )[];
-  }[];
+  spells: SpellsProps['spells'];
 };
 
-type SeasonalAuraOverviewProps = {
-  data: SeasonalAuraOverviewDataset;
+type AuraProps = {
+  data: AuraDataset;
 };
 
-function ContentHeaderLink() {
-  return (
-    <span className="content-header-link">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        className="linkicon h-5 w-5"
-      >
-        <path d="M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z" />
-        <path d="M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z" />
-      </svg>
-    </span>
+function ByType({ data }: AuraProps) {
+  const grouped = data.spells.reduce<Record<string, Record<string, SpellsProps['spells']>>>(
+    (acc, spell) => {
+      if (!(spell.type in acc)) {
+        acc[spell.type] = {};
+      }
+
+      if (!(spell.source in acc[spell.type])) {
+        acc[spell.type][spell.source] = [];
+      }
+
+      acc[spell.type][spell.source].push(spell);
+
+      return acc;
+    },
+    {}
   );
-}
-
-type SpellsProps = {
-  spells: SeasonalAuraOverviewDataset['spells'];
-};
-
-function Spells({ spells }: SpellsProps) {
-  return (
-    <ul>
-      {spells.map((spell) => {
-        return (
-          <li key={spell.id}>
-            <WowheadLink kind="spell" id={spell.id} icon={spell.icon}>
-              {spell.name}
-            </WowheadLink>
-            {spell.notes ? (
-              <ul>
-                {spell.notes.map((note, i) => {
-                  if (typeof note === 'string') {
-                    return <li key={i}>{note}</li>;
-                  }
-
-                  if (Array.isArray(note)) {
-                    return (
-                      <li key={i}>
-                        {note.map((notePart, j) => {
-                          return (
-                            <Fragment key={j}>
-                              {typeof notePart === 'string' ? (
-                                notePart
-                              ) : notePart.component === 'WowheadLink' ? (
-                                <WowheadLink {...notePart.props} />
-                              ) : notePart.component === 'WowheadIcon' ? (
-                                <WowheadIcon {...notePart.props} />
-                              ) : notePart.component === 'b' ? (
-                                <b {...notePart.props} />
-                              ) : null}
-                            </Fragment>
-                          );
-                        })}
-                      </li>
-                    );
-                  }
-
-                  return null;
-                })}
-              </ul>
-            ) : null}
-          </li>
-        );
-      })}
-    </ul>
-  );
-}
-
-function ByType({ data }: SeasonalAuraOverviewProps) {
-  const grouped = data.spells.reduce<
-    Record<string, Record<string, SeasonalAuraOverviewDataset['spells']>>
-  >((acc, spell) => {
-    if (!(spell.type in acc)) {
-      acc[spell.type] = {};
-    }
-
-    if (!(spell.source in acc[spell.type])) {
-      acc[spell.type][spell.source] = [];
-    }
-
-    acc[spell.type][spell.source].push(spell);
-
-    return acc;
-  }, {});
 
   const types = Object.keys(grouped).sort();
 
@@ -176,22 +100,23 @@ function ByType({ data }: SeasonalAuraOverviewProps) {
   );
 }
 
-function ByDungeon({ data }: SeasonalAuraOverviewProps) {
-  const grouped = data.spells.reduce<
-    Record<string, Record<string, SeasonalAuraOverviewDataset['spells']>>
-  >((acc, spell) => {
-    if (!(spell.source in acc)) {
-      acc[spell.source] = {};
-    }
+function ByDungeon({ data }: AuraProps) {
+  const grouped = data.spells.reduce<Record<string, Record<string, SpellsProps['spells']>>>(
+    (acc, spell) => {
+      if (!(spell.source in acc)) {
+        acc[spell.source] = {};
+      }
 
-    if (!(spell.type in acc[spell.source])) {
-      acc[spell.source][spell.type] = [];
-    }
+      if (!(spell.type in acc[spell.source])) {
+        acc[spell.source][spell.type] = [];
+      }
 
-    acc[spell.source][spell.type].push(spell);
+      acc[spell.source][spell.type].push(spell);
 
-    return acc;
-  }, {});
+      return acc;
+    },
+    {}
+  );
 
   const sources = Object.keys(grouped).sort();
 
@@ -201,6 +126,7 @@ function ByDungeon({ data }: SeasonalAuraOverviewProps) {
       <ul>
         {sources.map((source) => {
           const sourceInfo = data.sources[source];
+
           return (
             <li key={source}>
               <a href={`#${source}`}>
@@ -248,50 +174,17 @@ function ByDungeon({ data }: SeasonalAuraOverviewProps) {
   );
 }
 
-export function SeasonalAuraOverview({ data }: SeasonalAuraOverviewProps) {
+export function Auras({ data }: AuraProps) {
   const [by, setBy] = useState<'type' | 'dungeon'>('dungeon');
-  const intialRenderRef = useRef(true);
 
-  useEffect(
-    function restoreStateFromUrl() {
-      if (!intialRenderRef.current) {
-        return;
-      }
+  const onChange = useCallback((by: string | null) => {
+    if (by === 'type' || by === 'dungeon') {
+      setBy(by);
+    }
+  }, []);
 
-      intialRenderRef.current = false;
-      // @ts-expect-error this is valid
-      const url = new URL(location);
-
-      if (!url.searchParams.has('by')) {
-        return;
-      }
-
-      const storedBy = url.searchParams.get('by');
-
-      if (storedBy === by) {
-        return;
-      }
-
-      const hash = url.hash;
-
-      if (hash) {
-        setTimeout(() => {
-          const element = document.querySelector(hash);
-
-          if (element) {
-            element.scrollIntoView({
-              behavior: 'smooth',
-            });
-          }
-        }, 350);
-      }
-
-      if (storedBy === 'type' || storedBy === 'dungeon') {
-        setBy(storedBy);
-      }
-    },
-    [by]
-  );
+  useScript('https://wow.zamimg.com/js/tooltips.js');
+  useRestoreStateFromUrl(by, onChange);
 
   return (
     <TabGroup

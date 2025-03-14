@@ -59,6 +59,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   const basePath = process.env.BASE_PATH || '';
+  const isDevelopment = process.env.NODE_ENV === 'development';
 
   return (
     <html
@@ -101,11 +102,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     })();`,
           }}
         />
-        <script
-          id="counterscale-script"
-          defer
-          src="https://counterscale.gerritalex.workers.dev/tracker.js"
-        />
+        {isDevelopment ? null : (
+          <script
+            id="counterscale-script"
+            defer
+            src="https://counterscale.gerritalex.workers.dev/tracker.js"
+          />
+        )}
       </head>
 
       <body className="bg-white p-0.5 text-black antialiased dark:bg-gray-950 dark:text-white">

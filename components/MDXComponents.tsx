@@ -7,8 +7,10 @@ import { CustomLink } from './CustomLink';
 import { TableWrapper } from './TableWrapper';
 import { WowheadLink } from './WowheadLink';
 import { WowheadIcon } from './WowheadIcon';
-import { SeasonalAuraOverview } from './SeasonalAuraOverview';
+import { Auras } from './seasonal-content/Auras';
+import { AoeSpells } from './seasonal-content/AoeSpells';
 import { WowheadSpecIcon } from './WowheadSpecIcon';
+import * as WowheadLinks from './WowheadLinks';
 
 export const components: MDXComponents = {
   Image,
@@ -21,6 +23,21 @@ export const components: MDXComponents = {
   BlogNewsletterForm,
   WowheadLink,
   WowheadIcon,
-  SeasonalAuraOverview,
+  Auras,
+  AoeSpells,
   WowheadSpecIcon,
+  ...Object.fromEntries(
+    Object.entries(WowheadLinks).map(([key, Component]) => {
+      return [
+        key,
+        (props) => {
+          return (
+            <>
+              <Component {...props} />{' '}
+            </>
+          );
+        },
+      ];
+    })
+  ),
 };

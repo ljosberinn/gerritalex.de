@@ -26,13 +26,14 @@
     "metadata": {
       "genres": [
         "Sci-Fi & Fantasy",
-        "Action & Adventure"
+        "Action & Adventure",
+        "Drama"
       ],
       "seasons": 1,
       "tagline": "Warrior. Outcast. Rebel. Jedi.",
       "release": {
-        "day": 3,
-        "month": 10,
+        "day": 22,
+        "month": 8,
         "year": 2023
       },
       "episodes": 8
@@ -40,6 +41,27 @@
     "favorite": false,
     "episodesSeen": 8,
     "abandoned": false
+  },
+  {
+    "title": "Alien: Earth",
+    "id": 157239,
+    "metadata": {
+      "genres": [
+        "Drama",
+        "Sci-Fi & Fantasy"
+      ],
+      "seasons": 1,
+      "tagline": "We were safer in space.",
+      "release": {
+        "day": null,
+        "month": null,
+        "year": null
+      },
+      "episodes": 1
+    },
+    "favorite": false,
+    "abandoned": false,
+    "episodesSeen": 0
   },
   {
     "title": "Altered Carbon",
@@ -52,9 +74,9 @@
       "seasons": 2,
       "tagline": "No body lives forever.",
       "release": {
-        "day": 27,
+        "day": 2,
         "month": 2,
-        "year": 2020
+        "year": 2018
       },
       "episodes": 18
     },
@@ -74,9 +96,9 @@
       "seasons": 3,
       "tagline": "Believe.",
       "release": {
-        "day": 21,
-        "month": 3,
-        "year": 2021
+        "day": 30,
+        "month": 4,
+        "year": 2017
       },
       "episodes": 26
     },
@@ -96,8 +118,8 @@
       "seasons": 2,
       "tagline": "The Rebellion begins.",
       "release": {
-        "day": 23,
-        "month": 11,
+        "day": 21,
+        "month": 9,
         "year": 2022
       },
       "episodes": 24
@@ -119,9 +141,9 @@
       "seasons": 2,
       "tagline": "The hunt is on.",
       "release": {
-        "day": 23,
+        "day": 6,
         "month": 11,
-        "year": 2024
+        "year": 2021
       },
       "episodes": 18
     },
@@ -140,9 +162,9 @@
       "seasons": 4,
       "tagline": "Normal is overrated.",
       "release": {
-        "day": 9,
-        "month": 7,
-        "year": 2021
+        "day": 11,
+        "month": 8,
+        "year": 2017
       },
       "episodes": 38
     },
@@ -202,8 +224,8 @@
       "seasons": 1,
       "tagline": "One man's freedom hides in another man's darkness.",
       "release": {
-        "day": 4,
-        "month": 8,
+        "day": 7,
+        "month": 7,
         "year": 2022
       },
       "episodes": 6
@@ -224,9 +246,9 @@
       "seasons": 7,
       "tagline": "The future is bright.",
       "release": {
-        "day": 15,
-        "month": 6,
-        "year": 2023
+        "day": 4,
+        "month": 12,
+        "year": 2011
       },
       "episodes": 32
     },
@@ -245,9 +267,9 @@
       "seasons": 5,
       "tagline": "Change the equation.",
       "release": {
-        "day": 29,
-        "month": 9,
-        "year": 2013
+        "day": 20,
+        "month": 1,
+        "year": 2008
       },
       "episodes": 62
     },
@@ -265,9 +287,9 @@
       "seasons": 2,
       "tagline": "",
       "release": {
-        "day": 29,
-        "month": 11,
-        "year": 2017
+        "day": 19,
+        "month": 10,
+        "year": 2016
       },
       "episodes": 20
     },
@@ -285,8 +307,8 @@
       "seasons": 1,
       "tagline": "What is the cost of lies?",
       "release": {
-        "day": 3,
-        "month": 6,
+        "day": 6,
+        "month": 5,
         "year": 2019
       },
       "episodes": 5
@@ -307,8 +329,8 @@
       "seasons": 1,
       "tagline": "Reality is a conspiracy.",
       "release": {
-        "day": 27,
-        "month": 3,
+        "day": 21,
+        "month": 2,
         "year": 2024
       },
       "episodes": 8
@@ -330,9 +352,9 @@
       "seasons": 3,
       "tagline": "Everything is connected.",
       "release": {
-        "day": 27,
-        "month": 6,
-        "year": 2020
+        "day": 1,
+        "month": 12,
+        "year": 2017
       },
       "episodes": 26
     },
@@ -351,8 +373,8 @@
       "seasons": 1,
       "tagline": "One life. Infinite possibilities.",
       "release": {
-        "day": 25,
-        "month": 6,
+        "day": 7,
+        "month": 5,
         "year": 2024
       },
       "episodes": 9
@@ -372,8 +394,8 @@
       "seasons": 1,
       "tagline": "Every piece holds the power to change our world.",
       "release": {
-        "day": 24,
-        "month": 5,
+        "day": 1,
+        "month": 3,
         "year": 2021
       },
       "episodes": 13
@@ -394,8 +416,8 @@
       "seasons": 1,
       "tagline": "Reality is stranger than dreams.",
       "release": {
-        "day": 16,
-        "month": 4,
+        "day": 5,
+        "month": 3,
         "year": 2020
       },
       "episodes": 8
@@ -416,9 +438,9 @@
       "seasons": 8,
       "tagline": "A serial killer with a heart..... just pray it's not yours",
       "release": {
-        "day": 22,
-        "month": 9,
-        "year": 2013
+        "day": 1,
+        "month": 10,
+        "year": 2006
       },
       "episodes": 96
     },
@@ -438,15 +460,37 @@
       "seasons": 13,
       "tagline": "Space. For all.",
       "release": {
-        "day": 5,
-        "month": 12,
-        "year": 2021
+        "day": 26,
+        "month": 3,
+        "year": 2005
       },
       "episodes": 153
     },
     "favorite": false,
     "episodesSeen": 14,
     "abandoned": true
+  },
+  {
+    "title": "Dune: Prophecy",
+    "id": 90228,
+    "metadata": {
+      "genres": [
+        "Sci-Fi & Fantasy",
+        "Drama",
+        "Action & Adventure"
+      ],
+      "seasons": 1,
+      "tagline": "True power begins with control.",
+      "release": {
+        "day": 17,
+        "month": 11,
+        "year": 2024
+      },
+      "episodes": 6
+    },
+    "favorite": false,
+    "abandoned": false,
+    "episodesSeen": 0
   },
   {
     "title": "Euphoria",
@@ -458,9 +502,9 @@
       "seasons": 2,
       "tagline": "Remember this feeling.",
       "release": {
-        "day": 27,
-        "month": 2,
-        "year": 2022
+        "day": 16,
+        "month": 6,
+        "year": 2019
       },
       "episodes": 16
     },
@@ -480,9 +524,9 @@
       "seasons": 4,
       "tagline": "Some mysteries can’t be explained.",
       "release": {
-        "day": 22,
-        "month": 8,
-        "year": 2024
+        "day": 26,
+        "month": 9,
+        "year": 2019
       },
       "episodes": 50
     },
@@ -523,9 +567,9 @@
       "seasons": 5,
       "tagline": "Consequence comes knocking.",
       "release": {
-        "day": 16,
-        "month": 1,
-        "year": 2024
+        "day": 15,
+        "month": 4,
+        "year": 2014
       },
       "episodes": 51
     },
@@ -545,9 +589,9 @@
       "seasons": 4,
       "tagline": "A new gold rush begins.",
       "release": {
-        "day": 11,
-        "month": 1,
-        "year": 2024
+        "day": 1,
+        "month": 11,
+        "year": 2019
       },
       "episodes": 40
     },
@@ -566,9 +610,9 @@
       "seasons": 2,
       "tagline": "All empires fall.",
       "release": {
-        "day": 14,
+        "day": 23,
         "month": 9,
-        "year": 2023
+        "year": 2021
       },
       "episodes": 20
     },
@@ -588,9 +632,9 @@
       "seasons": 4,
       "tagline": "",
       "release": {
-        "day": 24,
-        "month": 11,
-        "year": 2024
+        "day": 20,
+        "month": 2,
+        "year": 2022
       },
       "episodes": 30
     },
@@ -610,8 +654,8 @@
       "seasons": 1,
       "tagline": "",
       "release": {
-        "day": 2,
-        "month": 11,
+        "day": 28,
+        "month": 9,
         "year": 2023
       },
       "episodes": 8
@@ -632,7 +676,7 @@
       "seasons": 1,
       "tagline": "Open your mind to fear.",
       "release": {
-        "day": 28,
+        "day": 25,
         "month": 10,
         "year": 2022
       },
@@ -655,9 +699,9 @@
       "seasons": 2,
       "tagline": "Behold, the powers of destiny. Beware, the powers of karma.",
       "release": {
-        "day": 27,
-        "month": 9,
-        "year": 2024
+        "day": 22,
+        "month": 12,
+        "year": 2023
       },
       "episodes": 17
     },
@@ -676,9 +720,9 @@
       "seasons": 2,
       "tagline": "Rise from the fall.",
       "release": {
-        "day": 21,
+        "day": 24,
         "month": 3,
-        "year": 2024
+        "year": 2022
       },
       "episodes": 17
     },
@@ -697,9 +741,9 @@
       "seasons": 3,
       "tagline": "Savor the hunt.",
       "release": {
-        "day": 27,
-        "month": 8,
-        "year": 2015
+        "day": 4,
+        "month": 4,
+        "year": 2013
       },
       "episodes": 39
     },
@@ -719,9 +763,9 @@
       "seasons": 2,
       "tagline": "",
       "release": {
-        "day": 29,
-        "month": 5,
-        "year": 2019
+        "day": 6,
+        "month": 12,
+        "year": 2017
       },
       "episodes": 18
     },
@@ -741,9 +785,9 @@
       "seasons": 2,
       "tagline": "They were resurrected into a hellbound world.",
       "release": {
-        "day": 25,
-        "month": 10,
-        "year": 2024
+        "day": 19,
+        "month": 11,
+        "year": 2021
       },
       "episodes": 12
     },
@@ -762,9 +806,9 @@
       "seasons": 4,
       "tagline": "You can't choose your family, you can choose a side.",
       "release": {
-        "day": 8,
-        "month": 2,
-        "year": 2010
+        "day": 25,
+        "month": 9,
+        "year": 2006
       },
       "episodes": 78
     },
@@ -782,9 +826,9 @@
       "seasons": 1,
       "tagline": "A new phenomenon begins",
       "release": {
-        "day": 21,
-        "month": 1,
-        "year": 2016
+        "day": 24,
+        "month": 9,
+        "year": 2015
       },
       "episodes": 13
     },
@@ -804,9 +848,9 @@
       "seasons": 8,
       "tagline": "Feel better?",
       "release": {
-        "day": 21,
-        "month": 5,
-        "year": 2012
+        "day": 16,
+        "month": 11,
+        "year": 2004
       },
       "episodes": 176
     },
@@ -824,9 +868,9 @@
       "seasons": 6,
       "tagline": "There are two kinds of pain.",
       "release": {
-        "day": 2,
-        "month": 11,
-        "year": 2018
+        "day": 1,
+        "month": 2,
+        "year": 2013
       },
       "episodes": 73
     },
@@ -846,9 +890,9 @@
       "seasons": 2,
       "tagline": "All must choose.",
       "release": {
-        "day": 4,
+        "day": 21,
         "month": 8,
-        "year": 2024
+        "year": 2022
       },
       "episodes": 18
     },
@@ -868,9 +912,9 @@
       "seasons": 2,
       "tagline": "You can’t control what you don’t understand.",
       "release": {
-        "day": 16,
-        "month": 10,
-        "year": 2019
+        "day": 6,
+        "month": 6,
+        "year": 2018
       },
       "episodes": 20
     },
@@ -889,9 +933,9 @@
       "seasons": 2,
       "tagline": "Fight together or fall apart.",
       "release": {
-        "day": 24,
+        "day": 21,
         "month": 10,
-        "year": 2023
+        "year": 2021
       },
       "episodes": 20
     },
@@ -953,9 +997,9 @@
       "seasons": 2,
       "tagline": "",
       "release": {
-        "day": 13,
-        "month": 3,
-        "year": 2020
+        "day": 25,
+        "month": 1,
+        "year": 2019
       },
       "episodes": 12
     },
@@ -975,9 +1019,9 @@
       "seasons": 3,
       "tagline": "Open your third eye.",
       "release": {
-        "day": 12,
-        "month": 8,
-        "year": 2019
+        "day": 8,
+        "month": 2,
+        "year": 2017
       },
       "episodes": 27
     },
@@ -997,9 +1041,9 @@
       "seasons": 3,
       "tagline": "They're undeceivable.",
       "release": {
-        "day": 31,
+        "day": 21,
         "month": 1,
-        "year": 2011
+        "year": 2009
       },
       "episodes": 48
     },
@@ -1019,8 +1063,8 @@
       "tagline": "Loki's time has come.",
       "release": {
         "day": 9,
-        "month": 11,
-        "year": 2023
+        "month": 6,
+        "year": 2021
       },
       "episodes": 12
     },
@@ -1039,9 +1083,9 @@
       "seasons": 3,
       "tagline": "The threesome you've been waiting for.",
       "release": {
-        "day": 20,
-        "month": 5,
-        "year": 2022
+        "day": 15,
+        "month": 3,
+        "year": 2019
       },
       "episodes": 35
     },
@@ -1061,8 +1105,8 @@
       "seasons": 1,
       "tagline": "Take back your legacy.",
       "release": {
-        "day": 18,
-        "month": 10,
+        "day": 16,
+        "month": 8,
         "year": 2020
       },
       "episodes": 10
@@ -1083,9 +1127,9 @@
       "seasons": 4,
       "tagline": "Make the final connection.",
       "release": {
-        "day": 2,
-        "month": 6,
-        "year": 2023
+        "day": 24,
+        "month": 9,
+        "year": 2018
       },
       "episodes": 62
     },
@@ -1105,8 +1149,8 @@
       "seasons": 1,
       "tagline": "All truths come to light.",
       "release": {
-        "day": 30,
-        "month": 5,
+        "day": 18,
+        "month": 4,
         "year": 2021
       },
       "episodes": 7
@@ -1147,9 +1191,9 @@
       "seasons": 2,
       "tagline": "History. Pattern. Profile.",
       "release": {
-        "day": 16,
-        "month": 8,
-        "year": 2019
+        "day": 13,
+        "month": 10,
+        "year": 2017
       },
       "episodes": 19
     },
@@ -1169,9 +1213,9 @@
       "seasons": 1,
       "tagline": "Some secrets cannot be contained.",
       "release": {
-        "day": 11,
-        "month": 1,
-        "year": 2024
+        "day": 16,
+        "month": 11,
+        "year": 2023
       },
       "episodes": 10
     },
@@ -1184,15 +1228,15 @@
     "id": 92749,
     "metadata": {
       "genres": [
-        "Action & Adventure",
         "Sci-Fi & Fantasy",
-        "Mystery"
+        "Mystery",
+        "Action & Adventure"
       ],
       "seasons": 1,
       "tagline": "Embrace the chaos.",
       "release": {
-        "day": 4,
-        "month": 5,
+        "day": 30,
+        "month": 3,
         "year": 2022
       },
       "episodes": 6
@@ -1213,9 +1257,9 @@
       "seasons": 4,
       "tagline": "You can't bury the truth.",
       "release": {
-        "day": 23,
-        "month": 8,
-        "year": 2023
+        "day": 9,
+        "month": 10,
+        "year": 2019
       },
       "episodes": 62
     },
@@ -1256,8 +1300,8 @@
       "seasons": 1,
       "tagline": "Between darkness and defeat, hope survives.",
       "release": {
-        "day": 22,
-        "month": 6,
+        "day": 26,
+        "month": 5,
         "year": 2022
       },
       "episodes": 6
@@ -1277,9 +1321,9 @@
       "seasons": 2,
       "tagline": "The lines are blurred, the mission is clear.",
       "release": {
-        "day": 24,
-        "month": 10,
-        "year": 2024
+        "day": 16,
+        "month": 6,
+        "year": 2022
       },
       "episodes": 15
     },
@@ -1299,9 +1343,9 @@
       "seasons": 5,
       "tagline": "They're ready for their close call.",
       "release": {
-        "day": 29,
-        "month": 10,
-        "year": 2024
+        "day": 31,
+        "month": 8,
+        "year": 2021
       },
       "episodes": 40
     },
@@ -1321,9 +1365,9 @@
       "seasons": 2,
       "tagline": "The land has its secrets.",
       "release": {
-        "day": 16,
-        "month": 5,
-        "year": 2024
+        "day": 14,
+        "month": 4,
+        "year": 2022
       },
       "episodes": 15
     },
@@ -1342,9 +1386,9 @@
       "seasons": 4,
       "tagline": "No one gets out clean.",
       "release": {
-        "day": 29,
-        "month": 4,
-        "year": 2022
+        "day": 21,
+        "month": 7,
+        "year": 2017
       },
       "episodes": 44
     },
@@ -1364,8 +1408,8 @@
       "seasons": 2,
       "tagline": "Give peace a f#cking chance.",
       "release": {
-        "day": 17,
-        "month": 2,
+        "day": 13,
+        "month": 1,
         "year": 2022
       },
       "episodes": 8
@@ -1386,9 +1430,9 @@
       "seasons": 3,
       "tagline": "The end is only the beginning.",
       "release": {
-        "day": 20,
-        "month": 4,
-        "year": 2023
+        "day": 23,
+        "month": 1,
+        "year": 2020
       },
       "episodes": 30
     },
@@ -1407,11 +1451,11 @@
       "seasons": 2,
       "tagline": "Murder mysteries can take detours.",
       "release": {
-        "day": 9,
-        "month": 3,
+        "day": 26,
+        "month": 1,
         "year": 2023
       },
-      "episodes": 11
+      "episodes": 22
     },
     "favorite": false,
     "episodesSeen": 10,
@@ -1425,11 +1469,11 @@
         "Drama",
         "Mystery"
       ],
-      "seasons": 2,
+      "seasons": 1,
       "tagline": "Presume nothing.",
       "release": {
-        "day": 23,
-        "month": 7,
+        "day": 11,
+        "month": 6,
         "year": 2024
       },
       "episodes": 8
@@ -1450,9 +1494,9 @@
       "seasons": 2,
       "tagline": "Where the conspiracy began.",
       "release": {
-        "day": 24,
-        "month": 3,
-        "year": 2020
+        "day": 8,
+        "month": 1,
+        "year": 2019
       },
       "episodes": 20
     },
@@ -1471,9 +1515,9 @@
       "seasons": 2,
       "tagline": "Sacrifice for survival.",
       "release": {
-        "day": 17,
-        "month": 3,
-        "year": 2022
+        "day": 3,
+        "month": 9,
+        "year": 2020
       },
       "episodes": 18
     },
@@ -1491,9 +1535,9 @@
       "seasons": 3,
       "tagline": "Beam this up.",
       "release": {
-        "day": 3,
-        "month": 4,
-        "year": 2024
+        "day": 27,
+        "month": 1,
+        "year": 2021
       },
       "episodes": 34
     },
@@ -1534,9 +1578,9 @@
       "seasons": 7,
       "tagline": "To save the future, they must survive the past.",
       "release": {
-        "day": 23,
-        "month": 8,
-        "year": 2023
+        "day": 26,
+        "month": 1,
+        "year": 2017
       },
       "episodes": 137
     },
@@ -1556,7 +1600,7 @@
       "seasons": 2,
       "tagline": "Dream the world anew.",
       "release": {
-        "day": 19,
+        "day": 5,
         "month": 8,
         "year": 2022
       },
@@ -1578,8 +1622,8 @@
       "seasons": 1,
       "tagline": "Who do you trust?",
       "release": {
-        "day": 26,
-        "month": 7,
+        "day": 21,
+        "month": 6,
         "year": 2023
       },
       "episodes": 6
@@ -1600,9 +1644,9 @@
       "seasons": 3,
       "tagline": "A new vision of the future.",
       "release": {
-        "day": 13,
-        "month": 10,
-        "year": 2022
+        "day": 1,
+        "month": 11,
+        "year": 2019
       },
       "episodes": 24
     },
@@ -1621,9 +1665,9 @@
       "seasons": 2,
       "tagline": "I am we.",
       "release": {
-        "day": 8,
+        "day": 5,
         "month": 6,
-        "year": 2018
+        "year": 2015
       },
       "episodes": 24
     },
@@ -1643,8 +1687,8 @@
       "seasons": 2,
       "tagline": "There's more to work than life.",
       "release": {
-        "day": 7,
-        "month": 4,
+        "day": 17,
+        "month": 2,
         "year": 2022
       },
       "episodes": 19
@@ -1664,9 +1708,9 @@
       "seasons": 2,
       "tagline": "Every power has a price.",
       "release": {
-        "day": 16,
-        "month": 3,
-        "year": 2023
+        "day": 23,
+        "month": 4,
+        "year": 2021
       },
       "episodes": 16
     },
@@ -1683,11 +1727,11 @@
         "Drama"
       ],
       "seasons": 2,
-      "tagline": "The truth will surface.",
+      "tagline": "To live, you need something to die for.",
       "release": {
-        "day": 9,
-        "month": 1,
-        "year": 2025
+        "day": 4,
+        "month": 5,
+        "year": 2023
       },
       "episodes": 20
     },
@@ -1706,9 +1750,9 @@
       "seasons": 6,
       "tagline": "This is how crack began.",
       "release": {
-        "day": 19,
-        "month": 4,
-        "year": 2023
+        "day": 5,
+        "month": 7,
+        "year": 2017
       },
       "episodes": 60
     },
@@ -1726,11 +1770,11 @@
         "Drama"
       ],
       "seasons": 3,
-      "tagline": "45.6 billion won is child's play.",
+      "tagline": "Prepare for the final game.",
       "release": {
-        "day": 26,
-        "month": 12,
-        "year": 2024
+        "day": 17,
+        "month": 9,
+        "year": 2021
       },
       "episodes": 22
     },
@@ -1750,9 +1794,9 @@
       "seasons": 5,
       "tagline": "At the edge of the universe, discovery begins.",
       "release": {
-        "day": 30,
-        "month": 5,
-        "year": 2024
+        "day": 24,
+        "month": 9,
+        "year": 2017
       },
       "episodes": 65
     },
@@ -1770,9 +1814,9 @@
       "seasons": 3,
       "tagline": "The frontier awaits.",
       "release": {
-        "day": 10,
-        "month": 8,
-        "year": 2023
+        "day": 5,
+        "month": 5,
+        "year": 2022
       },
       "episodes": 21
     },
@@ -1787,15 +1831,14 @@
       "genres": [
         "Drama",
         "Sci-Fi & Fantasy",
-        "Mystery",
-        "Action & Adventure"
+        "Mystery"
       ],
       "seasons": 5,
       "tagline": "Every ending has a beginning.",
       "release": {
-        "day": 1,
+        "day": 15,
         "month": 7,
-        "year": 2022
+        "year": 2016
       },
       "episodes": 42
     },
@@ -1815,9 +1858,9 @@
       "seasons": 6,
       "tagline": "Better. Stronger. Together.",
       "release": {
-        "day": 9,
-        "month": 11,
-        "year": 2021
+        "day": 26,
+        "month": 10,
+        "year": 2015
       },
       "episodes": 126
     },
@@ -1836,9 +1879,9 @@
       "seasons": 3,
       "tagline": "Back for seconds.",
       "release": {
-        "day": 26,
+        "day": 23,
         "month": 6,
-        "year": 2024
+        "year": 2022
       },
       "episodes": 28
     },
@@ -1858,9 +1901,9 @@
       "seasons": 10,
       "tagline": "Never trust a criminal... Until you have to.",
       "release": {
-        "day": 13,
-        "month": 7,
-        "year": 2023
+        "day": 23,
+        "month": 9,
+        "year": 2013
       },
       "episodes": 218
     },
@@ -1880,9 +1923,9 @@
       "seasons": 2,
       "tagline": "Some love stories begin at the end.",
       "release": {
-        "day": 7,
-        "month": 11,
-        "year": 2019
+        "day": 24,
+        "month": 10,
+        "year": 2017
       },
       "episodes": 16
     },
@@ -1901,9 +1944,9 @@
       "seasons": 2,
       "tagline": "Every soul is a battlefield.",
       "release": {
-        "day": 15,
-        "month": 12,
-        "year": 2017
+        "day": 23,
+        "month": 9,
+        "year": 2016
       },
       "episodes": 20
     },
@@ -1923,9 +1966,9 @@
       "seasons": 6,
       "tagline": "The stars are better off without us.",
       "release": {
-        "day": 13,
-        "month": 1,
-        "year": 2022
+        "day": 14,
+        "month": 12,
+        "year": 2015
       },
       "episodes": 62
     },
@@ -1966,9 +2009,9 @@
       "seasons": 4,
       "tagline": "What the fork?!",
       "release": {
-        "day": 30,
-        "month": 1,
-        "year": 2020
+        "day": 19,
+        "month": 9,
+        "year": 2016
       },
       "episodes": 50
     },
@@ -2028,9 +2071,9 @@
       "seasons": 2,
       "tagline": "The headlines you remember, the ending you don't.",
       "release": {
-        "day": 30,
-        "month": 11,
-        "year": 2021
+        "day": 27,
+        "month": 5,
+        "year": 2019
       },
       "episodes": 12
     },
@@ -2050,9 +2093,9 @@
       "seasons": 2,
       "tagline": "Evil has had many names.",
       "release": {
-        "day": 3,
-        "month": 10,
-        "year": 2024
+        "day": 1,
+        "month": 9,
+        "year": 2022
       },
       "episodes": 16
     },
@@ -2072,8 +2115,8 @@
       "seasons": 1,
       "tagline": "",
       "release": {
-        "day": 18,
-        "month": 11,
+        "day": 16,
+        "month": 9,
         "year": 2021
       },
       "episodes": 10
@@ -2093,8 +2136,8 @@
       "seasons": 1,
       "tagline": "",
       "release": {
-        "day": 11,
-        "month": 8,
+        "day": 30,
+        "month": 6,
         "year": 2019
       },
       "episodes": 7
@@ -2113,8 +2156,8 @@
       "seasons": 1,
       "tagline": "",
       "release": {
-        "day": 3,
-        "month": 7,
+        "day": 24,
+        "month": 4,
         "year": 2022
       },
       "episodes": 10
@@ -2133,8 +2176,8 @@
       "seasons": 1,
       "tagline": "Everyone can be a saint.",
       "release": {
-        "day": 7,
-        "month": 2,
+        "day": 10,
+        "month": 1,
         "year": 2020
       },
       "episodes": 9
@@ -2155,8 +2198,8 @@
       "seasons": 1,
       "tagline": "",
       "release": {
-        "day": 27,
-        "month": 3,
+        "day": 21,
+        "month": 2,
         "year": 2016
       },
       "episodes": 6
@@ -2177,8 +2220,8 @@
       "seasons": 1,
       "tagline": "Fear has many faces.",
       "release": {
-        "day": 8,
-        "month": 3,
+        "day": 12,
+        "month": 1,
         "year": 2020
       },
       "episodes": 10
@@ -2199,9 +2242,9 @@
       "seasons": 2,
       "tagline": "The truth must be taken.",
       "release": {
-        "day": 18,
-        "month": 1,
-        "year": 2019
+        "day": 17,
+        "month": 11,
+        "year": 2017
       },
       "episodes": 26
     },
@@ -2243,9 +2286,9 @@
       "seasons": 2,
       "tagline": "",
       "release": {
-        "day": 14,
-        "month": 10,
-        "year": 2019
+        "day": 26,
+        "month": 3,
+        "year": 2018
       },
       "episodes": 20
     },
@@ -2265,9 +2308,9 @@
       "seasons": 2,
       "tagline": "What dimension are you even in?",
       "release": {
-        "day": 25,
-        "month": 6,
-        "year": 2020
+        "day": 1,
+        "month": 4,
+        "year": 2019
       },
       "episodes": 20
     },
@@ -2287,9 +2330,9 @@
       "seasons": 4,
       "tagline": "Too many siblings. Not enough timeline.",
       "release": {
-        "day": 8,
-        "month": 8,
-        "year": 2024
+        "day": 15,
+        "month": 2,
+        "year": 2019
       },
       "episodes": 36
     },
@@ -2308,9 +2351,9 @@
       "seasons": 3,
       "tagline": "Doomed to survive.",
       "release": {
-        "day": 26,
-        "month": 9,
-        "year": 2022
+        "day": 28,
+        "month": 10,
+        "year": 2019
       },
       "episodes": 24
     },
@@ -2326,14 +2369,14 @@
         "Sci-Fi & Fantasy",
         "Drama"
       ],
-      "seasons": 4,
+      "seasons": 3,
       "tagline": "",
       "release": {
-        "day": 5,
-        "month": 10,
-        "year": 2023
+        "day": 18,
+        "month": 11,
+        "year": 2021
       },
-      "episodes": 17
+      "episodes": 24
     },
     "favorite": false,
     "episodesSeen": 17,
@@ -2351,8 +2394,8 @@
       "seasons": 1,
       "tagline": "",
       "release": {
-        "day": 17,
-        "month": 2,
+        "day": 15,
+        "month": 1,
         "year": 2023
       },
       "episodes": 30
@@ -2394,9 +2437,9 @@
       "seasons": 2,
       "tagline": "We've only scratched the surface.",
       "release": {
-        "day": 17,
-        "month": 11,
-        "year": 2021
+        "day": 20,
+        "month": 3,
+        "year": 2020
       },
       "episodes": 13
     },
@@ -2416,9 +2459,9 @@
       "seasons": 6,
       "tagline": "",
       "release": {
-        "day": 30,
-        "month": 12,
-        "year": 2020
+        "day": 3,
+        "month": 3,
+        "year": 2013
       },
       "episodes": 89
     },
@@ -2438,8 +2481,8 @@
       "seasons": 1,
       "tagline": "Experience a new vision of reality.",
       "release": {
-        "day": 5,
-        "month": 3,
+        "day": 15,
+        "month": 1,
         "year": 2021
       },
       "episodes": 9
@@ -2460,8 +2503,8 @@
       "seasons": 1,
       "tagline": "Nothing ever ends...",
       "release": {
-        "day": 15,
-        "month": 12,
+        "day": 20,
+        "month": 10,
         "year": 2019
       },
       "episodes": 9
@@ -2482,9 +2525,9 @@
       "seasons": 2,
       "tagline": "One road in. No road out.",
       "release": {
-        "day": 27,
-        "month": 7,
-        "year": 2016
+        "day": 14,
+        "month": 5,
+        "year": 2015
       },
       "episodes": 20
     },
@@ -2503,9 +2546,9 @@
       "seasons": 4,
       "tagline": "These violent delights have violent ends.",
       "release": {
-        "day": 14,
-        "month": 8,
-        "year": 2022
+        "day": 2,
+        "month": 10,
+        "year": 2016
       },
       "episodes": 36
     },
@@ -2524,8 +2567,8 @@
       "seasons": 1,
       "tagline": "The future will be one of a kind.",
       "release": {
-        "day": 1,
-        "month": 11,
+        "day": 13,
+        "month": 9,
         "year": 2021
       },
       "episodes": 10
@@ -2545,9 +2588,9 @@
       "seasons": 3,
       "tagline": "We hear the wilderness and it hears us.",
       "release": {
-        "day": 28,
-        "month": 5,
-        "year": 2023
+        "day": 14,
+        "month": 11,
+        "year": 2021
       },
       "episodes": 29
     },
