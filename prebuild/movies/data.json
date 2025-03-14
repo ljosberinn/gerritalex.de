@@ -452,6 +452,25 @@
     "favorite": true
   },
   {
+    "title": "Ash",
+    "id": 931349,
+    "metadata": {
+      "genres": [
+        "Horror",
+        "Science Fiction",
+        "Thriller"
+      ],
+      "tagline": "A new mindbender by Flying Lotus.",
+      "release": {
+        "day": 21,
+        "month": 3,
+        "year": 2025
+      },
+      "runtime": 95
+    },
+    "favorite": false
+  },
+  {
     "title": "Attraction",
     "id": 65869,
     "metadata": {
