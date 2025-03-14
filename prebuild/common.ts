@@ -62,7 +62,6 @@ export type TMDBSharedResponseFields = {
 
 export async function doFetch<T>(url: string, options: RequestInit): Promise<T | null> {
   url = url.replaceAll(' ', '%20');
-  console.time(url);
   try {
     const response = await fetch(url, options);
     if (!response.ok) {
@@ -73,7 +72,5 @@ export async function doFetch<T>(url: string, options: RequestInit): Promise<T |
   } catch (error) {
     console.error(error);
     return null;
-  } finally {
-    console.timeEnd(url);
   }
 }
