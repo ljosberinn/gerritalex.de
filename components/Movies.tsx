@@ -25,29 +25,55 @@ function filterToFavorites(data: MoviesType[]) {
 
 function filterToYearDesc(data: MoviesType[]) {
   return data.sort((a, b) => {
-    if (a.metadata.release.year !== b.metadata.release.year) {
-      return b.metadata.release.year - a.metadata.release.year;
+    const aYear = a.metadata.release.year ?? new Date().getFullYear();
+    const bYear = b.metadata.release.year ?? new Date().getFullYear();
+
+    if (aYear !== bYear) {
+      return bYear - aYear;
     }
 
-    if (a.metadata.release.month !== b.metadata.release.month) {
-      return b.metadata.release.month - a.metadata.release.month;
+    const aMonth = a.metadata.release.month ?? 12;
+    const bMonth = b.metadata.release.month ?? 12;
+
+    if (aMonth !== bMonth) {
+      return bMonth - aMonth;
     }
 
-    return b.metadata.release.day - a.metadata.release.day;
+    const aDay = a.metadata.release.day ?? 31;
+    const bDay = b.metadata.release.day ?? 31;
+
+    if (aDay !== bDay) {
+      return bDay - aDay;
+    }
+
+    return 0;
   });
 }
 
 function filterToYearAsc(data: MoviesType[]) {
   return data.sort((a, b) => {
-    if (a.metadata.release.year !== b.metadata.release.year) {
-      return a.metadata.release.year - b.metadata.release.year;
+    const aYear = a.metadata.release.year ?? new Date().getFullYear();
+    const bYear = b.metadata.release.year ?? new Date().getFullYear();
+
+    if (aYear !== bYear) {
+      return aYear - bYear;
     }
 
-    if (a.metadata.release.month !== b.metadata.release.month) {
-      return a.metadata.release.month - b.metadata.release.month;
+    const aMonth = a.metadata.release.month ?? 12;
+    const bMonth = b.metadata.release.month ?? 12;
+
+    if (aMonth !== bMonth) {
+      return aMonth - bMonth;
     }
 
-    return a.metadata.release.day - b.metadata.release.day;
+    const aDay = a.metadata.release.day ?? 31;
+    const bDay = b.metadata.release.day ?? 31;
+
+    if (aDay !== bDay) {
+      return aDay - bDay;
+    }
+
+    return 0;
   });
 }
 
@@ -191,13 +217,25 @@ export function Movies({ data }: MoviesProps) {
           </tbody>
         </table>
       ) : (
-        <div className="flex flex-wrap justify-center gap-8 pt-8">
+        <div className="flex flex-wrap justify-center gap-4 pt-4 md:gap-6">
           {filteredData.map((movie) => {
             const classes = [
               'rounded-md border-2 transition ease-in-out hover:opacity-100 shadow-inner hover:shadow-none',
             ];
 
-            if (movie.favorite) {
+            const releaseDate = new Date(
+              [
+                movie.metadata.release.year,
+                movie.metadata.release.month,
+                movie.metadata.release.day,
+              ].join('-')
+            );
+
+            const isUpcoming = releaseDate > new Date();
+
+            if (isUpcoming) {
+              classes.push('grayscale dark:border-slate-700');
+            } else if (movie.favorite) {
               classes.push(
                 'border-yellow-500 hover:border-yellow-600 dark:border-amber-400 dark:hover:border-amber-500'
               );
@@ -217,7 +255,11 @@ export function Movies({ data }: MoviesProps) {
                 className="opacity-80 hover:opacity-100"
               >
                 <Image
-                  title={movie.title}
+                  title={
+                    isUpcoming
+                      ? `${movie.title} (releasing ${releaseDate.toISOString().split('T')[0]})`
+                      : movie.title
+                  }
                   alt={movie.title}
                   width={120}
                   height={180}
