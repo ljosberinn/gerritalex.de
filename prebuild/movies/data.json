@@ -48,7 +48,7 @@
       ],
       "tagline": "In 28 days it began. In 28 weeks it spread. In 28 years it evolved.",
       "release": {
-        "day": 16,
+        "day": 18,
         "month": 6,
         "year": 2025
       },
@@ -289,7 +289,7 @@
         "Drama",
         "Crime"
       ],
-      "tagline": "I think my mask of sanity is about to slip.",
+      "tagline": "Killer looks.",
       "release": {
         "day": 13,
         "month": 4,
@@ -309,8 +309,8 @@
       ],
       "tagline": "Angrier. Deadlier. Sexier.",
       "release": {
-        "day": 22,
-        "month": 4,
+        "day": 18,
+        "month": 6,
         "year": 2002
       },
       "runtime": 88
@@ -536,7 +536,7 @@
         "Action",
         "Science Fiction"
       ],
-      "tagline": "An entire universe. Once and for all.",
+      "tagline": "Destiny arrives all the same.",
       "release": {
         "day": 25,
         "month": 4,
@@ -591,10 +591,10 @@
       "genres": [
         "Thriller"
       ],
-      "tagline": "It takes a spy to hunt one.",
+      "tagline": "It takes a spy to hunt a spy.",
       "release": {
-        "day": 21,
-        "month": 2,
+        "day": 12,
+        "month": 3,
         "year": 2025
       },
       "runtime": 94
@@ -682,7 +682,7 @@
         "Adventure",
         "Science Fiction"
       ],
-      "tagline": "When patriots become heroes",
+      "tagline": "When patriots become heroes.",
       "release": {
         "day": 22,
         "month": 7,
@@ -762,7 +762,7 @@
         "month": 9,
         "year": 2006
       },
-      "runtime": 93
+      "runtime": 90
     },
     "favorite": false
   },
@@ -818,7 +818,7 @@
         "month": 1,
         "year": 2008
       },
-      "runtime": 85
+      "runtime": 84
     },
     "favorite": false
   },
@@ -1347,7 +1347,7 @@
         "Thriller",
         "Mystery"
       ],
-      "tagline": "Find the clues or die",
+      "tagline": "Find the clues or die.",
       "release": {
         "day": 3,
         "month": 1,
@@ -1657,7 +1657,8 @@
     "metadata": {
       "genres": [
         "Horror",
-        "Mystery"
+        "Mystery",
+        "Thriller"
       ],
       "tagline": "Can you survive five nights?",
       "release": {
@@ -1825,7 +1826,8 @@
     "metadata": {
       "genres": [
         "Comedy",
-        "Drama"
+        "Drama",
+        "Crime"
       ],
       "tagline": "Taking out the trash, one jerk at a time.",
       "release": {
@@ -1993,7 +1995,7 @@
         "Science Fiction",
         "Adventure"
       ],
-      "tagline": "All heroes start somewhere.",
+      "tagline": "When things get bad, they'll do their worst.",
       "release": {
         "day": 30,
         "month": 7,
@@ -2012,7 +2014,7 @@
         "Adventure",
         "Action"
       ],
-      "tagline": "Obviously.",
+      "tagline": "Anyone can save the galaxy once.",
       "release": {
         "day": 19,
         "month": 4,
@@ -2159,7 +2161,7 @@
         "Adventure",
         "Fantasy"
       ],
-      "tagline": "Dark Secrets Revealed",
+      "tagline": "Dark secrets revealed.",
       "release": {
         "day": 15,
         "month": 7,
@@ -2249,7 +2251,9 @@
       "genres": [
         "Fantasy",
         "Adventure",
-        "Action"
+        "Action",
+        "Horror",
+        "Science Fiction"
       ],
       "tagline": "Believe it or not... He's the good guy.",
       "release": {
@@ -2270,7 +2274,7 @@
         "Thriller",
         "Fantasy"
       ],
-      "tagline": "He'll tear your soul apart.",
+      "tagline": "Demon to some. Angel to others.",
       "release": {
         "day": 11,
         "month": 9,
@@ -2994,7 +2998,8 @@
         "year": 2000
       },
       "runtime": 113
-    }
+    },
+    "favorite": false
   },
   {
     "title": "Men in Black 3",
@@ -3174,7 +3179,8 @@
       "genres": [
         "Horror",
         "Mystery",
-        "Science Fiction"
+        "Science Fiction",
+        "Thriller"
       ],
       "tagline": "What’s a bad miracle?",
       "release": {
@@ -3191,7 +3197,6 @@
     "id": 426063,
     "metadata": {
       "genres": [
-        "Drama",
         "Fantasy",
         "Horror"
       ],
@@ -3202,7 +3207,8 @@
         "year": 2024
       },
       "runtime": 133
-    }
+    },
+    "favorite": false
   },
   {
     "title": "Now You See Me",
@@ -3398,8 +3404,7 @@
     "id": 949423,
     "metadata": {
       "genres": [
-        "Horror",
-        "Thriller"
+        "Horror"
       ],
       "tagline": "An X-traordinary origin story.",
       "release": {
@@ -3426,7 +3431,7 @@
         "month": 5,
         "year": 2011
       },
-      "runtime": 137
+      "runtime": 136
     },
     "favorite": false
   },
@@ -3439,7 +3444,7 @@
         "Science Fiction",
         "Thriller"
       ],
-      "tagline": "",
+      "tagline": "whoever is at the top abuses those below them, and that dynamic can shift at any time",
       "release": {
         "day": 8,
         "month": 11,
@@ -3538,7 +3543,7 @@
         "month": 8,
         "year": 2014
       },
-      "runtime": 97
+      "runtime": 98
     },
     "favorite": true
   },
@@ -3792,7 +3797,9 @@
     "metadata": {
       "genres": [
         "Horror",
-        "Mystery"
+        "Mystery",
+        "Thriller",
+        "Crime"
       ],
       "tagline": "It's always someone you know.",
       "release": {
@@ -4130,9 +4137,7 @@
       "genres": [
         "Science Fiction",
         "Adventure",
-        "Action",
-        "Drama",
-        "TV Movie"
+        "Action"
       ],
       "tagline": "To protect the light, they fight in shadow.",
       "release": {
@@ -4415,7 +4420,7 @@
         "Thriller",
         "Crime"
       ],
-      "tagline": "Thy Kingdom Come. Thy Will Be Done.",
+      "tagline": "Thy kingdom come. Thy will be done.",
       "release": {
         "day": 22,
         "month": 1,
@@ -4614,9 +4619,9 @@
     "id": 670292,
     "metadata": {
       "genres": [
+        "Science Fiction",
         "Action",
-        "Adventure",
-        "Science Fiction"
+        "Adventure"
       ],
       "tagline": "This is a fight for our very existence.",
       "release": {
@@ -4645,7 +4650,8 @@
         "year": 2008
       },
       "runtime": 152
-    }
+    },
+    "favorite": false
   },
   {
     "title": "The Dictator",
@@ -4889,7 +4895,8 @@
         "year": 2014
       },
       "runtime": 100
-    }
+    },
+    "favorite": false
   },
   {
     "title": "The Great Gatsby",
@@ -5013,7 +5020,7 @@
         "Action",
         "Science Fiction"
       ],
-      "tagline": "Every revolution begins with a spark.",
+      "tagline": "Remember who the enemy is.",
       "release": {
         "day": 15,
         "month": 11,
@@ -5147,8 +5154,8 @@
       ],
       "tagline": "How do you wake up from a nightmare if you’re not asleep?",
       "release": {
-        "day": 2,
-        "month": 7,
+        "day": 24,
+        "month": 9,
         "year": 2004
       },
       "runtime": 101
@@ -5182,7 +5189,7 @@
         "Action",
         "Science Fiction"
       ],
-      "tagline": "The fight for the future begins.",
+      "tagline": "Believe the unbelievable.",
       "release": {
         "day": 31,
         "month": 3,
@@ -5352,7 +5359,7 @@
       "genres": [
         "Horror"
       ],
-      "tagline": "Pray For Forgiveness",
+      "tagline": "Pray for forgiveness",
       "release": {
         "day": 5,
         "month": 9,
@@ -5426,8 +5433,7 @@
     "metadata": {
       "genres": [
         "Horror",
-        "Thriller",
-        "Drama"
+        "Thriller"
       ],
       "tagline": "Fear the demon that doesn't fear God.",
       "release": {
@@ -5482,7 +5488,9 @@
     "metadata": {
       "genres": [
         "Horror",
-        "Science Fiction"
+        "Science Fiction",
+        "Drama",
+        "Comedy"
       ],
       "tagline": "Become a better you.",
       "release": {
@@ -5783,7 +5791,7 @@
         "Adventure",
         "Science Fiction"
       ],
-      "tagline": "They stole his mind, now he wants it back.",
+      "tagline": "They stole his mind. Now, he wants it back.",
       "release": {
         "day": 1,
         "month": 6,
