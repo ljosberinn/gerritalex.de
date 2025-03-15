@@ -336,6 +336,24 @@
     "favorite": false
   },
   {
+    "title": "Annihilation",
+    "id": 300668,
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Horror"
+      ],
+      "tagline": "Fear what's inside.",
+      "release": {
+        "day": 22,
+        "month": 2,
+        "year": 2018
+      },
+      "runtime": 115
+    },
+    "favorite": false
+  },
+  {
     "title": "Apocalypse Z: The Beginning",
     "id": 1118031,
     "metadata": {

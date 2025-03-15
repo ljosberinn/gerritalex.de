@@ -2082,6 +2082,26 @@
     "abandoned": false
   },
   {
+    "title": "The Last of Us",
+    "id": 100088,
+    "metadata": {
+      "genres": [
+        "Drama"
+      ],
+      "seasons": 2,
+      "tagline": "Every path has a price.",
+      "release": {
+        "day": 15,
+        "month": 1,
+        "year": 2023
+      },
+      "episodes": 16
+    },
+    "favorite": false,
+    "abandoned": false,
+    "episodesSeen": 9
+  },
+  {
     "title": "The Lord of the Rings: The Rings of Power",
     "id": 84773,
     "metadata": {
