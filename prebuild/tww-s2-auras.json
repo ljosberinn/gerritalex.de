@@ -35,6 +35,13 @@
   },
   "spells": [
     {
+      "id": 427621,
+      "type": "bleed",
+      "source": "priory-of-the-sacred-flame",
+      "icon": "inv_spear_05",
+      "name": "Impale"
+    },
+    {
       "id": 442589,
       "type": "magic",
       "source": "cinderbrew-meadery",
