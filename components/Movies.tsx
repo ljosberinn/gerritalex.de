@@ -233,7 +233,7 @@ export function Movies({ data }: MoviesProps) {
 
             const isUpcoming = releaseDate > new Date();
 
-            if (isUpcoming) {
+            if (isUpcoming || !movie.seen) {
               classes.push('grayscale dark:border-slate-700');
             } else if (movie.favorite) {
               classes.push(

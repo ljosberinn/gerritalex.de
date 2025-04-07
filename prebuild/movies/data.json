@@ -16,7 +16,8 @@
       },
       "runtime": 113
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "28 Weeks Later",
@@ -35,7 +36,8 @@
       },
       "runtime": 100
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "28 Years Later",
@@ -54,7 +56,8 @@
       },
       "runtime": 0
     },
-    "favorite": false
+    "favorite": false,
+    "seen": false
   },
   {
     "title": "300",
@@ -73,7 +76,8 @@
       },
       "runtime": 116
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "300: Rise of an Empire",
@@ -92,7 +96,8 @@
       },
       "runtime": 102
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "6 Souls",
@@ -111,7 +116,8 @@
       },
       "runtime": 112
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "9",
@@ -132,7 +138,8 @@
       },
       "runtime": 79
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "A Clockwork Orange",
@@ -150,7 +157,8 @@
       },
       "runtime": 137
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "A Good Day to Die Hard",
@@ -168,7 +176,8 @@
       },
       "runtime": 98
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "A Quiet Place: Day One",
@@ -187,7 +196,8 @@
       },
       "runtime": 99
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Alien",
@@ -205,7 +215,8 @@
       },
       "runtime": 117
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Alien: Covenant",
@@ -224,7 +235,8 @@
       },
       "runtime": 122
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Alien: Romulus",
@@ -242,7 +254,8 @@
       },
       "runtime": 119
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Aliens",
@@ -261,7 +274,8 @@
       },
       "runtime": 137
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "American History X",
@@ -278,7 +292,8 @@
       },
       "runtime": 119
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "American Psycho",
@@ -297,7 +312,8 @@
       },
       "runtime": 102
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "American Psycho II: All American Girl",
@@ -315,7 +331,8 @@
       },
       "runtime": 88
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Angels & Demons",
@@ -333,7 +350,8 @@
       },
       "runtime": 138
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Annihilation",
@@ -351,7 +369,8 @@
       },
       "runtime": 115
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Apocalypse Z: The Beginning",
@@ -370,7 +389,8 @@
       },
       "runtime": 119
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Apocalypto",
@@ -389,7 +409,8 @@
       },
       "runtime": 139
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Aquaman",
@@ -408,7 +429,8 @@
       },
       "runtime": 143
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Arcadian",
@@ -428,7 +450,8 @@
       },
       "runtime": 92
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Armageddon",
@@ -448,7 +471,8 @@
         "year": 1998
       },
       "runtime": 151
-    }
+    },
+    "seen": true
   },
   {
     "title": "Arrival",
@@ -467,7 +491,8 @@
       },
       "runtime": 116
     },
-    "favorite": true
+    "favorite": true,
+    "seen": true
   },
   {
     "title": "Ash",
@@ -486,7 +511,8 @@
       },
       "runtime": 95
     },
-    "favorite": false
+    "favorite": false,
+    "seen": false
   },
   {
     "title": "Attraction",
@@ -504,7 +530,8 @@
       },
       "runtime": 95
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Avatar",
@@ -524,7 +551,8 @@
       },
       "runtime": 162
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Avengers: Age of Ultron",
@@ -543,7 +571,8 @@
       },
       "runtime": 141
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Avengers: Endgame",
@@ -562,7 +591,8 @@
       },
       "runtime": 181
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Avengers: Infinity War",
@@ -581,7 +611,8 @@
       },
       "runtime": 149
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Back to Black",
@@ -600,7 +631,8 @@
       },
       "runtime": 122
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Beyond Skyline",
@@ -619,7 +651,8 @@
       },
       "runtime": 105
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Black Bag",
@@ -636,7 +669,8 @@
       },
       "runtime": 94
     },
-    "favorite": false
+    "favorite": false,
+    "seen": false
   },
   {
     "title": "Black Phone",
@@ -654,7 +688,8 @@
       },
       "runtime": 103
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Blue Spring",
@@ -671,7 +706,8 @@
       },
       "runtime": 83
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Brazil",
@@ -689,7 +725,8 @@
       },
       "runtime": 143
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Bunraku",
@@ -708,7 +745,8 @@
       },
       "runtime": 124
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Captain America: The First Avenger",
@@ -727,7 +765,8 @@
       },
       "runtime": 124
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Captain America: The Winter Soldier",
@@ -746,7 +785,8 @@
       },
       "runtime": 136
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Casino Royale",
@@ -765,7 +805,8 @@
       },
       "runtime": 144
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Chappie",
@@ -784,7 +825,8 @@
       },
       "runtime": 120
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Children",
@@ -801,7 +843,8 @@
       },
       "runtime": 90
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Civil War",
@@ -820,7 +863,8 @@
       },
       "runtime": 109
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Cloud Atlas",
@@ -838,7 +882,8 @@
       },
       "runtime": 172
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Cloverfield",
@@ -857,7 +902,8 @@
       },
       "runtime": 84
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Code 8",
@@ -876,7 +922,8 @@
       },
       "runtime": 99
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Code 8: Part II",
@@ -895,7 +942,8 @@
       },
       "runtime": 101
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Combat Girls",
@@ -912,7 +960,8 @@
       },
       "runtime": 100
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Control",
@@ -929,7 +978,8 @@
       },
       "runtime": 121
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Cowboys & Aliens",
@@ -949,7 +999,8 @@
       },
       "runtime": 119
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Crank",
@@ -968,7 +1019,8 @@
       },
       "runtime": 88
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Crank 2: High Voltage",
@@ -987,7 +1039,8 @@
       },
       "runtime": 96
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Dante 01",
@@ -1004,7 +1057,8 @@
       },
       "runtime": 82
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Dark City",
@@ -1022,7 +1076,8 @@
       },
       "runtime": 100
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Dead Man",
@@ -1041,7 +1096,8 @@
       },
       "runtime": 121
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Dead Poets Society",
@@ -1058,7 +1114,8 @@
       },
       "runtime": 128
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Deep Impact",
@@ -1077,7 +1134,8 @@
       },
       "runtime": 121
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Die Hard",
@@ -1095,7 +1153,8 @@
         "year": 1988
       },
       "runtime": 132
-    }
+    },
+    "seen": true
   },
   {
     "title": "District 9",
@@ -1112,7 +1171,8 @@
       },
       "runtime": 112
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Django Unchained",
@@ -1130,7 +1190,8 @@
       },
       "runtime": 165
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Doctor Strange",
@@ -1149,7 +1210,8 @@
       },
       "runtime": 115
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Doctor Strange in the Multiverse of Madness",
@@ -1168,7 +1230,8 @@
       },
       "runtime": 126
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Don't Look Up",
@@ -1187,7 +1250,8 @@
       },
       "runtime": 138
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Dracula Untold",
@@ -1206,7 +1270,8 @@
       },
       "runtime": 92
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Dredd",
@@ -1224,7 +1289,8 @@
       },
       "runtime": 95
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Drive",
@@ -1243,7 +1309,8 @@
       },
       "runtime": 100
     },
-    "favorite": true
+    "favorite": true,
+    "seen": true
   },
   {
     "title": "Dune",
@@ -1261,7 +1328,8 @@
       },
       "runtime": 155
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Dune 2",
@@ -1279,7 +1347,8 @@
       },
       "runtime": 167
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Dunkirk",
@@ -1298,7 +1367,8 @@
       },
       "runtime": 107
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Edge of Tomorrow",
@@ -1316,7 +1386,8 @@
       },
       "runtime": 114
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Elephant",
@@ -1334,7 +1405,8 @@
       },
       "runtime": 81
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Elysium",
@@ -1354,7 +1426,8 @@
       },
       "runtime": 109
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Ender's Game",
@@ -1373,7 +1446,8 @@
       },
       "runtime": 114
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Escape Room",
@@ -1392,7 +1466,8 @@
       },
       "runtime": 100
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Escape Room 2 - No Way Out",
@@ -1411,7 +1486,8 @@
       },
       "runtime": 88
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Event Horizon",
@@ -1430,7 +1506,8 @@
       },
       "runtime": 95
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Everything Everywhere All At Once",
@@ -1449,7 +1526,8 @@
       },
       "runtime": 140
     },
-    "favorite": true
+    "favorite": true,
+    "seen": true
   },
   {
     "title": "Evil Dead",
@@ -1466,7 +1544,8 @@
       },
       "runtime": 91
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Evil Dead Rise",
@@ -1484,7 +1563,8 @@
       },
       "runtime": 96
     },
-    "favorite": true
+    "favorite": true,
+    "seen": true
   },
   {
     "title": "Ex Drummer",
@@ -1504,7 +1584,8 @@
       },
       "runtime": 101
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Ex Machina",
@@ -1522,7 +1603,8 @@
       },
       "runtime": 108
     },
-    "favorite": true
+    "favorite": true,
+    "seen": true
   },
   {
     "title": "Exodus: Gods and Kings",
@@ -1541,7 +1623,8 @@
       },
       "runtime": 150
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Eyes Wide Shut",
@@ -1560,7 +1643,8 @@
       },
       "runtime": 159
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Fantastic Beasts and Where to Find Them",
@@ -1578,7 +1662,8 @@
       },
       "runtime": 132
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Fantastic Beasts: The Crimes of Grindelwald",
@@ -1596,7 +1681,8 @@
       },
       "runtime": 134
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Fear Street: 1666",
@@ -1614,7 +1700,8 @@
       },
       "runtime": 115
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Fear Street: 1978",
@@ -1632,7 +1719,8 @@
       },
       "runtime": 111
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Fear Street: 1994",
@@ -1650,7 +1738,8 @@
       },
       "runtime": 108
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Fight Club",
@@ -1667,7 +1756,8 @@
       },
       "runtime": 139
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Filth",
@@ -1686,7 +1776,8 @@
       },
       "runtime": 97
     },
-    "favorite": true
+    "favorite": true,
+    "seen": true
   },
   {
     "title": "Five Nights at Freddy's",
@@ -1705,7 +1796,8 @@
       },
       "runtime": 110
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Flight",
@@ -1722,7 +1814,8 @@
       },
       "runtime": 138
     },
-    "favorite": true
+    "favorite": true,
+    "seen": true
   },
   {
     "title": "From Dusk Till Dawn",
@@ -1742,7 +1835,8 @@
       },
       "runtime": 108
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "From Hell",
@@ -1761,7 +1855,8 @@
       },
       "runtime": 122
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Gandhi",
@@ -1779,7 +1874,8 @@
       },
       "runtime": 191
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Gattaca",
@@ -1799,7 +1895,8 @@
       },
       "runtime": 106
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Get Out",
@@ -1818,7 +1915,8 @@
       },
       "runtime": 104
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Ghost in the Shell",
@@ -1837,7 +1935,8 @@
       },
       "runtime": 107
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Gloomy Sunday",
@@ -1855,7 +1954,8 @@
       },
       "runtime": 112
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "God Bless America",
@@ -1874,7 +1974,8 @@
       },
       "runtime": 104
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "God Help the Girl",
@@ -1893,7 +1994,8 @@
       },
       "runtime": 111
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Godzilla Minus One",
@@ -1912,7 +2014,8 @@
       },
       "runtime": 124
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Godzilla vs. Kong",
@@ -1931,7 +2034,8 @@
       },
       "runtime": 114
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Good Will Hunting",
@@ -1948,7 +2052,8 @@
       },
       "runtime": 127
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Grave Encounters",
@@ -1966,7 +2071,8 @@
       },
       "runtime": 93
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Grave Encounters 2",
@@ -1983,7 +2089,8 @@
       },
       "runtime": 95
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Gravity",
@@ -2002,7 +2109,8 @@
       },
       "runtime": 91
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Growth",
@@ -2021,7 +2129,8 @@
       },
       "runtime": 90
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Guardians of the Galaxy",
@@ -2040,7 +2149,8 @@
       },
       "runtime": 121
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Guardians of the Galaxy Vol. 2",
@@ -2059,7 +2169,8 @@
       },
       "runtime": 137
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Gummo",
@@ -2077,7 +2188,8 @@
       },
       "runtime": 89
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Halo Legends",
@@ -2097,7 +2209,8 @@
       },
       "runtime": 120
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Hanna",
@@ -2116,7 +2229,8 @@
       },
       "runtime": 111
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Harry Potter and the Chamber of Secrets",
@@ -2134,7 +2248,8 @@
       },
       "runtime": 161
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Harry Potter and the Deathly Hallows: Part 1",
@@ -2152,7 +2267,8 @@
       },
       "runtime": 146
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Harry Potter and the Deathly Hallows: Part 2",
@@ -2170,7 +2286,8 @@
       },
       "runtime": 130
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Harry Potter and the Goblet of Fire",
@@ -2188,7 +2305,8 @@
       },
       "runtime": 157
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Harry Potter and the Half-Blood Prince",
@@ -2206,7 +2324,8 @@
       },
       "runtime": 153
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Harry Potter and the Order of the Phoenix",
@@ -2224,7 +2343,8 @@
       },
       "runtime": 138
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Harry Potter and the Philosopher's Stone",
@@ -2242,7 +2362,8 @@
       },
       "runtime": 152
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Harry Potter and the Prisoner of Azkaban",
@@ -2260,7 +2381,8 @@
       },
       "runtime": 141
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Heartless",
@@ -2279,7 +2401,8 @@
       },
       "runtime": 114
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Hellboy II: The Golden Army",
@@ -2300,7 +2423,8 @@
       },
       "runtime": 120
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Hellraiser",
@@ -2319,7 +2443,8 @@
       },
       "runtime": 94
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Hellraiser",
@@ -2337,7 +2462,8 @@
       },
       "runtime": 121
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Horsemen",
@@ -2358,7 +2484,8 @@
       },
       "runtime": 90
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Humane",
@@ -2377,7 +2504,8 @@
       },
       "runtime": 93
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Hummingbird",
@@ -2395,7 +2523,8 @@
       },
       "runtime": 100
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "I Melt With You",
@@ -2413,7 +2542,8 @@
       },
       "runtime": 129
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Inception",
@@ -2432,7 +2562,8 @@
       },
       "runtime": 148
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Independence Day",
@@ -2451,7 +2582,8 @@
       },
       "runtime": 145
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Independence Day: Resurgence",
@@ -2470,7 +2602,8 @@
       },
       "runtime": 120
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Inglorious Basterds",
@@ -2489,7 +2622,8 @@
       },
       "runtime": 153
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Insidious: Chapter 3",
@@ -2507,7 +2641,8 @@
       },
       "runtime": 97
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Interstellar",
@@ -2526,7 +2661,8 @@
       },
       "runtime": 169
     },
-    "favorite": true
+    "favorite": true,
+    "seen": true
   },
   {
     "title": "Iron Man",
@@ -2545,7 +2681,8 @@
       },
       "runtime": 126
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Iron Man 2",
@@ -2564,7 +2701,8 @@
       },
       "runtime": 124
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Iron Man 3",
@@ -2583,7 +2721,8 @@
       },
       "runtime": 130
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Iron Sky",
@@ -2602,7 +2741,8 @@
       },
       "runtime": 93
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "It Follows",
@@ -2620,7 +2760,8 @@
       },
       "runtime": 101
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Jin-Roh: The Wolf Brigade",
@@ -2641,7 +2782,8 @@
       },
       "runtime": 102
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "John Carter",
@@ -2660,7 +2802,8 @@
       },
       "runtime": 132
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "John Wick",
@@ -2678,7 +2821,8 @@
       },
       "runtime": 101
     },
-    "favorite": true
+    "favorite": true,
+    "seen": true
   },
   {
     "title": "John Wick 2",
@@ -2697,7 +2841,8 @@
       },
       "runtime": 122
     },
-    "favorite": true
+    "favorite": true,
+    "seen": true
   },
   {
     "title": "John Wick 3",
@@ -2716,7 +2861,8 @@
       },
       "runtime": 131
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Joker",
@@ -2735,7 +2881,8 @@
       },
       "runtime": 122
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Jupiter Ascending",
@@ -2754,7 +2901,8 @@
       },
       "runtime": 127
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Jurassic Park",
@@ -2772,7 +2920,8 @@
         "year": 1993
       },
       "runtime": 127
-    }
+    },
+    "seen": true
   },
   {
     "title": "Jurassic World: Dominion",
@@ -2791,7 +2940,8 @@
       },
       "runtime": 147
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Kick-Ass 2",
@@ -2810,7 +2960,8 @@
       },
       "runtime": 103
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Kokowääh",
@@ -2827,7 +2978,8 @@
       },
       "runtime": 115
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Kong: Skull Island",
@@ -2846,7 +2998,8 @@
       },
       "runtime": 118
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Lara Croft: Tomb Raider",
@@ -2866,7 +3019,8 @@
       },
       "runtime": 100
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Léon: The Professional",
@@ -2885,7 +3039,8 @@
       },
       "runtime": 111
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Limitless",
@@ -2904,7 +3059,8 @@
       },
       "runtime": 105
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Logan",
@@ -2923,7 +3079,8 @@
       },
       "runtime": 137
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Looper",
@@ -2942,7 +3099,8 @@
       },
       "runtime": 118
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Lord of War",
@@ -2961,7 +3119,8 @@
       },
       "runtime": 122
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Lucky Number Slevin",
@@ -2981,7 +3140,8 @@
       },
       "runtime": 110
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Man of Steel",
@@ -3000,7 +3160,8 @@
       },
       "runtime": 143
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Melancholia",
@@ -3018,7 +3179,8 @@
       },
       "runtime": 130
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Memento",
@@ -3036,7 +3198,8 @@
       },
       "runtime": 113
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Men in Black 3",
@@ -3055,7 +3218,8 @@
       },
       "runtime": 106
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Metropia",
@@ -3075,7 +3239,8 @@
       },
       "runtime": 86
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Moon",
@@ -3093,7 +3258,8 @@
       },
       "runtime": 97
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Moonfall",
@@ -3112,7 +3278,8 @@
       },
       "runtime": 131
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Morbius",
@@ -3131,7 +3298,8 @@
       },
       "runtime": 105
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Mr. & Mrs. Smith",
@@ -3150,7 +3318,8 @@
       },
       "runtime": 113
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Nausicaä of the Valley of the Wind",
@@ -3169,7 +3338,8 @@
       },
       "runtime": 117
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "No Country for Old Men",
@@ -3188,7 +3358,8 @@
       },
       "runtime": 122
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "No Time To Die",
@@ -3207,7 +3378,8 @@
       },
       "runtime": 163
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Nope",
@@ -3227,7 +3399,8 @@
       },
       "runtime": 130
     },
-    "favorite": true
+    "favorite": true,
+    "seen": true
   },
   {
     "title": "Nosferatu",
@@ -3245,7 +3418,8 @@
       },
       "runtime": 133
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Now You See Me",
@@ -3263,7 +3437,8 @@
       },
       "runtime": 116
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Now You See Me 2",
@@ -3283,7 +3458,8 @@
       },
       "runtime": 129
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Oblivion",
@@ -3303,7 +3479,8 @@
       },
       "runtime": 124
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Older Gods",
@@ -3322,7 +3499,8 @@
       },
       "runtime": 82
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Once Upon a Time in the West",
@@ -3340,7 +3518,8 @@
       },
       "runtime": 166
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Oppenheimer",
@@ -3358,7 +3537,8 @@
       },
       "runtime": 181
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Pacific Rim",
@@ -3377,7 +3557,8 @@
       },
       "runtime": 131
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Pacific Rim: Uprising",
@@ -3397,7 +3578,8 @@
       },
       "runtime": 111
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Paradise",
@@ -3415,7 +3597,8 @@
       },
       "runtime": 117
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Passengers",
@@ -3434,7 +3617,8 @@
       },
       "runtime": 116
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Pearl",
@@ -3451,7 +3635,8 @@
       },
       "runtime": 102
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Pirates of the Caribbean: On Stranger Tides",
@@ -3470,7 +3655,8 @@
       },
       "runtime": 136
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Platform",
@@ -3489,7 +3675,8 @@
       },
       "runtime": 95
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Platform 2",
@@ -3508,7 +3695,8 @@
       },
       "runtime": 101
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Plush",
@@ -3525,7 +3713,8 @@
       },
       "runtime": 98
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Pompeii",
@@ -3546,7 +3735,8 @@
       },
       "runtime": 105
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Pope's Exorcist",
@@ -3564,7 +3754,8 @@
       },
       "runtime": 103
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Predestination",
@@ -3582,7 +3773,8 @@
       },
       "runtime": 98
     },
-    "favorite": true
+    "favorite": true,
+    "seen": true
   },
   {
     "title": "Prey",
@@ -3601,7 +3793,8 @@
       },
       "runtime": 100
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Princess Mononoke",
@@ -3620,7 +3813,8 @@
       },
       "runtime": 134
     },
-    "favorite": true
+    "favorite": true,
+    "seen": true
   },
   {
     "title": "Project X",
@@ -3637,7 +3831,8 @@
       },
       "runtime": 88
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Prometheus",
@@ -3656,7 +3851,8 @@
       },
       "runtime": 124
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Pulp Fiction",
@@ -3674,7 +3870,8 @@
       },
       "runtime": 154
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Quantum of Solace",
@@ -3694,7 +3891,8 @@
       },
       "runtime": 106
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Reminiscence",
@@ -3712,7 +3910,8 @@
       },
       "runtime": 116
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Reptile",
@@ -3731,7 +3930,8 @@
       },
       "runtime": 136
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Requiem for a Dream",
@@ -3749,7 +3949,8 @@
       },
       "runtime": 102
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Resident Evil: Death Island",
@@ -3768,7 +3969,8 @@
       },
       "runtime": 91
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Resident Evil: Retribution",
@@ -3787,7 +3989,8 @@
       },
       "runtime": 95
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Rise of the Planet of the Apes",
@@ -3807,7 +4010,8 @@
       },
       "runtime": 105
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Samaritan",
@@ -3826,7 +4030,8 @@
       },
       "runtime": 102
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Scream",
@@ -3846,7 +4051,8 @@
       },
       "runtime": 114
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Scream 2",
@@ -3864,7 +4070,8 @@
       },
       "runtime": 120
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Scream 3",
@@ -3882,7 +4089,8 @@
       },
       "runtime": 116
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Scream 6",
@@ -3901,7 +4109,8 @@
       },
       "runtime": 123
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Se7en",
@@ -3920,7 +4129,8 @@
       },
       "runtime": 127
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Shang-Chi and the Legend of the Ten Rings",
@@ -3939,7 +4149,8 @@
       },
       "runtime": 132
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Shaun of the Dead",
@@ -3957,7 +4168,8 @@
       },
       "runtime": 99
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Shutter Island",
@@ -3976,7 +4188,8 @@
       },
       "runtime": 138
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Sin City",
@@ -3995,7 +4208,8 @@
       },
       "runtime": 124
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Skyfall",
@@ -4014,7 +4228,8 @@
       },
       "runtime": 143
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Skyline",
@@ -4033,7 +4248,8 @@
       },
       "runtime": 92
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Skylines",
@@ -4052,7 +4268,8 @@
       },
       "runtime": 113
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Sleeping Beauty",
@@ -4070,7 +4287,8 @@
       },
       "runtime": 102
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Spaceman",
@@ -4089,7 +4307,8 @@
       },
       "runtime": 108
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Spectre",
@@ -4108,7 +4327,8 @@
       },
       "runtime": 148
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Sphere",
@@ -4128,7 +4348,8 @@
         "year": 1998
       },
       "runtime": 134
-    }
+    },
+    "seen": true
   },
   {
     "title": "Split",
@@ -4146,7 +4367,8 @@
       },
       "runtime": 117
     },
-    "favorite": true
+    "favorite": true,
+    "seen": true
   },
   {
     "title": "Star Trek: Into Darkness",
@@ -4165,7 +4387,8 @@
       },
       "runtime": 132
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Star Trek: Section 31",
@@ -4184,7 +4407,8 @@
       },
       "runtime": 96
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Stargate",
@@ -4203,7 +4427,8 @@
       },
       "runtime": 121
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Sting",
@@ -4222,7 +4447,8 @@
       },
       "runtime": 92
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Sucker Punch",
@@ -4241,7 +4467,8 @@
       },
       "runtime": 110
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Suicide Squad",
@@ -4260,7 +4487,8 @@
       },
       "runtime": 122
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Super 8",
@@ -4279,7 +4507,8 @@
       },
       "runtime": 112
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Surrogates",
@@ -4298,7 +4527,8 @@
       },
       "runtime": 89
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Talk to Me",
@@ -4315,7 +4545,8 @@
       },
       "runtime": 95
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Tarot",
@@ -4332,7 +4563,8 @@
       },
       "runtime": 92
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Tenet",
@@ -4351,7 +4583,8 @@
       },
       "runtime": 150
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Terminator 2: Judgement Day",
@@ -4370,7 +4603,8 @@
       },
       "runtime": 137
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Terminator Genisys",
@@ -4390,7 +4624,8 @@
       },
       "runtime": 126
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Avengers",
@@ -4409,7 +4644,8 @@
       },
       "runtime": 143
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Batman",
@@ -4428,7 +4664,8 @@
       },
       "runtime": 177
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Big Short",
@@ -4446,7 +4683,8 @@
         "year": 2015
       },
       "runtime": 131
-    }
+    },
+    "seen": true
   },
   {
     "title": "The Boondock Saints",
@@ -4465,7 +4703,8 @@
       },
       "runtime": 108
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Boondock Saints II: All Saints Day",
@@ -4484,7 +4723,8 @@
       },
       "runtime": 118
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Butterfly Effect",
@@ -4502,7 +4742,8 @@
       },
       "runtime": 113
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Butterfly Effect 2",
@@ -4521,7 +4762,8 @@
       },
       "runtime": 95
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Butterfly Effect: Revelations",
@@ -4541,7 +4783,8 @@
       },
       "runtime": 90
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Cabin in the Woods",
@@ -4559,7 +4802,8 @@
       },
       "runtime": 95
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Conjuring",
@@ -4577,7 +4821,8 @@
       },
       "runtime": 112
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Conjuring 2",
@@ -4594,7 +4839,8 @@
       },
       "runtime": 134
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Conjuring 4: Last Rites",
@@ -4611,7 +4857,8 @@
       },
       "runtime": 0
     },
-    "favorite": false
+    "favorite": false,
+    "seen": false
   },
   {
     "title": "The Conjuring: The Devil Made Me Do It",
@@ -4630,7 +4877,8 @@
       },
       "runtime": 111
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Core",
@@ -4649,7 +4897,8 @@
       },
       "runtime": 136
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Creator",
@@ -4668,7 +4917,8 @@
       },
       "runtime": 134
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Dark Knight",
@@ -4688,7 +4938,8 @@
       },
       "runtime": 152
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Dictator",
@@ -4705,7 +4956,8 @@
       },
       "runtime": 83
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Doors",
@@ -4724,7 +4976,8 @@
       },
       "runtime": 140
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Equalizer",
@@ -4743,7 +4996,8 @@
       },
       "runtime": 132
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Expendables 3",
@@ -4762,7 +5016,8 @@
       },
       "runtime": 126
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Fifth Element",
@@ -4781,7 +5036,8 @@
         "year": 1997
       },
       "runtime": 126
-    }
+    },
+    "seen": true
   },
   {
     "title": "The Fire Within",
@@ -4798,7 +5054,8 @@
       },
       "runtime": 108
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The First Omen",
@@ -4815,7 +5072,8 @@
       },
       "runtime": 119
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Fountain",
@@ -4835,7 +5093,8 @@
       },
       "runtime": 96
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Girl Who Kicked the Hornets' Nest",
@@ -4855,7 +5114,8 @@
       },
       "runtime": 147
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Girl Who Played with Fire",
@@ -4876,7 +5136,8 @@
       },
       "runtime": 129
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Girl with the Dragon Tattoo",
@@ -4896,7 +5157,8 @@
       },
       "runtime": 152
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Girl with the Dragon Tattoo",
@@ -4915,7 +5177,8 @@
       },
       "runtime": 158
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Gorge",
@@ -4934,7 +5197,8 @@
       },
       "runtime": 127
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Grand Budapest Hotel",
@@ -4952,7 +5216,8 @@
       },
       "runtime": 100
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Great Gatsby",
@@ -4970,7 +5235,8 @@
       },
       "runtime": 143
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Haunting of Queen Mary",
@@ -4989,7 +5255,8 @@
       },
       "runtime": 124
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Hobbit: An Unexpected Journey",
@@ -5008,7 +5275,8 @@
       },
       "runtime": 169
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Hobbit: The Battle of the Five Armies",
@@ -5027,7 +5295,8 @@
       },
       "runtime": 144
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Hobbit: The Desolation of Smaug",
@@ -5046,7 +5315,8 @@
       },
       "runtime": 161
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Hunger Games",
@@ -5065,7 +5335,8 @@
       },
       "runtime": 142
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Hunger Games: Catching Fire",
@@ -5084,7 +5355,8 @@
       },
       "runtime": 146
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Hunger Games: Mockingjay - Part 1",
@@ -5103,7 +5375,8 @@
       },
       "runtime": 123
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Hunger Games: Mockingjay - Part 2",
@@ -5122,7 +5395,8 @@
       },
       "runtime": 137
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Killer",
@@ -5140,7 +5414,8 @@
       },
       "runtime": 118
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Lazarus Effect",
@@ -5159,7 +5434,8 @@
       },
       "runtime": 83
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Limits of Control",
@@ -5179,7 +5455,8 @@
       },
       "runtime": 116
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Lost World: Jurassic Park",
@@ -5198,7 +5475,8 @@
         "year": 1997
       },
       "runtime": 129
-    }
+    },
+    "seen": true
   },
   {
     "title": "The Machinist",
@@ -5216,7 +5494,8 @@
       },
       "runtime": 101
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Martian",
@@ -5235,7 +5514,8 @@
       },
       "runtime": 141
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Matrix",
@@ -5253,7 +5533,8 @@
       },
       "runtime": 136
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Matrix Reloaded",
@@ -5273,7 +5554,8 @@
       },
       "runtime": 138
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Matrix Revolutions",
@@ -5293,7 +5575,8 @@
       },
       "runtime": 129
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Maze Runner",
@@ -5313,7 +5596,8 @@
       },
       "runtime": 113
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Meaning of Life",
@@ -5330,7 +5614,8 @@
       },
       "runtime": 107
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Menu",
@@ -5349,7 +5634,8 @@
       },
       "runtime": 107
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Mist",
@@ -5368,7 +5654,8 @@
       },
       "runtime": 126
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Mummy",
@@ -5387,7 +5674,8 @@
       },
       "runtime": 124
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Number 23",
@@ -5406,7 +5694,8 @@
       },
       "runtime": 98
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Nun",
@@ -5423,7 +5712,8 @@
       },
       "runtime": 96
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Nun II",
@@ -5440,7 +5730,8 @@
       },
       "runtime": 110
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Order",
@@ -5462,7 +5753,8 @@
       },
       "runtime": 102
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Perfect Host",
@@ -5481,7 +5773,8 @@
       },
       "runtime": 93
     },
-    "favorite": true
+    "favorite": true,
+    "seen": true
   },
   {
     "title": "The Possession",
@@ -5499,7 +5792,8 @@
       },
       "runtime": 92
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Revenant",
@@ -5518,7 +5812,8 @@
       },
       "runtime": 157
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Shawshank Redemption",
@@ -5536,7 +5831,8 @@
       },
       "runtime": 142
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Substance",
@@ -5556,7 +5852,8 @@
       },
       "runtime": 141
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Suicide Squad",
@@ -5575,7 +5872,8 @@
       },
       "runtime": 132
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Terminator",
@@ -5594,7 +5892,8 @@
       },
       "runtime": 108
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Thing",
@@ -5613,7 +5912,8 @@
       },
       "runtime": 109
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Thing",
@@ -5632,7 +5932,8 @@
       },
       "runtime": 103
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Tomorrow War",
@@ -5651,7 +5952,8 @@
       },
       "runtime": 138
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Truman Show",
@@ -5669,7 +5971,8 @@
       },
       "runtime": 103
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Wandering Earth",
@@ -5688,7 +5991,8 @@
       },
       "runtime": 126
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Wandering Earth II",
@@ -5705,7 +6009,8 @@
       },
       "runtime": 173
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Wolf of Wall Street",
@@ -5724,7 +6029,8 @@
       },
       "runtime": 180
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "The Wolverine",
@@ -5743,7 +6049,8 @@
       },
       "runtime": 126
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Thor",
@@ -5762,7 +6069,8 @@
       },
       "runtime": 115
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Thor: Ragnarok",
@@ -5781,7 +6089,8 @@
       },
       "runtime": 131
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Thor: The Dark World",
@@ -5800,7 +6109,8 @@
       },
       "runtime": 112
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "To Die in Madrid",
@@ -5817,7 +6127,8 @@
       },
       "runtime": 85
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Tomb Raider",
@@ -5836,7 +6147,8 @@
       },
       "runtime": 118
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Total Recall",
@@ -5855,7 +6167,8 @@
       },
       "runtime": 113
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Total Recall",
@@ -5874,7 +6187,8 @@
       },
       "runtime": 118
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Transcendence",
@@ -5894,7 +6208,8 @@
       },
       "runtime": 119
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Transformers",
@@ -5913,7 +6228,8 @@
       },
       "runtime": 144
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Transformers: Age of Extinction",
@@ -5932,7 +6248,8 @@
       },
       "runtime": 165
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Transformers: Dark of the Moon",
@@ -5951,7 +6268,8 @@
       },
       "runtime": 154
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Transformers: Revenge of the Fallen",
@@ -5970,7 +6288,8 @@
       },
       "runtime": 150
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Transformers: Rise of the Beasts",
@@ -5989,7 +6308,8 @@
       },
       "runtime": 127
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Tron: Ares",
@@ -6006,7 +6326,8 @@
       },
       "runtime": 0
     },
-    "favorite": false
+    "favorite": false,
+    "seen": false
   },
   {
     "title": "Unbreakable",
@@ -6025,7 +6346,8 @@
         "year": 2000
       },
       "runtime": 106
-    }
+    },
+    "seen": true
   },
   {
     "title": "Underwater",
@@ -6045,7 +6367,8 @@
       },
       "runtime": 95
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Until the Light Takes Us",
@@ -6063,7 +6386,8 @@
       },
       "runtime": 93
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Upside Down",
@@ -6083,7 +6407,8 @@
       },
       "runtime": 104
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "V for Vendetta",
@@ -6102,7 +6427,8 @@
       },
       "runtime": 132
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Venom",
@@ -6120,7 +6446,8 @@
       },
       "runtime": 112
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Venom: Let There Be Carnage",
@@ -6139,7 +6466,8 @@
       },
       "runtime": 97
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Vesper",
@@ -6159,7 +6487,8 @@
       },
       "runtime": 112
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "WALL·E",
@@ -6178,7 +6507,8 @@
       },
       "runtime": 98
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Warcraft",
@@ -6197,7 +6527,8 @@
       },
       "runtime": 123
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Watchmen",
@@ -6216,7 +6547,8 @@
       },
       "runtime": 163
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Wetlands",
@@ -6234,7 +6566,8 @@
       },
       "runtime": 109
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "When You're Strange",
@@ -6252,7 +6585,8 @@
       },
       "runtime": 86
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "World War Z",
@@ -6272,7 +6606,8 @@
       },
       "runtime": 116
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "X",
@@ -6291,7 +6626,8 @@
       },
       "runtime": 106
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "X-Men: Apocalypse",
@@ -6311,7 +6647,8 @@
       },
       "runtime": 144
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "X-Men: Days of Future Past",
@@ -6330,7 +6667,8 @@
       },
       "runtime": 132
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "X-Men: First Class",
@@ -6348,7 +6686,8 @@
       },
       "runtime": 23
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Yellow Submarine",
@@ -6369,6 +6708,7 @@
       },
       "runtime": 89
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   }
 ]
