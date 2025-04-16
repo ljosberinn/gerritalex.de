@@ -5,7 +5,6 @@ import { type Blog } from '../.contentlayer/generated';
 import { CustomLink } from '../components/CustomLink';
 import { PageTitle } from '../components/PageTitle';
 import { ScrollTopAndComment } from '../components/ScrollTopAndComment';
-import { SectionContainer } from '../components/SectionContainer';
 import siteMetadata from '../data/siteMetadata';
 
 interface LayoutProps {
@@ -19,7 +18,7 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
   const { lastmod, date, title } = content;
 
   return (
-    <SectionContainer>
+    <>
       <ScrollTopAndComment />
       <article>
         <div>
@@ -92,6 +91,6 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
           </div>
         </div>
       </article>
-    </SectionContainer>
+    </>
   );
 }

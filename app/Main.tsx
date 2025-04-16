@@ -1,16 +1,16 @@
 import { formatDate } from 'pliny/utils/formatDate';
 import { CustomLink } from '../components/CustomLink';
 import { RandomLyrics } from '../components/RandomLyrics.';
-import { RestrainedMaxWidth } from '../components/RestrainedMaxWidth';
 import { Tag } from '../components/Tag';
 import siteMetadata from '../data/siteMetadata';
+import clsx from 'clsx';
 
 const MAX_DISPLAY = 10;
 
 export default function Home({ posts }) {
   return (
-    <RestrainedMaxWidth>
-      <div className="px-2 pt-6">
+    <>
+      <div className="mx-auto max-w-4xl px-4 pt-6 xl:max-w-6xl">
         <h1 className="pb-6 text-3xl leading-9 font-bold tracking-tight text-gray-700 sm:text-4xl sm:leading-10 md:text-4xl md:leading-14 dark:text-gray-300">
           Hi, I'm Xeph!
         </h1>
@@ -31,7 +31,16 @@ export default function Home({ posts }) {
               const image = images?.[0];
 
               return (
-                <li key={slug} id={slug} className="relative py-10">
+                <li
+                  key={slug}
+                  id={slug}
+                  className={clsx(
+                    'relative py-10',
+                    includeImageInPreview
+                      ? null
+                      : 'opacity-80 transition-opacity duration-250 ease-in-out hover:opacity-100'
+                  )}
+                >
                   {includeImageInPreview ? (
                     <style>
                       {`
@@ -58,7 +67,7 @@ export default function Home({ posts }) {
                       `}
                     </style>
                   ) : null}
-                  <article className="relative px-2">
+                  <article className="relative mx-auto max-w-4xl px-2 xl:max-w-6xl">
                     <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
                       <dl>
                         <dt className="sr-only">Published on</dt>
@@ -142,6 +151,6 @@ export default function Home({ posts }) {
           </CustomLink>
         </div>
       )}
-    </RestrainedMaxWidth>
+    </>
   );
 }

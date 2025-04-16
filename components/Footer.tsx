@@ -4,7 +4,7 @@ import SocialIcon from './social-icons';
 
 export function Footer() {
   return (
-    <footer className="mx-auto w-full px-2 xl:max-w-7xl">
+    <footer className="mx-auto w-full max-w-4xl px-4 xl:max-w-7xl">
       <div className="flex h-24 flex-col items-center justify-between py-2 md:h-auto md:flex-row">
         <BuiltWith />
 

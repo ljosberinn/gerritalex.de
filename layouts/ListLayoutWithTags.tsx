@@ -9,6 +9,7 @@ import { type Blog } from '../.contentlayer/generated';
 import { CustomLink } from '../components/CustomLink';
 import siteMetadata from '../data/siteMetadata';
 import { Tag } from '../components/Tag';
+import clsx from 'clsx';
 
 interface PaginationProps {
   totalPages: number;
@@ -17,8 +18,6 @@ interface PaginationProps {
 interface ListLayoutProps {
   posts: CoreContent<Blog>[];
   title: string;
-  initialDisplayPosts?: CoreContent<Blog>[];
-  pagination?: PaginationProps;
 }
 
 function Pagination({ totalPages, currentPage }: PaginationProps) {
@@ -60,28 +59,21 @@ function Pagination({ totalPages, currentPage }: PaginationProps) {
   );
 }
 
-export function ListLayoutWithTags({
-  posts,
-  title,
-  initialDisplayPosts = [],
-  pagination,
-}: ListLayoutProps) {
+export function ListLayoutWithTags({ posts, title }: ListLayoutProps) {
   const pathname = usePathname();
   const tagCounts = tagData as Record<string, number>;
   const sortedTags = Object.keys(tagCounts).sort((a, b) => tagCounts[b] - tagCounts[a]);
 
-  const displayPosts = initialDisplayPosts.length > 0 ? initialDisplayPosts : posts;
-
   return (
     <>
-      <div>
-        <div className="pt-6 pb-6">
+      <div className="mx-auto">
+        <div className="px-4 py-6">
           <h1 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:hidden sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 dark:text-gray-100">
             {title}
           </h1>
         </div>
-        <div className="flex sm:space-x-24">
-          <div className="hidden h-full max-h-screen max-w-[280px] min-w-[280px] flex-wrap overflow-auto rounded-sm bg-gray-50 pt-5 shadow-md sm:flex dark:bg-gray-900/70 dark:shadow-gray-800/40">
+        <div className="flex sm:space-x-6 md:space-x-12">
+          <div className="hidden h-full max-h-screen max-w-[280px] min-w-[200px] flex-wrap overflow-auto bg-gray-50 pt-5 sm:flex dark:bg-gray-900/70">
             <div className="px-6 py-4">
               {pathname.startsWith('/blog') ? (
                 <h3 className="text-primary-500 font-bold uppercase">All Posts</h3>
@@ -117,13 +109,59 @@ export function ListLayoutWithTags({
             </div>
           </div>
           <div>
-            <ul>
-              {displayPosts.map((post) => {
-                const { path, date, title, summary, tags, lastmod } = post;
+            <ul className="divide-y divide-gray-200 dark:divide-gray-700">
+              {posts.map((post) => {
+                const {
+                  path,
+                  date,
+                  slug,
+                  title,
+                  summary,
+                  tags,
+                  lastmod,
+                  images,
+                  includeImageInPreview,
+                } = post;
+                const image = images?.[0];
 
                 return (
-                  <li key={path} className="py-5">
-                    <article className="flex flex-col space-y-2 xl:space-y-0">
+                  <li
+                    key={path}
+                    id={slug}
+                    className={clsx(
+                      'relative py-5',
+                      includeImageInPreview
+                        ? null
+                        : 'opacity-80 transition-opacity duration-250 ease-in-out hover:opacity-100'
+                    )}
+                  >
+                    {includeImageInPreview ? (
+                      <style>
+                        {`
+                      #${slug}:before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-image: url(${image});
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        filter: grayscale(25%);
+                        opacity: 0.15;
+                        transition: opacity 0.25s ease-in-out;
+                      }
+                      
+                      #${slug}:hover:before {
+                        filter: grayscale(0%);
+                        opacity: 0.25;
+                      }
+                      `}
+                      </style>
+                    ) : null}
+                    <article className="relative mx-auto max-w-4xl px-2 xl:max-w-6xl">
                       <dl>
                         <dt className="sr-only">Published on</dt>
                         <dd className="text-base leading-6 font-medium text-gray-500 dark:text-gray-400">
@@ -156,22 +194,39 @@ export function ListLayoutWithTags({
                           </>
                         ) : null}
                       </dl>
-                      <div className="space-y-3">
-                        <div>
-                          <h2 className="text-2xl leading-8 font-bold tracking-tight">
-                            <CustomLink
-                              href={`/${path}`}
-                              className="text-gray-900 dark:text-gray-100"
-                            >
-                              {title}
-                            </CustomLink>
-                          </h2>
-                          <div className="flex flex-wrap">
-                            {tags?.map((tag) => <Tag key={tag} text={tag} />)}
+                      <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
+                        <div className="space-y-5 xl:col-span-3">
+                          <div className="space-y-6">
+                            <div>
+                              <h2 className="text-2xl leading-8 font-bold tracking-tight">
+                                <CustomLink
+                                  href={`/blog/${slug}`}
+                                  className="text-red-500 dark:text-yellow-100 dark:hover:text-blue-200"
+                                >
+                                  {title}
+                                </CustomLink>
+                              </h2>
+                              {tags.length > 0 ? (
+                                <div className="flex flex-wrap">
+                                  {tags.map((tag) => (
+                                    <Tag key={tag} text={tag} />
+                                  ))}
+                                </div>
+                              ) : null}
+                            </div>
+                            <div className="prose max-w-none text-gray-500 dark:text-gray-300">
+                              {summary}
+                            </div>
                           </div>
-                        </div>
-                        <div className="prose max-w-none text-gray-500 dark:text-gray-400">
-                          {summary}
+                          <div className="text-base leading-6 font-medium">
+                            <CustomLink
+                              href={`/blog/${slug}`}
+                              className="text-blue-700 hover:text-yellow-900 dark:text-blue-200 dark:hover:text-yellow-100"
+                              aria-label={`Read more: "${title}"`}
+                            >
+                              Read more &rarr;
+                            </CustomLink>
+                          </div>
                         </div>
                       </div>
                     </article>
@@ -179,9 +234,6 @@ export function ListLayoutWithTags({
                 );
               })}
             </ul>
-            {pagination && pagination.totalPages > 1 && (
-              <Pagination currentPage={pagination.currentPage} totalPages={pagination.totalPages} />
-            )}
           </div>
         </div>
       </div>

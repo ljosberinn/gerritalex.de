@@ -8,7 +8,6 @@ import { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
-import { SectionContainer } from '../components/SectionContainer';
 import siteMetadata from '../data/siteMetadata';
 
 const space_grotesk = Space_Grotesk({
@@ -111,19 +110,17 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         )}
       </head>
 
-      <body className="bg-white p-0.5 text-black antialiased dark:bg-gray-950 dark:text-white">
+      <body className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
         <ThemeProviders>
-          <SectionContainer as="div">
-            <div className="flex h-screen flex-col justify-between font-sans">
-              {siteMetadata.search ? (
-                <SearchProvider searchConfig={siteMetadata.search}>
-                  <Header />
-                  <main className="mb-auto">{children}</main>
-                </SearchProvider>
-              ) : null}
-              <Footer />
-            </div>
-          </SectionContainer>
+          <div className="flex h-screen flex-col justify-between font-sans">
+            {siteMetadata.search ? (
+              <SearchProvider searchConfig={siteMetadata.search}>
+                <Header />
+                <main className="mb-auto">{children}</main>
+              </SearchProvider>
+            ) : null}
+            <Footer />
+          </div>
         </ThemeProviders>
       </body>
     </html>

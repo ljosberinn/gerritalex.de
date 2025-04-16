@@ -5,7 +5,6 @@ import { generatePageMetadata } from '../../seo';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { allBlogs } from '../../../.contentlayer/generated';
-import { RestrainedMaxWidth } from '../../../components/RestrainedMaxWidth';
 import siteMetadata from '../../../data/siteMetadata';
 import { ListLayoutWithTags } from '../../../layouts/ListLayoutWithTags';
 
@@ -47,8 +46,8 @@ export default async function TagPage(props: { params: Promise<{ tag: string }> 
     return notFound();
   }
   return (
-    <RestrainedMaxWidth>
+    <div className="mx-auto max-w-4xl xl:max-w-6xl">
       <ListLayoutWithTags posts={filteredPosts} title={title} />
-    </RestrainedMaxWidth>
+    </div>
   );
 }
