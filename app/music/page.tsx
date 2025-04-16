@@ -63,7 +63,7 @@ export default async function MusicPage() {
     .join(' ');
 
   return (
-    <section className="px-2">
+    <section className="px-4">
       <h1 className="pb-6 text-3xl leading-9 font-bold tracking-tight text-gray-700 sm:text-4xl sm:leading-10 md:text-4xl md:leading-14 dark:text-gray-300">
         Music
       </h1>

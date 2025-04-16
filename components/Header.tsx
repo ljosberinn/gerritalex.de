@@ -6,25 +6,24 @@ import { ThemeSwitch } from './ThemeSwitch';
 import { SearchButton } from './SearchButton';
 import { Image } from './Image';
 
-function Logo() {
-  return <Image src={siteMetadata.siteLogo} width="32" height="32" className="h-8" alt="logo" />;
-}
-
 export function Header() {
-  let headerClass =
-    'px-2 xl:max-w-7xl mx-auto flex items-center w-full bg-white dark:bg-gray-950 justify-between py-10';
-
-  if (siteMetadata.stickyNav) {
-    headerClass += ' sticky top-0 z-50';
-  }
-
   return (
-    <header className={headerClass}>
+    <header
+      className={
+        'mx-auto flex w-full max-w-4xl items-center justify-between bg-white px-4 py-10 xl:max-w-7xl dark:bg-gray-950'
+      }
+    >
       <div className="flex flex-row items-center">
         <CustomLink href="/" aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center justify-between">
             <div className="mr-3">
-              <Logo />
+              <Image
+                src={siteMetadata.siteLogo}
+                width="32"
+                height="32"
+                className="h-8"
+                alt="logo"
+              />
             </div>
             {typeof siteMetadata.headerTitle === 'string' ? (
               <div className="hidden h-6 h-full text-2xl font-semibold sm:block">

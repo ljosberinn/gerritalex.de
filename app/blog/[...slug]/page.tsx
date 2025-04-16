@@ -10,7 +10,6 @@ import PostBanner from '../../../layouts/PostBanner';
 import { Metadata } from 'next';
 import siteMetadata from '../../../data/siteMetadata';
 import { notFound } from 'next/navigation';
-import { RestrainedMaxWidth } from '../../../components/RestrainedMaxWidth';
 import { components } from '../../../components/MDXComponents';
 
 const defaultLayout = 'PostLayout';
@@ -117,7 +116,7 @@ export default async function Page(props: { params: Promise<{ slug: string[] }> 
   const Layout = layouts[post.layout || defaultLayout];
 
   return (
-    <RestrainedMaxWidth>
+    <div className="mx-auto max-w-4xl xl:max-w-6xl">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -125,6 +124,6 @@ export default async function Page(props: { params: Promise<{ slug: string[] }> 
       <Layout content={mainContent} authorDetails={authorDetails} next={next} prev={prev}>
         <MDXLayoutRenderer code={post.body.code} components={components} toc={post.toc} />
       </Layout>
-    </RestrainedMaxWidth>
+    </div>
   );
 }

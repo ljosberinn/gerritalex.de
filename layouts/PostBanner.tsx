@@ -5,7 +5,6 @@ import { CustomLink } from '../components/CustomLink';
 import { Image } from '../components/Image';
 import { PageTitle } from '../components/PageTitle';
 import { ScrollTopAndComment } from '../components/ScrollTopAndComment';
-import { SectionContainer } from '../components/SectionContainer';
 
 interface LayoutProps {
   content: CoreContent<Blog>;
@@ -20,7 +19,7 @@ export default function PostMinimal({ content, next, prev, children }: LayoutPro
     images && images.length > 0 ? images[0] : 'https://picsum.photos/seed/picsum/800/400';
 
   return (
-    <SectionContainer>
+    <>
       <ScrollTopAndComment />
       <article>
         <div>
@@ -61,6 +60,6 @@ export default function PostMinimal({ content, next, prev, children }: LayoutPro
           </footer>
         </div>
       </article>
-    </SectionContainer>
+    </>
   );
 }

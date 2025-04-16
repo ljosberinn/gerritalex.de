@@ -17,8 +17,8 @@
       "episodes": 49
     },
     "favorite": false,
-    "abandoned": false,
-    "episodesSeen": 49
+    "episodesSeen": 49,
+    "state": "finished"
   },
   {
     "title": "Ahsoka",
@@ -40,7 +40,7 @@
     },
     "favorite": false,
     "episodesSeen": 8,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Alien: Earth",
@@ -60,8 +60,8 @@
       "episodes": 1
     },
     "favorite": false,
-    "abandoned": false,
-    "episodesSeen": 0
+    "episodesSeen": 0,
+    "state": "upcoming"
   },
   {
     "title": "Altered Carbon",
@@ -82,7 +82,7 @@
     },
     "favorite": false,
     "episodesSeen": 10,
-    "abandoned": true
+    "state": "abandoned"
   },
   {
     "title": "American Gods",
@@ -104,7 +104,7 @@
     },
     "favorite": false,
     "episodesSeen": 16,
-    "abandoned": false
+    "state": "abandoned"
   },
   {
     "title": "Andor",
@@ -126,7 +126,7 @@
     },
     "favorite": false,
     "episodesSeen": 24,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Arcane",
@@ -149,7 +149,7 @@
     },
     "favorite": true,
     "episodesSeen": 9,
-    "abandoned": false
+    "state": "ongoing"
   },
   {
     "title": "Atypical",
@@ -170,7 +170,7 @@
     },
     "favorite": false,
     "episodesSeen": 38,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Away",
@@ -191,7 +191,7 @@
     },
     "favorite": false,
     "episodesSeen": 10,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Behind Her Eyes",
@@ -211,7 +211,7 @@
     },
     "favorite": true,
     "episodesSeen": 6,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Black Bird",
@@ -232,7 +232,7 @@
     },
     "favorite": false,
     "episodesSeen": 6,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Black Mirror",
@@ -254,7 +254,7 @@
     },
     "favorite": true,
     "episodesSeen": 32,
-    "abandoned": false
+    "state": "ongoing"
   },
   {
     "title": "Breaking Bad",
@@ -275,7 +275,7 @@
     },
     "favorite": false,
     "episodesSeen": 62,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Chance",
@@ -295,7 +295,7 @@
     },
     "favorite": false,
     "episodesSeen": 10,
-    "abandoned": false
+    "state": "abandoned"
   },
   {
     "title": "Chernobyl",
@@ -315,7 +315,7 @@
     },
     "favorite": true,
     "episodesSeen": 5,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Constellation",
@@ -337,7 +337,7 @@
     },
     "favorite": false,
     "episodesSeen": 8,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Dark",
@@ -360,7 +360,7 @@
     },
     "favorite": true,
     "episodesSeen": 26,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Dark Matter",
@@ -381,7 +381,7 @@
     },
     "favorite": false,
     "episodesSeen": 9,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Debris",
@@ -402,7 +402,7 @@
     },
     "favorite": false,
     "episodesSeen": 13,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "DEVS",
@@ -424,7 +424,7 @@
     },
     "favorite": true,
     "episodesSeen": 8,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Dexter",
@@ -446,7 +446,7 @@
     },
     "favorite": false,
     "episodesSeen": 24,
-    "abandoned": true
+    "state": "abandoned"
   },
   {
     "title": "Doctor Who",
@@ -468,7 +468,7 @@
     },
     "favorite": false,
     "episodesSeen": 14,
-    "abandoned": true
+    "state": "abandoned"
   },
   {
     "title": "Dune: Prophecy",
@@ -489,8 +489,8 @@
       "episodes": 6
     },
     "favorite": false,
-    "abandoned": false,
-    "episodesSeen": 0
+    "episodesSeen": 0,
+    "state": "upcoming"
   },
   {
     "title": "Euphoria",
@@ -510,7 +510,7 @@
     },
     "favorite": false,
     "episodesSeen": 16,
-    "abandoned": false
+    "state": "upcoming"
   },
   {
     "title": "Evil",
@@ -532,7 +532,7 @@
     },
     "favorite": false,
     "episodesSeen": 50,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Fallout",
@@ -554,7 +554,7 @@
     },
     "favorite": true,
     "episodesSeen": 8,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Fargo",
@@ -575,7 +575,7 @@
     },
     "favorite": false,
     "episodesSeen": 35,
-    "abandoned": false
+    "state": "ongoing"
   },
   {
     "title": "For All Mankind",
@@ -597,7 +597,7 @@
     },
     "favorite": false,
     "episodesSeen": 40,
-    "abandoned": false
+    "state": "upcoming"
   },
   {
     "title": "Foundation",
@@ -618,7 +618,7 @@
     },
     "favorite": true,
     "episodesSeen": 20,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "From",
@@ -640,7 +640,7 @@
     },
     "favorite": false,
     "episodesSeen": 30,
-    "abandoned": false
+    "state": "upcoming"
   },
   {
     "title": "Gen V",
@@ -662,7 +662,7 @@
     },
     "favorite": false,
     "episodesSeen": 8,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Guillermo del Toro's Cabinet of Curiosities",
@@ -684,7 +684,7 @@
     },
     "favorite": false,
     "episodesSeen": 8,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Gyeongseong Creature",
@@ -707,7 +707,7 @@
     },
     "favorite": false,
     "episodesSeen": 10,
-    "abandoned": false
+    "state": "ongoing"
   },
   {
     "title": "Halo",
@@ -728,7 +728,7 @@
     },
     "favorite": false,
     "episodesSeen": 17,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Hannibal",
@@ -749,7 +749,7 @@
     },
     "favorite": false,
     "episodesSeen": 39,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Happy!",
@@ -771,7 +771,7 @@
     },
     "favorite": true,
     "episodesSeen": 18,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Hellbound",
@@ -793,7 +793,7 @@
     },
     "favorite": false,
     "episodesSeen": 6,
-    "abandoned": false
+    "state": "abandoned"
   },
   {
     "title": "Heroes",
@@ -814,7 +814,7 @@
     },
     "favorite": false,
     "episodesSeen": 78,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Heroes Reborn",
@@ -834,7 +834,7 @@
     },
     "favorite": false,
     "episodesSeen": 13,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "House MD",
@@ -856,7 +856,7 @@
     },
     "favorite": false,
     "episodesSeen": 176,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "House of Cards",
@@ -876,7 +876,7 @@
     },
     "favorite": true,
     "episodesSeen": 73,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "House of the Dragon",
@@ -898,7 +898,7 @@
     },
     "favorite": false,
     "episodesSeen": 16,
-    "abandoned": false
+    "state": "ongoing"
   },
   {
     "title": "Impulse",
@@ -920,7 +920,7 @@
     },
     "favorite": false,
     "episodesSeen": 20,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Invasion",
@@ -941,7 +941,7 @@
     },
     "favorite": false,
     "episodesSeen": 20,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Jeffrey Dahmer - Monster",
@@ -962,7 +962,7 @@
     },
     "favorite": false,
     "episodesSeen": 10,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Katla",
@@ -984,7 +984,7 @@
     },
     "favorite": false,
     "episodesSeen": 8,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Kingdom",
@@ -1005,7 +1005,7 @@
     },
     "favorite": false,
     "episodesSeen": 12,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Legion",
@@ -1027,7 +1027,7 @@
     },
     "favorite": false,
     "episodesSeen": 27,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Lie To Me",
@@ -1049,7 +1049,7 @@
     },
     "favorite": false,
     "episodesSeen": 35,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Loki",
@@ -1070,7 +1070,7 @@
     },
     "favorite": false,
     "episodesSeen": 6,
-    "abandoned": false
+    "state": "ongoing"
   },
   {
     "title": "Love, Death & Robots",
@@ -1091,7 +1091,7 @@
     },
     "favorite": false,
     "episodesSeen": 35,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Lovecraft Country",
@@ -1113,7 +1113,7 @@
     },
     "favorite": true,
     "episodesSeen": 10,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Manifest",
@@ -1135,7 +1135,7 @@
     },
     "favorite": false,
     "episodesSeen": 11,
-    "abandoned": true
+    "state": "abandoned"
   },
   {
     "title": "Mare of Easttown",
@@ -1157,7 +1157,7 @@
     },
     "favorite": false,
     "episodesSeen": 7,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Midnight Mass",
@@ -1178,7 +1178,7 @@
     },
     "favorite": true,
     "episodesSeen": 7,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Mindhunter",
@@ -1199,7 +1199,7 @@
     },
     "favorite": false,
     "episodesSeen": 19,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Monarch: Legacy of Monsters",
@@ -1221,7 +1221,7 @@
     },
     "favorite": false,
     "episodesSeen": 10,
-    "abandoned": false
+    "state": "upcoming"
   },
   {
     "title": "Moon Knight",
@@ -1243,7 +1243,7 @@
     },
     "favorite": false,
     "episodesSeen": 6,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Nancy Drew",
@@ -1265,7 +1265,7 @@
     },
     "favorite": false,
     "episodesSeen": 11,
-    "abandoned": true
+    "state": "abandoned"
   },
   {
     "title": "Night Sky",
@@ -1286,7 +1286,7 @@
     },
     "favorite": false,
     "episodesSeen": 8,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Obi-Wan Kenobi",
@@ -1308,7 +1308,7 @@
     },
     "favorite": false,
     "episodesSeen": 6,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Old Man",
@@ -1329,7 +1329,7 @@
     },
     "favorite": false,
     "episodesSeen": 7,
-    "abandoned": false
+    "state": "ongoing"
   },
   {
     "title": "Only Murders in the Building",
@@ -1351,7 +1351,7 @@
     },
     "favorite": false,
     "episodesSeen": 14,
-    "abandoned": false
+    "state": "ongoing"
   },
   {
     "title": "Outer Range",
@@ -1373,7 +1373,7 @@
     },
     "favorite": false,
     "episodesSeen": 15,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Ozark",
@@ -1394,7 +1394,7 @@
     },
     "favorite": false,
     "episodesSeen": 44,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Peacemaker",
@@ -1416,7 +1416,7 @@
     },
     "favorite": true,
     "episodesSeen": 8,
-    "abandoned": false
+    "state": "upcoming"
   },
   {
     "title": "Picard",
@@ -1438,7 +1438,7 @@
     },
     "favorite": false,
     "episodesSeen": 30,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Poker Face",
@@ -1459,7 +1459,7 @@
     },
     "favorite": false,
     "episodesSeen": 10,
-    "abandoned": false
+    "state": "upcoming"
   },
   {
     "title": "Presumed Innocent",
@@ -1480,7 +1480,7 @@
     },
     "favorite": false,
     "episodesSeen": 8,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Project Blue Book",
@@ -1502,7 +1502,7 @@
     },
     "favorite": false,
     "episodesSeen": 20,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Raised By Wolves",
@@ -1523,7 +1523,7 @@
     },
     "favorite": false,
     "episodesSeen": 18,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Resident Alien",
@@ -1543,7 +1543,7 @@
     },
     "favorite": false,
     "episodesSeen": 10,
-    "abandoned": false
+    "state": "abandoned"
   },
   {
     "title": "Resident Evil",
@@ -1564,7 +1564,7 @@
     },
     "favorite": false,
     "episodesSeen": 8,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Riverdale",
@@ -1586,7 +1586,7 @@
     },
     "favorite": false,
     "episodesSeen": 95,
-    "abandoned": false
+    "state": "abandoned"
   },
   {
     "title": "Sandman",
@@ -1608,7 +1608,7 @@
     },
     "favorite": true,
     "episodesSeen": 11,
-    "abandoned": false
+    "state": "upcoming"
   },
   {
     "title": "Secret Invasion",
@@ -1630,7 +1630,7 @@
     },
     "favorite": false,
     "episodesSeen": 6,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "See",
@@ -1652,7 +1652,7 @@
     },
     "favorite": false,
     "episodesSeen": 24,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "sense8",
@@ -1673,7 +1673,7 @@
     },
     "favorite": true,
     "episodesSeen": 24,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Severance",
@@ -1695,7 +1695,7 @@
     },
     "favorite": true,
     "episodesSeen": 9,
-    "abandoned": false
+    "state": "ongoing"
   },
   {
     "title": "Shadow and Bone",
@@ -1716,7 +1716,7 @@
     },
     "favorite": false,
     "episodesSeen": 16,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Silo",
@@ -1737,7 +1737,7 @@
     },
     "favorite": false,
     "episodesSeen": 20,
-    "abandoned": false
+    "state": "upcoming"
   },
   {
     "title": "Snowfall",
@@ -1758,7 +1758,7 @@
     },
     "favorite": false,
     "episodesSeen": 22,
-    "abandoned": false
+    "state": "abandoned"
   },
   {
     "title": "Squid Game",
@@ -1780,7 +1780,7 @@
     },
     "favorite": false,
     "episodesSeen": 9,
-    "abandoned": false
+    "state": "abandoned"
   },
   {
     "title": "Star Trek: Discovery",
@@ -1802,7 +1802,7 @@
     },
     "favorite": false,
     "episodesSeen": 65,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Star Trek: Strange New Worlds",
@@ -1822,7 +1822,7 @@
     },
     "favorite": true,
     "episodesSeen": 21,
-    "abandoned": false
+    "state": "upcoming"
   },
   {
     "title": "Stranger Things",
@@ -1844,7 +1844,7 @@
     },
     "favorite": false,
     "episodesSeen": 42,
-    "abandoned": false
+    "state": "upcoming"
   },
   {
     "title": "Supergirl",
@@ -1866,7 +1866,7 @@
     },
     "favorite": false,
     "episodesSeen": 4,
-    "abandoned": true
+    "state": "abandoned"
   },
   {
     "title": "The Bear",
@@ -1887,7 +1887,7 @@
     },
     "favorite": false,
     "episodesSeen": 4,
-    "abandoned": false
+    "state": "abandoned"
   },
   {
     "title": "The Blacklist",
@@ -1909,7 +1909,7 @@
     },
     "favorite": false,
     "episodesSeen": 22,
-    "abandoned": true
+    "state": "abandoned"
   },
   {
     "title": "The End of the F****** World",
@@ -1931,7 +1931,7 @@
     },
     "favorite": false,
     "episodesSeen": 8,
-    "abandoned": false
+    "state": "abandoned"
   },
   {
     "title": "The Exorcist",
@@ -1952,7 +1952,7 @@
     },
     "favorite": false,
     "episodesSeen": 20,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "The Expanse",
@@ -1974,7 +1974,7 @@
     },
     "favorite": false,
     "episodesSeen": 62,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "The Fall of the House of Usher",
@@ -1996,7 +1996,7 @@
     },
     "favorite": false,
     "episodesSeen": 8,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "The Good Place",
@@ -2017,7 +2017,7 @@
     },
     "favorite": true,
     "episodesSeen": 50,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "The Haunting of Bly Manor",
@@ -2038,7 +2038,7 @@
     },
     "favorite": true,
     "episodesSeen": 9,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "The Haunting of Hill House",
@@ -2059,7 +2059,7 @@
     },
     "favorite": true,
     "episodesSeen": 10,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "The Hot Zone",
@@ -2079,7 +2079,7 @@
     },
     "favorite": false,
     "episodesSeen": 9,
-    "abandoned": false
+    "state": "ongoing"
   },
   {
     "title": "The Last of Us",
@@ -2098,8 +2098,8 @@
       "episodes": 16
     },
     "favorite": false,
-    "abandoned": false,
-    "episodesSeen": 10
+    "episodesSeen": 10,
+    "state": "ongoing"
   },
   {
     "title": "The Lord of the Rings: The Rings of Power",
@@ -2121,7 +2121,7 @@
     },
     "favorite": false,
     "episodesSeen": 8,
-    "abandoned": false
+    "state": "ongoing"
   },
   {
     "title": "The Lost Symbol",
@@ -2143,7 +2143,7 @@
     },
     "favorite": false,
     "episodesSeen": 10,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "The Loudest Voice",
@@ -2164,7 +2164,7 @@
     },
     "favorite": false,
     "episodesSeen": 7,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "The Man Who Fell To Earth",
@@ -2184,7 +2184,7 @@
     },
     "favorite": false,
     "episodesSeen": 10,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "The New Pope",
@@ -2204,7 +2204,7 @@
     },
     "favorite": false,
     "episodesSeen": 9,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "The Night Manager",
@@ -2226,7 +2226,7 @@
     },
     "favorite": false,
     "episodesSeen": 6,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "The Outsider",
@@ -2248,7 +2248,7 @@
     },
     "favorite": false,
     "episodesSeen": 10,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "The Punisher",
@@ -2270,7 +2270,7 @@
     },
     "favorite": false,
     "episodesSeen": 26,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "The Silent Sea",
@@ -2292,7 +2292,7 @@
     },
     "favorite": false,
     "episodesSeen": 8,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "The Terror",
@@ -2314,7 +2314,7 @@
     },
     "favorite": false,
     "episodesSeen": 20,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "The Twilight Zone",
@@ -2336,7 +2336,7 @@
     },
     "favorite": false,
     "episodesSeen": 20,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "The Umbrella Academy",
@@ -2358,7 +2358,7 @@
     },
     "favorite": false,
     "episodesSeen": 10,
-    "abandoned": false
+    "state": "abandoned"
   },
   {
     "title": "The War of the Worlds",
@@ -2379,7 +2379,7 @@
     },
     "favorite": false,
     "episodesSeen": 8,
-    "abandoned": true
+    "state": "abandoned"
   },
   {
     "title": "The Wheel of Time",
@@ -2400,7 +2400,7 @@
     },
     "favorite": false,
     "episodesSeen": 23,
-    "abandoned": false
+    "state": "ongoing"
   },
   {
     "title": "Three-Body Problem",
@@ -2422,7 +2422,7 @@
     },
     "favorite": false,
     "episodesSeen": 30,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Three-Body Problem",
@@ -2444,7 +2444,7 @@
     },
     "favorite": false,
     "episodesSeen": 8,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Tiger King",
@@ -2465,7 +2465,7 @@
     },
     "favorite": false,
     "episodesSeen": 13,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Vikings",
@@ -2487,7 +2487,7 @@
     },
     "favorite": false,
     "episodesSeen": 19,
-    "abandoned": true
+    "state": "abandoned"
   },
   {
     "title": "WandaVision",
@@ -2509,7 +2509,7 @@
     },
     "favorite": false,
     "episodesSeen": 9,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Watchmen",
@@ -2531,7 +2531,7 @@
     },
     "favorite": false,
     "episodesSeen": 9,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Wayward Pines",
@@ -2553,7 +2553,7 @@
     },
     "favorite": false,
     "episodesSeen": 20,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Westworld",
@@ -2574,7 +2574,7 @@
     },
     "favorite": false,
     "episodesSeen": 36,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Y: The Last Man",
@@ -2595,7 +2595,7 @@
     },
     "favorite": false,
     "episodesSeen": 10,
-    "abandoned": false
+    "state": "finished"
   },
   {
     "title": "Yellowjackets",
@@ -2615,7 +2615,7 @@
       "episodes": 29
     },
     "favorite": false,
-    "episodesSeen": 29,
-    "abandoned": false
+    "episodesSeen": 19,
+    "state": "ongoing"
   }
 ]
