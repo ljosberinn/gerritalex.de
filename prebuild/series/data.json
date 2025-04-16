@@ -2293,6 +2293,26 @@
     "episodesSeen": 0
   },
   {
+    "title": "The Pitt",
+    "id": 250307,
+    "state": "upcoming",
+    "metadata": {
+      "genres": [
+        "Drama"
+      ],
+      "seasons": 1,
+      "tagline": "15 episodes. 15 hours. 1 shift.",
+      "release": {
+        "day": 9,
+        "month": 1,
+        "year": 2025
+      },
+      "episodes": 15
+    },
+    "favorite": false,
+    "episodesSeen": 0
+  },
+  {
     "title": "The Punisher",
     "id": 67178,
     "metadata": {
