@@ -37,22 +37,22 @@ async function findEntryByName(name: string): Promise<Nullable<PaginatedShowResu
     tmdbOptions
   );
 }
-async function establishId(datset: (typeof data)[number]): Promise<null | number> {
-  if ('id' in datset && datset.id !== null) {
-    return datset.id;
+async function establishId(dataset: (typeof data)[number]): Promise<null | number> {
+  if ('id' in dataset && dataset.id !== null) {
+    return dataset.id;
   }
 
-  if (!('title' in datset)) {
+  if (!('title' in dataset)) {
     throw new Error(`Insufficent info given.`);
   }
 
-  const response = await findEntryByName(datset.title);
+  const response = await findEntryByName(dataset.title);
 
   if (response === null || response.results.length === 0) {
     warn(
       response === null
-        ? `no response for "${datset.title}"`
-        : `ambiguous response, found multiple entries for "${datset.title}"`,
+        ? `no response for "${dataset.title}"`
+        : `ambiguous response, found multiple entries for "${dataset.title}"`,
       response?.results.map((result) => `https://www.themoviedb.org/tv/${result.id}`)
     );
     return null;
@@ -170,11 +170,6 @@ export async function doSeriesImport(): Promise<{ from: string; to: string }[]> 
     if (!('favorite' in dataset)) {
       // @ts-expect-error this is fine
       dataset.favorite = false;
-    }
-
-    if (!('abandoned' in dataset)) {
-      // @ts-expect-error this is fine
-      dataset.abandoned = false;
     }
 
     if (!('episodesSeen' in dataset)) {

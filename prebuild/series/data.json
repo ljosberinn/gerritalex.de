@@ -1719,6 +1719,27 @@
     "state": "finished"
   },
   {
+    "id": 126308,
+    "title": "Shōgun",
+    "state": "ongoing",
+    "metadata": {
+      "genres": [
+        "Drama",
+        "War & Politics"
+      ],
+      "seasons": 1,
+      "tagline": "An epic saga of war, passion, and power set in Feudal Japan.",
+      "release": {
+        "day": 27,
+        "month": 2,
+        "year": 2024
+      },
+      "episodes": 10
+    },
+    "favorite": false,
+    "episodesSeen": 9
+  },
+  {
     "title": "Silo",
     "id": 125988,
     "metadata": {
@@ -2249,6 +2270,27 @@
     "favorite": false,
     "episodesSeen": 10,
     "state": "finished"
+  },
+  {
+    "id": 194764,
+    "title": "The Penguin",
+    "state": "upcoming",
+    "metadata": {
+      "genres": [
+        "Drama",
+        "Crime"
+      ],
+      "seasons": 1,
+      "tagline": "The city will be his.",
+      "release": {
+        "day": 19,
+        "month": 9,
+        "year": 2024
+      },
+      "episodes": 8
+    },
+    "favorite": false,
+    "episodesSeen": 0
   },
   {
     "title": "The Punisher",
