@@ -3,10 +3,7 @@
     "title": "13 Reasons Why",
     "id": 66788,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Mystery"
-      ],
+      "genres": ["Drama", "Mystery"],
       "seasons": 4,
       "tagline": "If you're listening, you're too late.",
       "release": {
@@ -24,11 +21,7 @@
     "title": "Ahsoka",
     "id": 114461,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Action & Adventure",
-        "Drama"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Action & Adventure", "Drama"],
       "seasons": 1,
       "tagline": "Warrior. Outcast. Rebel. Jedi.",
       "release": {
@@ -46,10 +39,7 @@
     "title": "Alien: Earth",
     "id": 157239,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Sci-Fi & Fantasy"
-      ],
+      "genres": ["Drama", "Sci-Fi & Fantasy"],
       "seasons": 1,
       "tagline": "We were safer in space.",
       "release": {
@@ -67,10 +57,7 @@
     "title": "Altered Carbon",
     "id": 68421,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Drama"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Drama"],
       "seasons": 2,
       "tagline": "No body lives forever.",
       "release": {
@@ -88,11 +75,7 @@
     "title": "American Gods",
     "id": 46639,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Mystery",
-        "Sci-Fi & Fantasy"
-      ],
+      "genres": ["Drama", "Mystery", "Sci-Fi & Fantasy"],
       "seasons": 3,
       "tagline": "Believe.",
       "release": {
@@ -110,11 +93,7 @@
     "title": "Andor",
     "id": 83867,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Action & Adventure",
-        "Drama"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Action & Adventure", "Drama"],
       "seasons": 2,
       "tagline": "The Rebellion begins.",
       "release": {
@@ -132,12 +111,7 @@
     "title": "Arcane",
     "id": 94605,
     "metadata": {
-      "genres": [
-        "Animation",
-        "Sci-Fi & Fantasy",
-        "Drama",
-        "Action & Adventure"
-      ],
+      "genres": ["Animation", "Sci-Fi & Fantasy", "Drama", "Action & Adventure"],
       "seasons": 2,
       "tagline": "The hunt is on.",
       "release": {
@@ -155,10 +129,7 @@
     "title": "Atypical",
     "id": 71578,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Comedy"
-      ],
+      "genres": ["Drama", "Comedy"],
       "seasons": 4,
       "tagline": "Normal is overrated.",
       "release": {
@@ -176,10 +147,7 @@
     "title": "Away",
     "id": 89233,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Drama"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Drama"],
       "seasons": 1,
       "tagline": "Home can never leave you.",
       "release": {
@@ -197,9 +165,7 @@
     "title": "Behind Her Eyes",
     "id": 97173,
     "metadata": {
-      "genres": [
-        "Drama"
-      ],
+      "genres": ["Drama"],
       "seasons": 1,
       "tagline": "",
       "release": {
@@ -217,10 +183,7 @@
     "title": "Black Bird",
     "id": 155537,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Crime"
-      ],
+      "genres": ["Drama", "Crime"],
       "seasons": 1,
       "tagline": "One man's freedom hides in another man's darkness.",
       "release": {
@@ -238,11 +201,7 @@
     "title": "Black Mirror",
     "id": 42009,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Drama",
-        "Mystery"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Drama", "Mystery"],
       "seasons": 7,
       "tagline": "The future is bright.",
       "release": {
@@ -260,10 +219,7 @@
     "title": "Breaking Bad",
     "id": 1396,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Crime"
-      ],
+      "genres": ["Drama", "Crime"],
       "seasons": 5,
       "tagline": "Change the equation.",
       "release": {
@@ -281,9 +237,7 @@
     "title": "Chance",
     "id": 66912,
     "metadata": {
-      "genres": [
-        "Drama"
-      ],
+      "genres": ["Drama"],
       "seasons": 2,
       "tagline": "",
       "release": {
@@ -301,9 +255,7 @@
     "title": "Chernobyl",
     "id": 87108,
     "metadata": {
-      "genres": [
-        "Drama"
-      ],
+      "genres": ["Drama"],
       "seasons": 1,
       "tagline": "What is the cost of lies?",
       "release": {
@@ -321,11 +273,7 @@
     "title": "Constellation",
     "id": 197125,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Mystery",
-        "Drama"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Mystery", "Drama"],
       "seasons": 1,
       "tagline": "Reality is a conspiracy.",
       "release": {
@@ -343,12 +291,7 @@
     "title": "Dark",
     "id": 70523,
     "metadata": {
-      "genres": [
-        "Crime",
-        "Drama",
-        "Sci-Fi & Fantasy",
-        "Mystery"
-      ],
+      "genres": ["Crime", "Drama", "Sci-Fi & Fantasy", "Mystery"],
       "seasons": 3,
       "tagline": "Everything is connected.",
       "release": {
@@ -366,10 +309,7 @@
     "title": "Dark Matter",
     "id": 196322,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Drama"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Drama"],
       "seasons": 1,
       "tagline": "One life. Infinite possibilities.",
       "release": {
@@ -387,10 +327,7 @@
     "title": "Debris",
     "id": 106159,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Drama"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Drama"],
       "seasons": 1,
       "tagline": "Every piece holds the power to change our world.",
       "release": {
@@ -408,11 +345,7 @@
     "title": "DEVS",
     "id": 81349,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Drama",
-        "Mystery"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Drama", "Mystery"],
       "seasons": 1,
       "tagline": "Reality is stranger than dreams.",
       "release": {
@@ -430,11 +363,7 @@
     "title": "Dexter",
     "id": 1405,
     "metadata": {
-      "genres": [
-        "Crime",
-        "Drama",
-        "Mystery"
-      ],
+      "genres": ["Crime", "Drama", "Mystery"],
       "seasons": 8,
       "tagline": "A serial killer with a heart..... just pray it's not yours",
       "release": {
@@ -452,11 +381,7 @@
     "title": "Doctor Who",
     "id": 57243,
     "metadata": {
-      "genres": [
-        "Action & Adventure",
-        "Drama",
-        "Sci-Fi & Fantasy"
-      ],
+      "genres": ["Action & Adventure", "Drama", "Sci-Fi & Fantasy"],
       "seasons": 13,
       "tagline": "Space. For all.",
       "release": {
@@ -474,11 +399,7 @@
     "title": "Dune: Prophecy",
     "id": 90228,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Drama",
-        "Action & Adventure"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Drama", "Action & Adventure"],
       "seasons": 1,
       "tagline": "True power begins with control.",
       "release": {
@@ -496,9 +417,7 @@
     "title": "Euphoria",
     "id": 85552,
     "metadata": {
-      "genres": [
-        "Drama"
-      ],
+      "genres": ["Drama"],
       "seasons": 2,
       "tagline": "Remember this feeling.",
       "release": {
@@ -516,11 +435,7 @@
     "title": "Evil",
     "id": 86848,
     "metadata": {
-      "genres": [
-        "Crime",
-        "Drama",
-        "Mystery"
-      ],
+      "genres": ["Crime", "Drama", "Mystery"],
       "seasons": 4,
       "tagline": "Some mysteries can’t be explained.",
       "release": {
@@ -538,11 +453,7 @@
     "title": "Fallout",
     "id": 106379,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Action & Adventure",
-        "Drama"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Action & Adventure", "Drama"],
       "seasons": 1,
       "tagline": "The world deserves a better ending.",
       "release": {
@@ -560,10 +471,7 @@
     "title": "Fargo",
     "id": 60622,
     "metadata": {
-      "genres": [
-        "Crime",
-        "Drama"
-      ],
+      "genres": ["Crime", "Drama"],
       "seasons": 5,
       "tagline": "Consequence comes knocking.",
       "release": {
@@ -581,11 +489,7 @@
     "title": "For All Mankind",
     "id": 87917,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Sci-Fi & Fantasy",
-        "War & Politics"
-      ],
+      "genres": ["Drama", "Sci-Fi & Fantasy", "War & Politics"],
       "seasons": 4,
       "tagline": "A new gold rush begins.",
       "release": {
@@ -603,10 +507,7 @@
     "title": "Foundation",
     "id": 93740,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Drama"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Drama"],
       "seasons": 2,
       "tagline": "All empires fall.",
       "release": {
@@ -624,11 +525,7 @@
     "title": "From",
     "id": 124364,
     "metadata": {
-      "genres": [
-        "Mystery",
-        "Drama",
-        "Sci-Fi & Fantasy"
-      ],
+      "genres": ["Mystery", "Drama", "Sci-Fi & Fantasy"],
       "seasons": 4,
       "tagline": "",
       "release": {
@@ -646,11 +543,7 @@
     "title": "Gen V",
     "id": 205715,
     "metadata": {
-      "genres": [
-        "Action & Adventure",
-        "Drama",
-        "Sci-Fi & Fantasy"
-      ],
+      "genres": ["Action & Adventure", "Drama", "Sci-Fi & Fantasy"],
       "seasons": 1,
       "tagline": "",
       "release": {
@@ -668,11 +561,7 @@
     "title": "Guillermo del Toro's Cabinet of Curiosities",
     "id": 83659,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Mystery",
-        "Sci-Fi & Fantasy"
-      ],
+      "genres": ["Drama", "Mystery", "Sci-Fi & Fantasy"],
       "seasons": 1,
       "tagline": "Open your mind to fear.",
       "release": {
@@ -690,12 +579,7 @@
     "title": "Gyeongseong Creature",
     "id": 135238,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Mystery",
-        "Action & Adventure",
-        "Drama"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Mystery", "Action & Adventure", "Drama"],
       "seasons": 2,
       "tagline": "Behold, the powers of destiny. Beware, the powers of karma.",
       "release": {
@@ -713,10 +597,7 @@
     "title": "Halo",
     "id": 52814,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Action & Adventure"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Action & Adventure"],
       "seasons": 2,
       "tagline": "Rise from the fall.",
       "release": {
@@ -734,10 +615,7 @@
     "title": "Hannibal",
     "id": 40008,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Crime"
-      ],
+      "genres": ["Drama", "Crime"],
       "seasons": 3,
       "tagline": "Savor the hunt.",
       "release": {
@@ -755,11 +633,7 @@
     "title": "Happy!",
     "id": 72339,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Comedy",
-        "Action & Adventure"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Comedy", "Action & Adventure"],
       "seasons": 2,
       "tagline": "",
       "release": {
@@ -777,11 +651,7 @@
     "title": "Hellbound",
     "id": 106651,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Mystery",
-        "Sci-Fi & Fantasy"
-      ],
+      "genres": ["Drama", "Mystery", "Sci-Fi & Fantasy"],
       "seasons": 2,
       "tagline": "They were resurrected into a hellbound world.",
       "release": {
@@ -799,10 +669,7 @@
     "title": "Heroes",
     "id": 1639,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Drama"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Drama"],
       "seasons": 4,
       "tagline": "You can't choose your family, you can choose a side.",
       "release": {
@@ -820,9 +687,7 @@
     "title": "Heroes Reborn",
     "id": 60858,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy"
-      ],
+      "genres": ["Sci-Fi & Fantasy"],
       "seasons": 1,
       "tagline": "A new phenomenon begins",
       "release": {
@@ -840,11 +705,7 @@
     "title": "House MD",
     "id": 1408,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Mystery",
-        "Comedy"
-      ],
+      "genres": ["Drama", "Mystery", "Comedy"],
       "seasons": 8,
       "tagline": "Feel better?",
       "release": {
@@ -862,9 +723,7 @@
     "title": "House of Cards",
     "id": 1425,
     "metadata": {
-      "genres": [
-        "Drama"
-      ],
+      "genres": ["Drama"],
       "seasons": 6,
       "tagline": "There are two kinds of pain.",
       "release": {
@@ -882,11 +741,7 @@
     "title": "House of the Dragon",
     "id": 94997,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Drama",
-        "Action & Adventure"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Drama", "Action & Adventure"],
       "seasons": 2,
       "tagline": "All must choose.",
       "release": {
@@ -904,11 +759,7 @@
     "title": "Impulse",
     "id": 78670,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Action & Adventure",
-        "Drama"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Action & Adventure", "Drama"],
       "seasons": 2,
       "tagline": "You can’t control what you don’t understand.",
       "release": {
@@ -926,10 +777,7 @@
     "title": "Invasion",
     "id": 127235,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Drama"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Drama"],
       "seasons": 2,
       "tagline": "Fight together or fall apart.",
       "release": {
@@ -947,10 +795,7 @@
     "title": "Jeffrey Dahmer - Monster",
     "id": 113988,
     "metadata": {
-      "genres": [
-        "Crime",
-        "Drama"
-      ],
+      "genres": ["Crime", "Drama"],
       "seasons": 1,
       "tagline": "",
       "release": {
@@ -968,11 +813,7 @@
     "title": "Katla",
     "id": 104157,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Mystery",
-        "Sci-Fi & Fantasy"
-      ],
+      "genres": ["Drama", "Mystery", "Sci-Fi & Fantasy"],
       "seasons": 1,
       "tagline": "",
       "release": {
@@ -990,10 +831,7 @@
     "title": "Kingdom",
     "id": 70593,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Mystery"
-      ],
+      "genres": ["Drama", "Mystery"],
       "seasons": 2,
       "tagline": "",
       "release": {
@@ -1011,11 +849,7 @@
     "title": "Legion",
     "id": 67195,
     "metadata": {
-      "genres": [
-        "Action & Adventure",
-        "Sci-Fi & Fantasy",
-        "Drama"
-      ],
+      "genres": ["Action & Adventure", "Sci-Fi & Fantasy", "Drama"],
       "seasons": 3,
       "tagline": "Open your third eye.",
       "release": {
@@ -1033,11 +867,7 @@
     "title": "Lie To Me",
     "id": 8358,
     "metadata": {
-      "genres": [
-        "Crime",
-        "Drama",
-        "Mystery"
-      ],
+      "genres": ["Crime", "Drama", "Mystery"],
       "seasons": 3,
       "tagline": "They're undeceivable.",
       "release": {
@@ -1055,10 +885,7 @@
     "title": "Loki",
     "id": 84958,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Sci-Fi & Fantasy"
-      ],
+      "genres": ["Drama", "Sci-Fi & Fantasy"],
       "seasons": 2,
       "tagline": "Loki's time has come.",
       "release": {
@@ -1076,10 +903,7 @@
     "title": "Love, Death & Robots",
     "id": 86831,
     "metadata": {
-      "genres": [
-        "Animation",
-        "Sci-Fi & Fantasy"
-      ],
+      "genres": ["Animation", "Sci-Fi & Fantasy"],
       "seasons": 3,
       "tagline": "The threesome you've been waiting for.",
       "release": {
@@ -1097,11 +921,7 @@
     "title": "Lovecraft Country",
     "id": 82816,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Mystery",
-        "Sci-Fi & Fantasy"
-      ],
+      "genres": ["Drama", "Mystery", "Sci-Fi & Fantasy"],
       "seasons": 1,
       "tagline": "Take back your legacy.",
       "release": {
@@ -1119,11 +939,7 @@
     "title": "Manifest",
     "id": 79696,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Mystery",
-        "Drama"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Mystery", "Drama"],
       "seasons": 4,
       "tagline": "Make the final connection.",
       "release": {
@@ -1141,11 +957,7 @@
     "title": "Mare of Easttown",
     "id": 115004,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Mystery",
-        "Crime"
-      ],
+      "genres": ["Drama", "Mystery", "Crime"],
       "seasons": 1,
       "tagline": "All truths come to light.",
       "release": {
@@ -1163,10 +975,7 @@
     "title": "Midnight Mass",
     "id": 97400,
     "metadata": {
-      "genres": [
-        "Mystery",
-        "Drama"
-      ],
+      "genres": ["Mystery", "Drama"],
       "seasons": 1,
       "tagline": "Be not afraid.",
       "release": {
@@ -1184,10 +993,7 @@
     "title": "Mindhunter",
     "id": 67744,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Crime"
-      ],
+      "genres": ["Drama", "Crime"],
       "seasons": 2,
       "tagline": "History. Pattern. Profile.",
       "release": {
@@ -1205,11 +1011,7 @@
     "title": "Monarch: Legacy of Monsters",
     "id": 202411,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Drama",
-        "Action & Adventure"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Drama", "Action & Adventure"],
       "seasons": 1,
       "tagline": "Some secrets cannot be contained.",
       "release": {
@@ -1227,11 +1029,7 @@
     "title": "Moon Knight",
     "id": 92749,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Mystery",
-        "Action & Adventure"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Mystery", "Action & Adventure"],
       "seasons": 1,
       "tagline": "Embrace the chaos.",
       "release": {
@@ -1249,11 +1047,7 @@
     "title": "Nancy Drew",
     "id": 89572,
     "metadata": {
-      "genres": [
-        "Mystery",
-        "Drama",
-        "Sci-Fi & Fantasy"
-      ],
+      "genres": ["Mystery", "Drama", "Sci-Fi & Fantasy"],
       "seasons": 4,
       "tagline": "You can't bury the truth.",
       "release": {
@@ -1271,10 +1065,7 @@
     "title": "Night Sky",
     "id": 111894,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Drama"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Drama"],
       "seasons": 1,
       "tagline": "",
       "release": {
@@ -1292,11 +1083,7 @@
     "title": "Obi-Wan Kenobi",
     "id": 92830,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Action & Adventure",
-        "Drama"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Action & Adventure", "Drama"],
       "seasons": 1,
       "tagline": "Between darkness and defeat, hope survives.",
       "release": {
@@ -1314,10 +1101,7 @@
     "title": "Old Man",
     "id": 111800,
     "metadata": {
-      "genres": [
-        "Action & Adventure",
-        "Drama"
-      ],
+      "genres": ["Action & Adventure", "Drama"],
       "seasons": 2,
       "tagline": "The lines are blurred, the mission is clear.",
       "release": {
@@ -1335,11 +1119,7 @@
     "title": "Only Murders in the Building",
     "id": 107113,
     "metadata": {
-      "genres": [
-        "Comedy",
-        "Mystery",
-        "Crime"
-      ],
+      "genres": ["Comedy", "Mystery", "Crime"],
       "seasons": 5,
       "tagline": "They're ready for their close call.",
       "release": {
@@ -1357,11 +1137,7 @@
     "title": "Outer Range",
     "id": 113985,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Mystery",
-        "Sci-Fi & Fantasy"
-      ],
+      "genres": ["Drama", "Mystery", "Sci-Fi & Fantasy"],
       "seasons": 2,
       "tagline": "The land has its secrets.",
       "release": {
@@ -1379,10 +1155,7 @@
     "title": "Ozark",
     "id": 69740,
     "metadata": {
-      "genres": [
-        "Crime",
-        "Drama"
-      ],
+      "genres": ["Crime", "Drama"],
       "seasons": 4,
       "tagline": "No one gets out clean.",
       "release": {
@@ -1400,11 +1173,7 @@
     "title": "Peacemaker",
     "id": 110492,
     "metadata": {
-      "genres": [
-        "Action & Adventure",
-        "Sci-Fi & Fantasy",
-        "Drama"
-      ],
+      "genres": ["Action & Adventure", "Sci-Fi & Fantasy", "Drama"],
       "seasons": 2,
       "tagline": "Give peace a f#cking chance.",
       "release": {
@@ -1422,11 +1191,7 @@
     "title": "Picard",
     "id": 85949,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Action & Adventure",
-        "Drama"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Action & Adventure", "Drama"],
       "seasons": 3,
       "tagline": "The end is only the beginning.",
       "release": {
@@ -1444,10 +1209,7 @@
     "title": "Poker Face",
     "id": 120998,
     "metadata": {
-      "genres": [
-        "Mystery",
-        "Crime"
-      ],
+      "genres": ["Mystery", "Crime"],
       "seasons": 2,
       "tagline": "Murder mysteries can take detours.",
       "release": {
@@ -1465,10 +1227,7 @@
     "title": "Presumed Innocent",
     "id": 156933,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Mystery"
-      ],
+      "genres": ["Drama", "Mystery"],
       "seasons": 1,
       "tagline": "Presume nothing.",
       "release": {
@@ -1486,11 +1245,7 @@
     "title": "Project Blue Book",
     "id": 79649,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Mystery",
-        "Drama"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Mystery", "Drama"],
       "seasons": 2,
       "tagline": "Where the conspiracy began.",
       "release": {
@@ -1508,10 +1263,7 @@
     "title": "Raised By Wolves",
     "id": 85723,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Drama"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Drama"],
       "seasons": 2,
       "tagline": "Sacrifice for survival.",
       "release": {
@@ -1529,9 +1281,7 @@
     "title": "Resident Alien",
     "id": 96580,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy"
-      ],
+      "genres": ["Sci-Fi & Fantasy"],
       "seasons": 3,
       "tagline": "Beam this up.",
       "release": {
@@ -1549,10 +1299,7 @@
     "title": "Resident Evil",
     "id": 108296,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Sci-Fi & Fantasy"
-      ],
+      "genres": ["Drama", "Sci-Fi & Fantasy"],
       "seasons": 1,
       "tagline": "Evil has evolved. Again.",
       "release": {
@@ -1570,11 +1317,7 @@
     "title": "Riverdale",
     "id": 69050,
     "metadata": {
-      "genres": [
-        "Crime",
-        "Drama",
-        "Mystery"
-      ],
+      "genres": ["Crime", "Drama", "Mystery"],
       "seasons": 7,
       "tagline": "To save the future, they must survive the past.",
       "release": {
@@ -1592,11 +1335,7 @@
     "title": "Sandman",
     "id": 90802,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Drama",
-        "Action & Adventure"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Drama", "Action & Adventure"],
       "seasons": 2,
       "tagline": "Dream the world anew.",
       "release": {
@@ -1614,11 +1353,7 @@
     "title": "Secret Invasion",
     "id": 114472,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Sci-Fi & Fantasy",
-        "Action & Adventure"
-      ],
+      "genres": ["Drama", "Sci-Fi & Fantasy", "Action & Adventure"],
       "seasons": 1,
       "tagline": "Who do you trust?",
       "release": {
@@ -1636,11 +1371,7 @@
     "title": "See",
     "id": 80752,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Sci-Fi & Fantasy",
-        "Action & Adventure"
-      ],
+      "genres": ["Drama", "Sci-Fi & Fantasy", "Action & Adventure"],
       "seasons": 3,
       "tagline": "A new vision of the future.",
       "release": {
@@ -1658,10 +1389,7 @@
     "title": "sense8",
     "id": 61664,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Drama"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Drama"],
       "seasons": 2,
       "tagline": "I am we.",
       "release": {
@@ -1679,11 +1407,7 @@
     "title": "Severance",
     "id": 95396,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Mystery",
-        "Sci-Fi & Fantasy"
-      ],
+      "genres": ["Drama", "Mystery", "Sci-Fi & Fantasy"],
       "seasons": 2,
       "tagline": "There's more to work than life.",
       "release": {
@@ -1701,10 +1425,7 @@
     "title": "Shadow and Bone",
     "id": 85720,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Sci-Fi & Fantasy"
-      ],
+      "genres": ["Drama", "Sci-Fi & Fantasy"],
       "seasons": 2,
       "tagline": "Every power has a price.",
       "release": {
@@ -1723,10 +1444,7 @@
     "title": "Shōgun",
     "state": "ongoing",
     "metadata": {
-      "genres": [
-        "Drama",
-        "War & Politics"
-      ],
+      "genres": ["Drama", "War & Politics"],
       "seasons": 1,
       "tagline": "An epic saga of war, passion, and power set in Feudal Japan.",
       "release": {
@@ -1743,10 +1461,7 @@
     "title": "Silo",
     "id": 125988,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Drama"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Drama"],
       "seasons": 2,
       "tagline": "To live, you need something to die for.",
       "release": {
@@ -1764,10 +1479,7 @@
     "title": "Snowfall",
     "id": 71694,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Crime"
-      ],
+      "genres": ["Drama", "Crime"],
       "seasons": 6,
       "tagline": "This is how crack began.",
       "release": {
@@ -1785,11 +1497,7 @@
     "title": "Squid Game",
     "id": 93405,
     "metadata": {
-      "genres": [
-        "Action & Adventure",
-        "Mystery",
-        "Drama"
-      ],
+      "genres": ["Action & Adventure", "Mystery", "Drama"],
       "seasons": 3,
       "tagline": "Prepare for the final game.",
       "release": {
@@ -1807,11 +1515,7 @@
     "title": "Star Trek: Discovery",
     "id": 67198,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Action & Adventure",
-        "Drama"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Action & Adventure", "Drama"],
       "seasons": 5,
       "tagline": "At the edge of the universe, discovery begins.",
       "release": {
@@ -1829,9 +1533,7 @@
     "title": "Star Trek: Strange New Worlds",
     "id": 103516,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy"
-      ],
+      "genres": ["Sci-Fi & Fantasy"],
       "seasons": 3,
       "tagline": "The frontier awaits.",
       "release": {
@@ -1849,11 +1551,7 @@
     "title": "Stranger Things",
     "id": 66732,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Sci-Fi & Fantasy",
-        "Mystery"
-      ],
+      "genres": ["Drama", "Sci-Fi & Fantasy", "Mystery"],
       "seasons": 5,
       "tagline": "Every ending has a beginning.",
       "release": {
@@ -1871,11 +1569,7 @@
     "title": "Supergirl",
     "id": 62688,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Sci-Fi & Fantasy",
-        "Action & Adventure"
-      ],
+      "genres": ["Drama", "Sci-Fi & Fantasy", "Action & Adventure"],
       "seasons": 6,
       "tagline": "Better. Stronger. Together.",
       "release": {
@@ -1893,10 +1587,7 @@
     "title": "The Bear",
     "id": 136315,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Comedy"
-      ],
+      "genres": ["Drama", "Comedy"],
       "seasons": 3,
       "tagline": "Back for seconds.",
       "release": {
@@ -1914,11 +1605,7 @@
     "title": "The Blacklist",
     "id": 46952,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Crime",
-        "Mystery"
-      ],
+      "genres": ["Drama", "Crime", "Mystery"],
       "seasons": 10,
       "tagline": "Never trust a criminal... Until you have to.",
       "release": {
@@ -1936,11 +1623,7 @@
     "title": "The End of the F****** World",
     "id": 74577,
     "metadata": {
-      "genres": [
-        "Comedy",
-        "Drama",
-        "Crime"
-      ],
+      "genres": ["Comedy", "Drama", "Crime"],
       "seasons": 2,
       "tagline": "Some love stories begin at the end.",
       "release": {
@@ -1958,10 +1641,7 @@
     "title": "The Exorcist",
     "id": 67135,
     "metadata": {
-      "genres": [
-        "Mystery",
-        "Drama"
-      ],
+      "genres": ["Mystery", "Drama"],
       "seasons": 2,
       "tagline": "Every soul is a battlefield.",
       "release": {
@@ -1979,11 +1659,7 @@
     "title": "The Expanse",
     "id": 63639,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Mystery",
-        "Sci-Fi & Fantasy"
-      ],
+      "genres": ["Drama", "Mystery", "Sci-Fi & Fantasy"],
       "seasons": 6,
       "tagline": "The stars are better off without us.",
       "release": {
@@ -2001,11 +1677,7 @@
     "title": "The Fall of the House of Usher",
     "id": 157065,
     "metadata": {
-      "genres": [
-        "Crime",
-        "Drama",
-        "Mystery"
-      ],
+      "genres": ["Crime", "Drama", "Mystery"],
       "seasons": 1,
       "tagline": "She's coming for them all.",
       "release": {
@@ -2023,10 +1695,7 @@
     "title": "The Good Place",
     "id": 66573,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Comedy"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Comedy"],
       "seasons": 4,
       "tagline": "What the fork?!",
       "release": {
@@ -2044,10 +1713,7 @@
     "title": "The Haunting of Bly Manor",
     "id": 109958,
     "metadata": {
-      "genres": [
-        "Mystery",
-        "Drama"
-      ],
+      "genres": ["Mystery", "Drama"],
       "seasons": 1,
       "tagline": "Dead doesn't mean gone.",
       "release": {
@@ -2065,10 +1731,7 @@
     "title": "The Haunting of Hill House",
     "id": 72844,
     "metadata": {
-      "genres": [
-        "Mystery",
-        "Drama"
-      ],
+      "genres": ["Mystery", "Drama"],
       "seasons": 1,
       "tagline": "You're expected.",
       "release": {
@@ -2086,9 +1749,7 @@
     "title": "The Hot Zone",
     "id": 86799,
     "metadata": {
-      "genres": [
-        "Drama"
-      ],
+      "genres": ["Drama"],
       "seasons": 2,
       "tagline": "The headlines you remember, the ending you don't.",
       "release": {
@@ -2106,9 +1767,7 @@
     "title": "The Last of Us",
     "id": 100088,
     "metadata": {
-      "genres": [
-        "Drama"
-      ],
+      "genres": ["Drama"],
       "seasons": 2,
       "tagline": "Every path has a price.",
       "release": {
@@ -2126,11 +1785,7 @@
     "title": "The Lord of the Rings: The Rings of Power",
     "id": 84773,
     "metadata": {
-      "genres": [
-        "Action & Adventure",
-        "Sci-Fi & Fantasy",
-        "Drama"
-      ],
+      "genres": ["Action & Adventure", "Sci-Fi & Fantasy", "Drama"],
       "seasons": 2,
       "tagline": "Evil has had many names.",
       "release": {
@@ -2148,11 +1803,7 @@
     "title": "The Lost Symbol",
     "id": 120452,
     "metadata": {
-      "genres": [
-        "Action & Adventure",
-        "Drama",
-        "Mystery"
-      ],
+      "genres": ["Action & Adventure", "Drama", "Mystery"],
       "seasons": 1,
       "tagline": "",
       "release": {
@@ -2170,10 +1821,7 @@
     "title": "The Loudest Voice",
     "id": 80443,
     "metadata": {
-      "genres": [
-        "War & Politics",
-        "Drama"
-      ],
+      "genres": ["War & Politics", "Drama"],
       "seasons": 1,
       "tagline": "",
       "release": {
@@ -2191,9 +1839,7 @@
     "title": "The Man Who Fell To Earth",
     "id": 118663,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy"
-      ],
+      "genres": ["Sci-Fi & Fantasy"],
       "seasons": 1,
       "tagline": "",
       "release": {
@@ -2211,9 +1857,7 @@
     "title": "The New Pope",
     "id": 88408,
     "metadata": {
-      "genres": [
-        "Drama"
-      ],
+      "genres": ["Drama"],
       "seasons": 1,
       "tagline": "Everyone can be a saint.",
       "release": {
@@ -2231,11 +1875,7 @@
     "title": "The Night Manager",
     "id": 61859,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Mystery",
-        "Crime"
-      ],
+      "genres": ["Drama", "Mystery", "Crime"],
       "seasons": 1,
       "tagline": "",
       "release": {
@@ -2253,11 +1893,7 @@
     "title": "The Outsider",
     "id": 84661,
     "metadata": {
-      "genres": [
-        "Crime",
-        "Drama",
-        "Mystery"
-      ],
+      "genres": ["Crime", "Drama", "Mystery"],
       "seasons": 1,
       "tagline": "Fear has many faces.",
       "release": {
@@ -2276,10 +1912,7 @@
     "title": "The Penguin",
     "state": "upcoming",
     "metadata": {
-      "genres": [
-        "Drama",
-        "Crime"
-      ],
+      "genres": ["Drama", "Crime"],
       "seasons": 1,
       "tagline": "The city will be his.",
       "release": {
@@ -2297,9 +1930,7 @@
     "id": 250307,
     "state": "upcoming",
     "metadata": {
-      "genres": [
-        "Drama"
-      ],
+      "genres": ["Drama"],
       "seasons": 1,
       "tagline": "15 episodes. 15 hours. 1 shift.",
       "release": {
@@ -2316,11 +1947,7 @@
     "title": "The Punisher",
     "id": 67178,
     "metadata": {
-      "genres": [
-        "Action & Adventure",
-        "Crime",
-        "Drama"
-      ],
+      "genres": ["Action & Adventure", "Crime", "Drama"],
       "seasons": 2,
       "tagline": "The truth must be taken.",
       "release": {
@@ -2338,11 +1965,7 @@
     "title": "The Silent Sea",
     "id": 96777,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Sci-Fi & Fantasy",
-        "Mystery"
-      ],
+      "genres": ["Drama", "Sci-Fi & Fantasy", "Mystery"],
       "seasons": 1,
       "tagline": "A deserted Moon base. A deadly mission.",
       "release": {
@@ -2360,11 +1983,7 @@
     "title": "The Terror",
     "id": 75191,
     "metadata": {
-      "genres": [
-        "Mystery",
-        "Drama",
-        "Sci-Fi & Fantasy"
-      ],
+      "genres": ["Mystery", "Drama", "Sci-Fi & Fantasy"],
       "seasons": 2,
       "tagline": "",
       "release": {
@@ -2382,11 +2001,7 @@
     "title": "The Twilight Zone",
     "id": 83135,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Mystery",
-        "Drama"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Mystery", "Drama"],
       "seasons": 2,
       "tagline": "What dimension are you even in?",
       "release": {
@@ -2404,11 +2019,7 @@
     "title": "The Umbrella Academy",
     "id": 75006,
     "metadata": {
-      "genres": [
-        "Action & Adventure",
-        "Sci-Fi & Fantasy",
-        "Drama"
-      ],
+      "genres": ["Action & Adventure", "Sci-Fi & Fantasy", "Drama"],
       "seasons": 4,
       "tagline": "Too many siblings. Not enough timeline.",
       "release": {
@@ -2426,10 +2037,7 @@
     "title": "The War of the Worlds",
     "id": 86374,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Drama"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Drama"],
       "seasons": 3,
       "tagline": "Doomed to survive.",
       "release": {
@@ -2447,10 +2055,7 @@
     "title": "The Wheel of Time",
     "id": 71914,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Drama"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Drama"],
       "seasons": 3,
       "tagline": "",
       "release": {
@@ -2461,18 +2066,14 @@
       "episodes": 24
     },
     "favorite": false,
-    "episodesSeen": 23,
-    "state": "ongoing"
+    "episodesSeen": 24,
+    "state": "upcoming"
   },
   {
     "title": "Three-Body Problem",
     "id": 204541,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Mystery",
-        "Sci-Fi & Fantasy"
-      ],
+      "genres": ["Drama", "Mystery", "Sci-Fi & Fantasy"],
       "seasons": 1,
       "tagline": "",
       "release": {
@@ -2490,11 +2091,7 @@
     "title": "Three-Body Problem",
     "id": 108545,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Mystery",
-        "Drama"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Mystery", "Drama"],
       "seasons": 1,
       "tagline": "",
       "release": {
@@ -2512,10 +2109,7 @@
     "title": "Tiger King",
     "id": 100698,
     "metadata": {
-      "genres": [
-        "Documentary",
-        "Crime"
-      ],
+      "genres": ["Documentary", "Crime"],
       "seasons": 2,
       "tagline": "We've only scratched the surface.",
       "release": {
@@ -2533,11 +2127,7 @@
     "title": "Vikings",
     "id": 44217,
     "metadata": {
-      "genres": [
-        "Action & Adventure",
-        "Drama",
-        "War & Politics"
-      ],
+      "genres": ["Action & Adventure", "Drama", "War & Politics"],
       "seasons": 6,
       "tagline": "",
       "release": {
@@ -2555,11 +2145,7 @@
     "title": "WandaVision",
     "id": 85271,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Mystery",
-        "Drama"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Mystery", "Drama"],
       "seasons": 1,
       "tagline": "Experience a new vision of reality.",
       "release": {
@@ -2577,11 +2163,7 @@
     "title": "Watchmen",
     "id": 79788,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Crime",
-        "Sci-Fi & Fantasy"
-      ],
+      "genres": ["Drama", "Crime", "Sci-Fi & Fantasy"],
       "seasons": 1,
       "tagline": "Nothing ever ends...",
       "release": {
@@ -2599,11 +2181,7 @@
     "title": "Wayward Pines",
     "id": 53425,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Mystery",
-        "Sci-Fi & Fantasy"
-      ],
+      "genres": ["Drama", "Mystery", "Sci-Fi & Fantasy"],
       "seasons": 2,
       "tagline": "One road in. No road out.",
       "release": {
@@ -2621,10 +2199,7 @@
     "title": "Westworld",
     "id": 63247,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Western"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Western"],
       "seasons": 4,
       "tagline": "These violent delights have violent ends.",
       "release": {
@@ -2642,10 +2217,7 @@
     "title": "Y: The Last Man",
     "id": 86550,
     "metadata": {
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Drama"
-      ],
+      "genres": ["Sci-Fi & Fantasy", "Drama"],
       "seasons": 1,
       "tagline": "The future will be one of a kind.",
       "release": {
@@ -2663,10 +2235,7 @@
     "title": "Yellowjackets",
     "id": 117488,
     "metadata": {
-      "genres": [
-        "Drama",
-        "Mystery"
-      ],
+      "genres": ["Drama", "Mystery"],
       "seasons": 3,
       "tagline": "We hear the wilderness and it hears us.",
       "release": {
