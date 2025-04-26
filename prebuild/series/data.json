@@ -212,7 +212,7 @@
       "episodes": 38
     },
     "favorite": true,
-    "episodesSeen": 32,
+    "episodesSeen": 33,
     "state": "ongoing"
   },
   {
@@ -904,18 +904,18 @@
     "id": 86831,
     "metadata": {
       "genres": ["Animation", "Sci-Fi & Fantasy"],
-      "seasons": 3,
+      "seasons": 4,
       "tagline": "The threesome you've been waiting for.",
       "release": {
         "day": 15,
         "month": 3,
         "year": 2019
       },
-      "episodes": 35
+      "episodes": 45
     },
     "favorite": false,
     "episodesSeen": 35,
-    "state": "finished"
+    "state": "upcoming"
   },
   {
     "title": "Lovecraft Country",
@@ -1778,7 +1778,7 @@
       "episodes": 16
     },
     "favorite": false,
-    "episodesSeen": 10,
+    "episodesSeen": 12,
     "state": "ongoing"
   },
   {
