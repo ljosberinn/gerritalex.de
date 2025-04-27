@@ -1,6 +1,5 @@
 import { generatePageMetadata } from '../seo';
 import data from '../../prebuild/movies/data.json' with { type: 'json' };
-import { Movies } from '../../components/Movies';
 import clsx from 'clsx';
 import { Image } from '../../components/Image';
 
@@ -28,13 +27,6 @@ const byState = data.reduce<Record<State, Movies[]>>(
 );
 
 export type Movies = (typeof data)[0];
-
-const description = [
-  'Ordered by latest release date.',
-  'Golden borders indicate favorites/recommendations.',
-  'Hover image for title.',
-  'Click image for more info.',
-];
 
 function sortByYearDesc(data: Movies[]) {
   return data.sort((a, b) => {
