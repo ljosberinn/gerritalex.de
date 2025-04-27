@@ -98,19 +98,9 @@ export const metadata = generatePageMetadata({
     }
 
     const favorites = eligibleSeries.filter((series) => series.favorite);
+    const series = favorites.length === 0 ? eligibleSeries : favorites;
 
-    if (favorites.length === 0) {
-      const random = Math.floor(Math.random() * eligibleSeries.length);
-      const randomSeries = eligibleSeries[random];
-
-      return `/static/images/tv/${randomSeries.id}-cover.jpg`;
-    }
-
-    // pick random entry from favorites
-    const random = Math.floor(Math.random() * favorites.length);
-    const randomSeries = favorites[random];
-
-    return `/static/images/tv/${randomSeries.id}-cover.jpg`;
+    return `/static/images/tv/${series[Math.floor(Math.random() * series.length)].id}-cover.jpg`;
   })(),
   description: `An exhaustive list of the ${data.length} series I've watched, ever. The most common genres among these are ${readableGenresCombinedWithAnd}.`,
 });
@@ -137,7 +127,7 @@ const stateColor = {
 export default async function SeriesPage() {
   return (
     <>
-      <div className="mx-auto max-w-7xl px-4">
+      <div className="mx-auto max-w-7xl p-4">
         <h1 className="pb-6 text-3xl leading-9 font-bold tracking-tight text-gray-700 sm:text-4xl sm:leading-10 md:text-4xl md:leading-14 dark:text-gray-300">
           Series
         </h1>
@@ -161,7 +151,7 @@ export default async function SeriesPage() {
         const series = sortByYearDesc(byState[state]);
 
         return (
-          <section key={state} className="mx-auto py-4" aria-labelledby={`${state}-title`}>
+          <section key={state} className="mx-auto" aria-labelledby={`${state}-title`}>
             <div className={`p-8 ${stateColor[state]}`}>
               <h2
                 id={`${state}-title`}
