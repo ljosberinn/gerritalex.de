@@ -1878,6 +1878,25 @@
     "seen": true
   },
   {
+    "title": "Garfield",
+    "id": 8920,
+    "metadata": {
+      "genres": [
+        "Comedy",
+        "Family"
+      ],
+      "tagline": "Get ready for frisky business.",
+      "release": {
+        "day": 10,
+        "month": 6,
+        "year": 2004
+      },
+      "runtime": 80
+    },
+    "favorite": false,
+    "seen": true
+  },
+  {
     "title": "Gattaca",
     "id": 782,
     "metadata": {
@@ -1932,6 +1951,25 @@
         "day": 29,
         "month": 3,
         "year": 2017
+      },
+      "runtime": 107
+    },
+    "favorite": false,
+    "seen": true
+  },
+  {
+    "title": "Ghostbusters",
+    "id": 620,
+    "metadata": {
+      "genres": [
+        "Comedy",
+        "Fantasy"
+      ],
+      "tagline": "They're here to save the world.",
+      "release": {
+        "day": 8,
+        "month": 6,
+        "year": 1984
       },
       "runtime": 107
     },
@@ -2108,6 +2146,27 @@
         "year": 2013
       },
       "runtime": 91
+    },
+    "favorite": false,
+    "seen": true
+  },
+  {
+    "title": "Groundhog Day",
+    "id": 137,
+    "metadata": {
+      "genres": [
+        "Romance",
+        "Fantasy",
+        "Drama",
+        "Comedy"
+      ],
+      "tagline": "He’s having the worst day of his life… Over and over again.",
+      "release": {
+        "day": 11,
+        "month": 2,
+        "year": 1993
+      },
+      "runtime": 101
     },
     "favorite": false,
     "seen": true
@@ -4212,6 +4271,27 @@
     "seen": true
   },
   {
+    "title": "Sinners",
+    "id": 1233413,
+    "metadata": {
+      "genres": [
+        "Action",
+        "Horror",
+        "Thriller",
+        "Music"
+      ],
+      "tagline": "Dance with the devil.",
+      "release": {
+        "day": 16,
+        "month": 4,
+        "year": 2025
+      },
+      "runtime": 138
+    },
+    "favorite": false,
+    "seen": false
+  },
+  {
     "title": "Skyfall",
     "id": 37724,
     "metadata": {
@@ -4286,6 +4366,29 @@
         "year": 2011
       },
       "runtime": 102
+    },
+    "favorite": false,
+    "seen": true
+  },
+  {
+    "title": "Space Jam",
+    "id": 2300,
+    "metadata": {
+      "genres": [
+        "Family",
+        "Animation",
+        "Comedy",
+        "Science Fiction",
+        "Adventure",
+        "Fantasy"
+      ],
+      "tagline": "Get ready to jam.",
+      "release": {
+        "day": 15,
+        "month": 11,
+        "year": 1996
+      },
+      "runtime": 87
     },
     "favorite": false,
     "seen": true
