@@ -18,6 +18,7 @@ export function Header() {
           <div className="flex items-center justify-between">
             <div className="mr-3">
               <Image
+                loading="eager"
                 src={siteMetadata.siteLogo}
                 width="32"
                 height="32"
@@ -43,6 +44,7 @@ export function Header() {
               <CustomLink
                 key={link.title}
                 href={link.href}
+                rel={link.href === '/about' ? 'me' : undefined}
                 className="hover:text-primary-500 dark:hover:text-primary-400 block font-medium text-gray-900 dark:text-gray-100"
               >
                 {link.title}

@@ -3,9 +3,30 @@ import data from '../../prebuild/series/data.json' with { type: 'json' };
 import clsx from 'clsx';
 import { Image } from '../../components/Image';
 
-export const metadata = generatePageMetadata({ title: 'Series' });
+enum State {
+  UPCOMING = 'upcoming',
+  ONGOING = 'ongoing',
+  FINISHED = 'finished',
+  ABANDONED = 'abandoned',
+}
 
-export type Series = (typeof data)[0];
+const byState = data.reduce<Record<State, Series[]>>(
+  (acc, series) => {
+    if (!(series.state in acc)) {
+      acc[series.state] = [];
+    }
+
+    acc[series.state].push(series);
+
+    return acc;
+  },
+  {
+    [State.ABANDONED]: [],
+    [State.FINISHED]: [],
+    [State.ONGOING]: [],
+    [State.UPCOMING]: [],
+  }
+);
 
 function sortByYearDesc(data: Series[]) {
   return data.sort((a, b) => {
@@ -34,12 +55,67 @@ function sortByYearDesc(data: Series[]) {
   });
 }
 
-enum State {
-  UPCOMING = 'upcoming',
-  ONGOING = 'ongoing',
-  FINISHED = 'finished',
-  ABANDONED = 'abandoned',
-}
+const genresByOccurence = data.reduce<Record<string, number>>((acc, series) => {
+  if (series.metadata.genres.length > 0) {
+    series.metadata.genres.forEach((genre) => {
+      if (genre in acc) {
+        acc[genre] += 1;
+      } else {
+        acc[genre] = 1;
+      }
+    });
+  }
+
+  return acc;
+}, {});
+
+const readableGenresCombinedWithAnd = Object.entries(genresByOccurence)
+  .sort((a, b) => b[1] - a[1])
+  .slice(0, 3)
+  .reduce<string[]>((acc, [genre], index, arr) => {
+    if (index === 0) {
+      acc.push(genre);
+      return acc;
+    }
+
+    if (index !== arr.length - 1) {
+      acc.push(`, ${genre}`);
+      return acc;
+    }
+
+    acc.push('and ' + genre);
+    return acc;
+  }, [])
+  .join(' ');
+
+export const metadata = generatePageMetadata({
+  title: 'Series',
+  image: (() => {
+    const eligibleSeries = byState[State.ONGOING];
+
+    if (eligibleSeries.length === 0) {
+      return undefined;
+    }
+
+    const favorites = eligibleSeries.filter((series) => series.favorite);
+
+    if (favorites.length === 0) {
+      const random = Math.floor(Math.random() * eligibleSeries.length);
+      const randomSeries = eligibleSeries[random];
+
+      return `/static/images/tv/${randomSeries.id}-cover.jpg`;
+    }
+
+    // pick random entry from favorites
+    const random = Math.floor(Math.random() * favorites.length);
+    const randomSeries = favorites[random];
+
+    return `/static/images/tv/${randomSeries.id}-cover.jpg`;
+  })(),
+  description: `An exhaustive list of the ${data.length} series I've watched, ever. The most common genres among these are ${readableGenresCombinedWithAnd}.`,
+});
+
+export type Series = (typeof data)[0];
 
 const stateOrder = [State.UPCOMING, State.ONGOING, State.FINISHED, State.ABANDONED];
 
@@ -59,49 +135,6 @@ const stateColor = {
 };
 
 export default async function SeriesPage() {
-  const genresByOccurence = data.reduce<Record<string, number>>((acc, series) => {
-    if (series.metadata.genres.length > 0) {
-      series.metadata.genres.forEach((genre) => {
-        if (genre in acc) {
-          acc[genre] += 1;
-        } else {
-          acc[genre] = 1;
-        }
-      });
-    }
-
-    return acc;
-  }, {});
-
-  const readableGenresCombinedWithAnd = Object.entries(genresByOccurence)
-    .sort((a, b) => b[1] - a[1])
-    .slice(0, 3)
-    .reduce<string[]>((acc, [genre], index, arr) => {
-      if (index === 0) {
-        acc.push(genre);
-        return acc;
-      }
-
-      if (index !== arr.length - 1) {
-        acc.push(`, ${genre}`);
-        return acc;
-      }
-
-      acc.push('and ' + genre);
-      return acc;
-    }, [])
-    .join(' ');
-
-  const byState = data.reduce<Record<string, Series[]>>((acc, series) => {
-    if (!(series.state in acc)) {
-      acc[series.state] = [];
-    }
-
-    acc[series.state].push(series);
-
-    return acc;
-  }, {});
-
   return (
     <>
       <div className="mx-auto max-w-7xl px-4">
@@ -169,13 +202,19 @@ export default async function SeriesPage() {
                       ? 0
                       : 1 - series.episodesSeen / series.metadata.episodes;
 
+                const title =
+                  percentage === 1 || percentage === 0
+                    ? series.title
+                    : `${series.title} (seen ${series.episodesSeen} of ${series.metadata.episodes})`;
+
                 const mainImage = (
                   <Image
-                    title={series.title}
+                    title={title}
                     alt={series.title}
                     width={120}
                     height={180}
                     className={classString}
+                    loading={series.state === State.UPCOMING ? 'eager' : 'lazy'}
                     src={`/static/images/tv/${series.id}-cover.jpg`}
                   />
                 );
@@ -189,9 +228,9 @@ export default async function SeriesPage() {
                   >
                     {percentage < 1 ? (
                       <div className="relative">
-                        <div
+                        <span
                           style={{
-                            height: `${percentage === 0 ? undefined : percentage * 100}%`,
+                            height: percentage === 0 ? undefined : `${percentage * 100}%`,
                           }}
                           className={clsx(
                             `pointer-events-none absolute top-0 left-0 w-full overflow-hidden blur-[0.75px] brightness-50`,
@@ -204,17 +243,19 @@ export default async function SeriesPage() {
                             width={120}
                             height={180}
                             className={classString + ' grayscale'}
-                            loading="lazy"
+                            loading={series.state === State.UPCOMING ? 'eager' : 'lazy'}
                             src={`/static/images/tv/${series.id}-cover.jpg`}
                           />
-                        </div>
-                        <div>{mainImage}</div>
+                        </span>
+                        {mainImage}
                       </div>
                     ) : (
                       mainImage
                     )}
 
-                    <span className="sr-only">{series.metadata.tagline}</span>
+                    <span className="sr-only">
+                      {series.title} - {series.metadata.tagline}
+                    </span>
                   </a>
                 );
               })}
