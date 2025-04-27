@@ -95,7 +95,7 @@ export const metadata = generatePageMetadata({
 
     return `/static/images/tv/${favorites[Math.floor(Math.random() * favorites.length)].id}-cover.jpg`;
   })(),
-  description: `An exhaustive list of the ${byState[State.FINISHED].length} movies I've seen, ever.The most common genres among these are ${readableGenresCombinedWithAnd}.`,
+  description: `An exhaustive list of the ${byState[State.FINISHED].length} movies I've seen, ever. The most common genres among these are ${readableGenresCombinedWithAnd}.`,
 });
 
 const stateOrder = [State.UPCOMING, State.FINISHED];
