@@ -11,8 +11,12 @@ export function Image({
   const [effectiveSrc, setSrc] = useState(`${basePath || ''}${src}`);
 
   useEffect(() => {
-    setSrc(`${basePath || ''}${src}`);
-  }, [src]);
+    const next = `${basePath || ''}${src}`;
+
+    if (next !== effectiveSrc && !effectiveSrc.includes('placehold')) {
+      setSrc(next);
+    }
+  }, [src, effectiveSrc]);
 
   return (
     // eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text
@@ -20,10 +24,9 @@ export function Image({
       loading="lazy"
       src={effectiveSrc}
       onError={() => {
-        console.log(1);
         if (rest.width && rest.height) {
           setSrc(
-            `https://placehold.co/${rest.width}x${rest.height}${rest.title ? `?text=${rest.title}` : ''}`
+            `https://placehold.co/${rest.width}x${rest.height}/000000/FFF${rest.title ? `?text=${rest.title}` : ''}`
           );
         }
       }}
