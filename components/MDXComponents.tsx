@@ -18,7 +18,6 @@ export const components: MDXComponents = {
   // @ts-expect-error
   a: CustomLink,
   pre: Pre,
-  // @ts-expect-error
   table: TableWrapper,
   BlogNewsletterForm,
   WowheadLink,
