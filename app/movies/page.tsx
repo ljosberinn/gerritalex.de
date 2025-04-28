@@ -154,12 +154,9 @@ export default async function MoviesPage() {
             </div>
 
             <div
-              className={clsx(
-                state === State.UPCOMING
-                  ? 'flex justify-evenly'
-                  : 'grid grid-cols-[repeat(auto-fit,_minmax(120px,_1fr))]',
-                'mx-auto max-w-7xl gap-4 p-4 md:max-w-9/10 md:gap-6'
-              )}
+              className={
+                'mx-auto grid max-w-7xl grid-cols-[repeat(auto-fit,_minmax(120px,_1fr))] gap-4 p-4 md:max-w-9/10 md:gap-6'
+              }
             >
               {movies.map((movie) => {
                 const classes = [

@@ -1043,6 +1043,45 @@
     "seen": true
   },
   {
+    "title": "Constantine",
+    "id": 561,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Fantasy",
+        "Action",
+        "Horror"
+      ],
+      "tagline": "Hell wants him. Heaven won't take him. Earth needs him.",
+      "release": {
+        "day": 8,
+        "month": 2,
+        "year": 2005
+      },
+      "runtime": 121
+    },
+    "favorite": false
+  },
+  {
+    "title": "Constantine 2",
+    "id": 570678,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Fantasy",
+        "Horror"
+      ],
+      "tagline": "",
+      "release": {
+        "day": null,
+        "month": null,
+        "year": null
+      },
+      "runtime": 0
+    },
+    "favorite": false
+  },
+  {
     "title": "Control",
     "id": 5708,
     "metadata": {
@@ -1936,6 +1975,26 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "title": "From the World of John Wick: Ballerina",
+    "id": 541671,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Action",
+        "Thriller",
+        "Crime"
+      ],
+      "tagline": "Vengeance has a new face.",
+      "release": {
+        "day": 4,
+        "month": 6,
+        "year": 2025
+      },
+      "runtime": 126
+    },
+    "favorite": false
   },
   {
     "title": "Gandhi",
@@ -3003,7 +3062,7 @@
     "seen": true
   },
   {
-    "title": "John Wick 3",
+    "title": "John Wick: Chapter 3 - Parabellum",
     "id": 458156,
     "metadata": {
       "genres": [
@@ -3021,6 +3080,44 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "title": "John Wick: Chapter 4",
+    "id": 603692,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Action",
+        "Thriller",
+        "Crime"
+      ],
+      "tagline": "No way back, one way out.",
+      "release": {
+        "day": 22,
+        "month": 3,
+        "year": 2023
+      },
+      "runtime": 170
+    },
+    "favorite": false
+  },
+  {
+    "title": "John Wick: Chapter 5",
+    "id": 1457759,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Action"
+      ],
+      "tagline": "",
+      "release": {
+        "day": null,
+        "month": null,
+        "year": null
+      },
+      "runtime": 0
+    },
+    "favorite": false
   },
   {
     "title": "Joker",
@@ -3041,6 +3138,26 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "title": "Joker: Folie à Deux",
+    "id": 889737,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Drama",
+        "Crime",
+        "Thriller"
+      ],
+      "tagline": "The world is a stage.",
+      "release": {
+        "day": 1,
+        "month": 10,
+        "year": 2024
+      },
+      "runtime": 138
+    },
+    "favorite": false
   },
   {
     "title": "Jupiter Ascending",
@@ -4146,6 +4263,26 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "title": "Replicas",
+    "id": 300681,
+    "seen": true,
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Thriller",
+        "Drama"
+      ],
+      "tagline": "Some humans are unstoppable",
+      "release": {
+        "day": 25,
+        "month": 10,
+        "year": 2018
+      },
+      "runtime": 107
+    },
+    "favorite": false
   },
   {
     "title": "Reptile",
