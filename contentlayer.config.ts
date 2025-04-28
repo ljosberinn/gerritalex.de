@@ -50,7 +50,8 @@ async function downloadAndStoreImage(url: string, storagePath: string): Promise<
         })
       );
     } else {
-      reject(`Response for ${url} was not ok [${response.status}]`);
+      console.error(`Response for ${url} was not ok [${response.status}]`);
+      resolve();
     }
   });
 }
