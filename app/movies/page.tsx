@@ -191,6 +191,11 @@ export default async function MoviesPage() {
                   ? `${movie.title} (releasing ${releaseDate.toISOString().split('T')[0]})`
                   : movie.title;
 
+                const src =
+                  'imageMissing' in movie
+                    ? `https://placehold.co/120x180/000000/FFF$?text=${movie.title}`
+                    : `/static/images/tv/${movie.id}-cover.jpg`;
+
                 return (
                   <a
                     href={`https://www.themoviedb.org/movie/${movie.id}`}
@@ -205,7 +210,7 @@ export default async function MoviesPage() {
                       height={180}
                       className={classString}
                       loading={movie.seen ? 'lazy' : 'eager'}
-                      src={`/static/images/tv/${movie.id}-cover.jpg`}
+                      src={src}
                     />
 
                     <span className="sr-only">

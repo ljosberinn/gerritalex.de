@@ -8,7 +8,7 @@ import {
 } from '../common';
 import data from './data.json' with { type: 'json' };
 import { resolve } from 'path';
-import { writeFile } from 'fs/promises';
+import { writeFile, stat } from 'fs/promises';
 
 function warn(...args: unknown[]) {
   console.log(`[Movies]`, ...args);
@@ -83,7 +83,11 @@ export async function doMoviesImport(): Promise<{ from: string; to: string }[]> 
   const images: { from: string; to: string }[] = [];
 
   for await (const dataset of data) {
-    if (typeof dataset.metadata === 'object' && dataset.metadata !== null) {
+    if (
+      typeof dataset.metadata === 'object' &&
+      dataset.metadata !== null &&
+      !('imageMissing' in dataset)
+    ) {
       continue;
     }
 
@@ -123,10 +127,21 @@ export async function doMoviesImport(): Promise<{ from: string; to: string }[]> 
     dataset.metadata.release.month = Number.parseInt(month);
     dataset.metadata.release.year = Number.parseInt(year);
 
+    const imagePath = resolve('./public/static/images/tv', `${id}-cover.jpg`);
+
     images.push({
       from: `${TMDB_IMAGE_BASE}${response.poster_path}`,
-      to: resolve('./public/static/images/tv', `${id}-cover.jpg`),
+      to: imagePath,
     });
+
+    try {
+      await stat(imagePath);
+      if ('imageMissing' in dataset) {
+        delete dataset.imageMissing;
+      }
+    } catch {
+      dataset.imageMissing = true;
+    }
   }
 
   await writeFile(

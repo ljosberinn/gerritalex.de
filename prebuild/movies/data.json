@@ -65,8 +65,8 @@
     "metadata": {
       "genres": [
         "Horror",
-        "Science Fiction",
-        "Thriller"
+        "Thriller",
+        "Science Fiction"
       ],
       "tagline": "In 28 days it began. In 28 weeks it spread. In 28 years it evolved.",
       "release": {
@@ -74,7 +74,7 @@
         "month": 6,
         "year": 2025
       },
-      "runtime": 0
+      "runtime": 126
     },
     "favorite": false,
     "seen": false
@@ -188,7 +188,7 @@
         "Action",
         "Thriller"
       ],
-      "tagline": "Yippee Ki-Yay Mother Russia",
+      "tagline": "Yippee Ki-Yay Mother Russia.",
       "release": {
         "day": 6,
         "month": 2,
@@ -364,7 +364,7 @@
         "Drama",
         "Crime"
       ],
-      "tagline": "Killer looks.",
+      "tagline": "I think my mask of sanity is about to slip.",
       "release": {
         "day": 13,
         "month": 4,
@@ -559,13 +559,13 @@
     "id": 931349,
     "metadata": {
       "genres": [
-        "Horror",
         "Science Fiction",
+        "Horror",
         "Thriller"
       ],
       "tagline": "A new mindbender by Flying Lotus.",
       "release": {
-        "day": 21,
+        "day": 20,
         "month": 3,
         "year": 2025
       },
@@ -719,6 +719,8 @@
     "id": 1233575,
     "metadata": {
       "genres": [
+        "Drama",
+        "Mystery",
         "Thriller"
       ],
       "tagline": "It takes a spy to hunt a spy.",
@@ -1250,7 +1252,7 @@
         "month": 5,
         "year": 1998
       },
-      "runtime": 121
+      "runtime": 120
     },
     "favorite": false,
     "seen": true
@@ -1903,7 +1905,6 @@
     "metadata": {
       "genres": [
         "Horror",
-        "Mystery",
         "Thriller"
       ],
       "tagline": "Can you survive five nights?",
@@ -2202,7 +2203,7 @@
         "Horror",
         "Action"
       ],
-      "tagline": "Postwar Japan. From zero to minus.",
+      "tagline": "Post-WWII, Japan has lost everything. From zero to minus.",
       "release": {
         "day": 3,
         "month": 11,
@@ -3117,7 +3118,8 @@
       },
       "runtime": 0
     },
-    "favorite": false
+    "favorite": false,
+    "imageMissing": true
   },
   {
     "title": "Joker",
@@ -3644,7 +3646,7 @@
         "Drama",
         "Thriller"
       ],
-      "tagline": "There are no clean getaways.",
+      "tagline": "You can't stop what's coming.",
       "release": {
         "day": 13,
         "month": 6,
@@ -3701,8 +3703,8 @@
     "id": 426063,
     "metadata": {
       "genres": [
-        "Fantasy",
-        "Horror"
+        "Horror",
+        "Fantasy"
       ],
       "tagline": "Succumb to the darkness.",
       "release": {
@@ -3861,7 +3863,7 @@
         "Drama",
         "History"
       ],
-      "tagline": "The world forever changes.",
+      "tagline": "The man who moved the earth",
       "release": {
         "day": 19,
         "month": 7,
@@ -3957,7 +3959,8 @@
     "id": 949423,
     "metadata": {
       "genres": [
-        "Horror"
+        "Horror",
+        "Thriller"
       ],
       "tagline": "An X-traordinary origin story.",
       "release": {
@@ -4291,7 +4294,8 @@
       "genres": [
         "Crime",
         "Mystery",
-        "Thriller"
+        "Thriller",
+        "Drama"
       ],
       "tagline": "Shed the lies.",
       "release": {
@@ -4411,8 +4415,7 @@
       "genres": [
         "Horror",
         "Mystery",
-        "Thriller",
-        "Crime"
+        "Thriller"
       ],
       "tagline": "It's always someone you know.",
       "release": {
@@ -4510,7 +4513,8 @@
       "genres": [
         "Action",
         "Adventure",
-        "Fantasy"
+        "Fantasy",
+        "Science Fiction"
       ],
       "tagline": "You can't outrun your destiny.",
       "release": {
@@ -4589,8 +4593,7 @@
       "genres": [
         "Action",
         "Horror",
-        "Thriller",
-        "Music"
+        "Thriller"
       ],
       "tagline": "Dance with the devil.",
       "release": {
@@ -4688,11 +4691,10 @@
     "metadata": {
       "genres": [
         "Family",
-        "Animation",
         "Comedy",
-        "Science Fiction",
         "Adventure",
-        "Fantasy"
+        "Animation",
+        "Science Fiction"
       ],
       "tagline": "Get ready to jam.",
       "release": {
@@ -4958,7 +4960,7 @@
         "month": 7,
         "year": 2023
       },
-      "runtime": 95
+      "runtime": 94
     },
     "favorite": false,
     "seen": true
@@ -5781,7 +5783,7 @@
         "Adventure",
         "Fantasy"
       ],
-      "tagline": "May the odds be ever in your favor.",
+      "tagline": "The world will be watching.",
       "release": {
         "day": 12,
         "month": 3,
@@ -6333,11 +6335,9 @@
     "metadata": {
       "genres": [
         "Horror",
-        "Science Fiction",
-        "Drama",
-        "Comedy"
+        "Science Fiction"
       ],
-      "tagline": "Become a better you.",
+      "tagline": "Have you ever dreamt of a better version of yourself?",
       "release": {
         "day": 7,
         "month": 9,
@@ -6594,7 +6594,7 @@
         "Adventure",
         "Fantasy"
       ],
-      "tagline": "Delve into the darkness",
+      "tagline": "Delve into the darkness.",
       "release": {
         "day": 30,
         "month": 10,
@@ -6832,7 +6832,7 @@
       "genres": [
         "Science Fiction"
       ],
-      "tagline": "",
+      "tagline": "No going back.",
       "release": {
         "day": 8,
         "month": 10,
@@ -6972,7 +6972,7 @@
         "Action",
         "Adventure"
       ],
-      "tagline": "It’s time to meet Carnage.",
+      "tagline": "You are what you eat.",
       "release": {
         "day": 30,
         "month": 9,
@@ -7129,7 +7129,6 @@
     "metadata": {
       "genres": [
         "Horror",
-        "Mystery",
         "Thriller"
       ],
       "tagline": "Get Ready for One Killer ClimaX.",
