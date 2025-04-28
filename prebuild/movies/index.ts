@@ -78,6 +78,10 @@ async function getEntry(id: number): Promise<Movie | null> {
 }
 
 export async function doMoviesImport(): Promise<{ from: string; to: string }[]> {
+  if (process.env.NODE_ENV === 'production') {
+    return [];
+  }
+
   console.time('doMoviesImport');
 
   const images: { from: string; to: string }[] = [];
