@@ -239,6 +239,26 @@
     "seen": true
   },
   {
+    "title": "Alien Resurrection",
+    "seen": true,
+    "id": 8078,
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Horror",
+        "Action"
+      ],
+      "tagline": "It's already too late.",
+      "release": {
+        "day": 12,
+        "month": 11,
+        "year": 1997
+      },
+      "runtime": 109
+    },
+    "favorite": false
+  },
+  {
     "title": "Alien: Covenant",
     "id": 126889,
     "metadata": {
@@ -276,6 +296,26 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "title": "Alien³",
+    "seen": true,
+    "id": 8077,
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Action",
+        "Horror"
+      ],
+      "tagline": "3 times the suspense. 3 times the danger. 3 times the terror.",
+      "release": {
+        "day": 22,
+        "month": 5,
+        "year": 1992
+      },
+      "runtime": 114
+    },
+    "favorite": false
   },
   {
     "title": "Aliens",
@@ -847,6 +887,25 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "title": "Child 44",
+    "seen": true,
+    "id": 181283,
+    "metadata": {
+      "genres": [
+        "Crime",
+        "Thriller"
+      ],
+      "tagline": "How do you find a killer who doesn’t exist?",
+      "release": {
+        "day": 15,
+        "month": 3,
+        "year": 2015
+      },
+      "runtime": 137
+    },
+    "favorite": false
   },
   {
     "title": "Children",
@@ -2056,6 +2115,26 @@
     "seen": true
   },
   {
+    "title": "Godzilla",
+    "seen": true,
+    "id": 929,
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Action",
+        "Thriller"
+      ],
+      "tagline": "Size does matter.",
+      "release": {
+        "day": 20,
+        "month": 5,
+        "year": 1998
+      },
+      "runtime": 138
+    },
+    "favorite": false
+  },
+  {
     "title": "Godzilla Minus One",
     "id": 940721,
     "metadata": {
@@ -3241,6 +3320,25 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "title": "MaXXXine",
+    "id": 1023922,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "tagline": "Hollywood is a killer.",
+      "release": {
+        "day": 4,
+        "month": 7,
+        "year": 2024
+      },
+      "runtime": 103
+    },
+    "favorite": false
   },
   {
     "title": "Melancholia",
@@ -4867,6 +4965,25 @@
     "seen": true
   },
   {
+    "title": "The Blair Witch Project",
+    "id": 2667,
+    "seen": true,
+    "metadata": {
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
+      "tagline": "Everything you've heard is true.",
+      "release": {
+        "day": 14,
+        "month": 7,
+        "year": 1999
+      },
+      "runtime": 81
+    },
+    "favorite": false
+  },
+  {
     "title": "The Boondock Saints",
     "id": 8374,
     "metadata": {
@@ -5099,6 +5216,26 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "title": "The Crimson Rivers",
+    "seen": true,
+    "id": 60670,
+    "metadata": {
+      "genres": [
+        "Crime",
+        "Mystery",
+        "Thriller"
+      ],
+      "tagline": "Evil rises to new heights.",
+      "release": {
+        "day": 27,
+        "month": 9,
+        "year": 2000
+      },
+      "runtime": 106
+    },
+    "favorite": false
   },
   {
     "title": "The Dark Knight",
@@ -6034,6 +6171,26 @@
     "seen": true
   },
   {
+    "title": "The Silence of the Lambs",
+    "seen": true,
+    "id": 274,
+    "metadata": {
+      "genres": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "tagline": "To enter the mind of a killer she must challenge the mind of a madman.",
+      "release": {
+        "day": 14,
+        "month": 2,
+        "year": 1991
+      },
+      "runtime": 119
+    },
+    "favorite": false
+  },
+  {
     "title": "The Substance",
     "id": 933260,
     "metadata": {
@@ -6388,6 +6545,27 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "title": "Trance",
+    "seen": true,
+    "id": 68727,
+    "metadata": {
+      "genres": [
+        "Thriller",
+        "Crime",
+        "Drama",
+        "Mystery"
+      ],
+      "tagline": "Don't be a hero.",
+      "release": {
+        "day": 27,
+        "month": 3,
+        "year": 2013
+      },
+      "runtime": 101
+    },
+    "favorite": false
   },
   {
     "title": "Transcendence",
