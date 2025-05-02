@@ -80,6 +80,25 @@
     "seen": false
   },
   {
+    "title": "28 Years Later Part 2: The Bone Temple",
+    "id": 1272837,
+    "metadata": {
+      "genres": [
+        "Horror",
+        "Science Fiction",
+        "Thriller"
+      ],
+      "tagline": "",
+      "release": {
+        "day": 15,
+        "month": 1,
+        "year": 2026
+      },
+      "runtime": 0
+    },
+    "favorite": false
+  },
+  {
     "title": "300",
     "id": 1271,
     "metadata": {
