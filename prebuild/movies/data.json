@@ -2898,7 +2898,7 @@
   {
     "title": "MaXXXine",
     "id": 1023922,
-    "seen": false,
+    "seen": true,
     "metadata": {
       "genres": ["Horror", "Thriller"],
       "tagline": "Hollywood is a killer.",
