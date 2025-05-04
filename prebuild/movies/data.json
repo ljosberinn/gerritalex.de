@@ -773,6 +773,25 @@
     "seen": true
   },
   {
+    "title": "Black Phone 2",
+    "id": 1197137,
+    "metadata": {
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "tagline": "",
+      "release": {
+        "day": 15,
+        "month": 10,
+        "year": 2025
+      },
+      "runtime": 0
+    },
+    "favorite": false,
+    "seen": false
+  },
+  {
     "title": "Blue Spring",
     "id": 33333,
     "metadata": {
@@ -1687,6 +1706,24 @@
     "seen": true
   },
   {
+    "title": "Evil Dead Burn",
+    "id": 1212763,
+    "metadata": {
+      "genres": [
+        "Horror"
+      ],
+      "tagline": "",
+      "release": {
+        "day": null,
+        "month": null,
+        "year": null
+      },
+      "runtime": 0
+    },
+    "favorite": false,
+    "seen": false
+  },
+  {
     "title": "Evil Dead Rise",
     "id": 713704,
     "metadata": {
@@ -1881,6 +1918,24 @@
     "seen": true
   },
   {
+    "title": "Fear Street: Prom Queen",
+    "id": 1001414,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Horror"
+      ],
+      "tagline": "Winning just might be the death of you.",
+      "release": {
+        "day": 22,
+        "month": 5,
+        "year": 2025
+      },
+      "runtime": 0
+    },
+    "favorite": false
+  },
+  {
     "title": "Fight Club",
     "id": 550,
     "metadata": {
@@ -1954,6 +2009,26 @@
     },
     "favorite": true,
     "seen": true
+  },
+  {
+    "title": "Frankenstein",
+    "id": 1062722,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Drama",
+        "Horror"
+      ],
+      "tagline": "",
+      "release": {
+        "day": null,
+        "month": null,
+        "year": null
+      },
+      "runtime": 0
+    },
+    "favorite": false
   },
   {
     "title": "From Dusk Till Dawn",
@@ -3440,6 +3515,25 @@
     "seen": true
   },
   {
+    "title": "M3GAN",
+    "id": 536554,
+    "seen": true,
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Horror"
+      ],
+      "tagline": "Friendship has evolved.",
+      "release": {
+        "day": 28,
+        "month": 12,
+        "year": 2022
+      },
+      "runtime": 102
+    },
+    "favorite": false
+  },
+  {
     "title": "Man of Steel",
     "id": 49521,
     "metadata": {
@@ -4112,6 +4206,25 @@
     "seen": true
   },
   {
+    "title": "Predator: Badlands",
+    "id": 1242898,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Action"
+      ],
+      "tagline": "First hunt. Last chance.",
+      "release": {
+        "day": 5,
+        "month": 11,
+        "year": 2025
+      },
+      "runtime": 0
+    },
+    "favorite": false
+  },
+  {
     "title": "Predestination",
     "id": 206487,
     "metadata": {
@@ -4664,6 +4777,26 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "title": "Skyline: Warpath",
+    "id": 1280822,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Action",
+        "Thriller"
+      ],
+      "tagline": "",
+      "release": {
+        "day": null,
+        "month": null,
+        "year": null
+      },
+      "runtime": 0
+    },
+    "favorite": false
   },
   {
     "title": "Skylines",
@@ -6308,6 +6441,24 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "title": "The Ritual",
+    "id": 1278950,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Horror"
+      ],
+      "tagline": "Sanctioned by the church. Condemned by Satan. Possessed by evil.",
+      "release": {
+        "day": 29,
+        "month": 5,
+        "year": 2025
+      },
+      "runtime": 98
+    },
+    "favorite": false
   },
   {
     "title": "The Shawshank Redemption",
