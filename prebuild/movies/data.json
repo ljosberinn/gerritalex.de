@@ -5111,6 +5111,25 @@
     "seen": true
   },
   {
+    "title": "Speak No Evil",
+    "id": 1114513,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "tagline": "",
+      "release": {
+        "day": 11,
+        "month": 9,
+        "year": 2024
+      },
+      "runtime": 110
+    },
+    "favorite": false
+  },
+  {
     "title": "Spectre",
     "id": 206647,
     "metadata": {
