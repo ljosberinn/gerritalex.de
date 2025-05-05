@@ -594,6 +594,26 @@
     "seen": true
   },
   {
+    "title": "Assassin's Creed",
+    "id": 121856,
+    "seen": true,
+    "metadata": {
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
+      "tagline": "Your destiny is in your blood.",
+      "release": {
+        "day": 21,
+        "month": 12,
+        "year": 2016
+      },
+      "runtime": 116
+    },
+    "favorite": false
+  },
+  {
     "title": "Attraction",
     "id": 65869,
     "metadata": {
@@ -2343,6 +2363,26 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "title": "Glass",
+    "id": 450465,
+    "seen": true,
+    "metadata": {
+      "genres": [
+        "Thriller",
+        "Drama",
+        "Science Fiction"
+      ],
+      "tagline": "You Cannot Contain What You Are",
+      "release": {
+        "day": 16,
+        "month": 1,
+        "year": 2019
+      },
+      "runtime": 129
+    },
+    "favorite": false
   },
   {
     "title": "Gloomy Sunday",
@@ -5229,6 +5269,25 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "title": "Steve Jobs",
+    "id": 321697,
+    "seen": true,
+    "metadata": {
+      "genres": [
+        "Drama",
+        "History"
+      ],
+      "tagline": "Can a great man be a good man?",
+      "release": {
+        "day": 9,
+        "month": 10,
+        "year": 2015
+      },
+      "runtime": 122
+    },
+    "favorite": false
   },
   {
     "title": "Sting",
