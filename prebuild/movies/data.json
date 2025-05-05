@@ -1354,6 +1354,26 @@
     "seen": true
   },
   {
+    "title": "Dark Phoenix",
+    "id": 320288,
+    "seen": true,
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Action",
+        "Adventure"
+      ],
+      "tagline": "A Phoenix will rise. The X-Men will fall.",
+      "release": {
+        "day": 5,
+        "month": 6,
+        "year": 2019
+      },
+      "runtime": 114
+    },
+    "favorite": false
+  },
+  {
     "title": "Dead Man",
     "id": 922,
     "metadata": {
