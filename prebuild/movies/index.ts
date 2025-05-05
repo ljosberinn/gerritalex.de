@@ -77,13 +77,39 @@ async function getEntry(id: number): Promise<Movie | null> {
   );
 }
 
+const currentYear = new Date().getFullYear();
+const currentMonth = new Date().getMonth();
+const currentDay = new Date().getDate();
+
 export async function doMoviesImport(): Promise<{ from: string; to: string }[]> {
   console.time('doMoviesImport');
 
   const images: { from: string; to: string }[] = [];
 
   for await (const dataset of data) {
+    let refetch = false;
+
     if (
+      'metadata' in dataset &&
+      dataset.metadata?.release &&
+      dataset.metadata.release.year &&
+      dataset.metadata.release.month &&
+      dataset.metadata.release.day
+    ) {
+      // set refetch to true of the date is in the future
+      const { year, month, day } = dataset.metadata.release;
+
+      if (year > currentYear) {
+        refetch = true;
+      } else if (year === currentYear && month > currentMonth) {
+        refetch = true;
+      } else if (year === currentYear && month === currentMonth && day > currentDay) {
+        refetch = true;
+      }
+    }
+
+    if (
+      !refetch &&
       typeof dataset.metadata === 'object' &&
       dataset.metadata !== null &&
       !('imageMissing' in dataset)
@@ -129,10 +155,12 @@ export async function doMoviesImport(): Promise<{ from: string; to: string }[]> 
 
     const imagePath = resolve('./public/static/images/tv', `${id}-cover.jpg`);
 
-    images.push({
-      from: `${TMDB_IMAGE_BASE}${response.poster_path}`,
-      to: imagePath,
-    });
+    if (response.poster_path) {
+      images.push({
+        from: `${TMDB_IMAGE_BASE}${response.poster_path}`,
+        to: imagePath,
+      });
+    }
 
     try {
       await stat(imagePath);

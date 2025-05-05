@@ -4,7 +4,11 @@
     "id": 14161,
     "seen": true,
     "metadata": {
-      "genres": ["Action", "Adventure", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
       "tagline": "We Were Warned.",
       "release": {
         "day": 10,
@@ -19,7 +23,11 @@
     "title": "28 Days Later",
     "id": 170,
     "metadata": {
-      "genres": ["Horror", "Thriller", "Science Fiction"],
+      "genres": [
+        "Horror",
+        "Thriller",
+        "Science Fiction"
+      ],
       "tagline": "His fear began when he woke up alone. His terror began when he realised he wasn't.",
       "release": {
         "day": 31,
@@ -35,7 +43,11 @@
     "title": "28 Weeks Later",
     "id": 1562,
     "metadata": {
-      "genres": ["Horror", "Thriller", "Science Fiction"],
+      "genres": [
+        "Horror",
+        "Thriller",
+        "Science Fiction"
+      ],
       "tagline": "When days turn to weeks... the horror returns.",
       "release": {
         "day": 26,
@@ -51,7 +63,11 @@
     "title": "28 Years Later",
     "id": 1100988,
     "metadata": {
-      "genres": ["Horror", "Thriller", "Science Fiction"],
+      "genres": [
+        "Horror",
+        "Thriller",
+        "Science Fiction"
+      ],
       "tagline": "In 28 days it began. In 28 weeks it spread. In 28 years it evolved.",
       "release": {
         "day": 18,
@@ -67,7 +83,11 @@
     "title": "28 Years Later Part 2: The Bone Temple",
     "id": 1272837,
     "metadata": {
-      "genres": ["Horror", "Science Fiction", "Thriller"],
+      "genres": [
+        "Horror",
+        "Science Fiction",
+        "Thriller"
+      ],
       "tagline": "",
       "release": {
         "day": 15,
@@ -82,7 +102,11 @@
     "title": "300",
     "id": 1271,
     "metadata": {
-      "genres": ["Action", "Adventure", "War"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "War"
+      ],
       "tagline": "Prepare for glory!",
       "release": {
         "day": 7,
@@ -98,7 +122,11 @@
     "title": "300: Rise of an Empire",
     "id": 53182,
     "metadata": {
-      "genres": ["Action", "Drama", "War"],
+      "genres": [
+        "Action",
+        "Drama",
+        "War"
+      ],
       "tagline": "Seize your glory!",
       "release": {
         "day": 5,
@@ -114,7 +142,11 @@
     "title": "6 Souls",
     "id": 41505,
     "metadata": {
-      "genres": ["Horror", "Mystery", "Thriller"],
+      "genres": [
+        "Horror",
+        "Mystery",
+        "Thriller"
+      ],
       "tagline": "Evil will rise.",
       "release": {
         "day": 27,
@@ -130,7 +162,13 @@
     "title": "9",
     "id": 12244,
     "metadata": {
-      "genres": ["Action", "Adventure", "Animation", "Science Fiction", "Thriller"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Animation",
+        "Science Fiction",
+        "Thriller"
+      ],
       "tagline": "When our world ended, their mission began.",
       "release": {
         "day": 19,
@@ -146,7 +184,10 @@
     "title": "A Clockwork Orange",
     "id": 185,
     "metadata": {
-      "genres": ["Science Fiction", "Crime"],
+      "genres": [
+        "Science Fiction",
+        "Crime"
+      ],
       "tagline": "Being the adventures of a young man whose principal interests are rape, ultra-violence and Beethoven.",
       "release": {
         "day": 19,
@@ -162,7 +203,10 @@
     "title": "A Good Day to Die Hard",
     "id": 47964,
     "metadata": {
-      "genres": ["Action", "Thriller"],
+      "genres": [
+        "Action",
+        "Thriller"
+      ],
       "tagline": "Yippee Ki-Yay Mother Russia.",
       "release": {
         "day": 6,
@@ -178,7 +222,11 @@
     "title": "A Quiet Place: Day One",
     "id": 762441,
     "metadata": {
-      "genres": ["Horror", "Science Fiction", "Thriller"],
+      "genres": [
+        "Horror",
+        "Science Fiction",
+        "Thriller"
+      ],
       "tagline": "Hear how it all began.",
       "release": {
         "day": 26,
@@ -194,7 +242,10 @@
     "title": "Alien",
     "id": 348,
     "metadata": {
-      "genres": ["Horror", "Science Fiction"],
+      "genres": [
+        "Horror",
+        "Science Fiction"
+      ],
       "tagline": "In space, no one can hear you scream.",
       "release": {
         "day": 25,
@@ -211,7 +262,11 @@
     "seen": true,
     "id": 8078,
     "metadata": {
-      "genres": ["Science Fiction", "Horror", "Action"],
+      "genres": [
+        "Science Fiction",
+        "Horror",
+        "Action"
+      ],
       "tagline": "It's already too late.",
       "release": {
         "day": 12,
@@ -226,7 +281,11 @@
     "title": "Alien: Covenant",
     "id": 126889,
     "metadata": {
-      "genres": ["Science Fiction", "Horror", "Thriller"],
+      "genres": [
+        "Science Fiction",
+        "Horror",
+        "Thriller"
+      ],
       "tagline": "The path to paradise begins in hell.",
       "release": {
         "day": 9,
@@ -242,7 +301,10 @@
     "title": "Alien: Romulus",
     "id": 945961,
     "metadata": {
-      "genres": ["Horror", "Science Fiction"],
+      "genres": [
+        "Horror",
+        "Science Fiction"
+      ],
       "tagline": "In space, no one can hear you.",
       "release": {
         "day": 13,
@@ -259,7 +321,11 @@
     "seen": true,
     "id": 8077,
     "metadata": {
-      "genres": ["Science Fiction", "Action", "Horror"],
+      "genres": [
+        "Science Fiction",
+        "Action",
+        "Horror"
+      ],
       "tagline": "3 times the suspense. 3 times the danger. 3 times the terror.",
       "release": {
         "day": 22,
@@ -274,7 +340,11 @@
     "title": "Aliens",
     "id": 679,
     "metadata": {
-      "genres": ["Action", "Thriller", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Thriller",
+        "Science Fiction"
+      ],
       "tagline": "This time it's war.",
       "release": {
         "day": 18,
@@ -290,7 +360,9 @@
     "title": "American History X",
     "id": 73,
     "metadata": {
-      "genres": ["Drama"],
+      "genres": [
+        "Drama"
+      ],
       "tagline": "Some Legacies Must End.",
       "release": {
         "day": 1,
@@ -306,7 +378,11 @@
     "title": "American Psycho",
     "id": 1359,
     "metadata": {
-      "genres": ["Thriller", "Drama", "Crime"],
+      "genres": [
+        "Thriller",
+        "Drama",
+        "Crime"
+      ],
       "tagline": "I think my mask of sanity is about to slip.",
       "release": {
         "day": 13,
@@ -322,7 +398,10 @@
     "title": "American Psycho II: All American Girl",
     "id": 10726,
     "metadata": {
-      "genres": ["Horror", "Thriller"],
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
       "tagline": "Angrier. Deadlier. Sexier.",
       "release": {
         "day": 18,
@@ -338,7 +417,10 @@
     "title": "Angels & Demons",
     "id": 13448,
     "metadata": {
-      "genres": ["Thriller", "Mystery"],
+      "genres": [
+        "Thriller",
+        "Mystery"
+      ],
       "tagline": "The holiest event of our time. Perfect for their return.",
       "release": {
         "day": 23,
@@ -354,7 +436,10 @@
     "title": "Annihilation",
     "id": 300668,
     "metadata": {
-      "genres": ["Science Fiction", "Horror"],
+      "genres": [
+        "Science Fiction",
+        "Horror"
+      ],
       "tagline": "Fear what's inside.",
       "release": {
         "day": 22,
@@ -370,7 +455,11 @@
     "title": "Apocalypse Z: The Beginning",
     "id": 1118031,
     "metadata": {
-      "genres": ["Drama", "Action", "Horror"],
+      "genres": [
+        "Drama",
+        "Action",
+        "Horror"
+      ],
       "tagline": "The beginning of the end has arrived.",
       "release": {
         "day": 4,
@@ -386,7 +475,11 @@
     "title": "Apocalypto",
     "id": 1579,
     "metadata": {
-      "genres": ["Action", "Drama", "History"],
+      "genres": [
+        "Action",
+        "Drama",
+        "History"
+      ],
       "tagline": "No one can outrun their destiny.",
       "release": {
         "day": 7,
@@ -402,7 +495,11 @@
     "title": "Aquaman",
     "id": 297802,
     "metadata": {
-      "genres": ["Action", "Adventure", "Fantasy"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
       "tagline": "Home is calling.",
       "release": {
         "day": 7,
@@ -418,7 +515,12 @@
     "title": "Arcadian",
     "id": 1051896,
     "metadata": {
-      "genres": ["Action", "Horror", "Thriller", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Horror",
+        "Thriller",
+        "Science Fiction"
+      ],
       "tagline": "Family is stronger than fear.",
       "release": {
         "day": 12,
@@ -435,7 +537,12 @@
     "id": 95,
     "favorite": false,
     "metadata": {
-      "genres": ["Action", "Thriller", "Science Fiction", "Adventure"],
+      "genres": [
+        "Action",
+        "Thriller",
+        "Science Fiction",
+        "Adventure"
+      ],
       "tagline": "For love. For honor. For mankind.",
       "release": {
         "day": 1,
@@ -450,7 +557,11 @@
     "title": "Arrival",
     "id": 329865,
     "metadata": {
-      "genres": ["Drama", "Science Fiction", "Mystery"],
+      "genres": [
+        "Drama",
+        "Science Fiction",
+        "Mystery"
+      ],
       "tagline": "Why are they here?",
       "release": {
         "day": 10,
@@ -466,7 +577,11 @@
     "title": "Ash",
     "id": 931349,
     "metadata": {
-      "genres": ["Science Fiction", "Horror", "Thriller"],
+      "genres": [
+        "Science Fiction",
+        "Horror",
+        "Thriller"
+      ],
       "tagline": "A new mindbender by Flying Lotus.",
       "release": {
         "day": 20,
@@ -482,7 +597,10 @@
     "title": "Attraction",
     "id": 65869,
     "metadata": {
-      "genres": ["Thriller", "Romance"],
+      "genres": [
+        "Thriller",
+        "Romance"
+      ],
       "tagline": "Obsession burns beyond control.",
       "release": {
         "day": 22,
@@ -498,7 +616,12 @@
     "title": "Avatar",
     "id": 19995,
     "metadata": {
-      "genres": ["Action", "Adventure", "Fantasy", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy",
+        "Science Fiction"
+      ],
       "tagline": "Enter the world of Pandora.",
       "release": {
         "day": 15,
@@ -511,10 +634,94 @@
     "seen": true
   },
   {
+    "title": "Avatar 4",
+    "id": 216527,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Adventure",
+        "Fantasy"
+      ],
+      "tagline": "",
+      "release": {
+        "day": 19,
+        "month": 12,
+        "year": 2029
+      },
+      "runtime": 0
+    },
+    "favorite": false
+  },
+  {
+    "title": "Avatar 5",
+    "id": 393209,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Adventure",
+        "Science Fiction",
+        "Fantasy"
+      ],
+      "tagline": "",
+      "release": {
+        "day": 17,
+        "month": 12,
+        "year": 2031
+      },
+      "runtime": 0
+    },
+    "favorite": false
+  },
+  {
+    "title": "Avatar: Fire and Ash",
+    "id": 83533,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Adventure",
+        "Fantasy"
+      ],
+      "tagline": "",
+      "release": {
+        "day": 17,
+        "month": 12,
+        "year": 2025
+      },
+      "runtime": 0
+    },
+    "favorite": false
+  },
+  {
+    "title": "Avatar: The Way of Water",
+    "id": 76600,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Adventure",
+        "Action"
+      ],
+      "tagline": "Return to Pandora.",
+      "release": {
+        "day": 14,
+        "month": 12,
+        "year": 2022
+      },
+      "runtime": 192
+    },
+    "favorite": false
+  },
+  {
     "title": "Avengers: Age of Ultron",
     "id": 99861,
     "metadata": {
-      "genres": ["Action", "Adventure", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
       "tagline": "A new age has come.",
       "release": {
         "day": 22,
@@ -527,10 +734,32 @@
     "seen": true
   },
   {
+    "title": "Avengers: Doomsday",
+    "id": 1003596,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Science Fiction"
+      ],
+      "tagline": "",
+      "release": {
+        "day": 29,
+        "month": 4,
+        "year": 2026
+      },
+      "runtime": 0
+    },
+    "favorite": false
+  },
+  {
     "title": "Avengers: Endgame",
     "id": 299534,
     "metadata": {
-      "genres": ["Adventure", "Science Fiction", "Action"],
+      "genres": [
+        "Adventure",
+        "Science Fiction",
+        "Action"
+      ],
       "tagline": "Avenge the fallen.",
       "release": {
         "day": 24,
@@ -546,7 +775,11 @@
     "title": "Avengers: Infinity War",
     "id": 299536,
     "metadata": {
-      "genres": ["Adventure", "Action", "Science Fiction"],
+      "genres": [
+        "Adventure",
+        "Action",
+        "Science Fiction"
+      ],
       "tagline": "Destiny arrives all the same.",
       "release": {
         "day": 25,
@@ -559,10 +792,32 @@
     "seen": true
   },
   {
+    "title": "Avengers: Secret Wars",
+    "id": 1003598,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Science Fiction"
+      ],
+      "tagline": "",
+      "release": {
+        "day": 5,
+        "month": 5,
+        "year": 2027
+      },
+      "runtime": 0
+    },
+    "favorite": false
+  },
+  {
     "title": "Back to Black",
     "id": 998846,
     "metadata": {
-      "genres": ["Music", "History", "Drama"],
+      "genres": [
+        "Music",
+        "History",
+        "Drama"
+      ],
       "tagline": "Her music. Her life. Her legacy.",
       "release": {
         "day": 11,
@@ -578,7 +833,11 @@
     "title": "Beyond Skyline",
     "id": 271404,
     "metadata": {
-      "genres": ["Action", "Science Fiction", "Adventure"],
+      "genres": [
+        "Action",
+        "Science Fiction",
+        "Adventure"
+      ],
       "tagline": "",
       "release": {
         "day": 26,
@@ -594,7 +853,11 @@
     "title": "Black Bag",
     "id": 1233575,
     "metadata": {
-      "genres": ["Drama", "Mystery", "Thriller"],
+      "genres": [
+        "Thriller",
+        "Mystery",
+        "Drama"
+      ],
       "tagline": "It takes a spy to hunt a spy.",
       "release": {
         "day": 12,
@@ -610,7 +873,10 @@
     "title": "Black Phone",
     "id": 756999,
     "metadata": {
-      "genres": ["Horror", "Thriller"],
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
       "tagline": "Never talk to strangers.",
       "release": {
         "day": 17,
@@ -626,7 +892,10 @@
     "title": "Black Phone 2",
     "id": 1197137,
     "metadata": {
-      "genres": ["Horror", "Thriller"],
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
       "tagline": "",
       "release": {
         "day": 15,
@@ -642,7 +911,9 @@
     "title": "Blue Spring",
     "id": 33333,
     "metadata": {
-      "genres": ["Drama"],
+      "genres": [
+        "Drama"
+      ],
       "tagline": "",
       "release": {
         "day": 9,
@@ -658,7 +929,10 @@
     "title": "Brazil",
     "id": 68,
     "metadata": {
-      "genres": ["Comedy", "Science Fiction"],
+      "genres": [
+        "Comedy",
+        "Science Fiction"
+      ],
       "tagline": "It's only a state of mind.",
       "release": {
         "day": 20,
@@ -674,7 +948,11 @@
     "title": "Bunraku",
     "id": 30618,
     "metadata": {
-      "genres": ["Thriller", "Action", "Drama"],
+      "genres": [
+        "Thriller",
+        "Action",
+        "Drama"
+      ],
       "tagline": "A civilized weapon for uncivilized times",
       "release": {
         "day": 1,
@@ -690,7 +968,11 @@
     "title": "Captain America: The First Avenger",
     "id": 1771,
     "metadata": {
-      "genres": ["Action", "Adventure", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
       "tagline": "When patriots become heroes.",
       "release": {
         "day": 22,
@@ -706,7 +988,11 @@
     "title": "Captain America: The Winter Soldier",
     "id": 100402,
     "metadata": {
-      "genres": ["Action", "Adventure", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
       "tagline": "In heroes we trust.",
       "release": {
         "day": 20,
@@ -722,7 +1008,11 @@
     "title": "Casino Royale",
     "id": 36557,
     "metadata": {
-      "genres": ["Adventure", "Action", "Thriller"],
+      "genres": [
+        "Adventure",
+        "Action",
+        "Thriller"
+      ],
       "tagline": "Everyone has a past. Every legend has a beginning.",
       "release": {
         "day": 14,
@@ -738,7 +1028,11 @@
     "title": "Chappie",
     "id": 198184,
     "metadata": {
-      "genres": ["Crime", "Action", "Science Fiction"],
+      "genres": [
+        "Crime",
+        "Action",
+        "Science Fiction"
+      ],
       "tagline": "I am consciousness. I am alive. I am Chappie.",
       "release": {
         "day": 4,
@@ -755,7 +1049,10 @@
     "seen": true,
     "id": 181283,
     "metadata": {
-      "genres": ["Crime", "Thriller"],
+      "genres": [
+        "Crime",
+        "Thriller"
+      ],
       "tagline": "How do you find a killer who doesn’t exist?",
       "release": {
         "day": 15,
@@ -770,7 +1067,9 @@
     "title": "Children",
     "id": 72558,
     "metadata": {
-      "genres": ["Drama"],
+      "genres": [
+        "Drama"
+      ],
       "tagline": "",
       "release": {
         "day": 9,
@@ -786,7 +1085,11 @@
     "title": "Civil War",
     "id": 929590,
     "metadata": {
-      "genres": ["War", "Action", "Drama"],
+      "genres": [
+        "War",
+        "Action",
+        "Drama"
+      ],
       "tagline": "Welcome to the frontline.",
       "release": {
         "day": 10,
@@ -802,7 +1105,10 @@
     "title": "Cloud Atlas",
     "id": 83542,
     "metadata": {
-      "genres": ["Drama", "Science Fiction"],
+      "genres": [
+        "Drama",
+        "Science Fiction"
+      ],
       "tagline": "Everything is connected",
       "release": {
         "day": 26,
@@ -818,7 +1124,11 @@
     "title": "Cloverfield",
     "id": 7191,
     "metadata": {
-      "genres": ["Action", "Thriller", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Thriller",
+        "Science Fiction"
+      ],
       "tagline": "Some thing has found us.",
       "release": {
         "day": 15,
@@ -834,7 +1144,11 @@
     "title": "Code 8",
     "id": 461130,
     "metadata": {
-      "genres": ["Science Fiction", "Action", "Crime"],
+      "genres": [
+        "Science Fiction",
+        "Action",
+        "Crime"
+      ],
       "tagline": "Fear is the most dangerous power",
       "release": {
         "day": 6,
@@ -850,7 +1164,11 @@
     "title": "Code 8: Part II",
     "id": 932420,
     "metadata": {
-      "genres": ["Science Fiction", "Action", "Crime"],
+      "genres": [
+        "Science Fiction",
+        "Action",
+        "Crime"
+      ],
       "tagline": "Power corrupts.",
       "release": {
         "day": 27,
@@ -866,7 +1184,9 @@
     "title": "Combat Girls",
     "id": 82529,
     "metadata": {
-      "genres": ["Drama"],
+      "genres": [
+        "Drama"
+      ],
       "tagline": "",
       "release": {
         "day": 28,
@@ -883,7 +1203,11 @@
     "id": 561,
     "seen": false,
     "metadata": {
-      "genres": ["Fantasy", "Action", "Horror"],
+      "genres": [
+        "Fantasy",
+        "Action",
+        "Horror"
+      ],
       "tagline": "Hell wants him. Heaven won't take him. Earth needs him.",
       "release": {
         "day": 8,
@@ -899,7 +1223,10 @@
     "id": 570678,
     "seen": false,
     "metadata": {
-      "genres": ["Fantasy", "Horror"],
+      "genres": [
+        "Fantasy",
+        "Horror"
+      ],
       "tagline": "",
       "release": {
         "day": null,
@@ -914,7 +1241,9 @@
     "title": "Control",
     "id": 5708,
     "metadata": {
-      "genres": ["Drama"],
+      "genres": [
+        "Drama"
+      ],
       "tagline": "He had the spirit, but lost the feeling.",
       "release": {
         "day": 12,
@@ -930,7 +1259,12 @@
     "title": "Cowboys & Aliens",
     "id": 49849,
     "metadata": {
-      "genres": ["Action", "Science Fiction", "Thriller", "Western"],
+      "genres": [
+        "Action",
+        "Science Fiction",
+        "Thriller",
+        "Western"
+      ],
       "tagline": "First Contact. Last Stand.",
       "release": {
         "day": 29,
@@ -946,7 +1280,11 @@
     "title": "Crank",
     "id": 1948,
     "metadata": {
-      "genres": ["Action", "Thriller", "Crime"],
+      "genres": [
+        "Action",
+        "Thriller",
+        "Crime"
+      ],
       "tagline": "There are a thousand ways to raise your adrenaline. Today, Chev Chelios will need every single one.",
       "release": {
         "day": 31,
@@ -962,7 +1300,11 @@
     "title": "Crank 2: High Voltage",
     "id": 15092,
     "metadata": {
-      "genres": ["Action", "Thriller", "Crime"],
+      "genres": [
+        "Action",
+        "Thriller",
+        "Crime"
+      ],
       "tagline": "He was dead...but he got better.",
       "release": {
         "day": 16,
@@ -978,7 +1320,9 @@
     "title": "Dante 01",
     "id": 15125,
     "metadata": {
-      "genres": ["Science Fiction"],
+      "genres": [
+        "Science Fiction"
+      ],
       "tagline": "In deep space, there is no rescue.",
       "release": {
         "day": 2,
@@ -994,7 +1338,10 @@
     "title": "Dark City",
     "id": 2666,
     "metadata": {
-      "genres": ["Mystery", "Science Fiction"],
+      "genres": [
+        "Mystery",
+        "Science Fiction"
+      ],
       "tagline": "A world where the night never ends.",
       "release": {
         "day": 27,
@@ -1010,7 +1357,11 @@
     "title": "Dead Man",
     "id": 922,
     "metadata": {
-      "genres": ["Drama", "Fantasy", "Western"],
+      "genres": [
+        "Drama",
+        "Fantasy",
+        "Western"
+      ],
       "tagline": "It is preferable not to travel with a dead man.",
       "release": {
         "day": 23,
@@ -1026,7 +1377,9 @@
     "title": "Dead Poets Society",
     "id": 207,
     "metadata": {
-      "genres": ["Drama"],
+      "genres": [
+        "Drama"
+      ],
       "tagline": "He was their inspiration. He made their lives extraordinary.",
       "release": {
         "day": 2,
@@ -1042,7 +1395,11 @@
     "title": "Deep Impact",
     "id": 8656,
     "metadata": {
-      "genres": ["Action", "Drama", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Drama",
+        "Science Fiction"
+      ],
       "tagline": "Oceans rise. Cities fall. Hope survives.",
       "release": {
         "day": 8,
@@ -1059,7 +1416,10 @@
     "id": 562,
     "favorite": false,
     "metadata": {
-      "genres": ["Action", "Thriller"],
+      "genres": [
+        "Action",
+        "Thriller"
+      ],
       "tagline": "Twelve terrorists. One cop. The odds are against John McClane... That's just the way he likes it.",
       "release": {
         "day": 15,
@@ -1074,7 +1434,9 @@
     "title": "District 9",
     "id": 17654,
     "metadata": {
-      "genres": ["Science Fiction"],
+      "genres": [
+        "Science Fiction"
+      ],
       "tagline": "You are not welcome here.",
       "release": {
         "day": 5,
@@ -1090,7 +1452,10 @@
     "title": "Django Unchained",
     "id": 68718,
     "metadata": {
-      "genres": ["Drama", "Western"],
+      "genres": [
+        "Drama",
+        "Western"
+      ],
       "tagline": "Life, liberty, and the pursuit of vengeance.",
       "release": {
         "day": 25,
@@ -1106,7 +1471,11 @@
     "title": "Doctor Strange",
     "id": 284052,
     "metadata": {
-      "genres": ["Action", "Adventure", "Fantasy"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
       "tagline": "The impossibilities are endless.",
       "release": {
         "day": 25,
@@ -1122,7 +1491,11 @@
     "title": "Doctor Strange in the Multiverse of Madness",
     "id": 453395,
     "metadata": {
-      "genres": ["Fantasy", "Action", "Adventure"],
+      "genres": [
+        "Fantasy",
+        "Action",
+        "Adventure"
+      ],
       "tagline": "Enter a new dimension of Strange.",
       "release": {
         "day": 4,
@@ -1138,7 +1511,10 @@
     "title": "Don't Look Up",
     "id": 646380,
     "metadata": {
-      "genres": ["Comedy", "Science Fiction", "Drama"],
+      "genres": [
+        "Comedy",
+        "Science Fiction"
+      ],
       "tagline": "Based on truly possible events.",
       "release": {
         "day": 8,
@@ -1154,7 +1530,11 @@
     "title": "Dracula Untold",
     "id": 49017,
     "metadata": {
-      "genres": ["Horror", "Action", "Fantasy"],
+      "genres": [
+        "Horror",
+        "Action",
+        "Fantasy"
+      ],
       "tagline": "Every bloodline has a beginning",
       "release": {
         "day": 1,
@@ -1170,7 +1550,10 @@
     "title": "Dredd",
     "id": 49049,
     "metadata": {
-      "genres": ["Action", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Science Fiction"
+      ],
       "tagline": "Judgement is coming.",
       "release": {
         "day": 7,
@@ -1186,7 +1569,11 @@
     "title": "Drive",
     "id": 64690,
     "metadata": {
-      "genres": ["Drama", "Thriller", "Crime"],
+      "genres": [
+        "Drama",
+        "Thriller",
+        "Crime"
+      ],
       "tagline": "There are no clean getaways.",
       "release": {
         "day": 15,
@@ -1202,7 +1589,10 @@
     "title": "Dune",
     "id": 438631,
     "metadata": {
-      "genres": ["Science Fiction", "Adventure"],
+      "genres": [
+        "Science Fiction",
+        "Adventure"
+      ],
       "tagline": "It begins.",
       "release": {
         "day": 15,
@@ -1218,7 +1608,10 @@
     "title": "Dune 2",
     "id": 693134,
     "metadata": {
-      "genres": ["Science Fiction", "Adventure"],
+      "genres": [
+        "Science Fiction",
+        "Adventure"
+      ],
       "tagline": "Long live the fighters.",
       "release": {
         "day": 27,
@@ -1234,7 +1627,11 @@
     "title": "Dunkirk",
     "id": 374720,
     "metadata": {
-      "genres": ["War", "Action", "Drama"],
+      "genres": [
+        "War",
+        "Action",
+        "Drama"
+      ],
       "tagline": "When 400,000 men couldn't get home, home came for them.",
       "release": {
         "day": 19,
@@ -1250,7 +1647,10 @@
     "title": "Edge of Tomorrow",
     "id": 137113,
     "metadata": {
-      "genres": ["Action", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Science Fiction"
+      ],
       "tagline": "Live. Die. Repeat.",
       "release": {
         "day": 27,
@@ -1266,7 +1666,10 @@
     "title": "Elephant",
     "id": 1807,
     "metadata": {
-      "genres": ["Crime", "Drama"],
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
       "tagline": "An ordinary high school day. Except that it's not.",
       "release": {
         "day": 20,
@@ -1282,7 +1685,12 @@
     "title": "Elysium",
     "id": 68724,
     "metadata": {
-      "genres": ["Science Fiction", "Action", "Drama", "Thriller"],
+      "genres": [
+        "Science Fiction",
+        "Action",
+        "Drama",
+        "Thriller"
+      ],
       "tagline": "He can save us all.",
       "release": {
         "day": 7,
@@ -1298,7 +1706,11 @@
     "title": "Ender's Game",
     "id": 80274,
     "metadata": {
-      "genres": ["Science Fiction", "Action", "Adventure"],
+      "genres": [
+        "Science Fiction",
+        "Action",
+        "Adventure"
+      ],
       "tagline": "This is not a game.",
       "release": {
         "day": 24,
@@ -1314,7 +1726,11 @@
     "title": "Escape Room",
     "id": 522681,
     "metadata": {
-      "genres": ["Horror", "Thriller", "Mystery"],
+      "genres": [
+        "Horror",
+        "Thriller",
+        "Mystery"
+      ],
       "tagline": "Find the clues or die.",
       "release": {
         "day": 3,
@@ -1330,7 +1746,11 @@
     "title": "Escape Room 2 - No Way Out",
     "id": 585216,
     "metadata": {
-      "genres": ["Horror", "Thriller", "Mystery"],
+      "genres": [
+        "Horror",
+        "Thriller",
+        "Mystery"
+      ],
       "tagline": "Winning was just the beginning.",
       "release": {
         "day": 1,
@@ -1346,7 +1766,11 @@
     "title": "Event Horizon",
     "id": 8413,
     "metadata": {
-      "genres": ["Horror", "Science Fiction", "Mystery"],
+      "genres": [
+        "Horror",
+        "Science Fiction",
+        "Mystery"
+      ],
       "tagline": "Infinite space. Infinite terror.",
       "release": {
         "day": 15,
@@ -1362,7 +1786,11 @@
     "title": "Everything Everywhere All At Once",
     "id": 545611,
     "metadata": {
-      "genres": ["Action", "Adventure", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
       "tagline": "The universe is so much bigger than you realize.",
       "release": {
         "day": 24,
@@ -1378,7 +1806,9 @@
     "title": "Evil Dead",
     "id": 109428,
     "metadata": {
-      "genres": ["Horror"],
+      "genres": [
+        "Horror"
+      ],
       "tagline": "The most terrifying film you will ever experience.",
       "release": {
         "day": 5,
@@ -1394,7 +1824,9 @@
     "title": "Evil Dead Burn",
     "id": 1212763,
     "metadata": {
-      "genres": ["Horror"],
+      "genres": [
+        "Horror"
+      ],
       "tagline": "",
       "release": {
         "day": null,
@@ -1410,7 +1842,10 @@
     "title": "Evil Dead Rise",
     "id": 713704,
     "metadata": {
-      "genres": ["Horror", "Thriller"],
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
       "tagline": "Mommy loves you to death.",
       "release": {
         "day": 12,
@@ -1426,7 +1861,12 @@
     "title": "Ex Drummer",
     "id": 14019,
     "metadata": {
-      "genres": ["Comedy", "Crime", "Drama", "Thriller"],
+      "genres": [
+        "Comedy",
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
       "tagline": "",
       "release": {
         "day": 31,
@@ -1442,7 +1882,10 @@
     "title": "Ex Machina",
     "id": 264660,
     "metadata": {
-      "genres": ["Drama", "Science Fiction"],
+      "genres": [
+        "Drama",
+        "Science Fiction"
+      ],
       "tagline": "There is nothing more human than the will to survive",
       "release": {
         "day": 21,
@@ -1458,7 +1901,11 @@
     "title": "Exodus: Gods and Kings",
     "id": 147441,
     "metadata": {
-      "genres": ["Adventure", "Drama", "Action"],
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Action"
+      ],
       "tagline": "Once brothers, now enemies.",
       "release": {
         "day": 3,
@@ -1474,7 +1921,11 @@
     "title": "Eyes Wide Shut",
     "id": 345,
     "metadata": {
-      "genres": ["Drama", "Thriller", "Mystery"],
+      "genres": [
+        "Drama",
+        "Thriller",
+        "Mystery"
+      ],
       "tagline": "Cruise. Kidman. Kubrick.",
       "release": {
         "day": 16,
@@ -1490,7 +1941,10 @@
     "title": "Fantastic Beasts and Where to Find Them",
     "id": 259316,
     "metadata": {
-      "genres": ["Fantasy", "Adventure"],
+      "genres": [
+        "Fantasy",
+        "Adventure"
+      ],
       "tagline": "From J.K. Rowling's wizarding world.",
       "release": {
         "day": 16,
@@ -1506,7 +1960,10 @@
     "title": "Fantastic Beasts: The Crimes of Grindelwald",
     "id": 338952,
     "metadata": {
-      "genres": ["Fantasy", "Adventure"],
+      "genres": [
+        "Fantasy",
+        "Adventure"
+      ],
       "tagline": "Fate of one. Future of all.",
       "release": {
         "day": 14,
@@ -1522,7 +1979,10 @@
     "title": "Fear Street: 1666",
     "id": 591275,
     "metadata": {
-      "genres": ["Mystery", "Horror"],
+      "genres": [
+        "Mystery",
+        "Horror"
+      ],
       "tagline": "End the curse.",
       "release": {
         "day": 14,
@@ -1538,7 +1998,10 @@
     "title": "Fear Street: 1978",
     "id": 591274,
     "metadata": {
-      "genres": ["Horror", "Mystery"],
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
       "tagline": "Find the truth.",
       "release": {
         "day": 8,
@@ -1554,7 +2017,10 @@
     "title": "Fear Street: 1994",
     "id": 591273,
     "metadata": {
-      "genres": ["Horror", "Mystery"],
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
       "tagline": "Face the evil.",
       "release": {
         "day": 28,
@@ -1571,7 +2037,9 @@
     "id": 1001414,
     "seen": false,
     "metadata": {
-      "genres": ["Horror"],
+      "genres": [
+        "Horror"
+      ],
       "tagline": "Winning just might be the death of you.",
       "release": {
         "day": 22,
@@ -1586,7 +2054,9 @@
     "title": "Fight Club",
     "id": 550,
     "metadata": {
-      "genres": ["Drama"],
+      "genres": [
+        "Drama"
+      ],
       "tagline": "Mischief. Mayhem. Soap.",
       "release": {
         "day": 15,
@@ -1602,7 +2072,11 @@
     "title": "Filth",
     "id": 85889,
     "metadata": {
-      "genres": ["Crime", "Drama", "Comedy"],
+      "genres": [
+        "Crime",
+        "Drama",
+        "Comedy"
+      ],
       "tagline": "It's a filthy job getting to the top, but someone's got to do it.",
       "release": {
         "day": 23,
@@ -1618,7 +2092,10 @@
     "title": "Five Nights at Freddy's",
     "id": 507089,
     "metadata": {
-      "genres": ["Horror", "Thriller"],
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
       "tagline": "Can you survive five nights?",
       "release": {
         "day": 25,
@@ -1634,7 +2111,9 @@
     "title": "Flight",
     "id": 87502,
     "metadata": {
-      "genres": ["Drama"],
+      "genres": [
+        "Drama"
+      ],
       "tagline": "Some miracles are not what they seem.",
       "release": {
         "day": 2,
@@ -1651,7 +2130,11 @@
     "id": 1062722,
     "seen": false,
     "metadata": {
-      "genres": ["Science Fiction", "Drama", "Horror"],
+      "genres": [
+        "Science Fiction",
+        "Drama",
+        "Horror"
+      ],
       "tagline": "",
       "release": {
         "day": null,
@@ -1666,7 +2149,12 @@
     "title": "From Dusk Till Dawn",
     "id": 755,
     "metadata": {
-      "genres": ["Horror", "Action", "Thriller", "Crime"],
+      "genres": [
+        "Horror",
+        "Action",
+        "Thriller",
+        "Crime"
+      ],
       "tagline": "One night is all that stands between them and freedom. But it's going to be a hell of a night.",
       "release": {
         "day": 19,
@@ -1682,7 +2170,11 @@
     "title": "From Hell",
     "id": 768,
     "metadata": {
-      "genres": ["Horror", "Mystery", "Thriller"],
+      "genres": [
+        "Horror",
+        "Mystery",
+        "Thriller"
+      ],
       "tagline": "More than the legend will survive.",
       "release": {
         "day": 8,
@@ -1699,14 +2191,18 @@
     "id": 541671,
     "seen": false,
     "metadata": {
-      "genres": ["Action", "Thriller", "Crime"],
+      "genres": [
+        "Action",
+        "Thriller",
+        "Crime"
+      ],
       "tagline": "Vengeance has a new face.",
       "release": {
         "day": 4,
         "month": 6,
         "year": 2025
       },
-      "runtime": 126
+      "runtime": 125
     },
     "favorite": false
   },
@@ -1714,7 +2210,10 @@
     "title": "Gandhi",
     "id": 783,
     "metadata": {
-      "genres": ["Drama", "History"],
+      "genres": [
+        "Drama",
+        "History"
+      ],
       "tagline": "His triumph changed the world forever.",
       "release": {
         "day": 1,
@@ -1730,7 +2229,10 @@
     "title": "Garfield",
     "id": 8920,
     "metadata": {
-      "genres": ["Comedy", "Family"],
+      "genres": [
+        "Comedy",
+        "Family"
+      ],
       "tagline": "Get ready for frisky business.",
       "release": {
         "day": 10,
@@ -1746,7 +2248,12 @@
     "title": "Gattaca",
     "id": 782,
     "metadata": {
-      "genres": ["Thriller", "Science Fiction", "Mystery", "Romance"],
+      "genres": [
+        "Thriller",
+        "Science Fiction",
+        "Mystery",
+        "Romance"
+      ],
       "tagline": "There is no gene for the human spirit.",
       "release": {
         "day": 7,
@@ -1762,7 +2269,11 @@
     "title": "Get Out",
     "id": 419430,
     "metadata": {
-      "genres": ["Mystery", "Thriller", "Horror"],
+      "genres": [
+        "Mystery",
+        "Thriller",
+        "Horror"
+      ],
       "tagline": "Just because you're invited, doesn't mean you're welcome.",
       "release": {
         "day": 24,
@@ -1778,7 +2289,11 @@
     "title": "Ghost in the Shell",
     "id": 315837,
     "metadata": {
-      "genres": ["Science Fiction", "Drama", "Action"],
+      "genres": [
+        "Science Fiction",
+        "Drama",
+        "Action"
+      ],
       "tagline": "There's nothing sadder than a puppet without a ghost.",
       "release": {
         "day": 29,
@@ -1794,7 +2309,10 @@
     "title": "Ghostbusters",
     "id": 620,
     "metadata": {
-      "genres": ["Comedy", "Fantasy"],
+      "genres": [
+        "Comedy",
+        "Fantasy"
+      ],
       "tagline": "They're here to save the world.",
       "release": {
         "day": 8,
@@ -1810,7 +2328,10 @@
     "title": "Gloomy Sunday",
     "id": 1277,
     "metadata": {
-      "genres": ["Drama", "Romance"],
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
       "tagline": "",
       "release": {
         "day": 21,
@@ -1826,7 +2347,11 @@
     "title": "God Bless America",
     "id": 74306,
     "metadata": {
-      "genres": ["Comedy", "Drama", "Crime"],
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Crime"
+      ],
       "tagline": "Taking out the trash, one jerk at a time.",
       "release": {
         "day": 11,
@@ -1842,7 +2367,11 @@
     "title": "God Help the Girl",
     "id": 245859,
     "metadata": {
-      "genres": ["Comedy", "Drama", "Music"],
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Music"
+      ],
       "tagline": "",
       "release": {
         "day": 22,
@@ -1859,7 +2388,11 @@
     "seen": true,
     "id": 929,
     "metadata": {
-      "genres": ["Science Fiction", "Action", "Thriller"],
+      "genres": [
+        "Science Fiction",
+        "Action",
+        "Thriller"
+      ],
       "tagline": "Size does matter.",
       "release": {
         "day": 20,
@@ -1874,7 +2407,11 @@
     "title": "Godzilla Minus One",
     "id": 940721,
     "metadata": {
-      "genres": ["Science Fiction", "Horror", "Action"],
+      "genres": [
+        "Science Fiction",
+        "Horror",
+        "Action"
+      ],
       "tagline": "Post-WWII, Japan has lost everything. From zero to minus.",
       "release": {
         "day": 3,
@@ -1890,7 +2427,11 @@
     "title": "Godzilla vs. Kong",
     "id": 399566,
     "metadata": {
-      "genres": ["Action", "Science Fiction", "Adventure"],
+      "genres": [
+        "Action",
+        "Science Fiction",
+        "Adventure"
+      ],
       "tagline": "One will fall.",
       "release": {
         "day": 24,
@@ -1906,7 +2447,9 @@
     "title": "Good Will Hunting",
     "id": 489,
     "metadata": {
-      "genres": ["Drama"],
+      "genres": [
+        "Drama"
+      ],
       "tagline": "Some people can never believe in themselves, until someone believes in them.",
       "release": {
         "day": 5,
@@ -1922,7 +2465,10 @@
     "title": "Grave Encounters",
     "id": 50698,
     "metadata": {
-      "genres": ["Thriller", "Horror"],
+      "genres": [
+        "Thriller",
+        "Horror"
+      ],
       "tagline": "They Were Searching For Proof.  They Found it.",
       "release": {
         "day": 9,
@@ -1938,7 +2484,9 @@
     "title": "Grave Encounters 2",
     "id": 134366,
     "metadata": {
-      "genres": ["Horror"],
+      "genres": [
+        "Horror"
+      ],
       "tagline": "Fear is just a word. Reality is much worse.",
       "release": {
         "day": 12,
@@ -1954,7 +2502,11 @@
     "title": "Gravity",
     "id": 49047,
     "metadata": {
-      "genres": ["Science Fiction", "Thriller", "Drama"],
+      "genres": [
+        "Science Fiction",
+        "Thriller",
+        "Drama"
+      ],
       "tagline": "Don't let go.",
       "release": {
         "day": 3,
@@ -1970,7 +2522,12 @@
     "title": "Groundhog Day",
     "id": 137,
     "metadata": {
-      "genres": ["Romance", "Fantasy", "Drama", "Comedy"],
+      "genres": [
+        "Romance",
+        "Fantasy",
+        "Drama",
+        "Comedy"
+      ],
       "tagline": "He’s having the worst day of his life… Over and over again.",
       "release": {
         "day": 11,
@@ -1986,7 +2543,11 @@
     "title": "Growth",
     "id": 31196,
     "metadata": {
-      "genres": ["Horror", "Science Fiction", "Thriller"],
+      "genres": [
+        "Horror",
+        "Science Fiction",
+        "Thriller"
+      ],
       "tagline": "",
       "release": {
         "day": 29,
@@ -2002,7 +2563,11 @@
     "title": "Guardians of the Galaxy",
     "id": 118340,
     "metadata": {
-      "genres": ["Action", "Science Fiction", "Adventure"],
+      "genres": [
+        "Action",
+        "Science Fiction",
+        "Adventure"
+      ],
       "tagline": "When things get bad, they'll do their worst.",
       "release": {
         "day": 30,
@@ -2018,7 +2583,11 @@
     "title": "Guardians of the Galaxy Vol. 2",
     "id": 283995,
     "metadata": {
-      "genres": ["Science Fiction", "Adventure", "Action"],
+      "genres": [
+        "Science Fiction",
+        "Adventure",
+        "Action"
+      ],
       "tagline": "Anyone can save the galaxy once.",
       "release": {
         "day": 19,
@@ -2031,10 +2600,34 @@
     "seen": true
   },
   {
+    "title": "Guardians of the Galaxy Vol. 3",
+    "id": 447365,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Adventure",
+        "Action",
+        "Comedy"
+      ],
+      "tagline": "Once more with feeling.",
+      "release": {
+        "day": 3,
+        "month": 5,
+        "year": 2023
+      },
+      "runtime": 150
+    },
+    "favorite": false
+  },
+  {
     "title": "Gummo",
     "id": 18415,
     "metadata": {
-      "genres": ["Drama", "Comedy"],
+      "genres": [
+        "Drama",
+        "Comedy"
+      ],
       "tagline": "Prepare to visit a town you'd never want to call home.",
       "release": {
         "day": 17,
@@ -2050,7 +2643,12 @@
     "title": "Halo Legends",
     "id": 573531,
     "metadata": {
-      "genres": ["Animation", "War", "Action", "Science Fiction"],
+      "genres": [
+        "Animation",
+        "War",
+        "Action",
+        "Science Fiction"
+      ],
       "tagline": "Seven stories from the heart of the Halo universe.",
       "release": {
         "day": 16,
@@ -2066,7 +2664,11 @@
     "title": "Hanna",
     "id": 50456,
     "metadata": {
-      "genres": ["Action", "Thriller", "Adventure"],
+      "genres": [
+        "Action",
+        "Thriller",
+        "Adventure"
+      ],
       "tagline": "Adapt or die.",
       "release": {
         "day": 7,
@@ -2082,7 +2684,10 @@
     "title": "Harry Potter and the Chamber of Secrets",
     "id": 672,
     "metadata": {
-      "genres": ["Adventure", "Fantasy"],
+      "genres": [
+        "Adventure",
+        "Fantasy"
+      ],
       "tagline": "Something evil has returned to Hogwarts!",
       "release": {
         "day": 13,
@@ -2098,7 +2703,10 @@
     "title": "Harry Potter and the Deathly Hallows: Part 1",
     "id": 12444,
     "metadata": {
-      "genres": ["Adventure", "Fantasy"],
+      "genres": [
+        "Adventure",
+        "Fantasy"
+      ],
       "tagline": "Nowhere is safe.",
       "release": {
         "day": 17,
@@ -2114,7 +2722,10 @@
     "title": "Harry Potter and the Deathly Hallows: Part 2",
     "id": 12445,
     "metadata": {
-      "genres": ["Fantasy", "Adventure"],
+      "genres": [
+        "Fantasy",
+        "Adventure"
+      ],
       "tagline": "It all ends.",
       "release": {
         "day": 12,
@@ -2130,7 +2741,10 @@
     "title": "Harry Potter and the Goblet of Fire",
     "id": 674,
     "metadata": {
-      "genres": ["Adventure", "Fantasy"],
+      "genres": [
+        "Adventure",
+        "Fantasy"
+      ],
       "tagline": "Dark and difficult times lie ahead.",
       "release": {
         "day": 16,
@@ -2146,7 +2760,10 @@
     "title": "Harry Potter and the Half-Blood Prince",
     "id": 767,
     "metadata": {
-      "genres": ["Adventure", "Fantasy"],
+      "genres": [
+        "Adventure",
+        "Fantasy"
+      ],
       "tagline": "Dark secrets revealed.",
       "release": {
         "day": 15,
@@ -2162,7 +2779,10 @@
     "title": "Harry Potter and the Order of the Phoenix",
     "id": 675,
     "metadata": {
-      "genres": ["Adventure", "Fantasy"],
+      "genres": [
+        "Adventure",
+        "Fantasy"
+      ],
       "tagline": "The rebellion begins.",
       "release": {
         "day": 8,
@@ -2178,7 +2798,10 @@
     "title": "Harry Potter and the Philosopher's Stone",
     "id": 671,
     "metadata": {
-      "genres": ["Adventure", "Fantasy"],
+      "genres": [
+        "Adventure",
+        "Fantasy"
+      ],
       "tagline": "Let the magic begin.",
       "release": {
         "day": 16,
@@ -2194,7 +2817,10 @@
     "title": "Harry Potter and the Prisoner of Azkaban",
     "id": 673,
     "metadata": {
-      "genres": ["Adventure", "Fantasy"],
+      "genres": [
+        "Adventure",
+        "Fantasy"
+      ],
       "tagline": "Something wicked this way comes.",
       "release": {
         "day": 31,
@@ -2210,7 +2836,11 @@
     "title": "Heartless",
     "id": 38150,
     "metadata": {
-      "genres": ["Drama", "Horror", "Thriller"],
+      "genres": [
+        "Drama",
+        "Horror",
+        "Thriller"
+      ],
       "tagline": "The darker it gets the more you see.",
       "release": {
         "day": 21,
@@ -2226,7 +2856,11 @@
     "title": "Hellboy II: The Golden Army",
     "id": 11253,
     "metadata": {
-      "genres": ["Fantasy", "Adventure", "Action", "Horror", "Science Fiction"],
+      "genres": [
+        "Fantasy",
+        "Action",
+        "Adventure"
+      ],
       "tagline": "Believe it or not... He's the good guy.",
       "release": {
         "day": 11,
@@ -2242,7 +2876,11 @@
     "title": "Hellraiser",
     "id": 9003,
     "metadata": {
-      "genres": ["Horror", "Thriller", "Fantasy"],
+      "genres": [
+        "Horror",
+        "Thriller",
+        "Fantasy"
+      ],
       "tagline": "Demon to some. Angel to others.",
       "release": {
         "day": 11,
@@ -2258,7 +2896,10 @@
     "title": "Hellraiser",
     "id": 338947,
     "metadata": {
-      "genres": ["Horror", "Mystery"],
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
       "tagline": "Unlock your fears.",
       "release": {
         "day": 28,
@@ -2274,7 +2915,13 @@
     "title": "Horsemen",
     "id": 18476,
     "metadata": {
-      "genres": ["Crime", "Drama", "Horror", "Mystery", "Thriller"],
+      "genres": [
+        "Crime",
+        "Drama",
+        "Horror",
+        "Mystery",
+        "Thriller"
+      ],
       "tagline": "Four victims. Four painful secrets.",
       "release": {
         "day": 6,
@@ -2290,7 +2937,11 @@
     "title": "Humane",
     "id": 914215,
     "metadata": {
-      "genres": ["Thriller", "Horror", "Science Fiction"],
+      "genres": [
+        "Thriller",
+        "Horror",
+        "Science Fiction"
+      ],
       "tagline": "Dying makes all the difference in the world.",
       "release": {
         "day": 26,
@@ -2306,7 +2957,10 @@
     "title": "Hummingbird",
     "id": 136418,
     "metadata": {
-      "genres": ["Action", "Thriller"],
+      "genres": [
+        "Action",
+        "Thriller"
+      ],
       "tagline": "All roads don't lead to salvation.",
       "release": {
         "day": 7,
@@ -2322,7 +2976,10 @@
     "title": "I Melt With You",
     "id": 75345,
     "metadata": {
-      "genres": ["Drama", "Thriller"],
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
       "tagline": "When life hammers you, get smashed",
       "release": {
         "day": 9,
@@ -2338,7 +2995,11 @@
     "title": "Inception",
     "id": 27205,
     "metadata": {
-      "genres": ["Action", "Science Fiction", "Adventure"],
+      "genres": [
+        "Action",
+        "Science Fiction",
+        "Adventure"
+      ],
       "tagline": "Your mind is the scene of the crime.",
       "release": {
         "day": 15,
@@ -2354,7 +3015,11 @@
     "title": "Independence Day",
     "id": 602,
     "metadata": {
-      "genres": ["Action", "Adventure", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
       "tagline": "The question of whether or not we are alone in the universe has been answered.",
       "release": {
         "day": 25,
@@ -2370,7 +3035,11 @@
     "title": "Independence Day: Resurgence",
     "id": 47933,
     "metadata": {
-      "genres": ["Action", "Adventure", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
       "tagline": "We had twenty years to prepare. So did they.",
       "release": {
         "day": 22,
@@ -2386,7 +3055,11 @@
     "title": "Inglorious Basterds",
     "id": 16869,
     "metadata": {
-      "genres": ["Drama", "Thriller", "War"],
+      "genres": [
+        "Drama",
+        "Thriller",
+        "War"
+      ],
       "tagline": "A basterd's work is never done.",
       "release": {
         "day": 2,
@@ -2402,7 +3075,10 @@
     "title": "Insidious: Chapter 3",
     "id": 280092,
     "metadata": {
-      "genres": ["Horror", "Thriller"],
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
       "tagline": "This is how you die.",
       "release": {
         "day": 28,
@@ -2418,7 +3094,11 @@
     "title": "Interstellar",
     "id": 157336,
     "metadata": {
-      "genres": ["Adventure", "Drama", "Science Fiction"],
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Science Fiction"
+      ],
       "tagline": "Mankind was born on Earth. It was never meant to die here.",
       "release": {
         "day": 5,
@@ -2434,7 +3114,11 @@
     "title": "Iron Man",
     "id": 1726,
     "metadata": {
-      "genres": ["Action", "Science Fiction", "Adventure"],
+      "genres": [
+        "Action",
+        "Science Fiction",
+        "Adventure"
+      ],
       "tagline": "Heroes aren't born. They're built.",
       "release": {
         "day": 30,
@@ -2450,7 +3134,11 @@
     "title": "Iron Man 2",
     "id": 10138,
     "metadata": {
-      "genres": ["Adventure", "Action", "Science Fiction"],
+      "genres": [
+        "Adventure",
+        "Action",
+        "Science Fiction"
+      ],
       "tagline": "It's not the armor that makes the hero, but the man inside.",
       "release": {
         "day": 28,
@@ -2466,7 +3154,11 @@
     "title": "Iron Man 3",
     "id": 68721,
     "metadata": {
-      "genres": ["Action", "Adventure", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
       "tagline": "Unleash the power behind the armor.",
       "release": {
         "day": 18,
@@ -2482,7 +3174,11 @@
     "title": "Iron Sky",
     "id": 10679,
     "metadata": {
-      "genres": ["Action", "Comedy", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Comedy",
+        "Science Fiction"
+      ],
       "tagline": "We come in peace!",
       "release": {
         "day": 4,
@@ -2498,7 +3194,10 @@
     "title": "It Follows",
     "id": 270303,
     "metadata": {
-      "genres": ["Horror", "Mystery"],
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
       "tagline": "It doesn't think, it doesn't feel, it doesn't give up.",
       "release": {
         "day": 4,
@@ -2514,7 +3213,13 @@
     "title": "Jin-Roh: The Wolf Brigade",
     "id": 823,
     "metadata": {
-      "genres": ["Animation", "Drama", "Romance", "Thriller", "Science Fiction"],
+      "genres": [
+        "Animation",
+        "Drama",
+        "Romance",
+        "Thriller",
+        "Science Fiction"
+      ],
       "tagline": "",
       "release": {
         "day": 17,
@@ -2530,7 +3235,11 @@
     "title": "John Carter",
     "id": 49529,
     "metadata": {
-      "genres": ["Action", "Adventure", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
       "tagline": "Lost in our world, found in another.",
       "release": {
         "day": 7,
@@ -2546,7 +3255,10 @@
     "title": "John Wick",
     "id": 245891,
     "metadata": {
-      "genres": ["Action", "Thriller"],
+      "genres": [
+        "Action",
+        "Thriller"
+      ],
       "tagline": "Don't set him off.",
       "release": {
         "day": 22,
@@ -2562,7 +3274,11 @@
     "title": "John Wick 2",
     "id": 324552,
     "metadata": {
-      "genres": ["Action", "Thriller", "Crime"],
+      "genres": [
+        "Action",
+        "Thriller",
+        "Crime"
+      ],
       "tagline": "Never stab the devil in the back!",
       "release": {
         "day": 8,
@@ -2578,7 +3294,11 @@
     "title": "John Wick: Chapter 3 - Parabellum",
     "id": 458156,
     "metadata": {
-      "genres": ["Action", "Thriller", "Crime"],
+      "genres": [
+        "Action",
+        "Thriller",
+        "Crime"
+      ],
       "tagline": "If you want peace, prepare for war.",
       "release": {
         "day": 15,
@@ -2595,7 +3315,11 @@
     "id": 603692,
     "seen": false,
     "metadata": {
-      "genres": ["Action", "Thriller", "Crime"],
+      "genres": [
+        "Action",
+        "Thriller",
+        "Crime"
+      ],
       "tagline": "No way back, one way out.",
       "release": {
         "day": 22,
@@ -2611,7 +3335,9 @@
     "id": 1457759,
     "seen": false,
     "metadata": {
-      "genres": ["Action"],
+      "genres": [
+        "Action"
+      ],
       "tagline": "",
       "release": {
         "day": null,
@@ -2627,7 +3353,11 @@
     "title": "Joker",
     "id": 475557,
     "metadata": {
-      "genres": ["Crime", "Thriller", "Drama"],
+      "genres": [
+        "Crime",
+        "Thriller",
+        "Drama"
+      ],
       "tagline": "Put on a happy face.",
       "release": {
         "day": 1,
@@ -2644,7 +3374,11 @@
     "id": 889737,
     "seen": false,
     "metadata": {
-      "genres": ["Drama", "Crime", "Thriller"],
+      "genres": [
+        "Drama",
+        "Crime",
+        "Thriller"
+      ],
       "tagline": "The world is a stage.",
       "release": {
         "day": 1,
@@ -2659,7 +3393,11 @@
     "title": "Jupiter Ascending",
     "id": 76757,
     "metadata": {
-      "genres": ["Science Fiction", "Fantasy", "Action"],
+      "genres": [
+        "Science Fiction",
+        "Fantasy",
+        "Action"
+      ],
       "tagline": "Expand your universe.",
       "release": {
         "day": 4,
@@ -2676,7 +3414,10 @@
     "id": 329,
     "favorite": false,
     "metadata": {
-      "genres": ["Adventure", "Science Fiction"],
+      "genres": [
+        "Adventure",
+        "Science Fiction"
+      ],
       "tagline": "An adventure 65 million years in the making.",
       "release": {
         "day": 11,
@@ -2691,7 +3432,11 @@
     "title": "Jurassic World: Dominion",
     "id": 507086,
     "metadata": {
-      "genres": ["Adventure", "Action", "Science Fiction"],
+      "genres": [
+        "Adventure",
+        "Action",
+        "Science Fiction"
+      ],
       "tagline": "The epic conclusion of the Jurassic era.",
       "release": {
         "day": 1,
@@ -2707,7 +3452,11 @@
     "title": "Kick-Ass 2",
     "id": 59859,
     "metadata": {
-      "genres": ["Action", "Adventure", "Crime"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Crime"
+      ],
       "tagline": "You Can't Fight Your Destiny.",
       "release": {
         "day": 17,
@@ -2723,7 +3472,9 @@
     "title": "Kokowääh",
     "id": 53174,
     "metadata": {
-      "genres": ["Comedy"],
+      "genres": [
+        "Comedy"
+      ],
       "tagline": "",
       "release": {
         "day": 3,
@@ -2739,7 +3490,11 @@
     "title": "Kong: Skull Island",
     "id": 293167,
     "metadata": {
-      "genres": ["Action", "Adventure", "Fantasy"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
       "tagline": "All hail the king",
       "release": {
         "day": 8,
@@ -2752,10 +3507,35 @@
     "seen": true
   },
   {
+    "title": "Kraken",
+    "id": 1110034,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Horror",
+        "Action"
+      ],
+      "tagline": "",
+      "release": {
+        "day": 24,
+        "month": 10,
+        "year": 2025
+      },
+      "runtime": 0
+    },
+    "favorite": false
+  },
+  {
     "title": "Lara Croft: Tomb Raider",
     "id": 1995,
     "metadata": {
-      "genres": ["Adventure", "Fantasy", "Action", "Thriller"],
+      "genres": [
+        "Adventure",
+        "Fantasy",
+        "Action",
+        "Thriller"
+      ],
       "tagline": "Born into Wealth. Groomed by the Elite. Trained for Combat.",
       "release": {
         "day": 11,
@@ -2771,7 +3551,11 @@
     "title": "Léon: The Professional",
     "id": 101,
     "metadata": {
-      "genres": ["Crime", "Drama", "Action"],
+      "genres": [
+        "Crime",
+        "Drama",
+        "Action"
+      ],
       "tagline": "If you want the job done right, hire a professional.",
       "release": {
         "day": 14,
@@ -2787,7 +3571,11 @@
     "title": "Limitless",
     "id": 51876,
     "metadata": {
-      "genres": ["Thriller", "Mystery", "Science Fiction"],
+      "genres": [
+        "Thriller",
+        "Mystery",
+        "Science Fiction"
+      ],
       "tagline": "Everything is possible when you open your mind.",
       "release": {
         "day": 17,
@@ -2803,7 +3591,11 @@
     "title": "Logan",
     "id": 263115,
     "metadata": {
-      "genres": ["Action", "Drama", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Drama",
+        "Science Fiction"
+      ],
       "tagline": "His time has come.",
       "release": {
         "day": 28,
@@ -2819,7 +3611,11 @@
     "title": "Looper",
     "id": 59967,
     "metadata": {
-      "genres": ["Action", "Thriller", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Thriller",
+        "Science Fiction"
+      ],
       "tagline": "Hunted by your future, haunted by your past.",
       "release": {
         "day": 26,
@@ -2835,7 +3631,11 @@
     "title": "Lord of War",
     "id": 1830,
     "metadata": {
-      "genres": ["Crime", "Drama", "Thriller"],
+      "genres": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
       "tagline": "Where there's a will, there's a weapon",
       "release": {
         "day": 16,
@@ -2851,7 +3651,12 @@
     "title": "Lucky Number Slevin",
     "id": 186,
     "metadata": {
-      "genres": ["Drama", "Thriller", "Crime", "Mystery"],
+      "genres": [
+        "Drama",
+        "Thriller",
+        "Crime",
+        "Mystery"
+      ],
       "tagline": "Wrong time. Wrong place. Wrong number.",
       "release": {
         "day": 24,
@@ -2868,7 +3673,10 @@
     "id": 536554,
     "seen": true,
     "metadata": {
-      "genres": ["Science Fiction", "Horror"],
+      "genres": [
+        "Science Fiction",
+        "Horror"
+      ],
       "tagline": "Friendship has evolved.",
       "release": {
         "day": 28,
@@ -2883,7 +3691,11 @@
     "title": "Man of Steel",
     "id": 49521,
     "metadata": {
-      "genres": ["Action", "Adventure", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
       "tagline": "You will believe that a man can fly.",
       "release": {
         "day": 12,
@@ -2900,7 +3712,10 @@
     "id": 1023922,
     "seen": true,
     "metadata": {
-      "genres": ["Horror", "Thriller"],
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
       "tagline": "Hollywood is a killer.",
       "release": {
         "day": 4,
@@ -2915,7 +3730,10 @@
     "title": "Melancholia",
     "id": 62215,
     "metadata": {
-      "genres": ["Drama", "Science Fiction"],
+      "genres": [
+        "Drama",
+        "Science Fiction"
+      ],
       "tagline": "It will change everything.",
       "release": {
         "day": 26,
@@ -2931,7 +3749,10 @@
     "title": "Memento",
     "id": 77,
     "metadata": {
-      "genres": ["Mystery", "Thriller"],
+      "genres": [
+        "Mystery",
+        "Thriller"
+      ],
       "tagline": "Some memories are best forgotten.",
       "release": {
         "day": 11,
@@ -2947,7 +3768,11 @@
     "title": "Men in Black 3",
     "id": 41154,
     "metadata": {
-      "genres": ["Action", "Comedy", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Comedy",
+        "Science Fiction"
+      ],
       "tagline": "Back in time.",
       "release": {
         "day": 23,
@@ -2963,7 +3788,12 @@
     "title": "Metropia",
     "id": 36800,
     "metadata": {
-      "genres": ["Animation", "Drama", "Science Fiction", "Thriller"],
+      "genres": [
+        "Animation",
+        "Drama",
+        "Science Fiction",
+        "Thriller"
+      ],
       "tagline": "Someone is listening to your thoughts",
       "release": {
         "day": 21,
@@ -2976,10 +3806,33 @@
     "seen": true
   },
   {
+    "title": "Mickey 17",
+    "id": 696506,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Comedy",
+        "Adventure"
+      ],
+      "tagline": "He's dying to save mankind.",
+      "release": {
+        "day": 28,
+        "month": 2,
+        "year": 2025
+      },
+      "runtime": 137
+    },
+    "favorite": false
+  },
+  {
     "title": "Moon",
     "id": 17431,
     "metadata": {
-      "genres": ["Science Fiction", "Drama"],
+      "genres": [
+        "Science Fiction",
+        "Drama"
+      ],
       "tagline": "250,000 miles from home, the hardest thing to face...is yourself.",
       "release": {
         "day": 12,
@@ -2995,7 +3848,11 @@
     "title": "Moonfall",
     "id": 406759,
     "metadata": {
-      "genres": ["Science Fiction", "Adventure", "Action"],
+      "genres": [
+        "Science Fiction",
+        "Adventure",
+        "Action"
+      ],
       "tagline": "Humanity will face the dark side of the Moon.",
       "release": {
         "day": 3,
@@ -3011,7 +3868,11 @@
     "title": "Morbius",
     "id": 526896,
     "metadata": {
-      "genres": ["Action", "Science Fiction", "Fantasy"],
+      "genres": [
+        "Action",
+        "Science Fiction",
+        "Fantasy"
+      ],
       "tagline": "A new Marvel legend arrives.",
       "release": {
         "day": 30,
@@ -3027,7 +3888,11 @@
     "title": "Mr. & Mrs. Smith",
     "id": 95179,
     "metadata": {
-      "genres": ["Music", "Comedy", "Drama"],
+      "genres": [
+        "Music",
+        "Comedy",
+        "Drama"
+      ],
       "tagline": "",
       "release": {
         "day": 3,
@@ -3043,7 +3908,11 @@
     "title": "Nausicaä of the Valley of the Wind",
     "id": 81,
     "metadata": {
-      "genres": ["Adventure", "Animation", "Fantasy"],
+      "genres": [
+        "Adventure",
+        "Animation",
+        "Fantasy"
+      ],
       "tagline": "A young girl's love called forth miracles…",
       "release": {
         "day": 11,
@@ -3059,7 +3928,11 @@
     "title": "No Country for Old Men",
     "id": 6977,
     "metadata": {
-      "genres": ["Crime", "Drama", "Thriller"],
+      "genres": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
       "tagline": "You can't stop what's coming.",
       "release": {
         "day": 13,
@@ -3075,7 +3948,11 @@
     "title": "No Time To Die",
     "id": 370172,
     "metadata": {
-      "genres": ["Action", "Thriller", "Adventure"],
+      "genres": [
+        "Action",
+        "Thriller",
+        "Adventure"
+      ],
       "tagline": "The mission that changes everything begins…",
       "release": {
         "day": 29,
@@ -3091,7 +3968,11 @@
     "title": "Nope",
     "id": 762504,
     "metadata": {
-      "genres": ["Horror", "Mystery", "Science Fiction", "Thriller"],
+      "genres": [
+        "Science Fiction",
+        "Horror",
+        "Thriller"
+      ],
       "tagline": "What’s a bad miracle?",
       "release": {
         "day": 20,
@@ -3107,7 +3988,10 @@
     "title": "Nosferatu",
     "id": 426063,
     "metadata": {
-      "genres": ["Horror", "Fantasy"],
+      "genres": [
+        "Horror",
+        "Fantasy"
+      ],
       "tagline": "Succumb to the darkness.",
       "release": {
         "day": 25,
@@ -3123,7 +4007,10 @@
     "title": "Now You See Me",
     "id": 75656,
     "metadata": {
-      "genres": ["Thriller", "Crime"],
+      "genres": [
+        "Thriller",
+        "Crime"
+      ],
       "tagline": "The closer you look, the less you’ll see.",
       "release": {
         "day": 29,
@@ -3139,7 +4026,10 @@
     "title": "Now You See Me 2",
     "id": 291805,
     "metadata": {
-      "genres": ["Crime", "Thriller", "Action", "Mystery"],
+      "genres": [
+        "Thriller",
+        "Crime"
+      ],
       "tagline": "You haven't seen anything yet.",
       "release": {
         "day": 2,
@@ -3155,7 +4045,12 @@
     "title": "Oblivion",
     "id": 75612,
     "metadata": {
-      "genres": ["Action", "Science Fiction", "Adventure", "Mystery"],
+      "genres": [
+        "Action",
+        "Science Fiction",
+        "Adventure",
+        "Mystery"
+      ],
       "tagline": "Earth is a memory worth fighting for.",
       "release": {
         "day": 10,
@@ -3172,7 +4067,10 @@
     "id": 161,
     "seen": true,
     "metadata": {
-      "genres": ["Thriller", "Crime"],
+      "genres": [
+        "Thriller",
+        "Crime"
+      ],
       "tagline": "Are you in or out?",
       "release": {
         "day": 7,
@@ -3188,7 +4086,10 @@
     "id": 163,
     "seen": true,
     "metadata": {
-      "genres": ["Thriller", "Crime"],
+      "genres": [
+        "Thriller",
+        "Crime"
+      ],
       "tagline": "Twelve is the new eleven.",
       "release": {
         "day": 9,
@@ -3203,7 +4104,11 @@
     "title": "Older Gods",
     "id": 1088080,
     "metadata": {
-      "genres": ["Horror", "Mystery", "Thriller"],
+      "genres": [
+        "Horror",
+        "Mystery",
+        "Thriller"
+      ],
       "tagline": "Pray for Salvation",
       "release": {
         "day": 1,
@@ -3219,7 +4124,10 @@
     "title": "Once Upon a Time in the West",
     "id": 335,
     "metadata": {
-      "genres": ["Drama", "Western"],
+      "genres": [
+        "Drama",
+        "Western"
+      ],
       "tagline": "There were three men in her life. One to take her… one to love her —and one to kill her.",
       "release": {
         "day": 21,
@@ -3235,7 +4143,10 @@
     "title": "Oppenheimer",
     "id": 872585,
     "metadata": {
-      "genres": ["Drama", "History"],
+      "genres": [
+        "Drama",
+        "History"
+      ],
       "tagline": "The man who moved the earth",
       "release": {
         "day": 19,
@@ -3251,7 +4162,11 @@
     "title": "Pacific Rim",
     "id": 68726,
     "metadata": {
-      "genres": ["Action", "Science Fiction", "Adventure"],
+      "genres": [
+        "Action",
+        "Science Fiction",
+        "Adventure"
+      ],
       "tagline": "To fight monsters, we created monsters.",
       "release": {
         "day": 11,
@@ -3267,7 +4182,12 @@
     "title": "Pacific Rim: Uprising",
     "id": 268896,
     "metadata": {
-      "genres": ["Action", "Fantasy", "Science Fiction", "Adventure"],
+      "genres": [
+        "Action",
+        "Fantasy",
+        "Science Fiction",
+        "Adventure"
+      ],
       "tagline": "Rise up.",
       "release": {
         "day": 21,
@@ -3283,7 +4203,10 @@
     "title": "Paradise",
     "id": 1140066,
     "metadata": {
-      "genres": ["Science Fiction", "Thriller"],
+      "genres": [
+        "Science Fiction",
+        "Thriller"
+      ],
       "tagline": "",
       "release": {
         "day": 24,
@@ -3299,7 +4222,11 @@
     "title": "Passengers",
     "id": 274870,
     "metadata": {
-      "genres": ["Drama", "Romance", "Science Fiction"],
+      "genres": [
+        "Drama",
+        "Romance",
+        "Science Fiction"
+      ],
       "tagline": "There is a reason they woke up.",
       "release": {
         "day": 21,
@@ -3315,7 +4242,10 @@
     "title": "Pearl",
     "id": 949423,
     "metadata": {
-      "genres": ["Horror", "Thriller"],
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
       "tagline": "An X-traordinary origin story.",
       "release": {
         "day": 16,
@@ -3331,7 +4261,11 @@
     "title": "Pirates of the Caribbean: On Stranger Tides",
     "id": 1865,
     "metadata": {
-      "genres": ["Adventure", "Action", "Fantasy"],
+      "genres": [
+        "Adventure",
+        "Action",
+        "Fantasy"
+      ],
       "tagline": "Live forever or die trying.",
       "release": {
         "day": 15,
@@ -3347,8 +4281,12 @@
     "title": "Platform",
     "id": 619264,
     "metadata": {
-      "genres": ["Drama", "Science Fiction", "Thriller"],
-      "tagline": "whoever is at the top abuses those below them, and that dynamic can shift at any time",
+      "genres": [
+        "Drama",
+        "Science Fiction",
+        "Thriller"
+      ],
+      "tagline": "",
       "release": {
         "day": 8,
         "month": 11,
@@ -3363,7 +4301,11 @@
     "title": "Platform 2",
     "id": 1125510,
     "metadata": {
-      "genres": ["Science Fiction", "Horror", "Thriller"],
+      "genres": [
+        "Science Fiction",
+        "Horror",
+        "Thriller"
+      ],
       "tagline": "Hunger will be the least of your worries.",
       "release": {
         "day": 27,
@@ -3379,7 +4321,9 @@
     "title": "Plush",
     "id": 215881,
     "metadata": {
-      "genres": ["Thriller"],
+      "genres": [
+        "Thriller"
+      ],
       "tagline": "There's a fine line between love and obsession.",
       "release": {
         "day": 13,
@@ -3395,7 +4339,13 @@
     "title": "Pompeii",
     "id": 76649,
     "metadata": {
-      "genres": ["Action", "Adventure", "History", "Romance", "Drama"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "History",
+        "Romance",
+        "Drama"
+      ],
       "tagline": "No warning. No escape.",
       "release": {
         "day": 18,
@@ -3411,7 +4361,10 @@
     "title": "Pope's Exorcist",
     "id": 758323,
     "metadata": {
-      "genres": ["Horror", "Thriller"],
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
       "tagline": "Inspired by the actual files of Father Gabriele Amorth, Chief Exorcist of the Vatican.",
       "release": {
         "day": 5,
@@ -3428,7 +4381,10 @@
     "id": 1242898,
     "seen": false,
     "metadata": {
-      "genres": ["Science Fiction", "Action"],
+      "genres": [
+        "Science Fiction",
+        "Action"
+      ],
       "tagline": "First hunt. Last chance.",
       "release": {
         "day": 5,
@@ -3443,7 +4399,10 @@
     "title": "Predestination",
     "id": 206487,
     "metadata": {
-      "genres": ["Science Fiction", "Thriller"],
+      "genres": [
+        "Science Fiction",
+        "Thriller"
+      ],
       "tagline": "To save the future he must reshape the past.",
       "release": {
         "day": 28,
@@ -3460,7 +4419,10 @@
     "id": 114,
     "seen": true,
     "metadata": {
-      "genres": ["Romance", "Comedy"],
+      "genres": [
+        "Romance",
+        "Comedy"
+      ],
       "tagline": "She walked off the street, into his life and stole his heart.",
       "release": {
         "day": 23,
@@ -3475,7 +4437,11 @@
     "title": "Prey",
     "id": 766507,
     "metadata": {
-      "genres": ["Thriller", "Action", "Science Fiction"],
+      "genres": [
+        "Thriller",
+        "Action",
+        "Science Fiction"
+      ],
       "tagline": "They hunt to live. It lives to hunt.",
       "release": {
         "day": 2,
@@ -3491,7 +4457,11 @@
     "title": "Princess Mononoke",
     "id": 128,
     "metadata": {
-      "genres": ["Adventure", "Fantasy", "Animation"],
+      "genres": [
+        "Adventure",
+        "Fantasy",
+        "Animation"
+      ],
       "tagline": "The fate of the world rests on the courage of one warrior.",
       "release": {
         "day": 12,
@@ -3507,7 +4477,9 @@
     "title": "Project X",
     "id": 57214,
     "metadata": {
-      "genres": ["Comedy"],
+      "genres": [
+        "Comedy"
+      ],
       "tagline": "The party you've only dreamed about.",
       "release": {
         "day": 1,
@@ -3523,7 +4495,11 @@
     "title": "Prometheus",
     "id": 70981,
     "metadata": {
-      "genres": ["Science Fiction", "Adventure", "Mystery"],
+      "genres": [
+        "Science Fiction",
+        "Adventure",
+        "Mystery"
+      ],
       "tagline": "The search for our beginning could lead to our end.",
       "release": {
         "day": 30,
@@ -3539,7 +4515,10 @@
     "title": "Pulp Fiction",
     "id": 680,
     "metadata": {
-      "genres": ["Thriller", "Crime"],
+      "genres": [
+        "Thriller",
+        "Crime"
+      ],
       "tagline": "You won't know the facts until you've seen the fiction.",
       "release": {
         "day": 10,
@@ -3555,7 +4534,12 @@
     "title": "Quantum of Solace",
     "id": 10764,
     "metadata": {
-      "genres": ["Adventure", "Action", "Thriller", "Crime"],
+      "genres": [
+        "Adventure",
+        "Action",
+        "Thriller",
+        "Crime"
+      ],
       "tagline": "",
       "release": {
         "day": 29,
@@ -3571,7 +4555,10 @@
     "title": "Reminiscence",
     "id": 579047,
     "metadata": {
-      "genres": ["Mystery", "Science Fiction"],
+      "genres": [
+        "Mystery",
+        "Science Fiction"
+      ],
       "tagline": "Don't look back.",
       "release": {
         "day": 18,
@@ -3588,7 +4575,11 @@
     "id": 300681,
     "seen": true,
     "metadata": {
-      "genres": ["Science Fiction", "Thriller", "Drama"],
+      "genres": [
+        "Science Fiction",
+        "Thriller",
+        "Drama"
+      ],
       "tagline": "Some humans are unstoppable",
       "release": {
         "day": 25,
@@ -3603,7 +4594,12 @@
     "title": "Reptile",
     "id": 866463,
     "metadata": {
-      "genres": ["Crime", "Mystery", "Thriller", "Drama"],
+      "genres": [
+        "Crime",
+        "Mystery",
+        "Thriller",
+        "Drama"
+      ],
       "tagline": "Shed the lies.",
       "release": {
         "day": 29,
@@ -3619,7 +4615,10 @@
     "title": "Requiem for a Dream",
     "id": 641,
     "metadata": {
-      "genres": ["Crime", "Drama"],
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
       "tagline": "",
       "release": {
         "day": 6,
@@ -3635,7 +4634,11 @@
     "title": "Resident Evil: Death Island",
     "id": 1083862,
     "metadata": {
-      "genres": ["Animation", "Action", "Horror"],
+      "genres": [
+        "Animation",
+        "Action",
+        "Horror"
+      ],
       "tagline": "Destinies intertwined. A world gone mad.",
       "release": {
         "day": 22,
@@ -3651,7 +4654,11 @@
     "title": "Resident Evil: Retribution",
     "id": 71679,
     "metadata": {
-      "genres": ["Action", "Horror", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Horror",
+        "Science Fiction"
+      ],
       "tagline": "Evil goes global",
       "release": {
         "day": 12,
@@ -3667,7 +4674,12 @@
     "title": "Rise of the Planet of the Apes",
     "id": 61791,
     "metadata": {
-      "genres": ["Thriller", "Action", "Drama", "Science Fiction"],
+      "genres": [
+        "Thriller",
+        "Action",
+        "Drama",
+        "Science Fiction"
+      ],
       "tagline": "Evolution Becomes Revolution.",
       "release": {
         "day": 3,
@@ -3683,7 +4695,11 @@
     "title": "Samaritan",
     "id": 629176,
     "metadata": {
-      "genres": ["Science Fiction", "Crime", "Action"],
+      "genres": [
+        "Science Fiction",
+        "Crime",
+        "Action"
+      ],
       "tagline": "25 years ago the world's greatest hero vanished.",
       "release": {
         "day": 25,
@@ -3699,7 +4715,11 @@
     "title": "Scream",
     "id": 646385,
     "metadata": {
-      "genres": ["Horror", "Mystery", "Thriller"],
+      "genres": [
+        "Horror",
+        "Mystery",
+        "Thriller"
+      ],
       "tagline": "It's always someone you know.",
       "release": {
         "day": 12,
@@ -3715,7 +4735,10 @@
     "title": "Scream 2",
     "id": 4233,
     "metadata": {
-      "genres": ["Horror", "Mystery"],
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
       "tagline": "Someone has taken their love of sequels one step too far.",
       "release": {
         "day": 12,
@@ -3731,7 +4754,10 @@
     "title": "Scream 3",
     "id": 4234,
     "metadata": {
-      "genres": ["Horror", "Mystery"],
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
       "tagline": "The most terrifying scream is always the last.",
       "release": {
         "day": 4,
@@ -3747,7 +4773,11 @@
     "title": "Scream 6",
     "id": 934433,
     "metadata": {
-      "genres": ["Horror", "Crime", "Thriller"],
+      "genres": [
+        "Horror",
+        "Crime",
+        "Thriller"
+      ],
       "tagline": "New York. New rules.",
       "release": {
         "day": 8,
@@ -3763,7 +4793,11 @@
     "title": "Se7en",
     "id": 807,
     "metadata": {
-      "genres": ["Crime", "Mystery", "Thriller"],
+      "genres": [
+        "Crime",
+        "Mystery",
+        "Thriller"
+      ],
       "tagline": "Seven deadly sins. Seven ways to die.",
       "release": {
         "day": 22,
@@ -3779,7 +4813,12 @@
     "title": "Shang-Chi and the Legend of the Ten Rings",
     "id": 566525,
     "metadata": {
-      "genres": ["Action", "Adventure", "Fantasy", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy",
+        "Science Fiction"
+      ],
       "tagline": "You can't outrun your destiny.",
       "release": {
         "day": 1,
@@ -3795,7 +4834,10 @@
     "title": "Shaun of the Dead",
     "id": 747,
     "metadata": {
-      "genres": ["Horror", "Comedy"],
+      "genres": [
+        "Horror",
+        "Comedy"
+      ],
       "tagline": "A romantic comedy. With zombies.",
       "release": {
         "day": 9,
@@ -3811,7 +4853,11 @@
     "title": "Shutter Island",
     "id": 11324,
     "metadata": {
-      "genres": ["Drama", "Thriller", "Mystery"],
+      "genres": [
+        "Drama",
+        "Thriller",
+        "Mystery"
+      ],
       "tagline": "Some places never let you go.",
       "release": {
         "day": 14,
@@ -3827,7 +4873,11 @@
     "title": "Sin City",
     "id": 187,
     "metadata": {
-      "genres": ["Thriller", "Action", "Crime"],
+      "genres": [
+        "Thriller",
+        "Action",
+        "Crime"
+      ],
       "tagline": "Walk down the right back alley in Sin City and you can find anything...",
       "release": {
         "day": 1,
@@ -3843,7 +4893,11 @@
     "title": "Sinners",
     "id": 1233413,
     "metadata": {
-      "genres": ["Action", "Horror", "Thriller"],
+      "genres": [
+        "Horror",
+        "Music",
+        "Thriller"
+      ],
       "tagline": "Dance with the devil.",
       "release": {
         "day": 16,
@@ -3859,7 +4913,11 @@
     "title": "Skyfall",
     "id": 37724,
     "metadata": {
-      "genres": ["Action", "Adventure", "Thriller"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Thriller"
+      ],
       "tagline": "Think on your sins.",
       "release": {
         "day": 24,
@@ -3875,7 +4933,11 @@
     "title": "Skyline",
     "id": 42684,
     "metadata": {
-      "genres": ["Science Fiction", "Action", "Thriller"],
+      "genres": [
+        "Science Fiction",
+        "Action",
+        "Thriller"
+      ],
       "tagline": "Don't look up",
       "release": {
         "day": 11,
@@ -3892,7 +4954,11 @@
     "id": 1280822,
     "seen": false,
     "metadata": {
-      "genres": ["Science Fiction", "Action", "Thriller"],
+      "genres": [
+        "Science Fiction",
+        "Action",
+        "Thriller"
+      ],
       "tagline": "",
       "release": {
         "day": null,
@@ -3907,7 +4973,11 @@
     "title": "Skylines",
     "id": 560144,
     "metadata": {
-      "genres": ["Science Fiction", "Action", "Thriller"],
+      "genres": [
+        "Science Fiction",
+        "Action",
+        "Thriller"
+      ],
       "tagline": "To save our world she must invade theirs.",
       "release": {
         "day": 25,
@@ -3923,7 +4993,10 @@
     "title": "Sleeping Beauty",
     "id": 64586,
     "metadata": {
-      "genres": ["Drama", "Romance"],
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
       "tagline": "What happens while she sleeps...",
       "release": {
         "day": 10,
@@ -3939,7 +5012,13 @@
     "title": "Space Jam",
     "id": 2300,
     "metadata": {
-      "genres": ["Family", "Comedy", "Adventure", "Animation", "Science Fiction"],
+      "genres": [
+        "Family",
+        "Comedy",
+        "Adventure",
+        "Animation",
+        "Science Fiction"
+      ],
       "tagline": "Get ready to jam.",
       "release": {
         "day": 15,
@@ -3955,7 +5034,11 @@
     "title": "Spaceman",
     "id": 636706,
     "metadata": {
-      "genres": ["Science Fiction", "Adventure", "Drama"],
+      "genres": [
+        "Science Fiction",
+        "Adventure",
+        "Drama"
+      ],
       "tagline": "I just want to go home.",
       "release": {
         "day": 23,
@@ -3971,7 +5054,11 @@
     "title": "Spectre",
     "id": 206647,
     "metadata": {
-      "genres": ["Action", "Adventure", "Thriller"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Thriller"
+      ],
       "tagline": "",
       "release": {
         "day": 26,
@@ -3988,7 +5075,12 @@
     "id": 10153,
     "favorite": false,
     "metadata": {
-      "genres": ["Science Fiction", "Mystery", "Thriller", "Horror"],
+      "genres": [
+        "Science Fiction",
+        "Mystery",
+        "Thriller",
+        "Horror"
+      ],
       "tagline": "Terror can fill any space.",
       "release": {
         "day": 13,
@@ -4003,7 +5095,10 @@
     "title": "Split",
     "id": 381288,
     "metadata": {
-      "genres": ["Horror", "Thriller"],
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
       "tagline": "Kevin has 23 distinct personalities. The 24th is about to be unleashed.",
       "release": {
         "day": 19,
@@ -4016,10 +5111,35 @@
     "seen": true
   },
   {
+    "title": "Star Trek: First Contact",
+    "id": 199,
+    "seen": true,
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Action",
+        "Adventure",
+        "Thriller"
+      ],
+      "tagline": "Resistance is futile.",
+      "release": {
+        "day": 22,
+        "month": 11,
+        "year": 1996
+      },
+      "runtime": 111
+    },
+    "favorite": false
+  },
+  {
     "title": "Star Trek: Into Darkness",
     "id": 54138,
     "metadata": {
-      "genres": ["Action", "Adventure", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
       "tagline": "Beyond the darkness, lies greatness.",
       "release": {
         "day": 5,
@@ -4035,7 +5155,11 @@
     "title": "Star Trek: Section 31",
     "id": 1114894,
     "metadata": {
-      "genres": ["Science Fiction", "Adventure", "Action"],
+      "genres": [
+        "Science Fiction",
+        "Adventure",
+        "Action"
+      ],
       "tagline": "To protect the light, they fight in shadow.",
       "release": {
         "day": 15,
@@ -4048,10 +5172,33 @@
     "seen": true
   },
   {
+    "title": "Star Trek: Voyager - Dark Frontier",
+    "id": 573374,
+    "seen": true,
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Adventure"
+      ],
+      "tagline": "",
+      "release": {
+        "day": 17,
+        "month": 2,
+        "year": 1999
+      },
+      "runtime": 89
+    },
+    "favorite": false
+  },
+  {
     "title": "Stargate",
     "id": 2164,
     "metadata": {
-      "genres": ["Action", "Adventure", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
       "tagline": "It will take you a million light years from home. But will it bring you back?",
       "release": {
         "day": 28,
@@ -4067,7 +5214,11 @@
     "title": "Sting",
     "id": 1087388,
     "metadata": {
-      "genres": ["Horror", "Science Fiction", "Thriller"],
+      "genres": [
+        "Horror",
+        "Science Fiction",
+        "Thriller"
+      ],
       "tagline": "Your biggest fear just got bigger.",
       "release": {
         "day": 12,
@@ -4083,7 +5234,11 @@
     "title": "Sucker Punch",
     "id": 23629,
     "metadata": {
-      "genres": ["Action", "Fantasy", "Thriller"],
+      "genres": [
+        "Action",
+        "Fantasy",
+        "Thriller"
+      ],
       "tagline": "You will be unprepared.",
       "release": {
         "day": 24,
@@ -4099,7 +5254,11 @@
     "title": "Suicide Squad",
     "id": 297761,
     "metadata": {
-      "genres": ["Action", "Adventure", "Fantasy"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
       "tagline": "Worst. Heroes. Ever.",
       "release": {
         "day": 3,
@@ -4115,7 +5274,11 @@
     "title": "Super 8",
     "id": 37686,
     "metadata": {
-      "genres": ["Thriller", "Science Fiction", "Mystery"],
+      "genres": [
+        "Thriller",
+        "Science Fiction",
+        "Mystery"
+      ],
       "tagline": "It arrives.",
       "release": {
         "day": 8,
@@ -4128,10 +5291,34 @@
     "seen": true
   },
   {
+    "title": "Superman",
+    "id": 1061474,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
+      "tagline": "Look up.",
+      "release": {
+        "day": 9,
+        "month": 7,
+        "year": 2025
+      },
+      "runtime": 0
+    },
+    "favorite": false
+  },
+  {
     "title": "Surrogates",
     "id": 19959,
     "metadata": {
-      "genres": ["Science Fiction", "Action", "Thriller"],
+      "genres": [
+        "Science Fiction",
+        "Action",
+        "Thriller"
+      ],
       "tagline": "How do you save humanity when the only thing that's real is you?",
       "release": {
         "day": 24,
@@ -4147,14 +5334,16 @@
     "title": "Talk to Me",
     "id": 1008042,
     "metadata": {
-      "genres": ["Horror"],
+      "genres": [
+        "Horror"
+      ],
       "tagline": "You call. They'll answer.",
       "release": {
         "day": 26,
         "month": 7,
         "year": 2023
       },
-      "runtime": 94
+      "runtime": 95
     },
     "favorite": false,
     "seen": true
@@ -4163,7 +5352,9 @@
     "title": "Tarot",
     "id": 719221,
     "metadata": {
-      "genres": ["Horror"],
+      "genres": [
+        "Horror"
+      ],
       "tagline": "Your fate is in the cards.",
       "release": {
         "day": 1,
@@ -4179,7 +5370,11 @@
     "title": "Tenet",
     "id": 577922,
     "metadata": {
-      "genres": ["Action", "Thriller", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Thriller",
+        "Science Fiction"
+      ],
       "tagline": "Time runs out.",
       "release": {
         "day": 22,
@@ -4195,7 +5390,11 @@
     "title": "Terminator 2: Judgement Day",
     "id": 280,
     "metadata": {
-      "genres": ["Action", "Thriller", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Thriller",
+        "Science Fiction"
+      ],
       "tagline": "It's nothing personal.",
       "release": {
         "day": 3,
@@ -4208,10 +5407,35 @@
     "seen": true
   },
   {
+    "title": "Terminator 3: Rise of the Machines",
+    "seen": true,
+    "id": 296,
+    "metadata": {
+      "genres": [
+        "Action",
+        "Thriller",
+        "Science Fiction"
+      ],
+      "tagline": "The Machines Will Rise.",
+      "release": {
+        "day": 2,
+        "month": 7,
+        "year": 2003
+      },
+      "runtime": 109
+    },
+    "favorite": false
+  },
+  {
     "title": "Terminator Genisys",
     "id": 87101,
     "metadata": {
-      "genres": ["Science Fiction", "Action", "Thriller", "Adventure"],
+      "genres": [
+        "Science Fiction",
+        "Action",
+        "Thriller",
+        "Adventure"
+      ],
       "tagline": "Reset the future",
       "release": {
         "day": 23,
@@ -4224,10 +5448,34 @@
     "seen": true
   },
   {
+    "title": "Terminator Salvation",
+    "id": 534,
+    "seen": true,
+    "metadata": {
+      "genres": [
+        "Action",
+        "Science Fiction",
+        "Thriller"
+      ],
+      "tagline": "The end begins.",
+      "release": {
+        "day": 20,
+        "month": 5,
+        "year": 2009
+      },
+      "runtime": 115
+    },
+    "favorite": false
+  },
+  {
     "title": "The Avengers",
     "id": 24428,
     "metadata": {
-      "genres": ["Science Fiction", "Action", "Adventure"],
+      "genres": [
+        "Science Fiction",
+        "Action",
+        "Adventure"
+      ],
       "tagline": "Some assembly required.",
       "release": {
         "day": 25,
@@ -4243,7 +5491,11 @@
     "title": "The Batman",
     "id": 414906,
     "metadata": {
-      "genres": ["Crime", "Mystery", "Thriller"],
+      "genres": [
+        "Crime",
+        "Mystery",
+        "Thriller"
+      ],
       "tagline": "Unmask the truth.",
       "release": {
         "day": 1,
@@ -4260,7 +5512,10 @@
     "id": 318846,
     "favorite": true,
     "metadata": {
-      "genres": ["Comedy", "Drama"],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
       "tagline": "This is a true story.",
       "release": {
         "day": 11,
@@ -4276,7 +5531,10 @@
     "id": 2667,
     "seen": true,
     "metadata": {
-      "genres": ["Horror", "Mystery"],
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
       "tagline": "Everything you've heard is true.",
       "release": {
         "day": 14,
@@ -4291,7 +5549,11 @@
     "title": "The Boondock Saints",
     "id": 8374,
     "metadata": {
-      "genres": ["Action", "Thriller", "Crime"],
+      "genres": [
+        "Action",
+        "Thriller",
+        "Crime"
+      ],
       "tagline": "Thy kingdom come. Thy will be done.",
       "release": {
         "day": 22,
@@ -4307,7 +5569,11 @@
     "title": "The Boondock Saints II: All Saints Day",
     "id": 22821,
     "metadata": {
-      "genres": ["Action", "Thriller", "Crime"],
+      "genres": [
+        "Action",
+        "Thriller",
+        "Crime"
+      ],
       "tagline": "The Saints Are Calling",
       "release": {
         "day": 24,
@@ -4323,7 +5589,10 @@
     "title": "The Butterfly Effect",
     "id": 1954,
     "metadata": {
-      "genres": ["Science Fiction", "Thriller"],
+      "genres": [
+        "Science Fiction",
+        "Thriller"
+      ],
       "tagline": "Change one thing. Change everything.",
       "release": {
         "day": 17,
@@ -4339,7 +5608,11 @@
     "title": "The Butterfly Effect 2",
     "id": 14620,
     "metadata": {
-      "genres": ["Drama", "Science Fiction", "Thriller"],
+      "genres": [
+        "Drama",
+        "Science Fiction",
+        "Thriller"
+      ],
       "tagline": "Can you change your past without destroying your future?",
       "release": {
         "day": 17,
@@ -4355,7 +5628,12 @@
     "title": "The Butterfly Effect: Revelations",
     "id": 16258,
     "metadata": {
-      "genres": ["Science Fiction", "Thriller", "Drama", "Crime"],
+      "genres": [
+        "Science Fiction",
+        "Thriller",
+        "Drama",
+        "Crime"
+      ],
       "tagline": "Death repeats itself.",
       "release": {
         "day": 9,
@@ -4371,7 +5649,10 @@
     "title": "The Cabin in the Woods",
     "id": 22970,
     "metadata": {
-      "genres": ["Horror", "Mystery"],
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
       "tagline": "You think you know the story.",
       "release": {
         "day": 12,
@@ -4387,7 +5668,10 @@
     "title": "The Conjuring",
     "id": 138843,
     "metadata": {
-      "genres": ["Horror", "Thriller"],
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
       "tagline": "Based on the true case files of the Warrens.",
       "release": {
         "day": 18,
@@ -4403,7 +5687,9 @@
     "title": "The Conjuring 2",
     "id": 259693,
     "metadata": {
-      "genres": ["Horror"],
+      "genres": [
+        "Horror"
+      ],
       "tagline": "The next true story from the case files of Ed and Lorraine Warren.",
       "release": {
         "day": 8,
@@ -4419,7 +5705,9 @@
     "title": "The Conjuring 4: Last Rites",
     "id": 1038392,
     "metadata": {
-      "genres": ["Horror"],
+      "genres": [
+        "Horror"
+      ],
       "tagline": "",
       "release": {
         "day": 4,
@@ -4435,7 +5723,11 @@
     "title": "The Conjuring: The Devil Made Me Do It",
     "id": 423108,
     "metadata": {
-      "genres": ["Horror", "Mystery", "Thriller"],
+      "genres": [
+        "Horror",
+        "Mystery",
+        "Thriller"
+      ],
       "tagline": "The demonic case that shocked America.",
       "release": {
         "day": 25,
@@ -4451,7 +5743,11 @@
     "title": "The Core",
     "id": 9341,
     "metadata": {
-      "genres": ["Science Fiction", "Adventure", "Thriller"],
+      "genres": [
+        "Science Fiction",
+        "Adventure",
+        "Thriller"
+      ],
       "tagline": "The only way out is in.",
       "release": {
         "day": 28,
@@ -4467,7 +5763,11 @@
     "title": "The Creator",
     "id": 670292,
     "metadata": {
-      "genres": ["Science Fiction", "Action", "Adventure"],
+      "genres": [
+        "Science Fiction",
+        "Action",
+        "Adventure"
+      ],
       "tagline": "This is a fight for our very existence.",
       "release": {
         "day": 27,
@@ -4484,7 +5784,11 @@
     "seen": true,
     "id": 60670,
     "metadata": {
-      "genres": ["Crime", "Mystery", "Thriller"],
+      "genres": [
+        "Crime",
+        "Mystery",
+        "Thriller"
+      ],
       "tagline": "Evil rises to new heights.",
       "release": {
         "day": 27,
@@ -4499,7 +5803,12 @@
     "title": "The Dark Knight",
     "id": 155,
     "metadata": {
-      "genres": ["Drama", "Action", "Crime", "Thriller"],
+      "genres": [
+        "Drama",
+        "Action",
+        "Crime",
+        "Thriller"
+      ],
       "tagline": "Welcome to a world without rules.",
       "release": {
         "day": 16,
@@ -4515,7 +5824,9 @@
     "title": "The Dictator",
     "id": 76493,
     "metadata": {
-      "genres": ["Comedy"],
+      "genres": [
+        "Comedy"
+      ],
       "tagline": "Make way for Aladeen.",
       "release": {
         "day": 15,
@@ -4531,7 +5842,11 @@
     "title": "The Doors",
     "id": 10537,
     "metadata": {
-      "genres": ["Music", "Drama", "History"],
+      "genres": [
+        "Music",
+        "Drama",
+        "History"
+      ],
       "tagline": "The ceremony is about to begin.",
       "release": {
         "day": 1,
@@ -4547,7 +5862,11 @@
     "title": "The Equalizer",
     "id": 156022,
     "metadata": {
-      "genres": ["Thriller", "Action", "Crime"],
+      "genres": [
+        "Thriller",
+        "Action",
+        "Crime"
+      ],
       "tagline": "What do you see when you look at me?",
       "release": {
         "day": 24,
@@ -4563,7 +5882,11 @@
     "title": "The Expendables 3",
     "id": 138103,
     "metadata": {
-      "genres": ["Action", "Adventure", "Thriller"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Thriller"
+      ],
       "tagline": "New team. New attitude. New mission.",
       "release": {
         "day": 7,
@@ -4580,7 +5903,11 @@
     "id": 18,
     "favorite": false,
     "metadata": {
-      "genres": ["Science Fiction", "Action", "Adventure"],
+      "genres": [
+        "Science Fiction",
+        "Action",
+        "Adventure"
+      ],
       "tagline": "There is no future without it.",
       "release": {
         "day": 2,
@@ -4595,7 +5922,9 @@
     "title": "The Fire Within",
     "id": 2593,
     "metadata": {
-      "genres": ["Drama"],
+      "genres": [
+        "Drama"
+      ],
       "tagline": "",
       "release": {
         "day": 15,
@@ -4611,7 +5940,9 @@
     "title": "The First Omen",
     "id": 437342,
     "metadata": {
-      "genres": ["Horror"],
+      "genres": [
+        "Horror"
+      ],
       "tagline": "Create something to fear.",
       "release": {
         "day": 3,
@@ -4627,7 +5958,12 @@
     "title": "The Fountain",
     "id": 1381,
     "metadata": {
-      "genres": ["Drama", "Adventure", "Science Fiction", "Romance"],
+      "genres": [
+        "Drama",
+        "Adventure",
+        "Science Fiction",
+        "Romance"
+      ],
       "tagline": "What if you could live forever?",
       "release": {
         "day": 22,
@@ -4643,7 +5979,12 @@
     "title": "The Girl Who Kicked the Hornets' Nest",
     "id": 33613,
     "metadata": {
-      "genres": ["Action", "Thriller", "Crime", "Mystery"],
+      "genres": [
+        "Action",
+        "Thriller",
+        "Crime",
+        "Mystery"
+      ],
       "tagline": "There's A Storm Coming",
       "release": {
         "day": 27,
@@ -4659,7 +6000,13 @@
     "title": "The Girl Who Played with Fire",
     "id": 24253,
     "metadata": {
-      "genres": ["Drama", "Action", "Thriller", "Crime", "Mystery"],
+      "genres": [
+        "Drama",
+        "Action",
+        "Thriller",
+        "Crime",
+        "Mystery"
+      ],
       "tagline": "Fight Fire with Fire",
       "release": {
         "day": 18,
@@ -4675,7 +6022,12 @@
     "title": "The Girl with the Dragon Tattoo",
     "id": 15472,
     "metadata": {
-      "genres": ["Drama", "Thriller", "Crime", "Mystery"],
+      "genres": [
+        "Drama",
+        "Thriller",
+        "Crime",
+        "Mystery"
+      ],
       "tagline": "Based on the Worldwide Best Seller",
       "release": {
         "day": 27,
@@ -4691,7 +6043,11 @@
     "title": "The Girl with the Dragon Tattoo",
     "id": 65754,
     "metadata": {
-      "genres": ["Thriller", "Crime", "Mystery"],
+      "genres": [
+        "Thriller",
+        "Crime",
+        "Mystery"
+      ],
       "tagline": "What is hidden in snow, comes forth in the thaw.",
       "release": {
         "day": 14,
@@ -4707,7 +6063,11 @@
     "title": "The Gorge",
     "id": 950396,
     "metadata": {
-      "genres": ["Romance", "Science Fiction", "Thriller"],
+      "genres": [
+        "Romance",
+        "Science Fiction",
+        "Thriller"
+      ],
       "tagline": "The world's most dangerous secret lies between them.",
       "release": {
         "day": 13,
@@ -4723,7 +6083,10 @@
     "title": "The Grand Budapest Hotel",
     "id": 120467,
     "metadata": {
-      "genres": ["Comedy", "Drama"],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
       "tagline": "A murder case of Madam D. with enormous wealth and the most outrageous events surrounding her sudden death!",
       "release": {
         "day": 26,
@@ -4739,7 +6102,10 @@
     "title": "The Great Gatsby",
     "id": 64682,
     "metadata": {
-      "genres": ["Drama", "Romance"],
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
       "tagline": "Dream dangerously.",
       "release": {
         "day": 9,
@@ -4755,7 +6121,11 @@
     "title": "The Haunting of Queen Mary",
     "id": 977013,
     "metadata": {
-      "genres": ["Horror", "Thriller", "Mystery"],
+      "genres": [
+        "Horror",
+        "Thriller",
+        "Mystery"
+      ],
       "tagline": "Evil has a new vessel.",
       "release": {
         "day": 21,
@@ -4771,7 +6141,11 @@
     "title": "The Hobbit: An Unexpected Journey",
     "id": 49051,
     "metadata": {
-      "genres": ["Adventure", "Fantasy", "Action"],
+      "genres": [
+        "Adventure",
+        "Fantasy",
+        "Action"
+      ],
       "tagline": "From the smallest beginnings come the greatest legends.",
       "release": {
         "day": 12,
@@ -4787,7 +6161,11 @@
     "title": "The Hobbit: The Battle of the Five Armies",
     "id": 122917,
     "metadata": {
-      "genres": ["Action", "Adventure", "Fantasy"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
       "tagline": "Witness the defining chapter of the Middle-Earth saga",
       "release": {
         "day": 10,
@@ -4803,7 +6181,11 @@
     "title": "The Hobbit: The Desolation of Smaug",
     "id": 57158,
     "metadata": {
-      "genres": ["Fantasy", "Adventure", "Action"],
+      "genres": [
+        "Fantasy",
+        "Adventure",
+        "Action"
+      ],
       "tagline": "Beyond darkness... beyond desolation... lies the greatest danger of all.",
       "release": {
         "day": 11,
@@ -4819,7 +6201,11 @@
     "title": "The Hunger Games",
     "id": 70160,
     "metadata": {
-      "genres": ["Science Fiction", "Adventure", "Fantasy"],
+      "genres": [
+        "Science Fiction",
+        "Adventure",
+        "Fantasy"
+      ],
       "tagline": "The world will be watching.",
       "release": {
         "day": 12,
@@ -4835,7 +6221,11 @@
     "title": "The Hunger Games: Catching Fire",
     "id": 101299,
     "metadata": {
-      "genres": ["Adventure", "Action", "Science Fiction"],
+      "genres": [
+        "Adventure",
+        "Action",
+        "Science Fiction"
+      ],
       "tagline": "Remember who the enemy is.",
       "release": {
         "day": 15,
@@ -4851,7 +6241,11 @@
     "title": "The Hunger Games: Mockingjay - Part 1",
     "id": 131631,
     "metadata": {
-      "genres": ["Science Fiction", "Adventure", "Thriller"],
+      "genres": [
+        "Science Fiction",
+        "Adventure",
+        "Thriller"
+      ],
       "tagline": "Fire burns brighter in the darkness.",
       "release": {
         "day": 19,
@@ -4867,7 +6261,11 @@
     "title": "The Hunger Games: Mockingjay - Part 2",
     "id": 131634,
     "metadata": {
-      "genres": ["Action", "Adventure", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
       "tagline": "The fire will burn forever.",
       "release": {
         "day": 18,
@@ -4883,7 +6281,10 @@
     "title": "The Killer",
     "id": 800158,
     "metadata": {
-      "genres": ["Crime", "Thriller"],
+      "genres": [
+        "Crime",
+        "Thriller"
+      ],
       "tagline": "Execution is everything.",
       "release": {
         "day": 25,
@@ -4899,7 +6300,11 @@
     "title": "The Lazarus Effect",
     "id": 243940,
     "metadata": {
-      "genres": ["Horror", "Science Fiction", "Thriller"],
+      "genres": [
+        "Horror",
+        "Science Fiction",
+        "Thriller"
+      ],
       "tagline": "Evil will rise.",
       "release": {
         "day": 29,
@@ -4915,7 +6320,12 @@
     "title": "The Limits of Control",
     "id": 8284,
     "metadata": {
-      "genres": ["Crime", "Drama", "Mystery", "Thriller"],
+      "genres": [
+        "Crime",
+        "Drama",
+        "Mystery",
+        "Thriller"
+      ],
       "tagline": "For every way in, there is another way out.",
       "release": {
         "day": 1,
@@ -4932,7 +6342,11 @@
     "id": 330,
     "favorite": false,
     "metadata": {
-      "genres": ["Adventure", "Action", "Science Fiction"],
+      "genres": [
+        "Adventure",
+        "Action",
+        "Science Fiction"
+      ],
       "tagline": "Something has survived.",
       "release": {
         "day": 23,
@@ -4947,7 +6361,10 @@
     "title": "The Machinist",
     "id": 4553,
     "metadata": {
-      "genres": ["Thriller", "Drama"],
+      "genres": [
+        "Thriller",
+        "Drama"
+      ],
       "tagline": "How do you wake up from a nightmare if you’re not asleep?",
       "release": {
         "day": 24,
@@ -4963,7 +6380,11 @@
     "title": "The Martian",
     "id": 286217,
     "metadata": {
-      "genres": ["Drama", "Adventure", "Science Fiction"],
+      "genres": [
+        "Drama",
+        "Adventure",
+        "Science Fiction"
+      ],
       "tagline": "Bring him home",
       "release": {
         "day": 30,
@@ -4979,7 +6400,10 @@
     "title": "The Matrix",
     "id": 603,
     "metadata": {
-      "genres": ["Action", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Science Fiction"
+      ],
       "tagline": "Believe the unbelievable.",
       "release": {
         "day": 31,
@@ -4995,7 +6419,12 @@
     "title": "The Matrix Reloaded",
     "id": 604,
     "metadata": {
-      "genres": ["Adventure", "Action", "Thriller", "Science Fiction"],
+      "genres": [
+        "Adventure",
+        "Action",
+        "Thriller",
+        "Science Fiction"
+      ],
       "tagline": "Free your mind.",
       "release": {
         "day": 15,
@@ -5011,7 +6440,12 @@
     "title": "The Matrix Revolutions",
     "id": 605,
     "metadata": {
-      "genres": ["Adventure", "Action", "Thriller", "Science Fiction"],
+      "genres": [
+        "Adventure",
+        "Action",
+        "Thriller",
+        "Science Fiction"
+      ],
       "tagline": "Everything that has a beginning has an end.",
       "release": {
         "day": 5,
@@ -5027,7 +6461,12 @@
     "title": "The Maze Runner",
     "id": 198663,
     "metadata": {
-      "genres": ["Action", "Mystery", "Science Fiction", "Thriller"],
+      "genres": [
+        "Action",
+        "Mystery",
+        "Science Fiction",
+        "Thriller"
+      ],
       "tagline": "Remember. Survive. Run.",
       "release": {
         "day": 10,
@@ -5043,7 +6482,9 @@
     "title": "The Meaning of Life",
     "id": 4543,
     "metadata": {
-      "genres": ["Comedy"],
+      "genres": [
+        "Comedy"
+      ],
       "tagline": "It took God six days to create the heavens and the earth...and Monty Python ninety minutes to screw it up.",
       "release": {
         "day": 31,
@@ -5060,7 +6501,10 @@
     "id": 10313,
     "seen": true,
     "metadata": {
-      "genres": ["Comedy", "War"],
+      "genres": [
+        "Comedy",
+        "War"
+      ],
       "tagline": "No goats. No glory.",
       "release": {
         "day": 17,
@@ -5075,7 +6519,11 @@
     "title": "The Menu",
     "id": 593643,
     "metadata": {
-      "genres": ["Comedy", "Horror", "Thriller"],
+      "genres": [
+        "Comedy",
+        "Horror",
+        "Thriller"
+      ],
       "tagline": "Painstakingly prepared. Brilliantly executed.",
       "release": {
         "day": 17,
@@ -5091,7 +6539,11 @@
     "title": "The Mist",
     "id": 5876,
     "metadata": {
-      "genres": ["Horror", "Science Fiction", "Thriller"],
+      "genres": [
+        "Horror",
+        "Science Fiction",
+        "Thriller"
+      ],
       "tagline": "Belief divides them, mystery surrounds them, but fear changes everything.",
       "release": {
         "day": 21,
@@ -5107,7 +6559,11 @@
     "title": "The Mummy",
     "id": 564,
     "metadata": {
-      "genres": ["Adventure", "Action", "Fantasy"],
+      "genres": [
+        "Adventure",
+        "Action",
+        "Fantasy"
+      ],
       "tagline": "The sands will rise. The heavens will part. The power will be unleashed.",
       "release": {
         "day": 16,
@@ -5123,7 +6579,11 @@
     "title": "The Number 23",
     "id": 3594,
     "metadata": {
-      "genres": ["Thriller", "Mystery", "Crime"],
+      "genres": [
+        "Thriller",
+        "Mystery",
+        "Crime"
+      ],
       "tagline": "First it takes hold of your mind...then it takes hold of your life.",
       "release": {
         "day": 23,
@@ -5139,7 +6599,9 @@
     "title": "The Nun",
     "id": 439079,
     "metadata": {
-      "genres": ["Horror"],
+      "genres": [
+        "Horror"
+      ],
       "tagline": "Pray for forgiveness",
       "release": {
         "day": 5,
@@ -5155,7 +6617,9 @@
     "title": "The Nun II",
     "id": 968051,
     "metadata": {
-      "genres": ["Horror"],
+      "genres": [
+        "Horror"
+      ],
       "tagline": "Confess your sins.",
       "release": {
         "day": 6,
@@ -5171,7 +6635,14 @@
     "title": "The Order",
     "id": 9616,
     "metadata": {
-      "genres": ["Fantasy", "Horror", "Mystery", "Thriller", "Romance", "Drama"],
+      "genres": [
+        "Fantasy",
+        "Horror",
+        "Mystery",
+        "Thriller",
+        "Romance",
+        "Drama"
+      ],
       "tagline": "Every soul has its price.",
       "release": {
         "day": 5,
@@ -5187,7 +6658,11 @@
     "title": "The Perfect Host",
     "id": 66195,
     "metadata": {
-      "genres": ["Comedy", "Thriller", "Crime"],
+      "genres": [
+        "Comedy",
+        "Thriller",
+        "Crime"
+      ],
       "tagline": "Dinner parties are a dying art.",
       "release": {
         "day": 1,
@@ -5203,7 +6678,10 @@
     "title": "The Possession",
     "id": 77883,
     "metadata": {
-      "genres": ["Horror", "Thriller"],
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
       "tagline": "Fear the demon that doesn't fear God.",
       "release": {
         "day": 30,
@@ -5219,7 +6697,11 @@
     "title": "The Revenant",
     "id": 281957,
     "metadata": {
-      "genres": ["Western", "Drama", "Adventure"],
+      "genres": [
+        "Western",
+        "Drama",
+        "Adventure"
+      ],
       "tagline": "Revenge proves its own executioner.",
       "release": {
         "day": 25,
@@ -5236,7 +6718,9 @@
     "id": 1278950,
     "seen": false,
     "metadata": {
-      "genres": ["Horror"],
+      "genres": [
+        "Horror"
+      ],
       "tagline": "Sanctioned by the church. Condemned by Satan. Possessed by evil.",
       "release": {
         "day": 29,
@@ -5251,7 +6735,10 @@
     "title": "The Shawshank Redemption",
     "id": 278,
     "metadata": {
-      "genres": ["Drama", "Crime"],
+      "genres": [
+        "Drama",
+        "Crime"
+      ],
       "tagline": "Fear can hold you prisoner. Hope can set you free.",
       "release": {
         "day": 23,
@@ -5268,7 +6755,11 @@
     "seen": true,
     "id": 274,
     "metadata": {
-      "genres": ["Crime", "Drama", "Thriller"],
+      "genres": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
       "tagline": "To enter the mind of a killer she must challenge the mind of a madman.",
       "release": {
         "day": 14,
@@ -5283,7 +6774,10 @@
     "title": "The Substance",
     "id": 933260,
     "metadata": {
-      "genres": ["Horror", "Science Fiction"],
+      "genres": [
+        "Horror",
+        "Science Fiction"
+      ],
       "tagline": "Have you ever dreamt of a better version of yourself?",
       "release": {
         "day": 7,
@@ -5299,7 +6793,11 @@
     "title": "The Suicide Squad",
     "id": 436969,
     "metadata": {
-      "genres": ["Action", "Comedy", "Adventure"],
+      "genres": [
+        "Action",
+        "Comedy",
+        "Adventure"
+      ],
       "tagline": "They're dying to save the world.",
       "release": {
         "day": 28,
@@ -5315,7 +6813,11 @@
     "title": "The Terminator",
     "id": 218,
     "metadata": {
-      "genres": ["Action", "Thriller", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Thriller",
+        "Science Fiction"
+      ],
       "tagline": "Your future is in its hands.",
       "release": {
         "day": 26,
@@ -5331,7 +6833,11 @@
     "title": "The Thing",
     "id": 1091,
     "metadata": {
-      "genres": ["Horror", "Mystery", "Science Fiction"],
+      "genres": [
+        "Horror",
+        "Mystery",
+        "Science Fiction"
+      ],
       "tagline": "Man is the warmest place to hide.",
       "release": {
         "day": 25,
@@ -5347,7 +6853,11 @@
     "title": "The Thing",
     "id": 60935,
     "metadata": {
-      "genres": ["Horror", "Science Fiction", "Mystery"],
+      "genres": [
+        "Horror",
+        "Science Fiction",
+        "Mystery"
+      ],
       "tagline": "It's not human. Yet.",
       "release": {
         "day": 12,
@@ -5363,7 +6873,11 @@
     "title": "The Tomorrow War",
     "id": 588228,
     "metadata": {
-      "genres": ["Action", "Science Fiction", "Adventure"],
+      "genres": [
+        "Action",
+        "Science Fiction",
+        "Adventure"
+      ],
       "tagline": "The fight for tomorrow begins today.",
       "release": {
         "day": 3,
@@ -5379,7 +6893,10 @@
     "title": "The Truman Show",
     "id": 37165,
     "metadata": {
-      "genres": ["Comedy", "Drama"],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
       "tagline": "On the air. Unaware.",
       "release": {
         "day": 4,
@@ -5395,7 +6912,11 @@
     "title": "The Wandering Earth",
     "id": 535167,
     "metadata": {
-      "genres": ["Science Fiction", "Action", "Drama"],
+      "genres": [
+        "Science Fiction",
+        "Action",
+        "Drama"
+      ],
       "tagline": "",
       "release": {
         "day": 5,
@@ -5411,7 +6932,9 @@
     "title": "The Wandering Earth II",
     "id": 842675,
     "metadata": {
-      "genres": ["Science Fiction"],
+      "genres": [
+        "Science Fiction"
+      ],
       "tagline": "",
       "release": {
         "day": 22,
@@ -5424,10 +6947,34 @@
     "seen": true
   },
   {
+    "title": "The Wandering Earth III",
+    "id": 1231322,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Action",
+        "Adventure"
+      ],
+      "tagline": "",
+      "release": {
+        "day": 6,
+        "month": 2,
+        "year": 2027
+      },
+      "runtime": 0
+    },
+    "favorite": false
+  },
+  {
     "title": "The Wolf of Wall Street",
     "id": 106646,
     "metadata": {
-      "genres": ["Crime", "Drama", "Comedy"],
+      "genres": [
+        "Crime",
+        "Drama",
+        "Comedy"
+      ],
       "tagline": "Earn. Spend. Party.",
       "release": {
         "day": 25,
@@ -5443,7 +6990,11 @@
     "title": "The Wolverine",
     "id": 76170,
     "metadata": {
-      "genres": ["Action", "Science Fiction", "Adventure"],
+      "genres": [
+        "Action",
+        "Science Fiction",
+        "Adventure"
+      ],
       "tagline": "When he's most vulnerable, he's most dangerous.",
       "release": {
         "day": 21,
@@ -5459,7 +7010,11 @@
     "title": "Thor",
     "id": 10195,
     "metadata": {
-      "genres": ["Adventure", "Fantasy", "Action"],
+      "genres": [
+        "Adventure",
+        "Fantasy",
+        "Action"
+      ],
       "tagline": "Courage is immortal.",
       "release": {
         "day": 21,
@@ -5475,7 +7030,11 @@
     "title": "Thor: Ragnarok",
     "id": 284053,
     "metadata": {
-      "genres": ["Action", "Adventure", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
       "tagline": "No hammer. No problem.",
       "release": {
         "day": 2,
@@ -5491,7 +7050,11 @@
     "title": "Thor: The Dark World",
     "id": 76338,
     "metadata": {
-      "genres": ["Action", "Adventure", "Fantasy"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
       "tagline": "Delve into the darkness.",
       "release": {
         "day": 30,
@@ -5507,7 +7070,9 @@
     "title": "To Die in Madrid",
     "id": 116684,
     "metadata": {
-      "genres": ["Documentary"],
+      "genres": [
+        "Documentary"
+      ],
       "tagline": "It was a long time ago...",
       "release": {
         "day": 18,
@@ -5523,7 +7088,11 @@
     "title": "Tomb Raider",
     "id": 338970,
     "metadata": {
-      "genres": ["Action", "Adventure", "Fantasy"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
       "tagline": "Her legend begins.",
       "release": {
         "day": 5,
@@ -5539,7 +7108,11 @@
     "title": "Total Recall",
     "id": 861,
     "metadata": {
-      "genres": ["Action", "Adventure", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
       "tagline": "They stole his mind. Now, he wants it back.",
       "release": {
         "day": 1,
@@ -5555,7 +7128,11 @@
     "title": "Total Recall",
     "id": 64635,
     "metadata": {
-      "genres": ["Action", "Science Fiction", "Thriller"],
+      "genres": [
+        "Action",
+        "Science Fiction",
+        "Thriller"
+      ],
       "tagline": "What Is Real?",
       "release": {
         "day": 2,
@@ -5572,7 +7149,12 @@
     "seen": true,
     "id": 68727,
     "metadata": {
-      "genres": ["Thriller", "Crime", "Drama", "Mystery"],
+      "genres": [
+        "Thriller",
+        "Crime",
+        "Drama",
+        "Mystery"
+      ],
       "tagline": "Don't be a hero.",
       "release": {
         "day": 27,
@@ -5587,7 +7169,12 @@
     "title": "Transcendence",
     "id": 157353,
     "metadata": {
-      "genres": ["Thriller", "Science Fiction", "Drama", "Mystery"],
+      "genres": [
+        "Thriller",
+        "Science Fiction",
+        "Drama",
+        "Mystery"
+      ],
       "tagline": "Yesterday, Dr. Will Caster was only human...",
       "release": {
         "day": 16,
@@ -5603,7 +7190,11 @@
     "title": "Transformers",
     "id": 1858,
     "metadata": {
-      "genres": ["Adventure", "Science Fiction", "Action"],
+      "genres": [
+        "Adventure",
+        "Science Fiction",
+        "Action"
+      ],
       "tagline": "Their war. Our world.",
       "release": {
         "day": 27,
@@ -5619,7 +7210,11 @@
     "title": "Transformers: Age of Extinction",
     "id": 91314,
     "metadata": {
-      "genres": ["Science Fiction", "Action", "Adventure"],
+      "genres": [
+        "Science Fiction",
+        "Action",
+        "Adventure"
+      ],
       "tagline": "This is not war, it's extinction.",
       "release": {
         "day": 25,
@@ -5635,7 +7230,11 @@
     "title": "Transformers: Dark of the Moon",
     "id": 38356,
     "metadata": {
-      "genres": ["Action", "Science Fiction", "Adventure"],
+      "genres": [
+        "Action",
+        "Science Fiction",
+        "Adventure"
+      ],
       "tagline": "The invasion we always feared. An enemy we never expected.",
       "release": {
         "day": 28,
@@ -5651,7 +7250,11 @@
     "title": "Transformers: Revenge of the Fallen",
     "id": 8373,
     "metadata": {
-      "genres": ["Science Fiction", "Action", "Adventure"],
+      "genres": [
+        "Science Fiction",
+        "Action",
+        "Adventure"
+      ],
       "tagline": "Revenge is coming.",
       "release": {
         "day": 19,
@@ -5667,7 +7270,11 @@
     "title": "Transformers: Rise of the Beasts",
     "id": 667538,
     "metadata": {
-      "genres": ["Science Fiction", "Adventure", "Action"],
+      "genres": [
+        "Science Fiction",
+        "Adventure",
+        "Action"
+      ],
       "tagline": "Unite or fall.",
       "release": {
         "day": 6,
@@ -5683,7 +7290,9 @@
     "title": "Tron: Ares",
     "id": 533533,
     "metadata": {
-      "genres": ["Science Fiction"],
+      "genres": [
+        "Science Fiction"
+      ],
       "tagline": "No going back.",
       "release": {
         "day": 8,
@@ -5700,7 +7309,11 @@
     "id": 9741,
     "favorite": false,
     "metadata": {
-      "genres": ["Thriller", "Drama", "Mystery"],
+      "genres": [
+        "Thriller",
+        "Drama",
+        "Mystery"
+      ],
       "tagline": "Are you ready for the truth?",
       "release": {
         "day": 22,
@@ -5715,7 +7328,12 @@
     "title": "Underwater",
     "id": 443791,
     "metadata": {
-      "genres": ["Horror", "Science Fiction", "Action", "Adventure"],
+      "genres": [
+        "Horror",
+        "Science Fiction",
+        "Action",
+        "Adventure"
+      ],
       "tagline": "7 miles below the ocean surface something has awakened",
       "release": {
         "day": 8,
@@ -5731,7 +7349,10 @@
     "title": "Until the Light Takes Us",
     "id": 36124,
     "metadata": {
-      "genres": ["Documentary", "Music"],
+      "genres": [
+        "Documentary",
+        "Music"
+      ],
       "tagline": "",
       "release": {
         "day": 31,
@@ -5744,10 +7365,70 @@
     "seen": true
   },
   {
+    "title": "Untitled Godzilla x Kong: The New Empire Sequel",
+    "id": 1288438,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Science Fiction"
+      ],
+      "tagline": "",
+      "release": {
+        "day": 26,
+        "month": 3,
+        "year": 2027
+      },
+      "runtime": 0
+    },
+    "favorite": false,
+    "imageMissing": true
+  },
+  {
+    "title": "Untitled Resident Evil Reboot",
+    "id": 1423191,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Horror"
+      ],
+      "tagline": "",
+      "release": {
+        "day": 18,
+        "month": 9,
+        "year": 2026
+      },
+      "runtime": 0
+    },
+    "favorite": false
+  },
+  {
+    "title": "Untitled The Exorcist Film",
+    "id": 1297467,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Horror"
+      ],
+      "tagline": "",
+      "release": {
+        "day": 13,
+        "month": 3,
+        "year": 2026
+      },
+      "runtime": 0
+    },
+    "favorite": false
+  },
+  {
     "title": "Upside Down",
     "id": 58244,
     "metadata": {
-      "genres": ["Romance", "Science Fiction", "Drama", "Fantasy"],
+      "genres": [
+        "Romance",
+        "Science Fiction",
+        "Drama",
+        "Fantasy"
+      ],
       "tagline": "Two worlds. One future.",
       "release": {
         "day": 27,
@@ -5763,7 +7444,11 @@
     "title": "V for Vendetta",
     "id": 752,
     "metadata": {
-      "genres": ["Action", "Thriller", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Thriller",
+        "Science Fiction"
+      ],
       "tagline": "People should not be afraid of their governments. Governments should be afraid of their people.",
       "release": {
         "day": 23,
@@ -5779,7 +7464,10 @@
     "title": "Venom",
     "id": 335983,
     "metadata": {
-      "genres": ["Science Fiction", "Action"],
+      "genres": [
+        "Science Fiction",
+        "Action"
+      ],
       "tagline": "The world has enough Superheroes.",
       "release": {
         "day": 28,
@@ -5795,7 +7483,11 @@
     "title": "Venom: Let There Be Carnage",
     "id": 580489,
     "metadata": {
-      "genres": ["Science Fiction", "Action", "Adventure"],
+      "genres": [
+        "Science Fiction",
+        "Action",
+        "Adventure"
+      ],
       "tagline": "You are what you eat.",
       "release": {
         "day": 30,
@@ -5811,7 +7503,12 @@
     "title": "Vesper",
     "id": 976720,
     "metadata": {
-      "genres": ["Science Fiction", "Drama", "Adventure", "Fantasy"],
+      "genres": [
+        "Science Fiction",
+        "Drama",
+        "Adventure",
+        "Fantasy"
+      ],
       "tagline": "One seed can change everything",
       "release": {
         "day": 17,
@@ -5827,7 +7524,11 @@
     "title": "WALL·E",
     "id": 10681,
     "metadata": {
-      "genres": ["Animation", "Family", "Science Fiction"],
+      "genres": [
+        "Animation",
+        "Family",
+        "Science Fiction"
+      ],
       "tagline": "After 700 years of doing what he was built for, he'll discover what he was meant for.",
       "release": {
         "day": 22,
@@ -5843,7 +7544,11 @@
     "title": "Warcraft",
     "id": 68735,
     "metadata": {
-      "genres": ["Action", "Adventure", "Fantasy"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
       "tagline": "Two worlds. One home.",
       "release": {
         "day": 25,
@@ -5859,7 +7564,11 @@
     "title": "Watchmen",
     "id": 13183,
     "metadata": {
-      "genres": ["Mystery", "Action", "Science Fiction"],
+      "genres": [
+        "Mystery",
+        "Action",
+        "Science Fiction"
+      ],
       "tagline": "Justice is coming to all of us. No matter what we do.",
       "release": {
         "day": 4,
@@ -5875,7 +7584,10 @@
     "title": "Wetlands",
     "id": 208277,
     "metadata": {
-      "genres": ["Drama", "Comedy"],
+      "genres": [
+        "Drama",
+        "Comedy"
+      ],
       "tagline": "Get ready for Helen.",
       "release": {
         "day": 22,
@@ -5891,7 +7603,10 @@
     "title": "When You're Strange",
     "id": 37659,
     "metadata": {
-      "genres": ["Documentary", "Music"],
+      "genres": [
+        "Documentary",
+        "Music"
+      ],
       "tagline": "A film about The Doors",
       "release": {
         "day": 9,
@@ -5907,7 +7622,12 @@
     "title": "World War Z",
     "id": 72190,
     "metadata": {
-      "genres": ["Action", "Horror", "Science Fiction", "Thriller"],
+      "genres": [
+        "Action",
+        "Horror",
+        "Science Fiction",
+        "Thriller"
+      ],
       "tagline": "There will come a day when the world we know will end.",
       "release": {
         "day": 19,
@@ -5923,7 +7643,10 @@
     "title": "X",
     "id": 760104,
     "metadata": {
-      "genres": ["Horror", "Thriller"],
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
       "tagline": "Get Ready for One Killer ClimaX.",
       "release": {
         "day": 17,
@@ -5936,10 +7659,35 @@
     "seen": true
   },
   {
+    "title": "X-Men",
+    "id": 36657,
+    "seen": true,
+    "metadata": {
+      "genres": [
+        "Adventure",
+        "Action",
+        "Science Fiction"
+      ],
+      "tagline": "Trust a few. Fear the rest.",
+      "release": {
+        "day": 13,
+        "month": 7,
+        "year": 2000
+      },
+      "runtime": 104
+    },
+    "favorite": false
+  },
+  {
     "title": "X-Men: Apocalypse",
     "id": 246655,
     "metadata": {
-      "genres": ["Action", "Adventure", "Science Fiction", "Fantasy"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction",
+        "Fantasy"
+      ],
       "tagline": "Only the strong will survive.",
       "release": {
         "day": 18,
@@ -5955,7 +7703,11 @@
     "title": "X-Men: Days of Future Past",
     "id": 127585,
     "metadata": {
-      "genres": ["Action", "Adventure", "Science Fiction"],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
       "tagline": "To save the future, they must alter the past.",
       "release": {
         "day": 15,
@@ -5971,7 +7723,10 @@
     "title": "X-Men: First Class",
     "id": 691677,
     "metadata": {
-      "genres": ["Documentary", "TV Movie"],
+      "genres": [
+        "Documentary",
+        "TV Movie"
+      ],
       "tagline": "",
       "release": {
         "day": 5,
@@ -5984,10 +7739,36 @@
     "seen": true
   },
   {
+    "title": "X2",
+    "id": 36658,
+    "seen": true,
+    "metadata": {
+      "genres": [
+        "Adventure",
+        "Action",
+        "Science Fiction"
+      ],
+      "tagline": "The time has come for those who are different to stand united.",
+      "release": {
+        "day": 27,
+        "month": 4,
+        "year": 2003
+      },
+      "runtime": 133
+    },
+    "favorite": false
+  },
+  {
     "title": "Yellow Submarine",
     "id": 12105,
     "metadata": {
-      "genres": ["Music", "Animation", "Adventure", "Comedy", "Fantasy"],
+      "genres": [
+        "Music",
+        "Animation",
+        "Adventure",
+        "Comedy",
+        "Fantasy"
+      ],
       "tagline": "It's all in the mind y'know!",
       "release": {
         "day": 17,
