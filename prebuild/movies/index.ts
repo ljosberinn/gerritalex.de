@@ -68,6 +68,8 @@ type Movie = TMDBSharedResponseFields & {
   runtime: number;
   video: boolean;
   release_date: string;
+  title: string;
+  original_title: string;
 };
 
 async function getEntry(id: number): Promise<Movie | null> {
@@ -131,6 +133,10 @@ export async function doMoviesImport(): Promise<{ from: string; to: string }[]> 
     }
 
     dataset.id = id;
+
+    if (response.title) {
+      dataset.title = response.title;
+    }
 
     dataset.metadata = {
       genres: response.genres.map((genre) => genre.name),
