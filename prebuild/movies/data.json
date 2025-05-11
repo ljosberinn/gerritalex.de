@@ -90,7 +90,7 @@
       ],
       "tagline": "",
       "release": {
-        "day": 15,
+        "day": 6,
         "month": 1,
         "year": 2026
       },
@@ -817,7 +817,8 @@
     "seen": false,
     "metadata": {
       "genres": [
-        "Science Fiction"
+        "Science Fiction",
+        "Fantasy"
       ],
       "tagline": "",
       "release": {
@@ -2504,6 +2505,25 @@
     "seen": true
   },
   {
+    "title": "Godzilla x Kong: Supernova",
+    "id": 1288438,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Action"
+      ],
+      "tagline": "",
+      "release": {
+        "day": 25,
+        "month": 3,
+        "year": 2027
+      },
+      "runtime": 0
+    },
+    "favorite": false
+  },
+  {
     "title": "Good Will Hunting",
     "id": 489,
     "metadata": {
@@ -3050,6 +3070,26 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "title": "In the Lost Lands",
+    "id": 324544,
+    "seen": true,
+    "metadata": {
+      "genres": [
+        "Action",
+        "Fantasy",
+        "Adventure"
+      ],
+      "tagline": "She seeks the power to free her people.",
+      "release": {
+        "day": 27,
+        "month": 2,
+        "year": 2025
+      },
+      "runtime": 102
+    },
+    "favorite": false
   },
   {
     "title": "Inception",
@@ -5826,7 +5866,7 @@
       "genres": [
         "Horror"
       ],
-      "tagline": "",
+      "tagline": "Prepare for the end.",
       "release": {
         "day": 4,
         "month": 9,
@@ -7429,9 +7469,8 @@
     "id": 533533,
     "metadata": {
       "genres": [
-        "Action",
-        "Adventure",
-        "Science Fiction"
+        "Science Fiction",
+        "Adventure"
       ],
       "tagline": "No going back.",
       "release": {
@@ -7503,25 +7542,6 @@
     },
     "favorite": false,
     "seen": true
-  },
-  {
-    "title": "Untitled Godzilla x Kong: The New Empire Sequel",
-    "id": 1288438,
-    "seen": false,
-    "metadata": {
-      "genres": [
-        "Science Fiction"
-      ],
-      "tagline": "",
-      "release": {
-        "day": 26,
-        "month": 3,
-        "year": 2027
-      },
-      "runtime": 0
-    },
-    "favorite": false,
-    "imageMissing": true
   },
   {
     "title": "Untitled Resident Evil Reboot",
