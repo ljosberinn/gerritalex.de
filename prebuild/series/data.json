@@ -2119,7 +2119,7 @@
       "episodes": 16
     },
     "favorite": false,
-    "episodesSeen": 13,
+    "episodesSeen": 15,
     "state": "ongoing"
   },
   {
@@ -2572,6 +2572,28 @@
     "favorite": false,
     "episodesSeen": 9,
     "state": "finished"
+  },
+  {
+    "id": 87689,
+    "state": "finished",
+    "title": "Warrior Nun",
+    "metadata": {
+      "genres": [
+        "Action & Adventure",
+        "Drama",
+        "Sci-Fi & Fantasy"
+      ],
+      "seasons": 2,
+      "tagline": "Deliver us from evil.",
+      "release": {
+        "day": 2,
+        "month": 7,
+        "year": 2020
+      },
+      "episodes": 18
+    },
+    "favorite": false,
+    "episodesSeen": 18
   },
   {
     "title": "Watchmen",
