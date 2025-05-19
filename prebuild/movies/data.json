@@ -6156,6 +6156,25 @@
     "seen": true
   },
   {
+    "title": "The Empty Man",
+    "id": 516632,
+    "metadata": {
+      "genres": [
+        "Horror",
+        "Mystery",
+        "Thriller"
+      ],
+      "tagline": "The first night you hear him. The second night you see him. The third night he finds you.",
+      "release": {
+        "day": 22,
+        "month": 10,
+        "year": 2020
+      },
+      "runtime": 137
+    },
+    "favorite": false
+  },
+  {
     "title": "The Equalizer",
     "id": 156022,
     "metadata": {
