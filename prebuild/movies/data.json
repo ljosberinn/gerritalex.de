@@ -1723,6 +1723,25 @@
     "seen": true
   },
   {
+    "title": "Echo Valley",
+    "id": 1097311,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "tagline": "A mother and daughter are bound by a dark secret.",
+      "release": {
+        "day": 12,
+        "month": 6,
+        "year": 2025
+      },
+      "runtime": 83
+    },
+    "favorite": false
+  },
+  {
     "title": "Edge of Tomorrow",
     "id": 137113,
     "metadata": {
@@ -3029,6 +3048,45 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "title": "Highest 2 Lowest",
+    "id": 1242434,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Crime",
+        "Thriller",
+        "Drama"
+      ],
+      "tagline": "All $$ ain't good $$.",
+      "release": {
+        "day": 22,
+        "month": 8,
+        "year": 2025
+      },
+      "runtime": 133
+    },
+    "favorite": false
+  },
+  {
+    "id": 986097,
+    "title": "HIM",
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
+      "tagline": "Greatness demands sacrifice.",
+      "release": {
+        "day": 18,
+        "month": 9,
+        "year": 2025
+      },
+      "runtime": 0
+    },
+    "favorite": false
   },
   {
     "title": "Horsemen",

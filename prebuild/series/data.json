@@ -1761,6 +1761,26 @@
     "state": "upcoming"
   },
   {
+    "title": "Smoke",
+    "id": 215995,
+    "state": "upcoming",
+    "metadata": {
+      "genres": [
+        "Crime"
+      ],
+      "seasons": 1,
+      "tagline": "",
+      "release": {
+        "day": 26,
+        "month": 6,
+        "year": 2025
+      },
+      "episodes": 9
+    },
+    "favorite": false,
+    "episodesSeen": 0
+  },
+  {
     "title": "Snowfall",
     "id": 71694,
     "metadata": {
