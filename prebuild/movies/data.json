@@ -594,6 +594,25 @@
     "seen": true
   },
   {
+    "id": 256274,
+    "seen": true,
+    "title": "As Above, So Below",
+    "metadata": {
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "tagline": "The only way out is down.",
+      "release": {
+        "day": 14,
+        "month": 8,
+        "year": 2014
+      },
+      "runtime": 93
+    },
+    "favorite": false
+  },
+  {
     "title": "Ash",
     "id": 931349,
     "metadata": {
@@ -6157,6 +6176,7 @@
   },
   {
     "title": "The Empty Man",
+    "seen": true,
     "id": 516632,
     "metadata": {
       "genres": [
