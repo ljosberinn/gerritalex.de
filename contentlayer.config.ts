@@ -22,7 +22,7 @@ import rehypePresetMinify from 'rehype-preset-minify';
 import siteMetadata from './data/siteMetadata';
 import { allCoreContent, MDXDocumentDate, sortPosts } from 'pliny/utils/contentlayer.js';
 import { createWriteStream } from 'fs';
-import { writeFile } from 'fs/promises';
+import { writeFile, stat } from 'fs/promises';
 import { doMoviesImport } from './prebuild/movies';
 import { doSeriesImport } from './prebuild/series';
 import { doDiscogsImport } from './prebuild/music';
@@ -119,16 +119,20 @@ export const Blog = defineDocumentType(() => ({
     ...computedFields,
     structuredData: {
       type: 'json',
-      resolve: (doc) => ({
-        '@context': 'https://schema.org',
-        '@type': 'BlogPosting',
-        headline: doc.title,
-        datePublished: doc.date,
-        dateModified: doc.lastmod || doc.date,
-        description: doc.summary,
-        image: doc.images ? doc.images[0] : siteMetadata.socialBanner,
-        url: `${siteMetadata.siteUrl}/${doc._raw.flattenedPath}`,
-      }),
+      resolve: async (doc) => {
+        const { mtimeMs } = await stat(`data/${doc._raw.sourceFilePath}`);
+
+        return {
+          '@context': 'https://schema.org',
+          '@type': 'BlogPosting',
+          headline: doc.title,
+          datePublished: doc.date,
+          dateModified: new Date(mtimeMs).toISOString(),
+          description: doc.summary,
+          image: doc.images ? doc.images[0] : siteMetadata.socialBanner,
+          url: `${siteMetadata.siteUrl}/${doc._raw.flattenedPath}`,
+        };
+      },
     },
   },
 }));

@@ -74,7 +74,7 @@
         "month": 6,
         "year": 2025
       },
-      "runtime": 126
+      "runtime": 115
     },
     "favorite": false,
     "seen": false
@@ -748,7 +748,7 @@
         "month": 12,
         "year": 2025
       },
-      "runtime": 0
+      "runtime": 192
     },
     "favorite": false
   },
@@ -802,8 +802,8 @@
       ],
       "tagline": "",
       "release": {
-        "day": 29,
-        "month": 4,
+        "day": 18,
+        "month": 12,
         "year": 2026
       },
       "runtime": 0
@@ -860,8 +860,8 @@
       ],
       "tagline": "",
       "release": {
-        "day": 5,
-        "month": 5,
+        "day": 15,
+        "month": 12,
         "year": 2027
       },
       "runtime": 0
@@ -955,7 +955,7 @@
         "Horror",
         "Thriller"
       ],
-      "tagline": "",
+      "tagline": "Dead is just a word.",
       "release": {
         "day": 15,
         "month": 10,
@@ -2133,15 +2133,15 @@
   {
     "title": "Fear Street: Prom Queen",
     "id": 1001414,
-    "seen": false,
+    "seen": true,
     "metadata": {
       "genres": [
         "Horror",
-        "Thriller"
+        "Mystery"
       ],
       "tagline": "Winning just might be the death of you.",
       "release": {
-        "day": 22,
+        "day": 23,
         "month": 5,
         "year": 2025
       },
@@ -2297,7 +2297,7 @@
       ],
       "tagline": "Vengeance has a new face.",
       "release": {
-        "day": 4,
+        "day": 6,
         "month": 6,
         "year": 2025
       },
@@ -5672,6 +5672,7 @@
     "metadata": {
       "genres": [
         "Action",
+        "Adventure",
         "Science Fiction"
       ],
       "tagline": "Look up.",
@@ -7115,9 +7116,9 @@
       "genres": [
         "Horror"
       ],
-      "tagline": "Sanctioned by the church. Condemned by Satan. Possessed by evil.",
+      "tagline": "You must have faith.",
       "release": {
-        "day": 29,
+        "day": 27,
         "month": 5,
         "year": 2025
       },
