@@ -1,0 +1,456 @@
+---
+title: Retail World of Warcraft - A Rant
+date: '2025-06-03'
+tags: ['wow']
+summary: 'My 2 cents on the state of the game'
+authors: ['default']
+images: ['/static/images/highlighter/banner.png']
+layout: PostBanner
+includeImageInPreview: true
+---
+
+## Intro
+
+Recently I watched [Dratnos' 11 Rants about current World of Warcraft](https://www.youtube.com/watch?v=h8CwiCBM55s) which has led me to formulate my thoughts on this topic too. 
+
+It's important to remind both myself and the readers that - just like Dratnos's video - this is is first and foremost a love letter to the game. We all know however that it's not flawless. In my opinion, _most_ issues could be solved by better communication. But I'm getting ahead of myself here.
+
+Note that I'm also speaking from a specific point of view: 
+- I'm a developer myself, working on [Archon](https://www.archon.gg/) and thus [Warcraft Logs](https://www.warcraftlogs.com/), so I have a fairly specific perspective on the game from that alone
+- as considerably competitive player I have certain expectations of endgame content
+- as co-maintainer of [Jundies Plater](https://wago.io/ak3iS95aa) and a bunch of complex WeakAuras, I'm also considerably familiar with the WoW interface
+
+Some of my concerns don't and shouldn't apply to theoretical business decisions a game developer like Blizzard could make when reading feedback like this. That's ok, but it's still worth voicing.
+
+## Table of Contents
+
+<TOCInline toc={props.toc} exclude="Table of Contents" />
+
+<script src="https://wow.zamimg.com/js/tooltips.js"></script>
+
+## Bugs
+
+Bugs happen, that's a given. What I'm not so happy with is how long presumably easy to fix bugs are left in the game. I'm obviously reaching here regarding the difficulty. That said, in contrast more complex bugs that we read of getting fixed in Hotfix Notes, these seem trivial.
+
+### Sweet Souls
+
+Did you know there's a <WowheadClassIcon>Warlock</WowheadClassIcon> class tree talent <WowheadLink id={386621} icon="warlock_-healthstone" kind="spell">that heals the <WowheadClassIcon>Warlock</WowheadClassIcon></WowheadLink> whenever a party or raid member uses a <WowheadLink kind="item" id={5512} icon="warlock_-healthstone">Healthstone</WowheadLink>? Except it only heals the <WowheadClassIcon>Warlock</WowheadClassIcon> if the other player is on the same realm, and modern parties/raids only rarely have a considerable amount of players of the same realm.
+
+**This is known since Legion.**
+
+### Dimension Ripper
+
+Did you know the <WowheadSpecIcon spec="destruction-warlock">Destruction</WowheadSpecIcon> talent <WowheadLink id={457025} kind="spell" icon="inv_artifact_dimensionalrift">Dimension Ripper</WowheadLink> doesn't actually have a 5% chance, but instead 2.5%? Could of course be a tooltip bug only, but 2.5% would not only be a very underwhelming near-capstone talent, but also a surprising number in general.
+
+Known since at least [Jan 10 2025](https://github.com/SimCMinMax/WoW-BugTracker/issues/1305), three days into the 11.1 PTR.
+
+### Seeds of Their Demise
+
+During the 11.1 PTR, the <WowheadSpecIcon spec="hellcaller">Hellcaller</WowheadSpecIcon> talent <WowheadLink kind="spell" id={440055} icon="ability_warlock_moltencoregreen">Seeds of Their Demise</WowheadLink> was changed to no longer grant <WowheadLink kind="spell" id={440043} icon="spell_nzinsanity_chasedbyshadows">Blackened Soul</WowheadLink> a 30% damage increase.
+
+At least the tooltip was. The talent still grants this increase. In all fairness however, removing this effect would require compensation buffs for <WowheadClassIcon className="warlock">Warlock</WowheadClassIcon>s as <WowheadLink kind="spell" id={440043} icon="spell_nzinsanity_chasedbyshadows">Blackened Soul</WowheadLink> is a considerable part of their damage.
+
+Known since at least [Mar 25 2025](https://github.com/SimCMinMax/WoW-BugTracker/issues/1329).
+
+### Reactivity
+
+<WowheadLink id={445035} kind="spell" icon="spell_fire_totemofwrath" urlExtra="spec=264">Reactivity</WowheadLink> doesn't replicate 50% but 100% healing.
+
+Known since the talent was implemented during TWW Beta.
+
+### Consume Flame
+
+<WowheadLink id={444088} kind="spell" icon="inv_shadowflames_wave">Consume Flame</WowheadLink> ignores damage taken modifiers.
+
+This is both good and bad:
+- it ignores damage reductions, handy in aoe situations like in early Priory of the Sacred Flame against <WowheadLink id={206705} kind="npc">Arathi Footmen</WowheadLink>'s <WowheadLink id={427342} kind="spell" icon="ability_defend">Defend</WowheadLink>
+- it ignores damage taken increases, annoying during <WowheadLink id={225821} kind="npc">Vexie's</WowheadLink> <WowheadLink id={460603} kind="spell" icon="ability_siege_engineer_detonate">Mechanical Breakdown</WowheadLink> and <WowheadLink id={207207} kind="npc">Voidstone Monstrosity</WowheadLink>'s <WowheadLink id={424371} kind="spell" icon="inv_offhand_1h_artifactdoomhammer_d_02">Storm's Vengeance</WowheadLink> 
+
+Known since the talent was implemented during TWW Beta.
+
+### What gives?
+
+These are just a couple examples, I linked the community Bug Tracker. I've chosen both positive and negative bugs intentionally, these were also fairly easy to explain which won't be the case for further problems below.
+
+They all have one thing in common however: they've been reported not once, not twice, but countless of times, through various channels.
+
+Now there's two possible answers to this:
+- it's a bug, but low priority
+- it's not a bug
+
+The former I'm ok with. Unfortunately we don't know, also ok.
+
+The former, I'm also ok with! But here not knowing is worse. The team would've already stopped thinking about it but players don't forget that easily. **Please let us know if something isn't a bug.** There's passionate players out there that maintain SimC, addons, WeakAuras, participate in theorycrafting in general, participate in testing, you know it. I'm also aware that people come, people go, it's only natural. That doesn't mean it doesn't hurt when messages like this reach me:
+
+<div className="flex justify-center">
+    ![](/static/images/wow-rant/play-ptr-1.png)    
+</div>
+
+... or there's a third answer which as optimist I'd rather not believe: that PTR feedback isn't particularily well dealt with. Of all bugs I've reported in recent history (since TWW Alpha), exclusively those I've reported _after_ going live were fixed.
+
+<div className="flex justify-center">
+    ![](/static/images/wow-rant/play-ptr-2.png)
+    ![](/static/images/wow-rant/play-ptr-5.png)
+    ![](/static/images/wow-rant/play-ptr-6.png)
+    ![](/static/images/wow-rant/play-ptr-3.png)
+    ![](/static/images/wow-rant/play-ptr-4.png)
+</div>
+
+## Version Management Problems
+
+For a while now we've seen bug/hotfixes introduced during one patch getting unintentionally reverted in the next .5/.7 or .0 patch.
+
+<div className="flex justify-center">
+    ![](/static/images/wow-rant/version-control.png)    
+</div>
+
+### Reintroduced Bugs
+
+Unfortunately I have only edge cases available at the top off my mind, but they're still good examples.
+
+<div className="flex justify-center">
+    ![](/static/images/wow-rant/xkcd-git.png)    
+</div>
+
+#### Fixed On PTR, Somehow Reoccuring Later
+
+Fixes that were made during the PTR cycle somehow get reverted later on, when the patch has been live for a while. For example we recently discovered that the <WowheadLink kind="spell" id={459120} icon="ability_evoker_geomancy">Rumbling Earth</WowheadLink> talent extends <WowheadLink kind="spell" id={395152} icon="spell_sarkareth">Ebon Might</WowheadLink> when casting <WowheadLink id={442204} kind="spell" icon="ability_evoker_breathofeons">Breath of Eons</WowheadLink> due to the <WowheadLink id={1215689} kind="spell" icon="trade_engineering">11.1 tier set effect</WowheadLink>. During the 11.1 PTR, this was one of the changes made:
+
+> [Upheavals from the Liberation of Undermine 2-set bonus no longer increase the duration of Ebon Might.](https://www.wowhead.com/news/patch-11-1-ptr-development-notes-for-february-4th-more-class-tuning-and-delves-369629)
+
+#### Fixed In The Past, Somehow Reocurring Later
+
+Plenty of examples here. I'm sure you know, here's one I found without digging too long: [Liberation of Undermine Raid Skip to One-Armed Bandit Option Removed in Patch 11.1.5](https://www.wowhead.com/news/fixed-liberation-of-undermine-raid-skip-to-one-armed-bandit-option-removed-in-376489).
+
+### Partial/Missing Tuning
+
+Additionally, hotfixes promised such as e.g. class/spec tuning doesn't get deployed in the same quantity as it was announced. A couple examples:
+- simple numeric mistakes are being made, e.g. recently <WowheadSpecIcon spec="subtlety-rogue">Subtlety Rogue</WowheadSpecIcon> was buffed by 10% in weekly class tuning but it should've been only 5%.
+- in the same set of changes, <WowheadSpecIcon spec="diabolist">Diabolist</WowheadSpecIcon> was supposed to receive buffs to 5 abilities. 4 are missing, one was deployed with a lower value than announced.
+- in the previous class tuning, [feral buffs were entirely missing](https://www.wowhead.com/news/feral-druid-3-buff-no-longer-missing-from-most-recent-class-tuning-376859?utm_source=discord-webhook)
+- in March, <WowheadSpecIcon spec="mistweaver-monk">Mistweaver Monk</WowheadSpecIcon> received only half of its tuning, resulting in the spec being extremely strong until the accompanying & promised 25% damage nerf was also deployed
+- in the same set of tuning, none of the announced <WowheadClassIcon className="hunter">Hunter</WowheadClassIcon> buffs went live 
+
+## Talent Tuning
+
+This list would be long if I could be bothered and you can already guess what this is about. There's so many talents across all the trees that do little to nothing, are dead on arrival and/or have never seen tuning.
+
+Back in early Dragonflight, my go to examples here was the <WowheadSpecIcon spec="vengeance-demon-hunter">Vengeance Demon Hunter</WowheadSpecIcon> <WowheadLink kind="spell" id={263648} icon="inv_soulbarrier">Soul Barrier</WowheadLink> / <WowheadLink kind="spell" id={320341} icon="spell_shadow_shadesofdarkness">Bulk Extraction</WowheadLink> choice node, but that's over 2 years ago and I've given up on complaining about it. Both still haven't seen any kind of numerical tuning since the introduction of the talent trees with 10.0. At least the spec is doing fine right?
+
+People are probably gonna lynch me for mentioning the <WowheadSpecIcon spec="augmentation-evoker">Augmentation Evoker</WowheadSpecIcon> talents <WowheadLink kind="spell" id={410685} icon="inv_10_herb_seed_magiccolor5">Symbiotic Bloom</WowheadLink> and the <WowheadLink kind="spell" id={410687} icon="ability_evoker_reversion_green">Prolong Life</WowheadLink> / <WowheadLink kind="spell" id={414969} icon="ability_evoker_masterylifebinder">Dream of Spring</WowheadLink> choice node below it, both not only extremely bad, they'd also cost 3 talent points in total, but even <WowheadSpecIcon spec="augmentation-evoker">Augmentation Evoker</WowheadSpecIcon>s deserve good talents.
+
+And that's already all the energy I have for this topic. What's the point of these talents? Nobody knows.
+
+Blizzard have the data. Blizzard knows which talents are never ever taken. Tune them, replace them, or prune them. Not like anyone would miss them currently anyway!
+
+## Item Tuning
+
+### Dungeon Trinkets
+
+Not entirely fair to start this section without mention that it also applies to _some_ raid trinkets. But at least raid ends up always having very good trinkets anyway.
+
+The general TLDR here is that more often than not, the majority of dungeon trinkets are badly tuned. The season gets released and dungeon trinkets get, at best, a couple bugfixes where needed. 
+
+I do have to mention that this season is technically doing better in this regard, so let's hope this trend continues. We've seen two trinket tuning sets:
+- [March 21, Direct Damage Trinket Tuning](https://www.wowhead.com/news/trinket-hotfixes-on-live-servers-many-20-buffs-to-direct-damage-trinkets-376030)
+- [May 2nd, Caster Trinket Tuning](https://www.wowhead.com/ptr/news/the-war-within-hotfixes-for-may-2nd-trinket-buffs-nightfall-rewards-gilded-of-376701)
+
+However, especially the former was fairly hit/miss and also buffed raid and delve trinkets.
+
+Left for dead currently are:
+- <WowheadLink kind="item" id={178811} icon="inv_misc_book_01">Grim Codex</WowheadLink>
+- <WowheadLink kind="item" id={219298} icon="inv_10_engineering_device_gadget1_color1">Ravenous Honey Buzzer</WowheadLink>
+- <WowheadLink kind="item" id={219294} icon="inv_misc_dungeonsignetearthen02_color1">Algari Concordance</WowheadLink> (after rightfully getting nerfed)
+- <WowheadLink kind="item" id={219294} icon="inv_achievement_dungeon_rookery">Charged Stormrook Plume</WowheadLink>
+- <WowheadLink kind="item" id={232546} icon="achievement_cooking_masterofthegrill">K.U.-J.0.'s Flame Vents</WowheadLink>
+- <WowheadLink kind="item" id={159611} icon="inv_misc_enggizmos_27">Razdunk's Big Red Button</WowheadLink>
+- <WowheadLink kind="item" id={178808} icon="inv_misc_organ_04">Viscera of Coalesced Hatred</WowheadLink>
+- <WowheadLink kind="item" id={232545} icon="inv_engineering_90_lightningbox">Gigazap's Zap-Cap</WowheadLink> 
+
+My favorite example here is <WowheadLink id={232545} kind="item" icon="inv_engineering_90_lightningbox">Gigazap's Zap-Cap</WowheadLink>: not only was it bugged at the start of the patch and had only half the proc chance it promised, even after the fix it's still doing miserable damage.
+
+How miserable? Well, buckle up. At itemlevel 700 its just _barely_ winning over 684 <WowheadLink kind="item" id={219305} icon="inv_misc_candlekobold_color1" urlExtra="bonus=10390:6652:10383:12376:3176:10255&class=13&ilvl=684&spec=1473">Carved Blazikon Wax</WowheadLink>. At 697 it's breaking even but well within margin of error.
+
+<div className="flex justify-center">
+    ![](/static/images/wow-rant/zap-cap-700.png)
+</div>
+
+I'm not expecting all trinkets to be equally valuable. Again, this season there's also competitive dungeon trinkets, in the context of raid trinkets.
+
+But I'm baffled why developers are ok with the trinkets they designed to not see any play. Sure, different teams are in charge of different things, e.g. a rewards team doesn't necessarily have a say re tuning but surely the goal of tuning should be to begin with that the majority of trinkets are _roughly_ equal and **not** that the majority of trinkets are so far behind that you'd never consider picking them beyond temporarily for itemlevel.
+
+### Embellishments
+
+Dratnos already brought these up so I don't wanna go too deep into details here, he's already formulated good examples of this that I can only repeat.
+
+Something that he has _not_ mentioned however is that Embellishments aren't evergreen even within the same expansion. Embellishments like <WowheadLink kind="spell" icon="inv_10_tailoring_embroiderythread_color4" id={457674}>Dawnthread</WowheadLink> and <WowheadLink kind="spell" icon="inv_10_tailoring_embroiderythread_color1" id={457666}>Duskthread</WowheadLink> lose value due to stat inflation over time. 
+
+If the goal is to always have people use two crafted items for embellishments, these need revisiting in some form. Make them grant a % of your current stat amount so they instead scale the opposite, or just tune them. At the time of writing, 11.2 PTR isn't out yet so this might of course be happening soon, here's to hoping.
+
+## Lack of Ongoing Tuning
+
+Here's the <WowheadLink kind="spell" id={199484} icon="ability_priest_psychiclink">Psychic Link</WowheadLink> tuning since 10.0.0: 
+
+- 10.0.0 - Mind Blast, Mind Flay and Mind Spike deal **15%**...
+- 10.0.5 - Mind Blast, Mind Flay, Mind Spike, Mindgames, Void Bolt and Void Torrent deal **15%**...
+- 10.1.0 - Your damaging single target spells deal **40%**...
+- 10.1.0 - Your direct damage spells inflict **30%**...
+- 10.1.5 - Your direct damage spells inflict **25%**...
+- 10.1.7 - Your direct damage spells inflict **15%**...
+- 10.2.5 - Your direct damage spells inflict **25%**...
+- 10.2.5 - Your direct damage spells inflict **30%**...
+- 11.0.2 - Your direct damage spells inflict **25%**...
+- 11.0.5 - Your direct damage spells inflict **30%**...
+- 11.1.5 - Your direct damage spells inflict **35%**...
+
+I'm not here to debate whether that specific ability nor whether the AoE of <WowheadSpecIcon spec="shadow-priest">Shadow Priest</WowheadSpecIcon>s in general needs this much attention.
+
+I do want to highlight that it's receiving constant small tuning changes to keep its AoE damage in line, the only patch it wasn't touched in was 10.2.7. I wish this kind of attention to more specs. And yes, I've chosen a problematic ability here. It getting tuned this frequent with literal back and forth between values should be testament of design problems. Take it as a metaphor for "please tune more often".
+
+And I'm even going further. Back in the day (ugh), before my return to WoW, I like many others played League of Legends. Even _now_ I remember League had bi-weekly tuning. WoW also has frequent tuning cycles early into a patch and then it just kinda fizzles out. More of it please.
+
+## Repeated Mistakes with Dungeon (Encounter) Design
+
+### Graveyards
+
+Every defeated encounter should trigger a respawn point unless it's a dungeon with wings like The Stonevault.
+
+These current season dungeon encounters do not trigger a graveyard:
+- The Rookery, second boss
+  - respawn point is below first boss
+- Priory of the Sacred Flame, first boss
+  - respawn point remains the dungeon entrance
+
+These **NOT** unlocking a graveyard are ok because they make use of wings:
+- Operation: Floodgate, first two bosses
+- Cinderbrew Meadery, first two bosses
+- Theater of Pain, any boss
+
+Similarily, last season, these do not trigger a graveyard:
+- The Dawnbreaker, second boss
+- City of Threads, neither second nor third boss
+  - extra painful because this was apparently done knowingly because there's transportation available. unfortunately however said transportation is a massive time loss
+- Necrotic Wake, third boss
+- The Stonevault, first boss
+
+### Encounter Design
+
+I'm firmly convinced no dungeon boss should take as long as or longer than raid bosses.
+
+#### History
+
+Remember when the <WowheadLink kind="npc" id={189729}>Primal Tsunami</WowheadLink>, last boss of Halls of Infusion, encounter was reworked between Dragonflight Season Two and Four?  
+
+In Season Two, roughly every minute the boss sent the group into gauntlets, then spawned four adds that would empower the boss the longer you need to deal with them, only to repeat the cycle.
+
+It was a common occurrence for the boss to take [6 minutes](https://www.warcraftlogs.com/reports/3aQdbkfJ9j84tBMp?fight=15&type=damage-done&pull=11) or longer in high keys, especially on <WowheadLink kind="affix" id={9} icon="achievement_boss_archaedas">Tyrannical</WowheadLink>. 
+
+For Season Four, this would only occur twice - at 70% and 30% health - and as a result, on a roughly comparable key level, the [encounter took less than 5 minutes](https://www.warcraftlogs.com/reports/49Gmh6kygpHcMzra?fight=1&type=damage-done&pull=12).
+
+Now ironically the same dungeon also had a very good example of lack of tuning paired with percentage-based phasing: the first boss <WowheadLink id={189719} kind="npc">Watcher Irideus</WowheadLink> shields himself once at 50% (effective) health and the following second phase is empowered. However, his health budget is so massive that the encounter went from sub 5 minutes to above, despite the comparable key level, so percentage-based phasing isn't a silver bullet.
+
+#### Problematic Encounters
+
+That said, the following encounters would've been significantly less problematic with percentage-based phasing:
+
+- <WowheadLink id={194907} kind="npc">Iridikron</WowheadLink>, last boss of Dawn of the Infinite: Galakrond's Fall
+- <WowheadLink id={162689} kind="npc">Surgeon Stitchflesh</WowheadLink>, second last boss of The Necrotic Wake
+- <WowheadLink id={162693} kind="npc">Nalthor the Rimebinder</WowheadLink>, last boss of The Necrotic Wake
+- <WowheadLink id={164567} kind="npc">Ingra Maloch</WowheadLink>, first boss of Mists of Tirna Scithe
+- <WowheadLink id={207207} kind="npc">Voidstone Monstrosity</WowheadLink>, last boss of The Rookery
+- <WowheadLink id={226398} kind="npc">Big M.O.M.M.A.</WowheadLink>, early boss of Operation: Floodgate
+
+#### Common Problems
+
+The common problem with these encounters are usually at least one of these, but often a combination of them:
+- immunity phases with adds that simply have too much health and thus cost lots of time and do lots of damage
+  - <WowheadLink id={162689} kind="npc">Surgeon Stitchflesh</WowheadLink> himself can only be damaged for ~30s every window
+    - his adds have 55% of his own health pool
+- near-immunity phases that are additionally punishing by adding party-wide damage
+  - <WowheadLink id={164567} kind="npc">Ingra Maloch</WowheadLink> via <WowheadLink kind="spell" id={323149} icon="spell_shadow_rune">Embrace Darkness</WowheadLink>
+  - <WowheadLink id={226398} kind="npc">Big M.O.M.M.A.</WowheadLink> via <WowheadLink kind="spell" id={469981} icon="spell_nature_lightningshield">Kill-o-Block Barrier</WowheadLink>
+- massive shields
+  - each of <WowheadLink id={194907} kind="npc">Iridikron</WowheadLink>s shields is an additional 13% boss health
+  - each of <WowheadLink id={207207} kind="npc">Voidstone Monstrosity</WowheadLink>s shields is an additional 40% boss health (this is factoring that you exclusively hit the bosses actual healthbar during the damage amp) 
+- frequent shields
+  - <WowheadLink id={162693} kind="npc">Nalthor the Rimebinder</WowheadLink> shields himself every 25s for 2.2% of his health, but you're commonly down a dps and the healer can hardly contribute damage due to the party-wide damage inflicted by the shield
+
+#### Healthy Time-Based Phasing Encounters
+
+Now you might say it's limiting design options if time-based phasing was generally avoided and it's obviously not entirely incorrect. For me this does beg the question however: why is it that some encounters received that kind of phasing out of the box?
+
+To name a few:
+- <WowheadLink id={164501} kind="npc">Mistcaller</WowheadLink>, second boss of Mists of Tirna Scithe, phases at 70/40/10% health
+  - boss immunity of variable length depending on how long the party takes to find and kill the right <WowheadLink id={165108} kind="npc">Illusionary Clone</WowheadLink>
+- <WowheadLink id={211087} kind="npc">Speaker Shadowcrown</WowheadLink>, first boss of The Dawnbreaker, phases at 50% health
+  - forced downtime of 15 seconds, once
+- <WowheadLink id={210271} kind="npc">Brewmaster Aldryr</WowheadLink>, first boss of Cinderbrew Meadery, phases at 70/40% health
+  - entirely player controlled downtime, usually around 15 seconds only per
+
+#### Possible Solutions
+
+Now revisiting the problematic encounters above, I would've loved to see these changes:
+
+- <WowheadLink id={194907} kind="npc">Iridikron</WowheadLink>: reduce boss health
+- <WowheadLink id={162689} kind="npc">Surgeon Stitchflesh</WowheadLink>: reduce add health
+- <WowheadLink id={162693} kind="npc">Nalthor the Rimebinder</WowheadLink>: remove <WowheadLink id={321894} kind="spell" icon="spell_necro_deathlyecho">Dark Exile</WowheadLink>, maybe increase the shield to compensate slightly and find a different reason for <WowheadLink id={328212} kind="spell" icon="spell_hunter_icetrap">Razorshard Ice</WowheadLink> to spawn, like a wandering blizzard on the platform 
+- <WowheadLink id={164567} kind="npc">Ingra Maloch</WowheadLink>: reduce boss health
+- <WowheadLink id={207207} kind="npc">Voidstone Monstrosity</WowheadLink>: inverse the encounter - do damage until 70%/40%, then you need to break the shield in time while repeatly preventing the adds from spawning
+- <WowheadLink id={226398} kind="npc">Big M.O.M.M.A.</WowheadLink>: reduce add health
+
+## Lack of Upholding Competitive Integrity
+
+### Tempered Hero
+
+Last season's exploits were plentiful. [Wowhead has a good writeup about the various bugs/exploits with varying impact](https://www.wowhead.com/news/raider-io-interview-preview-with-morgan-day-and-katrina-yepiz-non-group-buffs-in-372608) we saw last season, so I'll assume you're familiar with that.
+
+Unfortunately, it seems this had zero repercussions. Early on, briefly after the 11.0.5 patch, some of the leaderboard runs were rolled back but not only did it not affect all, to my knowledge not a single player was punished. Ultimately, since it was still early into the season, this was minor in the bigger picture. There was worse to come.
+
+Later on, people were shamelessly abusing a variety of bugs on stream and faced no consequences at all:
+- Follower Dungeons/Story Mode raid buffs were abused
+- really niche bugs like mindcontrolling Legion NPCs and bringing their buff into M+ were abused
+- world event buffs were brought into M+ and raid
+- additional niche shenanigans with <WowheadLink id={111673} kind="spell" icon="inv_misc_bone_skull_01">Control Undead</WowheadLink> specifically in Necrotic Wake
+
+What came from it? Absolutely nothing. It's also extra disappointing because [NetEase took the opposite approach and removed the title from 9000 players, issueing harsher penalties to some.](https://www.wowhead.com/news/netease-removes-mythic-titles-from-8-992-chinese-players-375964).
+
+And if that wasn't even enough, here's the cherry on the pie.
+
+At least on EU, people got awarded the <WowheadLink kind="achievement" id={20589} icon="achievement_challengemode_platinum">Tempered Hero</WowheadLink> achievement for score earned _including the Post-Season/off-season week_ where 11.1 was already deployed, which is commonly a time where keys become 1-2 key levels easier because of the changes.
+
+This wasn't even recognized as mistake. No word on it. I agree with Jordan that it doesn't impact many people on both ends in the end, but it's still tainting everything.
+
+<div className="flex justify-center">
+    ![](/static/images/wow-rant/tempered-hero.png)
+</div>
+
+If you want people to stop abusing exploits, there need to be consequences. It doesn't need to be as harsh like NetEase putting up the character names of those that exploited. Hand out some 2 week bans, strip away seasonal rewards. Give people a reason to not exploit, otherwise "exploit early, exploit often" becomes more than a meme.
+
+### Liberation of Undermine Hall of Fame
+
+Another hot topic left and right for a while. To recap: due to single-digit lockout sells and concerns from the community, Blizzard decided to require the last three bosses for the <WowheadLink id={41296} kind="achievement" icon="inv_111_raid_achievement_chromekinggallywix">Hall of Fame: Chrome King Gallywix</WowheadLink> achievement as guilds started buying lockouts for Mythic Gallywix as the encounter was deemed considerably easier than Mug'Zee and One-Armed Bandit.
+
+Technically a good change. Unfortunately however, [this broke their own Hall of Fame tooling](https://www.wowhead.com/news/recent-guilds-defeating-gallywix-not-being-added-to-the-hall-of-fame-376438).
+
+So badly, that guilds that already had earned the relevant achievements [had to rekill the other bosses to earn the HoF achievement](https://www.wowhead.com/news/blizzard-update-guilds-who-didnt-get-hall-of-fame-must-kill-one-armed-bandit-and-376491). And we all know early reclears aren't all that nice and clean as on farm later on.
+
+It gets better (or worse, depending on how much you're munching popcorn at this point): even after rekilling, [guilds didn't necessarily get the achievement](https://www.wowhead.com/news/over-200-guilds-now-mythic-8-8-but-hall-of-fame-still-open-due-to-hotfix-issues-376581), stuck in an entirely intransparent state.
+
+... and better. It appears, Blizzard eventually recognized some of this mess and [started awarding eligible guilds the achievement manually](https://www.wowhead.com/news/hall-of-fame-could-close-tonight-achievement-being-awarded-to-eligible-guilds-376590) and were so careless to award the wrong guild the achievement, although this got fixed soon after.
+
+To round it off, despite the Hall of Fame being already filled, it was then extended by another week. This is a move I can understand because some guilds were likely pushing for HoF during the reset where it "suddenly" filled. Of course it should've been visibly filled before. Still only fair to not rugpull them.
+
+Blizzard making these changes is good. Blizzard salvaging this by manually correcting this is good. Making these changes mid-season: not so good.
+
+## Lack of Communication
+
+### Dinars
+
+Nope, this won't be another rant about inability to buy the best items available without having stepped into Mythic Raid.
+
+#### Communication
+
+Again, Wowhead [has a lengthy piece about this already](https://www.wowhead.com/news/puzzling-cartel-chips-bring-a-real-bad-luck-protection-system-into-wow-lets-376580) which I can only recommend reading.
+
+What becomes evident from this 4-5 month ordeal is that there were a lot of internal uncertainties about how this should actually play out. From the very beginning it was tainted due to the in retrospect needless comparison to the by now only faintly similar systems we had in Shadowlands and Dragonflight Season Four.
+
+What surprised me most about this is that they should've known better and not announce it this early. Hell, it dwelled on PTR without any iteration for around 8 weeks before getting removed and only vaguely hinted on to be added at some later point in some different fashion.
+
+It feels like they tried to force this feature into this patch despite not having laid out, mostly finalized plans, just becasue it fits the patch thematic.
+
+#### Available Items
+
+Multiple annoyances here.
+
+That the <WowheadLink id={228843} icon="inv_11_0_ventureco_ring01_color3" kind="item">Miniature Roulette Wheel</WowheadLink> isn't available, I'm ok with as it would need special treatment. Reloe had a hilarious idea about this that I wouldn't object to, although in a probably less aggressive fashion:
+
+<div className="flex justify-center">
+    ![](/static/images/wow-rant/bandit-ring.png)
+</div>
+
+That no jewelry beyond very rare items is available feels very arbitrary however. Why are all weapons included, even if they don't have a special effect? Yes, weapons are a larger source of power but why draw a line in general?
+
+And this brings me to the massive, massive oversight of not having added Dungeon trinkets out of the box. Oh lord, what were you thinking?
+
+And here too of course. Why aren't all dungeon items available? Especially the cantrip items. Why do I continue to have to rely on Great Vault luck to replace a crafted ring with that one specific ring I need out of Theater of Pain because all raid rings are downgrades, unless it magically happens to be the perfect <WowheadLink id={228843} icon="inv_11_0_ventureco_ring01_color3" kind="item" urlExtra="bonus=1533:12376:11964:8781&crafted-stats=36:32&ilvl=684">Miniature Roulette Wheel</WowheadLink>?
+
+Now you've replaced chase items from raid that at least had a change to drop on a weekly basis with chase items from the Great Vault because Myth track dungeon drops aren't a thing.
+
+#### Catchup
+
+Not having catchup for these is a decision. I'm not affected by this and I can also see the rationale of "if you haven't played that toon in a while, you haven't accumulated bad luck yet!" but come on. We're half way through the season, already had an artificial item level increase with the Turbo Boost, Crests are unlocked, Valorstones are transferrable. Why of all things is _this_ set up to be punishing for alts?
+
+### AddOn Restrictions
+
+Ironically, literally while writing this, [Blizzard forwarded a message to the addon developer community](https://gist.github.com/Stanzilla/a146225083f244d5e070d10ca83f4861) with _some_ word. While it's great that there's this kind of exchange, unfortunately there was very little actual info in there.
+
+My two cents on this: having the initial message targeted at press and by their own words, the general player base, is a mistake, especially with no follow-up to "the rest" in a timely manner. It's been weeks! All you've done with this is to offend basically the entire competitive player base in addition to the addon community.
+
+Still, I'm personally optimistic, in contrast to the overwhelming majority you read about on Reddit, Twitter, the Discords, etc.
+
+As mentioned, I'm also maintaining a bunch of things that Blizzard probably doesn't like me doing, such as dynamic nameplate scaling based on whether you're fixated by an add or not, or [an aura that clearly lights up when you should press](https://wago.io/2fedD8XHM) <WowheadLink kind="spell" id={443328} icon="inv_ability_flameshaperevoker_engulf">Engulf</WowheadLink>. I'd prefer if I didn't have to maintain these. 
+
+I'm personally less worried about which features Blizzard is intending to ship out of the box (damage meters, boss mods, nameplate features). I'm more worried about the features Blizzard is _not_ intending to ship and we learnt nothing new about this today.
+
+An early look into what the team cooking could be eye-opening, along with the implications around dungeon/encounter design. Are we heading into a transition phase where dungeon trash has very few mechanics because there's no ability to scale or color nameplates? This implies we'd first have an era of mass pulling as much as possible because it's possible, only then to hear from developers that they're unhappy with large pulls so trash gets more mechanics again? Will this lead back to a stop meta - except this time it's harder because we cannot track party cooldowns? Do we then end up in an arms race of third party tools trying to solve what addons did before?
+
+I'm not expecting answers to all of this, but these are _obvious_ concerns, so obvious that Blizzard also must've thought about this, but neither messaging so far implied acknowledgement of this. It'd go a long way.
+
+#### Cooldown Manager
+
+The state the cooldown manager got released in is concerning in relation to the aforementioned addon restrictions.
+
+We're currently living in a WeakAuras world where everything is possible: want the Lich King dancing while Lust is running? Sure. Want a bunny hopping across your screen for the duration of Arcane Surge? No problem.
+
+<div className="flex justify-center">
+    ![](/static/images/wow-rant/aryella-catge.png)
+</div>
+
+Naturally the Cooldown Manager doesn't need to do that. Neither is it intended as a general purpose tool, nor are customizations of that kind reasonable to expect.
+
+The obvious assumption in context to above is that the intention of the Cooldown Manager is to eventually replace spec weakaura packs. We don't know of course. But if that's the case, then we have a long way to go and this is where I start becoming a pessimist.
+
+It was introduced as a [`first version`](https://www.wowhead.com/blue-tracker/topic/eu/feedback-cooldown-manager-in-11-1-5-564674). It was also mentioned that there's `plans to allow you to hide or rearrange elements [...] in a future patch` but this remains to be seen.
+
+It is not without irony that only briefly after the 11.1.5 release, [an addon was published to add some options](https://www.wowhead.com/news/customize-blizzards-cooldown-manager-with-the-cooldown-manager-customization-376500) to the Cooldown Manager.
+
+This is also a concern voiced on reddit: addon developers aren't bound to whatever design/planning/iteration process Blizzard has internally. If the goal is to truly replace some addons with builtin solutions, then the pipeline needs to be significantly more flexible and speed up. 
+
+<div className="flex justify-center">
+    ![](/static/images/wow-rant/reddit-cd-manager.png)
+</div>
+
+I'm aware that there's new backend code for the Cooldown Manager but in the current form, it's a low effort downgrade to any spec WeakAura pack. Hell, I could've written the frontend code for the Cooldown Manager myself in maybe a week or two, with the same lack of flexibility. And then added more features the week after. And the week after. 
+
+Instead we've seen no progress on this front at all.
+
+## Lack of Interface Changes to Old Elements
+
+This is something that might finally be happening with general updates to the UI due to addon restrictions. It's long overdue of course. But some things even addons can't properly remedy. My biggest pet peeves here are:
+
+### Friends Frame
+
+It's 2025 and it's still tiny. I need an addon to have groups. I cannot remember all the Battle.net names or names of 123789 alts people have. Without notes, I'd literally ask every 2nd person whispering me who the heck they are.
+
+Let me assign groups. Groups need to be collapsible. Add a search so I can find people easily. [FriendGroups](https://www.curseforge.com/wow/addons/friend-groups-continued) does most of this well.
+
+Let me drag the frame and support an expanded mode where its more than a fraction of my 1440p screen.
+
+<div className="flex justify-center">
+    ![](/static/images/wow-rant/ui-blurred-friends-frame.jpg)
+</div>
+
+### Group Finder
+
+Same thing here: it's 2025 and it's still tiny. Some features were already adopted from [PremadeGroupFinder](https://www.curseforge.com/wow/addons/premade-group-finder) but quite frankly, it's not enough. UX of this thing is still terrible, or in more fair words, dated.
+
+Let me select multiple dungeons. Let me set thresholds for itemlevel and/or dungeon score (not that I personally care about these but just mentioning features of the addon here). Let me set a note that's automatically used when applying to groups with a single click. Sizing. Draggability.
+
+## The End
+
+Yeah. This turned out to be a bit longer than anticipated. If you made it this far, my condolences, this yap was badly needed.
+
+<div className="flex justify-center">
+    ![](/static/images/wow-rant/iaint.jpg)
+</div>
+

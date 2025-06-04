@@ -17,6 +17,7 @@ type Npc = {
 type Item = {
   kind: 'item';
   icon: string;
+  urlExtra?: string;
 };
 
 export type WowheadLinkProps = {
@@ -26,9 +27,11 @@ export type WowheadLinkProps = {
 } & (Achievement | Spell | Npc | Item);
 
 export function WowheadLink({ id, children, kind, branch, ...props }: WowheadLinkProps) {
+  const urlExtra = 'urlExtra' in props ? `?${props.urlExtra}` : '';
+
   return (
     <CustomLink
-      href={`https://www.wowhead.com/${branch ? `${branch}/` : ''}${kind}=${id}`}
+      href={`https://www.wowhead.com/${branch ? `${branch}/` : ''}${kind}=${id}${`${urlExtra}`}`}
       className="inline-flex items-baseline gap-2"
     >
       {'icon' in props ? (

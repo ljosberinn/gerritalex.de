@@ -10,6 +10,7 @@ import { WowheadIcon } from './WowheadIcon';
 import { Auras } from './seasonal-content/Auras';
 import { AoeSpells } from './seasonal-content/AoeSpells';
 import { WowheadSpecIcon } from './WowheadSpecIcon';
+import { WowheadClassIcon } from './WowheadClassIcon';
 import * as WowheadLinks from './WowheadLinks';
 
 export const components: MDXComponents = {
@@ -25,6 +26,7 @@ export const components: MDXComponents = {
   Auras,
   AoeSpells,
   WowheadSpecIcon,
+  WowheadClassIcon,
   ...Object.fromEntries(
     Object.entries(WowheadLinks).map(([key, Component]) => {
       return [
