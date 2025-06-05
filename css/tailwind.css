@@ -76,3 +76,7 @@ input:-webkit-autofill:focus {
   display: inline-block;
   vertical-align: middle;
 }
+
+h3:target {
+  scroll-margin-top: 40px;
+}
