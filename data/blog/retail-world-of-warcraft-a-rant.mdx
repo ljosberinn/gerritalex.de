@@ -290,7 +290,7 @@ That said, the following encounters would've been significantly less problematic
 - <WowheadLink id={207207} kind="npc">Voidstone Monstrosity</WowheadLink>, last boss of The Rookery
 - <WowheadLink id={226398} kind="npc">Big M.O.M.M.A.</WowheadLink>, early boss of Operation: Floodgate
 
-Honorary mention of <WowheadLink id={129227} kind="npc">Azerokk</WowheadLink>, second boss of The MOTHERLODE!!. Commonly lusted and still takes about 4 minutes to kill.
+Honorary mention of <WowheadLink id={129227} kind="npc">Azerokk</WowheadLink>, second boss of The MOTHERLODE!!. Commonly lusted and still takes about 4 minutes to kill, only not problematic because the adds have no unfair amount of health / the ticking damage isn't excessive etc.
 
 #### Common Problems
 
@@ -327,7 +327,7 @@ Now revisiting the problematic encounters above, I would've loved to see these c
 - <WowheadLink id={162689} kind="npc">Surgeon Stitchflesh</WowheadLink>: reduce add health
 - <WowheadLink id={162693} kind="npc">Nalthor the Rimebinder</WowheadLink>: remove <WowheadLink id={321894} kind="spell" icon="spell_necro_deathlyecho">Dark Exile</WowheadLink>, maybe increase the shield to compensate slightly and find a different reason for <WowheadLink id={328212} kind="spell" icon="spell_hunter_icetrap">Razorshard Ice</WowheadLink> to spawn, like a wandering blizzard on the platform 
 - <WowheadLink id={164567} kind="npc">Ingra Maloch</WowheadLink>: reduce boss health
-- <WowheadLink id={207207} kind="npc">Voidstone Monstrosity</WowheadLink>: inverse the encounter - do damage until 70%/40%, then you need to break the shield in time while repeatly preventing the adds from spawning
+- <WowheadLink id={207207} kind="npc">Voidstone Monstrosity</WowheadLink>: reduce value on shield
 - <WowheadLink id={226398} kind="npc">Big M.O.M.M.A.</WowheadLink>: reduce add health
 
 ## Lack of Upholding Competitive Integrity
@@ -402,18 +402,17 @@ And there's the even more shameless ones:
 
 This is of course against the Terms of Service:
 
-> Individuals (...) selling boost or assistance in (...) dungeon (...) activities for gold is allowed but can only be advertised in-game through the Trade Services chat channel. This includes any and all references to "tips", "tipping", or other synonyms of these words. (...) This means there should be no cross-realm advertising (...). 
-> - [Battle.net Support Page](https://eu.support.blizzard.com/en/article/187406).
+> [Individuals (...) selling boost or assistance in (...) dungeon (...) activities for gold is allowed but can only be advertised in-game through the Trade Services chat channel. This includes any and all references to "tips", "tipping", or other synonyms of these words. (...) This means there should be no cross-realm advertising (...).](https://eu.support.blizzard.com/en/article/187406)
 
 While there's been rumours of people getting chat muted, I know multiple players that are actively participating in this and have not been muted despite definitely getting reported (you know who you are).
 
 There's no easy solution here beyond more aggressively muting people. Resilient Keys in general are a separate topic, one that I'm in general very happy with, but I'd like to repeat a couple community ideas here regardless:
 
-1. resilient keys should be the key level you've completed +1
+- resilient keys should be the key level you've completed +1
   - this entirely removes "homework keys" which currently are still a thing, albeit less than before
-2. resilient keys become only resileint if everyone in the party has the same resilient key level
+- resilient keys only are resilient when starting the key if everyone in the party has the same resilient key level
   - clearly aimed at preventing boosting/selling. not opposed to this, but a bit one sided
-3. resilient keys have charges instead of being permanently resilient
+- resilient keys have charges instead of being permanently resilient
   - similarily aimed at boosting/selling and in my opinion the better solution of these two
 
 A combination of option 1 and 3 would be something I'd be very interested in exploring.
@@ -444,7 +443,7 @@ That the <WowheadLink id={228843} icon="inv_11_0_ventureco_ring01_color3" kind="
     ![](/static/images/wow-rant/bandit-ring.png)
 </div>
 
-That no jewelry beyond very rare items is available feels very arbitrary however. Why are all weapons included, even if they don't have a special effect? Yes, weapons are a larger source of power but why draw a line in general?
+That no jewelry beyond very rare items is available feels very arbitrary however. Why are all raid weapons included, even if they don't have a special effect? Yes, weapons are a larger source of power but why draw a line in general?
 
 And this brings me to the massive, massive oversight of not having added Dungeon trinkets out of the box. Oh lord, what were you thinking?
 
@@ -476,7 +475,7 @@ I'm not expecting answers to all of this, but these are _obvious_ concerns, so o
 
 The state the cooldown manager got released in is concerning in relation to the aforementioned addon restrictions.
 
-We're currently living in a WeakAuras world where everything is possible: want these [40s of Le SSerafim - Crazy](https://youtu.be/n6B5gQXlB-0?si=0CspolaLDyxAwhYT&t=59) playing during Lust? Sure. Want a cat hopping across your screen for the duration of Arcane Surge? No problem.
+We're currently living in a WeakAuras world where everything is possible: want these [40s of Le SSerafim - Crazy](https://youtu.be/n6B5gQXlB-0?si=0CspolaLDyxAwhYT&t=59) playing during Lust? Sure. Want a cat jumping across your screen for the duration of <WowheadLink id={365350} kind="spell" icon="ability_mage_arcanesurge">Arcane Surge</WowheadLink>? No problem.
 
 <div className="flex justify-center">
     ![](/static/images/wow-rant/aryella-catge.png)
@@ -508,7 +507,12 @@ This is something that might finally be happening with general updates to the UI
 
 It's 2025 and it's still tiny. I need an addon to have groups. I cannot remember all the Battle.net names or names of 123789 alts people have. Without notes, I'd literally ask every 2nd person whispering me who the heck they are.
 
-Let me assign groups. Groups need to be collapsible. Let me nickname people. Add a search so I can find people easily. [FriendGroups](https://www.curseforge.com/wow/addons/friend-groups-continued) does most of this well.
+Let me assign groups. Groups need to be collapsible. Add a search so I can find people easily. [FriendGroups](https://www.curseforge.com/wow/addons/friend-groups-continued) does most of this well.
+
+Let me nickname people. This should get propagated through all levels:
+- `/w <nickname>` finds the player in the background
+- unit frames use the nickname across all characters the player might play
+- `/cast [@<nickname, help,nodead] [] Rescue` finds the player
 
 Let me drag the frame and support an expanded mode where its more than a fraction of my 1440p screen.
 
