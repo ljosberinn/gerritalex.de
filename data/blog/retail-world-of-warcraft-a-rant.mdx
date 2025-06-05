@@ -60,7 +60,7 @@ Known since the talent was implemented during TWW Beta.
 
 ### Consume Flame
 
-<WowheadLink id={444088} kind="spell" icon="inv_shadowflames_wave">Consume Flame</WowheadLink> ignores damage taken modifiers.
+<WowheadLink id={444088} kind="spell" icon="inv_shadowflames_wave" urlExtra="spec=1467">Consume Flame</WowheadLink> ignores damage taken modifiers.
 
 This is both good and bad:
 - it ignores damage reductions, handy in aoe situations like in early Priory of the Sacred Flame against <WowheadLink id={206705} kind="npc">Arathi Footmen</WowheadLink>'s <WowheadLink id={427342} kind="spell" icon="ability_defend">Defend</WowheadLink>
@@ -125,23 +125,35 @@ Plenty of examples here. I'm sure you know, here's one I found without digging t
 ### Partial/Missing Tuning
 
 Additionally, hotfixes promised such as e.g. class/spec tuning doesn't get deployed in the same quantity as it was announced. A couple examples:
-- simple numeric mistakes are being made, e.g. recently <WowheadSpecIcon spec="subtlety-rogue">Subtlety Rogue</WowheadSpecIcon> was buffed by 10% in weekly class tuning but it should've been only 5%.
+- simple numeric mistakes are being made, e.g. recently <WowheadSpecIcon spec="subtlety-rogue">Subtlety</WowheadSpecIcon> was buffed by 10% in weekly class tuning but it should've been only 5%.
 - in the same set of changes, <WowheadSpecIcon spec="diabolist">Diabolist</WowheadSpecIcon> was supposed to receive buffs to 5 abilities. 4 are missing, one was deployed with a lower value than announced.
 - in the previous class tuning, [feral buffs were entirely missing](https://www.wowhead.com/news/feral-druid-3-buff-no-longer-missing-from-most-recent-class-tuning-376859?utm_source=discord-webhook)
-- in March, <WowheadSpecIcon spec="mistweaver-monk">Mistweaver Monk</WowheadSpecIcon> received only half of its tuning, resulting in the spec being extremely strong until the accompanying & promised 25% damage nerf was also deployed
+- in March, <WowheadSpecIcon spec="mistweaver-monk">Mistweaver</WowheadSpecIcon> received only half of its tuning, resulting in the spec being extremely strong until the accompanying & promised 25% damage nerf was also deployed
 - in the same set of tuning, none of the announced <WowheadClassIcon className="hunter">Hunter</WowheadClassIcon> buffs went live 
 
 ## Talent Tuning
 
 This list would be long if I could be bothered and you can already guess what this is about. There's so many talents across all the trees that do little to nothing, are dead on arrival and/or have never seen tuning.
 
-Back in early Dragonflight, my go to examples here was the <WowheadSpecIcon spec="vengeance-demon-hunter">Vengeance Demon Hunter</WowheadSpecIcon> <WowheadLink kind="spell" id={263648} icon="inv_soulbarrier">Soul Barrier</WowheadLink> / <WowheadLink kind="spell" id={320341} icon="spell_shadow_shadesofdarkness">Bulk Extraction</WowheadLink> choice node, but that's over 2 years ago and I've given up on complaining about it. Both still haven't seen any kind of numerical tuning since the introduction of the talent trees with 10.0. At least the spec is doing fine right?
+### Lack of Iteration
 
-People are probably gonna lynch me for mentioning the <WowheadSpecIcon spec="augmentation-evoker">Augmentation Evoker</WowheadSpecIcon> talents <WowheadLink kind="spell" id={410685} icon="inv_10_herb_seed_magiccolor5">Symbiotic Bloom</WowheadLink> and the <WowheadLink kind="spell" id={410687} icon="ability_evoker_reversion_green">Prolong Life</WowheadLink> / <WowheadLink kind="spell" id={414969} icon="ability_evoker_masterylifebinder">Dream of Spring</WowheadLink> choice node below it, both not only extremely bad, they'd also cost 3 talent points in total, but even <WowheadSpecIcon spec="augmentation-evoker">Augmentation Evoker</WowheadSpecIcon>s deserve good talents.
+Back in early Dragonflight, my go to examples here was the <WowheadSpecIcon spec="vengeance-demon-hunter">Vengeance</WowheadSpecIcon> <WowheadLink kind="spell" id={263648} icon="inv_soulbarrier">Soul Barrier</WowheadLink> / <WowheadLink kind="spell" id={320341} icon="spell_shadow_shadesofdarkness">Bulk Extraction</WowheadLink> choice node, but that's over 2 years ago and I've given up on complaining about it. Both still haven't seen any kind of numerical tuning since the introduction of the talent trees with 10.0. At least the spec is doing fine right?
 
-And that's already all the energy I have for this topic. What's the point of these talents? Nobody knows.
+### Similar Talents Between Specs Have Major Tuning Differences
+
+<WowheadSpecIcon spec="destruction-warlock">Destruction</WowheadSpecIcon> has this <WowheadLink kind="spell" id={387103} icon="spell_fire_fire">Ruin</WowheadLink> talent, increasing critical damage done by **5%**. Notably, <WowheadSpecIcon spec="destruction-warlock">Destruction</WowheadSpecIcon> has no other talent blanket increasing crit damage done, there's only <WowheadLink id={440045} icon="70_inscription_vantus_rune_tomb" kind="spell">Mark of Peroth'arn</WowheadLink> increasing crit damage of <WowheadLink id={445468} kind="spell" icon="inv_ability_hellcallerwarlock_wither">Wither</WowheadLink> specifically.
+
+Now <WowheadSpecIcon spec="devastation-evoker">Devastation</WowheadSpecIcon> enters the chat: <WowheadLink kind="spell" id={370845} icon="spell_shaman_shockinglava">Spellweaver's Dominance</WowheadLink> increases all critical damage by **30%**.
+
+Yes, specs can and should have different fantasies. Yes, <WowheadLink kind="spell" id={387103} icon="spell_fire_fire">Ruin</WowheadLink> probably shouldn't have 30% either. But if both of these specs have a similar relation to crits, then maybe their crit damage talents should be tuned similarily too.
+
+### Not All Talents Are Made Equal
+
+People are probably gonna lynch me for advocating for improvements to <WowheadSpecIcon spec="augmentation-evoker">Augmentation</WowheadSpecIcon> talents, notably <WowheadLink kind="spell" id={410685} icon="inv_10_herb_seed_magiccolor5">Symbiotic Bloom</WowheadLink> and the <WowheadLink kind="spell" id={410687} icon="ability_evoker_reversion_green">Prolong Life</WowheadLink> / <WowheadLink kind="spell" id={414969} icon="ability_evoker_masterylifebinder">Dream of Spring</WowheadLink> choice node below it, both not only extremely bad, they'd also cost 3 talent points in total, but even <WowheadSpecIcon spec="augmentation-evoker">Augmentation Evoker</WowheadSpecIcon>s deserve good talents.
 
 Blizzard has the data. Blizzard knows which talents are never ever taken. Tune them, replace them, or prune them. Not like anyone would miss them currently anyway!
+
+And that's already all the energy I have for this topic. What's the point of these talents? Nobody knows.
 
 ## Item Tuning
 
@@ -203,11 +215,23 @@ Here's the <WowheadLink kind="spell" id={199484} icon="ability_priest_psychiclin
 - 11.0.5 - Your direct damage spells inflict **30%**...
 - 11.1.5 - Your direct damage spells inflict **35%**...
 
-I'm not here to debate whether that specific ability nor whether the AoE of <WowheadSpecIcon spec="shadow-priest">Shadow Priest</WowheadSpecIcon>s in general needs this much attention.
+I'm not here to debate whether that specific ability nor whether the AoE of <WowheadSpecIcon spec="shadow-priest">Shadow</WowheadSpecIcon>s in general needs this much attention.
 
 I do want to highlight that it's receiving constant small tuning changes to keep its AoE damage in line, the only patch it wasn't touched in was 10.2.7. I wish this kind of attention to more specs. And yes, I've chosen a problematic ability here. It getting tuned this frequent with literal back and forth between values should be testament of design problems. Take it as a metaphor for "please tune more often".
 
 And I'm even going further. Back in the day (ugh), before my return to WoW, I like many others played League of Legends. Even _now_ I remember League had bi-weekly tuning. WoW also has frequent tuning cycles early into a patch and then it just kinda fizzles out. More of it please.
+
+### The Other Side
+
+Up until recently, it was possible to pre-cast <WowheadLink kind="spell" icon="spell_shadow_summoninfernal" id={1122}>Summon Infernal</WowheadLink> during the countdown before starting a key while talented into <WowheadLink kind="spell" icon="inv_infernalmount" id={417234}>Crashing Chaos</WowheadLink> to receive its buff and then change talents. You'd begin the key with a refunded <WowheadLink kind="spell" icon="spell_shadow_summoninfernal" id={1122}>Summon Infernal</WowheadLink> cooldown, but the <WowheadLink kind="spell" icon="inv_infernalmount" id={417234}>Crashing Chaos</WowheadLink> buff remained, effectively granting you an extra talent for the first pull.
+
+Degenerate gameplay, as Ion would say, and he'd be right.
+
+Yet... <WowheadClassIcon>Shaman</WowheadClassIcon>s continue to be able to pre-stack <WowheadLink id={454015} kind="spell" icon="inv_ability_stormcallershaman_tempest">Tempest</WowheadLink>s.
+
+Now these things aren't perfectly comparable, as you'd naturally pre-stack <WowheadLink id={454015} kind="spell" icon="inv_ability_stormcallershaman_tempest">Tempest</WowheadLink>s at the end of a pull in preparation for the next, you don't need to change talents, you don't effectively gain a point for a pull etc., so allowing this is technically just bringing the specs throughput up to the level of an average pull. I'm perfectly ok with this.
+
+So why is <WowheadLink id={387156} kind="spell" icon="ability_mage_worldinflamesgreen">Ritual of Ruin</WowheadLink> (or rather, its buff <WowheadLink id={387158} kind="spell" icon="ability_mage_worldinflamesgreen">Impending Ruin</WowheadLink>) getting removed when a key starts then? It's a buff with permanent uptime in a key unless there's extended downtime.
 
 ## Repeated Dungeon Design Problems
 
@@ -259,6 +283,8 @@ That said, the following encounters would've been significantly less problematic
 - <WowheadLink id={164567} kind="npc">Ingra Maloch</WowheadLink>, first boss of Mists of Tirna Scithe
 - <WowheadLink id={207207} kind="npc">Voidstone Monstrosity</WowheadLink>, last boss of The Rookery
 - <WowheadLink id={226398} kind="npc">Big M.O.M.M.A.</WowheadLink>, early boss of Operation: Floodgate
+
+Honorary mention of <WowheadLink id={129227} kind="npc">Azerokk</WowheadLink>, second boss of The MOTHERLODE!!. Commonly lusted and still commonly takes about 4 minutes to kill.
 
 #### Common Problems
 
@@ -351,6 +377,40 @@ Yeah...
 If you want people to stop abusing exploits, there need to be consequences. It doesn't need to be as harsh like NetEase putting up the character names of those that exploited. Hand out some temporary bans, strip away seasonal rewards.
 
 Give people a reason to not exploit, otherwise "exploit early, exploit often" becomes more than a meme.
+
+## Tips Welcome / Reslient Keys
+
+An expected side effect of <WowheadLink id={1220643} kind="spell" icon="inv_relics_hourglass">Resilient Keystones</WowheadLink>. People put up their resilient keys and ask for tips in the group finder. All you need to do is search for "tip" in the tool and you'll find a couple.
+
+Some are also trying to circumvent making it too obvious and use a description like "note why you and not others" or "notes welcome".
+
+<div className="flex justify-center">
+    ![](/static/images/wow-rant/notes-2.jpg)
+</div>
+
+And there's the even more shameless ones:
+
+<div className="flex justify-center">
+    ![](/static/images/wow-rant/notes-1.png)
+</div>
+
+This is of course against the Terms of Service:
+
+> Individuals (...) selling boost or assistance in (...) dungeon (...) activities for gold is allowed but can only be advertised in-game through the Trade Services chat channel. This includes any and all references to "tips", "tipping", or other synonyms of these words. (...) This means there should be no cross-realm advertising (...). 
+> - [Battle.net Support Page](https://eu.support.blizzard.com/en/article/187406).
+
+While there's been rumours of people getting chat muted, I know multiple players that are actively participating in this and have not been muted despite definitely getting reported (you know who you are).
+
+There's no easy solution here beyond more aggressively muting people. Resilient Keys in general are a separate topic, one that I'm in general very happy with, but I'd like to repeat a couple community ideas here regardless:
+
+1. resilient keys should be the key level you've completed +1
+  - this entirely removes "homework keys" which currently are still a thing, albeit less than before
+2. resilient keys become only resileint if everyone in the party has the same resilient key level
+  - clearly aimed at preventing boosting/selling. not opposed to this, but a bit one sided
+3. resilient keys have charges instead of being permanently resilient
+  - similarily aimed at boosting/selling and in my opinion the better solution of these two
+
+A combination of option 1 and 3 would be something I'd be very interested in exploring.
 
 ## Lack of Communication
 
