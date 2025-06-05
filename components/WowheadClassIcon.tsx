@@ -39,27 +39,34 @@ export type WowheadClassIconProps = {
 export function WowheadClassIcon({ children }: WowheadClassIconProps) {
   const icon = classes[children];
   const color = classColors[children];
+  const renderedIcon = (
+    <Image
+      src={
+        icon.includes('https') ? icon : `https://wow.zamimg.com/images/wow/icons/medium/${icon}.jpg`
+      }
+      alt=""
+      width="24"
+      height="24"
+      className="mt-0 mb-0 self-center"
+    />
+  );
 
   return (
-    <span className="inline-flex items-baseline gap-2">
-      <Image
-        src={
-          icon.includes('https')
-            ? icon
-            : `https://wow.zamimg.com/images/wow/icons/medium/${icon}.jpg`
-        }
-        alt=""
-        width="24"
-        height="24"
-        className="mt-0 mb-0 self-center"
-      />
+    <>
       <span
+        className="inline-flex items-baseline gap-2 px-1 dark:hidden"
         style={{
-          color,
+          backgroundColor: `${color}75`,
         }}
       >
+        {renderedIcon}
         {children}
       </span>
-    </span>
+
+      <span className="hidden items-baseline gap-2 dark:inline-flex" style={{ color }}>
+        {renderedIcon}
+        {children}
+      </span>
+    </>
   );
 }

@@ -40,7 +40,7 @@ Did you know there's a <WowheadClassIcon>Warlock</WowheadClassIcon> class tree t
 
 ### Dimension Ripper
 
-Did you know the <WowheadSpecIcon spec="destruction-warlock">Destruction</WowheadSpecIcon> talent <WowheadLink id={457025} kind="spell" icon="inv_artifact_dimensionalrift">Dimension Ripper</WowheadLink> doesn't actually have a 5% chance, but instead 2.5%? Could of course be a tooltip bug only, but 2.5% would not only be a very underwhelming near-capstone talent, but also a surprising number in general.
+Did you know the <WowheadSpecIcon spec="destruction-warlock">Destruction</WowheadSpecIcon> talent <WowheadLink id={457025} kind="spell" icon="inv_artifact_dimensionalrift">Dimension Ripper</WowheadLink> doesn't actually have a 5% chance, but instead somehow 2.25%? Could of course be a tooltip bug only, but 2.25% would not only be a very underwhelming near-capstone talent, but also a surprising number in general.
 
 Known since at least [Jan 10 2025](https://github.com/SimCMinMax/WoW-BugTracker/issues/1305), three days into the 11.1 PTR.
 
@@ -334,7 +334,7 @@ Technically a good change. Unfortunately however, [this broke their own Hall of 
 
 So badly, that guilds that already had earned the relevant achievements [had to rekill the other bosses to earn the HoF achievement](https://www.wowhead.com/news/blizzard-update-guilds-who-didnt-get-hall-of-fame-must-kill-one-armed-bandit-and-376491). And we all know early reclears aren't all that nice and clean as on farm later on.
 
-It gets better (or worse, depending on how much you're munching popcorn at this point): even after rekilling, [guilds didn't necessarily get the achievement](https://www.wowhead.com/news/over-200-guilds-now-mythic-8-8-but-hall-of-fame-still-open-due-to-hotfix-issues-376581), stuck in an entirely intransparent state.
+It gets better (or worse, depending on how much you're munching popcorn at this point): even after reclearing, [guilds didn't necessarily get the achievement](https://www.wowhead.com/news/over-200-guilds-now-mythic-8-8-but-hall-of-fame-still-open-due-to-hotfix-issues-376581), stuck in an entirely intransparent state.
 
 ... and better. It appears, Blizzard eventually recognized some of this mess and [started awarding eligible guilds the achievement manually](https://www.wowhead.com/news/hall-of-fame-could-close-tonight-achievement-being-awarded-to-eligible-guilds-376590) and were so careless to award the wrong guild the achievement, although this got fixed soon after.
 
@@ -354,7 +354,7 @@ Again, Wowhead [has a lengthy piece about this already](https://www.wowhead.com/
 
 What becomes evident from this 4-5 month ordeal is that there were a lot of internal uncertainties about how this should actually play out. From the very beginning it was tainted due to the in retrospect needless comparison to the by now only faintly similar systems we had in Shadowlands and Dragonflight Season Four.
 
-What surprised me most about this is that they should've known better and not announce it this early. Hell, it dwelled on PTR without any iteration for around 8 weeks before getting removed and only vaguely hinted on to be added at some later point in some different fashion.
+What surprised me most about this is that they should've known better and not announce it this early. Hell, it dwelled on PTR without any visible iteration for around 8 weeks before getting removed and only vaguely hinted on to be added at some later point in some different fashion.
 
 It feels like they tried to force this feature into this patch despite not having laid out, mostly finalized plans, just becasue it fits the patch thematic.
 
@@ -400,7 +400,7 @@ I'm not expecting answers to all of this, but these are _obvious_ concerns, so o
 
 The state the cooldown manager got released in is concerning in relation to the aforementioned addon restrictions.
 
-We're currently living in a WeakAuras world where everything is possible: want the Lich King dancing while Lust is running? Sure. Want a bunny hopping across your screen for the duration of Arcane Surge? No problem.
+We're currently living in a WeakAuras world where everything is possible: want these [40s of Le SSerafim - Crazy](https://youtu.be/n6B5gQXlB-0?si=0CspolaLDyxAwhYT&t=59) playing during Lust? Sure. Want a bunny hopping across your screen for the duration of Arcane Surge? No problem.
 
 <div className="flex justify-center">
     ![](/static/images/wow-rant/aryella-catge.png)
@@ -408,7 +408,7 @@ We're currently living in a WeakAuras world where everything is possible: want t
 
 Naturally the Cooldown Manager doesn't need to do that. Neither is it intended as a general purpose tool, nor are customizations of that kind reasonable to expect.
 
-The obvious assumption in context to above is that the intention of the Cooldown Manager is to eventually replace spec weakaura packs. We don't know of course. But if that's the case, then we have a long way to go and this is where I start becoming a pessimist.
+The obvious assumption in context to above is that the intention of the Cooldown Manager is to eventually replace spec WeakAura packs. We don't know of course. But if that's the case, then we have a long way to go and this is where I start becoming a pessimist.
 
 It was introduced as a [`first version`](https://www.wowhead.com/blue-tracker/topic/eu/feedback-cooldown-manager-in-11-1-5-564674). It was also mentioned that there's `plans to allow you to hide or rearrange elements [...] in a future patch` but this remains to be seen.
 
@@ -445,6 +445,10 @@ Let me drag the frame and support an expanded mode where its more than a fractio
 Same thing here: it's 2025 and it's still tiny. Some features were already adopted from [PremadeGroupFinder](https://www.curseforge.com/wow/addons/premade-group-finder) but quite frankly, it's not enough. UX of this thing is still terrible, or in more fair words, dated.
 
 Let me select multiple dungeons. Let me set thresholds for itemlevel and/or dungeon score (not that I personally care about these but just mentioning features of the addon here). Let me set a note that's automatically used when applying to groups with a single click. Sizing. Draggability.
+
+### Spell Book
+
+The new Spell Book is visually appealing and artsy, it fits the modern game aesthetic of course yadda yadda. But whyyyy is it not resizable or draggable? Why does it have so much padding between the elements?
 
 ## The End
 

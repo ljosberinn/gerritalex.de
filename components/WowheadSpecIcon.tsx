@@ -32,28 +32,38 @@ const colors = {
 
 export type WowheadSpecIconProps = {
   spec: keyof typeof specs;
-  className: string;
   children: string;
 };
 
-export function WowheadSpecIcon({ spec, className, children }: WowheadSpecIconProps) {
+export function WowheadSpecIcon({ spec, children }: WowheadSpecIconProps) {
   const icon = specs[spec];
   const color = colors[spec];
 
+  const renderedIcon = (
+    <Image
+      src={
+        icon.includes('https') ? icon : `https://wow.zamimg.com/images/wow/icons/medium/${icon}.jpg`
+      }
+      alt=""
+      width="24"
+      height="24"
+      className="mt-0 mb-0 self-center"
+    />
+  );
+
   return (
-    <span className="inline-flex items-baseline gap-2">
-      <Image
-        src={
-          icon.includes('https')
-            ? icon
-            : `https://wow.zamimg.com/images/wow/icons/medium/${icon}.jpg`
-        }
-        alt=""
-        width="24"
-        height="24"
-        className="mt-0 mb-0 self-center"
-      />
-      <span style={{ color }}>{children}</span>
-    </span>
+    <>
+      <span
+        className="inline-flex items-baseline gap-2 dark:hidden"
+        style={{ backgroundColor: `${color}75` }}
+      >
+        {renderedIcon}
+        {children}
+      </span>
+      <span className="hidden items-baseline gap-2 dark:inline-flex" style={{ color }}>
+        {renderedIcon}
+        {children}
+      </span>
+    </>
   );
 }

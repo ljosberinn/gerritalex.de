@@ -215,7 +215,7 @@ export default makeSource({
 
             if (element.tagName === 'h2') {
               className.push(
-                'sticky top-0 bg-white dark:bg-gray-950 border-b-1 py-1 border-dashed border-gray-200'
+                'sticky top-0 bg-white dark:bg-gray-950 border-b-1 py-1 border-dashed border-gray-500 dark:border-gray-200'
               );
             }
 
