@@ -54,7 +54,7 @@ export function WowheadClassIcon({ children }: WowheadClassIconProps) {
   return (
     <>
       <span
-        className="inline-flex items-baseline gap-2 px-1 dark:hidden"
+        className="inline-flex items-baseline gap-2 dark:hidden"
         style={{
           backgroundColor: `${color}75`,
         }}
