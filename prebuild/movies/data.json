@@ -1753,11 +1753,11 @@
       ],
       "tagline": "A mother and daughter are bound by a dark secret.",
       "release": {
-        "day": 6,
+        "day": 13,
         "month": 6,
         "year": 2025
       },
-      "runtime": 104
+      "runtime": 105
     },
     "favorite": false
   },
@@ -5681,7 +5681,7 @@
         "month": 7,
         "year": 2025
       },
-      "runtime": 0
+      "runtime": 129
     },
     "favorite": false
   },

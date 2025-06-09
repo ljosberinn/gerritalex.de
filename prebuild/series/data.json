@@ -125,8 +125,8 @@
       "episodes": 24
     },
     "favorite": false,
-    "episodesSeen": 24,
-    "state": "finished"
+    "episodesSeen": 12,
+    "state": "ongoing"
   },
   {
     "title": "Arcane",
@@ -254,7 +254,7 @@
     },
     "favorite": true,
     "episodesSeen": 38,
-    "state": "ongoing"
+    "state": "upcoming"
   },
   {
     "title": "Breaking Bad",
@@ -1246,6 +1246,28 @@
     "state": "finished"
   },
   {
+    "title": "Murderbot",
+    "id": 241554,
+    "state": "upcoming",
+    "metadata": {
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Sci-Fi & Fantasy"
+      ],
+      "seasons": 1,
+      "tagline": "Built to destroy. Forced to connect.",
+      "release": {
+        "day": 15,
+        "month": 5,
+        "year": 2025
+      },
+      "episodes": 10
+    },
+    "favorite": false,
+    "episodesSeen": 0
+  },
+  {
     "title": "Nancy Drew",
     "id": 89572,
     "metadata": {
@@ -1604,7 +1626,7 @@
         "month": 8,
         "year": 2022
       },
-      "episodes": 11
+      "episodes": 23
     },
     "favorite": true,
     "episodesSeen": 11,
@@ -1694,7 +1716,7 @@
       "episodes": 19
     },
     "favorite": true,
-    "episodesSeen": 9,
+    "episodesSeen": 11,
     "state": "ongoing"
   },
   {
@@ -1859,7 +1881,7 @@
         "month": 5,
         "year": 2022
       },
-      "episodes": 21
+      "episodes": 30
     },
     "favorite": true,
     "episodesSeen": 21,
@@ -2139,8 +2161,8 @@
       "episodes": 16
     },
     "favorite": false,
-    "episodesSeen": 15,
-    "state": "ongoing"
+    "episodesSeen": 16,
+    "state": "upcoming"
   },
   {
     "title": "The Lord of the Rings: The Rings of Power",
@@ -2482,7 +2504,7 @@
     },
     "favorite": false,
     "episodesSeen": 24,
-    "state": "upcoming"
+    "state": "finished"
   },
   {
     "title": "Three-Body Problem",
