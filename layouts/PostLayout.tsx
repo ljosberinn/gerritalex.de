@@ -20,14 +20,7 @@ interface LayoutProps {
 }
 
 export default function PostLayout({ content, authorDetails, next, prev, children }: LayoutProps) {
-  const {
-    filePath,
-    path,
-    structuredData: { dateModified: lastmod },
-    date,
-    title,
-    tags,
-  } = content;
+  const { filePath, path, lastmod, date, title, tags } = content;
   const basePath = path.split('/')[0];
 
   return (

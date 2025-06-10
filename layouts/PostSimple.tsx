@@ -15,11 +15,7 @@ interface LayoutProps {
 }
 
 export default function PostLayout({ content, next, prev, children }: LayoutProps) {
-  const {
-    structuredData: { dateModified: lastmod },
-    date,
-    title,
-  } = content;
+  const { lastmod, date, title } = content;
 
   return (
     <>

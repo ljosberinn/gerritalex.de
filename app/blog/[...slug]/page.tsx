@@ -41,7 +41,7 @@ export async function generateMetadata(props: {
   }, []);
 
   const publishedAt = post.structuredData.datePublished;
-  const modifiedAt = post.structuredData.dateModified;
+  const modifiedAt = post.lastmod;
   const authors = authorDetails.map((author) => author.name);
   let imageList = [siteMetadata.socialBanner];
   if (post.images) {

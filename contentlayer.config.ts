@@ -22,10 +22,11 @@ import rehypePresetMinify from 'rehype-preset-minify';
 import siteMetadata from './data/siteMetadata';
 import { allCoreContent, MDXDocumentDate, sortPosts } from 'pliny/utils/contentlayer.js';
 import { createWriteStream } from 'fs';
-import { writeFile, stat } from 'fs/promises';
+import { writeFile, stat, readFile } from 'fs/promises';
 import { doMoviesImport } from './prebuild/movies';
 import { doSeriesImport } from './prebuild/series';
 import { doDiscogsImport } from './prebuild/music';
+import { spawn } from 'child_process';
 
 async function downloadAndStoreImage(url: string, storagePath: string): Promise<void> {
   // eslint-disable-next-line no-async-promise-executor
@@ -97,6 +98,35 @@ const computedFields: ComputedFields = {
   toc: { type: 'json', resolve: (doc) => extractTocHeadings(doc.body.raw) },
 };
 
+async function hasFileChanges(file: string) {
+  return new Promise((resolve, reject) => {
+    const git = spawn('git', ['diff', '--name-only']);
+
+    let output = '';
+    let errorOutput = '';
+
+    git.stdout.on('data', (data) => {
+      output += data.toString();
+    });
+
+    git.stderr.on('data', (data) => {
+      errorOutput += data.toString();
+    });
+
+    git.on('close', (code) => {
+      if (code !== 0 && errorOutput) {
+        reject(new Error(errorOutput.trim()));
+      } else {
+        resolve(output.trim().includes(file));
+      }
+    });
+
+    git.on('error', (err) => {
+      reject(err);
+    });
+  });
+}
+
 export const Blog = defineDocumentType(() => ({
   name: 'Blog',
   filePathPattern: 'blog/**/*.mdx',
@@ -120,14 +150,32 @@ export const Blog = defineDocumentType(() => ({
     structuredData: {
       type: 'json',
       resolve: async (doc) => {
-        const { mtimeMs } = await stat(`data/${doc._raw.sourceFilePath}`);
+        const { ctimeMs } = await stat(`data/${doc._raw.sourceFilePath}`);
+
+        if (process.env.NODE_ENV !== 'production') {
+          const hasChanges = await hasFileChanges(doc._raw.sourceFilePath);
+
+          if (hasChanges) {
+            const path = `data/${doc._raw.sourceFilePath}`;
+            const file = await readFile(path, 'utf-8');
+            const lines = file.split('\n');
+
+            const newFile = [
+              '---',
+              `lastmod: '${new Date(ctimeMs).toISOString().split('T')[0]}'`,
+              ...lines.splice(1).filter((line) => !line.includes('lastmod: ')),
+            ].join('\n');
+
+            await writeFile(path, newFile, 'utf-8');
+          }
+        }
 
         return {
           '@context': 'https://schema.org',
           '@type': 'BlogPosting',
           headline: doc.title,
           datePublished: doc.date,
-          dateModified: new Date(mtimeMs).toISOString(),
+          dateModified: new Date(ctimeMs).toISOString(),
           description: doc.summary,
           image: doc.images ? doc.images[0] : siteMetadata.socialBanner,
           url: `${siteMetadata.siteUrl}/${doc._raw.flattenedPath}`,

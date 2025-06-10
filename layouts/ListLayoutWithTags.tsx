@@ -118,7 +118,7 @@ export function ListLayoutWithTags({ posts, title }: ListLayoutProps) {
                   title,
                   summary,
                   tags,
-                  structuredData: { dateModified: lastmod },
+                  lastmod,
                   images,
                   includeImageInPreview,
                 } = post;
