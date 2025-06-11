@@ -53,11 +53,11 @@
       "seasons": 1,
       "tagline": "We were safer in space.",
       "release": {
-        "day": null,
-        "month": null,
-        "year": null
+        "day": 12,
+        "month": 8,
+        "year": 2025
       },
-      "episodes": 1
+      "episodes": 8
     },
     "favorite": false,
     "episodesSeen": 0,
@@ -250,7 +250,7 @@
         "month": 12,
         "year": 2011
       },
-      "episodes": 38
+      "episodes": 32
     },
     "favorite": true,
     "episodesSeen": 38,
@@ -607,18 +607,18 @@
         "Sci-Fi & Fantasy",
         "Drama"
       ],
-      "seasons": 2,
+      "seasons": 3,
       "tagline": "All empires fall.",
       "release": {
         "day": 23,
         "month": 9,
         "year": 2021
       },
-      "episodes": 20
+      "episodes": 30
     },
     "favorite": true,
     "episodesSeen": 20,
-    "state": "finished"
+    "state": "upcoming"
   },
   {
     "title": "From",
@@ -887,14 +887,14 @@
         "Drama",
         "Action & Adventure"
       ],
-      "seasons": 2,
+      "seasons": 3,
       "tagline": "All must choose.",
       "release": {
         "day": 21,
         "month": 8,
         "year": 2022
       },
-      "episodes": 18
+      "episodes": 19
     },
     "favorite": false,
     "episodesSeen": 18,
@@ -1091,7 +1091,7 @@
     },
     "favorite": false,
     "episodesSeen": 35,
-    "state": "upcoming"
+    "state": "ongoing"
   },
   {
     "title": "Lovecraft Country",
@@ -1434,7 +1434,7 @@
         "month": 1,
         "year": 2022
       },
-      "episodes": 8
+      "episodes": 16
     },
     "favorite": true,
     "episodesSeen": 8,
@@ -1481,7 +1481,7 @@
     },
     "favorite": false,
     "episodesSeen": 10,
-    "state": "upcoming"
+    "state": "ongoing"
   },
   {
     "title": "Presumed Innocent",
@@ -1626,7 +1626,7 @@
         "month": 8,
         "year": 2022
       },
-      "episodes": 23
+      "episodes": 22
     },
     "favorite": true,
     "episodesSeen": 11,
@@ -1706,7 +1706,7 @@
         "Mystery",
         "Sci-Fi & Fantasy"
       ],
-      "seasons": 2,
+      "seasons": 3,
       "tagline": "There's more to work than life.",
       "release": {
         "day": 17,
@@ -1788,6 +1788,7 @@
     "state": "upcoming",
     "metadata": {
       "genres": [
+        "Drama",
         "Crime"
       ],
       "seasons": 1,
@@ -2731,14 +2732,14 @@
         "Drama",
         "Mystery"
       ],
-      "seasons": 3,
+      "seasons": 4,
       "tagline": "We hear the wilderness and it hears us.",
       "release": {
         "day": 14,
         "month": 11,
         "year": 2021
       },
-      "episodes": 29
+      "episodes": 30
     },
     "favorite": false,
     "episodesSeen": 19,
