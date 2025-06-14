@@ -1748,8 +1748,8 @@
     "seen": false,
     "metadata": {
       "genres": [
-        "Drama",
-        "Thriller"
+        "Thriller",
+        "Drama"
       ],
       "tagline": "A mother and daughter are bound by a dark secret.",
       "release": {
@@ -5677,7 +5677,7 @@
       ],
       "tagline": "Look up.",
       "release": {
-        "day": 9,
+        "day": 8,
         "month": 7,
         "year": 2025
       },
@@ -5704,6 +5704,26 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "title": "T2 Trainspotting",
+    "id": 180863,
+    "favorite": false,
+    "seen": true,
+    "metadata": {
+      "genres": [
+        "Drama",
+        "Comedy",
+        "Crime"
+      ],
+      "tagline": "Face your past. Choose your future.",
+      "release": {
+        "day": 27,
+        "month": 1,
+        "year": 2017
+      },
+      "runtime": 117
+    }
   },
   {
     "title": "Talk to Me",
@@ -7166,6 +7186,24 @@
     "favorite": false
   },
   {
+    "title": "The Social Network",
+    "seen": true,
+    "id": 37799,
+    "metadata": {
+      "genres": [
+        "Drama"
+      ],
+      "tagline": "You don't get to 500 million friends without making a few enemies.",
+      "release": {
+        "day": 1,
+        "month": 10,
+        "year": 2010
+      },
+      "runtime": 121
+    },
+    "favorite": false
+  },
+  {
     "title": "The Substance",
     "id": 933260,
     "metadata": {
@@ -7560,6 +7598,25 @@
     "seen": true
   },
   {
+    "title": "Trainspotting",
+    "id": 627,
+    "favorite": true,
+    "seen": true,
+    "metadata": {
+      "genres": [
+        "Drama",
+        "Crime"
+      ],
+      "tagline": "Choose life.",
+      "release": {
+        "day": 23,
+        "month": 2,
+        "year": 1996
+      },
+      "runtime": 94
+    }
+  },
+  {
     "title": "Trance",
     "seen": true,
     "id": 68727,
@@ -7936,6 +7993,27 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "title": "Vivarium",
+    "id": 458305,
+    "seen": true,
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Thriller",
+        "Mystery",
+        "Horror"
+      ],
+      "tagline": "You're home. Forever.",
+      "release": {
+        "day": 7,
+        "month": 9,
+        "year": 2019
+      },
+      "runtime": 97
+    },
+    "favorite": false
   },
   {
     "title": "WALL·E",

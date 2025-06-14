@@ -608,7 +608,7 @@
         "Drama"
       ],
       "seasons": 3,
-      "tagline": "All empires fall.",
+      "tagline": "Chaos has a name: The Mule.",
       "release": {
         "day": 23,
         "month": 9,
@@ -1889,6 +1889,50 @@
     "state": "upcoming"
   },
   {
+    "title": "Stargate Atlantis",
+    "id": 2290,
+    "episodesSeen": 40,
+    "state": "abandoned",
+    "metadata": {
+      "genres": [
+        "Sci-Fi & Fantasy",
+        "Action & Adventure",
+        "Drama"
+      ],
+      "seasons": 5,
+      "tagline": "A new gate will open. A lost city will rise again.",
+      "release": {
+        "day": 15,
+        "month": 7,
+        "year": 2004
+      },
+      "episodes": 100
+    },
+    "favorite": false
+  },
+  {
+    "title": "Stargate SG-1",
+    "id": 4629,
+    "episodesSeen": 214,
+    "state": "finished",
+    "metadata": {
+      "genres": [
+        "Sci-Fi & Fantasy",
+        "Action & Adventure",
+        "Mystery"
+      ],
+      "seasons": 10,
+      "tagline": "Saving the world... one episode at a time",
+      "release": {
+        "day": 27,
+        "month": 7,
+        "year": 1997
+      },
+      "episodes": 214
+    },
+    "favorite": false
+  },
+  {
     "title": "Stranger Things",
     "id": 66732,
     "metadata": {
@@ -2174,7 +2218,7 @@
         "Sci-Fi & Fantasy",
         "Drama"
       ],
-      "seasons": 2,
+      "seasons": 3,
       "tagline": "Evil has had many names.",
       "release": {
         "day": 1,
