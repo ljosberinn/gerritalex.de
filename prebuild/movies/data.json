@@ -8216,22 +8216,23 @@
   },
   {
     "title": "X-Men: First Class",
-    "id": 691677,
+    "id": 49538,
+    "favorite": false,
+    "seen": true,
     "metadata": {
       "genres": [
-        "Documentary",
-        "TV Movie"
+        "Action",
+        "Science Fiction",
+        "Adventure"
       ],
-      "tagline": "",
+      "tagline": "Witness the moment that will change our world.",
       "release": {
-        "day": 5,
+        "day": 1,
         "month": 6,
-        "year": 2012
+        "year": 2011
       },
-      "runtime": 23
-    },
-    "favorite": false,
-    "seen": true
+      "runtime": 132
+    }
   },
   {
     "title": "X2",
