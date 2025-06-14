@@ -2190,6 +2190,27 @@
     "state": "ongoing"
   },
   {
+    "title": "The Institute",
+    "id": 253372,
+    "state": "upcoming",
+    "metadata": {
+      "genres": [
+        "Mystery",
+        "Sci-Fi & Fantasy"
+      ],
+      "seasons": 1,
+      "tagline": "",
+      "release": {
+        "day": 13,
+        "month": 7,
+        "year": 2025
+      },
+      "episodes": 8
+    },
+    "favorite": false,
+    "episodesSeen": 0
+  },
+  {
     "title": "The Last of Us",
     "id": 100088,
     "metadata": {
