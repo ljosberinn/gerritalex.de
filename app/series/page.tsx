@@ -124,9 +124,11 @@ const stateColor = {
   [State.ABANDONED]: 'bg-red-300 dark:bg-red-950/50',
 };
 
+const minutesPerEpisodes = 40;
+
 export default async function SeriesPage() {
   const totalRuntimeMinutesEstimated = data.reduce((acc, dataset) => {
-    return acc + dataset.episodesSeen * 45;
+    return acc + dataset.episodesSeen * minutesPerEpisodes;
   }, 0);
 
   const days = Math.floor(totalRuntimeMinutesEstimated / 60 / 24);
@@ -152,8 +154,8 @@ export default async function SeriesPage() {
           An exhaustive list of series I've watched, ever. The most common genres among these{' '}
           <b>{data.length}</b> series are <b>{readableGenresCombinedWithAnd}</b>. I'm not actively
           going out of my way to seek these genres specifically, it just happens. Sci-Fi certainly
-          has an edge however. Total runtime of seen episodes using an estimate of 45 minutes per
-          episode amounts to{' '}
+          has an edge however. Total runtime of seen episodes using an estimate of{' '}
+          {minutesPerEpisodes} minutes per episode amounts to{' '}
           <b title={`${totalRuntimeMinutesEstimated.toLocaleString()} minutes`}>{totalRuntime}</b>.
         </p>
 

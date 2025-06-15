@@ -2605,7 +2605,7 @@
   {
     "title": "Godzilla x Kong: The New Empire",
     "id": 823464,
-    "seen": false,
+    "seen": true,
     "metadata": {
       "genres": [
         "Action",
@@ -2619,6 +2619,25 @@
         "year": 2024
       },
       "runtime": 115
+    },
+    "favorite": false
+  },
+  {
+    "title": "Godzilla: King of the Monsters",
+    "seen": true,
+    "id": 373571,
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Action"
+      ],
+      "tagline": "Long live the king.",
+      "release": {
+        "day": 29,
+        "month": 5,
+        "year": 2019
+      },
+      "runtime": 132
     },
     "favorite": false
   },
@@ -4102,6 +4121,27 @@
     "seen": true
   },
   {
+    "title": "Men in Black",
+    "seen": true,
+    "id": 607,
+    "metadata": {
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Science Fiction"
+      ],
+      "tagline": "Protecting the Earth from the scum of the universe.",
+      "release": {
+        "day": 2,
+        "month": 7,
+        "year": 1997
+      },
+      "runtime": 98
+    },
+    "favorite": false
+  },
+  {
     "title": "Men in Black 3",
     "id": 41154,
     "metadata": {
@@ -4120,6 +4160,26 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "title": "Men in Black II",
+    "seen": true,
+    "id": 608,
+    "metadata": {
+      "genres": [
+        "Action",
+        "Comedy",
+        "Science Fiction"
+      ],
+      "tagline": "Same planet. New scum.",
+      "release": {
+        "day": 3,
+        "month": 7,
+        "year": 2002
+      },
+      "runtime": 88
+    },
+    "favorite": false
   },
   {
     "title": "Metropia",
@@ -6374,6 +6434,26 @@
     "favorite": false
   },
   {
+    "title": "The Endless",
+    "seen": false,
+    "id": 430231,
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Horror",
+        "Thriller"
+      ],
+      "tagline": "Time is a prison.",
+      "release": {
+        "day": 5,
+        "month": 11,
+        "year": 2017
+      },
+      "runtime": 112
+    },
+    "favorite": false
+  },
+  {
     "title": "The Equalizer",
     "id": 156022,
     "metadata": {
@@ -7859,6 +7939,26 @@
     "seen": true
   },
   {
+    "title": "Tron",
+    "seen": true,
+    "id": 97,
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Action",
+        "Adventure"
+      ],
+      "tagline": "Journey now into a startling new dimension where energy lives and breathes. A world inside the computer where man has never been. Never before now.",
+      "release": {
+        "day": 9,
+        "month": 7,
+        "year": 1982
+      },
+      "runtime": 95
+    },
+    "favorite": false
+  },
+  {
     "title": "TRON: Ares",
     "id": 533533,
     "metadata": {
@@ -7876,6 +7976,46 @@
     },
     "favorite": false,
     "seen": false
+  },
+  {
+    "title": "TRON: Legacy",
+    "seen": true,
+    "id": 20526,
+    "metadata": {
+      "genres": [
+        "Adventure",
+        "Action",
+        "Science Fiction"
+      ],
+      "tagline": "The game has changed.",
+      "release": {
+        "day": 14,
+        "month": 12,
+        "year": 2010
+      },
+      "runtime": 126
+    },
+    "favorite": false
+  },
+  {
+    "title": "TRON: Legacy",
+    "seen": true,
+    "id": 20526,
+    "metadata": {
+      "genres": [
+        "Adventure",
+        "Action",
+        "Science Fiction"
+      ],
+      "tagline": "The game has changed.",
+      "release": {
+        "day": 14,
+        "month": 12,
+        "year": 2010
+      },
+      "runtime": 126
+    },
+    "favorite": false
   },
   {
     "title": "Unbreakable",
