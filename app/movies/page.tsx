@@ -83,10 +83,10 @@ const readableGenresCombinedWithAnd = Object.entries(genresByOccurence)
       return acc;
     }
 
-    acc.push('and ' + genre);
+    acc.push(' and ' + genre);
     return acc;
   }, [])
-  .join(' ');
+  .join('');
 
 export const metadata = generatePageMetadata({
   title: 'Movies',
@@ -110,8 +110,22 @@ const stateColor = {
 };
 
 export default async function MoviesPage() {
-  const totalRuntime =
-    data.reduce((acc, movie) => (movie.seen ? acc + movie.metadata.runtime : acc), 0) / 60 / 24;
+  const totalRuntimeMinutes = data.reduce(
+    (acc, movie) => (movie.seen ? acc + movie.metadata.runtime : acc),
+    0
+  );
+
+  const days = Math.floor(totalRuntimeMinutes / 60 / 24);
+  const hours = Math.floor((totalRuntimeMinutes / 60) % 24);
+  const minutes = Math.floor(totalRuntimeMinutes % 60);
+
+  const totalRuntime = [
+    days > 0 ? `${days} days` : null,
+    hours > 0 ? `${hours} hours` : null,
+    minutes > 0 ? `${minutes} minutes` : null,
+  ]
+    .filter(Boolean)
+    .join(' ');
 
   return (
     <>
@@ -122,10 +136,11 @@ export default async function MoviesPage() {
 
         <p className="py-4">
           An exhaustive list of movies I've seen, ever. The most common genres among these{' '}
-          {data.filter((movie) => movie.seen).length} movies are{' '}
+          <b>{data.filter((movie) => movie.seen).length}</b> movies are{' '}
           <b>{readableGenresCombinedWithAnd}</b>. I'm not actively going out of my way to seek these
           genres specifically, it just happens. Sci-Fi certainly has an edge however. Total runtime
-          amounts to <b>{totalRuntime.toFixed(2)}</b> days.
+          of seen movies amounts to{' '}
+          <b title={`${totalRuntimeMinutes.toLocaleString()} minutes`}>{totalRuntime}</b>.
         </p>
 
         <p>

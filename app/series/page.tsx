@@ -83,10 +83,10 @@ const readableGenresCombinedWithAnd = Object.entries(genresByOccurence)
       return acc;
     }
 
-    acc.push('and ' + genre);
+    acc.push(' and ' + genre);
     return acc;
   }, [])
-  .join(' ');
+  .join('');
 
 export const metadata = generatePageMetadata({
   title: 'Series',
@@ -125,6 +125,22 @@ const stateColor = {
 };
 
 export default async function SeriesPage() {
+  const totalRuntimeMinutesEstimated = data.reduce((acc, dataset) => {
+    return acc + dataset.episodesSeen * 45;
+  }, 0);
+
+  const days = Math.floor(totalRuntimeMinutesEstimated / 60 / 24);
+  const hours = Math.floor((totalRuntimeMinutesEstimated / 60) % 24);
+  const minutes = Math.floor(totalRuntimeMinutesEstimated % 60);
+
+  const totalRuntime = [
+    days > 0 ? `${days} days` : null,
+    hours > 0 ? `${hours} hours` : null,
+    minutes > 0 ? `${minutes} minutes` : null,
+  ]
+    .filter(Boolean)
+    .join(' ');
+
   return (
     <>
       <div className="mx-auto max-w-7xl p-4">
@@ -134,9 +150,11 @@ export default async function SeriesPage() {
 
         <p className="py-4">
           An exhaustive list of series I've watched, ever. The most common genres among these{' '}
-          {data.length} series are <b>{readableGenresCombinedWithAnd}</b>. I'm not actively going
-          out of my way to seek these genres specifically, it just happens. Sci-Fi certainly has an
-          edge however.
+          <b>{data.length}</b> series are <b>{readableGenresCombinedWithAnd}</b>. I'm not actively
+          going out of my way to seek these genres specifically, it just happens. Sci-Fi certainly
+          has an edge however. Total runtime of seen episodes using an estimate of 45 minutes per
+          episode amounts to{' '}
+          <b title={`${totalRuntimeMinutesEstimated.toLocaleString()} minutes`}>{totalRuntime}</b>.
         </p>
 
         <p>
