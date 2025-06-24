@@ -174,6 +174,7 @@ export async function doMoviesImport(): Promise<{ from: string; to: string }[]> 
         delete dataset.imageMissing;
       }
     } catch {
+      // @ts-expect-error this is fine
       dataset.imageMissing = true;
     }
   }
