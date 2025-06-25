@@ -1,0 +1,315 @@
+{
+  "current-rotation": [
+    "manaforge-omega",
+    "ara-kara-city-of-echoes",
+    "eco-dome-aldani",
+    "halls-of-atonement",
+    "operation-floodgate",
+    "priory-of-the-sacred-flame",
+    "tazavesh-soleahs-gambit",
+    "tazavesh-streets-of-wonder",
+    "the-dawnbreaker"
+  ],
+  "sources": {
+    "manaforge-omega": {
+      "icon": "inv_achievement_zone_undermine",
+      "name": "Manaforge Omega",
+      "encounters": [
+        {
+          "icon": "inv_112_achievement_raid_automaton",
+          "name": "Plexus Sentinel"
+        },
+        {
+          "icon": "inv_112_achievement_raid_silkworm",
+          "name": "Loom'ithar"
+        },
+        {
+          "icon": "inv_112_achievement_raid_binder",
+          "name": "Soulbinder Naazindhri"
+        },
+        {
+          "icon": "inv_112_achievement_raid_engineer",
+          "name": "Forgeweaver Araz"
+        },
+        {
+          "icon": "inv_112_achievement_raid_dhcouncil",
+          "name": "The Soul Hunters"
+        },
+        {
+          "icon": "inv_112_achievement_raid_glasselemental",
+          "name": "Fractillus"
+        },
+        {
+          "icon": "inv_112_achievement_raid_salhadaar",
+          "name": "Nexus-King Salhadaar"
+        },
+        {
+          "icon": "inv_112_achievement_raid_dimensius",
+          "name": "Dimensius, the All-Devouring"
+        }
+      ]
+    },
+    "ara-kara-city-of-echoes": {
+      "icon": "inv_achievement_dungeon_arak-ara",
+      "name": "Ara-Kara, City of Echoes",
+      "encounters": ["Avanoxx", "Anub'zekt", "Ki'katal the Harvester"]
+    },
+    "eco-dome-aldani": {
+      "icon": "inv_112_achievement_dungeon_ecodome",
+      "name": "Eco-Dome Al'dani",
+      "encounters": ["Azhiccar", "Taah'bat and A'wazj", "Soul-Scribe"]
+    },
+    "halls-of-atonement": {
+      "icon": "achievement_dungeon_hallsofattonement",
+      "name": "Halls of Atonement",
+      "encounters": [
+        "Halkias, the Sin-Stained Goliath",
+        "Echelon",
+        "High Adjudicator Aleez",
+        "Lord Chamberlain"
+      ]
+    },
+    "tazavesh-soleahs-gambit": {
+      "icon": "achievement_dungeon_brokerdungeon",
+      "name": "Tazavesh: So'leah's Gambit",
+      "encounters": ["Hylbrande", "Timecap'n Hooktail", "So'leah"]
+    },
+    "tazavesh-streets-of-wonder": {
+      "icon": "achievement_dungeon_brokerdungeon",
+      "name": "Tazavesh: Streets of Wonder",
+      "encounters": ["Zo'phex, the Sentinel", "The Menagerie", "P.O.S.T. Master", "?", "So'zami"]
+    },
+    "the-dawnbreaker": {
+      "icon": "inv_achievement_dungeon_dawnbreaker",
+      "name": "The Dawnbreaker",
+      "encounters": ["Speaker Shadowcrown", "Anub'ikkaj", "Rasha'nan"]
+    },
+    "operation-floodgate": {
+      "icon": "inv_achievement_dungeon_waterworks",
+      "name": "Operation: Floodgate",
+      "encounters": ["Big M.O.M.M.A.", "Demolition Duo", "Swampface", "Geezle Gigazap"]
+    },
+    "priory-of-the-sacred-flame": {
+      "icon": "inv_achievement_dungeon_prioryofthesacredflame",
+      "name": "Priory of the Sacred Flame",
+      "encounters": ["Captain Dailcry", "Baron Braunpyke", "Prioress Murrpray"]
+    }
+  },
+  "spells": [
+    {
+      "id": 1215850,
+      "type": "trash",
+      "name": "Earthcrusher",
+      "icon": "spell_nature_earthquake",
+      "source": "eco-dome-aldani"
+    },
+    {
+      "id": 1217316,
+      "type": "azhiccar",
+      "name": "Devour",
+      "icon": "spell_shadow_devouringplague.",
+      "source": "eco-dome-aldani",
+      "notes": [
+        [
+          "Avoidable by killing all ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 236190,
+              "kind": "npc",
+              "children": "Frenzied Mite"
+            }
+          },
+          "s in time."
+        ]
+      ]
+    },
+    {
+      "id": 1217664,
+      "type": "azhiccar",
+      "name": "Thrash",
+      "icon": "ability_golemthunderclap",
+      "source": "eco-dome-aldani",
+      "notes": ["When tank outranges the boss. Should never happen!"]
+    },
+    {
+      "id": 1219704,
+      "type": "taahbat-and-awazj",
+      "name": "Binding Javelin",
+      "icon": "ability_impalingbolt",
+      "source": "eco-dome-aldani"
+    },
+    {
+      "id": 1220497,
+      "type": "taahbat-and-awazj",
+      "name": "Arcane Overload",
+      "icon": "spell_arcane_invocation",
+      "source": "eco-dome-aldani"
+    },
+    {
+      "id": 1221152,
+      "type": "trash",
+      "name": "Gorging Smash",
+      "icon": "spell_fire_bluehellfire",
+      "source": "eco-dome-aldani",
+      "notes": [
+        [
+          "Both the unavoidable physical damage and standing in the resulting circles (",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 1221174,
+              "kind": "spell",
+              "icon": "spell_fire_bluehellfire",
+              "children": "Gorging Smash"
+            }
+          },
+          ")."
+        ]
+      ]
+    },
+    {
+      "id": 1221484,
+      "type": "trash",
+      "name": "Arcing Energy",
+      "icon": "ability_socererking_arcanereplication",
+      "source": "eco-dome-aldani"
+    },
+    {
+      "id": 1221533,
+      "type": "trash",
+      "name": "Erratic Ritual",
+      "icon": "spell_shaman_improvedreincarnation",
+      "source": "eco-dome-aldani"
+    },
+    {
+      "id": 1222183,
+      "type": "trash",
+      "name": "Farstalker's Leap",
+      "icon": "ability_heroicleap",
+      "source": "eco-dome-aldani"
+    },
+    {
+      "id": 1222356,
+      "type": "trash",
+      "name": "Warp",
+      "icon": "spell_arcane_blink",
+      "source": "eco-dome-aldani",
+      "notes": ["Unavoidable, but cleaves if you stack, so don't."]
+    },
+    {
+      "id": 1223008,
+      "type": "trash",
+      "name": "Burrowing Eruption",
+      "icon": "spell_nature_earthquake",
+      "source": "eco-dome-aldani"
+    },
+    {
+      "id": 1224868,
+      "type": "soul-scribe",
+      "name": "Shattered Fate",
+      "icon": "ability_socererking_arcanereplication",
+      "source": "eco-dome-aldani",
+      "notes": ["Whenever a set of mirror images spawns."]
+    },
+    {
+      "id": 1226165,
+      "type": "trash",
+      "name": "Volatile Ejection",
+      "icon": "achievement_boss_lordmarrowgar",
+      "source": "eco-dome-aldani",
+      "notes": [
+        [
+          "Aiming frontal of ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 236995,
+              "kind": "npc",
+              "children": "Ravenous Destroyer"
+            }
+          },
+          "."
+        ]
+      ]
+    },
+    {
+      "id": 1227152,
+      "type": "taahbat-and-awazj",
+      "name": "Warp Strike",
+      "icon": "spell_arcane_blink",
+      "source": "eco-dome-aldani"
+    },
+    {
+      "id": 1231224,
+      "type": "trash",
+      "name": "Arcane Slash",
+      "icon": "spell_arcane_massdispel",
+      "source": "eco-dome-aldani",
+      "notes": ["Avoidable frontal."]
+    },
+    {
+      "id": 1231850,
+      "type": "azhiccar",
+      "name": "Invading Shriek",
+      "icon": "ability_vehicle_sonicshockwave",
+      "source": "eco-dome-aldani"
+    },
+    {
+      "id": 1237199,
+      "type": "trash",
+      "name": "Burrow Charge",
+      "icon": "pvp_burrow",
+      "source": "eco-dome-aldani"
+    },
+    {
+      "id": 1242006,
+      "type": "soul-scribe",
+      "name": "Echoes of Fate",
+      "icon": "spell_nature_starfall",
+      "source": "eco-dome-aldani",
+      "notes": ["Near-permanent passive damage."]
+    },
+    {
+      "id": 1237224,
+      "type": "trash",
+      "name": "Stinging Sandstorm",
+      "icon": "spell_sandstorm",
+      "source": "eco-dome-aldani"
+    },
+    {
+      "id": 1231494,
+      "type": "trash",
+      "name": "Overgorged Burst",
+      "icon": "inv_devourersmallmount_light",
+      "source": "eco-dome-aldani",
+      "notes": [
+        [
+          "Whenever ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 242209,
+              "kind": "npc",
+              "children": "Overgorged Mite"
+            }
+          },
+          "s die."
+        ],
+        [
+          "Avoidable by interrupting their ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 1229474,
+              "kind": "spell",
+              "icon": "inv_cosmicvoid_missile",
+              "children": "Gorge"
+            }
+          },
+          " casts as often as possible."
+        ]
+      ]
+    }
+  ]
+}

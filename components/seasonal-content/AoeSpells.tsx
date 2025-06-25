@@ -6,6 +6,7 @@ import { WowheadIcon } from '../WowheadIcon';
 import { Spells, SpellsProps } from './Spells';
 import { CustomLink } from '../CustomLink';
 import { ContentHeaderLink } from './ContentHeaderLink';
+import { WowheadLinkProps } from '../WowheadLink';
 
 type ZephyrDataset = {
   sources: Record<
@@ -18,6 +19,7 @@ type ZephyrDataset = {
 
 type AoeSpellsProps = {
   data: ZephyrDataset;
+  wowheadBranch?: WowheadLinkProps['branch'];
 };
 
 function slugify(str: string) {
@@ -29,7 +31,7 @@ function slugify(str: string) {
     .toLowerCase();
 }
 
-export function AoeSpells({ data }: AoeSpellsProps) {
+export function AoeSpells({ data, wowheadBranch }: AoeSpellsProps) {
   useScript('https://wow.zamimg.com/js/tooltips.js');
 
   const currentRotation = new Set(data['current-rotation']);
@@ -195,7 +197,7 @@ export function AoeSpells({ data }: AoeSpellsProps) {
                       {spells.length > 1 ? ` (${spells.length})` : null}
                     </h3>
 
-                    <Spells spells={spells} />
+                    <Spells wowheadBranch={wowheadBranch} spells={spells} />
                   </Fragment>
                 );
               })}

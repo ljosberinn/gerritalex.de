@@ -3,6 +3,7 @@ import { WowheadIcon, WowheadIconProps } from '../WowheadIcon';
 import { WowheadLinkProps, WowheadLink } from '../WowheadLink';
 
 export type SpellsProps = {
+  wowheadBranch?: WowheadLinkProps['branch'];
   spells: {
     id: number;
     type: string;
@@ -22,13 +23,13 @@ export type SpellsProps = {
   }[];
 };
 
-export function Spells({ spells }: SpellsProps) {
+export function Spells({ spells, wowheadBranch }: SpellsProps) {
   return (
     <ul>
       {spells.map((spell) => {
         return (
           <li key={spell.id}>
-            <WowheadLink kind="spell" id={spell.id} icon={spell.icon}>
+            <WowheadLink branch={wowheadBranch} kind="spell" id={spell.id} icon={spell.icon}>
               {spell.name}
             </WowheadLink>
             {spell.notes ? (
@@ -47,7 +48,7 @@ export function Spells({ spells }: SpellsProps) {
                               {typeof notePart === 'string' ? (
                                 notePart
                               ) : notePart.component === 'WowheadLink' ? (
-                                <WowheadLink {...notePart.props} />
+                                <WowheadLink branch={wowheadBranch} {...notePart.props} />
                               ) : notePart.component === 'WowheadIcon' ? (
                                 <WowheadIcon {...notePart.props} />
                               ) : notePart.component === 'b' ? (

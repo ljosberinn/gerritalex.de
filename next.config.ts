@@ -85,6 +85,15 @@ const config = (): NextConfig => {
         },
       ];
     },
+    async redirects() {
+      return [
+        {
+          source: '/blog/zephyr',
+          destination: '/blog/tww-s2-zephyr',
+          permanent: true,
+        },
+      ];
+    },
     webpack: (config, options) => {
       config.module.rules.push({
         test: /\.svg$/,
