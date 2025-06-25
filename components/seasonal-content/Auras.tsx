@@ -8,6 +8,7 @@ import { WowheadIcon } from '../WowheadIcon';
 import { useRestoreStateFromUrl } from './useRestoreStateFromUrl';
 import { ContentHeaderLink } from './ContentHeaderLink';
 import { type SpellsProps, Spells } from './Spells';
+import { WowheadLinkProps } from '../WowheadLink';
 
 type AuraDataset = {
   sources: Record<string, { icon: string; name: string }>;
@@ -16,9 +17,10 @@ type AuraDataset = {
 
 type AuraProps = {
   data: AuraDataset;
+  wowheadBranch?: WowheadLinkProps['branch'];
 };
 
-function ByType({ data }: AuraProps) {
+function ByType({ data, wowheadBranch }: AuraProps) {
   const grouped = data.spells.reduce<Record<string, Record<string, SpellsProps['spells']>>>(
     (acc, spell) => {
       if (!(spell.type in acc)) {
@@ -89,7 +91,7 @@ function ByType({ data }: AuraProps) {
                     <WowheadIcon icon={sourceInfo.icon}>{sourceInfo.name}</WowheadIcon> (
                     {spells.length})
                   </h3>
-                  <Spells spells={spells} />
+                  <Spells wowheadBranch={wowheadBranch} spells={spells} />
                 </Fragment>
               );
             })}
@@ -100,7 +102,7 @@ function ByType({ data }: AuraProps) {
   );
 }
 
-function ByDungeon({ data }: AuraProps) {
+function ByDungeon({ data, wowheadBranch }: AuraProps) {
   const grouped = data.spells.reduce<Record<string, Record<string, SpellsProps['spells']>>>(
     (acc, spell) => {
       if (!(spell.source in acc)) {
@@ -163,7 +165,7 @@ function ByDungeon({ data }: AuraProps) {
                     {type.slice(0, 1).toUpperCase()}
                     {type.slice(1)} ({spells.length})
                   </h3>
-                  <Spells spells={spells} />
+                  <Spells wowheadBranch={wowheadBranch} spells={spells} />
                 </Fragment>
               );
             })}
@@ -174,7 +176,7 @@ function ByDungeon({ data }: AuraProps) {
   );
 }
 
-export function Auras({ data }: AuraProps) {
+export function Auras({ data, wowheadBranch }: AuraProps) {
   const [by, setBy] = useState<'type' | 'dungeon'>('dungeon');
 
   const onChange = useCallback((by: string | null) => {
@@ -217,10 +219,10 @@ export function Auras({ data }: AuraProps) {
       </TabList>
       <TabPanels>
         <TabPanel>
-          <ByDungeon data={data} />
+          <ByDungeon wowheadBranch={wowheadBranch} data={data} />
         </TabPanel>
         <TabPanel>
-          <ByType data={data} />
+          <ByType wowheadBranch={wowheadBranch} data={data} />
         </TabPanel>
       </TabPanels>
     </TabGroup>

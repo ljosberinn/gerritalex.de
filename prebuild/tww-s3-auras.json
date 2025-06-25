@@ -1,0 +1,447 @@
+{
+  "sources": {
+    "operation-floodgate": {
+      "icon": "inv_achievement_dungeon_waterworks",
+      "name": "Operation: Floodgate"
+    },
+    "priory-of-the-sacred-flame": {
+      "icon": "inv_achievement_dungeon_prioryofthesacredflame",
+      "name": "Priory of the Sacred Flame"
+    },
+    "ara-kara-city-of-echoes": {
+      "icon": "inv_achievement_dungeon_arak-ara",
+      "name": "Ara-Kara, City of Echoes"
+    },
+    "eco-dome-aldani": {
+      "icon": "inv_112_achievement_dungeon_ecodome",
+      "name": "Eco-Dome Al'dani"
+    },
+    "halls-of-atonement": {
+      "icon": "achievement_dungeon_hallsofattonement",
+      "name": "Halls of Atonement"
+    },
+    "tazavesh-soleahs-gambit": {
+      "icon": "achievement_dungeon_brokerdungeon",
+      "name": "Tazavesh: So'leah's Gambit"
+    },
+    "tazavesh-streets-of-wonder": {
+      "icon": "achievement_dungeon_brokerdungeon",
+      "name": "Tazavesh: Streets of Wonder"
+    },
+    "the-dawnbreaker": {
+      "icon": "inv_achievement_dungeon_dawnbreaker",
+      "name": "The Dawnbreaker"
+    }
+  },
+  "spells": [
+    {
+      "id": 355057,
+      "icon": "ability_fomor_boss_shout",
+      "name": "Cry of Mrrggllrrgg",
+      "source": "tazavesh-soleahs-gambit",
+      "type": "enrage"
+    },
+    {
+      "id": 356133,
+      "icon": "inv_misc_archaeology_vrykuldrinkinghorn",
+      "name": "Super Saison",
+      "source": "tazavesh-soleahs-gambit",
+      "type": "enrage"
+    },
+    {
+      "id": 357281,
+      "icon": "inv_axe_2h_broker_c_01",
+      "name": "Energy Slash",
+      "source": "tazavesh-soleahs-gambit",
+      "type": "magic"
+    },
+    {
+      "id": 357827,
+      "icon": "spell_frost_iceclaw",
+      "name": "Frantic Rip",
+      "source": "tazavesh-streets-of-wonder",
+      "type": "bleed"
+    },
+    {
+      "id": 349954,
+      "icon": "spell_animabastion_groundstate",
+      "name": "Purification Protocol",
+      "source": "tazavesh-streets-of-wonder",
+      "type": "magic"
+    },
+    {
+      "id": 347775,
+      "icon": "inv_enchant_voidsphere",
+      "name": "Spam Filter",
+      "source": "tazavesh-streets-of-wonder",
+      "type": "purge"
+    },
+    {
+      "id": 349933,
+      "icon": "spell_animabastion_groundstate",
+      "name": "Flagellation Protocol",
+      "source": "tazavesh-streets-of-wonder",
+      "type": "purge"
+    },
+    {
+      "id": 353706,
+      "icon": "spell_shadow_deathpact",
+      "name": "Rowdy",
+      "source": "tazavesh-streets-of-wonder",
+      "type": "enrage"
+    },
+    {
+      "id": 355915,
+      "icon": "spell_broker_buff",
+      "name": "Glyph of Restraint",
+      "source": "tazavesh-streets-of-wonder",
+      "type": "magic"
+    },
+    {
+      "id": 355888,
+      "icon": "inv_sword_1h_broker_c_01",
+      "name": "Hard Light Baton",
+      "source": "tazavesh-streets-of-wonder",
+      "type": "magic"
+    },
+    {
+      "id": 355980,
+      "icon": "spell_broker_orb",
+      "name": "Refraction Shield",
+      "source": "tazavesh-streets-of-wonder",
+      "type": "purge"
+    },
+    {
+      "id": 357029,
+      "icon": "spell_broker_missile",
+      "name": "Hyperlight Bomb",
+      "source": "tazavesh-streets-of-wonder",
+      "type": "magic"
+    },
+    {
+      "id": 351960,
+      "icon": "spell_broker_debuff",
+      "name": "Static Cling",
+      "source": "tazavesh-streets-of-wonder",
+      "type": "magic"
+    },
+    {
+      "id": 346844,
+      "icon": "sha_inv_misc_slime_01_nightborne",
+      "name": "Alchemical Residue",
+      "source": "tazavesh-streets-of-wonder",
+      "type": "magic"
+    },
+    {
+      "id": 347716,
+      "icon": "ability_rogue_garrote",
+      "name": "Letter Opener",
+      "source": "tazavesh-streets-of-wonder",
+      "type": "bleed"
+    },
+    {
+      "id": 325876,
+      "icon": "ability_creature_cursed_02",
+      "name": "Curse of Obliteration",
+      "source": "halls-of-atonement",
+      "type": "curse"
+    },
+    {
+      "id": 1221483,
+      "icon": "ability_socererking_arcanereplication",
+      "name": "Arcing Energy",
+      "source": "eco-dome-aldani",
+      "type": "magic"
+    },
+    {
+      "id": 1221133,
+      "icon": "ability_warrior_focusedrage",
+      "name": "Hungering Rage",
+      "source": "eco-dome-aldani",
+      "type": "enrage"
+    },
+    {
+      "id": 1223000,
+      "icon": "spell_shaman_improvedearthshield",
+      "name": "Embrace of K'aresh",
+      "source": "eco-dome-aldani",
+      "type": "purge"
+    },
+    {
+      "id": 1231608,
+      "icon": "spell_mage_overpowered",
+      "name": "Alacrity",
+      "source": "eco-dome-aldani",
+      "type": "purge"
+    },
+
+    {
+      "id": 1219535,
+      "icon": "spell_deathknight_gnaw_ghoul",
+      "name": "Rift Claws",
+      "source": "eco-dome-aldani",
+      "type": "bleed"
+    },
+    {
+      "id": 1237602,
+      "icon": "ability_revendreth_rogue",
+      "name": "Gushing Wound",
+      "source": "halls-of-atonement",
+      "type": "bleed"
+    },
+    {
+      "id": 1235245,
+      "icon": "ability_deathknight_summongargoyle",
+      "name": "Ankle Bite",
+      "source": "halls-of-atonement",
+      "type": "bleed"
+    },
+    {
+      "id": 427621,
+      "type": "bleed",
+      "source": "priory-of-the-sacred-flame",
+      "icon": "inv_spear_05",
+      "name": "Impale"
+    },
+    {
+      "id": 463061,
+      "type": "enrage",
+      "source": "operation-floodgate",
+      "icon": "ability_druid_challangingroar",
+      "name": "Bloodthirsty Cackle",
+      "notes": ["Interruptible"]
+    },
+    {
+      "id": 468631,
+      "type": "bleed",
+      "source": "operation-floodgate",
+      "name": "Harpoon",
+      "icon": "inv_polearm_2h_kultirasharpoon_a_01",
+      "notes": [
+        "Interruptible",
+        [
+          "Grips you towards the casting ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 231496, "kind": "npc", "children": "Venture Co. Diver" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1213803,
+      "type": "bleed",
+      "source": "operation-floodgate",
+      "name": "Nailed",
+      "icon": "inv_eng_puresteelbolts",
+      "notes": [
+        "Roots",
+        "You can blink out of it but you stay rooted. Evoker breath variants cannot be casted to free you from this either"
+      ]
+    },
+    {
+      "id": 427635,
+      "type": "bleed",
+      "source": "priory-of-the-sacred-flame",
+      "name": "Grievous Rip",
+      "icon": "ability_druid_ferociousbite",
+      "notes": [
+        [
+          "Works identical to ",
+          {
+            "component": "WowheadIcon",
+            "props": {
+              "icon": "achievement_dungeon_darkheartthicket",
+              "children": "Darkheart Thicket"
+            }
+          },
+          " cat jumps"
+        ]
+      ]
+    },
+    {
+      "id": 424426,
+      "type": "bleed",
+      "source": "priory-of-the-sacred-flame",
+      "name": "Lunging Strike",
+      "icon": "inv_spear_11",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 211291, "kind": "npc", "children": "Sergeant Shaynemail" }
+          },
+          ", miniboss"
+        ],
+        "Prefers dps"
+      ]
+    },
+    {
+      "id": 453461,
+      "type": "bleed",
+      "source": "priory-of-the-sacred-flame",
+      "name": "Caltrops",
+      "icon": "ability_hunter_traplauncher",
+      "notes": ["Avoidable by not stepping into them"]
+    },
+    {
+      "id": 424414,
+      "type": "bleed",
+      "source": "priory-of-the-sacred-flame",
+      "name": "Pierce Armor",
+      "icon": "inv_polearm_2h_arathoroutdoor_d_01",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 207946, "kind": "npc", "children": "Captain Dailcry" }
+          },
+          ", first boss"
+        ]
+      ]
+    },
+    {
+      "id": 473713,
+      "type": "magic",
+      "source": "operation-floodgate",
+      "name": "Kinetic Explosive Gel",
+      "icon": "inv_ammo_firetar",
+      "notes": [
+        "Second boss core mechanic to deal with bombs",
+        "You get 2 per set of bombs, one early, one late. Preposition accordingly",
+        "Dispelling deals damage to the group and knocks up bombs"
+      ]
+    },
+    {
+      "id": 462737,
+      "type": "magic",
+      "source": "operation-floodgate",
+      "name": "Black Blood Wound",
+      "icon": "spell_yorsahj_bloodboil_purple",
+      "notes": ["Stacking debuff on tank"]
+    },
+    {
+      "id": 469799,
+      "type": "magic",
+      "source": "operation-floodgate",
+      "name": "Overcharge",
+      "icon": "spell_nature_lightningoverload",
+      "notes": ["If not dispelled, player is stunned for 5 seconds"]
+    },
+    {
+      "id": 428170,
+      "type": "magic",
+      "source": "priory-of-the-sacred-flame",
+      "name": "Blinding Light",
+      "icon": "inv_ability_holyfire_nova",
+      "notes": [
+        "Face away to avoid",
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 207940, "kind": "npc", "children": "Prioress Murrpray" }
+          },
+          ", last boss"
+        ]
+      ]
+    },
+    {
+      "id": 451606,
+      "type": "magic",
+      "source": "priory-of-the-sacred-flame",
+      "name": "Holy Flame",
+      "icon": "inv_ability_holyfire_missile",
+      "notes": [
+        "Avoidable, dodge the swirly",
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 207940, "kind": "npc", "children": "Prioress Murrpray" }
+          },
+          ", last boss"
+        ]
+      ]
+    },
+    {
+      "id": 427583,
+      "type": "magic",
+      "source": "priory-of-the-sacred-flame",
+      "name": "Repentance",
+      "icon": "spell_holy_prayerofhealing",
+      "notes": ["Interruptible"]
+    },
+    {
+      "id": 427897,
+      "type": "magic",
+      "source": "priory-of-the-sacred-flame",
+      "name": "Heat Wave",
+      "icon": "ability_rhyolith_lavapool"
+    },
+    {
+      "id": 435148,
+      "type": "magic",
+      "source": "priory-of-the-sacred-flame",
+      "name": "Blazing Strike",
+      "icon": "spell_holy_crusaderstrike"
+    },
+    {
+      "id": 471733,
+      "type": "purge",
+      "source": "operation-floodgate",
+      "name": "Restorative Algae",
+      "icon": "spell_lfieblood",
+      "notes": ["Interruptible", "Can be spellstolen"]
+    },
+    {
+      "id": 427346,
+      "type": "purge",
+      "source": "priory-of-the-sacred-flame",
+      "name": "Inner Fire",
+      "icon": "spell_holy_devineaegis",
+      "notes": ["Stuns target upon removal", "Not available while charmed"]
+    },
+    {
+      "id": 444728,
+      "type": "purge",
+      "source": "priory-of-the-sacred-flame",
+      "name": "Templar's Wrath",
+      "icon": "spell_holy_avenginewrath",
+      "notes": ["Not available while charmed"]
+    },
+    {
+      "id": 427342,
+      "type": "purge",
+      "source": "priory-of-the-sacred-flame",
+      "name": "Defend",
+      "icon": "ability_defend",
+      "notes": [
+        [
+          "Honorable mention - when ",
+          { "component": "b", "props": { "children": "stopped" } },
+          ", target takes 50% of damage taken for x seconds"
+        ]
+      ]
+    },
+    {
+      "id": 424419,
+      "type": "enrage",
+      "source": "priory-of-the-sacred-flame",
+      "icon": "warrior_disruptingshout",
+      "name": "Battle Cry",
+      "notes": [
+        "Interruptible",
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 207946, "kind": "npc", "children": "Captain Dailcry" }
+          }
+        ]
+      ]
+    }
+  ]
+}

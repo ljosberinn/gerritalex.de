@@ -158,15 +158,19 @@ export const Blog = defineDocumentType(() => ({
           if (hasChanges) {
             const path = `data/${doc._raw.sourceFilePath}`;
             const file = await readFile(path, 'utf-8');
-            const lines = file.split('\n');
+            const date = new Date(ctimeMs).toISOString().split('T')[0];
 
-            const newFile = [
-              '---',
-              `lastmod: '${new Date(ctimeMs).toISOString().split('T')[0]}'`,
-              ...lines.splice(1).filter((line) => !line.includes('lastmod: ')),
-            ].join('\n');
+            if (!file.includes(date)) {
+              const lines = file.split('\n');
 
-            await writeFile(path, newFile, 'utf-8');
+              const newFile = [
+                '---',
+                `lastmod: '${date}'`,
+                ...lines.splice(1).filter((line) => !line.includes('lastmod: ')),
+              ].join('\n');
+
+              await writeFile(path, newFile, 'utf-8');
+            }
           }
         }
 
