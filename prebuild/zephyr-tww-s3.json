@@ -108,21 +108,7 @@
       "type": "azhiccar",
       "name": "Devour",
       "icon": "spell_shadow_devouringplague.",
-      "source": "eco-dome-aldani",
-      "notes": [
-        [
-          "Avoidable by killing all ",
-          {
-            "component": "WowheadLink",
-            "props": {
-              "id": 236190,
-              "kind": "npc",
-              "children": "Frenzied Mite"
-            }
-          },
-          "s in time."
-        ]
-      ]
+      "source": "eco-dome-aldani"
     },
     {
       "id": 1217664,
