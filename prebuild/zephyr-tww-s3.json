@@ -232,7 +232,7 @@
       "name": "Arcane Slash",
       "icon": "spell_arcane_massdispel",
       "source": "eco-dome-aldani",
-      "notes": ["Avoidable frontal."]
+      "notes": ["Avoidable frontal, but tough to see."]
     },
     {
       "id": 1231850,
