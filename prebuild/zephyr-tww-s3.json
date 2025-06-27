@@ -15,83 +15,56 @@
       "icon": "inv_achievement_zone_undermine",
       "name": "Manaforge Omega",
       "encounters": [
-        {
-          "icon": "inv_112_achievement_raid_automaton",
-          "name": "Plexus Sentinel"
-        },
-        {
-          "icon": "inv_112_achievement_raid_silkworm",
-          "name": "Loom'ithar"
-        },
-        {
-          "icon": "inv_112_achievement_raid_binder",
-          "name": "Soulbinder Naazindhri"
-        },
-        {
-          "icon": "inv_112_achievement_raid_engineer",
-          "name": "Forgeweaver Araz"
-        },
-        {
-          "icon": "inv_112_achievement_raid_dhcouncil",
-          "name": "The Soul Hunters"
-        },
-        {
-          "icon": "inv_112_achievement_raid_glasselemental",
-          "name": "Fractillus"
-        },
-        {
-          "icon": "inv_112_achievement_raid_salhadaar",
-          "name": "Nexus-King Salhadaar"
-        },
-        {
-          "icon": "inv_112_achievement_raid_dimensius",
-          "name": "Dimensius, the All-Devouring"
-        }
+        { "icon": "inv_112_achievement_raid_automaton", "name": "Plexus Sentinel" },
+        { "icon": "inv_112_achievement_raid_silkworm", "name": "Loom'ithar" },
+        { "icon": "inv_112_achievement_raid_binder", "name": "Soulbinder Naazindhri" },
+        { "icon": "inv_112_achievement_raid_engineer", "name": "Forgeweaver Araz" },
+        { "icon": "inv_112_achievement_raid_dhcouncil", "name": "The Soul Hunters" },
+        { "icon": "inv_112_achievement_raid_glasselemental", "name": "Fractillus" },
+        { "icon": "inv_112_achievement_raid_salhadaar", "name": "Nexus-King Salhadaar" },
+        { "icon": "inv_112_achievement_raid_dimensius", "name": "Dimensius, the All-Devouring" }
       ]
     },
     "ara-kara-city-of-echoes": {
-      "icon": "inv_achievement_dungeon_arak-ara",
       "name": "Ara-Kara, City of Echoes",
-      "encounters": ["Avanoxx", "Anub'zekt", "Ki'katal the Harvester"]
+      "encounters": ["Avanoxx", "Anub'zekt", "Ki'katal the Harvester"],
+      "icon": "inv_achievement_dungeon_arak-ara"
     },
     "eco-dome-aldani": {
-      "icon": "inv_112_achievement_dungeon_ecodome",
       "name": "Eco-Dome Al'dani",
-      "encounters": ["Azhiccar", "Taah'bat and A'wazj", "Soul-Scribe"]
+      "encounters": ["Azhiccar", "Taah'bat and A'wazj", "Soul-Scribe"],
+      "icon": "inv_112_achievement_dungeon_ecodome"
     },
     "halls-of-atonement": {
-      "icon": "achievement_dungeon_hallsofattonement",
       "name": "Halls of Atonement",
       "encounters": [
         "Halkias, the Sin-Stained Goliath",
         "Echelon",
         "High Adjudicator Aleez",
         "Lord Chamberlain"
-      ]
+      ],
+      "icon": "achievement_dungeon_hallsofattonement"
     },
     "tazavesh-soleahs-gambit": {
-      "icon": "achievement_dungeon_brokerdungeon",
       "name": "Tazavesh: So'leah's Gambit",
       "encounters": ["Hylbrande", "Timecap'n Hooktail", "So'leah"]
     },
     "tazavesh-streets-of-wonder": {
-      "icon": "achievement_dungeon_brokerdungeon",
       "name": "Tazavesh: Streets of Wonder",
       "encounters": ["Zo'phex, the Sentinel", "The Menagerie", "P.O.S.T. Master", "?", "So'zami"]
     },
     "the-dawnbreaker": {
-      "icon": "inv_achievement_dungeon_dawnbreaker",
       "name": "The Dawnbreaker",
-      "encounters": ["Speaker Shadowcrown", "Anub'ikkaj", "Rasha'nan"]
+      "encounters": ["Speaker Shadowcrown", "Anub'ikkaj", "Rasha'nan"],
+      "icon": "inv_achievement_dungeon_dawnbreaker"
     },
     "operation-floodgate": {
-      "icon": "inv_achievement_dungeon_waterworks",
       "name": "Operation: Floodgate",
-      "encounters": ["Big M.O.M.M.A.", "Demolition Duo", "Swampface", "Geezle Gigazap"]
+      "encounters": ["Big M.O.M.M.A.", "Demolition Duo", "Swampface", "Geezle Gigazap"],
+      "icon": "inv_achievement_dungeon_waterworks"
     },
     "priory-of-the-sacred-flame": {
-      "icon": "inv_achievement_dungeon_prioryofthesacredflame",
-      "name": "Priory of the Sacred Flame",
+      "name": "Priory of the Sacred Flames",
       "encounters": ["Captain Dailcry", "Baron Braunpyke", "Prioress Murrpray"]
     }
   },
@@ -107,7 +80,7 @@
       "id": 1217316,
       "type": "azhiccar",
       "name": "Devour",
-      "icon": "spell_shadow_devouringplague.",
+      "icon": "spell_shadow_devouringplague",
       "source": "eco-dome-aldani"
     },
     {
@@ -209,11 +182,7 @@
           "Aiming frontal of ",
           {
             "component": "WowheadLink",
-            "props": {
-              "id": 236995,
-              "kind": "npc",
-              "children": "Ravenous Destroyer"
-            }
+            "props": { "id": 236995, "kind": "npc", "children": "Ravenous Destroyer" }
           },
           "."
         ]
@@ -235,35 +204,6 @@
       "notes": ["Avoidable frontal, but tough to see."]
     },
     {
-      "id": 1231850,
-      "type": "azhiccar",
-      "name": "Invading Shriek",
-      "icon": "ability_vehicle_sonicshockwave",
-      "source": "eco-dome-aldani"
-    },
-    {
-      "id": 1237199,
-      "type": "trash",
-      "name": "Burrow Charge",
-      "icon": "pvp_burrow",
-      "source": "eco-dome-aldani"
-    },
-    {
-      "id": 1242006,
-      "type": "soul-scribe",
-      "name": "Echoes of Fate",
-      "icon": "spell_nature_starfall",
-      "source": "eco-dome-aldani",
-      "notes": ["Near-permanent passive damage."]
-    },
-    {
-      "id": 1237224,
-      "type": "trash",
-      "name": "Stinging Sandstorm",
-      "icon": "spell_sandstorm",
-      "source": "eco-dome-aldani"
-    },
-    {
       "id": 1231494,
       "type": "trash",
       "name": "Overgorged Burst",
@@ -274,11 +214,7 @@
           "Whenever ",
           {
             "component": "WowheadLink",
-            "props": {
-              "id": 242209,
-              "kind": "npc",
-              "children": "Overgorged Mite"
-            }
+            "props": { "id": 242209, "kind": "npc", "children": "Overgorged Mite" }
           },
           "s die."
         ],
@@ -296,6 +232,35 @@
           " casts as often as possible."
         ]
       ]
+    },
+    {
+      "id": 1231850,
+      "type": "azhiccar",
+      "name": "Invading Shriek",
+      "icon": "ability_vehicle_sonicshockwave",
+      "source": "eco-dome-aldani"
+    },
+    {
+      "id": 1237199,
+      "type": "trash",
+      "name": "Burrow Charge",
+      "icon": "pvp_burrow",
+      "source": "eco-dome-aldani"
+    },
+    {
+      "id": 1237224,
+      "type": "trash",
+      "name": "Stinging Sandstorm",
+      "icon": "spell_sandstorm",
+      "source": "eco-dome-aldani"
+    },
+    {
+      "id": 1242006,
+      "type": "soul-scribe",
+      "name": "Echoes of Fate",
+      "icon": "spell_nature_starfall",
+      "source": "eco-dome-aldani",
+      "notes": ["Near-permanent passive damage."]
     }
   ]
 }

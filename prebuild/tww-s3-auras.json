@@ -28,159 +28,15 @@
       "name": "Tazavesh: Streets of Wonder",
       "icon": "achievement_dungeon_brokerdungeon"
     },
-    "the-dawnbreaker": {
-      "name": "The Dawnbreaker",
-      "icon": "inv_achievement_dungeon_dawnbreaker"
-    }
+    "the-dawnbreaker": { "name": "The Dawnbreaker", "icon": "inv_achievement_dungeon_dawnbreaker" }
   },
   "spells": [
     {
-      "id": 438599,
-      "icon": "spell_shadow_lifedrain",
-      "name": "Bleeding Jab",
-      "source": "ara-kara-city-of-echoes",
-      "type": "bleed"
-    },
-    {
-      "id": 432448,
-      "icon": "spell_shadow_mindtwisting",
-      "name": "Stygian Seed",
-      "source": "the-dawnbreaker",
-      "type": "magic"
-    },
-    {
-      "id": 431491,
-      "icon": "ability_warrior_bloodbath",
-      "name": "Tainted Slash",
-      "source": "the-dawnbreaker",
-      "type": "bleed"
-    },
-    {
-      "id": 426735,
-      "icon": "spell_shadow_painspike",
-      "name": "Burning Shadows",
-      "source": "the-dawnbreaker",
-      "type": "magic"
-    },
-    {
-      "id": 438618,
-      "icon": "spell_nature_corrosivebreath",
-      "name": "Venomous Spit",
-      "source": "ara-kara-city-of-echoes",
-      "type": "poison"
-    },
-    {
-      "id": 436322,
-      "icon": "spell_nature_corrosivebreath",
-      "name": "Poison Bolt",
-      "source": "ara-kara-city-of-echoes",
-      "type": "poison"
-    },
-    {
-      "id": 461487,
-      "icon": "inv_ability_poison_orb",
-      "name": "Cultivated Poisons",
-      "source": "ara-kara-city-of-echoes",
-      "type": "poison"
-    },
-
-    {
-      "id": 431309,
-      "icon": "warlock_curse_shadow_aura",
-      "name": "Ensnaring Shadows",
-      "source": "the-dawnbreaker",
+      "id": 325876,
+      "icon": "ability_creature_cursed_02",
+      "name": "Curse of Obliteration",
+      "source": "halls-of-atonement",
       "type": "curse"
-    },
-    {
-      "id": 355057,
-      "icon": "ability_fomor_boss_shout",
-      "name": "Cry of Mrrggllrrgg",
-      "source": "tazavesh-soleahs-gambit",
-      "type": "enrage"
-    },
-    {
-      "id": 356133,
-      "icon": "inv_misc_archaeology_vrykuldrinkinghorn",
-      "name": "Super Saison",
-      "source": "tazavesh-soleahs-gambit",
-      "type": "enrage"
-    },
-    {
-      "id": 357281,
-      "icon": "inv_axe_2h_broker_c_01",
-      "name": "Energy Slash",
-      "source": "tazavesh-soleahs-gambit",
-      "type": "magic"
-    },
-    {
-      "id": 357827,
-      "icon": "spell_frost_iceclaw",
-      "name": "Frantic Rip",
-      "source": "tazavesh-streets-of-wonder",
-      "type": "bleed"
-    },
-    {
-      "id": 349954,
-      "icon": "spell_animabastion_groundstate",
-      "name": "Purification Protocol",
-      "source": "tazavesh-streets-of-wonder",
-      "type": "magic"
-    },
-    {
-      "id": 347775,
-      "icon": "inv_enchant_voidsphere",
-      "name": "Spam Filter",
-      "source": "tazavesh-streets-of-wonder",
-      "type": "purge"
-    },
-    {
-      "id": 349933,
-      "icon": "spell_animabastion_groundstate",
-      "name": "Flagellation Protocol",
-      "source": "tazavesh-streets-of-wonder",
-      "type": "purge"
-    },
-    {
-      "id": 353706,
-      "icon": "spell_shadow_deathpact",
-      "name": "Rowdy",
-      "source": "tazavesh-streets-of-wonder",
-      "type": "enrage"
-    },
-    {
-      "id": 355915,
-      "icon": "spell_broker_buff",
-      "name": "Glyph of Restraint",
-      "source": "tazavesh-streets-of-wonder",
-      "type": "magic"
-    },
-    {
-      "id": 355888,
-      "icon": "inv_sword_1h_broker_c_01",
-      "name": "Hard Light Baton",
-      "source": "tazavesh-streets-of-wonder",
-      "type": "magic"
-    },
-    {
-      "id": 355980,
-      "icon": "spell_broker_orb",
-      "name": "Refraction Shield",
-      "source": "tazavesh-streets-of-wonder",
-      "type": "purge"
-    },
-    {
-      "id": 357029,
-      "icon": "spell_broker_missile",
-      "name": "Hyperlight Bomb",
-      "source": "tazavesh-streets-of-wonder",
-      "type": "magic"
-    },
-    {
-      "id": 351960,
-      "icon": "spell_broker_debuff",
-      "name": "Static Cling",
-      "source": "tazavesh-streets-of-wonder",
-      "type": "magic"
     },
     {
       "id": 346844,
@@ -197,61 +53,168 @@
       "type": "bleed"
     },
     {
-      "id": 325876,
-      "icon": "ability_creature_cursed_02",
-      "name": "Curse of Obliteration",
-      "source": "halls-of-atonement",
-      "type": "curse"
+      "id": 347775,
+      "icon": "inv_enchant_voidsphere",
+      "name": "Spam Filter",
+      "source": "tazavesh-streets-of-wonder",
+      "type": "purge"
     },
     {
-      "id": 1221483,
-      "icon": "ability_socererking_arcanereplication",
-      "name": "Arcing Energy",
-      "source": "eco-dome-aldani",
+      "id": 349933,
+      "icon": "spell_animabastion_groundstate",
+      "name": "Flagellation Protocol",
+      "source": "tazavesh-streets-of-wonder",
+      "type": "purge"
+    },
+    {
+      "id": 349954,
+      "icon": "spell_animabastion_groundstate",
+      "name": "Purification Protocol",
+      "source": "tazavesh-streets-of-wonder",
       "type": "magic"
     },
     {
-      "id": 1221133,
-      "icon": "ability_warrior_focusedrage",
-      "name": "Hungering Rage",
-      "source": "eco-dome-aldani",
+      "id": 351960,
+      "icon": "spell_broker_debuff",
+      "name": "Static Cling",
+      "source": "tazavesh-streets-of-wonder",
+      "type": "magic"
+    },
+    {
+      "id": 353706,
+      "icon": "spell_shadow_deathpact",
+      "name": "Rowdy",
+      "source": "tazavesh-streets-of-wonder",
       "type": "enrage"
     },
     {
-      "id": 1223000,
-      "icon": "spell_shaman_improvedearthshield",
-      "name": "Embrace of K'aresh",
-      "source": "eco-dome-aldani",
+      "id": 355057,
+      "icon": "ability_fomor_boss_shout",
+      "name": "Cry of Mrrggllrrgg",
+      "source": "tazavesh-soleahs-gambit",
+      "type": "enrage"
+    },
+    {
+      "id": 355888,
+      "icon": "inv_sword_1h_broker_c_01",
+      "name": "Hard Light Baton",
+      "source": "tazavesh-streets-of-wonder",
+      "type": "magic"
+    },
+    {
+      "id": 355915,
+      "icon": "spell_broker_buff",
+      "name": "Glyph of Restraint",
+      "source": "tazavesh-streets-of-wonder",
+      "type": "magic"
+    },
+    {
+      "id": 355980,
+      "icon": "spell_broker_orb",
+      "name": "Refraction Shield",
+      "source": "tazavesh-streets-of-wonder",
       "type": "purge"
     },
     {
-      "id": 1231608,
-      "icon": "spell_mage_overpowered",
-      "name": "Alacrity",
-      "source": "eco-dome-aldani",
-      "type": "purge"
+      "id": 356133,
+      "icon": "inv_misc_archaeology_vrykuldrinkinghorn",
+      "name": "Super Saison",
+      "source": "tazavesh-soleahs-gambit",
+      "type": "enrage"
     },
-
     {
-      "id": 1219535,
-      "icon": "spell_deathknight_gnaw_ghoul",
-      "name": "Rift Claws",
-      "source": "eco-dome-aldani",
+      "id": 357029,
+      "icon": "spell_broker_missile",
+      "name": "Hyperlight Bomb",
+      "source": "tazavesh-streets-of-wonder",
+      "type": "magic"
+    },
+    {
+      "id": 357281,
+      "icon": "inv_axe_2h_broker_c_01",
+      "name": "Energy Slash",
+      "source": "tazavesh-soleahs-gambit",
+      "type": "magic"
+    },
+    {
+      "id": 357827,
+      "icon": "spell_frost_iceclaw",
+      "name": "Frantic Rip",
+      "source": "tazavesh-streets-of-wonder",
       "type": "bleed"
     },
     {
-      "id": 1237602,
-      "icon": "ability_revendreth_rogue",
-      "name": "Gushing Wound",
-      "source": "halls-of-atonement",
-      "type": "bleed"
+      "id": 424419,
+      "type": "enrage",
+      "source": "priory-of-the-sacred-flame",
+      "icon": "warrior_disruptingshout",
+      "name": "Battle Cry",
+      "notes": [
+        "Interruptible, even while the boss is shielded!",
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 207946, "kind": "npc", "children": "Captain Dailcry" }
+          }
+        ]
+      ]
     },
     {
-      "id": 1235245,
-      "icon": "ability_deathknight_summongargoyle",
-      "name": "Ankle Bite",
-      "source": "halls-of-atonement",
-      "type": "bleed"
+      "id": 424426,
+      "type": "bleed",
+      "source": "priory-of-the-sacred-flame",
+      "name": "Lunging Strike",
+      "icon": "inv_spear_11",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 211291, "kind": "npc", "children": "Sergeant Shaynemail" }
+          },
+          ", miniboss"
+        ],
+        "Prefers non-tanks.",
+        "Avoidable by moving."
+      ]
+    },
+    {
+      "id": 426735,
+      "icon": "spell_shadow_painspike",
+      "name": "Burning Shadows",
+      "source": "the-dawnbreaker",
+      "type": "magic"
+    },
+    {
+      "id": 427342,
+      "type": "purge",
+      "source": "priory-of-the-sacred-flame",
+      "name": "Defend",
+      "icon": "ability_defend",
+      "notes": [
+        [
+          "Honorable mention - when ",
+          { "component": "b", "props": { "children": "stopped" } },
+          ", target takes 50% of damage taken for x seconds."
+        ]
+      ]
+    },
+    {
+      "id": 427346,
+      "type": "purge",
+      "source": "priory-of-the-sacred-flame",
+      "name": "Inner Fire",
+      "icon": "spell_holy_devineaegis",
+      "notes": ["Stuns target upon removal.", "Not available while charmed."]
+    },
+    {
+      "id": 427583,
+      "type": "magic",
+      "source": "priory-of-the-sacred-flame",
+      "name": "Repentance",
+      "icon": "spell_holy_prayerofhealing",
+      "notes": ["Interruptible."]
     },
     {
       "id": 427621,
@@ -259,6 +222,114 @@
       "source": "priory-of-the-sacred-flame",
       "icon": "inv_spear_05",
       "name": "Impale"
+    },
+    {
+      "id": 427635,
+      "type": "bleed",
+      "source": "priory-of-the-sacred-flame",
+      "name": "Grievous Rip",
+      "icon": "ability_druid_ferociousbite",
+      "notes": [
+        [
+          "Works identical to ",
+          {
+            "component": "WowheadIcon",
+            "props": {
+              "icon": "achievement_dungeon_darkheartthicket",
+              "children": "Darkheart Thicket"
+            }
+          },
+          " cat jumps."
+        ]
+      ]
+    },
+    {
+      "id": 427897,
+      "type": "magic",
+      "source": "priory-of-the-sacred-flame",
+      "name": "Heat Wave",
+      "icon": "ability_rhyolith_lavapool"
+    },
+    {
+      "id": 431309,
+      "icon": "warlock_curse_shadow_aura",
+      "name": "Ensnaring Shadows",
+      "source": "the-dawnbreaker",
+      "type": "curse"
+    },
+    {
+      "id": 431491,
+      "icon": "ability_warrior_bloodbath",
+      "name": "Tainted Slash",
+      "source": "the-dawnbreaker",
+      "type": "bleed"
+    },
+    {
+      "id": 432448,
+      "icon": "spell_shadow_mindtwisting",
+      "name": "Stygian Seed",
+      "source": "the-dawnbreaker",
+      "type": "magic"
+    },
+    {
+      "id": 435148,
+      "type": "magic",
+      "source": "priory-of-the-sacred-flame",
+      "name": "Blazing Strike",
+      "icon": "spell_holy_crusaderstrike",
+      "notes": ["Tankbuster."]
+    },
+    {
+      "id": 436322,
+      "icon": "spell_nature_corrosivebreath",
+      "name": "Poison Bolt",
+      "source": "ara-kara-city-of-echoes",
+      "type": "poison"
+    },
+    {
+      "id": 438599,
+      "icon": "spell_shadow_lifedrain",
+      "name": "Bleeding Jab",
+      "source": "ara-kara-city-of-echoes",
+      "type": "bleed"
+    },
+    {
+      "id": 438618,
+      "icon": "spell_nature_corrosivebreath",
+      "name": "Venomous Spit",
+      "source": "ara-kara-city-of-echoes",
+      "type": "poison"
+    },
+    {
+      "id": 444728,
+      "type": "purge",
+      "source": "priory-of-the-sacred-flame",
+      "name": "Templar's Wrath",
+      "icon": "spell_holy_avenginewrath",
+      "notes": ["Not available while charmed."]
+    },
+    {
+      "id": 453461,
+      "type": "bleed",
+      "source": "priory-of-the-sacred-flame",
+      "name": "Caltrops",
+      "icon": "ability_hunter_traplauncher",
+      "notes": ["Avoidable by not stepping into them."]
+    },
+    {
+      "id": 461487,
+      "icon": "inv_ability_poison_orb",
+      "name": "Cultivated Poisons",
+      "source": "ara-kara-city-of-echoes",
+      "type": "poison"
+    },
+    {
+      "id": 462737,
+      "type": "magic",
+      "source": "operation-floodgate",
+      "name": "Black Blood Wound",
+      "icon": "spell_yorsahj_bloodboil_purple",
+      "notes": ["Stacking debuff on tank."]
     },
     {
       "id": 463061,
@@ -286,6 +357,29 @@
       ]
     },
     {
+      "id": 469799,
+      "type": "magic",
+      "source": "operation-floodgate",
+      "name": "Overcharge",
+      "icon": "spell_nature_lightningoverload",
+      "notes": ["If not dispelled, player is stunned for 5 seconds."]
+    },
+    {
+      "id": 471733,
+      "type": "purge",
+      "source": "operation-floodgate",
+      "name": "Restorative Algae",
+      "icon": "spell_lfieblood",
+      "notes": ["Interruptible.", "Can be spellstolen."]
+    },
+    {
+      "id": 473713,
+      "type": "magic",
+      "source": "operation-floodgate",
+      "name": "Kinetic Explosive Gel",
+      "icon": "inv_ammo_firetar"
+    },
+    {
       "id": 1213803,
       "type": "bleed",
       "source": "operation-floodgate",
@@ -297,152 +391,53 @@
       ]
     },
     {
-      "id": 427635,
-      "type": "bleed",
-      "source": "priory-of-the-sacred-flame",
-      "name": "Grievous Rip",
-      "icon": "ability_druid_ferociousbite",
-      "notes": [
-        [
-          "Works identical to ",
-          {
-            "component": "WowheadIcon",
-            "props": {
-              "icon": "achievement_dungeon_darkheartthicket",
-              "children": "Darkheart Thicket"
-            }
-          },
-          " cat jumps."
-        ]
-      ]
+      "id": 1219535,
+      "icon": "spell_deathknight_gnaw_ghoul",
+      "name": "Rift Claws",
+      "source": "eco-dome-aldani",
+      "type": "bleed"
     },
     {
-      "id": 424426,
-      "type": "bleed",
-      "source": "priory-of-the-sacred-flame",
-      "name": "Lunging Strike",
-      "icon": "inv_spear_11",
-      "notes": [
-        [
-          "Via ",
-          {
-            "component": "WowheadLink",
-            "props": { "id": 211291, "kind": "npc", "children": "Sergeant Shaynemail" }
-          },
-          ", miniboss"
-        ],
-        "Prefers non-tanks.",
-        "Avoidable by moving."
-      ]
+      "id": 1221133,
+      "icon": "ability_warrior_focusedrage",
+      "name": "Hungering Rage",
+      "source": "eco-dome-aldani",
+      "type": "enrage"
     },
     {
-      "id": 453461,
-      "type": "bleed",
-      "source": "priory-of-the-sacred-flame",
-      "name": "Caltrops",
-      "icon": "ability_hunter_traplauncher",
-      "notes": ["Avoidable by not stepping into them."]
-    },
-    {
-      "id": 473713,
+      "source": "eco-dome-aldani",
       "type": "magic",
-      "source": "operation-floodgate",
-      "name": "Kinetic Explosive Gel",
-      "icon": "inv_ammo_firetar"
+      "icon": "ability_socererking_arcanereplication",
+      "name": "Arcing Energy",
+      "id": 1221483
     },
     {
-      "id": 462737,
-      "type": "magic",
-      "source": "operation-floodgate",
-      "name": "Black Blood Wound",
-      "icon": "spell_yorsahj_bloodboil_purple",
-      "notes": ["Stacking debuff on tank."]
+      "id": 1223000,
+      "icon": "spell_shaman_improvedearthshield",
+      "name": "Embrace of K'aresh",
+      "source": "eco-dome-aldani",
+      "type": "purge"
     },
     {
-      "id": 469799,
-      "type": "magic",
-      "source": "operation-floodgate",
-      "name": "Overcharge",
-      "icon": "spell_nature_lightningoverload",
-      "notes": ["If not dispelled, player is stunned for 5 seconds."]
+      "id": 1231608,
+      "icon": "spell_mage_overpowered",
+      "name": "Alacrity",
+      "source": "eco-dome-aldani",
+      "type": "purge"
     },
     {
-      "id": 427583,
-      "type": "magic",
-      "source": "priory-of-the-sacred-flame",
-      "name": "Repentance",
-      "icon": "spell_holy_prayerofhealing",
-      "notes": ["Interruptible."]
+      "id": 1235245,
+      "icon": "ability_deathknight_summongargoyle",
+      "name": "Ankle Bite",
+      "source": "halls-of-atonement",
+      "type": "bleed"
     },
     {
-      "id": 427897,
-      "type": "magic",
-      "source": "priory-of-the-sacred-flame",
-      "name": "Heat Wave",
-      "icon": "ability_rhyolith_lavapool"
-    },
-    {
-      "id": 435148,
-      "type": "magic",
-      "source": "priory-of-the-sacred-flame",
-      "name": "Blazing Strike",
-      "icon": "spell_holy_crusaderstrike",
-      "notes": ["Tankbuster."]
-    },
-    {
-      "id": 471733,
-      "type": "purge",
-      "source": "operation-floodgate",
-      "name": "Restorative Algae",
-      "icon": "spell_lfieblood",
-      "notes": ["Interruptible.", "Can be spellstolen."]
-    },
-    {
-      "id": 427346,
-      "type": "purge",
-      "source": "priory-of-the-sacred-flame",
-      "name": "Inner Fire",
-      "icon": "spell_holy_devineaegis",
-      "notes": ["Stuns target upon removal.", "Not available while charmed."]
-    },
-    {
-      "id": 444728,
-      "type": "purge",
-      "source": "priory-of-the-sacred-flame",
-      "name": "Templar's Wrath",
-      "icon": "spell_holy_avenginewrath",
-      "notes": ["Not available while charmed."]
-    },
-    {
-      "id": 427342,
-      "type": "purge",
-      "source": "priory-of-the-sacred-flame",
-      "name": "Defend",
-      "icon": "ability_defend",
-      "notes": [
-        [
-          "Honorable mention - when ",
-          { "component": "b", "props": { "children": "stopped" } },
-          ", target takes 50% of damage taken for x seconds."
-        ]
-      ]
-    },
-    {
-      "id": 424419,
-      "type": "enrage",
-      "source": "priory-of-the-sacred-flame",
-      "icon": "warrior_disruptingshout",
-      "name": "Battle Cry",
-      "notes": [
-        "Interruptible, even while the boss is shielded!",
-        [
-          "Via ",
-          {
-            "component": "WowheadLink",
-            "props": { "id": 207946, "kind": "npc", "children": "Captain Dailcry" }
-          }
-        ]
-      ]
+      "id": 1237602,
+      "icon": "ability_revendreth_rogue",
+      "name": "Gushing Wound",
+      "source": "halls-of-atonement",
+      "type": "bleed"
     }
   ]
 }
