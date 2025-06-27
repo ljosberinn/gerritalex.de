@@ -1,39 +1,96 @@
 {
   "sources": {
-    "operation-floodgate": {
-      "icon": "inv_achievement_dungeon_waterworks",
-      "name": "Operation: Floodgate"
-    },
-    "priory-of-the-sacred-flame": {
-      "icon": "inv_achievement_dungeon_prioryofthesacredflame",
-      "name": "Priory of the Sacred Flame"
-    },
     "ara-kara-city-of-echoes": {
-      "icon": "inv_achievement_dungeon_arak-ara",
-      "name": "Ara-Kara, City of Echoes"
+      "name": "Ara-Kara, City of Echoes",
+      "icon": "inv_achievement_dungeon_arak-ara"
     },
     "eco-dome-aldani": {
-      "icon": "inv_112_achievement_dungeon_ecodome",
-      "name": "Eco-Dome Al'dani"
+      "name": "Eco-Dome Al'dani",
+      "icon": "inv_112_achievement_dungeon_ecodome"
     },
     "halls-of-atonement": {
-      "icon": "achievement_dungeon_hallsofattonement",
-      "name": "Halls of Atonement"
+      "name": "Halls of Atonement",
+      "icon": "achievement_dungeon_hallsofattonement"
+    },
+    "operation-floodgate": {
+      "name": "Operation: Floodgate",
+      "icon": "inv_achievement_dungeon_waterworks"
+    },
+    "priory-of-the-sacred-flame": {
+      "name": "Priory of the Sacred Flames",
+      "icon": "inv_achievement_dungeon_prioryofthesacredflame"
     },
     "tazavesh-soleahs-gambit": {
-      "icon": "achievement_dungeon_brokerdungeon",
-      "name": "Tazavesh: So'leah's Gambit"
+      "name": "Tazavesh: So'leah's Gambit",
+      "icon": "achievement_dungeon_brokerdungeon"
     },
     "tazavesh-streets-of-wonder": {
-      "icon": "achievement_dungeon_brokerdungeon",
-      "name": "Tazavesh: Streets of Wonder"
+      "name": "Tazavesh: Streets of Wonder",
+      "icon": "achievement_dungeon_brokerdungeon"
     },
     "the-dawnbreaker": {
-      "icon": "inv_achievement_dungeon_dawnbreaker",
-      "name": "The Dawnbreaker"
+      "name": "The Dawnbreaker",
+      "icon": "inv_achievement_dungeon_dawnbreaker"
     }
   },
   "spells": [
+    {
+      "id": 438599,
+      "icon": "spell_shadow_lifedrain",
+      "name": "Bleeding Jab",
+      "source": "ara-kara-city-of-echoes",
+      "type": "bleed"
+    },
+    {
+      "id": 432448,
+      "icon": "spell_shadow_mindtwisting",
+      "name": "Stygian Seed",
+      "source": "the-dawnbreaker",
+      "type": "magic"
+    },
+    {
+      "id": 431491,
+      "icon": "ability_warrior_bloodbath",
+      "name": "Tainted Slash",
+      "source": "the-dawnbreaker",
+      "type": "bleed"
+    },
+    {
+      "id": 426735,
+      "icon": "spell_shadow_painspike",
+      "name": "Burning Shadows",
+      "source": "the-dawnbreaker",
+      "type": "magic"
+    },
+    {
+      "id": 438618,
+      "icon": "spell_nature_corrosivebreath",
+      "name": "Venomous Spit",
+      "source": "ara-kara-city-of-echoes",
+      "type": "poison"
+    },
+    {
+      "id": 436322,
+      "icon": "spell_nature_corrosivebreath",
+      "name": "Poison Bolt",
+      "source": "ara-kara-city-of-echoes",
+      "type": "poison"
+    },
+    {
+      "id": 461487,
+      "icon": "inv_ability_poison_orb",
+      "name": "Cultivated Poisons",
+      "source": "ara-kara-city-of-echoes",
+      "type": "poison"
+    },
+
+    {
+      "id": 431309,
+      "icon": "warlock_curse_shadow_aura",
+      "name": "Ensnaring Shadows",
+      "source": "the-dawnbreaker",
+      "type": "curse"
+    },
     {
       "id": 355057,
       "icon": "ability_fomor_boss_shout",
