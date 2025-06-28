@@ -64,8 +64,9 @@
       "icon": "inv_achievement_dungeon_waterworks"
     },
     "priory-of-the-sacred-flame": {
-      "name": "Priory of the Sacred Flames",
-      "encounters": ["Captain Dailcry", "Baron Braunpyke", "Prioress Murrpray"]
+      "name": "Priory of the Sacred Flame",
+      "encounters": ["Captain Dailcry", "Baron Braunpyke", "Prioress Murrpray"],
+      "icon": "inv_achievement_dungeon_prioryofthesacredflame"
     }
   },
   "spells": [
@@ -90,6 +91,34 @@
       "icon": "ability_golemthunderclap",
       "source": "eco-dome-aldani",
       "notes": ["When tank outranges the boss. Should never happen!"]
+    },
+    {
+      "id": 1218625,
+      "type": "plexus-sentinel",
+      "name": "Displacement Matrix",
+      "icon": "inv_10_dungeonjewelry_dragon_trinket_1arcanemagical_blue",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1218626,
+      "type": "plexus-sentinel",
+      "name": "Displacement Matrix",
+      "icon": "inv_10_dungeonjewelry_dragon_trinket_1arcanemagical_blue",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1219346,
+      "type": "plexus-sentinel",
+      "name": "Obliteration Arcanocannon",
+      "icon": "ability_monk_forcesphere_arcane",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1219611,
+      "type": "plexus-sentinel",
+      "name": "Eradicating Salvo",
+      "icon": "spell_arcane_invocation",
+      "source": "manaforge-omega"
     },
     {
       "id": 1219704,
@@ -164,12 +193,96 @@
       "source": "eco-dome-aldani"
     },
     {
+      "id": 1223859,
+      "type": "soulbinder-naazindhri",
+      "name": "Arcane Expulsion",
+      "icon": "spell_nature_astralrecalgroup",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1224114,
+      "type": "the-soul-hunters",
+      "name": "Toxic Eruption",
+      "icon": "inv_ability_poison_groundstate",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1224305,
+      "type": "plexus-sentinel",
+      "name": "Protocol: Purge",
+      "icon": "spell_arcane_blast",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1224764,
+      "type": "nexus-king-salhadaar",
+      "name": "Oath-Breaker",
+      "icon": "ability_demonhunter_chaoticimprint_shadow",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1224794,
+      "type": "nexus-king-salhadaar",
+      "name": "Conquer",
+      "icon": "inv_legendary_mace",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1224825,
+      "type": "nexus-king-salhadaar",
+      "name": "Tyranny",
+      "icon": "inv_sulfurelemental_void",
+      "source": "manaforge-omega"
+    },
+    {
       "id": 1224868,
       "type": "soul-scribe",
       "name": "Shattered Fate",
       "icon": "ability_socererking_arcanereplication",
       "source": "eco-dome-aldani",
       "notes": ["Whenever a set of mirror images spawns."]
+    },
+    {
+      "id": 1224906,
+      "type": "nexus-king-salhadaar",
+      "name": "Invoke the Oath",
+      "icon": "spell_nature_removecurse",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1225155,
+      "type": "the-soul-hunters",
+      "name": "Immolation Aura",
+      "icon": "ability_demonhunter_immolation",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1225210,
+      "type": "fractillus",
+      "name": "Enraged Tantrum",
+      "icon": "inv_cosmicvoid_nova",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1225331,
+      "type": "nexus-king-salhadaar",
+      "name": "Galactic Smash",
+      "icon": "artifactability_balancedruid_moonandstars",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1225452,
+      "type": "nexus-king-salhadaar",
+      "name": "Dark Star",
+      "icon": "inv_mace_2h_etherealking_d_01",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1226042,
+      "type": "nexus-king-salhadaar",
+      "name": "Starkiller Nova",
+      "icon": "inv_cosmicvoid_orb",
+      "source": "manaforge-omega"
     },
     {
       "id": 1226165,
@@ -189,11 +302,207 @@
       ]
     },
     {
+      "id": 1226260,
+      "type": "forgeweaver-araz",
+      "name": "Arcane Convergence",
+      "icon": "ability_mage_missilebarrage",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1226330,
+      "type": "the-soul-hunters",
+      "name": "Devourer's Ire",
+      "icon": "inv_cosmicvoid_groundsate",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1226394,
+      "type": "loomithar",
+      "name": "Overinfusion Burst",
+      "icon": "spell_nature_wispsplode",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1226395,
+      "type": "loomithar",
+      "name": "Overinfusion Burst",
+      "icon": "spell_nature_wispsplode",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1226539,
+      "type": "the-soul-hunters",
+      "name": "Devourer's Ire",
+      "icon": "spell_nzinsanity_shortsighted",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1226752,
+      "type": "plexus-sentinel",
+      "name": "Manifest Matrices",
+      "icon": "ability_mage_arcanebarrage",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1226823,
+      "type": "fractillus",
+      "name": "Entropic Conjunction",
+      "icon": "inv_ability_voidweaverpriest_entropicrift",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1226877,
+      "type": "loomithar",
+      "name": "Primal Spellstorm",
+      "icon": "ability_druid_starfall",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1227052,
+      "type": "soulbinder-naazindhri",
+      "name": "Void Volley",
+      "icon": "inv_cosmicvoid_missile",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1227119,
+      "type": "the-soul-hunters",
+      "name": "Fel Devastation",
+      "icon": "ability_demonhunter_feldevastation",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1227140,
+      "type": "loomithar",
+      "name": "Writhing Wave",
+      "icon": "inv_ability_web_debuff",
+      "source": "manaforge-omega"
+    },
+    {
       "id": 1227152,
       "type": "taahbat-and-awazj",
       "name": "Warp Strike",
       "icon": "spell_arcane_blink",
       "source": "eco-dome-aldani"
+    },
+    {
+      "id": 1227277,
+      "type": "soulbinder-naazindhri",
+      "name": "Soulfray Annihilation",
+      "icon": "spell_arcane_arcane03",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1227340,
+      "type": "the-soul-hunters",
+      "name": "Infernal Strike",
+      "icon": "ability_demonhunter_infernalstrike1",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1227631,
+      "type": "forgeweaver-araz",
+      "name": "Arcane Expulsion",
+      "icon": "ability_mage_tormentoftheweak",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1227676,
+      "type": "fractillus",
+      "name": "Shard Slam",
+      "icon": "spell_mage_focusingcrystal",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1227685,
+      "type": "the-soul-hunters",
+      "name": "Hungering Slash",
+      "icon": "inv_polearm_2h_titanargus_d_01",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1227742,
+      "type": "loomithar",
+      "name": "Piercing Strand",
+      "icon": "inv_112_arcane_beam",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1227784,
+      "type": "loomithar",
+      "name": "Arcane Outrage",
+      "icon": "inv_112_raidsilkworm_arcaneoutrage",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1227846,
+      "type": "the-soul-hunters",
+      "name": "The Hunt",
+      "icon": "inv_ability_demonhunter_thehunt",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1227848,
+      "type": "soulbinder-naazindhri",
+      "name": "Essence Implosion",
+      "icon": "inv_10_dungeonjewelry_dragon_trinket_2arcanemagical_black",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1227897,
+      "type": "nexus-king-salhadaar",
+      "name": "Coalesce Voidwing",
+      "icon": "ability_dragonriding_evasivemaneuvers01",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1228069,
+      "type": "loomithar",
+      "name": "Unbound Rage",
+      "icon": "inv_112_raidsilkworm_rageunbound",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1228103,
+      "type": "forgeweaver-araz",
+      "name": "Arcane Siphon",
+      "icon": "ability_socererking_arcanereplication",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1228119,
+      "type": "nexus-king-salhadaar",
+      "name": "Netherbreaker",
+      "icon": "inv_mace_1h_gryphonrider_d_02_bronze",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1228168,
+      "type": "forgeweaver-araz",
+      "name": "Silencing Tempest",
+      "icon": "spell_shadow_coneofsilence",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1228218,
+      "type": "forgeweaver-araz",
+      "name": "Arcane Obliteration",
+      "icon": "spell_arcane_arcanetorrent",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1228280,
+      "type": "nexus-king-salhadaar",
+      "name": "King's Hunger",
+      "icon": "spell_holy_consumemagic",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1230302,
+      "type": "nexus-king-salhadaar",
+      "name": "Self-Destruct",
+      "icon": "spell_holy_surgeoflight_shadow",
+      "source": "manaforge-omega"
     },
     {
       "id": 1231224,
@@ -202,6 +511,13 @@
       "icon": "spell_arcane_massdispel",
       "source": "eco-dome-aldani",
       "notes": ["Avoidable frontal, but tough to see."]
+    },
+    {
+      "id": 1231469,
+      "type": "loomithar",
+      "name": "Arcane Overflow",
+      "icon": "inv_112_raidsilkworm_arcaneoverflow",
+      "source": "manaforge-omega"
     },
     {
       "id": 1231494,
@@ -241,11 +557,109 @@
       "source": "eco-dome-aldani"
     },
     {
+      "id": 1232130,
+      "type": "fractillus",
+      "name": "Nexus Shrapnel",
+      "icon": "inv_cosmicvoid_missile",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1232392,
+      "type": "nexus-king-salhadaar",
+      "name": "Seal the Forge",
+      "icon": "ability_mage_arcanesurge",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1232403,
+      "type": "nexus-king-salhadaar",
+      "name": "Dread Mortar",
+      "icon": "ability_druid_cresentburn",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1232409,
+      "type": "forgeweaver-araz",
+      "name": "Unstable Surge",
+      "icon": "spell_arcane_blast",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1232412,
+      "type": "forgeweaver-araz",
+      "name": "Focusing Iris",
+      "icon": "spell_arcane_invocation",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1233074,
+      "type": "forgeweaver-araz",
+      "name": "Crushing Darkness",
+      "icon": "inv_cosmicvoid_nova",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1233104,
+      "type": "the-soul-hunters",
+      "name": "Collapsing Star",
+      "icon": "inv_cosmicvoid_nova",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1233110,
+      "type": "plexus-sentinel",
+      "name": "Purging Lightning",
+      "icon": "ability_monk_cracklingjadelightning",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1233301,
+      "type": "forgeweaver-araz",
+      "name": "Dark Singularity",
+      "icon": "inv_cosmicvoid_nova",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1234324,
+      "type": "forgeweaver-araz",
+      "name": "Photon Blast",
+      "icon": "spell_priest_mindspike",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1234541,
+      "type": "nexus-king-salhadaar",
+      "name": "Dimension Glare",
+      "icon": "inv_cosmicvoid_debuff",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1234906,
+      "type": "nexus-king-salhadaar",
+      "name": "Nexus Collapse",
+      "icon": "inv_ability_voidweaverpriest_entropicrift",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1236207,
+      "type": "forgeweaver-araz",
+      "name": "Astral Surge",
+      "icon": "spell_nature_astralrecalgroup",
+      "source": "manaforge-omega"
+    },
+    {
       "id": 1237199,
       "type": "trash",
       "name": "Burrow Charge",
       "icon": "pvp_burrow",
       "source": "eco-dome-aldani"
+    },
+    {
+      "id": 1237205,
+      "type": "the-soul-hunters",
+      "name": "Voidstep",
+      "icon": "inv_netherportal",
+      "source": "manaforge-omega"
     },
     {
       "id": 1237224,
@@ -255,12 +669,117 @@
       "source": "eco-dome-aldani"
     },
     {
+      "id": 1237743,
+      "type": "the-soul-hunters",
+      "name": "Velaryn's Soul",
+      "icon": "spell_shadow_soulleech_1",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1237760,
+      "type": "the-soul-hunters",
+      "name": "Ilyssa's Soul",
+      "icon": "spell_shadow_soulleech_1",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1237767,
+      "type": "the-soul-hunters",
+      "name": "Adarus' Soul",
+      "icon": "spell_shadow_soulleech_1",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1238878,
+      "type": "forgeweaver-araz",
+      "name": "Echoing Tempest",
+      "icon": "spell_shadow_coneofsilence",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1240440,
+      "type": "forgeweaver-araz",
+      "name": "Volatile Surge",
+      "icon": "ability_creature_cursed_03",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1240708,
+      "type": "forgeweaver-araz",
+      "name": "Astral Burn",
+      "icon": "ability_creature_disease_05",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1240763,
+      "type": "soulbinder-naazindhri",
+      "name": "Deathspindle",
+      "icon": "inv_ability_web_buff",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1241946,
+      "type": "the-soul-hunters",
+      "name": "Frailty",
+      "icon": "ability_demonhunter_soulcleave2",
+      "source": "manaforge-omega"
+    },
+    {
       "id": 1242006,
       "type": "soul-scribe",
       "name": "Echoes of Fate",
       "icon": "spell_nature_starfall",
       "source": "eco-dome-aldani",
       "notes": ["Near-permanent passive damage."]
+    },
+    {
+      "id": 1242259,
+      "type": "the-soul-hunters",
+      "name": "Spirit Bomb",
+      "icon": "inv_icon_shadowcouncilorb_purple",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1242304,
+      "type": "the-soul-hunters",
+      "name": "Expulsed Soul",
+      "icon": "ability_felarakkoa_feldetonation_green",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1243641,
+      "type": "forgeweaver-araz",
+      "name": "Void Surge",
+      "icon": "inv_ability_voidweaverpriest_entropicrift",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1245384,
+      "type": "the-soul-hunters",
+      "name": "Fel Inferno",
+      "icon": "spell_fire_felimmolation",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1246113,
+      "type": "plexus-sentinel",
+      "name": "Expulsion Zone",
+      "icon": "inv_10_dungeonjewelry_dragon_trinket_1arcanemagical_blue",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1247495,
+      "type": "fractillus",
+      "name": "Null Explosion",
+      "icon": "inv_cosmicvoid_nova",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1248009,
+      "type": "forgeweaver-araz",
+      "name": "Dark Terminus",
+      "icon": "inv_112_raidtrinkets_blobofswirlingvoid_purple",
+      "source": "manaforge-omega"
     }
   ]
 }
