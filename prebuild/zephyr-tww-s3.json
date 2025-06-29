@@ -200,13 +200,6 @@
       "source": "manaforge-omega"
     },
     {
-      "id": 1224114,
-      "type": "the-soul-hunters",
-      "name": "Toxic Eruption",
-      "icon": "inv_ability_poison_groundstate",
-      "source": "manaforge-omega"
-    },
-    {
       "id": 1224305,
       "type": "plexus-sentinel",
       "name": "Protocol: Purge",
