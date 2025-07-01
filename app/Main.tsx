@@ -16,8 +16,8 @@ export default function Home({ posts }) {
         </h1>
 
         <p className="pb-8">
-          This new page is still a bit rough layouting wise but functional and I finally wanted to
-          get it over the finishing line for now so forgive me while I work on that.
+          This is my place to yap and where I document a bunch of things that I kept on my mind for
+          too long.
         </p>
 
         <RandomLyrics />
