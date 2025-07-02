@@ -1,0 +1,144 @@
+---
+title: Useful Evoker Macros
+date: '2025-07-02'
+lastmod: '2025-07-02'
+tags: ['wow', 'evoker']
+draft: false
+summary: 'A bunch of evoker macros that I use'
+authors: ['default']
+images: ['/static/images/evoker-generic.jpg']
+layout: PostBanner
+includeImageInPreview: true
+---
+
+## General
+
+Cast <WowheadLink kind="spell" id={351338} icon="ability_evoker_quell">Quell</WowheadLink> on your Focus when pressing Shift, otherwise your current target.
+
+```
+#showtooltip
+/cast [mod:shift, @focus] Quell; Quell
+```
+
+Casts <WowheadLink kind="spell" id={365585} icon="ability_evoker_fontofmagic_green">Expunge</WowheadLink> on your mouseover target, otherwise the default behaviour: your target if you have one, otherwise yourself.
+
+```
+#showtooltip
+/cast [@mouseover, help, nodead] [] Expunge
+```
+
+Casts <WowheadLink kind="spell" id={374251} icon="ability_evoker_fontofmagic_red">Cauterizing Flame</WowheadLink> on your mouseover target, otherwise the default behaviour: your target if you have one, otherwise yourself.
+
+```
+#showtooltip
+/cast [@mouseover, help, nodead] [] Cauterizing Flame
+```
+
+Cast <WowheadLink kind="spell" id={351338} icon="ability_evoker_deepbreath">Deep Breath</WowheadLink> / <WowheadLink kind="spell" id={403631} icon="ability_evoker_breathofeons">Breath of Eons</WowheadLink> at your cursors position, removing the need to aim and then click.
+
+```
+#showtooltip
+/cast [@cursor] Deep Breath
+```
+
+Use <WowheadLink kind="spell" id={369536} icon="ability_racial_soar">Soar</WowheadLink> where possible, otherwise summon a random favorite mount.
+
+```
+#showtooltip Soar
+/use [advflyable] Soar
+/run C_MountJournal.SummonByID(0)
+```
+
+Use <WowheadLink kind="spell" id={406732} icon="ability_evoker_stretchtime">Spatial Paradox</WowheadLink> if talented on a specific player if they're alive and present in the raid, otherwise autocast it.
+Use <WowheadLink kind="spell" id={374968} icon="ability_evoker_timespiral">Time Spiral</WowheadLink> if talented into that instead.
+
+```
+#showtooltip
+/cast [known] [@Neems,nodead,help] [] Spatial Paradox
+/cast [known: Time Spiral] Time Spiral
+```
+
+Cast <WowheadLink kind="spell" id={360806} icon="ability_xavius_dreamsimulacrum">Sleep Walk</WowheadLink> on your current target and ping your cursor position.
+If you're not talented into <WowheadLink kind="spell" id={360806} icon="ability_xavius_dreamsimulacrum">Sleep Walk</WowheadLink>, will only ping.
+
+```
+#showtooltip
+/ping attack
+/cast Sleep Walk
+```
+
+Cast <WowheadLink kind="spell" id={370665} icon="ability_evoker_flywithme">Rescue</WowheadLink> on your mouseover target, or the mentioned players, in order, until it falls back to the default behaviour.
+
+```
+#showtooltip
+/cast [@mouseover, nodead, help] [@Darthmanity-Ragnaros,nodead,help] [@Hashimmoto-Silvermoon,nodead,help] [@Lemeower-Silvermoon,nodead,help] [] Rescue
+```
+
+## Scalecommander
+
+Picks the closest enemy and casts <WowheadLink kind="spell" id={356995} icon="ability_evoker_disintegrate">Disintegrate</WowheadLink> should you not have a target. Useful if your target dies between globals. Also stops casting <WowheadLink kind="spell" id={357210} icon="ability_evoker_deepbreath">Deep Breath</WowheadLink>.
+
+```
+#showtooltip
+/cancelaura Deep Breath
+/startattack
+/cast Disintegrate
+```
+
+## Flameshaper
+
+Cast <WowheadLink kind="spell" id={443328} icon="inv_ability_flameshaperevoker_engulf">Engulf</WowheadLink> only on enemies should you accidentally target a friendly. Redundant in 11.2!
+
+```
+#showtooltip Engulf
+/cast [harm] Engulf
+```
+
+Cast <WowheadLink kind="spell" id={374348} icon="ability_evoker_masterylifebinder_red">Renewing Blaze</WowheadLink> on a specific friendly if present, otherwise mouseover, or use default behaviour if not talented into <WowheadLink kind="spell" id={444322} icon="inv_misc_herb_cinderbloom_petal">Lifecinders</WowheadLink>.
+```
+#showtooltip
+/cast [@Eclyssian-Silvermoon,nodead,exists] [@mouseover, help, nodead] [] Renewing Blaze
+```
+
+## Devastation
+
+Cast <WowheadLink kind="spell" id={368847} icon="ability_evoker_firestorm">Firestorm</WowheadLink> at your cursors location.
+
+```
+#showtooltip
+/cast [@cursor] Firestorm
+```
+
+Pick the closest enemy and cast <WowheadLink kind="spell" id={357211} icon="ability_evoker_pyre">Pyre</WowheadLink>. Useful if your current target dies between globals to not lose time between casts.
+
+```
+#showtooltip
+/startattack
+/cast Pyre
+```
+
+## Augmentation
+
+Automatically swap back into <WowheadLink kind="spell" id={403264} icon="ability_evoker_blackattunement">Black Attunement</WowheadLink> when casting <WowheadLink kind="spell" id={395160} icon="ability_evoker_eruption">Eruption</WowheadLink>. Also stops <WowheadLink kind="spell" id={403631} icon="ability_evoker_breathofeons">Breath of Eons</WowheadLink> if you're mid air as <WowheadSpecIcon spec="scalecommander">Scalecommander</WowheadSpecIcon>.
+
+```
+#showtooltip Eruption
+/cancelaura Breath of Eons
+/cast [nostance:1] Black Attunement
+/cast Eruption
+```
+
+Automatically swap into <WowheadLink kind="spell" id={403265} icon="ability_evoker_bronzeattunement">Bronze Attunement</WowheadLink> when casting <WowheadLink kind="spell" id={358267} icon="ability_evoker_hover">Hover</WowheadLink>.
+
+```
+#showtooltip Hover
+/cast [nostance:2] Bronze Attunement
+/cast Hover
+```
+
+Cast <WowheadLink kind="spell" id={360827} icon="ability_evoker_blisteringscales">Blistering Scales</WowheadLink> on your mouseover target, otherwise the party leader or the default behaviour (target of target).
+
+```
+#showtooltip
+/cast [@mouseover, help, nodead] [@party1] [] Blistering Scales
+```
