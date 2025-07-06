@@ -17,7 +17,7 @@
       "icon": "inv_achievement_dungeon_waterworks"
     },
     "priory-of-the-sacred-flame": {
-      "name": "Priory of the Sacred Flames",
+      "name": "Priory of the Sacred Flame",
       "icon": "inv_achievement_dungeon_prioryofthesacredflame"
     },
     "tazavesh-soleahs-gambit": {
@@ -144,6 +144,13 @@
       "type": "bleed"
     },
     {
+      "source": "priory-of-the-sacred-flame",
+      "type": "bleed",
+      "icon": "inv_polearm_2h_arathoroutdoor_d_01",
+      "name": "Pierce Armor",
+      "id": 424414
+    },
+    {
       "id": 424419,
       "type": "enrage",
       "source": "priory-of-the-sacred-flame",
@@ -251,6 +258,20 @@
       "icon": "ability_rhyolith_lavapool"
     },
     {
+      "source": "priory-of-the-sacred-flame",
+      "type": "magic",
+      "icon": "inv_ability_holyfire_nova",
+      "name": "Blinding Light",
+      "id": 428170
+    },
+    {
+      "source": "priory-of-the-sacred-flame",
+      "type": "magic",
+      "icon": "spell_holy_devineaegis",
+      "name": "Inner Fire",
+      "id": 429091
+    },
+    {
       "id": 431309,
       "icon": "warlock_curse_shadow_aura",
       "name": "Ensnaring Shadows",
@@ -265,11 +286,25 @@
       "type": "bleed"
     },
     {
+      "source": "the-dawnbreaker",
+      "type": "magic",
+      "icon": "ability_warlock_everlastingaffliction",
+      "name": "Black Edge",
+      "id": 431494
+    },
+    {
       "id": 432448,
       "icon": "spell_shadow_mindtwisting",
       "name": "Stygian Seed",
       "source": "the-dawnbreaker",
       "type": "magic"
+    },
+    {
+      "source": "ara-kara-city-of-echoes",
+      "type": "poison",
+      "icon": "ability_creature_poison_06",
+      "name": "Venom Volley",
+      "id": 433841
     },
     {
       "id": 435148,
@@ -285,6 +320,13 @@
       "name": "Poison Bolt",
       "source": "ara-kara-city-of-echoes",
       "type": "poison"
+    },
+    {
+      "source": "ara-kara-city-of-echoes",
+      "type": "magic",
+      "icon": "spell_nature_earthbind",
+      "name": "Web Wrap",
+      "id": 436614
     },
     {
       "id": 438599,
@@ -309,6 +351,41 @@
       "notes": ["Not available while charmed."]
     },
     {
+      "source": "ara-kara-city-of-echoes",
+      "type": "poison",
+      "icon": "ability_hunter_stickytarbombtrap",
+      "name": "Revolting Volley",
+      "id": 448248
+    },
+    {
+      "source": "priory-of-the-sacred-flame",
+      "type": "magic",
+      "icon": "spell_holy_righteousfury",
+      "name": "Divine Judgment",
+      "id": 448515
+    },
+    {
+      "source": "the-dawnbreaker",
+      "type": "purge",
+      "icon": "spell_shadow_sealofkings",
+      "name": "Abyssal Howl",
+      "id": 450756
+    },
+    {
+      "source": "the-dawnbreaker",
+      "type": "enrage",
+      "icon": "inv_ability_web_debuff",
+      "name": "Tactician's Rage",
+      "id": 451112
+    },
+    {
+      "source": "priory-of-the-sacred-flame",
+      "type": "magic",
+      "icon": "inv_ability_holyfire_missile",
+      "name": "Holy Flame",
+      "id": 451606
+    },
+    {
       "id": 453461,
       "type": "bleed",
       "source": "priory-of-the-sacred-flame",
@@ -322,6 +399,13 @@
       "name": "Cultivated Poisons",
       "source": "ara-kara-city-of-echoes",
       "type": "poison"
+    },
+    {
+      "source": "ara-kara-city-of-echoes",
+      "type": "poison",
+      "icon": "inv_ability_poison_orb",
+      "name": "Cultivated Poisons",
+      "id": 461507
     },
     {
       "id": 462737,
@@ -338,6 +422,13 @@
       "icon": "ability_druid_challangingroar",
       "name": "Bloodthirsty Cackle",
       "notes": ["Interruptible"]
+    },
+    {
+      "source": "operation-floodgate",
+      "type": "poison",
+      "icon": "ability_creature_poison_06",
+      "name": "Lethargic Venom",
+      "id": 465813
     },
     {
       "id": 468631,
@@ -438,6 +529,20 @@
       "name": "Gushing Wound",
       "source": "halls-of-atonement",
       "type": "bleed"
+    },
+    {
+      "source": "ara-kara-city-of-echoes",
+      "type": "magic",
+      "icon": "ability_ironmaidens_bloodritual",
+      "name": "Tainted Blood",
+      "id": 1241785
+    },
+    {
+      "source": "the-dawnbreaker",
+      "type": "enrage",
+      "icon": "ability_warrior_unrelentingassault",
+      "name": "Intensifying Aggression",
+      "id": 1242074
     }
   ]
 }
