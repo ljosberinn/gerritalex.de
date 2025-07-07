@@ -148,7 +148,16 @@
       "type": "bleed",
       "icon": "inv_polearm_2h_arathoroutdoor_d_01",
       "name": "Pierce Armor",
-      "id": 424414
+      "id": 424414,
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 207946, "kind": "npc", "children": "Captain Dailcry" }
+          }
+        ]
+      ]
     },
     {
       "id": 424419,
@@ -255,22 +264,19 @@
       "type": "magic",
       "source": "priory-of-the-sacred-flame",
       "name": "Heat Wave",
-      "icon": "ability_rhyolith_lavapool"
+      "icon": "ability_rhyolith_lavapool",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 212831, "kind": "npc", "children": "Forge Master Damian" }
+          },
+          ", miniboss."
+        ]
+      ]
     },
-    {
-      "source": "priory-of-the-sacred-flame",
-      "type": "magic",
-      "icon": "inv_ability_holyfire_nova",
-      "name": "Blinding Light",
-      "id": 428170
-    },
-    {
-      "source": "priory-of-the-sacred-flame",
-      "type": "magic",
-      "icon": "spell_holy_devineaegis",
-      "name": "Inner Fire",
-      "id": 429091
-    },
+
     {
       "id": 431309,
       "icon": "warlock_curse_shadow_aura",
@@ -286,13 +292,6 @@
       "type": "bleed"
     },
     {
-      "source": "the-dawnbreaker",
-      "type": "magic",
-      "icon": "ability_warlock_everlastingaffliction",
-      "name": "Black Edge",
-      "id": 431494
-    },
-    {
       "id": 432448,
       "icon": "spell_shadow_mindtwisting",
       "name": "Stygian Seed",
@@ -304,7 +303,8 @@
       "type": "poison",
       "icon": "ability_creature_poison_06",
       "name": "Venom Volley",
-      "id": 433841
+      "id": 433841,
+      "notes": ["Interruptible."]
     },
     {
       "id": 435148,
@@ -319,14 +319,26 @@
       "icon": "spell_nature_corrosivebreath",
       "name": "Poison Bolt",
       "source": "ara-kara-city-of-echoes",
-      "type": "poison"
+      "type": "poison",
+      "notes": [
+        "Interruptible.",
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 217533, "kind": "npc", "children": "Atik" }
+          },
+          ", miniboss."
+        ]
+      ]
     },
     {
       "source": "ara-kara-city-of-echoes",
       "type": "magic",
       "icon": "spell_nature_earthbind",
       "name": "Web Wrap",
-      "id": 436614
+      "id": 436614,
+      "notes": ["These webs will summon Web Wraps. Don't stand in 'em!"]
     },
     {
       "id": 438599,
@@ -348,21 +360,33 @@
       "source": "priory-of-the-sacred-flame",
       "name": "Templar's Wrath",
       "icon": "spell_holy_avenginewrath",
-      "notes": ["Not available while charmed."]
+      "notes": ["Not available while charmed.", "Can be spellstolen."]
     },
     {
       "source": "ara-kara-city-of-echoes",
       "type": "poison",
       "icon": "ability_hunter_stickytarbombtrap",
       "name": "Revolting Volley",
-      "id": 448248
+      "id": 448248,
+      "notes": ["Interruptible."]
     },
     {
       "source": "priory-of-the-sacred-flame",
       "type": "magic",
       "icon": "spell_holy_righteousfury",
       "name": "Divine Judgment",
-      "id": 448515
+      "id": 448515,
+      "notes": [
+        "Tankbuster.",
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 211290, "kind": "npc", "children": "Elaena Emberlanz" }
+          },
+          ", miniboss."
+        ]
+      ]
     },
     {
       "source": "the-dawnbreaker",
@@ -379,13 +403,6 @@
       "id": 451112
     },
     {
-      "source": "priory-of-the-sacred-flame",
-      "type": "magic",
-      "icon": "inv_ability_holyfire_missile",
-      "name": "Holy Flame",
-      "id": 451606
-    },
-    {
       "id": 453461,
       "type": "bleed",
       "source": "priory-of-the-sacred-flame",
@@ -398,14 +415,24 @@
       "icon": "inv_ability_poison_orb",
       "name": "Cultivated Poisons",
       "source": "ara-kara-city-of-echoes",
-      "type": "poison"
-    },
-    {
-      "source": "ara-kara-city-of-echoes",
       "type": "poison",
-      "icon": "inv_ability_poison_orb",
-      "name": "Cultivated Poisons",
-      "id": 461507
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 215407, "kind": "npc", "children": "Ki'katal the Harvester" }
+          },
+          ", last boss."
+        ],
+        [
+          "The waves also apply a poison dot with the same name but different id: ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 461507, "kind": "spell", "children": "Cultivated Poisons" }
+          }
+        ]
+      ]
     },
     {
       "id": 462737,
@@ -421,7 +448,7 @@
       "source": "operation-floodgate",
       "icon": "ability_druid_challangingroar",
       "name": "Bloodthirsty Cackle",
-      "notes": ["Interruptible"]
+      "notes": ["Interruptible."]
     },
     {
       "source": "operation-floodgate",
@@ -486,7 +513,17 @@
       "icon": "spell_deathknight_gnaw_ghoul",
       "name": "Rift Claws",
       "source": "eco-dome-aldani",
-      "type": "bleed"
+      "type": "bleed",
+      "notes": [
+        [
+          "Tank debuff during main phase of ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 241375, "kind": "npc", "children": "A'wazj" }
+          },
+          ", second boss"
+        ]
+      ]
     },
     {
       "id": 1221133,
@@ -521,21 +558,41 @@
       "icon": "ability_deathknight_summongargoyle",
       "name": "Ankle Bite",
       "source": "halls-of-atonement",
-      "type": "bleed"
+      "type": "bleed",
+      "notes": [
+        [
+          "Stacking debuff via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 167610, "kind": "npc", "children": "Stonefiend Anklebiter" }
+          },
+          ", applied whenever they dash to someone"
+        ]
+      ]
     },
     {
       "id": 1237602,
       "icon": "ability_revendreth_rogue",
       "name": "Gushing Wound",
       "source": "halls-of-atonement",
-      "type": "bleed"
+      "type": "bleed",
+      "notes": [
+        [
+          "Stacking tank debuff via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 164563, "kind": "npc", "children": "Vicious Gargon" }
+          }
+        ]
+      ]
     },
     {
       "source": "ara-kara-city-of-echoes",
       "type": "magic",
       "icon": "ability_ironmaidens_bloodritual",
       "name": "Tainted Blood",
-      "id": 1241785
+      "id": 1241785,
+      "notes": ["Stacking debuff on tank."]
     },
     {
       "source": "the-dawnbreaker",
