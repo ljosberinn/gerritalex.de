@@ -7,8 +7,32 @@ enum State {
   UPCOMING = 'upcoming',
   FINISHED = 'finished',
 }
+const currentYear = new Date().getTime();
+const oneYearInMilliseconds = 365 * 24 * 60 * 60 * 1000;
 
-const byState = data.reduce<Record<State, Movies[]>>(
+const filteredData = data.filter((movie) => {
+  const releaseDate = new Date(
+    [
+      movie.metadata.release.year,
+      movie.metadata.release.month ?? 1,
+      movie.metadata.release.day ?? 1,
+    ].join('-')
+  );
+
+  const diff = releaseDate.getTime() - currentYear;
+
+  if (diff < 0) {
+    return true;
+  }
+
+  if (diff > oneYearInMilliseconds) {
+    return false;
+  }
+
+  return true;
+});
+
+const byState = filteredData.reduce<Record<State, Movies[]>>(
   (acc, movies) => {
     const state = movies.seen ? State.FINISHED : State.UPCOMING;
 
