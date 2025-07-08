@@ -260,7 +260,7 @@ export async function doDiscogsImport(): Promise<{ from: string; to: string }[]>
   const images: { from: string; to: string }[] = [];
 
   for await (const dataset of data) {
-    if (!dataset.visible) {
+    if (dataset.visible === false) {
       continue;
     }
 
@@ -298,6 +298,10 @@ export async function doDiscogsImport(): Promise<{ from: string; to: string }[]>
       },
       runtime: totalRuntimeInSeconds,
     };
+
+    if (dataset.visible === undefined) {
+      dataset.visible = true;
+    }
 
     let frontCover: Nullable<string> = null;
 

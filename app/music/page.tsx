@@ -119,7 +119,7 @@ export const metadata = generatePageMetadata({
   image: (() => {
     return `/static/images/music/${filteredData[Math.floor(Math.random() * filteredData.length)].id}-front.jpg`;
   })(),
-  description: `An exhaustive list of the ${filteredData.length - unacquiredAlbums} albums I physicall own. The most common genres among these are ${readableGenresCombinedWithAnd}.`,
+  description: `An exhaustive list of the ${filteredData.length - unacquiredAlbums} albums I physically own. The most common genres among these are ${readableGenresCombinedWithAnd}.`,
 });
 
 export type Music = (typeof data)[0];

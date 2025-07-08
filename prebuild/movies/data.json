@@ -1045,6 +1045,24 @@
     "seen": true
   },
   {
+    "title": "Bring Her Back",
+    "seen": false,
+    "id": 1151031,
+    "metadata": {
+      "genres": [
+        "Horror"
+      ],
+      "tagline": "Family requires sacrifices.",
+      "release": {
+        "day": 28,
+        "month": 5,
+        "year": 2025
+      },
+      "runtime": 104
+    },
+    "favorite": false
+  },
+  {
     "title": "Bunraku",
     "id": 30618,
     "metadata": {
@@ -3843,6 +3861,26 @@
     "seen": true
   },
   {
+    "title": "Jurassic World Rebirth",
+    "seen": false,
+    "id": 1234821,
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Adventure",
+        "Action"
+      ],
+      "tagline": "A new era is born.",
+      "release": {
+        "day": 1,
+        "month": 7,
+        "year": 2025
+      },
+      "runtime": 134
+    },
+    "favorite": false
+  },
+  {
     "title": "Jurassic World: Dominion",
     "id": 507086,
     "metadata": {
@@ -5008,6 +5046,26 @@
     },
     "favorite": true,
     "seen": true
+  },
+  {
+    "id": 687163,
+    "title": "Project Hail Mary",
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Adventure",
+        "Drama"
+      ],
+      "tagline": "",
+      "release": {
+        "day": 19,
+        "month": 3,
+        "year": 2026
+      },
+      "runtime": 0
+    },
+    "favorite": false
   },
   {
     "title": "Project X",
@@ -6534,7 +6592,7 @@
   },
   {
     "title": "The Endless",
-    "seen": false,
+    "seen": true,
     "id": 430231,
     "metadata": {
       "genres": [

@@ -54,8 +54,8 @@ export type Movies = (typeof data)[0];
 
 function sortByYearDesc(data: Movies[]) {
   return data.sort((a, b) => {
-    const aYear = a.metadata.release.year ?? new Date().getFullYear();
-    const bYear = b.metadata.release.year ?? new Date().getFullYear();
+    const aYear = a.metadata.release.year ?? new Date().getFullYear() + 2;
+    const bYear = b.metadata.release.year ?? new Date().getFullYear() + 2;
 
     if (aYear !== bYear) {
       return bYear - aYear;
