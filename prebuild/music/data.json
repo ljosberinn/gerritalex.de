@@ -428,7 +428,7 @@
     "metadata": {
       "genres": [
         "Industrial Metal",
-        "Goth Rock"
+        "Gothic Metal"
       ],
       "release": {
         "year": 2006
@@ -444,8 +444,7 @@
     "id": 9044479,
     "metadata": {
       "genres": [
-        "Hip Hop",
-        "Electro"
+        "Hip Hop"
       ],
       "release": {
         "year": 2016
@@ -541,8 +540,7 @@
     "id": 3907676,
     "metadata": {
       "genres": [
-        "Black Metal",
-        "Folk Metal"
+        "Folk/Black Metal"
       ],
       "release": {
         "year": 2012
@@ -1069,7 +1067,7 @@
     "id": 8816648,
     "metadata": {
       "genres": [
-        "Deutsch Rap"
+        "Deutschrap"
       ],
       "release": {
         "year": 2016
@@ -1311,7 +1309,7 @@
     "metadata": {
       "genres": [
         "Black Metal",
-        "Ambient"
+        "Dark Ambient"
       ],
       "release": {
         "year": 2008
@@ -1957,13 +1955,28 @@
     "id": 2077031,
     "metadata": {
       "genres": [
-        "Black Metal",
-        "Folk Metal"
+        "Folk/Black Metal"
       ],
       "release": {
         "year": 2009
       },
       "runtime": 4181
+    },
+    "visible": true
+  },
+  {
+    "acquired": null,
+    "artist": "Numenorean",
+    "album": "Adore",
+    "id": 13476785,
+    "metadata": {
+      "genres": [
+        "Post-Black Metal"
+      ],
+      "release": {
+        "year": 2019
+      },
+      "runtime": 2603
     },
     "visible": true
   },
@@ -2099,7 +2112,7 @@
     "metadata": {
       "genres": [
         "Neofolk",
-        "Industrial"
+        "Martial Industrial"
       ],
       "release": {
         "year": 2014
@@ -2131,8 +2144,8 @@
     "id": 2471689,
     "metadata": {
       "genres": [
-        "Experimental",
-        "Neofolk"
+        "Neofolk",
+        "Martial Industrial"
       ],
       "release": {
         "year": 2010
@@ -2166,8 +2179,7 @@
     "metadata": {
       "genres": [
         "Neofolk",
-        "Industrial",
-        "Spoken Word"
+        "Industrial"
       ],
       "release": {
         "year": 2011
@@ -2265,8 +2277,7 @@
     "visible": true,
     "metadata": {
       "genres": [
-        "Industrial",
-        "Experimental"
+        "Industrial"
       ],
       "release": {
         "year": 2021
@@ -2313,7 +2324,6 @@
     "id": 818834,
     "metadata": {
       "genres": [
-        "Experimental",
         "Neofolk"
       ],
       "release": {
@@ -2493,8 +2503,7 @@
     "id": 2750281,
     "metadata": {
       "genres": [
-        "Black Metal",
-        "Trip Hop"
+        "Black Metal"
       ],
       "release": {
         "year": 2004
@@ -2881,7 +2890,7 @@
     "artist": "Urgewalt",
     "album": "Geisterhain",
     "id": 4041190,
-    "visible": true,
+    "visible": false,
     "metadata": {
       "genres": [
         "Black Metal"

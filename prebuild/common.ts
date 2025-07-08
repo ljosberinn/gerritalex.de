@@ -65,7 +65,27 @@ export async function doFetch<T>(url: string, options: RequestInit): Promise<T |
   try {
     const response = await fetch(url, options);
     if (!response.ok) {
-      console.log(response.status);
+      if (response.status === 429) {
+        const rateLimitMax = response.headers.get('x-discogs-ratelimit');
+
+        if (rateLimitMax) {
+          const used = response.headers.get('x-discogs-ratelimit-used');
+
+          if (used) {
+            const diff = Number.parseInt(used) - Number.parseInt(rateLimitMax);
+
+            if (diff >= 0) {
+              await new Promise((resolve) => setTimeout(resolve, (diff + 1) * 1000));
+              return doFetch(url, options);
+            }
+          }
+        }
+      } else if (response.status === 502) {
+        await new Promise((resolve) => setTimeout(resolve, 5 * 1000));
+        return doFetch(url, options);
+      }
+
+      console.log(url, response.status, response.headers);
     }
     const data = await response.json();
     return data;
