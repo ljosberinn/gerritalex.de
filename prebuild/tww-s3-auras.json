@@ -32,6 +32,13 @@
   },
   "spells": [
     {
+      "source": "halls-of-atonement",
+      "type": "magic",
+      "icon": "ability_creature_cursed_04",
+      "name": "Siphon Life",
+      "id": 325701
+    },
+    {
       "id": 325876,
       "icon": "ability_creature_cursed_02",
       "name": "Curse of Obliteration",
@@ -39,11 +46,32 @@
       "type": "curse"
     },
     {
+      "source": "halls-of-atonement",
+      "type": "enrage",
+      "icon": "ability_deathknight_summongargoyle",
+      "name": "Loyal Beasts",
+      "id": 326450
+    },
+    {
+      "source": "halls-of-atonement",
+      "type": "magic",
+      "icon": "spell_nzinsanity_fearofdeath",
+      "name": "Sinlight Visions",
+      "id": 339237
+    },
+    {
       "id": 346844,
       "icon": "sha_inv_misc_slime_01_nightborne",
       "name": "Alchemical Residue",
       "source": "tazavesh-streets-of-wonder",
-      "type": "magic"
+      "type": "bleed"
+    },
+    {
+      "source": "tazavesh-soleahs-gambit",
+      "type": "magic",
+      "icon": "spell_deathknight_breathofsindragosa",
+      "name": "Infinite Breath",
+      "id": 347149
     },
     {
       "id": 347716,
@@ -74,6 +102,20 @@
       "type": "magic"
     },
     {
+      "source": "tazavesh-streets-of-wonder",
+      "type": "bleed",
+      "icon": "inv_misc_steelweaponchain",
+      "name": "Chains of Damnation",
+      "id": 350101
+    },
+    {
+      "source": "tazavesh-soleahs-gambit",
+      "type": "bleed",
+      "icon": "ability_hunter_assassinate2",
+      "name": "Shuriken Blitz",
+      "id": 351119
+    },
+    {
       "id": 351960,
       "icon": "spell_broker_debuff",
       "name": "Static Cling",
@@ -95,6 +137,20 @@
       "type": "enrage"
     },
     {
+      "source": "tazavesh-streets-of-wonder",
+      "type": "magic",
+      "icon": "spell_broker_beam",
+      "name": "Scintillate",
+      "id": 355641
+    },
+    {
+      "source": "tazavesh-streets-of-wonder",
+      "type": "bleed",
+      "icon": "ability_rogue_fanofknives",
+      "name": "Quickblade",
+      "id": 355832
+    },
+    {
       "id": 355888,
       "icon": "inv_sword_1h_broker_c_01",
       "name": "Hard Light Baton",
@@ -107,6 +163,13 @@
       "name": "Glyph of Restraint",
       "source": "tazavesh-streets-of-wonder",
       "type": "magic"
+    },
+    {
+      "source": "tazavesh-streets-of-wonder",
+      "type": "magic",
+      "icon": "inv_misc_gem_pearl_03",
+      "name": "Hard Light Barrier",
+      "id": 355934
     },
     {
       "id": 355980,
@@ -123,6 +186,27 @@
       "type": "enrage"
     },
     {
+      "source": "tazavesh-streets-of-wonder",
+      "type": "magic",
+      "icon": "spell_broker_buff",
+      "name": "Empowered Glyph of Restraint",
+      "id": 356324
+    },
+    {
+      "source": "tazavesh-streets-of-wonder",
+      "type": "curse",
+      "icon": "spell_shadow_curseoftounges",
+      "name": "Ancient Dread",
+      "id": 356407
+    },
+    {
+      "source": "tazavesh-streets-of-wonder",
+      "type": "magic",
+      "icon": "spell_broker_debuff",
+      "name": "Lockdown",
+      "id": 356943
+    },
+    {
       "id": 357029,
       "icon": "spell_broker_missile",
       "name": "Hyperlight Bomb",
@@ -135,6 +219,13 @@
       "name": "Energy Slash",
       "source": "tazavesh-soleahs-gambit",
       "type": "magic"
+    },
+    {
+      "source": "tazavesh-soleahs-gambit",
+      "type": "magic",
+      "icon": "ability_druid_empoweredtouch",
+      "name": "Reinvigorate",
+      "id": 357284
     },
     {
       "id": 357827,
@@ -276,7 +367,13 @@
         ]
       ]
     },
-
+    {
+      "source": "priory-of-the-sacred-flame",
+      "type": "magic",
+      "icon": "inv_ability_holyfire_nova",
+      "name": "Blinding Light",
+      "id": 428170
+    },
     {
       "id": 431309,
       "icon": "warlock_curse_shadow_aura",
@@ -290,6 +387,13 @@
       "name": "Tainted Slash",
       "source": "the-dawnbreaker",
       "type": "bleed"
+    },
+    {
+      "source": "the-dawnbreaker",
+      "type": "magic",
+      "icon": "ability_warlock_everlastingaffliction",
+      "name": "Black Edge",
+      "id": 431494
     },
     {
       "id": 432448,
@@ -403,6 +507,13 @@
       "id": 451112
     },
     {
+      "source": "priory-of-the-sacred-flame",
+      "type": "magic",
+      "icon": "inv_ability_holyfire_missile",
+      "name": "Holy Flame",
+      "id": 451606
+    },
+    {
       "id": 453461,
       "type": "bleed",
       "source": "priory-of-the-sacred-flame",
@@ -433,6 +544,13 @@
           }
         ]
       ]
+    },
+    {
+      "source": "ara-kara-city-of-echoes",
+      "type": "poison",
+      "icon": "inv_ability_poison_orb",
+      "name": "Cultivated Poisons",
+      "id": 461507
     },
     {
       "id": 462737,
@@ -554,6 +672,13 @@
       "type": "purge"
     },
     {
+      "source": "halls-of-atonement",
+      "type": "magic",
+      "icon": "inv_offhand_1h_revendreth_d_01",
+      "name": "Anima Tainted Armor",
+      "id": 1235060
+    },
+    {
       "id": 1235245,
       "icon": "ability_deathknight_summongargoyle",
       "name": "Ankle Bite",
@@ -569,6 +694,20 @@
           ", applied whenever they dash to someone"
         ]
       ]
+    },
+    {
+      "source": "halls-of-atonement",
+      "type": "magic",
+      "icon": "trade_archaeology_druidprieststatueset",
+      "name": "Turn to Stone",
+      "id": 1235762
+    },
+    {
+      "source": "halls-of-atonement",
+      "type": "magic",
+      "icon": "spell_animarevendreth_groundstate",
+      "name": "Unstable Anima",
+      "id": 1236513
     },
     {
       "id": 1237602,
@@ -587,8 +726,22 @@
       ]
     },
     {
-      "source": "ara-kara-city-of-echoes",
+      "source": "tazavesh-soleahs-gambit",
       "type": "magic",
+      "icon": "ability_evoker_masterytimewalker",
+      "name": "Time Bomb",
+      "id": 1240097
+    },
+    {
+      "source": "tazavesh-soleahs-gambit",
+      "type": "magic",
+      "icon": "ability_mage_timewarp",
+      "name": "Double Time",
+      "id": 1240214
+    },
+    {
+      "source": "ara-kara-city-of-echoes",
+      "type": "bleed",
       "icon": "ability_ironmaidens_bloodritual",
       "name": "Tainted Blood",
       "id": 1241785,
@@ -600,6 +753,20 @@
       "icon": "ability_warrior_unrelentingassault",
       "name": "Intensifying Aggression",
       "id": 1242074
+    },
+    {
+      "source": "tazavesh-streets-of-wonder",
+      "type": "enrage",
+      "icon": "spell_nature_shamanrage",
+      "name": "Force Multiplier",
+      "id": 1244446
+    },
+    {
+      "source": "tazavesh-streets-of-wonder",
+      "type": "bleed",
+      "icon": "ability_rogue_nightblade",
+      "name": "Phase Slash",
+      "id": 1248211
     }
   ]
 }
