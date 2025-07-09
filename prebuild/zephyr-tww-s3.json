@@ -47,11 +47,19 @@
     },
     "tazavesh-soleahs-gambit": {
       "name": "Tazavesh: So'leah's Gambit",
-      "encounters": ["Hylbrande", "Timecap'n Hooktail", "So'leah"]
+      "encounters": ["Hylbrande", "Timecap'n Hooktail", "So'leah"],
+      "icon": "achievement_dungeon_brokerdungeon"
     },
     "tazavesh-streets-of-wonder": {
       "name": "Tazavesh: Streets of Wonder",
-      "encounters": ["Zo'phex, the Sentinel", "The Menagerie", "P.O.S.T. Master", "?", "So'zami"]
+      "encounters": [
+        "Zo'phex, the Sentinel",
+        "The Menagerie",
+        "P.O.S.T. Master",
+        "Zo'gron",
+        "So'zami"
+      ],
+      "icon": "achievement_dungeon_brokerdungeon"
     },
     "the-dawnbreaker": {
       "name": "The Dawnbreaker",
@@ -71,168 +79,360 @@
   },
   "spells": [
     {
-      "id": 423076,
+      "id": 319592,
+      "type": "echelon",
+      "name": "Stone Shattering Leap",
+      "icon": "ability_earthen_pillar",
+      "source": "halls-of-atonement"
+    },
+    {
+      "id": 323414,
+      "type": "lord-chamberlain",
+      "name": "Ritual of Woe",
+      "icon": "spell_deathknight_vendetta",
+      "source": "halls-of-atonement"
+    },
+    {
+      "id": 323853,
+      "type": "high-adjudicator-aleez",
+      "name": "Pulse from Beyond",
+      "icon": "creatureportrait_mageportal_undercity",
+      "source": "halls-of-atonement"
+    },
+    {
+      "id": 325879,
       "type": "trash",
-      "name": "Hammer of Purity",
-      "icon": "ability_paladin_hammeroftherighteous",
-      "source": "priory-of-the-sacred-flame"
+      "name": "Curse of Obliteration",
+      "icon": "ability_creature_cursed_02",
+      "source": "halls-of-atonement"
+    },
+    {
+      "id": 326426,
+      "type": "trash",
+      "name": "Thrash",
+      "icon": "spell_shaman_earthquake",
+      "source": "halls-of-atonement"
+    },
+    {
+      "id": 328125,
+      "type": "echelon",
+      "name": "Volatile Transformation",
+      "icon": "spell_nature_earthquake",
+      "source": "halls-of-atonement"
+    },
+    {
+      "id": 346028,
+      "type": "zophex-the-sentinel",
+      "name": "Interrogation",
+      "icon": "inv_sword_1h_broker2boss_d_01_red",
+      "source": "tazavesh-streets-of-wonder"
+    },
+    {
+      "id": 346741,
+      "type": "post-master",
+      "name": "Fan Mail",
+      "icon": "achievement_guildperk_gmail",
+      "source": "tazavesh-streets-of-wonder"
+    },
+    {
+      "id": 346967,
+      "type": "post-master",
+      "name": "Money Order",
+      "icon": "ability_racial_packhobgoblin",
+      "source": "tazavesh-streets-of-wonder"
+    },
+    {
+      "id": 347841,
+      "type": "trash",
+      "name": "Pounce",
+      "icon": "ability_druid_mangle",
+      "source": "tazavesh-streets-of-wonder"
+    },
+    {
+      "id": 349663,
+      "type": "the-menagerie",
+      "name": "Grip of Hunger",
+      "icon": "spell_animaardenweald_wave",
+      "source": "tazavesh-streets-of-wonder"
+    },
+    {
+      "id": 349954,
+      "type": "the-menagerie",
+      "name": "Purification Protocol",
+      "icon": "spell_animabastion_groundstate",
+      "source": "tazavesh-streets-of-wonder"
+    },
+    {
+      "id": 349999,
+      "type": "the-menagerie",
+      "name": "Anima Detonation",
+      "icon": "spell_animabastion_orb",
+      "source": "tazavesh-streets-of-wonder"
+    },
+    {
+      "id": 350090,
+      "type": "the-menagerie",
+      "name": "Whirling Annihilation",
+      "icon": "spell_animamaw_groundstate",
+      "source": "tazavesh-streets-of-wonder"
+    },
+    {
+      "id": 350468,
+      "type": "the-menagerie",
+      "name": "Purification",
+      "icon": "spell_animabastion_groundstate",
+      "source": "tazavesh-streets-of-wonder"
+    },
+    {
+      "id": 350804,
+      "type": "soleah",
+      "name": "Collapsing Energy",
+      "icon": "spell_broker_debuff",
+      "source": "tazavesh-soleahs-gambit"
+    },
+    {
+      "id": 350885,
+      "type": "soleah",
+      "name": "Hyperlight Jolt",
+      "icon": "spell_animabastion_beam",
+      "source": "tazavesh-soleahs-gambit"
+    },
+    {
+      "id": 350921,
+      "type": "zogron",
+      "name": "Crowd Control",
+      "icon": "inv_shield_1h_broker_c_01",
+      "source": "tazavesh-streets-of-wonder"
+    },
+    {
+      "id": 350922,
+      "type": "trash",
+      "name": "Menacing Shout",
+      "icon": "ability_warrior_battleshout",
+      "source": "tazavesh-streets-of-wonder"
+    },
+    {
+      "id": 351070,
+      "type": "the-menagerie",
+      "name": "Venting Concussion",
+      "icon": "spell_animabastion_buff",
+      "source": "tazavesh-streets-of-wonder"
+    },
+    {
+      "id": 351119,
+      "type": "trash",
+      "name": "Shuriken Blitz",
+      "icon": "ability_hunter_assassinate2",
+      "source": "tazavesh-soleahs-gambit"
+    },
+    {
+      "id": 351646,
+      "type": "soleah",
+      "name": "Hyperlight Nova",
+      "icon": "spell_broker_nova",
+      "source": "tazavesh-soleahs-gambit"
+    },
+    {
+      "id": 355306,
+      "type": "trash",
+      "name": "Rift Blast",
+      "icon": "spell_animabastion_beam",
+      "source": "tazavesh-streets-of-wonder"
+    },
+    {
+      "id": 355429,
+      "type": "trash",
+      "name": "Tidal Stomp",
+      "icon": "ability_shawaterelemental_swirl",
+      "source": "tazavesh-soleahs-gambit"
+    },
+    {
+      "id": 355440,
+      "type": "zogron",
+      "name": "Suppression Spark",
+      "icon": "spell_broker_nova",
+      "source": "tazavesh-streets-of-wonder"
+    },
+    {
+      "id": 355832,
+      "type": "trash",
+      "name": "Quickblade",
+      "icon": "ability_rogue_fanofknives",
+      "source": "tazavesh-streets-of-wonder"
+    },
+    {
+      "id": 356482,
+      "type": "trash",
+      "name": "Rotten Food",
+      "icon": "ability_creature_disease_01",
+      "source": "tazavesh-streets-of-wonder"
+    },
+    {
+      "id": 356548,
+      "type": "trash",
+      "name": "Radiant Pulse",
+      "icon": "spell_broker_groundstate",
+      "source": "tazavesh-streets-of-wonder"
+    },
+    {
+      "id": 357019,
+      "type": "trash",
+      "name": "Lightshard Retreat",
+      "icon": "spell_broker_groundstate",
+      "source": "tazavesh-streets-of-wonder"
+    },
+    {
+      "id": 357042,
+      "type": "trash",
+      "name": "Hyperlight Bomb",
+      "icon": "spell_broker_missile",
+      "source": "tazavesh-streets-of-wonder"
+    },
+    {
+      "id": 357243,
+      "type": "trash",
+      "name": "Pulse",
+      "icon": "spell_broker_nova",
+      "source": "tazavesh-soleahs-gambit"
+    },
+    {
+      "id": 357509,
+      "type": "trash",
+      "name": "Wild Thrash",
+      "icon": "spell_druid_bloodythrash",
+      "source": "tazavesh-streets-of-wonder"
+    },
+    {
+      "id": 357512,
+      "type": "trash",
+      "name": "Frenzied Charge",
+      "icon": "ability_mount_triceratopsmount",
+      "source": "tazavesh-streets-of-wonder"
     },
     {
       "id": 423547,
-      "type": "trash",
       "name": "Inner Fire",
       "icon": "inv_ability_holyfire_buff",
-      "source": "priory-of-the-sacred-flame"
+      "source": "priory-of-the-sacred-flame",
+      "type": "prioress-murrpray"
     },
     {
       "id": 423665,
-      "type": "trash",
       "name": "Embrace the Light",
       "icon": "ability_priest_holywordlife",
-      "source": "priory-of-the-sacred-flame"
-    },
-    {
-      "id": 424419,
-      "type": "trash",
-      "name": "Battle Cry",
-      "icon": "warrior_disruptingshout",
-      "source": "priory-of-the-sacred-flame"
+      "source": "priory-of-the-sacred-flame",
+      "type": "prioress-murrpray",
+      "notes": ["Intermission channel until you break her shield"]
     },
     {
       "id": 424426,
-      "type": "trash",
       "name": "Lunging Strike",
       "icon": "inv_spear_11",
-      "source": "priory-of-the-sacred-flame"
+      "source": "priory-of-the-sacred-flame",
+      "type": "trash",
+      "notes": ["Cleave avoidable by not stacking."]
     },
     {
       "id": 424432,
-      "type": "trash",
       "name": "Holy Radiance",
       "icon": "ability_paladin_gaurdedbythelight",
-      "source": "priory-of-the-sacred-flame"
-    },
-    {
-      "id": 424460,
+      "source": "priory-of-the-sacred-flame",
       "type": "trash",
-      "name": "Ember Storm",
-      "icon": "spell_shadow_rainoffire",
-      "source": "priory-of-the-sacred-flame"
-    },
-    {
-      "id": 424621,
-      "type": "trash",
-      "name": "Brutal Smash",
-      "icon": "spell_nature_earthquake",
-      "source": "priory-of-the-sacred-flame"
-    },
-    {
-      "id": 425018,
-      "type": "trash",
-      "name": "Overwhelming Power",
-      "icon": "inv_ability_holyfire_debuff",
-      "source": "priory-of-the-sacred-flame"
-    },
-    {
-      "id": 425554,
-      "type": "trash",
-      "name": "Purify",
-      "icon": "ability_paladin_toweroflight",
-      "source": "priory-of-the-sacred-flame"
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 239833, "kind": "npc", "children": "Elaena Emberlanz" }
+          }
+        ]
+      ]
     },
     {
       "id": 426736,
-      "type": "trash",
+      "type": "speaker-shadowcrown",
       "name": "Shadow Shroud",
       "icon": "spell_priest_mindspike",
-      "source": "the-dawnbreaker"
+      "source": "the-dawnbreaker",
+      "notes": [
+        [
+          "Yes, the healing absorb is aoe and the ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 453310,
+              "kind": "spell",
+              "icon": "inv_elemental_primal_shadow",
+              "children": "Obsidian Beam"
+            }
+          },
+          " is not."
+        ]
+      ]
     },
     {
       "id": 426793,
-      "type": "trash",
+      "type": "anubikkaj",
       "name": "Shadowy Decay",
       "icon": "ability_priest_surgeofdarkness",
       "source": "the-dawnbreaker"
     },
     {
       "id": 426826,
-      "type": "trash",
+      "type": "anubikkaj",
       "name": "Dark Orb",
       "icon": "spell_shadow_soulgem",
       "source": "the-dawnbreaker"
     },
     {
       "id": 427007,
-      "type": "trash",
+      "type": "anubikkaj",
       "name": "Terrifying Slam",
       "icon": "inv_misc_nightsaberclaw_mana",
       "source": "the-dawnbreaker"
     },
     {
-      "id": 427472,
-      "type": "trash",
-      "name": "Flamestrike",
-      "icon": "spell_fire_selfdestruct",
-      "source": "priory-of-the-sacred-flame"
-    },
-    {
-      "id": 427601,
-      "type": "trash",
-      "name": "Burst of Light",
-      "icon": "spell_fire_ragnaros_supernova",
-      "source": "priory-of-the-sacred-flame"
-    },
-    {
       "id": 427609,
-      "type": "trash",
       "name": "Disrupting Shout",
       "icon": "warrior_disruptingshout",
-      "source": "priory-of-the-sacred-flame"
+      "source": "priory-of-the-sacred-flame",
+      "type": "trash"
     },
     {
       "id": 427897,
-      "type": "trash",
       "name": "Heat Wave",
       "icon": "ability_rhyolith_lavapool",
-      "source": "priory-of-the-sacred-flame"
-    },
-    {
-      "id": 427898,
+      "source": "priory-of-the-sacred-flame",
       "type": "trash",
-      "name": "Molten Pool",
-      "icon": "trade_engineering",
-      "source": "priory-of-the-sacred-flame"
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 212831, "kind": "npc", "children": "Forge Master Damian" }
+          }
+        ]
+      ]
     },
     {
       "id": 428169,
-      "type": "trash",
       "name": "Blinding Light",
       "icon": "inv_ability_holyfire_nova",
-      "source": "priory-of-the-sacred-flame"
-    },
-    {
-      "id": 428170,
-      "type": "trash",
-      "name": "Blinding Light",
-      "icon": "inv_ability_holyfire_nova",
-      "source": "priory-of-the-sacred-flame"
-    },
-    {
-      "id": 430655,
-      "type": "trash",
-      "name": "Arathi Airship Cannon",
-      "icon": "ability_vehicle_siegeenginecannon",
-      "source": "the-dawnbreaker"
+      "source": "priory-of-the-sacred-flame",
+      "type": "prioress-murrpray",
+      "notes": [
+        [
+          "Players facing ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 207940, "kind": "npc", "children": "Prioress Murrpray" }
+          },
+          " at cast end take ~110% the damage, but get disoriented for 4 seconds"
+        ]
+      ]
     },
     {
       "id": 431350,
-      "type": "trash",
-      "name": "Tormenting Eruption",
-      "icon": "inv_elemental_primal_shadow",
-      "source": "the-dawnbreaker"
-    },
-    {
-      "id": 431352,
       "type": "trash",
       "name": "Tormenting Eruption",
       "icon": "inv_elemental_primal_shadow",
@@ -246,27 +446,6 @@
       "source": "the-dawnbreaker"
     },
     {
-      "id": 431494,
-      "type": "trash",
-      "name": "Black Edge",
-      "icon": "ability_warlock_everlastingaffliction",
-      "source": "the-dawnbreaker"
-    },
-    {
-      "id": 432117,
-      "type": "trash",
-      "name": "Cosmic Singularity",
-      "icon": "inv_cosmicvoid_orb",
-      "source": "ara-kara-city-of-echoes"
-    },
-    {
-      "id": 432132,
-      "type": "trash",
-      "name": "Erupting Webs",
-      "icon": "inv_misc_web_02",
-      "source": "ara-kara-city-of-echoes"
-    },
-    {
       "id": 432454,
       "type": "trash",
       "name": "Stygian Seed",
@@ -274,29 +453,8 @@
       "source": "the-dawnbreaker"
     },
     {
-      "id": 432606,
-      "type": "trash",
-      "name": "Black Hail",
-      "icon": "inv_jewelcrafting_shadowspirit_02",
-      "source": "the-dawnbreaker"
-    },
-    {
-      "id": 433443,
-      "type": "trash",
-      "name": "Impale",
-      "icon": "ability_demonhunter_demonspikes2",
-      "source": "ara-kara-city-of-echoes"
-    },
-    {
-      "id": 433731,
-      "type": "trash",
-      "name": "Burrow Charge",
-      "icon": "ability_demonhunter_demonspikes2",
-      "source": "ara-kara-city-of-echoes"
-    },
-    {
       "id": 433740,
-      "type": "trash",
+      "type": "anubzekt",
       "name": "Infestation",
       "icon": "spell_nature_insectswarm",
       "source": "ara-kara-city-of-echoes"
@@ -306,34 +464,21 @@
       "type": "trash",
       "name": "Venom Volley",
       "icon": "ability_creature_poison_06",
-      "source": "ara-kara-city-of-echoes"
-    },
-    {
-      "id": 433843,
-      "type": "trash",
-      "name": "Erupting Webs",
-      "icon": "inv_misc_web_02",
-      "source": "ara-kara-city-of-echoes"
+      "source": "ara-kara-city-of-echoes",
+      "notes": ["Interruptible."]
     },
     {
       "id": 434093,
-      "type": "trash",
+      "type": "rashanan",
       "name": "Spinneret's Strands",
       "icon": "inv_ability_web_groundstate",
       "source": "the-dawnbreaker"
     },
     {
       "id": 434119,
-      "type": "trash",
+      "type": "rashanan",
       "name": "Spinneret's Websnap",
       "icon": "inv_ability_web_nova",
-      "source": "the-dawnbreaker"
-    },
-    {
-      "id": 434655,
-      "type": "trash",
-      "name": "Arathi Bombs",
-      "icon": "inv_eng_bombfire",
       "source": "the-dawnbreaker"
     },
     {
@@ -341,41 +486,40 @@
       "type": "trash",
       "name": "Resonant Barrage",
       "icon": "spell_shadow_carrionswarm",
-      "source": "ara-kara-city-of-echoes"
-    },
-    {
-      "id": 434824,
-      "type": "trash",
-      "name": "Web Spray",
-      "icon": "inv_ability_web_wave",
-      "source": "ara-kara-city-of-echoes"
+      "source": "ara-kara-city-of-echoes",
+      "notes": ["Interruptible."]
     },
     {
       "id": 435156,
-      "type": "trash",
       "name": "Light Expulsion",
       "icon": "spell_holy_holyguidance",
-      "source": "priory-of-the-sacred-flame"
-    },
-    {
-      "id": 435793,
+      "source": "priory-of-the-sacred-flame",
       "type": "trash",
-      "name": "Tacky Burst",
-      "icon": "inv_ability_web_missile",
-      "source": "the-dawnbreaker"
+      "notes": [
+        [
+          "On-death effect of ",
+          {
+            "component": "WowheadLink",
+            "props": { "children": "Risen Footman", "id": 212835, "kind": "npc" }
+          },
+          ", ",
+          {
+            "component": "WowheadLink",
+            "props": { "children": "Risen Mage", "id": 221760, "kind": "npc" }
+          },
+          " and ",
+          {
+            "component": "WowheadLink",
+            "props": { "children": "Sir Braunpyke", "id": 217658, "kind": "npc" }
+          }
+        ]
+      ]
     },
     {
       "id": 438495,
-      "type": "trash",
+      "type": "avanoxx",
       "name": "Alerting Shrill",
       "icon": "ability_vehicle_sonicshockwave",
-      "source": "ara-kara-city-of-echoes"
-    },
-    {
-      "id": 438832,
-      "type": "trash",
-      "name": "Poisonous Cloud",
-      "icon": "ability_creature_poison_06",
       "source": "ara-kara-city-of-echoes"
     },
     {
@@ -386,15 +530,8 @@
       "source": "ara-kara-city-of-echoes"
     },
     {
-      "id": 438956,
-      "type": "trash",
-      "name": "Acid Pool",
-      "icon": "inv_ability_poison_groundstate",
-      "source": "the-dawnbreaker"
-    },
-    {
       "id": 438966,
-      "type": "trash",
+      "type": "avanoxx",
       "name": "Gossamer Onslaught",
       "icon": "inv_misc_web_02",
       "source": "ara-kara-city-of-echoes"
@@ -404,60 +541,50 @@
       "type": "trash",
       "name": "Fireball Volley",
       "icon": "spell_fire_fireball02",
-      "source": "priory-of-the-sacred-flame"
-    },
-    {
-      "id": 446403,
-      "type": "trash",
-      "name": "Sacrificial Flame",
-      "icon": "ability_paladin_blessedmending",
-      "source": "priory-of-the-sacred-flame"
-    },
-    {
-      "id": 446525,
-      "type": "trash",
-      "name": "Unleashed Pyre",
-      "icon": "paladin_holy",
-      "source": "priory-of-the-sacred-flame"
-    },
-    {
-      "id": 448215,
-      "type": "trash",
-      "name": "Expel Webs",
-      "icon": "inv_ability_web_buff",
-      "source": "the-dawnbreaker"
+      "source": "priory-of-the-sacred-flame",
+      "notes": ["Interruptible."]
     },
     {
       "id": 448248,
       "type": "trash",
       "name": "Revolting Volley",
       "icon": "ability_hunter_stickytarbombtrap",
-      "source": "ara-kara-city-of-echoes"
+      "source": "ara-kara-city-of-echoes",
+      "notes": ["Interruptible."]
     },
     {
       "id": 448492,
-      "type": "trash",
       "name": "Thunderclap",
       "icon": "ability_thunderclap",
-      "source": "priory-of-the-sacred-flame"
+      "source": "priory-of-the-sacred-flame",
+      "type": "trash",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 212826, "kind": "npc", "children": "Guard Captain Suleyman" }
+          }
+        ]
+      ]
     },
     {
       "id": 448791,
-      "type": "trash",
       "name": "Sacred Toll",
       "icon": "ability_bastion_paladin",
-      "source": "priory-of-the-sacred-flame"
+      "source": "priory-of-the-sacred-flame",
+      "type": "trash"
     },
     {
       "id": 448887,
-      "type": "trash",
+      "type": "rashanan",
       "name": "Erosive Spray",
       "icon": "inv_ability_poison_missile",
       "source": "the-dawnbreaker"
     },
     {
       "id": 448888,
-      "type": "trash",
+      "type": "rashanan",
       "name": "Erosive Spray",
       "icon": "inv_ability_poison_missile",
       "source": "the-dawnbreaker"
@@ -498,32 +625,20 @@
       "source": "the-dawnbreaker"
     },
     {
-      "id": 451115,
-      "type": "trash",
-      "name": "Terrifying Slam",
-      "icon": "inv_misc_nightsaberclaw_mana",
-      "source": "the-dawnbreaker"
-    },
-    {
-      "id": 451606,
-      "type": "trash",
-      "name": "Holy Flame",
-      "icon": "inv_ability_holyfire_missile",
-      "source": "priory-of-the-sacred-flame"
-    },
-    {
       "id": 451764,
-      "type": "trash",
       "name": "Radiant Flame",
       "icon": "spell_holy_auramastery",
-      "source": "priory-of-the-sacred-flame"
-    },
-    {
-      "id": 453160,
+      "source": "priory-of-the-sacred-flame",
       "type": "trash",
-      "name": "Impale",
-      "icon": "ability_demonhunter_demonspikes2",
-      "source": "ara-kara-city-of-echoes"
+      "notes": [
+        [
+          "Aura of ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 217658, "kind": "npc", "children": "Sir Braunpyke" }
+          }
+        ]
+      ]
     },
     {
       "id": 453345,
@@ -534,45 +649,29 @@
     },
     {
       "id": 460158,
-      "type": "trash",
       "name": "Jumpstart",
       "icon": "inv_battery_02",
-      "source": "operation-floodgate"
+      "source": "operation-floodgate",
+      "type": "big-momma",
+      "notes": ["Periodic damage during intermission"]
     },
     {
       "id": 460814,
-      "type": "trash",
       "name": "Deflagration",
       "icon": "spell_shaman_firenova",
-      "source": "operation-floodgate"
+      "source": "operation-floodgate",
+      "type": "demolition-duo",
+      "notes": [
+        "Initial damage only, not the dot",
+        "Avoidable by properly dealing with the bomb mechanic via dispel & charge"
+      ]
     },
     {
       "id": 461487,
-      "type": "trash",
+      "type": "kikatal-the-harvester",
       "name": "Cultivated Poisons",
       "icon": "inv_ability_poison_orb",
       "source": "ara-kara-city-of-echoes"
-    },
-    {
-      "id": 461793,
-      "type": "trash",
-      "name": "R.P.G.G.",
-      "icon": "inv_gizmo_rocketlauncher",
-      "source": "operation-floodgate"
-    },
-    {
-      "id": 463428,
-      "type": "trash",
-      "name": "Lingering Erosion",
-      "icon": "inv_ability_poison_debuff",
-      "source": "the-dawnbreaker"
-    },
-    {
-      "id": 464294,
-      "type": "trash",
-      "name": "Weapons Stockpile Explosion",
-      "icon": "inv_eng_crate",
-      "source": "operation-floodgate"
     },
     {
       "id": 465128,
@@ -583,129 +682,87 @@
     },
     {
       "id": 465462,
-      "type": "trash",
       "name": "Turbo Charge",
       "icon": "inv_10_engineering_manufacturedparts_electricalparts_color1",
-      "source": "operation-floodgate"
-    },
-    {
-      "id": 465604,
-      "type": "trash",
-      "name": "Battery Bolt",
-      "icon": "inv_battery_01",
-      "source": "operation-floodgate"
-    },
-    {
-      "id": 465682,
-      "type": "trash",
-      "name": "Surprise Inspection",
-      "icon": "ability_rogue_surpriseattack",
-      "source": "operation-floodgate"
+      "source": "operation-floodgate",
+      "type": "geezle-gigazap"
     },
     {
       "id": 465830,
-      "type": "trash",
       "name": "Warp Blood",
       "icon": "ability_warlock_soulswap",
-      "source": "operation-floodgate"
-    },
-    {
-      "id": 468604,
-      "type": "trash",
-      "name": "Dam Rubble",
-      "icon": "shaman_pvp_rockshield",
-      "source": "operation-floodgate"
+      "source": "operation-floodgate",
+      "type": "trash"
     },
     {
       "id": 468680,
-      "type": "trash",
       "name": "Crabsplosion",
       "icon": "inv_crabbomb_black",
-      "source": "operation-floodgate"
-    },
-    {
-      "id": 468727,
+      "source": "operation-floodgate",
       "type": "trash",
-      "name": "Seaforium Charge",
-      "icon": "inv_misc_bomb_02",
-      "source": "operation-floodgate"
+      "notes": [
+        "Stacks",
+        [
+          "On-death effect of ",
+          {
+            "component": "WowheadLink",
+            "props": { "children": "Bombshell Crab", "id": 231497, "kind": "npc" }
+          }
+        ]
+      ]
     },
     {
       "id": 468815,
-      "type": "trash",
       "name": "Gigazap",
       "icon": "spell_shaman_crashlightning",
-      "source": "operation-floodgate"
-    },
-    {
-      "id": 472454,
-      "type": "trash",
-      "name": "Doom Storm",
-      "icon": "ability_ironmaidens_bombardment",
-      "source": "operation-floodgate"
-    },
-    {
-      "id": 472755,
-      "type": "trash",
-      "name": "Shrapnel",
-      "icon": "inv_eng_bombfire",
-      "source": "operation-floodgate"
+      "source": "operation-floodgate",
+      "type": "geezle-gigazap",
+      "notes": ["Initial damage only, not the dot"]
     },
     {
       "id": 473081,
-      "type": "trash",
       "name": "Awaken the Swamp",
       "icon": "inv_tradeskillitem_sorcerersearth_tong",
-      "source": "operation-floodgate"
-    },
-    {
-      "id": 473526,
-      "type": "trash",
-      "name": "Big Bada BOOM!",
-      "icon": "inv_misc_bomb_02",
-      "source": "operation-floodgate"
+      "source": "operation-floodgate",
+      "type": "swampface"
     },
     {
       "id": 473719,
-      "type": "trash",
+      "type": "demolition-duo",
       "name": "Kinetic Explosive Gel",
       "icon": "inv_ammo_firetar",
       "source": "operation-floodgate"
     },
     {
-      "id": 1213790,
-      "type": "trash",
-      "name": "Zeppelin Barrage",
-      "icon": "ability_vehicle_siegeenginecannon",
-      "source": "operation-floodgate"
-    },
-    {
-      "id": 1214801,
-      "type": "trash",
-      "name": "Maximum Distortion",
-      "icon": "inv_sonic_wave",
-      "source": "operation-floodgate"
-    },
-    {
       "id": 1215504,
-      "type": "trash",
       "name": "Kill-o-Block Barrier",
       "icon": "spell_nature_lightningshield",
-      "source": "operation-floodgate"
+      "source": "operation-floodgate",
+      "type": "big-momma",
+      "notes": ["Avoidable by killing the drones fast enough."]
     },
     {
       "id": 1215850,
-      "type": "trash",
       "name": "Earthcrusher",
       "icon": "spell_nature_earthquake",
-      "source": "eco-dome-aldani"
+      "source": "theater-of-pain",
+      "type": "trash",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 167538, "kind": "npc", "children": "Dokigg the Brutalizer" }
+          }
+        ]
+      ]
     },
     {
       "id": 1216611,
-      "type": "trash",
       "name": "Battery Discharge",
       "icon": "inv_battery_01",
-      "source": "operation-floodgate"
+      "source": "operation-floodgate",
+      "type": "trash"
     },
     {
       "id": 1217316,
@@ -724,10 +781,24 @@
     },
     {
       "id": 1218149,
-      "type": "trash",
       "name": "Sacrificial Pyre",
       "icon": "ability_paladin_blessedmending",
-      "source": "priory-of-the-sacred-flame"
+      "source": "priory-of-the-sacred-flame",
+      "type": "baron-braunpyke",
+      "notes": [
+        [
+          "Both initial damage and the dot ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 446403,
+              "kind": "spell",
+              "icon": "ability_paladin_blessedmending",
+              "children": "Sacrificial Pyre"
+            }
+          }
+        ]
+      ]
     },
     {
       "id": 1218625,
@@ -805,13 +876,6 @@
       "type": "trash",
       "name": "Erratic Ritual",
       "icon": "spell_shaman_improvedreincarnation",
-      "source": "eco-dome-aldani"
-    },
-    {
-      "id": 1222183,
-      "type": "trash",
-      "name": "Farstalker's Leap",
-      "icon": "ability_heroicleap",
       "source": "eco-dome-aldani"
     },
     {
@@ -1271,11 +1335,32 @@
       "source": "manaforge-omega"
     },
     {
+      "id": 1235326,
+      "type": "trash",
+      "name": "Disrupting Screech",
+      "icon": "ability_hunter_pet_bat",
+      "source": "halls-of-atonement"
+    },
+    {
       "id": 1236207,
       "type": "forgeweaver-araz",
       "name": "Astral Surge",
       "icon": "spell_nature_astralrecalgroup",
       "source": "manaforge-omega"
+    },
+    {
+      "id": 1236514,
+      "type": "high-adjudicator-aleez",
+      "name": "Unstable Anima",
+      "icon": "spell_animarevendreth_groundstate",
+      "source": "halls-of-atonement"
+    },
+    {
+      "id": 1236614,
+      "type": "trash",
+      "name": "Display of Power",
+      "icon": "spell_animarevendreth_buff",
+      "source": "halls-of-atonement"
     },
     {
       "id": 1237199,
@@ -1299,6 +1384,20 @@
       "source": "eco-dome-aldani"
     },
     {
+      "id": 1237634,
+      "type": "lord-chamberlain",
+      "name": "Telekinetic Toss",
+      "icon": "spell_animarevendreth_nova",
+      "source": "halls-of-atonement"
+    },
+    {
+      "id": 1237642,
+      "type": "lord-chamberlain",
+      "name": "Telekinetic Onslaught",
+      "icon": "spell_animarevendreth_nova",
+      "source": "halls-of-atonement"
+    },
+    {
       "id": 1237743,
       "type": "the-soul-hunters",
       "name": "Velaryn's Soul",
@@ -1320,18 +1419,18 @@
       "source": "manaforge-omega"
     },
     {
-      "id": 1238781,
-      "type": "trash",
-      "name": "Earthshattering Spear",
-      "icon": "spell_shaman_earthquake",
-      "source": "priory-of-the-sacred-flame"
-    },
-    {
       "id": 1238878,
       "type": "forgeweaver-araz",
       "name": "Echoing Tempest",
       "icon": "spell_shadow_coneofsilence",
       "source": "manaforge-omega"
+    },
+    {
+      "id": 1240105,
+      "type": "timecapn-hooktail",
+      "name": "Temporal Detonation",
+      "icon": "inv_ability_holyfire_nova",
+      "source": "tazavesh-soleahs-gambit"
     },
     {
       "id": 1240440,
@@ -1353,6 +1452,13 @@
       "name": "Deathspindle",
       "icon": "inv_ability_web_buff",
       "source": "manaforge-omega"
+    },
+    {
+      "id": 1241032,
+      "type": "zo-gron",
+      "name": "Final Warning",
+      "icon": "spell_broker_beam",
+      "source": "tazavesh-streets-of-wonder"
     },
     {
       "id": 1241946,
@@ -1384,18 +1490,18 @@
       "source": "manaforge-omega"
     },
     {
-      "id": 1242993,
-      "type": "trash",
-      "name": "Shadow Expulsion",
-      "icon": "sha_spell_fire_ragnaros_supernova",
-      "source": "the-dawnbreaker"
-    },
-    {
       "id": 1243641,
       "type": "forgeweaver-araz",
       "name": "Void Surge",
       "icon": "inv_ability_voidweaverpriest_entropicrift",
       "source": "manaforge-omega"
+    },
+    {
+      "id": 1244443,
+      "type": "trash",
+      "name": "Force Multiplier",
+      "icon": "spell_nature_shamanrage",
+      "source": "tazavesh-streets-of-wonder"
     },
     {
       "id": 1245384,
