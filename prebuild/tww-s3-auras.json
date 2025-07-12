@@ -64,7 +64,7 @@
       "icon": "sha_inv_misc_slime_01_nightborne",
       "name": "Alchemical Residue",
       "source": "tazavesh-streets-of-wonder",
-      "type": "bleed"
+      "type": "magic"
     },
     {
       "source": "tazavesh-soleahs-gambit",
@@ -741,7 +741,7 @@
     },
     {
       "source": "ara-kara-city-of-echoes",
-      "type": "bleed",
+      "type": "magic",
       "icon": "ability_ironmaidens_bloodritual",
       "name": "Tainted Blood",
       "id": 1241785,
