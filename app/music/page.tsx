@@ -132,11 +132,11 @@ export default async function MusicPage() {
       </h1>
 
       <p>
-        Albums I own either on LP or CD as well as those that I plan on buying, but are hard to
-        acquire. The most common genres among these {filteredData.length - unacquiredAlbums} albums
-        are <b>{readableGenresCombinedWithAnd}</b>. Beyond that, I enjoy{' '}
-        <b>Vaporwave, Goth Rock and some Trance</b>. Ordered by acquisition date, beginning with the
-        latest.
+        Albums I own either on LP or CD as well as those that I plan on buying (faded out), but are
+        usually hard to acquire. The most common genres among these{' '}
+        {filteredData.length - unacquiredAlbums} albums are <b>{readableGenresCombinedWithAnd}</b>.
+        Beyond that, I enjoy <b>Vaporwave, Goth Rock and some Trance</b>. Ordered by acquisition
+        date, beginning with the latest.
       </p>
 
       {Object.entries(byGenreOccurrence).map(([, [genre, albums]]) => {
@@ -218,15 +218,11 @@ export default async function MusicPage() {
             <div className="mx-auto grid max-w-7xl grid-cols-[repeat(auto-fit,_minmax(120px,_120px))] gap-4 p-4 md:max-w-9/10 md:gap-6">
               {albumsSortedAlphabeticallyByArtistAndAlbum.map((album) => {
                 const classes = [
-                  'rounded-md border-2 transition ease-in-out hover:opacity-100 shadow-inner hover:shadow-none',
-                  'h-[120px] w-[120px] overflow-hidden object-cover',
-                  'border-slate-300 dark:border-slate-700 hover:border-slate-800 dark:hover:border-primary-700',
+                  'rounded-md border-2 transition ease-in-out hover:opacity-100 shadow-inner hover:shadow-none h-[120px] w-[120px] overflow-hidden object-cover border-slate-300 dark:border-slate-700 hover:border-1 hover:border-none',
                 ];
 
                 if (album.acquired === null) {
-                  classes.push(
-                    'border-red-500 hover:border-red-600 dark:border-red-500 dark:hover:border-red-800'
-                  );
+                  classes.push('border-red-500 opacity-25');
                 }
 
                 const title = `${[album.artist, album.album].join(' - ')}${album.metadata?.release.year ? `, ${album.metadata.release.year}` : ''}`;
