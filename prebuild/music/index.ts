@@ -268,8 +268,6 @@ export async function doDiscogsImport(): Promise<{ from: string; to: string }[]>
       continue;
     }
 
-    await new Promise((resolve) => setTimeout(resolve, 5 * 1000));
-
     const id = await establishId(dataset);
 
     if (id === null) {

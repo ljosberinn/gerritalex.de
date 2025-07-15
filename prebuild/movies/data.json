@@ -748,7 +748,7 @@
         "month": 12,
         "year": 2025
       },
-      "runtime": 192
+      "runtime": 0
     },
     "favorite": false
   },
@@ -6417,12 +6417,11 @@
     "id": 1038392,
     "metadata": {
       "genres": [
-        "Horror",
-        "Mystery"
+        "Horror"
       ],
       "tagline": "Prepare for the end.",
       "release": {
-        "day": 4,
+        "day": 3,
         "month": 9,
         "year": 2025
       },
@@ -8241,7 +8240,7 @@
       ],
       "tagline": "",
       "release": {
-        "day": 18,
+        "day": 16,
         "month": 9,
         "year": 2026
       },

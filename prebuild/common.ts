@@ -75,7 +75,9 @@ export async function doFetch<T>(url: string, options: RequestInit): Promise<T |
             const diff = Number.parseInt(used) - Number.parseInt(rateLimitMax);
 
             if (diff >= 0) {
-              await new Promise((resolve) => setTimeout(resolve, (diff + 1) * 1000));
+              const timer = (diff + 1) * 1000;
+              console.info(`Rate limit exceeded, waiting ${timer}ms before retrying...`);
+              await new Promise((resolve) => setTimeout(resolve, timer));
               return doFetch(url, options);
             }
           }

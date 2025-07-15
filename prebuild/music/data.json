@@ -1,5 +1,37 @@
 [
   {
+    "acquired": null,
+    "artist": "Agalloch",
+    "album": "Ashes Against the Grain",
+    "visible": true,
+    "id": 757872,
+    "metadata": {
+      "genres": [
+        "Progressive Black Metal"
+      ],
+      "release": {
+        "year": 2006
+      },
+      "runtime": 3589
+    }
+  },
+  {
+    "acquired": null,
+    "artist": "Agrypnie",
+    "album": "16[485]",
+    "visible": true,
+    "id": 2253600,
+    "metadata": {
+      "genres": [
+        "Black Metal"
+      ],
+      "release": {
+        "year": 2010
+      },
+      "runtime": 4408
+    }
+  },
+  {
     "acquired": "05-01-2011",
     "artist": "Alastor",
     "album": "Noble North",
@@ -14,6 +46,39 @@
       "runtime": 2603
     },
     "visible": false
+  },
+  {
+    "acquired": null,
+    "artist": "Altar of Plagues",
+    "album": "Teethed Glory & Injury",
+    "visible": true,
+    "id": 4579531,
+    "metadata": {
+      "genres": [
+        "Black Metal"
+      ],
+      "release": {
+        "year": 2013
+      },
+      "runtime": 2878
+    }
+  },
+  {
+    "acquired": null,
+    "artist": "Amesoeurs",
+    "album": "Amesoeurs",
+    "visible": true,
+    "id": 1689877,
+    "metadata": {
+      "genres": [
+        "Black Metal",
+        "Shoegaze"
+      ],
+      "release": {
+        "year": 2009
+      },
+      "runtime": 3505
+    }
   },
   {
     "acquired": "02-01-2010",
@@ -160,6 +225,22 @@
     "visible": true
   },
   {
+    "acquired": null,
+    "artist": "Being as an Ocean",
+    "album": "Dear G-d...",
+    "visible": true,
+    "id": 4130803,
+    "metadata": {
+      "genres": [
+        "Melodic Hardcore"
+      ],
+      "release": {
+        "year": 2012
+      },
+      "runtime": 3095
+    }
+  },
+  {
     "acquired": "02-01-2017",
     "artist": "Being as an Ocean",
     "album": "How We Both Wondrously Perish",
@@ -250,6 +331,22 @@
     "artist": "Bluttaufe",
     "album": "Schwarze Dornen",
     "visible": false
+  },
+  {
+    "acquired": null,
+    "artist": "Bring Me the Horizon",
+    "album": "Sempiternal",
+    "visible": true,
+    "id": 6393242,
+    "metadata": {
+      "genres": [
+        "Metalcore"
+      ],
+      "release": {
+        "year": 2013
+      },
+      "runtime": 4191
+    }
   },
   {
     "acquired": "12-01-2015",
@@ -350,6 +447,38 @@
     "visible": true
   },
   {
+    "acquired": null,
+    "artist": "Chelsea Wolfe",
+    "album": "Pain Is Beauty",
+    "visible": true,
+    "id": 4866623,
+    "metadata": {
+      "genres": [
+        "Gothic Rock"
+      ],
+      "release": {
+        "year": 2013
+      },
+      "runtime": null
+    }
+  },
+  {
+    "acquired": null,
+    "artist": "Crippled Black Phoenix",
+    "album": "200 Tons of Bad Luck",
+    "visible": true,
+    "id": 1844679,
+    "metadata": {
+      "genres": [
+        "Psychedelic Rock"
+      ],
+      "release": {
+        "year": 2009
+      },
+      "runtime": null
+    }
+  },
+  {
     "acquired": "05-01-2019",
     "artist": "Cult of Luna",
     "album": "Mariner",
@@ -421,6 +550,22 @@
     "visible": true
   },
   {
+    "acquired": null,
+    "artist": "Dead Skeletons",
+    "album": "Dead Magick",
+    "visible": true,
+    "id": 3255280,
+    "metadata": {
+      "genres": [
+        "Psychedelic Rock"
+      ],
+      "release": {
+        "year": 2011
+      },
+      "runtime": null
+    }
+  },
+  {
     "acquired": "06-01-2020",
     "artist": "Deathstars",
     "album": "Termination Bliss",
@@ -436,6 +581,22 @@
       "runtime": 3146
     },
     "visible": true
+  },
+  {
+    "acquired": null,
+    "artist": "Destroy Degenhardt",
+    "album": "Das Handbuch des Giftmischers",
+    "visible": true,
+    "id": 11113280,
+    "metadata": {
+      "genres": [
+        "Conscious Rap"
+      ],
+      "release": {
+        "year": 2017
+      },
+      "runtime": 3014
+    }
   },
   {
     "acquired": "11-01-2016",
@@ -454,13 +615,29 @@
     "visible": true
   },
   {
+    "acquired": null,
+    "artist": "Dimmu Borgir",
+    "album": "Death Cult Armageddon",
+    "visible": true,
+    "id": 479122,
+    "metadata": {
+      "genres": [
+        "Symphonic Black Metal"
+      ],
+      "release": {
+        "year": 2003
+      },
+      "runtime": null
+    }
+  },
+  {
     "acquired": "06-01-2020",
     "artist": "Dinner auf Uranos",
     "album": "50 Sommer - 50 Winter",
     "id": 2808348,
     "metadata": {
       "genres": [
-        "Progressive Rock"
+        "Psychedelic Rock"
       ],
       "release": {
         "year": 2010
@@ -678,6 +855,54 @@
     "visible": true
   },
   {
+    "acquired": null,
+    "artist": "Forseti",
+    "album": "Erde",
+    "visible": true,
+    "id": 442914,
+    "metadata": {
+      "genres": [
+        "Neofolk"
+      ],
+      "release": {
+        "year": 2004
+      },
+      "runtime": 3006
+    }
+  },
+  {
+    "acquired": null,
+    "artist": "Foxygen",
+    "album": "We Are the 21st Century Ambassadors of Peace & Magic",
+    "visible": true,
+    "id": 4204341,
+    "metadata": {
+      "genres": [
+        "Psychedelic Rock"
+      ],
+      "release": {
+        "year": 2013
+      },
+      "runtime": 2206
+    }
+  },
+  {
+    "acquired": null,
+    "artist": "Frau Potz",
+    "album": "lehnt dankend ab",
+    "visible": true,
+    "id": 3872144,
+    "metadata": {
+      "genres": [
+        "Punk"
+      ],
+      "release": {
+        "year": 2012
+      },
+      "runtime": null
+    }
+  },
+  {
     "acquired": "05-01-2019",
     "artist": "Glaciation",
     "album": "Sur les Falaises de Marbre",
@@ -748,6 +973,54 @@
     "visible": true
   },
   {
+    "acquired": null,
+    "artist": "Hekate",
+    "album": "Die Welt der dunklen Gärten",
+    "visible": true,
+    "id": 2884201,
+    "metadata": {
+      "genres": [
+        "Neofolk"
+      ],
+      "release": {
+        "year": 2011
+      },
+      "runtime": 4130
+    }
+  },
+  {
+    "acquired": null,
+    "artist": "Hel",
+    "album": "Falland Vörandi",
+    "visible": true,
+    "id": 2268815,
+    "metadata": {
+      "genres": [
+        "Black Metal"
+      ],
+      "release": {
+        "year": 2005
+      },
+      "runtime": 3546
+    }
+  },
+  {
+    "acquired": null,
+    "artist": "Helrunar",
+    "album": "Baldr ok Íss",
+    "visible": true,
+    "id": 1188830,
+    "metadata": {
+      "genres": [
+        "Black Metal"
+      ],
+      "release": {
+        "year": 2007
+      },
+      "runtime": null
+    }
+  },
+  {
     "acquired": "03-01-2011",
     "artist": "Herbstregen",
     "album": "Leben gescheitert",
@@ -794,6 +1067,54 @@
       "runtime": 2763
     },
     "visible": true
+  },
+  {
+    "acquired": null,
+    "artist": "In the Nursery",
+    "album": "Blind Sound",
+    "visible": true,
+    "id": 2858170,
+    "metadata": {
+      "genres": [
+        "Neo-Classical"
+      ],
+      "release": {
+        "year": 2011
+      },
+      "runtime": 2729
+    }
+  },
+  {
+    "acquired": null,
+    "artist": "Interpol",
+    "album": "Turn on the Bright Lights",
+    "visible": true,
+    "id": 604691,
+    "metadata": {
+      "genres": [
+        "Post-Punk"
+      ],
+      "release": {
+        "year": 2002
+      },
+      "runtime": null
+    }
+  },
+  {
+    "acquired": null,
+    "artist": "Isis",
+    "album": "In the Absence of Truth",
+    "visible": true,
+    "id": 814912,
+    "metadata": {
+      "genres": [
+        "Post-Metal"
+      ],
+      "release": {
+        "year": 2006
+      },
+      "runtime": 3884
+    }
   },
   {
     "acquired": "04-01-2018",
@@ -862,6 +1183,38 @@
       "runtime": 3036
     },
     "visible": true
+  },
+  {
+    "acquired": null,
+    "artist": "Jännerwein",
+    "album": "Eine Hoffnung",
+    "visible": true,
+    "id": 7117069,
+    "metadata": {
+      "genres": [
+        "Neofolk"
+      ],
+      "release": {
+        "year": 2015
+      },
+      "runtime": 2900
+    }
+  },
+  {
+    "acquired": null,
+    "artist": "Jännerwein",
+    "album": "Nach Der Sehnsucht",
+    "visible": true,
+    "id": 3179993,
+    "metadata": {
+      "genres": [
+        "Neofolk"
+      ],
+      "release": {
+        "year": 2011
+      },
+      "runtime": 3052
+    }
   },
   {
     "acquired": "08-01-2014",
@@ -952,7 +1305,6 @@
     "id": 5810686,
     "metadata": {
       "genres": [
-        "Folk Rock",
         "Neofolk"
       ],
       "release": {
@@ -963,13 +1315,28 @@
     "visible": true
   },
   {
+    "acquired": null,
+    "artist": "King Dude",
+    "album": "Love",
+    "visible": true,
+    "id": 3253665,
+    "metadata": {
+      "genres": [
+        "Neofolk"
+      ],
+      "release": {
+        "year": 2011
+      },
+      "runtime": 1644
+    }
+  },
+  {
     "acquired": "08-01-2016",
     "artist": "King Dude",
     "album": "Sex",
     "id": 9345125,
     "metadata": {
       "genres": [
-        "Folk Rock",
         "Neofolk"
       ],
       "release": {
@@ -986,7 +1353,6 @@
     "id": 7199424,
     "metadata": {
       "genres": [
-        "Folk Rock",
         "Neofolk"
       ],
       "release": {
@@ -995,6 +1361,22 @@
       "runtime": 2444
     },
     "visible": true
+  },
+  {
+    "acquired": null,
+    "artist": "King Dude",
+    "album": "Tonight's Special Death",
+    "visible": true,
+    "id": 2521638,
+    "metadata": {
+      "genres": [
+        "Neofolk"
+      ],
+      "release": {
+        "year": 2010
+      },
+      "runtime": 1136
+    }
   },
   {
     "acquired": "08-01-2014",
@@ -1176,7 +1558,7 @@
   {
     "acquired": "07-01-2012",
     "artist": "Leonard Cohen",
-    "album": "Death of a Ladies Man",
+    "album": "Death of a Ladies' Man",
     "id": 688913,
     "metadata": {
       "genres": [
@@ -1196,7 +1578,7 @@
     "id": 2159182,
     "metadata": {
       "genres": [
-        "Synth-pop"
+        "Synth-Pop"
       ],
       "release": {
         "year": 1988
@@ -1252,6 +1634,22 @@
       "runtime": null
     },
     "visible": true
+  },
+  {
+    "acquired": null,
+    "artist": "Leonard Cohen",
+    "album": "Songs of Leonard Cohen",
+    "visible": true,
+    "id": 1128261,
+    "metadata": {
+      "genres": [
+        "Singer/Songwriter"
+      ],
+      "release": {
+        "year": 1968
+      },
+      "runtime": null
+    }
   },
   {
     "acquired": "06-01-2012",
@@ -1317,6 +1715,70 @@
       "runtime": 3738
     },
     "visible": true
+  },
+  {
+    "acquired": null,
+    "artist": "Linkin Park",
+    "album": "A Thousand Suns",
+    "visible": true,
+    "id": 2781715,
+    "metadata": {
+      "genres": [
+        "Nu Metal"
+      ],
+      "release": {
+        "year": 2010
+      },
+      "runtime": 2876
+    }
+  },
+  {
+    "acquired": null,
+    "artist": "Linkin Park",
+    "album": "Hybrid Theory",
+    "visible": true,
+    "id": 369408,
+    "metadata": {
+      "genres": [
+        "Nu Metal"
+      ],
+      "release": {
+        "year": 2000
+      },
+      "runtime": 2271
+    }
+  },
+  {
+    "acquired": null,
+    "artist": "Linkin Park",
+    "album": "Meteora",
+    "visible": true,
+    "id": 567665,
+    "metadata": {
+      "genres": [
+        "Nu Metal"
+      ],
+      "release": {
+        "year": 2003
+      },
+      "runtime": 2197
+    }
+  },
+  {
+    "acquired": null,
+    "artist": "Linkin Park",
+    "album": "Minutes to Midnight",
+    "visible": true,
+    "id": 8290242,
+    "metadata": {
+      "genres": [
+        "Nu Metal"
+      ],
+      "release": {
+        "year": 2007
+      },
+      "runtime": 2603
+    }
   },
   {
     "acquired": "02-01-2010",
@@ -1481,6 +1943,38 @@
     "visible": true
   },
   {
+    "acquired": null,
+    "artist": "Manes",
+    "album": "How the World Came to an End",
+    "visible": true,
+    "id": 1817505,
+    "metadata": {
+      "genres": [
+        "Post-Black Metal"
+      ],
+      "release": {
+        "year": 2007
+      },
+      "runtime": 2676
+    }
+  },
+  {
+    "acquired": null,
+    "artist": "Manowar",
+    "album": "Gods of War",
+    "visible": true,
+    "id": 1627335,
+    "metadata": {
+      "genres": [
+        "Heavy Metal"
+      ],
+      "release": {
+        "year": 2007
+      },
+      "runtime": null
+    }
+  },
+  {
     "acquired": "07-01-2012",
     "artist": "Membaris",
     "album": "Entartet",
@@ -1495,6 +1989,22 @@
       "runtime": 4224
     },
     "visible": true
+  },
+  {
+    "acquired": null,
+    "artist": "Minsk",
+    "album": "The Crash and the Draw",
+    "visible": true,
+    "id": 6855223,
+    "metadata": {
+      "genres": [
+        "Doom Metal"
+      ],
+      "release": {
+        "year": 2015
+      },
+      "runtime": null
+    }
   },
   {
     "acquired": "08-01-2021",
@@ -1567,7 +2077,6 @@
     "id": 2746436,
     "metadata": {
       "genres": [
-        "Hardcore Hip-Hop",
         "Conscious Rap"
       ],
       "release": {
@@ -1576,6 +2085,22 @@
       "runtime": null
     },
     "visible": true
+  },
+  {
+    "acquired": null,
+    "artist": "Morlockk Dilemma",
+    "album": "Omnipotenz in D-Moll",
+    "visible": true,
+    "id": 1351230,
+    "metadata": {
+      "genres": [
+        "Conscious Rap"
+      ],
+      "release": {
+        "year": 2015
+      },
+      "runtime": null
+    }
   },
   {
     "acquired": "02-01-2013",
@@ -1640,6 +2165,23 @@
       "runtime": 2708
     },
     "visible": true
+  },
+  {
+    "acquired": null,
+    "artist": "Nachtmystium",
+    "album": "Demise",
+    "visible": true,
+    "id": 627546,
+    "metadata": {
+      "genres": [
+        "Black Metal",
+        "Depressive Black Metal"
+      ],
+      "release": {
+        "year": 2004
+      },
+      "runtime": 2583
+    }
   },
   {
     "acquired": "01-01-2011",
@@ -1854,7 +2396,7 @@
   {
     "acquired": "05-01-2011",
     "artist": "Nargaroth",
-    "album": "Semper Fi",
+    "album": "Semper Fidelis",
     "id": 1283131,
     "metadata": {
       "genres": [
@@ -1907,7 +2449,7 @@
     "id": 964750,
     "metadata": {
       "genres": [
-        "Avantgarde Black Metal"
+        "Post-Black Metal"
       ],
       "release": {
         "year": 2004
@@ -1923,7 +2465,7 @@
     "id": 1070708,
     "metadata": {
       "genres": [
-        "Avantgarde Black Metal"
+        "Post-Black Metal"
       ],
       "release": {
         "year": 2003
@@ -1931,6 +2473,22 @@
       "runtime": 1917
     },
     "visible": true
+  },
+  {
+    "acquired": null,
+    "artist": "Nocte Obducta",
+    "album": "Umbriel (Das Schweigen zwischen den Sternen)",
+    "visible": true,
+    "id": 8737942,
+    "metadata": {
+      "genres": [
+        "Post-Black Metal"
+      ],
+      "release": {
+        "year": 2013
+      },
+      "runtime": null
+    }
   },
   {
     "acquired": "11-01-2011",
@@ -1971,7 +2529,7 @@
     "id": 13476785,
     "metadata": {
       "genres": [
-        "Post-Black Metal"
+        "Atmospheric Black Metal"
       ],
       "release": {
         "year": 2019
@@ -1995,6 +2553,22 @@
       "runtime": 3589
     },
     "visible": true
+  },
+  {
+    "acquired": null,
+    "artist": "Peste Noire",
+    "album": "Ballade cuntre lo Anemi Francor",
+    "visible": true,
+    "id": 1713751,
+    "metadata": {
+      "genres": [
+        "Black Metal"
+      ],
+      "release": {
+        "year": 2009
+      },
+      "runtime": 2342
+    }
   },
   {
     "acquired": "03-01-2011",
@@ -2023,6 +2597,20 @@
       "runtime": 2782
     },
     "visible": true
+  },
+  {
+    "acquired": null,
+    "artist": "Prezident",
+    "album": "Alles ist voll von Göttern",
+    "visible": true,
+    "id": 14855884,
+    "metadata": {
+      "genres": [],
+      "release": {
+        "year": 2020
+      },
+      "runtime": 3599
+    }
   },
   {
     "acquired": "05-01-2019",
@@ -2071,6 +2659,22 @@
       "runtime": 3804
     },
     "visible": true
+  },
+  {
+    "acquired": null,
+    "artist": "Prinz Pi",
+    "album": "Kompass Ohne Norden",
+    "visible": true,
+    "id": 4473438,
+    "metadata": {
+      "genres": [
+        "Conscious Rap"
+      ],
+      "release": {
+        "year": 2013
+      },
+      "runtime": 3924
+    }
   },
   {
     "acquired": "02-01-2016",
@@ -2178,8 +2782,7 @@
     "id": 3203145,
     "metadata": {
       "genres": [
-        "Neofolk",
-        "Industrial"
+        "Neofolk"
       ],
       "release": {
         "year": 2011
@@ -2302,6 +2905,22 @@
     "visible": true
   },
   {
+    "acquired": null,
+    "artist": "Rome",
+    "album": "Le Ceneri Di Heliodoro",
+    "visible": true,
+    "id": 13071761,
+    "metadata": {
+      "genres": [
+        "Neofolk"
+      ],
+      "release": {
+        "year": 2019
+      },
+      "runtime": null
+    }
+  },
+  {
     "acquired": "03-01-2012",
     "artist": "Rome",
     "album": "Masse Mensch Material",
@@ -2383,6 +3002,22 @@
     "visible": true
   },
   {
+    "acquired": null,
+    "artist": "Sabbath Assembly",
+    "album": "Restored to One",
+    "visible": true,
+    "id": 2323654,
+    "metadata": {
+      "genres": [
+        "Psychedelic Rock"
+      ],
+      "release": {
+        "year": 2010
+      },
+      "runtime": null
+    }
+  },
+  {
     "acquired": "03-01-2012",
     "artist": "Secrets of the Moon",
     "album": "Seven Bells",
@@ -2431,6 +3066,22 @@
     "visible": true
   },
   {
+    "acquired": null,
+    "artist": "Septicflesh",
+    "album": "The Great Mass",
+    "visible": true,
+    "id": 2838952,
+    "metadata": {
+      "genres": [
+        "Symphonic Death Metal"
+      ],
+      "release": {
+        "year": 2011
+      },
+      "runtime": null
+    }
+  },
+  {
     "acquired": "12-01-2010",
     "artist": "Simple Existenz",
     "album": "Das Leben vor dem Tod",
@@ -2445,6 +3096,38 @@
       "runtime": 2631
     },
     "visible": true
+  },
+  {
+    "acquired": null,
+    "artist": "Sonne Hagal",
+    "album": "Jordansfrost",
+    "visible": true,
+    "id": 1232798,
+    "metadata": {
+      "genres": [
+        "Neofolk"
+      ],
+      "release": {
+        "year": 2008
+      },
+      "runtime": 2862
+    }
+  },
+  {
+    "acquired": null,
+    "artist": "Spiritual Front",
+    "album": "Open Wounds",
+    "visible": true,
+    "id": 4571126,
+    "metadata": {
+      "genres": [
+        "Neofolk"
+      ],
+      "release": {
+        "year": 2013
+      },
+      "runtime": 5436
+    }
   },
   {
     "acquired": "07-01-2012",
@@ -2527,6 +3210,22 @@
       "runtime": null
     },
     "visible": true
+  },
+  {
+    "acquired": null,
+    "artist": "Tame Impala",
+    "album": "Lonerism",
+    "visible": true,
+    "id": 3924235,
+    "metadata": {
+      "genres": [
+        "Psychedelic Rock"
+      ],
+      "release": {
+        "year": 2012
+      },
+      "runtime": 3104
+    }
   },
   {
     "acquired": "08-01-2010",
@@ -2785,6 +3484,39 @@
     "visible": true
   },
   {
+    "acquired": null,
+    "artist": "The Ruins of Beverast",
+    "album": "Unlock The Shrine",
+    "visible": true,
+    "id": 845239,
+    "metadata": {
+      "genres": [
+        "Black Metal",
+        "Doom Metal"
+      ],
+      "release": {
+        "year": 2004
+      },
+      "runtime": 4221
+    }
+  },
+  {
+    "acquired": null,
+    "artist": "Todtgelichter",
+    "album": "Angst",
+    "visible": true,
+    "id": 3096698,
+    "metadata": {
+      "genres": [
+        "Post-Black Metal"
+      ],
+      "release": {
+        "year": 2010
+      },
+      "runtime": 3282
+    }
+  },
+  {
     "acquired": "12-01-2016",
     "artist": "Triarii",
     "album": "ars militaria",
@@ -2870,6 +3602,72 @@
     "visible": true
   },
   {
+    "acquired": null,
+    "artist": "TriORE",
+    "album": "Three Hours",
+    "visible": true,
+    "id": 1934556,
+    "metadata": {
+      "genres": [
+        "Modern Classical",
+        "Neofolk"
+      ],
+      "release": {
+        "year": 2009
+      },
+      "runtime": 2479
+    }
+  },
+  {
+    "acquired": null,
+    "artist": "Twilight",
+    "album": "Monument to Time End",
+    "visible": true,
+    "id": 10831152,
+    "metadata": {
+      "genres": [
+        "Black Metal"
+      ],
+      "release": {
+        "year": 2017
+      },
+      "runtime": null
+    }
+  },
+  {
+    "acquired": null,
+    "artist": "Type O Negative",
+    "album": "Life Is Killing Me",
+    "visible": true,
+    "id": 367908,
+    "metadata": {
+      "genres": [
+        "Gothic Metal"
+      ],
+      "release": {
+        "year": 2003
+      },
+      "runtime": 4466
+    }
+  },
+  {
+    "acquired": null,
+    "artist": "Type O Negative",
+    "album": "World Coming Down",
+    "visible": true,
+    "id": 2867033,
+    "metadata": {
+      "genres": [
+        "Gothic Metal",
+        "Doom Metal"
+      ],
+      "release": {
+        "year": 1999
+      },
+      "runtime": 4443
+    }
+  },
+  {
     "acquired": "04-01-2017",
     "artist": "Ufo361",
     "album": "Ich bin 3 Berliner",
@@ -2884,6 +3682,22 @@
       "runtime": null
     },
     "visible": true
+  },
+  {
+    "acquired": null,
+    "artist": "Ulver",
+    "album": "Shadows of the Sun",
+    "visible": true,
+    "id": 1109841,
+    "metadata": {
+      "genres": [
+        "Dark Ambient"
+      ],
+      "release": {
+        "year": 0
+      },
+      "runtime": 2394
+    }
   },
   {
     "acquired": "08-01-2011",
@@ -2962,6 +3776,22 @@
       "runtime": 4135
     },
     "visible": true
+  },
+  {
+    "acquired": null,
+    "artist": "Von Thronstahl",
+    "album": "Sacrificare",
+    "visible": true,
+    "id": 959724,
+    "metadata": {
+      "genres": [
+        "Neofolk"
+      ],
+      "release": {
+        "year": 2007
+      },
+      "runtime": 4287
+    }
   },
   {
     "acquired": "10-01-2012",
@@ -3064,5 +3894,22 @@
       "runtime": 2781
     },
     "visible": true
+  },
+  {
+    "acquired": null,
+    "artist": "Woods of Ypres",
+    "album": "Woods 5: Grey Skies & Electric Light",
+    "visible": true,
+    "id": 3430695,
+    "metadata": {
+      "genres": [
+        "Doom Metal",
+        "Gothic Metal"
+      ],
+      "release": {
+        "year": 2012
+      },
+      "runtime": 3715
+    }
   }
 ]
