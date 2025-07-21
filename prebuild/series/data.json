@@ -2401,6 +2401,27 @@
     "episodesSeen": 0
   },
   {
+    "title": "The Peripheral",
+    "id": 95403,
+    "episodesSeen": 8,
+    "state": "finished",
+    "metadata": {
+      "genres": [
+        "Sci-Fi & Fantasy",
+        "Drama"
+      ],
+      "seasons": 1,
+      "tagline": "",
+      "release": {
+        "day": 20,
+        "month": 10,
+        "year": 2022
+      },
+      "episodes": 8
+    },
+    "favorite": false
+  },
+  {
     "title": "The Pitt",
     "id": 250307,
     "state": "upcoming",

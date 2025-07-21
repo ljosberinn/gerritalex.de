@@ -83,6 +83,15 @@ const config = (): NextConfig => {
           source: '/(.*)',
           headers: securityHeaders,
         },
+        {
+          source: '/static/images/:path*',
+          headers: [
+            {
+              key: 'Cache-Control',
+              value: 'public, max-age=604800, immutable',
+            },
+          ],
+        },
       ];
     },
     async redirects() {
