@@ -7678,6 +7678,26 @@
     "seen": true
   },
   {
+    "title": "The Void",
+    "id": 378018,
+    "seen": true,
+    "metadata": {
+      "genres": [
+        "Mystery",
+        "Horror",
+        "Science Fiction"
+      ],
+      "tagline": "There Is a Hell. This Is Worse.",
+      "release": {
+        "day": 22,
+        "month": 9,
+        "year": 2016
+      },
+      "runtime": 90
+    },
+    "favorite": false
+  },
+  {
     "title": "The Wandering Earth",
     "id": 535167,
     "metadata": {

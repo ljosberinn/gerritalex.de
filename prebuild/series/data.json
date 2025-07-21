@@ -617,7 +617,7 @@
       "episodes": 30
     },
     "favorite": true,
-    "episodesSeen": 20,
+    "episodesSeen": 22,
     "state": "upcoming"
   },
   {
@@ -1885,7 +1885,7 @@
       "episodes": 30
     },
     "favorite": true,
-    "episodesSeen": 21,
+    "episodesSeen": 23,
     "state": "upcoming"
   },
   {
@@ -1942,7 +1942,7 @@
         "Mystery"
       ],
       "seasons": 5,
-      "tagline": "Greetings from the Upside Down.",
+      "tagline": "One last adventure.",
       "release": {
         "day": 15,
         "month": 7,
@@ -2239,14 +2239,14 @@
         "Sci-Fi & Fantasy",
         "Drama"
       ],
-      "seasons": 3,
+      "seasons": 2,
       "tagline": "Evil has had many names.",
       "release": {
         "day": 1,
         "month": 9,
         "year": 2022
       },
-      "episodes": 24
+      "episodes": 16
     },
     "favorite": false,
     "episodesSeen": 8,
