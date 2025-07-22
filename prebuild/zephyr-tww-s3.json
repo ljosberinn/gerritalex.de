@@ -801,13 +801,6 @@
       ]
     },
     {
-      "id": 1218625,
-      "type": "plexus-sentinel",
-      "name": "Displacement Matrix",
-      "icon": "inv_10_dungeonjewelry_dragon_trinket_1arcanemagical_blue",
-      "source": "manaforge-omega"
-    },
-    {
       "id": 1218626,
       "type": "plexus-sentinel",
       "name": "Displacement Matrix",
@@ -951,13 +944,6 @@
       "source": "manaforge-omega"
     },
     {
-      "id": 1225210,
-      "type": "fractillus",
-      "name": "Enraged Tantrum",
-      "icon": "inv_cosmicvoid_nova",
-      "source": "manaforge-omega"
-    },
-    {
       "id": 1225331,
       "type": "nexus-king-salhadaar",
       "name": "Galactic Smash",
@@ -969,13 +955,6 @@
       "type": "nexus-king-salhadaar",
       "name": "Dark Star",
       "icon": "inv_mace_2h_etherealking_d_01",
-      "source": "manaforge-omega"
-    },
-    {
-      "id": 1226042,
-      "type": "nexus-king-salhadaar",
-      "name": "Starkiller Nova",
-      "icon": "inv_cosmicvoid_orb",
       "source": "manaforge-omega"
     },
     {
@@ -1045,24 +1024,10 @@
       "source": "manaforge-omega"
     },
     {
-      "id": 1226877,
-      "type": "loomithar",
-      "name": "Primal Spellstorm",
-      "icon": "ability_druid_starfall",
-      "source": "manaforge-omega"
-    },
-    {
       "id": 1227052,
       "type": "soulbinder-naazindhri",
       "name": "Void Volley",
       "icon": "inv_cosmicvoid_missile",
-      "source": "manaforge-omega"
-    },
-    {
-      "id": 1227119,
-      "type": "the-soul-hunters",
-      "name": "Fel Devastation",
-      "icon": "ability_demonhunter_feldevastation",
       "source": "manaforge-omega"
     },
     {
@@ -1087,13 +1052,6 @@
       "source": "manaforge-omega"
     },
     {
-      "id": 1227340,
-      "type": "the-soul-hunters",
-      "name": "Infernal Strike",
-      "icon": "ability_demonhunter_infernalstrike1",
-      "source": "manaforge-omega"
-    },
-    {
       "id": 1227631,
       "type": "forgeweaver-araz",
       "name": "Arcane Expulsion",
@@ -1105,13 +1063,6 @@
       "type": "fractillus",
       "name": "Shard Slam",
       "icon": "spell_mage_focusingcrystal",
-      "source": "manaforge-omega"
-    },
-    {
-      "id": 1227685,
-      "type": "the-soul-hunters",
-      "name": "Hungering Slash",
-      "icon": "inv_polearm_2h_titanargus_d_01",
       "source": "manaforge-omega"
     },
     {
@@ -1164,20 +1115,6 @@
       "source": "manaforge-omega"
     },
     {
-      "id": 1228119,
-      "type": "nexus-king-salhadaar",
-      "name": "Netherbreaker",
-      "icon": "inv_mace_1h_gryphonrider_d_02_bronze",
-      "source": "manaforge-omega"
-    },
-    {
-      "id": 1228168,
-      "type": "forgeweaver-araz",
-      "name": "Silencing Tempest",
-      "icon": "spell_shadow_coneofsilence",
-      "source": "manaforge-omega"
-    },
-    {
       "id": 1228218,
       "type": "forgeweaver-araz",
       "name": "Arcane Obliteration",
@@ -1189,13 +1126,6 @@
       "type": "nexus-king-salhadaar",
       "name": "King's Hunger",
       "icon": "spell_holy_consumemagic",
-      "source": "manaforge-omega"
-    },
-    {
-      "id": 1230302,
-      "type": "nexus-king-salhadaar",
-      "name": "Self-Destruct",
-      "icon": "spell_holy_surgeoflight_shadow",
       "source": "manaforge-omega"
     },
     {
@@ -1251,13 +1181,6 @@
       "source": "eco-dome-aldani"
     },
     {
-      "id": 1232130,
-      "type": "fractillus",
-      "name": "Nexus Shrapnel",
-      "icon": "inv_cosmicvoid_missile",
-      "source": "manaforge-omega"
-    },
-    {
       "id": 1232392,
       "type": "nexus-king-salhadaar",
       "name": "Seal the Forge",
@@ -1265,31 +1188,10 @@
       "source": "manaforge-omega"
     },
     {
-      "id": 1232403,
-      "type": "nexus-king-salhadaar",
-      "name": "Dread Mortar",
-      "icon": "ability_druid_cresentburn",
-      "source": "manaforge-omega"
-    },
-    {
-      "id": 1232409,
-      "type": "forgeweaver-araz",
-      "name": "Unstable Surge",
-      "icon": "spell_arcane_blast",
-      "source": "manaforge-omega"
-    },
-    {
       "id": 1232412,
       "type": "forgeweaver-araz",
       "name": "Focusing Iris",
       "icon": "spell_arcane_invocation",
-      "source": "manaforge-omega"
-    },
-    {
-      "id": 1233074,
-      "type": "forgeweaver-araz",
-      "name": "Crushing Darkness",
-      "icon": "inv_cosmicvoid_nova",
       "source": "manaforge-omega"
     },
     {
@@ -1314,24 +1216,10 @@
       "source": "manaforge-omega"
     },
     {
-      "id": 1234324,
-      "type": "forgeweaver-araz",
-      "name": "Photon Blast",
-      "icon": "spell_priest_mindspike",
-      "source": "manaforge-omega"
-    },
-    {
       "id": 1234541,
       "type": "nexus-king-salhadaar",
       "name": "Dimension Glare",
       "icon": "inv_cosmicvoid_debuff",
-      "source": "manaforge-omega"
-    },
-    {
-      "id": 1234906,
-      "type": "nexus-king-salhadaar",
-      "name": "Nexus Collapse",
-      "icon": "inv_ability_voidweaverpriest_entropicrift",
       "source": "manaforge-omega"
     },
     {
@@ -1340,13 +1228,6 @@
       "name": "Disrupting Screech",
       "icon": "ability_hunter_pet_bat",
       "source": "halls-of-atonement"
-    },
-    {
-      "id": 1236207,
-      "type": "forgeweaver-araz",
-      "name": "Astral Surge",
-      "icon": "spell_nature_astralrecalgroup",
-      "source": "manaforge-omega"
     },
     {
       "id": 1236514,
@@ -1368,13 +1249,6 @@
       "name": "Burrow Charge",
       "icon": "pvp_burrow",
       "source": "eco-dome-aldani"
-    },
-    {
-      "id": 1237205,
-      "type": "the-soul-hunters",
-      "name": "Voidstep",
-      "icon": "inv_netherportal",
-      "source": "manaforge-omega"
     },
     {
       "id": 1237224,
@@ -1416,13 +1290,6 @@
       "type": "the-soul-hunters",
       "name": "Adarus' Soul",
       "icon": "spell_shadow_soulleech_1",
-      "source": "manaforge-omega"
-    },
-    {
-      "id": 1238878,
-      "type": "forgeweaver-araz",
-      "name": "Echoing Tempest",
-      "icon": "spell_shadow_coneofsilence",
       "source": "manaforge-omega"
     },
     {
