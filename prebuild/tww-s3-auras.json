@@ -41,9 +41,9 @@
     {
       "id": 325876,
       "icon": "ability_creature_cursed_02",
-      "name": "Curse of Obliteration",
+      "name": "Mark of Obliteration",
       "source": "halls-of-atonement",
-      "type": "curse"
+      "type": "magic"
     },
     {
       "source": "halls-of-atonement",
@@ -212,20 +212,6 @@
       "name": "Hyperlight Bomb",
       "source": "tazavesh-streets-of-wonder",
       "type": "magic"
-    },
-    {
-      "id": 357281,
-      "icon": "inv_axe_2h_broker_c_01",
-      "name": "Energy Slash",
-      "source": "tazavesh-soleahs-gambit",
-      "type": "magic"
-    },
-    {
-      "source": "tazavesh-soleahs-gambit",
-      "type": "magic",
-      "icon": "ability_druid_empoweredtouch",
-      "name": "Reinvigorate",
-      "id": 357284
     },
     {
       "id": 357827,
