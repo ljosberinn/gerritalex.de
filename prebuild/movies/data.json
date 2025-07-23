@@ -1123,6 +1123,25 @@
     "seen": true
   },
   {
+    "title": "Carnage",
+    "id": 72113,
+    "seen": true,
+    "metadata": {
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "tagline": "A new comedy of no manners",
+      "release": {
+        "day": 16,
+        "month": 9,
+        "year": 2011
+      },
+      "runtime": 80
+    },
+    "favorite": false
+  },
+  {
     "title": "Casino Royale",
     "id": 36557,
     "metadata": {
@@ -4811,6 +4830,66 @@
     "seen": true
   },
   {
+    "title": "Pirates of the Caribbean: At World's End",
+    "id": 285,
+    "seen": true,
+    "metadata": {
+      "genres": [
+        "Adventure",
+        "Fantasy",
+        "Action"
+      ],
+      "tagline": "At the end of the world, the adventure begins.",
+      "release": {
+        "day": 19,
+        "month": 5,
+        "year": 2007
+      },
+      "runtime": 169
+    },
+    "favorite": false
+  },
+  {
+    "title": "Pirates of the Caribbean: Dead Man's Chest",
+    "id": 58,
+    "seen": true,
+    "metadata": {
+      "genres": [
+        "Adventure",
+        "Fantasy",
+        "Action"
+      ],
+      "tagline": "Captain Jack is back!",
+      "release": {
+        "day": 6,
+        "month": 7,
+        "year": 2006
+      },
+      "runtime": 151
+    },
+    "favorite": false
+  },
+  {
+    "title": "Pirates of the Caribbean: Dead Men Tell No Tales",
+    "id": 166426,
+    "seen": true,
+    "metadata": {
+      "genres": [
+        "Adventure",
+        "Action",
+        "Fantasy"
+      ],
+      "tagline": "All pirates must die.",
+      "release": {
+        "day": 23,
+        "month": 5,
+        "year": 2017
+      },
+      "runtime": 129
+    },
+    "favorite": false
+  },
+  {
     "title": "Pirates of the Caribbean: On Stranger Tides",
     "id": 1865,
     "metadata": {
@@ -4829,6 +4908,26 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "id": 22,
+    "seen": true,
+    "metadata": {
+      "genres": [
+        "Adventure",
+        "Fantasy",
+        "Action"
+      ],
+      "tagline": "Prepare to be blown out of the water.",
+      "release": {
+        "day": 9,
+        "month": 7,
+        "year": 2003
+      },
+      "runtime": 143
+    },
+    "favorite": false
   },
   {
     "title": "Platform",
