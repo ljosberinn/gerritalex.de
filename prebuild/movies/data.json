@@ -802,7 +802,7 @@
       ],
       "tagline": "",
       "release": {
-        "day": 18,
+        "day": 17,
         "month": 12,
         "year": 2026
       },
@@ -5405,6 +5405,25 @@
     "seen": true
   },
   {
+    "title": "Saint Clare",
+    "id": 1026222,
+    "seen": true,
+    "metadata": {
+      "genres": [
+        "Thriller",
+        "Horror"
+      ],
+      "tagline": "",
+      "release": {
+        "day": 18,
+        "month": 7,
+        "year": 2025
+      },
+      "runtime": 92
+    },
+    "favorite": false
+  },
+  {
     "title": "Samaritan",
     "id": 629176,
     "metadata": {
@@ -7979,7 +7998,7 @@
       "genres": [
         "Horror"
       ],
-      "tagline": "",
+      "tagline": "Join us.",
       "release": {
         "day": 30,
         "month": 7,
