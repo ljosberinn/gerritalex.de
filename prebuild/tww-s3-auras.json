@@ -36,49 +36,98 @@
       "type": "magic",
       "icon": "ability_creature_cursed_04",
       "name": "Siphon Life",
-      "id": 325701
+      "id": 325701,
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 165529, "kind": "npc", "children": "Depraved Collector" }
+          },
+          ". Stop to break the channel, avoid using interrupts as commonly when this NPC is pulled, you also have engaged",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 165414, "kind": "npc", "children": "Depraved Obliterator" }
+          },
+          "s."
+        ]
+      ]
     },
     {
       "id": 325876,
       "icon": "ability_creature_cursed_02",
       "name": "Mark of Obliteration",
       "source": "halls-of-atonement",
-      "type": "magic"
+      "type": "magic",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 165529, "kind": "npc", "children": "Depraved Obliterator" }
+          },
+          ". Formerly a Curse. Older WeakAuras may still think it is one."
+        ]
+      ]
     },
     {
       "source": "halls-of-atonement",
       "type": "enrage",
       "icon": "ability_deathknight_summongargoyle",
       "name": "Loyal Beasts",
-      "id": 326450
+      "id": 326450,
+      "notes": ["Interruptible."]
     },
     {
       "source": "halls-of-atonement",
       "type": "magic",
       "icon": "spell_nzinsanity_fearofdeath",
       "name": "Sinlight Visions",
-      "id": 339237
+      "id": 339237,
+      "notes": [
+        [
+          "When someone leaves the circle of ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 165408, "kind": "npc", "children": "Halkias" }
+          },
+          "."
+        ]
+      ]
     },
     {
       "id": 346844,
       "icon": "sha_inv_misc_slime_01_nightborne",
       "name": "Alchemical Residue",
       "source": "tazavesh-streets-of-wonder",
-      "type": "magic"
-    },
-    {
-      "source": "tazavesh-soleahs-gambit",
       "type": "magic",
-      "icon": "spell_deathknight_breathofsindragosa",
-      "name": "Infinite Breath",
-      "id": 347149
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 175646, "kind": "npc", "children": "P.O.S.T. Master" }
+          },
+          " when soaking zones."
+        ]
+      ]
     },
     {
       "id": 347716,
       "icon": "ability_rogue_garrote",
       "name": "Letter Opener",
       "source": "tazavesh-streets-of-wonder",
-      "type": "bleed"
+      "type": "bleed",
+      "notes": [
+        [
+          "Tankbuster via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 176394, "kind": "npc", "children": "P.O.S.T. Worker" }
+          },
+          ". Dangerous on multiple stacks, one is expected."
+        ]
+      ]
     },
     {
       "id": 347775,
@@ -92,28 +141,69 @@
       "icon": "spell_animabastion_groundstate",
       "name": "Flagellation Protocol",
       "source": "tazavesh-streets-of-wonder",
-      "type": "purge"
+      "type": "purge",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 176555, "kind": "npc", "children": "Achillite " }
+          },
+          ", P1 of The Grand Menagerie."
+        ]
+      ]
     },
     {
       "id": 349954,
       "icon": "spell_animabastion_groundstate",
       "name": "Purification Protocol",
       "source": "tazavesh-streets-of-wonder",
-      "type": "magic"
+      "type": "magic",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 176555, "kind": "npc", "children": "Achillite " }
+          },
+          ", P1 of The Grand Menagerie."
+        ]
+      ]
     },
     {
       "source": "tazavesh-streets-of-wonder",
       "type": "bleed",
       "icon": "inv_misc_steelweaponchain",
       "name": "Chains of Damnation",
-      "id": 350101
+      "id": 350101,
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 176705, "kind": "npc", "children": "Venza Goldfuse" }
+          },
+          ", last phase of The Grand Menagerie."
+        ],
+        "Freedom-like effects prevent application, can also be pre-freedomed."
+      ]
     },
     {
       "source": "tazavesh-soleahs-gambit",
       "type": "bleed",
       "icon": "ability_hunter_assassinate2",
       "name": "Shuriken Blitz",
-      "id": 351119
+      "id": 351119,
+      "notes": [
+        [
+          "Interruptible, via adds in P1 of ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 177269, "kind": "npc", "children": "So'leah" }
+          },
+          "."
+        ]
+      ]
     },
     {
       "id": 351960,
@@ -148,7 +238,17 @@
       "type": "bleed",
       "icon": "ability_rogue_fanofknives",
       "name": "Quickblade",
-      "id": 355832
+      "id": 355832,
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 179893, "kind": "npc", "children": "Cartel Skulker" }
+          },
+          "."
+        ]
+      ]
     },
     {
       "id": 355888,
@@ -162,7 +262,17 @@
       "icon": "spell_broker_buff",
       "name": "Glyph of Restraint",
       "source": "tazavesh-streets-of-wonder",
-      "type": "magic"
+      "type": "magic",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 177816, "kind": "npc", "children": "Interrogation Specialist" }
+          },
+          ", casters before first boss."
+        ]
+      ]
     },
     {
       "source": "tazavesh-streets-of-wonder",
@@ -190,21 +300,53 @@
       "type": "magic",
       "icon": "spell_broker_buff",
       "name": "Empowered Glyph of Restraint",
-      "id": 356324
+      "id": 356324,
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 179334, "kind": "npc", "children": "Portalmancer Zo'honn" }
+          },
+          ", miniboss before first boss."
+        ],
+        "Application can be line-of-sighted."
+      ]
     },
     {
       "source": "tazavesh-streets-of-wonder",
       "type": "curse",
       "icon": "spell_shadow_curseoftounges",
       "name": "Ancient Dread",
-      "id": 356407
+      "id": 356407,
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 180091, "kind": "npc", "children": "Ancient Core Hound" }
+          },
+          ". Needs pairs of two players to interrupt consistently."
+        ]
+      ]
     },
     {
       "source": "tazavesh-streets-of-wonder",
       "type": "magic",
       "icon": "spell_broker_debuff",
       "name": "Lockdown",
-      "id": 356943
+      "id": 356943,
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 179837, "kind": "npc", "children": "Tracker Zo'korss" }
+          },
+          ", miniboss on the bridge to the left after first boss."
+        ],
+        "Does not need to get dispelled unless someone positioned badly."
+      ]
     },
     {
       "id": 357029,
@@ -218,7 +360,33 @@
       "icon": "spell_frost_iceclaw",
       "name": "Frantic Rip",
       "source": "tazavesh-streets-of-wonder",
-      "type": "bleed"
+      "type": "bleed",
+      "notes": [
+        [
+          "Applied by jumping ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 180567, "kind": "npc", "children": "Frenzied Nightclaw" }
+          },
+          "s. Same mechanic as in ",
+          {
+            "component": "WowheadIcon",
+            "props": {
+              "icon": "achievement_dungeon_darkheartthicket",
+              "children": "Darkheart Thicket"
+            }
+          },
+          " and ",
+          {
+            "component": "WowheadIcon",
+            "props": {
+              "icon": "inv_achievement_dungeon_prioryofthesacredflame",
+              "children": "Priory of the Sacred Flame"
+            }
+          },
+          "."
+        ]
+      ]
     },
     {
       "source": "priory-of-the-sacred-flame",
@@ -232,7 +400,8 @@
           {
             "component": "WowheadLink",
             "props": { "id": 207946, "kind": "npc", "children": "Captain Dailcry" }
-          }
+          },
+          "."
         ]
       ]
     },
@@ -249,7 +418,8 @@
           {
             "component": "WowheadLink",
             "props": { "id": 207946, "kind": "npc", "children": "Captain Dailcry" }
-          }
+          },
+          "."
         ]
       ]
     },
@@ -266,7 +436,7 @@
             "component": "WowheadLink",
             "props": { "id": 211291, "kind": "npc", "children": "Sergeant Shaynemail" }
           },
-          ", miniboss"
+          ", miniboss."
         ],
         "Prefers non-tanks.",
         "Avoidable by moving."
@@ -375,13 +545,6 @@
       "type": "bleed"
     },
     {
-      "source": "the-dawnbreaker",
-      "type": "magic",
-      "icon": "ability_warlock_everlastingaffliction",
-      "name": "Black Edge",
-      "id": 431494
-    },
-    {
       "id": 432448,
       "icon": "spell_shadow_mindtwisting",
       "name": "Stygian Seed",
@@ -467,9 +630,8 @@
       "name": "Divine Judgment",
       "id": 448515,
       "notes": [
-        "Tankbuster.",
         [
-          "Via ",
+          "Tankbuster via ",
           {
             "component": "WowheadLink",
             "props": { "id": 211290, "kind": "npc", "children": "Elaena Emberlanz" }
@@ -483,7 +645,18 @@
       "type": "purge",
       "icon": "spell_shadow_sealofkings",
       "name": "Abyssal Howl",
-      "id": 450756
+      "id": 450756,
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 214762, "kind": "npc", "children": "Nightfall Commander" }
+          },
+          "."
+        ],
+        "Can no longer get interrupted - was important to interrupt in TWW S1."
+      ]
     },
     {
       "source": "the-dawnbreaker",
@@ -573,7 +746,7 @@
           "Grips you towards the casting ",
           {
             "component": "WowheadLink",
-            "props": { "id": 231496, "kind": "npc", "children": "Venture Co. Diver" }
+            "props": { "id": 231496, "kind": "npc", "children": "Venture Co. Diver." }
           }
         ]
       ]
@@ -662,7 +835,17 @@
       "type": "magic",
       "icon": "inv_offhand_1h_revendreth_d_01",
       "name": "Anima Tainted Armor",
-      "id": 1235060
+      "id": 1235060,
+      "notes": [
+        [
+          "Stacking tank debuff via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 165515, "kind": "npc", "children": "Depraved Darkblade" }
+          },
+          "."
+        ]
+      ]
     },
     {
       "id": 1235245,
@@ -693,7 +876,17 @@
       "type": "magic",
       "icon": "spell_animarevendreth_groundstate",
       "name": "Unstable Anima",
-      "id": 1236513
+      "id": 1236513,
+      "notes": [
+        [
+          "New spread mechanic on the 3rd boss, ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 165410, "kind": "npc", "children": "High Adjudicator Aleez" }
+          },
+          ". One player gets dispelled, the other has to tank it for a while."
+        ]
+      ]
     },
     {
       "id": 1237602,
@@ -707,7 +900,8 @@
           {
             "component": "WowheadLink",
             "props": { "id": 164563, "kind": "npc", "children": "Vicious Gargon" }
-          }
+          },
+          "."
         ]
       ]
     },
@@ -716,11 +910,21 @@
       "type": "magic",
       "icon": "ability_evoker_masterytimewalker",
       "name": "Time Bomb",
-      "id": 1240097
+      "id": 1240097,
+      "notes": [
+        [
+          "New mechanic on the 2nd boss, ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 175546, "kind": "npc", "children": "Timecap'n Hooktail" }
+          },
+          ". One player gets dispelled, the other has to tank it for a while."
+        ]
+      ]
     },
     {
       "source": "tazavesh-soleahs-gambit",
-      "type": "magic",
+      "type": "purge",
       "icon": "ability_mage_timewarp",
       "name": "Double Time",
       "id": 1240214
@@ -738,7 +942,8 @@
       "type": "enrage",
       "icon": "ability_warrior_unrelentingassault",
       "name": "Intensifying Aggression",
-      "id": 1242074
+      "id": 1242074,
+      "notes": ["Stacks."]
     },
     {
       "source": "tazavesh-streets-of-wonder",
@@ -752,7 +957,18 @@
       "type": "bleed",
       "icon": "ability_rogue_nightblade",
       "name": "Phase Slash",
-      "id": 1248211
+      "id": 1248211,
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 175806, "kind": "npc", "children": "So'azmi" }
+          },
+          ", last boss."
+        ],
+        "New mechanic, party wide. Healer responsibility until it overlaps with the teleports, be aware."
+      ]
     }
   ]
 }
