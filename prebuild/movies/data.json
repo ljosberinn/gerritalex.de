@@ -90,7 +90,7 @@
       ],
       "tagline": "",
       "release": {
-        "day": 15,
+        "day": 14,
         "month": 1,
         "year": 2026
       },
@@ -1841,25 +1841,6 @@
     "seen": true
   },
   {
-    "title": "Echo Valley",
-    "id": 1097311,
-    "seen": false,
-    "metadata": {
-      "genres": [
-        "Thriller",
-        "Drama"
-      ],
-      "tagline": "A mother and daughter are bound by a dark secret.",
-      "release": {
-        "day": 13,
-        "month": 6,
-        "year": 2025
-      },
-      "runtime": 105
-    },
-    "favorite": false
-  },
-  {
     "title": "Edge of Tomorrow",
     "id": 137113,
     "metadata": {
@@ -3198,7 +3179,7 @@
       ],
       "tagline": "All $$ ain't good $$.",
       "release": {
-        "day": 15,
+        "day": 22,
         "month": 8,
         "year": 2025
       },
@@ -3221,7 +3202,7 @@
         "month": 9,
         "year": 2025
       },
-      "runtime": 0
+      "runtime": 96
     },
     "favorite": false
   },
@@ -6537,7 +6518,7 @@
       "genres": [
         "Horror"
       ],
-      "tagline": "Prepare for the end.",
+      "tagline": "The case that ended it all.",
       "release": {
         "day": 3,
         "month": 9,
@@ -8000,7 +7981,7 @@
       ],
       "tagline": "Join us.",
       "release": {
-        "day": 30,
+        "day": 28,
         "month": 7,
         "year": 2025
       },
@@ -8621,7 +8602,7 @@
         "month": 8,
         "year": 2025
       },
-      "runtime": 128
+      "runtime": 129
     },
     "favorite": false
   },
