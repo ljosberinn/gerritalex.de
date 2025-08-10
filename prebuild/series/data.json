@@ -617,7 +617,7 @@
       "episodes": 30
     },
     "favorite": true,
-    "episodesSeen": 24,
+    "episodesSeen": 25,
     "state": "upcoming"
   },
   {
@@ -1265,7 +1265,7 @@
       "episodes": 10
     },
     "favorite": false,
-    "episodesSeen": 0
+    "episodesSeen": 10
   },
   {
     "title": "Nancy Drew",
@@ -1885,7 +1885,7 @@
       "episodes": 30
     },
     "favorite": true,
-    "episodesSeen": 24,
+    "episodesSeen": 25,
     "state": "upcoming"
   },
   {
