@@ -3179,7 +3179,7 @@
       ],
       "tagline": "All $$ ain't good $$.",
       "release": {
-        "day": 22,
+        "day": 14,
         "month": 8,
         "year": 2025
       },
@@ -3194,7 +3194,8 @@
     "metadata": {
       "genres": [
         "Horror",
-        "Mystery"
+        "Mystery",
+        "Thriller"
       ],
       "tagline": "Greatness demands sacrifice.",
       "release": {
@@ -5325,6 +5326,24 @@
     "seen": true
   },
   {
+    "title": "Resident Evil",
+    "id": 1423191,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Horror"
+      ],
+      "tagline": "",
+      "release": {
+        "day": 16,
+        "month": 9,
+        "year": 2026
+      },
+      "runtime": 0
+    },
+    "favorite": false
+  },
+  {
     "title": "Resident Evil: Death Island",
     "id": 1083862,
     "metadata": {
@@ -6524,7 +6543,7 @@
         "month": 9,
         "year": 2025
       },
-      "runtime": 0
+      "runtime": 135
     },
     "favorite": false,
     "seen": false
@@ -8348,24 +8367,6 @@
     },
     "favorite": false,
     "seen": true
-  },
-  {
-    "title": "Untitled Resident Evil Reboot",
-    "id": 1423191,
-    "seen": false,
-    "metadata": {
-      "genres": [
-        "Horror"
-      ],
-      "tagline": "",
-      "release": {
-        "day": 16,
-        "month": 9,
-        "year": 2026
-      },
-      "runtime": 0
-    },
-    "favorite": false
   },
   {
     "title": "Untitled The Batman Sequel",

@@ -447,6 +447,22 @@
     "visible": true
   },
   {
+    "acquired": "08-08-2025",
+    "artist": "Chapel of Disease",
+    "album": "...and As We Have Seen the Storm, We Have Embraced the Eye",
+    "visible": true,
+    "id": 12850092,
+    "metadata": {
+      "genres": [
+        "Death Metal"
+      ],
+      "release": {
+        "year": 2018
+      },
+      "runtime": 2853
+    }
+  },
+  {
     "acquired": null,
     "artist": "Chelsea Wolfe",
     "album": "Pain Is Beauty",
@@ -1315,7 +1331,7 @@
     "visible": true
   },
   {
-    "acquired": null,
+    "acquired": "08-08-2025",
     "artist": "King Dude",
     "album": "Love",
     "visible": true,
@@ -1363,7 +1379,7 @@
     "visible": true
   },
   {
-    "acquired": null,
+    "acquired": "08-08-2025",
     "artist": "King Dude",
     "album": "Tonight's Special Death",
     "visible": true,
@@ -2539,6 +2555,22 @@
     "visible": true
   },
   {
+    "acquired": "08-08-2025",
+    "artist": "Nyktalgia",
+    "album": "Peisithanatos",
+    "visible": true,
+    "id": 1984482,
+    "metadata": {
+      "genres": [
+        "Depressive Black Metal"
+      ],
+      "release": {
+        "year": 2008
+      },
+      "runtime": 2610
+    }
+  },
+  {
     "acquired": "11-01-2012",
     "artist": "Of the Wand & the Moon",
     "album": "The Lone Descent",
@@ -3484,7 +3516,7 @@
     "visible": true
   },
   {
-    "acquired": null,
+    "acquired": "08-08-2025",
     "artist": "The Ruins of Beverast",
     "album": "Unlock The Shrine",
     "visible": true,
