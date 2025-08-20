@@ -740,6 +740,7 @@
       "genres": [
         "Science Fiction",
         "Adventure",
+        "Action",
         "Fantasy"
       ],
       "tagline": "",
@@ -1002,7 +1003,7 @@
         "month": 10,
         "year": 2025
       },
-      "runtime": 0
+      "runtime": 114
     },
     "favorite": false,
     "seen": false
@@ -5135,8 +5136,7 @@
     "metadata": {
       "genres": [
         "Science Fiction",
-        "Adventure",
-        "Drama"
+        "Adventure"
       ],
       "tagline": "",
       "release": {
@@ -8599,7 +8599,7 @@
       ],
       "tagline": "Last night at 2:17 AM, every child from Mrs. Gandy's class woke up, got out of bed, went downstairs, opened the front door, walked into the dark ...and they never came back.",
       "release": {
-        "day": 6,
+        "day": 4,
         "month": 8,
         "year": 2025
       },

@@ -47,8 +47,8 @@
     "id": 157239,
     "metadata": {
       "genres": [
-        "Drama",
-        "Sci-Fi & Fantasy"
+        "Sci-Fi & Fantasy",
+        "Drama"
       ],
       "seasons": 1,
       "tagline": "We were safer in space.",
@@ -539,22 +539,21 @@
     "id": 106379,
     "metadata": {
       "genres": [
-        "Sci-Fi & Fantasy",
         "Action & Adventure",
         "Drama"
       ],
-      "seasons": 1,
+      "seasons": 2,
       "tagline": "The world deserves a better ending.",
       "release": {
         "day": 10,
         "month": 4,
         "year": 2024
       },
-      "episodes": 8
+      "episodes": 16
     },
     "favorite": true,
     "episodesSeen": 8,
-    "state": "finished"
+    "state": "upcoming"
   },
   {
     "title": "Fargo",
@@ -586,7 +585,7 @@
         "Sci-Fi & Fantasy",
         "War & Politics"
       ],
-      "seasons": 4,
+      "seasons": 5,
       "tagline": "A new gold rush begins.",
       "release": {
         "day": 1,
@@ -887,7 +886,7 @@
         "Drama",
         "Action & Adventure"
       ],
-      "seasons": 3,
+      "seasons": 4,
       "tagline": "All must choose.",
       "release": {
         "day": 21,
@@ -1363,13 +1362,13 @@
         "Crime"
       ],
       "seasons": 5,
-      "tagline": "They're ready for their close call.",
+      "tagline": "The building always wins.",
       "release": {
         "day": 31,
         "month": 8,
         "year": 2021
       },
-      "episodes": 40
+      "episodes": 50
     },
     "favorite": false,
     "episodesSeen": 14,
@@ -1428,7 +1427,7 @@
         "Drama"
       ],
       "seasons": 2,
-      "tagline": "Give peace a f#cking chance.",
+      "tagline": "In what world are they the heroes?",
       "release": {
         "day": 13,
         "month": 1,
@@ -1873,7 +1872,8 @@
     "id": 103516,
     "metadata": {
       "genres": [
-        "Sci-Fi & Fantasy"
+        "Sci-Fi & Fantasy",
+        "Drama"
       ],
       "seasons": 3,
       "tagline": "The frontier awaits.",
@@ -2239,7 +2239,7 @@
         "Sci-Fi & Fantasy",
         "Drama"
       ],
-      "seasons": 2,
+      "seasons": 3,
       "tagline": "Evil has had many names.",
       "release": {
         "day": 1,
@@ -2825,7 +2825,7 @@
         "month": 11,
         "year": 2021
       },
-      "episodes": 30
+      "episodes": 29
     },
     "favorite": false,
     "episodesSeen": 19,
