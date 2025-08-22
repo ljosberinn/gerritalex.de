@@ -1588,6 +1588,26 @@
     "state": "finished"
   },
   {
+    "title": "Ripley",
+    "id": 94028,
+    "state": "upcoming",
+    "metadata": {
+      "genres": [
+        "Drama"
+      ],
+      "seasons": 1,
+      "tagline": "Who is Tom Ripley?",
+      "release": {
+        "day": 4,
+        "month": 4,
+        "year": 2024
+      },
+      "episodes": 8
+    },
+    "favorite": false,
+    "episodesSeen": 0
+  },
+  {
     "title": "Riverdale",
     "id": 69050,
     "metadata": {
@@ -2429,7 +2449,7 @@
       "genres": [
         "Drama"
       ],
-      "seasons": 1,
+      "seasons": 2,
       "tagline": "15 episodes. 15 hours. 1 shift.",
       "release": {
         "day": 9,
