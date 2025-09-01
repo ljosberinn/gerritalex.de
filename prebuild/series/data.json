@@ -60,7 +60,7 @@
       "episodes": 8
     },
     "favorite": false,
-    "episodesSeen": 2,
+    "episodesSeen": 4,
     "state": "ongoing"
   },
   {
@@ -616,7 +616,7 @@
       "episodes": 30
     },
     "favorite": true,
-    "episodesSeen": 25,
+    "episodesSeen": 26,
     "state": "upcoming"
   },
   {
@@ -1905,7 +1905,7 @@
       "episodes": 30
     },
     "favorite": true,
-    "episodesSeen": 25,
+    "episodesSeen": 28,
     "state": "upcoming"
   },
   {
