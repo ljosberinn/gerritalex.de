@@ -1895,7 +1895,7 @@
         "Sci-Fi & Fantasy",
         "Drama"
       ],
-      "seasons": 3,
+      "seasons": 4,
       "tagline": "The frontier awaits.",
       "release": {
         "day": 5,
@@ -2218,14 +2218,14 @@
         "Mystery",
         "Sci-Fi & Fantasy"
       ],
-      "seasons": 1,
+      "seasons": 2,
       "tagline": "",
       "release": {
         "day": 13,
         "month": 7,
         "year": 2025
       },
-      "episodes": 8
+      "episodes": 11
     },
     "favorite": false,
     "episodesSeen": 0
