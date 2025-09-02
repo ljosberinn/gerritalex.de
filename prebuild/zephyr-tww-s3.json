@@ -958,6 +958,13 @@
       "source": "manaforge-omega"
     },
     {
+      "id": 1225645,
+      "type": "nexus-king-salhadaar",
+      "name": "Twilight Spikes",
+      "icon": "spell_priest_mindspike",
+      "source": "manaforge-omega"
+    },
+    {
       "id": 1226165,
       "type": "trash",
       "name": "Volatile Ejection",
@@ -1059,6 +1066,13 @@
       "source": "manaforge-omega"
     },
     {
+      "id": 1227665,
+      "type": "dimensius-the-all-devouring",
+      "name": "Fists of the Voidlord",
+      "icon": "inv_glove_armor_voidelf_d_01",
+      "source": "manaforge-omega"
+    },
+    {
       "id": 1227676,
       "type": "fractillus",
       "name": "Shard Slam",
@@ -1129,6 +1143,34 @@
       "source": "manaforge-omega"
     },
     {
+      "id": 1228368,
+      "type": "dimensius-the-all-devouring",
+      "name": "Cosmic Radiation",
+      "icon": "spell_priest_divinestar_shadow",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1230999,
+      "type": "dimensius-the-all-devouring",
+      "name": "Dark Matter",
+      "icon": "spell_fire_twilightflamestrike",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1231002,
+      "type": "dimensius-the-all-devouring",
+      "name": "Dark Energy",
+      "icon": "inv_enchant_essencecosmiclesser",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1231195,
+      "type": "dimensius-the-all-devouring",
+      "name": "Massive Smash",
+      "icon": "inv_cosmicvoid_nova",
+      "source": "manaforge-omega"
+    },
+    {
       "id": 1231224,
       "type": "trash",
       "name": "Arcane Slash",
@@ -1181,6 +1223,13 @@
       "source": "eco-dome-aldani"
     },
     {
+      "id": 1232391,
+      "type": "dimensius-the-all-devouring",
+      "name": "Extinguish The Stars",
+      "icon": "inv_ability_voidweaverpriest_entropicrift",
+      "source": "manaforge-omega"
+    },
+    {
       "id": 1232392,
       "type": "nexus-king-salhadaar",
       "name": "Seal the Forge",
@@ -1188,10 +1237,31 @@
       "source": "manaforge-omega"
     },
     {
+      "id": 1232394,
+      "type": "dimensius-the-all-devouring",
+      "name": "Gravity Well",
+      "icon": "ability_priest_voidentropy",
+      "source": "manaforge-omega"
+    },
+    {
       "id": 1232412,
       "type": "forgeweaver-araz",
       "name": "Focusing Iris",
       "icon": "spell_arcane_invocation",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1232895,
+      "type": "dimensius-the-all-devouring",
+      "name": "Cosmic Radiation",
+      "icon": "spell_priest_divinestar_shadow",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1232986,
+      "type": "dimensius-the-all-devouring",
+      "name": "Supernova",
+      "icon": "inv_112_raiddimensius_supernova",
       "source": "manaforge-omega"
     },
     {
@@ -1209,9 +1279,30 @@
       "source": "manaforge-omega"
     },
     {
+      "id": 1233292,
+      "type": "dimensius-the-all-devouring",
+      "name": "Accretion Disk",
+      "icon": "spell_holy_circleofrenewal_shadow",
+      "source": "manaforge-omega"
+    },
+    {
       "id": 1233301,
       "type": "forgeweaver-araz",
       "name": "Dark Singularity",
+      "icon": "inv_cosmicvoid_nova",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1234052,
+      "type": "dimensius-the-all-devouring",
+      "name": "Darkened Sky",
+      "icon": "inv_112_raiddimensius_darkenedsky",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1234269,
+      "type": "dimensius-the-all-devouring",
+      "name": "Cosmic Collapse",
       "icon": "inv_cosmicvoid_nova",
       "source": "manaforge-omega"
     },
@@ -1258,6 +1349,13 @@
       "source": "eco-dome-aldani"
     },
     {
+      "id": 1237325,
+      "type": "dimensius-the-all-devouring",
+      "name": "Gamma Burst",
+      "icon": "inv_112_raiddimensius_gammaburst",
+      "source": "manaforge-omega"
+    },
+    {
       "id": 1237634,
       "type": "lord-chamberlain",
       "name": "Telekinetic Toss",
@@ -1270,6 +1368,27 @@
       "name": "Telekinetic Onslaught",
       "icon": "spell_animarevendreth_nova",
       "source": "halls-of-atonement"
+    },
+    {
+      "id": 1237694,
+      "type": "dimensius-the-all-devouring",
+      "name": "Mass Ejection",
+      "icon": "inv_cosmicvoid_wave",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1237695,
+      "type": "dimensius-the-all-devouring",
+      "name": "Stardust Nova",
+      "icon": "inv_cosmicvoid_nova",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1237696,
+      "type": "dimensius-the-all-devouring",
+      "name": "Debris Field",
+      "icon": "inv_enchant_essencecosmicgreater",
+      "source": "manaforge-omega"
     },
     {
       "id": 1237743,
@@ -1290,6 +1409,13 @@
       "type": "the-soul-hunters",
       "name": "Adarus' Soul",
       "icon": "spell_shadow_soulleech_1",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1237775,
+      "type": "dimensius-the-all-devouring",
+      "name": "Cosmic Radiation",
+      "icon": "spell_priest_divinestar_shadow",
       "source": "manaforge-omega"
     },
     {
@@ -1343,6 +1469,13 @@
       "notes": ["Near-permanent passive damage."]
     },
     {
+      "id": 1242095,
+      "type": "dimensius-the-all-devouring",
+      "name": "Massive Smash",
+      "icon": "inv_cosmicvoid_nova",
+      "source": "manaforge-omega"
+    },
+    {
       "id": 1242259,
       "type": "the-soul-hunters",
       "name": "Spirit Bomb",
@@ -1357,10 +1490,59 @@
       "source": "manaforge-omega"
     },
     {
+      "id": 1243055,
+      "type": "dimensius-the-all-devouring",
+      "name": "Fists of the Voidlord",
+      "icon": "inv_glove_armor_voidelf_d_01",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1243373,
+      "type": "dimensius-the-all-devouring",
+      "name": "Devour",
+      "icon": "inv_112_raiddimensius_devour",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1243581,
+      "type": "dimensius-the-all-devouring",
+      "name": "Reverse Gravity",
+      "icon": "inv_112_raiddimensius_reversegravity",
+      "source": "manaforge-omega"
+    },
+    {
       "id": 1243641,
       "type": "forgeweaver-araz",
       "name": "Void Surge",
       "icon": "inv_ability_voidweaverpriest_entropicrift",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1243693,
+      "type": "dimensius-the-all-devouring",
+      "name": "Shattered Space",
+      "icon": "inv_ability_voidweaverpriest_entropicrift",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1243694,
+      "type": "dimensius-the-all-devouring",
+      "name": "Shattered Space",
+      "icon": "inv_ability_voidweaverpriest_entropicrift",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1243699,
+      "type": "dimensius-the-all-devouring",
+      "name": "Spatial Fragment",
+      "icon": "inv_cosmicvoid_missile",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1243704,
+      "type": "dimensius-the-all-devouring",
+      "name": "Antimatter",
+      "icon": "inv_enchant_voidsphere",
       "source": "manaforge-omega"
     },
     {
@@ -1369,6 +1551,13 @@
       "name": "Force Multiplier",
       "icon": "spell_nature_shamanrage",
       "source": "tazavesh-streets-of-wonder"
+    },
+    {
+      "id": 1245289,
+      "type": "dimensius-the-all-devouring",
+      "name": "Devour",
+      "icon": "inv_112_raiddimensius_devour",
+      "source": "manaforge-omega"
     },
     {
       "id": 1245384,
@@ -1396,6 +1585,13 @@
       "type": "forgeweaver-araz",
       "name": "Dark Terminus",
       "icon": "inv_112_raidtrinkets_blobofswirlingvoid_purple",
+      "source": "manaforge-omega"
+    },
+    {
+      "id": 1249206,
+      "type": "dimensius-the-all-devouring",
+      "name": "Massive Smash",
+      "icon": "inv_cosmicvoid_nova",
       "source": "manaforge-omega"
     }
   ]
