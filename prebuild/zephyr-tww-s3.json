@@ -922,14 +922,6 @@
       "source": "manaforge-omega"
     },
     {
-      "id": 1224868,
-      "type": "soul-scribe",
-      "name": "Shattered Fate",
-      "icon": "ability_socererking_arcanereplication",
-      "source": "eco-dome-aldani",
-      "notes": ["Whenever a set of mirror images spawns."]
-    },
-    {
       "id": 1224906,
       "type": "nexus-king-salhadaar",
       "name": "Invoke the Oath",
