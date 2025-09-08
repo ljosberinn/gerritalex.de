@@ -617,7 +617,7 @@
     },
     "favorite": true,
     "episodesSeen": 28,
-    "state": "upcoming"
+    "state": "ongoing"
   },
   {
     "title": "From",
@@ -1437,7 +1437,7 @@
     },
     "favorite": true,
     "episodesSeen": 8,
-    "state": "upcoming"
+    "state": "ongoing"
   },
   {
     "title": "Picard",
@@ -1649,7 +1649,7 @@
     },
     "favorite": true,
     "episodesSeen": 11,
-    "state": "upcoming"
+    "state": "ongoing"
   },
   {
     "title": "Secret Invasion",
@@ -1906,7 +1906,7 @@
     },
     "favorite": true,
     "episodesSeen": 29,
-    "state": "upcoming"
+    "state": "ongoing"
   },
   {
     "title": "Stargate Atlantis",
@@ -2212,7 +2212,7 @@
   {
     "title": "The Institute",
     "id": 253372,
-    "state": "upcoming",
+    "state": "ongoing",
     "metadata": {
       "genres": [
         "Mystery",
