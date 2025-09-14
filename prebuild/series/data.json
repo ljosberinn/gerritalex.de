@@ -573,7 +573,7 @@
       "episodes": 51
     },
     "favorite": false,
-    "episodesSeen": 35,
+    "episodesSeen": 42,
     "state": "ongoing"
   },
   {
@@ -616,8 +616,8 @@
       "episodes": 30
     },
     "favorite": true,
-    "episodesSeen": 28,
-    "state": "ongoing"
+    "episodesSeen": 30,
+    "state": "upcoming"
   },
   {
     "title": "From",
