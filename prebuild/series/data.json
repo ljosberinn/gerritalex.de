@@ -585,7 +585,7 @@
         "Sci-Fi & Fantasy",
         "War & Politics"
       ],
-      "seasons": 5,
+      "seasons": 4,
       "tagline": "A new gold rush begins.",
       "release": {
         "day": 1,
@@ -2040,6 +2040,27 @@
     "state": "abandoned"
   },
   {
+    "title": "The Boys",
+    "id": 76479,
+    "state": "ongoing",
+    "favorite": false,
+    "episodesSeen": 32,
+    "metadata": {
+      "genres": [
+        "Sci-Fi & Fantasy",
+        "Action & Adventure"
+      ],
+      "seasons": 5,
+      "tagline": "Never meet your heroes.",
+      "release": {
+        "day": 25,
+        "month": 7,
+        "year": 2019
+      },
+      "episodes": 33
+    }
+  },
+  {
     "title": "The End of the F****** World",
     "id": 74577,
     "metadata": {
@@ -2225,7 +2246,7 @@
         "month": 7,
         "year": 2025
       },
-      "episodes": 11
+      "episodes": 16
     },
     "favorite": false,
     "episodesSeen": 4
