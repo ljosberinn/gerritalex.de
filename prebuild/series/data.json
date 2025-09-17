@@ -573,7 +573,7 @@
       "episodes": 51
     },
     "favorite": false,
-    "episodesSeen": 43,
+    "episodesSeen": 45,
     "state": "ongoing"
   },
   {
@@ -2042,7 +2042,7 @@
   {
     "title": "The Boys",
     "id": 76479,
-    "state": "ongoing",
+    "state": "upcoming",
     "favorite": false,
     "episodesSeen": 32,
     "metadata": {
