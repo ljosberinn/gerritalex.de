@@ -1585,6 +1585,13 @@
       "name": "Massive Smash",
       "icon": "inv_cosmicvoid_nova",
       "source": "manaforge-omega"
+    },
+    {
+      "id": 353312,
+      "type": "hylbrande",
+      "name": "Purifying Burst",
+      "icon": "ability_paladin_artofwar",
+      "source": "tazavesh-soleahs-gambit"
     }
   ]
 }
