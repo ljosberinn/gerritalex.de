@@ -650,18 +650,18 @@
         "Drama",
         "Sci-Fi & Fantasy"
       ],
-      "seasons": 1,
+      "seasons": 2,
       "tagline": "",
       "release": {
         "day": 28,
         "month": 9,
         "year": 2023
       },
-      "episodes": 8
+      "episodes": 16
     },
     "favorite": false,
     "episodesSeen": 8,
-    "state": "finished"
+    "state": "ongoing"
   },
   {
     "title": "Guillermo del Toro's Cabinet of Curiosities",
@@ -1788,7 +1788,7 @@
         "Sci-Fi & Fantasy",
         "Drama"
       ],
-      "seasons": 4,
+      "seasons": 2,
       "tagline": "To live, you need something to die for.",
       "release": {
         "day": 4,
@@ -2239,14 +2239,14 @@
         "Mystery",
         "Sci-Fi & Fantasy"
       ],
-      "seasons": 2,
+      "seasons": 1,
       "tagline": "",
       "release": {
         "day": 13,
         "month": 7,
         "year": 2025
       },
-      "episodes": 16
+      "episodes": 8
     },
     "favorite": false,
     "episodesSeen": 4
