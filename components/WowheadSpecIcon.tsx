@@ -8,6 +8,8 @@ const specs = {
     'https://wow.zamimg.com/images/wow/TextureAtlas/live/talents-heroclass-warlock-hellcaller.webp',
   scalecommander:
     'https://wow.zamimg.com/images/wow/TextureAtlas/live/talents-heroclass-evoker-scalecommander.webp',
+  chronowarden:
+    'https://wow.zamimg.com/images/wow/TextureAtlas/live/talents-heroclass-evoker-chronowarden.webp',
   'augmentation-evoker': 'classicon_evoker_augmentation',
   'devastation-evoker': 'classicon_evoker_devastation',
   'vengeance-demon-hunter': 'ability_demonhunter_spectank',
@@ -21,6 +23,7 @@ const colors = {
   diabolist: classColors.Warlock,
   hellcaller: classColors.Warlock,
   scalecommander: classColors.Evoker,
+  chronowarden: classColors.Evoker,
   'augmentation-evoker': classColors.Evoker,
   'devastation-evoker': classColors.Evoker,
   'vengeance-demon-hunter': classColors.DemonHunter,
