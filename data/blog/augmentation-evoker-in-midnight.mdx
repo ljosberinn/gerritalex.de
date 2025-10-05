@@ -1,9 +1,10 @@
 ---
 title: Augmentation Evoker in Midnight
 date: '2025-10-05'
+lastmod: '2025-10-06'
 tags: ['wow', 'evoker', 'augmentation', 'midnight']
 draft: false
-summary: 'Continuous Feedback throughout the Midnight Testing Cycle' 
+summary: 'A per-change look at Augmentation Evoker throughout the Midnight Testing Cycle, including feedback.' 
 authors: ['default']
 layout: PostBanner
 images: ['/static/images/dimensius-ma.jpg']
@@ -100,7 +101,7 @@ Rotational implication is minimal. Before you wanted to <WowheadLink id={357208}
 - <WowheadLink branch="beta" id={1260745} icon="ability_dragonriding_dynamicflight01" kind="spell">Command Squadron</WowheadLink>
   > While flying during <WowheadLink id={403631} icon="ability_evoker_breathofeons" kind="spell">Breath of Eons</WowheadLink> you are assisted by a squadron of Dracthyr who assault enemies with Pyre, dealing (365% of Spell Power) Fire damage to nearby enemies up to 8 times.
   - basically half of the 11.2 set with minor QoL improvements:
-  - the squad now fires at your target before you hit something with Breath of Eons if you don't hit something with Breath within the first ~1.5 seconds. If you have none, they'll pick a close by target.
+  - the squad now fires at your target before you hit something with <WowheadLink id={403631} icon="ability_evoker_breathofeons" kind="spell">Breath of Eons</WowheadLink> if you don't hit something with <WowheadLink id={403631} icon="ability_evoker_breathofeons" kind="spell">Breath of Eons</WowheadLink> within the first ~1.5 seconds. If you have none, they'll pick a close by target.
 - <WowheadLink branch="beta" id={1261448} icon="inv_10_dungeonjewelry_dragon_trinket_1arcanemagical_blue" kind="spell">Concentrated Power</WowheadLink>
   > <WowheadLink id={438587} icon="ability_evoker_eruption" kind="spell">Mass Eruption</WowheadLink> strikes 1 additional target.
 - <WowheadLink branch="beta" id={1261452} icon="ability_evoker_essenceburststacks" kind="spell">Refined Essence</WowheadLink>
@@ -111,9 +112,13 @@ Rotational implication is minimal. Before you wanted to <WowheadLink id={357208}
 ##### <WowheadSpecIcon spec="chronowarden">Chronowarden</WowheadSpecIcon>
 - <WowheadLink branch="beta" id={1260484} icon="ability_evoker_tipthescales" kind="spell">Chronoboon</WowheadLink>
   > <WowheadLink id={370553} icon="ability_evoker_tipthescales" kind="spell">Tip the Scales</WowheadLink>' cooldown is reduced by 30 sec.
-  - also basically half of the 11.2 set
+  - also basically half of the 11.2 set, except halfed in power
+  - confusing, because you'd always want to sync it with <WowheadLink id={403631} icon="ability_evoker_breathofeons" kind="spell">Breath of Eons</WowheadLink> but due to this talent, its now guaranteed to be ready ~15s ahead of each Breath and you end up holding it for Breath anyway
+  - so.. what's the point of this talent then?
 - <WowheadLink branch="beta" id={1260568} icon="ability_evoker_innatemagic4" kind="spell">Energy Cycles</WowheadLink>
   > <WowheadLink id={431695} icon="ability_evoker_essenceburst5" kind="spell">Temporal Burst</WowheadLink> grants <WowheadLink id={392268} icon="ability_evoker_essenceburst" kind="spell">Essence Burst</WowheadLink> every 6 sec.
+  - kind of a throwback to the <WowheadLink id={422871} icon="inv_legion_faction_dreamweavers" kind="spell">Evoker Devastation 10.2 Class Set 4pc</WowheadLink> (do not mention this to <WowheadSpecIcon spec="devastation-evoker">Devastation Evokers</WowheadSpecIcon>, that set is not remembered fondly)
+  - _probably_ ok for Aug to have just due to how little <WowheadLink id={392268} icon="ability_evoker_essenceburst" kind="spell">Essence Burst</WowheadLink> it can reliably generate
 - <WowheadLink branch="beta" id={1260647} icon="spell_holy_borrowedtime" kind="spell">Overclock</WowheadLink>
   > <WowheadLink id={431442} icon="inv_ability_chronowardenevoker_chronoflame" kind="spell">Chrono Flames</WowheadLink>' maximum damage or healing is increased by 40%, up to [(Spell Power * 3.5) * (1 + Versatility)] Arcane.
 
@@ -141,14 +146,16 @@ Some old, some new.
 > <WowheadLink id={395152} icon="spell_sarkareth" kind="spell">Ebon Might</WowheadLink> now splits its effect when applies to more than 2 other allies (...)
 
 We're almost there. This needs the following tweaks:
-- (again, currently not re-tested) the extension range on Live is only 45 yards. please raise this to 100 yards. Why is it even ~45 to begin with?
-- make it split on one target already for dungeons
-- make it re-evaluate its splitting state once a buffed player dies or the aura expires on them due to outranging, e.g. on Fractillus you can currently be buffing players that spread to the far side, losing extensions
+- (again, currently not re-tested) the extension range on Live is only 45 yards - please raise this to 100 yards. Why is it even ~45 to begin with?
+- name it increase its value if less than 2 targets are affected
+- make it re-evaluate its state once a buffed player dies or the aura expires on them due to outranging, e.g. on Fractillus you can currently be buffing players that spread to the far side, losing extensions
 
 This is a **major** pain point for Augmentation in keys in particular since 11.2 now since you only buff the other two DPS: the moment a buffed dps dies, you lose a considerable amount of both of your buff _and_ personal damage:
 - if a combat ressurection is available, you situationally want to avoid casting any extender now in anticipation of the resurrection, which leads to you losing <WowheadLink id={395152} icon="spell_sarkareth" kind="spell">Ebon Might</WowheadLink> early
   - you're thus forced to spam <WowheadLink icon="ability_evoker_livingflame" id={361469} kind="spell">Living Flame</WowheadLink>, but now that you don't even have the +20% self-buff from <WowheadLink id={395152} icon="spell_sarkareth" kind="spell">Ebon Might</WowheadLink> anymore
 - if no combat resurrection is available, well, unluck I guess. You're locked out of most of your damage buff now because.  
+
+No spec gets punished for another party member dying. Why does Aug get punished twice?
 
 > more personal damage through the introduction of <WowheadLink branch="beta" icon="ability_evoker_recall" id={1259173} kind="spell">Duplicate</WowheadLink>
 
@@ -162,6 +169,8 @@ Initial testing suggests it's already behaving like that but time will tell whet
 
 > Dead Talents
 
+- <WowheadLink id={410784} icon="ability_evoker_echoingstrike" kind="spell">Echoing Strike</WowheadLink>
+  - since the nerfs, never ever picked
 - <WowheadLink id={410685} icon="inv_10_herb_seed_magiccolor5" kind="spell">Symbiotic Bloom</WowheadLink>
   - doesn't reattribute and is incredibly weak
 - <WowheadLink id={410687} icon="ability_evoker_reversion_green" kind="spell">Prolong Life</WowheadLink> / <WowheadLink id={414969} icon="ability_evoker_masterylifebinder" kind="spell">Dream of Spring</WowheadLink>
@@ -169,7 +178,7 @@ Initial testing suggests it's already behaving like that but time will tell whet
 - <WowheadLink id={410253} icon="spell_shadow_lastingafflictions" kind="spell">Perilous Fate</WowheadLink>
   - never ever picked
 - <WowheadLink id={407243} icon="ability_evoker_aspectsfavor" kind="spell">Aspect's Favor</WowheadLink>
-  - ever since the nerfs, never ever picked
+  - since the nerfs, never ever picked
 
 > Weird Talent Pathing
 
