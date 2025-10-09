@@ -12,6 +12,7 @@ const specs = {
     'https://wow.zamimg.com/images/wow/TextureAtlas/live/talents-heroclass-evoker-chronowarden.webp',
   'augmentation-evoker': 'classicon_evoker_augmentation',
   'devastation-evoker': 'classicon_evoker_devastation',
+  'preservation-evoker': 'classicon_evoker_preservation',
   'vengeance-demon-hunter': 'ability_demonhunter_spectank',
   'destruction-warlock': 'spell_shadow_rainoffire',
   'subtlety-rogue': 'ability_stealth',
@@ -26,6 +27,7 @@ const colors = {
   chronowarden: classColors.Evoker,
   'augmentation-evoker': classColors.Evoker,
   'devastation-evoker': classColors.Evoker,
+  'preservation-evoker': classColors.Evoker,
   'vengeance-demon-hunter': classColors.DemonHunter,
   'destruction-warlock': classColors.Warlock,
   'subtlety-rogue': classColors.Rogue,
@@ -35,7 +37,7 @@ const colors = {
 
 export type WowheadSpecIconProps = {
   spec: keyof typeof specs;
-  children: string;
+  children: string | string[];
 };
 
 export function WowheadSpecIcon({ spec, children }: WowheadSpecIconProps) {

@@ -32,7 +32,7 @@ function slugify(str: string) {
 }
 
 export function AoeSpells({ data, wowheadBranch }: AoeSpellsProps) {
-  useScript('https://wow.zamimg.com/js/tooltips.js');
+  useScript('');
 
   const currentRotation = new Set(data['current-rotation']);
   const spells = data.spells.filter((spell) => currentRotation.has(spell.source));

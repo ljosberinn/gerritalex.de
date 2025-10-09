@@ -807,6 +807,22 @@
     "visible": true
   },
   {
+    "acquired": null,
+    "artist": "Fäulnis",
+    "album": "Snuff//Hiroshima",
+    "visible": true,
+    "id": 6074406,
+    "metadata": {
+      "genres": [
+        "Black Metal"
+      ],
+      "release": {
+        "year": 2014
+      },
+      "runtime": 2975
+    }
+  },
+  {
     "acquired": "03-01-2012",
     "artist": "Fields of the Nephilim",
     "album": "Mourning Sun",

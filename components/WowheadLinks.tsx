@@ -1,4 +1,5 @@
-import { WowheadLink } from './WowheadLink';
+import { WowheadLink, WowheadLinkProps } from './WowheadLink';
+import { WowheadSpecIcon } from './WowheadSpecIcon';
 
 export function Dragonrage() {
   return (
@@ -12,6 +13,504 @@ export function Zephyr() {
   return (
     <WowheadLink id={374227} kind="spell" icon="ability_evoker_hoverblack">
       Zephyr
+    </WowheadLink>
+  );
+}
+
+export function StretchTime() {
+  return (
+    <WowheadLink id={410352} icon="ability_evoker_timedilation" kind="spell">
+      Stretch Time
+    </WowheadLink>
+  );
+}
+
+export function FireWithin() {
+  return (
+    <WowheadLink id={375577} icon="item_sparkofragnoros" kind="spell">
+      Fire Within
+    </WowheadLink>
+  );
+}
+
+export function DraconicInstincts() {
+  return (
+    <WowheadLink id={445958} icon="inv_misc_scales_basilliskorange" kind="spell">
+      Draconic Instincts
+    </WowheadLink>
+  );
+}
+
+export function Scalecommander() {
+  return <WowheadSpecIcon spec="scalecommander">Scalecommander</WowheadSpecIcon>;
+}
+
+export function Chronowarden() {
+  return <WowheadSpecIcon spec="chronowarden">Chronowarden</WowheadSpecIcon>;
+}
+
+export function DevastationEvoker({ plural }) {
+  return (
+    <WowheadSpecIcon spec="devastation-evoker">
+      Devastation Evoker{plural ? 's' : ''}
+    </WowheadSpecIcon>
+  );
+}
+
+export function PreservationEvoker({ plural, abbreviated }) {
+  return (
+    <WowheadSpecIcon spec="preservation-evoker">
+      {abbreviated ? 'Pres' : `Preservation Evoker${plural ? 's' : ''}`}
+    </WowheadSpecIcon>
+  );
+}
+
+export function AugmentationEvoker({ plural, abbreviated }) {
+  return (
+    <WowheadSpecIcon spec="augmentation-evoker">
+      {abbreviated ? 'Aug' : `augmentation Evoker${plural ? 's' : ''}`}
+    </WowheadSpecIcon>
+  );
+}
+
+export function RegenerativeChitin() {
+  return (
+    <WowheadLink id={406907} icon="inv_tradeskill_skinning_prismaticscale" kind="spell">
+      Regenerative Chitin
+    </WowheadLink>
+  );
+}
+
+export function TemporalWound() {
+  return (
+    <WowheadLink id={409560} icon="ability_evoker_breathofeons" kind="spell">
+      Temporal Wound
+    </WowheadLink>
+  );
+}
+
+export function CloseAsClutchmates() {
+  return (
+    <WowheadLink id={396043} icon="ability_dragonriding_yearningforthesky01" kind="spell">
+      Close as Clutchmates
+    </WowheadLink>
+  );
+}
+
+export function ConcentratedPower() {
+  return (
+    <WowheadLink
+      branch="beta"
+      id={1261448}
+      icon="inv_10_dungeonjewelry_dragon_trinket_1arcanemagical_blue"
+      kind="spell"
+    >
+      Concentrated Power
+    </WowheadLink>
+  );
+}
+
+export function RefinedEssence() {
+  return (
+    <WowheadLink branch="beta" id={1261452} icon="ability_evoker_essenceburststacks" kind="spell">
+      Refined Essence
+    </WowheadLink>
+  );
+}
+
+export function Chronoboon() {
+  return (
+    <WowheadLink branch="beta" id={1260484} icon="ability_evoker_tipthescales" kind="spell">
+      Chronoboon
+    </WowheadLink>
+  );
+}
+
+export function EnergyCycles() {
+  return (
+    <WowheadLink branch="beta" id={1260568} icon="ability_evoker_innatemagic4" kind="spell">
+      Energy Cycles
+    </WowheadLink>
+  );
+}
+
+export function TipTheScales() {
+  return (
+    <WowheadLink id={370553} icon="ability_evoker_tipthescales" kind="spell">
+      Tip the Scales
+    </WowheadLink>
+  );
+}
+
+export function EssenceBurst() {
+  return (
+    <WowheadLink id={392268} icon="ability_evoker_essenceburst" kind="spell">
+      Essence Burst
+    </WowheadLink>
+  );
+}
+
+export function ChronoFlames() {
+  return (
+    <WowheadLink id={431442} icon="inv_ability_chronowardenevoker_chronoflame" kind="spell">
+      Chrono Flames
+    </WowheadLink>
+  );
+}
+
+export function DoubleTime() {
+  return (
+    <WowheadLink id={431874} icon="spell_holy_borrowedtime" kind="spell">
+      Double-time
+    </WowheadLink>
+  );
+}
+
+export function GoldenOpportunity() {
+  return (
+    <WowheadLink branch="beta" id={432004} icon="achievement_faction_goldenlotus" kind="spell">
+      Golden Opportunity
+    </WowheadLink>
+  );
+}
+
+export function Overclock() {
+  return (
+    <WowheadLink branch="beta" id={1260647} icon="spell_holy_borrowedtime" kind="spell">
+      Overclock
+    </WowheadLink>
+  );
+}
+
+export function OppressingRoar() {
+  return (
+    <WowheadLink id={372048} icon="ability_evoker_oppressingroar" kind="spell">
+      Oppressing Roar
+    </WowheadLink>
+  );
+}
+
+export function Landslide() {
+  return (
+    <WowheadLink id={358385} icon="ability_earthen_pillar" kind="spell">
+      Landslide
+    </WowheadLink>
+  );
+}
+
+export function SourceOfMagic() {
+  return (
+    <WowheadLink id={369459} icon="ability_evoker_blue_01" kind="spell">
+      Source of Magic
+    </WowheadLink>
+  );
+}
+
+export function PerilousFate() {
+  return (
+    <WowheadLink id={410253} icon="spell_shadow_lastingafflictions" kind="spell">
+      Perilous Fate
+    </WowheadLink>
+  );
+}
+
+export function ArcaneReach() {
+  return (
+    <WowheadLink id={454983} icon="classicon_evoker" kind="spell">
+      Arcane Reach
+    </WowheadLink>
+  );
+}
+
+export function AspectsFavor() {
+  return (
+    <WowheadLink id={407243} icon="ability_evoker_aspectsfavor" kind="spell">
+      Aspect's Favor
+    </WowheadLink>
+  );
+}
+
+export function DreamOfSpring() {
+  return (
+    <WowheadLink id={414969} icon="ability_evoker_masterylifebinder" kind="spell">
+      Dream of Spring
+    </WowheadLink>
+  );
+}
+
+export function ProlongLife() {
+  return (
+    <WowheadLink id={410687} icon="ability_evoker_reversion_green" kind="spell">
+      Prolong Life
+    </WowheadLink>
+  );
+}
+
+export function EchoingStrike() {
+  return (
+    <WowheadLink id={410784} icon="ability_evoker_echoingstrike" kind="spell">
+      Echoing Strike
+    </WowheadLink>
+  );
+}
+
+export function SymbioticBloom() {
+  return (
+    <WowheadLink id={410685} icon="inv_10_herb_seed_magiccolor5" kind="spell">
+      Symbiotic Bloom
+    </WowheadLink>
+  );
+}
+
+export function ShiftingSands() {
+  return (
+    <WowheadLink id={413984} icon="ability_evoker_masterytimewalker" kind="spell">
+      Shifting Sands
+    </WowheadLink>
+  );
+}
+
+export function Maneuverability() {
+  return (
+    <WowheadLink branch="beta" id={433871} icon="ability_evoker_deepbreath" kind="spell">
+      Maneuverability
+    </WowheadLink>
+  );
+}
+
+export function Timelessness() {
+  return (
+    <WowheadLink id={412710} icon="ability_evoker_timelessness" kind="spell">
+      Timelessness
+    </WowheadLink>
+  );
+}
+
+export function CommandSquadron() {
+  return (
+    <WowheadLink branch="beta" id={1252613} icon="ability_evoker_pyre" kind="spell">
+      Command Squadron
+    </WowheadLink>
+  );
+}
+
+export function MoltenBlood() {
+  return (
+    <WowheadLink id={410643} icon="spell_shaman_spewlava" kind="spell">
+      Molten Blood
+    </WowheadLink>
+  );
+}
+
+export function MomentumShift() {
+  return (
+    <WowheadLink id={408005} icon="ability_priest_voidshift" kind="spell">
+      Momentum Shift
+    </WowheadLink>
+  );
+}
+
+export function TimeSkip() {
+  return (
+    <WowheadLink id={404977} icon="ability_evoker_timeskip" kind="spell">
+      Time Skip
+    </WowheadLink>
+  );
+}
+
+export function InterwovenThreads() {
+  return (
+    <WowheadLink id={412713} icon="inv_enchant_optionalreagent_01" kind="spell">
+      Interwoven Threads
+    </WowheadLink>
+  );
+}
+
+export function Unravel() {
+  return (
+    <WowheadLink id={368432} icon="ability_evoker_unravel" kind="spell">
+      Unravel
+    </WowheadLink>
+  );
+}
+
+export function MassEruption() {
+  return (
+    <WowheadLink id={438588} icon="ability_evoker_eruption" kind="spell">
+      Mass Eruption
+    </WowheadLink>
+  );
+}
+
+export function TemporalBurst() {
+  return (
+    <WowheadLink id={431695} icon="ability_evoker_essenceburst5" kind="spell">
+      Temporal Burst
+    </WowheadLink>
+  );
+}
+
+export function FireBreath() {
+  return (
+    <WowheadLink id={357208} icon="ability_evoker_firebreath" kind="spell">
+      Fire Breath
+    </WowheadLink>
+  );
+}
+
+export function InfernosBlessing() {
+  return (
+    <WowheadLink id={410261} icon="ability_evoker_infernosblessing" kind="spell">
+      Inferno's Blessing
+    </WowheadLink>
+  );
+}
+
+export function StrikeFromAbove() {
+  return (
+    <WowheadLink id={1267206} icon="ability_racial_glide" kind="spell" branch="beta">
+      Strike from Above
+    </WowheadLink>
+  );
+}
+
+export function Glide() {
+  return (
+    <WowheadLink id={358733} icon="ability_racial_glide" kind="spell" branch="beta">
+      Glide
+    </WowheadLink>
+  );
+}
+
+export function IgnitionRush() {
+  return (
+    <WowheadLink id={408775} icon="spell_fire_immolation" kind="spell">
+      Ignition Rush
+    </WowheadLink>
+  );
+}
+
+export function DefyFate() {
+  return (
+    <WowheadLink id={404195} icon="ability_evoker_defyfate" kind="spell">
+      Defy Fate
+    </WowheadLink>
+  );
+}
+
+export function ImminentDestruction() {
+  return (
+    <WowheadLink icon="spell_burningbladeshaman_blazing_radiance" id={459537} kind="spell">
+      Imminent Destruction
+    </WowheadLink>
+  );
+}
+
+export function ImprovedDefyFate() {
+  return (
+    <WowheadLink id={1268881} icon="ability_evoker_masterytimewalker" branch="beta" kind="spell">
+      Improved Defy Fate
+    </WowheadLink>
+  );
+}
+
+export function Rockfall() {
+  return (
+    <WowheadLink id={1219236} icon="ability_evoker_earthensky" kind="spell">
+      Rockfall
+    </WowheadLink>
+  );
+}
+
+export function LivingFlame() {
+  return (
+    <WowheadLink icon="ability_evoker_livingflame" id={361469} kind="spell">
+      Living Flame
+    </WowheadLink>
+  );
+}
+
+export function BlisteringScales() {
+  return (
+    <WowheadLink id={360827} icon="ability_evoker_blisteringscales" kind="spell">
+      Blistering Scales
+    </WowheadLink>
+  );
+}
+
+export function Eruption() {
+  return (
+    <WowheadLink id={395160} icon="ability_evoker_eruption" kind="spell">
+      Eruption
+    </WowheadLink>
+  );
+}
+
+export function EbonMight() {
+  return (
+    <WowheadLink id={395152} icon="spell_sarkareth" kind="spell">
+      Ebon Might
+    </WowheadLink>
+  );
+}
+
+export function Upheaval() {
+  return (
+    <WowheadLink id={396286} icon="ability_evoker_upheaval" kind="spell">
+      Upheaval
+    </WowheadLink>
+  );
+}
+
+export function Prescience() {
+  return (
+    <WowheadLink id={409311} icon="ability_evoker_prescience" kind="spell">
+      Prescience
+    </WowheadLink>
+  );
+}
+
+export function Clairvoyant() {
+  return (
+    <WowheadLink
+      branch="beta"
+      icon="ability_evoker_masterylifebinder_bronze"
+      id={1250914}
+      kind="spell"
+    >
+      Clairvoyant
+    </WowheadLink>
+  );
+}
+
+export function MotesOfPossibility() {
+  return (
+    <WowheadLink id={409267} icon="ability_evoker_motesofpossibility" kind="spell">
+      Motes of Possibility
+    </WowheadLink>
+  );
+}
+
+export function BestowWeyrnstone() {
+  return (
+    <WowheadLink id={408233} icon="ability_evoker_bestowweyrnstone" kind="spell">
+      Bestow Weyrnstone
+    </WowheadLink>
+  );
+}
+
+export function Slipstream() {
+  return (
+    <WowheadLink id={441257} icon="ability_dragonriding_barrelroll01" kind="spell">
+      Slipstream
+    </WowheadLink>
+  );
+}
+
+export function Duplicate() {
+  return (
+    <WowheadLink branch="beta" icon="ability_evoker_recall" id={1259173} kind="spell">
+      Duplicate
     </WowheadLink>
   );
 }

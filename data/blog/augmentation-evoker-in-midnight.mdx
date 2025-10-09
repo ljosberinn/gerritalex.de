@@ -1,7 +1,7 @@
 ---
+lastmod: '2025-10-09'
 title: Augmentation Evoker in Midnight
 date: '2025-10-05'
-lastmod: '2025-10-06'
 tags: ['wow', 'evoker', 'augmentation', 'midnight']
 draft: false
 summary: 'A per-change look at Augmentation Evoker throughout the Midnight Testing Cycle, including feedback.' 
@@ -11,8 +11,6 @@ images: ['/static/images/dimensius-ma.jpg']
 includeImageInPreview: true
 ---
 
-<script src="https://wow.zamimg.com/js/tooltips.js"></script>
-
 We've now had a couple days to have a first look at the Midnight Alpha and I want to summarize a couple of my thoughts, but also document an initial impression as well as issues and possible solutions.
 
 I will also be updating this post throughout Alpha and Beta cycles, but to give myself the change to test changes and gather a deeper impression, it'll always be delayed a bit, just like this one.
@@ -21,119 +19,206 @@ I will also be updating this post throughout Alpha and Beta cycles, but to give 
 
 <TOCInline toHeading={4} toc={props.toc} exclude="Table of Contents" />
 
-## Initial Alpha Launch
+## Phase 2
+
+Oct 10th 2025, [Source](https://www.wowhead.com/news/class-changes-and-ui-improvements-midnight-alpha-test-development-notes-378812)
+
+> - *Developers' notes: We were unhappy with <Rescue /> being occasionally used solely for its absorb effect, so we're redesigning <TwinGuardian />. The new talent focuses on its value as a way to save yourself or allies who are out of position. <RenewingBlaze /> was an extra defensive keybind that we felt could be better served as an improvement to <ObsidianScales />. Finally, we're adding some new talent options to increase player choice as they level up and gain new talent points.*
+> - New Talent: <StretchTime /> - While flying during <BreathOfEons /> or <DeepBreath />, 100% of damage you would take is instead dealt over 10 seconds.
+> - New Talent: <StrikeFromAbove /> - <Glide /> speed and height increased by 20%.
+> - <TwinGuardian /> has been redesigned - Rescue increases movement speed by 100% and allows spells to be cast while moving for 3 seconds.
+> - <RenewingBlaze /> has been redesigned - Now upgrades <ObsidianScales />, causing it to heal you over 8 seconds equal to the amount of damage it reduced.
+> - Several talents have changed position in the final section of the class talent tree.
+> - <FireWithin /> has been removed.
+> - New Talent: <ImprovedDefyFate /> - <DefyFate /> healing increased by 100% and its cooldown is reduced by 1 minute.
+> - <BestowWeyrnstone /> has swapped places with <StretchTime />.
+> - <StretchTime /> has been removed.
+
+### Thoughts
+
+While <AugmentationEvoker abbreviated /> / <WowheadClassIcon>Evoker</WowheadClassIcon> in general was spared from last weeks ability pruning, this week we lose 1.5 defensives, but also kind of gained another more reliably: <StretchTime /> in the class tree.
+
+#### Loss of Renewing Blaze
+
+This one is going to hurt. <RenewingBlaze /> was a stupidly strong button situationally, so I'm happy we keep it in a way, but pairing it with <ObsidianScales /> was already only really useful in very high keys or Mythic raid progress. It's absolutely overkill for anything below.
+
+Then again, there's the raid death statistics and - while <AugmentationEvoker abbreviated /> and <PreservationEvoker abbreviated /> are roughly in the middle of the pack - <DevastationEvoker plural/> apparently really like dying:
+
+<img src="/static/images/aug-midnight/raid-death-statistics.png" alt="Augmentation Evoker deaths in Manaforge Omega" loading="lazy"/>
+
+How a class that has to actively use its mitigation ahead of damage is suddenly expected to live more by removing agency over when to spread out defensives however is something only Blizzard will understand. If a talent like <DraconicInstincts /> was baseline/in the class tree I'd be more inclined to call this a positive change.
+
+It's evident <WowheadClassIcon>Evoker</WowheadClassIcon> has very good defensive tooling, but if people don't use it, you can have all the tools in the world. The class needs more inherent tankiness if you want to fix the death statistics problem.
+
+#### Loss of Twin Guardian
+
+A long overdue change. <Rescue /> in general is not only somehwat unpopular, but also often simply a disruptive experience for all parties involved.
+
+That said, its removal also does away with the sole "oh shit" reactive button to smoothen out unexpected damage, so having no compensation here feels - at this time - problematic.
+
+#### Bestow Weyrnstone Position Change
+
+Headscratcher, really. As mentioned before, the talent has no niche. Moving it to a more prominent position doesn't fix it. I just hope it's a placeholder for later changes.
+
+#### Improved Defy Fate
+
+With this change, last week's change makes a bit more sense. It now heals ~66% of your maximum health over its duration. Whether this scales properly we'll have to see. If it does, we'll have to keep an eye for on for how much it heals others, especially in raid.
+
+Generally a positive, the one minute reduced cooldown on <DefyFate /> itself is not something I'm going to say no to but we're still in that awkward spot where you need to pick one of <BestowWeyrnstone />/<Timelessness /> or now <ImprovedDefyFate /> to get access to <Prescience />, so for now, it's locked in, as the alternatives are borderline useless in all scenarios.
+
+#### Stretch Time to Class Tree
+
+On paper this is great, in practice I can see it being problematic here and there, since - if ever needed - delaying your major cooldown for defensive reasons would be very questionable design. It might just never get to that, so I'm cautiously optimistic.
+
+### Problems
+
+No changes to the [problems listed last week](#problems-1).
+
+### Suggestions
+
+In addition to [last weeks suggestions](#suggestions-1):
+- swap <ArcaneReach /> with <BestowWeyrnstone />
+
+### Bugs
+
+Fixed:
+- [x] <Slipstream /> now only grants one <Hover /> charge
+
+**All other bugs from previous patches below still apply.** Additionally, here's a couple new ones:
+
+#### General
+
+- [ ] the class tree talent changes aren't actually in
+  - solely the change to <RenewingBlaze /> becoming passive and its choice node change below are in
+  - <TwinGuardian /> also continues to work like on live
+- [ ] <ObsidianScales /> shows the same tooltip as before regardless of whether you're talented into <RenewingBlaze /> or not
+
+#### Cooldown Manager
+- [ ] offers to track <RenewingBlaze /> under Utility Cooldowns
+  - this also currently just doesn't work while <RenewingBlaze /> is active
+- [ ] does not offer to track <RenewingBlaze /> under Buffs
+- [ ] tracks <EssenceBurst /> even when it's not active
+  - shows saturated and without stacks
+  - properly tracks it when it's active
+  - presumably a problem with all stackable auras, haven't tested other cases, so assumption is that this is widespread and known
+
+#### Nameplates
+
+*Coming soon, needs retesting first!*.
+
+## Phase 1 - Initial Alpha Launch
 
 Oct 1st 2025, [Source](https://www.wowhead.com/news/midnight-alpha-development-notes-378688)
 
-> - *Developer's notes: The goal of these changes is to simplify <WowheadLink id={395152} icon="spell_sarkareth" kind="spell">Ebon Might</WowheadLink> targeting in raid environments. Since it now applies to all members of the raid, there is no need to micromanage who it should go on. There will still be some buff management gameplay with <WowheadLink id={409311} icon="ability_evoker_prescience" kind="spell">Prescience</WowheadLink>, which will continue to have a smart-targeting option for those who do not want to swap targets between enemies and allies frequently. Overall this should make raid gameplay much smoother and similar to dungeon gameplay.*
-> - Apex Talents: <WowheadLink branch="beta" icon="ability_evoker_recall" id={1259173} kind="spell">Duplicate</WowheadLink>
->   - <WowheadLink id={403631} icon="ability_evoker_breathofeons" kind="spell">Breath of Eons</WowheadLink> summons a version of you from the future to assist you in battle, lasting 20 seconds. Your <WowheadLink branch="beta" icon="ability_evoker_recall" id={1259173} kind="spell">Duplicate</WowheadLink> casts <WowheadLink id={395160} icon="ability_evoker_eruption" kind="spell">Eruption</WowheadLink>, empower spells, and <WowheadLink icon="ability_evoker_livingflame" id={361469} kind="spell">Living Flame</WowheadLink>.
->   - Any time you extend <WowheadLink id={395152} icon="spell_sarkareth" kind="spell">Ebon Might</WowheadLink>, your <WowheadLink branch="beta" icon="ability_evoker_recall" id={1259173} kind="spell">Duplicate</WowheadLink> is also extended, equal to 50/100% of the amount you extended <WowheadLink id={395152} icon="spell_sarkareth" kind="spell">Ebon Might</WowheadLink> by.
->   - While your <WowheadLink branch="beta" icon="ability_evoker_recall" id={1259173} kind="spell">Duplicate</WowheadLink> is active, your <WowheadLink id={395152} icon="spell_sarkareth" kind="spell">Ebon Might</WowheadLink> is 100% more effective and <WowheadLink id={396286} icon="ability_evoker_upheaval" kind="spell">Upheaval</WowheadLink> and <WowheadLink id={395160} icon="ability_evoker_eruption" kind="spell">Eruption</WowheadLink> deal 25% increased damage.
-> - New Talent: <WowheadLink branch="beta" icon="ability_evoker_masterylifebinder_bronze" id={1250914} kind="spell">Clairvoyant</WowheadLink> - <WowheadLink id={409267} icon="ability_evoker_motesofpossibility" kind="spell">Motes of Possibility</WowheadLink> may now grant <WowheadLink id={409311} icon="ability_evoker_prescience" kind="spell">Prescience</WowheadLink> to allies and have a 10% increased chance to activate.
-> - <WowheadLink id={406907} icon="inv_tradeskill_skinning_prismaticscale" kind="spell">Regenerative Chitin</WowheadLink> has been redesigned - <WowheadLink id={360827} icon="ability_evoker_blisteringscales" kind="spell">Blistering Scales</WowheadLink> no longer loses charges and deals 20% more damage.
-> - <WowheadLink id={395152} icon="spell_sarkareth" kind="spell">Ebon Might</WowheadLink> now grants 8% primary stat (was 5%).
-> - <WowheadLink id={395152} icon="spell_sarkareth" kind="spell">Ebon Might</WowheadLink> is now applied to all damage dealing allies within 100 yards.
-> - <WowheadLink id={395152} icon="spell_sarkareth" kind="spell">Ebon Might</WowheadLink> now splits its effect when applied to more than 2 other allies and is no longer is limited to 2 maximum applications.
-> - <WowheadLink id={403631} icon="ability_evoker_breathofeons" kind="spell">Breath of Eons</WowheadLink>' debuff Temporal Wound is now visible to all allies, and indicates how much damage it accumulates on the aura tooltip.
-> - Temporal Wound now reduces its effect when <WowheadLink id={395152} icon="spell_sarkareth" kind="spell">Ebon Might</WowheadLink> is applied to more than 2 allies.
-> - <WowheadLink id={403631} icon="ability_evoker_breathofeons" kind="spell">Breath of Eons</WowheadLink> accumulates 15% of damage (was 10%).
-> - <WowheadLink id={404195} icon="ability_evoker_defyfate" kind="spell">Defy Fate</WowheadLink> healing increased by 100%.
-> - <WowheadLink id={410643} icon="spell_shaman_spewlava" kind="spell">Molten Blood</WowheadLink> absorption increased by 30%.
-> - <WowheadLink id={410261} icon="ability_evoker_infernosblessing" kind="spell">Inferno's Blessing</WowheadLink> now only targets you and 1 nearby ally (was all allies with <WowheadLink id={395152} icon="spell_sarkareth" kind="spell">Ebon Might</WowheadLink>). New visual of a flame sprite added to represent the blessing. Damage increased to 350% spell power (was 88% spell power).
-> - <WowheadLink id={408775} icon="spell_fire_immolation" kind="spell">Ignition Rush</WowheadLink> has been relocated to <WowheadLink id={1219236} icon="ability_evoker_earthensky" kind="spell">Rockfall</WowheadLink>'s location and now increases the damage of <WowheadLink id={395160} icon="ability_evoker_eruption" kind="spell">Eruption</WowheadLink> by 20%.
-> - <WowheadLink id={1219236} icon="ability_evoker_earthensky" kind="spell">Rockfall</WowheadLink> has been removed.
+> - *Developer's notes: The goal of these changes is to simplify <EbonMight /> targeting in raid environments. Since it now applies to all members of the raid, there is no need to micromanage who it should go on. There will still be some buff management gameplay with <Prescience />, which will continue to have a smart-targeting option for those who do not want to swap targets between enemies and allies frequently. Overall this should make raid gameplay much smoother and similar to dungeon gameplay.*
+> - Apex Talents: <Duplicate />
+>   - <BreathOfEons /> summons a version of you from the future to assist you in battle, lasting 20 seconds. Your <Duplicate /> casts <Eruption />, empower spells, and <LivingFlame />.
+>   - Any time you extend <EbonMight />, your <Duplicate /> is also extended, equal to 50/100% of the amount you extended <EbonMight /> by.
+>   - While your <Duplicate /> is active, your <EbonMight /> is 100% more effective and <Upheaval /> and <Eruption /> deal 25% increased damage.
+> - New Talent: <Clairvoyant /> - <MotesOfPossibility /> may now grant <Prescience /> to allies and have a 10% increased chance to activate.
+> - <RegenerativeChitin /> has been redesigned - <BlisteringScales /> no longer loses charges and deals 20% more damage.
+> - <EbonMight /> now grants 8% primary stat (was 5%).
+> - <EbonMight /> is now applied to all damage dealing allies within 100 yards.
+> - <EbonMight /> now splits its effect when applied to more than 2 other allies and is no longer is limited to 2 maximum applications.
+> - <BreathOfEons />' debuff <TemporalWound /> is now visible to all allies, and indicates how much damage it accumulates on the aura tooltip.
+> - <TemporalWound /> now reduces its effect when <EbonMight /> is applied to more than 2 allies.
+> - <BreathOfEons /> accumulates 15% of damage (was 10%).
+> - <DefyFate /> healing increased by 100%.
+> - <MoltenBlood /> absorption increased by 30%.
+> - <InfernosBlessing /> now only targets you and 1 nearby ally (was all allies with <EbonMight />). New visual of a flame sprite added to represent the blessing. Damage increased to 350% spell power (was 88% spell power).
+> - <IgnitionRush /> has been relocated to <Rockfall />'s location and now increases the damage of <Eruption /> by 20%.
+> - <Rockfall /> has been removed.
 
 ### Thoughts
 
 #### Raid Changes
 
-Let's talk about <WowheadLink id={395152} icon="spell_sarkareth" kind="spell">Ebon Might</WowheadLink> becoming raid-wide first:
+Let's talk about <EbonMight /> becoming raid-wide first:
 
-Contrary to popular belief, for all of War Within already it wasn't needed to min-max buff targeting to perform well outside of maybe the RWF or a similar world rank. There's still a burden of preparation on the player, needing to know encounter timings and which spec/which player in your raid is the best to buff for the given scenario, but that's trivial, especially for farm. That burden will also continue to exist, as you'll now want to target the best players with <WowheadLink id={409311} icon="ability_evoker_prescience" kind="spell">Prescience</WowheadLink> instead. Some encounters like Nexus-King or Dimensius make it also very easy to swap buff targets situationally.
+Contrary to popular belief, for all of War Within already it wasn't needed to min-max buff targeting to perform well outside of maybe the RWF or a similar world rank. There's still a burden of preparation on the player, needing to know encounter timings and which spec/which player in your raid is the best to buff for the given scenario, but that's trivial, especially for farm. That burden will also continue to exist, as you'll now want to target the best players with <Prescience /> instead. Some encounters like Nexus-King or Dimensius make it also very easy to swap buff targets situationally.
 
 It's worth noting that while 100 yards **application** range is great and technically unchanged, the current **extension** range is only ~45 yards and leads to awkwardness in too many scenarios. We still have to re-test whether this also got adjusted.
 
-Previously, <WowheadLink id={409311} icon="ability_evoker_prescience" kind="spell">Prescience</WowheadLink> was the targeting mechanism for <WowheadLink id={395152} icon="spell_sarkareth" kind="spell">Ebon Might</WowheadLink>, which then was the indicator for which players <WowheadLink id={413984} icon="ability_evoker_masterytimewalker" kind="spell">Shifting Sands</WowheadLink> should go on. Now with <WowheadLink id={395152} icon="spell_sarkareth" kind="spell">Ebon Might</WowheadLink> on everyone, <WowheadLink id={413984} icon="ability_evoker_masterytimewalker" kind="spell">Shifting Sands</WowheadLink> would just apply to the closest <WowheadLink id={395152} icon="spell_sarkareth" kind="spell">Ebon Might</WowheadLink>-buffed player unless targeting gets updated. It's of course a question of whether this is now considered unwanted, but <WowheadLink id={409311} icon="ability_evoker_prescience" kind="spell">Prescience</WowheadLink> becoming the driver for <WowheadLink id={413984} icon="ability_evoker_masterytimewalker" kind="spell">Shifting Sands</WowheadLink> targeting would be a reasonable adjustment.
+Previously, <Prescience /> was the targeting mechanism for <EbonMight />, which then was the indicator for which players <ShiftingSands /> should go on. Now with <EbonMight /> on everyone, <ShiftingSands /> would just apply to the closest <EbonMight />-buffed player unless targeting gets updated. It's of course a question of whether this is now considered unwanted, but <Prescience /> becoming the driver for <ShiftingSands /> targeting would be a reasonable adjustment.
 
 #### Apex Talent
 
-Not extremely fond of introducing more pets with possibly wonky targeting or pathing. For context, the current <WowheadSpecIcon spec="scalecommander">Scalecommander</WowheadSpecIcon> set summons a <WowheadLink id={219827} kind="npc">Dracthyr Commando</WowheadLink> which will <WowheadLink id={1236970} icon="ability_evoker_pyre" kind="spell">Pyre</WowheadLink> while flying and then continue to <WowheadLink id={1236949} icon="ability_evoker_disintegrate" kind="spell">Disintegrate</WowheadLink> for a bit. Unforunately however, they don't choose your target so they'll happily slap some irrelevant minion next to your own target half of the time.
+Not extremely fond of introducing more pets with possibly wonky targeting or pathing. For context, the current <Scalecommander /> set summons a <WowheadLink id={219827} kind="npc">Dracthyr Commando</WowheadLink> which will <WowheadLink id={1236970} icon="ability_evoker_pyre" kind="spell">Pyre</WowheadLink> while flying and then continue to <WowheadLink id={1236949} icon="ability_evoker_disintegrate" kind="spell">Disintegrate</WowheadLink> for a bit. Unforunately however, they don't choose your target so they'll happily slap some irrelevant minion next to your own target half of the time.
 
 The non-pet elements are intriguing however:
-- doubling the effects of <WowheadLink id={395152} icon="spell_sarkareth" kind="spell">Ebon Might</WowheadLink> for a minimum of - currently - 20 seconds sounds very strong for keys in particular as <WowheadLink id={403631} icon="ability_evoker_breathofeons" kind="spell">Breath of Eons</WowheadLink> - again currently - is available for every pull as <WowheadSpecIcon spec="scalecommander">Scalecommander</WowheadSpecIcon>
+- doubling the effects of <EbonMight /> for a minimum of - currently - 20 seconds sounds very strong for keys in particular as <BreathOfEons /> - again currently - is available for every pull as <Scalecommander />
 - the extension isn't particularily exciting but just happens naturally anyway so why not
 
-Ultimately not extremely surprising for Blizzard to introduce yet another source of personal damage. First impression is also that it seems to favor <WowheadSpecIcon spec="scalecommander">Scalecommander</WowheadSpecIcon> rather significantly over Chronowarden for a variety of reasons:
-- <WowheadSpecIcon spec="scalecommander">Scalecommander</WowheadSpecIcon> simply has more <WowheadLink id={403631} icon="ability_evoker_breathofeons" kind="spell">Breath of Eons</WowheadLink> available, so more <WowheadLink branch="beta" icon="ability_evoker_recall" id={1259173} kind="spell">Duplicate</WowheadLink>s
-- <WowheadSpecIcon spec="scalecommander">Scalecommander</WowheadSpecIcon> is also more likely to play <WowheadLink id={396286} icon="ability_evoker_upheaval" kind="spell">Upheaval</WowheadLink>-empowering talents to begin with, or at least has been historically
-- the only blatantly obvious synergy with <WowheadSpecIcon spec="chronowarden">Chronowarden</WowheadSpecIcon> is <WowheadLink id={431874} icon="spell_holy_borrowedtime" kind="spell">Double-time</WowheadLink> getting gigabuffed during <WowheadLink branch="beta" icon="ability_evoker_recall" id={1259173} kind="spell">Duplicate</WowheadLink>
+Ultimately not extremely surprising for Blizzard to introduce yet another source of personal damage. First impression is also that it seems to favor <Scalecommander /> rather significantly over Chronowarden for a variety of reasons:
+- <Scalecommander /> simply has more <BreathOfEons /> available, so more <Duplicate />s
+- <Scalecommander /> is also more likely to play <Upheaval />-empowering talents to begin with, or at least has been historically
+- the only blatantly obvious synergy with <Chronowarden /> is <DoubleTime /> getting gigabuffed during <Duplicate />
 
-Rotational implication is minimal. Before you wanted to <WowheadLink id={357208} icon="ability_evoker_firebreath" kind="spell">Fire Breath</WowheadLink> ahead of <WowheadLink id={403631} icon="ability_evoker_breathofeons" kind="spell">Breath of Eons</WowheadLink>, now you'll want to do it after, unfortunately counteracting <WowheadLink icon="spell_burningbladeshaman_blazing_radiance" id={459537} kind="spell">Imminent Destruction</WowheadLink>.
+Rotational implication is minimal. Before you wanted to <FireBreath /> ahead of <BreathOfEons />, now you'll want to do it after, unfortunately counteracting <ImminentDestruction />.
 
 Also worth noting your <WowheadLink id={253466} kind="npc">Future Self</WowheadLink> is entirely doing its own thing. It doesn't interact with any of your own talents, its casts don't extend. Full on personal damage bot.
 
 #### Talent Changes
 
-- new talent: <WowheadLink branch="beta" icon="ability_evoker_masterylifebinder_bronze" id={1250914} kind="spell">Clairvoyant</WowheadLink>
-  - more power to <WowheadLink id={409267} icon="ability_evoker_motesofpossibility" kind="spell">Motes of Possibility</WowheadLink> - I'm ok with that. Currently you have a 33% chance to roll an entirely irrelevant buff - <WowheadLink id={410685} icon="inv_10_herb_seed_magiccolor5" kind="spell">Symbiotic Bloom</WowheadLink> - that doesn't even reattribute in logs, now it'll be 25%.
-- changed: <WowheadLink id={406907} icon="inv_tradeskill_skinning_prismaticscale" kind="spell">Regenerative Chitin</WowheadLink>
-  - good quality of life change, paired with an undocumented change to <WowheadLink id={360827} icon="ability_evoker_blisteringscales" kind="spell">Blistering Scales</WowheadLink> in general: it now lasts 60 minutes baseline!
-  - <WowheadLink id={360827} icon="ability_evoker_blisteringscales" kind="spell">Blistering Scales</WowheadLink> damage was painfully low, so 20% more won't fix anything but also certainly doesn't hurt
-- changed: <WowheadLink id={404195} icon="ability_evoker_defyfate" kind="spell">Defy Fate</WowheadLink> healing
+- new talent: <Clairvoyant />
+  - more power to <MotesOfPossibility /> - I'm ok with that. Currently you have a 33% chance to roll an entirely irrelevant buff - <SymbioticBloom /> - that doesn't even reattribute in logs, now it'll be 25%.
+- changed: <RegenerativeChitin />
+  - good quality of life change, paired with an undocumented change to <BlisteringScales /> in general: it now lasts 60 minutes baseline!
+  - <BlisteringScales /> damage was painfully low, so 20% more won't fix anything but also certainly doesn't hurt
+- changed: <DefyFate /> healing
   - irrelevant, doesn't hurt
-- changed: <WowheadLink id={410643} icon="spell_shaman_spewlava" kind="spell">Molten Blood</WowheadLink> absorb
+- changed: <MoltenBlood /> absorb
   - irrelevant, still dead
   - absorbs 2100/54860 when at max health (3.8%)
   - absorbs 5249/54860 when at ~10% health (9.5%)
-- changed: <WowheadLink id={410261} icon="ability_evoker_infernosblessing" kind="spell">Inferno's Blessing</WowheadLink>
-  - it seems to now do approximately 75% of an <WowheadLink id={395160} icon="ability_evoker_eruption" kind="spell">Eruption</WowheadLink>
+- changed: <InfernosBlessing />
+  - it seems to now do approximately 75% of an <Eruption />
   - welcome change, as it did terribly low damage before in AoE
-  - since it can also be rolled from <WowheadLink id={409267} icon="ability_evoker_motesofpossibility" kind="spell">Motes of Possibility</WowheadLink>, we'll take those
-- changed: <WowheadLink id={408775} icon="spell_fire_immolation" kind="spell">Ignition Rush</WowheadLink>
+  - since it can also be rolled from <MotesOfPossibility />, we'll take those
+- changed: <IgnitionRush />
   - position change is nice
-  - damage increase to <WowheadLink id={395160} icon="ability_evoker_eruption" kind="spell">Eruption</WowheadLink> slowly starts to read like some of those Mistweaver Renewing Mists mods (15% here, 20% there, 25% over there) but <WowheadLink id={395160} icon="ability_evoker_eruption" kind="spell">Eruption</WowheadLink> is our bread and butter still so I'll take it
-- removed: <WowheadLink id={1219236} icon="ability_evoker_earthensky" kind="spell">Rockfall</WowheadLink>
+  - damage increase to <Eruption /> slowly starts to read like some of those Mistweaver Renewing Mists mods (15% here, 20% there, 25% over there) but <Eruption /> is our bread and butter still so I'll take it
+- removed: <Rockfall />
   - entirely ok with this. annoying RNG talent
 
 #### New Hero Talents
 
-##### <WowheadSpecIcon spec="scalecommander">Scalecommander</WowheadSpecIcon>
+##### <Scalecommander />
 
-- <WowheadLink branch="beta" id={1260745} icon="ability_dragonriding_dynamicflight01" kind="spell">Command Squadron</WowheadLink>
-  > While flying during <WowheadLink id={403631} icon="ability_evoker_breathofeons" kind="spell">Breath of Eons</WowheadLink> you are assisted by a squadron of Dracthyr who assault enemies with Pyre, dealing (365% of Spell Power) Fire damage to nearby enemies up to 8 times.
+- <CommandSquadron />
+  > While flying during <BreathOfEons /> you are assisted by a squadron of Dracthyr who assault enemies with Pyre, dealing (365% of Spell Power) Fire damage to nearby enemies up to 8 times.
   - basically half of the 11.2 set with minor QoL improvements:
-  - the squad now fires at your target before you hit something with <WowheadLink id={403631} icon="ability_evoker_breathofeons" kind="spell">Breath of Eons</WowheadLink> if you don't hit something with <WowheadLink id={403631} icon="ability_evoker_breathofeons" kind="spell">Breath of Eons</WowheadLink> within the first ~1.5 seconds. If you have none, they'll pick a close by target.
-- <WowheadLink branch="beta" id={1261448} icon="inv_10_dungeonjewelry_dragon_trinket_1arcanemagical_blue" kind="spell">Concentrated Power</WowheadLink>
-  > <WowheadLink id={438587} icon="ability_evoker_eruption" kind="spell">Mass Eruption</WowheadLink> strikes 1 additional target.
-- <WowheadLink branch="beta" id={1261452} icon="ability_evoker_essenceburststacks" kind="spell">Refined Essence</WowheadLink>
+  - the squad now fires at your target before you hit something with <BreathOfEons /> if you don't hit something with <BreathOfEons /> within the first ~1.5 seconds. If you have none, they'll pick a close by target.
+- <ConcentratedPower />
+  > <MassEruption /> strikes 1 additional target.
+- <RefinedEssence />
   > Essence abilities deal 15% additional damage.
-  - effectively just another <WowheadLink id={395160} icon="ability_evoker_eruption" kind="spell">Eruption</WowheadLink> amp, we stack plenty of those already but its on theme for <WowheadSpecIcon spec="scalecommander">Scalecommander</WowheadSpecIcon> and continues the trend of increasing personal damage done
+  - effectively just another <Eruption /> amp, we stack plenty of those already but its on theme for <Scalecommander /> and continues the trend of increasing personal damage done
 
 
-##### <WowheadSpecIcon spec="chronowarden">Chronowarden</WowheadSpecIcon>
-- <WowheadLink branch="beta" id={1260484} icon="ability_evoker_tipthescales" kind="spell">Chronoboon</WowheadLink>
-  > <WowheadLink id={370553} icon="ability_evoker_tipthescales" kind="spell">Tip the Scales</WowheadLink>' cooldown is reduced by 30 sec.
+##### <Chronowarden />
+- <Chronoboon />
+  > <TipTheScales />' cooldown is reduced by 30 sec.
   - also basically half of the 11.2 set, except halfed in power
-  - confusing, because you'd always want to sync it with <WowheadLink id={403631} icon="ability_evoker_breathofeons" kind="spell">Breath of Eons</WowheadLink> but due to this talent, its now guaranteed to be ready ~15s ahead of each Breath and you end up holding it for Breath anyway
+  - confusing, because you'd always want to sync it with <BreathOfEons /> but due to this talent, its now guaranteed to be ready ~15s ahead of each Breath and you end up holding it for Breath anyway
   - so.. what's the point of this talent then?
-- <WowheadLink branch="beta" id={1260568} icon="ability_evoker_innatemagic4" kind="spell">Energy Cycles</WowheadLink>
-  > <WowheadLink id={431695} icon="ability_evoker_essenceburst5" kind="spell">Temporal Burst</WowheadLink> grants <WowheadLink id={392268} icon="ability_evoker_essenceburst" kind="spell">Essence Burst</WowheadLink> every 6 sec.
-  - kind of a throwback to the <WowheadLink id={422871} icon="inv_legion_faction_dreamweavers" kind="spell">Evoker Devastation 10.2 Class Set 4pc</WowheadLink> (do not mention this to <WowheadSpecIcon spec="devastation-evoker">Devastation Evokers</WowheadSpecIcon>, that set is not remembered fondly)
-  - _probably_ ok for Aug to have just due to how little <WowheadLink id={392268} icon="ability_evoker_essenceburst" kind="spell">Essence Burst</WowheadLink> it can reliably generate
-- <WowheadLink branch="beta" id={1260647} icon="spell_holy_borrowedtime" kind="spell">Overclock</WowheadLink>
-  > <WowheadLink id={431442} icon="inv_ability_chronowardenevoker_chronoflame" kind="spell">Chrono Flames</WowheadLink>' maximum damage or healing is increased by 40%, up to [(Spell Power * 3.5) * (1 + Versatility)] Arcane.
+- <EnergyCycles />
+  > <TemporalBurst /> grants <EssenceBurst /> every 6 sec.
+  - kind of a throwback to the <WowheadLink id={422871} icon="inv_legion_faction_dreamweavers" kind="spell">Evoker Devastation 10.2 Class Set 4pc</WowheadLink> (do not mention this to <DevastationEvoker plural/>, that set is not remembered fondly)
+  - _probably_ ok for <AugmentationEvoker abbreviated /> to have just due to how little <EssenceBurst /> it can reliably generate
+- <Overclock />
+  > <ChronoFlames />' maximum damage or healing is increased by 40%, up to [(Spell Power * 3.5) * (1 + Versatility)] Arcane.
 
 #### Tuning
-> <WowheadLink id={395152} icon="spell_sarkareth" kind="spell">Ebon Might</WowheadLink> now grants 8% primary stat (was 5%)
+> <EbonMight /> now grants 8% primary stat (was 5%)
 
-> <WowheadLink id={403631} icon="ability_evoker_breathofeons" kind="spell">Breath of Eons</WowheadLink> accumulates 15% of damage (was 10%)
+> <BreathOfEons /> accumulates 15% of damage (was 10%)
 
 Straight forward W from a current point of view. Sims will tell more once we're there.
 
-Do note that this is paired with an undocumented removal of <WowheadLink id={396043} icon="ability_dragonriding_yearningforthesky01" kind="spell">Close as Clutchmates</WowheadLink>.
+Do note that this is paired with an undocumented removal of <CloseAsClutchmates />.
 
-> <WowheadLink id={395152} icon="spell_sarkareth" kind="spell">Ebon Might</WowheadLink> now splits its effect when applies to more than 2 other allies (...)
+> <EbonMight /> now splits its effect when applies to more than 2 other allies (...)
 
 This is a very welcome change and something I've been advocating for for a while. We'll circle back to that under Problems in just a minute however.
 
@@ -145,95 +230,96 @@ Time will tell whether this can become problematic.
 
 Some old, some new.
 
-> <WowheadLink id={395152} icon="spell_sarkareth" kind="spell">Ebon Might</WowheadLink> now splits its effect when applies to more than 2 other allies (...)
+> <EbonMight /> now splits its effect when applies to more than 2 other allies (...)
 
 We're almost there. This needs the following tweaks:
 - (again, currently not re-tested) the extension range on Live is only 45 yards - please raise this to 100 yards. Why is it even ~45 to begin with?
 - make it increase its value if less than 2 targets are affected
 - make it re-evaluate its state once a buffed player dies or the aura expires on them due to outranging, e.g. on Fractillus you can currently be buffing players that spread to the far side, losing extensions
 
-This is a **major** pain point for Augmentation in keys in particular since 11.2 now since you only buff the other two DPS: the moment a buffed dps dies, you lose a considerable amount of both of your buff _and_ personal damage:
-- if a combat resurrection is available, you situationally want to avoid casting any extender now in anticipation of the resurrection, which leads to you losing <WowheadLink id={395152} icon="spell_sarkareth" kind="spell">Ebon Might</WowheadLink> early
-  - you're thus forced to spam <WowheadLink icon="ability_evoker_livingflame" id={361469} kind="spell">Living Flame</WowheadLink>, but now that you don't even have the +20% self-buff from <WowheadLink id={395152} icon="spell_sarkareth" kind="spell">Ebon Might</WowheadLink> anymore
+This is a **major** pain point for <AugmentationEvoker abbreviated /> in keys in particular since 11.2 now since you only buff the other two DPS: the moment a buffed dps dies, you lose a considerable amount of both of your buff _and_ personal damage:
+- if a combat resurrection is available, you situationally want to avoid casting any extender now in anticipation of the resurrection, which leads to you losing <EbonMight /> early
+  - you're thus forced to spam <LivingFlame />, but now that you don't even have the +20% self-buff from <EbonMight /> anymore
 - if no combat resurrection is available, well, unluck I guess. You're locked out of most of your damage buff now because.  
 
-No spec gets punished for another party member dying. Why does Aug get punished twice?
+No spec gets punished for another party member dying. Why does <AugmentationEvoker abbreviated /> get punished twice?
 
-> more personal damage through the introduction of <WowheadLink branch="beta" icon="ability_evoker_recall" id={1259173} kind="spell">Duplicate</WowheadLink>
+> more personal damage through the introduction of <Duplicate />
 
 More and more personal damage means less and less reason to buff others. More buff damage offsets this and that has already happened here.
 
-However, <WowheadLink id={409311} icon="ability_evoker_prescience" kind="spell">Prescience</WowheadLink> and <WowheadLink id={413984} icon="ability_evoker_masterytimewalker" kind="spell">Shifting Sands</WowheadLink> will still be significantly more impactful on the Augmentation player themselves over the tank or healer. It's time to update the smart-targeting logic.
+However, <Prescience /> and <ShiftingSands /> will still be significantly more impactful on the <AugmentationEvoker abbreviated /> player themselves over the tank or healer. It's time to update the smart-targeting logic.
 
-> <WowheadLink branch="beta" icon="ability_evoker_recall" id={1259173} kind="spell">Duplicate</WowheadLink> pet targeting
+> <Duplicate /> pet targeting
 
 Initial testing suggests it's already behaving like that but time will tell whether that reliably checks out - but please, make it target our current target.
 
 > Dead Talents
 
-- <WowheadLink id={410784} icon="ability_evoker_echoingstrike" kind="spell">Echoing Strike</WowheadLink>
+- <EchoingStrike />
   - never ever picked
-- <WowheadLink id={410685} icon="inv_10_herb_seed_magiccolor5" kind="spell">Symbiotic Bloom</WowheadLink>
+- <SymbioticBloom />
   - doesn't reattribute and is incredibly weak
-- <WowheadLink id={410687} icon="ability_evoker_reversion_green" kind="spell">Prolong Life</WowheadLink> / <WowheadLink id={414969} icon="ability_evoker_masterylifebinder" kind="spell">Dream of Spring</WowheadLink>
+- <ProlongLife /> / <DreamOfSpring />
   - never ever picked
-- <WowheadLink id={410253} icon="spell_shadow_lastingafflictions" kind="spell">Perilous Fate</WowheadLink>
+- <PerilousFate />
   - never ever picked
-- <WowheadLink id={407243} icon="ability_evoker_aspectsfavor" kind="spell">Aspect's Favor</WowheadLink>
+- <AspectsFavor />
   - since the nerfs, never ever picked
 
 > Weird Talent Pathing
 
-Neither <WowheadLink id={410352} icon="ability_evoker_timedilation" kind="spell">Stretch Time</WowheadLink> nor <WowheadLink id={412710} icon="ability_evoker_timelessness" kind="spell">Timelessness</WowheadLink> have any logical connection to <WowheadLink id={409311} icon="ability_evoker_prescience" kind="spell">Prescience</WowheadLink>. Neither are attractive for raid or the far majority of dungeon content.
+Neither <StretchTime /> nor <Timelessness /> have any logical connection to <Prescience />. Neither are attractive for raid or the far majority of dungeon content.
 
 ### Suggestions
-- consider making <WowheadLink id={409311} icon="ability_evoker_prescience" kind="spell">Prescience</WowheadLink> the targeting driver for <WowheadLink id={413984} icon="ability_evoker_masterytimewalker" kind="spell">Shifting Sands</WowheadLink>
-- increase extension range of <WowheadLink id={395152} icon="spell_sarkareth" kind="spell">Ebon Might</WowheadLink> to 100 yards too
-- make <WowheadLink id={395152} icon="spell_sarkareth" kind="spell">Ebon Might</WowheadLink> re-evaluate its state once a second/on extensions
-  - and/or whenever someone dies or outranges it
-- increase the effect of <WowheadLink id={395152} icon="spell_sarkareth" kind="spell">Ebon Might</WowheadLink> in dungeons if less than 2 targets are buffed to avoid punishing the surviving dps
+- consider making <Prescience /> the targeting driver for <ShiftingSands />
+- increase extension range of <EbonMight /> to 100 yards too
+- <EbonMight /> already updates its value once per second/on extensions. go further:
+  - re-evaluate how many targets are currently buffed so deaths/outranging gets accounted for
+    - as example, given 14 DPS in a raid that you buff and one dies, the value of <EbonMight /> should increase for the remaining 13
+  - similarily, increase the effect of <EbonMight /> in dungeons if less than 2 targets are affected to avoid punishing the surviving dps
 - make it re-evaluate its splitting state once a buffed player dies or the aura expires on them due to outranging
-- move the +20% self-buff from <WowheadLink id={395152} icon="spell_sarkareth" kind="spell">Ebon Might</WowheadLink> to the general spec aura
-  - this doesn't suddenly enable casting extenders outside of EM, but at least active dots and <WowheadLink icon="ability_evoker_livingflame" id={361469} kind="spell">Living Flame</WowheadLink> won't be wet noodles
-- update <WowheadLink id={409311} icon="ability_evoker_prescience" kind="spell">Prescience</WowheadLink>/<WowheadLink id={413984} icon="ability_evoker_masterytimewalker" kind="spell">Shifting Sands</WowheadLink> smart-targeting logic to the following:
+- move the +20% self-buff from <EbonMight /> to the general spec aura
+  - this doesn't suddenly enable casting extenders outside of <EbonMight />, but at least active dots and <LivingFlame /> won't be wet noodles
+- update <Prescience />/<ShiftingSands /> smart-targeting logic to the following:
   - other DPS by proximity unless already buffed
   - self unless buffed
   - tank/heal by proximity
-- swap <WowheadLink id={454983} icon="classicon_evoker" kind="spell"> Arcane Reach</WowheadLink> with <WowheadLink id={410352} icon="ability_evoker_timedilation" kind="spell">Stretch Time</WowheadLink>
-- make <WowheadLink id={407243} icon="ability_evoker_aspectsfavor" kind="spell">Aspect's Favor</WowheadLink> a one-pointer
+- swap <ArcaneReach /> with <StretchTime />
+- make <AspectsFavor /> a one-pointer
   - it'll find a niche by that, but due to its problematic past, imo just replace it
-- make <WowheadLink id={410685} icon="inv_10_herb_seed_magiccolor5" kind="spell">Symbiotic Bloom</WowheadLink> reattribute in logs at least
-- remove <WowheadLink id={410687} icon="ability_evoker_reversion_green" kind="spell">Prolong Life</WowheadLink> / <WowheadLink id={414969} icon="ability_evoker_masterylifebinder" kind="spell">Dream of Spring</WowheadLink> or at a minimum, change them to something interesting
+- make <SymbioticBloom /> and <SourceOfMagic /> reattribute in logs at least
+- remove <ProlongLife /> / <DreamOfSpring /> or at a minimum, change them to something interesting
 
 ### Bugs
 
 Of course there's a bunch of bugs, entirely expected at this point, so I'll just dump the list:
 
 #### General
-- <WowheadLink branch="beta" id={1260745} icon="ability_dragonriding_dynamicflight01" kind="spell">Command Squadron</WowheadLink> does not work when talented out of <WowheadLink id={433871} icon="ability_evoker_deepbreath" kind="spell">Maneuverability</WowheadLink>
-- <WowheadLink id={441257} icon="ability_dragonriding_barrelroll01" kind="spell">Slipstream</WowheadLink> continues to grant 2 <WowheadLink id={358267} icon="ability_evoker_hover" kind="spell">Hover</WowheadLink> charges
-- <WowheadLink id={412710} icon="ability_evoker_timelessness" kind="spell">Timelessness</WowheadLink> still only lasts for 30 minutes
-  - <WowheadLink id={360827} icon="ability_evoker_blisteringscales" kind="spell">Blistering Scales</WowheadLink> was updated to last for 60 minutes in 12.0
-  - <WowheadLink id={369459} icon="ability_evoker_blue_01" kind="spell">Source of Magic</WowheadLink> was updated to last for 60 minutes some time in TWW already
-- <WowheadLink id={409311} icon="ability_evoker_prescience" kind="spell">Prescience</WowheadLink> from <WowheadLink id={409267} icon="ability_evoker_motesofpossibility" kind="spell">Motes of Possibility</WowheadLink> doesn't seem to be able to crit when talented into Double-time
-- <WowheadLink branch="beta" icon="ability_evoker_recall" id={1259173} kind="spell">Duplicate</WowheadLink> does not increase <WowheadLink id={396286} icon="ability_evoker_upheaval" kind="spell">Upheaval</WowheadLink> damage by 25%
+- [ ] <CommandSquadron /> does not work when talented out of <Maneuverability />
+- [x] <Slipstream /> continues to grant 2 <Hover /> charges
+- [ ] <Timelessness /> still only lasts for 30 minutes
+  - <BlisteringScales /> was updated to last for 60 minutes in 12.0
+  - <SourceOfMagic /> was updated to last for 60 minutes some time in TWW already
+- [ ] <Prescience /> from <MotesOfPossibility /> doesn't seem to be able to crit when talented into <DoubleTime />
+- [ ] <Duplicate /> does not increase <Upheaval /> damage by 25%
 
 #### Cooldown Manager
-- does not track <WowheadLink id={431695} icon="ability_evoker_essenceburst5" kind="spell">Temporal Burst</WowheadLink>
-- does not properly track <WowheadLink id={438588} icon="ability_evoker_eruption" kind="spell">Mass Eruption</WowheadLink> - always shows as unlearned
-- does not track <WowheadLink branch="beta" id={357210} icon="ability_evoker_deepbreath" kind="spell">Deep Breath</WowheadLink> cooldown when not talented into <WowheadLink id={403631} icon="ability_evoker_breathofeons" kind="spell">Breath of Eons</WowheadLink>
+- [ ] does not track <TemporalBurst />
+- [ ] does not properly track <MassEruption /> - always shows as unlearned
+- [ ] does not track <DeepBreath /> cooldown when not talented into <BreathOfEons />
   - largely a leveling concern
-- does not track <WowheadLink id={403631} icon="ability_evoker_breathofeons" kind="spell">Breath of Eons</WowheadLink> cooldown when talenting out of <WowheadLink branch="beta" id={433871} icon="ability_evoker_deepbreath" kind="spell">Maneuverability</WowheadLink> until you relog
-- does not track <WowheadLink branch="beta" id={1252613} icon="ability_evoker_pyre" kind="spell">Command Squadron</WowheadLink>
-- still offers to track <WowheadLink id={368432} icon="ability_evoker_unravel" kind="spell">Unravel</WowheadLink> which now is a passive
-- attempts to track <WowheadLink id={412713} icon="inv_enchant_optionalreagent_01" kind="spell">Interwoven Threads</WowheadLink>, which is passive
-  - probably because it's a spell override to <WowheadLink id={404977} icon="ability_evoker_timeskip" kind="spell">Time Skip</WowheadLink>
-- does not track <WowheadLink id={408005} icon="ability_priest_voidshift" kind="spell">Momentum Shift</WowheadLink>
-- does not track <WowheadLink branch="beta" icon="ability_evoker_recall" id={1259173} kind="spell">Duplicate</WowheadLink>
-  - not the summon duration, but the aura increasing <WowheadLink id={395160} icon="ability_evoker_eruption" kind="spell">Eruption</WowheadLink> & <WowheadLink id={396286} icon="ability_evoker_upheaval" kind="spell">Upheaval</WowheadLink> damage   
-- still offers to track <WowheadLink branch="beta" id={432004} icon="achievement_faction_goldenlotus" kind="spell">Golden Opportunity</WowheadLink> which now is a passive
+- [ ] does not track <BreathOfEons /> cooldown when talenting out of <Maneuverability /> until you relog
+- [ ] does not track <CommandSquadron />
+- [ ] still offers to track <Unravel /> which now is a passive
+- [ ] attempts to track <InterwovenThreads />, which is passive
+  - probably because it's a spell override to <TimeSkip />
+- [ ] does not track <MomentumShift />
+- [ ] does not track <Duplicate />
+  - not the summon duration, but the aura increasing <Eruption /> & <Upheaval /> damage   
+- [ ] still offers to track <GoldenOpportunity /> which now is a passive
 
 #### Nameplates
-- <WowheadLink id={434473} icon="inv_ability_scalecommanderevoker_bombardments" kind="spell">Bombardments</WowheadLink> do not show up as debuff at all
-- <WowheadLink id={358385} icon="ability_earthen_pillar" kind="spell">Landslide</WowheadLink> does not show up under "Shared CC"
-- <WowheadLink id={372048} icon="ability_evoker_oppressingroar" kind="spell">Oppressing Roar</WowheadLink> does not show up under "Shared CC"
+- [ ] <Bombardments /> do not show up as debuff at all
+- [ ] <Landslide /> does not show up under "Shared CC"
+- [ ] <OppressingRoar /> does not show up under "Shared CC"

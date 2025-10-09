@@ -23,7 +23,7 @@ type Item = {
 export type WowheadLinkProps = {
   id: number;
   children: string;
-  branch?: 'ptr-2' | 'ptr' | 'classic';
+  branch?: 'beta' | 'ptr-2' | 'ptr' | 'classic';
 } & (Achievement | Spell | Npc | Item);
 
 export function WowheadLink({ id, children, kind, branch, ...props }: WowheadLinkProps) {

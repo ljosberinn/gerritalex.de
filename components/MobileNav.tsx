@@ -8,7 +8,7 @@ import headerNavLinks from 'data/headerNavLinks';
 
 export function MobileNav() {
   const [navShow, setNavShow] = useState(false);
-  const navRef = useRef(null);
+  const navRef = useRef<HTMLElement | null>(null);
 
   const onToggleNav = () => {
     setNavShow((status) => {

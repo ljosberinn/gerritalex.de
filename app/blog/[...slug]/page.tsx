@@ -11,6 +11,7 @@ import { Metadata } from 'next';
 import siteMetadata from '../../../data/siteMetadata';
 import { notFound } from 'next/navigation';
 import { components } from '../../../components/MDXComponents';
+import Script from 'next/script';
 
 const defaultLayout = 'PostLayout';
 const layouts = {
@@ -116,14 +117,22 @@ export default async function Page(props: { params: Promise<{ slug: string[] }> 
   const Layout = layouts[post.layout || defaultLayout];
 
   return (
-    <div className="mx-auto max-w-4xl xl:max-w-6xl">
+    <>
+      <Script
+        key="wowhead-tooltip"
+        strategy="afterInteractive"
+        src="https://wow.zamimg.com/js/tooltips.js"
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <Layout content={mainContent} authorDetails={authorDetails} next={next} prev={prev}>
-        <MDXLayoutRenderer code={post.body.code} components={components} toc={post.toc} />
-      </Layout>
-    </div>
+
+      <div className="mx-auto max-w-4xl xl:max-w-6xl">
+        <Layout content={mainContent} authorDetails={authorDetails} next={next} prev={prev}>
+          <MDXLayoutRenderer code={post.body.code} components={components} toc={post.toc} />
+        </Layout>
+      </div>
+    </>
   );
 }

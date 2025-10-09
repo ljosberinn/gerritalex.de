@@ -185,7 +185,6 @@ export function Auras({ data, wowheadBranch }: AuraProps) {
     }
   }, []);
 
-  useScript('https://wow.zamimg.com/js/tooltips.js');
   useRestoreStateFromUrl(by, onChange);
 
   return (
