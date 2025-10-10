@@ -49,10 +49,10 @@ export function Chronowarden() {
   return <WowheadSpecIcon spec="chronowarden">Chronowarden</WowheadSpecIcon>;
 }
 
-export function DevastationEvoker({ plural }) {
+export function DevastationEvoker({ plural, abbreviated }) {
   return (
     <WowheadSpecIcon spec="devastation-evoker">
-      Devastation Evoker{plural ? 's' : ''}
+      {abbreviated ? 'Dev' : `Devastation Evoker${plural ? 's' : ''}`}
     </WowheadSpecIcon>
   );
 }
