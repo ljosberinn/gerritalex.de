@@ -118,11 +118,13 @@ export default async function Page(props: { params: Promise<{ slug: string[] }> 
 
   return (
     <>
-      <Script
-        key="wowhead-tooltip"
-        strategy="afterInteractive"
-        src="https://wow.zamimg.com/js/tooltips.js"
-      />
+      {post.tags.includes('wow') ? (
+        <Script
+          key="wowhead-tooltip"
+          strategy="afterInteractive"
+          src="https://wow.zamimg.com/js/tooltips.js"
+        />
+      ) : null}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

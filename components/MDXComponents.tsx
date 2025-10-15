@@ -12,12 +12,27 @@ import { AoeSpells } from './seasonal-content/AoeSpells';
 import { WowheadSpecIcon } from './WowheadSpecIcon';
 import { WowheadClassIcon } from './WowheadClassIcon';
 import * as WowheadLinks from './WowheadLinks';
+import clsx from 'clsx';
 
 export const components: MDXComponents = {
   Image,
   TOCInline,
-  // @ts-expect-error
   a: CustomLink,
+  h2: ({ children, className }) => (
+    <h2
+      className={clsx(
+        className,
+        'sticky top-0 border-b-1 border-dashed border-gray-500 bg-white py-1 dark:border-gray-200 dark:bg-gray-950'
+      )}
+    >
+      {children}
+    </h2>
+  ),
+  h3: ({ children, className }) => (
+    <h3 className={clsx(className, 'border-t-1 border-b-1 border-dotted dark:border-white')}>
+      {children}
+    </h3>
+  ),
   pre: Pre,
   table: TableWrapper,
   BlogNewsletterForm,

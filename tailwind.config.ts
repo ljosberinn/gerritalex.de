@@ -52,6 +52,9 @@ module.exports = {
             h3: {
               fontWeight: '600',
             },
+            h5: {
+              fontWeight: '500',
+            },
             code: {
               color: theme('colors.indigo.500'),
             },

@@ -3,8 +3,12 @@ import tagData from '../tag-data.json' with { type: 'json' };
 import { generatePageMetadata } from 'app/seo';
 import { CustomLink } from '../../components/CustomLink';
 import { Tag } from '../../components/Tag';
+import { Metadata } from 'next';
 
-export const metadata = generatePageMetadata({ title: 'Tags', description: 'Things I blog about' });
+export const metadata: Metadata = generatePageMetadata({
+  title: 'Tags',
+  description: 'Things I blog about',
+});
 
 export default async function Page() {
   const tagCounts = tagData as Record<string, number>;

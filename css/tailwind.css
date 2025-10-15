@@ -62,7 +62,7 @@ input:-webkit-autofill:focus {
 }
 
 .content-header-link {
-  opacity: 0;
+  opacity: 0.1;
   margin-left: -24px;
   padding-right: 4px;
 }

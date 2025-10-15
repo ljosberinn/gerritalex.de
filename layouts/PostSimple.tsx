@@ -4,7 +4,7 @@ import { CoreContent } from 'pliny/utils/contentlayer';
 import { type Blog } from '../.contentlayer/generated';
 import { CustomLink } from '../components/CustomLink';
 import { PageTitle } from '../components/PageTitle';
-import { ScrollTopAndComment } from '../components/ScrollTopAndComment';
+import { ScrollTop } from '../components/ScrollTop';
 import siteMetadata from '../data/siteMetadata';
 
 interface LayoutProps {
@@ -19,7 +19,7 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
 
   return (
     <>
-      <ScrollTopAndComment />
+      <ScrollTop />
       <article>
         <div>
           <header>

@@ -1,0 +1,548 @@
+---
+title: Nameplates in Midnight
+date: '2025-10-06'
+tags: ['wow', 'ui', 'midnight']
+draft: true
+summary: 'TODO' 
+authors: ['default']
+layout: PostBanner
+images: []
+includeImageInPreview: true
+---
+
+## Table of Contents
+
+<TOCInline toHeading={3} toc={props.toc} exclude="Table of Contents" />
+
+## Introduction & History
+
+Back in Shadowlands Season 3 when I was still tanking, I first installed [Aeneas Plater](https://wago.io/TgqTbkIKa) profile and it was night and day. By modern standards, the profile didn't include much. Establishing a consistent nameplate color language was such a massive quality of life improvement however that I never considered going back. And why would anyone?
+
+Aeneas quit at some point in Dragonflight, or at least stopped maintaining their profile, so I forked it and [started maintaining my own](https://wago.io/vHtguW84j). Eventually Jundies - [who also forked Aeneas](https://wago.io/ak3iS95aa) - and I [joined forces ahead of The War Within](https://www.reddit.com/r/CompetitiveWoW/comments/1e9da7y/jundies_plater_large_updates_for_the_war_within/) and we ended up seeing massive growth. In fact, there's a good chance you're here because you're using it. If not, you've likely seen it on streams, or know guildies using it. Frankly, a success far beyond what we anticipated.
+
+And now, we're here to talk about the upcoming changes to nameplates in Midnight from various perspectives:
+- Jundies raids as melee in [\<poptart cornDog\> (US)](https://www.warcraftlogs.com/guild/us/tichondrius/poptart%20corndog), around world rank 20
+- [Xephyris](https://raider.io/characters/eu/blackrock/Xephyris) (me) raids as DPS Evoker main in [\<Mental Apocalypse\> (EU)](https://www.warcraftlogs.com/guild/eu/ragnaros/mental%20apocalypse), around world rank 100
+- I'm also always pushing keys considerably deep into title, initially as tank, having achieved 6 seasonal titles so far
+- I've been modernizing all mods and scripts in the profile to be both as efficient as possible, reducing the performance footprint of the profile by over 70% while adding more features so I'm considerably familiar with what's currently possible
+
+This isn't to boast, but more to establish a baseline of knowledge about us who meticulously maintain(ed) this profile for more or less two expansions now. Keeping this up to date - we provided near-exhaustive updates late into PTR/ahead of patch release - understanding when to use which tool, keeping track of all the special cases is a lot of work that requires understanding the circumstances at a high level.
+
+## Feature Parity
+
+Let's get this out of the way. We cannot and should not expect feature parity. Blizzards outspoken goal here is to **reduce the necessity** of some of what addons are capable of, so we should expect to see the need for some of this to also vanish. In either case, there will be growing pains, that's guaranteed.
+
+I'm already apologizing for this post to have become this large, but there is a lot to unravel. You'll forgive me for some of the yap too, I hope everyone can agree that we're all very passionate about these things in one way or another and there's only so many chances on actually talking this through. I'm also "afraid" that I'm basically celebrating having to sunset (only) two years of work here and appreciate there's addon developers out there having done this for literally 10x the time.
+
+Thanks to the bunch of folks I sent excerpts for early feedback, thanks to Continuity for answering my questions.
+
+### General Customization
+#### Health Formatting
+#### Target Highlighting
+The ability to highlight the players current target in any form.
+
+Before:
+- ⚠️ Retail Default Nameplates highlight the target slightly
+  - if you don't always show names, it'll get shown for your current target
+  - the border color changes from black to white
+- ✔️ Plater allows highlighting your target through various options
+  - custom border color
+  - custom scale
+  - custom texture
+
+After:
+- ⚠️ Midnight Nameplate Options allow highlighting the target by showing its name on the nameplate, depending on your settings
+  - in addition, it will **always** upscale the nameplate by ~50%, putting major emphasis on it
+  - the border color changes from black to white
+- ✔️ Plater allows highlighting your target through various options
+  - custom border color
+  - custom scale
+  - custom texture
+
+##### Verdict & Suggestion
+
+Probably better to let a clip speak for itself.
+
+**Note that as of Oct 14 / Alpha Phase 2 some nameplate MOVEMENT is known to be "undesired".** [_source_](https://us.forums.blizzard.com/en/wow/t/midnight-alpha-test-development-notes/2174760/12)
+
+<center>
+    <video src="/static/images/nameplates-midnight/targeting-behaviour.mp4" type="video/mp4" controls muted loop autoPlay />
+</center>
+
+At a minimum, make the scaling an option (read: a slider with e.g. 5% steps beginning at 0% increased scale to 50%). I appreciate it's with the best intent but this is not great. Forcing the nameplate into the center of the pack of nameplates you're looking at may be fine once you're used to it but introducing this without setting is questionable UX at best, pattern-breaking what's established for literal decades.
+
+#### Focus Highlighting
+The ability to highlight the players current focus in any form.
+
+Before:
+- ❌ Retail Default Nameplates don't highlight the focus
+- ✔️ Plater allows highlighting the focus
+  - custom border color
+  - custom scale
+  - custom texture
+
+After:
+- ⚠️ Midnight Nameplate Options use minimal highlighting of the focus target
+  - focusing a target puts a tiny golden border around it
+  - thats it
+- ✔️ Plater allows highlighting the focus
+  - custom border color
+  - custom scale
+  - custom texture
+
+<div className="flex justify-center gap-2">
+  <figure className="block text-center">
+    <img src="/static/images/nameplates-midnight/focus-no-target-no-vision.jpg" alt="" loading="lazy" />
+    <figcaption>no target, vision obscured</figcaption>
+  </figure>
+
+  <figure className="block text-center">
+    <img src="/static/images/nameplates-midnight/focus-with-target-no-vision.jpg" alt="" loading="lazy" />
+    <figcaption>with target, vision obscured</figcaption>
+  </figure>
+</div>
+
+<div className="flex justify-center gap-2">
+  <figure className="block text-center">
+    <img src="/static/images/nameplates-midnight/focus-no-target-and-vision.jpg" alt="" loading="lazy" />
+    <figcaption>no target</figcaption>
+  </figure>
+
+  <figure className="block text-center">
+    <img src="/static/images/nameplates-midnight/focus-with-target-and-vision.jpg" alt="" loading="lazy" />
+    <figcaption>with target</figcaption>
+  </figure>
+</div>
+
+##### Verdict & Suggestion
+
+What can I say. It's better than what the Retail Nameplates currently offer. But it's a massive downgrade to addons.
+
+Please consider:
+- allowing customizing the focus border color for accessibility reasons alone already
+- consider allowing to customize the focus nameplate texture
+- consider allowing to customize the focus nameplate scale
+
+#### Texture & Font Replacing
+
+### Auras
+#### Pandemic Glow of Tracked Auras
+#### Aura - Generic Tracking
+The ability to track auras, primarily of the player and their pets on nameplates.
+
+Before:
+- ✔️ Retail Default Nameplates just tracks all your auras
+- ✔️ Plater allows filtering via allow and deny lists
+  - the default lists are not perfectly maintained, but profiles can fill the gap
+
+After:
+- ✔️ Midnight Nameplate Options appear to have a built-in, invisible spec-specific list of auras to track
+  - currently it's buggy/inconsistent/incomplete at best
+  - no option to allow/denylist anything by name or id
+- ❓Plater _may_ be able to display the very same auras as the default nameplates. At the time of writing, this isn't 100% confirmed however.
+
+##### Verdict
+Better than nothing, but needs upfront fixing and then continuous work.
+
+Notably for DoT specs such as <WowheadSpecIcon spec="affliction-warlock">Affliction Warlock</WowheadSpecIcon>, aura tracking is in a confusing state. It's only possible to see a single icon of <UnstableAffliction />, but you can have five active on a target. The timer will show only the latest application however so you're left to guess when the first one expires:
+
+<center>
+  <img src="/static/images/nameplates-midnight/ua-midnight.png" alt="a Midnight nameplate showing a single Unstbable Affliction icon with 5 stacks" loading="lazy" />
+</center>
+
+Ironically, the Legion nameplates were doing a better job at tracking this:
+
+<center>
+  <img src="/static/images/nameplates-midnight/ua-legion.png" alt="a lgeion nameplate showing four separate Unstable Affliction icons with varying durations" loading="lazy" />
+</center>
+#### Aura - Reordering
+The ability to reorder auras, e.g. by duration at application time. Useful for consistency, especially for dot specs, think of "my out-of-the-box longest lasting dot can always be found at the first position" cases.
+
+Before:
+- ❌ Retail Default Nameplates reorder based on a set ordering logic
+- ✔️ Plater allows reordering
+
+After:
+- ❌ Midnight Nameplate Options don't allow reordering
+  - the ordering logic [is unchanged to what you already currently see on Live](https://github.com/Gethe/wow-ui-source/blob/live/Interface/AddOns/Blizzard_NamePlates/Blizzard_NamePlates.lua#L699-L705) when using the default nameplates:
+    - first, show auras that originate from the player
+    - then, show auras that you can apply (e.g. trinket procs aren't player spells so they have less priority)
+    - for all remaining auras, use order of application, ignoring stacks, expiration time/remaining duration, etc. - this includes your pets
+- ❌ Plater won't be able to either
+
+##### Verdict
+Not a core feature, but nice to have for consistency.
+#### Aura - Filtering
+The ability to filter auras by name or id.
+
+Before:
+- ❌ Retail Default Nameplates filter via inaccessible flags only
+- ✔️ Plater allows filtering via allow and deny lists
+  - again, the default lists are not perfectly maintained, but profiles can fill the gap
+
+After:
+- ❌ Midnight Nameplate Options don't allow filtering
+- ❌ Plater won't be able to either
+
+##### Verdict
+If meticulously and continuously maintained by Blizzard, probably ok, otherwise anything from endurably to dramatically worse. With the pruning, there'll be less auras to track, but some specs and abilities will still apply a literally confusing amount of debuffs, e.g. <Deathmark />.
+#### Aura - Special
+The ability to highlight a specific set of auras in some form, usually isolated from the other auras.
+
+For context, this refers to the `Buff Special` functionality in Plater and what the Midnight Nameplate Options refer to as `Shared CCs` due to both being positioned in the same place.
+
+<center>
+  <img src="/static/images/nameplates-midnight/buff-special.jpg" alt="" loading="lazy" />
+</center>
+
+Before:
+- ❌ Retail Default Nameplates don't differentiate between auras
+- ✔️ Plater allows highlighting special auras
+  - requires manual maintenance by spell id
+  - the default list is not well maintained, but profiles can fill the gap
+
+After:
+- ✔️ Midnight Nameplate Options include an option to show `Shared CCs`
+  - the default list is not well maintained, we cannot fill the gap
+  - there's false positives but also a lot missing
+    - for example, the <Landslide /> root isn't tracked but <TerrorOfTheSkies /> is tracked
+    - for example, the <FireBreath /> dot is incorrectly tracked as `Shared CC` for <DevastationEvoker abbreviated /> but correctly shown as debuff and not `Shared CC` for <AugmentationEvoker abbreviated />
+- ⚠️ Plater likely will be able to separate display these
+
+##### Verdict
+Better than nothing, but needs work. Currently a clear downgrade. Also unclear whether it'll track e.g. damage amp debuffs such as <WowheadLink id={1245292} icon="spell_shadow_blackplague" kind="spell">Destabilized</WowheadLink> on Dimensius Phase 3. Without that, it's only a shadow of what Plater allows.
+#### Aura - Invalidate Unit
+
+### Color Changes
+#### Nameplate Color Change
+The ability to change the color of a nameplate procedurally for any reason, e.g. based on NPC id, aura presence or threat.
+
+Before:
+- ❌ Retail Default Nameplates don't ever change color
+- ✔️ Plater allows changing the nameplate color
+  - allows setting new defaults
+  - allows setting a color based on threat situation
+  - allows setting a color per NPC id
+  - through scripts, allows setting color based on aura presence
+
+After:
+- ❌ Midnight Nameplate Options don't allow changing the nameplate color
+- ⚠️ Plater will continue to be able to change the color by setting new defaults for _all_ nameplates and their threat situation
+  - but will lose the ability to _conditionally_ change the color based on aura presence or NPC id
+
+##### Verdict
+👎 significantly worse than before and an instantly visible downgrade.
+
+Going on a limb here claiming that everyone who has used this feature for a while knows that it is simply too much of an advantage to do nothing. That's not to say that it should get removed without replacement.
+
+⚠️ This is also an accessibility issue. The default colorblind modes don't actually _really_ seem to help most colorblind users, customizability beats generic colorblind modes by miles.
+
+<img src="/static/images/nameplates-midnight/colorblindness.jpg" alt="" loading="lazy"/>
+
+##### Suggestion
+
+Blizzard already has implicit classifications of NPCs:
+- bosses
+  - as indicated internally via `boss1`, `boss2`, `bossN`, ... units
+- cc-immune NPCs that are not bosses
+  - lieutenants such as the minibosses in Priory but also the <WowheadLink kind="npc" id={206696}>Knights</WowheadLink> in Priory
+- casters, as indicated by their mana bar
+  - your classic <WowheadLink kind="npc" id={206697}>Priest</WowheadLink> casting Smite and <WowheadLink kind="npc" id={221760}>Mage</WowheadLink> casting Fireball in Priory
+- everything else, usually minions, melees, pets, rogues
+  - everything from <WowheadLink kind="npc" id={206699}>jumping cats</WowheadLink> to <WowheadLink kind="npc" id={206694}>sharpshooters</WowheadLink> and <WowheadLink kind="npc" id={206705}>footmen</WowheadLink> in Priory
+
+There can of course be overlaps, e.g. <WowheadLink kind="npc" id={212831}>Forge Master Damian</WowheadLink> (right side forge lieutenant) in Priory having - but not using -  mana or <WowheadLink kind="npc" id={211289}>Taener Duelmal</WowheadLink> (mage lieutenant) in Priory being a mage but neither having nor using mana.
+
+Blizzard even has existing code that uses the low-level classification of "caster" vs "non-caster": the <WowheadClassIcon>Warlock</WowheadClassIcon> Venthyr covenant ability <WowheadLink id={321792} icon="ability_revendreth_warlock" kind="spell">Impending Catastrophe</WowheadLink> (which is also dearly missed by some <WowheadClassIcon>Warlock</WowheadClassIcon>s) auto-cursed targets hit with either <WowheadLink icon="spell_shadow_curseofmannoroth" id={702}>Curse of Weakness</WowheadLink> (non-casters) or <WowheadLink id={1714} icon="spell_shadow_curseoftounges">Curse of Tongues</WowheadLink> (casters).
+
+You might already see where I'm going with this:
+
+Add these categories (`boss` | `notable enemy` | `caster` | `non-caster`) to the default UI nameplate settings and allow setting a custom color for them, then integrate it into the Midnight nameplates.
+
+We'd still be unable to define more colors than that, but it would alleviate most of the pain of this feature disappearing. It'd also significantly help people to learn a dungeon and also fix aforementioned accessibility problems. We have this very option with the item rarity color settings!
+#### Threat Color Change
+The ability to visibily indicate a threat situation change on a nameplate. Role-aware and ideally also pet-aware, as there's not only regular pets that may taunt, but also e.g. temporary guardians such as <WowheadLink icon="spell_nature_earthelemental_totem" kind="spell" id={198103}>Earth Elemental</WowheadLink>.
+
+Before:
+- ❌ Retail Default Nameplates don't ever change color
+- ✔️ Plater allows changing the threat color
+  - both in general
+  - but also situationally through scripts, making a nameplate aware of whether the now-tanking unit is a pet like the aforementioned elemental
+
+After:  
+- ⚠️ Midnight introduces threat highlighting options
+  - neither options allow recoloring the nameplate
+  - both options are not very visible in practice
+  - the additional texture imo doesn't play well with all nameplate types
+- ❌ Plater will be both unable to determine who gained/lost threat and change color
+
+##### Verdict
+Better than nothing, but needs work. The ability to highlight threat on pets is now gone. It wasn't extremely important, but commonly when such an ability was used it was to help the tank. Now the tank is sweating extra because they think they lost aggro on top of already struggling.
+#### Nameplate Scaling
+The ability to change the scale of a nameplate procedurally for any reason, e.g. based on NPC id, aura presence or threat.
+
+A criminally underused feature and one of my favorites. The gist: not all mobs are equally relevant to keep track of their health or cast bars in a pull. So why have them all the same size?
+
+Before:
+- ❌ Retail Default Nameplates allow scaling, but never make use of it
+- ❓ Plater itself only allows scaling all nameplates
+  - once again, scripts to the rescue
+
+After:
+- ❌ Midnight Nameplate Options largely only allows scaling all nameplates in 5 predefined steps
+  - notably, there's an option to scale less relevant nameplates down based on the kind of unit, separating between Minions, "Minor" and Friendly Players/NPCs
+- ⚠️ Plater will continue to be able to change the scaling by setting new defaults for _all_ nameplates AND inherit the scaling of the a particular NPC if the game considers it relevant
+  - no dynamic scaling based on NPC id
+  - no dynamic scaling based on e.g. auras on the player such as fixates
+
+##### Verdict
+👎 worse than before and an instantly visible downgrade. Not an insurmountable loss like nameplate colors, but still noticeable, particularily during pre-patch. Ultimately, it won't be too painful because with a new dungeon rotation, you have no before/after effect so the transition won't be too jarring.
+
+##### Suggestion
+Similar to the [Nameplate Color Change Suggestion](#nameplate-color-change), add another category for `Notable Enemies` such as lieutenants and cc immune NPCs and allow optionally increasing their scale in relation to the selected general scale. Basically inverse `Simplify Nameplates` and give both better labels. With that, I'd consider this adopted despite not even remotely fully solve what the Plater mod [Priority Based Scaling](https://wago.io/Ru_9FLVjI) and our improved fork are capable of solving, but at least acknowledges the importance of, well, important NPCs.
+
+Icing on the cake would be role-specific scaling. Sparingly used in our mod, but still:
+- tanks care less about enemies without abilities and more about enemies with tankbusters
+- melees care more about enemies with frontals such as <WowheadLink id={213934} kind="npc">Tacticians</WowheadLink> or area-denial from <WowheadLink id={231014} kind="npc">Loaderbots</WowheadLink>
+- casters care little about what melees often care about (a tale as old as time)
+
+
+
+
+### Cast Bar
+#### Cast Bar - Target Name
+The ability to show the name of the target of a casting unit.
+
+Before:
+- ❌ Retail Default Nameplates cannot show the target name
+- ✔️ Plater allows showing the target name
+
+After:
+- ✔️ Midnight Nameplate Options include an option to show the target name
+- ⚠️ Plater will likely be able to show the target name
+
+##### Verdict
+Works. Has some spacing issues that could be solved with additional settings for font / font size depending on spell name.
+#### Cast Bar - Cast Name
+The ability to show the name of a spell being cast.
+
+Before:
+- ✔️ Retail Default Nameplates shows the cast name
+- ✔️ Plater allows showing the cast name
+
+After:
+- ✔️ Midnight Nameplate Options include an option to show the cast name
+- ⚠️ Plater will likely be able to show the spell name
+
+##### Verdict
+Works! Optionally allows showing the spell icon too, which is basically identical to what the Retail Default Nameplates do (although they don't seem to show the icon on channels).
+#### Cast Bar - Remaining Time
+The ability to show the remaining time until a cast finishes.
+
+Before:
+- ❌ Retail Default Nameplates cannot show the remaining time
+- ✔️ Plater allows showing the remaining time
+
+After:
+- ❌ Midnight Nameplate Options include an option to show the remaining time
+- ❌ Plater won't be able to show the remaining time either
+
+##### Verdict
+
+Mixed bag. It's not extremely important to know how long a cast will take once you're past the learning stage. But it helps to get a good feeling for an important spell by knowing its cast time early on and it's not like that info is gone, you just have to look at logs now instead. 
+
+I'm also intentionally ignoring the edge case of "can I finish my cast before this spell goes off". Sure, before you were able to see it _easier_ but in close cases you'd still rather not risk it anyway.
+#### Cast Bar - Interrupt Source
+The ability to show the name of the unit interrupting a cast.
+
+Before:
+- ❌ Retail Default Nameplates cannot show the interrupt source
+- ✔️ Plater allows showing the interrupt source
+
+After:
+- ❌ Midnight Nameplate Options include no option to show the interrupt source
+- ❌ Plater won't be able to show the interrupt source either
+
+##### Verdict
+
+Probably ok not to have this info, personally never felt it to be extremely relevant in a world where interrupt tracking is readily available anyway and it didn't compete with that either. And in a world where you can't track neither, you'd rather have static interrupt tracking over this.
+#### Cast Bar - Dynamic Color
+The ability to dynamically change the color of the cast bar. Primarily used to indicate whether a spell is interruptible and whether the player can interrupt.
+
+Before:
+- ❌ Retail Default Nameplates don't ever change their color
+- ✔️ Plater allows changing the color of the cast bar
+  - the default customization is just that, blanket change the color
+  - mods can go further
+
+After:
+- ❌ Midnight Nameplate Options don't allow changing the color of the cast bar
+- ❌ Plater won't be able to change the color of the cast bar as unit casting info and cooldown info are secrets
+
+##### Implementation
+Some context here is needed, as its one of the more complex mods we supported. The Plater mod `Enemy Enhanced Castbar` which was published some time during Dragonflight and later [was forked by us](https://github.com/ljosberinn/xeph-ui/blob/master/plater/enhanced-enemy-cast-bar/init.lua) keeps track of your interrupt ability and colored cast bars based on its availability:
+- if your interrupt is on cooldown and won't be ready during its cast time, the cast bar will be <span style={{ color: 'orange'}}>orange</span>
+- if your interrupt is on cooldown but will be ready during its cast time, the cast bar will be <span style={{ color: 'yellow'}}>yellow</span>
+  - and show a marker in the cast bar for when your interrupt is ready
+  - and change to <span style={{ color: 'green'}}>green</span> once you're past that marker
+- and finally of course, if your interrupt is ready, the cast bar will be <span style={{ color: 'green'}}>green</span>
+
+<center>
+  <img src="/static/images/nameplates-midnight/enhanced-enemy-castbar.png" alt="a description of the capabilities of the Enhanced Enemy Castbar mod including various cast bar states for illustrative purposes" loading="lazy" />
+</center>
+
+##### Verdict
+👎 worse than before and an instantly visible downgrade. Note that I didn't use this mod myself, but [instead used a WeakAura tracking focus cast](https://wago.io/Ha6BllGze) instead and implemented the same "can interrupt past this point" logic there which I'll dearly miss.
+
+Yes, this is absolutely one of the features that provide an advantage against those that don't have it.
+
+It's also one of the most popular features based on feedback from users. And interrupts will go away. Even with the upcoming  longer lockouts from interrupts in Midnight, as much as I can understand that this mod has to go away in its current form, interrupts will stay. Adopting this as baseline feature would be a huge boon.
+#### Cast Bar - Spell Reflect Indicator
+The ability to indicate whether a spell being cast on you can be <SpellReflection>Spell Reflected</SpellReflection>.
+
+Before:
+- ❌ Retail Default Nameplates don't care about <SpellReflection />
+- ⚠️ Plater itself doesn't care about <SpellReflection />
+  - mods can fill the gap
+
+After:
+- ❌ Midnight Nameplate Options include no feature for <SpellReflection />
+- ❌ Plater won't be able to fill the gap anymore as unit casting info is secret
+
+##### Implementation
+Again context here is needed. If an enemy is seen casting a spell on you, besides doing its regular interrupt checks, the mod will  check whether the spell is in a hand-maintained list (thank you again, Sense) of known reflectable spells and then lookup your <SpellReflection /> state. If available, it'll color the cast bar in a unique color for <SpellReflection /> specifically.
+
+<center>
+  <img src="/static/images/nameplates-midnight/enhanced-enemy-castbar.png" alt="a description of the capabilities of the Enhanced Enemy Castbar mod including various cast bar states for illustrative purposes" loading="lazy" />
+</center>
+
+##### Verdict
+
+In an ideal world, tooling surrounding <SpellReflection /> isn't necessary. We're in no such world however, so a <WowheadClassIcon>Warrior</WowheadClassIcon> now has only two options:
+- go through try and error themselves, potentially wasting a defensive, until you learned which spells can be reflected and which can't, when to use what, and so on. Historically an inconsistent mess.
+- wait a moment and hope Sense updates his spell reflection sheet for this patch and learn that
+
+Wait, wasn't there a note for <SpellBlock /> recently...
+
+> Developers' notes: <SpellBlock /> required a lot of specialized knowledge to use. Not only did you need to know when damage was coming, but also whether it was a form of magic damage that could be blocked or not and thus affected by the ability. AOE damage isn't blockable, neither is periodic damage. Some tankbusters are and others aren't. We weren't happy with the knowledge demanded to use the ability effectively.
+
+I'm obviously not advocating for the removal of <SpellReflection /> but please, before you put out statements like the above, use some reflection yourself. A lot of other abilities need "a lot of specialized knowledge" - just to name a few:
+- <Zephyr />
+  - <WowheadLink id={1241694} kind="spell" icon="spell_shadow_carrionswarm">not everything that looks like AoE is actually AoE</WowheadLink> 
+  - <WowheadLink id={353312} kind="spell" icon="ability_paladin_artofwar">some things are AoE despite not looking like it</WowheadLink>
+- <AntiMagicShell /> - deflect vs. absorb
+- <AntiMagicZone /> -  <WowheadLink id={438879} kind="spell" icon="inv_minespider2_cave">some abilities seem to be magical, but aren't</WowheadLink>
+- <SpellReflection /> - reflect / deflect / just damage reduction
+
+That's not an inherently bad thing. But if things aren't communicated clearly by the game - something that's promised to improve with Midnight and people like me will very closely watch - then people will reach to tooling like this, which will be sorely missed. 
+#### Cast Bar - Highlighting Important Casts
+The ability to put some kind of emphasis on a set of casts, either by spell id or name, that are deemed important for any reason.
+
+Before:
+- ❌ Retail Default Nameplates don't differentiate any casts
+- ✔️ Plater allows highlighting important casts
+  - requires manual maintenance by spell id
+  - the default tooling provided for this, once again, is hardly maintained but profiles can fill the gap
+
+After:  
+- ✔️ Midnight Nameplate Options allow highlighting important casts
+  - the highlighting is visually minimal
+  - no surrounding options to choose from (e.g. texture, flashing). you either like the setting or you don't
+- ⚠️ Plater will continue to be able to highlight casts the default nameplates consider important
+  - no custom set of spell ids to maintain
+  - whether a custom animation will be possible is currently unknown
+
+##### Verdict
+If properly maintained by Blizzard, probably ok. Unfortunately there's no dungeon journal entries for Trash so we can only go by what's marked as Important for raid, where a tool like this has significantly less relevance. Definitely needs work on the UI front however.
+#### Cast Bar - Highlighting of Fixates
+The ability to highlight a nameplate of a unit fixating the player in any way.
+
+This was also nicely pairable with nameplate scaling. Note the spawning mine being scaled to a much smaller size until it starts fixating me, where it'll get upscaled instead:
+
+<center>
+    <video src="/static/images/nameplates-midnight/fixate-scaling.mp4" type="video/mp4" controls muted loop autoPlay />
+</center>
+
+Before:
+- ❌ Retail Default Nameplates don't highlight fixates
+- ❓ Plater itself ships a script with fixates
+  - it's not well maintained but profiles can fill the gap
+
+After:
+- ❌ Midnight Nameplate Options have no such option
+- ❌ Plater will no longer be able to determine whether a unit targets anyone specifically
+
+##### Verdict
+Could be situationally ok if it was properly telegraphed but looking at these recent examples, it commonly isn't: 
+- ❌ Operation: Floodgate has <WowheadLink id={231014} kind="npc">Loaderbots</WowheadLink> spinning and the only indication is them targeting you with their channel
+- ❌ on One-Armed Bandit, bombs had a yellow line connecting to the player, technically obvious but meshed badly with the encounter room floor
+- ✔️ The MOTHERLODE!! had fixating bombs which had a red line connecting to the player, considerably obvious
+- ❌ Broodtwister Ovi'nax had fixates as a core mechanic of the encounter with no indication beyond a debuff
+
+Here's to hoping that visibility for this mechanic gets improved in the future, then this niche feature is obsolete.
+
+### Misc
+#### Name Shortening / Renaming Units
+The ability to manipulate NPC names.
+
+Before:
+- ❌ Retail Default Nameplates don't have any options to shorten names
+- ❓ Plater allows renaming NPCs by id individually
+  - very tedious process when done manually
+  - allows setting the name of an NPC to any arbitrary nickname
+  - scripts can fill the gap
+
+After:
+- ❌ Midnight Nameplate Options don't allow renaming NPCs
+  - unit names are secrets
+
+##### Implementation
+Some context needed here once again. Any time there's a bunch of enemies in a section of a dungeon, they _often_ but not always share the same adjectives before the actual type of NPC. For example, you'll encounter a lot of <WowheadLink id={234872} kind="npc">Wastelander Phaseblades</WowheadLink> and <WowheadLink id={234957} kind="npc">Wastelander Ritualists</WowheadLink> (and a bunch more) in the arena of the second boss of Eco-Dome Al'dani. Now nameplates have only a certain length, so in many cases, they get truncated and you end up just reading `Wastelande...` or whatever your nameplate width setting allows. **This will be the default behavior for Midnight nameplates.**
+
+Terrible for communication in various ways:
+- planning: "I'm kicking the left Ritualist!"
+  - need to either know already or figure out which of the enemies is the Ritualist, which may already be on the move and collapse with another caster
+- spontaneous adjustments: "I failed my kick, we need a stop on the far caster/Ritualist!"
+  - need to either be aware of mob positioning at all times
+  - or have pulled a low amount of casters in order to have a uniquely identifyable caster in the pull at a given time
+    - which is absolutely not possible in that dungeon which is meant to be a testimony of new dungeon design
+  - in many cases, cast times are not forgiving enough to allow these mistakes and still manage to cover for them
+
+So what the mod does is - for the most part - to only ever render the last word in the name of an enemy: `Phaseblade` or `Ritualist`.
+
+##### Verdict
+👎 significantly worse than before and an instantly visible downgrade. Just to name a few examples:
+
+- Operation: Floodgate
+  - <WowheadLink id={229686} kind="npc">Venture Co. Surveyor</WowheadLink> and <WowheadLink id={229250} kind="npc">Venture Co. Contractor</WowheadLink>
+  - <WowheadLink id={229212} kind="npc">Darkfuse Demolitionist</WowheadLink>, <WowheadLink id={228144} kind="npc">Darkfuse Soldier</WowheadLink> and <WowheadLink id={231385} kind="npc">Darkfuse Inspector</WowheadLink>, possibly with a <WowheadLink id={230748} kind="npc">Darkfuse Bloodwarper</WowheadLink> too
+- Eco-Dome Al'dani
+    - as extreme example, in the arena of the second boss, there's:
+      - 13x <WowheadLink id={234872} kind="npc">Wastelander Phaseblades</WowheadLink>
+      - 11x <WowheadLink id={234962} kind="npc">Wastelander Farstalkers</WowheadLink>
+      - 5x <WowheadLink id={234960} kind="npc">Tamed Ruinstalker</WowheadLink>
+      - 4x <WowheadLink id={234957} kind="npc">Wastelander Ritualists</WowheadLink>
+      - 1x <WowheadLink id={242631} kind="npc">Overcharged Sentinel</WowheadLink>
+      - 34 enemies, 28 start with `Wastelander`!
+
+##### Suggestion
+There's an inherent problem making this work across localizations generically so in my opinion, the best way to fix this going forward is to be more mindful of NPC naming in relation to other NPCs. It'll be the most natural way of the need for this tool to go away.
+
+The other obvious solution to this would be nameplate colors but we've talked about that already.
+
+#### Quest Progress Indication
+#### Hiding Nameplates
+#### Execute Indication
+#### Energy Indication
+#### Phase Indication
+#### Time To Die
+
+## Maintenance
+
+- put emphasis on when/how often we look into changes
+- put emphasis on bug reports and feedback from users on reddit, discord, guild, dms
+- put emphasis on that we sometimes still miss things!
+
+## Potential Upsides
+
+- point out that not everything is gloom and doom. blizzard isnt bound to wago and users updating. they can just hotfix the list of Shared CC for example

@@ -2,8 +2,9 @@ import { ListLayoutWithTags } from '../../layouts/ListLayoutWithTags';
 import { allCoreContent, sortPosts } from 'pliny/utils/contentlayer';
 import { allBlogs } from '../../.contentlayer/generated';
 import { generatePageMetadata } from '../seo';
+import { Metadata } from 'next';
 
-export const metadata = generatePageMetadata({ title: 'Blog' });
+export const metadata: Metadata = generatePageMetadata({ title: 'Blog' });
 
 export default function BlogPage() {
   const posts = allCoreContent(sortPosts(allBlogs));
