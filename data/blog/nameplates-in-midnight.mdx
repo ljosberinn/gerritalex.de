@@ -1,13 +1,14 @@
 ---
+lastmod: '2025-10-16'
 title: Nameplates in Midnight
 date: '2025-10-06'
 tags: ['wow', 'ui', 'midnight']
 draft: true
-summary: 'TODO' 
 authors: ['default']
 layout: PostBanner
 images: []
 includeImageInPreview: true
+summary: "The Good, the Bad and the Ugly. Nameplates are not exempt from the API restrictions introduced in Midnight and we're highlighting what they do well, where work is needed and what is lacking."
 ---
 
 ## Table of Contents
@@ -36,8 +37,75 @@ I'm already apologizing for this post to have become this large, but there is a 
 
 Thanks to the bunch of folks I sent excerpts for early feedback, thanks to Continuity for answering my questions.
 
+### Nameplate (Re)Positioning Behaviour
+
+How nameplates arrange themselves is not something we have a lot of control over and we shouldn't either. Logic for this has always been handled by Blizzard, what we could is simply choosing generally between `Stacking` and `Overlapping` nameplates between which as far as I'm aware, `Stacking` has been the default and clear winner:
+
+- cvars todo
+
+With Midnight, Blizzard is iterating on their behaviour:
+
+> Developers' notes: Behavior of stacking nameplates is still a work in progress.
+- [Alpha Development Notes Week 1](https://eu.forums.blizzard.com/en/wow/t/midnight-alpha-test-development-notes/590289)
+
+> Nameplate stacking behavior has been adjusted to no longer overlap with nameplates in other groupings and are less likely to clump at the top of the screen.
+  > Developer's notes: There may still be overall stickiness of the nameplates that is not behaving as desired. (...)
+- [Alpha Development Notes Week 2](https://eu.forums.blizzard.com/en/wow/t/midnight-alpha-test-development-notes/590289)
+
+Looking at this - for the most probably familiar - Azure Vault pull, we quickly discover why this is a problem and needs work. From other larger pulls like in Priory or Gambit in this season, you'll also be probably deeply familiar with nameplates at the top of the screen.
+
+<center>
+  <figure>
+    <video src="/static/images/nameplates-midnight/retail-default-nameplate-behaviour.mp4" type="video/mp4" controls muted loop autoPlay />
+    <figcaption>
+      Default stacking nameplates in Retail with NPC names enabled.
+    </figcaption>
+  </figure>
+</center>
+
+It's no surprise that with Plater enabled, the overall movement stays roughly the same. I'm not completely certain why the plates don't clump at the top, presumably because Plater sets a couple CVars on load or working around the actual dimensions of plates to try to keep them as close together as possible. 
+
+<center>
+  <figure>
+    <video src="/static/images/nameplates-midnight/retail-plater-behaviour.mp4" type="video/mp4" controls muted loop />
+    <figcaption>
+      Plater with [Jundies](https://wago.io/ak3iS95aa).
+    </figcaption>
+  </figure>
+</center>
+
+We can probably agree on that in both scenarios, nameplates don't move unreasonable amounts. It's possible to consistently target the correct NPC until you have really egregiously sized pulls. You can also pretty reliably tell where the actual NPC is currently located based on its nameplate.
+
+Unfortunately we've not seen any progress being made on the following weird behaviour since its introduction week 1 and I initially had planned to omit it because I anticipated it'll get fixed asap, so here comes the current Alpha behaviour - brace yourselves.
+
+<center>
+  <figure>
+    <video src="/static/images/nameplates-midnight/target-dummy-weirdness.mp4" type="video/mp4" controls muted loop />
+    <figcaption>
+      Courtesy of Linaori, taken from this [Alpha feedback thread](https://us.forums.blizzard.com/en/wow/t/the-new-stacking-nameplate-variant-is-horrendous/2179001)
+    </figcaption>
+  </figure>
+</center>
+
+And because this was so much fun, here's again Azure Vault.
+
+<center>
+  <figure>
+    <video src="/static/images/nameplates-midnight/nameplate-movement.mp4" type="video/mp4" preload="metadata" controls muted loop />
+    <figcaption>
+      Good luck trying to kick something here.
+      <center>
+        <img src="/static/images/nameplates-midnight/cups-game-shell-game.gif" alt="" loading="lazy" />
+      </center>
+    </figcaption>
+  </figure>
+</center>
+
 ### General Customization
 #### Health Formatting
+
+Absolute health still no. % yes
+
 #### Target Highlighting
 The ability to highlight the players current target in any form.
 
@@ -126,7 +194,9 @@ Please consider:
 #### Texture & Font Replacing
 
 ### Auras
+
 #### Pandemic Glow of Tracked Auras
+
 #### Aura - Generic Tracking
 The ability to track auras, primarily of the player and their pets on nameplates.
 
@@ -136,25 +206,16 @@ Before:
   - the default lists are not perfectly maintained, but profiles can fill the gap
 
 After:
-- ✔️ Midnight Nameplate Options appear to have a built-in, invisible spec-specific list of auras to track
-  - currently it's buggy/inconsistent/incomplete at best
+- ✔️ Midnight Nameplate Options use the same list of auras to track as Retail
+  - which means it also comes with the same bugs
   - no option to allow/denylist anything by name or id
 - ❓Plater _may_ be able to display the very same auras as the default nameplates. At the time of writing, this isn't 100% confirmed however.
 
 ##### Verdict
 Better than nothing, but needs upfront fixing and then continuous work.
 
-Notably for DoT specs such as <WowheadSpecIcon spec="affliction-warlock">Affliction Warlock</WowheadSpecIcon>, aura tracking is in a confusing state. It's only possible to see a single icon of <UnstableAffliction />, but you can have five active on a target. The timer will show only the latest application however so you're left to guess when the first one expires:
+Bombardments?
 
-<center>
-  <img src="/static/images/nameplates-midnight/ua-midnight.png" alt="a Midnight nameplate showing a single Unstbable Affliction icon with 5 stacks" loading="lazy" />
-</center>
-
-Ironically, the Legion nameplates were doing a better job at tracking this:
-
-<center>
-  <img src="/static/images/nameplates-midnight/ua-legion.png" alt="a lgeion nameplate showing four separate Unstable Affliction icons with varying durations" loading="lazy" />
-</center>
 #### Aura - Reordering
 The ability to reorder auras, e.g. by duration at application time. Useful for consistency, especially for dot specs, think of "my out-of-the-box longest lasting dot can always be found at the first position" cases.
 
@@ -172,6 +233,7 @@ After:
 
 ##### Verdict
 Not a core feature, but nice to have for consistency.
+
 #### Aura - Filtering
 The ability to filter auras by name or id.
 
@@ -186,6 +248,7 @@ After:
 
 ##### Verdict
 If meticulously and continuously maintained by Blizzard, probably ok, otherwise anything from endurably to dramatically worse. With the pruning, there'll be less auras to track, but some specs and abilities will still apply a literally confusing amount of debuffs, e.g. <Deathmark />.
+
 #### Aura - Special
 The ability to highlight a specific set of auras in some form, usually isolated from the other auras.
 
@@ -260,6 +323,7 @@ You might already see where I'm going with this:
 Add these categories (`boss` | `notable enemy` | `caster` | `non-caster`) to the default UI nameplate settings and allow setting a custom color for them, then integrate it into the Midnight nameplates.
 
 We'd still be unable to define more colors than that, but it would alleviate most of the pain of this feature disappearing. It'd also significantly help people to learn a dungeon and also fix aforementioned accessibility problems. We have this very option with the item rarity color settings!
+
 #### Threat Color Change
 The ability to visibily indicate a threat situation change on a nameplate. Role-aware and ideally also pet-aware, as there's not only regular pets that may taunt, but also e.g. temporary guardians such as <WowheadLink icon="spell_nature_earthelemental_totem" kind="spell" id={198103}>Earth Elemental</WowheadLink>.
 
@@ -278,6 +342,7 @@ After:
 
 ##### Verdict
 Better than nothing, but needs work. The ability to highlight threat on pets is now gone. It wasn't extremely important, but commonly when such an ability was used it was to help the tank. Now the tank is sweating extra because they think they lost aggro on top of already struggling.
+
 #### Nameplate Scaling
 The ability to change the scale of a nameplate procedurally for any reason, e.g. based on NPC id, aura presence or threat.
 
@@ -306,9 +371,6 @@ Icing on the cake would be role-specific scaling. Sparingly used in our mod, but
 - melees care more about enemies with frontals such as <WowheadLink id={213934} kind="npc">Tacticians</WowheadLink> or area-denial from <WowheadLink id={231014} kind="npc">Loaderbots</WowheadLink>
 - casters care little about what melees often care about (a tale as old as time)
 
-
-
-
 ### Cast Bar
 #### Cast Bar - Target Name
 The ability to show the name of the target of a casting unit.
@@ -321,8 +383,20 @@ After:
 - ✔️ Midnight Nameplate Options include an option to show the target name
 - ⚠️ Plater will likely be able to show the target name
 
-##### Verdict
-Works. Has some spacing issues that could be solved with additional settings for font / font size depending on spell name.
+##### Verdict & Suggestion
+Generally speaking, works. Has a couple problems however:
+
+- if the target unit is on another realm, the realm is not omitted, leading to questionable behaviour
+
+<center>
+  <figure>
+    <img src="/static/images/nameplates-midnight/cast-target-name.jpg" alt="image of an in-progress cast targeting a player from another realm, leading to a linebreak" loading="lazy" />
+    <figcaption>
+      image taken from <a href="https://x.com/CartridgeBros/status/1978155161148096626">@CartridgeBros tweet</a>
+    </figcaption>
+  </figure>
+</center>
+
 #### Cast Bar - Cast Name
 The ability to show the name of a spell being cast.
 
@@ -336,6 +410,20 @@ After:
 
 ##### Verdict
 Works! Optionally allows showing the spell icon too, which is basically identical to what the Retail Default Nameplates do (although they don't seem to show the icon on channels).
+
+Minor nuisance: hiding the spell icon doesn't adjust the position of the cast name despite more space being available now. Makes it look misaligned.
+
+TODO: get comparison images
+
+<center>
+  <figure>
+    <img src="/static/images/nameplates-midnight/cast-target-name.jpg" alt="image of an in-progress cast targeting a player from another realm, leading to a linebreak" loading="lazy" />
+    <figcaption>
+      image taken from <a href="https://x.com/CartridgeBros/status/1978155161148096626">@CartridgeBros tweet</a>
+    </figcaption>
+  </figure>
+</center>
+
 #### Cast Bar - Remaining Time
 The ability to show the remaining time until a cast finishes.
 
@@ -397,6 +485,7 @@ Some context here is needed, as its one of the more complex mods we supported. T
 Yes, this is absolutely one of the features that provide an advantage against those that don't have it.
 
 It's also one of the most popular features based on feedback from users. And interrupts will go away. Even with the upcoming  longer lockouts from interrupts in Midnight, as much as I can understand that this mod has to go away in its current form, interrupts will stay. Adopting this as baseline feature would be a huge boon.
+
 #### Cast Bar - Spell Reflect Indicator
 The ability to indicate whether a spell being cast on you can be <SpellReflection>Spell Reflected</SpellReflection>.
 
@@ -435,6 +524,7 @@ I'm obviously not advocating for the removal of <SpellReflection /> but please, 
 - <SpellReflection /> - reflect / deflect / just damage reduction
 
 That's not an inherently bad thing. But if things aren't communicated clearly by the game - something that's promised to improve with Midnight and people like me will very closely watch - then people will reach to tooling like this, which will be sorely missed. 
+
 #### Cast Bar - Highlighting Important Casts
 The ability to put some kind of emphasis on a set of casts, either by spell id or name, that are deemed important for any reason.
 
@@ -454,6 +544,7 @@ After:
 
 ##### Verdict
 If properly maintained by Blizzard, probably ok. Unfortunately there's no dungeon journal entries for Trash so we can only go by what's marked as Important for raid, where a tool like this has significantly less relevance. Definitely needs work on the UI front however.
+
 #### Cast Bar - Highlighting of Fixates
 The ability to highlight a nameplate of a unit fixating the player in any way.
 
@@ -536,6 +627,8 @@ The other obvious solution to this would be nameplate colors but we've talked ab
 #### Energy Indication
 #### Phase Indication
 #### Time To Die
+
+## Console Variables
 
 ## Maintenance
 

@@ -1,6 +1,5 @@
 import TOCInline from 'pliny/ui/TOCInline';
 import Pre from 'pliny/ui/Pre';
-import BlogNewsletterForm from 'pliny/ui/BlogNewsletterForm';
 import type { MDXComponents } from 'mdx/types';
 import { Image } from './Image';
 import { CustomLink } from './CustomLink';
@@ -29,13 +28,17 @@ export const components: MDXComponents = {
     </h2>
   ),
   h3: ({ children, className }) => (
-    <h3 className={clsx(className, 'border-t-1 border-b-1 border-dotted dark:border-white')}>
+    <h3
+      className={clsx(
+        className,
+        'sticky top-10 border-t-1 border-b-1 border-dotted bg-white dark:border-white dark:bg-gray-950'
+      )}
+    >
       {children}
     </h3>
   ),
   pre: Pre,
   table: TableWrapper,
-  BlogNewsletterForm,
   WowheadLink,
   WowheadIcon,
   Auras,
