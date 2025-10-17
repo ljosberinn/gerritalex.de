@@ -175,7 +175,6 @@ Before:
 
 After:
 - ⚠️ Midnight Nameplate Options allow highlighting the target by showing its name on the nameplate, depending on your settings
-  - in addition, it will **always** upscale the nameplate by ~50%, putting major emphasis on it
   - the border color changes from black to white
 - ✔️ Plater allows highlighting your target through various options
   - custom border color
@@ -189,6 +188,8 @@ Probably better to let a clip speak for itself.
 <center>
     <video src="/static/images/nameplates-midnight/targeting-behaviour.mp4" type="video/mp4" controls muted loop autoPlay />
 </center>
+
+The target upscaling is a CVar and not exposed as setting.
 
 At a minimum, make the scaling an option (read: a slider with e.g. 5% steps beginning at 0% increased scale to 50%). I appreciate it's with the best intent but this is not great. Forcing the nameplate into the center of the pack of nameplates you're looking at may be fine once you're used to it but introducing this without setting is questionable UX at best, pattern-breaking what's established for literal decades.
 
@@ -783,12 +784,146 @@ The other obvious solution to this would be nameplate colors but we've talked ab
 
 #### Quest Progress Indication
 #### Hiding Nameplates
+The ability to hide nameplates, primarily for the purpose of reducing clutter.
+
+Before:
+- ❌ Retail Default Nameplates only hide nameplates for entire classifications of units, e.g. totems, guardians, etc.
+- ⚠️ Plater doesn't hide nameplates by itself
+  - scripts/mods can fill the gap
+
+After:
+- ❌ Midnight Nameplate Options only hide nameplates for entire classifications of units, e.g. totems, guardians, etc.
+- ❌ Plater won't be able to hide nameplates anymore as the required info (npc id) is secret
+
+##### Verdict & Suggestion
+
+In 99.99% of the cases, just inconvenient and glaringly obvious in the rare cases this was used.
+
+The most egregious case for this was Brackenhide, the bridge towards the third boss directly after <WowheadLink kind="npc" id={186120}>Treemouth</WowheadLink>.
+
+<center className="flex xl:gap-2 justify-center flex-col xl:flex-row">
+  <img src="/static/images/nameplates-midnight/hide-nameplate-retail-off.jpg"  className="xl:max-w-1/2" alt="" loading="lazy" />
+  <img src="/static/images/nameplates-midnight/hide-nameplate-retail-on.jpg" className="xl:max-w-1/2"  alt="" loading="lazy" />
+</center>
+
+And of course, in Midnight:
+
+<center>
+    <video src="/static/images/nameplates-midnight/hide-nameplate-midnight.mp4" type="video/mp4" controls muted loop autoPlay />
+</center>
+
+##### Suggestion
+
+This is gonna sound harsh, but do better playtesting? This should've not even made it to PTR. The fact that data Blizzard has that suggests these barely ever got pulled, and when, then only unintentionally because someone fell off and these slimes were _still_ not removed for Dragonflight Season 4 is hard to explain.
+
 #### Execute Indication
 #### Energy Indication
 #### Phase Indication
 #### Time To Die
 
 ## Console Variables
+
+Largely informational, here's some technical bits while we're here. Pruning was imo badly needed. The following nameplate-related CVars are gone:
+
+```
+// scaling related
+NamePlateClassificationScale // Applied to the classification icon for nameplates.
+NamePlateMaximumClassificationScale // This is the maximum effective scale of the classification icon for nameplates.
+nameplateGlobalScale // Applies global scaling to non-self nameplates, this is applied AFTER selected, min, and max scale.
+NamePlateHorizontalScale // Applied to horizontal size of all nameplates.
+NamePlateVerticalScale // Applied to vertical size of all nameplates.
+
+// insets
+nameplateLargeBottomInset // The inset from the bottom (in screen percent) that large nameplates are clamped to.
+nameplateLargeTopInset // The inset from the top (in screen percent) that large nameplates are clamped to.
+nameplateOtherBottomInset // The inset from the bottom (in screen percent) that the non-self nameplates are clamped to.
+nameplateOtherTopInset // The inset from the top (in screen percent) that the non-self nameplates are clamped to.
+nameplateClassResourceTopInset // The inset from the top (in screen percent) that nameplates are clamped to when class resources are being displayed on them.
+
+// positioning related
+nameplateMotion // Defines the movement/collision model for nameplates
+nameplateMotionSpeed // Controls the rate at which nameplate animates into their target locations [0.0-1.0]
+nameplateOverlapH // Percentage amount for horizontal overlap of nameplates
+nameplateOverlapV // Percentage amount for vertical overlap of nameplates
+
+// personal resource bar-related which becomes a separate edit mode element
+NameplatePersonalClickThrough // When enabled, the personal nameplate is transparent to mouse clicks.
+NameplatePersonalHideDelayAlpha // Determines the alpha of the personal nameplate after no visibility conditions are met (during the period of time specified by NameplatePersonalHideDelaySeconds).
+NameplatePersonalHideDelaySeconds // Determines the length of time in seconds that the personal nameplate will be visible after no visibility conditions are met.
+NameplatePersonalShowAlways // Determines if the the personal nameplate is always shown.
+NameplatePersonalShowInCombat // Determines if the the personal nameplate is shown when you enter combat.
+NameplatePersonalShowWithTarget // Determines if the personal nameplate is shown when selecting a target. 0 = targeting has no effect, 1 = show on hostile target, 2 = show on any target
+nameplateSelfBottomInset // The inset from the bottom (in screen percent) that the self nameplate is clamped to.
+nameplateSelfScale // The scale of the self nameplate.
+nameplateSelfTopInset // The inset from the top (in screen percent) that the self nameplate is clamped to.
+
+// misc
+nameplateShowOnlyNames // Whether to hide the nameplate bars
+nameplateShowPersonalCooldowns // If set, personal buffs/debuffs will appear above the personal resource display
+ShowClassColorInFriendlyNameplate // use this to display the class color in friendly nameplate health bars
+ShowClassColorInNameplate // use this to display the class color in enemy nameplate health bars
+ShowNamePlateLoseAggroFlash // When enabled, if you are a tank role and lose aggro, the nameplate with briefly flash.
+nameplateHideHealthAndPower
+nameplateShowFriendlyBuffs
+nameplateShowFriendlyGuardians
+nameplateShowFriendlyMinions
+nameplateShowFriendlyPets
+nameplateShowFriendlyTotems
+nameplateShowFriends
+```
+
+Keeping only these from before:
+```
+// scaling related
+nameplateLargerScale // An additional scale modifier for important monsters.
+nameplateMaxScale // The max scale of nameplates.
+nameplateMaxScaleDistance // The distance from the camera that nameplates will reach their maximum scale.
+nameplateMinScale // The minimum scale of nameplates.
+nameplateMinScaleDistance // The distance from the max distance that nameplates will reach their minimum scale.
+nameplatePlayerLargerScale // An additional scale modifier for players.
+nameplateSelectedScale // The scale of the selected nameplate.
+
+// alpha related
+nameplateMaxAlpha // The max alpha of nameplates.
+nameplateMaxAlphaDistance // The distance from the camera that nameplates will reach their maximum alpha.
+nameplateMinAlpha // The minimum alpha of nameplates.
+nameplateMinAlphaDistance // The distance from the max distance that nameplates will reach their minimum alpha.
+nameplateOccludedAlphaMult // Alpha multiplier of nameplates for occluded targets.
+nameplateSelectedAlpha // The alpha of the selected nameplate.
+nameplateSelfAlpha // The alpha of the self nameplate.
+
+// camera distance related
+nameplateGameObjectMaxDistance // The max distance to show player nameplates for game objects
+nameplateMaxDistance // The max distance to show nameplates.
+nameplatePlayerMaxDistance // The max distance to show player nameplates.
+nameplateTargetBehindMaxDistance // The max distance to show the target nameplate when the target is behind the camera.
+
+// positioning related
+nameplateTargetRadialPosition // When target is off screen, position its nameplate radially around sides and bottom. 1: Target Only. 2: All In Combat
+nameplateOtherAtBase // Position other nameplates at the base, rather than overhead
+
+// misc
+nameplateResourceOnTarget // Nameplate class resource overlay mode. 0=self, 1=target
+nameplateShowAll // Show nameplates at all times.
+nameplateShowDebuffsOnFriendly // Whether debuffs are shown on friendly nameplates.
+nameplateShowEnemies // Show nameplates for enemy units
+nameplateShowEnemyGuardians // Turn this on to display Unit Nameplates for enemy guardians.
+nameplateShowEnemyMinions
+nameplateShowEnemyMinus // Turn this on to display Unit Nameplates for minor enemies.
+nameplateShowEnemyPets
+nameplateShowEnemyTotems // Turn this on to display Unit Nameplates for enemy totems.
+nameplateShowFriendlyNPCs // Whether nameplates are shown for friendly npcs.
+nameplateShowSelf // Display class resource bar. 0=off 1=on
+```
+
+And introducing a couple new ones, all related to the new options.
+```
+nameplateAuraScale // Controls the size multiplier for buffs and debuffs on nameplates.
+nameplateDebuffPadding // The padding between the debuff list and the health bar on nameplates.
+nameplateShowClassColor // use this to display the class color in enemy nameplate health bars
+nameplateSize // Provides discrete values that are translated into specific horizontal and vertical scales defined in lua for displaying nameplates.
+nameplateStyle // Determines how nameplate contents are displayed
+```
 
 ## Maintenance
 
