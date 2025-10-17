@@ -58,13 +58,15 @@ const config = (): NextConfig => {
   const plugins = [withContentlayer];
 
   return plugins.reduce((acc, next) => next(acc), {
+    // experimental: {
+    //   turbopackFileSystemCacheForDev: true,
+    // },
+    // turbopack: {},
+    // reactCompiler: true,
     output,
     basePath,
     reactStrictMode: true,
     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
-    eslint: {
-      dirs: ['app', 'components', 'layouts', 'scripts'],
-    },
     images: {
       remotePatterns: [
         {

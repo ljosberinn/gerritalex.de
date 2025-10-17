@@ -21,7 +21,7 @@ export const components: MDXComponents = {
     <h2
       className={clsx(
         className,
-        'sticky top-0 border-b-1 border-dashed border-gray-500 bg-white py-1 dark:border-gray-200 dark:bg-gray-950'
+        'sticky top-0 z-1 border-b-1 border-solid border-gray-500 bg-white py-1 dark:border-gray-200 dark:bg-gray-950'
       )}
     >
       {children}
@@ -31,11 +31,21 @@ export const components: MDXComponents = {
     <h3
       className={clsx(
         className,
-        'sticky top-10 border-t-1 border-b-1 border-dotted bg-white dark:border-white dark:bg-gray-950'
+        'sticky top-10 z-1 border-t-1 border-b-1 border-double bg-white py-0.5 dark:border-white dark:bg-gray-950'
       )}
     >
       {children}
     </h3>
+  ),
+  h4: ({ children, className }) => (
+    <h4
+      className={clsx(
+        className,
+        'sticky top-19 z-1 border-t-1 border-b-1 border-dashed bg-white py-0.25 dark:border-white dark:bg-gray-950'
+      )}
+    >
+      {children}
+    </h4>
   ),
   pre: Pre,
   table: TableWrapper,
