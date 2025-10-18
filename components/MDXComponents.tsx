@@ -32,7 +32,7 @@ export const components: MDXComponents = {
     <h3
       className={clsx(
         className,
-        'sticky top-10 z-1 border-t-1 border-b-1 border-double bg-white py-0.5 dark:border-white dark:bg-gray-950'
+        'sticky top-10 z-1 border-b-1 border-double bg-white py-0.5 dark:border-white dark:bg-gray-950'
       )}
       {...rest}
     >
@@ -40,10 +40,7 @@ export const components: MDXComponents = {
     </h3>
   ),
   h4: ({ children, className, ...rest }) => (
-    <h4
-      className={clsx(className, 'border-t-1 border-b-1 border-dashed py-0.25 dark:border-white')}
-      {...rest}
-    >
+    <h4 className={clsx(className, 'border-b-1 border-dashed py-0.25 dark:border-white')} {...rest}>
       {children}
     </h4>
   ),
