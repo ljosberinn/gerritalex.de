@@ -1,5 +1,5 @@
 ---
-lastmod: '2025-10-17'
+lastmod: '2025-10-18'
 title: Nameplates in Midnight
 date: '2025-10-06'
 tags: ['wow', 'ui', 'midnight']
@@ -8,7 +8,7 @@ authors: ['default']
 layout: PostBanner
 images: []
 includeImageInPreview: true
-summary: "The Good, the Bad and the Ugly. Nameplates are not exempt from the API restrictions introduced in Midnight and we're highlighting what they do well, where work is needed and what is lacking."
+summary: "The Good, the Bad and the Ugly. Nameplates are not exempt from the API restrictions introduced in Midnight and we're highlighting what they do well, where work is needed and what is lacking, especially in contrast to Jundies Plater profile."
 ---
 
 ## Table of Contents
@@ -31,19 +31,37 @@ This isn't to boast, but more to establish a baseline of knowledge about us who 
 
 ## Feature Parity
 
-Let's get this out of the way. We cannot and should not expect feature parity. Blizzards outspoken goal here is to **reduce the necessity** of some of what addons are capable of, so we should expect to see the need for some of this to also vanish. In either case, there will be growing pains, that's guaranteed.
+Let's get this out of the way. We cannot and should not expect feature parity. Blizzards outspoken goal here is to **reduce the necessity** of some of what addons are capable of, so we should expect to see the need for some of this to also vanish. At the same time, this is from the first `Clarification on Planned Changes` sent to addon authors in June and this post will take them by their word:
+
+> The goal is for our base UI to provide players with a good portion of the most important combat information addons currently provide. Most of this functionality will ship at the same time as these addon restrictions, if not sooner. Furthermore, this is an ongoing process: we intend to keep this line of communication open after the restrictions are put in place, and we will continue to listen, iterate, and improve our offerings in subsequent patches.
 
 I'm already apologizing for this post to have become this large, but there is a lot to unravel. You'll forgive me for some of the yap too, I hope everyone can agree that we're all very passionate about these things in one way or another and there's only so many chances on actually talking this through. I'm also "afraid" that I'm basically celebrating having to sunset (only) two years of work here and appreciate there's addon developers out there having done this for literally 10x the time.
 
-Thanks to the bunch of folks I sent excerpts for early feedback, thanks to Continuity for answering my questions.
+Thanks to the bunch of folks I sent excerpts for early feedback, thanks to Continuity (Plater maintainer) for answering my questions and let's get into it!
+
+### Visual Customization
+To get this out of the way - we'll not focus on visual customization here and instead solely focus on feature availability or lack thereof.
+
+Wowhead already covered most of this on their post [What's Changing With Blizzard Nameplates? - Everything You Need to Know](https://www.wowhead.com/news/whats-changing-with-blizzard-nameplates-everything-you-need-to-know-378775?utm_source=xepheris-nameplates).
+
+At the time of writing, this post is 10 days old and no changes have been made to the available options.
 
 ### Nameplate (Re)Positioning Behaviour
 
-How nameplates arrange themselves is not something we have a lot of control over and we shouldn't either. Logic for this has always been handled by Blizzard, what we could is simply choosing generally between `Stacking` and `Overlapping` nameplates between which as far as I'm aware, `Stacking` has been the default and clear winner:
+How nameplates arrange themselves is not something we have a lot of control over and we shouldn't either. Logic for this has always been handled by Blizzard, what we could is simply choosing generally between `Stacking` and `Overlapping` nameplates between which  `Stacking` has been the clear winner.
 
-- cvars todo
+With Midnight, Blizzard is iterating on their behaviour - while non-stacking continues to be the default, you can opt into Stacking Nameplates for Enemy and Friendly units separately.
 
-With Midnight, Blizzard is iterating on their behaviour:
+<center>
+  <figure>
+    <img src="/static/images/nameplates-midnight/stacking-nameplates.jpg" alt="part new of the Midnight nameplate options" loading="lazy" />
+    <figcaption>
+      the new Stack Nameplates setting
+    </figcaption>
+  </figure>
+</center>
+
+It's worth noting that the new stacking nameplates behaviour is something that's still being iterated on, so keep that heavily in mind for the remainder of this post. Just like on Retail, _not_ using Stacking Nameplates is not a great idea - everything still overlaps massively so you're effectively forced to use Stacking Nameplates.
 
 > Developers' notes: Behavior of stacking nameplates is still a work in progress.
 - [Alpha Development Notes Week 1](https://eu.forums.blizzard.com/en/wow/t/midnight-alpha-test-development-notes/590289)
@@ -52,7 +70,7 @@ With Midnight, Blizzard is iterating on their behaviour:
   > Developer's notes: There may still be overall stickiness of the nameplates that is not behaving as desired. (...)
 - [Alpha Development Notes Week 2](https://eu.forums.blizzard.com/en/wow/t/midnight-alpha-test-development-notes/590289)
 
-Looking at this - for the most probably familiar - Azure Vault pull, we quickly discover why this is a problem and needs work. From other larger pulls like in Priory or Gambit in this season, you'll also be probably deeply familiar with nameplates at the top of the screen.
+Looking at this - for the most probably familiar - Azure Vault pull, we quickly discover why this is a problem and needed work. From other larger pulls like in Priory or Gambit in this season, you'll also be probably deeply familiar with nameplates at the top of the screen.
 
 <center>
   <figure>
@@ -63,7 +81,7 @@ Looking at this - for the most probably familiar - Azure Vault pull, we quickly 
   </figure>
 </center>
 
-It's no surprise that with Plater enabled, the overall movement stays roughly the same. I'm not completely certain why the plates don't clump at the top, presumably because Plater sets a couple CVars on load or working around the actual dimensions of plates to try to keep them as close together as possible. 
+It's no surprise that with Plater enabled, the overall movement stays roughly the same. Plater also makes use of some now-removed CVars (more about that later) that controls implicit spacing between nameplates.
 
 <center>
   <figure>
@@ -101,15 +119,67 @@ And because this was so much fun, here's again Azure Vault.
   </figure>
 </center>
 
-### General Customization
+
+
+### Nameplate Text Customization
 #### Unit Name
 The ability of customizing the unit name.
 
 Before:
+- ❌ Retail Default Nameplates never customize unit names
+- ⚠️ Plater allows renaming NPCs by id individually, basically a nickname system
+  - very tedious process when done manually
+  - allows setting the name of an NPC to any arbitrary nickname
+  - scripts can fill the gap
 
 After:
+- ❌ Midnight Nameplate Options don't allow customizing unit names
+- ❌ Plater will no longer be able to customize unit names as all surrounding info is now secret
 
-#### Visual Customization
+##### Implementation
+Some context needed here once again. Any time there's a bunch of enemies in a section of a dungeon, they _often_ but not always share the same adjectives before the actual type of NPC. For example, you'll encounter a lot of <WowheadLink id={234872} kind="npc">Wastelander Phaseblades</WowheadLink> and <WowheadLink id={234957} kind="npc">Wastelander Ritualists</WowheadLink> (and a bunch more) in the arena of the second boss of Eco-Dome Al'dani. Now nameplates have only a certain length, so in many cases, they get truncated and you end up just reading `Wastelande...` or whatever your nameplate width setting allows. **This will be the default behavior for Midnight nameplates.**
+
+Terrible for communication in various ways:
+- planning: "I'm kicking the left Ritualist!"
+  - need to either know already or figure out which of the enemies is the Ritualist, which may already be on the move and collapse with another caster
+- spontaneous adjustments: "I failed my kick, we need a stop on the far caster/Ritualist!"
+  - need to either be aware of mob positioning at all times
+  - or have pulled a low amount of casters in order to have a uniquely identifyable caster in the pull at a given time
+    - which is absolutely not possible in that dungeon which is meant to be a testimony of new dungeon design
+  - in many cases, cast times are not forgiving enough to allow these mistakes and still manage to cover for them
+
+So what the mod does is - for the most part - to only ever render the last word in the name of an enemy: `Phaseblade` or `Ritualist`.
+
+##### Verdict
+👎 significantly worse than before and an instantly visible downgrade. Just to name a few examples:
+
+- Operation: Floodgate
+  - <WowheadLink id={229686} kind="npc">Venture Co. Surveyor</WowheadLink> and <WowheadLink id={229250} kind="npc">Venture Co. Contractor</WowheadLink>
+  - <WowheadLink id={229212} kind="npc">Darkfuse Demolitionist</WowheadLink>, <WowheadLink id={228144} kind="npc">Darkfuse Soldier</WowheadLink> and <WowheadLink id={231385} kind="npc">Darkfuse Inspector</WowheadLink>, possibly with a <WowheadLink id={230748} kind="npc">Darkfuse Bloodwarper</WowheadLink> too
+- Eco-Dome Al'dani
+    - as extreme example, in the arena of the second boss, there's:
+      - 13x <WowheadLink id={234872} kind="npc">Wastelander Phaseblades</WowheadLink>
+      - 11x <WowheadLink id={234962} kind="npc">Wastelander Farstalkers</WowheadLink>
+      - 5x <WowheadLink id={234960} kind="npc">Tamed Ruinstalker</WowheadLink>
+      - 4x <WowheadLink id={234957} kind="npc">Wastelander Ritualists</WowheadLink>
+      - 1x <WowheadLink id={242631} kind="npc">Overcharged Sentinel</WowheadLink>
+      - 34 enemies, 28 start with an informationally useless adjective: `Wastelander`
+
+Here's a part of a screenshot from a Midnight dungeon - pay attention to the NPC names this time. There's nine nameplates visible, **all** of them are for enemies starting with `Vilebranch`.
+
+<center>
+  <figure>
+    <img src="/static/images/nameplates-midnight/maisara-caverns.jpg" alt="image of an in-progress pull with 9 visible nameplates, all of which are NPCs whose name begins with Vilebranch" loading="lazy" />
+    <figcaption>
+      image (again) taken from <a href="https://x.com/CartridgeBros/status/1978155161148096626">@CartridgeBros tweet</a>
+    </figcaption>
+  </figure>
+</center>
+
+##### Suggestion
+There's an inherent problem making this work across localizations generically so in my opinion, the best way to fix this going forward is to be more mindful of NPC naming in relation to other NPCs. It'll be the most natural way of the need for this tool to go away.
+
+The other obvious solution to this would be nameplate colors but we've talked about that already.
 
 #### Health Formatting
 The ability of changing how health values are displayed.
@@ -137,7 +207,7 @@ AbbreviateLargeNumbers(102400000) -- yields 102 M 🎉
 AbbreviateLargeNumbers(1024000000) -- yields 1024 M, should be 1.02 B
 ```
 
-After the squish, as of now, enemies will once again have above 50k health relatively soon and bosses will be in the tens of millions, meaning you'll more often than not see nameplates with numbers such as `52,349`, taking up unreasonably much space that currently we simply don't have. This makes it very impractical to use both absolute health and % values.
+After the squish, as of now, enemies will once again have above 50k health relatively soon and bosses will be in the tens of millions, meaning you'll more often than not see nameplates with numbers such as `52,349`, taking up unreasonably much space that currently we simply don't have. This makes it very impractical to use both absolute health and % values. Additionally, percentages never show fractions.
 
 <center>
   <figure>
@@ -155,11 +225,11 @@ After the squish, as of now, enemies will once again have above 50k health relat
   </figure>
 </center>
 
-Additionally, percentages never show fractions.
-
 ##### Suggestion
 
-Allow customizing both.
+Allow customizing both. I'm impartial as to how, if Blizzard is really afraid of allowing `UnitHealth` and `UnitHealthMax` to not be secrets, then we'd need either UI settings for this, or just fixing of `AbbreviateLargeNumbers`.
+
+### Selection Highlighting
 
 #### Target Highlighting
 The ability to highlight the players current target in any form.
@@ -189,9 +259,9 @@ Probably better to let a clip speak for itself.
     <video src="/static/images/nameplates-midnight/targeting-behaviour.mp4" type="video/mp4" controls muted loop autoPlay />
 </center>
 
-The target upscaling is a CVar and not exposed as setting.
+The target upscaling is a CVar (`nameplateSelectedScale`, defaulting to 1.2) and not exposed as setting - this is the default experience for new players. I'm putting some emphasis on that because I find it very jarring and only learned when researching for this post that this is actually a Retail feature for ages, but it's a lot less noticeable there even with default nameplates.
 
-At a minimum, make the scaling an option (read: a slider with e.g. 5% steps beginning at 0% increased scale to 50%). I appreciate it's with the best intent but this is not great. Forcing the nameplate into the center of the pack of nameplates you're looking at may be fine once you're used to it but introducing this without setting is questionable UX at best, pattern-breaking what's established for literal decades.
+At a minimum, make the scaling an option (read: a slider with e.g. 5% steps beginning at 0% increased scale to 50%). I appreciate it's with the best intent but this is not great. Forcing the nameplate into the center of the pack of nameplates you're looking at may be be fine once you're used to it - disabling target upscaling seems to interestingly disable this.
 
 #### Focus Highlighting
 The ability to highlight the players current focus in any form.
@@ -238,18 +308,13 @@ After:
 
 ##### Verdict & Suggestion
 
-What can I say. It's better than what the Retail Nameplates currently offer. But it's a massive downgrade to addons.
+What can I say. It's better than what the Retail Nameplates currently offer. But it's a massive downgrade to addons. <span className="text-gray-200">The border is so faint, when I sent it to others for their opinion, most didn't even notice it, just like you probably didn't notice that this sentence is slightly brighter than all other text.</span>
 
 Please consider:
 - allowing customizing the focus border color for accessibility reasons alone already
-- consider allowing to customize the focus nameplate texture
-- consider allowing to customize the focus nameplate scale
-
-#### Texture & Font Replacing
+- consider allowing to customize the focus nameplate scale, e.g. by introducing a CVar `nameplateFocusScale`
 
 ### Auras
-
-#### Pandemic Glow of Tracked Auras
 
 #### Aura - Generic Tracking
 The ability to track auras, primarily of the player and their pets on nameplates.
@@ -260,61 +325,80 @@ Before:
   - the default lists are not perfectly maintained, but profiles can fill the gap
 
 After:
-- ✔️ Midnight Nameplate Options use the same list of auras to track as Retail
+- ✔️ Midnight Nameplate Options seem to mostly use the same list of auras to track as Retail
   - which means it also comes with the same bugs
   - no option to allow/denylist anything by name or id
 - ❓Plater _may_ be able to display the very same auras as the default nameplates. At the time of writing, this isn't 100% confirmed however.
 
 ##### Verdict
-Better than nothing, but needs upfront fixing and then continuous work.
+Better than nothing, but needs upfront fixing and then continuous work. 
 
-Bombardments?
+There's some inconsistencies between which debuffs are tracked: on Retail <Bombardments /> are tracked by default nameplates on Retail, but isn't any longer in Midnight, despite the debuff being just as relevant. Here's to hoping that once this is fixed, it also fixes the occasional bug where a debuff applied by others shows up for you despite not being yours.
 
 #### Aura - Reordering
 The ability to reorder auras, e.g. by duration at application time. Useful for consistency, especially for dot specs, think of "my out-of-the-box longest lasting dot can always be found at the first position" cases.
 
 Before:
 - ❌ Retail Default Nameplates reorder based on a set ordering logic
-- ✔️ Plater allows reordering
+- ✔️ addons can reorder
+  - Plater provides single `Sort Auras` checkbox to sort by remaining duration
 
 After:
 - ❌ Midnight Nameplate Options don't allow reordering
-  - the ordering logic [is unchanged to what you already currently see on Live](https://github.com/Gethe/wow-ui-source/blob/live/Interface/AddOns/Blizzard_NamePlates/Blizzard_NamePlates.lua#L699-L705) when using the default nameplates:
+  - the ordering logic [is unchanged to what you already currently see on Live](https://github.com/Gethe/wow-ui-source/blob/live/Interface/AddOns/Blizzard_NamePlates/Blizzard_NamePlates.lua#L713) when using the default nameplates:
     - first, show auras that originate from the player
     - then, show auras that you can apply (e.g. trinket procs aren't player spells so they have less priority)
     - for all remaining auras, use order of application, ignoring stacks, expiration time/remaining duration, etc. - this includes your pets
-- ❌ Plater won't be able to either
+- ❌ addons won't be able to either as aura details are secret
 
 ##### Verdict
-Not a core feature, but nice to have for consistency.
+Tough one to judge properly for me as I don't play any dot-heavy specs but I feel like making this at the very least an option should be trivial. In either case, the current ordering logic seems questionable if it doesn't include implicit ordering by duration that eluded me in the code.
 
 #### Aura - Filtering
 The ability to filter auras by name or id.
 
 Before:
 - ❌ Retail Default Nameplates filter via inaccessible flags only
-- ✔️ Plater allows filtering via allow and deny lists
-  - again, the default lists are not perfectly maintained, but profiles can fill the gap
+- ✔️ addons can provide filtering via allow and deny lists
+  - the default lists in Plater are not perfectly maintained, but profiles can fill the gap
 
 After:
-- ❌ Midnight Nameplate Options don't allow filtering
-- ❌ Plater won't be able to either
+- ❌ Midnight Nameplate Options don't allow filtering beyond what's yours
+  - the logic is slightly altered to what you see on Retail which is probably the reason for the tracked auras inconsistencies between Live and Alpha
+- ❌ addons won't be able to either
 
 ##### Verdict
-If meticulously and continuously maintained by Blizzard, probably ok, otherwise anything from endurably to dramatically worse. With the pruning, there'll be less auras to track, but some specs and abilities will still apply a literally confusing amount of debuffs, e.g. <Deathmark />.
+Rises and falls with the success of pruning. If we don't end up with irrelevant auras popping up on nameplates I'm ok with this and the changes to e.g. <Deathmark /> as probably the worst offender have shown that this seems to move in the right direction.
+
+For those unfamiliar, here's some fun <Deathmark /> comparisons:
+
+<center>
+  <figure>
+    <video src="/static/images/nameplates-midnight/deathmark-default-nameplates-retail.mp4" type="video/mp4" controls muted loop autoPlay />
+    <figcaption>yep, that's up to 14 debuffs</figcaption>
+  </figure>
+</center>
+
+<center>
+  <figure>
+    <video src="/static/images/nameplates-midnight/deathmark-plater-retail.mp4" type="video/mp4" controls muted loop autoPlay />
+    <figcaption>hiding non-gameplay altering auras, down to 8 max</figcaption>
+  </figure>
+</center>
+
+<center>
+  <figure>
+    <video src="/static/images/nameplates-midnight/deathmark-default-nameplates-midnight.mp4" type="video/mp4" controls muted loop autoPlay />
+    <figcaption><Deathmark branch="beta" /> has been adjusted and poisons don't show anymore, down to 5 max</figcaption>
+  </figure>
+</center>
 
 #### Aura - Special
 The ability to highlight a specific set of auras in some form, usually isolated from the other auras.
 
-For context, this refers to the `Buff Special` functionality in Plater and what the Midnight Nameplate Options refer to as `Shared CCs` due to both being positioned in the same place.
-
-<center>
-  <img src="/static/images/nameplates-midnight/buff-special.jpg" alt="" loading="lazy" />
-</center>
-
 Before:
 - ❌ Retail Default Nameplates don't differentiate between auras
-- ✔️ Plater allows highlighting special auras
+- ✔️ addons can allow highlighting special auras
   - requires manual maintenance by spell id
   - the default list is not well maintained, but profiles can fill the gap
 
@@ -324,10 +408,19 @@ After:
   - there's false positives but also a lot missing
     - for example, the <Landslide /> root isn't tracked but <TerrorOfTheSkies /> is tracked
     - for example, the <FireBreath /> dot is incorrectly tracked as `Shared CC` for both <DevastationEvoker abbreviated /> and <AugmentationEvoker abbreviated />
-- ⚠️ Plater likely will be able to separate display these
+- ⚠️ Plater likely will be able to separately display these
+
+##### Implementation
+For context, this refers to the `Buff Special` functionality in Plater and what the Midnight Nameplate Options refer to as `Shared CCs` due to both being positioned in the same place.
+
+<center>
+  <img src="/static/images/nameplates-midnight/buff-special.jpg" alt="" loading="lazy" />
+</center>
 
 ##### Verdict
 Better than nothing, but needs work. Currently a clear downgrade. Also unclear whether it'll track e.g. damage amp debuffs such as <WowheadLink id={1245292} icon="spell_shadow_blackplague" kind="spell">Destabilized</WowheadLink> on Dimensius Phase 3. Without that, it's only a shadow of what Plater allows.
+
+#### Pandemic Glow of Tracked Auras
 
 #### Aura - Friendly Buffs
 The ability to highlight your own beneficial auras on friendly nameplates.
@@ -350,17 +443,36 @@ After:
 
 ##### Verdict & Suggestion
 
-This was a surprising, but welcome. Not because I'm particularily fond of this feature, but more features, especially for friendly nameplates which haven't been touched since WoD, are always welcome.
+This was a surprising, but welcome addition. Not because I'm particulary affected or interested in this feature, but more features, especially for friendly nameplates which haven't been touched for ages, are always welcome.
 
 Unforunately it currently doesn't seem to be very strict in terms of what is a "temporary" buff and will happily show _any_ buff you applied to the target, including raid buffs and other long lasting buffs such as <BlisteringScales /> (60+ mins) or <Timelessness /> (30+ mins) as well as <WowheadLink id={390386} kind="spell" icon="ability_evoker_furyoftheaspects">Fury of the Aspects</WowheadLink> (annoying since it would show on everyone).
 
 It's limited to two auras based on application time. No reordering occurs if you'd apply a third, shorter-lived aura which I'd assume is ok as long as longer-lived buffs like those above are actually filtered out.
 
 <center>
-  <img src="/static/images/nameplates-midnight/temporary-friendly-buff-2.jpg" alt="" loading="lazy" />
+  <img src="/static/images/nameplates-midnight/temporary-friendly-buff-2.jpg" alt="three auras applied to a friendly, two longer lasting, yet the most temporary one doesn't show" loading="lazy" />
 </center>
 
 #### Aura - Invalidate Unit
+The ability to visually indicate that a unit affected by an aura is now immune to damage, commonly indicated by changing the nameplate color.
+
+Before:
+- ❌ Retail Default Nameplates don't show any indication of a unit becoming immune to damage
+- ⚠️ addons can provide tooling to indicate this 
+
+After:
+- ❓ Midnight Nameplate Options _could_ integrate this into `Shared CCs`
+- ❌ addons won't be able to indicate this anymore due to aura info being secret
+
+##### Implementation
+Straight forward - on certain auras, change the nameplate color to grey, or whatever you set it to.
+
+<center>
+  <video src="/static/images/nameplates-midnight/invalidate-unit.mp4" type="video/mp4" controls muted loop autoPlay />
+</center>
+
+##### Verdict & Suggestion
+Just a really useful quality of life feature. Nothing that is mandatory and most certainly another maintenance burden. Still, why not? At the lowest level, it's an accessibility feature, at the highest, DPS optimization.
 
 ### Color Changes
 
@@ -430,7 +542,22 @@ After:
 ##### Verdict
 Better than nothing, but needs work. The ability to highlight threat on pets is now gone. It wasn't extremely important, but commonly when such an ability was used it was to help the tank. Now the tank is sweating extra because they think they lost aggro on top of already struggling.
 
-#### Nameplate Scaling
+#### Conditional Unit Name Color Change
+The ability to conditionally change the color of the unit name.
+
+Before:
+- ❌ Retail Default Nameplates names never change color
+- ✔️ addons can change the color of the unit name
+
+After:
+- ❌ Midnight Nameplate Options never change the unit name color
+- ❌ addons won't be able to change the unit name color either as aura info is secret
+
+##### Implementation
+
+##### Verdict & Suggestion
+
+### Nameplate Scaling
 The ability to change the scale of a nameplate procedurally for any reason, e.g. based on NPC id, aura presence or threat.
 
 A criminally underused feature and one of my favorites. The gist: not all mobs are equally relevant to keep track of their health or cast bars in a pull. So why have them all the same size?
@@ -666,66 +793,6 @@ Could be situationally ok if it was properly telegraphed but looking at these re
 Here's to hoping that visibility for this mechanic gets improved in the future, then this niche feature is obsolete.
 
 ### Misc
-#### Name Shortening / Renaming Units
-The ability to manipulate NPC names.
-
-Before:
-- ❌ Retail Default Nameplates don't have any options to shorten names
-- ❓ Plater allows renaming NPCs by id individually
-  - very tedious process when done manually
-  - allows setting the name of an NPC to any arbitrary nickname
-  - scripts can fill the gap
-
-After:
-- ❌ Midnight Nameplate Options don't allow renaming NPCs
-  - unit names are secrets
-
-##### Implementation
-Some context needed here once again. Any time there's a bunch of enemies in a section of a dungeon, they _often_ but not always share the same adjectives before the actual type of NPC. For example, you'll encounter a lot of <WowheadLink id={234872} kind="npc">Wastelander Phaseblades</WowheadLink> and <WowheadLink id={234957} kind="npc">Wastelander Ritualists</WowheadLink> (and a bunch more) in the arena of the second boss of Eco-Dome Al'dani. Now nameplates have only a certain length, so in many cases, they get truncated and you end up just reading `Wastelande...` or whatever your nameplate width setting allows. **This will be the default behavior for Midnight nameplates.**
-
-Terrible for communication in various ways:
-- planning: "I'm kicking the left Ritualist!"
-  - need to either know already or figure out which of the enemies is the Ritualist, which may already be on the move and collapse with another caster
-- spontaneous adjustments: "I failed my kick, we need a stop on the far caster/Ritualist!"
-  - need to either be aware of mob positioning at all times
-  - or have pulled a low amount of casters in order to have a uniquely identifyable caster in the pull at a given time
-    - which is absolutely not possible in that dungeon which is meant to be a testimony of new dungeon design
-  - in many cases, cast times are not forgiving enough to allow these mistakes and still manage to cover for them
-
-So what the mod does is - for the most part - to only ever render the last word in the name of an enemy: `Phaseblade` or `Ritualist`.
-
-##### Verdict
-👎 significantly worse than before and an instantly visible downgrade. Just to name a few examples:
-
-- Operation: Floodgate
-  - <WowheadLink id={229686} kind="npc">Venture Co. Surveyor</WowheadLink> and <WowheadLink id={229250} kind="npc">Venture Co. Contractor</WowheadLink>
-  - <WowheadLink id={229212} kind="npc">Darkfuse Demolitionist</WowheadLink>, <WowheadLink id={228144} kind="npc">Darkfuse Soldier</WowheadLink> and <WowheadLink id={231385} kind="npc">Darkfuse Inspector</WowheadLink>, possibly with a <WowheadLink id={230748} kind="npc">Darkfuse Bloodwarper</WowheadLink> too
-- Eco-Dome Al'dani
-    - as extreme example, in the arena of the second boss, there's:
-      - 13x <WowheadLink id={234872} kind="npc">Wastelander Phaseblades</WowheadLink>
-      - 11x <WowheadLink id={234962} kind="npc">Wastelander Farstalkers</WowheadLink>
-      - 5x <WowheadLink id={234960} kind="npc">Tamed Ruinstalker</WowheadLink>
-      - 4x <WowheadLink id={234957} kind="npc">Wastelander Ritualists</WowheadLink>
-      - 1x <WowheadLink id={242631} kind="npc">Overcharged Sentinel</WowheadLink>
-      - 34 enemies, 28 start with an informationally useless adjective: `Wastelander`
-
-You may recognize the bottom right corner of this screenshot from the Cast Bar - Target Name section. Pay attention to the NPC names this time. There's nine nameplates visible, **all** of them are for enemies starting with `Vilebranch`.
-
-<center>
-  <figure>
-    <img src="/static/images/nameplates-midnight/maisara-caverns.jpg" alt="image of an in-progress pull with 9 visible nameplates, all of which are NPCs whose name begins with Vilebranch" loading="lazy" />
-    <figcaption>
-      image (again) taken from <a href="https://x.com/CartridgeBros/status/1978155161148096626">@CartridgeBros tweet</a>
-    </figcaption>
-  </figure>
-</center>
-
-
-##### Suggestion
-There's an inherent problem making this work across localizations generically so in my opinion, the best way to fix this going forward is to be more mindful of NPC naming in relation to other NPCs. It'll be the most natural way of the need for this tool to go away.
-
-The other obvious solution to this would be nameplate colors but we've talked about that already.
-
 #### Quest Progress Indication
 #### Hiding Nameplates
 The ability to hide nameplates, primarily for the purpose of reducing clutter.
@@ -767,7 +834,9 @@ This is gonna sound harsh, but do better playtesting? This should've not even ma
 
 ## Console Variables
 
-Largely informational, here's some technical bits while we're here. Pruning was imo badly needed. The following nameplate-related CVars are gone:
+Largely informational, here's some technical bits while we're here. Pruning was imo badly needed. 
+
+### Removed CVars
 
 ```
 // scaling related
@@ -816,7 +885,7 @@ nameplateShowFriendlyTotems
 nameplateShowFriends
 ```
 
-Keeping only these from before:
+### Retained CVars
 ```
 // scaling related
 nameplateLargerScale // An additional scale modifier for important monsters.
@@ -860,6 +929,7 @@ nameplateShowFriendlyNPCs // Whether nameplates are shown for friendly npcs.
 nameplateShowSelf // Display class resource bar. 0=off 1=on
 ```
 
+### New CVars
 And introducing a couple new ones, all related to the new options.
 ```
 nameplateAuraScale // Controls the size multiplier for buffs and debuffs on nameplates.

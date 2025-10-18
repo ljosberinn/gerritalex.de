@@ -907,9 +907,9 @@ export function GigaCoils() {
   );
 }
 
-export function Deathmark() {
+export function Deathmark({ branch }: WowheadLinkProps) {
   return (
-    <WowheadLink kind="spell" id={360194} icon="ability_rogue_deathmark">
+    <WowheadLink kind="spell" id={360194} branch={branch} icon="ability_rogue_deathmark">
       Deathmark
     </WowheadLink>
   );
