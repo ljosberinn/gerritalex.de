@@ -11,6 +11,8 @@ includeImageInPreview: true
 summary: "The Good, the Bad and the Ugly. Nameplates are not exempt from the API restrictions introduced in Midnight and we're highlighting what they do well, where work is needed and what is lacking, especially in contrast to Jundies Plater profile."
 ---
 
+The Good, the Bad and the Ugly. Nameplates are not exempt from the API restrictions introduced in Midnight and we're highlighting what they do well, where work is needed and what is lacking, especially in contrast to Jundies Plater profile.
+
 ## Table of Contents
 
 <TOCInline toHeading={3} toc={props.toc} exclude="Table of Contents" />
@@ -53,7 +55,6 @@ To get this out of the way - we'll not focus on visual customization here and in
 Additionally, Wowhead already covered most options with their post [What's Changing With Blizzard Nameplates? - Everything You Need to Know](https://www.wowhead.com/news/whats-changing-with-blizzard-nameplates-everything-you-need-to-know-378775?utm_source=xepheris-nameplates).
 
 At the time of writing, this post is 10 days old and no changes have been made to the available options.
-
 
 ### Nameplate (Re)Positioning Behaviour
 
@@ -208,14 +209,14 @@ AbbreviateLargeNumbers(1024000000) -- yields 1024 M, should be 1.02 B
 After the squish, as of now, enemies will once again have above 50k health relatively soon and bosses will be in the tens of millions, meaning you'll more often than not see nameplates with numbers such as `52,349`, taking up unreasonably much space that currently we simply don't have. This makes it very impractical to use both absolute health and % values. Additionally, percentages never show fractions.
 
 <figure className="flex justify-center flex-col">
-  <img src="/static/images/nameplates-midnight/health.jpg" alt="" loading="lazy" />
+  <img src="/static/images/nameplates-midnight/health.jpg" alt="depiction of three Raid Targeting Dummies including abs and % health. their name is abbreviated to R..." loading="lazy" />
   <figcaption className="text-center">
       Target Dummies are now R rated.
   </figcaption>
 </figure>
 
 <figure className="flex justify-center flex-col">
-  <img src="/static/images/nameplates-midnight/health-2.jpg" className="max-w-[50%] self-center" alt="" loading="lazy" />
+  <img src="/static/images/nameplates-midnight/health-2.jpg" className="max-w-[50%] self-center" alt="depiction of a random neutral enemy outside of Silvermoon. its name is ironically abbreviated to Brilliant..." loading="lazy" />
   <figcaption className="text-center">
       The literal first NPC outside of Silvermoon. The irony of the abbreviated name is not lost on me.
   </figcaption>
@@ -280,24 +281,24 @@ After:
 
 <div className="flex justify-center flex-col sm:flex-row gap-2 mb-4">
   <figure className="w-auto h-80 flex flex-col">
-    <img src="/static/images/nameplates-midnight/focus-no-target-no-vision.jpg" alt="" className="object-contain h-full w-full" loading="lazy" />
+    <img src="/static/images/nameplates-midnight/focus-no-target-no-vision.jpg" alt="no target, vision obscured" className="object-contain h-full w-full" loading="lazy" />
     <figcaption className="text-center">no target, vision obscured</figcaption>
   </figure>
 
   <figure className="w-auto h-80 flex flex-col">
-    <img src="/static/images/nameplates-midnight/focus-with-target-no-vision.jpg" alt="" className="object-contain h-full w-full" loading="lazy" />
+    <img src="/static/images/nameplates-midnight/focus-with-target-no-vision.jpg" alt="with target, vision obscured" className="object-contain h-full w-full" loading="lazy" />
     <figcaption className="text-center">with target, vision obscured</figcaption>
   </figure>
 </div>
 
 <div className="flex justify-center flex-col sm:flex-row gap-2 mb-4">
   <figure className="w-auto h-80 flex flex-col">
-    <img src="/static/images/nameplates-midnight/focus-no-target-and-vision.jpg" alt="" className="object-contain h-full w-full" loading="lazy" />
+    <img src="/static/images/nameplates-midnight/focus-no-target-and-vision.jpg" alt="no target" className="object-contain h-full w-full" loading="lazy" />
     <figcaption className="text-center">no target</figcaption>
   </figure>
 
   <figure className="w-auto h-80 flex flex-col">
-    <img src="/static/images/nameplates-midnight/focus-with-target-and-vision.jpg" alt="" className="object-contain h-full w-full" loading="lazy" />
+    <img src="/static/images/nameplates-midnight/focus-with-target-and-vision.jpg" alt="with target" className="object-contain h-full w-full" loading="lazy" />
     <figcaption className="text-center">with target</figcaption>
   </figure>
 </div>
@@ -336,7 +337,7 @@ Going on a limb here claiming that everyone who has used this feature for a whil
 
 ⚠️ This is also an accessibility issue. The default colorblind modes don't actually _really_ seem to help most colorblind users, customizability beats generic colorblind modes by miles.
 
-<img src="/static/images/nameplates-midnight/colorblindness.jpg" alt="" loading="lazy"/>
+<img src="/static/images/nameplates-midnight/colorblindness.jpg" alt="conversation with a work colleague about built-in colorblind modes and their usefulness" loading="lazy"/>
 
 ##### Suggestion
 
@@ -474,14 +475,14 @@ For context, this refers to the `Buff Special` functionality in Plater and what 
 
 <div className="flex justify-center flex-col sm:flex-row gap-2 mb-4">
   <figure className="w-auto h-80 flex flex-col">
-    <img src="/static/images/nameplates-midnight/buff-special-cap.jpg" alt="" className="object-contain h-full w-full" loading="lazy" />
+    <img src="/static/images/nameplates-midnight/buff-special-cap.jpg" alt="mid-pull screenshot highlighting Buff Special through the use of Capacitor Totem" className="object-contain h-full w-full" loading="lazy" />
     <figcaption className="text-center">
       <WowheadLink id={192058} icon="spell_nature_brilliance" kind="spell">Capacitor Totem</WowheadLink>
     </figcaption>
   </figure>
 
   <figure className="w-auto h-80 flex flex-col">
-    <img src="/static/images/nameplates-midnight/buff-special-opp-roar.jpg" alt="" className="object-contain h-full w-full" loading="lazy" />
+    <img src="/static/images/nameplates-midnight/buff-special-opp-roar.jpg" alt="mid-pull screenshot highlighting Buff Special through the use of Oppressing Roar" className="object-contain h-full w-full" loading="lazy" />
     <figcaption className="text-center">will it track <OppressingRoar />?</figcaption>
   </figure>
 </div>
@@ -520,7 +521,7 @@ Commonly, when you have to refresh debuffs on one target and multiple are presen
 The ability to highlight your own beneficial auras on friendly nameplates.
 
 <div className="m-auto max-w-[75%] flex justify-center flex-col">
-  <img src="/static/images/nameplates-midnight/friendly-aura-settings.jpg" alt="" loading="lazy" />
+  <img src="/static/images/nameplates-midnight/friendly-aura-settings.jpg" alt="the new friendly aura settings" loading="lazy" />
 </div>
 
 Before:
@@ -532,7 +533,7 @@ After:
 - ❓ unknown at this time whether addons can and will do this
 
 <div className="m-auto max-w-[75%] flex justify-center flex-col">
-  <img src="/static/images/nameplates-midnight/temporary-friendly-buff-1.jpg" alt="" loading="lazy" />
+  <img src="/static/images/nameplates-midnight/temporary-friendly-buff-1.jpg" alt="temporary buff highlighting" loading="lazy" />
 </div>
 
 ##### Verdict & Suggestion
@@ -591,7 +592,7 @@ After:
 Probably by now the largest maintenance burden for Jundies is to tread the fine line of which unit to scale to what, under which circumstances. Naturally pairs extremely well with nameplate colors. Depicted is the commonly first pull of Halls of Atonement and immediately you can tell that Groundskeeper are less relevant than everything else.
 
 <div className="flex justify-self-center">
-  <img src="/static/images/nameplates-midnight/priority-based-scaling.jpg" alt="" loading="lazy" />
+  <img src="/static/images/nameplates-midnight/priority-based-scaling.jpg" alt="a quarter of jundies example image showing the leftmost shard area in Halls of Atonement" loading="lazy" />
 </div>
 
 Similar to [health markers](#phase-indication), for each dungeon we collect a list of NPCs and their scaling factors:
@@ -858,10 +859,10 @@ Pretty straight forward. Any quest that requires you to do something with specif
 
 <div className="flex justify-center flex-col sm:flex-row gap-2 mb-4">
   <div className="w-auto h-80 overflow-hidden">
-    <img className="not-prose object-cover h-full w-full" src="/static/images/nameplates-midnight/quest-progress-default.jpg" alt="" loading="lazy" />
+    <img className="not-prose object-cover h-full w-full" src="/static/images/nameplates-midnight/quest-progress-default.jpg" alt="default nameplates showing... nothing" loading="lazy" />
   </div>
   <div className="w-auto h-80 overflow-hidden">
-    <img className="not-prose object-cover h-full w-full" src="/static/images/nameplates-midnight/quest-progress-plater.jpg" alt="" loading="lazy" />
+    <img className="not-prose object-cover h-full w-full" src="/static/images/nameplates-midnight/quest-progress-plater.jpg" alt="Jundies Plater showing quest progress next to the plate" loading="lazy" />
   </div>
 </div>
 
@@ -887,8 +888,8 @@ In 99.99% of the cases, just inconvenient and glaringly obvious in the rare case
 The most egregious case for this was Brackenhide, the bridge towards the third boss directly after <WowheadLink kind="npc" id={186120}>Treemouth</WowheadLink>.
 
 <div className="flex gap-2 justify-center flex-col xl:flex-row">
-  <img src="/static/images/nameplates-midnight/hide-nameplate-retail-off.jpg"  className="not-prose xl:max-w-1/2" alt="" loading="lazy" />
-  <img src="/static/images/nameplates-midnight/hide-nameplate-retail-on.jpg" className="not-prose xl:max-w-1/2"  alt="" loading="lazy" />
+  <img src="/static/images/nameplates-midnight/hide-nameplate-retail-off.jpg"  className="not-prose xl:max-w-1/2" alt="significant amount of irrelevant nameplates visible" loading="lazy" />
+  <img src="/static/images/nameplates-midnight/hide-nameplate-retail-on.jpg" className="not-prose xl:max-w-1/2"  alt="all irrelevant nameplates are hidden" loading="lazy" />
 </div>
 
 And of course, in Midnight:
@@ -919,10 +920,10 @@ Again, something very straight forward. Based on your class/spec and situational
 
 <div className="flex justify-center flex-col gap-2 mb-2">
   <div className="flex justify-center">
-    <img src="/static/images/nameplates-midnight/plater-execute-options.jpg"  className="not-prose" alt="" loading="lazy" />
+    <img src="/static/images/nameplates-midnight/plater-execute-options.jpg"  className="not-prose" alt="execute range settings in plater" loading="lazy" />
   </div>
   <div className="flex justify-center">
-    <img src="/static/images/nameplates-midnight/execute-indicator.jpg"  className="not-prose max-w-[80%]" alt="" loading="lazy" />
+    <img src="/static/images/nameplates-midnight/execute-indicator.jpg"  className="not-prose max-w-[80%]" alt="execute range indication in action on a nameplate" loading="lazy" />
   </div>
 </div>
 
@@ -953,7 +954,7 @@ local hallsOfAtonement = {
 Using <WowheadLink kind="npc" id={164218}>Lord Chamberlain</WowheadLink> as an example, beginning the encounter the nameplate will have a marker similar to the execute indication at 70% health. Once you're past that, it'll show the 40% marker for the next intermission.
 
 <figure className="m-auto max-w-[75%]">
-  <img src="/static/images/nameplates-midnight/health-markers.jpg" className="not-prose" alt="" loading="lazy" />
+  <img src="/static/images/nameplates-midnight/health-markers.jpg" className="not-prose" alt="an image of a nameplate with health markers" loading="lazy" />
   <figcaption className="text-center">another example, <WowheadLink id={164929} kind="npc">Tirnenn Villagers</WowheadLink> becoming friendly at 20%</figcaption>
 </figure>
 
