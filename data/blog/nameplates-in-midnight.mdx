@@ -961,6 +961,31 @@ Using <WowheadLink kind="npc" id={164218}>Lord Chamberlain</WowheadLink> as an e
 In the long run, probably ok to not have this anymore. Blizzard set a predecent with <WowheadLink kind="npc" id={242631}>Overcharged Sentinels</WowheadLink> in Eco-Dome Al'dani and their <WowheadLink kind="spell" id={1231234} icon="inv_enchant_essencearcanelarge">shield</WowheadLink> that there's easy tooling available on their end to communicate this behaviour. Here's to hoping this trend continues.
 
 #### Energy Indication
+The ability to indicate upcoming energy-based encounter-like events on nameplates.
+
+Before:
+- ❌ Retail Default Nameplates don't indicate thresholds
+- ❓ addons can provide tooling to indicate this
+  - Jundies fills this gap with a Plater script
+
+After:
+- ❌ Midnight Nameplate Options don't indicate these thresholds
+- ❌ addons will no longer be able to indicate these thresholds as `UnitPower`, `UnitPowerMax` as well as `UnitPowerType` are secret
+
+##### Implementation
+
+Past a configurable threshold, 80 by default, the current energy will appear in the top left corner of the nameplate until it is depleted again.
+
+<figure className="flex justify-center flex-col max-w-[80%] justify-self-center">
+  <video src="/static/images/nameplates-midnight/energy.mp4" type="video/mp4" controls muted loop autoPlay />
+  <figcaption className="text-center"><WowheadLink id={186116} kind="npc">Gutshot</WowheadLink> will <WowheadLink id={384827} kind="spell" icon="ability_hunter_pet_hyena">Call Hyenas</WowheadLink> at full energy despite raising them from cub!<br />Some say it's the most painful way to die...</figcaption>
+</figure>
+
+Doesn't need any particular maintenance since game APIs provide all relevant info.
+
+##### Verdict & Suggestion
+Unfortunately this tool is only sparingly/inconsistenly used in dungeons outside of encounters. For example it would've been great on <WowheadLink id={206704} kind="npc">Ardent Paladins</WowheadLink> in Priory of the Sacred Flame for their <WowheadLink id={448791} kind="spell" icon="ability_bastion_paladin">Sacred Toll</WowheadLink> but for some reason, they _have_ mana, but never use it.
+
 #### Time To Death Estimation
 The ability to indicate on the nameplate how long a unit will live for.
 
