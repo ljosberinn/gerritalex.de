@@ -12,12 +12,13 @@ import { WowheadSpecIcon } from './WowheadSpecIcon';
 import { WowheadClassIcon } from './WowheadClassIcon';
 import * as WowheadLinks from './WowheadLinks';
 import clsx from 'clsx';
+import type { HTMLAttributes } from 'react';
 
 export const components: MDXComponents = {
   Image,
   TOCInline,
   a: CustomLink,
-  h2: ({ children, className, ...rest }) => (
+  h2: ({ children, className, ...rest }: HTMLAttributes<HTMLHeadingElement>) => (
     <h2
       className={clsx(
         className,
@@ -28,7 +29,7 @@ export const components: MDXComponents = {
       {children}
     </h2>
   ),
-  h3: ({ children, className, ...rest }) => (
+  h3: ({ children, className, ...rest }: HTMLAttributes<HTMLHeadingElement>) => (
     <h3
       className={clsx(
         className,
@@ -39,7 +40,7 @@ export const components: MDXComponents = {
       {children}
     </h3>
   ),
-  h4: ({ children, className, ...rest }) => (
+  h4: ({ children, className, ...rest }: HTMLAttributes<HTMLHeadingElement>) => (
     <h4 className={clsx(className, 'border-b-1 border-dashed py-0.25 dark:border-white')} {...rest}>
       {children}
     </h4>
