@@ -49,7 +49,7 @@ In many cases below, we'll be referring to `secrets`. What are those? Here's the
 
 > The easiest way to think of Secret Values (Secrets) is that they are like black boxes, which contain a Lua value of any type (number, string, boolean, etc) inside them. Insecure (tainted) Lua code can receive Secrets from our APIs and pass those Secrets into certain APIs, but it cannot actually see the value that is inside of that box. Attempting to compare a Secret with another value (Secret or not) will result in a Lua error, as will attempting to perform arithmetic on one. Untainted Lua code has no such restrictions and can operate on Secret Values pretty much exactly like non-Secrets. (...)
 
-In layman's terms: where you before could freely parse and alter most combat-related information, when you try to do that now, you'll just be greeted with an error, preventing you from doing whatever you wanted to do. Some minor execptions apply.
+In layman's terms: where you before could freely parse and alter most combat-related information, when you try to do that now, you'll just be greeted with an error, preventing you from doing whatever you wanted to do. Some minor exceptions apply.
 
 ### Visual Customization
 To get this out of the way - we'll not focus on visual customization here and instead solely focus on feature availability or lack thereof. Blizzard promised addons will continue to visually alter UI elements and with [Platynator](https://www.curseforge.com/wow/addons/platynator) there's also already the first Midnight-compatible nameplate addon.
