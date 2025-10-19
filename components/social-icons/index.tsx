@@ -13,7 +13,7 @@ type SocialIconProps = {
   size?: number;
 };
 
-export default function SocialIcon({ kind, href, size = 8 }: SocialIconProps) {
+export function SocialIcon({ kind, href, size = 8 }: SocialIconProps) {
   if (
     !href ||
     (kind === 'mail' && !/^mailto:[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(href))

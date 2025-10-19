@@ -3,7 +3,7 @@ import { type CoreContent } from 'pliny/utils/contentlayer';
 import { Blog, Authors } from '../.contentlayer/generated';
 import { CustomLink } from '../components/CustomLink';
 import { PageTitle } from '../components/PageTitle';
-import { ScrollTopAndComment } from '../components/ScrollTopAndComment';
+import { ScrollTop } from '../components/ScrollTop';
 import { Image } from '../components/Image';
 import { Tag } from '../components/Tag';
 import siteMetadata from '../data/siteMetadata';
@@ -25,7 +25,7 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
 
   return (
     <div className="px-4">
-      <ScrollTopAndComment />
+      <ScrollTop />
       <article>
         <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
           <header className="pt-6 xl:pb-6">

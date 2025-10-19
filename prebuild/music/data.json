@@ -16,7 +16,7 @@
     }
   },
   {
-    "acquired": null,
+    "acquired": "14-10-2025",
     "artist": "Agrypnie",
     "album": "16[485]",
     "visible": true,
@@ -807,7 +807,7 @@
     "visible": true
   },
   {
-    "acquired": null,
+    "acquired": "18-10-2025",
     "artist": "Fäulnis",
     "album": "Snuff//Hiroshima",
     "visible": true,
@@ -1021,7 +1021,7 @@
     }
   },
   {
-    "acquired": null,
+    "acquired": "14-10-2025",
     "artist": "Hel",
     "album": "Falland Vörandi",
     "visible": true,
@@ -1037,7 +1037,7 @@
     }
   },
   {
-    "acquired": null,
+    "acquired": "14-10-2025",
     "artist": "Helrunar",
     "album": "Baldr ok Íss",
     "visible": true,
@@ -1765,7 +1765,7 @@
     }
   },
   {
-    "acquired": null,
+    "acquired": "14-10-2025",
     "artist": "Linkin Park",
     "album": "Hybrid Theory",
     "visible": true,
@@ -1781,7 +1781,7 @@
     }
   },
   {
-    "acquired": null,
+    "acquired": "14-10-2025",
     "artist": "Linkin Park",
     "album": "Meteora",
     "visible": true,
@@ -1797,7 +1797,7 @@
     }
   },
   {
-    "acquired": null,
+    "acquired": "14-10-2025",
     "artist": "Linkin Park",
     "album": "Minutes to Midnight",
     "visible": true,
@@ -1975,7 +1975,7 @@
     "visible": true
   },
   {
-    "acquired": null,
+    "acquired": "14-10-2025",
     "artist": "Manes",
     "album": "How the World Came to an End",
     "visible": true,
@@ -2507,7 +2507,7 @@
     "visible": true
   },
   {
-    "acquired": null,
+    "acquired": "18-10-2025",
     "artist": "Nocte Obducta",
     "album": "Umbriel (Das Schweigen zwischen den Sternen)",
     "visible": true,
@@ -2824,6 +2824,23 @@
     "visible": true
   },
   {
+    "acquired": "09-01-2023",
+    "artist": "Rome",
+    "album": "Coriolan",
+    "id": 8327159,
+    "visible": true,
+    "metadata": {
+      "genres": [
+        "Military",
+        "Neofolk"
+      ],
+      "release": {
+        "year": 2016
+      },
+      "runtime": 1572
+    }
+  },
+  {
     "acquired": "11-01-2011",
     "artist": "Rome",
     "album": "Die AEsthetik der Herrschaftsfreiheit",
@@ -2886,6 +2903,23 @@
       "runtime": null
     },
     "visible": true
+  },
+  {
+    "acquired": "09-01-2023",
+    "artist": "Rome",
+    "album": "Hall of Thatch",
+    "id": 11522954,
+    "visible": true,
+    "metadata": {
+      "genres": [
+        "Neofolk",
+        "Industrial"
+      ],
+      "release": {
+        "year": 2018
+      },
+      "runtime": 2526
+    }
   },
   {
     "acquired": "06-01-2013",
@@ -3667,7 +3701,7 @@
     }
   },
   {
-    "acquired": null,
+    "acquired": "01-01-2017",
     "artist": "Twilight",
     "album": "Monument to Time End",
     "visible": true,
@@ -3677,7 +3711,7 @@
         "Black Metal"
       ],
       "release": {
-        "year": 2017
+        "year": 2010
       },
       "runtime": null
     }

@@ -34,9 +34,10 @@ export const classColors = {
 
 export type WowheadClassIconProps = {
   children: string;
+  plural?: boolean;
 };
 
-export function WowheadClassIcon({ children }: WowheadClassIconProps) {
+export function WowheadClassIcon({ children, plural }: WowheadClassIconProps) {
   const icon = classes[children];
   const color = classColors[children];
   const renderedIcon = (
@@ -61,11 +62,13 @@ export function WowheadClassIcon({ children }: WowheadClassIconProps) {
       >
         {renderedIcon}
         {children}
+        {plural ? 's' : ''}
       </span>
 
       <span className="hidden items-baseline gap-2 dark:inline-flex" style={{ color }}>
         {renderedIcon}
         {children}
+        {plural ? 's' : ''}
       </span>
     </>
   );

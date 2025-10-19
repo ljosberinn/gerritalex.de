@@ -243,6 +243,16 @@ export const Authors = defineDocumentType(() => ({
   computedFields,
 }));
 
+// (async () => {
+//   const [...images] = await Promise.all([
+//     doSeriesImport(),
+//     doMoviesImport(),
+//     doDiscogsImport(),
+//   ]);
+
+//   await downloadImages(images.flat());
+// })();
+
 export default makeSource({
   contentDirPath: 'data',
   documentTypes: [Blog, Authors],
@@ -262,19 +272,6 @@ export default makeSource({
         rehypeAutolinkHeadings,
         {
           behavior: 'prepend',
-          headingProperties: (element) => {
-            const className = ['content-header'];
-
-            if (element.tagName === 'h2') {
-              className.push(
-                'sticky top-0 bg-white dark:bg-gray-950 border-b-1 py-1 border-dashed border-gray-500 dark:border-gray-200'
-              );
-            }
-
-            return {
-              className: className,
-            };
-          },
           content: icon,
         },
       ],
@@ -286,15 +283,8 @@ export default makeSource({
   onSuccess: async (importData) => {
     const [allBlogs, ...images] = await Promise.all([
       importData().then(({ allBlogs }) => allBlogs),
-      doSeriesImport(),
-      doMoviesImport(),
-      doDiscogsImport(),
     ]);
 
-    await Promise.all([
-      createTagCount(allBlogs),
-      createSearchIndex(allBlogs),
-      downloadImages(images.flat()),
-    ]);
+    await Promise.all([createTagCount(allBlogs), createSearchIndex(allBlogs)]);
   },
 });

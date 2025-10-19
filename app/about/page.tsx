@@ -4,8 +4,9 @@ import { coreContent } from 'pliny/utils/contentlayer';
 import AuthorLayout from '../../layouts/AuthorLayout';
 import { generatePageMetadata } from '../seo';
 import { components } from '../../components/MDXComponents';
+import { Metadata } from 'next';
 
-export const metadata = generatePageMetadata({ title: 'About' });
+export const metadata: Metadata = generatePageMetadata({ title: 'About' });
 
 export default function Page() {
   const author = allAuthors.find((p) => p.slug === 'default');

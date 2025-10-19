@@ -68,7 +68,7 @@ export function PreservationEvoker({ plural, abbreviated }) {
 export function AugmentationEvoker({ plural, abbreviated }) {
   return (
     <WowheadSpecIcon spec="augmentation-evoker">
-      {abbreviated ? 'Aug' : `augmentation Evoker${plural ? 's' : ''}`}
+      {abbreviated ? 'Aug' : `Augmentation Evoker${plural ? 's' : ''}`}
     </WowheadSpecIcon>
   );
 }
@@ -194,6 +194,14 @@ export function Landslide() {
   return (
     <WowheadLink id={358385} icon="ability_earthen_pillar" kind="spell">
       Landslide
+    </WowheadLink>
+  );
+}
+
+export function TerrorOfTheSkies() {
+  return (
+    <WowheadLink id={372245} icon="ability_evoker_terroroftheskies" kind="spell">
+      Terror of the Skies
     </WowheadLink>
   );
 }
@@ -334,9 +342,9 @@ export function Unravel() {
   );
 }
 
-export function MassEruption() {
+export function MassEruption(props: WowheadLinkProps) {
   return (
-    <WowheadLink id={438588} icon="ability_evoker_eruption" kind="spell">
+    <WowheadLink {...props} id={438588} icon="ability_evoker_eruption" kind="spell">
       Mass Eruption
     </WowheadLink>
   );
@@ -531,9 +539,14 @@ export function RenewingBlaze() {
   );
 }
 
-export function Bombardments() {
+export function Bombardments(props: WowheadLinkProps) {
   return (
-    <WowheadLink id={434481} kind="spell" icon="inv_ability_scalecommanderevoker_bombardments">
+    <WowheadLink
+      {...props}
+      id={434481}
+      kind="spell"
+      icon="inv_ability_scalecommanderevoker_bombardments"
+    >
       Bombardments
     </WowheadLink>
   );
@@ -895,6 +908,58 @@ export function GigaCoils() {
       icon="inv_10_engineering_manufacturedparts_electricalparts_color1"
     >
       Giga Coils
+    </WowheadLink>
+  );
+}
+
+export function Deathmark({ branch }: WowheadLinkProps) {
+  return (
+    <WowheadLink kind="spell" id={360194} branch={branch} icon="ability_rogue_deathmark">
+      Deathmark
+    </WowheadLink>
+  );
+}
+
+export function UnstableAffliction() {
+  return (
+    <WowheadLink kind="spell" id={316099} icon="spell_shadow_unstableaffliction_3">
+      Unstable Affliction
+    </WowheadLink>
+  );
+}
+
+type SpellReflectionProps = {
+  children?: string;
+};
+
+export function SpellReflection({ children }: SpellReflectionProps) {
+  return (
+    <WowheadLink kind="spell" id={23920} icon="ability_warrior_shieldreflection">
+      {children ?? 'Spell Reflection'}
+    </WowheadLink>
+  );
+}
+
+export function SpellBlock() {
+  return (
+    <WowheadLink kind="spell" id={392966} icon="ability_warrior_shieldbreak">
+      Spell Block
+    </WowheadLink>
+  );
+}
+
+export function AntiMagicShell() {
+  return (
+    <WowheadLink kind="spell" id={48707} icon="spell_shadow_antimagicshell">
+      Anti-Magic Shell
+    </WowheadLink>
+  );
+}
+
+export function AntiMagicZone() {
+  return (
+    <WowheadLink kind="spell" id={145629} icon="spell_deathknight_antimagiczone">
+      Anti-Magic Zone
     </WowheadLink>
   );
 }
