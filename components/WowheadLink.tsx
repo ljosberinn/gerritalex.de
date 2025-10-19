@@ -24,6 +24,7 @@ export type WowheadLinkProps = {
   id: number;
   children: string;
   branch?: 'beta' | 'ptr-2' | 'ptr' | 'classic';
+  spaceless?: boolean;
 } & (Achievement | Spell | Npc | Item);
 
 export function WowheadLink({ id, children, kind, branch, ...props }: WowheadLinkProps) {

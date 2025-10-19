@@ -1,5 +1,5 @@
 ---
-lastmod: '2025-10-18'
+lastmod: '2025-10-19'
 title: Nameplates in Midnight
 date: '2025-10-06'
 tags: ['wow', 'ui', 'midnight']
@@ -85,7 +85,7 @@ Looking at this - for the most probably familiar - Azure Vault pull, we quickly 
     <figcaption className="text-center">
       Default stacking nameplates in Retail with NPC names enabled.
     </figcaption>
-  </figure>
+</figure>
 
 It's no surprise that with Plater enabled, the overall movement stays roughly the same. Plater also makes use of some now-removed CVars (more about that later) that controls implicit spacing between nameplates.
 
@@ -173,6 +173,12 @@ Here's a part of a screenshot from a Midnight dungeon - pay attention to the NPC
       image taken from <a href="https://x.com/CartridgeBros/status/1978155161148096626">@CartridgeBros tweet</a>
   </figcaption>
 </figure>
+
+Also worth nothing for PvP that realm names are not removed from players:
+
+<div className="flex justify-center">
+  <img src="/static/images/nameplates-midnight/target-name-failure.jpg" alt="image of an in-progress cast targeting a player not displaying their target" loading="lazy" />
+</div>
 
 ##### Suggestion
 There's an inherent problem making this work across localizations generically so in my opinion, the best way to fix this going forward is to be more mindful of NPC naming in relation to other NPCs. It'll be the most natural way of the need for this tool to go away.
@@ -378,7 +384,9 @@ After:
 - ❌ addons will be both unable to determine who gained/lost threat and change color as APIs such as `UnitTarget` and  `UnitGroupRolesAssigned` return secrets
 
 ##### Verdict
-Better than nothing, but needs work. The ability to highlight threat on pets is now gone. It wasn't extremely important, but commonly when such an ability was used it was to help the tank. Now the tank is sweating extra because they think they lost aggro on top of already struggling.
+Better than nothing, but needs work. The ability to highlight threat on pets is now gone. It wasn't _extremely_ important, but commonly when such an ability was used it was to help the tank. Now the tank is sweating extra because they think they lost aggro on top of already struggling.
+
+What's also gone is the ability to distinctly color nameplates when - as a tank - your co-tank is tanking.
 
 ### Auras
 
@@ -489,6 +497,33 @@ For context, this refers to the `Buff Special` functionality in Plater and what 
 
 ##### Verdict
 Better than nothing, but needs work. Currently a clear downgrade. Also unclear whether it'll track e.g. damage amp debuffs such as <WowheadLink id={1245292} icon="spell_shadow_blackplague" kind="spell">Destabilized</WowheadLink> on Dimensius Phase 3. Without that, it's only a shadow of what Plater allows. Limiting it to `Shared CCs` may be ok initially, but really, why not go all the way?
+
+#### Aura - Unit Name Change
+The ability to change the unit name based on aura presence.
+
+Before:
+- ❌ Retail Default Friendly Nameplates don't ever change unit name color
+- ✅ addons can change the color of the name
+  - Plater doesn't provide functionality for this inherently, but mods/scripts can
+
+After:
+- ❌ Midnight Nameplate Options don't ever change unit name color
+- ❌ addons won't be able to do so either as all the relevant info - auras - are secrets
+
+##### Implementation
+A long and often requested feature that we only recently rolled our own implementation for. Based on user-defined colors, change the color of a unit name based on the combination of auras present on it.
+
+<figure className="flex justify-center flex-col">
+  <video src="/static/images/nameplates-midnight/aura-name-color.mp4" type="video/mp4" controls muted loop autoPlay />
+  <figcaption className="text-center">
+    No aura, no color change. <WowheadLink id={457052} icon="inv_ability_deathstalkerrogue_deathstalkersmark" kind="spell">Deathstalker's Mark</WowheadLink>? Green!
+  </figcaption>
+</figure>
+
+We hestitated for a long time because it conflicts to some degree with nameplate colors but figured, in the end users are responsible for the colors they choose.
+
+##### Verdict
+This is the single most requested feature we saw. I'd imagine people will be pretty upset about losing it. For the time being, Blizzard seems hellbent on forcing you to pay attention to the aura bars of individual auras or the cooldown manager for your current target.
 
 #### Pandemic Glow of Tracked Auras
 The ability of highlighting pandemicable auras on nameplates.
@@ -736,10 +771,11 @@ One of the more complex mods we supported. The Plater mod `Enemy Enhanced Castba
 - if your interrupt is on cooldown but will be ready during its cast time, the cast bar will be <span style={{ color: 'yellow'}}>yellow</span>
   - and show a marker in the cast bar for when your interrupt is ready
   - and change to <span style={{ color: 'green'}}>green</span> once you're past that marker
-- and finally of course, if your interrupt is ready, the cast bar will be <span style={{ color: 'green'}}>green</span>
+
+All of this of course customizable with a simple color picker, courtesy of Platers mod setting presets.
 
 <div className="flex justify-center">
-  <img src="/static/images/nameplates-midnight/enhanced-enemy-castbar.jpg" alt="a description of the capabilities of the Enhanced Enemy Castbar mod including various cast bar states for illustrative purposes" loading="lazy" />
+  <img src="/static/images/nameplates-midnight/enhanced-cast-bar.jpg" alt="a description of the capabilities of the Enhanced Enemy Castbar mod including various cast bar states for illustrative purposes" loading="lazy" />
 </div>
 
 ##### Verdict
@@ -765,7 +801,7 @@ After:
 If an enemy is seen casting a spell on you, besides doing its regular interrupt checks, the mod will check whether the spell is in a hand-maintained list (thank you, Sense) of known reflectable spells and then lookup your <SpellReflection /> state. If available, it'll color the cast bar in a unique color for <SpellReflection /> specifically.
 
 <div className="flex justify-center">
-  <img src="/static/images/nameplates-midnight/enhanced-enemy-castbar.jpg" alt="a description of the capabilities of the Enhanced Enemy Castbar mod including various cast bar states for illustrative purposes" loading="lazy" />
+  <img src="/static/images/nameplates-midnight/spell-reflect.jpg" alt="a description of the capabilities of the Enhanced Enemy Castbar mod including various cast bar states for illustrative purposes" loading="lazy" />
 </div>
 
 ##### Verdict
@@ -874,28 +910,28 @@ The ability to hide nameplates, primarily for the purpose of reducing clutter.
 
 Before:
 - ❌ Retail Default Nameplates only hide nameplates for entire classifications of units, e.g. totems, guardians, etc.
-- ⚠️ Plater doesn't hide nameplates by itself
-  - scripts/mods can fill the gap
+- ⚠️ addons don't commonly hide nameplates
+  - Plater scripts/mods can fill the gap
 
 After:
 - ❌ Midnight Nameplate Options only hide nameplates for entire classifications of units, e.g. totems, guardians, etc.
-- ❌ Plater won't be able to hide nameplates anymore as the required info (npc id) is secret
+- ❌ addons won't be able to hide nameplates anymore as the required info (npc id) is secret
 
 ##### Verdict & Suggestion
 
 In 99.99% of the cases, just inconvenient and glaringly obvious in the rare cases this was used.
 
-The most egregious case for this was Brackenhide, the bridge towards the third boss directly after <WowheadLink kind="npc" id={186120}>Treemouth</WowheadLink>.
+The most egregious case for this was in Brackenhide Hollow, the bridge towards the third boss directly after <WowheadLink kind="npc" id={186120}>Treemouth</WowheadLink>.
 
 <div className="flex gap-2 justify-center flex-col xl:flex-row">
-  <img src="/static/images/nameplates-midnight/hide-nameplate-retail-off.jpg"  className="not-prose xl:max-w-1/2" alt="significant amount of irrelevant nameplates visible" loading="lazy" />
-  <img src="/static/images/nameplates-midnight/hide-nameplate-retail-on.jpg" className="not-prose xl:max-w-1/2"  alt="all irrelevant nameplates are hidden" loading="lazy" />
+  <img src="/static/images/nameplates-midnight/hide-nameplate-retail-off.jpg"  className="xl:max-w-1/2 mt-0 mb-0" alt="significant amount of irrelevant nameplates visible" loading="lazy" />
+  <img src="/static/images/nameplates-midnight/hide-nameplate-retail-on.jpg" className="xl:max-w-1/2 mt-0"  alt="all irrelevant nameplates are hidden" loading="lazy" />
 </div>
 
 And of course, in Midnight:
 
 <div>
-  <video className="not-prose mb-2" src="/static/images/nameplates-midnight/hide-nameplate-midnight.mp4" type="video/mp4" controls muted loop autoPlay />
+  <video className="" src="/static/images/nameplates-midnight/hide-nameplate-midnight.mp4" type="video/mp4" controls muted loop autoPlay />
 </div>
 
 ##### Suggestion
@@ -1125,21 +1161,43 @@ nameplateStyle // Determines how nameplate contents are displayed
 ```
 
 ## Maintenance
+### Testing Cycles
 
-- put emphasis on when/how often we look into changes
-- put emphasis on bug reports and feedback from users on reddit, discord, guild, dms
-- put emphasis on that we sometimes still miss things!
+As you've learnt or already knew, maintenance is key for many bits of the profile we maintained. Making sure most if not all eventualities are covered before release was the standard we hold ourselves to.
 
-## Potential Upsides
+This doesn't mean we didn't miss things but we routinely covered all these for new dungeons and raids, going by the working names for these mods/scripts:
+- Short Names - since it's generic it's easy to spot problems, but those need special handling
+- Hide Nameplate - requires diving into logs for the NPC ids
+- Important Casts - requires diving into logs for the spell ids
+- Fixate - requires diving into logs for the aura and NPC ids
+- Health Markers - requires log analysis to find the correct health breakpoint(s) and NPC ids
+- Use Stops - requires diving into logs for the cast ids
+- Must Die - requires diving into logs for NPC ids
+- Invalidate Unit - requires diving into logs for aura ids
+- Show Energy - requires diving into logs for NPC ids
+- Time To Die - in case of special cases like <WowheadLink kind="npc" id={224552}>Rasha'nan</WowheadLink> not dying at 0% hp, requires special handling
+- Priority Based Scaling - we're initially conservative and a mid-patch update usually covered more
 
-Not all is doom and gloom. I have to admit, it does look dire, but I'm also trusting that Blizzard has reasonable motivation to not alienate the userbase _too_ much. Expansion launches have historically been the largest surges of players and I find it hard to believe that Blizzard would risk bombing that.
+Additionally we made sure to be backwards compatible when adapting to new APIs (e.g. when TWW moved APIs to `C_Spell`) so we could release updates ahead of patch release.
 
-And maybe I'm trusting a bit too much here but: Blizzard isn't bound to third-party developers and sites for their updates. If they want to fix some spell(s) not showing up on nameplates, the cooldown manager, add a new metric to the damage meter, they can just hotfix that in. 
+### Early Patch Release
 
-## Potential Downsides
+Once the patch is out, naturally we're dogfooding changes ourselves which is absolutely crucial.
+
+We then react to feedback from users on reddit, discord, guild, dms and assess how much we can _delay_ making these changes because just like anyone else, we're acutely aware of how annoying it is having to update addons/profiles constantly, not to mention that Plater profiles in particular are destructive, meaning you lose all your visual customizations.
+
+Every now and then we even got people code-reviewing our code and suggesting improvements. Or _Classic_ players reporting LUA errors - because we never anticipated someone would import a dedicatedly Retail-focused profile into Classic. The next release made sure we accounted for that too. It's a people pleasing business the moment you publish something like this and commit to maintaining it.
+
+## Quo Vadis, Nameplates?
+
+Not all is doom and gloom. I have to admit, in certain areas it certainly looks dire, especially in context of testable content in the Alpha. But I'm also trusting that Blizzard is has reasonable motivation to not alienate the userbase _too_ much. Expansion launches have historically been the largest surges of players, and I find it hard to believe that Blizzard would risk jeopardizing that.
+
+And maybe I'm trusting a bit too much here but: Blizzard isn't bound to third-party developers and sites for their updates. If they want to fix some spell(s) not showing up on nameplates, the cooldown manager, raid warnings, the encounter timeline, add a new metric to the damage meter - they can just hotfix that in. Remember that Blizzard too is in the people pleasing business.
 
 Just as easy as Blizzard can hotfix stuff, they can also not do that. The cooldown manager was introduced in 11.1 and is at the time of writing, a week after 11.2.5, just _barely_ usable. Of course if the intent for it was to only become relevant with 12.0, then what was the point of releasing it already, especially after communicating that most of the class changes we're currently seeing in the Alpha are only a byproduct of the addon restrictions from recent months?
 
-I was in middle school when Patch 1.11 released in 2006. Servers were on fire for days, from what I recall due to the Scourge invasion events. It was the time of "never play on patch day". What is preventing a lack of upfront maintenance on the cooldown manager and nameplates from becoming the new "never play on patch day" whenever a spec gets reworked or the new tier set introduces a new aura that is relevant to track? There's spells I've reported on the Liberation of Undermine PTR _over half a year ago_ (<Bombardments />, <MassEruption />) that _still_ are either not available for tracking or bugged in the cooldown manager in 12.0.
+I was in middle school when Patch 1.11 released in 2006. Servers were on fire for days, from what I recall due to the Scourge invasion events. It was the time of "never play on patch day". What is preventing a lack of upfront maintenance on the cooldown manager and nameplates, figuratively speaking, from becoming the new "never play on patch day" whenever a spec gets reworked or the new tier set introduces a new aura that is relevant to track?
+
+There's spells I've reported on the Liberation of Undermine PTR _over half a year ago_ (<Bombardments spaceless />, <MassEruption spaceless />) that _still_ are either not available for tracking or bugged in the cooldown manager in 12.0. You might also remember [Get a Glow up With Transmog Updates in Midnight](https://worldofwarcraft.blizzard.com/en-us/news/24223776), yet all of the UI showcased thereyet remains to be seen. And I'd imagine the UI team, regardless of its size, is already _swamped_ with work.
 
 The community needs Blizzard to step up massively here. Replacing addons, and especially addons with as many customization features as this, with barebones replacements _can_ work, but only with a promise of rapid iteration - and we've not seen any of that.

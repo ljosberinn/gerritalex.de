@@ -342,9 +342,9 @@ export function Unravel() {
   );
 }
 
-export function MassEruption() {
+export function MassEruption(props: WowheadLinkProps) {
   return (
-    <WowheadLink id={438588} icon="ability_evoker_eruption" kind="spell">
+    <WowheadLink {...props} id={438588} icon="ability_evoker_eruption" kind="spell">
       Mass Eruption
     </WowheadLink>
   );
@@ -539,9 +539,14 @@ export function RenewingBlaze() {
   );
 }
 
-export function Bombardments() {
+export function Bombardments(props: WowheadLinkProps) {
   return (
-    <WowheadLink id={434481} kind="spell" icon="inv_ability_scalecommanderevoker_bombardments">
+    <WowheadLink
+      {...props}
+      id={434481}
+      kind="spell"
+      icon="inv_ability_scalecommanderevoker_bombardments"
+    >
       Bombardments
     </WowheadLink>
   );

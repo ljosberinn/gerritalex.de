@@ -60,7 +60,8 @@ export const components: MDXComponents = {
         (props) => {
           return (
             <>
-              <Component {...props} />{' '}
+              <Component {...props} />
+              {props.spaceless ? '' : ' '}
             </>
           );
         },
