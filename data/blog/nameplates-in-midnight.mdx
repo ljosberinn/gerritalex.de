@@ -1,5 +1,5 @@
 ---
-lastmod: '2025-10-19'
+lastmod: '2025-10-20'
 title: Nameplates in Midnight
 date: '2025-10-06'
 tags: ['wow', 'ui', 'midnight']
@@ -198,7 +198,8 @@ Before:
 
 After:
 - ⚠️ Midnight Nameplate Options allow showing both absolute and % values
-- ❌ addons are bound to the API restrictions: `UnitHealth`, `UnitHealthMax` as well as `UnitHealthPercent` return secrets
+- ❌ addons are bound to the API restrictions: `UnitHealth`, `UnitHealthMax` as well as `UnitHealthPercent` return secrets where it matters
+  - you _can_ check `UnitHealthMax` for player units (e.g. yourself and your pets)
 
 ##### Verdict
 
@@ -281,7 +282,6 @@ Before:
 After:
 - ⚠️ Midnight Nameplate Options use minimal highlighting of the focus target
   - focusing a target puts a tiny golden border around it
-  - thats it
 - ✅ addons allow highlighting the focus
   - custom border color
   - custom scale
@@ -313,7 +313,7 @@ After:
 
 ##### Verdict & Suggestion
 
-What can I say. It's better than what the Retail Nameplates currently offer. But it's a massive downgrade to addons. <span className="text-gray-200">The border is so faint, when I sent it to others for their opinion, most didn't even notice it, just like you probably didn't notice that this sentence is slightly brighter than all other text.</span>
+What can I say. It's better than what the Retail Nameplates currently offer. But it's a massive downgrade in comparison to what addons currently already allow, although will continue to be able to. <span className="text-gray-200">The border is so faint, when I sent it to others for their opinion, most didn't even notice it, just like you probably didn't notice that this sentence is slightly brighter than all other text.</span>
 
 Please consider:
 - allowing customizing the focus border color for accessibility reasons alone already
@@ -383,7 +383,11 @@ After:
   - neither options allow recoloring the nameplate
   - both options are not very visible in practice
   - the additional texture imo doesn't play well with all nameplate types
-- ❌ addons will be both unable to determine who gained/lost threat and change color as APIs such as `UnitTarget` and  `UnitGroupRolesAssigned` return secrets
+- ⚠️ addons only be able to determine who gained/lost threat by workarounds, as `UnitTarget` is secret
+  - **edit**: amended one day after publishing - `UnitGroupRolesAssigned` does not return secrets.
+  - there may also be (ugly) workarounds for this, such as `UnitIsUnit("nameplateNtarget", "partyN")` checking whether the nameplate `N` (1 through 40) is targeting whoever is `partyN` in your group
+    - then you may check `UnitGroupRolesAssigned("partyN") == "TANK"`
+    - and change color accordingly
 
 ##### Verdict
 Better than nothing, but needs work. The ability to highlight threat on pets is now gone. It wasn't _extremely_ important, but commonly when such an ability was used it was to help the tank. Now the tank is sweating extra because they think they lost aggro on top of already struggling.
@@ -575,7 +579,7 @@ After:
 
 ##### Verdict & Suggestion
 
-This was a surprising, but welcome addition. Not because I'm particulary affected or interested in this feature, but more features, especially for friendly nameplates which haven't been touched for ages, are always welcome.
+This was a surprising, but welcome addition. Not because I'm particularily affected or interested in this feature, but more features, especially for friendly nameplates which haven't been touched for ages, are always welcome.
 
 Unforunately it currently doesn't seem to be very strict in terms of what is a "temporary" buff and will happily show _any_ buff you applied to the target, including raid buffs and other long lasting buffs such as <BlisteringScales /> (60+ mins) or <Timelessness /> (30+ mins) as well as <WowheadLink id={390386} kind="spell" icon="ability_evoker_furyoftheaspects">Fury of the Aspects</WowheadLink> (annoying since it would show on everyone).
 
@@ -648,7 +652,7 @@ if isRdps then
 end
 ```
 
-As of recent, we're also supporting role-based scaling which we're carefully using to introduce even more nuanc.
+As of recent, we're also supporting role-based scaling which we're carefully using to introduce even more nuance.
 
 ##### Verdict
 👎 worse than before and an instantly visible downgrade. Not an insurmountable loss like nameplate colors, but still noticeable, particularily during pre-patch. Ultimately, it won't be too painful because with a new dungeon rotation, you have no before/after effect so the transition won't be too jarring.
@@ -1188,11 +1192,11 @@ Once the patch is out, naturally we're dogfooding changes ourselves which is abs
 
 We then react to feedback from users on reddit, discord, guild, dms and assess how much we can _delay_ making these changes because just like anyone else, we're acutely aware of how annoying it is having to update addons/profiles constantly, not to mention that Plater profiles in particular are destructive, meaning you lose all your visual customizations.
 
-Every now and then we even got people code-reviewing our code and suggesting improvements. Or _Classic_ players reporting LUA errors - because we never anticipated someone would import a dedicatedly Retail-focused profile into Classic. The next release made sure we accounted for that too. It's a people pleasing business the moment you publish something like this and commit to maintaining it.
+Every now and then we even got people code-reviewing our code and suggesting improvements. Or _Classic_ players reporting LUA errors - because we never anticipated someone would import a dedicateuld import a dedicatedly Retail-focused profile into Classic. The next release made sure we accounted for that too. It's a people pleasing business the moment you publish something like this and commit to maintaining it.
 
 ## Quo Vadis, Nameplates?
 
-Not all is doom and gloom. I have to admit, in certain areas it certainly looks dire, especially in context of testable content in the Alpha. But I'm also trusting that Blizzard is has reasonable motivation to not alienate the userbase _too_ much. Expansion launches have historically been the largest surges of players, and I find it hard to believe that Blizzard would risk jeopardizing that.
+Not all is doom and gloom. I have to admit, in certain areas it certainly looks dire, especially in context of testable content in the Alpha. But I'm also trusting that Blizzard has reasonable motivation to not alienate the userbase _too_ much. Expansion launches have historically been the largest surges of players, and I find it hard to believe that Blizzard would risk jeopardizing that.
 
 And maybe I'm trusting a bit too much here but: Blizzard isn't bound to third-party developers and sites for their updates. If they want to fix some spell(s) not showing up on nameplates, the cooldown manager, raid warnings, the encounter timeline, add a new metric to the damage meter - they can just hotfix that in. Remember that Blizzard too is in the people pleasing business.
 

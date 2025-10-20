@@ -17,7 +17,7 @@ export function Footer() {
           <span className="px-1 text-gray-400 dark:text-gray-500">-</span>
 
           <CustomLink
-            href={siteMetadata.counterscale}
+            href={siteMetadata.counterscale.dashboard}
             className="hover:text-primary-500 dark:hover:text-primary-500 text-gray-500 underline underline-offset-4 dark:text-gray-400"
           >
             <span>Counterscale</span>

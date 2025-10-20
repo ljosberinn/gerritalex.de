@@ -89,24 +89,19 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
         <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />
         <link rel="alternate" type="application/rss+xml" href={`${basePath}/feed.xml`} />
-        <script>
-          {`const whTooltips = {colorLinks: false, iconizeLinks: false, renameLinks: false}; `}
-        </script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function () {
+        {isDevelopment ? null : (
+          <>
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `(function () {
         window.counterscale = {
             q: [["set", "siteId", "gerritalex"], ["trackPageview"]],
         };
     })();`,
-          }}
-        />
-        {isDevelopment ? null : (
-          <script
-            id="counterscale-script"
-            defer
-            src="https://counterscale.gerritalex.workers.dev/tracker.js"
-          />
+              }}
+            />
+            <script id="counterscale-script" defer src={siteMetadata.counterscale.trackerUrl} />
+          </>
         )}
       </head>
 

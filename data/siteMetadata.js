@@ -1,5 +1,5 @@
 // @ts-check
-/** @type {import("pliny/config").PlinyConfig } */
+/** @type {import("pliny/config.js").PlinyConfig } */
 const siteMetadata = {
   title: 'Xepheris | gerritalex.de',
   author: 'Gerrit Alex',
@@ -24,7 +24,11 @@ const siteMetadata = {
   locale: 'en-US',
   // set to true if you want a navbar fixed to the top
   stickyNav: false,
-  counterscale: 'https://counterscale-9dr.pages.dev/dashboard?site=gerritalex&interval=1d',
+  counterscale: {
+    dashboard: 'https://counterscale-9dr.pages.dev/dashboard?site=gerritalex&interval=1d',
+    reporterUrl: 'https://counterscale.gerritalex.workers.dev/collect',
+    trackerUrl: 'https://counterscale.gerritalex.workers.dev/tracker.js',
+  },
   analytics: {
     // If you want to use an analytics provider you have to add it to the
     // content security policy in the `next.config.js` file.
@@ -100,4 +104,4 @@ const siteMetadata = {
   },
 };
 
-module.exports = siteMetadata;
+export default siteMetadata;

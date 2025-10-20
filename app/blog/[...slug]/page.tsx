@@ -119,11 +119,16 @@ export default async function Page(props: { params: Promise<{ slug: string[] }> 
   return (
     <>
       {post.tags.includes('wow') ? (
-        <Script
-          key="wowhead-tooltip"
-          strategy="afterInteractive"
-          src="https://wow.zamimg.com/js/tooltips.js"
-        />
+        <>
+          <Script
+            key="wowhead-tooltip"
+            strategy="afterInteractive"
+            src="https://wow.zamimg.com/js/tooltips.js"
+          />
+          <script>
+            {`const whTooltips = {colorLinks: false, iconizeLinks: false, renameLinks: false}; `}
+          </script>
+        </>
       ) : null}
       <script
         type="application/ld+json"
