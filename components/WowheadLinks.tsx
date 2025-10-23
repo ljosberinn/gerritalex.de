@@ -342,6 +342,70 @@ export function Unravel() {
   );
 }
 
+export function RegenerativeMagic() {
+  return (
+    <WowheadLink id={387787} icon="spell_frost_manarecharge" kind="spell">
+      Regenerative Magic
+    </WowheadLink>
+  );
+}
+
+export function AzureStrike() {
+  return (
+    <WowheadLink id={362969} icon="ability_evoker_azurestrike" kind="spell">
+      Azure Strike
+    </WowheadLink>
+  );
+}
+
+export function ProtractedTalons() {
+  return (
+    <WowheadLink id={369909} icon="ability_evoker_azurestrike" kind="spell">
+      Protracted Talons
+    </WowheadLink>
+  );
+}
+
+export function Quell() {
+  return (
+    <WowheadLink id={351338} icon="ability_evoker_quell" kind="spell">
+      Quell
+    </WowheadLink>
+  );
+}
+
+export function MoltenEmbers() {
+  return (
+    <WowheadLink id={459725} branch="beta" icon="ability_evoker_earthensky" kind="spell">
+      Molten Embers
+    </WowheadLink>
+  );
+}
+
+export function NozdormuAdept() {
+  return (
+    <WowheadLink id={431715} branch="beta" icon="ability_evoker_aspectsfavorbronze" kind="spell">
+      Nozdormu Adept
+    </WowheadLink>
+  );
+}
+
+export function MasterOfDestiny() {
+  return (
+    <WowheadLink id={431840} branch="beta" icon="ability_evoker_defyfate" kind="spell">
+      Master of Destiny
+    </WowheadLink>
+  );
+}
+
+export function ThreadsOfFate() {
+  return (
+    <WowheadLink id={431715} icon="ability_evoker_sandsoftime" kind="spell">
+      Threads of Fate
+    </WowheadLink>
+  );
+}
+
 export function MassEruption(props: WowheadLinkProps) {
   return (
     <WowheadLink {...props} id={438588} icon="ability_evoker_eruption" kind="spell">
@@ -406,9 +470,14 @@ export function DefyFate() {
   );
 }
 
-export function ImminentDestruction() {
+export function ImminentDestruction(props: WowheadLinkProps) {
   return (
-    <WowheadLink icon="spell_burningbladeshaman_blazing_radiance" id={459537} kind="spell">
+    <WowheadLink
+      {...props}
+      icon="spell_burningbladeshaman_blazing_radiance"
+      id={459537}
+      kind="spell"
+    >
       Imminent Destruction
     </WowheadLink>
   );
@@ -438,6 +507,14 @@ export function LivingFlame() {
   );
 }
 
+export function LeapingFlames() {
+  return (
+    <WowheadLink icon="ability_evoker_pupilofalexstraza" id={369939} kind="spell">
+      Leaping Flames
+    </WowheadLink>
+  );
+}
+
 export function BlisteringScales() {
   return (
     <WowheadLink id={360827} icon="ability_evoker_blisteringscales" kind="spell">
@@ -446,10 +523,10 @@ export function BlisteringScales() {
   );
 }
 
-export function Eruption() {
+export function Eruption({ plural }) {
   return (
     <WowheadLink id={395160} icon="ability_evoker_eruption" kind="spell">
-      Eruption
+      {plural ? 'Eruptions' : 'Eruption'}
     </WowheadLink>
   );
 }

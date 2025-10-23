@@ -1,6 +1,6 @@
 ---
-lastmod: '2025-10-10'
-title: Augmentation Evoker in Midnight
+lastmod: '2025-10-23'
+title: (Updated Oct 24) Augmentation Evoker in Midnight
 date: '2025-10-05'
 tags: ['wow', 'evoker', 'augmentation', 'midnight']
 draft: false
@@ -9,6 +9,7 @@ authors: ['default']
 layout: PostBanner
 images: ['/static/images/dimensius-ma.jpg']
 includeImageInPreview: true
+pinned: true
 ---
 
 We've now had a couple days to have a first look at the Midnight Alpha and I want to summarize a couple of my thoughts, but also document an initial impression as well as issues and possible solutions.
@@ -17,7 +18,186 @@ I will also be updating this post throughout Alpha and Beta cycles, but to give 
 
 ## Table of Contents
 
-<TOCInline toHeading={4} toc={props.toc} exclude="Table of Contents" />
+<TOCInline toHeading={3} toc={props.toc} exclude="Table of Contents" />
+
+## Rolling Feedback
+
+### Problems
+
+Some old, some new.
+
+> <EbonMight /> now splits its effect when applies to more than 2 other allies (...)
+
+We're almost there. This needs the following tweaks:
+- (again, currently not re-tested) the extension range on Live is only 45 yards - please raise this to 100 yards. Why is it even ~45 to begin with?
+- make it increase its value if less than 2 targets are affected
+- make it re-evaluate its state once a buffed player dies or the aura expires on them due to outranging, e.g. on Fractillus you can currently be buffing players that spread to the far side, losing extensions
+
+This is a **major** pain point for <AugmentationEvoker abbreviated /> in keys in particular since 11.2 now since you only buff the other two DPS: the moment a buffed dps dies, you lose a considerable amount of both of your buff _and_ personal damage:
+- if a combat resurrection is available, you situationally want to avoid casting any extender now in anticipation of the resurrection, which leads to you losing <EbonMight /> early
+  - you're thus forced to spam <LivingFlame />, but now that you don't even have the +20% self-buff from <EbonMight /> anymore
+- if no combat resurrection is available, well, unluck I guess. You're locked out of most of your damage buff now because.  
+
+No spec gets punished for another party member dying. Why does <AugmentationEvoker abbreviated /> get punished twice?
+
+> more personal damage through the introduction of <Duplicate />
+
+More and more personal damage means less and less reason to buff others. More buff damage offsets this and that has already happened here.
+
+However, <Prescience /> and <ShiftingSands /> will still be significantly more impactful on the <AugmentationEvoker abbreviated /> player themselves over the tank or healer. It's time to update the smart-targeting logic.
+
+> <Duplicate /> pet targeting
+
+Initial testing suggests it's already behaving like that but time will tell whether that reliably checks out - but please, make it target our current target.
+
+> Dead Talents
+
+- <EchoingStrike />
+  - never ever picked
+- <SymbioticBloom />
+  - doesn't reattribute and is incredibly weak
+- <ProlongLife /> / <DreamOfSpring />
+  - never ever picked
+- <PerilousFate />
+  - never ever picked
+- <AspectsFavor />
+  - since the nerfs, never ever picked
+
+> Weird Talent Pathing
+
+Neither <StretchTime /> nor <Timelessness /> have any logical connection to <Prescience />. Neither are attractive for raid or the far majority of dungeon content.
+
+### Suggestions
+#### Phase 4
+- prevent cancelaura'ing <EbonMight /> (and honestly, any <AugmentationEvoker abbreviated /> buff)
+- please, finally fix the essences. we're plagued with this for ages now
+  - ![](https://cdn.discordapp.com/attachments/1014994401644269670/1431011013284597904/lol-lmao-even.gif?ex=68fbdc5c&is=68fa8adc&hm=24ae5b30c5cd2cf1e8e04c984ba1d575df401b53c99cd6cb9f0fac2a4b307296&)
+
+#### Phase 2
+- swap <ArcaneReach /> with <BestowWeyrnstone />
+- provide an alternative display for Essences
+  - frankly, the default display for this is _bad_
+  - bars would be perfect - there's a reason why every WeakAura pack went with a bar display
+
+#### Phase 1
+- consider making <Prescience /> the targeting driver for <ShiftingSands />
+- increase extension range of <EbonMight /> to 100 yards too
+- <EbonMight /> already updates its value once per second/on extensions. go further:
+  - re-evaluate how many targets are currently buffed so deaths/outranging gets accounted for
+    - as example, given 14 DPS in a raid that you buff and one dies, the value of <EbonMight /> should increase for the remaining 13
+  - similarily, increase the effect of <EbonMight /> in dungeons if less than 2 targets are affected to avoid punishing the surviving dps
+- make it re-evaluate its splitting state once a buffed player dies or the aura expires on them due to outranging
+- move the +20% self-buff from <EbonMight /> to the general spec aura
+  - this doesn't suddenly enable casting extenders outside of <EbonMight />, but at least active dots and <LivingFlame /> won't be wet noodles
+- update <Prescience />/<ShiftingSands /> smart-targeting logic to the following:
+  - other DPS by proximity unless already buffed
+  - self unless buffed
+  - tank/heal by proximity
+- ~~swap <ArcaneReach /> with <StretchTime />~~
+- make <AspectsFavor /> a one-pointer
+  - it'll find a niche by that, but due to its problematic past, imo just replace it
+- make <SymbioticBloom /> and <SourceOfMagic /> reattribute in logs at least
+- remove <ProlongLife /> / <DreamOfSpring /> or at a minimum, change them to something interesting
+
+### Bugs
+#### General
+- [ ] <ObsidianScales /> shows the same tooltip as before regardless of whether you're talented into <RenewingBlaze /> or not
+- [ ] <MasterOfDestiny /> is unchanged despite <ThreadsOfFate /> being removed
+
+#### Cooldown Manager
+- [ ] offers to track <RenewingBlaze /> under Utility Cooldowns
+  - this also currently just doesn't work while <RenewingBlaze /> is active
+- [ ] does not offer to track <RenewingBlaze /> under Buffs
+- [ ] tracks <EssenceBurst /> even when it's not active
+  - shows saturated and without stacks
+  - properly tracks it when it's active
+  - presumably a problem with all stackable auras, haven't tested other cases, so assumption is that this is widespread and known
+
+##### General
+- [ ] <CommandSquadron /> does not work when talented out of <Maneuverability />
+- [x] <Slipstream /> continues to grant 2 <Hover /> charges
+- [ ] <Timelessness /> still only lasts for 30 minutes
+  - <BlisteringScales /> was updated to last for 60 minutes in 12.0
+  - <SourceOfMagic /> was updated to last for 60 minutes some time in TWW already
+- [ ] <Prescience /> from <MotesOfPossibility /> doesn't seem to be able to crit when talented into <DoubleTime />
+- [ ] <Duplicate /> does not increase <Upheaval /> damage by 25%
+
+##### Cooldown Manager
+- [ ] does not track <TemporalBurst />
+- [ ] does not track <MassEruption /> - always shows as unlearned
+- [ ] does not track <DeepBreath /> cooldown when not talented into <BreathOfEons />
+  - largely a leveling concern
+- [ ] does not track <BreathOfEons /> cooldown when talenting out of <Maneuverability /> until you relog
+- [ ] does not track <CommandSquadron />
+- [ ] still offers to track <Unravel /> which now is a passive
+- [ ] attempts to track <InterwovenThreads />, which is passive
+  - probably because it's a spell override to <TimeSkip />
+- [ ] does not track <MomentumShift />
+- [ ] does not track <Duplicate />
+  - not the summon duration, but the aura increasing <Eruption /> & <Upheaval /> damage   
+- [ ] still offers to track <GoldenOpportunity /> which now is a passive
+
+##### Nameplates
+- [ ] <Bombardments /> do not show up as debuff at all
+- [ ] <Landslide /> does not show up under "Shared CC"
+- [ ] <OppressingRoar /> does not show up under "Shared CC"
+
+## Phase 4
+October 22, 2025, [Source](https://www.wowhead.com/news/phase-four-midnight-alpha-development-notes-voidstorm-tier-and-more-378986)
+
+### Changes
+
+> - Chronowarden: New Talent: <NozdormuAdept /> - <Prescience /> cooldown reduced by 2 seconds and it grants 1% additional critical strike chance.
+> - Chronowarden: <ThreadsOfFate /> has been removed.
+> - Class: <Quell /> moved to the <AugmentationEvoker /> talent tree
+> - <ImminentDestruction branch="beta" /> has been redesigned - <BreathOfEons /> reduces the Essence cost of your next 6 <Eruption plural /> by 1.
+> - <MoltenEmbers /> has been redesigned - Enemies affected by <FireBreath />'s damage over time effect take 25% increased damage from your Black spells.
+
+### Thoughts
+- the removal of <ThreadsOfFate /> doesn't come as a surprise after the introduction of <Chronoboon />
+  - unfortunately, <MasterOfDestiny /> was forgotten and still interacts with the now-removed <ThreadsOfFate />
+- <Quell /> (and related talents) getting moved around doesn't affect <AugmentationEvoker abbreviated /> in particular but is part of a [design shift re interrupts for healers](https://us.forums.blizzard.com/en/wow/t/updates-to-healer-specializations-in-midnight/2189090) which I'm just surfacing here in case you've missed it
+- the <ImminentDestruction branch="beta" /> redesign I'm cautiously positive about:
+  - notably, the buff for it is now 30 seconds long, not 15 as before
+  - logs suggest I'm currently casting an average of 9 <Eruption />s per <ImminentDestruction />
+    - some of that is during lust
+    - some of that is because of season 3 stat budgets - with less Haste I wouldn't be able to cast as many
+  - thus going from a theoretical upper limit of 8 in 12.0 assuming the current implementation over 15s, to 6 in 30s that are still cost-reduced isn't a huge deal
+  - however, the now-absent accompanying damage reduction on <Eruption /> may just not make the talent worth anymore
+- <MoltenEmbers /> in its initial form was already a buff to Black spells during <FireBreath /> and now we're back to that, except its 25% instead of 20%
+  - fine by me, encourages casting rank 1 <FireBreath /> however which is at odds with <LeapingFlames />
+  - since <InfernosBlessing /> got tuned, these at least _seem_ to be good options now, once again  
+
+## Phase 3
+
+October 15th 2025, [Source](https://www.wowhead.com/news/pandemic-dot-assistance-on-cooldown-manager-development-notes-for-midnight-phase-378897)
+
+### Changes
+
+No tuning/talent changes for Evoker in this phase, however:
+- talent changes from the previous week are now _actually_ in and testable
+- we're getting an early look at the next tier sets for <AugmentationEvoker />
+
+### Thoughts
+#### Tier Set
+
+These are again designed with the intent of being not overly complex due to the loads of changes happening with the 12.0 patch, something to keep in mind.
+
+> Evoker Augmentation 12.0 Class Set 2pc: <Eruption /> damage increased by 15% and it extends <EbonMight /> by an additional 0.5 sec.
+
+Yet another <Eruption /> modifier which I don't mind. Extending <EbonMight /> longer is certainly interesting.
+
+> Evoker Augmentation 12.0 Class Set 4pc: While <EbonMight /> is active, empower spells deal 20% more damage and cool down 20% faster.
+
+Since you should only use empower spells during <EbonMight />, this is putting more emphasis on good play. Making them more available during <EbonMight /> also leads to more <EbonMight /> uptime itself in addition to <ShiftingSands />.
+
+Neither bonuses something you actively have to think about at all but honestly, pretty decent in general design wise.
+
+#### Talent Positioning
+- <ProtractedTalons /> gating <RegenerativeMagic /> does not feel good:
+  - <AzureStrike /> is a button you currently cast maybe once every two minutes
+  - <ProtractedTalons /> doesn't interact with anything of relevance for <AugmentationEvoker abbreviated />, but in all fairness, <RegenerativeMagic /> isn't very strong for <AugmentationEvoker abbreviated /> either
+- pretty happy with all the other shuffling that happened
 
 ## Phase 2
 
@@ -69,44 +249,6 @@ Generally a positive, the one minute reduced cooldown on <DefyFate /> itself is 
 #### Stretch Time to Class Tree
 
 On paper this is great, in practice I can see it being problematic here and there, since - if ever needed - delaying your major cooldown for defensive reasons would be very questionable design. It might just never get to that, so I'm cautiously optimistic.
-
-### Problems
-
-No changes to the [problems listed last week](#problems-1).
-
-### Suggestions
-
-In addition to [last weeks suggestions](#suggestions-1):
-- swap <ArcaneReach /> with <BestowWeyrnstone />
-- pause <ImminentDestruction /> while empowering
-  - both <DevastationEvoker abbreviated /> and <AugmentationEvoker abbreviated /> want or have to send empowers briefly after using <BreathOfEons />/<DeepBreath /> but <ImminentDestruction /> automatically loses value for any non-spender cast during its window
-  - having it pause between empower start and end would be a massive quality of life improvement
-- provide an alternative display for Essences
-  - frankly, the default display for this is unreadable
-  - bars would be perfect - there's a reason why every WeakAura pack went with a bar display
-
-### Bugs
-
-Fixed:
-- [x] <Slipstream /> now only grants one <Hover /> charge
-
-**All other bugs from previous patches [below](#bugs-1) still apply.** Additionally, here's a couple new ones:
-
-#### General
-
-- [ ] the class tree talent changes aren't actually in
-  - solely the change to <RenewingBlaze /> becoming passive and its choice node change below are in
-  - <TwinGuardian /> also continues to work like on live
-- [ ] <ObsidianScales /> shows the same tooltip as before regardless of whether you're talented into <RenewingBlaze /> or not
-
-#### Cooldown Manager
-- [ ] offers to track <RenewingBlaze /> under Utility Cooldowns
-  - this also currently just doesn't work while <RenewingBlaze /> is active
-- [ ] does not offer to track <RenewingBlaze /> under Buffs
-- [ ] tracks <EssenceBurst /> even when it's not active
-  - shows saturated and without stacks
-  - properly tracks it when it's active
-  - presumably a problem with all stackable auras, haven't tested other cases, so assumption is that this is widespread and known
 
 #### Nameplates
 
@@ -231,101 +373,3 @@ This is a very welcome change and something I've been advocating for for a while
 > (...) and is no longer is limited to 2 maximum applications.
 
 Time will tell whether this can become problematic.
-
-### Problems
-
-Some old, some new.
-
-> <EbonMight /> now splits its effect when applies to more than 2 other allies (...)
-
-We're almost there. This needs the following tweaks:
-- (again, currently not re-tested) the extension range on Live is only 45 yards - please raise this to 100 yards. Why is it even ~45 to begin with?
-- make it increase its value if less than 2 targets are affected
-- make it re-evaluate its state once a buffed player dies or the aura expires on them due to outranging, e.g. on Fractillus you can currently be buffing players that spread to the far side, losing extensions
-
-This is a **major** pain point for <AugmentationEvoker abbreviated /> in keys in particular since 11.2 now since you only buff the other two DPS: the moment a buffed dps dies, you lose a considerable amount of both of your buff _and_ personal damage:
-- if a combat resurrection is available, you situationally want to avoid casting any extender now in anticipation of the resurrection, which leads to you losing <EbonMight /> early
-  - you're thus forced to spam <LivingFlame />, but now that you don't even have the +20% self-buff from <EbonMight /> anymore
-- if no combat resurrection is available, well, unluck I guess. You're locked out of most of your damage buff now because.  
-
-No spec gets punished for another party member dying. Why does <AugmentationEvoker abbreviated /> get punished twice?
-
-> more personal damage through the introduction of <Duplicate />
-
-More and more personal damage means less and less reason to buff others. More buff damage offsets this and that has already happened here.
-
-However, <Prescience /> and <ShiftingSands /> will still be significantly more impactful on the <AugmentationEvoker abbreviated /> player themselves over the tank or healer. It's time to update the smart-targeting logic.
-
-> <Duplicate /> pet targeting
-
-Initial testing suggests it's already behaving like that but time will tell whether that reliably checks out - but please, make it target our current target.
-
-> Dead Talents
-
-- <EchoingStrike />
-  - never ever picked
-- <SymbioticBloom />
-  - doesn't reattribute and is incredibly weak
-- <ProlongLife /> / <DreamOfSpring />
-  - never ever picked
-- <PerilousFate />
-  - never ever picked
-- <AspectsFavor />
-  - since the nerfs, never ever picked
-
-> Weird Talent Pathing
-
-Neither <StretchTime /> nor <Timelessness /> have any logical connection to <Prescience />. Neither are attractive for raid or the far majority of dungeon content.
-
-### Suggestions
-- consider making <Prescience /> the targeting driver for <ShiftingSands />
-- increase extension range of <EbonMight /> to 100 yards too
-- <EbonMight /> already updates its value once per second/on extensions. go further:
-  - re-evaluate how many targets are currently buffed so deaths/outranging gets accounted for
-    - as example, given 14 DPS in a raid that you buff and one dies, the value of <EbonMight /> should increase for the remaining 13
-  - similarily, increase the effect of <EbonMight /> in dungeons if less than 2 targets are affected to avoid punishing the surviving dps
-- make it re-evaluate its splitting state once a buffed player dies or the aura expires on them due to outranging
-- move the +20% self-buff from <EbonMight /> to the general spec aura
-  - this doesn't suddenly enable casting extenders outside of <EbonMight />, but at least active dots and <LivingFlame /> won't be wet noodles
-- update <Prescience />/<ShiftingSands /> smart-targeting logic to the following:
-  - other DPS by proximity unless already buffed
-  - self unless buffed
-  - tank/heal by proximity
-- swap <ArcaneReach /> with <StretchTime />
-- make <AspectsFavor /> a one-pointer
-  - it'll find a niche by that, but due to its problematic past, imo just replace it
-- make <SymbioticBloom /> and <SourceOfMagic /> reattribute in logs at least
-- remove <ProlongLife /> / <DreamOfSpring /> or at a minimum, change them to something interesting
-
-### Bugs
-
-Of course there's a bunch of bugs, entirely expected at this point, so I'll just dump the list:
-
-#### General
-- [ ] <CommandSquadron /> does not work when talented out of <Maneuverability />
-- [x] <Slipstream /> continues to grant 2 <Hover /> charges
-- [ ] <Timelessness /> still only lasts for 30 minutes
-  - <BlisteringScales /> was updated to last for 60 minutes in 12.0
-  - <SourceOfMagic /> was updated to last for 60 minutes some time in TWW already
-- [ ] <Prescience /> from <MotesOfPossibility /> doesn't seem to be able to crit when talented into <DoubleTime />
-- [ ] <Duplicate /> does not increase <Upheaval /> damage by 25%
-
-#### Cooldown Manager
-- [ ] does not track <TemporalBurst />
-- [ ] does not properly track <MassEruption /> - always shows as unlearned
-- [ ] does not track <DeepBreath /> cooldown when not talented into <BreathOfEons />
-  - largely a leveling concern
-- [ ] does not track <BreathOfEons /> cooldown when talenting out of <Maneuverability /> until you relog
-- [ ] does not track <CommandSquadron />
-- [ ] still offers to track <Unravel /> which now is a passive
-- [ ] attempts to track <InterwovenThreads />, which is passive
-  - probably because it's a spell override to <TimeSkip />
-- [ ] does not track <MomentumShift />
-- [ ] does not track <Duplicate />
-  - not the summon duration, but the aura increasing <Eruption /> & <Upheaval /> damage   
-- [ ] still offers to track <GoldenOpportunity /> which now is a passive
-
-#### Nameplates
-- [ ] <Bombardments /> do not show up as debuff at all
-- [ ] <Landslide /> does not show up under "Shared CC"
-- [ ] <OppressingRoar /> does not show up under "Shared CC"
