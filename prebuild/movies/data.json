@@ -80,7 +80,7 @@
     "seen": true
   },
   {
-    "title": "28 Years Later Part 2: The Bone Temple",
+    "title": "28 Years Later: The Bone Temple",
     "id": 1272837,
     "metadata": {
       "genres": [
@@ -88,7 +88,7 @@
         "Thriller",
         "Science Fiction"
       ],
-      "tagline": "",
+      "tagline": "Fear is the new faith.",
       "release": {
         "day": 14,
         "month": 1,
@@ -742,7 +742,7 @@
         "Adventure",
         "Fantasy"
       ],
-      "tagline": "",
+      "tagline": "This world is much deeper than you imagine.",
       "release": {
         "day": 17,
         "month": 12,
@@ -2652,7 +2652,7 @@
       ],
       "tagline": "",
       "release": {
-        "day": 25,
+        "day": 26,
         "month": 3,
         "year": 2027
       },
@@ -2773,6 +2773,28 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "id": 524047,
+    "name": "Greenland",
+    "seen": true,
+    "title": "Greenland",
+    "metadata": {
+      "genres": [
+        "Action",
+        "Adventure",
+        "Thriller",
+        "Science Fiction"
+      ],
+      "tagline": "It's the end of the world as we know it.",
+      "release": {
+        "day": 29,
+        "month": 7,
+        "year": 2020
+      },
+      "runtime": 120
+    },
+    "favorite": false
   },
   {
     "title": "Groundhog Day",
@@ -3971,9 +3993,9 @@
       ],
       "tagline": "",
       "release": {
-        "day": 24,
-        "month": 10,
-        "year": 2025
+        "day": 6,
+        "month": 2,
+        "year": 2026
       },
       "runtime": 0
     },
@@ -5046,7 +5068,7 @@
         "month": 11,
         "year": 2025
       },
-      "runtime": 0
+      "runtime": 106
     },
     "favorite": false
   },
@@ -5135,11 +5157,12 @@
     "metadata": {
       "genres": [
         "Science Fiction",
-        "Adventure"
+        "Adventure",
+        "Mystery"
       ],
       "tagline": "",
       "release": {
-        "day": 19,
+        "day": 18,
         "month": 3,
         "year": 2026
       },
@@ -5330,7 +5353,8 @@
     "seen": false,
     "metadata": {
       "genres": [
-        "Horror"
+        "Horror",
+        "Science Fiction"
       ],
       "tagline": "",
       "release": {
@@ -7206,6 +7230,69 @@
     "seen": true
   },
   {
+    "seen": true,
+    "id": 120,
+    "name": "The Lord of the Rings: The Fellowship of the Ring",
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "metadata": {
+      "genres": [
+        "Adventure",
+        "Fantasy",
+        "Action"
+      ],
+      "tagline": "One ring to rule them all.",
+      "release": {
+        "day": 18,
+        "month": 12,
+        "year": 2001
+      },
+      "runtime": 179
+    },
+    "favorite": false
+  },
+  {
+    "seen": true,
+    "id": 122,
+    "name": "Lord of the Rings: The Return of the King",
+    "title": "The Lord of the Rings: The Return of the King",
+    "metadata": {
+      "genres": [
+        "Adventure",
+        "Fantasy",
+        "Action"
+      ],
+      "tagline": "There can be no triumph without loss. No victory without suffering. No freedom without sacrifice.",
+      "release": {
+        "day": 17,
+        "month": 12,
+        "year": 2003
+      },
+      "runtime": 201
+    },
+    "favorite": false
+  },
+  {
+    "seen": true,
+    "id": 121,
+    "name": "The Lord of the Rings: The Two Towers",
+    "title": "The Lord of the Rings: The Two Towers",
+    "metadata": {
+      "genres": [
+        "Adventure",
+        "Fantasy",
+        "Action"
+      ],
+      "tagline": "The journey continues.",
+      "release": {
+        "day": 18,
+        "month": 12,
+        "year": 2002
+      },
+      "runtime": 179
+    },
+    "favorite": false
+  },
+  {
     "title": "The Lost World: Jurassic Park",
     "id": 330,
     "favorite": false,
@@ -8275,7 +8362,8 @@
     "metadata": {
       "genres": [
         "Science Fiction",
-        "Adventure"
+        "Adventure",
+        "Action"
       ],
       "tagline": "No going back.",
       "release": {
@@ -8283,7 +8371,7 @@
         "month": 10,
         "year": 2025
       },
-      "runtime": 0
+      "runtime": 119
     },
     "favorite": false,
     "seen": false
@@ -8380,8 +8468,8 @@
       ],
       "tagline": "",
       "release": {
-        "day": 30,
-        "month": 9,
+        "day": 1,
+        "month": 10,
         "year": 2027
       },
       "runtime": 0
