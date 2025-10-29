@@ -515,6 +515,14 @@ export function LeapingFlames() {
   );
 }
 
+export function Overawe() {
+  return (
+    <WowheadLink icon="ability_evoker_oppressingroar2" id={374346} kind="spell">
+      Overawe
+    </WowheadLink>
+  );
+}
+
 export function BlisteringScales() {
   return (
     <WowheadLink id={360827} icon="ability_evoker_blisteringscales" kind="spell">

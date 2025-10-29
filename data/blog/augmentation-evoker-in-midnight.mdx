@@ -1,6 +1,6 @@
 ---
-lastmod: '2025-10-23'
-title: (Updated Oct 24) Augmentation Evoker in Midnight
+lastmod: '2025-10-29'
+title: (Updated Oct 29) Augmentation Evoker in Midnight
 date: '2025-10-05'
 tags: ['wow', 'evoker', 'augmentation', 'midnight']
 draft: false
@@ -102,27 +102,25 @@ Neither <StretchTime /> nor <Timelessness /> have any logical connection to <Pre
 ### Bugs
 #### General
 - [ ] <ObsidianScales /> shows the same tooltip as before regardless of whether you're talented into <RenewingBlaze /> or not
-- [ ] <MasterOfDestiny /> is unchanged despite <ThreadsOfFate /> being removed
-
-#### Cooldown Manager
-- [ ] offers to track <RenewingBlaze /> under Utility Cooldowns
-  - this also currently just doesn't work while <RenewingBlaze /> is active
-- [ ] does not offer to track <RenewingBlaze /> under Buffs
-- [ ] tracks <EssenceBurst /> even when it's not active
-  - shows saturated and without stacks
-  - properly tracks it when it's active
-  - presumably a problem with all stackable auras, haven't tested other cases, so assumption is that this is widespread and known
-
-##### General
+- [x] <MasterOfDestiny /> is unchanged despite <ThreadsOfFate /> being removed
 - [ ] <CommandSquadron /> does not work when talented out of <Maneuverability />
 - [x] <Slipstream /> continues to grant 2 <Hover /> charges
 - [ ] <Timelessness /> still only lasts for 30 minutes
   - <BlisteringScales /> was updated to last for 60 minutes in 12.0
   - <SourceOfMagic /> was updated to last for 60 minutes some time in TWW already
 - [ ] <Prescience /> from <MotesOfPossibility /> doesn't seem to be able to crit when talented into <DoubleTime />
-- [ ] <Duplicate /> does not increase <Upheaval /> damage by 25%
+- [x] <Duplicate /> does not increase <Upheaval /> damage by 25%
 
-##### Cooldown Manager
+#### Cooldown Manager
+- [ ] offers to track <ImminentDestruction /> under Buffs twice
+- [ ] offers to track <OppressingRoar /> under Buffs, but doesn't work with or without <Overawe />
+- [x] offers to track <RenewingBlaze /> under Utility Cooldowns
+  - this also currently just doesn't work while <RenewingBlaze /> is active
+- [x] does not offer to track <RenewingBlaze /> under Buffs
+- [x] tracks <EssenceBurst /> even when it's not active
+  - shows saturated and without stacks
+  - properly tracks it when it's active
+  - presumably a problem with all stackable auras, haven't tested other cases, so assumption is that this is widespread and known
 - [ ] does not track <TemporalBurst />
 - [ ] does not track <MassEruption /> - always shows as unlearned
 - [ ] does not track <DeepBreath /> cooldown when not talented into <BreathOfEons />
@@ -133,14 +131,18 @@ Neither <StretchTime /> nor <Timelessness /> have any logical connection to <Pre
 - [ ] attempts to track <InterwovenThreads />, which is passive
   - probably because it's a spell override to <TimeSkip />
 - [ ] does not track <MomentumShift />
-- [ ] does not track <Duplicate />
-  - not the summon duration, but the aura increasing <Eruption /> & <Upheaval /> damage   
+- [x] does not track <Duplicate />
+  - not the summon duration, but the aura increasing <Eruption /> & <Upheaval /> Damage
+- [ ] tracks <Duplicate /> with the wrong ids (uses spell id 1259175 instead of 1259173) 
 - [ ] still offers to track <GoldenOpportunity /> which now is a passive
+- [ ] offers to track <Maneuverability /> under buffs which is a passive
+  - doesn't seem to actually work anyway
 
 ##### Nameplates
 - [ ] <Bombardments /> do not show up as debuff at all
 - [ ] <Landslide /> does not show up under "Shared CC"
 - [ ] <OppressingRoar /> does not show up under "Shared CC"
+- [ ] the <Duplicate /> <FireBreath /> dot shows up on nameplates (id: 431164)
 
 ## Phase 4
 October 22, 2025, [Source](https://www.wowhead.com/news/phase-four-midnight-alpha-development-notes-voidstorm-tier-and-more-378986)
