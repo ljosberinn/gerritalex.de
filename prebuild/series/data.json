@@ -660,8 +660,8 @@
       "episodes": 16
     },
     "favorite": false,
-    "episodesSeen": 14,
-    "state": "ongoing"
+    "episodesSeen": 16,
+    "state": "upcoming"
   },
   {
     "title": "Guillermo del Toro's Cabinet of Curiosities",
@@ -1762,7 +1762,7 @@
   {
     "id": 126308,
     "title": "Shōgun",
-    "state": "ongoing",
+    "state": "finished",
     "metadata": {
       "genres": [
         "Drama",
@@ -1778,7 +1778,7 @@
       "episodes": 10
     },
     "favorite": false,
-    "episodesSeen": 9
+    "episodesSeen": 10
   },
   {
     "title": "Silo",
