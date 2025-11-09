@@ -1744,6 +1744,26 @@
     "seen": true
   },
   {
+    "title": "Dracula: A Love Tale",
+    "id": 1246049,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Horror",
+        "Fantasy",
+        "Romance"
+      ],
+      "tagline": "",
+      "release": {
+        "day": 30,
+        "month": 7,
+        "year": 2025
+      },
+      "runtime": 129
+    },
+    "favorite": false
+  },
+  {
     "title": "Dredd",
     "id": 49049,
     "metadata": {
@@ -2329,17 +2349,17 @@
     "seen": false,
     "metadata": {
       "genres": [
-        "Science Fiction",
         "Drama",
-        "Horror"
+        "Horror",
+        "Fantasy"
       ],
-      "tagline": "",
+      "tagline": "Only monsters play God.",
       "release": {
-        "day": null,
-        "month": null,
-        "year": null
+        "day": 17,
+        "month": 10,
+        "year": 2025
       },
-      "runtime": 0
+      "runtime": 152
     },
     "favorite": false
   },
@@ -5060,7 +5080,8 @@
     "metadata": {
       "genres": [
         "Action",
-        "Science Fiction"
+        "Science Fiction",
+        "Adventure"
       ],
       "tagline": "First hunt. Last chance.",
       "release": {
