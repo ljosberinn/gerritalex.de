@@ -1,6 +1,6 @@
 ---
-lastmod: '2025-10-29'
-title: (Updated Oct 29) Augmentation Evoker in Midnight
+lastmod: '2025-11-13'
+title: (Updated Nov 13) Augmentation Evoker in Midnight
 date: '2025-10-05'
 tags: ['wow', 'evoker', 'augmentation', 'midnight']
 draft: false
@@ -100,10 +100,13 @@ Neither <StretchTime /> nor <Timelessness /> have any logical connection to <Pre
 - remove <ProlongLife /> / <DreamOfSpring /> or at a minimum, change them to something interesting
 
 ### Bugs
+
+A checked checkbox indicates this has been fixed since discovery.
+
 #### General
 - [ ] <ObsidianScales /> shows the same tooltip as before regardless of whether you're talented into <RenewingBlaze /> or not
 - [x] <MasterOfDestiny /> is unchanged despite <ThreadsOfFate /> being removed
-- [ ] <CommandSquadron /> does not work when talented out of <Maneuverability />
+- [ ] <CommandSquadron kind="buff" /> does not work when talented out of <Maneuverability />
 - [x] <Slipstream /> continues to grant 2 <Hover /> charges
 - [ ] <Timelessness /> still only lasts for 30 minutes
   - <BlisteringScales /> was updated to last for 60 minutes in 12.0
@@ -125,6 +128,7 @@ Neither <StretchTime /> nor <Timelessness /> have any logical connection to <Pre
 - [ ] does not track <MassEruption /> - always shows as unlearned
 - [ ] does not track <DeepBreath /> cooldown when not talented into <BreathOfEons />
   - largely a leveling concern
+- [ ] when talenting out of <BreathOfEons /> for testing purposes of the above, continues to show <BreathOfEons />
 - [ ] does not track <BreathOfEons /> cooldown when talenting out of <Maneuverability /> until you relog
 - [ ] does not track <CommandSquadron />
 - [ ] still offers to track <Unravel /> which now is a passive

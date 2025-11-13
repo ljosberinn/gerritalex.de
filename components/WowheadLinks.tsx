@@ -294,9 +294,18 @@ export function Timelessness() {
   );
 }
 
-export function CommandSquadron() {
+type CommandSquadronProps = {
+  kind: 'buff' | 'talent';
+};
+
+export function CommandSquadron({ kind }: CommandSquadronProps) {
   return (
-    <WowheadLink branch="beta" id={1252613} icon="ability_evoker_pyre" kind="spell">
+    <WowheadLink
+      branch="beta"
+      id={kind === 'buff' ? 1252613 : 1260745}
+      icon={kind === 'buff' ? 'ability_evoker_pyre' : 'ability_dragonriding_dynamicflight01'}
+      kind="spell"
+    >
       Command Squadron
     </WowheadLink>
   );
