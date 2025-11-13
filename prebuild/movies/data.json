@@ -2359,7 +2359,7 @@
         "month": 10,
         "year": 2025
       },
-      "runtime": 152
+      "runtime": 150
     },
     "favorite": false
   },
@@ -7550,6 +7550,25 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "title": "The Neon Demon",
+    "id": 301365,
+    "seen": true,
+    "metadata": {
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "tagline": "Beauty is vicious.",
+      "release": {
+        "day": 31,
+        "month": 5,
+        "year": 2016
+      },
+      "runtime": 118
+    },
+    "favorite": false
   },
   {
     "title": "The Number 23",
