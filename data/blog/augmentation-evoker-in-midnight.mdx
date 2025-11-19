@@ -1,6 +1,6 @@
 ---
-lastmod: '2025-11-13'
-title: (Updated Nov 13) Augmentation Evoker in Midnight
+lastmod: '2025-11-19'
+title: (Updated Nov 19) Augmentation Evoker in Midnight
 date: '2025-10-05'
 tags: ['wow', 'evoker', 'augmentation', 'midnight']
 draft: false
@@ -113,6 +113,10 @@ A checked checkbox indicates this has been fixed since discovery.
   - <SourceOfMagic /> was updated to last for 60 minutes some time in TWW already
 - [ ] <Prescience /> from <MotesOfPossibility /> doesn't seem to be able to crit when talented into <DoubleTime />
 - [x] <Duplicate /> does not increase <Upheaval /> damage by 25%
+- [ ] neither <TimeSkip /> nor <InterwovenThreads /> affect <FireBreath />
+- [ ] the Essence Bar is completely broken for all evokers and throws LUA errors
+  - `...s/Blizzard_UnitFrame/Mainline/EssenceFramePlayer.lua:109: calling 'Stop' on bad self (Usage: self:Stop(). Secret values are not allowed for this argument.)`
+  - `...s/Blizzard_UnitFrame/Mainline/EssenceFramePlayer.lua:89: calling 'IsShown' on bad self (Usage: local isShown = self:IsShown(). Secret values are not allowed for this argument.)`
 
 #### Cooldown Manager
 - [ ] offers to track <ImminentDestruction /> under Buffs twice
