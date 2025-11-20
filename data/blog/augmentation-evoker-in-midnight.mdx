@@ -117,6 +117,13 @@ A checked checkbox indicates this has been fixed since discovery.
 - [ ] the Essence Bar is completely broken for all evokers and throws LUA errors
   - `...s/Blizzard_UnitFrame/Mainline/EssenceFramePlayer.lua:109: calling 'Stop' on bad self (Usage: self:Stop(). Secret values are not allowed for this argument.)`
   - `...s/Blizzard_UnitFrame/Mainline/EssenceFramePlayer.lua:89: calling 'IsShown' on bad self (Usage: local isShown = self:IsShown(). Secret values are not allowed for this argument.)`
+- [ ] <EbonMight /> does not update when a player dies (stays at a lower value than it should)
+- [ ] <EbonMight /> does not spread to more players if they come in range/get resurrected
+  - this enables on-pull outrange meta just like in Dragonflight Season 2
+- [ ] <EbonMight /> does not update when a player `/cancelaura`s it
+- [ ] when using <BreathOfEons /> without <EbonMight /> active, its scaling factor will depend on the last affected target count of <EbonMight />
+  - e.g. if it was at 1% because you buffed lots of players before on say a world boss and then use it in solo content, it still does only 1%
+  - it resets to 15% on a relog or when casting <EbonMight />
 
 #### Cooldown Manager
 - [ ] offers to track <ImminentDestruction /> under Buffs twice
