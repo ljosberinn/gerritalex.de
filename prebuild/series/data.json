@@ -134,8 +134,6 @@
     "metadata": {
       "genres": [
         "Animation",
-        "Sci-Fi & Fantasy",
-        "Drama",
         "Action & Adventure"
       ],
       "seasons": 2,
@@ -479,7 +477,7 @@
         "Drama",
         "Action & Adventure"
       ],
-      "seasons": 1,
+      "seasons": 2,
       "tagline": "True power begins with control.",
       "release": {
         "day": 17,
@@ -543,7 +541,7 @@
         "Drama"
       ],
       "seasons": 2,
-      "tagline": "The world deserves a better ending.",
+      "tagline": "Let the end times roll.",
       "release": {
         "day": 10,
         "month": 4,
@@ -1209,14 +1207,14 @@
         "Drama",
         "Action & Adventure"
       ],
-      "seasons": 1,
+      "seasons": 2,
       "tagline": "Some secrets cannot be contained.",
       "release": {
         "day": 16,
         "month": 11,
         "year": 2023
       },
-      "episodes": 10
+      "episodes": 20
     },
     "favorite": false,
     "episodesSeen": 10,
@@ -1460,6 +1458,27 @@
     "favorite": false,
     "episodesSeen": 30,
     "state": "finished"
+  },
+  {
+    "title": "Pluribus",
+    "state": "ongoing",
+    "id": 225171,
+    "metadata": {
+      "genres": [
+        "Drama",
+        "Sci-Fi & Fantasy"
+      ],
+      "seasons": 1,
+      "tagline": "Happiness is a state of mind.",
+      "release": {
+        "day": 6,
+        "month": 11,
+        "year": 2025
+      },
+      "episodes": 9
+    },
+    "favorite": false,
+    "episodesSeen": 0
   },
   {
     "title": "Poker Face",
@@ -1866,6 +1885,27 @@
     "state": "abandoned"
   },
   {
+    "id": 252107,
+    "title": "Star City",
+    "state": "upcoming",
+    "metadata": {
+      "genres": [
+        "Sci-Fi & Fantasy"
+      ],
+      "seasons": 1,
+      "tagline": "",
+      "release": {
+        "day": null,
+        "month": null,
+        "year": null
+      },
+      "episodes": 0
+    },
+    "favorite": false,
+    "episodesSeen": 0,
+    "imageMissing": true
+  },
+  {
     "title": "Star Trek: Discovery",
     "id": 67198,
     "metadata": {
@@ -1957,9 +1997,9 @@
     "id": 66732,
     "metadata": {
       "genres": [
-        "Drama",
         "Sci-Fi & Fantasy",
-        "Mystery"
+        "Mystery",
+        "Action & Adventure"
       ],
       "seasons": 5,
       "tagline": "One last adventure.",
@@ -1971,8 +2011,8 @@
       "episodes": 42
     },
     "favorite": false,
-    "episodesSeen": 42,
-    "state": "upcoming"
+    "episodesSeen": 34,
+    "state": "ongoing"
   },
   {
     "title": "Supergirl",
@@ -2477,7 +2517,7 @@
         "month": 1,
         "year": 2025
       },
-      "episodes": 15
+      "episodes": 16
     },
     "favorite": false,
     "episodesSeen": 0
@@ -2698,6 +2738,27 @@
     "favorite": false,
     "episodesSeen": 13,
     "state": "finished"
+  },
+  {
+    "title": "Twin Peaks",
+    "id": 1920,
+    "metadata": {
+      "genres": [
+        "Drama",
+        "Mystery"
+      ],
+      "seasons": 3,
+      "tagline": "It is happening again.",
+      "release": {
+        "day": 8,
+        "month": 4,
+        "year": 1990
+      },
+      "episodes": 48
+    },
+    "favorite": false,
+    "episodesSeen": 0,
+    "state": "ongoing"
   },
   {
     "title": "Vikings",

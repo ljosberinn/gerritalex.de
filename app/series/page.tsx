@@ -217,6 +217,11 @@ export default async function SeriesPage() {
                     ? series.title
                     : `${series.title} (seen ${series.episodesSeen} of ${series.metadata.episodes})`;
 
+                const src =
+                  'imageMissing' in series
+                    ? `https://placehold.co/120x180/000000/FFF$?text=${series.title}`
+                    : `/static/images/tv/${series.id}-cover.jpg`;
+
                 const mainImage = (
                   <Image
                     title={title}
@@ -225,7 +230,7 @@ export default async function SeriesPage() {
                     height={180}
                     className={classString}
                     loading={series.state === State.UPCOMING ? 'eager' : 'lazy'}
-                    src={`/static/images/tv/${series.id}-cover.jpg`}
+                    src={src}
                   />
                 );
 

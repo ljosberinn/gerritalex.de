@@ -8,7 +8,7 @@ import {
 } from '../common';
 import data from './data.json' with { type: 'json' };
 import { resolve } from 'path';
-import { writeFile } from 'fs/promises';
+import { stat, writeFile } from 'fs/promises';
 
 function warn(...args: unknown[]) {
   console.log(`[Series]`, ...args);
@@ -187,16 +187,29 @@ export async function doSeriesImport(): Promise<{ from: string; to: string }[]> 
     dataset.metadata.release.month = Number.parseInt(month);
     dataset.metadata.release.year = Number.parseInt(year);
 
+    const imagePath = resolve('./public/static/images/tv', `${id}-cover.jpg`);
+
     images.push({
       from: `${TMDB_IMAGE_BASE}${response.poster_path}`,
-      to: resolve('./public/static/images/tv', `${id}-cover.jpg`),
+      to: imagePath,
     });
+
+    try {
+      await stat(imagePath);
+      if ('imageMissing' in dataset) {
+        delete dataset.imageMissing;
+      }
+    } catch {
+      dataset.imageMissing = true;
+    }
   }
 
   await writeFile(
     './prebuild/series/data.json',
     JSON.stringify(
-      data.sort((a, b) => a.title.localeCompare(b.title)),
+      data.sort((a, b) => {
+        return a.title.localeCompare(b.title);
+      }),
       null,
       2
     )
