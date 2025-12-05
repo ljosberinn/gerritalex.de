@@ -94,7 +94,7 @@
         "month": 1,
         "year": 2026
       },
-      "runtime": 0
+      "runtime": 109
     },
     "favorite": false
   },
@@ -742,13 +742,13 @@
         "Adventure",
         "Fantasy"
       ],
-      "tagline": "This world is much deeper than you imagine.",
+      "tagline": "The world of Pandora will change forever.",
       "release": {
         "day": 17,
         "month": 12,
         "year": 2025
       },
-      "runtime": 192
+      "runtime": 197
     },
     "favorite": false
   },
@@ -798,7 +798,8 @@
     "seen": false,
     "metadata": {
       "genres": [
-        "Science Fiction"
+        "Science Fiction",
+        "Action"
       ],
       "tagline": "",
       "release": {
@@ -1822,7 +1823,26 @@
     "seen": true
   },
   {
-    "title": "Dune 2",
+    "title": "Dune: Part Three",
+    "id": 1170608,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Adventure",
+        "Science Fiction"
+      ],
+      "tagline": "",
+      "release": {
+        "day": 17,
+        "month": 12,
+        "year": 2026
+      },
+      "runtime": 0
+    },
+    "favorite": false
+  },
+  {
+    "title": "Dune: Part Two",
     "id": 693134,
     "metadata": {
       "genres": [
@@ -5181,13 +5201,13 @@
         "Adventure",
         "Mystery"
       ],
-      "tagline": "",
+      "tagline": "An unlikely friendship. An impossible mission.",
       "release": {
         "day": 18,
         "month": 3,
         "year": 2026
       },
-      "runtime": 0
+      "runtime": 155
     },
     "favorite": false
   },
@@ -8000,6 +8020,26 @@
     "favorite": false
   },
   {
+    "title": "The Witch",
+    "id": 310131,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Horror",
+        "Fantasy",
+        "Drama"
+      ],
+      "tagline": "Evil takes many forms.",
+      "release": {
+        "day": 19,
+        "month": 2,
+        "year": 2016
+      },
+      "runtime": 92
+    },
+    "favorite": false
+  },
+  {
     "title": "The Wolf of Wall Street",
     "id": 106646,
     "metadata": {
@@ -8433,6 +8473,46 @@
         "year": 2010
       },
       "runtime": 126
+    },
+    "favorite": false
+  },
+  {
+    "title": "Twin Peaks",
+    "id": 452522,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Mystery",
+        "Drama",
+        "Thriller"
+      ],
+      "tagline": "Who killed Laura Palmer?",
+      "release": {
+        "day": 8,
+        "month": 12,
+        "year": 1989
+      },
+      "runtime": 116
+    },
+    "favorite": false
+  },
+  {
+    "title": "Twin Peaks: Fire Walk with Me",
+    "id": 1923,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Drama",
+        "Mystery",
+        "Horror"
+      ],
+      "tagline": "In a town like Twin Peaks, no one is innocent.",
+      "release": {
+        "day": 3,
+        "month": 6,
+        "year": 1992
+      },
+      "runtime": 135
     },
     "favorite": false
   },
