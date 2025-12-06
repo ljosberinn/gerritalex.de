@@ -1163,6 +1163,25 @@
     "seen": true
   },
   {
+    "title": "Catch Me If You Can",
+    "id": 640,
+    "seen": true,
+    "metadata": {
+      "genres": [
+        "Drama",
+        "Crime"
+      ],
+      "tagline": "The true story of a real fake.",
+      "release": {
+        "day": 16,
+        "month": 12,
+        "year": 2002
+      },
+      "runtime": 141
+    },
+    "favorite": false
+  },
+  {
     "title": "Chappie",
     "id": 198184,
     "metadata": {
@@ -1317,6 +1336,27 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "title": "Color Out of Space",
+    "id": 548473,
+    "seen": true,
+    "metadata": {
+      "genres": [
+        "Horror",
+        "Science Fiction",
+        "Mystery",
+        "Thriller"
+      ],
+      "tagline": "It will consume you.",
+      "release": {
+        "day": 24,
+        "month": 1,
+        "year": 2020
+      },
+      "runtime": 110
+    },
+    "favorite": false
   },
   {
     "title": "Combat Girls",
