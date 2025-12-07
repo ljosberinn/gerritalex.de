@@ -86,6 +86,47 @@ function SinceLastRelease({ currentReleaseDate, previousReleaseDate }: SinceLast
   );
 }
 
+type SinceLastMinorPatchProps = {
+  thisPatch: (typeof groupByMajorVersion)[number][number];
+  group: (typeof groupByMajorVersion)[number];
+};
+
+function SinceLastMinorPatch({ thisPatch, group }: SinceLastMinorPatchProps) {
+  if (!thisPatch.patch.endsWith('.0')) {
+    return null;
+  }
+
+  const minor = thisPatch.patch.split('.').map(Number)[1];
+
+  for (const release of group) {
+    const [_, otherMinor, otherPatch] = release.patch.split('.').map(Number);
+
+    if (otherMinor === minor - 1 && otherPatch === 0) {
+      const currentIsEstimation = thisPatch.releaseDate.startsWith('?');
+      const previousIsEstimation = release.releaseDate.startsWith('?');
+
+      const current = new Date(
+        currentIsEstimation ? thisPatch.releaseDate.slice(1) : thisPatch.releaseDate
+      );
+      const previous = new Date(
+        previousIsEstimation ? release.releaseDate.slice(1) : release.releaseDate
+      );
+
+      const daysBetweenLastPatch = Math.floor(
+        (current.getTime() - previous.getTime()) / (1000 * 60 * 60 * 24)
+      );
+
+      return (
+        <>
+          {daysBetweenLastPatch}d / {daysBetweenLastPatch / 7}w
+        </>
+      );
+    }
+  }
+
+  return null;
+}
+
 export function PatchCadence() {
   return (
     <>
@@ -103,6 +144,7 @@ export function PatchCadence() {
                   <th>Announcement</th>
                   <th>Release Date</th>
                   <th>Since Last Release</th>
+                  <th>Since Last Minor</th>
                 </tr>
               </thead>
 
@@ -138,6 +180,10 @@ export function PatchCadence() {
                           currentReleaseDate={patch.releaseDate}
                           previousReleaseDate={previous?.releaseDate ?? null}
                         />
+                      </td>
+
+                      <td>
+                        <SinceLastMinorPatch thisPatch={patch} group={majorGroup} />
                       </td>
                     </tr>
                   );
