@@ -13,6 +13,7 @@ import { WowheadClassIcon } from './WowheadClassIcon';
 import * as WowheadLinks from './WowheadLinks';
 import clsx from 'clsx';
 import type { HTMLAttributes } from 'react';
+import { PatchCadence } from './PatchCadence';
 
 export const components: MDXComponents = {
   Image,
@@ -68,4 +69,5 @@ export const components: MDXComponents = {
       ];
     })
   ),
+  PatchCadence,
 };

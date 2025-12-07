@@ -147,6 +147,23 @@ export const Blog = defineDocumentType(() => ({
   },
   computedFields: {
     ...computedFields,
+    title: {
+      type: 'string',
+      required: true,
+      resolve: (doc) => {
+        if (doc.lastmod) {
+          const lastmod = new Date(doc.lastmod);
+          const published = new Date(doc.date);
+
+          if (lastmod.getTime() - published.getTime() > 1000 * 60 * 60 * 24) {
+            const [_, month, day] = lastmod.toDateString().split(' ');
+            return `[Updated ${month} ${day.startsWith('0') ? day.slice(1) : day}] ${doc.title}`;
+          }
+        }
+
+        return doc.title;
+      },
+    },
     structuredData: {
       type: 'json',
       resolve: async (doc) => {
