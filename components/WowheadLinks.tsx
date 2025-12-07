@@ -548,9 +548,21 @@ export function Eruption({ plural }) {
   );
 }
 
-export function EbonMight() {
+export function SpatialParadox() {
   return (
-    <WowheadLink id={395152} icon="spell_sarkareth" kind="spell">
+    <WowheadLink id={406732} icon="ability_evoker_stretchtime" kind="spell">
+      Spatial Paradox
+    </WowheadLink>
+  );
+}
+
+type EbonMightProps = {
+  kind?: 'delves';
+};
+
+export function EbonMight({ kind }: EbonMightProps) {
+  return (
+    <WowheadLink id={kind === 'delves' ? 426404 : 395152} icon="spell_sarkareth" kind="spell">
       Ebon Might
     </WowheadLink>
   );

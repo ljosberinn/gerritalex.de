@@ -1,5 +1,5 @@
 ---
-lastmod: '2025-10-13'
+lastmod: '2025-12-07'
 title: Useful Evoker Macros
 date: '2025-07-02'
 tags: ['wow', 'evoker']
@@ -85,27 +85,7 @@ Picks the closest enemy and casts <WowheadLink kind="spell" id={356995} icon="ab
 /cast Disintegrate
 ```
 
-## Flameshaper
-
-Cast <RenewingBlaze /> on a specific friendly if present, otherwise mouseover, or use default behaviour if not talented into <WowheadLink kind="spell" id={444322} icon="inv_misc_herb_cinderbloom_petal">Lifecinders</WowheadLink>.
-
-**Redundant in 12.0!**
-
-```
-#showtooltip
-/cast [@Eclyssian-Silvermoon,nodead,exists] [@mouseover, help, nodead] [] Renewing Blaze
-```
-
 ## Devastation
-
-Cast <WowheadLink kind="spell" id={368847} icon="ability_evoker_firestorm">Firestorm</WowheadLink> at your cursors location.
-
-**Redundant in 12.0!**
-
-```
-#showtooltip
-/cast [@cursor] Firestorm
-```
 
 Pick the closest enemy and cast <WowheadLink kind="spell" id={357211} icon="ability_evoker_pyre">Pyre</WowheadLink>. Useful if your current target dies between globals to not lose time between casts.
 

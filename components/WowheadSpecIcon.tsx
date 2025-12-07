@@ -40,9 +40,10 @@ const colors = {
 export type WowheadSpecIconProps = {
   spec: keyof typeof specs;
   children: string | string[];
+  plural?: boolean;
 };
 
-export function WowheadSpecIcon({ spec, children }: WowheadSpecIconProps) {
+export function WowheadSpecIcon({ spec, children, plural }: WowheadSpecIconProps) {
   const icon = specs[spec];
   const color = colors[spec];
 
@@ -66,6 +67,7 @@ export function WowheadSpecIcon({ spec, children }: WowheadSpecIconProps) {
       >
         {renderedIcon}
         {children}
+        {plural ? 's' : ''}
       </span>
       <span className="hidden items-baseline gap-2 dark:inline-flex" style={{ color }}>
         {renderedIcon}
