@@ -4283,6 +4283,26 @@
     "seen": true
   },
   {
+    "title": "Man of Tomorrow",
+    "id": 1523140,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
+      "tagline": "",
+      "release": {
+        "day": 7,
+        "month": 7,
+        "year": 2027
+      },
+      "runtime": 0
+    },
+    "favorite": false
+  },
+  {
     "title": "MaXXXine",
     "id": 1023922,
     "seen": true,
@@ -5247,7 +5267,7 @@
         "month": 3,
         "year": 2026
       },
-      "runtime": 155
+      "runtime": 0
     },
     "favorite": false
   },
@@ -6186,7 +6206,7 @@
   {
     "title": "Superman",
     "id": 1061474,
-    "seen": false,
+    "seen": true,
     "metadata": {
       "genres": [
         "Science Fiction",
