@@ -103,6 +103,11 @@ const config = (): NextConfig => {
           destination: '/blog/tww-s2-zephyr',
           permanent: true,
         },
+        {
+          source: '/blog/mn-s1-zephyr',
+          destination: '/blog/midnight-s1-aoe',
+          permanent: true,
+        },
       ];
     },
     webpack: (config, options) => {

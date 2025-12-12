@@ -1,0 +1,501 @@
+{
+  "sources": {
+    "algethar-academy": {
+      "name": "Algeth'ar Academy",
+      "icon": "achievement_dungeon_dragonacademy"
+    },
+    "magisters-terrace": {
+      "name": "Magister's Terrace",
+      "icon": "inv_achievement_dungeon_magistersterrace"
+    },
+    "maisara-caverns": {
+      "name": "Maisara Caverns",
+      "icon": "inv_achievement_dungeon_maisarahills"
+    },
+    "nexus-point-xenas": {
+      "name": "Nexus-Point Xenas",
+      "icon": "inv_achievement_dungeon_nexuspointxenas"
+    },
+    "pit-of-saron": { "name": "Pit of Saron", "icon": "achievement_dungeon_icecrown_pitofsaron" },
+    "seat-of-the-triumvirate": {
+      "name": "Seat of the Triumvirate",
+      "icon": "achievement_boss_triumvirate_darknaaru"
+    },
+    "skyreach": { "name": "Skyreach", "icon": "achievement_dungeon_arakkoaspires" },
+    "windrunner-spire": {
+      "name": "Windrunner Spire",
+      "icon": "inv_achievement_dungeon_windrunnerspire"
+    }
+  },
+  "spells": [
+    {
+      "source": "skyreach",
+      "type": "bleed",
+      "icon": "ability_rogue_fanofknives",
+      "name": "Fan of Blades",
+      "id": 153757
+    },
+    {
+      "source": "pit-of-saron",
+      "type": "magic",
+      "icon": "spell_fire_immolation",
+      "name": "Immolate",
+      "id": 157736
+    },
+    {
+      "source": "seat-of-the-triumvirate",
+      "type": "magic",
+      "icon": "spell_shadow_psychicscream",
+      "name": "Howling Dark",
+      "id": 244751
+    },
+    {
+      "source": "seat-of-the-triumvirate",
+      "type": "magic",
+      "icon": "inv_misc_slime_02",
+      "name": "Corrupting Touch",
+      "id": 245748
+    },
+    {
+      "source": "algethar-academy",
+      "type": "magic",
+      "icon": "spell_arcane_blast",
+      "name": "Energy Bomb",
+      "id": 374350
+    },
+    {
+      "source": "algethar-academy",
+      "type": "bleed",
+      "icon": "inv_misc_raptortalon_nightmare",
+      "name": "Savage Peck",
+      "id": 376997
+    },
+    {
+      "source": "algethar-academy",
+      "type": "enrage",
+      "icon": "ability_hunter_aspectoftheironhawk",
+      "name": "Raging Screech",
+      "id": 377389
+    },
+    {
+      "source": "algethar-academy",
+      "type": "magic",
+      "icon": "inv_misc_book_18",
+      "name": "Monotonous Lecture",
+      "id": 388392
+    },
+    {
+      "source": "algethar-academy",
+      "type": "poison",
+      "icon": "ability_creature_poison_04",
+      "name": "Lasher Toxin",
+      "id": 389033
+    },
+    {
+      "source": "algethar-academy",
+      "type": "enrage",
+      "icon": "ability_druid_enrage",
+      "name": "Agitation",
+      "id": 390938
+    },
+    {
+      "source": "algethar-academy",
+      "type": "magic",
+      "icon": "spell_arcane_arcane04",
+      "name": "Oversurge",
+      "id": 391977
+    },
+    {
+      "source": "magisters-terrace",
+      "type": "magic",
+      "icon": "inv_babymanawyrm_blue",
+      "name": "Polymorph",
+      "id": 468966
+    },
+    {
+      "source": "windrunner-spire",
+      "type": "poison",
+      "icon": "ability_rogue_disembowel",
+      "name": "Poison Blades",
+      "id": 473795
+    },
+    {
+      "source": "magisters-terrace",
+      "type": "magic",
+      "icon": "spell_arcane_arcane01",
+      "name": "Ethereal Shackles",
+      "id": 1214038
+    },
+    {
+      "source": "magisters-terrace",
+      "type": "magic",
+      "icon": "inv_cosmicvoid_beam",
+      "name": "Void Torrent",
+      "id": 1214714
+    },
+    {
+      "source": "windrunner-spire",
+      "type": "curse",
+      "icon": "spell_shadow_curseofsargeras",
+      "name": "Curse of Darkness",
+      "id": 1215803
+    },
+    {
+      "source": "magisters-terrace",
+      "type": "magic",
+      "icon": "inv_cosmicvoid_debuff",
+      "name": "Devouring Entropy",
+      "id": 1215897
+    },
+    {
+      "source": "windrunner-spire",
+      "type": "magic",
+      "icon": "spell_nature_astralrecalgroup",
+      "name": "Soul Torment",
+      "id": 1216298
+    },
+    {
+      "source": "windrunner-spire",
+      "type": "enrage",
+      "icon": "spell_nature_bloodlust",
+      "name": "Ephemeral Bloodlust",
+      "id": 1216459
+    },
+    {
+      "source": "windrunner-spire",
+      "type": "poison",
+      "icon": "ability_creature_poison_02",
+      "name": "Poison Spray",
+      "id": 1216825
+    },
+    {
+      "source": "windrunner-spire",
+      "type": "magic",
+      "icon": "spell_fire_felflamering_red",
+      "name": "Bolstering Flames",
+      "id": 1216860
+    },
+    {
+      "source": "magisters-terrace",
+      "type": "magic",
+      "icon": "inv_cosmicvoid_debuff",
+      "name": "Consuming Void",
+      "id": 1245068
+    },
+    {
+      "source": "maisara-caverns",
+      "type": "disease",
+      "icon": "spell_deathknight_necroticplague",
+      "name": "Infected Pinions",
+      "id": 1246666
+    },
+    {
+      "source": "magisters-terrace",
+      "type": "magic",
+      "icon": "inv_112_arcane_buff",
+      "name": "Hastening Ward",
+      "id": 1248689
+    },
+    {
+      "source": "nexus-point-xenas",
+      "type": "magic",
+      "icon": "spell_holy_mindsooth",
+      "name": "Transference",
+      "id": 1249815
+    },
+    {
+      "source": "magisters-terrace",
+      "type": "magic",
+      "icon": "spell_deathknight_spelldeflection",
+      "name": "Arcane Blade",
+      "id": 1252909
+    },
+    {
+      "source": "windrunner-spire",
+      "type": "curse",
+      "icon": "spell_shadow_curseofsargeras",
+      "name": "Curse of Darkness",
+      "id": 1253834
+    },
+    {
+      "source": "maisara-caverns",
+      "type": "magic",
+      "icon": "spell_shadow_soulleech_3",
+      "name": "Cries of the Fallen",
+      "id": 1254175
+    },
+    {
+      "source": "magisters-terrace",
+      "type": "magic",
+      "icon": "spell_holy_powerwordshield",
+      "name": "Power Word: Shield",
+      "id": 1254306
+    },
+    {
+      "source": "skyreach",
+      "type": "magic",
+      "icon": "achievement_raidprimalist_windelemental",
+      "name": "Rushing Winds",
+      "id": 1254670
+    },
+    {
+      "source": "skyreach",
+      "type": "enrage",
+      "icon": "ability_skyreach_wind",
+      "name": "Wrathful Wind",
+      "id": 1254678
+    },
+    {
+      "source": "magisters-terrace",
+      "type": "magic",
+      "icon": "spell_holy_searinglight",
+      "name": "Holy Fire",
+      "id": 1255187
+    },
+    {
+      "source": "maisara-caverns",
+      "type": "enrage",
+      "icon": "warrior_talent_icon_furyintheblood",
+      "name": "Blood Frenzy",
+      "id": 1255765
+    },
+    {
+      "source": "maisara-caverns",
+      "type": "magic",
+      "icon": "spell_shaman_hex",
+      "name": "Hex",
+      "id": 1256008
+    },
+    {
+      "source": "pit-of-saron",
+      "type": "curse",
+      "icon": "ability_creature_cursed_03",
+      "name": "Curse of Torment",
+      "id": 1258434
+    },
+    {
+      "source": "pit-of-saron",
+      "type": "magic",
+      "icon": "ability_mage_chilledtothebone",
+      "name": "Permeating Cold",
+      "id": 1258437
+    },
+    {
+      "source": "pit-of-saron",
+      "type": "magic",
+      "icon": "spell_warlock_demonsoul",
+      "name": "Necromantic Infusion",
+      "id": 1258448
+    },
+    {
+      "source": "pit-of-saron",
+      "type": "disease",
+      "icon": "spell_deathknight_thrash_ghoul",
+      "name": "Rotting Strikes",
+      "id": 1258459
+    },
+    {
+      "source": "pit-of-saron",
+      "type": "magic",
+      "icon": "spell_animamaw_beam",
+      "name": "Torrent of Misery",
+      "id": 1258826
+    },
+    {
+      "source": "pit-of-saron",
+      "type": "enrage",
+      "icon": "inv12_ability_deathknight_empowereddreadplague",
+      "name": "Plague Frenzy",
+      "id": 1259132
+    },
+    {
+      "source": "maisara-caverns",
+      "type": "magic",
+      "icon": "spell_broker_missile",
+      "name": "Spirit Rend",
+      "id": 1259255
+    },
+    {
+      "source": "skyreach",
+      "type": "magic",
+      "icon": "inv_112_raidtrinkets_etherealenergystorageurn_gold",
+      "name": "Sealed Chaos Urn",
+      "id": 1259443
+    },
+    {
+      "source": "algethar-academy",
+      "type": "magic",
+      "icon": "inv_112_raidtrinkets_etherealenergystorageurn_gold",
+      "name": "Sealed Chaos Urn",
+      "id": 1259443
+    },
+    {
+      "source": "pit-of-saron",
+      "type": "magic",
+      "icon": "inv_112_raidtrinkets_etherealenergystorageurn_gold",
+      "name": "Sealed Chaos Urn",
+      "id": 1259443
+    },
+    {
+      "source": "maisara-caverns",
+      "type": "magic",
+      "icon": "inv_112_raidtrinkets_etherealenergystorageurn_gold",
+      "name": "Sealed Chaos Urn",
+      "id": 1259443
+    },
+    {
+      "source": "windrunner-spire",
+      "type": "magic",
+      "icon": "inv_112_raidtrinkets_etherealenergystorageurn_gold",
+      "name": "Sealed Chaos Urn",
+      "id": 1259443
+    },
+    {
+      "source": "nexus-point-xenas",
+      "type": "magic",
+      "icon": "inv_112_raidtrinkets_etherealenergystorageurn_gold",
+      "name": "Sealed Chaos Urn",
+      "id": 1259443
+    },
+    {
+      "source": "maisara-caverns",
+      "type": "magic",
+      "icon": "spell_shadow_soulleech_3",
+      "name": "Cries of the Fallen",
+      "id": 1259731
+    },
+    {
+      "source": "maisara-caverns",
+      "type": "magic",
+      "icon": "ability_hunter_potentvenom",
+      "name": "Vilebranch Sting",
+      "id": 1260709
+    },
+    {
+      "source": "pit-of-saron",
+      "type": "magic",
+      "icon": "artifactability_frostmage_ebonbolt",
+      "name": "Cryoshards",
+      "id": 1261921
+    },
+    {
+      "source": "maisara-caverns",
+      "type": "magic",
+      "icon": "spell_fire_felflamering_red",
+      "name": "Ritual Firebrand",
+      "id": 1262411
+    },
+    {
+      "source": "seat-of-the-triumvirate",
+      "type": "bleed",
+      "icon": "ability_backstab",
+      "name": "Backstab",
+      "id": 1262519
+    },
+    {
+      "source": "seat-of-the-triumvirate",
+      "type": "magic",
+      "icon": "inv_polearm_2h_voidscythe_d_01",
+      "name": "Abyssal Enhancement",
+      "id": 1262526
+    },
+    {
+      "source": "pit-of-saron",
+      "type": "disease",
+      "icon": "spell_deathknight_thrash_ghoul",
+      "name": "Rotting Strikes",
+      "id": 1262930
+    },
+    {
+      "source": "nexus-point-xenas",
+      "type": "magic",
+      "icon": "item_holyspark",
+      "name": "Holy Echo",
+      "id": 1263783
+    },
+    {
+      "source": "seat-of-the-triumvirate",
+      "type": "enrage",
+      "icon": "ability_warrior_battleshout",
+      "name": "Battle Rage",
+      "id": 1264036
+    },
+    {
+      "source": "pit-of-saron",
+      "type": "curse",
+      "icon": "spell_nzinsanity_chasedbyshadows",
+      "name": "Shadowbind",
+      "id": 1264186
+    },
+    {
+      "source": "magisters-terrace",
+      "type": "magic",
+      "icon": "inv_cosmicvoid_buff",
+      "name": "Void Surge",
+      "id": 1264693
+    },
+    {
+      "source": "magisters-terrace",
+      "type": "magic",
+      "icon": "spell_deathknight_spelldeflection",
+      "name": "Arcane Blade",
+      "id": 1265561
+    },
+    {
+      "source": "maisara-caverns",
+      "type": "bleed",
+      "icon": "inv_fishing_nethooks01",
+      "name": "Hooked Snare",
+      "id": 1266381
+    },
+    {
+      "source": "maisara-caverns",
+      "type": "magic",
+      "icon": "spell_shadow_grimward",
+      "name": "Grim Ward",
+      "id": 1270079
+    },
+    {
+      "source": "maisara-caverns",
+      "type": "magic",
+      "icon": "spell_frost_frostnova",
+      "name": "Frost Nova",
+      "id": 1271623
+    },
+    {
+      "source": "skyreach",
+      "type": "magic",
+      "icon": "spell_holy_powerwordbarrier",
+      "name": "Solar Barrier",
+      "id": 1273356
+    },
+    {
+      "source": "nexus-point-xenas",
+      "type": "magic",
+      "icon": "paladin_holy",
+      "name": "Burning Radiance",
+      "id": 1277557
+    },
+    {
+      "source": "seat-of-the-triumvirate",
+      "type": "magic",
+      "icon": "inv_12_profession_thematicfoozles_moteofpurevoid_blue",
+      "name": "Rift Essence",
+      "id": 1280330
+    },
+    {
+      "source": "nexus-point-xenas",
+      "type": "curse",
+      "icon": "inv_112_raidtrinkets_blobofswirlingvoid_gold",
+      "name": "Creeping Void",
+      "id": 1281636
+    },
+    {
+      "source": "magisters-terrace",
+      "type": "magic",
+      "icon": "inv_axe_02",
+      "name": "Ethereal Shackles",
+      "id": 1282055
+    }
+  ]
+}
