@@ -1,0 +1,826 @@
+{
+  "current-rotation": [
+    "vs-dr-mqd",
+    "algethar-academy",
+    "skyreach",
+    "windrunner-spire",
+    "pit-of-saron",
+    "seat-of-the-triumvirate",
+    "nexus-point-xenas",
+    "maisara-caverns",
+    "magisters-terrace"
+  ],
+  "sources": {
+    "vs-dr-mqd": {
+      "icon": "inv_achievement_raid_voidspire",
+      "name": "VS / DR / MQD",
+      "encounters": [
+        { "icon": "inv_120_raid_voidspire_hostgeneral", "name": "Imperator Averzian" },
+        { "icon": "inv_120_raid_voidspire_kaiju", "name": "Vorasius" },
+        { "icon": "inv_120_raid_voidspire_dragonduo", "name": "Vaelgor & Ezzorak" },
+        { "icon": "inv_120_raid_voidspire_salhadaar", "name": "Fallen-King Salhadaar" },
+        { "icon": "inv_120_raid_voidspire_paladintrio", "name": "Lightblinded Vanguard" },
+        { "icon": "inv_120_raid_voidspire_alleria", "name": "Crown of the Cosmos" },
+        {
+          "icon": "inv_120_raid_dreamwell_malformedmanifestation",
+          "name": "Chimaerus the Undreamt God"
+        },
+        {
+          "icon": "inv_120_raid_marchonqueldanas_lightvoidphoenix",
+          "name": "Belo'ren, Child of Alar"
+        },
+        { "icon": "inv_120_raid_marchonqueldanas_lura", "name": "Midnight Falls" }
+      ]
+    },
+    "algethar-academy": {
+      "icon": "achievement_dungeon_dragonacademy",
+      "name": "Algeth'ar Academy",
+      "encounters": ["Overgrown Ancient", "Crawth", "Vexamus", "Echo of Doragosa"]
+    },
+    "skyreach": {
+      "icon": "achievement_dungeon_arakkoaspires",
+      "name": "Skyreach",
+      "encounters": ["Ranjit", "Araknath", "Rukhran", "High Sage Viryx"]
+    },
+    "windrunner-spire": {
+      "icon": "inv_achievement_dungeon_windrunnerspire",
+      "name": "Windrunner Spire",
+      "encounters": ["Emberdawn", "Derelict Duo", "Commander Kroluk", "Restless Heart"]
+    },
+    "pit-of-saron": {
+      "icon": "achievement_dungeon_icecrown_pitofsaron",
+      "name": "Pit of Saron",
+      "encounters": ["Ick and Krick", "Forgemaster Garfrost", "Scourgelord Tyrannus"]
+    },
+    "seat-of-the-triumvirate": {
+      "icon": "achievement_boss_triumvirate_darknaaru",
+      "name": "Seat of the Triumvirate",
+      "encounters": ["Zuraal the Ascended", "Saprish", "VViceroy Nezhar", "L'ura"]
+    },
+    "nexus-point-xenas": {
+      "icon": "inv_achievement_dungeon_nexuspointxenas",
+      "name": "Nexus-Point Xenas",
+      "encounters": ["Corewarden Nysarra", "Chief Corewright Kasreth", "Lothraxion"]
+    },
+    "maisara-caverns": {
+      "icon": "inv_achievement_dungeon_maisarahills",
+      "name": "Maisara Caverns",
+      "encounters": ["Muro'jin and Nekraxx", "Vordaza", "Rak'tul, Vessel of Souls"]
+    },
+    "magisters-terrace": {
+      "icon": "inv_achievement_dungeon_magistersterrace",
+      "name": "Magister's Terrace",
+      "encounters": ["Arcanotron Custos", "Selanar Sunlash", "Gemellus", "Degentrius"]
+    }
+  },
+  "spells": [
+    {
+      "id": 431164,
+      "type": "vaelgor-&-ezzorak",
+      "name": "Fire Breath",
+      "icon": "ability_evoker_firebreath",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1226598,
+      "type": "vaelgor-&-ezzorak",
+      "name": "Warp",
+      "icon": "spell_arcane_arcane04",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1230691,
+      "type": "imperator-averzian",
+      "name": "Cosmic Crush",
+      "icon": "inv_cosmicvoid_wave",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1236788,
+      "type": "vaelgor-&-ezzorak",
+      "name": "Void Orb Eruption",
+      "icon": "inv_cosmicvoid_orb",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1239414,
+      "type": "vaelgor-&-ezzorak",
+      "name": "Tear Asunder",
+      "icon": "ability_warrior_shieldbreak",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1241291,
+      "type": "beloren-child-of-alar",
+      "name": "Light Dive",
+      "icon": "inv_phoenix2pet_yellow",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1241333,
+      "type": "beloren-child-of-alar",
+      "name": "Death Drop",
+      "icon": "inv_phoenix2mount_blue",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1241340,
+      "type": "beloren-child-of-alar",
+      "name": "Void Dive",
+      "icon": "inv_phoenix2pet",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1241692,
+      "type": "vorasius",
+      "name": "Smashing Frenzy",
+      "icon": "inv_misc_rylakclaw",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1241807,
+      "type": "vorasius",
+      "name": "Smashing Frenzy",
+      "icon": "inv_misc_rylakclaw",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1241808,
+      "type": "vorasius",
+      "name": "Smashing Frenzy",
+      "icon": "inv_misc_rylakclaw",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1241840,
+      "type": "beloren-child-of-alar",
+      "name": "Light Patch",
+      "icon": "inv_ability_holyfire_groundstate",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1241841,
+      "type": "beloren-child-of-alar",
+      "name": "Void Patch",
+      "icon": "inv_cosmicvoid_groundsate",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1241932,
+      "type": "beloren-child-of-alar",
+      "name": "Voidlight Convergence",
+      "icon": "inv_12_dualityphoenix_lightvoid_channel",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1243852,
+      "type": "beloren-child-of-alar",
+      "name": "Light Eruption",
+      "icon": "inv_ability_holyfire_nova",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1243854,
+      "type": "beloren-child-of-alar",
+      "name": "Void Eruption",
+      "icon": "inv_cosmicvoid_nova",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1244225,
+      "type": "vaelgor-&-ezzorak",
+      "name": "Dread Breath",
+      "icon": "ability_rogue_envelopingshadows",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1244413,
+      "type": "vaelgor-&-ezzorak",
+      "name": "Nullsnap",
+      "icon": "warlock_curse_shadow_aura",
+      "source": "vs-dr-mqd"
+    },
+
+    {
+      "id": 1244419,
+      "type": "vorasius",
+      "name": "Overpowering Pulse",
+      "icon": "inv_cosmicvoid_groundsate",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1245302,
+      "type": "vaelgor-&-ezzorak",
+      "name": "Void Howl",
+      "icon": "inv_cosmicvoid_orb",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1245406,
+      "type": "chimaerus-the-undreamt-god",
+      "name": "Ravenous Dive",
+      "icon": "ability_earthen_pillar",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1245486,
+      "type": "chimaerus-the-undreamt-god",
+      "name": "Corrupted Devastation",
+      "icon": "spell_azerite_essence02",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1245500,
+      "type": "vaelgor-&-ezzorak",
+      "name": "Gloom",
+      "icon": "inv_cosmicvoid_nova",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1245960,
+      "type": "fallen-king-salhadaar",
+      "name": "Reckless Infusion",
+      "icon": "inv_cosmicvoid_wave",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1246094,
+      "type": "fallen-king-salhadaar",
+      "name": "Quintessence",
+      "icon": "inv_cosmicvoid_orb",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1246502,
+      "type": "lightblinded-vanguard",
+      "name": "Avenger's Shield",
+      "icon": "spell_holy_avengersshield",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1246749,
+      "type": "lightblinded-vanguard",
+      "name": "Sacred Toll",
+      "icon": "ability_bastion_paladin",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1246765,
+      "type": "lightblinded-vanguard",
+      "name": "Divine Storm",
+      "icon": "ability_paladin_divinestorm",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1249024,
+      "type": "lightblinded-vanguard",
+      "name": "Execution Sentence",
+      "icon": "spell_paladin_executionsentence",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1249207,
+      "type": "chimaerus-the-undreamt-god",
+      "name": "Discordant Roar",
+      "icon": "ability_druid_challangingroar",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1249251,
+      "type": "imperator-averzian",
+      "name": "Dark Upheaval",
+      "icon": "ability_priest_voidentropy",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1249262,
+      "type": "imperator-averzian",
+      "name": "Umbral Collapse",
+      "icon": "spell_arcane_arcanetorrent",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1249582,
+      "type": "midnight-falls",
+      "name": "Dark Toll",
+      "icon": "inv_11_0_arathordungeon_bell_color4",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1249585,
+      "type": "midnight-falls",
+      "name": "Dissonant Dirge",
+      "icon": "inv_112_raiddimensius_supernova",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1249748,
+      "type": "vaelgor-&-ezzorak",
+      "name": "Midnight Flames",
+      "icon": "inv_cosmicdragonmount",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1249797,
+      "type": "midnight-falls",
+      "name": "Shattered Sky",
+      "icon": "spell_holy_elunesgrace",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1250071,
+      "type": "vaelgor-&-ezzorak",
+      "name": "Midnight Flames",
+      "icon": "inv_cosmicdragonmount",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1250803,
+      "type": "fallen-king-salhadaar",
+      "name": "Shattering Twilight",
+      "icon": "inv_mace_2h_etherealking_d_01",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1250991,
+      "type": "fallen-king-salhadaar",
+      "name": "Galactic Miasma",
+      "icon": "inv_enchant_essencecosmicgreater",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1251649,
+      "type": "midnight-falls",
+      "name": "Disintegration",
+      "icon": "inv_pet_naaru",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1252157,
+      "type": "vaelgor-&-ezzorak",
+      "name": "Nullzone Implosion",
+      "icon": "spell_priest_void-blast",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1253691,
+      "type": "imperator-averzian",
+      "name": "Shadow's Advance",
+      "icon": "spell_shadow_antishadow",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1254018,
+      "type": "fallen-king-salhadaar",
+      "name": "Cosmic Unraveling",
+      "icon": "trade_engineering",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1255156,
+      "type": "chimaerus-the-undreamt-god",
+      "name": "Fearsome Cry",
+      "icon": "spell_shadow_deathscream",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1255164,
+      "type": "chimaerus-the-undreamt-god",
+      "name": "Discordant Roar",
+      "icon": "ability_druid_challangingroar",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1255683,
+      "type": "imperator-averzian",
+      "name": "Gnashing Void",
+      "icon": "sha_ability_rogue_envelopingshadows_nightborne",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1255979,
+      "type": "vaelgor-&-ezzorak",
+      "name": "Dread Breath",
+      "icon": "ability_rogue_envelopingshadows",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1258514,
+      "type": "lightblinded-vanguard",
+      "name": "Blinding Light",
+      "icon": "inv_ability_holyfire_nova",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1258661,
+      "type": "lightblinded-vanguard",
+      "name": "Light Infusion",
+      "icon": "spell_holy_auramastery",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1258883,
+      "type": "imperator-averzian",
+      "name": "Void Fall",
+      "icon": "inv_nullstone_void",
+      "source": "vs-dr-mqd"
+    },
+
+    {
+      "id": 1258968,
+      "type": "vorasius",
+      "name": "Focused Aggression",
+      "icon": "inv_cosmicvoid_missile",
+      "source": "vs-dr-mqd"
+    },
+
+    {
+      "id": 1259186,
+      "type": "vorasius",
+      "name": "Blisterburst",
+      "icon": "ability_argus_soulburst",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1259921,
+      "type": "vorasius",
+      "name": "Void Breath",
+      "icon": "inv_cosmicvoid_missile",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1259923,
+      "type": "vorasius",
+      "name": "Void Breath",
+      "icon": "inv_cosmicvoid_missile",
+      "source": "vs-dr-mqd"
+    },
+
+    {
+      "id": 1260052,
+      "type": "vorasius",
+      "name": "Primordial Roar",
+      "icon": "spell_fire_twilightflamebreath",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1260816,
+      "type": "imperator-averzian",
+      "name": "Light's End",
+      "icon": "spell_fire_twilightflamebolt",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1260835,
+      "type": "fallen-king-salhadaar",
+      "name": "Despotic Command",
+      "icon": "inv_cosmicvoid_debuff",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1260981,
+      "type": "imperator-averzian",
+      "name": "March of the Endless",
+      "icon": "ability_warlock_voidzone",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1261249,
+      "type": "imperator-averzian",
+      "name": "Cosmic Eruption",
+      "icon": "spell_holy_circleofrenewal_shadow",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1262055,
+      "type": "midnight-falls",
+      "name": "The Black Aperture",
+      "icon": "inv_112_raidtrinkets_omnidpstrinket",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1262305,
+      "type": "chimaerus-the-undreamt-god",
+      "name": "Alndust Upheaval",
+      "icon": "ability_earthen_azeritesurge",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1262573,
+      "type": "beloren-child-of-alar",
+      "name": "Ashen Benediction",
+      "icon": "inv_enchanting_dust",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1262736,
+      "type": "beloren-child-of-alar",
+      "name": "Erupting Light Echo",
+      "icon": "item_holyspark",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1262737,
+      "type": "beloren-child-of-alar",
+      "name": "Erupting Void Echo",
+      "icon": "inv_nullstone_cosmicvoid",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1262989,
+      "type": "fallen-king-salhadaar",
+      "name": "Shattering Twilight",
+      "icon": "inv_mace_2h_etherealking_d_01",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1263965,
+      "type": "imperator-averzian",
+      "name": "Cosmic Eruption",
+      "icon": "spell_holy_circleofrenewal_shadow",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1264467,
+      "type": "vaelgor-&-ezzorak",
+      "name": "Tail Lash",
+      "icon": "ability_racial_tailswipe",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1264650,
+      "type": "beloren-child-of-alar",
+      "name": "Immortal Flame",
+      "icon": "inv_misc_summerfest_brazierorange",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1264782,
+      "type": "chimaerus-the-undreamt-god",
+      "name": "Rift Madness",
+      "icon": "sha_spell_warlock_demonsoul",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1265152,
+      "type": "vaelgor-&-ezzorak",
+      "name": "Impale",
+      "icon": "inv_10_skinning_dragonscales_void",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1266570,
+      "type": "vaelgor-&-ezzorak",
+      "name": "Nullscatter",
+      "icon": "inv12_ability_priest_voidvolley",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1269302,
+      "type": "vorasius",
+      "name": "Blisterburst",
+      "icon": "ability_argus_soulburst",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1270124,
+      "type": "midnight-falls",
+      "name": "Death Shutter",
+      "icon": "inv_cosmicvoid_groundsate",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1270516,
+      "type": "vaelgor-&-ezzorak",
+      "name": "Shadowmark",
+      "icon": "spell_nzinsanity_chasedbyshadows",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1270949,
+      "type": "imperator-averzian",
+      "name": "Desolation",
+      "icon": "inv_112_raidtrinkets_blobofswirlingvoid_gold",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1270951,
+      "type": "imperator-averzian",
+      "name": "Desolation",
+      "icon": "inv_112_raidtrinkets_blobofswirlingvoid_gold",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1272310,
+      "type": "lightblinded-vanguard",
+      "name": "Divine Storm",
+      "icon": "ability_paladin_divinestorm",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1272328,
+      "type": "vorasius",
+      "name": "Smashing Frenzy",
+      "icon": "inv_misc_rylakclaw",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1272329,
+      "type": "vorasius",
+      "name": "Smashing Frenzy",
+      "icon": "inv_misc_rylakclaw",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1272598,
+      "type": "vorasius",
+      "name": "Creepspatter",
+      "icon": "inv_voidcreepermount_blue",
+      "source": "vs-dr-mqd"
+    },
+
+    {
+      "id": 1272950,
+      "type": "vorasius",
+      "name": "Gathering Void",
+      "icon": "inv_elemental_primal_shadow",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1273034,
+      "type": "lightblinded-vanguard",
+      "name": "Bloodcurdling Shriek",
+      "icon": "inv_kaijubatvoidmount",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1273112,
+      "type": "chimaerus-the-undreamt-god",
+      "name": "Consume",
+      "icon": "spell_deathknight_gnaw_ghoul",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1274846,
+      "type": "imperator-averzian",
+      "name": "Dark Barrage",
+      "icon": "inv12_ability_priest_voidvolley",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1275059,
+      "type": "imperator-averzian",
+      "name": "Black Miasma",
+      "icon": "spell_priest_void-flay",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1275556,
+      "type": "vorasius",
+      "name": "Parasite Expulsion",
+      "icon": "inv_voidcreepermount_blue",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1275558,
+      "type": "vorasius",
+      "name": "Parasite Expulsion",
+      "icon": "inv_voidcreepermount_blue",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1276581,
+      "type": "vorasius",
+      "name": "Aftershock",
+      "icon": "spell_nature_earthquake",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1276583,
+      "type": "vorasius",
+      "name": "Aftershock",
+      "icon": "spell_nature_earthquake",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1276584,
+      "type": "vorasius",
+      "name": "Aftershock",
+      "icon": "spell_nature_earthquake",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1276588,
+      "type": "vorasius",
+      "name": "Aftershock",
+      "icon": "spell_nature_earthquake",
+      "source": "vs-dr-mqd"
+    },
+
+    {
+      "id": 1276811,
+      "type": "vorasius",
+      "name": "Aftershock",
+      "icon": "spell_nature_earthquake",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1276812,
+      "type": "vorasius",
+      "name": "Aftershock",
+      "icon": "spell_nature_earthquake",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1276813,
+      "type": "vorasius",
+      "name": "Aftershock",
+      "icon": "spell_nature_earthquake",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1276817,
+      "type": "vorasius",
+      "name": "Aftershock",
+      "icon": "spell_nature_earthquake",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1276824,
+      "type": "vorasius",
+      "name": "Aftershock",
+      "icon": "spell_nature_earthquake",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1276828,
+      "type": "vorasius",
+      "name": "Aftershock",
+      "icon": "spell_nature_earthquake",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1276829,
+      "type": "vorasius",
+      "name": "Aftershock",
+      "icon": "spell_nature_earthquake",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1276830,
+      "type": "vorasius",
+      "name": "Aftershock",
+      "icon": "spell_nature_earthquake",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1276832,
+      "type": "vorasius",
+      "name": "Aftershock",
+      "icon": "spell_nature_earthquake",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1276833,
+      "type": "vorasius",
+      "name": "Aftershock",
+      "icon": "spell_nature_earthquake",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1276834,
+      "type": "vorasius",
+      "name": "Aftershock",
+      "icon": "spell_nature_earthquake",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1276835,
+      "type": "vorasius",
+      "name": "Aftershock",
+      "icon": "spell_nature_earthquake",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1279890,
+      "type": "imperator-averzian",
+      "name": "Cosmic Eruption",
+      "icon": "spell_holy_circleofrenewal_shadow",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1280101,
+      "type": "vorasius",
+      "name": "Void Breath",
+      "icon": "inv_cosmicvoid_missile",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1280655,
+      "type": "chimaerus-the-undreamt-god",
+      "name": "Cannibalized Essence",
+      "icon": "ability_racial_cannibalize",
+      "source": "vs-dr-mqd"
+    }
+  ]
+}

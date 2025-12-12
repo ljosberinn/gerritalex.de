@@ -1,0 +1,33 @@
+---
+title: Midnight S1 | Zephyr, or Why Avoidance Matters
+date: '2025-12-12'
+tags: ['wow', 'evoker']
+draft: false
+summary: 'An overview of which abilities get mitigated by Zephyr, and thus by avoidance during Midnight Season 1: Patch 12.0' 
+authors: ['default']
+layout: PostBanner
+images: ['/static/images/zephyr-banner.jpg']
+includeImageInPreview: true
+---
+
+## What's this?
+
+**Most importantly, it's WIP! No cleanup has happened yet and the list is also incomplete due to not all difficulties nor bosses having been tested yet!**
+
+An overview of which abilities get mitigated by <WowheadLink kind="spell" id={374227} icon="ability_evoker_hoverblack">Zephyr</WowheadLink>, and thus avoidance aswell.
+
+For dungeons, consult [Not Even Close](https://not-even-close.com/) for what's actually deadly.
+
+**Does not include entirely avoidable damage such as standing in what's commonly referred as swirlies**.
+
+Want this as JSON? [Click here](https://github.com/ljosberinn/gerritalex.de/blob/master/prebuild/zephyr-mn-s1.json).
+
+<div className="flex justify-center">
+    <div className="max-w-xl">
+        ![Zephyr Meme](/static/images/zephyr-meme.jpg)
+    </div>
+</div>
+
+import data from './prebuild/zephyr-mn-s1.json';
+
+<AoeSpells data={data} wowheadBranch="beta" />
