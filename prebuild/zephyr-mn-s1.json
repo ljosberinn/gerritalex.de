@@ -33,53 +33,659 @@
       ]
     },
     "algethar-academy": {
-      "icon": "achievement_dungeon_dragonacademy",
       "name": "Algeth'ar Academy",
-      "encounters": ["Overgrown Ancient", "Crawth", "Vexamus", "Echo of Doragosa"]
+      "encounters": ["Overgrown Ancient", "Crawth", "Vexamus", "Echo of Doragosa"],
+      "icon": "achievement_dungeon_dragonacademy"
     },
     "skyreach": {
-      "icon": "achievement_dungeon_arakkoaspires",
       "name": "Skyreach",
-      "encounters": ["Ranjit", "Araknath", "Rukhran", "High Sage Viryx"]
+      "encounters": ["Ranjit", "Araknath", "Rukhran", "High Sage Viryx"],
+      "icon": "achievement_dungeon_arakkoaspires"
     },
     "windrunner-spire": {
-      "icon": "inv_achievement_dungeon_windrunnerspire",
       "name": "Windrunner Spire",
-      "encounters": ["Emberdawn", "Derelict Duo", "Commander Kroluk", "Restless Heart"]
+      "encounters": ["Emberdawn", "Derelict Duo", "Commander Kroluk", "Restless Heart"],
+      "icon": "inv_achievement_dungeon_windrunnerspire"
     },
     "pit-of-saron": {
-      "icon": "achievement_dungeon_icecrown_pitofsaron",
       "name": "Pit of Saron",
-      "encounters": ["Ick and Krick", "Forgemaster Garfrost", "Scourgelord Tyrannus"]
+      "encounters": ["Ick and Krick", "Forgemaster Garfrost", "Scourgelord Tyrannus"],
+      "icon": "achievement_dungeon_icecrown_pitofsaron"
     },
     "seat-of-the-triumvirate": {
-      "icon": "achievement_boss_triumvirate_darknaaru",
       "name": "Seat of the Triumvirate",
-      "encounters": ["Zuraal the Ascended", "Saprish", "VViceroy Nezhar", "L'ura"]
+      "encounters": ["Zuraal the Ascended", "Saprish", "Viceroy Nezhar", "L'ura"],
+      "icon": "achievement_boss_triumvirate_darknaaru"
     },
     "nexus-point-xenas": {
-      "icon": "inv_achievement_dungeon_nexuspointxenas",
       "name": "Nexus-Point Xenas",
-      "encounters": ["Corewarden Nysarra", "Chief Corewright Kasreth", "Lothraxion"]
+      "encounters": ["Corewarden Nysarra", "Chief Corewright Kasreth", "Lothraxion"],
+      "icon": "inv_achievement_dungeon_nexuspointxenas"
     },
     "maisara-caverns": {
-      "icon": "inv_achievement_dungeon_maisarahills",
       "name": "Maisara Caverns",
-      "encounters": ["Muro'jin and Nekraxx", "Vordaza", "Rak'tul, Vessel of Souls"]
+      "encounters": ["Muro'jin and Nekraxx", "Vordaza", "Rak'tul, Vessel of Souls"],
+      "icon": "inv_achievement_dungeon_maisarahills"
     },
     "magisters-terrace": {
-      "icon": "inv_achievement_dungeon_magistersterrace",
       "name": "Magister's Terrace",
-      "encounters": ["Arcanotron Custos", "Selanar Sunlash", "Gemellus", "Degentrius"]
+      "encounters": ["Arcanotron Custos", "Selanar Sunlash", "Gemellus", "Degentrius"],
+      "icon": "inv_achievement_dungeon_magistersterrace"
     }
   },
   "spells": [
+    {
+      "id": 153757,
+      "type": "ranjit",
+      "name": "Fan of Blades",
+      "icon": "ability_rogue_fanofknives",
+      "source": "skyreach",
+      "notes": ["Avoidable, tank not in melee"]
+    },
+    {
+      "id": 153898,
+      "type": "rukhran",
+      "name": "Screech",
+      "icon": "inv-mount_raven_54",
+      "source": "skyreach",
+      "notes": ["Avoidable, tank not in melee"]
+    },
+    {
+      "id": 154135,
+      "type": "araknath",
+      "name": "Supernova",
+      "icon": "spell_fire_ragnaros_supernova",
+      "source": "skyreach"
+    },
+    {
+      "id": 244579,
+      "type": "zuraal-the-ascended",
+      "name": "Decimate",
+      "icon": "inv_enchant_voidsphere",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 244599,
+      "type": "trash",
+      "name": "Dark Expulsion",
+      "icon": "spell_priest_void-flay",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 245177,
+      "type": "trash",
+      "name": "Fragment of Despair",
+      "icon": "spell_shadow_painspike",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 245178,
+      "type": "trash",
+      "name": "Erupting Despair",
+      "icon": "spell_shadow_painspike",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 245289,
+      "type": "trash",
+      "name": "Void Blast",
+      "icon": "inv_enchant_voidsphere",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 245396,
+      "type": "lura",
+      "name": "Naaru's Lament",
+      "icon": "spell_priest_divinestar_shadow",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 245706,
+      "type": "trash",
+      "name": "Ruinous Strike",
+      "icon": "inv_weapon_halberd17",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 245803,
+      "type": "trash",
+      "name": "Ravaging Darkness",
+      "icon": "ability_druid_ripandtear",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 245806,
+      "type": "trash",
+      "name": "Ravaging Darkness",
+      "icon": "ability_druid_ripandtear",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 246026,
+      "type": "saprish",
+      "name": "Void Bomb",
+      "icon": "inv_cosmicvoid_orb",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 246136,
+      "type": "trash",
+      "name": "Null Palm",
+      "icon": "ability_creature_disease_05",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 246326,
+      "type": "trash",
+      "name": "Entropic Force",
+      "icon": "ability_socererking_forcenova",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 246592,
+      "type": "trash",
+      "name": "Corrupting Void",
+      "icon": "ability_creature_cursed_03",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 246688,
+      "type": "trash",
+      "name": "Suppression Field",
+      "icon": "ability_warlock_everlastingaffliction",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 246900,
+      "type": "trash",
+      "name": "Dark Outbreak",
+      "icon": "ability_warlock_everlastingaffliction",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 247207,
+      "type": "trash",
+      "name": "Overload",
+      "icon": "spell_mage_arcaneorb",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 247246,
+      "type": "saprish",
+      "name": "Umbral Flanking",
+      "icon": "ability_rogue_shadowstep",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 247930,
+      "type": "lura",
+      "name": "Umbral Cadence",
+      "icon": "spell_fire_twilightnova",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 248057,
+      "type": "trash",
+      "name": "Dark Advance",
+      "icon": "ability_heroicleap",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 248060,
+      "type": "trash",
+      "name": "Dark Advance",
+      "icon": "ability_heroicleap",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 248067,
+      "type": "trash",
+      "name": "Grand Swing",
+      "icon": "ability_socererking_forcenova",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 248071,
+      "type": "trash",
+      "name": "Grand Swing",
+      "icon": "ability_socererking_forcenova",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 248130,
+      "type": "trash",
+      "name": "Darkened Remnant",
+      "icon": "spell_shadow_painspike",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 248228,
+      "type": "trash",
+      "name": "Collapse",
+      "icon": "inv_enchant_voidsphere",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 248298,
+      "type": "trash",
+      "name": "Screech",
+      "icon": "ability_vehicle_sonicshockwave",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 248302,
+      "type": "trash",
+      "name": "Dark Breath",
+      "icon": "trade_engineering",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 248414,
+      "type": "trash",
+      "name": "Explode",
+      "icon": "spell_mage_arcaneorb",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 248736,
+      "type": "trash",
+      "name": "Eternal Twilight",
+      "icon": "spell_fire_twilightnova",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 248831,
+      "type": "saprish",
+      "name": "Dread Screech",
+      "icon": "inv_manaraymount_magenta",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 249058,
+      "type": "trash",
+      "name": "Remnant of Anguish",
+      "icon": "spell_priest_shadoworbs",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 249077,
+      "type": "trash",
+      "name": "Corrupting Void",
+      "icon": "ability_creature_cursed_03",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 249078,
+      "type": "trash",
+      "name": "Void Diffusion",
+      "icon": "ability_warlock_everlastingaffliction",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 249082,
+      "type": "viceroy-nezhar",
+      "name": "Unstable Entrance",
+      "icon": "spell_mage_supernova",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 250188,
+      "type": "trash",
+      "name": "Void Fragment",
+      "icon": "spell_shadow_painspike",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 250193,
+      "type": "trash",
+      "name": "Fragment",
+      "icon": "ability_priest_cascade_shadow",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 374352,
+      "type": "echo-of-doragosa",
+      "name": "Energy Bomb",
+      "icon": "spell_arcane_blast",
+      "source": "algethar-academy"
+    },
+    {
+      "id": 374361,
+      "type": "echo-of-doragosa",
+      "name": "Astral Breath",
+      "icon": "spell_frost_frostshock",
+      "source": "algethar-academy"
+    },
+    {
+      "id": 376449,
+      "type": "crawth",
+      "name": "Firestorm",
+      "icon": "spell_fire_meteorstorm",
+      "source": "algethar-academy"
+    },
+    {
+      "id": 377009,
+      "type": "crawth",
+      "name": "Deafening Screech",
+      "icon": "ability_vehicle_sonicshockwave",
+      "source": "algethar-academy"
+    },
+    {
+      "id": 377034,
+      "type": "crawth",
+      "name": "Overpowering Gust",
+      "icon": "inv_icon_wing06b",
+      "source": "algethar-academy"
+    },
+    {
+      "id": 377383,
+      "type": "trash",
+      "name": "Gust",
+      "icon": "ability_skyreach_wind",
+      "source": "algethar-academy"
+    },
+    {
+      "id": 377912,
+      "type": "trash",
+      "name": "Expel Intruders",
+      "icon": "ability_druid_galewinds",
+      "source": "algethar-academy"
+    },
+    {
+      "id": 385958,
+      "type": "vexamus",
+      "name": "Arcane Expulsion",
+      "icon": "spell_arcane_arcanetorrent",
+      "source": "algethar-academy"
+    },
+    {
+      "id": 386088,
+      "type": "vexamus",
+      "name": "Arcane Orb",
+      "icon": "spell_mage_arcaneorb_nightborne",
+      "source": "algethar-academy"
+    },
+    {
+      "id": 386202,
+      "type": "vexamus",
+      "name": "Mana Bomb",
+      "icon": "spell_mage_flameorb_blue",
+      "source": "algethar-academy",
+      "notes": ["Notably, the DoT is NOT AoE, only the final damage event is"]
+    },
+    {
+      "id": 388546,
+      "type": "vexamus",
+      "name": "Arcane Fissure",
+      "icon": "spell_arcane_invocation",
+      "source": "algethar-academy"
+    },
+    {
+      "id": 388625,
+      "type": "overgrown-ancient",
+      "name": "Branch Out",
+      "icon": "inv_misc_branch_01",
+      "source": "algethar-academy"
+    },
+    {
+      "id": 388799,
+      "type": "overgrown-ancient",
+      "name": "Germinate",
+      "icon": "spell_lifegivingseed",
+      "source": "algethar-academy"
+    },
+    {
+      "id": 388822,
+      "type": "echo-of-doragosa",
+      "name": "Power Vacuum",
+      "icon": "ability_socererking_arcanewrath",
+      "source": "algethar-academy"
+    },
+    {
+      "id": 388868,
+      "type": "trash",
+      "name": "Mana Void",
+      "icon": "spell_mage_flameorb_blue",
+      "source": "algethar-academy"
+    },
+    {
+      "id": 388923,
+      "type": "overgrown-ancient",
+      "name": "Burst Forth",
+      "icon": "spell_nature_earthquake",
+      "source": "algethar-academy"
+    },
+    {
+      "id": 388940,
+      "type": "trash",
+      "name": "Vicious Ambush",
+      "icon": "ability_ambush",
+      "source": "algethar-academy"
+    },
+    {
+      "id": 388957,
+      "type": "trash",
+      "name": "Riftbreath",
+      "icon": "spell_arcane_arcanetorrent",
+      "source": "algethar-academy"
+    },
+    {
+      "id": 388996,
+      "type": "echo-of-doragosa",
+      "name": "Energy Eruption",
+      "icon": "ability_socererking_arcanemines",
+      "source": "algethar-academy"
+    },
+    {
+      "id": 390918,
+      "type": "trash",
+      "name": "Seed Detonation",
+      "icon": "inv_herbalism_70_yserallineseed",
+      "source": "algethar-academy"
+    },
+    {
+      "id": 396716,
+      "type": "overgrown-ancient",
+      "name": "Splinterbark",
+      "icon": "inv_misc_herb_writhebark",
+      "source": "algethar-academy",
+      "notes": ["Yes, this is an AoE bleed.."]
+    },
     {
       "id": 431164,
       "type": "vaelgor-&-ezzorak",
       "name": "Fire Breath",
       "icon": "ability_evoker_firebreath",
       "source": "vs-dr-mqd"
+    },
+    {
+      "id": 439488,
+      "type": "echo-of-doragosa",
+      "name": "Unleash Energy",
+      "icon": "inv_enchant_essencearcanelarge",
+      "source": "algethar-academy"
+    },
+    {
+      "id": 468221,
+      "type": "trash",
+      "name": "Rallying Bellow",
+      "icon": "racial_orc_berserkerstrength",
+      "source": "windrunner-spire"
+    },
+    {
+      "id": 471643,
+      "type": "trash",
+      "name": "Interrupting Screech",
+      "icon": "ability_mount_dragonhawkarmorallliance",
+      "source": "windrunner-spire"
+    },
+    {
+      "id": 472054,
+      "type": "trash",
+      "name": "Reckless Leap",
+      "icon": "ability_heroicleap",
+      "source": "windrunner-spire"
+    },
+    {
+      "id": 472634,
+      "type": "trash",
+      "name": "Arrow Rain",
+      "icon": "sha_spell_fire_bluerainoffire",
+      "source": "windrunner-spire"
+    },
+    {
+      "id": 472672,
+      "type": "trash",
+      "name": "Bolt Gale",
+      "icon": "ability_skyreach_wind_wall",
+      "source": "windrunner-spire"
+    },
+    {
+      "id": 472758,
+      "type": "trash",
+      "name": "Splattering Spew",
+      "icon": "spell_shadow_plaguecloud",
+      "source": "windrunner-spire"
+    },
+    {
+      "id": 473258,
+      "type": "trash",
+      "name": "Crowd Dispersal",
+      "icon": "ability_socererking_arcanewrath",
+      "source": "magisters-terrace"
+    },
+    {
+      "id": 473647,
+      "type": "trash",
+      "name": "Phial Toss",
+      "icon": "inv_11_0_dungeon_tentaclevial_green",
+      "source": "windrunner-spire"
+    },
+    {
+      "id": 473668,
+      "type": "trash",
+      "name": "Pulsing Shriek",
+      "icon": "inv_sonic_debuff",
+      "source": "windrunner-spire"
+    },
+    {
+      "id": 473786,
+      "type": "trash",
+      "name": "Fetid Spew",
+      "icon": "ability_creature_disease_02",
+      "source": "windrunner-spire"
+    },
+    {
+      "id": 474414,
+      "type": "trash",
+      "name": "Arcane Eruption",
+      "icon": "ability_socererking_arcanefortification",
+      "source": "magisters-terrace"
+    },
+    {
+      "id": 734277,
+      "type": "trash",
+      "name": "Bullseye Windblast",
+      "icon": "spell_broker_nova",
+      "source": "windrunner-spire"
+    },
+    {
+      "id": 1214081,
+      "type": "vexamus",
+      "name": "Arcane Expulsion",
+      "icon": "ability_socererking_arcanewrath",
+      "source": "magisters-terrace"
+    },
+    {
+      "id": 1214874,
+      "type": "trash",
+      "name": "Violent Manifestation",
+      "icon": "ability_malkorok_blightofyshaarj_red",
+      "source": "windrunner-spire"
+    },
+    {
+      "id": 1215157,
+      "type": "trash",
+      "name": "Unstable Void Essence",
+      "icon": "inv_cosmicvoid_missile",
+      "source": "magisters-terrace"
+    },
+    {
+      "id": 1215161,
+      "type": "trash",
+      "name": "Void Destruction",
+      "icon": "inv_cosmicvoid_groundsate",
+      "source": "magisters-terrace"
+    },
+    {
+      "id": 1216042,
+      "type": "trash",
+      "name": "Squall Leap",
+      "icon": "ability_monk_ridethewind",
+      "source": "windrunner-spire"
+    },
+    {
+      "id": 1216454,
+      "type": "trash",
+      "name": "Arrow Rain",
+      "icon": "inv_ammo_arrow_02",
+      "source": "windrunner-spire"
+    },
+    {
+      "id": 1216643,
+      "type": "trash",
+      "name": "Gore Whirl",
+      "icon": "ability_warrior_bladestorm",
+      "source": "windrunner-spire"
+    },
+    {
+      "id": 1216963,
+      "type": "trash",
+      "name": "Spore Dispersal",
+      "icon": "inv_red_sporecreature2",
+      "source": "windrunner-spire"
+    },
+    {
+      "id": 1217021,
+      "type": "trash",
+      "name": "Ferocious Pounce",
+      "icon": "ability_druid_supriseattack",
+      "source": "windrunner-spire"
+    },
+    {
+      "id": 1217763,
+      "type": "trash",
+      "name": "Fire Breath",
+      "icon": "ability_monk_breathoffire",
+      "source": "windrunner-spire"
+    },
+    {
+      "id": 1219491,
+      "type": "trash",
+      "name": "Debilitating Shriek",
+      "icon": "ui_darkshore_warfront_horde_banshee",
+      "source": "windrunner-spire"
+    },
+    {
+      "id": 1224903,
+      "type": "trash",
+      "name": "Suppression Zone",
+      "icon": "spell_deathknight_antimagiczone",
+      "source": "magisters-terrace"
+    },
+    {
+      "id": 1225135,
+      "type": "trash",
+      "name": "Feedback",
+      "icon": "spell_arcane_arcane01_nightborne",
+      "source": "magisters-terrace"
+    },
+    {
+      "id": 1225796,
+      "type": "trash",
+      "name": "Runic Mark",
+      "icon": "inv_ability_aldrachireaverdemonhunter_reaversglaive",
+      "source": "magisters-terrace"
     },
     {
       "id": 1226598,
@@ -101,6 +707,13 @@
       "name": "Void Orb Eruption",
       "icon": "inv_cosmicvoid_orb",
       "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1237172,
+      "type": "trash",
+      "name": "Epidemic",
+      "icon": "spell_nature_nullifydisease",
+      "source": "maisara-caverns"
     },
     {
       "id": 1239414,
@@ -187,6 +800,13 @@
       "source": "vs-dr-mqd"
     },
     {
+      "id": 1243900,
+      "type": "trash",
+      "name": "Fetid Quillstorm",
+      "icon": "inv_icon_feather03e",
+      "source": "maisara-caverns"
+    },
+    {
       "id": 1244225,
       "type": "vaelgor-&-ezzorak",
       "name": "Dread Breath",
@@ -200,13 +820,19 @@
       "icon": "warlock_curse_shadow_aura",
       "source": "vs-dr-mqd"
     },
-
     {
       "id": 1244419,
       "type": "vorasius",
       "name": "Overpowering Pulse",
       "icon": "inv_cosmicvoid_groundsate",
       "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1244985,
+      "type": "trash",
+      "name": "Arcane Volley",
+      "icon": "ability_socererking_arcanereplication_nightborne",
+      "source": "magisters-terrace"
     },
     {
       "id": 1245302,
@@ -251,11 +877,25 @@
       "source": "vs-dr-mqd"
     },
     {
+      "id": 1246446,
+      "type": "trash",
+      "name": "Null Reaction",
+      "icon": "spell_mage_arcaneorb",
+      "source": "magisters-terrace"
+    },
+    {
       "id": 1246502,
       "type": "lightblinded-vanguard",
       "name": "Avenger's Shield",
       "icon": "spell_holy_avengersshield",
       "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1246666,
+      "type": "trash",
+      "name": "Infected Pinions",
+      "icon": "spell_deathknight_necroticplague",
+      "source": "maisara-caverns"
     },
     {
       "id": 1246749,
@@ -270,6 +910,34 @@
       "name": "Divine Storm",
       "icon": "ability_paladin_divinestorm",
       "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1247999,
+      "type": "trash",
+      "name": "Volatile Infusion",
+      "icon": "inv_artifact_powerofthedarkside",
+      "source": "magisters-terrace"
+    },
+    {
+      "id": 1248219,
+      "type": "trash",
+      "name": "Void Bomb",
+      "icon": "spell_shadow_shadowfury",
+      "source": "magisters-terrace"
+    },
+    {
+      "id": 1248879,
+      "type": "trash",
+      "name": "Deathgorged Vessel",
+      "icon": "spell_necro_deathlyecho",
+      "source": "maisara-caverns"
+    },
+    {
+      "id": 1248980,
+      "type": "trash",
+      "name": "Volatile Essence",
+      "icon": "spell_necro_deathsknell",
+      "source": "maisara-caverns"
     },
     {
       "id": 1249024,
@@ -356,11 +1024,116 @@
       "source": "vs-dr-mqd"
     },
     {
+      "id": 1251811,
+      "type": "trash",
+      "name": "Final Pursuit",
+      "icon": "ability_fixated_state_red",
+      "source": "maisara-caverns"
+    },
+    {
+      "id": 1251813,
+      "type": "trash",
+      "name": "Lingering Dread",
+      "icon": "spell_necro_inevitableend",
+      "source": "maisara-caverns"
+    },
+    {
+      "id": 1251951,
+      "type": "trash",
+      "name": "Death and Decay",
+      "icon": "spell_shadow_deathanddecay",
+      "source": "maisara-caverns"
+    },
+    {
       "id": 1252157,
       "type": "vaelgor-&-ezzorak",
       "name": "Nullzone Implosion",
       "icon": "spell_priest_void-blast",
       "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1252406,
+      "type": "trash",
+      "name": "Dreadbellow",
+      "icon": "spell_shadow_ragingscream",
+      "source": "nexus-point-xenas"
+    },
+    {
+      "id": 1252437,
+      "type": "trash",
+      "name": "Melee",
+      "icon": "inv_cosmicvoid_wave",
+      "source": "nexus-point-xenas"
+    },
+    {
+      "id": 1252438,
+      "type": "trash",
+      "name": "Melee",
+      "icon": "inv_cosmicvoid_wave",
+      "source": "nexus-point-xenas"
+    },
+    {
+      "id": 1252548,
+      "type": "trash",
+      "name": "Fiery Landing",
+      "icon": "inv_dragonhawk2_orange",
+      "source": "windrunner-spire"
+    },
+    {
+      "id": 1252628,
+      "type": "trash",
+      "name": "Flailstorm",
+      "icon": "ability_druid_galewinds",
+      "source": "nexus-point-xenas"
+    },
+    {
+      "id": 1252704,
+      "type": "trash",
+      "name": "Crush Souls",
+      "icon": "ability_maldraxxus_priest",
+      "source": "maisara-caverns"
+    },
+    {
+      "id": 1252875,
+      "type": "trash",
+      "name": "Eclipsing Step",
+      "icon": "spell_holy_circleofrenewal_shadow",
+      "source": "nexus-point-xenas"
+    },
+    {
+      "id": 1253368,
+      "type": "rukhran",
+      "name": "Solar Flare",
+      "icon": "artifactability_firemage_phoenixbolt",
+      "source": "skyreach",
+      "notes": [
+        [
+          "While ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 76227,
+              "kind": "npc",
+              "children": "Sunwings"
+            }
+          },
+          " are alive"
+        ]
+      ]
+    },
+    {
+      "id": 1253448,
+      "type": "trash",
+      "name": "Solar Nova",
+      "icon": "inv_ability_heraldofthesunpaladin_dawnlight",
+      "source": "skyreach"
+    },
+    {
+      "id": 1253510,
+      "type": "rukhran",
+      "name": "Sunbreak",
+      "icon": "ability_warlock_burningembers",
+      "source": "skyreach"
     },
     {
       "id": 1253691,
@@ -370,11 +1143,46 @@
       "source": "vs-dr-mqd"
     },
     {
+      "id": 1253978,
+      "type": "trash",
+      "name": "Gust Shot",
+      "icon": "ability_skyreach_four_wind",
+      "source": "windrunner-spire"
+    },
+    {
       "id": 1254018,
       "type": "fallen-king-salhadaar",
       "name": "Cosmic Unraveling",
       "icon": "trade_engineering",
       "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1254332,
+      "type": "trash",
+      "name": "Solar Flare",
+      "icon": "ability_rhyolith_magmaflow_wave",
+      "source": "skyreach"
+    },
+    {
+      "id": 1254569,
+      "type": "trash",
+      "name": "Dire Screech",
+      "icon": "inv-mount_raven_54",
+      "source": "skyreach"
+    },
+    {
+      "id": 1254595,
+      "type": "trash",
+      "name": "Energy Release",
+      "icon": "spell_arcane_studentofmagic",
+      "source": "magisters-terrace"
+    },
+    {
+      "id": 1254679,
+      "type": "trash",
+      "name": "Wrathful Wind",
+      "icon": "ability_skyreach_wind",
+      "source": "skyreach"
     },
     {
       "id": 1255156,
@@ -391,6 +1199,27 @@
       "source": "vs-dr-mqd"
     },
     {
+      "id": 1255377,
+      "type": "trash",
+      "name": "Repel",
+      "icon": "spell_frost_arcticwinds",
+      "source": "skyreach"
+    },
+    {
+      "id": 1255473,
+      "type": "trash",
+      "name": "Dive",
+      "icon": "ability_monk_ridethewind",
+      "source": "skyreach"
+    },
+    {
+      "id": 1255503,
+      "type": "trash",
+      "name": "Brilliant Dispersion",
+      "icon": "ability_paladin_speedoflight",
+      "source": "nexus-point-xenas"
+    },
+    {
       "id": 1255683,
       "type": "imperator-averzian",
       "name": "Gnashing Void",
@@ -398,11 +1227,158 @@
       "source": "vs-dr-mqd"
     },
     {
+      "id": 1255922,
+      "type": "trash",
+      "name": "Wind Blast",
+      "icon": "inv_elemental_primal_air",
+      "source": "skyreach"
+    },
+    {
       "id": 1255979,
       "type": "vaelgor-&-ezzorak",
       "name": "Dread Breath",
       "icon": "ability_rogue_envelopingshadows",
       "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1256047,
+      "type": "trash",
+      "name": "Deafening Roar",
+      "icon": "ability_druid_challangingroar",
+      "source": "maisara-caverns"
+    },
+    {
+      "id": 1256247,
+      "type": "trash",
+      "name": "Fetid Quillstorm",
+      "icon": "inv_icon_feather03e",
+      "source": "maisara-caverns"
+    },
+    {
+      "id": 1257079,
+      "type": "trash",
+      "name": "Corespark Surge",
+      "icon": "inv_112_raidtrinkets_etherealenergystoragesphere_terra",
+      "source": "nexus-point-xenas"
+    },
+    {
+      "id": 1257103,
+      "type": "trash",
+      "name": "Erratic Surge",
+      "icon": "achievement_bg_wineos",
+      "source": "nexus-point-xenas"
+    },
+    {
+      "id": 1257105,
+      "type": "trash",
+      "name": "Erratic Zap",
+      "icon": "inv_misc_stormlordsfavor",
+      "source": "nexus-point-xenas"
+    },
+    {
+      "id": 1257123,
+      "type": "trash",
+      "name": "Daze",
+      "icon": "spell_frost_stun",
+      "source": "nexus-point-xenas"
+    },
+    {
+      "id": 1257126,
+      "type": "trash",
+      "name": "Corespark Overload",
+      "icon": "ability_monk_forcesphere_pink",
+      "source": "nexus-point-xenas"
+    },
+    {
+      "id": 1257160,
+      "type": "trash",
+      "name": "Rain of Toads",
+      "icon": "inv_pet_toad_green",
+      "source": "maisara-caverns"
+    },
+    {
+      "id": 1257164,
+      "type": "trash",
+      "name": "Vile Potatoad",
+      "icon": "inv_pet_toad_brown",
+      "source": "maisara-caverns"
+    },
+    {
+      "id": 1257509,
+      "type": "trash",
+      "name": "Corespark Detonation",
+      "icon": "ability_monk_forcesphere_pink",
+      "source": "nexus-point-xenas"
+    },
+    {
+      "id": 1257613,
+      "type": "trash",
+      "name": "Divine Guile",
+      "icon": "spell_holy_prayerofspirit",
+      "source": "nexus-point-xenas"
+    },
+    {
+      "id": 1257782,
+      "type": "trash",
+      "name": "Shredding Talons",
+      "icon": "inv_misc_raptortalon_fel",
+      "source": "maisara-caverns"
+    },
+    {
+      "id": 1257895,
+      "type": "trash",
+      "name": "Ancestral Crush",
+      "icon": "spell_necro_deathsknell",
+      "source": "maisara-caverns"
+    },
+    {
+      "id": 1257980,
+      "type": "trash",
+      "name": "Devour the Unworthy",
+      "icon": "spell_holy_consumemagic",
+      "source": "nexus-point-xenas"
+    },
+    {
+      "id": 1258099,
+      "type": "trash",
+      "name": "Ice Chunk",
+      "icon": "spell_frost_icestorm",
+      "source": "pit-of-saron"
+    },
+    {
+      "id": 1258140,
+      "type": "trash",
+      "name": "Swirling Gusts",
+      "icon": "ability_ironmaidens_swirlingvortex",
+      "source": "skyreach"
+    },
+    {
+      "id": 1258205,
+      "type": "araknath",
+      "name": "Solar Infusion",
+      "icon": "inv_ability_heraldofthesunpaladin_dawnlight",
+      "source": "skyreach"
+    },
+    {
+      "id": 1258220,
+      "type": "trash",
+      "name": "Solar Fire",
+      "icon": "ability_mage_firestarter",
+      "source": "skyreach"
+    },
+    {
+      "id": 1258464,
+      "type": "trash",
+      "name": "Leaping Maul",
+      "icon": "ability_heroicleap",
+      "source": "pit-of-saron"
+    },
+    {
+      "id": 1258482,
+      "type": "trash",
+      "name": "Searing Presence",
+      "icon": "inv_elemental_primal_fire",
+      "source": "maisara-caverns"
     },
     {
       "id": 1258514,
@@ -419,13 +1395,33 @@
       "source": "vs-dr-mqd"
     },
     {
+      "id": 1258684,
+      "type": "trash",
+      "name": "Void Ritual",
+      "icon": "ability_priest_voidentropy",
+      "source": "nexus-point-xenas"
+    },
+    {
+      "id": 1258802,
+      "type": "trash",
+      "name": "Dread Pulse",
+      "icon": "spell_priest_burningwill_shadow",
+      "source": "pit-of-saron"
+    },
+    {
+      "id": 1258823,
+      "type": "trash",
+      "name": "Ritual Firebrand",
+      "icon": "spell_fire_felflamering_red",
+      "source": "maisara-caverns"
+    },
+    {
       "id": 1258883,
       "type": "imperator-averzian",
       "name": "Void Fall",
       "icon": "inv_nullstone_void",
       "source": "vs-dr-mqd"
     },
-
     {
       "id": 1258968,
       "type": "vorasius",
@@ -433,13 +1429,75 @@
       "icon": "inv_cosmicvoid_missile",
       "source": "vs-dr-mqd"
     },
-
+    {
+      "id": 1259145,
+      "type": "trash",
+      "name": "Plague Spew",
+      "icon": "spell_shadow_plaguecloud",
+      "source": "pit-of-saron"
+    },
+    {
+      "id": 1259183,
+      "type": "trash",
+      "name": "Piercing Screech",
+      "icon": "inv_sonic_missile",
+      "source": "maisara-caverns"
+    },
     {
       "id": 1259186,
       "type": "vorasius",
       "name": "Blisterburst",
       "icon": "ability_argus_soulburst",
       "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1259202,
+      "type": "trash",
+      "name": "Cryoburst",
+      "icon": "spell_fire_blueflamering",
+      "source": "pit-of-saron"
+    },
+    {
+      "id": 1259274,
+      "type": "trash",
+      "name": "Spectral Strikes",
+      "icon": "spell_necro_deathlyecho",
+      "source": "maisara-caverns"
+    },
+    {
+      "id": 1259664,
+      "type": "trash",
+      "name": "Soulstorms",
+      "icon": "spell_animamaldraxxus_nova",
+      "source": "maisara-caverns"
+    },
+    {
+      "id": 1259713,
+      "type": "trash",
+      "name": "Rended Soul",
+      "icon": "spell_warlock_soulburn",
+      "source": "maisara-caverns"
+    },
+    {
+      "id": 1259777,
+      "type": "trash",
+      "name": "Umbral Vortex",
+      "icon": "ability_rogue_envelopingshadows",
+      "source": "maisara-caverns"
+    },
+    {
+      "id": 1259810,
+      "type": "trash",
+      "name": "Shattered Totem",
+      "icon": "spell_totem_wardofdraining",
+      "source": "maisara-caverns"
+    },
+    {
+      "id": 1259887,
+      "type": "trash",
+      "name": "Ritual Drums",
+      "icon": "inv_leatherworking_drumsofthemaestrom",
+      "source": "maisara-caverns"
     },
     {
       "id": 1259921,
@@ -455,13 +1513,19 @@
       "icon": "inv_cosmicvoid_missile",
       "source": "vs-dr-mqd"
     },
-
     {
       "id": 1260052,
       "type": "vorasius",
       "name": "Primordial Roar",
       "icon": "spell_fire_twilightflamebreath",
       "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1260648,
+      "type": "trash",
+      "name": "Barrage",
+      "icon": "ability_hunter_rapidregeneration",
+      "source": "maisara-caverns"
     },
     {
       "id": 1260816,
@@ -492,6 +1556,34 @@
       "source": "vs-dr-mqd"
     },
     {
+      "id": 1261295,
+      "type": "trash",
+      "name": "Throw Saronite",
+      "icon": "inv_ore_saronite_01",
+      "source": "pit-of-saron"
+    },
+    {
+      "id": 1261546,
+      "type": "trash",
+      "name": "Orebreaker",
+      "icon": "inv_eng_frostlacedammunition",
+      "source": "pit-of-saron"
+    },
+    {
+      "id": 1261808,
+      "type": "trash",
+      "name": "Radiating Chill",
+      "icon": "spell_fire_blueflamering",
+      "source": "pit-of-saron"
+    },
+    {
+      "id": 1261847,
+      "type": "trash",
+      "name": "Cryostomp",
+      "icon": "spell_deathknight_pathoffrost",
+      "source": "pit-of-saron"
+    },
+    {
       "id": 1262055,
       "type": "midnight-falls",
       "name": "The Black Aperture",
@@ -499,11 +1591,46 @@
       "source": "vs-dr-mqd"
     },
     {
+      "id": 1262088,
+      "type": "trash",
+      "name": "Flux Collapse",
+      "icon": "inv12_spell_nature_starfall_empowered",
+      "source": "nexus-point-xenas"
+    },
+    {
       "id": 1262305,
       "type": "chimaerus-the-undreamt-god",
       "name": "Alndust Upheaval",
       "icon": "ability_earthen_azeritesurge",
       "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1262335,
+      "type": "trash",
+      "name": "Void Cleave",
+      "icon": "inv_cosmicvoid_missile",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 1262441,
+      "type": "trash",
+      "name": "Eruption",
+      "icon": "inv_cosmicvoid_wave",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 1262522,
+      "type": "trash",
+      "name": "Pulsing Void",
+      "icon": "inv_cosmicvoid_groundsate",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 1262527,
+      "type": "trash",
+      "name": "Abyssal Enhancement",
+      "icon": "inv_polearm_2h_voidscythe_d_01",
+      "source": "seat-of-the-triumvirate"
     },
     {
       "id": 1262573,
@@ -527,11 +1654,109 @@
       "source": "vs-dr-mqd"
     },
     {
+      "id": 1262750,
+      "type": "trash",
+      "name": "Rime Blast",
+      "icon": "spell_fire_blueflamestrike",
+      "source": "pit-of-saron"
+    },
+    {
+      "id": 1262900,
+      "type": "trash",
+      "name": "Ritual Drums",
+      "icon": "inv_leatherworking_drumsofthemaestrom",
+      "source": "maisara-caverns"
+    },
+    {
       "id": 1262989,
       "type": "fallen-king-salhadaar",
       "name": "Shattering Twilight",
       "icon": "inv_mace_2h_etherealking_d_01",
       "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1263000,
+      "type": "trash",
+      "name": "Festering Pulse",
+      "icon": "spell_shadow_creepingplague",
+      "source": "pit-of-saron"
+    },
+    {
+      "id": 1263297,
+      "type": "zuraal-the-ascended",
+      "name": "Crashing Void",
+      "icon": "inv_112_raidtrinkets_blobofswirlingvoid_purple",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 1263399,
+      "type": "zuraal-the-ascended",
+      "name": "Oozing Slam",
+      "icon": "inv_cosmicvoid_groundsate",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 1263508,
+      "type": "trash",
+      "name": "Umbral Nova",
+      "icon": "inv_cosmicvoid_debuff",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 1263523,
+      "type": "saprish",
+      "name": "Overload",
+      "icon": "spell_priest_void-blast",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 1263526,
+      "type": "saprish",
+      "name": "Overload",
+      "icon": "spell_priest_void-blast",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 1263542,
+      "type": "viceroy-nezhar",
+      "name": "Mass Void Infusion",
+      "icon": "inv_cosmicvoid_debuff",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 1263691,
+      "type": "trash",
+      "name": "Scourgelord's Reckoning",
+      "icon": "ability_gift_of_earth",
+      "source": "pit-of-saron"
+    },
+    {
+      "id": 1263701,
+      "type": "trash",
+      "name": "Scourgelord's Reckoning",
+      "icon": "ability_gift_of_earth",
+      "source": "pit-of-saron"
+    },
+    {
+      "id": 1263735,
+      "type": "trash",
+      "name": "Necrotic Convergence",
+      "icon": "spell_necro_chillofdeath",
+      "source": "maisara-caverns"
+    },
+    {
+      "id": 1263766,
+      "type": "trash",
+      "name": "Death's Grasp",
+      "icon": "spell_necro_deathsdoor",
+      "source": "pit-of-saron"
+    },
+    {
+      "id": 1263785,
+      "type": "trash",
+      "name": "Holy Echo",
+      "icon": "item_holyspark",
+      "source": "nexus-point-xenas"
     },
     {
       "id": 1263965,
@@ -541,11 +1766,81 @@
       "source": "vs-dr-mqd"
     },
     {
+      "id": 1264040,
+      "type": "trash",
+      "name": "Flux Collapse",
+      "icon": "inv12_spell_nature_starfall_empowered",
+      "source": "nexus-point-xenas"
+    },
+    {
+      "id": 1264246,
+      "type": "trash",
+      "name": "Shade Shift",
+      "icon": "ability_priest_shadowyapparition",
+      "source": "pit-of-saron"
+    },
+    {
+      "id": 1264336,
+      "type": "trash",
+      "name": "Plague Expulsion",
+      "icon": "spell_shadow_plaguecloud",
+      "source": "pit-of-saron"
+    },
+    {
+      "id": 1264349,
+      "type": "trash",
+      "name": "Plague Globs",
+      "icon": "ability_creature_poison_02",
+      "source": "pit-of-saron"
+    },
+    {
+      "id": 1264354,
+      "type": "trash",
+      "name": "Luciferin Flare",
+      "icon": "spell_holy_mindvision",
+      "source": "nexus-point-xenas"
+    },
+    {
+      "id": 1264431,
+      "type": "trash",
+      "name": "Destabilized",
+      "icon": "inv_ability_voidweaverpriest_entropicrift",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 1264461,
+      "type": "trash",
+      "name": "Plague Globs",
+      "icon": "ability_creature_poison_02",
+      "source": "pit-of-saron"
+    },
+    {
       "id": 1264467,
       "type": "vaelgor-&-ezzorak",
       "name": "Tail Lash",
       "icon": "ability_racial_tailswipe",
       "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1264512,
+      "type": "trash",
+      "name": "Rift Tear",
+      "icon": "inv_112_raidtrinkets_blobofswirlingvoid_purple",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 1264532,
+      "type": "trash",
+      "name": "Void Expulsion",
+      "icon": "inv_cosmicvoid_groundsate",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 1264569,
+      "type": "trash",
+      "name": "Void Expulsion",
+      "icon": "inv_cosmicvoid_groundsate",
+      "source": "seat-of-the-triumvirate"
     },
     {
       "id": 1264650,
@@ -555,11 +1850,53 @@
       "source": "vs-dr-mqd"
     },
     {
+      "id": 1264693,
+      "type": "trash",
+      "name": "Void Surge",
+      "icon": "inv_cosmicvoid_buff",
+      "source": "magisters-terrace"
+    },
+    {
       "id": 1264782,
       "type": "chimaerus-the-undreamt-god",
       "name": "Rift Madness",
       "icon": "sha_spell_warlock_demonsoul",
       "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1264951,
+      "type": "trash",
+      "name": "Void Eruption",
+      "icon": "inv_cosmicvoid_nova",
+      "source": "magisters-terrace"
+    },
+    {
+      "id": 1264989,
+      "type": "trash",
+      "name": "Withering Miasma",
+      "icon": "ability_priest_touchofdecay",
+      "source": "maisara-caverns"
+    },
+    {
+      "id": 1265030,
+      "type": "viceroy-nezhar",
+      "name": "Void Storm",
+      "icon": "inv_112_raidtrinkets_blobofswirlingvoid_purple",
+      "source": "seat-of-the-triumvirate",
+      "notes": [
+        [
+          "Standing it unsurprisingly also is AoE via ",
+          {
+            "component": "WowheadLink",
+            "props": {
+              "id": 1263532,
+              "kind": "spell",
+              "children": "Void Storm",
+              "icon": "inv_112_raidtrinkets_blobofswirlingvoid_purple"
+            }
+          }
+        ]
+      ]
     },
     {
       "id": 1265152,
@@ -569,11 +1906,88 @@
       "source": "vs-dr-mqd"
     },
     {
+      "id": 1265420,
+      "type": "lura",
+      "name": "Note of Despair",
+      "icon": "spell_shadow_rune",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 1265421,
+      "type": "lura",
+      "name": "Dirge of Despair",
+      "icon": "ability_priest_surgeofdarkness",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 1265424,
+      "type": "lura",
+      "name": "Dirge of Despair",
+      "icon": "ability_priest_surgeofdarkness",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 1265464,
+      "type": "lura",
+      "name": "Discordant Beam",
+      "icon": "ability_priest_cascade_shadow",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 1265832,
+      "type": "trash",
+      "name": "Shadow Burst",
+      "icon": "spell_shadow_shadowfury",
+      "source": "maisara-caverns"
+    },
+    {
+      "id": 1265938,
+      "type": "trash",
+      "name": "Void Blast",
+      "icon": "inv_cosmicvoid_missile",
+      "source": "magisters-terrace"
+    },
+    {
+      "id": 1265984,
+      "type": "trash",
+      "name": "Lightscar Flare",
+      "icon": "spell_holy_mindvision",
+      "source": "nexus-point-xenas"
+    },
+    {
+      "id": 1266001,
+      "type": "lura",
+      "name": "Backlash",
+      "icon": "spell_priest_void-blast",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
       "id": 1266570,
       "type": "vaelgor-&-ezzorak",
       "name": "Nullscatter",
       "icon": "inv12_ability_priest_voidvolley",
       "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1269081,
+      "type": "trash",
+      "name": "Void Slam",
+      "icon": "spell_priest_voidtendrils",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 1269183,
+      "type": "trash",
+      "name": "Void Burst",
+      "icon": "inv_cosmicvoid_wave",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 1269286,
+      "type": "trash",
+      "name": "Suppression Field",
+      "icon": "ability_warlock_everlastingaffliction",
+      "source": "nexus-point-xenas"
     },
     {
       "id": 1269302,
@@ -583,6 +1997,20 @@
       "source": "vs-dr-mqd"
     },
     {
+      "id": 1269468,
+      "type": "zuraal-the-ascended",
+      "name": "Rupture",
+      "icon": "ability_priest_voidentropy",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 1270085,
+      "type": "trash",
+      "name": "Grim Ward",
+      "icon": "spell_shadow_grimward",
+      "source": "maisara-caverns"
+    },
+    {
       "id": 1270124,
       "type": "midnight-falls",
       "name": "Death Shutter",
@@ -590,11 +2018,39 @@
       "source": "vs-dr-mqd"
     },
     {
+      "id": 1270349,
+      "type": "trash",
+      "name": "Astral Whirlwind",
+      "icon": "spell_arcane_prismaticcloak",
+      "source": "algethar-academy"
+    },
+    {
+      "id": 1270356,
+      "type": "trash",
+      "name": "Arcane Smash",
+      "icon": "spell_mage_arcaneorb_nightborne",
+      "source": "algethar-academy"
+    },
+    {
       "id": 1270516,
       "type": "vaelgor-&-ezzorak",
       "name": "Shadowmark",
       "icon": "spell_nzinsanity_chasedbyshadows",
       "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1270618,
+      "type": "trash",
+      "name": "Flame Nova",
+      "icon": "ability_mage_fierypayback",
+      "source": "windrunner-spire"
+    },
+    {
+      "id": 1270620,
+      "type": "trash",
+      "name": "Flame Nova",
+      "icon": "ability_mage_fierypayback",
+      "source": "windrunner-spire"
     },
     {
       "id": 1270949,
@@ -609,6 +2065,41 @@
       "name": "Desolation",
       "icon": "inv_112_raidtrinkets_blobofswirlingvoid_gold",
       "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1271479,
+      "type": "trash",
+      "name": "Netherburst",
+      "icon": "ability_socererking_arcanereplication",
+      "source": "pit-of-saron"
+    },
+    {
+      "id": 1271511,
+      "type": "trash",
+      "name": "Core Exposure",
+      "icon": "ability_paladin_toweroflight",
+      "source": "nexus-point-xenas"
+    },
+    {
+      "id": 1271623,
+      "type": "trash",
+      "name": "Frost Nova",
+      "icon": "spell_frost_frostnova",
+      "source": "maisara-caverns"
+    },
+    {
+      "id": 1271666,
+      "type": "lura",
+      "name": "Grim Chorus",
+      "icon": "spell_holy_circleofrenewal_shadow",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 1271679,
+      "type": "trash",
+      "name": "Shade Bomb",
+      "icon": "ability_warlock_shadowfurytga",
+      "source": "pit-of-saron"
     },
     {
       "id": 1272310,
@@ -632,13 +2123,19 @@
       "source": "vs-dr-mqd"
     },
     {
+      "id": 1272433,
+      "type": "trash",
+      "name": "Ore Chunks",
+      "icon": "inv_ore_saronite_nugget",
+      "source": "pit-of-saron"
+    },
+    {
       "id": 1272598,
       "type": "vorasius",
       "name": "Creepspatter",
       "icon": "inv_voidcreepermount_blue",
       "source": "vs-dr-mqd"
     },
-
     {
       "id": 1272950,
       "type": "vorasius",
@@ -659,6 +2156,13 @@
       "name": "Consume",
       "icon": "spell_deathknight_gnaw_ghoul",
       "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1273358,
+      "type": "trash",
+      "name": "Solar Barrier",
+      "icon": "spell_holy_powerwordbarrier",
+      "source": "skyreach"
     },
     {
       "id": 1274846,
@@ -689,6 +2193,13 @@
       "source": "vs-dr-mqd"
     },
     {
+      "id": 1276485,
+      "type": "trash",
+      "name": "Sparkburn",
+      "icon": "ability_mage_netherwindpresence",
+      "source": "nexus-point-xenas"
+    },
+    {
       "id": 1276581,
       "type": "vorasius",
       "name": "Aftershock",
@@ -716,7 +2227,27 @@
       "icon": "spell_nature_earthquake",
       "source": "vs-dr-mqd"
     },
-
+    {
+      "id": 1276632,
+      "type": "trash",
+      "name": "Raging Screech",
+      "icon": "ability_hunter_aspectoftheironhawk",
+      "source": "algethar-academy"
+    },
+    {
+      "id": 1276648,
+      "type": "trash",
+      "name": "Bone Infusion",
+      "icon": "ability_deathknight_shatteringbone",
+      "source": "pit-of-saron"
+    },
+    {
+      "id": 1276770,
+      "type": "crawth",
+      "name": "Ruinous Winds",
+      "icon": "ability_skyreach_wind",
+      "source": "algethar-academy"
+    },
     {
       "id": 1276811,
       "type": "vorasius",
@@ -802,11 +2333,89 @@
       "source": "vs-dr-mqd"
     },
     {
+      "id": 1276973,
+      "type": "trash",
+      "name": "Ice Barrage",
+      "icon": "spell_frost_icefloes",
+      "source": "pit-of-saron"
+    },
+    {
+      "id": 1277341,
+      "type": "trash",
+      "name": "Piercing Shriek",
+      "icon": "inv_sonic_debuff",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 1277343,
+      "type": "trash",
+      "name": "Chains of Subjugation",
+      "icon": "spell_frost_chainsofice",
+      "source": "seat-of-the-triumvirate"
+    },
+    {
+      "id": 1277557,
+      "type": "trash",
+      "name": "Burning Radiance",
+      "icon": "paladin_holy",
+      "source": "nexus-point-xenas"
+    },
+    {
+      "id": 1278754,
+      "type": "trash",
+      "name": "Focused Guard",
+      "icon": "ability_shaman_watershield",
+      "source": "pit-of-saron"
+    },
+    {
+      "id": 1278967,
+      "type": "trash",
+      "name": "Dark Rupture",
+      "icon": "spell_shadow_shadowfury",
+      "source": "pit-of-saron"
+    },
+    {
+      "id": 1278986,
+      "type": "trash",
+      "name": "Frost Breath",
+      "icon": "spell_fire_blueflamebreath",
+      "source": "pit-of-saron"
+    },
+    {
+      "id": 1279002,
+      "type": "araknath",
+      "name": "Blast Wave",
+      "icon": "ability_warlock_inferno",
+      "source": "skyreach",
+      "notes": ["Avoidable, tank not in melee"]
+    },
+    {
+      "id": 1279517,
+      "type": "trash",
+      "name": "Soul Expulsion",
+      "icon": "spell_animamaw_missile",
+      "source": "maisara-caverns"
+    },
+    {
       "id": 1279890,
       "type": "imperator-averzian",
       "name": "Cosmic Eruption",
       "icon": "spell_holy_circleofrenewal_shadow",
       "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1279995,
+      "type": "trash",
+      "name": "Blink",
+      "icon": "spell_arcane_blink",
+      "source": "magisters-terrace"
+    },
+    {
+      "id": 1280067,
+      "type": "saprish",
+      "name": "Phase Dash",
+      "icon": "ability_racial_etherealconnection",
+      "source": "seat-of-the-triumvirate"
     },
     {
       "id": 1280101,
@@ -816,11 +2425,46 @@
       "source": "vs-dr-mqd"
     },
     {
+      "id": 1280119,
+      "type": "trash",
+      "name": "Hulking Fragment",
+      "icon": "inv_112_raiddimensius_darkenedsky",
+      "source": "magisters-terrace"
+    },
+    {
+      "id": 1280168,
+      "type": "trash",
+      "name": "Dark Beckoning",
+      "icon": "spell_shadow_shadesofdarkness",
+      "source": "nexus-point-xenas"
+    },
+    {
       "id": 1280655,
       "type": "chimaerus-the-undreamt-god",
       "name": "Cannibalized Essence",
       "icon": "ability_racial_cannibalize",
       "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1281636,
+      "type": "trash",
+      "name": "Creeping Void",
+      "icon": "inv_112_raidtrinkets_blobofswirlingvoid_gold",
+      "source": "nexus-point-xenas"
+    },
+    {
+      "id": 1281874,
+      "type": "trash",
+      "name": "Heat Exhaustion",
+      "icon": "ability_siege_engineer_superheated",
+      "source": "skyreach"
+    },
+    {
+      "id": 1282272,
+      "type": "trash",
+      "name": "Splattering Spew",
+      "icon": "ability_creature_poison_02",
+      "source": "windrunner-spire"
     }
   ]
 }

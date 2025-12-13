@@ -44,10 +44,24 @@
     },
     {
       "source": "seat-of-the-triumvirate",
+      "type": "bleed",
+      "icon": "ability_backstab",
+      "name": "Grievous Wound",
+      "id": 240559
+    },
+    {
+      "source": "seat-of-the-triumvirate",
       "type": "magic",
       "icon": "spell_shadow_psychicscream",
       "name": "Howling Dark",
       "id": 244751
+    },
+    {
+      "source": "seat-of-the-triumvirate",
+      "type": "bleed",
+      "icon": "ability_druid_supriseattack",
+      "name": "Shadow Pounce",
+      "id": 245742
     },
     {
       "source": "seat-of-the-triumvirate",
@@ -69,6 +83,13 @@
       "icon": "inv_misc_raptortalon_nightmare",
       "name": "Savage Peck",
       "id": 376997
+    },
+    {
+      "source": "algethar-academy",
+      "type": "bleed",
+      "icon": "inv_misc_birdbeck_01",
+      "name": "Peck",
+      "id": 377344
     },
     {
       "source": "algethar-academy",
@@ -106,11 +127,32 @@
       "id": 391977
     },
     {
+      "source": "algethar-academy",
+      "type": "bleed",
+      "icon": "inv_misc_herb_writhebark",
+      "name": "Splinterbark",
+      "id": 396716
+    },
+    {
+      "source": "windrunner-spire",
+      "type": "bleed",
+      "icon": "inv_axe_01",
+      "name": "Throw Axe",
+      "id": 468659
+    },
+    {
       "source": "magisters-terrace",
       "type": "magic",
       "icon": "inv_babymanawyrm_blue",
       "name": "Polymorph",
       "id": 468966
+    },
+    {
+      "source": "windrunner-spire",
+      "type": "bleed",
+      "icon": "ability_heroicleap",
+      "name": "Reckless Leap",
+      "id": 472054
     },
     {
       "source": "windrunner-spire",
@@ -176,6 +218,13 @@
       "id": 1216860
     },
     {
+      "source": "windrunner-spire",
+      "type": "bleed",
+      "icon": "ability_druid_ferociousbite",
+      "name": "Puncturing Bite",
+      "id": 1216985
+    },
+    {
       "source": "magisters-terrace",
       "type": "magic",
       "icon": "inv_cosmicvoid_debuff",
@@ -212,6 +261,13 @@
     },
     {
       "source": "windrunner-spire",
+      "type": "bleed",
+      "icon": "inv_misc_monsterfang_02",
+      "name": "Shred Flesh",
+      "id": 1253739
+    },
+    {
+      "source": "windrunner-spire",
       "type": "curse",
       "icon": "spell_shadow_curseofsargeras",
       "name": "Curse of Darkness",
@@ -230,6 +286,13 @@
       "icon": "spell_holy_powerwordshield",
       "name": "Power Word: Shield",
       "id": 1254306
+    },
+    {
+      "source": "skyreach",
+      "type": "bleed",
+      "icon": "ability_ironmaidens_bladerush",
+      "name": "Blade Rush",
+      "id": 1254475
     },
     {
       "source": "skyreach",
@@ -314,48 +377,6 @@
       "icon": "spell_broker_missile",
       "name": "Spirit Rend",
       "id": 1259255
-    },
-    {
-      "source": "skyreach",
-      "type": "magic",
-      "icon": "inv_112_raidtrinkets_etherealenergystorageurn_gold",
-      "name": "Sealed Chaos Urn",
-      "id": 1259443
-    },
-    {
-      "source": "algethar-academy",
-      "type": "magic",
-      "icon": "inv_112_raidtrinkets_etherealenergystorageurn_gold",
-      "name": "Sealed Chaos Urn",
-      "id": 1259443
-    },
-    {
-      "source": "pit-of-saron",
-      "type": "magic",
-      "icon": "inv_112_raidtrinkets_etherealenergystorageurn_gold",
-      "name": "Sealed Chaos Urn",
-      "id": 1259443
-    },
-    {
-      "source": "maisara-caverns",
-      "type": "magic",
-      "icon": "inv_112_raidtrinkets_etherealenergystorageurn_gold",
-      "name": "Sealed Chaos Urn",
-      "id": 1259443
-    },
-    {
-      "source": "windrunner-spire",
-      "type": "magic",
-      "icon": "inv_112_raidtrinkets_etherealenergystorageurn_gold",
-      "name": "Sealed Chaos Urn",
-      "id": 1259443
-    },
-    {
-      "source": "nexus-point-xenas",
-      "type": "magic",
-      "icon": "inv_112_raidtrinkets_etherealenergystorageurn_gold",
-      "name": "Sealed Chaos Urn",
-      "id": 1259443
     },
     {
       "source": "maisara-caverns",
@@ -450,6 +471,13 @@
     },
     {
       "source": "maisara-caverns",
+      "type": "bleed",
+      "icon": "ability_hunter_laceration",
+      "name": "Open Wound",
+      "id": 1266488
+    },
+    {
+      "source": "maisara-caverns",
       "type": "magic",
       "icon": "spell_shadow_grimward",
       "name": "Grim Ward",
@@ -493,9 +521,16 @@
     {
       "source": "magisters-terrace",
       "type": "magic",
-      "icon": "inv_axe_02",
+      "icon": "spell_arcane_arcane01",
       "name": "Ethereal Shackles",
       "id": 1282055
+    },
+    {
+      "source": "algethar-academy",
+      "type": "bleed",
+      "icon": "inv_misc_herb_akundasbite",
+      "name": "Vile Bite",
+      "id": 1282244
     }
   ]
 }
