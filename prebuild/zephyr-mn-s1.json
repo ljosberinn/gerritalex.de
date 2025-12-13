@@ -69,7 +69,7 @@
     },
     "magisters-terrace": {
       "name": "Magister's Terrace",
-      "encounters": ["Arcanotron Custos", "Selanar Sunlash", "Gemellus", "Degentrius"],
+      "encounters": ["Arcanotron Custos", "Seranel Sunlash", "Gemellus", "Degentrius"],
       "icon": "inv_achievement_dungeon_magistersterrace"
     }
   },
@@ -507,7 +507,7 @@
     },
     {
       "id": 468221,
-      "type": "trash",
+      "type": "commander-kroluk",
       "name": "Rallying Bellow",
       "icon": "racial_orc_berserkerstrength",
       "source": "windrunner-spire"
@@ -521,28 +521,28 @@
     },
     {
       "id": 472054,
-      "type": "trash",
+      "type": "commander-kroluk",
       "name": "Reckless Leap",
       "icon": "ability_heroicleap",
       "source": "windrunner-spire"
     },
     {
       "id": 472634,
-      "type": "trash",
+      "type": "restless-heart",
       "name": "Arrow Rain",
       "icon": "sha_spell_fire_bluerainoffire",
       "source": "windrunner-spire"
     },
     {
       "id": 472672,
-      "type": "trash",
+      "type": "restless-heart",
       "name": "Bolt Gale",
       "icon": "ability_skyreach_wind_wall",
       "source": "windrunner-spire"
     },
     {
       "id": 472758,
-      "type": "trash",
+      "type": "derelict-duo",
       "name": "Splattering Spew",
       "icon": "spell_shadow_plaguecloud",
       "source": "windrunner-spire"
@@ -577,35 +577,35 @@
     },
     {
       "id": 474414,
-      "type": "trash",
+      "type": "arcanotron-custos",
       "name": "Arcane Eruption",
       "icon": "ability_socererking_arcanefortification",
       "source": "magisters-terrace"
     },
     {
       "id": 734277,
-      "type": "trash",
+      "type": "restless-heart",
       "name": "Bullseye Windblast",
       "icon": "spell_broker_nova",
       "source": "windrunner-spire"
     },
     {
       "id": 1214081,
-      "type": "vexamus",
+      "type": "arcanotron-custos",
       "name": "Arcane Expulsion",
       "icon": "ability_socererking_arcanewrath",
       "source": "magisters-terrace"
     },
     {
       "id": 1214874,
-      "type": "trash",
+      "type": "commander-kroluk",
       "name": "Violent Manifestation",
       "icon": "ability_malkorok_blightofyshaarj_red",
       "source": "windrunner-spire"
     },
     {
       "id": 1215157,
-      "type": "trash",
+      "type": "degentrius",
       "name": "Unstable Void Essence",
       "icon": "inv_cosmicvoid_missile",
       "source": "magisters-terrace"
@@ -619,7 +619,7 @@
     },
     {
       "id": 1216042,
-      "type": "trash",
+      "type": "restless-heart",
       "name": "Squall Leap",
       "icon": "ability_monk_ridethewind",
       "source": "windrunner-spire"
@@ -654,21 +654,21 @@
     },
     {
       "id": 1217763,
-      "type": "trash",
+      "type": "emberdawn",
       "name": "Fire Breath",
       "icon": "ability_monk_breathoffire",
       "source": "windrunner-spire"
     },
     {
       "id": 1219491,
-      "type": "trash",
+      "type": "derelict-duo",
       "name": "Debilitating Shriek",
       "icon": "ui_darkshore_warfront_horde_banshee",
       "source": "windrunner-spire"
     },
     {
       "id": 1224903,
-      "type": "trash",
+      "type": "seranel-sunlash",
       "name": "Suppression Zone",
       "icon": "spell_deathknight_antimagiczone",
       "source": "magisters-terrace"
@@ -682,10 +682,11 @@
     },
     {
       "id": 1225796,
-      "type": "trash",
+      "type": "seranel-sunlash",
       "name": "Runic Mark",
       "icon": "inv_ability_aldrachireaverdemonhunter_reaversglaive",
-      "source": "magisters-terrace"
+      "source": "magisters-terrace",
+      "notes": ["Not the initial hit, only the dot"]
     },
     {
       "id": 1226598,
@@ -707,13 +708,6 @@
       "name": "Void Orb Eruption",
       "icon": "inv_cosmicvoid_orb",
       "source": "vs-dr-mqd"
-    },
-    {
-      "id": 1237172,
-      "type": "trash",
-      "name": "Epidemic",
-      "icon": "spell_nature_nullifydisease",
-      "source": "maisara-caverns"
     },
     {
       "id": 1239414,
@@ -801,7 +795,7 @@
     },
     {
       "id": 1243900,
-      "type": "trash",
+      "type": "murojin-and-nekraxx",
       "name": "Fetid Quillstorm",
       "icon": "inv_icon_feather03e",
       "source": "maisara-caverns"
@@ -878,7 +872,7 @@
     },
     {
       "id": 1246446,
-      "type": "trash",
+      "type": "seranel-sunlash",
       "name": "Null Reaction",
       "icon": "spell_mage_arcaneorb",
       "source": "magisters-terrace"
@@ -892,7 +886,7 @@
     },
     {
       "id": 1246666,
-      "type": "trash",
+      "type": "murojin-and-nekraxx",
       "name": "Infected Pinions",
       "icon": "spell_deathknight_necroticplague",
       "source": "maisara-caverns"
@@ -927,14 +921,14 @@
     },
     {
       "id": 1248879,
-      "type": "trash",
+      "type": "raktul-vessel-of-souls",
       "name": "Deathgorged Vessel",
       "icon": "spell_necro_deathlyecho",
       "source": "maisara-caverns"
     },
     {
       "id": 1248980,
-      "type": "trash",
+      "type": "raktul-vessel-of-souls",
       "name": "Volatile Essence",
       "icon": "spell_necro_deathsknell",
       "source": "maisara-caverns"
@@ -1025,25 +1019,19 @@
     },
     {
       "id": 1251811,
-      "type": "trash",
+      "type": "vordaza",
       "name": "Final Pursuit",
       "icon": "ability_fixated_state_red",
       "source": "maisara-caverns"
     },
     {
       "id": 1251813,
-      "type": "trash",
+      "type": "vordaza",
       "name": "Lingering Dread",
       "icon": "spell_necro_inevitableend",
       "source": "maisara-caverns"
     },
-    {
-      "id": 1251951,
-      "type": "trash",
-      "name": "Death and Decay",
-      "icon": "spell_shadow_deathanddecay",
-      "source": "maisara-caverns"
-    },
+
     {
       "id": 1252157,
       "type": "vaelgor-&-ezzorak",
@@ -1074,7 +1062,7 @@
     },
     {
       "id": 1252548,
-      "type": "trash",
+      "type": "emberdawn",
       "name": "Fiery Landing",
       "icon": "inv_dragonhawk2_orange",
       "source": "windrunner-spire"
@@ -1088,14 +1076,14 @@
     },
     {
       "id": 1252704,
-      "type": "trash",
+      "type": "raktul-vessel-of-souls",
       "name": "Crush Souls",
       "icon": "ability_maldraxxus_priest",
       "source": "maisara-caverns"
     },
     {
       "id": 1252875,
-      "type": "trash",
+      "type": "corewarden-nysarra",
       "name": "Eclipsing Step",
       "icon": "spell_holy_circleofrenewal_shadow",
       "source": "nexus-point-xenas"
@@ -1144,7 +1132,7 @@
     },
     {
       "id": 1253978,
-      "type": "trash",
+      "type": "restless-heart",
       "name": "Gust Shot",
       "icon": "ability_skyreach_four_wind",
       "source": "windrunner-spire"
@@ -1172,7 +1160,7 @@
     },
     {
       "id": 1254595,
-      "type": "trash",
+      "type": "arcanotron-custos",
       "name": "Energy Release",
       "icon": "spell_arcane_studentofmagic",
       "source": "magisters-terrace"
@@ -1214,7 +1202,7 @@
     },
     {
       "id": 1255503,
-      "type": "trash",
+      "type": "lothraxion",
       "name": "Brilliant Dispersion",
       "icon": "ability_paladin_speedoflight",
       "source": "nexus-point-xenas"
@@ -1249,7 +1237,7 @@
     },
     {
       "id": 1256247,
-      "type": "trash",
+      "type": "murojin-and-nekraxx",
       "name": "Fetid Quillstorm",
       "icon": "inv_icon_feather03e",
       "source": "maisara-caverns"
@@ -1312,7 +1300,7 @@
     },
     {
       "id": 1257613,
-      "type": "trash",
+      "type": "lothraxion",
       "name": "Divine Guile",
       "icon": "spell_holy_prayerofspirit",
       "source": "nexus-point-xenas"
@@ -1487,7 +1475,7 @@
     },
     {
       "id": 1259810,
-      "type": "trash",
+      "type": "raktul-vessel-of-souls",
       "name": "Shattered Totem",
       "icon": "spell_totem_wardofdraining",
       "source": "maisara-caverns"
@@ -1522,7 +1510,7 @@
     },
     {
       "id": 1260648,
-      "type": "trash",
+      "type": "murojin-and-nekraxx",
       "name": "Barrage",
       "icon": "ability_hunter_rapidregeneration",
       "source": "maisara-caverns"
@@ -1557,28 +1545,28 @@
     },
     {
       "id": 1261295,
-      "type": "trash",
+      "type": "forgemaster-garfrost",
       "name": "Throw Saronite",
       "icon": "inv_ore_saronite_01",
       "source": "pit-of-saron"
     },
     {
       "id": 1261546,
-      "type": "trash",
+      "type": "forgemaster-garfrost",
       "name": "Orebreaker",
       "icon": "inv_eng_frostlacedammunition",
       "source": "pit-of-saron"
     },
     {
       "id": 1261808,
-      "type": "trash",
+      "type": "forgemaster-garfrost",
       "name": "Radiating Chill",
       "icon": "spell_fire_blueflamering",
       "source": "pit-of-saron"
     },
     {
       "id": 1261847,
-      "type": "trash",
+      "type": "forgemaster-garfrost",
       "name": "Cryostomp",
       "icon": "spell_deathknight_pathoffrost",
       "source": "pit-of-saron"
@@ -1655,7 +1643,7 @@
     },
     {
       "id": 1262750,
-      "type": "trash",
+      "type": "scourgelord-tyrannus",
       "name": "Rime Blast",
       "icon": "spell_fire_blueflamestrike",
       "source": "pit-of-saron"
@@ -1676,7 +1664,7 @@
     },
     {
       "id": 1263000,
-      "type": "trash",
+      "type": "scourgelord-tyrannus",
       "name": "Festering Pulse",
       "icon": "spell_shadow_creepingplague",
       "source": "pit-of-saron"
@@ -1725,21 +1713,21 @@
     },
     {
       "id": 1263691,
-      "type": "trash",
+      "type": "scourgelord-tyrannus",
       "name": "Scourgelord's Reckoning",
       "icon": "ability_gift_of_earth",
       "source": "pit-of-saron"
     },
     {
       "id": 1263701,
-      "type": "trash",
+      "type": "scourgelord-tyrannus",
       "name": "Scourgelord's Reckoning",
       "icon": "ability_gift_of_earth",
       "source": "pit-of-saron"
     },
     {
       "id": 1263735,
-      "type": "trash",
+      "type": "vordaza",
       "name": "Necrotic Convergence",
       "icon": "spell_necro_chillofdeath",
       "source": "maisara-caverns"
@@ -1774,21 +1762,21 @@
     },
     {
       "id": 1264246,
-      "type": "trash",
+      "type": "ick-and-krick",
       "name": "Shade Shift",
       "icon": "ability_priest_shadowyapparition",
       "source": "pit-of-saron"
     },
     {
       "id": 1264336,
-      "type": "trash",
+      "type": "ick-and-krick",
       "name": "Plague Expulsion",
       "icon": "spell_shadow_plaguecloud",
       "source": "pit-of-saron"
     },
     {
       "id": 1264349,
-      "type": "trash",
+      "type": "ick-and-krick",
       "name": "Plague Globs",
       "icon": "ability_creature_poison_02",
       "source": "pit-of-saron"
@@ -1809,7 +1797,7 @@
     },
     {
       "id": 1264461,
-      "type": "trash",
+      "type": "ick-and-krick",
       "name": "Plague Globs",
       "icon": "ability_creature_poison_02",
       "source": "pit-of-saron"
@@ -1872,7 +1860,7 @@
     },
     {
       "id": 1264989,
-      "type": "trash",
+      "type": "vordaza",
       "name": "Withering Miasma",
       "icon": "ability_priest_touchofdecay",
       "source": "maisara-caverns"
@@ -1949,7 +1937,7 @@
     },
     {
       "id": 1265984,
-      "type": "trash",
+      "type": "corewarden-nysarra",
       "name": "Lightscar Flare",
       "icon": "spell_holy_mindvision",
       "source": "nexus-point-xenas"
@@ -2047,7 +2035,7 @@
     },
     {
       "id": 1270620,
-      "type": "trash",
+      "type": "commander-kroluk",
       "name": "Flame Nova",
       "icon": "ability_mage_fierypayback",
       "source": "windrunner-spire"
@@ -2096,7 +2084,7 @@
     },
     {
       "id": 1271679,
-      "type": "trash",
+      "type": "ick-and-krick",
       "name": "Shade Bomb",
       "icon": "ability_warlock_shadowfurytga",
       "source": "pit-of-saron"
@@ -2124,7 +2112,7 @@
     },
     {
       "id": 1272433,
-      "type": "trash",
+      "type": "forgemaster-garfrost",
       "name": "Ore Chunks",
       "icon": "inv_ore_saronite_nugget",
       "source": "pit-of-saron"
@@ -2194,7 +2182,7 @@
     },
     {
       "id": 1276485,
-      "type": "trash",
+      "type": "chief-corewright-kasreth",
       "name": "Sparkburn",
       "icon": "ability_mage_netherwindpresence",
       "source": "nexus-point-xenas"
@@ -2236,7 +2224,7 @@
     },
     {
       "id": 1276648,
-      "type": "trash",
+      "type": "scourgelord-tyrannus",
       "name": "Bone Infusion",
       "icon": "ability_deathknight_shatteringbone",
       "source": "pit-of-saron"
@@ -2334,7 +2322,7 @@
     },
     {
       "id": 1276973,
-      "type": "trash",
+      "type": "scourgelord-tyrannus",
       "name": "Ice Barrage",
       "icon": "spell_frost_icefloes",
       "source": "pit-of-saron"
@@ -2391,7 +2379,7 @@
     },
     {
       "id": 1279517,
-      "type": "trash",
+      "type": "raktul-vessel-of-souls",
       "name": "Soul Expulsion",
       "icon": "spell_animamaw_missile",
       "source": "maisara-caverns"
@@ -2405,7 +2393,7 @@
     },
     {
       "id": 1279995,
-      "type": "trash",
+      "type": "arcanotron-custos",
       "name": "Blink",
       "icon": "spell_arcane_blink",
       "source": "magisters-terrace"
@@ -2426,7 +2414,7 @@
     },
     {
       "id": 1280119,
-      "type": "trash",
+      "type": "degentrius",
       "name": "Hulking Fragment",
       "icon": "inv_112_raiddimensius_darkenedsky",
       "source": "magisters-terrace"
@@ -2461,8 +2449,8 @@
     },
     {
       "id": 1282272,
-      "type": "trash",
-      "name": "Splattering Spew",
+      "type": "derelict-duo",
+      "name": "Splattered",
       "icon": "ability_creature_poison_02",
       "source": "windrunner-spire"
     }
