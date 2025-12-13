@@ -109,25 +109,52 @@
       "type": "trash",
       "name": "Dark Expulsion",
       "icon": "spell_priest_void-flay",
-      "source": "seat-of-the-triumvirate"
+      "source": "seat-of-the-triumvirate",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 122716, "kind": "npc", "children": "Coalesced Void" }
+          }
+        ]
+      ]
     },
     {
       "id": 245177,
       "type": "trash",
       "name": "Fragment of Despair",
       "icon": "spell_shadow_painspike",
-      "source": "seat-of-the-triumvirate"
+      "source": "seat-of-the-triumvirate",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 124745, "kind": "npc", "children": "Greater Rift Warden" }
+          }
+        ]
+      ]
     },
     {
       "id": 245178,
       "type": "trash",
       "name": "Erupting Despair",
       "icon": "spell_shadow_painspike",
-      "source": "seat-of-the-triumvirate"
+      "source": "seat-of-the-triumvirate",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 124745, "kind": "npc", "children": "Greater Rift Warden" }
+          }
+        ]
+      ]
     },
     {
       "id": 245289,
-      "type": "trash",
+      "type": "lura",
       "name": "Void Blast",
       "icon": "inv_enchant_voidsphere",
       "source": "seat-of-the-triumvirate"
@@ -144,18 +171,27 @@
       "type": "trash",
       "name": "Ruinous Strike",
       "icon": "inv_weapon_halberd17",
-      "source": "seat-of-the-triumvirate"
+      "source": "seat-of-the-triumvirate",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 122403, "kind": "npc", "children": "Shadowguard Champion" }
+          }
+        ]
+      ]
     },
     {
       "id": 245803,
-      "type": "trash",
+      "type": "saprish",
       "name": "Ravaging Darkness",
       "icon": "ability_druid_ripandtear",
       "source": "seat-of-the-triumvirate"
     },
     {
       "id": 245806,
-      "type": "trash",
+      "type": "saprish",
       "name": "Ravaging Darkness",
       "icon": "ability_druid_ripandtear",
       "source": "seat-of-the-triumvirate"
@@ -169,14 +205,14 @@
     },
     {
       "id": 246136,
-      "type": "trash",
+      "type": "zuraal-the-ascended",
       "name": "Null Palm",
       "icon": "ability_creature_disease_05",
       "source": "seat-of-the-triumvirate"
     },
     {
       "id": 246326,
-      "type": "trash",
+      "type": "viceroy-nezhar",
       "name": "Entropic Force",
       "icon": "ability_socererking_forcenova",
       "source": "seat-of-the-triumvirate"
@@ -200,7 +236,16 @@
       "type": "trash",
       "name": "Dark Outbreak",
       "icon": "ability_warlock_everlastingaffliction",
-      "source": "seat-of-the-triumvirate"
+      "source": "seat-of-the-triumvirate",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 122478, "kind": "npc", "children": "Void Discharge" }
+          }
+        ]
+      ]
     },
     {
       "id": 247207,
@@ -228,56 +273,128 @@
       "type": "trash",
       "name": "Dark Advance",
       "icon": "ability_heroicleap",
-      "source": "seat-of-the-triumvirate"
+      "source": "seat-of-the-triumvirate",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 122421, "kind": "npc", "children": "Umbral War-Adept" }
+          }
+        ]
+      ]
     },
     {
       "id": 248060,
       "type": "trash",
       "name": "Dark Advance",
       "icon": "ability_heroicleap",
-      "source": "seat-of-the-triumvirate"
+      "source": "seat-of-the-triumvirate",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 124880, "kind": "npc", "children": "War-Adept Essence" }
+          }
+        ]
+      ]
     },
     {
       "id": 248067,
       "type": "trash",
       "name": "Grand Swing",
       "icon": "ability_socererking_forcenova",
-      "source": "seat-of-the-triumvirate"
+      "source": "seat-of-the-triumvirate",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 122421, "kind": "npc", "children": "Umbral War-Adept" }
+          }
+        ]
+      ]
     },
     {
       "id": 248071,
       "type": "trash",
       "name": "Grand Swing",
       "icon": "ability_socererking_forcenova",
-      "source": "seat-of-the-triumvirate"
+      "source": "seat-of-the-triumvirate",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 124880, "kind": "npc", "children": "War-Adept Essence" }
+          }
+        ]
+      ]
     },
     {
       "id": 248130,
       "type": "trash",
       "name": "Darkened Remnant",
       "icon": "spell_shadow_painspike",
-      "source": "seat-of-the-triumvirate"
+      "source": "seat-of-the-triumvirate",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 122571, "kind": "npc", "children": "Rift Warden" }
+          }
+        ]
+      ]
     },
     {
       "id": 248228,
       "type": "trash",
       "name": "Collapse",
       "icon": "inv_enchant_voidsphere",
-      "source": "seat-of-the-triumvirate"
+      "source": "seat-of-the-triumvirate",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 124964, "kind": "npc", "children": "Unstable Dark Matter" }
+          }
+        ]
+      ]
     },
     {
       "id": 248298,
       "type": "trash",
       "name": "Screech",
       "icon": "ability_vehicle_sonicshockwave",
-      "source": "seat-of-the-triumvirate"
+      "source": "seat-of-the-triumvirate",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 122410, "kind": "npc", "children": "Skyfin" }
+          }
+        ]
+      ]
     },
     {
       "id": 248302,
       "type": "trash",
       "name": "Dark Breath",
       "icon": "trade_engineering",
-      "source": "seat-of-the-triumvirate"
+      "source": "seat-of-the-triumvirate",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 122407, "kind": "npc", "children": "Warp Stalker" }
+          }
+        ]
+      ]
     },
     {
       "id": 248414,
@@ -288,7 +405,7 @@
     },
     {
       "id": 248736,
-      "type": "trash",
+      "type": "viceroy-nezhar",
       "name": "Eternal Twilight",
       "icon": "spell_fire_twilightnova",
       "source": "seat-of-the-triumvirate"
@@ -319,7 +436,16 @@
       "type": "trash",
       "name": "Void Diffusion",
       "icon": "ability_warlock_everlastingaffliction",
-      "source": "seat-of-the-triumvirate"
+      "source": "seat-of-the-triumvirate",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 122405, "kind": "npc", "children": "Dark Conjurer" }
+          }
+        ]
+      ]
     },
     {
       "id": 249082,
@@ -340,7 +466,16 @@
       "type": "trash",
       "name": "Fragment",
       "icon": "ability_priest_cascade_shadow",
-      "source": "seat-of-the-triumvirate"
+      "source": "seat-of-the-triumvirate",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 125981, "kind": "npc", "children": "Fragmented Voidling" }
+          }
+        ]
+      ]
     },
     {
       "id": 374352,
@@ -382,14 +517,32 @@
       "type": "trash",
       "name": "Gust",
       "icon": "ability_skyreach_wind",
-      "source": "algethar-academy"
+      "source": "algethar-academy",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 192333, "kind": "npc", "children": "Alpha Eagle" }
+          }
+        ]
+      ]
     },
     {
       "id": 377912,
       "type": "trash",
       "name": "Expel Intruders",
       "icon": "ability_druid_galewinds",
-      "source": "algethar-academy"
+      "source": "algethar-academy",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 192680, "kind": "npc", "children": "Guardian Sentry" }
+          }
+        ]
+      ]
     },
     {
       "id": 385958,
@@ -460,14 +613,32 @@
       "type": "trash",
       "name": "Vicious Ambush",
       "icon": "ability_ambush",
-      "source": "algethar-academy"
+      "source": "algethar-academy",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 196671, "kind": "npc", "children": "Vicious Ravager" }
+          }
+        ]
+      ]
     },
     {
       "id": 388957,
       "type": "trash",
       "name": "Riftbreath",
       "icon": "spell_arcane_arcanetorrent",
-      "source": "algethar-academy"
+      "source": "algethar-academy",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 196671, "kind": "npc", "children": "Vicious Ravager" }
+          }
+        ]
+      ]
     },
     {
       "id": 388996,
@@ -481,7 +652,16 @@
       "type": "trash",
       "name": "Seed Detonation",
       "icon": "inv_herbalism_70_yserallineseed",
-      "source": "algethar-academy"
+      "source": "algethar-academy",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 197219, "kind": "npc", "children": "Vile Lasher" }
+          }
+        ]
+      ]
     },
     {
       "id": 396716,
@@ -517,7 +697,16 @@
       "type": "trash",
       "name": "Interrupting Screech",
       "icon": "ability_mount_dragonhawkarmorallliance",
-      "source": "windrunner-spire"
+      "source": "windrunner-spire",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 232121, "kind": "npc", "children": "Phalanx Breaker" }
+          }
+        ]
+      ]
     },
     {
       "id": 472054,
@@ -552,28 +741,64 @@
       "type": "trash",
       "name": "Crowd Dispersal",
       "icon": "ability_socererking_arcanewrath",
-      "source": "magisters-terrace"
+      "source": "magisters-terrace",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 234062, "kind": "npc", "children": "Manaforged Sentry" }
+          }
+        ]
+      ]
     },
     {
       "id": 473647,
       "type": "trash",
       "name": "Phial Toss",
       "icon": "inv_11_0_dungeon_tentaclevial_green",
-      "source": "windrunner-spire"
+      "source": "windrunner-spire",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 232173, "kind": "npc", "children": "Fervent Apothecary" }
+          }
+        ]
+      ]
     },
     {
       "id": 473668,
       "type": "trash",
       "name": "Pulsing Shriek",
       "icon": "inv_sonic_debuff",
-      "source": "windrunner-spire"
+      "source": "windrunner-spire",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 232175, "kind": "npc", "children": "Devoted Woebringer" }
+          }
+        ]
+      ]
     },
     {
       "id": 473786,
       "type": "trash",
       "name": "Fetid Spew",
       "icon": "ability_creature_disease_02",
-      "source": "windrunner-spire"
+      "source": "windrunner-spire",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 232176, "kind": "npc", "children": "Flesh Behemoth" }
+          }
+        ]
+      ]
     },
     {
       "id": 474414,
@@ -629,28 +854,64 @@
       "type": "trash",
       "name": "Arrow Rain",
       "icon": "inv_ammo_arrow_02",
-      "source": "windrunner-spire"
+      "source": "windrunner-spire",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 232119, "kind": "npc", "children": "Swiftshot Archer" }
+          }
+        ]
+      ]
     },
     {
       "id": 1216643,
       "type": "trash",
       "name": "Gore Whirl",
       "icon": "ability_warrior_bladestorm",
-      "source": "windrunner-spire"
+      "source": "windrunner-spire",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 232147, "kind": "npc", "children": "Lingering Marauder" }
+          }
+        ]
+      ]
     },
     {
       "id": 1216963,
       "type": "trash",
       "name": "Spore Dispersal",
       "icon": "inv_red_sporecreature2",
-      "source": "windrunner-spire"
+      "source": "windrunner-spire",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 236894, "kind": "npc", "children": "Bloated Lasher" }
+          }
+        ]
+      ]
     },
     {
       "id": 1217021,
       "type": "trash",
       "name": "Ferocious Pounce",
       "icon": "ability_druid_supriseattack",
-      "source": "windrunner-spire"
+      "source": "windrunner-spire",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 232063, "kind": "npc", "children": "Apex Lynx" }
+          }
+        ]
+      ]
     },
     {
       "id": 1217763,
@@ -675,7 +936,7 @@
     },
     {
       "id": 1225135,
-      "type": "trash",
+      "type": "seranel-sunlash",
       "name": "Feedback",
       "icon": "spell_arcane_arcane01_nightborne",
       "source": "magisters-terrace"
@@ -826,7 +1087,16 @@
       "type": "trash",
       "name": "Arcane Volley",
       "icon": "ability_socererking_arcanereplication_nightborne",
-      "source": "magisters-terrace"
+      "source": "magisters-terrace",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 234089, "kind": "npc", "children": "Animated Codex" }
+          }
+        ]
+      ]
     },
     {
       "id": 1245302,
@@ -910,14 +1180,32 @@
       "type": "trash",
       "name": "Volatile Infusion",
       "icon": "inv_artifact_powerofthedarkside",
-      "source": "magisters-terrace"
+      "source": "magisters-terrace",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 241354, "kind": "npc", "children": "Void-Infused Brightscale" }
+          }
+        ]
+      ]
     },
     {
       "id": 1248219,
       "type": "trash",
       "name": "Void Bomb",
       "icon": "spell_shadow_shadowfury",
-      "source": "magisters-terrace"
+      "source": "magisters-terrace",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 234066, "kind": "npc", "children": "Devouring Tyrant" }
+          }
+        ]
+      ]
     },
     {
       "id": 1248879,
@@ -1031,7 +1319,6 @@
       "icon": "spell_necro_inevitableend",
       "source": "maisara-caverns"
     },
-
     {
       "id": 1252157,
       "type": "vaelgor-&-ezzorak",
@@ -1044,18 +1331,27 @@
       "type": "trash",
       "name": "Dreadbellow",
       "icon": "spell_shadow_ragingscream",
-      "source": "nexus-point-xenas"
+      "source": "nexus-point-xenas",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 248502, "kind": "npc", "children": "Null Sentinel" }
+          }
+        ]
+      ]
     },
     {
       "id": 1252437,
-      "type": "trash",
+      "type": "corewarden-nysarra",
       "name": "Melee",
       "icon": "inv_cosmicvoid_wave",
       "source": "nexus-point-xenas"
     },
     {
       "id": 1252438,
-      "type": "trash",
+      "type": "corewarden-nysarra",
       "name": "Melee",
       "icon": "inv_cosmicvoid_wave",
       "source": "nexus-point-xenas"
@@ -1069,7 +1365,7 @@
     },
     {
       "id": 1252628,
-      "type": "trash",
+      "type": "corewarden-nysarra",
       "name": "Flailstorm",
       "icon": "ability_druid_galewinds",
       "source": "nexus-point-xenas"
@@ -1099,11 +1395,7 @@
           "While ",
           {
             "component": "WowheadLink",
-            "props": {
-              "id": 76227,
-              "kind": "npc",
-              "children": "Sunwings"
-            }
+            "props": { "id": 76227, "kind": "npc", "children": "Sunwings" }
           },
           " are alive"
         ]
@@ -1114,7 +1406,16 @@
       "type": "trash",
       "name": "Solar Nova",
       "icon": "inv_ability_heraldofthesunpaladin_dawnlight",
-      "source": "skyreach"
+      "source": "skyreach",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 76087, "kind": "npc", "children": "Solar Construct" }
+          }
+        ]
+      ]
     },
     {
       "id": 1253510,
@@ -1149,14 +1450,32 @@
       "type": "trash",
       "name": "Solar Flare",
       "icon": "ability_rhyolith_magmaflow_wave",
-      "source": "skyreach"
+      "source": "skyreach",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 251880, "kind": "npc", "children": "Solar Orb" }
+          }
+        ]
+      ]
     },
     {
       "id": 1254569,
       "type": "trash",
       "name": "Dire Screech",
       "icon": "inv-mount_raven_54",
-      "source": "skyreach"
+      "source": "skyreach",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 76149, "kind": "npc", "children": "Dread Raven" }
+          }
+        ]
+      ]
     },
     {
       "id": 1254595,
@@ -1170,7 +1489,16 @@
       "type": "trash",
       "name": "Wrathful Wind",
       "icon": "ability_skyreach_wind",
-      "source": "skyreach"
+      "source": "skyreach",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 250992, "kind": "npc", "children": "Raging Squall" }
+          }
+        ]
+      ]
     },
     {
       "id": 1255156,
@@ -1191,11 +1519,20 @@
       "type": "trash",
       "name": "Repel",
       "icon": "spell_frost_arcticwinds",
-      "source": "skyreach"
+      "source": "skyreach",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 78932, "kind": "npc", "children": "Driving Gale-Caller" }
+          }
+        ]
+      ]
     },
     {
       "id": 1255473,
-      "type": "trash",
+      "type": "ranjit",
       "name": "Dive",
       "icon": "ability_monk_ridethewind",
       "source": "skyreach"
@@ -1219,7 +1556,16 @@
       "type": "trash",
       "name": "Wind Blast",
       "icon": "inv_elemental_primal_air",
-      "source": "skyreach"
+      "source": "skyreach",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 250992, "kind": "npc", "children": "Raging Squall" }
+          }
+        ]
+      ]
     },
     {
       "id": 1255979,
@@ -1233,7 +1579,16 @@
       "type": "trash",
       "name": "Deafening Roar",
       "icon": "ability_druid_challangingroar",
-      "source": "maisara-caverns"
+      "source": "maisara-caverns",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 248678, "kind": "npc", "children": "Hulking Juggernaut" }
+          }
+        ]
+      ]
     },
     {
       "id": 1256247,
@@ -1247,56 +1602,128 @@
       "type": "trash",
       "name": "Corespark Surge",
       "icon": "inv_112_raidtrinkets_etherealenergystoragesphere_terra",
-      "source": "nexus-point-xenas"
+      "source": "nexus-point-xenas",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 252852, "kind": "npc", "children": "Corespark Conduit" }
+          }
+        ]
+      ]
     },
     {
       "id": 1257103,
       "type": "trash",
       "name": "Erratic Surge",
       "icon": "achievement_bg_wineos",
-      "source": "nexus-point-xenas"
+      "source": "nexus-point-xenas",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 248373, "kind": "npc", "children": "Circuit Seer" }
+          }
+        ]
+      ]
     },
     {
       "id": 1257105,
       "type": "trash",
       "name": "Erratic Zap",
       "icon": "inv_misc_stormlordsfavor",
-      "source": "nexus-point-xenas"
+      "source": "nexus-point-xenas",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 248373, "kind": "npc", "children": "Circuit Seer" }
+          }
+        ]
+      ]
     },
     {
       "id": 1257123,
       "type": "trash",
       "name": "Daze",
       "icon": "spell_frost_stun",
-      "source": "nexus-point-xenas"
+      "source": "nexus-point-xenas",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 252870, "kind": "npc", "children": "Arcane Tripwire" }
+          }
+        ]
+      ]
     },
     {
       "id": 1257126,
       "type": "trash",
       "name": "Corespark Overload",
       "icon": "ability_monk_forcesphere_pink",
-      "source": "nexus-point-xenas"
+      "source": "nexus-point-xenas",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 252825, "kind": "npc", "children": "Mana Battery" }
+          }
+        ]
+      ]
     },
     {
       "id": 1257160,
       "type": "trash",
       "name": "Rain of Toads",
       "icon": "inv_pet_toad_green",
-      "source": "maisara-caverns"
+      "source": "maisara-caverns",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 248686, "kind": "npc", "children": "Dread Souleater" }
+          }
+        ]
+      ]
     },
     {
       "id": 1257164,
       "type": "trash",
       "name": "Vile Potatoad",
       "icon": "inv_pet_toad_brown",
-      "source": "maisara-caverns"
+      "source": "maisara-caverns",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 252886, "kind": "npc", "children": "Potatoad" }
+          }
+        ]
+      ]
     },
     {
       "id": 1257509,
       "type": "trash",
       "name": "Corespark Detonation",
       "icon": "ability_monk_forcesphere_pink",
-      "source": "nexus-point-xenas"
+      "source": "nexus-point-xenas",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 241539, "kind": "npc", "children": "Kasreth" }
+          }
+        ]
+      ]
     },
     {
       "id": 1257613,
@@ -1310,21 +1737,48 @@
       "type": "trash",
       "name": "Shredding Talons",
       "icon": "inv_misc_raptortalon_fel",
-      "source": "maisara-caverns"
+      "source": "maisara-caverns",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 249020, "kind": "npc", "children": "Hexbound Eagle" }
+          }
+        ]
+      ]
     },
     {
       "id": 1257895,
       "type": "trash",
       "name": "Ancestral Crush",
       "icon": "spell_necro_deathsknell",
-      "source": "maisara-caverns"
+      "source": "maisara-caverns",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 249030, "kind": "npc", "children": "Restless Gnarldin" }
+          }
+        ]
+      ]
     },
     {
       "id": 1257980,
       "type": "trash",
       "name": "Devour the Unworthy",
       "icon": "spell_holy_consumemagic",
-      "source": "nexus-point-xenas"
+      "source": "nexus-point-xenas",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 251031, "kind": "npc", "children": "Wretched Supplicant" }
+          }
+        ]
+      ]
     },
     {
       "id": 1258099,
@@ -1335,7 +1789,7 @@
     },
     {
       "id": 1258140,
-      "type": "trash",
+      "type": "ranjit",
       "name": "Swirling Gusts",
       "icon": "ability_ironmaidens_swirlingvortex",
       "source": "skyreach"
@@ -1352,21 +1806,48 @@
       "type": "trash",
       "name": "Solar Fire",
       "icon": "ability_mage_firestarter",
-      "source": "skyreach"
+      "source": "skyreach",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 78933, "kind": "npc", "children": "Herald of Sunrise" }
+          }
+        ]
+      ]
     },
     {
       "id": 1258464,
       "type": "trash",
       "name": "Leaping Maul",
       "icon": "ability_heroicleap",
-      "source": "pit-of-saron"
+      "source": "pit-of-saron",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 252559, "kind": "npc", "children": "Leaping Geist" }
+          }
+        ]
+      ]
     },
     {
       "id": 1258482,
       "type": "trash",
       "name": "Searing Presence",
       "icon": "inv_elemental_primal_fire",
-      "source": "maisara-caverns"
+      "source": "maisara-caverns",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 248756, "kind": "npc", "children": "Hex Guardian" }
+          }
+        ]
+      ]
     },
     {
       "id": 1258514,
@@ -1384,7 +1865,7 @@
     },
     {
       "id": 1258684,
-      "type": "trash",
+      "type": "corewarden-nysarra",
       "name": "Void Ritual",
       "icon": "ability_priest_voidentropy",
       "source": "nexus-point-xenas"
@@ -1394,14 +1875,32 @@
       "type": "trash",
       "name": "Dread Pulse",
       "icon": "spell_priest_burningwill_shadow",
-      "source": "pit-of-saron"
+      "source": "pit-of-saron",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 252563, "kind": "npc", "children": "Dreadpulse Lich" }
+          }
+        ]
+      ]
     },
     {
       "id": 1258823,
       "type": "trash",
       "name": "Ritual Firebrand",
       "icon": "spell_fire_felflamering_red",
-      "source": "maisara-caverns"
+      "source": "maisara-caverns",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 248756, "kind": "npc", "children": "Hex Guardian" }
+          }
+        ]
+      ]
     },
     {
       "id": 1258883,
@@ -1422,14 +1921,32 @@
       "type": "trash",
       "name": "Plague Spew",
       "icon": "spell_shadow_plaguecloud",
-      "source": "pit-of-saron"
+      "source": "pit-of-saron",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 252555, "kind": "npc", "children": "Lumbering Plaguehorror" }
+          }
+        ]
+      ]
     },
     {
       "id": 1259183,
       "type": "trash",
       "name": "Piercing Screech",
       "icon": "inv_sonic_missile",
-      "source": "maisara-caverns"
+      "source": "maisara-caverns",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 253473, "kind": "npc", "children": "Gloomwing Bat" }
+          }
+        ]
+      ]
     },
     {
       "id": 1259186,
@@ -1443,35 +1960,90 @@
       "type": "trash",
       "name": "Cryoburst",
       "icon": "spell_fire_blueflamering",
-      "source": "pit-of-saron"
+      "source": "pit-of-saron",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 252564, "kind": "npc", "children": "Glacieth" }
+          }
+        ]
+      ]
     },
     {
       "id": 1259274,
       "type": "trash",
       "name": "Spectral Strikes",
       "icon": "spell_necro_deathlyecho",
-      "source": "maisara-caverns"
+      "source": "maisara-caverns",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 249025, "kind": "npc", "children": "Bound Defender" }
+          },
+          ", ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 249030, "kind": "npc", "children": "Restless Gnarldin" }
+          }
+        ]
+      ]
     },
     {
       "id": 1259664,
       "type": "trash",
       "name": "Soulstorms",
       "icon": "spell_animamaldraxxus_nova",
-      "source": "maisara-caverns"
+      "source": "maisara-caverns",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 249025, "kind": "npc", "children": "Bound Defender" }
+          }
+        ]
+      ]
     },
     {
       "id": 1259713,
       "type": "trash",
       "name": "Rended Soul",
       "icon": "spell_warlock_soulburn",
-      "source": "maisara-caverns"
+      "source": "maisara-caverns",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 253647, "kind": "npc", "children": "Lost Soul" }
+          },
+          " / ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 251639, "kind": "npc", "children": "Lost Soul" }
+          }
+        ]
+      ]
     },
     {
       "id": 1259777,
       "type": "trash",
       "name": "Umbral Vortex",
       "icon": "ability_rogue_envelopingshadows",
-      "source": "maisara-caverns"
+      "source": "maisara-caverns",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 253683, "kind": "npc", "children": "Rokh'zal" }
+          }
+        ]
+      ]
     },
     {
       "id": 1259810,
@@ -1485,7 +2057,16 @@
       "type": "trash",
       "name": "Ritual Drums",
       "icon": "inv_leatherworking_drumsofthemaestrom",
-      "source": "maisara-caverns"
+      "source": "maisara-caverns",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 253458, "kind": "npc", "children": "Zil'jan" }
+          }
+        ]
+      ]
     },
     {
       "id": 1259921,
@@ -1583,7 +2164,21 @@
       "type": "trash",
       "name": "Flux Collapse",
       "icon": "inv12_spell_nature_starfall_empowered",
-      "source": "nexus-point-xenas"
+      "source": "nexus-point-xenas",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 254459, "kind": "npc", "children": "Broken Pipe" }
+          },
+          " and ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 254485, "kind": "npc", "children": "Corespark Pylon" }
+          }
+        ]
+      ]
     },
     {
       "id": 1262305,
@@ -1597,28 +2192,64 @@
       "type": "trash",
       "name": "Void Cleave",
       "icon": "inv_cosmicvoid_missile",
-      "source": "seat-of-the-triumvirate"
+      "source": "seat-of-the-triumvirate",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 252756, "kind": "npc", "children": "Void-Infused Destroyer" }
+          }
+        ]
+      ]
     },
     {
       "id": 1262441,
       "type": "trash",
       "name": "Eruption",
       "icon": "inv_cosmicvoid_wave",
-      "source": "seat-of-the-triumvirate"
+      "source": "seat-of-the-triumvirate",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 252756, "kind": "npc", "children": "Void-Infused Destroyer" }
+          }
+        ]
+      ]
     },
     {
       "id": 1262522,
       "type": "trash",
       "name": "Pulsing Void",
       "icon": "inv_cosmicvoid_groundsate",
-      "source": "seat-of-the-triumvirate"
+      "source": "seat-of-the-triumvirate",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 122412, "kind": "npc", "children": "Bound Voidcaller" }
+          }
+        ]
+      ]
     },
     {
       "id": 1262527,
       "type": "trash",
       "name": "Abyssal Enhancement",
       "icon": "inv_polearm_2h_voidscythe_d_01",
-      "source": "seat-of-the-triumvirate"
+      "source": "seat-of-the-triumvirate",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 122404, "kind": "npc", "children": "Dire Voidbender" }
+          }
+        ]
+      ]
     },
     {
       "id": 1262573,
@@ -1653,7 +2284,16 @@
       "type": "trash",
       "name": "Ritual Drums",
       "icon": "inv_leatherworking_drumsofthemaestrom",
-      "source": "maisara-caverns"
+      "source": "maisara-caverns",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 253458, "kind": "npc", "children": "Zil'jan" }
+          }
+        ]
+      ]
     },
     {
       "id": 1262989,
@@ -1734,7 +2374,7 @@
     },
     {
       "id": 1263766,
-      "type": "trash",
+      "type": "scourgelord-tyrannus",
       "name": "Death's Grasp",
       "icon": "spell_necro_deathsdoor",
       "source": "pit-of-saron"
@@ -1744,7 +2384,16 @@
       "type": "trash",
       "name": "Holy Echo",
       "icon": "item_holyspark",
-      "source": "nexus-point-xenas"
+      "source": "nexus-point-xenas",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 254928, "kind": "npc", "children": "Flarebat" }
+          }
+        ]
+      ]
     },
     {
       "id": 1263965,
@@ -1758,7 +2407,16 @@
       "type": "trash",
       "name": "Flux Collapse",
       "icon": "inv12_spell_nature_starfall_empowered",
-      "source": "nexus-point-xenas"
+      "source": "nexus-point-xenas",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 241539, "kind": "npc", "children": "Kasreth" }
+          }
+        ]
+      ]
     },
     {
       "id": 1264246,
@@ -1786,7 +2444,16 @@
       "type": "trash",
       "name": "Luciferin Flare",
       "icon": "spell_holy_mindvision",
-      "source": "nexus-point-xenas"
+      "source": "nexus-point-xenas",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 241642, "kind": "npc", "children": "Lingering Image" }
+          }
+        ]
+      ]
     },
     {
       "id": 1264431,
@@ -1821,14 +2488,32 @@
       "type": "trash",
       "name": "Void Expulsion",
       "icon": "inv_cosmicvoid_groundsate",
-      "source": "seat-of-the-triumvirate"
+      "source": "seat-of-the-triumvirate",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 122571, "kind": "npc", "children": "Rift Warden" }
+          }
+        ]
+      ]
     },
     {
       "id": 1264569,
       "type": "trash",
       "name": "Void Expulsion",
       "icon": "inv_cosmicvoid_groundsate",
-      "source": "seat-of-the-triumvirate"
+      "source": "seat-of-the-triumvirate",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 122571, "kind": "npc", "children": "Rift Warden" }
+          }
+        ]
+      ]
     },
     {
       "id": 1264650,
@@ -1842,7 +2527,16 @@
       "type": "trash",
       "name": "Void Surge",
       "icon": "inv_cosmicvoid_buff",
-      "source": "magisters-terrace"
+      "source": "magisters-terrace",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 249086, "kind": "npc", "children": "Void Infuser" }
+          }
+        ]
+      ]
     },
     {
       "id": 1264782,
@@ -1856,7 +2550,16 @@
       "type": "trash",
       "name": "Void Eruption",
       "icon": "inv_cosmicvoid_nova",
-      "source": "magisters-terrace"
+      "source": "magisters-terrace",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 252284, "kind": "npc", "children": "Unstable Voidling" }
+          }
+        ]
+      ]
     },
     {
       "id": 1264989,
@@ -1926,7 +2629,16 @@
       "type": "trash",
       "name": "Shadow Burst",
       "icon": "spell_shadow_shadowfury",
-      "source": "maisara-caverns"
+      "source": "maisara-caverns",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 254740, "kind": "npc", "children": "Umbral Shadowbinder" }
+          }
+        ]
+      ]
     },
     {
       "id": 1265938,
@@ -1961,14 +2673,32 @@
       "type": "trash",
       "name": "Void Slam",
       "icon": "spell_priest_voidtendrils",
-      "source": "seat-of-the-triumvirate"
+      "source": "seat-of-the-triumvirate",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 122058, "kind": "npc", "children": "Void Tentacle" }
+          }
+        ]
+      ]
     },
     {
       "id": 1269183,
       "type": "trash",
       "name": "Void Burst",
       "icon": "inv_cosmicvoid_wave",
-      "source": "seat-of-the-triumvirate"
+      "source": "seat-of-the-triumvirate",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 122421, "kind": "npc", "children": "Umbral War-Adept" }
+          }
+        ]
+      ]
     },
     {
       "id": 1269286,
@@ -1996,7 +2726,16 @@
       "type": "trash",
       "name": "Grim Ward",
       "icon": "spell_shadow_grimward",
-      "source": "maisara-caverns"
+      "source": "maisara-caverns",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 248690, "kind": "npc", "children": "Grim Skirmisher" }
+          }
+        ]
+      ]
     },
     {
       "id": 1270124,
@@ -2010,14 +2749,32 @@
       "type": "trash",
       "name": "Astral Whirlwind",
       "icon": "spell_arcane_prismaticcloak",
-      "source": "algethar-academy"
+      "source": "algethar-academy",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 256896, "kind": "npc", "children": "Astral Projection" }
+          }
+        ]
+      ]
     },
     {
       "id": 1270356,
       "type": "trash",
       "name": "Arcane Smash",
       "icon": "spell_mage_arcaneorb_nightborne",
-      "source": "algethar-academy"
+      "source": "algethar-academy",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 196200, "kind": "npc", "children": "Algeth'ar Echoknight" }
+          }
+        ]
+      ]
     },
     {
       "id": 1270516,
@@ -2031,7 +2788,16 @@
       "type": "trash",
       "name": "Flame Nova",
       "icon": "ability_mage_fierypayback",
-      "source": "windrunner-spire"
+      "source": "windrunner-spire",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 232146, "kind": "npc", "children": "Phantasmal Mystic" }
+          }
+        ]
+      ]
     },
     {
       "id": 1270620,
@@ -2059,11 +2825,20 @@
       "type": "trash",
       "name": "Netherburst",
       "icon": "ability_socererking_arcanereplication",
-      "source": "pit-of-saron"
+      "source": "pit-of-saron",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 252603, "kind": "npc", "children": "Arcanist Cadaver" }
+          }
+        ]
+      ]
     },
     {
       "id": 1271511,
-      "type": "trash",
+      "type": "lothraxion",
       "name": "Core Exposure",
       "icon": "ability_paladin_toweroflight",
       "source": "nexus-point-xenas"
@@ -2073,7 +2848,16 @@
       "type": "trash",
       "name": "Frost Nova",
       "icon": "spell_frost_frostnova",
-      "source": "maisara-caverns"
+      "source": "maisara-caverns",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 249024, "kind": "npc", "children": "Hollow Soulrender" }
+          }
+        ]
+      ]
     },
     {
       "id": 1271666,
@@ -2220,7 +3004,16 @@
       "type": "trash",
       "name": "Raging Screech",
       "icon": "ability_hunter_aspectoftheironhawk",
-      "source": "algethar-academy"
+      "source": "algethar-academy",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 192333, "kind": "npc", "children": "Alpha Eagle" }
+          }
+        ]
+      ]
     },
     {
       "id": 1276648,
@@ -2332,42 +3125,96 @@
       "type": "trash",
       "name": "Piercing Shriek",
       "icon": "inv_sonic_debuff",
-      "source": "seat-of-the-triumvirate"
+      "source": "seat-of-the-triumvirate",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 255320, "kind": "npc", "children": "Ravenous Umbralfin" }
+          }
+        ]
+      ]
     },
     {
       "id": 1277343,
       "type": "trash",
       "name": "Chains of Subjugation",
       "icon": "spell_frost_chainsofice",
-      "source": "seat-of-the-triumvirate"
+      "source": "seat-of-the-triumvirate",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 124171, "kind": "npc", "children": "Merciless Subjugator" }
+          }
+        ]
+      ]
     },
     {
       "id": 1277557,
       "type": "trash",
       "name": "Burning Radiance",
       "icon": "paladin_holy",
-      "source": "nexus-point-xenas"
+      "source": "nexus-point-xenas",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 254926, "kind": "npc", "children": "Lightwrought" }
+          }
+        ]
+      ]
     },
     {
       "id": 1278754,
       "type": "trash",
       "name": "Focused Guard",
       "icon": "ability_shaman_watershield",
-      "source": "pit-of-saron"
+      "source": "pit-of-saron",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 252564, "kind": "npc", "children": "Glacieth" }
+          }
+        ]
+      ]
     },
     {
       "id": 1278967,
       "type": "trash",
       "name": "Dark Rupture",
       "icon": "spell_shadow_shadowfury",
-      "source": "pit-of-saron"
+      "source": "pit-of-saron",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 252610, "kind": "npc", "children": "Ymirjar Graveblade" }
+          }
+        ]
+      ]
     },
     {
       "id": 1278986,
       "type": "trash",
       "name": "Frost Breath",
       "icon": "spell_fire_blueflamebreath",
-      "source": "pit-of-saron"
+      "source": "pit-of-saron",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 36891, "kind": "npc", "children": "Iceborn Proto-Drake" }
+          }
+        ]
+      ]
     },
     {
       "id": 1279002,
@@ -2438,19 +3285,37 @@
       "type": "trash",
       "name": "Creeping Void",
       "icon": "inv_112_raidtrinkets_blobofswirlingvoid_gold",
-      "source": "nexus-point-xenas"
+      "source": "nexus-point-xenas",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 251852, "kind": "npc", "children": "Nullifier" }
+          }
+        ]
+      ]
     },
     {
       "id": 1281874,
       "type": "trash",
       "name": "Heat Exhaustion",
       "icon": "ability_siege_engineer_superheated",
-      "source": "skyreach"
+      "source": "skyreach",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 76142, "kind": "npc", "children": "Skyreach Sun Construct Prototype" }
+          }
+        ]
+      ]
     },
     {
       "id": 1282272,
       "type": "derelict-duo",
-      "name": "Splattered",
+      "name": "Splattering Spew",
       "icon": "ability_creature_poison_02",
       "source": "windrunner-spire"
     }
