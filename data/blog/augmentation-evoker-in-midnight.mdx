@@ -1,5 +1,5 @@
 ---
-lastmod: '2025-12-07'
+lastmod: '2025-12-16'
 title: Augmentation Evoker in Midnight
 date: '2025-10-05'
 tags: ['wow', 'evoker', 'augmentation', 'midnight']
@@ -105,6 +105,9 @@ However, <Prescience /> and <ShiftingSands /> will still be significantly more i
 A checked checkbox indicates this has been fixed since discovery.
 
 #### General
+- [ ] <SensePower /> doesn't seem to track anything for:
+  - <UnholyDeathKnight />
+  - <AssassinationRogue />
 - [ ] there's a long list of class abilities that do not contribute to <BreathOfEons /> as they're missing the `Allow Class Ability Procs` flag
   - [this list is sourced from simc](https://github.com/WoWAnalyzer/WoWAnalyzer/blob/the-war-within/src/analysis/retail/evoker/augmentation/modules/util/abilityFilter.ts#L329-L690), so there may be some minor errors
 - [ ] <ObsidianScales /> shows the same tooltip as before regardless of whether you're talented into <RenewingBlaze /> or not
@@ -131,6 +134,10 @@ A checked checkbox indicates this has been fixed since discovery.
   - `...s/Blizzard_UnitFrame/Mainline/EssenceFramePlayer.lua:89: calling 'IsShown' on bad self (Usage: local isShown = self:IsShown(). Secret values are not allowed for this argument.)`
 
 #### Cooldown Manager
+- [ ] <VerdantEmbrace /> is missing from the list of Utility Cooldowns
+  - it is present for both other specs
+- [ ] <Expunge /> is missing from the list of Utility Cooldowns
+  - it is missing for <PreservationEvoker abbreviated /> as well
 - [ ] offers to track <ImminentDestruction /> under Buffs twice
 - [ ] offers to track <OppressingRoar /> under Buffs, but doesn't work with or without <Overawe />
 - [ ] does not track <MassEruption /> - always shows as unlearned

@@ -65,6 +65,22 @@ export function PreservationEvoker({ plural, abbreviated }) {
   );
 }
 
+export function UnholyDeathKnight({ plural, abbreviated }) {
+  return (
+    <WowheadSpecIcon spec="unholy-deathknight">
+      {abbreviated ? 'UDK' : `Unholy Death Knight${plural ? 's' : ''}`}
+    </WowheadSpecIcon>
+  );
+}
+
+export function AssassinationRogue({ plural, abbreviated }) {
+  return (
+    <WowheadSpecIcon spec="assa-rogue">
+      {abbreviated ? 'Assa Rogue' : `Assasination Rogue${plural ? 's' : ''}`}
+    </WowheadSpecIcon>
+  );
+}
+
 export function AugmentationEvoker({ plural, abbreviated }) {
   return (
     <WowheadSpecIcon spec="augmentation-evoker">
@@ -1066,6 +1082,30 @@ export function AntiMagicZone() {
   return (
     <WowheadLink kind="spell" id={145629} icon="spell_deathknight_antimagiczone">
       Anti-Magic Zone
+    </WowheadLink>
+  );
+}
+
+export function Expunge() {
+  return (
+    <WowheadLink kind="spell" id={365585} icon="ability_evoker_fontofmagic_green">
+      Expunge
+    </WowheadLink>
+  );
+}
+
+export function VerdantEmbrace() {
+  return (
+    <WowheadLink kind="spell" id={360995} icon="ability_evoker_rescue">
+      Verdant Embrace
+    </WowheadLink>
+  );
+}
+
+export function SensePower() {
+  return (
+    <WowheadLink kind="spell" id={361021} icon="ability_hunter_aspectoftheviper">
+      Sense Power
     </WowheadLink>
   );
 }

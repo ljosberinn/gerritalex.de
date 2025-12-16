@@ -19,6 +19,8 @@ const specs = {
   'subtlety-rogue': 'ability_stealth',
   'mistweaver-monk': 'spell_monk_mistweaver_spec',
   'shadow-priest': 'spell_shadow_shadowwordpain',
+  'unholy-deathknight': 'spell_deathknight_unholypresence',
+  'assa-rogue': 'ability_rogue_deadlybrew',
 };
 
 const colors = {
@@ -35,6 +37,8 @@ const colors = {
   'subtlety-rogue': classColors.Rogue,
   'mistweaver-monk': classColors.Monk,
   'shadow-priest': classColors.Priest,
+  'assa-rogue': classColors.Rogue,
+  'unholy-deathknight': classColors.DeathKnight,
 };
 
 export type WowheadSpecIconProps = {
