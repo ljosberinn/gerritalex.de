@@ -2807,6 +2807,22 @@
     "visible": true
   },
   {
+    "acquired": "2025-12-17",
+    "artist": "Rome",
+    "album": "Civitas Solis",
+    "visible": true,
+    "id": 33737196,
+    "metadata": {
+      "genres": [
+        "Neofolk"
+      ],
+      "release": {
+        "year": 2025
+      },
+      "runtime": 2701
+    }
+  },
+  {
     "acquired": "11-01-2011",
     "artist": "Rome",
     "album": "Confessions d'un voleur d'âmes",
@@ -2939,6 +2955,22 @@
     "visible": true
   },
   {
+    "acquired": "2025-12-17",
+    "artist": "Rome",
+    "album": "Hegemonikon - A Journey to the End of Light",
+    "visible": true,
+    "id": 25273870,
+    "metadata": {
+      "genres": [
+        "Neofolk"
+      ],
+      "release": {
+        "year": 2022
+      },
+      "runtime": 2276
+    }
+  },
+  {
     "acquired": "10-01-2012",
     "artist": "Rome",
     "album": "Hell Money",
@@ -3068,6 +3100,38 @@
     }
   },
   {
+    "acquired": "2025-12-17",
+    "artist": "Rome",
+    "album": "Parlez-Vous Hate?",
+    "visible": true,
+    "id": 17157943,
+    "metadata": {
+      "genres": [
+        "Neofolk"
+      ],
+      "release": {
+        "year": 2021
+      },
+      "runtime": null
+    }
+  },
+  {
+    "acquired": "2025-12-17",
+    "artist": "Rome",
+    "album": "The Hierophant",
+    "visible": true,
+    "id": 35799343,
+    "metadata": {
+      "genres": [
+        "Neofolk"
+      ],
+      "release": {
+        "year": 2025
+      },
+      "runtime": null
+    }
+  },
+  {
     "acquired": "08-01-2016",
     "artist": "Rome",
     "album": "The Hyperion Machine",
@@ -3082,6 +3146,22 @@
       "runtime": 2839
     },
     "visible": true
+  },
+  {
+    "acquired": "2025-12-17",
+    "artist": "Rome",
+    "album": "The Tower",
+    "visible": true,
+    "id": 35799112,
+    "metadata": {
+      "genres": [
+        "Neofolk"
+      ],
+      "release": {
+        "year": 2025
+      },
+      "runtime": null
+    }
   },
   {
     "acquired": null,

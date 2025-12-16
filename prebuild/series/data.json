@@ -497,7 +497,7 @@
       "genres": [
         "Drama"
       ],
-      "seasons": 2,
+      "seasons": 3,
       "tagline": "Remember this feeling.",
       "release": {
         "day": 16,
@@ -649,7 +649,7 @@
         "Sci-Fi & Fantasy"
       ],
       "seasons": 2,
-      "tagline": "",
+      "tagline": "A university like you've never seen it before.",
       "release": {
         "day": 28,
         "month": 9,
@@ -884,7 +884,7 @@
         "Drama",
         "Action & Adventure"
       ],
-      "seasons": 4,
+      "seasons": 3,
       "tagline": "All must choose.",
       "release": {
         "day": 21,
@@ -1243,6 +1243,29 @@
     "state": "finished"
   },
   {
+    "title": "Mr. Mercedes",
+    "id": 70485,
+    "seen": 5,
+    "state": "ongoing",
+    "metadata": {
+      "genres": [
+        "Mystery",
+        "Sci-Fi & Fantasy",
+        "Drama"
+      ],
+      "seasons": 3,
+      "tagline": "Don’t let him inside your head.",
+      "release": {
+        "day": 9,
+        "month": 8,
+        "year": 2017
+      },
+      "episodes": 30
+    },
+    "favorite": false,
+    "episodesSeen": 5
+  },
+  {
     "title": "Murderbot",
     "id": 241554,
     "state": "finished",
@@ -1434,7 +1457,7 @@
       "episodes": 16
     },
     "favorite": true,
-    "episodesSeen": 9,
+    "episodesSeen": 10,
     "state": "ongoing"
   },
   {
@@ -1478,7 +1501,7 @@
       "episodes": 9
     },
     "favorite": false,
-    "episodesSeen": 6
+    "episodesSeen": 7
   },
   {
     "title": "Poker Face",
@@ -1830,7 +1853,7 @@
         "Crime"
       ],
       "seasons": 1,
-      "tagline": "A search for serial arsonists ignites a twisted game of secrets and suspicions.",
+      "tagline": "",
       "release": {
         "day": 26,
         "month": 6,
@@ -2097,7 +2120,7 @@
         "month": 7,
         "year": 2019
       },
-      "episodes": 33
+      "episodes": 40
     }
   },
   {

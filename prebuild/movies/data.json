@@ -748,7 +748,7 @@
         "month": 12,
         "year": 2025
       },
-      "runtime": 197
+      "runtime": 195
     },
     "favorite": false
   },
@@ -803,7 +803,7 @@
       ],
       "tagline": "",
       "release": {
-        "day": 17,
+        "day": 16,
         "month": 12,
         "year": 2026
       },
@@ -857,11 +857,12 @@
     "seen": false,
     "metadata": {
       "genres": [
-        "Science Fiction"
+        "Science Fiction",
+        "Action"
       ],
       "tagline": "",
       "release": {
-        "day": 17,
+        "day": 16,
         "month": 12,
         "year": 2027
       },
@@ -1627,6 +1628,25 @@
       "runtime": 132
     },
     "seen": true
+  },
+  {
+    "title": "Disclosure Day",
+    "id": 1275779,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Drama"
+      ],
+      "tagline": "All will be disclosed.",
+      "release": {
+        "day": 10,
+        "month": 6,
+        "year": 2026
+      },
+      "runtime": 0
+    },
+    "favorite": false
   },
   {
     "title": "Distant",
@@ -2732,7 +2752,7 @@
       ],
       "tagline": "",
       "release": {
-        "day": 26,
+        "day": 25,
         "month": 3,
         "year": 2027
       },
@@ -8082,7 +8102,7 @@
   {
     "title": "The Witch",
     "id": 310131,
-    "seen": false,
+    "seen": true,
     "metadata": {
       "genres": [
         "Horror",
