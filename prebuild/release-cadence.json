@@ -3,12 +3,17 @@
   { "patch": "12.0.7", "releaseDate": "?2026-07-07", "announcementDate": null, "url": null },
   { "patch": "12.0.5", "releaseDate": "?2026-05-12", "announcementDate": null, "url": null },
   {
-    "patch": "12.0.2",
+    "patch": "12.0.1",
     "releaseDate": "?2026-02-10",
     "announcementDate": "2025-11-26",
     "url": "https://www.wowhead.com/news/midnight-releases-march-2nd-2026-blizzard-announcement-trailer-379423"
   },
-  { "patch": "12.0.0", "releaseDate": "?2026-01-20", "announcementDate": null, "url": null },
+  {
+    "patch": "12.0.0",
+    "releaseDate": "2026-01-20",
+    "announcementDate": "2025-12-18",
+    "url": "https://www.wowhead.com/news/devourer-demon-hunter-releases-with-the-midnight-pre-patch-on-january-20th-379723"
+  },
   {
     "patch": "11.2.7",
     "releaseDate": "2025-12-02",
