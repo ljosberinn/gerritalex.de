@@ -695,6 +695,25 @@
     "visible": false
   },
   {
+    "acquired": "2025-12-23",
+    "artist": "Dødheimsgard",
+    "album": "Black Medium Current",
+    "visible": true,
+    "id": 26760416,
+    "metadata": {
+      "genres": [
+        "Black Metal",
+        "Avantgarde",
+        "Experimental",
+        "Industrial"
+      ],
+      "release": {
+        "year": 2023
+      },
+      "runtime": 4176
+    }
+  },
+  {
     "acquired": "02-01-2017",
     "artist": "DOOL",
     "album": "Here Now There Then",
@@ -3258,6 +3277,24 @@
       "runtime": 2631
     },
     "visible": true
+  },
+  {
+    "acquired": "2025-12-23",
+    "artist": "Solefald",
+    "album": "World Metal. Kosmopolis Sud",
+    "visible": true,
+    "id": 6601409,
+    "metadata": {
+      "genres": [
+        "Black Metal",
+        "Avantgarde",
+        "Post-Metal"
+      ],
+      "release": {
+        "year": 2015
+      },
+      "runtime": 3002
+    }
   },
   {
     "acquired": null,

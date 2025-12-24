@@ -94,7 +94,7 @@
         "month": 1,
         "year": 2026
       },
-      "runtime": 109
+      "runtime": 110
     },
     "favorite": false
   },
@@ -748,7 +748,7 @@
         "month": 12,
         "year": 2025
       },
-      "runtime": 195
+      "runtime": 198
     },
     "favorite": false
   },
@@ -799,7 +799,8 @@
     "metadata": {
       "genres": [
         "Science Fiction",
-        "Action"
+        "Action",
+        "Adventure"
       ],
       "tagline": "",
       "release": {
@@ -858,7 +859,8 @@
     "metadata": {
       "genres": [
         "Science Fiction",
-        "Action"
+        "Action",
+        "Adventure"
       ],
       "tagline": "",
       "release": {
@@ -1635,8 +1637,7 @@
     "seen": false,
     "metadata": {
       "genres": [
-        "Science Fiction",
-        "Drama"
+        "Science Fiction"
       ],
       "tagline": "All will be disclosed.",
       "release": {
@@ -1763,6 +1764,27 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "id": 8814,
+    "name": "Doom",
+    "seen": true,
+    "title": "Doom",
+    "metadata": {
+      "genres": [
+        "Action",
+        "Horror",
+        "Science Fiction"
+      ],
+      "tagline": "No one gets out alive.",
+      "release": {
+        "day": 20,
+        "month": 10,
+        "year": 2005
+      },
+      "runtime": 105
+    },
+    "favorite": false
   },
   {
     "title": "Doomsday",
@@ -4308,8 +4330,6 @@
     "seen": false,
     "metadata": {
       "genres": [
-        "Action",
-        "Adventure",
         "Science Fiction"
       ],
       "tagline": "",
@@ -5746,6 +5766,26 @@
     "seen": true
   },
   {
+    "id": 588,
+    "name": "Silent Hill",
+    "seen": true,
+    "title": "Silent Hill",
+    "metadata": {
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
+      "tagline": "We've been expecting you.",
+      "release": {
+        "day": 21,
+        "month": 4,
+        "year": 2006
+      },
+      "runtime": 125
+    },
+    "favorite": false
+  },
+  {
     "title": "Sin City",
     "id": 187,
     "metadata": {
@@ -6792,6 +6832,27 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "id": 10200,
+    "name": "The Day the Earth Stood Still",
+    "seen": true,
+    "title": "The Day the Earth Stood Still",
+    "metadata": {
+      "genres": [
+        "Drama",
+        "Science Fiction",
+        "Thriller"
+      ],
+      "tagline": "We thought the Earth was ours. We were wrong.",
+      "release": {
+        "day": 10,
+        "month": 12,
+        "year": 2008
+      },
+      "runtime": 104
+    },
+    "favorite": false
   },
   {
     "title": "The Dictator",
