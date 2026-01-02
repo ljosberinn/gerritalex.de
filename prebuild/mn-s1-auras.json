@@ -225,6 +225,13 @@
       "id": 1216985
     },
     {
+      "source": "nexus-point-xenas",
+      "type": "curse",
+      "icon": "ability_rogue_envelopingshadows",
+      "name": "Bad Omens",
+      "id": 1217882
+    },
+    {
       "source": "magisters-terrace",
       "type": "magic",
       "icon": "inv_cosmicvoid_debuff",
