@@ -3318,6 +3318,86 @@
       "name": "Splattering Spew",
       "icon": "ability_creature_poison_02",
       "source": "windrunner-spire"
+    },
+    {
+      "id": 1282663,
+      "type": "trash",
+      "name": "Melee",
+      "icon": "inv_cosmicvoid_wave",
+      "source": "nexus-point-xenas",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 0, "kind": "npc", "children": "Null Guardian" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1282664,
+      "type": "trash",
+      "name": "Melee",
+      "icon": "inv_cosmicvoid_wave",
+      "source": "nexus-point-xenas",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 0, "kind": "npc", "children": "Null Guardian" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1282676,
+      "type": "trash",
+      "name": "Flailstorm",
+      "icon": "ability_druid_galewinds",
+      "source": "nexus-point-xenas",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 0, "kind": "npc", "children": "Null Guardian" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1282791,
+      "type": "trash",
+      "name": "Mirrored Rend",
+      "icon": "spell_holy_searinglightpriest",
+      "source": "nexus-point-xenas",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 0, "kind": "npc", "children": "Lothraxion" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1282950,
+      "type": "trash",
+      "name": "Suppression Field",
+      "icon": "inv_112_raidtrinkets_trinkettechnomancer_ritualengine",
+      "source": "nexus-point-xenas",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 241647, "kind": "npc", "children": "Flux Engineer" }
+          }
+        ]
+      ]
     }
   ]
 }
