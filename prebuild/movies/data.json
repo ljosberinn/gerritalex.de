@@ -94,7 +94,7 @@
         "month": 1,
         "year": 2026
       },
-      "runtime": 110
+      "runtime": 109
     },
     "favorite": false
   },
@@ -3334,7 +3334,7 @@
   {
     "id": 986097,
     "title": "HIM",
-    "seen": false,
+    "seen": true,
     "metadata": {
       "genres": [
         "Horror",
@@ -6457,6 +6457,27 @@
         "year": 2009
       },
       "runtime": 115
+    },
+    "favorite": false
+  },
+  {
+    "id": 290859,
+    "title": "Terminator: Dark Fate",
+    "seen": true,
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Action",
+        "Adventure",
+        "Thriller"
+      ],
+      "tagline": "Welcome to the day after judgement day",
+      "release": {
+        "day": 23,
+        "month": 10,
+        "year": 2019
+      },
+      "runtime": 128
     },
     "favorite": false
   },

@@ -538,7 +538,7 @@
     "metadata": {
       "genres": [
         "Action & Adventure",
-        "Drama"
+        "Sci-Fi & Fantasy"
       ],
       "seasons": 2,
       "tagline": "Let the end times roll.",
@@ -1457,7 +1457,7 @@
       "episodes": 16
     },
     "favorite": true,
-    "episodesSeen": 10,
+    "episodesSeen": 12,
     "state": "ongoing"
   },
   {
@@ -2034,8 +2034,8 @@
       "episodes": 42
     },
     "favorite": false,
-    "episodesSeen": 38,
-    "state": "ongoing"
+    "episodesSeen": 42,
+    "state": "finished"
   },
   {
     "title": "Supergirl",
@@ -2350,7 +2350,7 @@
         "month": 9,
         "year": 2022
       },
-      "episodes": 16
+      "episodes": 24
     },
     "favorite": false,
     "episodesSeen": 8,
@@ -2534,13 +2534,13 @@
         "Drama"
       ],
       "seasons": 2,
-      "tagline": "15 episodes. 15 hours. 1 shift.",
+      "tagline": "The work never stops.",
       "release": {
         "day": 9,
         "month": 1,
         "year": 2025
       },
-      "episodes": 16
+      "episodes": 30
     },
     "favorite": false,
     "episodesSeen": 0
