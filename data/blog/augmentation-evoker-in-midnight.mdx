@@ -105,7 +105,7 @@ However, <Prescience /> and <ShiftingSands /> will still be significantly more i
 A checked checkbox indicates this has been fixed since discovery.
 
 #### General
-- [ ] <SensePower /> doesn't seem to track anything for:
+- [x] <SensePower /> doesn't seem to track anything for:
   - <UnholyDeathKnight />
   - <AssassinationRogue />
 - [ ] there's a long list of class abilities that do not contribute to <BreathOfEons /> as they're missing the `Allow Class Ability Procs` flag
@@ -114,9 +114,9 @@ A checked checkbox indicates this has been fixed since discovery.
 - [ ] <CommandSquadron kind="buff" /> does not work when talented out of <Maneuverability />
 - [ ] <Prescience /> from <MotesOfPossibility /> doesn't seem to be able to crit when talented into <DoubleTime />
 - [ ] <EbonMight /> does not update when a player dies (stays at a lower value than it should)
-- [ ] <EbonMight /> does not spread to more players if they come in range/get resurrected
+- [ ] <EbonMight /> does  not spread to more players if they come in range/get resurrected
   - this enables on-pull outrange meta just like in Dragonflight Season 2
-- [ ] <EbonMight /> does not update when a player `/cancelaura`s it
+- [x] <EbonMight /> does not update when a player `/cancelaura`s it
 - [ ] when using <BreathOfEons /> without <EbonMight /> active, its scaling factor will depend on the last affected target count of <EbonMight />
   - e.g. if it was at 1% because you buffed lots of players before on say a world boss and then use it in solo content, it still does only 1%
   - it resets to 15% on a relog or when casting <EbonMight />
@@ -137,18 +137,18 @@ A checked checkbox indicates this has been fixed since discovery.
 - [ ] <VerdantEmbrace /> is missing from the list of Utility Cooldowns
   - it is present for both other specs
 - [ ] <Expunge /> is missing from the list of Utility Cooldowns
-  - it is missing for <PreservationEvoker abbreviated /> as well
-- [ ] offers to track <ImminentDestruction /> under Buffs twice
-- [ ] offers to track <OppressingRoar /> under Buffs, but doesn't work with or without <Overawe />
-- [ ] does not track <MassEruption /> - always shows as unlearned
-- [ ] does not track <DeepBreath /> cooldown when not talented into <BreathOfEons />
+  - [x] it is missing for <PreservationEvoker abbreviated /> as well
+- [x] offers to track <ImminentDestruction /> under Buffs twice
+- [ ] offers to track <OppressingRoar /> under Buffs, but doesn't work ~~with or~~ without <Overawe />
+- [x] does not track <MassEruption /> - always shows as unlearned
+- [x] does not track <DeepBreath /> cooldown when not talented into <BreathOfEons />
   - largely a leveling concern
-- [ ] when talenting out of <BreathOfEons /> for testing purposes of the above, continues to show <BreathOfEons />
+- [x] when talenting out of <BreathOfEons /> for testing purposes of the above, continues to show <BreathOfEons />
 - [ ] does not track <BreathOfEons /> cooldown when talenting out of <Maneuverability /> until you relog
-- [ ] does not track <CommandSquadron />
+- [x] does not track <CommandSquadron />
 - [ ] attempts to track <InterwovenThreads />, which is passive
   - probably because it's a spell override to <TimeSkip />
-- [ ] does not track <MomentumShift />
+- [x] does not track <MomentumShift />
 - [ ] tracks <Duplicate /> with the wrong ids (uses spell id 1259175 instead of 1259173) 
 - [x] does not track <Duplicate />
   - not the summon duration, but the aura increasing <Eruption /> & <Upheaval /> Damage
