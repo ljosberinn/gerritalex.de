@@ -96,7 +96,8 @@
       },
       "runtime": 109
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "300",

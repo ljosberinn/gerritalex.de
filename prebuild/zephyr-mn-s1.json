@@ -693,6 +693,22 @@
       "source": "windrunner-spire"
     },
     {
+      "id": 470190,
+      "type": "emberdawn",
+      "name": "Flaming Twisters",
+      "icon": "spell_shaman_stormearthfire",
+      "source": "windrunner-spire",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 231606, "kind": "npc", "children": "Emberdawn" }
+          }
+        ]
+      ]
+    },
+    {
       "id": 471643,
       "type": "trash",
       "name": "Interrupting Screech",
@@ -818,7 +834,7 @@
       "id": 1214081,
       "type": "arcanotron-custos",
       "name": "Arcane Expulsion",
-      "icon": "ability_socererking_arcanewrath",
+      "icon": "inv_112_arcane_nova",
       "source": "magisters-terrace"
     },
     {
@@ -1345,14 +1361,14 @@
     {
       "id": 1252437,
       "type": "corewarden-nysarra",
-      "name": "Melee",
+      "name": "Void Lash",
       "icon": "inv_cosmicvoid_wave",
       "source": "nexus-point-xenas"
     },
     {
       "id": 1252438,
       "type": "corewarden-nysarra",
-      "name": "Melee",
+      "name": "Void Lash",
       "icon": "inv_cosmicvoid_wave",
       "source": "nexus-point-xenas"
     },
@@ -1387,8 +1403,8 @@
     {
       "id": 1253368,
       "type": "rukhran",
-      "name": "Solar Flare",
-      "icon": "artifactability_firemage_phoenixbolt",
+      "name": "Burning Pursuit",
+      "icon": "ability_fixated_state_red",
       "source": "skyreach",
       "notes": [
         [
@@ -2069,6 +2085,22 @@
       ]
     },
     {
+      "id": 1259903,
+      "type": "imperator-averzian",
+      "name": "Dark Upheaval",
+      "icon": "ability_priest_voidentropy",
+      "source": "vs-dr-mqd",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 240435, "kind": "npc", "children": "Imperator Averzian" }
+          }
+        ]
+      ]
+    },
+    {
       "id": 1259921,
       "type": "vorasius",
       "name": "Void Breath",
@@ -2141,7 +2173,7 @@
     {
       "id": 1261808,
       "type": "forgemaster-garfrost",
-      "name": "Radiating Chill",
+      "name": "Siphoning Chill",
       "icon": "spell_fire_blueflamering",
       "source": "pit-of-saron"
     },
@@ -2525,8 +2557,8 @@
     {
       "id": 1264693,
       "type": "trash",
-      "name": "Void Surge",
-      "icon": "inv_cosmicvoid_buff",
+      "name": "Terror Wave",
+      "icon": "spell_shadow_deathscream",
       "source": "magisters-terrace",
       "notes": [
         [
@@ -2666,6 +2698,13 @@
       "type": "vaelgor-&-ezzorak",
       "name": "Nullscatter",
       "icon": "inv12_ability_priest_voidvolley",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1266991,
+      "type": "beloren-child-of-alar",
+      "name": "Wrath of Void",
+      "icon": "inv_nullstone_cosmicvoid",
       "source": "vs-dr-mqd"
     },
     {
@@ -3281,6 +3320,22 @@
       "source": "vs-dr-mqd"
     },
     {
+      "id": 1281396,
+      "type": "ranjit",
+      "name": "Chakram Vortex",
+      "icon": "ability_skyreach_four_wind",
+      "source": "skyreach",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 75964, "kind": "npc", "children": "Ranjit" }
+          }
+        ]
+      ]
+    },
+    {
       "id": 1281636,
       "type": "trash",
       "name": "Creeping Void",
@@ -3315,7 +3370,7 @@
     {
       "id": 1282272,
       "type": "derelict-duo",
-      "name": "Splattering Spew",
+      "name": "Splattered",
       "icon": "ability_creature_poison_02",
       "source": "windrunner-spire"
     },
@@ -3378,7 +3433,7 @@
           "Via ",
           {
             "component": "WowheadLink",
-            "props": { "id": 0, "kind": "npc", "children": "Lothraxion" }
+            "props": { "id": 109105, "kind": "npc", "children": "Lothraxion" }
           }
         ]
       ]
@@ -3395,6 +3450,86 @@
           {
             "component": "WowheadLink",
             "props": { "id": 241647, "kind": "npc", "children": "Flux Engineer" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1283357,
+      "type": "trash",
+      "name": "Falling Rubble",
+      "icon": "inv_10_elementalcombinedfoozles_earth",
+      "source": "windrunner-spire",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 231631, "kind": "npc", "children": "Commander Kroluk" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1283905,
+      "type": "trash",
+      "name": "Shield Slam",
+      "icon": "ability_mage_arcanesurge",
+      "source": "magisters-terrace",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 240973, "kind": "npc", "children": "Runed Spellbreaker" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1284633,
+      "type": "trash",
+      "name": "Stygian Ichor",
+      "icon": "inv_cosmicvoid_groundstate",
+      "source": "magisters-terrace",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 231865, "kind": "npc", "children": "Degentrius" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1285450,
+      "type": "trash",
+      "name": "Arcane Explosion",
+      "icon": "inv_112_arcane_groundstate",
+      "source": "nexus-point-xenas",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 241644, "kind": "npc", "children": "Corewright Arcanist" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1285509,
+      "type": "trash",
+      "name": "Blistering Fire",
+      "icon": "spell_shaman_improvedfirenova",
+      "source": "algethar-academy",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 191736, "kind": "npc", "children": "Crawth" }
           }
         ]
       ]
