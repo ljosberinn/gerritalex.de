@@ -1556,6 +1556,25 @@
     "favorite": false
   },
   {
+    "title": "Dawn of the Dead",
+    "id": 924,
+    "seen": true,
+    "favorite": false,
+    "metadata": {
+      "genres": [
+        "Horror",
+        "Action"
+      ],
+      "tagline": "When there's no more room in Hell, the dead will walk the Earth.",
+      "release": {
+        "day": 19,
+        "month": 3,
+        "year": 2004
+      },
+      "runtime": 101
+    }
+  },
+  {
     "title": "Dead Man",
     "id": 922,
     "metadata": {
@@ -1638,7 +1657,9 @@
     "seen": false,
     "metadata": {
       "genres": [
-        "Science Fiction"
+        "Science Fiction",
+        "Thriller",
+        "Mystery"
       ],
       "tagline": "All will be disclosed.",
       "release": {
@@ -1916,7 +1937,7 @@
       ],
       "tagline": "",
       "release": {
-        "day": 17,
+        "day": 16,
         "month": 12,
         "year": 2026
       },
@@ -2771,7 +2792,8 @@
     "metadata": {
       "genres": [
         "Science Fiction",
-        "Action"
+        "Action",
+        "Adventure"
       ],
       "tagline": "",
       "release": {
@@ -4110,9 +4132,9 @@
     "seen": false,
     "metadata": {
       "genres": [
-        "Science Fiction",
         "Horror",
-        "Action"
+        "Action",
+        "Thriller"
       ],
       "tagline": "",
       "release": {
@@ -4120,7 +4142,7 @@
         "month": 2,
         "year": 2026
       },
-      "runtime": 0
+      "runtime": 94
     },
     "favorite": false
   },
@@ -4331,7 +4353,8 @@
     "seen": false,
     "metadata": {
       "genres": [
-        "Science Fiction"
+        "Science Fiction",
+        "Action"
       ],
       "tagline": "",
       "release": {
@@ -5302,13 +5325,13 @@
         "Adventure",
         "Mystery"
       ],
-      "tagline": "An unlikely friendship. An impossible mission.",
+      "tagline": "Believe in the Hail Mary.",
       "release": {
         "day": 18,
         "month": 3,
         "year": 2026
       },
-      "runtime": 0
+      "runtime": 156
     },
     "favorite": false
   },
@@ -5500,7 +5523,7 @@
       ],
       "tagline": "",
       "release": {
-        "day": 16,
+        "day": 9,
         "month": 9,
         "year": 2026
       },
@@ -9178,5 +9201,25 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "title": "Zombeavers",
+    "id": 254474,
+    "seen": true,
+    "favorite": false,
+    "metadata": {
+      "genres": [
+        "Horror",
+        "Action",
+        "Comedy"
+      ],
+      "tagline": "You'll be dammed!",
+      "release": {
+        "day": 20,
+        "month": 10,
+        "year": 2014
+      },
+      "runtime": 77
+    }
   }
 ]
