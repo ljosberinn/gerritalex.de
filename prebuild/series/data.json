@@ -270,7 +270,7 @@
         "month": 12,
         "year": 2011
       },
-      "episodes": 32
+      "episodes": 33
     },
     "favorite": true,
     "episodesSeen": 32,
@@ -606,7 +606,7 @@
         "War & Politics"
       ],
       "seasons": 5,
-      "tagline": "A new gold rush begins.",
+      "tagline": "The fight for freedom lies beyond the stars.",
       "release": {
         "day": 1,
         "month": 11,
@@ -1230,7 +1230,7 @@
         "Action & Adventure"
       ],
       "seasons": 2,
-      "tagline": "Titan X has awakened.",
+      "tagline": "A new threat will surface.",
       "release": {
         "day": 16,
         "month": 11,
@@ -1479,8 +1479,8 @@
       "episodes": 16
     },
     "favorite": true,
-    "episodesSeen": 12,
-    "state": "ongoing"
+    "episodesSeen": 16,
+    "state": "finished"
   },
   {
     "title": "Picard",
@@ -1941,15 +1941,14 @@
       "seasons": 1,
       "tagline": "",
       "release": {
-        "day": null,
-        "month": null,
-        "year": null
+        "day": 28,
+        "month": 5,
+        "year": 2026
       },
-      "episodes": 3
+      "episodes": 8
     },
     "favorite": false,
-    "episodesSeen": 0,
-    "imageMissing": true
+    "episodesSeen": 0
   },
   {
     "title": "Star Trek: Discovery",

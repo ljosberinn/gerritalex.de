@@ -701,7 +701,7 @@
       "genres": [
         "Science Fiction",
         "Adventure",
-        "Fantasy"
+        "Action"
       ],
       "tagline": "",
       "release": {
@@ -721,7 +721,7 @@
       "genres": [
         "Adventure",
         "Science Fiction",
-        "Fantasy"
+        "Action"
       ],
       "tagline": "",
       "release": {
@@ -1661,7 +1661,7 @@
         "Thriller",
         "Mystery"
       ],
-      "tagline": "All will be disclosed.",
+      "tagline": "We deserve to know.",
       "release": {
         "day": 10,
         "month": 6,
@@ -3712,6 +3712,25 @@
     "seen": true
   },
   {
+    "title": "Iron Lung",
+    "id": 1116201,
+    "metadata": {
+      "genres": [
+        "Horror",
+        "Science Fiction",
+        "Mystery"
+      ],
+      "tagline": "This is not an expedition. It's an execution.",
+      "release": {
+        "day": 30,
+        "month": 1,
+        "year": 2026
+      },
+      "runtime": 125
+    },
+    "favorite": false
+  },
+  {
     "title": "Iron Man",
     "id": 1726,
     "metadata": {
@@ -5331,7 +5350,7 @@
         "month": 3,
         "year": 2026
       },
-      "runtime": 156
+      "runtime": 157
     },
     "favorite": false
   },
