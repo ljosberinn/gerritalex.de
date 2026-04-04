@@ -1932,10 +1932,10 @@
     "seen": false,
     "metadata": {
       "genres": [
-        "Adventure",
-        "Science Fiction"
+        "Science Fiction",
+        "Action"
       ],
-      "tagline": "",
+      "tagline": "The epic conclusion.",
       "release": {
         "day": 16,
         "month": 12,
@@ -2021,6 +2021,26 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "title": "Elevation",
+    "id": 1035048,
+    "seen": true,
+    "metadata": {
+      "genres": [
+        "Action",
+        "Science Fiction",
+        "Thriller"
+      ],
+      "tagline": "Don't go down without a fight.",
+      "release": {
+        "day": 7,
+        "month": 11,
+        "year": 2024
+      },
+      "runtime": 91
+    },
+    "favorite": false
   },
   {
     "title": "Elysium",
@@ -3714,6 +3734,26 @@
   {
     "title": "Iron Lung",
     "id": 1116201,
+    "seen": true,
+    "metadata": {
+      "genres": [
+        "Horror",
+        "Mystery",
+        "Science Fiction"
+      ],
+      "tagline": "This is not an expedition. It's an execution.",
+      "release": {
+        "day": 30,
+        "month": 1,
+        "year": 2026
+      },
+      "runtime": 125
+    },
+    "favorite": false
+  },
+  {
+    "title": "Iron Lung",
+    "id": 1116201,
     "metadata": {
       "genres": [
         "Horror",
@@ -5337,22 +5377,21 @@
   {
     "id": 687163,
     "title": "Project Hail Mary",
-    "seen": false,
+    "seen": true,
     "metadata": {
       "genres": [
         "Science Fiction",
-        "Adventure",
-        "Mystery"
+        "Adventure"
       ],
       "tagline": "Believe in the Hail Mary.",
       "release": {
-        "day": 18,
+        "day": 15,
         "month": 3,
         "year": 2026
       },
       "runtime": 157
     },
-    "favorite": false
+    "favorite": true
   },
   {
     "title": "Project X",
@@ -5546,7 +5585,7 @@
         "month": 9,
         "year": 2026
       },
-      "runtime": 0
+      "runtime": 90
     },
     "favorite": false
   },
