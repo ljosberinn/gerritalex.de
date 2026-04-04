@@ -200,6 +200,7 @@ export async function doSeriesImport(): Promise<{ from: string; to: string }[]> 
         delete dataset.imageMissing;
       }
     } catch {
+      // @ts-expect-error it'll exist after this fr
       dataset.imageMissing = true;
     }
   }
