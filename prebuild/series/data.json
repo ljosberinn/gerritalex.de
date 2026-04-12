@@ -617,7 +617,7 @@
     },
     "favorite": false,
     "episodesSeen": 40,
-    "state": "upcoming"
+    "state": "ongoing"
   },
   {
     "title": "Foundation",
@@ -660,7 +660,7 @@
     },
     "favorite": false,
     "episodesSeen": 30,
-    "state": "upcoming"
+    "state": "ongoing"
   },
   {
     "title": "Gen V",
@@ -2128,7 +2128,7 @@
   {
     "title": "The Boys",
     "id": 76479,
-    "state": "upcoming",
+    "state": "ongoing",
     "favorite": false,
     "episodesSeen": 34,
     "metadata": {
@@ -2804,7 +2804,7 @@
     },
     "favorite": false,
     "episodesSeen": 0,
-    "state": "ongoing"
+    "state": "upcoming"
   },
   {
     "title": "Vikings",
