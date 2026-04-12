@@ -156,7 +156,8 @@
     "metadata": {
       "genres": [
         "Animation",
-        "Action & Adventure"
+        "Action & Adventure",
+        "Sci-Fi & Fantasy"
       ],
       "seasons": 2,
       "tagline": "The hunt is on.",
@@ -2129,7 +2130,7 @@
     "id": 76479,
     "state": "upcoming",
     "favorite": false,
-    "episodesSeen": 32,
+    "episodesSeen": 34,
     "metadata": {
       "genres": [
         "Sci-Fi & Fantasy",
