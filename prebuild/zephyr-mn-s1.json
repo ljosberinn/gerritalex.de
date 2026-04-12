@@ -75,6 +75,90 @@
   },
   "spells": [
     {
+      "id": 1287445,
+      "type": "midnight-falls",
+      "name": "Heaven & Hell",
+      "icon": "inv_112_raiddimensius_darkenedsky",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1282425,
+      "type": "midnight-falls",
+      "name": "Core Harvest",
+      "icon": "inv_112_raiddimensius_crushinggravity",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1249582,
+      "type": "midnight-falls",
+      "name": "Resonance",
+      "icon": "inv_11_0_arathordungeon_bell_color4",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1282458,
+      "type": "midnight-falls",
+      "name": "Radiance",
+      "icon": "spell_holy_circleofrenewal",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1282372,
+      "type": "midnight-falls",
+      "name": "Cosmic Fission",
+      "icon": "ability_evoker_unravel",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1251649,
+      "type": "midnight-falls",
+      "name": "Disintegration",
+      "icon": "inv_pet_naaru",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1276173,
+      "type": "midnight-falls",
+      "name": "Severance",
+      "icon": "ability_priest_psychiclink",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1281123,
+      "type": "midnight-falls",
+      "name": "Dark Meltdown",
+      "icon": "inv_112_raiddimensius_blackhole",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1254257,
+      "type": "midnight-falls",
+      "name": "Tears of L'ura",
+      "icon": "spell_holy_purifyingpower",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1254644,
+      "type": "midnight-falls",
+      "name": "Thunderous Well",
+      "icon": "ability_bossgorefiend_touchofdoom",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1281178,
+      "type": "midnight-falls",
+      "name": "Criticality",
+      "icon": "ability_thunderking_thunderstruck",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1251080,
+      "type": "midnight-falls",
+      "name": "The Dark Archangel",
+      "icon": "ability_priest_darkarchangel",
+      "source": "vs-dr-mqd"
+    },
+    {
       "id": 153757,
       "type": "ranjit",
       "name": "Fan of Blades",
