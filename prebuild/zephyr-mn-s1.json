@@ -110,13 +110,6 @@
       "source": "vs-dr-mqd"
     },
     {
-      "id": 1251649,
-      "type": "midnight-falls",
-      "name": "Disintegration",
-      "icon": "inv_pet_naaru",
-      "source": "vs-dr-mqd"
-    },
-    {
       "id": 1276173,
       "type": "midnight-falls",
       "name": "Severance",
@@ -1169,7 +1162,6 @@
       "icon": "inv_pet_naaru",
       "source": "vs-dr-mqd"
     },
-
     {
       "id": 1251813,
       "type": "vordaza",
