@@ -530,7 +530,7 @@
       "episodes": 24
     },
     "favorite": false,
-    "episodesSeen": 16,
+    "episodesSeen": 17,
     "state": "upcoming"
   },
   {
@@ -1268,7 +1268,6 @@
   {
     "title": "Mr. Mercedes",
     "id": 70485,
-    "seen": 5,
     "state": "ongoing",
     "metadata": {
       "genres": [
@@ -1909,6 +1908,28 @@
     "state": "abandoned"
   },
   {
+    "title": "Something Very Bad Is Going to Happen",
+    "id": 259265,
+    "metadata": {
+      "genres": [
+        "Drama",
+        "Mystery",
+        "Sci-Fi & Fantasy"
+      ],
+      "seasons": 1,
+      "tagline": "Are you sure he's the one?",
+      "release": {
+        "day": 26,
+        "month": 3,
+        "year": 2026
+      },
+      "episodes": 8
+    },
+    "favorite": false,
+    "episodesSeen": 0,
+    "state": "upcoming"
+  },
+  {
     "title": "Squid Game",
     "id": 93405,
     "metadata": {
@@ -2130,7 +2151,7 @@
     "id": 76479,
     "state": "ongoing",
     "favorite": false,
-    "episodesSeen": 34,
+    "episodesSeen": 35,
     "metadata": {
       "genres": [
         "Sci-Fi & Fantasy",

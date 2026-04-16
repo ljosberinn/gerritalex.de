@@ -1933,7 +1933,7 @@
     "metadata": {
       "genres": [
         "Science Fiction",
-        "Action"
+        "Drama"
       ],
       "tagline": "The epic conclusion.",
       "release": {
@@ -1941,7 +1941,7 @@
         "month": 12,
         "year": 2026
       },
-      "runtime": 0
+      "runtime": 140
     },
     "favorite": false
   },
