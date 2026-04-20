@@ -149,13 +149,6 @@
     },
     {
       "source": "windrunner-spire",
-      "type": "bleed",
-      "icon": "ability_heroicleap",
-      "name": "Reckless Leap",
-      "id": 472054
-    },
-    {
-      "source": "windrunner-spire",
       "type": "poison",
       "icon": "ability_rogue_disembowel",
       "name": "Poison Blades",
@@ -204,13 +197,6 @@
       "id": 1216459
     },
     {
-      "source": "nexus-point-xenas",
-      "type": "bleed",
-      "icon": "ability_upgrademoonglaive",
-      "name": "Crimson Glaive",
-      "id": 1216502
-    },
-    {
       "source": "windrunner-spire",
       "type": "poison",
       "icon": "ability_creature_poison_02",
@@ -237,13 +223,6 @@
       "icon": "ability_rogue_envelopingshadows",
       "name": "Bad Omens",
       "id": 1217882
-    },
-    {
-      "source": "nexus-point-xenas",
-      "type": "bleed",
-      "icon": "inv_10_specialreagentfoozles_tuskclaw_fire",
-      "name": "Razor Dive",
-      "id": 1238439
     },
     {
       "source": "magisters-terrace",
