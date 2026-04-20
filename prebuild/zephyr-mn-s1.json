@@ -1107,13 +1107,6 @@
       "source": "vs-dr-mqd"
     },
     {
-      "id": 1249582,
-      "type": "midnight-falls",
-      "name": "Dark Toll",
-      "icon": "inv_11_0_arathordungeon_bell_color4",
-      "source": "vs-dr-mqd"
-    },
-    {
       "id": 1249585,
       "type": "midnight-falls",
       "name": "Dissonant Dirge",
@@ -2371,28 +2364,10 @@
       "type": "vorasius",
       "name": "Aftershock",
       "icon": "spell_nature_earthquake",
-      "source": "vs-dr-mqd"
-    },
-    {
-      "id": 1276583,
-      "type": "vorasius",
-      "name": "Aftershock",
-      "icon": "spell_nature_earthquake",
-      "source": "vs-dr-mqd"
-    },
-    {
-      "id": 1276584,
-      "type": "vorasius",
-      "name": "Aftershock",
-      "icon": "spell_nature_earthquake",
-      "source": "vs-dr-mqd"
-    },
-    {
-      "id": 1276588,
-      "type": "vorasius",
-      "name": "Aftershock",
-      "icon": "spell_nature_earthquake",
-      "source": "vs-dr-mqd"
+      "source": "vs-dr-mqd",
+      "notes": [
+        "There's an additional 15 other ids for this spell which are omitted for brevity, you get the point."
+      ]
     },
     {
       "id": 1276632,
@@ -2423,90 +2398,6 @@
       "name": "Ruinous Winds",
       "icon": "ability_skyreach_wind",
       "source": "algethar-academy"
-    },
-    {
-      "id": 1276811,
-      "type": "vorasius",
-      "name": "Aftershock",
-      "icon": "spell_nature_earthquake",
-      "source": "vs-dr-mqd"
-    },
-    {
-      "id": 1276812,
-      "type": "vorasius",
-      "name": "Aftershock",
-      "icon": "spell_nature_earthquake",
-      "source": "vs-dr-mqd"
-    },
-    {
-      "id": 1276813,
-      "type": "vorasius",
-      "name": "Aftershock",
-      "icon": "spell_nature_earthquake",
-      "source": "vs-dr-mqd"
-    },
-    {
-      "id": 1276817,
-      "type": "vorasius",
-      "name": "Aftershock",
-      "icon": "spell_nature_earthquake",
-      "source": "vs-dr-mqd"
-    },
-    {
-      "id": 1276824,
-      "type": "vorasius",
-      "name": "Aftershock",
-      "icon": "spell_nature_earthquake",
-      "source": "vs-dr-mqd"
-    },
-    {
-      "id": 1276828,
-      "type": "vorasius",
-      "name": "Aftershock",
-      "icon": "spell_nature_earthquake",
-      "source": "vs-dr-mqd"
-    },
-    {
-      "id": 1276829,
-      "type": "vorasius",
-      "name": "Aftershock",
-      "icon": "spell_nature_earthquake",
-      "source": "vs-dr-mqd"
-    },
-    {
-      "id": 1276830,
-      "type": "vorasius",
-      "name": "Aftershock",
-      "icon": "spell_nature_earthquake",
-      "source": "vs-dr-mqd"
-    },
-    {
-      "id": 1276832,
-      "type": "vorasius",
-      "name": "Aftershock",
-      "icon": "spell_nature_earthquake",
-      "source": "vs-dr-mqd"
-    },
-    {
-      "id": 1276833,
-      "type": "vorasius",
-      "name": "Aftershock",
-      "icon": "spell_nature_earthquake",
-      "source": "vs-dr-mqd"
-    },
-    {
-      "id": 1276834,
-      "type": "vorasius",
-      "name": "Aftershock",
-      "icon": "spell_nature_earthquake",
-      "source": "vs-dr-mqd"
-    },
-    {
-      "id": 1276835,
-      "type": "vorasius",
-      "name": "Aftershock",
-      "icon": "spell_nature_earthquake",
-      "source": "vs-dr-mqd"
     },
     {
       "id": 1277341,
@@ -2731,6 +2622,90 @@
           }
         ]
       ]
+    },
+    {
+      "id": 1281707,
+      "type": "crown-of-the-cosmos",
+      "name": "Echoing Darkness",
+      "icon": "spell_priest_burningwill_shadow",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1233826,
+      "type": "crown-of-the-cosmos",
+      "name": "Void Expulsion",
+      "icon": "inv_nullstone_void",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1243743,
+      "type": "crown-of-the-cosmos",
+      "name": "Interrupting Tremor",
+      "icon": "ability_priest_surgeofdarkness",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1243981,
+      "type": "crown-of-the-cosmos",
+      "name": "Silverstrike Barrage",
+      "icon": "ability_shootwand",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1234570,
+      "type": "crown-of-the-cosmos",
+      "name": "Stellar Emission",
+      "icon": "spell_priest_divinestar_shadow",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1260019,
+      "type": "crown-of-the-cosmos",
+      "name": "Simulacrum Backlash",
+      "icon": "inv_112_raidtrinkets_blobofswirlingvoid_purple",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1261289,
+      "type": "crown-of-the-cosmos",
+      "name": "Cosmic Barrier",
+      "icon": "inv_cosmicvoid_buff",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1260000,
+      "type": "crown-of-the-cosmos",
+      "name": "Void Barrage",
+      "icon": "inv_cosmicvoid_missile",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1259869,
+      "type": "crown-of-the-cosmos",
+      "name": "Silverstrike Ricochet",
+      "icon": "inv_ammo_arrow_02",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1260771,
+      "type": "crown-of-the-cosmos",
+      "name": "Cosmic Radiation",
+      "icon": "inv_cosmicvoid_buff",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1239095,
+      "type": "crown-of-the-cosmos",
+      "name": "Gravity Collapse",
+      "icon": "spell_holy_circleofrenewal_shadow",
+      "source": "vs-dr-mqd"
+    },
+    {
+      "id": 1255378,
+      "type": "crown-of-the-cosmos",
+      "name": "Bursting Emptiness",
+      "icon": "inv_artifact_powerofthedarkside",
+      "source": "vs-dr-mqd"
     }
   ]
 }
