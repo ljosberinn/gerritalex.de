@@ -1667,7 +1667,7 @@
         "month": 6,
         "year": 2026
       },
-      "runtime": 0
+      "runtime": 120
     },
     "favorite": false
   },
@@ -4412,8 +4412,9 @@
     "seen": false,
     "metadata": {
       "genres": [
+        "Action",
         "Science Fiction",
-        "Action"
+        "Adventure"
       ],
       "tagline": "",
       "release": {
@@ -4662,6 +4663,27 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "title": "My Neighbor Totoro",
+    "id": 8392,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Fantasy",
+        "Animation",
+        "Family"
+      ],
+      "tagline": "He's your friendly neighbourhood forest spirit!",
+      "release": {
+        "day": 16,
+        "month": 4,
+        "year": 1988
+      },
+      "runtime": 86
+    },
+    "favorite": false,
+    "imageMissing": true
   },
   {
     "title": "Nausicaä of the Valley of the Wind",
@@ -7677,6 +7699,27 @@
     "seen": true
   },
   {
+    "title": "The Matrix Resurrections",
+    "id": 624860,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Action",
+        "Adventure"
+      ],
+      "tagline": "Return to the Source.",
+      "release": {
+        "day": 16,
+        "month": 12,
+        "year": 2021
+      },
+      "runtime": 148
+    },
+    "favorite": false,
+    "imageMissing": true
+  },
+  {
     "title": "The Matrix Revolutions",
     "id": 605,
     "metadata": {
@@ -9096,6 +9139,27 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "title": "Wicked City",
+    "id": 21453,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Animation",
+        "Fantasy",
+        "Horror"
+      ],
+      "tagline": "For centuries a treaty has existed between the human world and the realm of the demons.",
+      "release": {
+        "day": 19,
+        "month": 4,
+        "year": 1987
+      },
+      "runtime": 82
+    },
+    "favorite": false,
+    "imageMissing": true
   },
   {
     "title": "World War Z",

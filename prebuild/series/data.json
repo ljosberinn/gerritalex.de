@@ -531,7 +531,7 @@
     },
     "favorite": false,
     "episodesSeen": 18,
-    "state": "upcoming"
+    "state": "ongoing"
   },
   {
     "title": "Evil",
@@ -682,7 +682,7 @@
     },
     "favorite": false,
     "episodesSeen": 16,
-    "state": "upcoming"
+    "state": "finished"
   },
   {
     "title": "Guillermo del Toro's Cabinet of Curiosities",
@@ -1852,14 +1852,14 @@
         "Sci-Fi & Fantasy",
         "Drama"
       ],
-      "seasons": 2,
-      "tagline": "To live, you need something to die for.",
+      "seasons": 3,
+      "tagline": "The key to the future lies in the past.",
       "release": {
         "day": 4,
         "month": 5,
         "year": 2023
       },
-      "episodes": 20
+      "episodes": 30
     },
     "favorite": false,
     "episodesSeen": 20,
@@ -1961,7 +1961,7 @@
         "Drama"
       ],
       "seasons": 1,
-      "tagline": "",
+      "tagline": "In the race for glory, every secret has gravity.",
       "release": {
         "day": 28,
         "month": 5,
@@ -2848,6 +2848,28 @@
     "favorite": false,
     "episodesSeen": 19,
     "state": "abandoned"
+  },
+  {
+    "title": "Vought Rising",
+    "id": 259878,
+    "metadata": {
+      "genres": [
+        "Sci-Fi & Fantasy",
+        "Action & Adventure",
+        "Mystery"
+      ],
+      "seasons": 2,
+      "tagline": "",
+      "release": {
+        "day": null,
+        "month": null,
+        "year": null
+      },
+      "episodes": 1
+    },
+    "favorite": false,
+    "episodesSeen": 0,
+    "state": "upcoming"
   },
   {
     "title": "WandaVision",
