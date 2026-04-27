@@ -530,7 +530,7 @@
       "episodes": 24
     },
     "favorite": false,
-    "episodesSeen": 17,
+    "episodesSeen": 18,
     "state": "upcoming"
   },
   {
@@ -659,7 +659,7 @@
       "episodes": 40
     },
     "favorite": false,
-    "episodesSeen": 30,
+    "episodesSeen": 32,
     "state": "ongoing"
   },
   {
@@ -2151,7 +2151,7 @@
     "id": 76479,
     "state": "ongoing",
     "favorite": false,
-    "episodesSeen": 35,
+    "episodesSeen": 36,
     "metadata": {
       "genres": [
         "Sci-Fi & Fantasy",
