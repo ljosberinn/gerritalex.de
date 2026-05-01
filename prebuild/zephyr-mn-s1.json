@@ -608,13 +608,6 @@
       "notes": ["Yes, this is an AoE bleed.."]
     },
     {
-      "id": 431164,
-      "type": "vaelgor-&-ezzorak",
-      "name": "Fire Breath",
-      "icon": "ability_evoker_firebreath",
-      "source": "vs-dr-mqd"
-    },
-    {
       "id": 439488,
       "type": "echo-of-doragosa",
       "name": "Unleash Energy",
