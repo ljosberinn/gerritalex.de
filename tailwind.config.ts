@@ -1,6 +1,4 @@
-// @ts-expect-error
 import colors from 'tailwindcss/colors';
-// @ts-expect-error
 import defaultTheme from 'tailwindcss/defaultTheme';
 import forms from '@tailwindcss/forms';
 import typography from '@tailwindcss/typography';

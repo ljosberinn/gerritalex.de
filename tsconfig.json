@@ -11,11 +11,16 @@
     "composite": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
-    "baseUrl": ".",
+    "jsx": "react-jsx",
+    "paths": {
+      "pliny/*": ["./node_modules/pliny/*"],
+      "data/*": ["./data/*"],
+      "app/*": ["./app/*"],
+      "css/*": ["./css/*"]
+    },
     "plugins": [
       {
         "name": "next"

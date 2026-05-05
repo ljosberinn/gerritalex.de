@@ -14,7 +14,7 @@ const compat = new FlatCompat({
 
 const config = [
   {
-    ignorePatterns: ['seasonal-data-collection/**/*.js'],
+    ignores: ['seasonal-data-collection/**/*.js'],
   },
   js.configs.recommended,
   ...compat.extends(

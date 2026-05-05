@@ -58,11 +58,7 @@ const config = (): NextConfig => {
   const plugins = [withContentlayer];
 
   return plugins.reduce((acc, next) => next(acc), {
-    // experimental: {
-    //   turbopackFileSystemCacheForDev: true,
-    // },
-    // turbopack: {},
-    // reactCompiler: true,
+    turbopack: {},
     output,
     basePath,
     reactStrictMode: true,
@@ -90,7 +86,8 @@ const config = (): NextConfig => {
           headers: [
             {
               key: 'Cache-Control',
-              value: 'public, max-age=31536000, s-maxage=31536000, stale-while-revalidate=86400, immutable',
+              value:
+                'public, max-age=31536000, s-maxage=31536000, stale-while-revalidate=86400, immutable',
             },
           ],
         },

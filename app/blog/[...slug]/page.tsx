@@ -121,13 +121,17 @@ export default async function Page(props: { params: Promise<{ slug: string[] }> 
       {post.tags.includes('wow') ? (
         <>
           <Script
+            id="wowhead-config"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `window.whTooltips = {colorLinks: false, iconizeLinks: false, renameLinks: false};`,
+            }}
+          />
+          <Script
             key="wowhead-tooltip"
             strategy="afterInteractive"
             src="https://wow.zamimg.com/js/tooltips.js"
           />
-          <script>
-            {`const whTooltips = {colorLinks: false, iconizeLinks: false, renameLinks: false}; `}
-          </script>
         </>
       ) : null}
       <script
