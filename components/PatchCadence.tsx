@@ -1,4 +1,4 @@
-import data from '../prebuild/release-cadence.json' assert { type: 'json' };
+import data from '../prebuild/release-cadence.json' with { type: 'json' };
 
 const groupByMajorVersion = data.reduce<Array<typeof data>>((acc, dataset) => {
   if (acc.length === 0) {

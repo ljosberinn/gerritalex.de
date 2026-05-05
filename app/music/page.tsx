@@ -1,9 +1,9 @@
 import { Fragment } from 'react';
-import data from '../../prebuild/music/data.json' assert { type: 'json' };
+import data from '../../prebuild/music/data.json' with { type: 'json' };
 import { generatePageMetadata } from '../seo';
 import clsx from 'clsx';
 import { Image } from '../../components/Image';
-import concerts from '../../prebuild/music/concerts.json' assert { type: 'json' };
+import concerts from '../../prebuild/music/concerts.json' with { type: 'json' };
 import { CustomLink } from '../../components/CustomLink';
 
 const filteredData = data
