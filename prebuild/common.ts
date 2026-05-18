@@ -64,6 +64,7 @@ export async function doFetch<T>(url: string, options: RequestInit): Promise<T |
   url = url.replaceAll(' ', '%20');
   try {
     const response = await fetch(url, options);
+
     if (!response.ok) {
       if (response.status === 429) {
         const rateLimitMax = response.headers.get('x-discogs-ratelimit');

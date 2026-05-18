@@ -21,12 +21,21 @@ import rehypePrismPlus from 'rehype-prism-plus';
 import rehypePresetMinify from 'rehype-preset-minify';
 import siteMetadata from './data/siteMetadata';
 import { allCoreContent, MDXDocumentDate, sortPosts } from 'pliny/utils/contentlayer.js';
-import { createWriteStream } from 'fs';
+import { createWriteStream, readFileSync } from 'fs';
 import { writeFile, stat, readFile } from 'fs/promises';
-import { doMoviesImport } from './prebuild/movies';
-import { doSeriesImport } from './prebuild/series';
-import { doDiscogsImport } from './prebuild/music';
 import { spawn } from 'child_process';
+
+// Next.js loads .env automatically, but contentlayer runs in a separate process
+try {
+  for (const line of readFileSync('.env', 'utf-8').split('\n')) {
+    const [key, ...rest] = line.trim().split('=');
+    if (key && !key.startsWith('#') && !(key in process.env)) {
+      process.env[key] = rest.join('=');
+    }
+  }
+} catch (_) {
+  // .env file not found or unreadable — env vars must be set externally
+}
 
 async function downloadAndStoreImage(url: string, storagePath: string): Promise<void> {
   // eslint-disable-next-line no-async-promise-executor
@@ -260,15 +269,20 @@ export const Authors = defineDocumentType(() => ({
   computedFields,
 }));
 
-// (async () => {
-//   const [...images] = await Promise.all([
-//     doSeriesImport(),
-//     doMoviesImport(),
-//     doDiscogsImport(),
-//   ]);
+(async () => {
+  const [{ doSeriesImport }, { doDiscogsImport }] = await Promise.all([
+    import('./prebuild/series'),
+    import('./prebuild/music'),
+  ]);
 
-//   await downloadImages(images.flat());
-// })();
+  const [...images] = await Promise.all([
+    doSeriesImport(),
+    // doMoviesImport(),
+    doDiscogsImport(),
+  ]);
+
+  await downloadImages(images.flat());
+})();
 
 export default makeSource({
   contentDirPath: 'data',

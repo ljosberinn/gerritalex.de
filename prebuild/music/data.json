@@ -1,6 +1,22 @@
 [
   {
     "acquired": null,
+    "artist": "Aaskereia",
+    "album": "Dort, wo das alte Böse ruht",
+    "id": 2755132,
+    "metadata": {
+      "genres": [
+        "Black Metal"
+      ],
+      "release": {
+        "year": 2011
+      },
+      "runtime": 3244
+    },
+    "visible": true
+  },
+  {
+    "acquired": null,
     "artist": "Agalloch",
     "album": "Ashes Against the Grain",
     "visible": true,
