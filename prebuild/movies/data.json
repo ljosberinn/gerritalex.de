@@ -1657,9 +1657,9 @@
     "seen": false,
     "metadata": {
       "genres": [
+        "Mystery",
         "Science Fiction",
-        "Thriller",
-        "Mystery"
+        "Thriller"
       ],
       "tagline": "We deserve to know.",
       "release": {
@@ -1667,7 +1667,7 @@
         "month": 6,
         "year": 2026
       },
-      "runtime": 120
+      "runtime": 145
     },
     "favorite": false
   },
@@ -1933,7 +1933,8 @@
     "metadata": {
       "genres": [
         "Science Fiction",
-        "Drama"
+        "Adventure",
+        "Action"
       ],
       "tagline": "The epic conclusion.",
       "release": {
@@ -1941,7 +1942,7 @@
         "month": 12,
         "year": 2026
       },
-      "runtime": 140
+      "runtime": 0
     },
     "favorite": false
   },
@@ -2184,20 +2185,22 @@
   {
     "title": "Evil Dead Burn",
     "id": 1212763,
+    "favorite": false,
+    "seen": false,
     "metadata": {
       "genres": [
-        "Horror"
+        "Horror",
+        "Fantasy"
       ],
-      "tagline": "",
+      "tagline": "Every family has its demons.",
       "release": {
-        "day": null,
-        "month": null,
-        "year": null
+        "day": 8,
+        "month": 7,
+        "year": 2026
       },
       "runtime": 0
     },
-    "favorite": false,
-    "seen": false
+    "imageMissing": true
   },
   {
     "title": "Evil Dead Rise",
@@ -4682,8 +4685,7 @@
       },
       "runtime": 86
     },
-    "favorite": false,
-    "imageMissing": true
+    "favorite": false
   },
   {
     "title": "Nausicaä of the Valley of the Wind",
@@ -5601,13 +5603,13 @@
         "Horror",
         "Science Fiction"
       ],
-      "tagline": "",
+      "tagline": "A new era of evil.",
       "release": {
         "day": 9,
         "month": 9,
         "year": 2026
       },
-      "runtime": 90
+      "runtime": 0
     },
     "favorite": false
   },
@@ -7716,8 +7718,7 @@
       },
       "runtime": 148
     },
-    "favorite": false,
-    "imageMissing": true
+    "favorite": false
   },
   {
     "title": "The Matrix Revolutions",
@@ -8298,9 +8299,9 @@
       ],
       "tagline": "",
       "release": {
-        "day": 6,
-        "month": 2,
-        "year": 2027
+        "day": null,
+        "month": null,
+        "year": null
       },
       "runtime": 0
     },
@@ -9158,8 +9159,7 @@
       },
       "runtime": 82
     },
-    "favorite": false,
-    "imageMissing": true
+    "favorite": false
   },
   {
     "title": "World War Z",

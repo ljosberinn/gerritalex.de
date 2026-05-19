@@ -270,16 +270,13 @@ export const Authors = defineDocumentType(() => ({
 }));
 
 (async () => {
-  const [{ doSeriesImport }, { doDiscogsImport }] = await Promise.all([
+  const [{ doSeriesImport }, { doDiscogsImport }, { doMoviesImport }] = await Promise.all([
     import('./prebuild/series'),
     import('./prebuild/music'),
+    import('./prebuild/movies'),
   ]);
 
-  const [...images] = await Promise.all([
-    doSeriesImport(),
-    // doMoviesImport(),
-    doDiscogsImport(),
-  ]);
+  const [...images] = await Promise.all([doSeriesImport(), doMoviesImport(), doDiscogsImport()]);
 
   await downloadImages(images.flat());
 })();
