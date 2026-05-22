@@ -1,4 +1,4 @@
-import { withContentlayer } from 'next-contentlayer2';
+import path from 'path';
 import type { NextConfig } from 'next';
 
 // You might need to insert additional domains in script-src if you are using external services
@@ -55,11 +55,10 @@ const output = process.env.EXPORT ? 'export' : undefined;
 const basePath = process.env.BASE_PATH || undefined;
 
 const config = (): NextConfig => {
-  const plugins = [withContentlayer];
-
-  return plugins.reduce((acc, next) => next(acc), {
+  return {
     output,
     basePath,
+    transpilePackages: ['contentlayer2', 'next-contentlayer2'],
     reactStrictMode: true,
     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
     images: {
@@ -130,9 +129,14 @@ const config = (): NextConfig => {
         },
       });
 
+      config.resolve.alias = {
+        ...config.resolve.alias,
+        'contentlayer/generated': path.join(process.cwd(), '.contentlayer', 'generated'),
+      };
+
       return config;
     },
-  });
+  };
 };
 
 export default config;
