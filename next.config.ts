@@ -58,7 +58,6 @@ const config = (): NextConfig => {
   const plugins = [withContentlayer];
 
   return plugins.reduce((acc, next) => next(acc), {
-    turbopack: {},
     output,
     basePath,
     reactStrictMode: true,

@@ -2149,9 +2149,9 @@
   {
     "title": "The Boys",
     "id": 76479,
-    "state": "ongoing",
+    "state": "finished",
     "favorite": false,
-    "episodesSeen": 38,
+    "episodesSeen": 40,
     "metadata": {
       "genres": [
         "Sci-Fi & Fantasy",
@@ -2865,7 +2865,7 @@
         "month": null,
         "year": null
       },
-      "episodes": 1
+      "episodes": 8
     },
     "favorite": false,
     "episodesSeen": 0,

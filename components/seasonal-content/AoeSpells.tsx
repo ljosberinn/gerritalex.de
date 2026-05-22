@@ -1,24 +1,24 @@
-'use client';
-
 import { Fragment } from 'react';
-import { useScript } from '../../hooks/useScript';
 import { WowheadIcon } from '../WowheadIcon';
-import { Spells, SpellsProps } from './Spells';
+import { Spells, type SpellsProps } from './Spells';
 import { CustomLink } from '../CustomLink';
 import { ContentHeaderLink } from './ContentHeaderLink';
-import { WowheadLinkProps } from '../WowheadLink';
+import { type WowheadLinkProps } from '../WowheadLink';
+import zephyrMnS1 from '../../prebuild/zephyr-mn-s1.json';
+import zephyrTwwS2 from '../../prebuild/zephyr-tww-s2.json';
+import zephyrTwwS3 from '../../prebuild/zephyr-tww-s3.json';
 
-type ZephyrDataset = {
-  sources: Record<
-    string,
-    { icon: string; name: string; encounters: string[] | { icon: string; name: string }[] }
-  >;
-  spells: SpellsProps['spells'];
-  'current-rotation': string[];
+const DATA_SOURCES = {
+  'zephyr-mn-s1': zephyrMnS1,
+  'zephyr-tww-s2': zephyrTwwS2,
+  'zephyr-tww-s3': zephyrTwwS3,
 };
 
+type DataSourceKey = keyof typeof DATA_SOURCES;
+type ZephyrDataset = (typeof DATA_SOURCES)[DataSourceKey];
+
 type AoeSpellsProps = {
-  data: ZephyrDataset;
+  dataSource: DataSourceKey;
   wowheadBranch?: WowheadLinkProps['branch'];
 };
 
@@ -31,9 +31,8 @@ function slugify(str: string) {
     .toLowerCase();
 }
 
-export function AoeSpells({ data, wowheadBranch }: AoeSpellsProps) {
-  useScript('');
-
+export function AoeSpells({ dataSource, wowheadBranch }: AoeSpellsProps) {
+  const data = DATA_SOURCES[dataSource];
   const currentRotation = new Set(data['current-rotation']);
   const spells = data.spells.filter((spell) => currentRotation.has(spell.source));
 
@@ -47,6 +46,7 @@ export function AoeSpells({ data, wowheadBranch }: AoeSpellsProps) {
         acc[spell.source][spell.type] = [];
       }
 
+      // @ts-expect-error doesn't matter
       acc[spell.source][spell.type].push(spell);
 
       return acc;
@@ -124,7 +124,8 @@ export function AoeSpells({ data, wowheadBranch }: AoeSpellsProps) {
         })}
       </ul>
       {sources.map((source) => {
-        const encounters = data.sources[source].encounters.concat('Trash');
+        const encounters: (string | { name: string; icon: string })[] =
+          data.sources[source].encounters.concat('Trash');
 
         const encounterToSlugMap = encounters.reduce<Record<string, string>>((acc, encounter) => {
           const name = typeof encounter === 'string' ? encounter : encounter.name;
@@ -153,7 +154,7 @@ export function AoeSpells({ data, wowheadBranch }: AoeSpellsProps) {
           {}
         );
 
-        const total = Object.values(spellsByType).reduce((acc, spells) => {
+        const total = Object.values(spellsByType).reduce<number>((acc, spells) => {
           return acc + spells.length;
         }, 0);
 
