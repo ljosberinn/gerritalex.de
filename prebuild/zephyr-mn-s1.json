@@ -29,7 +29,17 @@
           "icon": "inv_120_raid_marchonqueldanas_lightvoidphoenix",
           "name": "Belo'ren, Child of Alar"
         },
-        { "icon": "inv_120_raid_marchonqueldanas_lura", "name": "Midnight Falls" }
+        {
+          "icon": "inv_120_raid_marchonqueldanas_lura",
+          "name": "Midnight Falls",
+          "phases": [
+            "Stage One: Final Tolls",
+            "Intermission: Total Eclipse",
+            "Stage Two: The Dark Reactor",
+            "Stage Three: Midnight Falls",
+            "Stage Four: Reintegration"
+          ]
+        }
       ]
     },
     "algethar-academy": {
@@ -79,14 +89,16 @@
       "type": "midnight-falls",
       "name": "Heaven & Hell",
       "icon": "inv_112_raiddimensius_darkenedsky",
-      "source": "vs-dr-mqd"
+      "source": "vs-dr-mqd",
+      "phase": "Stage Four: Reintegration"
     },
     {
       "id": 1282425,
       "type": "midnight-falls",
       "name": "Core Harvest",
       "icon": "inv_112_raiddimensius_crushinggravity",
-      "source": "vs-dr-mqd"
+      "source": "vs-dr-mqd",
+      "phase": "Stage Two: The Dark Reactor"
     },
     {
       "id": 1249582,
@@ -107,21 +119,24 @@
       "type": "midnight-falls",
       "name": "Cosmic Fission",
       "icon": "ability_evoker_unravel",
-      "source": "vs-dr-mqd"
+      "source": "vs-dr-mqd",
+      "phase": "Stage Two: The Dark Reactor"
     },
     {
       "id": 1276173,
       "type": "midnight-falls",
       "name": "Severance",
       "icon": "ability_priest_psychiclink",
-      "source": "vs-dr-mqd"
+      "source": "vs-dr-mqd",
+      "phase": "Stage Three: Midnight Falls"
     },
     {
       "id": 1281123,
       "type": "midnight-falls",
       "name": "Dark Meltdown",
       "icon": "inv_112_raiddimensius_blackhole",
-      "source": "vs-dr-mqd"
+      "source": "vs-dr-mqd",
+      "phase": "Stage Two: The Dark Reactor"
     },
     {
       "id": 1254257,
@@ -135,21 +150,24 @@
       "type": "midnight-falls",
       "name": "Thunderous Well",
       "icon": "ability_bossgorefiend_touchofdoom",
-      "source": "vs-dr-mqd"
+      "source": "vs-dr-mqd",
+      "phase": "Stage Three: Midnight Falls"
     },
     {
       "id": 1281178,
       "type": "midnight-falls",
       "name": "Criticality",
       "icon": "ability_thunderking_thunderstruck",
-      "source": "vs-dr-mqd"
+      "source": "vs-dr-mqd",
+      "phase": "Stage Two: The Dark Reactor"
     },
     {
       "id": 1251080,
       "type": "midnight-falls",
       "name": "The Dark Archangel",
       "icon": "ability_priest_darkarchangel",
-      "source": "vs-dr-mqd"
+      "source": "vs-dr-mqd",
+      "phase": "Stage Three: Midnight Falls"
     },
     {
       "id": 153757,
@@ -287,22 +305,6 @@
       "name": "Rallying Bellow",
       "icon": "racial_orc_berserkerstrength",
       "source": "windrunner-spire"
-    },
-    {
-      "id": 470190,
-      "type": "emberdawn",
-      "name": "Flaming Twisters",
-      "icon": "spell_shaman_stormearthfire",
-      "source": "windrunner-spire",
-      "notes": [
-        [
-          "Via ",
-          {
-            "component": "WowheadLink",
-            "props": { "id": 231606, "kind": "npc", "children": "Emberdawn" }
-          }
-        ]
-      ]
     },
     {
       "id": 1217795,
@@ -692,13 +694,6 @@
       "source": "vs-dr-mqd"
     },
     {
-      "id": 1249585,
-      "type": "midnight-falls",
-      "name": "Dissonant Dirge",
-      "icon": "inv_112_raiddimensius_supernova",
-      "source": "vs-dr-mqd"
-    },
-    {
       "id": 1249748,
       "type": "vaelgor-&-ezzorak",
       "name": "Midnight Flames",
@@ -738,7 +733,8 @@
       "type": "midnight-falls",
       "name": "Disintegration",
       "icon": "inv_pet_naaru",
-      "source": "vs-dr-mqd"
+      "source": "vs-dr-mqd",
+      "phase": "Stage One: Final Tolls"
     },
     {
       "id": 1251813,
@@ -853,7 +849,16 @@
       "type": "trash",
       "name": "Energy Release",
       "icon": "spell_arcane_studentofmagic",
-      "source": "magisters-terrace"
+      "source": "magisters-terrace",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 232106, "kind": "npc", "children": "Brightscale Wyrm" }
+          }
+        ]
+      ]
     },
     {
       "id": 1254679,
@@ -870,13 +875,6 @@
           }
         ]
       ]
-    },
-    {
-      "id": 1255156,
-      "type": "chimaerus-the-undreamt-god",
-      "name": "Fearsome Cry",
-      "icon": "spell_shadow_deathscream",
-      "source": "vs-dr-mqd"
     },
     {
       "id": 1255164,
@@ -1124,9 +1122,10 @@
     {
       "id": 1262055,
       "type": "midnight-falls",
-      "name": "The Black Aperture",
-      "icon": "inv_112_raidtrinkets_omnidpstrinket",
-      "source": "vs-dr-mqd"
+      "name": "Eclipsed",
+      "icon": "ability_druid_eclipse",
+      "source": "vs-dr-mqd",
+      "phase": "Intermission: Total Eclipse"
     },
     {
       "id": 1262305,
@@ -1268,18 +1267,36 @@
       "source": "pit-of-saron"
     },
     {
-      "id": 1264467,
-      "type": "vaelgor-&-ezzorak",
-      "name": "Tail Lash",
-      "icon": "ability_racial_tailswipe",
-      "source": "vs-dr-mqd"
+      "id": 1217087,
+      "type": "trash",
+      "name": "Consuming Shadows",
+      "icon": "spell_shadow_gathershadows",
+      "source": "magisters-terrace",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 234068, "kind": "npc", "children": "Shadowrift Voidcaller" }
+          }
+        ]
+      ]
     },
     {
       "id": 1264512,
       "type": "trash",
       "name": "Rift Tear",
       "icon": "inv_112_raidtrinkets_blobofswirlingvoid_purple",
-      "source": "seat-of-the-triumvirate"
+      "source": "seat-of-the-triumvirate",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 122571, "kind": "npc", "children": "Rift Warden" }
+          }
+        ]
+      ]
     },
     {
       "id": 1264569,
@@ -1422,7 +1439,7 @@
           "This is the initial hit on pull and after every intermission. The DoT - primary damage taken on that encounter - is ",
           {
             "component": "WowheadLink",
-            "props": { "id": 1265421, "kind": "spell", "children": "Note of Despair" }
+            "props": { "id": 1265421, "kind": "spell", "children": "Dirge of Despair" }
           },
           " and also AoE."
         ]
@@ -1465,13 +1482,6 @@
           }
         ]
       ]
-    },
-    {
-      "id": 1270124,
-      "type": "midnight-falls",
-      "name": "Death Shutter",
-      "icon": "inv_cosmicvoid_groundsate",
-      "source": "vs-dr-mqd"
     },
     {
       "id": 1270356,
@@ -1632,13 +1642,6 @@
       "source": "pit-of-saron"
     },
     {
-      "id": 1276770,
-      "type": "crawth",
-      "name": "Ruinous Winds",
-      "icon": "ability_skyreach_wind",
-      "source": "algethar-academy"
-    },
-    {
       "id": 1277343,
       "type": "trash",
       "name": "Chains of Subjugation",
@@ -1651,7 +1654,8 @@
             "component": "WowheadLink",
             "props": { "id": 124171, "kind": "npc", "children": "Merciless Subjugator" }
           }
-        ]
+        ],
+        "This is removable via freedom-like effects."
       ]
     },
     {
@@ -1699,7 +1703,16 @@
       "type": "trash",
       "name": "Blink",
       "icon": "spell_arcane_blink",
-      "source": "magisters-terrace"
+      "source": "magisters-terrace",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 259387, "kind": "npc", "children": "Spellwoven Familiar" }
+          }
+        ]
+      ]
     },
     {
       "id": 1280067,
