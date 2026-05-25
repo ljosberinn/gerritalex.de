@@ -1932,9 +1932,9 @@
     "seen": false,
     "metadata": {
       "genres": [
-        "Science Fiction",
+        "Action",
         "Adventure",
-        "Action"
+        "Science Fiction"
       ],
       "tagline": "The epic conclusion.",
       "release": {
@@ -3754,25 +3754,6 @@
     "favorite": false
   },
   {
-    "title": "Iron Lung",
-    "id": 1116201,
-    "metadata": {
-      "genres": [
-        "Horror",
-        "Science Fiction",
-        "Mystery"
-      ],
-      "tagline": "This is not an expedition. It's an execution.",
-      "release": {
-        "day": 30,
-        "month": 1,
-        "year": 2026
-      },
-      "runtime": 125
-    },
-    "favorite": false
-  },
-  {
     "title": "Iron Man",
     "id": 1726,
     "metadata": {
@@ -4843,6 +4824,24 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "title": "Obsession",
+    "id": 1339713,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Horror"
+      ],
+      "tagline": "Be careful who you wish for…",
+      "release": {
+        "day": 16,
+        "month": 4,
+        "year": 2026
+      },
+      "runtime": 108
+    },
+    "favorite": false
   },
   {
     "title": "Ocean's Eleven",

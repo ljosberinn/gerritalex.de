@@ -2,6 +2,7 @@ import { generatePageMetadata } from '../seo';
 import data from '../../prebuild/series/data.json' with { type: 'json' };
 import clsx from 'clsx';
 import { Image } from '../../components/Image';
+import { type Metadata } from 'next';
 
 enum State {
   UPCOMING = 'upcoming',
@@ -88,7 +89,7 @@ const readableGenresCombinedWithAnd = Object.entries(genresByOccurence)
   }, [])
   .join('');
 
-export const metadata = generatePageMetadata({
+export const metadata: Metadata = generatePageMetadata({
   title: 'Series',
   image: (() => {
     const eligibleSeries = byState[State.ONGOING];
@@ -124,7 +125,7 @@ const stateColor = {
   [State.ABANDONED]: 'bg-red-300 dark:bg-red-950/50',
 };
 
-const minutesPerEpisodes = 40;
+const minutesPerEpisodes = 50;
 
 export default async function SeriesPage() {
   const totalRuntimeMinutesEstimated = data.reduce((acc, dataset) => {
