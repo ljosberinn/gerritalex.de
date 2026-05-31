@@ -269,17 +269,39 @@ export const Authors = defineDocumentType(() => ({
   computedFields,
 }));
 
-// (async () => {
-//   const [{ doSeriesImport }, { doDiscogsImport }, { doMoviesImport }] = await Promise.all([
-//     import('./prebuild/series'),
-//     import('./prebuild/music'),
-//     import('./prebuild/movies'),
-//   ]);
+(async () => {
+  const enabled = {
+    discogs: false,
+    movies: false,
+    series: false,
+  };
 
-//   const [...images] = await Promise.all([doSeriesImport(), doMoviesImport(), doDiscogsImport()]);
+  const promises: Promise<
+    {
+      from: string;
+      to: string;
+    }[]
+  >[] = [];
 
-//   await downloadImages(images.flat());
-// })();
+  if (enabled.movies) {
+    const { doMoviesImport } = await import('./prebuild/movies');
+    promises.push(doMoviesImport());
+  }
+
+  if (enabled.series) {
+    const { doSeriesImport } = await import('./prebuild/series');
+    promises.push(doSeriesImport());
+  }
+
+  if (enabled.discogs) {
+    const { doDiscogsImport } = await import('./prebuild/music');
+    promises.push(doDiscogsImport());
+  }
+
+  const [...images] = await Promise.all(promises);
+
+  await downloadImages(images.flat());
+})();
 
 export default makeSource({
   contentDirPath: 'data',

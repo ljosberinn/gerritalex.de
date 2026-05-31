@@ -894,6 +894,26 @@
     "seen": true
   },
   {
+    "id": 1083381,
+    "name": "Backrooms",
+    "title": "Backrooms",
+    "metadata": {
+      "genres": [
+        "Horror",
+        "Mystery",
+        "Science Fiction"
+      ],
+      "tagline": "",
+      "release": {
+        "day": 27,
+        "month": 5,
+        "year": 2026
+      },
+      "runtime": 110
+    },
+    "favorite": false
+  },
+  {
     "title": "Ballerina",
     "id": 541671,
     "seen": true,
@@ -2189,8 +2209,7 @@
     "seen": false,
     "metadata": {
       "genres": [
-        "Horror",
-        "Fantasy"
+        "Horror"
       ],
       "tagline": "Every family has its demons.",
       "release": {
@@ -3393,6 +3412,24 @@
         "year": 2025
       },
       "runtime": 96
+    },
+    "favorite": false
+  },
+  {
+    "id": 1430077,
+    "name": "Hokum",
+    "title": "Hokum",
+    "metadata": {
+      "genres": [
+        "Horror"
+      ],
+      "tagline": "We've been expecting you.",
+      "release": {
+        "day": 29,
+        "month": 4,
+        "year": 2026
+      },
+      "runtime": 107
     },
     "favorite": false
   },
@@ -5599,7 +5636,8 @@
     "metadata": {
       "genres": [
         "Horror",
-        "Science Fiction"
+        "Science Fiction",
+        "Action"
       ],
       "tagline": "A new era of evil.",
       "release": {
@@ -8886,19 +8924,19 @@
     "title": "Untitled The Exorcist Film",
     "id": 1297467,
     "seen": false,
+    "favorite": false,
     "metadata": {
       "genres": [
         "Horror"
       ],
       "tagline": "",
       "release": {
-        "day": null,
-        "month": null,
-        "year": null
+        "day": 11,
+        "month": 3,
+        "year": 2027
       },
       "runtime": 0
-    },
-    "favorite": false
+    }
   },
   {
     "title": "Upside Down",
@@ -9081,6 +9119,25 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "id": 1198984,
+    "name": "We Bury The Dead",
+    "title": "We Bury the Dead",
+    "metadata": {
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "tagline": "Volunteers needed.",
+      "release": {
+        "day": 1,
+        "month": 1,
+        "year": 2026
+      },
+      "runtime": 95
+    },
+    "favorite": false
   },
   {
     "title": "Weapons",
