@@ -9122,7 +9122,6 @@
   },
   {
     "id": 1198984,
-    "name": "We Bury The Dead",
     "title": "We Bury the Dead",
     "metadata": {
       "genres": [
@@ -9137,7 +9136,8 @@
       },
       "runtime": 95
     },
-    "favorite": false
+    "favorite": false,
+    "seen": true
   },
   {
     "title": "Weapons",
