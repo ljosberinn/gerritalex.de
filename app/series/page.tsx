@@ -240,7 +240,7 @@ export default async function SeriesPage() {
                     href={`https://www.themoviedb.org/tv/${series.id}`}
                     target="_blank"
                     key={series.id}
-                    className="opacity-80 hover:opacity-100"
+                    className="flex max-w-[120px] justify-center opacity-80 hover:opacity-100"
                   >
                     {percentage < 1 ? (
                       <div className="relative">
