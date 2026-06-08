@@ -274,7 +274,7 @@
       "episodes": 33
     },
     "favorite": true,
-    "episodesSeen": 32,
+    "episodesSeen": 33,
     "state": "upcoming"
   },
   {
@@ -530,8 +530,8 @@
       "episodes": 24
     },
     "favorite": false,
-    "episodesSeen": 23,
-    "state": "ongoing"
+    "episodesSeen": 24,
+    "state": "finished"
   },
   {
     "title": "Evil",
@@ -659,7 +659,7 @@
       "episodes": 40
     },
     "favorite": false,
-    "episodesSeen": 36,
+    "episodesSeen": 37,
     "state": "ongoing"
   },
   {
@@ -1970,7 +1970,7 @@
       "episodes": 8
     },
     "favorite": false,
-    "episodesSeen": 2
+    "episodesSeen": 3
   },
   {
     "title": "Star Trek: Discovery",
