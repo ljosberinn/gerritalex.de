@@ -70,7 +70,7 @@
     },
     {
       "id": 1294859,
-      "type": "trash",
+      "type": "the-writhing-coil-trash",
       "name": "Rattle",
       "icon": "inv_sonic_wave",
       "source": "altar-of-fangs",
@@ -86,14 +86,23 @@
     },
     {
       "id": 1295055,
-      "type": "trash",
+      "type": "zuljan-trash",
       "name": "Virulent Whirl",
       "icon": "inv_ability_poison_groundstate",
-      "source": "altar-of-fangs"
+      "source": "altar-of-fangs",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 261573, "kind": "npc", "children": "Ascendant Serpent" }
+          }
+        ]
+      ]
     },
     {
       "id": 1295073,
-      "type": "trash",
+      "type": "zuljan-trash",
       "name": "Virulent Splatter",
       "icon": "ability_creature_poison_06",
       "source": "altar-of-fangs",
@@ -131,7 +140,7 @@
     },
     {
       "id": 1305637,
-      "type": "trash",
+      "type": "ravi-trash",
       "name": "Septic Spatter",
       "icon": "ability_deathknight_roilingblood",
       "source": "altar-of-fangs",
@@ -147,7 +156,7 @@
     },
     {
       "id": 1306230,
-      "type": "trash",
+      "type": "zuljan-trash",
       "name": "Venom Burst",
       "icon": "inv_ability_poison_groundstate",
       "source": "altar-of-fangs",
@@ -170,7 +179,7 @@
     },
     {
       "id": 1306853,
-      "type": "trash",
+      "type": "zuljan-trash",
       "name": "Toxic Surge",
       "icon": "inv_ability_poison_wave",
       "source": "altar-of-fangs",
@@ -186,10 +195,19 @@
     },
     {
       "id": 1306890,
-      "type": "trash",
+      "type": "trash-multiple-locations",
       "name": "Unstable Totem",
       "icon": "ability_shaman_stoneskintotem",
-      "source": "altar-of-fangs"
+      "source": "altar-of-fangs",
+      "notes": [
+        [
+          "Summoned by ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 270306, "kind": "npc", "children": "Ritual Chieftain" }
+          }
+        ]
+      ]
     },
     {
       "id": 1307573,

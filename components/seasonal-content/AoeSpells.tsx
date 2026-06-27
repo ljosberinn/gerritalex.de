@@ -23,6 +23,16 @@ type AoeSpellsProps = {
   wowheadBranch?: WowheadLinkProps['branch'];
 };
 
+type Encounter = string | { name: string; icon: string; phases?: string[] };
+
+type Section = {
+  groupKey: string;
+  anchorSlug: string;
+  label: string;
+  icon?: string;
+  phases?: string[];
+};
+
 function slugify(str: string) {
   return str
     .replaceAll(' ', '-')
@@ -30,6 +40,56 @@ function slugify(str: string) {
     .replaceAll('.', '')
     .replaceAll(',', '')
     .toLowerCase();
+}
+
+/** A trash group is only worth rendering once avoidable spells are filtered out. */
+function hasVisibleSpells(spells: SpellsProps['spells'] | undefined) {
+  return spells !== undefined && spells.some((spell) => !spell.avoidable);
+}
+
+function getSections(
+  encounters: Encounter[],
+  groups: Record<string, SpellsProps['spells']>
+): Section[] {
+  const sections: Section[] = [];
+
+  for (const encounter of encounters) {
+    const name = typeof encounter === 'string' ? encounter : encounter.name;
+    const slug = slugify(name);
+    const trashKey = `${slug}-trash`;
+
+    if (hasVisibleSpells(groups[trashKey])) {
+      sections.push({
+        groupKey: trashKey,
+        anchorSlug: trashKey,
+        label: `Trash before ${name}`,
+      });
+    }
+
+    if (groups[slug] !== undefined) {
+      sections.push({
+        groupKey: slug,
+        anchorSlug: slug,
+        label: name,
+        icon: typeof encounter === 'string' ? undefined : encounter.icon,
+        phases: typeof encounter === 'string' ? undefined : encounter.phases,
+      });
+    }
+  }
+
+  if (hasVisibleSpells(groups.trash)) {
+    sections.push({ groupKey: 'trash', anchorSlug: 'trash', label: 'Trash' });
+  }
+
+  if (hasVisibleSpells(groups['trash-multiple-locations'])) {
+    sections.push({
+      groupKey: 'trash-multiple-locations',
+      anchorSlug: 'trash-multiple-locations',
+      label: 'Trash - Multiple Locations',
+    });
+  }
+
+  return sections;
 }
 
 export function AoeSpells({ dataSource, wowheadBranch }: AoeSpellsProps) {
@@ -63,36 +123,7 @@ export function AoeSpells({ dataSource, wowheadBranch }: AoeSpellsProps) {
       <ul>
         {sources.map((source) => {
           const sourceInfo = data.sources[source];
-
-          const encounterNames = sourceInfo.encounters.map((encounter) => {
-            if (typeof encounter === 'string') {
-              return encounter;
-            }
-
-            return encounter.name;
-          });
-
-          const encounterIconsByName = sourceInfo.encounters.reduce((acc, encounter) => {
-            if (typeof encounter === 'string') {
-              return acc;
-            }
-
-            acc[encounter.name] = encounter.icon;
-
-            return acc;
-          }, {});
-
-          const encounterToSlugMap = sourceInfo.encounters.reduce<Record<string, string>>(
-            (acc, encounter) => {
-              const name = typeof encounter === 'string' ? encounter : encounter.name;
-              acc[name] = slugify(name);
-
-              return acc;
-            },
-            {
-              Trash: 'trash',
-            }
-          );
+          const sections = getSections(sourceInfo.encounters as Encounter[], grouped[source]);
 
           return (
             <li key={source}>
@@ -100,62 +131,40 @@ export function AoeSpells({ dataSource, wowheadBranch }: AoeSpellsProps) {
                 <WowheadIcon icon={sourceInfo.icon}>{sourceInfo.name}</WowheadIcon>
               </a>
               <ul>
-                {encounterNames
-                  .concat('Trash')
-                  .filter((encounter) => {
-                    const slug = encounterToSlugMap[encounter];
-
-                    return grouped[source][slug] !== undefined;
-                  })
-                  .map((encounter) => {
-                    const slug = encounterToSlugMap[encounter];
-                    const icon = encounterIconsByName[encounter];
-
-                    return (
-                      <li key={slug}>
-                        <a href={`#${source}-${slug}`}>
-                          {icon ? <WowheadIcon icon={icon}>{encounter}</WowheadIcon> : encounter}
-                        </a>
-                      </li>
-                    );
-                  })}
+                {sections.map((section) => (
+                  <li key={section.anchorSlug}>
+                    <a href={`#${source}-${section.anchorSlug}`}>
+                      {section.icon ? (
+                        <WowheadIcon icon={section.icon}>{section.label}</WowheadIcon>
+                      ) : (
+                        section.label
+                      )}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </li>
           );
         })}
       </ul>
       {sources.map((source) => {
-        const encounters: (string | { name: string; icon: string; phases?: string[] })[] =
-          data.sources[source].encounters.concat('Trash');
+        const sections = getSections(
+          data.sources[source].encounters as Encounter[],
+          grouped[source]
+        );
 
-        const encounterToSlugMap = encounters.reduce<Record<string, string>>((acc, encounter) => {
-          const name = typeof encounter === 'string' ? encounter : encounter.name;
-          acc[name] = slugify(name);
-
-          return acc;
-        }, {});
-
-        const spellsByType = encounters.reduce<Record<string, SpellsProps['spells']>>(
-          (acc, encounter) => {
-            const name = typeof encounter === 'string' ? encounter : encounter.name;
-            const slug = encounterToSlugMap[name];
-
-            if (grouped[source][slug] === undefined) {
-              return acc;
-            }
-
-            if (!(slug in acc)) {
-              acc[slug] = [];
-            }
-
-            acc[slug].push(...grouped[source][slug].filter((spell) => !spell.avoidable));
+        const spellsBySection = sections.reduce<Record<string, SpellsProps['spells']>>(
+          (acc, section) => {
+            acc[section.groupKey] = grouped[source][section.groupKey].filter(
+              (spell) => !spell.avoidable
+            );
 
             return acc;
           },
           {}
         );
 
-        const total = Object.values(spellsByType).reduce<number>((acc, spells) => {
+        const total = Object.values(spellsBySection).reduce<number>((acc, spells) => {
           return acc + spells.length;
         }, 0);
 
@@ -173,71 +182,63 @@ export function AoeSpells({ dataSource, wowheadBranch }: AoeSpellsProps) {
               </WowheadIcon>{' '}
               ({total})
             </h2>
-            {encounters
-              .filter((encounter) => {
-                const slug =
-                  encounterToSlugMap[typeof encounter === 'string' ? encounter : encounter.name];
+            {sections.map((section) => {
+              const spells = spellsBySection[section.groupKey];
 
-                return grouped[source][slug] !== undefined;
-              })
-              .map((encounter) => {
-                const slug =
-                  encounterToSlugMap[typeof encounter === 'string' ? encounter : encounter.name];
-                const spells = spellsByType[slug];
+              const phases: (string | undefined)[] = section.phases ?? [];
 
-                const phases: (string | undefined)[] =
-                  typeof encounter === 'string' ? [] : (encounter.phases ?? []);
+              const link = (
+                <h3 id={`${source}-${section.anchorSlug}`}>
+                  <CustomLink href={`#${source}-${section.anchorSlug}`}>
+                    <ContentHeaderLink />
+                  </CustomLink>
+                  {section.icon ? (
+                    <WowheadIcon icon={section.icon}>{section.label}</WowheadIcon>
+                  ) : (
+                    section.label
+                  )}
+                  {spells.length > 1 ? ` (${spells.length})` : null}
+                </h3>
+              );
 
-                const link = (
-                  <h3 id={`${source}-${slug}`}>
-                    <CustomLink href={`#${source}-${slug}`}>
-                      <ContentHeaderLink />
-                    </CustomLink>
-                    {typeof encounter === 'string' ? (
-                      encounter
-                    ) : (
-                      <WowheadIcon icon={encounter.icon}>{encounter.name}</WowheadIcon>
-                    )}
-                    {spells.length > 1 ? ` (${spells.length})` : null}
-                  </h3>
-                );
-
-                if (phases.length > 0) {
-                  phases.push(undefined);
-
-                  return (
-                    <Fragment key={slug}>
-                      {link}
-
-                      {phases.map((phase, i) => {
-                        const phaseSpells = spells.filter((spell) => spell?.phase === phase);
-
-                        return (
-                          <Fragment key={phase ?? i}>
-                            <h4 id={`${source}-${slug}-${phase ?? i}`}>{phase ?? 'Multiple'}</h4>
-
-                            <Spells
-                              wowheadBranch={wowheadBranch}
-                              spells={phaseSpells.sort((a, b) => a.name.localeCompare(b.name))}
-                            />
-                          </Fragment>
-                        );
-                      })}
-                    </Fragment>
-                  );
-                }
+              if (phases.length > 0) {
+                phases.push(undefined);
 
                 return (
-                  <Fragment key={slug}>
+                  <Fragment key={section.anchorSlug}>
                     {link}
 
-                    <Spells
-                      wowheadBranch={wowheadBranch}
-                      spells={spells.sort((a, b) => a.name.localeCompare(b.name))}
-                    />
+                    {phases.map((phase, i) => {
+                      const phaseSpells = spells.filter((spell) => spell?.phase === phase);
+
+                      return (
+                        <Fragment key={phase ?? i}>
+                          <h4 id={`${source}-${section.anchorSlug}-${phase ?? i}`}>
+                            {phase ?? 'Multiple'}
+                          </h4>
+
+                          <Spells
+                            wowheadBranch={wowheadBranch}
+                            spells={phaseSpells.sort((a, b) => a.name.localeCompare(b.name))}
+                          />
+                        </Fragment>
+                      );
+                    })}
                   </Fragment>
                 );
-              })}
+              }
+
+              return (
+                <Fragment key={section.anchorSlug}>
+                  {link}
+
+                  <Spells
+                    wowheadBranch={wowheadBranch}
+                    spells={spells.sort((a, b) => a.name.localeCompare(b.name))}
+                  />
+                </Fragment>
+              );
+            })}
           </Fragment>
         );
       })}
