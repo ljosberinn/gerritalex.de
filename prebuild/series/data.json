@@ -659,7 +659,7 @@
       "episodes": 40
     },
     "favorite": false,
-    "episodesSeen": 38,
+    "episodesSeen": 39,
     "state": "ongoing"
   },
   {
@@ -918,7 +918,7 @@
     },
     "favorite": false,
     "episodesSeen": 18,
-    "state": "upcoming"
+    "state": "ongoing"
   },
   {
     "title": "Impulse",
@@ -1970,7 +1970,7 @@
       "episodes": 8
     },
     "favorite": false,
-    "episodesSeen": 4
+    "episodesSeen": 7
   },
   {
     "title": "Star Trek: Discovery",
@@ -2418,8 +2418,8 @@
       "episodes": 17
     },
     "favorite": false,
-    "episodesSeen": 10,
-    "state": "ongoing"
+    "episodesSeen": 17,
+    "state": "upcoming"
   },
   {
     "title": "The Lost Symbol",
