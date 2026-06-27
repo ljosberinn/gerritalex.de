@@ -7,7 +7,8 @@
     "ruby-life-pools",
     "temple-of-sethraliss",
     "the-blinding-vale",
-    "voidscar-arena"
+    "voidscar-arena",
+    "the-venomous-abyss"
   ],
   "sources": {
     "altar-of-fangs": {
@@ -41,15 +42,348 @@
       "name": "Voidscar Arena",
       "encounters": [],
       "icon": "inv_achievement_dungeon_voidscararena"
+    },
+    "the-venomous-abyss": {
+      "icon": "8039569",
+      "name": "The Venomous Abyss",
+      "encounters": [
+        { "icon": "inv_121_raid_achievement_priestess", "name": "Nek'zali the Soulcoiler" },
+        { "icon": "inv_121_raid_achievement_golems", "name": "Entombed Sentinels" },
+        { "icon": "inv_121_raid_achievement_alchemist", "name": "Vashnik the Malignant" },
+        { "icon": "inv_121_raid_achievement_tortollans", "name": "The Lost Explorers" },
+        { "icon": "inv_121_raid_achievement_brute", "name": "Sszorak" },
+        { "icon": "inv_121_raid_achievement_twins", "name": "The Twin Fangs" },
+        { "icon": "inv_121_raid_achievement_zuljinmalacrass", "name": "The Coiled Altar" },
+        { "icon": "inv_121_raid_achievement_ulatek", "name": "Ula'tek" }
+      ]
     }
   },
   "spells": [
+    {
+      "id": 1280189,
+      "type": "vashnik-the-malignant",
+      "name": "Malignant Burst",
+      "icon": "ability_rogue_deviouspoisons",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1282288,
+      "type": "the-coiled-altar",
+      "name": "Volatile Venom",
+      "icon": "ability_creature_disease_02",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1282408,
+      "type": "the-coiled-altar",
+      "name": "Coalesced Venom",
+      "icon": "inv_ability_poison_orb",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1282512,
+      "type": "the-coiled-altar",
+      "name": "Fangs of the Crucible",
+      "icon": "spell_nature_poisoncleansingtotem",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1282525,
+      "type": "vashnik-the-malignant",
+      "name": "Malignant Catalyst",
+      "icon": "inv_ability_poison_groundstate",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1283594,
+      "type": "the-coiled-altar",
+      "name": "Guillotine",
+      "icon": "warrior_talent_icon_mastercleaver",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1283606,
+      "type": "the-coiled-altar",
+      "name": "Guillotine",
+      "icon": "warrior_talent_icon_mastercleaver",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1283623,
+      "type": "the-coiled-altar",
+      "name": "Widow's Kiss",
+      "icon": "spell_shadow_soothingkiss",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1283631,
+      "type": "the-coiled-altar",
+      "name": "Widow's Touch",
+      "icon": "ability_creature_disease_03",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1283840,
+      "type": "the-coiled-altar",
+      "name": "Axegrinder",
+      "icon": "ability_warrior_bladestorm",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1284209,
+      "type": "entombed-sentinels",
+      "name": "Living Venom",
+      "icon": "inv_ability_poison_groundstate",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1284258,
+      "type": "entombed-sentinels",
+      "name": "Contaminate",
+      "icon": "ability_rogue_venomouswounds",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1284451,
+      "type": "entombed-sentinels",
+      "name": "Toxic Droplets",
+      "icon": "inv_ability_poison_orb",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1284452,
+      "type": "entombed-sentinels",
+      "name": "Noxious Blast",
+      "icon": "ability_creature_poison_06",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1284500,
+      "type": "entombed-sentinels",
+      "name": "Mark of Acid",
+      "icon": "inv_arcanegolem2mount_green",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1284506,
+      "type": "entombed-sentinels",
+      "name": "Mark of Blood",
+      "icon": "inv_arcanegolem2mount_red",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1284561,
+      "type": "vashnik-the-malignant",
+      "name": "Toxic Vapor",
+      "icon": "ability_creature_poison_06",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1285616,
+      "type": "sszorak",
+      "name": "Raging Crosswinds",
+      "icon": "ability_skyreach_wind",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1285965,
+      "type": "sszorak",
+      "name": "Ula'tek's Presence",
+      "icon": "achievement_dungeon_templeofsethraliss",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1285979,
+      "type": "vashnik-the-malignant",
+      "name": "Caustic Surge",
+      "icon": "spell_shaman_firenova",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1286620,
+      "type": "the-coiled-altar",
+      "name": "Soul Sever",
+      "icon": "ability_demonhunter_soulcleave2",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1286737,
+      "type": "vashnik-the-malignant",
+      "name": "Umbral Ejection",
+      "icon": "ability_ironmaidens_convulsiveshadows",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1286902,
+      "type": "the-coiled-altar",
+      "name": "Gloombomb",
+      "icon": "spell_shadow_shadowfury",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1286918,
+      "type": "the-coiled-altar",
+      "name": "Eternal Nightfall",
+      "icon": "spell_shadow_twilight",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1287205,
+      "type": "sszorak",
+      "name": "Viscous Cyst",
+      "icon": "inv_ability_poison_nova",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1287722,
+      "type": "the-coiled-altar",
+      "name": "Spirit Erasure",
+      "icon": "spell_misc_zandalari_council_soulswap",
+      "source": "the-venomous-abyss"
+    },
     {
       "id": 1287811,
       "type": "the-writhing-coil",
       "name": "Uncoil",
       "icon": "ability_hunter_snaketrap",
       "source": "altar-of-fangs"
+    },
+    {
+      "id": 1288282,
+      "type": "entombed-sentinels",
+      "name": "Unstable Miasma",
+      "icon": "ability_deathwing_bloodcorruption_death",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1288538,
+      "type": "the-twin-fangs",
+      "name": "Stone Breaker",
+      "icon": "ability_smash",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1288635,
+      "type": "the-coiled-altar",
+      "name": "Dreadful Presence",
+      "icon": "ability_warlock_shadowfurytga",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1288772,
+      "type": "nekzali-the-soulcoiler",
+      "name": "Soulcoil Rite",
+      "icon": "spell_necro_deathsknell",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1289153,
+      "type": "the-twin-fangs",
+      "name": "Stone Breaker",
+      "icon": "ability_smash",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1289855,
+      "type": "nekzali-the-soulcoiler",
+      "name": "Hungering Pyre",
+      "icon": "ability_mage_livingbomb",
+      "source": "the-venomous-abyss",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 263685, "kind": "npc", "children": "Echo of Jawae" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1289875,
+      "type": "nekzali-the-soulcoiler",
+      "name": "Cremation",
+      "icon": "ability_warlock_cremation",
+      "source": "the-venomous-abyss",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 263685, "kind": "npc", "children": "Echo of Jawae" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1289994,
+      "type": "the-twin-fangs",
+      "name": "Caustic Deluge",
+      "icon": "inv_ability_poison_orb",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1290338,
+      "type": "the-twin-fangs",
+      "name": "Caustic Globule",
+      "icon": "inv_ability_poison_orb",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1290662,
+      "type": "the-twin-fangs",
+      "name": "Ravenous Feast",
+      "icon": "ability_warrior_bloodnova",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1291935,
+      "type": "the-lost-explorers",
+      "name": "Throw Junk",
+      "icon": "inv_crate_01",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1292034,
+      "type": "nekzali-the-soulcoiler",
+      "name": "Possession Barrage",
+      "icon": "spell_shadow_possession",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1292315,
+      "type": "nekzali-the-soulcoiler",
+      "name": "Uncoiling",
+      "icon": "inv_12_profession_thematicfoozles_moteofpurelight_green",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1292764,
+      "type": "the-lost-explorers",
+      "name": "Evil Eyes",
+      "icon": "spell_necro_inevitableend",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1292806,
+      "type": "the-twin-fangs",
+      "name": "Stir the Depths",
+      "icon": "inv_ability_poison_wave",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1292899,
+      "type": "nekzali-the-soulcoiler",
+      "name": "Latent Cultist",
+      "icon": "inv_hextrollpet_blue",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1294334,
+      "type": "the-lost-explorers",
+      "name": "Blink Nova",
+      "icon": "spell_arcane_blink",
+      "source": "the-venomous-abyss"
     },
     {
       "id": 1294557,
@@ -69,6 +403,29 @@
       ]
     },
     {
+      "id": 1294729,
+      "type": "nekzali-the-soulcoiler",
+      "name": "Corpse Blight",
+      "icon": "spell_shadow_corpseexplode",
+      "source": "the-venomous-abyss",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 261509, "kind": "npc", "children": "Raised Amani" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1294846,
+      "type": "nekzali-the-soulcoiler",
+      "name": "Anguished Echoes",
+      "icon": "ability_argus_soulburst",
+      "source": "the-venomous-abyss"
+    },
+    {
       "id": 1294859,
       "type": "the-writhing-coil-trash",
       "name": "Rattle",
@@ -83,6 +440,13 @@
           }
         ]
       ]
+    },
+    {
+      "id": 1294976,
+      "type": "the-twin-fangs",
+      "name": "Toxic Fumes",
+      "icon": "spell_deathvortex",
+      "source": "the-venomous-abyss"
     },
     {
       "id": 1295055,
@@ -117,12 +481,112 @@
       ]
     },
     {
+      "id": 1295085,
+      "type": "nekzali-the-soulcoiler",
+      "name": "Soul Transfer",
+      "icon": "ability_necrolord_fleshcraft",
+      "source": "the-venomous-abyss",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 263685, "kind": "npc", "children": "Echo of Jawae" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1295209,
+      "type": "vashnik-the-malignant",
+      "name": "Explode",
+      "icon": "spell_shaman_improvedfirenova",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1295229,
+      "type": "vashnik-the-malignant",
+      "name": "Siphon Blood",
+      "icon": "ability_racial_pureblood",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1295450,
+      "type": "the-lost-explorers",
+      "name": "Malevolent Presence",
+      "icon": "ability_revendreth_priest",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1295893,
+      "type": "the-lost-explorers",
+      "name": "Frostfire Volley",
+      "icon": "spell_fire_firebolt02",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1295952,
+      "type": "the-lost-explorers",
+      "name": "Elemental Explosion",
+      "icon": "spell_frostresistancetotem_01",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1295985,
+      "type": "the-lost-explorers",
+      "name": "Frostfire Volley",
+      "icon": "spell_fire_blueflamebolt",
+      "source": "the-venomous-abyss"
+    },
+    {
       "id": 1296069,
       "type": "ravi",
       "name": "Regurgitate",
       "icon": "inv_ability_poison_wave",
       "source": "altar-of-fangs",
       "avoidable": true
+    },
+    {
+      "id": 1296245,
+      "type": "the-lost-explorers",
+      "name": "Explosive Surprise",
+      "icon": "inv_misc_bomb_01",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1296247,
+      "type": "the-lost-explorers",
+      "name": "Concussive Blast",
+      "icon": "inv_wildfirebomb",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1297338,
+      "type": "sszorak",
+      "name": "Deadly Venom",
+      "icon": "ability_creature_poison_06",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1298582,
+      "type": "vashnik-the-malignant",
+      "name": "Hemo Expulsion",
+      "icon": "inv_artifact_bloodoftheassassinated",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1298583,
+      "type": "vashnik-the-malignant",
+      "name": "Gloom Expulsion",
+      "icon": "spell_nzinsanity_chasedbyshadows",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1298587,
+      "type": "vashnik-the-malignant",
+      "name": "Conflagrating Expulsion",
+      "icon": "ability_evoker_firestorm",
+      "source": "the-venomous-abyss"
     },
     {
       "id": 1299080,
@@ -132,11 +596,97 @@
       "source": "altar-of-fangs"
     },
     {
+      "id": 1299296,
+      "type": "the-coiled-altar",
+      "name": "Grim Guillotine",
+      "icon": "inv_polearm_2h_mawnecromancerboss_d_01_darkblue",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1299301,
+      "type": "the-coiled-altar",
+      "name": "Grim Guillotine",
+      "icon": "inv_polearm_2h_mawnecromancerboss_d_01_darkblue",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1299396,
+      "type": "the-coiled-altar",
+      "name": "Death's Embrace",
+      "icon": "achievement_boss_ladydeathwhisper",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1299401,
+      "type": "the-coiled-altar",
+      "name": "Death's Whisper",
+      "icon": "spell_necro_inevitableend",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1299684,
+      "type": "the-coiled-altar",
+      "name": "Sever",
+      "icon": "ability_criticalstrike",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1299838,
+      "type": "the-coiled-altar",
+      "name": "Venom Rupture",
+      "icon": "inv_ability_poison_nova",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1299947,
+      "type": "the-lost-explorers",
+      "name": "Concussive Blast",
+      "icon": "inv_wildfirebomb",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1300137,
+      "type": "the-coiled-altar",
+      "name": "Toxic Deluge",
+      "icon": "spell_shadow_plaguecloud",
+      "source": "the-venomous-abyss"
+    },
+    {
       "id": 1300892,
       "type": "zuljan",
       "name": "Fang Empowered",
       "icon": "inv_knife_1h_ulatekfang_d_01_poison",
       "source": "altar-of-fangs"
+    },
+    {
+      "id": 1302489,
+      "type": "vashnik-the-malignant",
+      "name": "Stygian Burst",
+      "icon": "spell_priest_divinestar_shadow2",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1302695,
+      "type": "the-twin-fangs",
+      "name": "Bloody Expulsion",
+      "icon": "ability_deathknight_roilingblood",
+      "source": "the-venomous-abyss",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 268668, "kind": "npc", "children": "Bloodcurdled Mass" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1305618,
+      "type": "the-lost-explorers",
+      "name": "Fungal Burst",
+      "icon": "inv_nature_groundstate",
+      "source": "the-venomous-abyss"
     },
     {
       "id": 1305637,
@@ -153,6 +703,34 @@
           }
         ]
       ]
+    },
+    {
+      "id": 1305901,
+      "type": "vashnik-the-malignant",
+      "name": "Burning Presence",
+      "icon": "ability_rhyolith_magmaflow_wave",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1305998,
+      "type": "sszorak",
+      "name": "Caustic Claws",
+      "icon": "inv_121_trinket_raid_ulatek_ulatekclaw",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1306120,
+      "type": "sszorak",
+      "name": "Venomous Surge",
+      "icon": "ability_creature_poison_06",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1306127,
+      "type": "the-lost-explorers",
+      "name": "Throw Junk",
+      "icon": "inv_crate_01",
+      "source": "the-venomous-abyss"
     },
     {
       "id": 1306230,
@@ -194,6 +772,13 @@
       ]
     },
     {
+      "id": 1306876,
+      "type": "the-twin-fangs",
+      "name": "Barrage",
+      "icon": "inv_artifact_bloodoftheassassinated",
+      "source": "the-venomous-abyss"
+    },
+    {
       "id": 1306890,
       "type": "trash-multiple-locations",
       "name": "Unstable Totem",
@@ -208,6 +793,13 @@
           }
         ]
       ]
+    },
+    {
+      "id": 1307292,
+      "type": "the-coiled-altar",
+      "name": "Blighted Sever",
+      "icon": "ability_creature_felsunder",
+      "source": "the-venomous-abyss"
     },
     {
       "id": 1307573,
@@ -238,6 +830,27 @@
       "icon": "ability_earthen_pillar",
       "source": "altar-of-fangs",
       "avoidable": true
+    },
+    {
+      "id": 1308122,
+      "type": "the-twin-fangs",
+      "name": "Venomous Emergence",
+      "icon": "spell_nature_poisoncleansingtotem",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1308835,
+      "type": "the-twin-fangs",
+      "name": "Caustic Rain",
+      "icon": "inv_ability_poison_nova",
+      "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1308841,
+      "type": "the-twin-fangs",
+      "name": "Caustic Rain",
+      "icon": "inv_ability_poison_orb",
+      "source": "the-venomous-abyss"
     }
   ]
 }
