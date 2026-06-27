@@ -1,0 +1,62 @@
+{
+  "sources": {
+    "altar-of-fangs": { "name": "Altar of Fangs", "icon": "inv_achievement_dungeon_altaroffangs" },
+    "den-of-nalorakk": {
+      "name": "Den of Nalorakk",
+      "icon": "inv_achievement_dungeon_proveyourworth"
+    },
+    "kings-rest": { "name": "Kings' Rest" },
+    "murder-row": { "name": "Murder Row", "icon": "inv_achievement_dungeon_murderrow" },
+    "ruby-life-pools": { "name": "Ruby Life Pools", "icon": "achievement_dungeon_lifepools" },
+    "temple-of-sethraliss": { "name": "Temple of Sethraliss" },
+    "the-blinding-vale": {
+      "name": "The Blinding Vale",
+      "icon": "inv_achievement_dungeon_lightbloom"
+    },
+    "voidscar-arena": { "name": "Voidscar Arena", "icon": "inv_achievement_dungeon_voidscararena" }
+  },
+  "spells": [
+    {
+      "source": "altar-of-fangs",
+      "type": "magic",
+      "icon": "ability_poisonsting",
+      "name": "Paralyzing Shots",
+      "id": 1294569
+    },
+    {
+      "source": "altar-of-fangs",
+      "type": "poison",
+      "icon": "spell_nature_nullifypoison",
+      "name": "Corrosive Fangs",
+      "id": 1294845
+    },
+    {
+      "source": "altar-of-fangs",
+      "type": "disease",
+      "icon": "inv_ability_poison_wave",
+      "name": "Regurgitate",
+      "id": 1296069
+    },
+    {
+      "source": "altar-of-fangs",
+      "type": "poison",
+      "icon": "ability_rogue_venomouswounds",
+      "name": "Spiteful Venom",
+      "id": 1305368
+    },
+    {
+      "source": "altar-of-fangs",
+      "type": "enrage",
+      "icon": "ability_evoker_dragonrage2",
+      "name": "Ravenous",
+      "id": 1306308
+    },
+    {
+      "source": "altar-of-fangs",
+      "type": "poison",
+      "icon": "inv_ability_poison_missile",
+      "name": "Envenom",
+      "id": 1307571
+    }
+  ]
+}

@@ -10,6 +10,7 @@ export type SpellsProps = {
     source: string;
     name: string;
     icon: string;
+    avoidable?: boolean;
     phase?: string;
     notes?: (
       | string

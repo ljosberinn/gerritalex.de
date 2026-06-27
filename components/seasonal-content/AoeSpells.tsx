@@ -5,11 +5,13 @@ import { CustomLink } from '../CustomLink';
 import { ContentHeaderLink } from './ContentHeaderLink';
 import { type WowheadLinkProps } from '../WowheadLink';
 import zephyrMnS1 from '../../prebuild/zephyr-mn-s1.json';
+import zephyrMnS2 from '../../prebuild/zephyr-mn-s2.json';
 import zephyrTwwS2 from '../../prebuild/zephyr-tww-s2.json';
 import zephyrTwwS3 from '../../prebuild/zephyr-tww-s3.json';
 
 const DATA_SOURCES = {
   'zephyr-mn-s1': zephyrMnS1,
+  'zephyr-mn-s2': zephyrMnS2,
   'zephyr-tww-s2': zephyrTwwS2,
   'zephyr-tww-s3': zephyrTwwS3,
 };
@@ -146,7 +148,7 @@ export function AoeSpells({ dataSource, wowheadBranch }: AoeSpellsProps) {
               acc[slug] = [];
             }
 
-            acc[slug].push(...grouped[source][slug]);
+            acc[slug].push(...grouped[source][slug].filter((spell) => !spell.avoidable));
 
             return acc;
           },

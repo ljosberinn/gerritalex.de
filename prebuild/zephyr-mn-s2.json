@@ -1,0 +1,225 @@
+{
+  "current-rotation": [
+    "altar-of-fangs",
+    "den-of-nalorakk",
+    "kings-rest",
+    "murder-row",
+    "ruby-life-pools",
+    "temple-of-sethraliss",
+    "the-blinding-vale",
+    "voidscar-arena"
+  ],
+  "sources": {
+    "altar-of-fangs": {
+      "name": "Altar of Fangs",
+      "encounters": ["Rav'i", "The Writhing Coil", "Zul'jan"],
+      "icon": "inv_achievement_dungeon_altaroffangs"
+    },
+    "den-of-nalorakk": {
+      "name": "Den of Nalorakk",
+      "encounters": [],
+      "icon": "inv_achievement_dungeon_proveyourworth"
+    },
+    "kings-rest": { "name": "Kings' Rest", "encounters": [] },
+    "murder-row": {
+      "name": "Murder Row",
+      "encounters": [],
+      "icon": "inv_achievement_dungeon_murderrow"
+    },
+    "ruby-life-pools": {
+      "name": "Ruby Life Pools",
+      "encounters": [],
+      "icon": "achievement_dungeon_lifepools"
+    },
+    "temple-of-sethraliss": { "name": "Temple of Sethraliss", "encounters": [] },
+    "the-blinding-vale": {
+      "name": "The Blinding Vale",
+      "encounters": [],
+      "icon": "inv_achievement_dungeon_lightbloom"
+    },
+    "voidscar-arena": {
+      "name": "Voidscar Arena",
+      "encounters": [],
+      "icon": "inv_achievement_dungeon_voidscararena"
+    }
+  },
+  "spells": [
+    {
+      "id": 1287811,
+      "type": "ravi",
+      "name": "Uncoil",
+      "icon": "ability_hunter_snaketrap",
+      "source": "altar-of-fangs"
+    },
+    {
+      "id": 1294557,
+      "type": "trash",
+      "avoidable": true,
+      "name": "Piercing Hiss",
+      "icon": "inv_sonic_wave",
+      "source": "altar-of-fangs",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 261560, "kind": "npc", "children": "Primal Serpent" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1294859,
+      "type": "trash",
+      "name": "Rattle",
+      "icon": "inv_sonic_wave",
+      "source": "altar-of-fangs",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 262011, "kind": "npc", "children": "Rattling Writhe" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1295055,
+      "type": "trash",
+      "name": "Virulent Whirl",
+      "icon": "inv_ability_poison_groundstate",
+      "source": "altar-of-fangs"
+    },
+    {
+      "id": 1295073,
+      "type": "trash",
+      "name": "Virulent Splatter",
+      "icon": "ability_creature_poison_06",
+      "source": "altar-of-fangs",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 261573, "kind": "npc", "children": "Ascendant Serpent" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1296069,
+      "type": "ravi",
+      "name": "Regurgitate",
+      "icon": "inv_ability_poison_wave",
+      "source": "altar-of-fangs",
+      "avoidable": true
+    },
+    {
+      "id": 1299080,
+      "type": "the-writhing-coil",
+      "name": "Death Rattle",
+      "icon": "inv_sonic_debuff",
+      "source": "altar-of-fangs"
+    },
+    {
+      "id": 1300892,
+      "type": "zuljan",
+      "name": "Fang Empowered",
+      "icon": "inv_knife_1h_ulatekfang_d_01_poison",
+      "source": "altar-of-fangs"
+    },
+    {
+      "id": 1305637,
+      "type": "trash",
+      "name": "Septic Spatter",
+      "icon": "ability_deathknight_roilingblood",
+      "source": "altar-of-fangs",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 261550, "kind": "npc", "children": "Venom Leech" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1306230,
+      "type": "trash",
+      "name": "Venom Burst",
+      "icon": "inv_ability_poison_groundstate",
+      "source": "altar-of-fangs",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 263112, "kind": "npc", "children": "Living Venom" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1306345,
+      "type": "ravi",
+      "name": "Messy Eater",
+      "icon": "inv_misc_food_83_talbuksteak",
+      "source": "altar-of-fangs"
+    },
+    {
+      "id": 1306853,
+      "type": "trash",
+      "name": "Toxic Surge",
+      "icon": "inv_ability_poison_wave",
+      "source": "altar-of-fangs",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 263109, "kind": "npc", "children": "Ula'tek's Chosen" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1306890,
+      "type": "trash",
+      "name": "Unstable Totem",
+      "icon": "ability_shaman_stoneskintotem",
+      "source": "altar-of-fangs"
+    },
+    {
+      "id": 1307573,
+      "type": "ravi",
+      "name": "Triple Shot",
+      "icon": "spell_nature_corrosivebreath",
+      "source": "altar-of-fangs"
+    },
+    {
+      "id": 1307700,
+      "type": "ravi",
+      "name": "Carrion Burst",
+      "icon": "ability_creature_disease_02",
+      "source": "altar-of-fangs",
+      "avoidable": true
+    },
+    {
+      "id": 1307894,
+      "type": "ravi",
+      "name": "Ravenous Stomp",
+      "icon": "ability_earthen_pillar",
+      "source": "altar-of-fangs"
+    },
+    {
+      "id": 1307915,
+      "type": "ravi",
+      "name": "Ravenous Stomp",
+      "icon": "ability_earthen_pillar",
+      "source": "altar-of-fangs",
+      "avoidable": true
+    }
+  ]
+}
