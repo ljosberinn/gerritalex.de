@@ -80,6 +80,8 @@ export const generateStaticParams = async () => {
   return allBlogs.map((p) => ({ slug: p.slug.split('/').map((name) => decodeURI(name)) }));
 };
 
+export const dynamicParams = false;
+
 export default async function Page(props: { params: Promise<{ slug: string[] }> }) {
   const params = await props.params;
   const slug = decodeURI(params.slug.join('/'));

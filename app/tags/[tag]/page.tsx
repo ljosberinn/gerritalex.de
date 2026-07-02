@@ -34,6 +34,8 @@ export const generateStaticParams = async () => {
   return paths;
 };
 
+export const dynamicParams = false;
+
 export default async function TagPage(props: { params: Promise<{ tag: string }> }) {
   const params = await props.params;
   const tag = decodeURI(params.tag);

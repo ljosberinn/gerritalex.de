@@ -83,7 +83,7 @@ It's worth noting that the new stacking nameplates behaviour is something that's
 Looking at this - for the most probably familiar - Azure Vault pull, we quickly discover why this is a problem and needed work. From other larger pulls like in Priory or Gambit in this season, you'll also be probably deeply familiar with nameplates at the top of the screen.
 
 <figure className="flex justify-center flex-col">
-    <video src="/static/images/nameplates-midnight/retail-default-nameplate-behaviour.mp4" type="video/mp4" controls muted loop autoPlay />
+    <video src="/static/images/nameplates-midnight/retail-default-nameplate-behaviour.mp4" type="video/mp4" controls muted loop preload="none" />
     <figcaption className="text-center">
       Default stacking nameplates in Retail with NPC names enabled.
     </figcaption>
@@ -92,7 +92,7 @@ Looking at this - for the most probably familiar - Azure Vault pull, we quickly 
 It's no surprise that with Plater enabled, the overall movement stays roughly the same. Plater also makes use of some now-removed CVars (more about that later) that controls implicit spacing between nameplates.
 
 <figure className="flex justify-center flex-col">
-  <video src="/static/images/nameplates-midnight/retail-plater-behaviour.mp4" type="video/mp4" controls muted loop />
+  <video src="/static/images/nameplates-midnight/retail-plater-behaviour.mp4" type="video/mp4" controls muted loop preload="none" />
   <figcaption className="text-center">
     Plater with [Jundies](https://wago.io/ak3iS95aa).
   </figcaption>
@@ -103,7 +103,7 @@ We can probably agree on that in both scenarios, nameplates don't move unreasona
 Unfortunately we've not seen any progress being made on the following weird behaviour since its introduction week 1 and I initially had planned to omit it because I anticipated it'll get fixed asap, so here comes the current Alpha behaviour - brace yourselves.
 
 <figure className="flex justify-center flex-col">
-  <video src="/static/images/nameplates-midnight/target-dummy-weirdness.mp4" type="video/mp4" controls muted loop />
+  <video src="/static/images/nameplates-midnight/target-dummy-weirdness.mp4" type="video/mp4" controls muted loop preload="none" />
   <figcaption className="text-center">
     Courtesy of Linaori, taken from this [Alpha feedback thread](https://us.forums.blizzard.com/en/wow/t/the-new-stacking-nameplate-variant-is-horrendous/2179001)
   </figcaption>
@@ -112,7 +112,7 @@ Unfortunately we've not seen any progress being made on the following weird beha
 And because this was so much fun, here's again Azure Vault.
 
 <figure className="flex justify-center flex-col">
-  <video src="/static/images/nameplates-midnight/nameplate-movement.mp4" type="video/mp4" preload="metadata" controls muted loop />
+  <video src="/static/images/nameplates-midnight/nameplate-movement.mp4" type="video/mp4" preload="metadata" controls muted loop preload="none" />
   <figcaption className="text-center">
       Good luck trying to kick something here.
   </figcaption>
@@ -262,7 +262,7 @@ After:
 Probably better to let a clip speak for itself.
 
 <div className="flex justify-center">
-  <video src="/static/images/nameplates-midnight/targeting-behaviour.mp4" type="video/mp4" controls muted loop autoPlay />
+  <video src="/static/images/nameplates-midnight/targeting-behaviour.mp4" type="video/mp4" controls muted loop preload="none" />
 </div>
 
 The target upscaling is a CVar (`nameplateSelectedScale`, defaulting to 1.2) and not exposed as setting - **this is the default experience for new players**. I'm putting some emphasis on that because I find it very jarring and only learned when researching for this post that this is actually a Retail feature for ages, but it's a lot less noticeable there even with default nameplates.
@@ -451,17 +451,17 @@ Rises and falls with the success of pruning. If we don't end up with irrelevant 
 For those unfamiliar, here's some fun <Deathmark /> comparisons:
 
 <figure className="m-auto max-w-[75%] flex justify-center flex-col">
-  <video src="/static/images/nameplates-midnight/deathmark-default-nameplates-retail.mp4" type="video/mp4" controls muted loop autoPlay />
+  <video src="/static/images/nameplates-midnight/deathmark-default-nameplates-retail.mp4" type="video/mp4" controls muted loop preload="none" />
   <figcaption className="text-center">yep, that's up to 14 debuffs</figcaption>
 </figure>
 
 <figure className="m-auto max-w-[75%] flex justify-center flex-col">
-  <video src="/static/images/nameplates-midnight/deathmark-plater-retail.mp4" type="video/mp4" controls muted loop autoPlay />
+  <video src="/static/images/nameplates-midnight/deathmark-plater-retail.mp4" type="video/mp4" controls muted loop preload="none" />
   <figcaption className="text-center">hiding non-gameplay altering auras, down to 8 max</figcaption>
 </figure>
 
 <figure className="m-auto max-w-[75%] flex justify-center flex-col">
-  <video src="/static/images/nameplates-midnight/deathmark-default-nameplates-midnight.mp4" type="video/mp4" controls muted loop autoPlay />
+  <video src="/static/images/nameplates-midnight/deathmark-default-nameplates-midnight.mp4" type="video/mp4" controls muted loop preload="none" />
   <figcaption className="text-center"><Deathmark branch="beta" /> has been adjusted and poisons don't show anymore, down to 5 max</figcaption>
 </figure>
 
@@ -518,7 +518,7 @@ After:
 A long and often requested feature that we only recently rolled our own implementation for. Based on user-defined colors, change the color of a unit name based on the combination of auras present on it.
 
 <figure className="flex justify-center flex-col">
-  <video src="/static/images/nameplates-midnight/aura-name-color.mp4" type="video/mp4" controls muted loop autoPlay />
+  <video src="/static/images/nameplates-midnight/aura-name-color.mp4" type="video/mp4" controls muted loop preload="none" />
   <figcaption className="text-center">
     No aura, no color change. <WowheadLink id={457052} icon="inv_ability_deathstalkerrogue_deathstalkersmark" kind="spell">Deathstalker's Mark</WowheadLink>? Green!
   </figcaption>
@@ -544,7 +544,7 @@ After:
 Not really much to say here. Adds a glow at 30% of the remaining duration of the aura and you're done.
 
 <div className="m-auto max-w-[75%] flex justify-center flex-col">
-  <video src="/static/images/nameplates-midnight/pandemic.mp4" type="video/mp4" controls muted loop autoPlay />
+  <video src="/static/images/nameplates-midnight/pandemic.mp4" type="video/mp4" controls muted loop preload="none" />
 </div>
 
 ##### Verdict & Suggestion
@@ -604,7 +604,7 @@ After:
 Straight forward - on certain auras, change the nameplate color to grey, or whatever you set it to.
 
 <div className="m-auto max-w-[75%] flex justify-center flex-col">
-  <video src="/static/images/nameplates-midnight/invalidate-unit.mp4" type="video/mp4" controls muted loop autoPlay />
+  <video src="/static/images/nameplates-midnight/invalidate-unit.mp4" type="video/mp4" controls muted loop preload="none" />
 </div>
 
 ##### Verdict & Suggestion
@@ -668,7 +668,7 @@ Icing on the cake would be role-specific scaling. Sparingly used in our mod, but
 You've made it this far, here's a clip of our cat.
 
 <div className="max-w-[35%] flex justify-self-center not-prose">
-  <video src="/static/images/nameplates-midnight/dream-1.mp4" type="video/mp4" controls muted loop autoPlay />
+  <video src="/static/images/nameplates-midnight/dream-1.mp4" type="video/mp4" controls muted loop preload="none" />
 </div>
 
 ### Cast Bar
@@ -832,7 +832,7 @@ That's not an inherently bad thing. But if things aren't communicated clearly by
 The ability to put some kind of emphasis on a set of casts, either by spell id or name, that are deemed important for any reason.
 
 <div className="max-w-[35%] flex justify-self-center not-prose">
-  <video src="/static/images/nameplates-midnight/important-casts.mp4" type="video/mp4" controls muted loop autoPlay />
+  <video src="/static/images/nameplates-midnight/important-casts.mp4" type="video/mp4" controls muted loop preload="none" />
 </div>
 
 Before:
@@ -858,7 +858,7 @@ The ability to highlight a nameplate of a unit fixating the player in any way.
 This was also nicely pairable with nameplate scaling. Note the spawning mine being scaled to a much smaller size until it starts fixating me, where it'll get upscaled instead:
 
 <div className="flex justify-center">
-  <video src="/static/images/nameplates-midnight/fixate-scaling.mp4" type="video/mp4" controls muted loop autoPlay />
+  <video src="/static/images/nameplates-midnight/fixate-scaling.mp4" type="video/mp4" controls muted loop preload="none" />
 </div>
 
 Before:
@@ -935,7 +935,7 @@ The most egregious case for this was in Brackenhide Hollow, the bridge towards t
 And of course, in Midnight:
 
 <div>
-  <video className="" src="/static/images/nameplates-midnight/hide-nameplate-midnight.mp4" type="video/mp4" controls muted loop autoPlay />
+  <video className="" src="/static/images/nameplates-midnight/hide-nameplate-midnight.mp4" type="video/mp4" controls muted loop preload="none" />
 </div>
 
 ##### Suggestion
@@ -1018,7 +1018,7 @@ After:
 Past a configurable threshold, 80 by default, the current energy will appear in the top left corner of the nameplate until it is depleted again.
 
 <figure className="flex justify-center flex-col max-w-[80%] justify-self-center">
-  <video src="/static/images/nameplates-midnight/energy.mp4" type="video/mp4" controls muted loop autoPlay />
+  <video src="/static/images/nameplates-midnight/energy.mp4" type="video/mp4" controls muted loop preload="none" />
   <figcaption className="text-center"><WowheadLink id={186116} kind="npc">Gutshot</WowheadLink> will <WowheadLink id={384827} kind="spell" icon="ability_hunter_pet_hyena">Call Hyenas</WowheadLink> at full energy despite raising them from cub!<br />Some say it's the most painful way to die...</figcaption>
 </figure>
 
