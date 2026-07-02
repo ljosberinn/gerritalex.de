@@ -18,6 +18,265 @@
   "spells": [
     {
       "source": "altar-of-fangs",
+      "type": "disease",
+      "icon": "spell_deathknight_bloodplague",
+      "name": "Blood Plague",
+      "id": 55078
+    },
+    {
+      "source": "murder-row",
+      "type": "poison",
+      "icon": "ability_boss_kilrogg_heartseeker",
+      "name": "Heartstop Poison",
+      "id": 474515
+    },
+    {
+      "source": "murder-row",
+      "type": "bleed",
+      "icon": "ability_deathwing_bloodcorruption_death",
+      "name": "Murder in a Row",
+      "id": 474740
+    },
+    {
+      "source": "murder-row",
+      "type": "magic",
+      "icon": "spell_shadow_seduction",
+      "name": "Seduction",
+      "id": 1201554
+    },
+    {
+      "source": "murder-row",
+      "type": "enrage",
+      "icon": "ability_creature_felfrenzy",
+      "name": "Fel Rage",
+      "id": 1214922
+    },
+    {
+      "source": "murder-row",
+      "type": "bleed",
+      "icon": "ability_warrior_deepcuts",
+      "name": "Cutpurse",
+      "id": 1216300
+    },
+    {
+      "source": "murder-row",
+      "type": "poison",
+      "icon": "ability_boss_kilrogg_heartseeker",
+      "name": "Heartstop Poison",
+      "id": 1216590
+    },
+    {
+      "source": "murder-row",
+      "type": "enrage",
+      "icon": "warrior_disruptingshout",
+      "name": "Back to Work!",
+      "id": 1216970
+    },
+    {
+      "source": "murder-row",
+      "type": "magic",
+      "icon": "inv_fabric_felcloth_ebon",
+      "name": "Corroding Spittle",
+      "id": 1217633
+    },
+    {
+      "source": "murder-row",
+      "type": "curse",
+      "icon": "spell_shadow_auraofdarkness",
+      "name": "Curse of Doom",
+      "id": 1217973
+    },
+    {
+      "source": "voidscar-arena",
+      "type": "poison",
+      "icon": "spell_nature_corrosivebreath",
+      "name": "Poison Splash",
+      "id": 1226031
+    },
+    {
+      "source": "murder-row",
+      "type": "magic",
+      "icon": "inv_fabric_felcloth_ebon",
+      "name": "Corroding Spittle",
+      "id": 1228198
+    },
+    {
+      "source": "murder-row",
+      "type": "magic",
+      "icon": "spell_fire_felimmolation",
+      "name": "Fel Crazed",
+      "id": 1229433
+    },
+    {
+      "source": "den-of-nalorakk",
+      "type": "poison",
+      "icon": "ability_creature_poison_06",
+      "name": "Toxic Spores",
+      "id": 1234846
+    },
+    {
+      "source": "den-of-nalorakk",
+      "type": "magic",
+      "icon": "inv12_apextalent_mage_handoffrost",
+      "name": "Glacial Torment",
+      "id": 1235549
+    },
+    {
+      "source": "the-blinding-vale",
+      "type": "bleed",
+      "icon": "spell_nature_thorns",
+      "name": "Thornblade",
+      "id": 1235865
+    },
+    {
+      "source": "the-blinding-vale",
+      "type": "bleed",
+      "icon": "inv_misc_monsterfang_02",
+      "name": "Incise",
+      "id": 1237267
+    },
+    {
+      "source": "den-of-nalorakk",
+      "type": "enrage",
+      "icon": "spell_misc_emotionangry",
+      "name": "Mother's Wrath",
+      "id": 1238053
+    },
+    {
+      "source": "the-blinding-vale",
+      "type": "bleed",
+      "icon": "spell_nature_thorns",
+      "name": "Thornblade",
+      "id": 1238076
+    },
+    {
+      "source": "the-blinding-vale",
+      "type": "magic",
+      "icon": "inv_misc_herb_04",
+      "name": "Spore Spines",
+      "id": 1238084
+    },
+    {
+      "source": "altar-of-fangs",
+      "type": "curse",
+      "icon": "spell_necro_necroticsmash",
+      "name": "Whirling Spirit",
+      "id": 1238255
+    },
+    {
+      "source": "den-of-nalorakk",
+      "type": "bleed",
+      "icon": "inv_10_specialreagentfoozles_tuskclaw_fire",
+      "name": "Razor Dive",
+      "id": 1238439
+    },
+    {
+      "source": "the-blinding-vale",
+      "type": "magic",
+      "icon": "inv_beetleprimal_purple",
+      "name": "Spiny Shield",
+      "id": 1238581
+    },
+    {
+      "source": "den-of-nalorakk",
+      "type": "curse",
+      "icon": "ability_warlock_improvedsoulleech",
+      "name": "Insatiable Hunger",
+      "id": 1238801
+    },
+    {
+      "source": "den-of-nalorakk",
+      "type": "magic",
+      "icon": "spell_mage_frostbomb",
+      "name": "Cryo Surge",
+      "id": 1239860
+    },
+    {
+      "source": "the-blinding-vale",
+      "type": "bleed",
+      "icon": "spell_druid_bloodythrash",
+      "name": "Grievous Thrash",
+      "id": 1241058
+    },
+    {
+      "source": "the-blinding-vale",
+      "type": "bleed",
+      "icon": "inv_ability_druidoftheclawdruid_ravage",
+      "name": "Grievous Gash",
+      "id": 1242135
+    },
+    {
+      "source": "den-of-nalorakk",
+      "type": "enrage",
+      "icon": "ability_druid_ferociousbite",
+      "name": "Bestial Wrath",
+      "id": 1246865
+    },
+    {
+      "source": "the-blinding-vale",
+      "type": "bleed",
+      "icon": "inv_misc_herb_goldthorn_bramble",
+      "name": "Thornspike",
+      "id": 1247746
+    },
+    {
+      "source": "voidscar-arena",
+      "type": "magic",
+      "icon": "spell_fire_firebolt",
+      "name": "Fire Spit",
+      "id": 1249238
+    },
+    {
+      "source": "voidscar-arena",
+      "type": "enrage",
+      "icon": "ability_hunter_pet_raptor",
+      "name": "Feral Rage",
+      "id": 1249661
+    },
+    {
+      "source": "voidscar-arena",
+      "type": "magic",
+      "icon": "spell_fire_firebolt02",
+      "name": "Melt Armor",
+      "id": 1250043
+    },
+    {
+      "source": "the-blinding-vale",
+      "type": "poison",
+      "icon": "spell_nature_corrosivebreath",
+      "name": "Toxic Spew",
+      "id": 1250937
+    },
+    {
+      "source": "the-blinding-vale",
+      "type": "magic",
+      "icon": "inv_-misc_herb_marrowroot_leaf",
+      "name": "Bloodthorn Roots",
+      "id": 1259365
+    },
+    {
+      "source": "voidscar-arena",
+      "type": "poison",
+      "icon": "ability_creature_poison_02",
+      "name": "Lingering Poison",
+      "id": 1263971
+    },
+    {
+      "source": "voidscar-arena",
+      "type": "bleed",
+      "icon": "ability_druid_tigersroar",
+      "name": "Savage Leap",
+      "id": 1267894
+    },
+    {
+      "source": "voidscar-arena",
+      "type": "poison",
+      "icon": "inv_ability_poison_orb",
+      "name": "Corrosive Essence",
+      "id": 1289258
+    },
+    {
+      "source": "altar-of-fangs",
       "type": "magic",
       "icon": "ability_poisonsting",
       "name": "Paralyzing Shots",
@@ -31,11 +290,39 @@
       "id": 1294845
     },
     {
+      "source": "murder-row",
+      "type": "bleed",
+      "icon": "inv_archaeology_70_demon_flayedskinchronicle",
+      "name": "Flay",
+      "id": 1295427
+    },
+    {
       "source": "altar-of-fangs",
       "type": "disease",
       "icon": "inv_ability_poison_wave",
       "name": "Regurgitate",
       "id": 1296069
+    },
+    {
+      "source": "den-of-nalorakk",
+      "type": "magic",
+      "icon": "spell_frost_windwalkon",
+      "name": "Healing Breeze",
+      "id": 1297696
+    },
+    {
+      "source": "voidscar-arena",
+      "type": "bleed",
+      "icon": "ability_heroicleap",
+      "name": "Ferocious Leap",
+      "id": 1299133
+    },
+    {
+      "source": "altar-of-fangs",
+      "type": "disease",
+      "icon": "ability_creature_disease_03",
+      "name": "Festering Gash",
+      "id": 1302867
     },
     {
       "source": "altar-of-fangs",

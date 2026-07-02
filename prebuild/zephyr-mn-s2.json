@@ -18,13 +18,18 @@
     },
     "den-of-nalorakk": {
       "name": "Den of Nalorakk",
-      "encounters": [],
+      "encounters": ["The Hoardmonger", "Sentinel of Winter", "Nalorakk"],
       "icon": "inv_achievement_dungeon_proveyourworth"
     },
     "kings-rest": { "name": "Kings' Rest", "encounters": [] },
     "murder-row": {
       "name": "Murder Row",
-      "encounters": [],
+      "encounters": [
+        "Kystia Manaheart",
+        "Zaen Bladesorrow",
+        "Xalthuux the Annihilator",
+        "Lithiel Cinderfury"
+      ],
       "icon": "inv_achievement_dungeon_murderrow"
     },
     "ruby-life-pools": {
@@ -35,12 +40,17 @@
     "temple-of-sethraliss": { "name": "Temple of Sethraliss", "encounters": [] },
     "the-blinding-vale": {
       "name": "The Blinding Vale",
-      "encounters": [],
+      "encounters": [
+        "Ikuzz the Light Hunter",
+        "Lightblossom Trinity",
+        "Lightwarden Ruia",
+        "Ziekett"
+      ],
       "icon": "inv_achievement_dungeon_lightbloom"
     },
     "voidscar-arena": {
       "name": "Voidscar Arena",
-      "encounters": [],
+      "encounters": ["Taz'Rah", "Atroxus", "Charonus"],
       "icon": "inv_achievement_dungeon_voidscararena"
     },
     "the-venomous-abyss": {
@@ -59,6 +69,847 @@
     }
   },
   "spells": [
+    {
+      "id": 269230,
+      "type": "trash",
+      "name": "Hunting Leap",
+      "icon": "ability_druid_ravage",
+      "source": "the-blinding-vale",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 245473, "kind": "npc", "children": "Thorny Saptor" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 473898,
+      "type": "xathuux-the-annihilator",
+      "name": "Legion Strike",
+      "icon": "inv_axe_09",
+      "source": "murder-row"
+    },
+    {
+      "id": 474197,
+      "type": "xathuux-the-annihilator",
+      "name": "Demonic Rage",
+      "icon": "ability_warlock_demonicempowerment",
+      "source": "murder-row"
+    },
+    {
+      "id": 474457,
+      "type": "lithiel-cinderfury",
+      "name": "Fingers of Gul'dan",
+      "icon": "ability_warlock_handofguldan",
+      "source": "murder-row"
+    },
+    {
+      "id": 474483,
+      "type": "zaen-bladesorrow",
+      "name": "Killing Spree",
+      "icon": "inv_112_rogue_betweentheeyes",
+      "source": "murder-row"
+    },
+    {
+      "id": 474768,
+      "type": "trash",
+      "name": "Delivery!",
+      "icon": "achievement_brewery_2",
+      "source": "murder-row",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 234860, "kind": "npc", "children": "Crate Loader" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1214355,
+      "type": "zaen-bladesorrow",
+      "name": "Fire Bomb",
+      "icon": "inv_eng_bombfire",
+      "source": "murder-row"
+    },
+    {
+      "id": 1214663,
+      "type": "xathuux-the-annihilator",
+      "name": "Axe Toss",
+      "icon": "ability_warrior_titansgrip",
+      "source": "murder-row"
+    },
+    {
+      "id": 1214959,
+      "type": "kystia-manaheart",
+      "name": "Chaotic Burst",
+      "icon": "ability_demonhunter_chaosnova",
+      "source": "murder-row"
+    },
+    {
+      "id": 1216538,
+      "type": "trash",
+      "name": "Fel Detonation",
+      "icon": "spell_fel_elementaldevastation",
+      "source": "murder-row",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 236085, "kind": "npc", "children": "Felwyrm" }
+          },
+          {
+            "component": "WowheadLink",
+            "props": { "id": 253324, "kind": "npc", "children": "Tiny Felwyrm" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1216945,
+      "type": "lithiel-cinderfury",
+      "name": "Searing Fel Flame",
+      "icon": "spell_fire_felfirenova",
+      "source": "murder-row"
+    },
+    {
+      "id": 1216955,
+      "type": "trash",
+      "name": "Eye Beam",
+      "icon": "ability_demonhunter_eyebeam",
+      "source": "murder-row",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 236905, "kind": "npc", "children": "Felmaster Lucsei" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1217099,
+      "type": "trash",
+      "name": "Fel-Infused Freight",
+      "icon": "inv_ember_fel",
+      "source": "murder-row",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 234852, "kind": "npc", "children": "Forbidden Freight" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1217992,
+      "type": "trash",
+      "name": "Workplace Accident",
+      "icon": "ability_warrior_throwdown",
+      "source": "murder-row",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 236893, "kind": "npc", "children": "Warehouse Worker" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1222724,
+      "type": "atroxus",
+      "name": "Noxious Breath",
+      "icon": "ability_creature_poison_05",
+      "source": "voidscar-arena",
+      "avoidable": true
+    },
+    {
+      "id": 1223906,
+      "type": "kystia-manaheart",
+      "name": "Fel Nova",
+      "icon": "spell_fire_felflamering",
+      "source": "murder-row"
+    },
+    {
+      "id": 1226031,
+      "type": "atroxus",
+      "name": "Poison Splash",
+      "icon": "spell_nature_corrosivebreath",
+      "source": "voidscar-arena",
+      "avoidable": true
+    },
+    {
+      "id": 1228126,
+      "type": "trash",
+      "name": "Macestorm",
+      "icon": "ability_paladin_enlightenedjudgements",
+      "source": "voidscar-arena",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 252053, "kind": "npc", "children": "Brutal Overseer" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1231353,
+      "type": "trash",
+      "name": "Felfire Core",
+      "icon": "spell_fire_felimmolation",
+      "source": "murder-row",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 238414, "kind": "npc", "children": "Infernal" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1233264,
+      "type": "trash",
+      "name": "Blisterburst",
+      "icon": "ability_evoker_essenceburst4",
+      "source": "voidscar-arena",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 0, "kind": "npc", "children": "Blistercreep" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1233485,
+      "type": "trash",
+      "name": "Rip and Slice",
+      "icon": "inv_10_specialreagentfoozles_tuskclaw-black",
+      "source": "voidscar-arena",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 0, "kind": "npc", "children": "Agitated Voidscythe" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1234681,
+      "type": "the-hoardmonger",
+      "name": "Ravenous Bellow",
+      "icon": "ability_druid_challangingroar",
+      "source": "den-of-nalorakk"
+    },
+    {
+      "id": 1235125,
+      "type": "the-hoardmonger",
+      "name": "Hearty Bellow",
+      "icon": "ability_warrior_battleshout",
+      "source": "den-of-nalorakk"
+    },
+    {
+      "id": 1235635,
+      "type": "sentinel-of-winter",
+      "name": "Raging Squall",
+      "icon": "ability_deathknight_frozencenter",
+      "source": "den-of-nalorakk"
+    },
+    {
+      "id": 1235658,
+      "type": "sentinel-of-winter",
+      "name": "Frozen Tempest",
+      "icon": "spell_frost_ring-of-frost",
+      "source": "den-of-nalorakk"
+    },
+    {
+      "id": 1235752,
+      "type": "trash",
+      "name": "Lightbloom Overgrowth",
+      "icon": "inv_misc_herb_dreamingglory",
+      "source": "the-blinding-vale",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 244528, "kind": "npc", "children": "Lightblossom" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1235829,
+      "type": "trash",
+      "name": "Winter's Shroud",
+      "icon": "ability_deathknight_icygrip",
+      "source": "den-of-nalorakk",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 244759, "kind": "npc", "children": "Fractured Shivercore" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1236731,
+      "type": "ikuzz-the-light-hunter",
+      "name": "Thorncaller Roar",
+      "icon": "trade_engineering",
+      "source": "the-blinding-vale"
+    },
+    {
+      "id": 1236746,
+      "type": "ikuzz-the-light-hunter",
+      "name": "Verdant Stomp",
+      "icon": "inv_raptortravelform",
+      "source": "the-blinding-vale"
+    },
+    {
+      "id": 1237093,
+      "type": "ikuzz-the-light-hunter",
+      "name": "Crushing Footfalls",
+      "icon": "shaman_pvp_rockshield",
+      "source": "the-blinding-vale"
+    },
+    {
+      "id": 1238463,
+      "type": "trash",
+      "name": "Lightmaw Beams",
+      "icon": "inv_ability_holyfire_beam",
+      "source": "the-blinding-vale",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 245513, "kind": "npc", "children": "Overgrown Hydra" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1238638,
+      "type": "trash",
+      "name": "Bullet Seeds",
+      "icon": "spell_shaman_convection",
+      "source": "the-blinding-vale",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 245513, "kind": "npc", "children": "Overgrown Hydra" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1239855,
+      "type": "atroxus-trash",
+      "name": "Sky Strike",
+      "icon": "ability_racial_wingbuffet",
+      "source": "voidscar-arena",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 245950, "kind": "npc", "children": "Watchful Harrower" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1239871,
+      "type": "trash",
+      "name": "Cryo Surge",
+      "icon": "spell_mage_frostbomb",
+      "source": "den-of-nalorakk",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 241876, "kind": "npc", "children": "Glacial Revenant" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1239919,
+      "type": "lightwarden-ruia",
+      "name": "Lightfire Beams",
+      "icon": "inv_ability_holyfire_beam",
+      "source": "the-blinding-vale"
+    },
+    {
+      "id": 1240152,
+      "type": "trash",
+      "name": "Lightfall",
+      "icon": "inv_ability_holyfire_missile",
+      "source": "the-blinding-vale",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 246371, "kind": "npc", "children": "Spirit Moonkin" }
+          },
+          {
+            "component": "WowheadLink",
+            "props": { "id": 245912, "kind": "npc", "children": "Lightwarden Ruia" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1240257,
+      "type": "trash",
+      "name": "Pulverizing Strikes",
+      "icon": "ability_druid_swipe",
+      "source": "the-blinding-vale",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 246367, "kind": "npc", "children": "Spirit Bear" }
+          },
+          {
+            "component": "WowheadLink",
+            "props": { "id": 245912, "kind": "npc", "children": "Lightwarden Ruia" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1240280,
+      "type": "trash",
+      "name": "Pulverize",
+      "icon": "ability_smash",
+      "source": "den-of-nalorakk",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 241869, "kind": "npc", "children": "Avatar of Determination" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1241058,
+      "type": "trash",
+      "name": "Grievous Thrash",
+      "icon": "spell_druid_bloodythrash",
+      "source": "the-blinding-vale",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 246367, "kind": "npc", "children": "Spirit Bear" }
+          },
+          {
+            "component": "WowheadLink",
+            "props": { "id": 245912, "kind": "npc", "children": "Lightwarden Ruia" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1242200,
+      "type": "trash",
+      "name": "Lightwarden's Blight",
+      "icon": "inv_ability_holyfire_debuff",
+      "source": "the-blinding-vale",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 245527, "kind": "npc", "children": "Spineshield Beetle" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1242887,
+      "type": "nalorakk",
+      "name": "Echoing Maul",
+      "icon": "inv_ability_druidoftheclawdruid_ravage",
+      "source": "den-of-nalorakk"
+    },
+    {
+      "id": 1245593,
+      "type": "the-hoardmonger",
+      "name": "Putrid Burst",
+      "icon": "inv_ability_poison_groundstate",
+      "source": "den-of-nalorakk"
+    },
+    {
+      "id": 1246825,
+      "type": "trash",
+      "name": "Searing Magma",
+      "icon": "spell_fire_selfdestruct",
+      "source": "den-of-nalorakk",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 5929, "kind": "npc", "children": "Magma Totem" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1246957,
+      "type": "trash",
+      "name": "Primal Echo",
+      "icon": "spell_druid_stamedingroar",
+      "source": "den-of-nalorakk",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 245146, "kind": "npc", "children": "Grizzled Warbringer" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1247030,
+      "type": "trash",
+      "name": "Poison Spear Volley",
+      "icon": "inv_spear_02",
+      "source": "den-of-nalorakk",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 245148, "kind": "npc", "children": "Grizzled Warbringer" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1247039,
+      "type": "ziekket",
+      "name": "Fluorescent Outburst",
+      "icon": "spell_nature_wrathv2",
+      "source": "the-blinding-vale"
+    },
+    {
+      "id": 1247366,
+      "type": "trash",
+      "name": "Earthquake",
+      "icon": "spell_shaman_earthquake",
+      "source": "den-of-nalorakk",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 244889, "kind": "npc", "children": "Loa Speaker Nanea" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1247644,
+      "type": "ziekket",
+      "name": "Oozing Xylem",
+      "icon": "inv_ability_holyfire_nova",
+      "source": "the-blinding-vale"
+    },
+    {
+      "id": 1249238,
+      "type": "tazrah-trash",
+      "name": "Fire Spit",
+      "icon": "spell_fire_firebolt",
+      "source": "voidscar-arena",
+      "avoidable": true,
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 249461, "kind": "npc", "children": "Abducted Drakonid" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1249621,
+      "type": "tazrah-trash",
+      "name": "Violent Sand",
+      "icon": "spell_sandexplosion",
+      "source": "voidscar-arena",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 249590, "kind": "npc", "children": "Angry Krolusk" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1250695,
+      "type": "tazrah-trash",
+      "name": "Insidious Aura",
+      "icon": "ability_warlock_burningembersgreen",
+      "source": "voidscar-arena",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 244260, "kind": "npc", "children": "Chitigoth" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1250937,
+      "type": "trash",
+      "name": "Toxic Spew",
+      "icon": "spell_nature_corrosivebreath",
+      "source": "the-blinding-vale",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 249756, "kind": "npc", "children": "Potatoad Matriarch" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1252406,
+      "type": "charonus-trash",
+      "name": "Dreadbellow",
+      "icon": "spell_shadow_ragingscream",
+      "source": "voidscar-arena",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 268184, "kind": "npc", "children": "Devouring Brutalizer" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1255205,
+      "type": "trash",
+      "name": "Uproot",
+      "icon": "inv_herb_earthroot",
+      "source": "the-blinding-vale",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 245346, "kind": "npc", "children": "Virid Grovekeeper" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1261013,
+      "type": "lightblossom-trinity",
+      "name": "Fan Of Thorns",
+      "icon": "inv_misc_herb_04",
+      "source": "the-blinding-vale",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 243030, "kind": "npc", "children": "Lekshi" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1262253,
+      "type": "trash",
+      "name": "Demoralizing Scream",
+      "icon": "spell_shadow_painandsuffering",
+      "source": "den-of-nalorakk",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 246409, "kind": "npc", "children": "Zul'jarra" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1262497,
+      "type": "atroxus",
+      "name": "Monstrous Stomp",
+      "icon": "ability_racial_darkflight",
+      "source": "voidscar-arena"
+    },
+    {
+      "id": 1263420,
+      "type": "ikuzz-the-light-hunter",
+      "name": "Lightcrazed Frenzy",
+      "icon": "ability_monk_explodingjadeblossom",
+      "source": "the-blinding-vale"
+    },
+    {
+      "id": 1263590,
+      "type": "trash",
+      "name": "Rimeshatter",
+      "icon": "spell_frost_icestorm",
+      "source": "den-of-nalorakk",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 244759, "kind": "npc", "children": "Fractured Shivercore" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1263597,
+      "type": "trash",
+      "name": "Rime Detonation",
+      "icon": "spell_fire_blueflamestrike",
+      "source": "den-of-nalorakk",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 244759, "kind": "npc", "children": "Fractured Shivercore" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1263628,
+      "type": "trash",
+      "name": "Spouting Floret",
+      "icon": "inv_enchant_essenceastrallarge",
+      "source": "the-blinding-vale",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 254850, "kind": "npc", "children": "Sporeblight Belcher" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1263642,
+      "type": "trash",
+      "name": "Belch Spores",
+      "icon": "spell_nature_corrosivebreath",
+      "source": "the-blinding-vale",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 254850, "kind": "npc", "children": "Sporeblight Belcher" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1264110,
+      "type": "kystia-manaheart",
+      "name": "Felstorm",
+      "icon": "spell_fire_felcano",
+      "source": "murder-row"
+    },
+    {
+      "id": 1266241,
+      "type": "trash",
+      "name": "Freight Explosion",
+      "icon": "spell_fire_felflamering",
+      "source": "murder-row",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 234852, "kind": "npc", "children": "Forbidden Freight" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1269284,
+      "type": "trash",
+      "name": "Fel Steps",
+      "icon": "ability_bossfellord_felfissure",
+      "source": "voidscar-arena",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 244309, "kind": "npc", "children": "Brutok" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1276586,
+      "type": "lightblossom-trinity",
+      "name": "Bedrock Surge",
+      "icon": "spell_sandexplosion",
+      "source": "the-blinding-vale",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 243028, "kind": "npc", "children": "Meittik" }
+          }
+        ]
+      ]
+    },
     {
       "id": 1280189,
       "type": "vashnik-the-malignant",
@@ -419,6 +1270,70 @@
       ]
     },
     {
+      "id": 1294774,
+      "type": "trash",
+      "name": "Demonic Frenzy",
+      "icon": "spell_fel_incinerate",
+      "source": "murder-row",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 235465, "kind": "npc", "children": "Shivan Punisher" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1294789,
+      "type": "trash",
+      "name": "Curse of Doom",
+      "icon": "spell_shadow_auraofdarkness",
+      "source": "murder-row",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 235265, "kind": "npc", "children": "Corrupted Warlock" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1294827,
+      "type": "trash",
+      "name": "Defiled Slam",
+      "icon": "spell_fire_felimmolation",
+      "source": "murder-row",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 235322, "kind": "npc", "children": "Defiled Golem" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1294836,
+      "type": "trash",
+      "name": "Defiled Detonation",
+      "icon": "ability_bossfellord_felfissure",
+      "source": "murder-row",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 235322, "kind": "npc", "children": "Defiled Golem" }
+          }
+        ]
+      ]
+    },
+    {
       "id": 1294846,
       "type": "nekzali-the-soulcoiler",
       "name": "Anguished Echoes",
@@ -518,6 +1433,13 @@
       "source": "the-venomous-abyss"
     },
     {
+      "id": 1295455,
+      "type": "xathuux-the-annihilator",
+      "name": "Infernal Crush",
+      "icon": "ability_bossfellord_felspike",
+      "source": "murder-row"
+    },
+    {
       "id": 1295893,
       "type": "the-lost-explorers",
       "name": "Frostfire Volley",
@@ -561,11 +1483,97 @@
       "source": "the-venomous-abyss"
     },
     {
+      "id": 1296519,
+      "type": "trash",
+      "name": "Rumbling Ward",
+      "icon": "ability_gift_of_earth",
+      "source": "den-of-nalorakk",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 241911, "kind": "npc", "children": "Terra Rumbler" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1296963,
+      "type": "tazrah",
+      "name": "Umbral Rupture",
+      "icon": "inv_cosmicvoid_groundstate",
+      "source": "voidscar-arena",
+      "avoidable": true
+    },
+    {
       "id": 1297338,
       "type": "sszorak",
       "name": "Deadly Venom",
       "icon": "ability_creature_poison_06",
       "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1297667,
+      "type": "trash",
+      "name": "Burning Fel",
+      "icon": "spell_fire_felfire",
+      "source": "murder-row",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 236902, "kind": "npc", "children": "Massive Felwyrm" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1297691,
+      "type": "trash",
+      "name": "Whirlwind",
+      "icon": "ability_whirlwind",
+      "source": "murder-row",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 235465, "kind": "npc", "children": "Shivan Punisher" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1297695,
+      "type": "trash",
+      "name": "Felfire Bombardment",
+      "icon": "spell_fire_felfire",
+      "source": "murder-row",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 235268, "kind": "npc", "children": "Felcaster Invoker" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1297793,
+      "type": "nalorakk",
+      "name": "Overwhelming Onslaught",
+      "icon": "spell_druid_thrash",
+      "source": "den-of-nalorakk"
+    },
+    {
+      "id": 1297797,
+      "type": "nalorakk",
+      "name": "Forceful Slam",
+      "icon": "inv_misc_bearpaw_red",
+      "source": "den-of-nalorakk"
     },
     {
       "id": 1298582,
@@ -589,11 +1597,77 @@
       "source": "the-venomous-abyss"
     },
     {
+      "id": 1298901,
+      "type": "trash",
+      "name": "Brutal Slams",
+      "icon": "ability_warrior_decisivestrike",
+      "source": "voidscar-arena",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 252053, "kind": "npc", "children": "Brutal Overseer" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1298933,
+      "type": "tazrah-trash",
+      "name": "Savage Smash",
+      "avoidable": true,
+      "icon": "ability_smash",
+      "source": "voidscar-arena",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 267545, "kind": "npc", "children": "Aegyra the Unyielding" }
+          }
+        ]
+      ]
+    },
+    {
       "id": 1299080,
       "type": "the-writhing-coil",
       "name": "Death Rattle",
       "icon": "inv_sonic_debuff",
       "source": "altar-of-fangs"
+    },
+    {
+      "id": 1299145,
+      "type": "tazrah-trash",
+      "name": "Earthsplitter",
+      "icon": "spell_nature_earthquake",
+      "source": "voidscar-arena",
+      "avoidable": true,
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 267545, "kind": "npc", "children": "Aegyra the Unyielding" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1299273,
+      "type": "trash",
+      "name": "Thundering Storm",
+      "icon": "spell_shaman_thunderstorm",
+      "source": "voidscar-arena",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 267546, "kind": "npc", "children": "Raj'kess the Spellstorm" }
+          }
+        ]
+      ]
     },
     {
       "id": 1299296,
@@ -638,11 +1712,51 @@
       "source": "the-venomous-abyss"
     },
     {
+      "id": 1299913,
+      "type": "trash",
+      "name": "Null Eruption",
+      "icon": "inv_cosmicvoid_orb",
+      "source": "voidscar-arena",
+      "avoidable": true
+    },
+    {
+      "id": 1299938,
+      "type": "trash",
+      "name": "Shadowbolt Volley",
+      "icon": "spell_fire_twilightflamestrike",
+      "source": "voidscar-arena",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 0, "kind": "npc", "children": "Voidtouched Magi" }
+          }
+        ]
+      ]
+    },
+    {
       "id": 1299947,
       "type": "the-lost-explorers",
       "name": "Concussive Blast",
       "icon": "inv_wildfirebomb",
       "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1300116,
+      "type": "trash",
+      "name": "Whirling Gust",
+      "icon": "ability_skyreach_four_wind",
+      "source": "voidscar-arena",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 245950, "kind": "npc", "children": "Watchful Harrower" }
+          }
+        ]
+      ]
     },
     {
       "id": 1300137,
@@ -652,11 +1766,80 @@
       "source": "the-venomous-abyss"
     },
     {
+      "id": 1300156,
+      "type": "atroxus-trash",
+      "name": "Void Beam",
+      "icon": "inv_cosmicvoid_beam",
+      "source": "voidscar-arena",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 245950, "kind": "npc", "children": "Watchful Harrower" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1300259,
+      "type": "tazrah",
+      "name": "Dark Bloom",
+      "icon": "inv_ability_voidweaverpriest_entropicrift",
+      "source": "voidscar-arena"
+    },
+    {
+      "id": 1300351,
+      "type": "atroxus",
+      "name": "Poison Splash",
+      "icon": "spell_nature_corrosivebreath",
+      "source": "voidscar-arena"
+    },
+    {
+      "id": 1300372,
+      "type": "charonus",
+      "name": "Cosmic Crash",
+      "icon": "inv_cosmicvoid_groundsate",
+      "source": "voidscar-arena"
+    },
+    {
       "id": 1300892,
       "type": "zuljan",
       "name": "Fang Empowered",
       "icon": "inv_knife_1h_ulatekfang_d_01_poison",
       "source": "altar-of-fangs"
+    },
+    {
+      "id": 1301834,
+      "type": "trash",
+      "name": "Light Bolt Volley",
+      "icon": "ability_priest_flashoflight",
+      "source": "the-blinding-vale",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 245336, "kind": "npc", "children": "Radiant Spellsower" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1302010,
+      "type": "trash",
+      "name": "Blade Dance",
+      "icon": "ability_demonhunter_bladedance",
+      "source": "murder-row",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 236905, "kind": "npc", "children": "Felmaster Lucsei" }
+          }
+        ]
+      ]
     },
     {
       "id": 1302489,
@@ -851,6 +2034,38 @@
       "name": "Caustic Rain",
       "icon": "inv_ability_poison_orb",
       "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1309398,
+      "type": "trash",
+      "name": "Infest",
+      "icon": "inv_axe_02",
+      "source": "altar-of-fangs",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 261573, "kind": "npc", "children": "Ascendant Serpent" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1309931,
+      "type": "trash",
+      "name": "Volatile Flames",
+      "icon": "spell_fire_totemofwrath",
+      "source": "den-of-nalorakk",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 272074, "kind": "npc", "children": "Volatile Totem" }
+          }
+        ]
+      ]
     }
   ]
 }
