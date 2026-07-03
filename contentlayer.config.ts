@@ -301,6 +301,9 @@ export const Authors = defineDocumentType(() => ({
   const [...images] = await Promise.all(promises);
 
   await downloadImages(images.flat());
+
+  const { generateThumbnails } = await import('./prebuild/thumbnails');
+  await generateThumbnails();
 })();
 
 export default makeSource({

@@ -270,7 +270,7 @@ export default async function MusicPage() {
                           height={120}
                           className={clsx(classes)}
                           loading={'lazy'}
-                          src={`/static/images/music/${album.id}-front.jpg`}
+                          src={`/static/images/music/thumbs/${album.id}-front.webp`}
                         />
                       }
 

@@ -233,7 +233,7 @@ export default async function MoviesPage() {
                 const src =
                   'imageMissing' in movie
                     ? `https://placehold.co/120x180/000000/FFF$?text=${movie.title}`
-                    : `/static/images/tv/${movie.id}-cover.jpg`;
+                    : `/static/images/tv/thumbs/${movie.id}-cover.webp`;
 
                 return (
                   <a
