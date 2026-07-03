@@ -121,6 +121,7 @@ export function ListLayoutWithTags({ posts, title }: ListLayoutProps) {
                   lastmod,
                   images,
                   includeImageInPreview,
+                  prefetch,
                 } = post;
                 const image = images?.[0];
 
@@ -201,6 +202,7 @@ export function ListLayoutWithTags({ posts, title }: ListLayoutProps) {
                               <h2 className="text-2xl leading-8 font-bold tracking-tight">
                                 <CustomLink
                                   href={`/blog/${slug}`}
+                                  prefetch={prefetch}
                                   className="text-red-500 dark:text-yellow-100 dark:hover:text-blue-200"
                                 >
                                   {title}
@@ -221,6 +223,7 @@ export function ListLayoutWithTags({ posts, title }: ListLayoutProps) {
                           <div className="text-base leading-6 font-medium">
                             <CustomLink
                               href={`/blog/${slug}`}
+                              prefetch={prefetch}
                               className="text-blue-700 hover:text-yellow-900 dark:text-blue-200 dark:hover:text-yellow-100"
                               aria-label={`Read more: "${title}"`}
                             >

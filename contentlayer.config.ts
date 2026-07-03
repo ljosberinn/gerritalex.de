@@ -153,6 +153,7 @@ export const Blog = defineDocumentType(() => ({
     bibliography: { type: 'string' },
     canonicalUrl: { type: 'string' },
     includeImageInPreview: { type: 'boolean' },
+    prefetch: { type: 'boolean' },
   },
   computedFields: {
     ...computedFields,

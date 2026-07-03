@@ -51,7 +51,8 @@ async function generateThumbnail(
 }
 
 export async function generateThumbnails(): Promise<void> {
-  console.time('generateThumbnails');
+  // console.time would warn when the contentlayer config is evaluated twice in one process
+  const start = Date.now();
 
   for (const { dir, height } of sources) {
     const thumbsDir = join(dir, 'thumbs');
@@ -81,5 +82,5 @@ export async function generateThumbnails(): Promise<void> {
     warn(`${dir}: ${created} generated, ${jpgs.length - created} up to date`);
   }
 
-  console.timeEnd('generateThumbnails');
+  warn(`done in ${Date.now() - start}ms`);
 }

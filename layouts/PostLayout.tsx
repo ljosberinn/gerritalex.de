@@ -14,8 +14,8 @@ const editUrl = (path: string) => `${siteMetadata.siteRepo}/blob/master/data/${p
 interface LayoutProps {
   content: CoreContent<Blog>;
   authorDetails: CoreContent<Authors>[];
-  next?: { path: string; title: string };
-  prev?: { path: string; title: string };
+  next?: { path: string; title: string; prefetch?: boolean };
+  prev?: { path: string; title: string; prefetch?: boolean };
   children: ReactNode;
 }
 
@@ -133,7 +133,9 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                           Previous Article
                         </h2>
                         <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
-                          <CustomLink href={`/${prev.path}`}>{prev.title}</CustomLink>
+                          <CustomLink href={`/${prev.path}`} prefetch={prev.prefetch}>
+                            {prev.title}
+                          </CustomLink>
                         </div>
                       </div>
                     )}
@@ -143,7 +145,9 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                           Next Article
                         </h2>
                         <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
-                          <CustomLink href={`/${next.path}`}>{next.title}</CustomLink>
+                          <CustomLink href={`/${next.path}`} prefetch={next.prefetch}>
+                            {next.title}
+                          </CustomLink>
                         </div>
                       </div>
                     )}

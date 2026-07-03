@@ -10,8 +10,8 @@ import siteMetadata from '../data/siteMetadata';
 interface LayoutProps {
   content: CoreContent<Blog>;
   children: ReactNode;
-  next?: { path: string; title: string };
-  prev?: { path: string; title: string };
+  next?: { path: string; title: string; prefetch?: boolean };
+  prev?: { path: string; title: string; prefetch?: boolean };
 }
 
 export default function PostLayout({ content, next, prev, children }: LayoutProps) {
@@ -68,6 +68,7 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
                   <div className="pt-4 xl:pt-8">
                     <CustomLink
                       href={`/${prev.path}`}
+                      prefetch={prev.prefetch}
                       className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                       aria-label={`Previous post: ${prev.title}`}
                     >
@@ -79,6 +80,7 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
                   <div className="pt-4 xl:pt-8">
                     <CustomLink
                       href={`/${next.path}`}
+                      prefetch={next.prefetch}
                       className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                       aria-label={`Next post: ${next.title}`}
                     >

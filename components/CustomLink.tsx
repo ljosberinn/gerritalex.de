@@ -2,11 +2,15 @@
 import Link from 'next/link';
 import type { AnchorHTMLAttributes } from 'react';
 
-export function CustomLink({ href, ...rest }: AnchorHTMLAttributes<HTMLAnchorElement>) {
+export function CustomLink({
+  href,
+  prefetch,
+  ...rest
+}: AnchorHTMLAttributes<HTMLAnchorElement> & { prefetch?: boolean }) {
   const isInternalLink = href && href.startsWith('/');
 
   if (isInternalLink) {
-    return <Link className="break-words" href={href} {...rest} />;
+    return <Link className="break-words" href={href} prefetch={prefetch} {...rest} />;
   }
 
   const isAnchorLink = href && href.startsWith('#');
