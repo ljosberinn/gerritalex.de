@@ -573,8 +573,8 @@
       "episodes": 16
     },
     "favorite": true,
-    "episodesSeen": 8,
-    "state": "upcoming"
+    "episodesSeen": 11,
+    "state": "ongoing"
   },
   {
     "title": "Fargo",
@@ -1863,7 +1863,7 @@
     },
     "favorite": false,
     "episodesSeen": 20,
-    "state": "upcoming"
+    "state": "ongoing"
   },
   {
     "title": "Smoke",
