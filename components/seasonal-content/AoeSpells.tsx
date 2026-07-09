@@ -4,16 +4,12 @@ import { Spells, type SpellsProps } from './Spells';
 import { CustomLink } from '../CustomLink';
 import { ContentHeaderLink } from './ContentHeaderLink';
 import { type WowheadLinkProps } from '../WowheadLink';
-import zephyrMnS1 from '../../prebuild/zephyr-mn-s1.json';
-import zephyrMnS2 from '../../prebuild/zephyr-mn-s2.json';
-import zephyrTwwS2 from '../../prebuild/zephyr-tww-s2.json';
-import zephyrTwwS3 from '../../prebuild/zephyr-tww-s3.json';
 
 const DATA_SOURCES = {
-  'zephyr-mn-s1': zephyrMnS1,
-  'zephyr-mn-s2': zephyrMnS2,
-  'zephyr-tww-s2': zephyrTwwS2,
-  'zephyr-tww-s3': zephyrTwwS3,
+  'zephyr-mn-s1': () => import('../../prebuild/zephyr-mn-s1.json'),
+  'zephyr-mn-s2': () => import('../../prebuild/zephyr-mn-s2.json'),
+  'zephyr-tww-s2': () => import('../../prebuild/zephyr-tww-s2.json'),
+  'zephyr-tww-s3': () => import('../../prebuild/zephyr-tww-s3.json'),
 };
 
 type DataSourceKey = keyof typeof DATA_SOURCES;
@@ -24,6 +20,12 @@ type AoeSpellsProps = {
 };
 
 type Encounter = string | { name: string; icon: string; phases?: string[] };
+
+type AoeSpellsDataset = {
+  'current-rotation': string[];
+  sources: Record<string, { icon: string; name: string; encounters: Encounter[] }>;
+  spells: SpellsProps['spells'];
+};
 
 type Section = {
   groupKey: string;
@@ -92,8 +94,11 @@ function getSections(
   return sections;
 }
 
-export function AoeSpells({ dataSource, wowheadBranch }: AoeSpellsProps) {
-  const data = DATA_SOURCES[dataSource];
+export async function AoeSpells({ dataSource, wowheadBranch }: AoeSpellsProps) {
+  const { default: data } = (await DATA_SOURCES[dataSource]()) as unknown as {
+    default: AoeSpellsDataset;
+  };
+
   const currentRotation = new Set(data['current-rotation']);
   const spells = data.spells.filter((spell) => currentRotation.has(spell.source));
 
@@ -107,7 +112,6 @@ export function AoeSpells({ dataSource, wowheadBranch }: AoeSpellsProps) {
         acc[spell.source][spell.type] = [];
       }
 
-      // @ts-expect-error doesn't matter
       acc[spell.source][spell.type].push(spell);
 
       return acc;
@@ -123,7 +127,7 @@ export function AoeSpells({ dataSource, wowheadBranch }: AoeSpellsProps) {
       <ul>
         {sources.map((source) => {
           const sourceInfo = data.sources[source];
-          const sections = getSections(sourceInfo.encounters as Encounter[], grouped[source]);
+          const sections = getSections(sourceInfo.encounters, grouped[source]);
 
           return (
             <li key={source}>
@@ -148,10 +152,7 @@ export function AoeSpells({ dataSource, wowheadBranch }: AoeSpellsProps) {
         })}
       </ul>
       {sources.map((source) => {
-        const sections = getSections(
-          data.sources[source].encounters as Encounter[],
-          grouped[source]
-        );
+        const sections = getSections(data.sources[source].encounters, grouped[source]);
 
         const spellsBySection = sections.reduce<Record<string, SpellsProps['spells']>>(
           (acc, section) => {

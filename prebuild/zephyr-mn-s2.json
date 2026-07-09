@@ -21,7 +21,16 @@
       "encounters": ["The Hoardmonger", "Sentinel of Winter", "Nalorakk"],
       "icon": "inv_achievement_dungeon_proveyourworth"
     },
-    "kings-rest": { "name": "Kings' Rest", "encounters": [] },
+    "kings-rest": {
+      "name": "Kings' Rest",
+      "encounters": [
+        "The Golden Serpent",
+        "Mchimba the Embalmer",
+        "The Council of Tribes",
+        "King Dazar"
+      ],
+      "icon": "achievement_dungeon_kingsrest"
+    },
     "murder-row": {
       "name": "Murder Row",
       "encounters": [
@@ -34,10 +43,14 @@
     },
     "ruby-life-pools": {
       "name": "Ruby Life Pools",
-      "encounters": [],
+      "encounters": ["Melidrussa Chillworn", "Kokia Blazehoof", "Kyrakka and Erkhart Stormvein"],
       "icon": "achievement_dungeon_lifepools"
     },
-    "temple-of-sethraliss": { "name": "Temple of Sethraliss", "encounters": [] },
+    "temple-of-sethraliss": {
+      "name": "Temple of Sethraliss",
+      "encounters": ["Adderis and Aspix", "Merektha", "Galvazzt", "Avatar of Sethraliss"],
+      "icon": "achievement_dungeon_templeofsethraliss"
+    },
     "the-blinding-vale": {
       "name": "The Blinding Vale",
       "encounters": [
@@ -70,6 +83,119 @@
   },
   "spells": [
     {
+      "id": 264763,
+      "type": "galvazzt-trash",
+      "name": "Spark Step",
+      "icon": "spell_shaman_crashlightning",
+      "source": "temple-of-sethraliss",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 134691, "kind": "npc", "children": "Static-charged Dervish" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 265773,
+      "type": "the-golden-serpent",
+      "name": "Spit Gold",
+      "icon": "ability_creature_amber_01",
+      "source": "kings-rest"
+    },
+    {
+      "id": 265781,
+      "type": "the-golden-serpent",
+      "name": "Serpentine Gust",
+      "icon": "ability_skyreach_four_wind",
+      "source": "kings-rest"
+    },
+    {
+      "id": 265966,
+      "type": "adderis-and-aspix-trash",
+      "name": "Ground Pound",
+      "icon": "ability_smash",
+      "source": "temple-of-sethraliss",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 134991, "kind": "npc", "children": "Sandfury Stonefist" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 266512,
+      "type": "galvazzt",
+      "name": "Consume Charge",
+      "icon": "spell_nature_unrelentingstorm",
+      "source": "temple-of-sethraliss"
+    },
+    {
+      "id": 267077,
+      "type": "the-council-of-tribes",
+      "name": "Explode",
+      "icon": "spell_shaman_firenova",
+      "source": "kings-rest"
+    },
+    {
+      "id": 267105,
+      "type": "the-council-of-tribes",
+      "name": "Torrent",
+      "icon": "ability_mage_waterjet",
+      "source": "kings-rest",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 135765, "kind": "npc", "children": "Torrent Totem" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 267273,
+      "type": "the-council-of-tribes",
+      "name": "Poison Nova",
+      "icon": "ability_creature_disease_02",
+      "source": "kings-rest"
+    },
+    {
+      "id": 267618,
+      "type": "mchimba-the-embalmer",
+      "name": "Drain Fluids",
+      "icon": "inv_misc_volatilewater",
+      "source": "kings-rest"
+    },
+    {
+      "id": 267639,
+      "type": "mchimba-the-embalmer",
+      "name": "Burn Corruption",
+      "icon": "ability_siege_engineer_purification_beam",
+      "source": "kings-rest"
+    },
+    {
+      "id": 267763,
+      "type": "mchimba-the-embalmer",
+      "name": "Wretched Discharge",
+      "icon": "spell_festergutgas",
+      "source": "kings-rest",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 136264, "kind": "npc", "children": "Half-Finished Mummy" }
+          }
+        ]
+      ]
+    },
+    {
       "id": 269230,
       "type": "trash",
       "name": "Hunting Leap",
@@ -84,6 +210,425 @@
           }
         ]
       ]
+    },
+    {
+      "id": 269369,
+      "type": "king-dazar",
+      "name": "Deathly Roar",
+      "icon": "ability_hunter_beastmastery",
+      "source": "kings-rest",
+      "avoidable": true
+    },
+    {
+      "id": 269972,
+      "type": "trash",
+      "name": "Hex Volley",
+      "icon": "warlock_curse_shadow",
+      "source": "kings-rest",
+      "avoidable": true
+    },
+    {
+      "id": 270293,
+      "type": "mchimba-the-embalmer-trash",
+      "name": "Purification Strike",
+      "icon": "spell_shaman_lavasurge",
+      "source": "kings-rest",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 134739, "kind": "npc", "children": "Purification Construct" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 270485,
+      "type": "trash",
+      "name": "Violent Lunge",
+      "icon": "trade_engineering",
+      "source": "kings-rest",
+      "avoidable": true
+    },
+    {
+      "id": 270503,
+      "type": "trash",
+      "name": "Hunting Leap",
+      "icon": "ability_druid_ravage",
+      "source": "kings-rest",
+      "avoidable": true
+    },
+    {
+      "id": 270514,
+      "type": "the-council-of-tribes-trash",
+      "name": "Seismic Upheaval",
+      "icon": "ability_rogue_kidneyshot",
+      "source": "kings-rest",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 135231, "kind": "npc", "children": "Spectral Brute" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 270891,
+      "type": "mchimba-the-embalmer-trash",
+      "name": "Overload",
+      "icon": "spell_nature_callstorm",
+      "source": "kings-rest",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 134331, "kind": "npc", "children": "King Rahu'ai" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 270928,
+      "type": "mchimba-the-embalmer-trash",
+      "name": "Bladestorm",
+      "icon": "ability_warrior_bladestorm",
+      "source": "kings-rest",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 137474, "kind": "npc", "children": "King Timalji" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 271562,
+      "type": "mchimba-the-embalmer-trash",
+      "name": "Wail of Mourning",
+      "icon": "spell_shadow_deathscream",
+      "source": "kings-rest",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 137969, "kind": "npc", "children": "Interment Construct" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 272021,
+      "type": "king-dazar-trash",
+      "name": "Erupting Darkness",
+      "icon": "spell_shadow_shadowfury",
+      "source": "kings-rest",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 138489, "kind": "npc", "children": "Shadow of Zul" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 272655,
+      "type": "trash",
+      "name": "Scouring Sand",
+      "icon": "spell_sandexplosion",
+      "source": "temple-of-sethraliss",
+      "avoidable": true
+    },
+    {
+      "id": 273225,
+      "type": "trash",
+      "name": "Volley",
+      "icon": "inv_ammo_arrow_04",
+      "source": "temple-of-sethraliss",
+      "avoidable": true
+    },
+    {
+      "id": 372696,
+      "type": "trash",
+      "name": "Excavating Blast",
+      "icon": "spell_nature_earthquake",
+      "source": "ruby-life-pools",
+      "avoidable": true
+    },
+    {
+      "id": 372735,
+      "type": "melidrussa-chillworn-trash",
+      "name": "Tectonic Slam",
+      "icon": "inv_misc_volatileearth",
+      "source": "ruby-life-pools",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 187969, "kind": "npc", "children": "Flashfrost Earthshaper" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 372819,
+      "type": "kokia-blazehoof",
+      "name": "Molten Boulder",
+      "icon": "spell_mage_flameorb",
+      "source": "ruby-life-pools"
+    },
+    {
+      "id": 373087,
+      "type": "kokia-blazehoof-trash",
+      "name": "Burnout",
+      "icon": "spell_fire_selfdestruct",
+      "source": "ruby-life-pools",
+      "avoidable": true
+    },
+    {
+      "id": 373614,
+      "type": "kokia-blazehoof-trash",
+      "name": "Burnout",
+      "icon": "spell_fire_selfdestruct",
+      "source": "ruby-life-pools",
+      "avoidable": true
+    },
+    {
+      "id": 373688,
+      "type": "mchimba-the-embalmer",
+      "name": "Frost Overload",
+      "icon": "spell_fire_blueflamering",
+      "source": "ruby-life-pools"
+    },
+    {
+      "id": 373692,
+      "type": "kokia-blazehoof-trash",
+      "name": "Inferno",
+      "icon": "ability_warlock_inferno",
+      "source": "ruby-life-pools",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 190034, "kind": "npc", "children": "Blazebound Destroyer" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 373694,
+      "type": "kokia-blazehoof-trash",
+      "name": "Living Bomb",
+      "icon": "inv_summerfest_firespirit",
+      "source": "ruby-life-pools"
+    },
+    {
+      "id": 373973,
+      "type": "kokia-blazehoof-trash",
+      "name": "Blaze of Glory",
+      "icon": "inv_ember",
+      "source": "ruby-life-pools",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 190208, "kind": "npc", "children": "Primalist Flamedancer" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 373977,
+      "type": "trash",
+      "name": "Blaze of Glory",
+      "icon": "inv_ember",
+      "source": "ruby-life-pools",
+      "avoidable": true
+    },
+    {
+      "id": 381516,
+      "type": "kyrakka-and-erkhart-stormvein",
+      "name": "Interrupting Cloudburst",
+      "icon": "spell_nature_cyclone",
+      "source": "ruby-life-pools"
+    },
+    {
+      "id": 383925,
+      "type": "melidrussa-chillworn",
+      "name": "Chillstorm",
+      "icon": "spell_shadow_soulleech_2",
+      "source": "ruby-life-pools"
+    },
+    {
+      "id": 384024,
+      "type": "mchimba-the-embalmer",
+      "name": "Hailbombs",
+      "icon": "inv_10_specialreagentfoozles_primalistrune_frost",
+      "source": "ruby-life-pools"
+    },
+    {
+      "id": 384823,
+      "type": "kokia-blazehoof",
+      "name": "Inferno",
+      "icon": "ability_warlock_inferno",
+      "source": "ruby-life-pools"
+    },
+    {
+      "id": 385292,
+      "type": "melidrussa-chillworn-trash",
+      "name": "Molten Steel",
+      "icon": "inv_summerfest_firespirit",
+      "source": "ruby-life-pools",
+      "avoidable": true
+    },
+    {
+      "id": 385311,
+      "type": "kokia-blazehoof-trash",
+      "name": "Thunderstorm",
+      "icon": "spell_shaman_thunderstorm",
+      "source": "ruby-life-pools",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 195119, "kind": "npc", "children": "Primalist Shockcaster" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 385568,
+      "type": "kokia-blazehoof-trash",
+      "name": "Flaming Barrage",
+      "icon": "ability_warlock_burningembers",
+      "source": "ruby-life-pools",
+      "avoidable": true
+    },
+    {
+      "id": 391724,
+      "type": "kokia-blazehoof-trash",
+      "name": "Flame Breath",
+      "icon": "ability_mage_firestarter",
+      "source": "ruby-life-pools",
+      "avoidable": true
+    },
+    {
+      "id": 391727,
+      "type": "kokia-blazehoof-trash",
+      "name": "Storm Breath",
+      "icon": "inv_misc_stormlordsfavor",
+      "source": "ruby-life-pools",
+      "avoidable": true
+    },
+    {
+      "id": 392399,
+      "type": "kyrakka-and-erkhart-stormvein-trash",
+      "name": "Stormcloud Detonation",
+      "icon": "spell_nature_unrelentingstorm",
+      "source": "ruby-life-pools",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 197509, "kind": "npc", "children": "Primal Thundercloud" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 392406,
+      "type": "kyrakka-and-erkhart-stormvein-trash",
+      "name": "Thunderous Stomp",
+      "icon": "ability_thunderclap",
+      "source": "ruby-life-pools",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 197982, "kind": "npc", "children": "Storm Warrior" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 392488,
+      "type": "kyrakka-and-erkhart-stormvein-trash",
+      "name": "Lightning Storm",
+      "icon": "spell_shaman_thunderstorm",
+      "source": "ruby-life-pools",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 198047, "kind": "npc", "children": "Tempest Channeler" }
+          },
+          {
+            "component": "WowheadLink",
+            "props": { "id": 197535, "kind": "npc", "children": "High Channeler Ryvati" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 392570,
+      "type": "kokia-blazehoof-trash",
+      "name": "Molten Blood",
+      "icon": "spell_nzinsanity_floorislava",
+      "source": "ruby-life-pools",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 197697, "kind": "npc", "children": "Flamegullet" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 392642,
+      "type": "kyrakka-and-erkhart-stormvein-trash",
+      "name": "Rolling Thunder",
+      "icon": "spell_nature_lightningoverload",
+      "source": "ruby-life-pools",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 197698, "kind": "npc", "children": "Thunderhead" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 396044,
+      "type": "melidrussa-chillworn",
+      "name": "Hailburst",
+      "icon": "spell_frost_frostshock",
+      "source": "ruby-life-pools"
+    },
+    {
+      "id": 397077,
+      "type": "melidrussa-chillworn",
+      "name": "Chillstorm",
+      "icon": "spell_shadow_soulleech_2",
+      "source": "ruby-life-pools"
     },
     {
       "id": 473898,
@@ -291,7 +836,7 @@
           "Via ",
           {
             "component": "WowheadLink",
-            "props": { "id": 0, "kind": "npc", "children": "Blistercreep" }
+            "props": { "id": 236780, "kind": "npc", "children": "Blistercreep" }
           }
         ]
       ]
@@ -307,7 +852,23 @@
           "Via ",
           {
             "component": "WowheadLink",
-            "props": { "id": 0, "kind": "npc", "children": "Agitated Voidscythe" }
+            "props": { "id": 243802, "kind": "npc", "children": "Agitated Voidscythe" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1234021,
+      "type": "trash",
+      "name": "Earthshatter Slam",
+      "icon": "spell_shaman_earthquake",
+      "source": "den-of-nalorakk",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 0, "kind": "npc", "children": "The Hoardmonger" }
           }
         ]
       ]
@@ -325,6 +886,14 @@
       "name": "Hearty Bellow",
       "icon": "ability_warrior_battleshout",
       "source": "den-of-nalorakk"
+    },
+    {
+      "id": 1235129,
+      "type": "the-hoardmonger",
+      "name": "Bonespike Slam",
+      "icon": "ability_deathknight_bonegrinder",
+      "source": "den-of-nalorakk",
+      "avoidable": true
     },
     {
       "id": 1235635,
@@ -355,6 +924,14 @@
           }
         ]
       ]
+    },
+    {
+      "id": 1235795,
+      "type": "trash",
+      "name": "Shattering Frostspike",
+      "icon": "ability_deathknight_pillaroffrost",
+      "source": "den-of-nalorakk",
+      "avoidable": true
     },
     {
       "id": 1235829,
@@ -705,6 +1282,14 @@
           }
         ]
       ]
+    },
+    {
+      "id": 1256300,
+      "type": "trash",
+      "name": "Massive Fel Detonation",
+      "icon": "spell_fel_elementaldevastation",
+      "source": "murder-row",
+      "avoidable": true
     },
     {
       "id": 1261013,
@@ -1061,11 +1646,32 @@
       "source": "altar-of-fangs"
     },
     {
+      "id": 1288092,
+      "type": "adderis-and-aspix",
+      "name": "Thunder and Lightning",
+      "icon": "warrior_talent_icon_thunderstruck",
+      "source": "temple-of-sethraliss"
+    },
+    {
+      "id": 1288235,
+      "type": "adderis-and-aspix",
+      "name": "Thunder and Lightning",
+      "icon": "spell_nature_unrelentingstorm",
+      "source": "temple-of-sethraliss"
+    },
+    {
       "id": 1288282,
       "type": "entombed-sentinels",
       "name": "Unstable Miasma",
       "icon": "ability_deathwing_bloodcorruption_death",
       "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1288428,
+      "type": "adderis-and-aspix",
+      "name": "Overload",
+      "icon": "ability_thunderking_overcharge",
+      "source": "temple-of-sethraliss"
     },
     {
       "id": 1288538,
@@ -1087,6 +1693,14 @@
       "name": "Soulcoil Rite",
       "icon": "spell_necro_deathsknell",
       "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1288885,
+      "type": "adderis-and-aspix",
+      "name": "Tempest Winds",
+      "icon": "achievement_raidprimalist_windelemental",
+      "source": "temple-of-sethraliss",
+      "avoidable": true
     },
     {
       "id": 1289153,
@@ -1142,11 +1756,32 @@
       "source": "the-venomous-abyss"
     },
     {
+      "id": 1290531,
+      "type": "galvazzt",
+      "name": "Induction",
+      "icon": "ability_thunderking_overcharge",
+      "source": "temple-of-sethraliss"
+    },
+    {
       "id": 1290662,
       "type": "the-twin-fangs",
       "name": "Ravenous Feast",
       "icon": "ability_warrior_bloodnova",
       "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1291598,
+      "type": "galvazzt",
+      "name": "Lightning Spire",
+      "icon": "ability_thunderking_rockfalllow",
+      "source": "temple-of-sethraliss"
+    },
+    {
+      "id": 1291734,
+      "type": "merektha",
+      "name": "Thunder Spit",
+      "icon": "ability_thunderking_thunderstruck",
+      "source": "temple-of-sethraliss"
     },
     {
       "id": 1291935,
@@ -1170,6 +1805,14 @@
       "source": "the-venomous-abyss"
     },
     {
+      "id": 1292585,
+      "type": "trash",
+      "name": "Sandburst Arrow",
+      "icon": "spell_sandexplosion",
+      "source": "temple-of-sethraliss",
+      "avoidable": true
+    },
+    {
       "id": 1292764,
       "type": "the-lost-explorers",
       "name": "Evil Eyes",
@@ -1189,6 +1832,45 @@
       "name": "Latent Cultist",
       "icon": "inv_hextrollpet_blue",
       "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1293048,
+      "type": "merektha",
+      "name": "Serpentstorm",
+      "icon": "spell_nature_lightningoverload",
+      "source": "temple-of-sethraliss"
+    },
+    {
+      "id": 1293475,
+      "type": "galvazzt-trash",
+      "name": "Release Charge",
+      "icon": "spell_chargenegative",
+      "source": "temple-of-sethraliss",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 136076, "kind": "npc", "children": "Agitated Nimbus" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1293652,
+      "type": "galvazzt-trash",
+      "name": "Call Lightning",
+      "icon": "spell_nature_unrelentingstorm",
+      "source": "temple-of-sethraliss",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 136076, "kind": "npc", "children": "Agitated Nimbus" }
+          }
+        ]
+      ]
     },
     {
       "id": 1294334,
@@ -1460,6 +2142,13 @@
       ]
     },
     {
+      "id": 1296912,
+      "type": "merektha",
+      "name": "Storm Strikes",
+      "icon": "spell_shaman_thunderstorm",
+      "source": "temple-of-sethraliss"
+    },
+    {
       "id": 1296963,
       "type": "tazrah",
       "name": "Umbral Rupture",
@@ -1535,6 +2224,38 @@
       "name": "Forceful Slam",
       "icon": "inv_misc_bearpaw_red",
       "source": "den-of-nalorakk"
+    },
+    {
+      "id": 1298104,
+      "type": "mchimba-the-embalmer-trash",
+      "name": "Putrid Seekers",
+      "icon": "inv_misc_slime_01",
+      "source": "kings-rest",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 137989, "kind": "npc", "children": "Embalming Fluid" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1298317,
+      "type": "king-dazar-trash",
+      "name": "Dark Revelation",
+      "icon": "ability_priest_clarityofpower",
+      "source": "kings-rest",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 138489, "kind": "npc", "children": "Shadow of Zul" }
+          }
+        ]
+      ]
     },
     {
       "id": 1298582,
@@ -1691,7 +2412,7 @@
           "Via ",
           {
             "component": "WowheadLink",
-            "props": { "id": 0, "kind": "npc", "children": "Voidtouched Magi" }
+            "props": { "id": 252072, "kind": "npc", "children": "Voidtouched Magi" }
           }
         ]
       ]
@@ -1771,6 +2492,13 @@
       "source": "altar-of-fangs"
     },
     {
+      "id": 1301253,
+      "type": "avatar-of-sethraliss",
+      "name": "Agony of Sethraliss",
+      "icon": "spell_nature_lightningoverload",
+      "source": "temple-of-sethraliss"
+    },
+    {
       "id": 1301834,
       "type": "trash",
       "name": "Light Bolt Volley",
@@ -1826,6 +2554,116 @@
       ]
     },
     {
+      "id": 1302761,
+      "type": "avatar-of-sethraliss",
+      "name": "Unstable Corruption",
+      "icon": "spell_mage_supernova_nightborne",
+      "source": "temple-of-sethraliss",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 0, "kind": "npc", "children": "Corrupted Guardian" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1302826,
+      "type": "trash",
+      "name": "Corruption Burst",
+      "icon": "spell_fire_twilightnova",
+      "source": "temple-of-sethraliss",
+      "avoidable": true
+    },
+    {
+      "id": 1302945,
+      "type": "king-dazar",
+      "name": "Impaling Spear",
+      "icon": "inv_spear_08",
+      "source": "kings-rest",
+      "avoidable": true
+    },
+    {
+      "id": 1303115,
+      "type": "king-dazar",
+      "name": "Aerial Smash",
+      "icon": "ability_heroicleap",
+      "source": "kings-rest"
+    },
+    {
+      "id": 1303267,
+      "type": "king-dazar",
+      "name": "Gilded Destruction",
+      "icon": "inv_sword_2h_zandalarquest_b_01",
+      "source": "kings-rest"
+    },
+    {
+      "id": 1303327,
+      "type": "king-dazar",
+      "name": "Quaking Leap",
+      "icon": "ability_heroicleap",
+      "source": "kings-rest",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 136976, "kind": "npc", "children": "T'zala" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1303374,
+      "type": "king-dazar",
+      "name": "Searing Gold",
+      "icon": "ability_creature_amber_01",
+      "source": "kings-rest",
+      "avoidable": true
+    },
+    {
+      "id": 1303452,
+      "type": "avatar-of-sethraliss-trash",
+      "name": "Venom Shrapnel",
+      "icon": "inv_ability_poison_missile",
+      "source": "temple-of-sethraliss",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 135007, "kind": "npc", "children": "Orb Guardian" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1303486,
+      "type": "avatar-of-sethraliss-trash",
+      "name": "Caustic Stomp",
+      "icon": "inv_ability_poison_nova",
+      "source": "temple-of-sethraliss",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 135007, "kind": "npc", "children": "Orb Guardian" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1305201,
+      "type": "trash",
+      "name": "Excavating Blast",
+      "icon": "spell_nature_earthquake",
+      "source": "ruby-life-pools",
+      "avoidable": true
+    },
+    {
       "id": 1305618,
       "type": "the-lost-explorers",
       "name": "Fungal Burst",
@@ -1849,6 +2687,22 @@
       ]
     },
     {
+      "id": 1305854,
+      "type": "mchimba-the-embalmer-trash",
+      "name": "Bursting Malignance",
+      "icon": "inv_121_trinket_raid_ulatek_fang_purple",
+      "source": "kings-rest",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 137478, "kind": "npc", "children": "Queen Wasi" }
+          }
+        ]
+      ]
+    },
+    {
       "id": 1305901,
       "type": "vashnik-the-malignant",
       "name": "Burning Presence",
@@ -1856,11 +2710,42 @@
       "source": "the-venomous-abyss"
     },
     {
+      "id": 1305923,
+      "type": "kokia-blazehoof-trash",
+      "name": "Living Bomb",
+      "icon": "inv_summerfest_firespirit",
+      "source": "ruby-life-pools"
+    },
+    {
+      "id": 1305945,
+      "type": "the-golden-serpent-trash",
+      "name": "Shadow Whirlwind",
+      "icon": "spell_necro_deathsknell",
+      "source": "kings-rest",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 134158, "kind": "npc", "children": "Shadow-Borne Champion" }
+          }
+        ]
+      ]
+    },
+    {
       "id": 1305998,
       "type": "sszorak",
       "name": "Caustic Claws",
       "icon": "inv_121_trinket_raid_ulatek_ulatekclaw",
       "source": "the-venomous-abyss"
+    },
+    {
+      "id": 1306056,
+      "type": "trash",
+      "name": "Erupting Slam",
+      "icon": "spell_shaman_earthquake",
+      "source": "kings-rest",
+      "avoidable": true
     },
     {
       "id": 1306120,
@@ -1891,6 +2776,14 @@
           }
         ]
       ]
+    },
+    {
+      "id": 1306272,
+      "type": "kokia-blazehoof",
+      "name": "Molten Boulder",
+      "icon": "spell_mage_flameorb",
+      "source": "ruby-life-pools",
+      "avoidable": true
     },
     {
       "id": 1306345,
@@ -1983,6 +2876,22 @@
       "source": "the-venomous-abyss"
     },
     {
+      "id": 1308148,
+      "type": "merektha-trash",
+      "name": "Cytotoxin",
+      "icon": "ability_hunter_cobrastrikes",
+      "source": "temple-of-sethraliss",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 0, "kind": "npc", "children": "Venomous Ophidian" }
+          }
+        ]
+      ]
+    },
+    {
       "id": 1308835,
       "type": "the-twin-fangs",
       "name": "Caustic Rain",
@@ -2008,6 +2917,29 @@
           {
             "component": "WowheadLink",
             "props": { "id": 261573, "kind": "npc", "children": "Ascendant Serpent" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1309540,
+      "type": "kokia-blazehoof",
+      "name": "Ritual of Blazebinding",
+      "icon": "spell_fire_totemofwrath",
+      "source": "ruby-life-pools"
+    },
+    {
+      "id": 1309705,
+      "type": "melidrussa-chillworn-trash",
+      "name": "Steel Barrage",
+      "icon": "inv_axe_1h_deathwingraiddw_d_01",
+      "source": "ruby-life-pools",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 187897, "kind": "npc", "children": "Defier Draghar" }
           }
         ]
       ]
