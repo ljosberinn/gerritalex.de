@@ -5,10 +5,13 @@
       "name": "Den of Nalorakk",
       "icon": "inv_achievement_dungeon_proveyourworth"
     },
-    "kings-rest": { "name": "Kings' Rest" },
+    "kings-rest": { "name": "Kings' Rest", "icon": "achievement_dungeon_kingsrest" },
     "murder-row": { "name": "Murder Row", "icon": "inv_achievement_dungeon_murderrow" },
     "ruby-life-pools": { "name": "Ruby Life Pools", "icon": "achievement_dungeon_lifepools" },
-    "temple-of-sethraliss": { "name": "Temple of Sethraliss" },
+    "temple-of-sethraliss": {
+      "name": "Temple of Sethraliss",
+      "icon": "achievement_dungeon_templeofsethraliss"
+    },
     "the-blinding-vale": {
       "name": "The Blinding Vale",
       "icon": "inv_achievement_dungeon_lightbloom"
@@ -22,6 +25,188 @@
       "icon": "spell_deathknight_bloodplague",
       "name": "Blood Plague",
       "id": 55078
+    },
+    {
+      "source": "kings-rest",
+      "type": "bleed",
+      "icon": "ability_butcher_whirl",
+      "name": "Whirling Axe",
+      "id": 266191
+    },
+    {
+      "source": "kings-rest",
+      "type": "bleed",
+      "icon": "ability_hunter_swiftstrike",
+      "name": "Severing Axe",
+      "id": 266231
+    },
+    {
+      "source": "temple-of-sethraliss",
+      "type": "poison",
+      "icon": "ability_hunter_cobrastrikes",
+      "name": "Poison Spit",
+      "id": 267027
+    },
+    {
+      "source": "kings-rest",
+      "type": "poison",
+      "icon": "ability_creature_disease_02",
+      "name": "Poison Nova",
+      "id": 267273
+    },
+    {
+      "source": "kings-rest",
+      "type": "disease",
+      "icon": "spell_festergutgas",
+      "name": "Wretched Discharge",
+      "id": 267763
+    },
+    {
+      "source": "temple-of-sethraliss",
+      "type": "magic",
+      "icon": "achievement_halloween_rottenegg_01",
+      "name": "Embryonic Vigor",
+      "id": 269896
+    },
+    {
+      "source": "kings-rest",
+      "type": "magic",
+      "icon": "spell_shadow_summonvoidwalker",
+      "name": "Bound by Shadow",
+      "id": 269935
+    },
+    {
+      "source": "kings-rest",
+      "type": "curse",
+      "icon": "warlock_curse_shadow",
+      "name": "Hex Volley",
+      "id": 269972
+    },
+    {
+      "source": "kings-rest",
+      "type": "enrage",
+      "icon": "spell_totem_wardofdraining",
+      "name": "Ancestral Fury",
+      "id": 269976
+    },
+    {
+      "source": "kings-rest",
+      "type": "curse",
+      "icon": "inv_zandalaribabyraptorred",
+      "name": "Hex",
+      "id": 270492
+    },
+    {
+      "source": "kings-rest",
+      "type": "magic",
+      "icon": "spell_frost_frostshock",
+      "name": "Frost Shock",
+      "id": 270499
+    },
+    {
+      "source": "kings-rest",
+      "type": "magic",
+      "icon": "spell_nature_regenerate",
+      "name": "Unholy Mending",
+      "id": 270901
+    },
+    {
+      "source": "kings-rest",
+      "type": "magic",
+      "icon": "ability_warlock_soullink",
+      "name": "Bind Soul",
+      "id": 270920
+    },
+    {
+      "source": "kings-rest",
+      "type": "poison",
+      "icon": "inv_drink_31_embalmingfluid",
+      "name": "Lingering Fluid",
+      "id": 271564
+    },
+    {
+      "source": "kings-rest",
+      "type": "magic",
+      "icon": "spell_shadow_psychicscream",
+      "name": "Pit of Despair",
+      "id": 276031
+    },
+    {
+      "source": "ruby-life-pools",
+      "type": "magic",
+      "icon": "spell_frost_wisp",
+      "name": "Primal Chill",
+      "id": 372682
+    },
+    {
+      "source": "ruby-life-pools",
+      "type": "bleed",
+      "icon": "spell_deathknight_butcher2",
+      "name": "Blazing Rush",
+      "id": 372796
+    },
+    {
+      "source": "ruby-life-pools",
+      "type": "magic",
+      "icon": "spell_frost_wisp",
+      "name": "Primal Chill",
+      "id": 373589
+    },
+    {
+      "source": "ruby-life-pools",
+      "type": "magic",
+      "icon": "inv_ember",
+      "name": "Blaze of Glory",
+      "id": 373972
+    },
+    {
+      "source": "ruby-life-pools",
+      "type": "magic",
+      "icon": "item_earthenmight",
+      "name": "Harden",
+      "id": 378420
+    },
+    {
+      "source": "ruby-life-pools",
+      "type": "magic",
+      "icon": "ability_shaman_stormstrike",
+      "name": "Stormslam",
+      "id": 381515
+    },
+    {
+      "source": "ruby-life-pools",
+      "type": "magic",
+      "icon": "spell_nature_earthelemental_totem",
+      "name": "Heavy Impacts",
+      "id": 381535
+    },
+    {
+      "source": "murder-row",
+      "type": "bleed",
+      "icon": "ability_gouge",
+      "name": "Rend",
+      "id": 388539
+    },
+    {
+      "source": "ruby-life-pools",
+      "type": "magic",
+      "icon": "spell_mage_temporalshield",
+      "name": "Stormcloud Barrier",
+      "id": 391031
+    },
+    {
+      "source": "ruby-life-pools",
+      "type": "magic",
+      "icon": "spell_nature_lightningoverload",
+      "name": "Rolling Thunder",
+      "id": 392641
+    },
+    {
+      "source": "ruby-life-pools",
+      "type": "magic",
+      "icon": "spell_nature_stormreach",
+      "name": "Shock Blast",
+      "id": 392924
     },
     {
       "source": "murder-row",
@@ -248,6 +433,13 @@
       "id": 1250937
     },
     {
+      "source": "voidscar-arena",
+      "type": "enrage",
+      "icon": "spell_nature_bloodlust",
+      "name": "Bloodsurge",
+      "id": 1254826
+    },
+    {
       "source": "the-blinding-vale",
       "type": "magic",
       "icon": "inv_-misc_herb_marrowroot_leaf",
@@ -276,11 +468,25 @@
       "id": 1289258
     },
     {
+      "source": "temple-of-sethraliss",
+      "type": "bleed",
+      "icon": "inv_artifact_bloodoftheassassinated",
+      "name": "Serrated Charge",
+      "id": 1291399
+    },
+    {
       "source": "altar-of-fangs",
       "type": "magic",
       "icon": "ability_poisonsting",
       "name": "Paralyzing Shots",
       "id": 1294569
+    },
+    {
+      "source": "kings-rest",
+      "type": "magic",
+      "icon": "artifactability_frostmage_ebonbolt",
+      "name": "Shadowfrost Bolt",
+      "id": 1294815
     },
     {
       "source": "altar-of-fangs",
@@ -297,11 +503,32 @@
       "id": 1295427
     },
     {
+      "source": "temple-of-sethraliss",
+      "type": "poison",
+      "icon": "inv_knife_1h_snakeman_c_01",
+      "name": "Slither Strike",
+      "id": 1295635
+    },
+    {
+      "source": "temple-of-sethraliss",
+      "type": "magic",
+      "icon": "spell_nature_stormreach",
+      "name": "Imbued Conduction",
+      "id": 1296052
+    },
+    {
       "source": "altar-of-fangs",
       "type": "disease",
       "icon": "inv_ability_poison_wave",
       "name": "Regurgitate",
       "id": 1296069
+    },
+    {
+      "source": "kings-rest",
+      "type": "magic",
+      "icon": "inv_shield_1h_warfrontsforsaken_d_01",
+      "name": "Captain's Bulwark",
+      "id": 1296671
     },
     {
       "source": "den-of-nalorakk",
@@ -311,6 +538,34 @@
       "id": 1297696
     },
     {
+      "source": "kings-rest",
+      "type": "enrage",
+      "icon": "racial_troll_berserk",
+      "name": "Bestial Berserk",
+      "id": 1297763
+    },
+    {
+      "source": "kings-rest",
+      "type": "bleed",
+      "icon": "ability_skeer_bloodletting",
+      "name": "Sudden Rupture",
+      "id": 1297781
+    },
+    {
+      "source": "kings-rest",
+      "type": "bleed",
+      "icon": "inv_artifact_bloodoftheassassinated",
+      "name": "Mortal Bleed",
+      "id": 1297918
+    },
+    {
+      "source": "kings-rest",
+      "type": "poison",
+      "icon": "inv_misc_slime_01",
+      "name": "Putrid Seekers",
+      "id": 1298104
+    },
+    {
       "source": "voidscar-arena",
       "type": "bleed",
       "icon": "ability_heroicleap",
@@ -318,11 +573,46 @@
       "id": 1299133
     },
     {
+      "source": "kings-rest",
+      "type": "bleed",
+      "icon": "spell_druid_bloodythrash",
+      "name": "Bloodthirsty Axe",
+      "id": 1301851
+    },
+    {
       "source": "altar-of-fangs",
       "type": "disease",
       "icon": "ability_creature_disease_03",
       "name": "Festering Gash",
       "id": 1302867
+    },
+    {
+      "source": "kings-rest",
+      "type": "bleed",
+      "icon": "inv_spear_08",
+      "name": "Impaling Spear",
+      "id": 1302945
+    },
+    {
+      "source": "temple-of-sethraliss",
+      "type": "poison",
+      "icon": "inv_ability_poison_nova",
+      "name": "Caustic Stomp",
+      "id": 1303486
+    },
+    {
+      "source": "kings-rest",
+      "type": "bleed",
+      "icon": "inv_misc_raptorfoot_white",
+      "name": "Savage Maul",
+      "id": 1303490
+    },
+    {
+      "source": "ruby-life-pools",
+      "type": "magic",
+      "icon": "ability_mage_wintersgrasp",
+      "name": "Cold Claws",
+      "id": 1305234
     },
     {
       "source": "altar-of-fangs",
@@ -339,11 +629,39 @@
       "id": 1306308
     },
     {
+      "source": "kings-rest",
+      "type": "poison",
+      "icon": "inv_jewelcrafting_jadeserpent",
+      "name": "Serpent Strike",
+      "id": 1306763
+    },
+    {
       "source": "altar-of-fangs",
       "type": "poison",
       "icon": "inv_ability_poison_missile",
       "name": "Envenom",
       "id": 1307571
+    },
+    {
+      "source": "temple-of-sethraliss",
+      "type": "poison",
+      "icon": "ability_cheapshot",
+      "name": "Poisoned Cheap Shot",
+      "id": 1308100
+    },
+    {
+      "source": "temple-of-sethraliss",
+      "type": "poison",
+      "icon": "ability_hunter_cobrastrikes",
+      "name": "Cytotoxin",
+      "id": 1308148
+    },
+    {
+      "source": "temple-of-sethraliss",
+      "type": "poison",
+      "icon": "ability_rogue_disembowel",
+      "name": "Venomous Slash",
+      "id": 1308546
     }
   ]
 }

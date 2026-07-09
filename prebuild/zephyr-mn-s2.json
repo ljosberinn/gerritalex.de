@@ -466,43 +466,17 @@
     },
     {
       "id": 1240152,
-      "type": "trash",
+      "type": "lightwarden-ruia",
       "name": "Lightfall",
       "icon": "inv_ability_holyfire_missile",
-      "source": "the-blinding-vale",
-      "notes": [
-        [
-          "Via ",
-          {
-            "component": "WowheadLink",
-            "props": { "id": 246371, "kind": "npc", "children": "Spirit Moonkin" }
-          },
-          {
-            "component": "WowheadLink",
-            "props": { "id": 245912, "kind": "npc", "children": "Lightwarden Ruia" }
-          }
-        ]
-      ]
+      "source": "the-blinding-vale"
     },
     {
       "id": 1240257,
-      "type": "trash",
+      "type": "lightwarden-ruia",
       "name": "Pulverizing Strikes",
       "icon": "ability_druid_swipe",
-      "source": "the-blinding-vale",
-      "notes": [
-        [
-          "Via ",
-          {
-            "component": "WowheadLink",
-            "props": { "id": 246367, "kind": "npc", "children": "Spirit Bear" }
-          },
-          {
-            "component": "WowheadLink",
-            "props": { "id": 245912, "kind": "npc", "children": "Lightwarden Ruia" }
-          }
-        ]
-      ]
+      "source": "the-blinding-vale"
     },
     {
       "id": 1240280,
@@ -522,23 +496,10 @@
     },
     {
       "id": 1241058,
-      "type": "trash",
+      "type": "lightwarden-ruia",
       "name": "Grievous Thrash",
       "icon": "spell_druid_bloodythrash",
-      "source": "the-blinding-vale",
-      "notes": [
-        [
-          "Via ",
-          {
-            "component": "WowheadLink",
-            "props": { "id": 246367, "kind": "npc", "children": "Spirit Bear" }
-          },
-          {
-            "component": "WowheadLink",
-            "props": { "id": 245912, "kind": "npc", "children": "Lightwarden Ruia" }
-          }
-        ]
-      ]
+      "source": "the-blinding-vale"
     },
     {
       "id": 1242200,
@@ -763,7 +724,7 @@
     },
     {
       "id": 1262253,
-      "type": "trash",
+      "type": "nalorakk",
       "name": "Demoralizing Scream",
       "icon": "spell_shadow_painandsuffering",
       "source": "den-of-nalorakk",
@@ -2039,7 +2000,7 @@
       "id": 1309398,
       "type": "trash",
       "name": "Infest",
-      "icon": "inv_axe_02",
+      "icon": "ability_hunter_snaketrap",
       "source": "altar-of-fangs",
       "notes": [
         [
