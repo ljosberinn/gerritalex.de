@@ -918,7 +918,8 @@
       "type": "chief-corewright-kasreth",
       "name": "Corespark Detonation",
       "icon": "ability_monk_forcesphere_pink",
-      "source": "nexus-point-xenas"
+      "source": "nexus-point-xenas",
+      "avoidable": true
     },
     {
       "id": 1257613,
