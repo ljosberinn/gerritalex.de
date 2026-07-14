@@ -1,5 +1,23 @@
 [
   {
+    "title": "12 Angry Men",
+    "id": 389,
+    "seen": true,
+    "favorite": true,
+    "metadata": {
+      "genres": [
+        "Drama"
+      ],
+      "tagline": "It explodes like 12 sticks of dynamite!",
+      "release": {
+        "day": 10,
+        "month": 4,
+        "year": 1957
+      },
+      "runtime": 97
+    }
+  },
+  {
     "title": "2012",
     "id": 14161,
     "seen": true,
@@ -1962,7 +1980,7 @@
         "month": 12,
         "year": 2026
       },
-      "runtime": 0
+      "runtime": 140
     },
     "favorite": false
   },
@@ -2209,15 +2227,16 @@
     "seen": false,
     "metadata": {
       "genres": [
-        "Horror"
+        "Horror",
+        "Thriller"
       ],
       "tagline": "Every family has its demons.",
       "release": {
-        "day": 8,
+        "day": 7,
         "month": 7,
         "year": 2026
       },
-      "runtime": 0
+      "runtime": 110
     }
   },
   {
@@ -5637,11 +5656,11 @@
       "genres": [
         "Horror",
         "Science Fiction",
-        "Action"
+        "Thriller"
       ],
       "tagline": "A new era of evil.",
       "release": {
-        "day": 9,
+        "day": 16,
         "month": 9,
         "year": 2026
       },
@@ -5688,6 +5707,26 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "title": "Return of the Jedi",
+    "id": 1892,
+    "seen": true,
+    "favorite": false,
+    "metadata": {
+      "genres": [
+        "Adventure",
+        "Action",
+        "Science Fiction"
+      ],
+      "tagline": "Return to a galaxy far far away.",
+      "release": {
+        "day": 25,
+        "month": 5,
+        "year": 1983
+      },
+      "runtime": 132
+    }
   },
   {
     "title": "Rise of the Planet of the Apes",
@@ -6287,6 +6326,86 @@
     "favorite": false
   },
   {
+    "title": "Star Wars",
+    "id": 11,
+    "seen": true,
+    "favorite": false,
+    "metadata": {
+      "genres": [
+        "Adventure",
+        "Action",
+        "Science Fiction"
+      ],
+      "tagline": "A long time ago in a galaxy far, far away...",
+      "release": {
+        "day": 25,
+        "month": 5,
+        "year": 1977
+      },
+      "runtime": 121
+    }
+  },
+  {
+    "title": "Star Wars: Episode I - The Phantom Menace",
+    "id": 1893,
+    "seen": true,
+    "favorite": false,
+    "metadata": {
+      "genres": [
+        "Adventure",
+        "Action",
+        "Science Fiction"
+      ],
+      "tagline": "Every saga has a beginning.",
+      "release": {
+        "day": 19,
+        "month": 5,
+        "year": 1999
+      },
+      "runtime": 136
+    }
+  },
+  {
+    "title": "Star Wars: Episode II - Attack of the Clones",
+    "id": 1894,
+    "seen": true,
+    "favorite": false,
+    "metadata": {
+      "genres": [
+        "Adventure",
+        "Action",
+        "Science Fiction"
+      ],
+      "tagline": "A Jedi shall not know anger. Nor hatred. Nor love.",
+      "release": {
+        "day": 15,
+        "month": 5,
+        "year": 2002
+      },
+      "runtime": 142
+    }
+  },
+  {
+    "title": "Star Wars: Episode III - Revenge of the Sith",
+    "id": 1895,
+    "seen": true,
+    "favorite": false,
+    "metadata": {
+      "genres": [
+        "Adventure",
+        "Action",
+        "Science Fiction"
+      ],
+      "tagline": "Every story has a hero. Every hero has a destiny. Every saga has an end.",
+      "release": {
+        "day": 17,
+        "month": 5,
+        "year": 2005
+      },
+      "runtime": 140
+    }
+  },
+  {
     "title": "Stargate",
     "id": 2164,
     "metadata": {
@@ -6684,6 +6803,26 @@
     "seen": true
   },
   {
+    "title": "The Batman: Part II",
+    "id": 806704,
+    "seen": false,
+    "metadata": {
+      "genres": [
+        "Mystery",
+        "Drama",
+        "Crime"
+      ],
+      "tagline": "",
+      "release": {
+        "day": 30,
+        "month": 9,
+        "year": 2027
+      },
+      "runtime": 0
+    },
+    "favorite": false
+  },
+  {
     "title": "The Big Short",
     "id": 318846,
     "favorite": true,
@@ -7056,6 +7195,26 @@
     "seen": true
   },
   {
+    "title": "The Empire Strikes Back",
+    "id": 1891,
+    "seen": true,
+    "favorite": false,
+    "metadata": {
+      "genres": [
+        "Adventure",
+        "Action",
+        "Science Fiction"
+      ],
+      "tagline": "The Star Wars saga continues.",
+      "release": {
+        "day": 20,
+        "month": 5,
+        "year": 1980
+      },
+      "runtime": 124
+    }
+  },
+  {
     "title": "The Empty Man",
     "seen": true,
     "id": 516632,
@@ -7114,6 +7273,24 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "title": "The Exorcist: Martyrs",
+    "id": 1297467,
+    "seen": false,
+    "favorite": false,
+    "metadata": {
+      "genres": [
+        "Horror"
+      ],
+      "tagline": "",
+      "release": {
+        "day": 11,
+        "month": 3,
+        "year": 2027
+      },
+      "runtime": 0
+    }
   },
   {
     "title": "The Expendables 3",
@@ -7739,7 +7916,7 @@
   {
     "title": "The Matrix Resurrections",
     "id": 624860,
-    "seen": false,
+    "seen": true,
     "metadata": {
       "genres": [
         "Science Fiction",
@@ -8899,44 +9076,6 @@
     },
     "favorite": false,
     "seen": true
-  },
-  {
-    "title": "Untitled The Batman Sequel",
-    "id": 806704,
-    "seen": false,
-    "metadata": {
-      "genres": [
-        "Mystery",
-        "Drama",
-        "Crime"
-      ],
-      "tagline": "",
-      "release": {
-        "day": 30,
-        "month": 9,
-        "year": 2027
-      },
-      "runtime": 0
-    },
-    "favorite": false
-  },
-  {
-    "title": "Untitled The Exorcist Film",
-    "id": 1297467,
-    "seen": false,
-    "favorite": false,
-    "metadata": {
-      "genres": [
-        "Horror"
-      ],
-      "tagline": "",
-      "release": {
-        "day": 11,
-        "month": 3,
-        "year": 2027
-      },
-      "runtime": 0
-    }
   },
   {
     "title": "Upside Down",
