@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
 import { WowheadIcon } from '../WowheadIcon';
 import { Spells, type SpellsProps } from './Spells';
+import { filterStaleSpells } from './filterStaleSpells';
 import { CustomLink } from '../CustomLink';
 import { ContentHeaderLink } from './ContentHeaderLink';
 import { type WowheadLinkProps } from '../WowheadLink';
@@ -154,11 +155,16 @@ export async function AoeSpells({ dataSource, wowheadBranch }: AoeSpellsProps) {
       {sources.map((source) => {
         const sections = getSections(data.sources[source].encounters, grouped[source]);
 
+        // staleness is judged per dungeon so a rarely crawled one does not vanish entirely
+        const stillSeen = new Set(
+          filterStaleSpells(sections.flatMap((section) => grouped[source][section.groupKey]))
+        );
+
         const spellsBySection = sections.reduce<Record<string, SpellsProps['spells']>>(
           (acc, section) => {
-            acc[section.groupKey] = grouped[source][section.groupKey].filter(
-              (spell) => !spell.avoidable
-            );
+            acc[section.groupKey] = grouped[source][section.groupKey].filter((spell) => {
+              return !spell.avoidable && stillSeen.has(spell);
+            });
 
             return acc;
           },

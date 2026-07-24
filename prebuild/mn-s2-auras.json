@@ -20,473 +20,532 @@
   },
   "spells": [
     {
-      "source": "altar-of-fangs",
-      "type": "disease",
-      "icon": "spell_deathknight_bloodplague",
-      "name": "Blood Plague",
-      "id": 55078
-    },
-    {
       "source": "kings-rest",
       "type": "bleed",
       "icon": "ability_butcher_whirl",
       "name": "Whirling Axe",
-      "id": 266191
+      "id": 266191,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "kings-rest",
       "type": "bleed",
       "icon": "ability_hunter_swiftstrike",
       "name": "Severing Axe",
-      "id": 266231
+      "id": 266231,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "temple-of-sethraliss",
       "type": "poison",
       "icon": "ability_hunter_cobrastrikes",
       "name": "Poison Spit",
-      "id": 267027
+      "id": 267027,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "kings-rest",
       "type": "poison",
       "icon": "ability_creature_disease_02",
       "name": "Poison Nova",
-      "id": 267273
+      "id": 267273,
+      "lastSeen": "2026-07-23"
     },
     {
       "source": "kings-rest",
       "type": "disease",
       "icon": "spell_festergutgas",
       "name": "Wretched Discharge",
-      "id": 267763
-    },
-    {
-      "source": "temple-of-sethraliss",
-      "type": "magic",
-      "icon": "achievement_halloween_rottenegg_01",
-      "name": "Embryonic Vigor",
-      "id": 269896
+      "id": 267763,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "kings-rest",
       "type": "magic",
       "icon": "spell_shadow_summonvoidwalker",
       "name": "Bound by Shadow",
-      "id": 269935
+      "id": 269935,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "kings-rest",
       "type": "curse",
       "icon": "warlock_curse_shadow",
       "name": "Hex Volley",
-      "id": 269972
+      "id": 269972,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "kings-rest",
       "type": "enrage",
       "icon": "spell_totem_wardofdraining",
       "name": "Ancestral Fury",
-      "id": 269976
+      "id": 269976,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "kings-rest",
       "type": "curse",
       "icon": "inv_zandalaribabyraptorred",
       "name": "Hex",
-      "id": 270492
+      "id": 270492,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "kings-rest",
       "type": "magic",
       "icon": "spell_frost_frostshock",
       "name": "Frost Shock",
-      "id": 270499
+      "id": 270499,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "kings-rest",
-      "type": "magic",
+      "type": "purge",
       "icon": "spell_nature_regenerate",
       "name": "Unholy Mending",
-      "id": 270901
+      "id": 270901,
+      "lastSeen": "2026-07-17"
     },
     {
       "source": "kings-rest",
       "type": "magic",
       "icon": "ability_warlock_soullink",
       "name": "Bind Soul",
-      "id": 270920
+      "id": 270920,
+      "lastSeen": "2026-07-23"
     },
     {
       "source": "kings-rest",
       "type": "poison",
       "icon": "inv_drink_31_embalmingfluid",
       "name": "Lingering Fluid",
-      "id": 271564
+      "id": 271564,
+      "lastSeen": "2026-07-14"
     },
     {
       "source": "kings-rest",
       "type": "magic",
       "icon": "spell_shadow_psychicscream",
       "name": "Pit of Despair",
-      "id": 276031
+      "id": 276031,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "ruby-life-pools",
       "type": "magic",
       "icon": "spell_frost_wisp",
       "name": "Primal Chill",
-      "id": 372682
+      "id": 372682,
+      "lastSeen": "2026-06-24"
     },
     {
       "source": "ruby-life-pools",
       "type": "bleed",
       "icon": "spell_deathknight_butcher2",
       "name": "Blazing Rush",
-      "id": 372796
+      "id": 372796,
+      "lastSeen": "2026-07-23"
     },
     {
       "source": "ruby-life-pools",
       "type": "magic",
       "icon": "spell_frost_wisp",
       "name": "Primal Chill",
-      "id": 373589
+      "id": 373589,
+      "lastSeen": "2026-06-24"
     },
     {
       "source": "ruby-life-pools",
-      "type": "magic",
+      "type": "purge",
       "icon": "inv_ember",
       "name": "Blaze of Glory",
-      "id": 373972
+      "id": 373972,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "ruby-life-pools",
-      "type": "magic",
+      "type": "purge",
       "icon": "item_earthenmight",
       "name": "Harden",
-      "id": 378420
+      "id": 378420,
+      "lastSeen": "2026-07-23"
     },
     {
       "source": "ruby-life-pools",
       "type": "magic",
       "icon": "ability_shaman_stormstrike",
       "name": "Stormslam",
-      "id": 381515
+      "id": 381515,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "ruby-life-pools",
-      "type": "magic",
+      "type": "purge",
       "icon": "spell_nature_earthelemental_totem",
       "name": "Heavy Impacts",
-      "id": 381535
+      "id": 381535,
+      "lastSeen": "2026-07-23"
     },
     {
       "source": "murder-row",
       "type": "bleed",
       "icon": "ability_gouge",
       "name": "Rend",
-      "id": 388539
+      "id": 388539,
+      "lastSeen": "2026-07-07"
     },
     {
       "source": "ruby-life-pools",
-      "type": "magic",
+      "type": "purge",
       "icon": "spell_mage_temporalshield",
       "name": "Stormcloud Barrier",
-      "id": 391031
+      "id": 391031,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "ruby-life-pools",
       "type": "magic",
       "icon": "spell_nature_lightningoverload",
       "name": "Rolling Thunder",
-      "id": 392641
+      "id": 392641,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "ruby-life-pools",
       "type": "magic",
       "icon": "spell_nature_stormreach",
       "name": "Shock Blast",
-      "id": 392924
+      "id": 392924,
+      "lastSeen": "2026-06-24"
     },
     {
       "source": "murder-row",
       "type": "poison",
       "icon": "ability_boss_kilrogg_heartseeker",
       "name": "Heartstop Poison",
-      "id": 474515
+      "id": 474515,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "murder-row",
       "type": "bleed",
       "icon": "ability_deathwing_bloodcorruption_death",
       "name": "Murder in a Row",
-      "id": 474740
+      "id": 474740,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "murder-row",
       "type": "magic",
       "icon": "spell_shadow_seduction",
       "name": "Seduction",
-      "id": 1201554
+      "id": 1201554,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "murder-row",
       "type": "enrage",
       "icon": "ability_creature_felfrenzy",
       "name": "Fel Rage",
-      "id": 1214922
+      "id": 1214922,
+      "lastSeen": "2026-07-24"
     },
     {
-      "source": "murder-row",
+      "source": "the-blinding-vale",
       "type": "bleed",
       "icon": "ability_warrior_deepcuts",
       "name": "Cutpurse",
-      "id": 1216300
+      "id": 1216300,
+      "lastSeen": "2026-07-24"
     },
     {
-      "source": "murder-row",
+      "source": "the-blinding-vale",
       "type": "poison",
       "icon": "ability_boss_kilrogg_heartseeker",
       "name": "Heartstop Poison",
-      "id": 1216590
+      "id": 1216590,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "murder-row",
       "type": "enrage",
       "icon": "warrior_disruptingshout",
       "name": "Back to Work!",
-      "id": 1216970
+      "id": 1216970,
+      "lastSeen": "2026-07-18"
     },
     {
-      "source": "murder-row",
+      "source": "the-blinding-vale",
       "type": "magic",
       "icon": "inv_fabric_felcloth_ebon",
       "name": "Corroding Spittle",
-      "id": 1217633
+      "id": 1217633,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "murder-row",
       "type": "curse",
       "icon": "spell_shadow_auraofdarkness",
       "name": "Curse of Doom",
-      "id": 1217973
+      "id": 1217973,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "voidscar-arena",
       "type": "poison",
       "icon": "spell_nature_corrosivebreath",
       "name": "Poison Splash",
-      "id": 1226031
+      "id": 1226031,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "murder-row",
       "type": "magic",
       "icon": "inv_fabric_felcloth_ebon",
       "name": "Corroding Spittle",
-      "id": 1228198
+      "id": 1228198,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "murder-row",
-      "type": "magic",
+      "type": "purge",
       "icon": "spell_fire_felimmolation",
       "name": "Fel Crazed",
-      "id": 1229433
+      "id": 1229433,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "den-of-nalorakk",
       "type": "poison",
       "icon": "ability_creature_poison_06",
       "name": "Toxic Spores",
-      "id": 1234846
+      "id": 1234846,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "den-of-nalorakk",
       "type": "magic",
       "icon": "inv12_apextalent_mage_handoffrost",
       "name": "Glacial Torment",
-      "id": 1235549
+      "id": 1235549,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "the-blinding-vale",
       "type": "bleed",
       "icon": "spell_nature_thorns",
       "name": "Thornblade",
-      "id": 1235865
+      "id": 1235865,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "the-blinding-vale",
       "type": "bleed",
       "icon": "inv_misc_monsterfang_02",
       "name": "Incise",
-      "id": 1237267
+      "id": 1237267,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "den-of-nalorakk",
       "type": "enrage",
       "icon": "spell_misc_emotionangry",
       "name": "Mother's Wrath",
-      "id": 1238053
+      "id": 1238053,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "the-blinding-vale",
       "type": "bleed",
       "icon": "spell_nature_thorns",
       "name": "Thornblade",
-      "id": 1238076
+      "id": 1238076,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "the-blinding-vale",
       "type": "magic",
       "icon": "inv_misc_herb_04",
       "name": "Spore Spines",
-      "id": 1238084
+      "id": 1238084,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "altar-of-fangs",
       "type": "curse",
       "icon": "spell_necro_necroticsmash",
       "name": "Whirling Spirit",
-      "id": 1238255
+      "id": 1238255,
+      "lastSeen": "2026-06-29"
     },
     {
       "source": "den-of-nalorakk",
       "type": "bleed",
       "icon": "inv_10_specialreagentfoozles_tuskclaw_fire",
       "name": "Razor Dive",
-      "id": 1238439
+      "id": 1238439,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "the-blinding-vale",
-      "type": "magic",
+      "type": "purge",
       "icon": "inv_beetleprimal_purple",
       "name": "Spiny Shield",
-      "id": 1238581
+      "id": 1238581,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "den-of-nalorakk",
       "type": "curse",
       "icon": "ability_warlock_improvedsoulleech",
       "name": "Insatiable Hunger",
-      "id": 1238801
+      "id": 1238801,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "den-of-nalorakk",
       "type": "magic",
       "icon": "spell_mage_frostbomb",
       "name": "Cryo Surge",
-      "id": 1239860
+      "id": 1239860,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "the-blinding-vale",
       "type": "bleed",
       "icon": "spell_druid_bloodythrash",
       "name": "Grievous Thrash",
-      "id": 1241058
+      "id": 1241058,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "the-blinding-vale",
       "type": "bleed",
       "icon": "inv_ability_druidoftheclawdruid_ravage",
       "name": "Grievous Gash",
-      "id": 1242135
+      "id": 1242135,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "den-of-nalorakk",
       "type": "enrage",
       "icon": "ability_druid_ferociousbite",
       "name": "Bestial Wrath",
-      "id": 1246865
+      "id": 1246865,
+      "lastSeen": "2026-07-23"
     },
     {
       "source": "the-blinding-vale",
       "type": "bleed",
       "icon": "inv_misc_herb_goldthorn_bramble",
       "name": "Thornspike",
-      "id": 1247746
+      "id": 1247746,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "voidscar-arena",
       "type": "magic",
       "icon": "spell_fire_firebolt",
       "name": "Fire Spit",
-      "id": 1249238
+      "id": 1249238,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "voidscar-arena",
       "type": "enrage",
       "icon": "ability_hunter_pet_raptor",
       "name": "Feral Rage",
-      "id": 1249661
+      "id": 1249661,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "voidscar-arena",
-      "type": "magic",
+      "type": "purge",
       "icon": "spell_fire_firebolt02",
       "name": "Melt Armor",
-      "id": 1250043
+      "id": 1250043,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "the-blinding-vale",
       "type": "poison",
       "icon": "spell_nature_corrosivebreath",
       "name": "Toxic Spew",
-      "id": 1250937
+      "id": 1250937,
+      "lastSeen": "2026-07-24"
+    },
+    {
+      "source": "voidscar-arena",
+      "type": "curse",
+      "icon": "warlock_curse_shadow_aura",
+      "name": "Curse of Dread",
+      "id": 1252095,
+      "lastSeen": "2026-07-16"
     },
     {
       "source": "voidscar-arena",
       "type": "enrage",
       "icon": "spell_nature_bloodlust",
       "name": "Bloodsurge",
-      "id": 1254826
+      "id": 1254826,
+      "lastSeen": "2026-07-22"
     },
     {
       "source": "the-blinding-vale",
       "type": "magic",
       "icon": "inv_-misc_herb_marrowroot_leaf",
       "name": "Bloodthorn Roots",
-      "id": 1259365
+      "id": 1259365,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "voidscar-arena",
       "type": "poison",
       "icon": "ability_creature_poison_02",
       "name": "Lingering Poison",
-      "id": 1263971
+      "id": 1263971,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "voidscar-arena",
       "type": "bleed",
       "icon": "ability_druid_tigersroar",
       "name": "Savage Leap",
-      "id": 1267894
+      "id": 1267894,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "voidscar-arena",
       "type": "poison",
       "icon": "inv_ability_poison_orb",
       "name": "Corrosive Essence",
-      "id": 1289258
+      "id": 1289258,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "temple-of-sethraliss",
       "type": "bleed",
       "icon": "inv_artifact_bloodoftheassassinated",
       "name": "Serrated Charge",
-      "id": 1291399
+      "id": 1291399,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "altar-of-fangs",
       "type": "magic",
       "icon": "ability_poisonsting",
       "name": "Paralyzing Shots",
-      "id": 1294569
+      "id": 1294569,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "kings-rest",
       "type": "magic",
       "icon": "artifactability_frostmage_ebonbolt",
       "name": "Shadowfrost Bolt",
-      "id": 1294815
+      "id": 1294815,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "altar-of-fangs",
@@ -496,102 +555,116 @@
       "id": 1294845
     },
     {
+      "source": "the-blinding-vale",
+      "type": "bleed",
+      "icon": "ability_upgrademoonglaive",
+      "name": "Glaive Toss",
+      "id": 1295035,
+      "lastSeen": "2026-07-24"
+    },
+    {
       "source": "murder-row",
       "type": "bleed",
       "icon": "inv_archaeology_70_demon_flayedskinchronicle",
       "name": "Flay",
-      "id": 1295427
-    },
-    {
-      "source": "temple-of-sethraliss",
-      "type": "poison",
-      "icon": "inv_knife_1h_snakeman_c_01",
-      "name": "Slither Strike",
-      "id": 1295635
+      "id": 1295427,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "temple-of-sethraliss",
       "type": "magic",
       "icon": "spell_nature_stormreach",
       "name": "Imbued Conduction",
-      "id": 1296052
+      "id": 1296052,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "altar-of-fangs",
       "type": "disease",
       "icon": "inv_ability_poison_wave",
       "name": "Regurgitate",
-      "id": 1296069
+      "id": 1296069,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "kings-rest",
       "type": "magic",
       "icon": "inv_shield_1h_warfrontsforsaken_d_01",
       "name": "Captain's Bulwark",
-      "id": 1296671
+      "id": 1296671,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "den-of-nalorakk",
-      "type": "magic",
+      "type": "purge",
       "icon": "spell_frost_windwalkon",
       "name": "Healing Breeze",
-      "id": 1297696
+      "id": 1297696,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "kings-rest",
       "type": "enrage",
       "icon": "racial_troll_berserk",
       "name": "Bestial Berserk",
-      "id": 1297763
+      "id": 1297763,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "kings-rest",
       "type": "bleed",
       "icon": "ability_skeer_bloodletting",
       "name": "Sudden Rupture",
-      "id": 1297781
+      "id": 1297781,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "kings-rest",
       "type": "bleed",
       "icon": "inv_artifact_bloodoftheassassinated",
       "name": "Mortal Bleed",
-      "id": 1297918
+      "id": 1297918,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "kings-rest",
       "type": "poison",
       "icon": "inv_misc_slime_01",
       "name": "Putrid Seekers",
-      "id": 1298104
+      "id": 1298104,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "voidscar-arena",
       "type": "bleed",
       "icon": "ability_heroicleap",
       "name": "Ferocious Leap",
-      "id": 1299133
+      "id": 1299133,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "kings-rest",
       "type": "bleed",
       "icon": "spell_druid_bloodythrash",
       "name": "Bloodthirsty Axe",
-      "id": 1301851
+      "id": 1301851,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "altar-of-fangs",
       "type": "disease",
       "icon": "ability_creature_disease_03",
       "name": "Festering Gash",
-      "id": 1302867
+      "id": 1302867,
+      "lastSeen": "2026-07-01"
     },
     {
       "source": "kings-rest",
       "type": "bleed",
       "icon": "inv_spear_08",
       "name": "Impaling Spear",
-      "id": 1302945
+      "id": 1302945,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "temple-of-sethraliss",
@@ -605,56 +678,64 @@
       "type": "bleed",
       "icon": "inv_misc_raptorfoot_white",
       "name": "Savage Maul",
-      "id": 1303490
+      "id": 1303490,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "ruby-life-pools",
       "type": "magic",
       "icon": "ability_mage_wintersgrasp",
       "name": "Cold Claws",
-      "id": 1305234
+      "id": 1305234,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "altar-of-fangs",
       "type": "poison",
       "icon": "ability_rogue_venomouswounds",
       "name": "Spiteful Venom",
-      "id": 1305368
+      "id": 1305368,
+      "lastSeen": "2026-07-02"
     },
     {
       "source": "altar-of-fangs",
       "type": "enrage",
       "icon": "ability_evoker_dragonrage2",
       "name": "Ravenous",
-      "id": 1306308
+      "id": 1306308,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "kings-rest",
       "type": "poison",
       "icon": "inv_jewelcrafting_jadeserpent",
       "name": "Serpent Strike",
-      "id": 1306763
+      "id": 1306763,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "altar-of-fangs",
       "type": "poison",
       "icon": "inv_ability_poison_missile",
       "name": "Envenom",
-      "id": 1307571
+      "id": 1307571,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "temple-of-sethraliss",
       "type": "poison",
       "icon": "ability_cheapshot",
       "name": "Poisoned Cheap Shot",
-      "id": 1308100
+      "id": 1308100,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "temple-of-sethraliss",
       "type": "poison",
       "icon": "ability_hunter_cobrastrikes",
       "name": "Cytotoxin",
-      "id": 1308148
+      "id": 1308148,
+      "lastSeen": "2026-07-24"
     },
     {
       "source": "temple-of-sethraliss",
@@ -662,6 +743,54 @@
       "icon": "ability_rogue_disembowel",
       "name": "Venomous Slash",
       "id": 1308546
+    },
+    {
+      "source": "altar-of-fangs",
+      "type": "curse",
+      "icon": "inv_121_trinket_raid_ulatek_ulatekclaw",
+      "name": "Cursed",
+      "id": 1309980,
+      "lastSeen": "2026-07-24"
+    },
+    {
+      "source": "altar-of-fangs",
+      "type": "curse",
+      "icon": "inv_121_trinket_raid_ulatek_ulatekclaw",
+      "name": "Twisted Curse",
+      "id": 1310017,
+      "lastSeen": "2026-07-24"
+    },
+    {
+      "source": "voidscar-arena",
+      "type": "enrage",
+      "icon": "ability_druid_enrage",
+      "name": "Bolster",
+      "id": 1310319,
+      "lastSeen": "2026-07-23"
+    },
+    {
+      "source": "temple-of-sethraliss",
+      "type": "purge",
+      "icon": "spell_chargepositive",
+      "name": "Accumulate Charge",
+      "id": 1310739,
+      "lastSeen": "2026-07-24"
+    },
+    {
+      "source": "murder-row",
+      "type": "bleed",
+      "icon": "ability_hunter_quickshot",
+      "name": "Sharp Nail",
+      "id": 1311136,
+      "lastSeen": "2026-07-24"
+    },
+    {
+      "source": "voidscar-arena",
+      "type": "bleed",
+      "icon": "inv_10_specialreagentfoozles_tuskclaw-black",
+      "name": "Rip and Slice",
+      "id": 1311778,
+      "lastSeen": "2026-07-24"
     }
   ]
 }

@@ -12,6 +12,8 @@ export type SpellsProps = {
     icon: string;
     avoidable?: boolean;
     phase?: string;
+    /** UTC day the ability was last observed in a crawled log, as `YYYY-MM-DD`. */
+    lastSeen?: string;
     notes?: (
       | string
       | [

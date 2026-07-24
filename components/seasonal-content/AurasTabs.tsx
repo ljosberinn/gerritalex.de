@@ -1,12 +1,13 @@
 'use client';
 
-import { Fragment, useCallback, useState } from 'react';
+import { Fragment, useCallback, useMemo, useState } from 'react';
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react';
 import { CustomLink } from '../CustomLink';
 import { WowheadIcon } from '../WowheadIcon';
 import { useRestoreStateFromUrl } from './useRestoreStateFromUrl';
 import { ContentHeaderLink } from './ContentHeaderLink';
 import { type SpellsProps, Spells } from './Spells';
+import { filterStaleSpells } from './filterStaleSpells';
 import { WowheadLinkProps } from '../WowheadLink';
 
 export type AuraDataset = {
@@ -178,6 +179,12 @@ function ByDungeon({ data, wowheadBranch }: AuraProps) {
 export function AurasTabs({ data, wowheadBranch }: AuraProps) {
   const [by, setBy] = useState<'type' | 'dungeon'>('dungeon');
 
+  // filtered once here so both groupings render the exact same set of spells
+  const filteredData = useMemo<AuraDataset>(
+    () => ({ ...data, spells: filterStaleSpells(data.spells) }),
+    [data]
+  );
+
   const onChange = useCallback((by: string | null) => {
     if (by === 'type' || by === 'dungeon') {
       setBy(by);
@@ -217,10 +224,10 @@ export function AurasTabs({ data, wowheadBranch }: AuraProps) {
       </TabList>
       <TabPanels>
         <TabPanel>
-          <ByDungeon wowheadBranch={wowheadBranch} data={data} />
+          <ByDungeon wowheadBranch={wowheadBranch} data={filteredData} />
         </TabPanel>
         <TabPanel>
-          <ByType wowheadBranch={wowheadBranch} data={data} />
+          <ByType wowheadBranch={wowheadBranch} data={filteredData} />
         </TabPanel>
       </TabPanels>
     </TabGroup>
