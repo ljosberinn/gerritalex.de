@@ -70,6 +70,7 @@
       "icon": "8039569",
       "name": "The Venomous Abyss",
       "encounters": [
+        { "icon": "achievement_boss_elitenagamale", "name": "Nymrissa Wavecaller" },
         { "icon": "inv_121_raid_achievement_priestess", "name": "Nek'zali the Soulcoiler" },
         { "icon": "inv_121_raid_achievement_golems", "name": "Entombed Sentinels" },
         { "icon": "inv_121_raid_achievement_alchemist", "name": "Vashnik the Malignant" },
@@ -82,6 +83,14 @@
     }
   },
   "spells": [
+    {
+      "id": 263425,
+      "type": "adderis-and-aspix",
+      "name": "Arc Dash",
+      "icon": "ability_socererking_arcanewrath",
+      "source": "temple-of-sethraliss",
+      "lastSeen": "2026-07-22"
+    },
     {
       "id": 264763,
       "type": "galvazzt-trash",
@@ -96,21 +105,24 @@
             "props": { "id": 134691, "kind": "npc", "children": "Static-charged Dervish" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 265773,
       "type": "the-golden-serpent",
       "name": "Spit Gold",
       "icon": "ability_creature_amber_01",
-      "source": "kings-rest"
+      "source": "kings-rest",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 265781,
       "type": "the-golden-serpent",
       "name": "Serpentine Gust",
       "icon": "ability_skyreach_four_wind",
-      "source": "kings-rest"
+      "source": "kings-rest",
+      "lastSeen": "2026-07-04"
     },
     {
       "id": 265966,
@@ -126,21 +138,24 @@
             "props": { "id": 134991, "kind": "npc", "children": "Sandfury Stonefist" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 266512,
       "type": "galvazzt",
       "name": "Consume Charge",
       "icon": "spell_nature_unrelentingstorm",
-      "source": "temple-of-sethraliss"
+      "source": "temple-of-sethraliss",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 267077,
       "type": "the-council-of-tribes",
       "name": "Explode",
       "icon": "spell_shaman_firenova",
-      "source": "kings-rest"
+      "source": "kings-rest",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 267105,
@@ -156,28 +171,32 @@
             "props": { "id": 135765, "kind": "npc", "children": "Torrent Totem" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 267273,
       "type": "the-council-of-tribes",
       "name": "Poison Nova",
       "icon": "ability_creature_disease_02",
-      "source": "kings-rest"
+      "source": "kings-rest",
+      "lastSeen": "2026-07-23"
     },
     {
       "id": 267618,
       "type": "mchimba-the-embalmer",
       "name": "Drain Fluids",
       "icon": "inv_misc_volatilewater",
-      "source": "kings-rest"
+      "source": "kings-rest",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 267639,
       "type": "mchimba-the-embalmer",
       "name": "Burn Corruption",
       "icon": "ability_siege_engineer_purification_beam",
-      "source": "kings-rest"
+      "source": "kings-rest",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 267763,
@@ -185,6 +204,7 @@
       "name": "Wretched Discharge",
       "icon": "spell_festergutgas",
       "source": "kings-rest",
+      "avoidable": true,
       "notes": [
         [
           "Via ",
@@ -193,7 +213,8 @@
             "props": { "id": 136264, "kind": "npc", "children": "Half-Finished Mummy" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 269230,
@@ -209,7 +230,8 @@
             "props": { "id": 245473, "kind": "npc", "children": "Thorny Saptor" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 269369,
@@ -217,7 +239,8 @@
       "name": "Deathly Roar",
       "icon": "ability_hunter_beastmastery",
       "source": "kings-rest",
-      "avoidable": true
+      "avoidable": true,
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 269972,
@@ -225,7 +248,17 @@
       "name": "Hex Volley",
       "icon": "warlock_curse_shadow",
       "source": "kings-rest",
-      "avoidable": true
+      "avoidable": true,
+      "lastSeen": "2026-07-24",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 0, "kind": "npc", "children": "Shadow-Borne Witch Doctor" }
+          }
+        ]
+      ]
     },
     {
       "id": 270293,
@@ -241,7 +274,8 @@
             "props": { "id": 134739, "kind": "npc", "children": "Purification Construct" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 270485,
@@ -249,7 +283,17 @@
       "name": "Violent Lunge",
       "icon": "trade_engineering",
       "source": "kings-rest",
-      "avoidable": true
+      "avoidable": true,
+      "lastSeen": "2026-07-22",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 0, "kind": "npc", "children": "Spectral Berserker" }
+          }
+        ]
+      ]
     },
     {
       "id": 270503,
@@ -257,7 +301,17 @@
       "name": "Hunting Leap",
       "icon": "ability_druid_ravage",
       "source": "kings-rest",
-      "avoidable": true
+      "avoidable": true,
+      "lastSeen": "2026-07-24",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 0, "kind": "npc", "children": "Honored Raptor" }
+          }
+        ]
+      ]
     },
     {
       "id": 270514,
@@ -273,7 +327,8 @@
             "props": { "id": 135231, "kind": "npc", "children": "Spectral Brute" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 270891,
@@ -289,7 +344,8 @@
             "props": { "id": 134331, "kind": "npc", "children": "King Rahu'ai" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 270928,
@@ -305,7 +361,8 @@
             "props": { "id": 137474, "kind": "npc", "children": "King Timalji" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 271562,
@@ -321,7 +378,8 @@
             "props": { "id": 137969, "kind": "npc", "children": "Interment Construct" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 272021,
@@ -337,7 +395,8 @@
             "props": { "id": 138489, "kind": "npc", "children": "Shadow of Zul" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 272655,
@@ -345,7 +404,17 @@
       "name": "Scouring Sand",
       "icon": "spell_sandexplosion",
       "source": "temple-of-sethraliss",
-      "avoidable": true
+      "avoidable": true,
+      "lastSeen": "2026-07-24",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 0, "kind": "npc", "children": "Scaled Krolusk Rider" }
+          }
+        ]
+      ]
     },
     {
       "id": 273225,
@@ -353,7 +422,17 @@
       "name": "Volley",
       "icon": "inv_ammo_arrow_04",
       "source": "temple-of-sethraliss",
-      "avoidable": true
+      "avoidable": true,
+      "lastSeen": "2026-07-24",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 0, "kind": "npc", "children": "Sandswept Marksman" }
+          }
+        ]
+      ]
     },
     {
       "id": 372696,
@@ -361,7 +440,17 @@
       "name": "Excavating Blast",
       "icon": "spell_nature_earthquake",
       "source": "ruby-life-pools",
-      "avoidable": true
+      "avoidable": true,
+      "lastSeen": "2026-06-24",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 0, "kind": "npc", "children": "Primal Juggernaut" }
+          }
+        ]
+      ]
     },
     {
       "id": 372735,
@@ -377,14 +466,16 @@
             "props": { "id": 187969, "kind": "npc", "children": "Flashfrost Earthshaper" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-06-24"
     },
     {
       "id": 372819,
       "type": "kokia-blazehoof",
       "name": "Molten Boulder",
       "icon": "spell_mage_flameorb",
-      "source": "ruby-life-pools"
+      "source": "ruby-life-pools",
+      "lastSeen": "2026-07-23"
     },
     {
       "id": 373087,
@@ -392,7 +483,8 @@
       "name": "Burnout",
       "icon": "spell_fire_selfdestruct",
       "source": "ruby-life-pools",
-      "avoidable": true
+      "avoidable": true,
+      "lastSeen": "2026-07-23"
     },
     {
       "id": 373614,
@@ -400,14 +492,16 @@
       "name": "Burnout",
       "icon": "spell_fire_selfdestruct",
       "source": "ruby-life-pools",
-      "avoidable": true
+      "avoidable": true,
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 373688,
       "type": "mchimba-the-embalmer",
       "name": "Frost Overload",
       "icon": "spell_fire_blueflamering",
-      "source": "ruby-life-pools"
+      "source": "ruby-life-pools",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 373692,
@@ -423,14 +517,16 @@
             "props": { "id": 190034, "kind": "npc", "children": "Blazebound Destroyer" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 373694,
       "type": "kokia-blazehoof-trash",
       "name": "Living Bomb",
       "icon": "inv_summerfest_firespirit",
-      "source": "ruby-life-pools"
+      "source": "ruby-life-pools",
+      "lastSeen": "2026-06-24"
     },
     {
       "id": 373973,
@@ -446,7 +542,8 @@
             "props": { "id": 190208, "kind": "npc", "children": "Primalist Flamedancer" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 373977,
@@ -454,35 +551,49 @@
       "name": "Blaze of Glory",
       "icon": "inv_ember",
       "source": "ruby-life-pools",
-      "avoidable": true
+      "avoidable": true,
+      "lastSeen": "2026-07-23",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 0, "kind": "npc", "children": "Primalist Flamedancer" }
+          }
+        ]
+      ]
     },
     {
       "id": 381516,
       "type": "kyrakka-and-erkhart-stormvein",
       "name": "Interrupting Cloudburst",
       "icon": "spell_nature_cyclone",
-      "source": "ruby-life-pools"
+      "source": "ruby-life-pools",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 383925,
       "type": "melidrussa-chillworn",
       "name": "Chillstorm",
       "icon": "spell_shadow_soulleech_2",
-      "source": "ruby-life-pools"
+      "source": "ruby-life-pools",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 384024,
       "type": "mchimba-the-embalmer",
       "name": "Hailbombs",
       "icon": "inv_10_specialreagentfoozles_primalistrune_frost",
-      "source": "ruby-life-pools"
+      "source": "ruby-life-pools",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 384823,
       "type": "kokia-blazehoof",
       "name": "Inferno",
       "icon": "ability_warlock_inferno",
-      "source": "ruby-life-pools"
+      "source": "ruby-life-pools",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 385292,
@@ -490,7 +601,8 @@
       "name": "Molten Steel",
       "icon": "inv_summerfest_firespirit",
       "source": "ruby-life-pools",
-      "avoidable": true
+      "avoidable": true,
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 385311,
@@ -506,7 +618,8 @@
             "props": { "id": 195119, "kind": "npc", "children": "Primalist Shockcaster" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 385568,
@@ -514,7 +627,8 @@
       "name": "Flaming Barrage",
       "icon": "ability_warlock_burningembers",
       "source": "ruby-life-pools",
-      "avoidable": true
+      "avoidable": true,
+      "lastSeen": "2026-06-24"
     },
     {
       "id": 391724,
@@ -522,7 +636,8 @@
       "name": "Flame Breath",
       "icon": "ability_mage_firestarter",
       "source": "ruby-life-pools",
-      "avoidable": true
+      "avoidable": true,
+      "lastSeen": "2026-07-23"
     },
     {
       "id": 391727,
@@ -530,7 +645,8 @@
       "name": "Storm Breath",
       "icon": "inv_misc_stormlordsfavor",
       "source": "ruby-life-pools",
-      "avoidable": true
+      "avoidable": true,
+      "lastSeen": "2026-07-23"
     },
     {
       "id": 392399,
@@ -546,7 +662,8 @@
             "props": { "id": 197509, "kind": "npc", "children": "Primal Thundercloud" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 392406,
@@ -562,7 +679,8 @@
             "props": { "id": 197982, "kind": "npc", "children": "Storm Warrior" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 392488,
@@ -582,7 +700,8 @@
             "props": { "id": 197535, "kind": "npc", "children": "High Channeler Ryvati" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-06-24"
     },
     {
       "id": 392570,
@@ -598,7 +717,8 @@
             "props": { "id": 197697, "kind": "npc", "children": "Flamegullet" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 392642,
@@ -614,49 +734,56 @@
             "props": { "id": 197698, "kind": "npc", "children": "Thunderhead" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-06-24"
     },
     {
       "id": 396044,
       "type": "melidrussa-chillworn",
       "name": "Hailburst",
       "icon": "spell_frost_frostshock",
-      "source": "ruby-life-pools"
+      "source": "ruby-life-pools",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 397077,
       "type": "melidrussa-chillworn",
       "name": "Chillstorm",
       "icon": "spell_shadow_soulleech_2",
-      "source": "ruby-life-pools"
+      "source": "ruby-life-pools",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 473898,
       "type": "xathuux-the-annihilator",
       "name": "Legion Strike",
       "icon": "inv_axe_09",
-      "source": "murder-row"
+      "source": "murder-row",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 474197,
       "type": "xathuux-the-annihilator",
       "name": "Demonic Rage",
       "icon": "ability_warlock_demonicempowerment",
-      "source": "murder-row"
+      "source": "murder-row",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 474457,
       "type": "lithiel-cinderfury",
       "name": "Fingers of Gul'dan",
       "icon": "ability_warlock_handofguldan",
-      "source": "murder-row"
+      "source": "murder-row",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 474483,
       "type": "zaen-bladesorrow",
       "name": "Killing Spree",
       "icon": "inv_112_rogue_betweentheeyes",
-      "source": "murder-row"
+      "source": "murder-row",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 474768,
@@ -672,28 +799,32 @@
             "props": { "id": 234860, "kind": "npc", "children": "Crate Loader" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1214355,
       "type": "zaen-bladesorrow",
       "name": "Fire Bomb",
       "icon": "inv_eng_bombfire",
-      "source": "murder-row"
+      "source": "murder-row",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1214663,
       "type": "xathuux-the-annihilator",
       "name": "Axe Toss",
       "icon": "ability_warrior_titansgrip",
-      "source": "murder-row"
+      "source": "murder-row",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1214959,
       "type": "kystia-manaheart",
       "name": "Chaotic Burst",
       "icon": "ability_demonhunter_chaosnova",
-      "source": "murder-row"
+      "source": "murder-row",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1216538,
@@ -713,14 +844,16 @@
             "props": { "id": 253324, "kind": "npc", "children": "Tiny Felwyrm" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1216945,
       "type": "lithiel-cinderfury",
       "name": "Searing Fel Flame",
       "icon": "spell_fire_felfirenova",
-      "source": "murder-row"
+      "source": "murder-row",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1216955,
@@ -736,7 +869,8 @@
             "props": { "id": 236905, "kind": "npc", "children": "Felmaster Lucsei" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1217099,
@@ -752,7 +886,8 @@
             "props": { "id": 234852, "kind": "npc", "children": "Forbidden Freight" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1217992,
@@ -768,7 +903,8 @@
             "props": { "id": 236893, "kind": "npc", "children": "Warehouse Worker" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-07"
     },
     {
       "id": 1222724,
@@ -776,14 +912,16 @@
       "name": "Noxious Breath",
       "icon": "ability_creature_poison_05",
       "source": "voidscar-arena",
-      "avoidable": true
+      "avoidable": true,
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1223906,
       "type": "kystia-manaheart",
       "name": "Fel Nova",
       "icon": "spell_fire_felflamering",
-      "source": "murder-row"
+      "source": "murder-row",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1226031,
@@ -791,7 +929,8 @@
       "name": "Poison Splash",
       "icon": "spell_nature_corrosivebreath",
       "source": "voidscar-arena",
-      "avoidable": true
+      "avoidable": true,
+      "lastSeen": "2026-07-23"
     },
     {
       "id": 1228126,
@@ -807,7 +946,8 @@
             "props": { "id": 252053, "kind": "npc", "children": "Brutal Overseer" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1231353,
@@ -823,7 +963,8 @@
             "props": { "id": 238414, "kind": "npc", "children": "Infernal" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1233264,
@@ -839,7 +980,8 @@
             "props": { "id": 236780, "kind": "npc", "children": "Blistercreep" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1233485,
@@ -855,7 +997,8 @@
             "props": { "id": 243802, "kind": "npc", "children": "Agitated Voidscythe" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-07"
     },
     {
       "id": 1234021,
@@ -868,24 +1011,27 @@
           "Via ",
           {
             "component": "WowheadLink",
-            "props": { "id": 0, "kind": "npc", "children": "The Hoardmonger" }
+            "props": { "id": 241812, "kind": "npc", "children": "The Hoardmonger" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-05"
     },
     {
       "id": 1234681,
       "type": "the-hoardmonger",
       "name": "Ravenous Bellow",
       "icon": "ability_druid_challangingroar",
-      "source": "den-of-nalorakk"
+      "source": "den-of-nalorakk",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1235125,
       "type": "the-hoardmonger",
       "name": "Hearty Bellow",
       "icon": "ability_warrior_battleshout",
-      "source": "den-of-nalorakk"
+      "source": "den-of-nalorakk",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1235129,
@@ -893,21 +1039,24 @@
       "name": "Bonespike Slam",
       "icon": "ability_deathknight_bonegrinder",
       "source": "den-of-nalorakk",
-      "avoidable": true
+      "avoidable": true,
+      "lastSeen": "2026-07-23"
     },
     {
       "id": 1235635,
       "type": "sentinel-of-winter",
       "name": "Raging Squall",
       "icon": "ability_deathknight_frozencenter",
-      "source": "den-of-nalorakk"
+      "source": "den-of-nalorakk",
+      "lastSeen": "2026-07-23"
     },
     {
       "id": 1235658,
       "type": "sentinel-of-winter",
       "name": "Frozen Tempest",
       "icon": "spell_frost_ring-of-frost",
-      "source": "den-of-nalorakk"
+      "source": "den-of-nalorakk",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1235752,
@@ -923,7 +1072,8 @@
             "props": { "id": 244528, "kind": "npc", "children": "Lightblossom" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1235795,
@@ -931,7 +1081,17 @@
       "name": "Shattering Frostspike",
       "icon": "ability_deathknight_pillaroffrost",
       "source": "den-of-nalorakk",
-      "avoidable": true
+      "avoidable": true,
+      "lastSeen": "2026-07-24",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 0, "kind": "npc", "children": "Sentinel of Winter" }
+          }
+        ]
+      ]
     },
     {
       "id": 1235829,
@@ -947,28 +1107,32 @@
             "props": { "id": 244759, "kind": "npc", "children": "Fractured Shivercore" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-23"
     },
     {
       "id": 1236731,
       "type": "ikuzz-the-light-hunter",
       "name": "Thorncaller Roar",
       "icon": "trade_engineering",
-      "source": "the-blinding-vale"
+      "source": "the-blinding-vale",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1236746,
       "type": "ikuzz-the-light-hunter",
       "name": "Verdant Stomp",
       "icon": "inv_raptortravelform",
-      "source": "the-blinding-vale"
+      "source": "the-blinding-vale",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1237093,
       "type": "ikuzz-the-light-hunter",
       "name": "Crushing Footfalls",
       "icon": "shaman_pvp_rockshield",
-      "source": "the-blinding-vale"
+      "source": "the-blinding-vale",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1238463,
@@ -984,7 +1148,8 @@
             "props": { "id": 245513, "kind": "npc", "children": "Overgrown Hydra" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1238638,
@@ -1000,7 +1165,8 @@
             "props": { "id": 245513, "kind": "npc", "children": "Overgrown Hydra" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1239855,
@@ -1016,7 +1182,8 @@
             "props": { "id": 245950, "kind": "npc", "children": "Watchful Harrower" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1239871,
@@ -1032,28 +1199,32 @@
             "props": { "id": 241876, "kind": "npc", "children": "Glacial Revenant" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1239919,
       "type": "lightwarden-ruia",
       "name": "Lightfire Beams",
       "icon": "inv_ability_holyfire_beam",
-      "source": "the-blinding-vale"
+      "source": "the-blinding-vale",
+      "lastSeen": "2026-07-23"
     },
     {
       "id": 1240152,
       "type": "lightwarden-ruia",
       "name": "Lightfall",
       "icon": "inv_ability_holyfire_missile",
-      "source": "the-blinding-vale"
+      "source": "the-blinding-vale",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1240257,
       "type": "lightwarden-ruia",
       "name": "Pulverizing Strikes",
       "icon": "ability_druid_swipe",
-      "source": "the-blinding-vale"
+      "source": "the-blinding-vale",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1240280,
@@ -1069,14 +1240,16 @@
             "props": { "id": 241869, "kind": "npc", "children": "Avatar of Determination" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1241058,
       "type": "lightwarden-ruia",
       "name": "Grievous Thrash",
       "icon": "spell_druid_bloodythrash",
-      "source": "the-blinding-vale"
+      "source": "the-blinding-vale",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1242200,
@@ -1092,21 +1265,24 @@
             "props": { "id": 245527, "kind": "npc", "children": "Spineshield Beetle" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1242887,
       "type": "nalorakk",
       "name": "Echoing Maul",
       "icon": "inv_ability_druidoftheclawdruid_ravage",
-      "source": "den-of-nalorakk"
+      "source": "den-of-nalorakk",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1245593,
       "type": "the-hoardmonger",
       "name": "Putrid Burst",
       "icon": "inv_ability_poison_groundstate",
-      "source": "den-of-nalorakk"
+      "source": "den-of-nalorakk",
+      "lastSeen": "2026-07-23"
     },
     {
       "id": 1246825,
@@ -1122,7 +1298,8 @@
             "props": { "id": 5929, "kind": "npc", "children": "Magma Totem" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1246957,
@@ -1138,7 +1315,8 @@
             "props": { "id": 245146, "kind": "npc", "children": "Grizzled Warbringer" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1247030,
@@ -1154,14 +1332,16 @@
             "props": { "id": 245148, "kind": "npc", "children": "Grizzled Warbringer" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-23"
     },
     {
       "id": 1247039,
       "type": "ziekket",
       "name": "Fluorescent Outburst",
       "icon": "spell_nature_wrathv2",
-      "source": "the-blinding-vale"
+      "source": "the-blinding-vale",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1247366,
@@ -1177,14 +1357,16 @@
             "props": { "id": 244889, "kind": "npc", "children": "Loa Speaker Nanea" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1247644,
       "type": "ziekket",
       "name": "Oozing Xylem",
       "icon": "inv_ability_holyfire_nova",
-      "source": "the-blinding-vale"
+      "source": "the-blinding-vale",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1249238,
@@ -1201,7 +1383,8 @@
             "props": { "id": 249461, "kind": "npc", "children": "Abducted Drakonid" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1249621,
@@ -1217,7 +1400,8 @@
             "props": { "id": 249590, "kind": "npc", "children": "Angry Krolusk" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1250695,
@@ -1233,7 +1417,8 @@
             "props": { "id": 244260, "kind": "npc", "children": "Chitigoth" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1250937,
@@ -1249,7 +1434,8 @@
             "props": { "id": 249756, "kind": "npc", "children": "Potatoad Matriarch" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1252406,
@@ -1265,7 +1451,8 @@
             "props": { "id": 268184, "kind": "npc", "children": "Devouring Brutalizer" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1255205,
@@ -1281,7 +1468,8 @@
             "props": { "id": 245346, "kind": "npc", "children": "Virid Grovekeeper" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1256300,
@@ -1289,7 +1477,33 @@
       "name": "Massive Fel Detonation",
       "icon": "spell_fel_elementaldevastation",
       "source": "murder-row",
-      "avoidable": true
+      "avoidable": true,
+      "lastSeen": "2026-07-23",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 0, "kind": "npc", "children": "Massive Felwyrm" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1257654,
+      "type": "nymrissa-wavecaller",
+      "name": "Lingering Frost",
+      "icon": "spell_hunter_icetrap",
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": 1260843,
+      "type": "nymrissa-wavecaller",
+      "name": "Abyssal Rain",
+      "icon": "inv_misc_volatilewater",
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-17"
     },
     {
       "id": 1261013,
@@ -1305,7 +1519,8 @@
             "props": { "id": 243030, "kind": "npc", "children": "Lekshi" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1262253,
@@ -1321,21 +1536,24 @@
             "props": { "id": 246409, "kind": "npc", "children": "Zul'jarra" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1262497,
       "type": "atroxus",
       "name": "Monstrous Stomp",
       "icon": "ability_racial_darkflight",
-      "source": "voidscar-arena"
+      "source": "voidscar-arena",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1263420,
       "type": "ikuzz-the-light-hunter",
       "name": "Lightcrazed Frenzy",
       "icon": "ability_monk_explodingjadeblossom",
-      "source": "the-blinding-vale"
+      "source": "the-blinding-vale",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1263590,
@@ -1351,7 +1569,8 @@
             "props": { "id": 244759, "kind": "npc", "children": "Fractured Shivercore" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1263597,
@@ -1367,7 +1586,8 @@
             "props": { "id": 244759, "kind": "npc", "children": "Fractured Shivercore" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-23"
     },
     {
       "id": 1263628,
@@ -1383,7 +1603,8 @@
             "props": { "id": 254850, "kind": "npc", "children": "Sporeblight Belcher" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1263642,
@@ -1399,14 +1620,16 @@
             "props": { "id": 254850, "kind": "npc", "children": "Sporeblight Belcher" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1264110,
       "type": "kystia-manaheart",
       "name": "Felstorm",
       "icon": "spell_fire_felcano",
-      "source": "murder-row"
+      "source": "murder-row",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1266241,
@@ -1422,7 +1645,16 @@
             "props": { "id": 234852, "kind": "npc", "children": "Forbidden Freight" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-23"
+    },
+    {
+      "id": 1266340,
+      "type": "nymrissa-wavecaller",
+      "name": "Pop!",
+      "icon": "creatureportrait_bubble",
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-17"
     },
     {
       "id": 1269284,
@@ -1436,6 +1668,24 @@
           {
             "component": "WowheadLink",
             "props": { "id": 244309, "kind": "npc", "children": "Brutok" }
+          }
+        ]
+      ],
+      "lastSeen": "2026-07-24"
+    },
+    {
+      "id": 1271380,
+      "type": "nymrissa-wavecaller",
+      "name": "Pulsing Tides",
+      "icon": "ability_shawaterelemental_swirl",
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-17",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 253180, "kind": "npc", "children": "Bubblefin Berserker" }
           }
         ]
       ]
@@ -1454,217 +1704,289 @@
             "props": { "id": 243028, "kind": "npc", "children": "Meittik" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1280189,
       "type": "vashnik-the-malignant",
       "name": "Malignant Burst",
       "icon": "ability_rogue_deviouspoisons",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": 1281925,
+      "type": "vashnik-the-malignant",
+      "name": "Plague Froth",
+      "icon": "ability_ironmaidens_whirlofblood",
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1282288,
       "type": "the-coiled-altar",
       "name": "Volatile Venom",
       "icon": "ability_creature_disease_02",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1282408,
       "type": "the-coiled-altar",
       "name": "Coalesced Venom",
       "icon": "inv_ability_poison_orb",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1282512,
       "type": "the-coiled-altar",
       "name": "Fangs of the Crucible",
       "icon": "spell_nature_poisoncleansingtotem",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1282525,
       "type": "vashnik-the-malignant",
       "name": "Malignant Catalyst",
       "icon": "inv_ability_poison_groundstate",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": 1282602,
+      "type": "vashnik-the-malignant",
+      "name": "Catalytic Bile",
+      "icon": "inv_ability_poison_missile",
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": 1282616,
+      "type": "vashnik-the-malignant",
+      "name": "Catalytic Bile",
+      "icon": "inv_ability_poison_missile",
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": 1283290,
+      "type": "the-coiled-altar",
+      "name": "Noxious Ground",
+      "icon": "ability_creature_poison_06",
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1283594,
       "type": "the-coiled-altar",
       "name": "Guillotine",
       "icon": "warrior_talent_icon_mastercleaver",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1283606,
       "type": "the-coiled-altar",
       "name": "Guillotine",
       "icon": "warrior_talent_icon_mastercleaver",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1283623,
       "type": "the-coiled-altar",
       "name": "Widow's Kiss",
       "icon": "spell_shadow_soothingkiss",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1283631,
       "type": "the-coiled-altar",
       "name": "Widow's Touch",
       "icon": "ability_creature_disease_03",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1283840,
       "type": "the-coiled-altar",
       "name": "Axegrinder",
       "icon": "ability_warrior_bladestorm",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16",
+      "avoidable": true
     },
     {
       "id": 1284209,
       "type": "entombed-sentinels",
       "name": "Living Venom",
       "icon": "inv_ability_poison_groundstate",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-09"
+    },
+    {
+      "id": 1284210,
+      "type": "entombed-sentinels",
+      "name": "Blood Venom",
+      "icon": "spell_shadow_bloodboil",
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-09"
     },
     {
       "id": 1284258,
       "type": "entombed-sentinels",
       "name": "Contaminate",
       "icon": "ability_rogue_venomouswounds",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-13"
     },
     {
       "id": 1284451,
       "type": "entombed-sentinels",
       "name": "Toxic Droplets",
       "icon": "inv_ability_poison_orb",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-13"
     },
     {
       "id": 1284452,
       "type": "entombed-sentinels",
       "name": "Noxious Blast",
       "icon": "ability_creature_poison_06",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-13"
     },
     {
       "id": 1284500,
       "type": "entombed-sentinels",
       "name": "Mark of Acid",
       "icon": "inv_arcanegolem2mount_green",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-13"
     },
     {
       "id": 1284506,
       "type": "entombed-sentinels",
       "name": "Mark of Blood",
       "icon": "inv_arcanegolem2mount_red",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-13"
     },
     {
       "id": 1284561,
       "type": "vashnik-the-malignant",
       "name": "Toxic Vapor",
       "icon": "ability_creature_poison_06",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1285616,
       "type": "sszorak",
       "name": "Raging Crosswinds",
       "icon": "ability_skyreach_wind",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-13"
     },
     {
       "id": 1285965,
       "type": "sszorak",
       "name": "Ula'tek's Presence",
       "icon": "achievement_dungeon_templeofsethraliss",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-13"
     },
     {
       "id": 1285979,
       "type": "vashnik-the-malignant",
       "name": "Caustic Surge",
       "icon": "spell_shaman_firenova",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1286620,
       "type": "the-coiled-altar",
       "name": "Soul Sever",
       "icon": "ability_demonhunter_soulcleave2",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1286737,
       "type": "vashnik-the-malignant",
       "name": "Umbral Ejection",
       "icon": "ability_ironmaidens_convulsiveshadows",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1286902,
       "type": "the-coiled-altar",
       "name": "Gloombomb",
       "icon": "spell_shadow_shadowfury",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1286918,
       "type": "the-coiled-altar",
       "name": "Eternal Nightfall",
       "icon": "spell_shadow_twilight",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-13"
     },
     {
       "id": 1287205,
       "type": "sszorak",
       "name": "Viscous Cyst",
       "icon": "inv_ability_poison_nova",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-13"
     },
     {
       "id": 1287722,
       "type": "the-coiled-altar",
       "name": "Spirit Erasure",
       "icon": "spell_misc_zandalari_council_soulswap",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-13"
     },
     {
       "id": 1287811,
       "type": "the-writhing-coil",
       "name": "Uncoil",
       "icon": "ability_hunter_snaketrap",
-      "source": "altar-of-fangs"
+      "source": "altar-of-fangs",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1288092,
       "type": "adderis-and-aspix",
       "name": "Thunder and Lightning",
       "icon": "warrior_talent_icon_thunderstruck",
-      "source": "temple-of-sethraliss"
+      "source": "temple-of-sethraliss",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1288235,
       "type": "adderis-and-aspix",
       "name": "Thunder and Lightning",
       "icon": "spell_nature_unrelentingstorm",
-      "source": "temple-of-sethraliss"
+      "source": "temple-of-sethraliss",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1288282,
       "type": "entombed-sentinels",
       "name": "Unstable Miasma",
       "icon": "ability_deathwing_bloodcorruption_death",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-13"
     },
     {
       "id": 1288428,
@@ -1685,14 +2007,16 @@
       "type": "the-coiled-altar",
       "name": "Dreadful Presence",
       "icon": "ability_warlock_shadowfurytga",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1288772,
       "type": "nekzali-the-soulcoiler",
       "name": "Soulcoil Rite",
       "icon": "spell_necro_deathsknell",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1288885,
@@ -1707,7 +2031,8 @@
       "type": "the-twin-fangs",
       "name": "Stone Breaker",
       "icon": "ability_smash",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-13"
     },
     {
       "id": 1289855,
@@ -1723,7 +2048,8 @@
             "props": { "id": 263685, "kind": "npc", "children": "Echo of Jawae" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1289875,
@@ -1739,70 +2065,105 @@
             "props": { "id": 263685, "kind": "npc", "children": "Echo of Jawae" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1289994,
       "type": "the-twin-fangs",
       "name": "Caustic Deluge",
       "icon": "inv_ability_poison_orb",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-13"
     },
     {
       "id": 1290338,
       "type": "the-twin-fangs",
       "name": "Caustic Globule",
       "icon": "inv_ability_poison_orb",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-13"
     },
     {
       "id": 1290531,
       "type": "galvazzt",
       "name": "Induction",
       "icon": "ability_thunderking_overcharge",
-      "source": "temple-of-sethraliss"
+      "source": "temple-of-sethraliss",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1290662,
       "type": "the-twin-fangs",
       "name": "Ravenous Feast",
       "icon": "ability_warrior_bloodnova",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-13"
+    },
+    {
+      "id": 1291390,
+      "type": "the-lost-explorers",
+      "name": "Cataclysmic Invocation",
+      "icon": "spell_fire_selfdestruct",
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-13"
     },
     {
       "id": 1291598,
       "type": "galvazzt",
       "name": "Lightning Spire",
       "icon": "ability_thunderking_rockfalllow",
-      "source": "temple-of-sethraliss"
+      "source": "temple-of-sethraliss",
+      "lastSeen": "2026-07-24"
+    },
+    {
+      "id": 1291622,
+      "type": "merektha",
+      "name": "Storm Catalyst",
+      "icon": "spell_nature_unrelentingstorm",
+      "source": "temple-of-sethraliss",
+      "lastSeen": "2026-07-23",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 134390, "kind": "npc", "children": "Storm Serpent" }
+          }
+        ]
+      ]
     },
     {
       "id": 1291734,
       "type": "merektha",
       "name": "Thunder Spit",
       "icon": "ability_thunderking_thunderstruck",
-      "source": "temple-of-sethraliss"
+      "source": "temple-of-sethraliss",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1291935,
       "type": "the-lost-explorers",
       "name": "Throw Junk",
       "icon": "inv_crate_01",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1292034,
       "type": "nekzali-the-soulcoiler",
       "name": "Possession Barrage",
       "icon": "spell_shadow_possession",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1292315,
       "type": "nekzali-the-soulcoiler",
       "name": "Uncoiling",
       "icon": "inv_12_profession_thematicfoozles_moteofpurelight_green",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1292585,
@@ -1810,35 +2171,49 @@
       "name": "Sandburst Arrow",
       "icon": "spell_sandexplosion",
       "source": "temple-of-sethraliss",
-      "avoidable": true
+      "avoidable": true,
+      "lastSeen": "2026-07-24",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 0, "kind": "npc", "children": "Sandswept Marksman" }
+          }
+        ]
+      ]
     },
     {
       "id": 1292764,
       "type": "the-lost-explorers",
       "name": "Evil Eyes",
       "icon": "spell_necro_inevitableend",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1292806,
       "type": "the-twin-fangs",
       "name": "Stir the Depths",
       "icon": "inv_ability_poison_wave",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-13"
     },
     {
       "id": 1292899,
       "type": "nekzali-the-soulcoiler",
       "name": "Latent Cultist",
       "icon": "inv_hextrollpet_blue",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1293048,
       "type": "merektha",
       "name": "Serpentstorm",
       "icon": "spell_nature_lightningoverload",
-      "source": "temple-of-sethraliss"
+      "source": "temple-of-sethraliss",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1293475,
@@ -1854,7 +2229,8 @@
             "props": { "id": 136076, "kind": "npc", "children": "Agitated Nimbus" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1293652,
@@ -1870,6 +2246,24 @@
             "props": { "id": 136076, "kind": "npc", "children": "Agitated Nimbus" }
           }
         ]
+      ],
+      "lastSeen": "2026-07-24"
+    },
+    {
+      "id": 1294197,
+      "type": "trash",
+      "name": "Experimental Toxin",
+      "icon": "inv_ability_poison_nova",
+      "source": "altar-of-fangs",
+      "lastSeen": "2026-07-24",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 0, "kind": "npc", "children": "[DNT] Venom Missile Stalker" }
+          }
+        ]
       ]
     },
     {
@@ -1877,7 +2271,8 @@
       "type": "the-lost-explorers",
       "name": "Blink Nova",
       "icon": "spell_arcane_blink",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1294557,
@@ -1894,7 +2289,8 @@
             "props": { "id": 261560, "kind": "npc", "children": "Primal Serpent" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1294729,
@@ -1910,7 +2306,8 @@
             "props": { "id": 261509, "kind": "npc", "children": "Raised Amani" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1294774,
@@ -1926,7 +2323,8 @@
             "props": { "id": 235465, "kind": "npc", "children": "Shivan Punisher" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1294789,
@@ -1942,7 +2340,8 @@
             "props": { "id": 235265, "kind": "npc", "children": "Corrupted Warlock" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1294827,
@@ -1958,7 +2357,8 @@
             "props": { "id": 235322, "kind": "npc", "children": "Defiled Golem" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1294836,
@@ -1974,14 +2374,16 @@
             "props": { "id": 235322, "kind": "npc", "children": "Defiled Golem" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1294846,
       "type": "nekzali-the-soulcoiler",
       "name": "Anguished Echoes",
       "icon": "ability_argus_soulburst",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1294859,
@@ -1997,14 +2399,24 @@
             "props": { "id": 262011, "kind": "npc", "children": "Rattling Writhe" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
+    },
+    {
+      "id": 1294869,
+      "type": "nymrissa-wavecaller",
+      "name": "Unending Tides",
+      "icon": "spell_shaman_tidalwaves",
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-17"
     },
     {
       "id": 1294976,
       "type": "the-twin-fangs",
       "name": "Toxic Fumes",
       "icon": "spell_deathvortex",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-13"
     },
     {
       "id": 1295055,
@@ -2036,7 +2448,8 @@
             "props": { "id": 261573, "kind": "npc", "children": "Ascendant Serpent" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1295085,
@@ -2052,56 +2465,64 @@
             "props": { "id": 263685, "kind": "npc", "children": "Echo of Jawae" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1295209,
       "type": "vashnik-the-malignant",
       "name": "Explode",
       "icon": "spell_shaman_improvedfirenova",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1295229,
       "type": "vashnik-the-malignant",
       "name": "Siphon Blood",
       "icon": "ability_racial_pureblood",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1295450,
       "type": "the-lost-explorers",
       "name": "Malevolent Presence",
       "icon": "ability_revendreth_priest",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1295455,
       "type": "xathuux-the-annihilator",
       "name": "Infernal Crush",
       "icon": "ability_bossfellord_felspike",
-      "source": "murder-row"
+      "source": "murder-row",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1295893,
       "type": "the-lost-explorers",
       "name": "Frostfire Volley",
       "icon": "spell_fire_firebolt02",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1295952,
       "type": "the-lost-explorers",
       "name": "Elemental Explosion",
       "icon": "spell_frostresistancetotem_01",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1295985,
       "type": "the-lost-explorers",
       "name": "Frostfire Volley",
       "icon": "spell_fire_blueflamebolt",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1296069,
@@ -2109,21 +2530,24 @@
       "name": "Regurgitate",
       "icon": "inv_ability_poison_wave",
       "source": "altar-of-fangs",
-      "avoidable": true
+      "avoidable": true,
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1296245,
       "type": "the-lost-explorers",
       "name": "Explosive Surprise",
       "icon": "inv_misc_bomb_01",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1296247,
       "type": "the-lost-explorers",
       "name": "Concussive Blast",
       "icon": "inv_wildfirebomb",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1296519,
@@ -2139,14 +2563,24 @@
             "props": { "id": 241911, "kind": "npc", "children": "Terra Rumbler" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1296912,
       "type": "merektha",
       "name": "Storm Strikes",
       "icon": "spell_shaman_thunderstorm",
-      "source": "temple-of-sethraliss"
+      "source": "temple-of-sethraliss",
+      "lastSeen": "2026-07-24"
+    },
+    {
+      "id": 1296962,
+      "type": "entombed-sentinels",
+      "name": "Protovenom Eruption",
+      "icon": "spell_deathknight_explode_ghoul",
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-09"
     },
     {
       "id": 1296963,
@@ -2154,14 +2588,40 @@
       "name": "Umbral Rupture",
       "icon": "inv_cosmicvoid_groundstate",
       "source": "voidscar-arena",
-      "avoidable": true
+      "avoidable": true,
+      "lastSeen": "2026-07-23"
     },
     {
       "id": 1297338,
       "type": "sszorak",
       "name": "Deadly Venom",
       "icon": "ability_creature_poison_06",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": 1297648,
+      "type": "the-lost-explorers",
+      "name": "Frost Patch",
+      "icon": "spell_frost_ring-of-frost",
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": 1297649,
+      "type": "the-lost-explorers",
+      "name": "Fire Patch",
+      "icon": "spell_fire_felflamering_red",
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": 1297650,
+      "type": "the-lost-explorers",
+      "name": "Spreading Flames",
+      "icon": "spell_burningbladeshaman_blazing_radiance",
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1297667,
@@ -2177,7 +2637,8 @@
             "props": { "id": 236902, "kind": "npc", "children": "Massive Felwyrm" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1297691,
@@ -2193,7 +2654,8 @@
             "props": { "id": 235465, "kind": "npc", "children": "Shivan Punisher" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1297695,
@@ -2209,21 +2671,24 @@
             "props": { "id": 235268, "kind": "npc", "children": "Felcaster Invoker" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1297793,
       "type": "nalorakk",
       "name": "Overwhelming Onslaught",
       "icon": "spell_druid_thrash",
-      "source": "den-of-nalorakk"
+      "source": "den-of-nalorakk",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1297797,
       "type": "nalorakk",
       "name": "Forceful Slam",
       "icon": "inv_misc_bearpaw_red",
-      "source": "den-of-nalorakk"
+      "source": "den-of-nalorakk",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1298104,
@@ -2239,7 +2704,8 @@
             "props": { "id": 137989, "kind": "npc", "children": "Embalming Fluid" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1298317,
@@ -2255,28 +2721,32 @@
             "props": { "id": 138489, "kind": "npc", "children": "Shadow of Zul" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1298582,
       "type": "vashnik-the-malignant",
       "name": "Hemo Expulsion",
       "icon": "inv_artifact_bloodoftheassassinated",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1298583,
       "type": "vashnik-the-malignant",
       "name": "Gloom Expulsion",
       "icon": "spell_nzinsanity_chasedbyshadows",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1298587,
       "type": "vashnik-the-malignant",
       "name": "Conflagrating Expulsion",
       "icon": "ability_evoker_firestorm",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1298901,
@@ -2292,7 +2762,8 @@
             "props": { "id": 252053, "kind": "npc", "children": "Brutal Overseer" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1298933,
@@ -2309,14 +2780,16 @@
             "props": { "id": 267545, "kind": "npc", "children": "Aegyra the Unyielding" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1299080,
       "type": "the-writhing-coil",
       "name": "Death Rattle",
       "icon": "inv_sonic_debuff",
-      "source": "altar-of-fangs"
+      "source": "altar-of-fangs",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1299145,
@@ -2333,7 +2806,8 @@
             "props": { "id": 267545, "kind": "npc", "children": "Aegyra the Unyielding" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1299273,
@@ -2349,49 +2823,56 @@
             "props": { "id": 267546, "kind": "npc", "children": "Raj'kess the Spellstorm" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1299296,
       "type": "the-coiled-altar",
       "name": "Grim Guillotine",
       "icon": "inv_polearm_2h_mawnecromancerboss_d_01_darkblue",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-06-26"
     },
     {
       "id": 1299301,
       "type": "the-coiled-altar",
       "name": "Grim Guillotine",
       "icon": "inv_polearm_2h_mawnecromancerboss_d_01_darkblue",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-06-26"
     },
     {
       "id": 1299396,
       "type": "the-coiled-altar",
       "name": "Death's Embrace",
       "icon": "achievement_boss_ladydeathwhisper",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-06-26"
     },
     {
       "id": 1299401,
       "type": "the-coiled-altar",
       "name": "Death's Whisper",
       "icon": "spell_necro_inevitableend",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-06-26"
     },
     {
       "id": 1299684,
       "type": "the-coiled-altar",
       "name": "Sever",
       "icon": "ability_criticalstrike",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1299838,
       "type": "the-coiled-altar",
       "name": "Venom Rupture",
       "icon": "inv_ability_poison_nova",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1299913,
@@ -2399,7 +2880,17 @@
       "name": "Null Eruption",
       "icon": "inv_cosmicvoid_orb",
       "source": "voidscar-arena",
-      "avoidable": true
+      "avoidable": true,
+      "lastSeen": "2026-07-24",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 0, "kind": "npc", "children": "Voidtouched Magi" }
+          }
+        ]
+      ]
     },
     {
       "id": 1299938,
@@ -2415,14 +2906,24 @@
             "props": { "id": 252072, "kind": "npc", "children": "Voidtouched Magi" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1299947,
       "type": "the-lost-explorers",
       "name": "Concussive Blast",
       "icon": "inv_wildfirebomb",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": 1300089,
+      "type": "sszorak",
+      "name": "Virulence",
+      "icon": "ability_creature_poison_03",
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-10"
     },
     {
       "id": 1300116,
@@ -2438,14 +2939,16 @@
             "props": { "id": 245950, "kind": "npc", "children": "Watchful Harrower" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1300137,
       "type": "the-coiled-altar",
       "name": "Toxic Deluge",
       "icon": "spell_shadow_plaguecloud",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1300156,
@@ -2461,46 +2964,52 @@
             "props": { "id": 245950, "kind": "npc", "children": "Watchful Harrower" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1300259,
       "type": "tazrah",
       "name": "Dark Bloom",
       "icon": "inv_ability_voidweaverpriest_entropicrift",
-      "source": "voidscar-arena"
+      "source": "voidscar-arena",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1300351,
       "type": "atroxus",
       "name": "Poison Splash",
       "icon": "spell_nature_corrosivebreath",
-      "source": "voidscar-arena"
+      "source": "voidscar-arena",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1300372,
       "type": "charonus",
       "name": "Cosmic Crash",
       "icon": "inv_cosmicvoid_groundsate",
-      "source": "voidscar-arena"
+      "source": "voidscar-arena",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1300892,
       "type": "zuljan",
       "name": "Fang Empowered",
       "icon": "inv_knife_1h_ulatekfang_d_01_poison",
-      "source": "altar-of-fangs"
+      "source": "altar-of-fangs",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1301253,
       "type": "avatar-of-sethraliss",
       "name": "Agony of Sethraliss",
       "icon": "spell_nature_lightningoverload",
-      "source": "temple-of-sethraliss"
+      "source": "temple-of-sethraliss",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1301834,
-      "type": "trash",
+      "type": "trash-multiple-locations",
       "name": "Light Bolt Volley",
       "icon": "ability_priest_flashoflight",
       "source": "the-blinding-vale",
@@ -2512,7 +3021,8 @@
             "props": { "id": 245336, "kind": "npc", "children": "Radiant Spellsower" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1302010,
@@ -2528,14 +3038,16 @@
             "props": { "id": 236905, "kind": "npc", "children": "Felmaster Lucsei" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1302489,
       "type": "vashnik-the-malignant",
       "name": "Stygian Burst",
       "icon": "spell_priest_divinestar_shadow2",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1302695,
@@ -2551,7 +3063,8 @@
             "props": { "id": 268668, "kind": "npc", "children": "Bloodcurdled Mass" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-06-26"
     },
     {
       "id": 1302761,
@@ -2567,7 +3080,8 @@
             "props": { "id": 0, "kind": "npc", "children": "Corrupted Guardian" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1302826,
@@ -2575,7 +3089,17 @@
       "name": "Corruption Burst",
       "icon": "spell_fire_twilightnova",
       "source": "temple-of-sethraliss",
-      "avoidable": true
+      "avoidable": true,
+      "lastSeen": "2026-07-24",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 0, "kind": "npc", "children": "Lifeforce" }
+          }
+        ]
+      ]
     },
     {
       "id": 1302945,
@@ -2583,21 +3107,24 @@
       "name": "Impaling Spear",
       "icon": "inv_spear_08",
       "source": "kings-rest",
-      "avoidable": true
+      "avoidable": true,
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1303115,
       "type": "king-dazar",
       "name": "Aerial Smash",
       "icon": "ability_heroicleap",
-      "source": "kings-rest"
+      "source": "kings-rest",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1303267,
       "type": "king-dazar",
       "name": "Gilded Destruction",
       "icon": "inv_sword_2h_zandalarquest_b_01",
-      "source": "kings-rest"
+      "source": "kings-rest",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1303327,
@@ -2613,7 +3140,8 @@
             "props": { "id": 136976, "kind": "npc", "children": "T'zala" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1303374,
@@ -2621,7 +3149,8 @@
       "name": "Searing Gold",
       "icon": "ability_creature_amber_01",
       "source": "kings-rest",
-      "avoidable": true
+      "avoidable": true,
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1303452,
@@ -2637,7 +3166,8 @@
             "props": { "id": 135007, "kind": "npc", "children": "Orb Guardian" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1303486,
@@ -2653,7 +3183,25 @@
             "props": { "id": 135007, "kind": "npc", "children": "Orb Guardian" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
+    },
+    {
+      "id": 1304459,
+      "type": "vashnik-the-malignant",
+      "name": "Tumor Burst",
+      "icon": "ability_creature_disease_02",
+      "source": "the-venomous-abyss",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 269430, "kind": "npc", "children": "Malignant Tumor" }
+          }
+        ]
+      ],
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1305201,
@@ -2661,14 +3209,25 @@
       "name": "Excavating Blast",
       "icon": "spell_nature_earthquake",
       "source": "ruby-life-pools",
-      "avoidable": true
+      "avoidable": true,
+      "lastSeen": "2026-07-24",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 0, "kind": "npc", "children": "Primal Juggernaut" }
+          }
+        ]
+      ]
     },
     {
       "id": 1305618,
       "type": "the-lost-explorers",
       "name": "Fungal Burst",
       "icon": "inv_nature_groundstate",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1305637,
@@ -2684,7 +3243,8 @@
             "props": { "id": 261550, "kind": "npc", "children": "Venom Leech" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1305854,
@@ -2700,21 +3260,24 @@
             "props": { "id": 137478, "kind": "npc", "children": "Queen Wasi" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-09"
     },
     {
       "id": 1305901,
       "type": "vashnik-the-malignant",
       "name": "Burning Presence",
       "icon": "ability_rhyolith_magmaflow_wave",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1305923,
       "type": "kokia-blazehoof-trash",
       "name": "Living Bomb",
       "icon": "inv_summerfest_firespirit",
-      "source": "ruby-life-pools"
+      "source": "ruby-life-pools",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1305945,
@@ -2730,14 +3293,16 @@
             "props": { "id": 134158, "kind": "npc", "children": "Shadow-Borne Champion" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1305998,
       "type": "sszorak",
       "name": "Caustic Claws",
       "icon": "inv_121_trinket_raid_ulatek_ulatekclaw",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-10"
     },
     {
       "id": 1306056,
@@ -2745,21 +3310,33 @@
       "name": "Erupting Slam",
       "icon": "spell_shaman_earthquake",
       "source": "kings-rest",
-      "avoidable": true
+      "avoidable": true,
+      "lastSeen": "2026-07-24",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 0, "kind": "npc", "children": "King Timalji" }
+          }
+        ]
+      ]
     },
     {
       "id": 1306120,
       "type": "sszorak",
       "name": "Venomous Surge",
       "icon": "ability_creature_poison_06",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-13"
     },
     {
       "id": 1306127,
       "type": "the-lost-explorers",
       "name": "Throw Junk",
       "icon": "inv_crate_01",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1306230,
@@ -2775,7 +3352,8 @@
             "props": { "id": 263112, "kind": "npc", "children": "Living Venom" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1306272,
@@ -2790,7 +3368,8 @@
       "type": "ravi",
       "name": "Messy Eater",
       "icon": "inv_misc_food_83_talbuksteak",
-      "source": "altar-of-fangs"
+      "source": "altar-of-fangs",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1306853,
@@ -2806,14 +3385,16 @@
             "props": { "id": 263109, "kind": "npc", "children": "Ula'tek's Chosen" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1306876,
       "type": "the-twin-fangs",
       "name": "Barrage",
       "icon": "inv_artifact_bloodoftheassassinated",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-13"
     },
     {
       "id": 1306890,
@@ -2829,21 +3410,32 @@
             "props": { "id": 270306, "kind": "npc", "children": "Ritual Chieftain" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-23"
     },
     {
       "id": 1307292,
       "type": "the-coiled-altar",
       "name": "Blighted Sever",
       "icon": "ability_creature_felsunder",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-13"
+    },
+    {
+      "id": 1307352,
+      "type": "nymrissa-wavecaller",
+      "name": "Drenched",
+      "icon": "inv_misc_volatilewater",
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-17"
     },
     {
       "id": 1307573,
       "type": "ravi",
       "name": "Triple Shot",
       "icon": "spell_nature_corrosivebreath",
-      "source": "altar-of-fangs"
+      "source": "altar-of-fangs",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1307700,
@@ -2851,14 +3443,16 @@
       "name": "Carrion Burst",
       "icon": "ability_creature_disease_02",
       "source": "altar-of-fangs",
-      "avoidable": true
+      "avoidable": true,
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1307894,
       "type": "ravi",
       "name": "Ravenous Stomp",
       "icon": "ability_earthen_pillar",
-      "source": "altar-of-fangs"
+      "source": "altar-of-fangs",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1307915,
@@ -2866,14 +3460,16 @@
       "name": "Ravenous Stomp",
       "icon": "ability_earthen_pillar",
       "source": "altar-of-fangs",
-      "avoidable": true
+      "avoidable": true,
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1308122,
       "type": "the-twin-fangs",
       "name": "Venomous Emergence",
       "icon": "spell_nature_poisoncleansingtotem",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-13"
     },
     {
       "id": 1308148,
@@ -2889,25 +3485,52 @@
             "props": { "id": 0, "kind": "npc", "children": "Venomous Ophidian" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
+    },
+    {
+      "id": 1308238,
+      "type": "the-lost-explorers",
+      "name": "Shadow Breath",
+      "icon": "spell_shadow_shadowmend",
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-13"
+    },
+    {
+      "id": 1308482,
+      "type": "the-twin-fangs",
+      "name": "Rouse the Brood",
+      "icon": "inv_giantsnake_black",
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-10"
     },
     {
       "id": 1308835,
       "type": "the-twin-fangs",
       "name": "Caustic Rain",
       "icon": "inv_ability_poison_nova",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-12"
     },
     {
       "id": 1308841,
       "type": "the-twin-fangs",
       "name": "Caustic Rain",
       "icon": "inv_ability_poison_orb",
-      "source": "the-venomous-abyss"
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-12"
+    },
+    {
+      "id": 1309279,
+      "type": "the-coiled-altar",
+      "name": "Toxic Deluge",
+      "icon": "spell_shadow_plaguecloud",
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": 1309398,
-      "type": "trash",
+      "type": "zuljan-trash",
       "name": "Infest",
       "icon": "ability_hunter_snaketrap",
       "source": "altar-of-fangs",
@@ -2919,14 +3542,16 @@
             "props": { "id": 261573, "kind": "npc", "children": "Ascendant Serpent" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1309540,
       "type": "kokia-blazehoof",
       "name": "Ritual of Blazebinding",
       "icon": "spell_fire_totemofwrath",
-      "source": "ruby-life-pools"
+      "source": "ruby-life-pools",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1309705,
@@ -2942,7 +3567,8 @@
             "props": { "id": 187897, "kind": "npc", "children": "Defier Draghar" }
           }
         ]
-      ]
+      ],
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1309931,
@@ -2958,7 +3584,287 @@
             "props": { "id": 272074, "kind": "npc", "children": "Volatile Totem" }
           }
         ]
+      ],
+      "lastSeen": "2026-07-24"
+    },
+    {
+      "id": 1310027,
+      "type": "the-lost-explorers",
+      "name": "Relic Rupture",
+      "icon": "spell_necro_chillofdeath",
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": 1310105,
+      "type": "the-twin-fangs",
+      "name": "Tainted Burst",
+      "icon": "ability_deathwing_bloodcorruption_death",
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-10"
+    },
+    {
+      "id": 1310363,
+      "type": "kyrakka-and-erkhart-stormvein-trash",
+      "name": "Tempest Stormshield",
+      "icon": "inv_10_worlddroplevelingoptionalreagent_misc_orb_air",
+      "source": "ruby-life-pools",
+      "lastSeen": "2026-07-24",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 197535, "kind": "npc", "children": "High Channeler Ryvati" }
+          }
+        ]
       ]
+    },
+    {
+      "id": 1310371,
+      "type": "the-twin-fangs",
+      "name": "Stone Breaker",
+      "icon": "ability_smash",
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-13"
+    },
+    {
+      "id": 1310489,
+      "type": "trash",
+      "name": "Blast Chunks",
+      "icon": "inv_10_elementalcombinedfoozles_earth",
+      "source": "ruby-life-pools",
+      "lastSeen": "2026-07-24",
+      "avoidable": true,
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 0, "kind": "npc", "children": "Primal Juggernaut" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1310599,
+      "type": "kokia-blazehoof-trash",
+      "name": "Electrical Discharge",
+      "icon": "inv_misc_stormlordsfavor",
+      "source": "ruby-life-pools",
+      "lastSeen": "2026-07-24",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 197698, "kind": "npc", "children": "Thunderhead" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1310691,
+      "type": "the-coiled-altar",
+      "name": "Mutagenic Venom",
+      "icon": "ability_creature_disease_03",
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": 1310755,
+      "type": "trash-multiple-locations",
+      "name": "Heavy Slams",
+      "icon": "inv_11_arenaboss_conductionslam",
+      "source": "kings-rest",
+      "lastSeen": "2026-07-24",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 133935, "kind": "npc", "children": "Animated Guardian" }
+          },
+          {
+            "component": "WowheadLink",
+            "props": { "id": 137969, "kind": "npc", "children": "Interment Construct" }
+          },
+          {
+            "component": "WowheadLink",
+            "props": { "id": 134739, "kind": "npc", "children": "Purification Construct" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1310758,
+      "type": "trash",
+      "name": "Necrotic Energy",
+      "icon": "spell_necro_chillofdeath",
+      "source": "kings-rest",
+      "lastSeen": "2026-07-24",
+      "avoidable": true,
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 0, "kind": "npc", "children": "Shadow-Borne Champion" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1310761,
+      "type": "the-council-of-tribes",
+      "name": "Barrel Through",
+      "icon": "ability_monk_clashingoxcharge",
+      "source": "kings-rest",
+      "lastSeen": "2026-07-24"
+    },
+    {
+      "id": 1310974,
+      "type": "the-writhing-coil",
+      "name": "Toxic Atrophy",
+      "icon": "spell_shadow_requiem",
+      "source": "altar-of-fangs",
+      "lastSeen": "2026-07-24",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 270417, "kind": "npc", "children": "Uncoiled Writhe" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1311587,
+      "type": "the-lost-explorers",
+      "name": "Relic Rupture",
+      "icon": "spell_necro_chillofdeath",
+      "source": "the-venomous-abyss",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": 1311712,
+      "type": "trash",
+      "name": "Lightning Strike",
+      "icon": "ability_thunderking_lightningwhip",
+      "source": "voidscar-arena",
+      "lastSeen": "2026-07-24",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 0, "kind": "npc", "children": "Raj'kess the Spellstorm" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1311730,
+      "type": "trash",
+      "name": "Disrupting Blast",
+      "icon": "spell_shaman_crashlightning",
+      "source": "voidscar-arena",
+      "lastSeen": "2026-07-24",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 0, "kind": "npc", "children": "Orb of Disruption" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1311808,
+      "type": "trash",
+      "name": "Tempest Winds",
+      "icon": "achievement_raidprimalist_windelemental",
+      "source": "temple-of-sethraliss",
+      "lastSeen": "2026-07-24",
+      "notes": [
+        [
+          "Via ",
+          { "component": "WowheadLink", "props": { "id": 0, "kind": "npc", "children": "Aspix" } }
+        ]
+      ]
+    },
+    {
+      "id": 1311923,
+      "type": "charonus",
+      "name": "Dark Waves",
+      "icon": "inv_cosmicvoid_wave",
+      "source": "voidscar-arena",
+      "lastSeen": "2026-07-24"
+    },
+    {
+      "id": 1311964,
+      "type": "trash",
+      "name": "Latent Hex",
+      "icon": "inv_shoulder_armor_hextroll_d_01",
+      "source": "temple-of-sethraliss",
+      "lastSeen": "2026-07-24",
+      "notes": [
+        [
+          "Via ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 0, "kind": "npc", "children": "Twisted Hexxer" }
+          },
+          {
+            "component": "WowheadLink",
+            "props": { "id": 0, "kind": "npc", "children": "Twisted Hexxer" }
+          }
+        ]
+      ]
+    },
+    {
+      "id": 1311988,
+      "type": "the-golden-serpent",
+      "name": "Serpentine Gust",
+      "icon": "ability_skyreach_four_wind",
+      "source": "kings-rest",
+      "lastSeen": "2026-07-24"
+    },
+    {
+      "id": 1312104,
+      "type": "the-golden-serpent",
+      "name": "Spit Gold",
+      "icon": "ability_creature_amber_01",
+      "source": "kings-rest",
+      "lastSeen": "2026-07-24",
+      "avoidable": true
+    },
+    {
+      "id": 1312143,
+      "type": "mchimba-the-embalmer",
+      "name": "Explosive Acids",
+      "icon": "spell_nature_acid_01",
+      "source": "kings-rest",
+      "lastSeen": "2026-07-24",
+      "avoidable": true
+    },
+    {
+      "id": 1312146,
+      "type": "mchimba-the-embalmer",
+      "name": "Awakening Slam",
+      "icon": "spell_necro_deathsdoor",
+      "source": "kings-rest",
+      "lastSeen": "2026-07-24"
+    },
+    {
+      "id": 1312848,
+      "type": "mchimba-the-embalmer",
+      "name": "Command Constructs",
+      "icon": "inv_sonic_debuff",
+      "source": "kings-rest",
+      "lastSeen": "2026-07-24"
     }
   ]
 }

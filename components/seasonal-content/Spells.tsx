@@ -47,6 +47,11 @@ export function Spells({ spells, wowheadBranch }: SpellsProps) {
                     return (
                       <li key={i}>
                         {note.map((notePart, j) => {
+                          const next = note[j + 1];
+
+                          const comma =
+                            j > 0 && typeof next !== 'string' && next?.component === 'WowheadLink';
+
                           return (
                             <Fragment key={j}>
                               {typeof notePart === 'string' ? (
@@ -60,6 +65,7 @@ export function Spells({ spells, wowheadBranch }: SpellsProps) {
                               ) : notePart.component === 'i' ? (
                                 <i {...notePart.props} />
                               ) : null}
+                              {comma ? ', ' : null}
                             </Fragment>
                           );
                         })}

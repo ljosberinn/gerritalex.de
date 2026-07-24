@@ -30,7 +30,7 @@ export function filterStaleSpells<T extends Spell>(spells: T[]): T[] {
 
     if (!filtered) {
       console.log(
-        `Dropping ${spell.name} (https://wowhead.com/ptr/spell=${spell.id}) as it is stale.`
+        `Dropping ${spell.name} (https://wowhead.com/ptr/spell=${spell.id}) as it is stale (last seen ${Math.floor((latestSeen - new Date(spell.lastSeen).getTime()) / (1000 * 60 * 60 * 24))} days ago ${spell.lastSeen})`
       );
     }
 
