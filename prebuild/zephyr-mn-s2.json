@@ -180,7 +180,7 @@
       "name": "Poison Nova",
       "icon": "ability_creature_disease_02",
       "source": "kings-rest",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 267618,
@@ -284,7 +284,7 @@
       "icon": "trade_engineering",
       "source": "kings-rest",
       "avoidable": true,
-      "lastSeen": "2026-07-22",
+      "lastSeen": "2026-07-24",
       "notes": [
         [
           "Via ",
@@ -308,7 +308,7 @@
           "Via ",
           {
             "component": "WowheadLink",
-            "props": { "id": 0, "kind": "npc", "children": "Honored Raptor" }
+            "props": { "id": 135192, "kind": "npc", "children": "Honored Raptor" }
           }
         ]
       ]
@@ -411,7 +411,7 @@
           "Via ",
           {
             "component": "WowheadLink",
-            "props": { "id": 0, "kind": "npc", "children": "Scaled Krolusk Rider" }
+            "props": { "id": 140119, "kind": "npc", "children": "Scaled Krolusk Rider" }
           }
         ]
       ]
@@ -429,7 +429,7 @@
           "Via ",
           {
             "component": "WowheadLink",
-            "props": { "id": 0, "kind": "npc", "children": "Sandswept Marksman" }
+            "props": { "id": 139097, "kind": "npc", "children": "Sandswept Marksman" }
           }
         ]
       ]
@@ -447,7 +447,7 @@
           "Via ",
           {
             "component": "WowheadLink",
-            "props": { "id": 0, "kind": "npc", "children": "Primal Juggernaut" }
+            "props": { "id": 188244, "kind": "npc", "children": "Primal Juggernaut" }
           }
         ]
       ]
@@ -484,7 +484,7 @@
       "icon": "spell_fire_selfdestruct",
       "source": "ruby-life-pools",
       "avoidable": true,
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 373614,
@@ -552,13 +552,13 @@
       "icon": "inv_ember",
       "source": "ruby-life-pools",
       "avoidable": true,
-      "lastSeen": "2026-07-23",
+      "lastSeen": "2026-07-24",
       "notes": [
         [
           "Via ",
           {
             "component": "WowheadLink",
-            "props": { "id": 0, "kind": "npc", "children": "Primalist Flamedancer" }
+            "props": { "id": 200379, "kind": "npc", "children": "Primalist Flamedancer" }
           }
         ]
       ]
@@ -646,7 +646,7 @@
       "icon": "inv_misc_stormlordsfavor",
       "source": "ruby-life-pools",
       "avoidable": true,
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 392399,
@@ -930,7 +930,7 @@
       "icon": "spell_nature_corrosivebreath",
       "source": "voidscar-arena",
       "avoidable": true,
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1228126,
@@ -1048,7 +1048,7 @@
       "name": "Raging Squall",
       "icon": "ability_deathknight_frozencenter",
       "source": "den-of-nalorakk",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1235658,
@@ -1088,7 +1088,7 @@
           "Via ",
           {
             "component": "WowheadLink",
-            "props": { "id": 0, "kind": "npc", "children": "Sentinel of Winter" }
+            "props": { "id": 244100, "kind": "npc", "children": "Sentinel of Winter" }
           }
         ]
       ]
@@ -1108,7 +1108,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1236731,
@@ -1208,7 +1208,7 @@
       "name": "Lightfire Beams",
       "icon": "inv_ability_holyfire_beam",
       "source": "the-blinding-vale",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1240152,
@@ -1282,7 +1282,7 @@
       "name": "Putrid Burst",
       "icon": "inv_ability_poison_groundstate",
       "source": "den-of-nalorakk",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1246825,
@@ -1478,13 +1478,13 @@
       "icon": "spell_fel_elementaldevastation",
       "source": "murder-row",
       "avoidable": true,
-      "lastSeen": "2026-07-23",
+      "lastSeen": "2026-07-24",
       "notes": [
         [
           "Via ",
           {
             "component": "WowheadLink",
-            "props": { "id": 0, "kind": "npc", "children": "Massive Felwyrm" }
+            "props": { "id": 236902, "kind": "npc", "children": "Massive Felwyrm" }
           }
         ]
       ]
@@ -1587,7 +1587,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1263628,
@@ -1890,7 +1890,7 @@
       "name": "Raging Crosswinds",
       "icon": "ability_skyreach_wind",
       "source": "the-venomous-abyss",
-      "lastSeen": "2026-07-13"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1285965,
@@ -1898,7 +1898,7 @@
       "name": "Ula'tek's Presence",
       "icon": "achievement_dungeon_templeofsethraliss",
       "source": "the-venomous-abyss",
-      "lastSeen": "2026-07-13"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1285979,
@@ -1946,7 +1946,7 @@
       "name": "Viscous Cyst",
       "icon": "inv_ability_poison_nova",
       "source": "the-venomous-abyss",
-      "lastSeen": "2026-07-13"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1287722,
@@ -2032,7 +2032,7 @@
       "name": "Stone Breaker",
       "icon": "ability_smash",
       "source": "the-venomous-abyss",
-      "lastSeen": "2026-07-13"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1289855,
@@ -2074,7 +2074,7 @@
       "name": "Caustic Deluge",
       "icon": "inv_ability_poison_orb",
       "source": "the-venomous-abyss",
-      "lastSeen": "2026-07-13"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1290338,
@@ -2082,7 +2082,7 @@
       "name": "Caustic Globule",
       "icon": "inv_ability_poison_orb",
       "source": "the-venomous-abyss",
-      "lastSeen": "2026-07-13"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1290531,
@@ -2098,7 +2098,7 @@
       "name": "Ravenous Feast",
       "icon": "ability_warrior_bloodnova",
       "source": "the-venomous-abyss",
-      "lastSeen": "2026-07-13"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1291390,
@@ -2122,7 +2122,7 @@
       "name": "Storm Catalyst",
       "icon": "spell_nature_unrelentingstorm",
       "source": "temple-of-sethraliss",
-      "lastSeen": "2026-07-23",
+      "lastSeen": "2026-07-24",
       "notes": [
         [
           "Via ",
@@ -2178,7 +2178,7 @@
           "Via ",
           {
             "component": "WowheadLink",
-            "props": { "id": 0, "kind": "npc", "children": "Sandswept Marksman" }
+            "props": { "id": 139097, "kind": "npc", "children": "Sandswept Marksman" }
           }
         ]
       ]
@@ -2197,7 +2197,7 @@
       "name": "Stir the Depths",
       "icon": "inv_ability_poison_wave",
       "source": "the-venomous-abyss",
-      "lastSeen": "2026-07-13"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1292899,
@@ -2261,7 +2261,7 @@
           "Via ",
           {
             "component": "WowheadLink",
-            "props": { "id": 0, "kind": "npc", "children": "[DNT] Venom Missile Stalker" }
+            "props": { "id": 265114, "kind": "npc", "children": "[DNT] Venom Missile Stalker" }
           }
         ]
       ]
@@ -2416,7 +2416,7 @@
       "name": "Toxic Fumes",
       "icon": "spell_deathvortex",
       "source": "the-venomous-abyss",
-      "lastSeen": "2026-07-13"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1295055,
@@ -2589,7 +2589,7 @@
       "icon": "inv_cosmicvoid_groundstate",
       "source": "voidscar-arena",
       "avoidable": true,
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1297338,
@@ -2597,7 +2597,7 @@
       "name": "Deadly Venom",
       "icon": "ability_creature_poison_06",
       "source": "the-venomous-abyss",
-      "lastSeen": "2026-07-16"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1297648,
@@ -2887,7 +2887,7 @@
           "Via ",
           {
             "component": "WowheadLink",
-            "props": { "id": 0, "kind": "npc", "children": "Voidtouched Magi" }
+            "props": { "id": 252072, "kind": "npc", "children": "Voidtouched Magi" }
           }
         ]
       ]
@@ -2923,7 +2923,7 @@
       "name": "Virulence",
       "icon": "ability_creature_poison_03",
       "source": "the-venomous-abyss",
-      "lastSeen": "2026-07-10"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1300116,
@@ -3096,7 +3096,7 @@
           "Via ",
           {
             "component": "WowheadLink",
-            "props": { "id": 0, "kind": "npc", "children": "Lifeforce" }
+            "props": { "id": 268364, "kind": "npc", "children": "Lifeforce" }
           }
         ]
       ]
@@ -3216,7 +3216,7 @@
           "Via ",
           {
             "component": "WowheadLink",
-            "props": { "id": 0, "kind": "npc", "children": "Primal Juggernaut" }
+            "props": { "id": 188244, "kind": "npc", "children": "Primal Juggernaut" }
           }
         ]
       ]
@@ -3302,7 +3302,7 @@
       "name": "Caustic Claws",
       "icon": "inv_121_trinket_raid_ulatek_ulatekclaw",
       "source": "the-venomous-abyss",
-      "lastSeen": "2026-07-10"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1306056,
@@ -3317,7 +3317,7 @@
           "Via ",
           {
             "component": "WowheadLink",
-            "props": { "id": 0, "kind": "npc", "children": "King Timalji" }
+            "props": { "id": 137474, "kind": "npc", "children": "King Timalji" }
           }
         ]
       ]
@@ -3328,7 +3328,7 @@
       "name": "Venomous Surge",
       "icon": "ability_creature_poison_06",
       "source": "the-venomous-abyss",
-      "lastSeen": "2026-07-13"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1306127,
@@ -3394,7 +3394,7 @@
       "name": "Barrage",
       "icon": "inv_artifact_bloodoftheassassinated",
       "source": "the-venomous-abyss",
-      "lastSeen": "2026-07-13"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1306890,
@@ -3469,7 +3469,7 @@
       "name": "Venomous Emergence",
       "icon": "spell_nature_poisoncleansingtotem",
       "source": "the-venomous-abyss",
-      "lastSeen": "2026-07-13"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1308148,
@@ -3502,7 +3502,7 @@
       "name": "Rouse the Brood",
       "icon": "inv_giantsnake_black",
       "source": "the-venomous-abyss",
-      "lastSeen": "2026-07-10"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1308835,
@@ -3601,7 +3601,7 @@
       "name": "Tainted Burst",
       "icon": "ability_deathwing_bloodcorruption_death",
       "source": "the-venomous-abyss",
-      "lastSeen": "2026-07-10"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1310363,
@@ -3626,7 +3626,7 @@
       "name": "Stone Breaker",
       "icon": "ability_smash",
       "source": "the-venomous-abyss",
-      "lastSeen": "2026-07-13"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": 1310489,
@@ -3641,7 +3641,7 @@
           "Via ",
           {
             "component": "WowheadLink",
-            "props": { "id": 0, "kind": "npc", "children": "Primal Juggernaut" }
+            "props": { "id": 188244, "kind": "npc", "children": "Primal Juggernaut" }
           }
         ]
       ]
@@ -3709,7 +3709,7 @@
           "Via ",
           {
             "component": "WowheadLink",
-            "props": { "id": 0, "kind": "npc", "children": "Shadow-Borne Champion" }
+            "props": { "id": 134158, "kind": "npc", "children": "Shadow-Borne Champion" }
           }
         ]
       ]
@@ -3759,7 +3759,7 @@
           "Via ",
           {
             "component": "WowheadLink",
-            "props": { "id": 0, "kind": "npc", "children": "Raj'kess the Spellstorm" }
+            "props": { "id": 267546, "kind": "npc", "children": "Raj'kess the Spellstorm" }
           }
         ]
       ]
@@ -3791,7 +3791,10 @@
       "notes": [
         [
           "Via ",
-          { "component": "WowheadLink", "props": { "id": 0, "kind": "npc", "children": "Aspix" } }
+          {
+            "component": "WowheadLink",
+            "props": { "id": 133944, "kind": "npc", "children": "Aspix" }
+          }
         ]
       ]
     },
@@ -3815,11 +3818,11 @@
           "Via ",
           {
             "component": "WowheadLink",
-            "props": { "id": 0, "kind": "npc", "children": "Twisted Hexxer" }
+            "props": { "id": 136250, "kind": "npc", "children": "Twisted Hexxer" }
           },
           {
             "component": "WowheadLink",
-            "props": { "id": 0, "kind": "npc", "children": "Twisted Hexxer" }
+            "props": { "id": 136250, "kind": "npc", "children": "Twisted Hexxer" }
           }
         ]
       ]
