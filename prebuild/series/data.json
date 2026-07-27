@@ -278,6 +278,26 @@
     "state": "upcoming"
   },
   {
+    "title": "Blade Runner 2099",
+    "id": 171802,
+    "state": "upcoming",
+    "episodesSeen": 0,
+    "metadata": {
+      "genres": [
+        "Sci-Fi & Fantasy"
+      ],
+      "seasons": 1,
+      "tagline": "Welcome to a future we no longer control.",
+      "release": {
+        "day": 25,
+        "month": 11,
+        "year": 2026
+      },
+      "episodes": 8
+    },
+    "favorite": false
+  },
+  {
     "title": "Breaking Bad",
     "id": 1396,
     "metadata": {
@@ -391,18 +411,18 @@
         "Sci-Fi & Fantasy",
         "Drama"
       ],
-      "seasons": 1,
+      "seasons": 2,
       "tagline": "One life. Infinite possibilities.",
       "release": {
         "day": 7,
         "month": 5,
         "year": 2024
       },
-      "episodes": 9
+      "episodes": 19
     },
     "favorite": false,
     "episodesSeen": 9,
-    "state": "finished"
+    "state": "upcoming"
   },
   {
     "title": "Debris",
@@ -561,7 +581,8 @@
     "metadata": {
       "genres": [
         "Action & Adventure",
-        "Sci-Fi & Fantasy"
+        "Sci-Fi & Fantasy",
+        "Drama"
       ],
       "seasons": 2,
       "tagline": "Let the end times roll.",
@@ -1852,7 +1873,7 @@
         "Sci-Fi & Fantasy",
         "Drama"
       ],
-      "seasons": 3,
+      "seasons": 4,
       "tagline": "The key to the future lies in the past.",
       "release": {
         "day": 4,
@@ -2003,7 +2024,7 @@
         "Drama"
       ],
       "seasons": 4,
-      "tagline": "The frontier awaits.",
+      "tagline": "Boldly go one step closer to where it all began.",
       "release": {
         "day": 5,
         "month": 5,
@@ -2405,8 +2426,8 @@
     "metadata": {
       "genres": [
         "Action & Adventure",
-        "Sci-Fi & Fantasy",
-        "Drama"
+        "Drama",
+        "Sci-Fi & Fantasy"
       ],
       "seasons": 3,
       "tagline": "Evil has had many names.",
@@ -2415,7 +2436,7 @@
         "month": 9,
         "year": 2022
       },
-      "episodes": 17
+      "episodes": 24
     },
     "favorite": false,
     "episodesSeen": 17,
@@ -2880,7 +2901,7 @@
         "Mystery"
       ],
       "seasons": 1,
-      "tagline": "One nation, under gods.",
+      "tagline": "",
       "release": {
         "day": null,
         "month": null,
@@ -3010,10 +3031,10 @@
     "metadata": {
       "genres": [
         "Drama",
-        "Mystery",
-        "Comedy"
+        "Comedy",
+        "Mystery"
       ],
-      "seasons": 1,
+      "seasons": 2,
       "tagline": "Welcome to the island, please enjoy your stay. Just don't ask too many questions.",
       "release": {
         "day": 28,

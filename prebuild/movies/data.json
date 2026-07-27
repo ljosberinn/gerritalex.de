@@ -827,7 +827,7 @@
         "month": 12,
         "year": 2026
       },
-      "runtime": 166
+      "runtime": 165
     },
     "favorite": false
   },
@@ -1692,7 +1692,7 @@
   {
     "title": "Disclosure Day",
     "id": 1275779,
-    "seen": false,
+    "seen": true,
     "metadata": {
       "genres": [
         "Mystery",
@@ -1970,9 +1970,8 @@
     "seen": false,
     "metadata": {
       "genres": [
-        "Action",
-        "Adventure",
-        "Science Fiction"
+        "Science Fiction",
+        "Adventure"
       ],
       "tagline": "The epic conclusion.",
       "release": {
@@ -1980,7 +1979,7 @@
         "month": 12,
         "year": 2026
       },
-      "runtime": 0
+      "runtime": 140
     },
     "favorite": false
   },
@@ -2224,11 +2223,10 @@
     "title": "Evil Dead Burn",
     "id": 1212763,
     "favorite": false,
-    "seen": false,
+    "seen": true,
     "metadata": {
       "genres": [
-        "Horror",
-        "Thriller"
+        "Horror"
       ],
       "tagline": "Every family has its demons.",
       "release": {
@@ -2236,7 +2234,7 @@
         "month": 7,
         "year": 2026
       },
-      "runtime": 111
+      "runtime": 110
     }
   },
   {
@@ -5658,7 +5656,7 @@
         "Science Fiction",
         "Thriller"
       ],
-      "tagline": "A new era of evil.",
+      "tagline": "No Sweat.",
       "release": {
         "day": 16,
         "month": 9,
@@ -6814,9 +6812,9 @@
       ],
       "tagline": "",
       "release": {
-        "day": 30,
-        "month": 9,
-        "year": 2027
+        "day": 17,
+        "month": 2,
+        "year": 2028
       },
       "runtime": 0
     },
