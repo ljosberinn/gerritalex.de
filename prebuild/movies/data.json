@@ -883,8 +883,8 @@
       ],
       "tagline": "",
       "release": {
-        "day": 16,
-        "month": 12,
+        "day": 15,
+        "month": 9,
         "year": 2027
       },
       "runtime": 0
@@ -5653,10 +5653,9 @@
     "metadata": {
       "genres": [
         "Horror",
-        "Science Fiction",
-        "Thriller"
+        "Science Fiction"
       ],
-      "tagline": "No Sweat.",
+      "tagline": "No sweat.",
       "release": {
         "day": 16,
         "month": 9,
@@ -8144,6 +8143,26 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "title": "The Odyssey",
+    "id": 1368337,
+    "seen": true,
+    "favorite": false,
+    "metadata": {
+      "genres": [
+        "Adventure",
+        "Action",
+        "Fantasy"
+      ],
+      "tagline": "Defy the gods.",
+      "release": {
+        "day": 15,
+        "month": 7,
+        "year": 2026
+      },
+      "runtime": 173
+    }
   },
   {
     "title": "The Order",
