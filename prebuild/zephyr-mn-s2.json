@@ -106,7 +106,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 265773,
@@ -114,7 +114,7 @@
       "name": "Spit Gold",
       "icon": "ability_creature_amber_01",
       "source": "kings-rest",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 265781,
@@ -139,7 +139,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 266512,
@@ -147,7 +147,7 @@
       "name": "Consume Charge",
       "icon": "spell_nature_unrelentingstorm",
       "source": "temple-of-sethraliss",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 267077,
@@ -155,7 +155,7 @@
       "name": "Explode",
       "icon": "spell_shaman_firenova",
       "source": "kings-rest",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 267105,
@@ -172,7 +172,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 267273,
@@ -180,7 +180,7 @@
       "name": "Poison Nova",
       "icon": "ability_creature_disease_02",
       "source": "kings-rest",
-      "lastSeen": "2026-08-01"
+      "lastSeen": "2026-08-03"
     },
     {
       "id": 267618,
@@ -188,7 +188,7 @@
       "name": "Drain Fluids",
       "icon": "inv_misc_volatilewater",
       "source": "kings-rest",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 267639,
@@ -196,7 +196,7 @@
       "name": "Burn Corruption",
       "icon": "ability_siege_engineer_purification_beam",
       "source": "kings-rest",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 267763,
@@ -214,7 +214,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 269230,
@@ -231,7 +231,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 269369,
@@ -240,7 +240,7 @@
       "icon": "ability_hunter_beastmastery",
       "source": "kings-rest",
       "avoidable": true,
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 269972,
@@ -249,7 +249,7 @@
       "icon": "warlock_curse_shadow",
       "source": "kings-rest",
       "avoidable": true,
-      "lastSeen": "2026-08-02",
+      "lastSeen": "2026-08-04",
       "notes": [
         [
           "Via ",
@@ -275,7 +275,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 270485,
@@ -284,7 +284,7 @@
       "icon": "trade_engineering",
       "source": "kings-rest",
       "avoidable": true,
-      "lastSeen": "2026-08-01",
+      "lastSeen": "2026-08-03",
       "notes": [
         [
           "Via ",
@@ -302,7 +302,7 @@
       "icon": "ability_druid_ravage",
       "source": "kings-rest",
       "avoidable": true,
-      "lastSeen": "2026-08-02",
+      "lastSeen": "2026-08-04",
       "notes": [
         [
           "Via ",
@@ -328,7 +328,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 270891,
@@ -345,7 +345,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 270928,
@@ -362,7 +362,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 271562,
@@ -379,7 +379,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 272021,
@@ -396,7 +396,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 272655,
@@ -405,7 +405,7 @@
       "icon": "spell_sandexplosion",
       "source": "temple-of-sethraliss",
       "avoidable": true,
-      "lastSeen": "2026-08-02",
+      "lastSeen": "2026-08-04",
       "notes": [
         [
           "Via ",
@@ -423,7 +423,7 @@
       "icon": "inv_ammo_arrow_04",
       "source": "temple-of-sethraliss",
       "avoidable": true,
-      "lastSeen": "2026-08-02",
+      "lastSeen": "2026-08-04",
       "notes": [
         [
           "Via ",
@@ -484,7 +484,7 @@
       "icon": "spell_fire_selfdestruct",
       "source": "ruby-life-pools",
       "avoidable": true,
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 373614,
@@ -493,7 +493,7 @@
       "icon": "spell_fire_selfdestruct",
       "source": "ruby-life-pools",
       "avoidable": true,
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 373688,
@@ -501,7 +501,7 @@
       "name": "Frost Overload",
       "icon": "spell_fire_blueflamering",
       "source": "ruby-life-pools",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 373692,
@@ -518,7 +518,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 373694,
@@ -543,7 +543,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 373977,
@@ -552,7 +552,7 @@
       "icon": "inv_ember",
       "source": "ruby-life-pools",
       "avoidable": true,
-      "lastSeen": "2026-08-02",
+      "lastSeen": "2026-08-03",
       "notes": [
         [
           "Via ",
@@ -569,7 +569,7 @@
       "name": "Interrupting Cloudburst",
       "icon": "spell_nature_cyclone",
       "source": "ruby-life-pools",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 383925,
@@ -577,7 +577,7 @@
       "name": "Chillstorm",
       "icon": "spell_shadow_soulleech_2",
       "source": "ruby-life-pools",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 384024,
@@ -585,7 +585,7 @@
       "name": "Hailbombs",
       "icon": "inv_10_specialreagentfoozles_primalistrune_frost",
       "source": "ruby-life-pools",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 384823,
@@ -593,7 +593,7 @@
       "name": "Inferno",
       "icon": "ability_warlock_inferno",
       "source": "ruby-life-pools",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 385292,
@@ -602,7 +602,7 @@
       "icon": "inv_summerfest_firespirit",
       "source": "ruby-life-pools",
       "avoidable": true,
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 385311,
@@ -619,7 +619,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 385568,
@@ -637,7 +637,7 @@
       "icon": "ability_mage_firestarter",
       "source": "ruby-life-pools",
       "avoidable": true,
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 391727,
@@ -646,7 +646,7 @@
       "icon": "inv_misc_stormlordsfavor",
       "source": "ruby-life-pools",
       "avoidable": true,
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-03"
     },
     {
       "id": 392399,
@@ -663,7 +663,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 392406,
@@ -680,7 +680,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 392488,
@@ -718,7 +718,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 392642,
@@ -743,7 +743,7 @@
       "name": "Hailburst",
       "icon": "spell_frost_frostshock",
       "source": "ruby-life-pools",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 397077,
@@ -751,7 +751,7 @@
       "name": "Chillstorm",
       "icon": "spell_shadow_soulleech_2",
       "source": "ruby-life-pools",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 473898,
@@ -759,7 +759,7 @@
       "name": "Legion Strike",
       "icon": "inv_axe_09",
       "source": "murder-row",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 474197,
@@ -767,7 +767,7 @@
       "name": "Demonic Rage",
       "icon": "ability_warlock_demonicempowerment",
       "source": "murder-row",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 474457,
@@ -775,7 +775,7 @@
       "name": "Fingers of Gul'dan",
       "icon": "ability_warlock_handofguldan",
       "source": "murder-row",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 474483,
@@ -783,7 +783,7 @@
       "name": "Killing Spree",
       "icon": "inv_112_rogue_betweentheeyes",
       "source": "murder-row",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 474768,
@@ -800,7 +800,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1214355,
@@ -808,7 +808,7 @@
       "name": "Fire Bomb",
       "icon": "inv_eng_bombfire",
       "source": "murder-row",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1214663,
@@ -816,7 +816,7 @@
       "name": "Axe Toss",
       "icon": "ability_warrior_titansgrip",
       "source": "murder-row",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1214959,
@@ -824,7 +824,7 @@
       "name": "Chaotic Burst",
       "icon": "ability_demonhunter_chaosnova",
       "source": "murder-row",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1216538,
@@ -845,7 +845,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1216945,
@@ -853,7 +853,7 @@
       "name": "Searing Fel Flame",
       "icon": "spell_fire_felfirenova",
       "source": "murder-row",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1216955,
@@ -870,7 +870,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-03"
     },
     {
       "id": 1217099,
@@ -887,7 +887,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1217992,
@@ -913,7 +913,7 @@
       "icon": "ability_creature_poison_05",
       "source": "voidscar-arena",
       "avoidable": true,
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1223906,
@@ -921,7 +921,7 @@
       "name": "Fel Nova",
       "icon": "spell_fire_felflamering",
       "source": "murder-row",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-03"
     },
     {
       "id": 1226031,
@@ -930,7 +930,7 @@
       "icon": "spell_nature_corrosivebreath",
       "source": "voidscar-arena",
       "avoidable": true,
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-03"
     },
     {
       "id": 1228126,
@@ -947,7 +947,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1231353,
@@ -964,7 +964,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1233264,
@@ -981,7 +981,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1233485,
@@ -1023,7 +1023,7 @@
       "name": "Ravenous Bellow",
       "icon": "ability_druid_challangingroar",
       "source": "den-of-nalorakk",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1235125,
@@ -1031,7 +1031,7 @@
       "name": "Hearty Bellow",
       "icon": "ability_warrior_battleshout",
       "source": "den-of-nalorakk",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1235129,
@@ -1040,7 +1040,7 @@
       "icon": "ability_deathknight_bonegrinder",
       "source": "den-of-nalorakk",
       "avoidable": true,
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-03"
     },
     {
       "id": 1235635,
@@ -1048,7 +1048,7 @@
       "name": "Raging Squall",
       "icon": "ability_deathknight_frozencenter",
       "source": "den-of-nalorakk",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1235658,
@@ -1056,7 +1056,7 @@
       "name": "Frozen Tempest",
       "icon": "spell_frost_ring-of-frost",
       "source": "den-of-nalorakk",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1235752,
@@ -1073,7 +1073,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1235795,
@@ -1082,7 +1082,7 @@
       "icon": "ability_deathknight_pillaroffrost",
       "source": "den-of-nalorakk",
       "avoidable": true,
-      "lastSeen": "2026-08-02",
+      "lastSeen": "2026-08-04",
       "notes": [
         [
           "Via ",
@@ -1108,7 +1108,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1236731,
@@ -1116,7 +1116,7 @@
       "name": "Thorncaller Roar",
       "icon": "trade_engineering",
       "source": "the-blinding-vale",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1236746,
@@ -1124,7 +1124,7 @@
       "name": "Verdant Stomp",
       "icon": "inv_raptortravelform",
       "source": "the-blinding-vale",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1237093,
@@ -1132,7 +1132,7 @@
       "name": "Crushing Footfalls",
       "icon": "shaman_pvp_rockshield",
       "source": "the-blinding-vale",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1238463,
@@ -1149,7 +1149,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1238638,
@@ -1166,7 +1166,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-03"
     },
     {
       "id": 1239855,
@@ -1183,7 +1183,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1239871,
@@ -1200,7 +1200,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1239919,
@@ -1208,7 +1208,7 @@
       "name": "Lightfire Beams",
       "icon": "inv_ability_holyfire_beam",
       "source": "the-blinding-vale",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1240152,
@@ -1216,7 +1216,7 @@
       "name": "Lightfall",
       "icon": "inv_ability_holyfire_missile",
       "source": "the-blinding-vale",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1240257,
@@ -1224,7 +1224,7 @@
       "name": "Pulverizing Strikes",
       "icon": "ability_druid_swipe",
       "source": "the-blinding-vale",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1240280,
@@ -1241,7 +1241,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1241058,
@@ -1249,7 +1249,7 @@
       "name": "Grievous Thrash",
       "icon": "spell_druid_bloodythrash",
       "source": "the-blinding-vale",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1242200,
@@ -1266,7 +1266,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1242887,
@@ -1274,7 +1274,7 @@
       "name": "Echoing Maul",
       "icon": "inv_ability_druidoftheclawdruid_ravage",
       "source": "den-of-nalorakk",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1245593,
@@ -1282,7 +1282,7 @@
       "name": "Putrid Burst",
       "icon": "inv_ability_poison_groundstate",
       "source": "den-of-nalorakk",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-03"
     },
     {
       "id": 1246825,
@@ -1299,7 +1299,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1246957,
@@ -1316,7 +1316,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1247030,
@@ -1333,7 +1333,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1247039,
@@ -1341,7 +1341,7 @@
       "name": "Fluorescent Outburst",
       "icon": "spell_nature_wrathv2",
       "source": "the-blinding-vale",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1247366,
@@ -1358,7 +1358,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1247644,
@@ -1366,7 +1366,7 @@
       "name": "Oozing Xylem",
       "icon": "inv_ability_holyfire_nova",
       "source": "the-blinding-vale",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1249238,
@@ -1384,7 +1384,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-03"
     },
     {
       "id": 1249621,
@@ -1401,7 +1401,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-01"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1250695,
@@ -1418,7 +1418,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1250937,
@@ -1435,7 +1435,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1252406,
@@ -1452,7 +1452,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1255205,
@@ -1469,7 +1469,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1256300,
@@ -1478,7 +1478,7 @@
       "icon": "spell_fel_elementaldevastation",
       "source": "murder-row",
       "avoidable": true,
-      "lastSeen": "2026-08-01",
+      "lastSeen": "2026-08-03",
       "notes": [
         [
           "Via ",
@@ -1520,7 +1520,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-01"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1262253,
@@ -1537,7 +1537,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1262497,
@@ -1545,7 +1545,7 @@
       "name": "Monstrous Roar",
       "icon": "ability_racial_darkflight",
       "source": "voidscar-arena",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1263420,
@@ -1553,7 +1553,7 @@
       "name": "Lightcrazed Frenzy",
       "icon": "ability_monk_explodingjadeblossom",
       "source": "the-blinding-vale",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1263590,
@@ -1570,7 +1570,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1263597,
@@ -1587,7 +1587,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1263628,
@@ -1604,7 +1604,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1263642,
@@ -1621,7 +1621,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1264110,
@@ -1629,7 +1629,7 @@
       "name": "Felstorm",
       "icon": "spell_fire_felcano",
       "source": "murder-row",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1266241,
@@ -1646,7 +1646,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-03"
     },
     {
       "id": 1266340,
@@ -1671,7 +1671,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1271380,
@@ -1705,7 +1705,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1280189,
@@ -1962,7 +1962,7 @@
       "name": "Uncoil",
       "icon": "ability_hunter_snaketrap",
       "source": "altar-of-fangs",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1288092,
@@ -1970,7 +1970,7 @@
       "name": "Thunder and Lightning",
       "icon": "warrior_talent_icon_thunderstruck",
       "source": "temple-of-sethraliss",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1288235,
@@ -2090,7 +2090,7 @@
       "name": "Induction",
       "icon": "ability_thunderking_overcharge",
       "source": "temple-of-sethraliss",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1290662,
@@ -2114,7 +2114,7 @@
       "name": "Lightning Spire",
       "icon": "ability_thunderking_rockfalllow",
       "source": "temple-of-sethraliss",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1291622,
@@ -2122,7 +2122,7 @@
       "name": "Storm Catalyst",
       "icon": "spell_nature_unrelentingstorm",
       "source": "temple-of-sethraliss",
-      "lastSeen": "2026-08-02",
+      "lastSeen": "2026-08-04",
       "notes": [
         [
           "Via ",
@@ -2139,7 +2139,7 @@
       "name": "Thunder Spit",
       "icon": "ability_thunderking_thunderstruck",
       "source": "temple-of-sethraliss",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1291935,
@@ -2172,7 +2172,7 @@
       "icon": "spell_sandexplosion",
       "source": "temple-of-sethraliss",
       "avoidable": true,
-      "lastSeen": "2026-08-02",
+      "lastSeen": "2026-08-04",
       "notes": [
         [
           "Via ",
@@ -2213,7 +2213,7 @@
       "name": "Serpentstorm",
       "icon": "spell_nature_lightningoverload",
       "source": "temple-of-sethraliss",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1293475,
@@ -2230,7 +2230,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1293652,
@@ -2247,7 +2247,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-03"
     },
     {
       "id": 1294197,
@@ -2255,7 +2255,7 @@
       "name": "Experimental Toxin",
       "icon": "inv_ability_poison_nova",
       "source": "altar-of-fangs",
-      "lastSeen": "2026-08-02",
+      "lastSeen": "2026-08-04",
       "notes": [
         [
           "Via ",
@@ -2290,7 +2290,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1294729,
@@ -2324,7 +2324,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1294789,
@@ -2341,7 +2341,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1294827,
@@ -2358,7 +2358,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1294836,
@@ -2375,7 +2375,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1294846,
@@ -2400,7 +2400,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1294869,
@@ -2449,7 +2449,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1295085,
@@ -2498,7 +2498,7 @@
       "name": "Infernal Crush",
       "icon": "ability_bossfellord_felspike",
       "source": "murder-row",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1295893,
@@ -2531,7 +2531,7 @@
       "icon": "inv_ability_poison_wave",
       "source": "altar-of-fangs",
       "avoidable": true,
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1296245,
@@ -2564,7 +2564,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1296912,
@@ -2572,7 +2572,7 @@
       "name": "Storm Strikes",
       "icon": "spell_shaman_thunderstorm",
       "source": "temple-of-sethraliss",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-03"
     },
     {
       "id": 1296962,
@@ -2589,7 +2589,7 @@
       "icon": "inv_cosmicvoid_groundstate",
       "source": "voidscar-arena",
       "avoidable": true,
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1297338,
@@ -2638,7 +2638,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1297691,
@@ -2655,7 +2655,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1297695,
@@ -2672,7 +2672,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1297793,
@@ -2680,7 +2680,7 @@
       "name": "Overwhelming Onslaught",
       "icon": "spell_druid_thrash",
       "source": "den-of-nalorakk",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1297797,
@@ -2688,7 +2688,7 @@
       "name": "Forceful Slam",
       "icon": "inv_misc_bearpaw_red",
       "source": "den-of-nalorakk",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1298104,
@@ -2705,7 +2705,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1298317,
@@ -2722,7 +2722,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1298582,
@@ -2763,7 +2763,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1298933,
@@ -2781,7 +2781,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1299080,
@@ -2789,7 +2789,7 @@
       "name": "Death Rattle",
       "icon": "inv_sonic_debuff",
       "source": "altar-of-fangs",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1299145,
@@ -2807,7 +2807,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1299273,
@@ -2824,7 +2824,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1299296,
@@ -2881,7 +2881,7 @@
       "icon": "inv_cosmicvoid_orb",
       "source": "voidscar-arena",
       "avoidable": true,
-      "lastSeen": "2026-08-02",
+      "lastSeen": "2026-08-04",
       "notes": [
         [
           "Via ",
@@ -2907,7 +2907,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1299947,
@@ -2940,7 +2940,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1300137,
@@ -2965,7 +2965,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1300259,
@@ -2973,7 +2973,7 @@
       "name": "Dark Bloom",
       "icon": "inv_ability_voidweaverpriest_entropicrift",
       "source": "voidscar-arena",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1300351,
@@ -2981,7 +2981,7 @@
       "name": "Poison Splash",
       "icon": "spell_nature_corrosivebreath",
       "source": "voidscar-arena",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1300372,
@@ -2989,7 +2989,7 @@
       "name": "Cosmic Crash",
       "icon": "inv_cosmicvoid_groundsate",
       "source": "voidscar-arena",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1300892,
@@ -2997,7 +2997,7 @@
       "name": "Fang Empowered",
       "icon": "inv_knife_1h_ulatekfang_d_01_poison",
       "source": "altar-of-fangs",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1301253,
@@ -3005,7 +3005,7 @@
       "name": "Agony of Sethraliss",
       "icon": "spell_nature_lightningoverload",
       "source": "temple-of-sethraliss",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1301834,
@@ -3022,7 +3022,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1302010,
@@ -3039,7 +3039,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1302489,
@@ -3081,7 +3081,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1302826,
@@ -3090,7 +3090,7 @@
       "icon": "spell_fire_twilightnova",
       "source": "temple-of-sethraliss",
       "avoidable": true,
-      "lastSeen": "2026-08-02",
+      "lastSeen": "2026-08-04",
       "notes": [
         [
           "Via ",
@@ -3108,7 +3108,7 @@
       "icon": "inv_spear_08",
       "source": "kings-rest",
       "avoidable": true,
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1303115,
@@ -3116,7 +3116,7 @@
       "name": "Aerial Smash",
       "icon": "ability_heroicleap",
       "source": "kings-rest",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1303267,
@@ -3124,7 +3124,7 @@
       "name": "Gilded Destruction",
       "icon": "inv_sword_2h_zandalarquest_b_01",
       "source": "kings-rest",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1303327,
@@ -3141,7 +3141,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1303374,
@@ -3150,7 +3150,7 @@
       "icon": "ability_creature_amber_01",
       "source": "kings-rest",
       "avoidable": true,
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1303452,
@@ -3167,7 +3167,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1303486,
@@ -3184,7 +3184,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1304459,
@@ -3210,7 +3210,7 @@
       "icon": "spell_nature_earthquake",
       "source": "ruby-life-pools",
       "avoidable": true,
-      "lastSeen": "2026-08-02",
+      "lastSeen": "2026-08-04",
       "notes": [
         [
           "Via ",
@@ -3244,7 +3244,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1305854,
@@ -3277,7 +3277,7 @@
       "name": "Living Bomb",
       "icon": "inv_summerfest_firespirit",
       "source": "ruby-life-pools",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1305945,
@@ -3294,7 +3294,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1305998,
@@ -3311,7 +3311,7 @@
       "icon": "spell_shaman_earthquake",
       "source": "kings-rest",
       "avoidable": true,
-      "lastSeen": "2026-08-02",
+      "lastSeen": "2026-08-04",
       "notes": [
         [
           "Via ",
@@ -3353,7 +3353,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1306272,
@@ -3369,7 +3369,7 @@
       "name": "Messy Eater",
       "icon": "inv_misc_food_83_talbuksteak",
       "source": "altar-of-fangs",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1306853,
@@ -3386,7 +3386,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1306876,
@@ -3411,7 +3411,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1307292,
@@ -3435,7 +3435,7 @@
       "name": "Triple Shot",
       "icon": "spell_nature_corrosivebreath",
       "source": "altar-of-fangs",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1307700,
@@ -3444,7 +3444,7 @@
       "icon": "ability_creature_disease_02",
       "source": "altar-of-fangs",
       "avoidable": true,
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1307894,
@@ -3452,7 +3452,7 @@
       "name": "Ravenous Stomp",
       "icon": "ability_earthen_pillar",
       "source": "altar-of-fangs",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1307915,
@@ -3461,7 +3461,7 @@
       "icon": "ability_earthen_pillar",
       "source": "altar-of-fangs",
       "avoidable": true,
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1308122,
@@ -3486,7 +3486,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1308238,
@@ -3543,7 +3543,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1309540,
@@ -3551,7 +3551,7 @@
       "name": "Ritual of Blazebinding",
       "icon": "spell_fire_totemofwrath",
       "source": "ruby-life-pools",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1309705,
@@ -3568,7 +3568,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1309931,
@@ -3585,7 +3585,7 @@
           }
         ]
       ],
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1310027,
@@ -3609,7 +3609,7 @@
       "name": "Tempest Stormshield",
       "icon": "inv_10_worlddroplevelingoptionalreagent_misc_orb_air",
       "source": "ruby-life-pools",
-      "lastSeen": "2026-08-02",
+      "lastSeen": "2026-08-04",
       "notes": [
         [
           "Via ",
@@ -3634,7 +3634,7 @@
       "name": "Blast Chunks",
       "icon": "inv_10_elementalcombinedfoozles_earth",
       "source": "ruby-life-pools",
-      "lastSeen": "2026-08-02",
+      "lastSeen": "2026-08-04",
       "avoidable": true,
       "notes": [
         [
@@ -3652,7 +3652,7 @@
       "name": "Electrical Discharge",
       "icon": "inv_misc_stormlordsfavor",
       "source": "ruby-life-pools",
-      "lastSeen": "2026-08-02",
+      "lastSeen": "2026-08-03",
       "notes": [
         [
           "Via ",
@@ -3677,7 +3677,7 @@
       "name": "Heavy Slams",
       "icon": "inv_11_arenaboss_conductionslam",
       "source": "kings-rest",
-      "lastSeen": "2026-08-02",
+      "lastSeen": "2026-08-04",
       "notes": [
         [
           "Via ",
@@ -3702,7 +3702,7 @@
       "name": "Necrotic Energy",
       "icon": "spell_necro_chillofdeath",
       "source": "kings-rest",
-      "lastSeen": "2026-08-02",
+      "lastSeen": "2026-08-04",
       "avoidable": true,
       "notes": [
         [
@@ -3720,7 +3720,7 @@
       "name": "Barrel Through",
       "icon": "ability_monk_clashingoxcharge",
       "source": "kings-rest",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1310974,
@@ -3728,7 +3728,7 @@
       "name": "Toxic Atrophy",
       "icon": "spell_shadow_requiem",
       "source": "altar-of-fangs",
-      "lastSeen": "2026-08-02",
+      "lastSeen": "2026-08-03",
       "notes": [
         [
           "Via ",
@@ -3753,7 +3753,7 @@
       "name": "Lightning Strike",
       "icon": "ability_thunderking_lightningwhip",
       "source": "voidscar-arena",
-      "lastSeen": "2026-08-02",
+      "lastSeen": "2026-08-04",
       "notes": [
         [
           "Via ",
@@ -3770,7 +3770,7 @@
       "name": "Disrupting Blast",
       "icon": "spell_shaman_crashlightning",
       "source": "voidscar-arena",
-      "lastSeen": "2026-08-02",
+      "lastSeen": "2026-08-04",
       "notes": [
         [
           "Via ",
@@ -3787,7 +3787,7 @@
       "name": "Tempest Winds",
       "icon": "achievement_raidprimalist_windelemental",
       "source": "temple-of-sethraliss",
-      "lastSeen": "2026-08-02",
+      "lastSeen": "2026-08-04",
       "notes": [
         [
           "Via ",
@@ -3804,7 +3804,7 @@
       "name": "Dark Waves",
       "icon": "inv_cosmicvoid_wave",
       "source": "voidscar-arena",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1311964,
@@ -3812,7 +3812,7 @@
       "name": "Latent Hex",
       "icon": "inv_shoulder_armor_hextroll_d_01",
       "source": "temple-of-sethraliss",
-      "lastSeen": "2026-08-02",
+      "lastSeen": "2026-08-04",
       "notes": [
         [
           "Via ",
@@ -3833,7 +3833,7 @@
       "name": "Serpentine Gust",
       "icon": "ability_skyreach_four_wind",
       "source": "kings-rest",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1312104,
@@ -3841,7 +3841,7 @@
       "name": "Spit Gold",
       "icon": "ability_creature_amber_01",
       "source": "kings-rest",
-      "lastSeen": "2026-08-02",
+      "lastSeen": "2026-08-04",
       "avoidable": true
     },
     {
@@ -3850,7 +3850,7 @@
       "name": "Explosive Acids",
       "icon": "spell_nature_acid_01",
       "source": "kings-rest",
-      "lastSeen": "2026-08-02",
+      "lastSeen": "2026-08-04",
       "avoidable": true
     },
     {
@@ -3859,7 +3859,7 @@
       "name": "Awakening Slam",
       "icon": "spell_necro_deathsdoor",
       "source": "kings-rest",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     },
     {
       "id": 1312848,
@@ -3867,7 +3867,7 @@
       "name": "Command Constructs",
       "icon": "inv_sonic_debuff",
       "source": "kings-rest",
-      "lastSeen": "2026-08-02"
+      "lastSeen": "2026-08-04"
     }
   ]
 }
