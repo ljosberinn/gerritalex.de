@@ -1826,6 +1826,26 @@
     "seen": true
   },
   {
+    "title": "Donnie Darko",
+    "id": 141,
+    "seen": true,
+    "metadata": {
+      "genres": [
+        "Fantasy",
+        "Drama",
+        "Mystery"
+      ],
+      "tagline": "28 days, 6 hours, 42 minutes, 12 seconds... that is when the world will end.",
+      "release": {
+        "day": 19,
+        "month": 1,
+        "year": 2001
+      },
+      "runtime": 114
+    },
+    "favorite": false
+  },
+  {
     "id": 8814,
     "name": "Doom",
     "seen": true,
@@ -4740,6 +4760,26 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "title": "Nightcrawler",
+    "id": 242582,
+    "seen": true,
+    "metadata": {
+      "genres": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "tagline": "The city shines brightest at night.",
+      "release": {
+        "day": 23,
+        "month": 10,
+        "year": 2014
+      },
+      "runtime": 118
+    },
+    "favorite": false
   },
   {
     "title": "No Country for Old Men",
