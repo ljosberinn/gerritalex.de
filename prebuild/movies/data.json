@@ -7844,6 +7844,26 @@
     "seen": true
   },
   {
+    "seen": true,
+    "id": 1284041,
+    "title": "The Last House",
+    "metadata": {
+      "genres": [
+        "Horror",
+        "Science Fiction",
+        "Thriller"
+      ],
+      "tagline": "How long can you survive?",
+      "release": {
+        "day": 6,
+        "month": 8,
+        "year": 2026
+      },
+      "runtime": 110
+    },
+    "favorite": false
+  },
+  {
     "title": "The Lazarus Effect",
     "id": 243940,
     "metadata": {
