@@ -1,5 +1,80 @@
 [
   {
+    "seen": true,
+    "id": 8329,
+    "title": "[REC]",
+    "metadata": {
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
+      "tagline": "Experience fear.",
+      "release": {
+        "day": 23,
+        "month": 11,
+        "year": 2007
+      },
+      "runtime": 78
+    },
+    "favorite": false
+  },
+  {
+    "seen": true,
+    "id": 10664,
+    "title": "[REC]²",
+    "metadata": {
+      "genres": [
+        "Thriller",
+        "Horror"
+      ],
+      "tagline": "Fear revisited.",
+      "release": {
+        "day": 15,
+        "month": 9,
+        "year": 2009
+      },
+      "runtime": 84
+    },
+    "favorite": false
+  },
+  {
+    "id": 80280,
+    "seen": true,
+    "title": "[REC]³ Genesis",
+    "metadata": {
+      "genres": [
+        "Horror"
+      ],
+      "tagline": "You may kiss the bride.",
+      "release": {
+        "day": 30,
+        "month": 3,
+        "year": 2012
+      },
+      "runtime": 80
+    },
+    "favorite": false
+  },
+  {
+    "id": 185341,
+    "seen": true,
+    "title": "[REC]⁴ Apocalypse",
+    "metadata": {
+      "genres": [
+        "Thriller",
+        "Horror"
+      ],
+      "tagline": "It’s time to leave.",
+      "release": {
+        "day": 31,
+        "month": 10,
+        "year": 2014
+      },
+      "runtime": 95
+    },
+    "favorite": false
+  },
+  {
     "title": "12 Angry Men",
     "id": 389,
     "seen": true,
