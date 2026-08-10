@@ -1353,6 +1353,27 @@
     "state": "abandoned"
   },
   {
+    "title": "Neuromancer",
+    "id": 215528,
+    "episodesSeen": 0,
+    "favorite": false,
+    "state": "upcoming",
+    "metadata": {
+      "genres": [
+        "Sci-Fi & Fantasy",
+        "Mystery"
+      ],
+      "seasons": 1,
+      "tagline": "Jack in.",
+      "release": {
+        "day": 21,
+        "month": 1,
+        "year": 2027
+      },
+      "episodes": 10
+    }
+  },
+  {
     "title": "Night Sky",
     "id": 111894,
     "metadata": {
@@ -1934,8 +1955,7 @@
     "metadata": {
       "genres": [
         "Drama",
-        "Mystery",
-        "Sci-Fi & Fantasy"
+        "Mystery"
       ],
       "seasons": 1,
       "tagline": "Are you sure he's the one?",
