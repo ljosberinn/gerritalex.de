@@ -938,8 +938,8 @@
       "episodes": 26
     },
     "favorite": false,
-    "episodesSeen": 24,
-    "state": "ongoing"
+    "episodesSeen": 26,
+    "state": "upcoming"
   },
   {
     "title": "Impulse",
@@ -1904,7 +1904,7 @@
       "episodes": 30
     },
     "favorite": false,
-    "episodesSeen": 20,
+    "episodesSeen": 27,
     "state": "ongoing"
   },
   {
@@ -2053,7 +2053,7 @@
       "episodes": 40
     },
     "favorite": true,
-    "episodesSeen": 32,
+    "episodesSeen": 33,
     "state": "ongoing"
   },
   {

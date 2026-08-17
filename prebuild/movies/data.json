@@ -959,7 +959,7 @@
       "tagline": "",
       "release": {
         "day": 15,
-        "month": 9,
+        "month": 12,
         "year": 2027
       },
       "runtime": 0
@@ -1454,6 +1454,26 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "seen": true,
+    "id": 1375646,
+    "favorite": false,
+    "title": "Colony",
+    "metadata": {
+      "genres": [
+        "Action",
+        "Horror",
+        "Science Fiction"
+      ],
+      "tagline": "Survive the hive.",
+      "release": {
+        "day": 21,
+        "month": 5,
+        "year": 2026
+      },
+      "runtime": 123
+    }
   },
   {
     "title": "Color Out of Space",
@@ -5771,7 +5791,7 @@
         "Horror",
         "Science Fiction"
       ],
-      "tagline": "No sweat.",
+      "tagline": "A new era of evil.",
       "release": {
         "day": 16,
         "month": 9,
