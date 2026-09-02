@@ -412,7 +412,7 @@
         "Drama"
       ],
       "seasons": 2,
-      "tagline": "One life. Infinite possibilities.",
+      "tagline": "There's no world like home.",
       "release": {
         "day": 7,
         "month": 5,
@@ -532,6 +532,27 @@
     "favorite": false,
     "episodesSeen": 0,
     "state": "upcoming"
+  },
+  {
+    "id": 258165,
+    "title": "East of Eden",
+    "seen": 0,
+    "favorite": false,
+    "metadata": {
+      "genres": [
+        "Drama"
+      ],
+      "seasons": 1,
+      "tagline": "You are what you choose.",
+      "release": {
+        "day": 1,
+        "month": 10,
+        "year": 2026
+      },
+      "episodes": 7
+    },
+    "state": "upcoming",
+    "episodesSeen": 0
   },
   {
     "title": "Euphoria",
@@ -813,6 +834,29 @@
     "favorite": true,
     "episodesSeen": 18,
     "state": "finished"
+  },
+  {
+    "id": 224377,
+    "title": "Harry Potter",
+    "seen": 0,
+    "favorite": false,
+    "metadata": {
+      "genres": [
+        "Sci-Fi & Fantasy",
+        "Action & Adventure",
+        "Family"
+      ],
+      "seasons": 1,
+      "tagline": "A new era of Hogwarts begins.",
+      "release": {
+        "day": 25,
+        "month": 12,
+        "year": 2026
+      },
+      "episodes": 1
+    },
+    "state": "upcoming",
+    "episodesSeen": 0
   },
   {
     "title": "Hellbound",
@@ -1446,14 +1490,14 @@
         "Mystery",
         "Crime"
       ],
-      "seasons": 5,
+      "seasons": 6,
       "tagline": "The building always wins.",
       "release": {
         "day": 31,
         "month": 8,
         "year": 2021
       },
-      "episodes": 50
+      "episodes": 51
     },
     "favorite": false,
     "episodesSeen": 14,
@@ -1904,7 +1948,7 @@
       "episodes": 30
     },
     "favorite": false,
-    "episodesSeen": 27,
+    "episodesSeen": 29,
     "state": "ongoing"
   },
   {
@@ -2646,7 +2690,7 @@
         "month": 1,
         "year": 2025
       },
-      "episodes": 30
+      "episodes": 31
     },
     "favorite": false,
     "episodesSeen": 0
@@ -3100,7 +3144,7 @@
         "month": 11,
         "year": 2021
       },
-      "episodes": 29
+      "episodes": 30
     },
     "favorite": false,
     "episodesSeen": 19,
