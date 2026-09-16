@@ -847,7 +847,7 @@
         "Family"
       ],
       "seasons": 1,
-      "tagline": "A new era of Hogwarts begins.",
+      "tagline": "",
       "release": {
         "day": 25,
         "month": 12,
@@ -1945,11 +1945,11 @@
         "month": 5,
         "year": 2023
       },
-      "episodes": 30
+      "episodes": 31
     },
-    "favorite": false,
-    "episodesSeen": 29,
-    "state": "ongoing"
+    "favorite": true,
+    "episodesSeen": 30,
+    "state": "upcoming"
   },
   {
     "title": "Smoke",
@@ -2097,7 +2097,7 @@
       "episodes": 40
     },
     "favorite": true,
-    "episodesSeen": 33,
+    "episodesSeen": 38,
     "state": "ongoing"
   },
   {
@@ -2690,7 +2690,7 @@
         "month": 1,
         "year": 2025
       },
-      "episodes": 31
+      "episodes": 30
     },
     "favorite": false,
     "episodesSeen": 0
