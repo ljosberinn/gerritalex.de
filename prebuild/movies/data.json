@@ -2091,11 +2091,11 @@
       ],
       "tagline": "The epic conclusion.",
       "release": {
-        "day": 16,
+        "day": 15,
         "month": 12,
         "year": 2026
       },
-      "runtime": 0
+      "runtime": 140
     },
     "favorite": false
   },
@@ -4341,7 +4341,7 @@
   {
     "title": "Kraken",
     "id": 1110034,
-    "seen": false,
+    "seen": true,
     "metadata": {
       "genres": [
         "Horror",
@@ -4916,6 +4916,25 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "seen": true,
+    "id": 615457,
+    "title": "Nobody",
+    "metadata": {
+      "genres": [
+        "Action",
+        "Thriller"
+      ],
+      "tagline": "Never underestimate a nobody.",
+      "release": {
+        "day": 18,
+        "month": 3,
+        "year": 2021
+      },
+      "runtime": 91
+    },
+    "favorite": false
   },
   {
     "title": "Nope",
@@ -5789,6 +5808,7 @@
     "metadata": {
       "genres": [
         "Horror",
+        "Thriller",
         "Science Fiction"
       ],
       "tagline": "A new era of evil.",
@@ -5797,7 +5817,7 @@
         "month": 9,
         "year": 2026
       },
-      "runtime": 0
+      "runtime": 90
     },
     "favorite": false
   },
@@ -7388,6 +7408,26 @@
     "favorite": false
   },
   {
+    "seen": true,
+    "id": 1101383,
+    "title": "The End of Oak Street",
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Mystery",
+        "Thriller"
+      ],
+      "tagline": "Where goes the neighborhood.",
+      "release": {
+        "day": 12,
+        "month": 8,
+        "year": 2026
+      },
+      "runtime": 100
+    },
+    "favorite": false
+  },
+  {
     "title": "The Endless",
     "seen": true,
     "id": 430231,
@@ -7438,7 +7478,7 @@
       ],
       "tagline": "",
       "release": {
-        "day": 11,
+        "day": 10,
         "month": 3,
         "year": 2027
       },
@@ -9229,6 +9269,25 @@
       "runtime": 106
     },
     "seen": true
+  },
+  {
+    "seen": true,
+    "id": 1480387,
+    "title": "undertone",
+    "metadata": {
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
+      "tagline": "It wants to be heard.",
+      "release": {
+        "day": 12,
+        "month": 3,
+        "year": 2026
+      },
+      "runtime": 94
+    },
+    "favorite": false
   },
   {
     "title": "Underwater",
