@@ -3019,6 +3019,26 @@
     "favorite": false
   },
   {
+    "seen": false,
+    "id": 1119449,
+    "title": "Good Luck, Have Fun, Don't Die",
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Action",
+        "Comedy"
+      ],
+      "tagline": "Time is running out. Are you ready to join the revolution?",
+      "release": {
+        "day": 13,
+        "month": 2,
+        "year": 2026
+      },
+      "runtime": 134
+    },
+    "favorite": false
+  },
+  {
     "title": "Good Will Hunting",
     "id": 489,
     "metadata": {
@@ -5808,8 +5828,8 @@
     "metadata": {
       "genres": [
         "Horror",
-        "Thriller",
-        "Science Fiction"
+        "Science Fiction",
+        "Adventure"
       ],
       "tagline": "A new era of evil.",
       "release": {
@@ -5817,7 +5837,7 @@
         "month": 9,
         "year": 2026
       },
-      "runtime": 90
+      "runtime": 95
     },
     "favorite": false
   },
@@ -6157,6 +6177,26 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "seen": false,
+    "id": 840326,
+    "title": "Sisu",
+    "metadata": {
+      "genres": [
+        "Action",
+        "War",
+        "Thriller"
+      ],
+      "tagline": "Vengeance is golden.",
+      "release": {
+        "day": 9,
+        "month": 9,
+        "year": 2022
+      },
+      "runtime": 91
+    },
+    "favorite": false
   },
   {
     "title": "Skyfall",
@@ -6910,6 +6950,26 @@
         "day": 23,
         "month": 10,
         "year": 2019
+      },
+      "runtime": 128
+    },
+    "favorite": false
+  },
+  {
+    "seen": false,
+    "id": 302946,
+    "title": "The Accountant",
+    "metadata": {
+      "genres": [
+        "Crime",
+        "Thriller",
+        "Drama"
+      ],
+      "tagline": "Calculate your choices.",
+      "release": {
+        "day": 13,
+        "month": 10,
+        "year": 2016
       },
       "runtime": 128
     },
@@ -7963,6 +8023,26 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "seen": false,
+    "id": 254320,
+    "title": "The Lobster",
+    "metadata": {
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
+      "tagline": "An unconventional love story...",
+      "release": {
+        "day": 15,
+        "month": 10,
+        "year": 2015
+      },
+      "runtime": 119
+    },
+    "favorite": false
   },
   {
     "seen": true,
