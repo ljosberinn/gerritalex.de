@@ -3587,6 +3587,26 @@
     "favorite": false
   },
   {
+    "seen": true,
+    "id": 1058424,
+    "title": "Hope",
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Mystery",
+        "Action"
+      ],
+      "tagline": "Is this how it ends?",
+      "release": {
+        "day": 15,
+        "month": 7,
+        "year": 2026
+      },
+      "runtime": 157
+    },
+    "favorite": false
+  },
+  {
     "title": "Horsemen",
     "id": 18476,
     "metadata": {
