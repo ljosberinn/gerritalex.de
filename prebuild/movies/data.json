@@ -6996,26 +6996,6 @@
     "favorite": false
   },
   {
-    "title": "The Apocolypse",
-    "id": 1488727,
-    "seen": false,
-    "metadata": {
-      "genres": [
-        "Horror",
-        "Action",
-        "Science Fiction"
-      ],
-      "tagline": "",
-      "release": {
-        "day": 31,
-        "month": 8,
-        "year": 2025
-      },
-      "runtime": 0
-    },
-    "favorite": false
-  },
-  {
     "title": "The Avengers",
     "id": 24428,
     "metadata": {
