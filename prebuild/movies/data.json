@@ -5844,7 +5844,7 @@
   {
     "title": "Resident Evil",
     "id": 1423191,
-    "seen": false,
+    "seen": true,
     "metadata": {
       "genres": [
         "Horror",

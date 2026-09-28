@@ -421,7 +421,7 @@
       "episodes": 19
     },
     "favorite": false,
-    "episodesSeen": 13,
+    "episodesSeen": 14,
     "state": "ongoing"
   },
   {
@@ -2097,8 +2097,8 @@
       "episodes": 40
     },
     "favorite": true,
-    "episodesSeen": 38,
-    "state": "ongoing"
+    "episodesSeen": 40,
+    "state": "upcoming"
   },
   {
     "title": "Stargate Atlantis",
