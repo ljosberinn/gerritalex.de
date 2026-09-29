@@ -898,7 +898,7 @@
       ],
       "tagline": "",
       "release": {
-        "day": 16,
+        "day": 15,
         "month": 12,
         "year": 2026
       },
@@ -9327,6 +9327,26 @@
         "year": 1992
       },
       "runtime": 135
+    },
+    "favorite": false
+  },
+  {
+    "seen": true,
+    "id": 1492640,
+    "title": "UNABOMBER",
+    "metadata": {
+      "genres": [
+        "Thriller",
+        "Drama",
+        "Crime"
+      ],
+      "tagline": "Where brilliance ends, the madness begins.",
+      "release": {
+        "day": 25,
+        "month": 9,
+        "year": 2026
+      },
+      "runtime": 101
     },
     "favorite": false
   },
