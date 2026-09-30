@@ -1439,6 +1439,27 @@
     "state": "finished"
   },
   {
+    "title": "Nocturne",
+    "id": 292741,
+    "state": "upcoming",
+    "episodesSeen": 0,
+    "metadata": {
+      "genres": [
+        "Crime",
+        "Mystery"
+      ],
+      "seasons": 1,
+      "tagline": "Outthink the killer. Outrun the lies.",
+      "release": {
+        "day": 29,
+        "month": 10,
+        "year": 2026
+      },
+      "episodes": 10
+    },
+    "favorite": false
+  },
+  {
     "title": "Obi-Wan Kenobi",
     "id": 92830,
     "metadata": {
@@ -1945,7 +1966,7 @@
         "month": 5,
         "year": 2023
       },
-      "episodes": 30
+      "episodes": 31
     },
     "favorite": true,
     "episodesSeen": 30,
@@ -2452,14 +2473,14 @@
         "Mystery",
         "Sci-Fi & Fantasy"
       ],
-      "seasons": 1,
+      "seasons": 2,
       "tagline": "",
       "release": {
         "day": 13,
         "month": 7,
         "year": 2025
       },
-      "episodes": 8
+      "episodes": 16
     },
     "favorite": false,
     "episodesSeen": 8
