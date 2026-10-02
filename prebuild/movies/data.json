@@ -7348,6 +7348,25 @@
     "favorite": false
   },
   {
+    "seen": false,
+    "id": 1290418,
+    "title": "The Cycle",
+    "metadata": {
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "tagline": "You can't bury the past forever.",
+      "release": {
+        "day": 24,
+        "month": 9,
+        "year": 2026
+      },
+      "runtime": 111
+    },
+    "favorite": false
+  },
+  {
     "title": "The Dark Knight",
     "id": 155,
     "metadata": {
