@@ -898,7 +898,7 @@
       ],
       "tagline": "",
       "release": {
-        "day": 15,
+        "day": 16,
         "month": 12,
         "year": 2026
       },
@@ -4420,6 +4420,26 @@
     "seen": true
   },
   {
+    "seen": true,
+    "id": 576845,
+    "title": "Last Night in Soho",
+    "metadata": {
+      "genres": [
+        "Horror",
+        "Mystery",
+        "Thriller"
+      ],
+      "tagline": "A murder in the past. A mystery in the future.",
+      "release": {
+        "day": 9,
+        "month": 10,
+        "year": 2021
+      },
+      "runtime": 116
+    },
+    "favorite": false
+  },
+  {
     "title": "Léon: The Professional",
     "id": 101,
     "metadata": {
@@ -7555,7 +7575,7 @@
       "genres": [
         "Horror"
       ],
-      "tagline": "",
+      "tagline": "Darkness must be hunted.",
       "release": {
         "day": 10,
         "month": 3,
