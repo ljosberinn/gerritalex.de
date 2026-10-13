@@ -319,6 +319,28 @@
     "state": "finished"
   },
   {
+    "title": "Carrie",
+    "id": 288673,
+    "state": "ongoing",
+    "episodesSeen": 1,
+    "metadata": {
+      "genres": [
+        "Mystery",
+        "Drama",
+        "Sci-Fi & Fantasy"
+      ],
+      "seasons": 1,
+      "tagline": "She just wanted a friend. They gave her a fight.",
+      "release": {
+        "day": 7,
+        "month": 10,
+        "year": 2026
+      },
+      "episodes": 8
+    },
+    "favorite": false
+  },
+  {
     "title": "Chance",
     "id": 66912,
     "metadata": {
@@ -421,7 +443,7 @@
       "episodes": 19
     },
     "favorite": false,
-    "episodesSeen": 14,
+    "episodesSeen": 16,
     "state": "ongoing"
   },
   {
