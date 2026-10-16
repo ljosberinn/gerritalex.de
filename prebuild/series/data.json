@@ -321,8 +321,8 @@
   {
     "title": "Carrie",
     "id": 288673,
-    "state": "ongoing",
-    "episodesSeen": 1,
+    "state": "finished",
+    "episodesSeen": 8,
     "metadata": {
       "genres": [
         "Mystery",
@@ -338,7 +338,7 @@
       },
       "episodes": 8
     },
-    "favorite": false
+    "favorite": true
   },
   {
     "title": "Chance",
