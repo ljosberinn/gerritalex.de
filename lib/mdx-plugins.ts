@@ -44,6 +44,51 @@ export function remarkTocHeadings() {
   };
 }
 
+type HastNode = {
+  type: string;
+  tagName?: string;
+  properties?: Record<string, unknown>;
+  children?: HastNode[];
+};
+
+// must match the sticky headings in components/MDXComponents.tsx
+const STICKY_HEADING_DEPTHS = [2, 3];
+
+// Wraps each sticky heading and its content in a <section>, so the heading unsticks once its section scrolls past
+export function rehypeSectionize() {
+  return (tree: HastNode) => {
+    const root: HastNode = { type: 'root', children: [] };
+    const open: { depth: number; node: HastNode }[] = [{ depth: 0, node: root }];
+
+    for (const child of tree.children ?? []) {
+      const match = child.type === 'element' ? /^h([1-6])$/.exec(child.tagName ?? '') : null;
+
+      if (match) {
+        const depth = Number(match[1]);
+
+        while (open.at(-1)!.depth >= depth) {
+          open.pop();
+        }
+
+        if (STICKY_HEADING_DEPTHS.includes(depth)) {
+          const section: HastNode = {
+            type: 'element',
+            tagName: 'section',
+            properties: {},
+            children: [],
+          };
+          open.at(-1)!.node.children!.push(section);
+          open.push({ depth, node: section });
+        }
+      }
+
+      open.at(-1)!.node.children!.push(child);
+    }
+
+    tree.children = root.children;
+  };
+}
+
 // Turns the first local image of a paragraph into a sized next/image `<Image>`
 export function remarkImgToJsx() {
   return async (tree: MdNode) => {

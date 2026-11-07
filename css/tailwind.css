@@ -107,3 +107,16 @@ input:-webkit-autofill:focus {
 h3:target {
   scroll-margin-top: 40px;
 }
+
+/* rehypeSectionize nests headings in <section>, out of reach of typography's sibling and edge margin resets */
+:where(.prose)
+  :where(:is(h2, hr) + section > :first-child, .prose > section:first-child > :first-child) {
+  margin-top: 0;
+}
+
+:where(
+  .prose > section:last-child > :last-child,
+  .prose > section:last-child > section:last-child > :last-child
+) {
+  margin-bottom: 0;
+}

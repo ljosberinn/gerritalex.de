@@ -13,7 +13,12 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypePrettyCode from 'rehype-pretty-code';
 import rehypePresetMinify from 'rehype-preset-minify';
 import siteMetadata from './data/siteMetadata';
-import { remarkImgToJsx, remarkTocHeadings, type TocItem } from './lib/mdx-plugins';
+import {
+  rehypeSectionize,
+  remarkImgToJsx,
+  remarkTocHeadings,
+  type TocItem,
+} from './lib/mdx-plugins';
 import { allCoreContent, sortPosts } from './lib/content';
 
 const isProduction = process.env.NODE_ENV === 'production';
@@ -38,6 +43,7 @@ async function compileMdx(source: string): Promise<{ mdx: string; toc: TocItem[]
     rehypePlugins: [
       rehypeSlug,
       [rehypeAutolinkHeadings, { behavior: 'prepend', content: icon }],
+      rehypeSectionize,
       [
         rehypePrettyCode,
         { theme: 'night-owl', keepBackground: false, defaultLang: { block: 'plaintext' } },

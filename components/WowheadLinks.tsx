@@ -742,7 +742,25 @@ export const FelRush = createComponent('Fel Rush', 195072, 'ability_demonhunter_
 export const NimbleFlyer = createComponent('Nimble Flyer', 441253, 'ability_evoker_hover');
 
 export const TimeSpiral = createComponent('Time Spiral', 374968, 'ability_evoker_timespiral');
+export const InherentResistance = createComponent(
+  'Inherent Resistance',
+  375544,
+  'inv_misc_rubysanctum1'
+);
+export const DraconicLegacy = createComponent(
+  'Draconic Legacy',
+  376166,
+  'inv_helm_mail_dracthyrquest_b_02'
+);
 
-export const Ascendance = TimeSpiral;
-export const BreathOfSindragosa = TimeSpiral;
-export const ArmyOfTheDead = TimeSpiral;
+export const Ascendance = createComponent('Ascendance', 1219480, '8026697');
+export const BreathOfSindragosa = createComponent(
+  'Breath of Sindragosa',
+  1249658,
+  'spell_deathknight_breathofsindragosa'
+);
+export const ArmyOfTheDead = createComponent(
+  'Army of the Dead',
+  42650,
+  'spell_deathknight_armyofthedead'
+);

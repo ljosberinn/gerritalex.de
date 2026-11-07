@@ -23,7 +23,7 @@ export const components: MDXComponents = {
     <h2
       className={clsx(
         className,
-        'sticky top-0 z-1 border-b-1 border-solid border-gray-500 bg-white py-1 dark:border-gray-200 dark:bg-gray-950'
+        'sticky top-0 z-2 border-b-1 border-solid border-gray-500 bg-white py-1 dark:border-gray-200 dark:bg-gray-950'
       )}
       {...rest}
     >
