@@ -896,7 +896,7 @@
         "Action",
         "Adventure"
       ],
-      "tagline": "",
+      "tagline": "Meet your doom.",
       "release": {
         "day": 16,
         "month": 12,
@@ -2095,7 +2095,7 @@
         "month": 12,
         "year": 2026
       },
-      "runtime": 140
+      "runtime": 150
     },
     "favorite": false
   },
@@ -2940,6 +2940,26 @@
     "seen": true
   },
   {
+    "seen": false,
+    "id": 1381071,
+    "title": "Godzilla Minus Zero",
+    "metadata": {
+      "genres": [
+        "Science Fiction",
+        "Horror",
+        "Action"
+      ],
+      "tagline": "There is no third time. Everything ends here.",
+      "release": {
+        "day": 3,
+        "month": 11,
+        "year": 2026
+      },
+      "runtime": 135
+    },
+    "favorite": false
+  },
+  {
     "title": "Godzilla vs. Kong",
     "id": 399566,
     "metadata": {
@@ -3527,6 +3547,25 @@
     },
     "favorite": false,
     "seen": true
+  },
+  {
+    "seen": false,
+    "id": 1138194,
+    "title": "Heretic",
+    "metadata": {
+      "genres": [
+        "Thriller",
+        "Horror"
+      ],
+      "tagline": "Question everything.",
+      "release": {
+        "day": 31,
+        "month": 10,
+        "year": 2024
+      },
+      "runtime": 111
+    },
+    "favorite": false
   },
   {
     "title": "Highest 2 Lowest",

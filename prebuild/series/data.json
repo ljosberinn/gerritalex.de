@@ -1,5 +1,27 @@
 [
   {
+    "title": "12 12 12",
+    "id": 254630,
+    "state": "upcoming",
+    "episodesSeen": 0,
+    "metadata": {
+      "genres": [
+        "Action & Adventure",
+        "Crime",
+        "Drama"
+      ],
+      "seasons": 1,
+      "tagline": "Get in. Get out. Get away.",
+      "release": {
+        "day": 12,
+        "month": 11,
+        "year": 2026
+      },
+      "episodes": 8
+    },
+    "favorite": false
+  },
+  {
     "title": "13 Reasons Why",
     "id": 66788,
     "metadata": {
@@ -147,8 +169,8 @@
       "episodes": 24
     },
     "favorite": false,
-    "episodesSeen": 12,
-    "state": "ongoing"
+    "episodesSeen": 24,
+    "state": "finished"
   },
   {
     "title": "Arcane",
@@ -443,8 +465,8 @@
       "episodes": 19
     },
     "favorite": false,
-    "episodesSeen": 16,
-    "state": "ongoing"
+    "episodesSeen": 19,
+    "state": "finished"
   },
   {
     "title": "Debris",
@@ -714,7 +736,7 @@
         "Sci-Fi & Fantasy"
       ],
       "seasons": 4,
-      "tagline": "",
+      "tagline": "Every road leads here. No road leads out.",
       "release": {
         "day": 20,
         "month": 2,
@@ -869,7 +891,7 @@
         "Family"
       ],
       "seasons": 1,
-      "tagline": "",
+      "tagline": "The boy who lived.",
       "release": {
         "day": 25,
         "month": 12,
@@ -1468,6 +1490,7 @@
     "metadata": {
       "genres": [
         "Crime",
+        "Drama",
         "Mystery"
       ],
       "seasons": 1,
@@ -2533,7 +2556,6 @@
     "metadata": {
       "genres": [
         "Action & Adventure",
-        "Drama",
         "Sci-Fi & Fantasy"
       ],
       "seasons": 3,
@@ -3187,7 +3209,7 @@
         "month": 11,
         "year": 2021
       },
-      "episodes": 30
+      "episodes": 39
     },
     "favorite": false,
     "episodesSeen": 19,
