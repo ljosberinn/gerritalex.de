@@ -1,13 +1,12 @@
 import { type ReactNode } from 'react';
-import { type CoreContent } from 'pliny/utils/contentlayer';
-import { Blog, Authors } from '../.contentlayer/generated';
+import type { Blog, Authors } from 'content-collections';
+import { type CoreContent, formatDate } from '../lib/content';
 import { CustomLink } from '../components/CustomLink';
 import { PageTitle } from '../components/PageTitle';
 import { ScrollTop } from '../components/ScrollTop';
 import { Image } from '../components/Image';
 import { Tag } from '../components/Tag';
 import siteMetadata from '../data/siteMetadata';
-import { formatDate } from 'pliny/utils/formatDate';
 
 const editUrl = (path: string) => `${siteMetadata.siteRepo}/blob/master/data/${path}`;
 

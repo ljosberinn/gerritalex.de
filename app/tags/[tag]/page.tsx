@@ -1,10 +1,10 @@
 import { slug } from 'github-slugger';
-import { allCoreContent, sortPosts } from 'pliny/utils/contentlayer';
+import { allBlogs } from 'content-collections';
 import tagData from '../../tag-data.json' with { type: 'json' };
 import { generatePageMetadata } from '../../seo';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { allBlogs } from '../../../.contentlayer/generated';
+import { allCoreContent, sortPosts } from '../../../lib/content';
 import siteMetadata from '../../../data/siteMetadata';
 import { ListLayoutWithTags } from '../../../layouts/ListLayoutWithTags';
 

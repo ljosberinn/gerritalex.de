@@ -1,45 +1,34 @@
 import { WowheadLink, WowheadLinkProps } from './WowheadLink';
 import { WowheadSpecIcon } from './WowheadSpecIcon';
 
-export function Dragonrage() {
-  return (
-    <WowheadLink id={375087} kind="spell" icon="ability_evoker_dragonrage">
-      Dragonrage
-    </WowheadLink>
-  );
+function createComponent(
+  name: string,
+  id: number,
+  icon: string,
+  branch?: WowheadLinkProps['branch']
+) {
+  return function Component() {
+    return (
+      <WowheadLink kind="spell" id={id} icon={icon} branch={branch}>
+        {name}
+      </WowheadLink>
+    );
+  };
 }
 
-export function Zephyr() {
-  return (
-    <WowheadLink id={374227} kind="spell" icon="ability_evoker_hoverblack">
-      Zephyr
-    </WowheadLink>
-  );
-}
+export const Dragonrage = createComponent('Dragonrage', 375087, 'ability_evoker_dragonrage');
 
-export function StretchTime() {
-  return (
-    <WowheadLink id={410352} icon="ability_evoker_timedilation" kind="spell">
-      Stretch Time
-    </WowheadLink>
-  );
-}
+export const Zephyr = createComponent('Zephyr', 374227, 'ability_evoker_hoverblack');
 
-export function FireWithin() {
-  return (
-    <WowheadLink id={375577} icon="item_sparkofragnoros" kind="spell">
-      Fire Within
-    </WowheadLink>
-  );
-}
+export const StretchTime = createComponent('Stretch Time', 410352, 'ability_evoker_timedilation');
 
-export function DraconicInstincts() {
-  return (
-    <WowheadLink id={445958} icon="inv_misc_scales_basilliskorange" kind="spell">
-      Draconic Instincts
-    </WowheadLink>
-  );
-}
+export const FireWithin = createComponent('Fire Within', 375577, 'item_sparkofragnoros');
+
+export const DraconicInstincts = createComponent(
+  'Draconic Instincts',
+  445958,
+  'inv_misc_scales_basilliskorange'
+);
 
 export function Scalecommander() {
   return <WowheadSpecIcon spec="scalecommander">Scalecommander</WowheadSpecIcon>;
@@ -47,6 +36,22 @@ export function Scalecommander() {
 
 export function Chronowarden() {
   return <WowheadSpecIcon spec="chronowarden">Chronowarden</WowheadSpecIcon>;
+}
+
+export function ElementalShaman({ plural, abbreviated }) {
+  return (
+    <WowheadSpecIcon spec="elemental-shaman">
+      {abbreviated ? 'Ele Shaman' : `Elemental Shaman${plural ? 's' : ''}`}
+    </WowheadSpecIcon>
+  );
+}
+
+export function FrostDeathKnight({ plural, abbreviated }) {
+  return (
+    <WowheadSpecIcon spec="frost-deathknight">
+      {abbreviated ? 'FDK' : `Frost Death Knight${plural ? 's' : ''}`}
+    </WowheadSpecIcon>
+  );
 }
 
 export function DevastationEvoker({ plural, abbreviated }) {
@@ -84,231 +89,150 @@ export function AssassinationRogue({ plural, abbreviated }) {
 export function AugmentationEvoker({ plural, abbreviated }) {
   return (
     <WowheadSpecIcon spec="augmentation-evoker">
-      {abbreviated ? 'Aug' : `Augmentation Evoker${plural ? 's' : ''}`}
+      {abbreviated ? `Aug${plural ? 's' : ''}` : `Augmentation Evoker${plural ? 's' : ''}`}
     </WowheadSpecIcon>
   );
 }
 
-export function RegenerativeChitin() {
-  return (
-    <WowheadLink id={406907} icon="inv_tradeskill_skinning_prismaticscale" kind="spell">
-      Regenerative Chitin
-    </WowheadLink>
-  );
-}
+export const RegenerativeChitin = createComponent(
+  'Regenerative Chitin',
+  406907,
+  'inv_tradeskill_skinning_prismaticscale'
+);
 
-export function TemporalWound() {
-  return (
-    <WowheadLink id={409560} icon="ability_evoker_breathofeons" kind="spell">
-      Temporal Wound
-    </WowheadLink>
-  );
-}
+export const TemporalWound = createComponent(
+  'Temporal Wound',
+  409560,
+  'ability_evoker_breathofeons'
+);
 
-export function CloseAsClutchmates() {
-  return (
-    <WowheadLink id={396043} icon="ability_dragonriding_yearningforthesky01" kind="spell">
-      Close as Clutchmates
-    </WowheadLink>
-  );
-}
+export const CloseAsClutchmates = createComponent(
+  'Close as Clutchmates',
+  396043,
+  'ability_dragonriding_yearningforthesky01'
+);
 
-export function ConcentratedPower() {
-  return (
-    <WowheadLink
-      branch="beta"
-      id={1261448}
-      icon="inv_10_dungeonjewelry_dragon_trinket_1arcanemagical_blue"
-      kind="spell"
-    >
-      Concentrated Power
-    </WowheadLink>
-  );
-}
+export const ConcentratedPower = createComponent(
+  'Concentrated Power',
+  1261448,
+  'inv_10_dungeonjewelry_dragon_trinket_1arcanemagical_blue',
+  'beta'
+);
 
-export function RefinedEssence() {
-  return (
-    <WowheadLink branch="beta" id={1261452} icon="ability_evoker_essenceburststacks" kind="spell">
-      Refined Essence
-    </WowheadLink>
-  );
-}
+export const RefinedEssence = createComponent(
+  'Refined Essence',
+  1261452,
+  'ability_evoker_essenceburststacks',
+  'beta'
+);
 
-export function Chronoboon() {
-  return (
-    <WowheadLink branch="beta" id={1260484} icon="ability_evoker_tipthescales" kind="spell">
-      Chronoboon
-    </WowheadLink>
-  );
-}
+export const Chronoboon = createComponent(
+  'Chronoboon',
+  1260484,
+  'ability_evoker_tipthescales',
+  'beta'
+);
 
-export function EnergyCycles() {
-  return (
-    <WowheadLink branch="beta" id={1260568} icon="ability_evoker_innatemagic4" kind="spell">
-      Energy Cycles
-    </WowheadLink>
-  );
-}
+export const EnergyCycles = createComponent(
+  'Energy Cycles',
+  1260568,
+  'ability_evoker_innatemagic4',
+  'beta'
+);
 
-export function TipTheScales() {
-  return (
-    <WowheadLink id={370553} icon="ability_evoker_tipthescales" kind="spell">
-      Tip the Scales
-    </WowheadLink>
-  );
-}
+export const TipTheScales = createComponent(
+  'Tip the Scales',
+  370553,
+  'ability_evoker_tipthescales'
+);
 
-export function EssenceBurst() {
-  return (
-    <WowheadLink id={392268} icon="ability_evoker_essenceburst" kind="spell">
-      Essence Burst
-    </WowheadLink>
-  );
-}
+export const EssenceBurst = createComponent('Essence Burst', 392268, 'ability_evoker_essenceburst');
 
-export function ChronoFlames() {
-  return (
-    <WowheadLink id={431442} icon="inv_ability_chronowardenevoker_chronoflame" kind="spell">
-      Chrono Flames
-    </WowheadLink>
-  );
-}
+export const ChronoFlames = createComponent(
+  'Chrono Flames',
+  431442,
+  'inv_ability_chronowardenevoker_chronoflame'
+);
 
-export function DoubleTime() {
-  return (
-    <WowheadLink id={431874} icon="spell_holy_borrowedtime" kind="spell">
-      Double-time
-    </WowheadLink>
-  );
-}
+export const DoubleTime = createComponent('Double-time', 431874, 'spell_holy_borrowedtime');
 
-export function GoldenOpportunity() {
-  return (
-    <WowheadLink branch="beta" id={432004} icon="achievement_faction_goldenlotus" kind="spell">
-      Golden Opportunity
-    </WowheadLink>
-  );
-}
+export const GoldenOpportunity = createComponent(
+  'Golden Opportunity',
+  432004,
+  'achievement_faction_goldenlotus',
+  'beta'
+);
 
-export function Overclock() {
-  return (
-    <WowheadLink branch="beta" id={1260647} icon="spell_holy_borrowedtime" kind="spell">
-      Overclock
-    </WowheadLink>
-  );
-}
+export const Overclock = createComponent('Overclock', 1260647, 'spell_holy_borrowedtime', 'beta');
 
-export function OppressingRoar() {
-  return (
-    <WowheadLink id={372048} icon="ability_evoker_oppressingroar" kind="spell">
-      Oppressing Roar
-    </WowheadLink>
-  );
-}
+export const OppressingRoar = createComponent(
+  'Oppressing Roar',
+  372048,
+  'ability_evoker_oppressingroar'
+);
 
-export function Landslide() {
-  return (
-    <WowheadLink id={358385} icon="ability_earthen_pillar" kind="spell">
-      Landslide
-    </WowheadLink>
-  );
-}
+export const Landslide = createComponent('Landslide', 358385, 'ability_earthen_pillar');
 
-export function TerrorOfTheSkies() {
-  return (
-    <WowheadLink id={372245} icon="ability_evoker_terroroftheskies" kind="spell">
-      Terror of the Skies
-    </WowheadLink>
-  );
-}
+export const TerrorOfTheSkies = createComponent(
+  'Terror of the Skies',
+  372245,
+  'ability_evoker_terroroftheskies'
+);
 
-export function SourceOfMagic() {
-  return (
-    <WowheadLink id={369459} icon="ability_evoker_blue_01" kind="spell">
-      Source of Magic
-    </WowheadLink>
-  );
-}
+export const SourceOfMagic = createComponent('Source of Magic', 369459, 'ability_evoker_blue_01');
 
-export function PerilousFate() {
-  return (
-    <WowheadLink id={410253} icon="spell_shadow_lastingafflictions" kind="spell">
-      Perilous Fate
-    </WowheadLink>
-  );
-}
+export const PerilousFate = createComponent(
+  'Perilous Fate',
+  410253,
+  'spell_shadow_lastingafflictions'
+);
 
-export function ArcaneReach() {
-  return (
-    <WowheadLink id={454983} icon="classicon_evoker" kind="spell">
-      Arcane Reach
-    </WowheadLink>
-  );
-}
+export const ArcaneReach = createComponent('Arcane Reach', 454983, 'classicon_evoker');
 
-export function AspectsFavor() {
-  return (
-    <WowheadLink id={407243} icon="ability_evoker_aspectsfavor" kind="spell">
-      Aspect's Favor
-    </WowheadLink>
-  );
-}
+export const AspectsFavor = createComponent(
+  "Aspect's Favor",
+  407243,
+  'ability_evoker_aspectsfavor'
+);
 
-export function DreamOfSpring() {
-  return (
-    <WowheadLink id={414969} icon="ability_evoker_masterylifebinder" kind="spell">
-      Dream of Spring
-    </WowheadLink>
-  );
-}
+export const DreamOfSpring = createComponent(
+  'Dream of Spring',
+  414969,
+  'ability_evoker_masterylifebinder'
+);
 
-export function ProlongLife() {
-  return (
-    <WowheadLink id={410687} icon="ability_evoker_reversion_green" kind="spell">
-      Prolong Life
-    </WowheadLink>
-  );
-}
+export const ProlongLife = createComponent(
+  'Prolong Life',
+  410687,
+  'ability_evoker_reversion_green'
+);
 
-export function EchoingStrike() {
-  return (
-    <WowheadLink id={410784} icon="ability_evoker_echoingstrike" kind="spell">
-      Echoing Strike
-    </WowheadLink>
-  );
-}
+export const EchoingStrike = createComponent(
+  'Echoing Strike',
+  410784,
+  'ability_evoker_echoingstrike'
+);
 
-export function SymbioticBloom() {
-  return (
-    <WowheadLink id={410685} icon="inv_10_herb_seed_magiccolor5" kind="spell">
-      Symbiotic Bloom
-    </WowheadLink>
-  );
-}
+export const SymbioticBloom = createComponent(
+  'Symbiotic Bloom',
+  410685,
+  'inv_10_herb_seed_magiccolor5'
+);
 
-export function ShiftingSands() {
-  return (
-    <WowheadLink id={413984} icon="ability_evoker_masterytimewalker" kind="spell">
-      Shifting Sands
-    </WowheadLink>
-  );
-}
+export const ShiftingSands = createComponent(
+  'Shifting Sands',
+  413984,
+  'ability_evoker_masterytimewalker'
+);
 
-export function Maneuverability() {
-  return (
-    <WowheadLink branch="beta" id={433871} icon="ability_evoker_deepbreath" kind="spell">
-      Maneuverability
-    </WowheadLink>
-  );
-}
+export const Maneuverability = createComponent(
+  'Maneuverability',
+  433871,
+  'ability_evoker_deepbreath',
+  'beta'
+);
 
-export function Timelessness() {
-  return (
-    <WowheadLink id={412710} icon="ability_evoker_timelessness" kind="spell">
-      Timelessness
-    </WowheadLink>
-  );
-}
+export const Timelessness = createComponent('Timelessness', 412710, 'ability_evoker_timelessness');
 
 type CommandSquadronProps = {
   kind: 'buff' | 'talent';
@@ -327,109 +251,62 @@ export function CommandSquadron({ kind }: CommandSquadronProps) {
   );
 }
 
-export function MoltenBlood() {
-  return (
-    <WowheadLink id={410643} icon="spell_shaman_spewlava" kind="spell">
-      Molten Blood
-    </WowheadLink>
-  );
-}
+export const MoltenBlood = createComponent('Molten Blood', 410643, 'spell_shaman_spewlava');
 
-export function MomentumShift() {
-  return (
-    <WowheadLink id={408005} icon="ability_priest_voidshift" kind="spell">
-      Momentum Shift
-    </WowheadLink>
-  );
-}
+export const MomentumShift = createComponent('Momentum Shift', 408005, 'ability_priest_voidshift');
 
-export function TimeSkip() {
-  return (
-    <WowheadLink id={404977} icon="ability_evoker_timeskip" kind="spell">
-      Time Skip
-    </WowheadLink>
-  );
-}
+export const TimeSkip = createComponent('Time Skip', 404977, 'ability_evoker_timeskip');
 
-export function InterwovenThreads() {
-  return (
-    <WowheadLink id={412713} icon="inv_enchant_optionalreagent_01" kind="spell">
-      Interwoven Threads
-    </WowheadLink>
-  );
-}
+export const InterwovenThreads = createComponent(
+  'Interwoven Threads',
+  412713,
+  'inv_enchant_optionalreagent_01'
+);
 
-export function Unravel() {
-  return (
-    <WowheadLink id={368432} icon="ability_evoker_unravel" kind="spell">
-      Unravel
-    </WowheadLink>
-  );
-}
+export const Unravel = createComponent('Unravel', 368432, 'ability_evoker_unravel');
 
-export function RegenerativeMagic() {
-  return (
-    <WowheadLink id={387787} icon="spell_frost_manarecharge" kind="spell">
-      Regenerative Magic
-    </WowheadLink>
-  );
-}
+export const RegenerativeMagic = createComponent(
+  'Regenerative Magic',
+  387787,
+  'spell_frost_manarecharge'
+);
 
-export function AzureStrike() {
-  return (
-    <WowheadLink id={362969} icon="ability_evoker_azurestrike" kind="spell">
-      Azure Strike
-    </WowheadLink>
-  );
-}
+export const AzureStrike = createComponent('Azure Strike', 362969, 'ability_evoker_azurestrike');
 
-export function ProtractedTalons() {
-  return (
-    <WowheadLink id={369909} icon="ability_evoker_azurestrike" kind="spell">
-      Protracted Talons
-    </WowheadLink>
-  );
-}
+export const ProtractedTalons = createComponent(
+  'Protracted Talons',
+  369909,
+  'ability_evoker_azurestrike'
+);
 
-export function Quell() {
-  return (
-    <WowheadLink id={351338} icon="ability_evoker_quell" kind="spell">
-      Quell
-    </WowheadLink>
-  );
-}
+export const Quell = createComponent('Quell', 351338, 'ability_evoker_quell');
 
-export function MoltenEmbers() {
-  return (
-    <WowheadLink id={459725} branch="beta" icon="ability_evoker_earthensky" kind="spell">
-      Molten Embers
-    </WowheadLink>
-  );
-}
+export const MoltenEmbers = createComponent(
+  'Molten Embers',
+  459725,
+  'ability_evoker_earthensky',
+  'beta'
+);
 
-export function NozdormuAdept() {
-  return (
-    <WowheadLink id={431715} branch="beta" icon="ability_evoker_aspectsfavorbronze" kind="spell">
-      Nozdormu Adept
-    </WowheadLink>
-  );
-}
+export const NozdormuAdept = createComponent(
+  'Nozdormu Adept',
+  431715,
+  'ability_evoker_aspectsfavorbronze',
+  'beta'
+);
 
-export function MasterOfDestiny() {
-  return (
-    <WowheadLink id={431840} branch="beta" icon="ability_evoker_defyfate" kind="spell">
-      Master of Destiny
-    </WowheadLink>
-  );
-}
+export const MasterOfDestiny = createComponent(
+  'Master of Destiny',
+  431840,
+  'ability_evoker_defyfate',
+  'beta'
+);
 
-export function ThreadsOfFate() {
-  return (
-    <WowheadLink id={431715} icon="ability_evoker_sandsoftime" kind="spell">
-      Threads of Fate
-    </WowheadLink>
-  );
-}
+export const ThreadsOfFate = createComponent(
+  'Threads of Fate',
+  431715,
+  'ability_evoker_sandsoftime'
+);
 
 export function MassEruption(props: WowheadLinkProps) {
   return (
@@ -439,61 +316,32 @@ export function MassEruption(props: WowheadLinkProps) {
   );
 }
 
-export function TemporalBurst() {
-  return (
-    <WowheadLink id={431695} icon="ability_evoker_essenceburst5" kind="spell">
-      Temporal Burst
-    </WowheadLink>
-  );
-}
+export const TemporalBurst = createComponent(
+  'Temporal Burst',
+  431695,
+  'ability_evoker_essenceburst5'
+);
 
-export function FireBreath() {
-  return (
-    <WowheadLink id={357208} icon="ability_evoker_firebreath" kind="spell">
-      Fire Breath
-    </WowheadLink>
-  );
-}
+export const FireBreath = createComponent('Fire Breath', 357208, 'ability_evoker_firebreath');
 
-export function InfernosBlessing() {
-  return (
-    <WowheadLink id={410261} icon="ability_evoker_infernosblessing" kind="spell">
-      Inferno's Blessing
-    </WowheadLink>
-  );
-}
+export const InfernosBlessing = createComponent(
+  "Inferno's Blessing",
+  410261,
+  'ability_evoker_infernosblessing'
+);
 
-export function StrikeFromAbove() {
-  return (
-    <WowheadLink id={1267206} icon="ability_racial_glide" kind="spell" branch="beta">
-      Strike from Above
-    </WowheadLink>
-  );
-}
+export const StrikeFromAbove = createComponent(
+  'Strike from Above',
+  1267206,
+  'ability_racial_glide',
+  'beta'
+);
 
-export function Glide() {
-  return (
-    <WowheadLink id={358733} icon="ability_racial_glide" kind="spell" branch="beta">
-      Glide
-    </WowheadLink>
-  );
-}
+export const Glide = createComponent('Glide', 358733, 'ability_racial_glide', 'beta');
 
-export function IgnitionRush() {
-  return (
-    <WowheadLink id={408775} icon="spell_fire_immolation" kind="spell">
-      Ignition Rush
-    </WowheadLink>
-  );
-}
+export const IgnitionRush = createComponent('Ignition Rush', 408775, 'spell_fire_immolation');
 
-export function DefyFate() {
-  return (
-    <WowheadLink id={404195} icon="ability_evoker_defyfate" kind="spell">
-      Defy Fate
-    </WowheadLink>
-  );
-}
+export const DefyFate = createComponent('Defy Fate', 404195, 'ability_evoker_defyfate');
 
 export function ImminentDestruction(props: WowheadLinkProps) {
   return (
@@ -508,53 +356,30 @@ export function ImminentDestruction(props: WowheadLinkProps) {
   );
 }
 
-export function ImprovedDefyFate() {
-  return (
-    <WowheadLink id={1268881} icon="ability_evoker_masterytimewalker" branch="beta" kind="spell">
-      Improved Defy Fate
-    </WowheadLink>
-  );
-}
+export const ImprovedDefyFate = createComponent(
+  'Improved Defy Fate',
+  1268881,
+  'ability_evoker_masterytimewalker',
+  'beta'
+);
 
-export function Rockfall() {
-  return (
-    <WowheadLink id={1219236} icon="ability_evoker_earthensky" kind="spell">
-      Rockfall
-    </WowheadLink>
-  );
-}
+export const Rockfall = createComponent('Rockfall', 1219236, 'ability_evoker_earthensky');
 
-export function LivingFlame() {
-  return (
-    <WowheadLink icon="ability_evoker_livingflame" id={361469} kind="spell">
-      Living Flame
-    </WowheadLink>
-  );
-}
+export const LivingFlame = createComponent('Living Flame', 361469, 'ability_evoker_livingflame');
 
-export function LeapingFlames() {
-  return (
-    <WowheadLink icon="ability_evoker_pupilofalexstraza" id={369939} kind="spell">
-      Leaping Flames
-    </WowheadLink>
-  );
-}
+export const LeapingFlames = createComponent(
+  'Leaping Flames',
+  369939,
+  'ability_evoker_pupilofalexstraza'
+);
 
-export function Overawe() {
-  return (
-    <WowheadLink icon="ability_evoker_oppressingroar2" id={374346} kind="spell">
-      Overawe
-    </WowheadLink>
-  );
-}
+export const Overawe = createComponent('Overawe', 374346, 'ability_evoker_oppressingroar2');
 
-export function BlisteringScales() {
-  return (
-    <WowheadLink id={360827} icon="ability_evoker_blisteringscales" kind="spell">
-      Blistering Scales
-    </WowheadLink>
-  );
-}
+export const BlisteringScales = createComponent(
+  'Blistering Scales',
+  360827,
+  'ability_evoker_blisteringscales'
+);
 
 export function Eruption({ plural }) {
   return (
@@ -564,13 +389,11 @@ export function Eruption({ plural }) {
   );
 }
 
-export function SpatialParadox() {
-  return (
-    <WowheadLink id={406732} icon="ability_evoker_stretchtime" kind="spell">
-      Spatial Paradox
-    </WowheadLink>
-  );
-}
+export const SpatialParadox = createComponent(
+  'Spatial Paradox',
+  406732,
+  'ability_evoker_stretchtime'
+);
 
 type EbonMightProps = {
   kind?: 'delves';
@@ -584,82 +407,48 @@ export function EbonMight({ kind }: EbonMightProps) {
   );
 }
 
-export function Upheaval() {
-  return (
-    <WowheadLink id={396286} icon="ability_evoker_upheaval" kind="spell">
-      Upheaval
-    </WowheadLink>
-  );
-}
+export const Upheaval = createComponent('Upheaval', 396286, 'ability_evoker_upheaval');
 
-export function Prescience() {
-  return (
-    <WowheadLink id={409311} icon="ability_evoker_prescience" kind="spell">
-      Prescience
-    </WowheadLink>
-  );
-}
+export const Prescience = createComponent('Prescience', 409311, 'ability_evoker_prescience');
 
-export function Clairvoyant() {
-  return (
-    <WowheadLink
-      branch="beta"
-      icon="ability_evoker_masterylifebinder_bronze"
-      id={1250914}
-      kind="spell"
-    >
-      Clairvoyant
-    </WowheadLink>
-  );
-}
+export const Clairvoyant = createComponent(
+  'Clairvoyant',
+  1250914,
+  'ability_evoker_masterylifebinder_bronze',
+  'beta'
+);
 
-export function MotesOfPossibility() {
-  return (
-    <WowheadLink id={409267} icon="ability_evoker_motesofpossibility" kind="spell">
-      Motes of Possibility
-    </WowheadLink>
-  );
-}
+export const MotesOfPossibility = createComponent(
+  'Motes of Possibility',
+  409267,
+  'ability_evoker_motesofpossibility'
+);
 
-export function BestowWeyrnstone() {
-  return (
-    <WowheadLink id={408233} icon="ability_evoker_bestowweyrnstone" kind="spell">
-      Bestow Weyrnstone
-    </WowheadLink>
-  );
-}
+export const BestowWeyrnstone = createComponent(
+  'Bestow Weyrnstone',
+  408233,
+  'ability_evoker_bestowweyrnstone'
+);
 
-export function Slipstream() {
-  return (
-    <WowheadLink id={441257} icon="ability_dragonriding_barrelroll01" kind="spell">
-      Slipstream
-    </WowheadLink>
-  );
-}
+export const Slipstream = createComponent(
+  'Slipstream',
+  441257,
+  'ability_dragonriding_barrelroll01'
+);
 
-export function Duplicate() {
-  return (
-    <WowheadLink branch="beta" icon="ability_evoker_recall" id={1259173} kind="spell">
-      Duplicate
-    </WowheadLink>
-  );
-}
+export const Duplicate = createComponent('Duplicate', 1259173, 'ability_evoker_recall', 'beta');
 
-export function ObsidianScales() {
-  return (
-    <WowheadLink id={374227} kind="spell" icon="inv_artifact_dragonscales">
-      Obsidian Scales
-    </WowheadLink>
-  );
-}
+export const ObsidianScales = createComponent(
+  'Obsidian Scales',
+  374227,
+  'inv_artifact_dragonscales'
+);
 
-export function RenewingBlaze() {
-  return (
-    <WowheadLink id={374348} kind="spell" icon="ability_evoker_masterylifebinder_red">
-      Renewing Blaze
-    </WowheadLink>
-  );
-}
+export const RenewingBlaze = createComponent(
+  'Renewing Blaze',
+  374348,
+  'ability_evoker_masterylifebinder_red'
+);
 
 export function Bombardments(props: WowheadLinkProps) {
   return (
@@ -674,45 +463,27 @@ export function Bombardments(props: WowheadLinkProps) {
   );
 }
 
-export function BreathOfEons() {
-  return (
-    <WowheadLink id={442204} kind="spell" icon="ability_evoker_breathofeons">
-      Breath of Eons
-    </WowheadLink>
-  );
-}
+export const BreathOfEons = createComponent(
+  'Breath of Eons',
+  442204,
+  'ability_evoker_breathofeons'
+);
 
-export function MassDisintegrate() {
-  return (
-    <WowheadLink id={436335} kind="spell" icon="ability_evoker_disintegrate">
-      Mass Disintegrate
-    </WowheadLink>
-  );
-}
+export const MassDisintegrate = createComponent(
+  'Mass Disintegrate',
+  436335,
+  'ability_evoker_disintegrate'
+);
 
-export function Pyrotechnics() {
-  return (
-    <WowheadLink id={1214688} kind="spell" icon="inv_wildfirebomb">
-      Pyrotechnics
-    </WowheadLink>
-  );
-}
+export const Pyrotechnics = createComponent('Pyrotechnics', 1214688, 'inv_wildfirebomb');
 
-export function DeepBreath() {
-  return (
-    <WowheadLink id={433874} kind="spell" icon="ability_evoker_deepbreath">
-      Deep Breath
-    </WowheadLink>
-  );
-}
+export const DeepBreath = createComponent('Deep Breath', 433874, 'ability_evoker_deepbreath');
 
-export function StaticJolt() {
-  return (
-    <WowheadLink id={467297} kind="spell" icon="ability_thunderking_thunderstruck">
-      Static Jolt
-    </WowheadLink>
-  );
-}
+export const StaticJolt = createComponent(
+  'Static Jolt',
+  467297,
+  'ability_thunderking_thunderstruck'
+);
 
 export function Torq() {
   return (
@@ -730,309 +501,159 @@ export function Flarendo() {
   );
 }
 
-export function MoltenPhlegm() {
-  return (
-    <WowheadLink id={1213688} kind="spell" icon="inv_11_arenaboss_jawsplosion">
-      Molten Phlegm
-    </WowheadLink>
-  );
-}
+export const MoltenPhlegm = createComponent(
+  'Molten Phlegm',
+  1213688,
+  'inv_11_arenaboss_jawsplosion'
+);
 
-export function GalvanizedSpite() {
-  return (
-    <WowheadLink id={472223} kind="spell" icon="inv_11_arenaboss_galvanizedspite">
-      Galvanized Spite
-    </WowheadLink>
-  );
-}
+export const GalvanizedSpite = createComponent(
+  'Galvanized Spite',
+  472223,
+  'inv_11_arenaboss_galvanizedspite'
+);
 
-export function StaticCharge() {
-  return (
-    <WowheadLink id={473951} kind="spell" icon="spell_shaman_staticshock">
-      Static Charge
-    </WowheadLink>
-  );
-}
+export const StaticCharge = createComponent('Static Charge', 473951, 'spell_shaman_staticshock');
 
-export function Scrapbomb() {
-  return (
-    <WowheadLink id={473650} icon="inv_10_engineering2_boxofbombs_friendly_color1" kind="spell">
-      Scrapbomb
-    </WowheadLink>
-  );
-}
+export const Scrapbomb = createComponent(
+  'Scrapbomb',
+  473650,
+  'inv_10_engineering2_boxofbombs_friendly_color1'
+);
 
-export function RollingRubbish() {
-  return (
-    <WowheadLink kind="spell" id={461536} icon="inv_misc_soccerball">
-      Rolling Rubbish
-    </WowheadLink>
-  );
-}
+export const RollingRubbish = createComponent('Rolling Rubbish', 461536, 'inv_misc_soccerball');
 
-export function PrototypePowercoil() {
-  return (
-    <WowheadLink kind="spell" id={1218706} icon="ability_siege_engineer_magnetic_crush">
-      Prototype Powercoil
-    </WowheadLink>
-  );
-}
+export const PrototypePowercoil = createComponent(
+  'Prototype Powercoil',
+  1218706,
+  'ability_siege_engineer_magnetic_crush'
+);
 
-export function Incinerator() {
-  return (
-    <WowheadLink kind="spell" id={464165} icon="ability_ironmaidens_bombardment">
-      Incinerator
-    </WowheadLink>
-  );
-}
+export const Incinerator = createComponent(
+  'Incinerator',
+  464165,
+  'ability_ironmaidens_bombardment'
+);
 
-export function ScrapRockets() {
-  return (
-    <WowheadLink kind="spell" id={1219386} icon="ability_racial_rocketbarrage">
-      Scrap Rockets
-    </WowheadLink>
-  );
-}
+export const ScrapRockets = createComponent(
+  'Scrap Rockets',
+  1219386,
+  'ability_racial_rocketbarrage'
+);
 
-export function TrashCompactor() {
-  return (
-    <WowheadLink kind="spell" id={467135} icon="spell_nature_unrelentingstorm">
-      Trash Compactor
-    </WowheadLink>
-  );
-}
+export const TrashCompactor = createComponent(
+  'Trash Compactor',
+  467135,
+  'spell_nature_unrelentingstorm'
+);
 
-export function ElectromagneticSorting() {
-  return (
-    <WowheadLink
-      kind="spell"
-      id={464559}
-      icon="inv_10_engineering_manufacturedparts_mechanicalparts_color3"
-    >
-      Electromagnetic Sorting
-    </WowheadLink>
-  );
-}
+export const ElectromagneticSorting = createComponent(
+  'Electromagnetic Sorting',
+  464559,
+  'inv_10_engineering_manufacturedparts_mechanicalparts_color3'
+);
 
-export function Overdrive() {
-  return (
-    <WowheadLink kind="spell" id={467117} icon="spell_shaman_crashlightning">
-      Overdrive
-    </WowheadLink>
-  );
-}
+export const Overdrive = createComponent('Overdrive', 467117, 'spell_shaman_crashlightning');
 
-export function BleedingEdge() {
-  return (
-    <WowheadLink kind="spell" id={1215218} icon="ability_siege_engineer_pattern_recognition">
-      Bleeding Edge
-    </WowheadLink>
-  );
-}
+export const BleedingEdge = createComponent(
+  'Bleeding Edge',
+  1215218,
+  'ability_siege_engineer_pattern_recognition'
+);
 
-export function SonicBaBoom() {
-  return (
-    <WowheadLink kind="spell" id={465232} icon="inv_sonic_debuff">
-      Sonic Ba-Boom
-    </WowheadLink>
-  );
-}
+export const SonicBaBoom = createComponent('Sonic Ba-Boom', 465232, 'inv_sonic_debuff');
 
-export function UnstableExplosion() {
-  return (
-    <WowheadLink kind="spell" id={1216406} icon="spell_shaman_improvedfirenova">
-      Unstable Explosion
-    </WowheadLink>
-  );
-}
+export const UnstableExplosion = createComponent(
+  'Unstable Explosion',
+  1216406,
+  'spell_shaman_improvedfirenova'
+);
 
-export function ProductDeployment() {
-  return (
-    <WowheadLink kind="spell" id={1216411} icon="inv_10_engineering2_boxofbombs_friendly_color1">
-      Product Deployment
-    </WowheadLink>
-  );
-}
+export const ProductDeployment = createComponent(
+  'Product Deployment',
+  1216411,
+  'inv_10_engineering2_boxofbombs_friendly_color1'
+);
 
-export function UnstableShrapnel() {
-  return (
-    <WowheadLink kind="spell" id={1218342} icon="ability_deathwing_shrapnel">
-      Unstable Shrapnel
-    </WowheadLink>
-  );
-}
+export const UnstableShrapnel = createComponent(
+  'Unstable Shrapnel',
+  1218342,
+  'ability_deathwing_shrapnel'
+);
 
-export function Voidsplosion() {
-  return (
-    <WowheadLink kind="spell" id={1218319} icon="ability_priest_voidentropy">
-      Voidsplosion
-    </WowheadLink>
-  );
-}
+export const Voidsplosion = createComponent('Voidsplosion', 1218319, 'ability_priest_voidentropy');
 
-export function PayLine() {
-  return (
-    <WowheadLink kind="spell" id={460181} icon="inv_10_fishing_dragonislescoins_gold">
-      Pay Line
-    </WowheadLink>
-  );
-}
+export const PayLine = createComponent('Pay Line', 460181, 'inv_10_fishing_dragonislescoins_gold');
 
-export function HighRoller() {
-  return (
-    <WowheadLink kind="spell" id={460444} icon="spell_misc_emotionhappy">
-      High Roller
-    </WowheadLink>
-  );
-}
+export const HighRoller = createComponent('High Roller', 460444, 'spell_misc_emotionhappy');
 
-export function FlameAndCoin() {
-  return (
-    <WowheadLink kind="spell" id={461390} icon="ability_creature_cursed_01">
-      Flame and Coin
-    </WowheadLink>
-  );
-}
+export const FlameAndCoin = createComponent('Flame and Coin', 461390, 'ability_creature_cursed_01');
 
-export function ElectricBlast() {
-  return (
-    <WowheadLink kind="spell" id={460873} icon="spell_shaman_staticshock">
-      Electric Blast
-    </WowheadLink>
-  );
-}
+export const ElectricBlast = createComponent('Electric Blast', 460873, 'spell_shaman_staticshock');
 
-export function CoinMagnet() {
-  return (
-    <WowheadLink kind="spell" id={474665} icon="inv_ore_gold_nugget">
-      Coin Magnet
-    </WowheadLink>
-  );
-}
+export const CoinMagnet = createComponent('Coin Magnet', 474665, 'inv_ore_gold_nugget');
 
-export function FoulExhaust() {
-  return (
-    <WowheadLink kind="spell" id={460164} icon="inv_elemental_mote_shadow01">
-      Foul Exhaust
-    </WowheadLink>
-  );
-}
+export const FoulExhaust = createComponent('Foul Exhaust', 460164, 'inv_elemental_mote_shadow01');
 
-export function HotHotHeat() {
-  return (
-    <WowheadLink kind="spell" id={465388} icon="spell_fire_felflamering_red">
-      Hot Hot Heat
-    </WowheadLink>
-  );
-}
+export const HotHotHeat = createComponent('Hot Hot Heat', 465388, 'spell_fire_felflamering_red');
 
-export function ElementalCalamity() {
-  return (
-    <WowheadLink kind="spell" id={468665} icon="spell_fire_masterofelements">
-      Elemental Calamity
-    </WowheadLink>
-  );
-}
+export const ElementalCalamity = createComponent(
+  'Elemental Calamity',
+  468665,
+  'spell_fire_masterofelements'
+);
 
-export function UncontrolledBurn() {
-  return (
-    <WowheadLink kind="spell" id={469719} icon="ability_siege_engineer_detonate">
-      Uncontrolled Burn
-    </WowheadLink>
-  );
-}
+export const UncontrolledBurn = createComponent(
+  'Uncontrolled Burn',
+  469719,
+  'ability_siege_engineer_detonate'
+);
 
-export function EarthshakerGaol() {
-  return (
-    <WowheadLink kind="spell" id={1220769} icon="inv_elementalearth2">
-      Earthshaker Gaol
-    </WowheadLink>
-  );
-}
+export const EarthshakerGaol = createComponent('Earthshaker Gaol', 1220769, 'inv_elementalearth2');
 
-export function Hover() {
-  return (
-    <WowheadLink kind="spell" id={358267} icon="ability_evoker_hover">
-      Hover
-    </WowheadLink>
-  );
-}
+export const Hover = createComponent('Hover', 358267, 'ability_evoker_hover');
 
-export function ScatterblastCanisters() {
-  return (
-    <WowheadLink kind="spell" id={466419} icon="spell_mage_infernoblast">
-      Scatterblast Canisters
-    </WowheadLink>
-  );
-}
+export const ScatterblastCanisters = createComponent(
+  'Scatterblast Canisters',
+  466419,
+  'spell_mage_infernoblast'
+);
 
-export function GallybuxFinaleBlast() {
-  return (
-    <WowheadLink kind="spell" id={1219333} icon="spell_nature_lightningoverload">
-      Gallybux Finale Blast
-    </WowheadLink>
-  );
-}
+export const GallybuxFinaleBlast = createComponent(
+  'Gallybux Finale Blast',
+  1219333,
+  'spell_nature_lightningoverload'
+);
 
-export function Rescue() {
-  return (
-    <WowheadLink kind="spell" id={370665} icon="ability_evoker_flywithme">
-      Rescue
-    </WowheadLink>
-  );
-}
+export const Rescue = createComponent('Rescue', 370665, 'ability_evoker_flywithme');
 
-export function TwinGuardian() {
-  return (
-    <WowheadLink kind="spell" id={370889} icon="ability_skyreach_shielded">
-      Twin Guardian
-    </WowheadLink>
-  );
-}
+export const TwinGuardian = createComponent('Twin Guardian', 370889, 'ability_skyreach_shielded');
 
-export function FusedCanisters() {
-  return (
-    <WowheadLink kind="spell" id={466489} icon="inv_misc_blackironbomb">
-      Fused Canisters
-    </WowheadLink>
-  );
-}
+export const FusedCanisters = createComponent('Fused Canisters', 466489, 'inv_misc_blackironbomb');
 
-export function TickTockCanisters() {
-  return (
-    <WowheadLink kind="spell" id={466578} icon="inv_eng_bombstonestun">
-      Tick-Tock Canisters
-    </WowheadLink>
-  );
-}
+export const TickTockCanisters = createComponent(
+  'Tick-Tock Canisters',
+  466578,
+  'inv_eng_bombstonestun'
+);
 
-export function TotalDestruction() {
-  return (
-    <WowheadLink kind="spell" id={1214448} icon="ui_majorfactions_rocket">
-      TOTAL DESTRUCTION!!!
-    </WowheadLink>
-  );
-}
+export const TotalDestruction = createComponent(
+  'TOTAL DESTRUCTION!!!',
+  1214448,
+  'ui_majorfactions_rocket'
+);
 
-export function CanisterDetonation() {
-  return (
-    <WowheadLink kind="spell" id={474447} icon="inv_elemental_primal_shadow">
-      Canister Detonation
-    </WowheadLink>
-  );
-}
+export const CanisterDetonation = createComponent(
+  'Canister Detonation',
+  474447,
+  'inv_elemental_primal_shadow'
+);
 
-export function GigaCoils() {
-  return (
-    <WowheadLink
-      kind="spell"
-      id={469295}
-      icon="inv_10_engineering_manufacturedparts_electricalparts_color1"
-    >
-      Giga Coils
-    </WowheadLink>
-  );
-}
+export const GigaCoils = createComponent(
+  'Giga Coils',
+  469295,
+  'inv_10_engineering_manufacturedparts_electricalparts_color1'
+);
 
 export function Deathmark({ branch }: WowheadLinkProps) {
   return (
@@ -1042,13 +663,11 @@ export function Deathmark({ branch }: WowheadLinkProps) {
   );
 }
 
-export function UnstableAffliction() {
-  return (
-    <WowheadLink kind="spell" id={316099} icon="spell_shadow_unstableaffliction_3">
-      Unstable Affliction
-    </WowheadLink>
-  );
-}
+export const UnstableAffliction = createComponent(
+  'Unstable Affliction',
+  316099,
+  'spell_shadow_unstableaffliction_3'
+);
 
 type SpellReflectionProps = {
   children?: string;
@@ -1062,50 +681,68 @@ export function SpellReflection({ children }: SpellReflectionProps) {
   );
 }
 
-export function SpellBlock() {
-  return (
-    <WowheadLink kind="spell" id={392966} icon="ability_warrior_shieldbreak">
-      Spell Block
-    </WowheadLink>
-  );
-}
+export const SpellBlock = createComponent('Spell Block', 392966, 'ability_warrior_shieldbreak');
 
-export function AntiMagicShell() {
-  return (
-    <WowheadLink kind="spell" id={48707} icon="spell_shadow_antimagicshell">
-      Anti-Magic Shell
-    </WowheadLink>
-  );
-}
+export const AntiMagicShell = createComponent(
+  'Anti-Magic Shell',
+  48707,
+  'spell_shadow_antimagicshell'
+);
 
-export function AntiMagicZone() {
-  return (
-    <WowheadLink kind="spell" id={145629} icon="spell_deathknight_antimagiczone">
-      Anti-Magic Zone
-    </WowheadLink>
-  );
-}
+export const AntiMagicZone = createComponent(
+  'Anti-Magic Zone',
+  145629,
+  'spell_deathknight_antimagiczone'
+);
 
-export function Expunge() {
-  return (
-    <WowheadLink kind="spell" id={365585} icon="ability_evoker_fontofmagic_green">
-      Expunge
-    </WowheadLink>
-  );
-}
+export const Expunge = createComponent('Expunge', 365585, 'ability_evoker_fontofmagic_green');
 
-export function VerdantEmbrace() {
-  return (
-    <WowheadLink kind="spell" id={360995} icon="ability_evoker_rescue">
-      Verdant Embrace
-    </WowheadLink>
-  );
-}
+export const VerdantEmbrace = createComponent('Verdant Embrace', 360995, 'ability_evoker_rescue');
 
-export function SensePower() {
-  return (
-    <WowheadLink kind="spell" id={361021} icon="ability_hunter_aspectoftheviper">
-      Sense Power
-    </WowheadLink>
-  );
-}
+export const SensePower = createComponent('Sense Power', 361021, 'ability_hunter_aspectoftheviper');
+
+export const TimeConvergence = createComponent(
+  'Time Convergence',
+  431984,
+  'ability_evoker_plotthefuture'
+);
+
+export const MotesOfAcceleration = createComponent(
+  'Motes of Acceleration',
+  432008,
+  'item_timemote_icon'
+);
+
+export const Temporality = createComponent('Temporality', 431873, 'ability_evoker_return');
+
+export const FateMirror = createComponent(
+  'Fate Mirror',
+  404908,
+  'trade_archaeology_highbornesoulmirror'
+);
+
+export const MagnifiedFate = createComponent(
+  'Magnified Fate',
+  1297728,
+  'ability_evoker_masterylifebinder_black'
+);
+
+export const Timewalker = createComponent(
+  'Mastery: Timewalker',
+  406380,
+  'ability_evoker_masterytimewalker'
+);
+
+export const Accretion = createComponent('Accretion', 407876, 'ability_evoker_accretion');
+
+export const RumblingEarth = createComponent('Rumbling Earth', 459120, 'ability_evoker_geomancy');
+
+export const FelRush = createComponent('Fel Rush', 195072, 'ability_demonhunter_felrush');
+
+export const NimbleFlyer = createComponent('Nimble Flyer', 441253, 'ability_evoker_hover');
+
+export const TimeSpiral = createComponent('Time Spiral', 374968, 'ability_evoker_timespiral');
+
+export const Ascendance = TimeSpiral;
+export const BreathOfSindragosa = TimeSpiral;
+export const ArmyOfTheDead = TimeSpiral;

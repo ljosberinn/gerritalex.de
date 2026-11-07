@@ -1,11 +1,11 @@
 import {
   tmdbOptions,
-  PaginatedTMDBResult,
+  type PaginatedTMDBResult,
   doFetch,
-  Nullable,
-  TMDBSharedResponseFields,
+  type Nullable,
+  type TMDBSharedResponseFields,
   TMDB_IMAGE_BASE,
-} from '../common';
+} from '../common.ts';
 import data from './data.json' with { type: 'json' };
 import { resolve } from 'path';
 import { writeFile, stat } from 'fs/promises';

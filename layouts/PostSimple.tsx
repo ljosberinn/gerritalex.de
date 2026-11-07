@@ -1,7 +1,6 @@
 import { ReactNode } from 'react';
-import { formatDate } from 'pliny/utils/formatDate';
-import { CoreContent } from 'pliny/utils/contentlayer';
-import { type Blog } from '../.contentlayer/generated';
+import type { Blog } from 'content-collections';
+import { type CoreContent, formatDate } from '../lib/content';
 import { CustomLink } from '../components/CustomLink';
 import { PageTitle } from '../components/PageTitle';
 import { ScrollTop } from '../components/ScrollTop';

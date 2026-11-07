@@ -1,6 +1,31 @@
 @import 'tailwindcss';
-
+@plugin '@tailwindcss/typography';
 @config '../tailwind.config.ts';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-sans:
+    var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+  --leading-11: 2.75rem;
+  --leading-12: 3rem;
+  --leading-13: 3.25rem;
+  --leading-14: 3.5rem;
+
+  --color-primary-50: oklch(97.1% 0.014 343.198);
+  --color-primary-100: oklch(94.8% 0.028 342.258);
+  --color-primary-200: oklch(89.9% 0.061 343.231);
+  --color-primary-300: oklch(82.3% 0.12 346.018);
+  --color-primary-400: oklch(71.8% 0.202 349.761);
+  --color-primary-500: oklch(65.6% 0.241 354.308);
+  --color-primary-600: oklch(59.2% 0.249 0.584);
+  --color-primary-700: oklch(52.5% 0.223 3.958);
+  --color-primary-800: oklch(45.9% 0.187 3.815);
+  --color-primary-900: oklch(40.8% 0.153 2.432);
+  --color-primary-950: oklch(28.4% 0.109 3.907);
+}
 
 /*
   The default border color has changed to `currentColor` in Tailwind CSS v4,
@@ -36,8 +61,14 @@
   @apply no-underline;
 }
 
-.csl-entry {
-  @apply my-5;
+/* a modal <dialog> doesn't stop the page behind it from scrolling */
+html:has(dialog:modal) {
+  overflow: hidden;
+}
+
+/* the inner <pre> already carries prose spacing */
+figure[data-rehype-pretty-code-figure] {
+  margin: 0;
 }
 
 .no-scrollbar::-webkit-scrollbar {
@@ -55,10 +86,6 @@ input:-webkit-autofill:focus {
   transition:
     background-color 600000s 0s,
     color 600000s 0s;
-}
-
-.katex-display {
-  overflow: auto hidden;
 }
 
 .content-header-link {

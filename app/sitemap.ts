@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { allBlogs } from '../.contentlayer/generated';
+import { allBlogs } from 'content-collections';
 import siteMetadata from '../data/siteMetadata';
 import { stat } from 'fs/promises';
 

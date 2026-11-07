@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
-import { CoreContent } from 'pliny/utils/contentlayer';
-import { type Blog } from '../.contentlayer/generated';
+import type { Blog } from 'content-collections';
+import type { CoreContent } from '../lib/content';
 import { CustomLink } from '../components/CustomLink';
 import { Image } from '../components/Image';
 import { PageTitle } from '../components/PageTitle';

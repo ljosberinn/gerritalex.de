@@ -1,9 +1,6 @@
-import 'css/prism.css';
-import 'katex/dist/katex.css';
-
-import { MDXLayoutRenderer } from 'pliny/mdx-components';
-import { sortPosts, coreContent, allCoreContent } from 'pliny/utils/contentlayer';
-import { allBlogs, allAuthors } from '../../../.contentlayer/generated';
+import { allBlogs, allAuthors } from 'content-collections';
+import { MDXContent } from '../../../components/MDXContent';
+import { sortPosts, coreContent, allCoreContent } from '../../../lib/content';
 import PostSimple from '../../../layouts/PostSimple';
 import PostLayout from '../../../layouts/PostLayout';
 import PostBanner from '../../../layouts/PostBanner';
@@ -110,11 +107,13 @@ export default async function Page(props: { params: Promise<{ slug: string[] }> 
     return [...acc, coreContent(authorResults)];
   }, []);
   const mainContent = coreContent(post);
-  const jsonLd = post.structuredData;
-  jsonLd.author = authorDetails.map((author) => ({
-    '@type': 'Person',
-    name: author.name,
-  }));
+  const jsonLd = {
+    ...post.structuredData,
+    author: authorDetails.map((author) => ({
+      '@type': 'Person',
+      name: author.name,
+    })),
+  };
 
   const Layout = layouts[post.layout || defaultLayout];
 
@@ -143,7 +142,7 @@ export default async function Page(props: { params: Promise<{ slug: string[] }> 
 
       <div className="mx-auto max-w-4xl xl:max-w-6xl">
         <Layout content={mainContent} authorDetails={authorDetails} next={next} prev={prev}>
-          <MDXLayoutRenderer code={post.body.code} components={components} toc={post.toc} />
+          <MDXContent code={post.mdx} components={components} toc={post.toc} />
         </Layout>
       </div>
     </>

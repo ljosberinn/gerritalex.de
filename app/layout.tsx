@@ -2,7 +2,7 @@ import 'css/tailwind.css';
 import 'remark-github-blockquote-alert/alert.css';
 
 import { Space_Grotesk } from 'next/font/google';
-import { SearchProvider } from 'pliny/search';
+import { SearchProvider } from '../components/search/SearchProvider';
 import { ThemeProviders } from './theme-providers';
 import { Metadata } from 'next';
 import type { ReactNode } from 'react';
@@ -109,12 +109,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
         <ThemeProviders>
           <div className="flex h-screen flex-col justify-between font-sans">
-            {siteMetadata.search ? (
-              <SearchProvider searchConfig={siteMetadata.search}>
-                <Header />
-                <main className="mb-auto">{children}</main>
-              </SearchProvider>
-            ) : null}
+            <SearchProvider searchDocumentsPath={siteMetadata.search.searchDocumentsPath}>
+              <Header />
+              <main className="mb-auto">{children}</main>
+            </SearchProvider>
             <Footer />
           </div>
         </ThemeProviders>

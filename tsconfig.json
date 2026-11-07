@@ -13,10 +13,11 @@
     "module": "esnext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
+    "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "jsx": "react-jsx",
     "paths": {
-      "pliny/*": ["./node_modules/pliny/*"],
+      "content-collections": ["./.content-collections/generated"],
       "data/*": ["./data/*"],
       "app/*": ["./app/*"],
       "css/*": ["./css/*"]
@@ -35,8 +36,6 @@
     "**/*.ts",
     "**/*.tsx",
     "**/*.json",
-    ".contentlayer/generated",
-    ".contentlayer/generated/**/*.json",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts"
   ],

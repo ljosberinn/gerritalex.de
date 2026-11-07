@@ -1,10 +1,11 @@
 import { type ReactNode } from 'react';
-import { type Authors } from '../.contentlayer/generated';
+import type { Authors } from 'content-collections';
+import type { CoreContent } from '../lib/content';
 import { SocialIcon } from '../components/social-icons';
 
 interface Props {
   children: ReactNode;
-  content: Omit<Authors, '_id' | '_raw' | 'body'>;
+  content: CoreContent<Authors>;
 }
 
 export default function AuthorLayout({ children, content }: Props) {

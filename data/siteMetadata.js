@@ -1,5 +1,4 @@
 // @ts-check
-/** @type {import("pliny/config.js").PlinyConfig } */
 const siteMetadata = {
   title: 'Xepheris | gerritalex.de',
   author: 'Gerrit Alex',
@@ -89,18 +88,7 @@ const siteMetadata = {
   //   },
   // },
   search: {
-    provider: 'kbar', // kbar or algolia
-    kbarConfig: {
-      searchDocumentsPath: `${process.env.BASE_PATH || ''}/search.json`, // path to load documents to search
-    },
-    // provider: 'algolia',
-    // algoliaConfig: {
-    //   // The application ID provided by Algolia
-    //   appId: 'R2IYF7ETH7',
-    //   // Public API key: it is safe to commit it
-    //   apiKey: '599cec31baffa4868cae4e79f180729b',
-    //   indexName: 'docsearch',
-    // },
+    searchDocumentsPath: `${process.env.BASE_PATH || ''}/search.json`,
   },
 };
 

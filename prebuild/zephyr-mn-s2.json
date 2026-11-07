@@ -2570,6 +2570,7 @@
     },
     {
       "id": 1295073,
+      "avoidable": true,
       "type": "zuljan-trash",
       "name": "Virulent Whirl",
       "icon": "inv_ability_poison_beam",
@@ -4064,6 +4065,7 @@
     },
     {
       "id": 1310974,
+      "avoidable": true,
       "type": "the-writhing-coil",
       "name": "Toxic Atrophy",
       "icon": "spell_shadow_requiem",

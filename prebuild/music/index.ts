@@ -1,4 +1,4 @@
-import { doFetch, Nullable, discogsOptions } from '../common';
+import { doFetch, type Nullable, discogsOptions } from '../common.ts';
 import data from './data.json' with { type: 'json' };
 import { writeFile } from 'fs/promises';
 import { resolve } from 'path';
@@ -301,13 +301,10 @@ export async function doDiscogsImport(): Promise<{ from: string; to: string }[]>
       dataset.visible = true;
     }
 
-    let frontCover: Nullable<string> = null;
-
-    if (mainReleaseData.images.length === 1) {
-      frontCover = mainReleaseData.images[0].uri;
-    } else {
-      frontCover = mainReleaseData.images.find((image) => image.type === 'primary')?.uri ?? null;
-    }
+    const frontCover: Nullable<string> =
+      mainReleaseData.images.length === 1
+        ? mainReleaseData.images[0].uri
+        : (mainReleaseData.images.find((image) => image.type === 'primary')?.uri ?? null);
 
     if (frontCover === null) {
       warn(`No primary image found for ${dataset.artist} - ${dataset.album}`);

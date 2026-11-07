@@ -16,11 +16,17 @@ const specs = {
   'vengeance-demon-hunter': 'ability_demonhunter_spectank',
   'destruction-warlock': 'spell_shadow_rainoffire',
   'affliction-warlock': 'spell_shadow_deathcoil',
+  'elemental-shaman': 'spell_nature_lightning',
+  'demo-warlock': 'spell_shadow_metamorphosis',
+  'bm-hunter': 'ability_hunter_bestialdiscipline',
   'subtlety-rogue': 'ability_stealth',
   'mistweaver-monk': 'spell_monk_mistweaver_spec',
   'shadow-priest': 'spell_shadow_shadowwordpain',
   'unholy-deathknight': 'spell_deathknight_unholypresence',
   'assa-rogue': 'ability_rogue_deadlybrew',
+  'sub-rogue': 'ability_stealth',
+  'havoc-dh': 'ability_demonhunter_specdps',
+  'frost-deathknight': 'spell_deathknight_frostpresence',
 };
 
 const colors = {
@@ -33,12 +39,18 @@ const colors = {
   'preservation-evoker': classColors.Evoker,
   'vengeance-demon-hunter': classColors.DemonHunter,
   'destruction-warlock': classColors.Warlock,
+  'demo-warlock': classColors.Warlock,
+  'bm-hunter': classColors.Hunter,
+  'havoc-dh': classColors.DemonHunter,
   'affliction-warlock': classColors.Warlock,
   'subtlety-rogue': classColors.Rogue,
   'mistweaver-monk': classColors.Monk,
   'shadow-priest': classColors.Priest,
   'assa-rogue': classColors.Rogue,
+  'sub-rogue': classColors.Rogue,
+  'elemental-shaman': classColors.Shaman,
   'unholy-deathknight': classColors.DeathKnight,
+  'frost-deathknight': classColors.DeathKnight,
 };
 
 export type WowheadSpecIconProps = {

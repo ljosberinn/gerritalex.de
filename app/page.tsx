@@ -1,6 +1,5 @@
-import { sortPosts, allCoreContent } from 'pliny/utils/contentlayer';
-import { allBlogs } from '../.contentlayer/generated';
-import { formatDate } from 'pliny/utils/formatDate';
+import { allBlogs } from 'content-collections';
+import { sortPosts, allCoreContent, formatDate } from '../lib/content';
 import { CustomLink } from '../components/CustomLink';
 import { RandomLyrics } from '../components/RandomLyrics.';
 import { Tag } from '../components/Tag';

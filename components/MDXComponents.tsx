@@ -1,6 +1,6 @@
-import TOCInline from 'pliny/ui/TOCInline';
-import Pre from 'pliny/ui/Pre';
 import type { MDXComponents } from 'mdx/types';
+import { TOCInline } from './TOCInline';
+import { Pre } from './Pre';
 import { Image } from './Image';
 import { CustomLink } from './CustomLink';
 import { TableWrapper } from './TableWrapper';

@@ -1,4 +1,4 @@
-import { withContentlayer } from 'next-contentlayer2';
+import { withContentCollections } from '@content-collections/next';
 import type { NextConfig } from 'next';
 
 // You might need to insert additional domains in script-src if you are using external services
@@ -54,85 +54,55 @@ const securityHeaders = [
 const output = process.env.EXPORT ? 'export' : undefined;
 const basePath = process.env.BASE_PATH || undefined;
 
-const config = (): NextConfig => {
-  const plugins = [withContentlayer];
-
-  return plugins.reduce((acc, next) => next(acc), {
-    output,
-    basePath,
-    reactStrictMode: true,
-    pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
-    images: {
-      remotePatterns: [
-        {
-          protocol: 'https',
-          hostname: 'wow.zamimg.com',
-        },
-        {
-          protocol: 'https',
-          hostname: 'picsum.photos',
-        },
-      ],
-    },
-    async headers() {
-      return [
-        {
-          source: '/(.*)',
-          headers: securityHeaders,
-        },
-        {
-          source: '/static/images/:path*',
-          headers: [
-            {
-              key: 'Cache-Control',
-              value:
-                'public, max-age=31536000, s-maxage=31536000, stale-while-revalidate=86400, immutable',
-            },
-          ],
-        },
-      ];
-    },
-    async redirects() {
-      return [
-        {
-          source: '/blog/zephyr',
-          destination: '/blog/tww-s2-zephyr',
-          permanent: true,
-        },
-        {
-          source: '/blog/mn-s1-zephyr',
-          destination: '/blog/midnight-s1-aoe',
-          permanent: true,
-        },
-      ];
-    },
-    turbopack: {
-      rules: {
-        '*.svg': {
-          loaders: ['@svgr/webpack'],
-          as: '*.js',
-        },
-        '*.node': {
-          loaders: ['raw-loader'],
-          as: '*.js',
-        },
+const config: NextConfig = {
+  output,
+  basePath,
+  reactStrictMode: true,
+  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'wow.zamimg.com',
       },
-    },
-    webpack: (config, options) => {
-      config.module.rules.push({
-        test: /\.svg$/,
-        use: ['@svgr/webpack'],
-      });
-      config.module.rules.push({
-        test: /\.node/,
-        use: {
-          loader: 'raw-loader',
-        },
-      });
-
-      return config;
-    },
-  });
+      {
+        protocol: 'https',
+        hostname: 'picsum.photos',
+      },
+    ],
+  },
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: securityHeaders,
+      },
+      {
+        source: '/static/images/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value:
+              'public, max-age=31536000, s-maxage=31536000, stale-while-revalidate=86400, immutable',
+          },
+        ],
+      },
+    ];
+  },
+  async redirects() {
+    return [
+      {
+        source: '/blog/zephyr',
+        destination: '/blog/tww-s2-zephyr',
+        permanent: true,
+      },
+      {
+        source: '/blog/mn-s1-zephyr',
+        destination: '/blog/midnight-s1-aoe',
+        permanent: true,
+      },
+    ];
+  },
 };
 
-export default config;
+export default withContentCollections(config);
