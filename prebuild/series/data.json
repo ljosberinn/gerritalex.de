@@ -1806,7 +1806,7 @@
   {
     "title": "Ripley",
     "id": 94028,
-    "state": "upcoming",
+    "state": "ongoing",
     "metadata": {
       "genres": [
         "Drama"
@@ -1821,7 +1821,7 @@
       "episodes": 8
     },
     "favorite": false,
-    "episodesSeen": 0
+    "episodesSeen": 1
   },
   {
     "title": "Riverdale",

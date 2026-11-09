@@ -3039,7 +3039,7 @@
     "favorite": false
   },
   {
-    "seen": false,
+    "seen": true,
     "id": 1119449,
     "title": "Good Luck, Have Fun, Don't Die",
     "metadata": {
@@ -3549,7 +3549,7 @@
     "seen": true
   },
   {
-    "seen": false,
+    "seen": true,
     "id": 1138194,
     "title": "Heretic",
     "metadata": {
@@ -5136,7 +5136,7 @@
   {
     "title": "Obsession",
     "id": 1339713,
-    "seen": false,
+    "seen": true,
     "metadata": {
       "genres": [
         "Horror"
@@ -7407,7 +7407,7 @@
     "favorite": false
   },
   {
-    "seen": false,
+    "seen": true,
     "id": 1290418,
     "title": "The Cycle",
     "metadata": {
