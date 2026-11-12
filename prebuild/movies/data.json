@@ -766,6 +766,27 @@
     "seen": true
   },
   {
+    "seen": true,
+    "id": 401513,
+    "title": "Attraction",
+    "metadata": {
+      "genres": [
+        "Drama",
+        "Romance",
+        "Science Fiction",
+        "Adventure"
+      ],
+      "tagline": "The Earth is for Humans",
+      "release": {
+        "day": 26,
+        "month": 1,
+        "year": 2017
+      },
+      "runtime": 117
+    },
+    "favorite": false
+  },
+  {
     "title": "Avatar",
     "id": 19995,
     "metadata": {
