@@ -887,8 +887,7 @@
     "metadata": {
       "genres": [
         "Sci-Fi & Fantasy",
-        "Action & Adventure",
-        "Family"
+        "Action & Adventure"
       ],
       "seasons": 1,
       "tagline": "The boy who lived.",
@@ -1821,7 +1820,7 @@
       "episodes": 8
     },
     "favorite": false,
-    "episodesSeen": 1
+    "episodesSeen": 2
   },
   {
     "title": "Riverdale",
@@ -2296,6 +2295,27 @@
     "favorite": false,
     "episodesSeen": 22,
     "state": "abandoned"
+  },
+  {
+    "title": "The Body",
+    "id": 291507,
+    "state": "upcoming",
+    "episodesSeen": 0,
+    "metadata": {
+      "genres": [
+        "Drama",
+        "Sci-Fi & Fantasy"
+      ],
+      "seasons": 1,
+      "tagline": "They pray hard and sin harder.",
+      "release": {
+        "day": 11,
+        "month": 11,
+        "year": 2026
+      },
+      "episodes": 8
+    },
+    "favorite": false
   },
   {
     "title": "The Boroughs",
