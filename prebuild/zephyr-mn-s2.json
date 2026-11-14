@@ -435,12 +435,11 @@
       ]
     },
     {
-      "id": 372696,
+      "id": 1305201,
       "type": "trash",
       "name": "Excavating Blast",
       "icon": "spell_nature_earthquake",
       "source": "ruby-life-pools",
-      "avoidable": true,
       "lastSeen": "2026-10-07",
       "notes": [
         [
@@ -451,23 +450,6 @@
           }
         ]
       ]
-    },
-    {
-      "id": 372735,
-      "type": "melidrussa-chillworn-trash",
-      "name": "Tectonic Slam",
-      "icon": "inv_misc_volatileearth",
-      "source": "ruby-life-pools",
-      "notes": [
-        [
-          "Via ",
-          {
-            "component": "WowheadLink",
-            "props": { "id": 187969, "kind": "npc", "children": "Flashfrost Earthshaper" }
-          }
-        ]
-      ],
-      "lastSeen": "2026-10-07"
     },
     {
       "id": 372819,
