@@ -18,16 +18,16 @@
     "url": null
   },
   {
-    "patch": "12.2",
-    "releaseDate": "?2027-02-16",
+    "patch": "12.2.0",
+    "releaseDate": "?2027-02-09",
     "announcementDate": null,
     "url": null
   },
   {
     "patch": "12.1.7",
-    "releaseDate": "?2026-12-08",
-    "announcementDate": null,
-    "url": null
+    "releaseDate": "2026-12-01",
+    "announcementDate": "2026-11-17",
+    "url": "https://www.wowhead.com/news/talebound-releases-on-december-1st-patch-12-1-7-383907"
   },
   {
     "patch": "12.1.5",
