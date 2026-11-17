@@ -7,10 +7,15 @@ function createComponent(
   icon: string,
   branch?: WowheadLinkProps['branch']
 ) {
-  return function Component() {
+  return function Component({ abbreviated }: { abbreviated?: boolean }) {
     return (
       <WowheadLink kind="spell" id={id} icon={icon} branch={branch}>
-        {name}
+        {abbreviated
+          ? name
+              .split(' ')
+              .map((str) => str[0].toUpperCase())
+              .join('')
+          : name}
       </WowheadLink>
     );
   };
@@ -23,6 +28,7 @@ export const Zephyr = createComponent('Zephyr', 374227, 'ability_evoker_hoverbla
 export const StretchTime = createComponent('Stretch Time', 410352, 'ability_evoker_timedilation');
 
 export const FireWithin = createComponent('Fire Within', 375577, 'item_sparkofragnoros');
+export const ChronoWard = createComponent('Chrono Ward', 409676, 'ability_evoker_bronze_01');
 
 export const DraconicInstincts = createComponent(
   'Draconic Instincts',
@@ -30,8 +36,18 @@ export const DraconicInstincts = createComponent(
   'inv_misc_scales_basilliskorange'
 );
 
+export const DraconicAttunements = createComponent(
+  'Draconic Attunements',
+  403208,
+  'ability_evoker_draconicattunements'
+);
+
 export function Scalecommander() {
   return <WowheadSpecIcon spec="scalecommander">Scalecommander</WowheadSpecIcon>;
+}
+
+export function Flameshaper() {
+  return <WowheadSpecIcon spec="flameshaper">Flameshaper</WowheadSpecIcon>;
 }
 
 export function Chronowarden() {
@@ -463,6 +479,22 @@ export function Bombardments(props: WowheadLinkProps) {
   );
 }
 
+export const EmeraldBlossom = createComponent(
+  'Emerald Blossom',
+  367979,
+  'ability_evoker_emeraldblossom'
+);
+export const FontOfMagic = createComponent('Font of Magic', 408083, 'ability_evoker_fontofmagic');
+export const Burnout = createComponent('Burnout', 375802, 'spell_fire_soulburn');
+
+export const Anachronism = createComponent('Anachronism', 407869, 'ability_evoker_essenceburst6');
+export const SleepWalk = createComponent('Sleep Walk', 360806, 'ability_xavius_dreamsimulacrum');
+export const NourishingSands = createComponent(
+  'Nourishing Sands',
+  406043,
+  'ability_evoker_nourishingsands'
+);
+
 export const BreathOfEons = createComponent(
   'Breath of Eons',
   442204,
@@ -734,6 +766,7 @@ export const Timewalker = createComponent(
 );
 
 export const Accretion = createComponent('Accretion', 407876, 'ability_evoker_accretion');
+export const AncientFlame = createComponent('Ancient Flame', 375583, 'inv_elemental_mote_fire01');
 
 export const RumblingEarth = createComponent('Rumbling Earth', 459120, 'ability_evoker_geomancy');
 
@@ -764,3 +797,27 @@ export const ArmyOfTheDead = createComponent(
   42650,
   'spell_deathknight_armyofthedead'
 );
+
+export const MightOfTheBlackDragonflight = createComponent(
+  'Might of the Black Dragonflight',
+  441705,
+  'ability_evoker_blackattunementalt'
+);
+
+export const Primacy = createComponent('Primacy', 431657, 'inv_misc_pocketwatch_01');
+
+export const Reverberations = createComponent(
+  'Reverberations',
+  431615,
+  'ability_evoker_giftoftheaspects'
+);
+
+export const ChronoFlame = createComponent(
+  'Chrono Flame',
+  431442,
+  'inv_ability_chronowardenevoker_chronoflame'
+);
+
+export const Consumption = createComponent('Consumption', 1263824, 'inv_axe_2h_artifactmaw_d_01');
+
+export const TomorrowToday = createComponent('Tomorrow, Today', 412723, 'ability_evoker_rewind2');

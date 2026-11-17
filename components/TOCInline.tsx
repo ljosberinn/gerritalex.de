@@ -49,11 +49,13 @@ export function TOCInline({
   ulClassName = '',
   liClassName = '',
 }: TOCInlineProps) {
-  const re = new RegExp(`^(${Array.isArray(exclude) ? exclude.join('|') : exclude})$`, 'i');
+  const excluded = new Set((Array.isArray(exclude) ? exclude : [exclude]).map((e) => e.toLowerCase()));
 
   const filteredToc = toc.filter(
     (heading) =>
-      heading.depth >= fromHeading && heading.depth <= toHeading && !re.test(heading.value)
+      heading.depth >= fromHeading &&
+      heading.depth <= toHeading &&
+      !excluded.has(heading.value.toLowerCase())
   );
 
   const createList = (items: NestedTocItem[] | undefined) => {

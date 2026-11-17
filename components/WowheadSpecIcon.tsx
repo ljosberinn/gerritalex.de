@@ -10,6 +10,8 @@ const specs = {
     'https://wow.zamimg.com/images/wow/TextureAtlas/live/talents-heroclass-evoker-scalecommander.webp',
   chronowarden:
     'https://wow.zamimg.com/images/wow/TextureAtlas/live/talents-heroclass-evoker-chronowarden.webp',
+  flameshaper:
+    'https://wow.zamimg.com/images/wow/TextureAtlas/live/talents-heroclass-evoker-flameshaper.webp',
   'augmentation-evoker': 'classicon_evoker_augmentation',
   'devastation-evoker': 'classicon_evoker_devastation',
   'preservation-evoker': 'classicon_evoker_preservation',
@@ -27,6 +29,8 @@ const specs = {
   'sub-rogue': 'ability_stealth',
   'havoc-dh': 'ability_demonhunter_specdps',
   'frost-deathknight': 'spell_deathknight_frostpresence',
+  'fury-warrior': 'ability_warrior_innerrage',
+  'outlaw-rogue': 'ability_rogue_waylay',
 };
 
 const colors = {
@@ -34,6 +38,7 @@ const colors = {
   hellcaller: classColors.Warlock,
   scalecommander: classColors.Evoker,
   chronowarden: classColors.Evoker,
+  flameshaper: classColors.Evoker,
   'augmentation-evoker': classColors.Evoker,
   'devastation-evoker': classColors.Evoker,
   'preservation-evoker': classColors.Evoker,
@@ -51,6 +56,8 @@ const colors = {
   'elemental-shaman': classColors.Shaman,
   'unholy-deathknight': classColors.DeathKnight,
   'frost-deathknight': classColors.DeathKnight,
+  'fury-warrior': classColors.Warrior,
+  'outlaw-rogue': classColors.Rogue,
 };
 
 export type WowheadSpecIconProps = {

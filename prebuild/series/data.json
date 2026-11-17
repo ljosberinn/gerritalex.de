@@ -2299,8 +2299,8 @@
   {
     "title": "The Body",
     "id": 291507,
-    "state": "ongoing",
-    "episodesSeen": 3,
+    "state": "finished",
+    "episodesSeen": 8,
     "metadata": {
       "genres": [
         "Drama",
@@ -2970,11 +2970,11 @@
         "month": 3,
         "year": 2024
       },
-      "episodes": 8
+      "episodes": 16
     },
     "favorite": false,
     "episodesSeen": 8,
-    "state": "finished"
+    "state": "upcoming"
   },
   {
     "title": "Tiger King",
