@@ -2962,6 +2962,7 @@
       "name": "Light Bolt Volley",
       "icon": "ability_priest_flashoflight",
       "source": "the-blinding-vale",
+      "avoidable": true,
       "notes": [
         [
           "Via ",
