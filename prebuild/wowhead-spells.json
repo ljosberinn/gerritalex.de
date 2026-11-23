@@ -99,6 +99,10 @@
     "name": "Glide",
     "icon": "ability_racial_glide"
   },
+  "359073": {
+    "name": "Eternity Surge",
+    "icon": "ability_evoker_eternitysurge"
+  },
   "360194": {
     "name": "Deathmark",
     "icon": "ability_rogue_deathmark"
@@ -143,6 +147,10 @@
     "name": "Expunge",
     "icon": "ability_evoker_fontofmagic_green"
   },
+  "365937": {
+    "name": "Ruby Embers",
+    "icon": "inv_tradeskillitem_lessersorcerersfire"
+  },
   "367979": {
     "name": "Emerald Blossom",
     "icon": "ability_evoker_emeraldblossom"
@@ -154,6 +162,14 @@
   "369536": {
     "name": "Soar",
     "icon": "ability_racial_soar"
+  },
+  "369846": {
+    "name": "Feed the Flames",
+    "icon": "mace_1h_blacksmithing_d_04_icon"
+  },
+  "369908": {
+    "name": "Power Nexus",
+    "icon": "ability_evoker_powernexus"
   },
   "369909": {
     "name": "Protracted Talons",
@@ -175,6 +191,14 @@
     "name": "Imminent Destruction",
     "icon": "spell_burningbladeshaman_blazing_radiance"
   },
+  "370819": {
+    "name": "Scorching Embers",
+    "icon": "spell_fire_burnout"
+  },
+  "370837": {
+    "name": "Engulfing Blaze",
+    "icon": "inv_inscription_pigment_ruby"
+  },
   "370839": {
     "name": "Power Swell",
     "icon": "ability_evoker_powernexus2"
@@ -186,6 +210,10 @@
   "370889": {
     "name": "Twin Guardian",
     "icon": "inv_misc_volatileair"
+  },
+  "371034": {
+    "name": "Lay Waste",
+    "icon": "ability_evoker_deepbreath"
   },
   "372048": {
     "name": "Oppressing Roar",
@@ -242,6 +270,10 @@
   "376166": {
     "name": "Draconic Legacy",
     "icon": "inv_helm_mail_dracthyrquest_b_02"
+  },
+  "378441": {
+    "name": "Time Stop",
+    "icon": "inv_10_enchanting2_magicswirl_bronze"
   },
   "384827": {
     "name": "Call Hyenas",
@@ -495,6 +527,10 @@
     "name": "Motes of Acceleration",
     "icon": "item_timemote_icon"
   },
+  "432895": {
+    "name": "Thread of Fate",
+    "icon": "ability_evoker_sandsoftime"
+  },
   "433871": {
     "name": "Maneuverability",
     "icon": "ability_evoker_deepbreath"
@@ -530,6 +566,10 @@
   "440055": {
     "name": "Seeds of Their Demise",
     "icon": "ability_warlock_moltencoregreen"
+  },
+  "441180": {
+    "name": "Hardened Scales",
+    "icon": "inv_10_skinning_scales_black"
   },
   "441253": {
     "name": "Nimble Flyer",
@@ -843,6 +883,14 @@
     "name": "Consumption",
     "icon": "inv_axe_2h_artifactmaw_d_01"
   },
+  "1265867": {
+    "name": "Azure Sweep",
+    "icon": "inv_10_skinning_dragonscales_blue"
+  },
+  "1265979": {
+    "name": "Twin Flame",
+    "icon": "ability_evoker_infernosblessing"
+  },
   "1267206": {
     "name": "Strike from Above",
     "icon": "ability_racial_glide"
@@ -850,6 +898,14 @@
   "1268881": {
     "name": "Improved Defy Fate",
     "icon": "ability_evoker_masterytimewalker"
+  },
+  "1271687": {
+    "name": "Rising Fury",
+    "icon": "inv12_apextalent_evoker_risingfury"
+  },
+  "1292321": {
+    "name": "Unbound Flame",
+    "icon": "inv_ability_flameshaperevoker_engulf"
   },
   "1296637": {
     "name": "Evoker Augmentation 12.1 Class Set 2pc",
