@@ -372,14 +372,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "source": "altar-of-fangs",
-      "type": "curse",
-      "icon": "spell_necro_necroticsmash",
-      "name": "Whirling Spirit",
-      "id": 1238255,
-      "lastSeen": "2026-06-29"
-    },
-    {
       "source": "den-of-nalorakk",
       "type": "bleed",
       "icon": "inv_10_specialreagentfoozles_tuskclaw_fire",
@@ -556,13 +548,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "source": "altar-of-fangs",
-      "type": "poison",
-      "icon": "spell_nature_nullifypoison",
-      "name": "Corrosive Fangs",
-      "id": 1294845
-    },
-    {
       "source": "murder-row",
       "type": "bleed",
       "icon": "ability_upgrademoonglaive",
@@ -659,14 +644,6 @@
       "lastSeen": "2026-08-04"
     },
     {
-      "source": "altar-of-fangs",
-      "type": "disease",
-      "icon": "ability_creature_disease_03",
-      "name": "Festering Gash",
-      "id": 1302867,
-      "lastSeen": "2026-07-01"
-    },
-    {
       "source": "kings-rest",
       "type": "bleed",
       "icon": "inv_spear_08",
@@ -696,14 +673,6 @@
       "name": "Cold Claws",
       "id": 1305234,
       "lastSeen": "2026-08-04"
-    },
-    {
-      "source": "altar-of-fangs",
-      "type": "poison",
-      "icon": "ability_rogue_venomouswounds",
-      "name": "Spiteful Venom",
-      "id": 1305368,
-      "lastSeen": "2026-07-02"
     },
     {
       "source": "altar-of-fangs",
@@ -758,15 +727,27 @@
       "icon": "inv_121_trinket_raid_ulatek_ulatekclaw",
       "name": "Cursed",
       "id": 1309980,
-      "lastSeen": "2026-08-04"
-    },
-    {
-      "source": "altar-of-fangs",
-      "type": "curse",
-      "icon": "inv_121_trinket_raid_ulatek_ulatekclaw",
-      "name": "Twisted Curse",
-      "id": 1310017,
-      "lastSeen": "2026-08-03"
+      "lastSeen": "2026-08-04",
+      "notes": [
+        [
+          "Decurse ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 272104, "kind": "npc", "children": "Cursed Bones" }
+          },
+          ", then right-click them to gain ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 272102, "kind": "npc", "children": "Soothed Amani Spirit" }
+          },
+          " as pet for a duration. It will apply ",
+          {
+            "component": "WowheadLink",
+            "props": { "id": 1310018, "kind": "npc", "children": "Ancient Guardian's Aid" }
+          },
+          " with its melees which do neglicible damage themselves, the debuff is what you care about."
+        ]
+      ]
     },
     {
       "source": "voidscar-arena",
