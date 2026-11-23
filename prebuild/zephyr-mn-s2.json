@@ -1051,6 +1051,7 @@
       "name": "Bullet Seeds",
       "icon": "spell_shaman_convection",
       "source": "the-blinding-vale",
+      "avoidable": true,
       "notes": [
         [
           "Via ",
@@ -1210,7 +1211,8 @@
       "type": "ziekket",
       "name": "Fluorescent Outburst",
       "icon": "spell_nature_wrathv2",
-      "source": "the-blinding-vale"
+      "source": "the-blinding-vale",
+      "avoidable": true
     },
     {
       "id": 1247366,
