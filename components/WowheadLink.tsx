@@ -7,7 +7,8 @@ type Achievement = {
 
 type Spell = {
   kind: 'spell';
-  icon: string;
+  icon?: string;
+  urlExtra?: string;
 };
 
 type Npc = {
@@ -20,22 +21,23 @@ type Item = {
   urlExtra?: string;
 };
 
+export type WowheadBranch = 'beta' | 'ptr-2' | 'ptr' | 'classic';
+
 export type WowheadLinkProps = {
   id: number;
   children: string;
-  branch?: 'beta' | 'ptr-2' | 'ptr' | 'classic';
-  spaceless?: boolean;
+  branch?: WowheadBranch;
 } & (Achievement | Spell | Npc | Item);
 
 export function WowheadLink({ id, children, kind, branch, ...props }: WowheadLinkProps) {
-  const urlExtra = 'urlExtra' in props ? `?${props.urlExtra}` : '';
+  const urlExtra = 'urlExtra' in props && props.urlExtra ? `?${props.urlExtra}` : '';
 
   return (
     <CustomLink
       href={`https://www.wowhead.com/${branch ? `${branch}/` : ''}${kind}=${id}${`${urlExtra}`}`}
       className="inline-flex items-baseline gap-2"
     >
-      {'icon' in props ? (
+      {'icon' in props && props.icon ? (
         <Image
           src={`https://wow.zamimg.com/images/wow/icons/medium/${props.icon}.jpg`}
           alt=""

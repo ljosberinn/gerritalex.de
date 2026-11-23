@@ -95,6 +95,7 @@ export function WowheadSpecIcon({ spec, children, plural }: WowheadSpecIconProps
       <span className="hidden items-baseline gap-2 dark:inline-flex" style={{ color }}>
         {renderedIcon}
         {children}
+        {plural ? 's' : ''}
       </span>
     </>
   );

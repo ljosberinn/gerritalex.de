@@ -8,6 +8,7 @@ export default {
       typography: {
         DEFAULT: {
           css: {
+            '--tw-prose-invert-body': 'var(--color-gray-200)',
             a: {
               color: 'var(--color-primary-500)',
               '&:hover': {

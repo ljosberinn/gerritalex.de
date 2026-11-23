@@ -111,7 +111,7 @@ A checked checkbox indicates this has been fixed since discovery.
 - [ ] there's a long list of class abilities that do not contribute to <BreathOfEons /> as they're missing the `Allow Class Ability Procs` flag
   - [this list is sourced from simc](https://github.com/WoWAnalyzer/WoWAnalyzer/blob/the-war-within/src/analysis/retail/evoker/augmentation/modules/util/abilityFilter.ts#L329-L690), so there may be some minor errors
 - [ ] <ObsidianScales /> shows the same tooltip as before regardless of whether you're talented into <RenewingBlaze /> or not
-- [ ] <CommandSquadron kind="buff" /> does not work when talented out of <Maneuverability />
+- [ ] <CommandSquadron variant="buff" /> does not work when talented out of <Maneuverability />
 - [ ] <Prescience /> from <MotesOfPossibility /> doesn't seem to be able to crit when talented into <DoubleTime />
 - [ ] <EbonMight /> does not update when a player dies (stays at a lower value than it should)
 - [ ] <EbonMight /> does  not spread to more players if they come in range/get resurrected
@@ -120,7 +120,7 @@ A checked checkbox indicates this has been fixed since discovery.
 - [ ] when using <BreathOfEons /> without <EbonMight /> active, its scaling factor will depend on the last affected target count of <EbonMight />
   - e.g. if it was at 1% because you buffed lots of players before on say a world boss and then use it in solo content, it still does only 1%
   - it resets to 15% on a relog or when casting <EbonMight />
-- [ ] neither your delve companion nor followers in Follower Dungeons can be buffed by <EbonMight kind="delves" /> (id: 426404)
+- [ ] neither your delve companion nor followers in Follower Dungeons can be buffed by <EbonMight variant="delves" /> (id: 426404)
 - [ ] healer Valeera (Midnight Delve Companion) cannot receive <SourceOfMagic /> nor <SpatialParadox /> - Brann could receive them 
 - [x] <Timelessness /> still only lasts for 30 minutes
   - <BlisteringScales /> was updated to last for 60 minutes in 12.0
@@ -272,7 +272,7 @@ This one is going to hurt. <RenewingBlaze /> was a stupidly strong button situat
 
 Then again, there's the raid death statistics and - while <AugmentationEvoker abbreviated /> and <PreservationEvoker abbreviated /> are roughly in the middle of the pack - <DevastationEvoker plural/> apparently really like dying:
 
-<img src="/static/images/aug-midnight/raid-death-statistics.png" alt="Augmentation Evoker deaths in Manaforge Omega" loading="lazy"/>
+<Figure src="/static/images/aug-midnight/raid-death-statistics.png" alt="Augmentation Evoker deaths in Manaforge Omega" />
 
 How a class that has to actively use its mitigation ahead of damage is suddenly expected to live more by removing agency over when to spread out defensives however is something only Blizzard will understand. If a talent like <DraconicInstincts /> was baseline/in the class tree I'd be more inclined to call this a positive change.
 
@@ -339,7 +339,7 @@ Previously, <Prescience /> was the targeting mechanism for <EbonMight />, which 
 
 #### Apex Talent
 
-Not extremely fond of introducing more pets with possibly wonky targeting or pathing. For context, the current <Scalecommander /> set summons a <WowheadLink id={219827} kind="npc">Dracthyr Commando</WowheadLink> which will <WowheadLink id={1236970} icon="ability_evoker_pyre" kind="spell">Pyre</WowheadLink> while flying and then continue to <WowheadLink id={1236949} icon="ability_evoker_disintegrate" kind="spell">Disintegrate</WowheadLink> for a bit. Unforunately however, they don't choose your target so they'll happily slap some irrelevant minion next to your own target half of the time.
+Not extremely fond of introducing more pets with possibly wonky targeting or pathing. For context, the current <Scalecommander /> set summons a <WowheadLink id={219827} kind="npc">Dracthyr Commando</WowheadLink> which will <Spell id={1236970} /> while flying and then continue to <Spell id={1236949} /> for a bit. Unforunately however, they don't choose your target so they'll happily slap some irrelevant minion next to your own target half of the time.
 
 The non-pet elements are intriguing however:
 - doubling the effects of <EbonMight /> for a minimum of - currently - 20 seconds sounds very strong for keys in particular as <BreathOfEons /> - again currently - is available for every pull as <Scalecommander />
@@ -400,7 +400,7 @@ Also worth noting your <WowheadLink id={253466} kind="npc">Future Self</WowheadL
   - so.. what's the point of this talent then?
 - <EnergyCycles />
   > <TemporalBurst /> grants <EssenceBurst /> every 6 sec.
-  - kind of a throwback to the <WowheadLink id={422871} icon="inv_legion_faction_dreamweavers" kind="spell">Evoker Devastation 10.2 Class Set 4pc</WowheadLink> (do not mention this to <DevastationEvoker plural/>, that set is not remembered fondly)
+  - kind of a throwback to the <Spell id={422871} icon="inv_legion_faction_dreamweavers" /> (do not mention this to <DevastationEvoker plural/>, that set is not remembered fondly)
   - _probably_ ok for <AugmentationEvoker abbreviated /> to have just due to how little <EssenceBurst /> it can reliably generate
 - <Overclock />
   > <ChronoFlames />' maximum damage or healing is increased by 40%, up to [(Spell Power * 3.5) * (1 + Versatility)] Arcane.

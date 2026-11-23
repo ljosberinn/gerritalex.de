@@ -1,5 +1,5 @@
 ---
-lastmod: '2025-10-09'
+lastmod: '2026-11-18'
 title: Retail World of Warcraft - A Passionate Rant
 date: '2025-06-03'
 tags: ['wow']
@@ -39,31 +39,31 @@ Did you know there's a <WowheadClassIcon>Warlock</WowheadClassIcon> class tree t
 
 ### Dimension Ripper
 
-Did you know the <WowheadSpecIcon spec="destruction-warlock">Destruction</WowheadSpecIcon> talent <WowheadLink id={457025} kind="spell" icon="inv_artifact_dimensionalrift">Dimension Ripper</WowheadLink> doesn't actually have a 5% chance, but instead somehow 2.25%? Could of course be a tooltip bug only, but 2.25% would not only be a very underwhelming near-capstone talent, but also a surprising number in general.
+Did you know the <WowheadSpecIcon spec="destruction-warlock">Destruction</WowheadSpecIcon> talent <Spell id={457025} /> doesn't actually have a 5% chance, but instead somehow 2.25%? Could of course be a tooltip bug only, but 2.25% would not only be a very underwhelming near-capstone talent, but also a surprising number in general.
 
 Known since at least [Jan 10 2025](https://github.com/SimCMinMax/WoW-BugTracker/issues/1305), three days into the 11.1 PTR.
 
 ### Seeds of Their Demise
 
-During the 11.1 PTR, the <WowheadSpecIcon spec="hellcaller">Hellcaller</WowheadSpecIcon> talent <WowheadLink kind="spell" id={440055} icon="ability_warlock_moltencoregreen">Seeds of Their Demise</WowheadLink> was changed to no longer grant <WowheadLink kind="spell" id={440043} icon="spell_nzinsanity_chasedbyshadows">Blackened Soul</WowheadLink> a 30% damage increase.
+During the 11.1 PTR, the <WowheadSpecIcon spec="hellcaller">Hellcaller</WowheadSpecIcon> talent <Spell id={440055} /> was changed to no longer grant <Spell id={440043} /> a 30% damage increase.
 
-At least the tooltip was. The talent still grants this increase. In all fairness however, removing this effect would require compensation buffs for <WowheadClassIcon className="warlock">Warlock</WowheadClassIcon>s as <WowheadLink kind="spell" id={440043} icon="spell_nzinsanity_chasedbyshadows">Blackened Soul</WowheadLink> is a considerable part of their damage.
+At least the tooltip was. The talent still grants this increase. In all fairness however, removing this effect would require compensation buffs for <WowheadClassIcon className="warlock">Warlock</WowheadClassIcon>s as <Spell id={440043} /> is a considerable part of their damage.
 
 Known since at least [Mar 25 2025](https://github.com/SimCMinMax/WoW-BugTracker/issues/1329).
 
 ### Reactivity
 
-<WowheadLink id={445035} kind="spell" icon="spell_fire_totemofwrath" urlExtra="spec=264">Reactivity</WowheadLink> doesn't replicate 50% but 100% healing.
+<Spell id={445035} urlExtra="spec=264" icon="spell_fire_totemofwrath">Reactivity</Spell> doesn't replicate 50% but 100% healing.
 
 Known since the talent was implemented during TWW Beta.
 
 ### Consume Flame
 
-<WowheadLink id={444088} kind="spell" icon="inv_shadowflames_wave" urlExtra="spec=1467">Consume Flame</WowheadLink> ignores damage taken modifiers.
+<Spell id={444088} urlExtra="spec=1467" /> ignores damage taken modifiers.
 
 This is both good and bad:
-- it ignores damage reductions, handy in aoe situations like in early Priory of the Sacred Flame against <WowheadLink id={206705} kind="npc">Arathi Footmen</WowheadLink>'s <WowheadLink id={427342} kind="spell" icon="ability_defend">Defend</WowheadLink>
-- it ignores damage taken increases, annoying during <WowheadLink id={225821} kind="npc">Vexie's</WowheadLink> <WowheadLink id={460603} kind="spell" icon="ability_siege_engineer_detonate">Mechanical Breakdown</WowheadLink> and <WowheadLink id={207207} kind="npc">Voidstone Monstrosity</WowheadLink>'s <WowheadLink id={424371} kind="spell" icon="inv_offhand_1h_artifactdoomhammer_d_02">Storm's Vengeance</WowheadLink> 
+- it ignores damage reductions, handy in aoe situations like in early Priory of the Sacred Flame against <WowheadLink id={206705} kind="npc">Arathi Footmen</WowheadLink>'s <Spell id={427342} />
+- it ignores damage taken increases, annoying during <WowheadLink id={225821} kind="npc">Vexie's</WowheadLink> <Spell id={460603} /> and <WowheadLink id={207207} kind="npc">Voidstone Monstrosity</WowheadLink>'s <Spell id={424371} /> 
 
 Known since the talent was implemented during TWW Beta.
 
@@ -81,39 +81,31 @@ The former I'm ok with. Unfortunately we don't know, also ok.
 
 The latter, I'm also ok with! But here not knowing is worse. The team would've already stopped thinking about it but players don't forget that easily. **Please let us know if something isn't a bug.** There's passionate players out there that maintain SimC, addons, WeakAuras, participate in theorycrafting in general, participate in testing, you know it. I'm also aware that people come, people go, it's only natural. That doesn't mean it doesn't hurt when messages like this reach me:
 
-<div className="flex justify-center">
-    ![](/static/images/wow-rant/play-ptr-1.png)    
-</div>
+<Figure src="/static/images/wow-rant/play-ptr-1.png" />
 
 ... or there's a third answer which as optimist I'd rather not believe: that PTR feedback isn't particularily well dealt with. Of all bugs I've reported in recent history (since TWW Alpha), exclusively those I've reported _after_ going live were fixed.
 
-<div className="flex justify-center">
-    ![](/static/images/wow-rant/play-ptr-2.png)
-    ![](/static/images/wow-rant/play-ptr-5.png)
-    ![](/static/images/wow-rant/play-ptr-6.png)
-    ![](/static/images/wow-rant/play-ptr-3.png)
-    ![](/static/images/wow-rant/play-ptr-4.png)
-</div>
+<Figure src="/static/images/wow-rant/play-ptr-2.png" />
+<Figure src="/static/images/wow-rant/play-ptr-5.png" />
+<Figure src="/static/images/wow-rant/play-ptr-6.png" />
+<Figure src="/static/images/wow-rant/play-ptr-3.png" />
+<Figure src="/static/images/wow-rant/play-ptr-4.png" />
 
 ## Version Management Problems
 
 For a while now we've seen bug/hotfixes introduced during one patch getting unintentionally reverted in the next .5/.7 or .0 patch.
 
-<div className="flex justify-center">
-    ![](/static/images/wow-rant/version-control.png)    
-</div>
+<Figure src="/static/images/wow-rant/version-control.png" />
 
 ### Reintroduced Bugs
 
 Unfortunately I have only edge cases available at the top off my mind, but they're still good examples.
 
-<div className="flex justify-center">
-    ![](/static/images/wow-rant/xkcd-git.png)    
-</div>
+<Figure src="/static/images/wow-rant/xkcd-git.png" />
 
 #### Fixed On PTR, Somehow Reoccuring Later
 
-Fixes that were made during the PTR cycle somehow get reverted later on, when the patch has been live for a while. For example we recently discovered that the <WowheadLink kind="spell" id={459120} icon="ability_evoker_geomancy">Rumbling Earth</WowheadLink> talent extends <WowheadLink kind="spell" id={395152} icon="spell_sarkareth">Ebon Might</WowheadLink> when casting <WowheadLink id={442204} kind="spell" icon="ability_evoker_breathofeons">Breath of Eons</WowheadLink> due to the <WowheadLink id={1215689} kind="spell" icon="trade_engineering">11.1 tier set effect</WowheadLink>. During the 11.1 PTR, this was one of the changes made:
+Fixes that were made during the PTR cycle somehow get reverted later on, when the patch has been live for a while. For example we recently discovered that the <Spell id={459120} /> talent extends <Spell id={395152} /> when casting <Spell id={442204} /> due to the <Spell id={1215689}>11.1 tier set effect</Spell>. During the 11.1 PTR, this was one of the changes made:
 
 > [Upheavals from the Liberation of Undermine 2-set bonus no longer increase the duration of Ebon Might.](https://www.wowhead.com/news/patch-11-1-ptr-development-notes-for-february-4th-more-class-tuning-and-delves-369629)
 
@@ -136,23 +128,23 @@ This list would be long if I could be bothered and you can already guess what th
 
 ### Lack of Iteration / Not All Talents Are Made Equal
 
-Back in early Dragonflight, my go to examples here was the <WowheadSpecIcon spec="vengeance-demon-hunter">Vengeance</WowheadSpecIcon> <WowheadLink kind="spell" id={263648} icon="inv_soulbarrier">Soul Barrier</WowheadLink> / <WowheadLink kind="spell" id={320341} icon="spell_shadow_shadesofdarkness">Bulk Extraction</WowheadLink> choice node, but that's over 2 years ago and I've given up on complaining about it. Both still haven't seen any kind of numerical tuning since the introduction of the talent trees with 10.0. At least the spec is doing fine right?
+Back in early Dragonflight, my go to examples here was the <WowheadSpecIcon spec="vengeance-demon-hunter">Vengeance</WowheadSpecIcon> <Spell id={263648} /> / <Spell id={320341} /> choice node, but that's over 2 years ago and I've given up on complaining about it. Both still haven't seen any kind of numerical tuning since the introduction of the talent trees with 10.0. At least the spec is doing fine right?
 
-People are probably gonna lynch me for advocating for improvements to <WowheadSpecIcon spec="augmentation-evoker">Augmentation</WowheadSpecIcon> talents, notably <WowheadLink kind="spell" id={410685} icon="inv_10_herb_seed_magiccolor5">Symbiotic Bloom</WowheadLink> and the <WowheadLink kind="spell" id={410687} icon="ability_evoker_reversion_green">Prolong Life</WowheadLink> / <WowheadLink kind="spell" id={414969} icon="ability_evoker_masterylifebinder">Dream of Spring</WowheadLink> choice node below it, both not only extremely bad, they'd also cost 3 talent points in total, but even <WowheadSpecIcon spec="augmentation-evoker">Augmentation Evoker</WowheadSpecIcon>s deserve good talents.
+People are probably gonna lynch me for advocating for improvements to <WowheadSpecIcon spec="augmentation-evoker">Augmentation</WowheadSpecIcon> talents, notably <Spell id={410685} /> and the <Spell id={410687} /> / <Spell id={414969} /> choice node below it, both not only extremely bad, they'd also cost 3 talent points in total, but even <WowheadSpecIcon spec="augmentation-evoker">Augmentation Evoker</WowheadSpecIcon>s deserve good talents.
 
 ### Similar Talents Between Specs Have Major Tuning Differences
 
-<WowheadSpecIcon spec="destruction-warlock">Destruction</WowheadSpecIcon> has this <WowheadLink kind="spell" id={387103} icon="spell_fire_fire">Ruin</WowheadLink> talent, increasing critical damage done by **5%** - this is `200% * 1.05` however, so it's 210% effectively. Notably, the spec has no other talent blanket increasing crit damage done, there's only <WowheadLink id={440045} icon="70_inscription_vantus_rune_tomb" kind="spell">Mark of Peroth'arn</WowheadLink> increasing crit damage of <WowheadLink id={445468} kind="spell" icon="inv_ability_hellcallerwarlock_wither">Wither</WowheadLink> specifically.
+<WowheadSpecIcon spec="destruction-warlock">Destruction</WowheadSpecIcon> has this <Spell id={387103} /> talent, increasing critical damage done by **5%** - this is `200% * 1.05` however, so it's 210% effectively. Notably, the spec has no other talent blanket increasing crit damage done, there's only <Spell id={440045} /> increasing crit damage of <Spell id={445468} /> specifically.
 
-Now <WowheadSpecIcon spec="devastation-evoker">Devastation</WowheadSpecIcon> enters the chat: <WowheadLink kind="spell" id={370845} icon="spell_shaman_shockinglava">Spellweaver's Dominance</WowheadLink> increases all critical damage by **30%**.
+Now <WowheadSpecIcon spec="devastation-evoker">Devastation</WowheadSpecIcon> enters the chat: <Spell id={370845} /> increases all critical damage by **30%**.
 
 Yes, specs can and should have different fantasies.
 
-Yes, there's also the trade-off between <WowheadSpecIcon spec="devastation-evoker">Devastation</WowheadSpecIcon> not having general crit chance % increases other than conditionally <WowheadLink id={444843} icon="ability_evoker_innatemagic5" kind="spell">Conduit of Flame</WowheadLink>.
+Yes, there's also the trade-off between <WowheadSpecIcon spec="devastation-evoker">Devastation</WowheadSpecIcon> not having general crit chance % increases other than conditionally <Spell id={444843} />.
 
-Yes, <WowheadLink kind="spell" id={387103} icon="spell_fire_fire">Ruin</WowheadLink> probably shouldn't have 30% either because <WowheadSpecIcon spec="destruction-warlock">Destruction</WowheadSpecIcon> has plenty of crit % increases so some of the talent differences is offset by simply critting more often. But if both of these specs have a similar relation to crits, then maybe their crit damage talents should be tuned similarily too.
+Yes, <Spell id={387103} /> probably shouldn't have 30% either because <WowheadSpecIcon spec="destruction-warlock">Destruction</WowheadSpecIcon> has plenty of crit % increases so some of the talent differences is offset by simply critting more often. But if both of these specs have a similar relation to crits, then maybe their crit damage talents should be tuned similarily too.
 
-Honorary mention of <WowheadLink kind="spell" id={453096} icon="spell_shadow_unstableafllictions" urlExtra="def=96564&rank=2">Contagion</WowheadLink> which is only 1 row above <WowheadLink kind="spell" id={370845} icon="spell_shaman_shockinglava">Spellweaver's Dominance</WowheadLink> but costs 2 points and is limited to 3 spells.
+Honorary mention of <Spell id={453096} urlExtra="def=96564&rank=2" /> which is only 1 row above <Spell id={370845} /> but costs 2 points and is limited to 3 spells.
 
 Many such cases!
 
@@ -190,9 +182,7 @@ My favorite example here is <WowheadLink id={232545} kind="item" icon="inv_engin
 
 How miserable? Well, buckle up. At itemlevel 700 its just _barely_ winning over 684 <WowheadLink kind="item" id={219305} icon="inv_misc_candlekobold_color1" urlExtra="bonus=10390:6652:10383:12376:3176:10255&class=13&ilvl=684&spec=1473">Carved Blazikon Wax</WowheadLink>. At 697 it's breaking even but well within margin of error.
 
-<div className="flex justify-center">
-    ![](/static/images/wow-rant/zap-cap-700.png)
-</div>
+<Figure src="/static/images/wow-rant/zap-cap-700.png" />
 
 I'm not expecting all trinkets to be equally valuable. Again, this season there's also competitive dungeon trinkets, in the context of raid trinkets.
 
@@ -202,13 +192,13 @@ But I'm baffled why developers are ok with the trinkets they designed to not see
 
 Dratnos already brought these up so I don't wanna go too deep into details here, he's already formulated good examples of this that I can only repeat.
 
-Something that he has _not_ mentioned however is that Embellishments aren't evergreen even within the same expansion. Embellishments like <WowheadLink kind="spell" icon="inv_10_tailoring_embroiderythread_color4" id={457674}>Dawnthread</WowheadLink> and <WowheadLink kind="spell" icon="inv_10_tailoring_embroiderythread_color1" id={457666}>Duskthread</WowheadLink> lose value due to stat inflation over time. 
+Something that he has _not_ mentioned however is that Embellishments aren't evergreen even within the same expansion. Embellishments like <Spell id={457666}>Dawnthread</Spell> and <Spell id={457674}>Duskthread</Spell> lose value due to stat inflation over time. 
 
 If the goal is to always have people use two crafted items for embellishments, these need revisiting in some form. Make them grant a % of your current stat amount so they instead scale the opposite, or just tune them. At the time of writing, 11.2 PTR isn't out yet so this might of course be happening soon, here's to hoping.
 
 ## Lack of Ongoing Tuning
 
-Here's the <WowheadLink kind="spell" id={199484} icon="ability_priest_psychiclink">Psychic Link</WowheadLink> tuning since 10.0.0: 
+Here's the <Spell id={199484} /> tuning since 10.0.0: 
 
 - 10.0.0 - Mind Blast, Mind Flay and Mind Spike deal **15%**...
 - 10.0.5 - Mind Blast, Mind Flay, Mind Spike, Mindgames, Void Bolt and Void Torrent deal **15%**...
@@ -230,15 +220,15 @@ And I'm even going further. Back in the day (ugh), before my return to WoW, I li
 
 ### The Other Side
 
-Up until recently, it was possible to pre-cast <WowheadLink kind="spell" icon="spell_shadow_summoninfernal" id={1122}>Summon Infernal</WowheadLink> during the countdown before starting a key while talented into <WowheadLink kind="spell" icon="inv_infernalmount" id={417234}>Crashing Chaos</WowheadLink> to receive its buff and then change talents. You'd begin the key with a refunded <WowheadLink kind="spell" icon="spell_shadow_summoninfernal" id={1122}>Summon Infernal</WowheadLink> cooldown, but the <WowheadLink kind="spell" icon="inv_infernalmount" id={417234}>Crashing Chaos</WowheadLink> buff remained, effectively granting you an extra talent for the first pull.
+Up until recently, it was possible to pre-cast <Spell id={1122} /> during the countdown before starting a key while talented into <Spell id={417234} /> to receive its buff and then change talents. You'd begin the key with a refunded <Spell id={1122} /> cooldown, but the <Spell id={417234} /> buff remained, effectively granting you an extra talent for the first pull.
 
 Degenerate gameplay, as Ion would say, and he'd be right.
 
-Yet... <WowheadClassIcon>Shaman</WowheadClassIcon>s continue to be able to pre-stack <WowheadLink id={454015} kind="spell" icon="inv_ability_stormcallershaman_tempest">Tempest</WowheadLink>s.
+Yet... <WowheadClassIcon>Shaman</WowheadClassIcon>s continue to be able to pre-stack <Spell id={454015} />s.
 
-Now these things aren't perfectly comparable, as you'd naturally pre-stack <WowheadLink id={454015} kind="spell" icon="inv_ability_stormcallershaman_tempest">Tempest</WowheadLink>s at the end of a pull in preparation for the next, you don't need to change talents, you don't effectively gain a point for a pull etc., so allowing this is technically just bringing the specs throughput up to the level of an average pull. I'm perfectly ok with this.
+Now these things aren't perfectly comparable, as you'd naturally pre-stack <Spell id={454015} />s at the end of a pull in preparation for the next, you don't need to change talents, you don't effectively gain a point for a pull etc., so allowing this is technically just bringing the specs throughput up to the level of an average pull. I'm perfectly ok with this.
 
-So why is <WowheadLink id={387156} kind="spell" icon="ability_mage_worldinflamesgreen">Ritual of Ruin</WowheadLink> (or rather, its buff <WowheadLink id={387158} kind="spell" icon="ability_mage_worldinflamesgreen">Impending Ruin</WowheadLink>) getting removed when a key starts then? It's a buff with permanent uptime in a key unless there's extended downtime.
+So why is <Spell id={387156} /> (or rather, its buff <Spell id={387158} />) getting removed when a key starts then? It's a buff with permanent uptime in a key unless there's extended downtime.
 
 ## Repeated Dungeon Design Problems
 
@@ -300,8 +290,8 @@ The common problem with these encounters are usually at least one of these, but 
   - <WowheadLink id={162689} kind="npc">Surgeon Stitchflesh</WowheadLink> himself can only be damaged for ~30s every window
     - his adds have 55% of his own health pool
 - near-immunity phases that are additionally punishing by adding party-wide damage
-  - <WowheadLink id={164567} kind="npc">Ingra Maloch</WowheadLink> via <WowheadLink kind="spell" id={323149} icon="spell_shadow_rune">Embrace Darkness</WowheadLink>
-  - <WowheadLink id={226398} kind="npc">Big M.O.M.M.A.</WowheadLink> via <WowheadLink kind="spell" id={469981} icon="spell_nature_lightningshield">Kill-o-Block Barrier</WowheadLink>
+  - <WowheadLink id={164567} kind="npc">Ingra Maloch</WowheadLink> via <Spell id={323149} />
+  - <WowheadLink id={226398} kind="npc">Big M.O.M.M.A.</WowheadLink> via <Spell id={469981} />
 - massive shields
   - each of <WowheadLink id={194907} kind="npc">Iridikron</WowheadLink>s shields is an additional 13% boss health
   - each of <WowheadLink id={207207} kind="npc">Voidstone Monstrosity</WowheadLink>s shields is an additional 40% boss health (this is factoring that you exclusively hit the bosses actual healthbar during the damage amp) 
@@ -326,7 +316,7 @@ Now revisiting the problematic encounters above, I would've loved to see these c
 
 - <WowheadLink id={194907} kind="npc">Iridikron</WowheadLink>: reduce boss health
 - <WowheadLink id={162689} kind="npc">Surgeon Stitchflesh</WowheadLink>: reduce add health
-- <WowheadLink id={162693} kind="npc">Nalthor the Rimebinder</WowheadLink>: remove <WowheadLink id={321894} kind="spell" icon="spell_necro_deathlyecho">Dark Exile</WowheadLink>, maybe increase the shield to compensate slightly and find a different reason for <WowheadLink id={328212} kind="spell" icon="spell_hunter_icetrap">Razorshard Ice</WowheadLink> to spawn, like a wandering blizzard on the platform 
+- <WowheadLink id={162693} kind="npc">Nalthor the Rimebinder</WowheadLink>: remove <Spell id={321894} />, maybe increase the shield to compensate slightly and find a different reason for <Spell id={328212} /> to spawn, like a wandering blizzard on the platform 
 - <WowheadLink id={164567} kind="npc">Ingra Maloch</WowheadLink>: reduce boss health
 - <WowheadLink id={207207} kind="npc">Voidstone Monstrosity</WowheadLink>: reduce value on shield
 - <WowheadLink id={226398} kind="npc">Big M.O.M.M.A.</WowheadLink>: reduce add health
@@ -343,7 +333,7 @@ Later on, people were shamelessly abusing a variety of bugs on stream and faced 
 - Follower Dungeons/Story Mode raid buffs were abused
 - really niche bugs like mindcontrolling Legion NPCs and bringing their buff into M+ were abused
 - world event buffs were brought into M+ and raid
-- additional niche shenanigans with <WowheadLink id={111673} kind="spell" icon="inv_misc_bone_skull_01">Control Undead</WowheadLink> specifically in Necrotic Wake
+- additional niche shenanigans with <Spell id={111673} /> specifically in Necrotic Wake
 
 What came from it? Absolutely nothing. It's also extra disappointing because [NetEase took the opposite approach and removed the title from 9000 players, issuing harsher penalties to some.](https://www.wowhead.com/news/netease-removes-mythic-titles-from-8-992-chinese-players-375964).
 
@@ -353,9 +343,7 @@ At least on EU, people got awarded the <WowheadLink kind="achievement" id={20589
 
 This wasn't even recognized as mistake. No word on it. I agree with Jordan that it doesn't impact many people on both ends in the end, but it's still tainting everything.
 
-<div className="flex justify-center">
-    ![](/static/images/wow-rant/tempered-hero.png)
-</div>
+<Figure src="/static/images/wow-rant/tempered-hero.png" />
 
 ### Liberation of Undermine Hall of Fame
 
@@ -375,7 +363,7 @@ Blizzard making these changes is good. Blizzard salvaging this by manually corre
 
 ### Special Treatment of RWF
 
-Remember when on <WowheadLink id={217748} kind="npc">Nexus-Princess Ky'veza</WowheadLink>, Mages were targeting god knows what and used `@focus` on all spells in order to abuse a bug known since Beta to not proc <WowheadLink id={444735} icon="inv_datacrystal07" kind="spell">Embedded Arcane Splinter</WowheadLink> and stopped in an instant the moment people picked up on it?
+Remember when on <WowheadLink id={217748} kind="npc">Nexus-Princess Ky'veza</WowheadLink>, Mages were targeting god knows what and used `@focus` on all spells in order to abuse a bug known since Beta to not proc <Spell id={444735} icon="inv_datacrystal07">Embedded Arcane Splinter</Spell> and stopped in an instant the moment people picked up on it?
 
 Remember Plunderstorm being won by terrain exploits.
 
@@ -391,19 +379,15 @@ Give people a reason to not exploit, otherwise "exploit early, exploit often" be
 
 ## Tips Welcome / Resilient Keys
 
-An expected side effect of <WowheadLink id={1220643} kind="spell" icon="inv_relics_hourglass">Resilient Keystones</WowheadLink>. People put up their resilient keys and ask for tips in the group finder. All you need to do is search for "tip" in the tool and you'll find a couple.
+An expected side effect of <Spell id={1220643} />. People put up their resilient keys and ask for tips in the group finder. All you need to do is search for "tip" in the tool and you'll find a couple.
 
 Some are also trying to circumvent making it too obvious and use a description like "note why you and not others" or "notes welcome".
 
-<div className="flex justify-center">
-    ![](/static/images/wow-rant/notes-2.jpg)
-</div>
+<Figure src="/static/images/wow-rant/notes-2.jpg" />
 
 And there's the even more shameless ones:
 
-<div className="flex justify-center">
-    ![](/static/images/wow-rant/notes-1.png)
-</div>
+<Figure src="/static/images/wow-rant/notes-1.png" />
 
 This is of course against the Terms of Service:
 
@@ -444,9 +428,7 @@ Multiple annoyances here.
 
 That the <WowheadLink id={228843} icon="inv_11_0_ventureco_ring01_color3" kind="item">Miniature Roulette Wheel</WowheadLink> isn't available, I'm ok with as it would need special treatment. Reloe had a hilarious idea about this that I wouldn't object to, although in a probably less aggressive fashion:
 
-<div className="flex justify-center">
-    ![](/static/images/wow-rant/bandit-ring.png)
-</div>
+<Figure src="/static/images/wow-rant/bandit-ring.png" />
 
 That no jewelry beyond very rare items is available feels very arbitrary however. Why are all raid weapons included, even if they don't have a special effect? Yes, weapons are a larger source of power but why draw a line in general?
 
@@ -470,7 +452,7 @@ My two cents on this: having the initial message targeted at press and by their 
 
 Still, I'm personally optimistic, in contrast to the overwhelming majority you read about on Reddit, Twitter, the Discords, etc.
 
-As mentioned, I'm also maintaining a bunch of things that Blizzard probably doesn't like me doing, such as dynamic nameplate scaling based on whether you're fixated by an add or not, or [an aura that clearly lights up when you should press](https://wago.io/2fedD8XHM) <WowheadLink kind="spell" id={443328} icon="inv_ability_flameshaperevoker_engulf">Engulf</WowheadLink>. I'd prefer if I didn't have to maintain these. 
+As mentioned, I'm also maintaining a bunch of things that Blizzard probably doesn't like me doing, such as dynamic nameplate scaling based on whether you're fixated by an add or not, or [an aura that clearly lights up when you should press](https://wago.io/2fedD8XHM) <Spell id={443328} icon="inv_ability_flameshaperevoker_engulf">Engulf</Spell>. I'd prefer if I didn't have to maintain these. 
 
 I'm personally less worried about which features Blizzard is intending to ship out of the box (damage meters, boss mods, nameplate features). I'm more worried about the features Blizzard is _not_ intending to ship and we learnt nothing new about this today.
 
@@ -482,11 +464,9 @@ I'm not expecting answers to all of this, but these are _obvious_ concerns, so o
 
 The state the cooldown manager got released in is concerning in relation to the aforementioned addon restrictions.
 
-We're currently living in a WeakAuras world where everything is possible: want these [40s of Le SSerafim - Crazy](https://youtu.be/n6B5gQXlB-0?si=0CspolaLDyxAwhYT&t=59) playing during Lust? Sure. Want a cat jumping across your screen for the duration of <WowheadLink id={365350} kind="spell" icon="ability_mage_arcanesurge">Arcane Surge</WowheadLink>? No problem.
+We're currently living in a WeakAuras world where everything is possible: want these [40s of Le SSerafim - Crazy](https://youtu.be/n6B5gQXlB-0?si=0CspolaLDyxAwhYT&t=59) playing during Lust? Sure. Want a cat jumping across your screen for the duration of <Spell id={365350} />? No problem.
 
-<div className="flex justify-center">
-    ![](/static/images/wow-rant/aryella-catge.png)
-</div>
+<Figure src="/static/images/wow-rant/aryella-catge.png" />
 
 Naturally the Cooldown Manager doesn't need to do that. Neither is it intended as a general purpose tool, nor are customizations of that kind reasonable to expect.
 
@@ -498,9 +478,7 @@ It is not without irony that only briefly after the 11.1.5 release, [an addon wa
 
 This is also a concern voiced on Reddit: addon developers aren't bound to whatever design/planning/iteration process Blizzard has internally. If the goal is to truly replace some addons with builtin solutions, then the pipeline needs to be significantly more flexible and speed up. 
 
-<div className="flex justify-center">
-    ![](/static/images/wow-rant/reddit-cd-manager.png)
-</div>
+<Figure src="/static/images/wow-rant/reddit-cd-manager.png" />
 
 I'm aware that there's new backend code for the Cooldown Manager but in the current form, it's a low effort downgrade to any spec WeakAura pack. Hell, I could've written the frontend code for the Cooldown Manager myself in maybe a week or two, with the same lack of flexibility. And then added more features the week after. And the week after. 
 
@@ -523,9 +501,7 @@ Let me nickname people. This should get propagated through all levels:
 
 Let me drag the frame and support an expanded mode where its more than a fraction of my 1440p screen.
 
-<div className="flex justify-center">
-    ![](/static/images/wow-rant/ui-blurred-friends-frame.jpg)
-</div>
+<Figure src="/static/images/wow-rant/ui-blurred-friends-frame.jpg" />
 
 ### Group Finder
 
@@ -541,8 +517,6 @@ The new Spell Book is visually appealing and artsy, it fits the modern game aest
 
 Yeah. This turned out to be a bit longer than anticipated. If you made it this far, my condolences, this yap was badly needed.
 
-<div className="flex justify-center">
-    ![](/static/images/wow-rant/iaint.jpg)
-</div>
+<Figure src="/static/images/wow-rant/iaint.jpg" />
 
 Game good. Could be better.

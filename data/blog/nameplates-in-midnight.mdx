@@ -1,5 +1,5 @@
 ---
-lastmod: '2026-07-03'
+lastmod: '2026-11-18'
 title: Nameplates in Midnight
 date: '2025-10-06'
 tags: ['wow', 'ui', 'midnight']
@@ -65,12 +65,9 @@ How nameplates arrange themselves is not something we have a lot of control over
 
 With Midnight, Blizzard is iterating on their behaviour - while non-stacking continues to be the default, you can opt into Stacking Nameplates for Enemy and Friendly units separately.
 
-<figure className="flex justify-center flex-col">
-  <img src="/static/images/nameplates-midnight/stacking-nameplates.jpg" className="self-center not-prose max-w-[80%]" alt="part new of the Midnight nameplate options" loading="lazy" />
-  <figcaption className="text-center">
-    the new Stack Nameplates setting
-  </figcaption>
-</figure>
+<Figure src="/static/images/nameplates-midnight/stacking-nameplates.jpg" alt="part new of the Midnight nameplate options" className="max-w-[80%]">
+  the new Stack Nameplates setting
+</Figure>
 
 It's worth noting that the new stacking nameplates behaviour is something that's still being iterated on, so keep that heavily in mind for the remainder of this post. Just like on Retail, _not_ using Stacking Nameplates is not a great idea - everything still overlaps massively so you're effectively forced to use Stacking Nameplates.
 
@@ -83,45 +80,31 @@ It's worth noting that the new stacking nameplates behaviour is something that's
 
 Looking at this - for the most probably familiar - Azure Vault pull, we quickly discover why this is a problem and needed work. From other larger pulls like in Priory or Gambit in this season, you'll also be probably deeply familiar with nameplates at the top of the screen.
 
-<figure className="flex justify-center flex-col">
-    <video src="/static/images/nameplates-midnight/retail-default-nameplate-behaviour.mp4" type="video/mp4" controls muted loop preload="none" />
-    <figcaption className="text-center">
-      Default stacking nameplates in Retail with NPC names enabled.
-    </figcaption>
-</figure>
+<Video src="/static/images/nameplates-midnight/retail-default-nameplate-behaviour.mp4">
+  Default stacking nameplates in Retail with NPC names enabled.
+</Video>
 
 It's no surprise that with Plater enabled, the overall movement stays roughly the same. Plater also makes use of some now-removed CVars (more about that later) that controls implicit spacing between nameplates.
 
-<figure className="flex justify-center flex-col">
-  <video src="/static/images/nameplates-midnight/retail-plater-behaviour.mp4" type="video/mp4" controls muted loop preload="none" />
-  <figcaption className="text-center">
-    Plater with [Jundies](https://wago.io/ak3iS95aa).
-  </figcaption>
-</figure>
+<Video src="/static/images/nameplates-midnight/retail-plater-behaviour.mp4">
+  Plater with [Jundies](https://wago.io/ak3iS95aa).
+</Video>
 
 We can probably agree on that in both scenarios, nameplates don't move unreasonable amounts. It's possible to consistently target the correct NPC until you have really egregiously sized pulls. You can also pretty reliably tell where the actual NPC is currently located based on its nameplate.
 
 Unfortunately we've not seen any progress being made on the following weird behaviour since its introduction week 1 and I initially had planned to omit it because I anticipated it'll get fixed asap, so here comes the current Alpha behaviour - brace yourselves.
 
-<figure className="flex justify-center flex-col">
-  <video src="/static/images/nameplates-midnight/target-dummy-weirdness.mp4" type="video/mp4" controls muted loop preload="none" />
-  <figcaption className="text-center">
-    Courtesy of Linaori, taken from this [Alpha feedback thread](https://us.forums.blizzard.com/en/wow/t/the-new-stacking-nameplate-variant-is-horrendous/2179001)
-  </figcaption>
-</figure>
+<Video src="/static/images/nameplates-midnight/target-dummy-weirdness.mp4">
+  Courtesy of Linaori, taken from this [Alpha feedback thread](https://us.forums.blizzard.com/en/wow/t/the-new-stacking-nameplate-variant-is-horrendous/2179001)
+</Video>
 
 And because this was so much fun, here's again Azure Vault.
 
-<figure className="flex justify-center flex-col">
-  <video src="/static/images/nameplates-midnight/nameplate-movement.mp4" type="video/mp4" controls muted loop preload="none" />
-  <figcaption className="text-center">
-      Good luck trying to kick something here.
-  </figcaption>
-</figure>
+<Video src="/static/images/nameplates-midnight/nameplate-movement.mp4">
+  Good luck trying to kick something here.
+</Video>
 
-<figure className="flex justify-center">
-  <video src="/static/images/nameplates-midnight/cups-game-shell-game.mp4" type="video/mp4" aria-label="a cat successfully playing the cups shell game" autoPlay muted loop playsInline />
-</figure>
+<Video src="/static/images/nameplates-midnight/cups-game-shell-game.mp4" label="a cat successfully playing the cups shell game" autoPlay />
 
 ### Nameplate Text Customization
 #### Unit Name
@@ -170,18 +153,13 @@ So what the mod does is - for the most part - to only ever render the last word 
 
 Here's a part of a screenshot from a Midnight dungeon - pay attention to the NPC names this time. There's nine nameplates visible, **all** of them are for enemies starting with `Vilebranch`.
 
-<figure className="flex justify-center flex-col">
-  <img src="/static/images/nameplates-midnight/maisara-caverns.jpg" alt="image of an in-progress pull with 9 visible nameplates, all of which are NPCs whose name begins with Vilebranch" loading="lazy" />
-  <figcaption className="text-center">
-      image taken from <a href="https://x.com/CartridgeBros/status/1978155161148096626">@CartridgeBros tweet</a>
-  </figcaption>
-</figure>
+<Figure src="/static/images/nameplates-midnight/maisara-caverns.jpg" alt="image of an in-progress pull with 9 visible nameplates, all of which are NPCs whose name begins with Vilebranch">
+  image taken from <a href="https://x.com/CartridgeBros/status/1978155161148096626">@CartridgeBros tweet</a>
+</Figure>
 
 Also worth noting for PvP that realm names are not removed from players:
 
-<div className="flex justify-center">
-  <img src="/static/images/nameplates-midnight/target-name-failure.jpg" alt="image of an in-progress cast targeting a player not displaying their target" loading="lazy" />
-</div>
+<Figure src="/static/images/nameplates-midnight/target-name-failure.jpg" alt="image of an in-progress cast targeting a player not displaying their target" />
 
 ##### Suggestion
 There's an inherent problem making this work across localizations generically so in my opinion, the best way to fix this going forward is to be more mindful of NPC naming in relation to other NPCs. It'll be the most natural way of the need for this tool to go away.
@@ -218,19 +196,13 @@ AbbreviateLargeNumbers(1024000000) -- yields 1024 M, should be 1.02 B
 
 After the squish, as of now, enemies will once again have above 50k health relatively soon and bosses will be in the tens of millions, meaning you'll more often than not see nameplates with numbers such as `52,349`, taking up unreasonably much space that currently we simply don't have. This makes it very impractical to use both absolute health and % values. Additionally, percentages never show fractions.
 
-<figure className="flex justify-center flex-col">
-  <img src="/static/images/nameplates-midnight/health.jpg" alt="depiction of three Raid Targeting Dummies including abs and % health. their name is abbreviated to R..." loading="lazy" />
-  <figcaption className="text-center">
-      Target Dummies are now R rated.
-  </figcaption>
-</figure>
+<Figure src="/static/images/nameplates-midnight/health.jpg" alt="depiction of three Raid Targeting Dummies including abs and % health. their name is abbreviated to R...">
+  Target Dummies are now R rated.
+</Figure>
 
-<figure className="flex justify-center flex-col">
-  <img src="/static/images/nameplates-midnight/health-2.jpg" className="max-w-[50%] self-center" alt="depiction of a random neutral enemy outside of Silvermoon. its name is ironically abbreviated to Brilliant..." loading="lazy" />
-  <figcaption className="text-center">
-      The literal first NPC outside of Silvermoon. The irony of the abbreviated name is not lost on me.
-  </figcaption>
-</figure>
+<Figure src="/static/images/nameplates-midnight/health-2.jpg" alt="depiction of a random neutral enemy outside of Silvermoon. its name is ironically abbreviated to Brilliant..." className="max-w-[50%]">
+  The literal first NPC outside of Silvermoon. The irony of the abbreviated name is not lost on me.
+</Figure>
 
 ##### Suggestion
 
@@ -262,9 +234,7 @@ After:
 
 Probably better to let a clip speak for itself.
 
-<div className="flex justify-center">
-  <video src="/static/images/nameplates-midnight/targeting-behaviour.mp4" type="video/mp4" controls muted loop preload="none" />
-</div>
+<Video src="/static/images/nameplates-midnight/targeting-behaviour.mp4" />
 
 The target upscaling is a CVar (`nameplateSelectedScale`, defaulting to 1.2) and not exposed as setting - **this is the default experience for new players**. I'm putting some emphasis on that because I find it very jarring and only learned when researching for this post that this is actually a Retail feature for ages, but it's a lot less noticeable there even with default nameplates.
 
@@ -288,29 +258,17 @@ After:
   - custom scale
   - custom texture
 
-<div className="flex justify-center flex-col sm:flex-row gap-2 mb-4">
-  <figure className="w-auto h-80 flex flex-col">
-    <img src="/static/images/nameplates-midnight/focus-no-target-no-vision.jpg" alt="no target, vision obscured" className="object-contain h-full w-full" loading="lazy" />
-    <figcaption className="text-center">no target, vision obscured</figcaption>
-  </figure>
+<Gallery>
+  <Figure src="/static/images/nameplates-midnight/focus-no-target-no-vision.jpg" alt="no target, vision obscured">no target, vision obscured</Figure>
 
-  <figure className="w-auto h-80 flex flex-col">
-    <img src="/static/images/nameplates-midnight/focus-with-target-no-vision.jpg" alt="with target, vision obscured" className="object-contain h-full w-full" loading="lazy" />
-    <figcaption className="text-center">with target, vision obscured</figcaption>
-  </figure>
-</div>
+  <Figure src="/static/images/nameplates-midnight/focus-with-target-no-vision.jpg" alt="with target, vision obscured">with target, vision obscured</Figure>
+</Gallery>
 
-<div className="flex justify-center flex-col sm:flex-row gap-2 mb-4">
-  <figure className="w-auto h-80 flex flex-col">
-    <img src="/static/images/nameplates-midnight/focus-no-target-and-vision.jpg" alt="no target" className="object-contain h-full w-full" loading="lazy" />
-    <figcaption className="text-center">no target</figcaption>
-  </figure>
+<Gallery>
+  <Figure src="/static/images/nameplates-midnight/focus-no-target-and-vision.jpg" alt="no target">no target</Figure>
 
-  <figure className="w-auto h-80 flex flex-col">
-    <img src="/static/images/nameplates-midnight/focus-with-target-and-vision.jpg" alt="with target" className="object-contain h-full w-full" loading="lazy" />
-    <figcaption className="text-center">with target</figcaption>
-  </figure>
-</div>
+  <Figure src="/static/images/nameplates-midnight/focus-with-target-and-vision.jpg" alt="with target">with target</Figure>
+</Gallery>
 
 ##### Verdict & Suggestion
 
@@ -346,7 +304,7 @@ Going on a limb here claiming that everyone who has used this feature for a whil
 
 ⚠️ This is also an accessibility issue. The default colorblind modes don't actually _really_ seem to help most colorblind users, customizability beats generic colorblind modes by miles.
 
-<img src="/static/images/nameplates-midnight/colorblindness.jpg" alt="conversation with a work colleague about built-in colorblind modes and their usefulness" loading="lazy"/>
+<Figure src="/static/images/nameplates-midnight/colorblindness.jpg" alt="conversation with a work colleague about built-in colorblind modes and their usefulness" />
 
 ##### Suggestion
 
@@ -362,7 +320,7 @@ Blizzard already has implicit classifications of NPCs:
 
 There can of course be overlaps, e.g. <WowheadLink kind="npc" id={212831}>Forge Master Damian</WowheadLink> (right side forge lieutenant) in Priory having - but not using -  mana or <WowheadLink kind="npc" id={211289}>Taener Duelmal</WowheadLink> (mage lieutenant) in Priory being a mage but neither having nor using mana.
 
-Blizzard even has existing code that uses the low-level classification of "caster" vs "non-caster": the <WowheadClassIcon>Warlock</WowheadClassIcon> Venthyr covenant ability <WowheadLink id={321792} icon="ability_revendreth_warlock" kind="spell">Impending Catastrophe</WowheadLink> (which is also dearly missed by some <WowheadClassIcon plural>Warlock</WowheadClassIcon>) auto-cursed targets hit with either <WowheadLink icon="spell_shadow_curseofmannoroth" id={702}>Curse of Weakness</WowheadLink> (non-casters) or <WowheadLink id={1714} icon="spell_shadow_curseoftounges">Curse of Tongues</WowheadLink> (casters).
+Blizzard even has existing code that uses the low-level classification of "caster" vs "non-caster": the <WowheadClassIcon>Warlock</WowheadClassIcon> Venthyr covenant ability <Spell id={321792} /> (which is also dearly missed by some <WowheadClassIcon plural>Warlock</WowheadClassIcon>) auto-cursed targets hit with either <WowheadLink icon="spell_shadow_curseofmannoroth" id={702}>Curse of Weakness</WowheadLink> (non-casters) or <WowheadLink id={1714} icon="spell_shadow_curseoftounges">Curse of Tongues</WowheadLink> (casters).
 
 You might already see where I'm going with this:
 
@@ -371,7 +329,7 @@ Add these categories (`boss` | `notable enemy` | `caster` | `non-caster`) to the
 We'd still be unable to define more colors than that, but it would alleviate most of the pain of this feature disappearing. It'd also significantly help people to learn a dungeon and also fix aforementioned accessibility problems. We have this very option with the item rarity color settings!
 
 #### Threat Color Change
-The ability to visibily indicate a threat situation change on a nameplate. Role-aware and ideally also pet-aware, as there's not only regular pets that may taunt, but also e.g. temporary guardians such as <WowheadLink icon="spell_nature_earthelemental_totem" kind="spell" id={198103}>Earth Elemental</WowheadLink>.
+The ability to visibily indicate a threat situation change on a nameplate. Role-aware and ideally also pet-aware, as there's not only regular pets that may taunt, but also e.g. temporary guardians such as <Spell id={198103} />.
 
 Before:
 - ❌ Retail Default Nameplates don't ever change color
@@ -451,20 +409,11 @@ Rises and falls with the success of pruning. If we don't end up with irrelevant 
 
 For those unfamiliar, here's some fun <Deathmark /> comparisons:
 
-<figure className="m-auto max-w-[75%] flex justify-center flex-col">
-  <video src="/static/images/nameplates-midnight/deathmark-default-nameplates-retail.mp4" type="video/mp4" controls muted loop preload="none" />
-  <figcaption className="text-center">yep, that's up to 14 debuffs</figcaption>
-</figure>
+<Video src="/static/images/nameplates-midnight/deathmark-default-nameplates-retail.mp4" className="max-w-[75%]">yep, that's up to 14 debuffs</Video>
 
-<figure className="m-auto max-w-[75%] flex justify-center flex-col">
-  <video src="/static/images/nameplates-midnight/deathmark-plater-retail.mp4" type="video/mp4" controls muted loop preload="none" />
-  <figcaption className="text-center">hiding non-gameplay altering auras, down to 8 max</figcaption>
-</figure>
+<Video src="/static/images/nameplates-midnight/deathmark-plater-retail.mp4" className="max-w-[75%]">hiding non-gameplay altering auras, down to 8 max</Video>
 
-<figure className="m-auto max-w-[75%] flex justify-center flex-col">
-  <video src="/static/images/nameplates-midnight/deathmark-default-nameplates-midnight.mp4" type="video/mp4" controls muted loop preload="none" />
-  <figcaption className="text-center"><Deathmark branch="beta" /> has been adjusted and poisons don't show anymore, down to 5 max</figcaption>
-</figure>
+<Video src="/static/images/nameplates-midnight/deathmark-default-nameplates-midnight.mp4" className="max-w-[75%]"><Deathmark branch="beta" /> has been adjusted and poisons don't show anymore, down to 5 max</Video>
 
 #### Aura - Special
 The ability to highlight a specific set of auras in some form, usually isolated from the other auras.
@@ -486,22 +435,16 @@ After:
 ##### Implementation
 For context, this refers to the `Buff Special` functionality in Plater and what the Midnight Nameplate Options refer to as `Shared CCs` due to both being positioned in the same place: to the right of a nameplate.
 
-<div className="flex justify-center flex-col sm:flex-row gap-2 mb-4">
-  <figure className="w-auto h-80 flex flex-col">
-    <img src="/static/images/nameplates-midnight/buff-special-cap.jpg" alt="mid-pull screenshot highlighting Buff Special through the use of Capacitor Totem" className="object-contain h-full w-full" loading="lazy" />
-    <figcaption className="text-center">
-      <WowheadLink id={192058} icon="spell_nature_brilliance" kind="spell">Capacitor Totem</WowheadLink>
-    </figcaption>
-  </figure>
+<Gallery>
+  <Figure src="/static/images/nameplates-midnight/buff-special-cap.jpg" alt="mid-pull screenshot highlighting Buff Special through the use of Capacitor Totem">
+    <Spell id={192058} />
+  </Figure>
 
-  <figure className="w-auto h-80 flex flex-col">
-    <img src="/static/images/nameplates-midnight/buff-special-opp-roar.jpg" alt="mid-pull screenshot highlighting Buff Special through the use of Oppressing Roar" className="object-contain h-full w-full" loading="lazy" />
-    <figcaption className="text-center">will it track <OppressingRoar />?</figcaption>
-  </figure>
-</div>
+  <Figure src="/static/images/nameplates-midnight/buff-special-opp-roar.jpg" alt="mid-pull screenshot highlighting Buff Special through the use of Oppressing Roar">will it track <OppressingRoar />?</Figure>
+</Gallery>
 
 ##### Verdict
-Better than nothing, but needs work. Currently a clear downgrade. Also unclear whether it'll track e.g. damage amp debuffs such as <WowheadLink id={1245292} icon="spell_shadow_blackplague" kind="spell">Destabilized</WowheadLink> on Dimensius Phase 3. Without that, it's only a shadow of what Plater allows. Limiting it to `Shared CCs` may be ok initially, but really, why not go all the way?
+Better than nothing, but needs work. Currently a clear downgrade. Also unclear whether it'll track e.g. damage amp debuffs such as <Spell id={1245292} /> on Dimensius Phase 3. Without that, it's only a shadow of what Plater allows. Limiting it to `Shared CCs` may be ok initially, but really, why not go all the way?
 
 #### Aura - Unit Name Change
 The ability to change the unit name based on aura presence.
@@ -518,12 +461,9 @@ After:
 ##### Implementation
 A long and often requested feature that we only recently rolled our own implementation for. Based on user-defined colors, change the color of a unit name based on the combination of auras present on it.
 
-<figure className="flex justify-center flex-col">
-  <video src="/static/images/nameplates-midnight/aura-name-color.mp4" type="video/mp4" controls muted loop preload="none" />
-  <figcaption className="text-center">
-    No aura, no color change. <WowheadLink id={457052} icon="inv_ability_deathstalkerrogue_deathstalkersmark" kind="spell">Deathstalker's Mark</WowheadLink>? Green!
-  </figcaption>
-</figure>
+<Video src="/static/images/nameplates-midnight/aura-name-color.mp4">
+  No aura, no color change. <Spell id={457052} />? Green!
+</Video>
 
 We hestitated for a long time because it conflicts to some degree with nameplate colors but figured, in the end users are responsible for the colors they choose.
 
@@ -544,9 +484,7 @@ After:
 ##### Implementation
 Not really much to say here. Adds a glow at 30% of the remaining duration of the aura and you're done.
 
-<div className="m-auto max-w-[75%] flex justify-center flex-col">
-  <video src="/static/images/nameplates-midnight/pandemic.mp4" type="video/mp4" controls muted loop preload="none" />
-</div>
+<Video src="/static/images/nameplates-midnight/pandemic.mp4" className="max-w-[75%]" />
 
 ##### Verdict & Suggestion
 Notably pandemic highlighting made it into the [cooldown manager with Alpha Phase 3](https://us.forums.blizzard.com/en/wow/t/midnight-alpha-test-development-notes/2174760/14):
@@ -560,9 +498,7 @@ Commonly, when you have to refresh debuffs on one target and multiple are presen
 #### Aura - Friendly Buffs
 The ability to highlight your own beneficial auras on friendly nameplates.
 
-<div className="m-auto max-w-[75%] flex justify-center flex-col">
-  <img src="/static/images/nameplates-midnight/friendly-aura-settings.jpg" alt="the new friendly aura settings" loading="lazy" />
-</div>
+<Figure src="/static/images/nameplates-midnight/friendly-aura-settings.jpg" alt="the new friendly aura settings" className="max-w-[75%]" />
 
 Before:
 - ❌ Retail Default Friendly Nameplates don't highlight friendly auras
@@ -572,21 +508,17 @@ After:
 - ✅ Midnight Nameplate Options include highlighting friendly auras
 - ❓ unknown at this time whether addons can and will do this
 
-<div className="m-auto max-w-[75%] flex justify-center flex-col">
-  <img src="/static/images/nameplates-midnight/temporary-friendly-buff-1.jpg" alt="temporary buff highlighting" loading="lazy" />
-</div>
+<Figure src="/static/images/nameplates-midnight/temporary-friendly-buff-1.jpg" alt="temporary buff highlighting" className="max-w-[75%]" />
 
 ##### Verdict & Suggestion
 
 This was a surprising, but welcome addition. Not because I'm particularily affected or interested in this feature, but more features, especially for friendly nameplates which haven't been touched for ages, are always welcome.
 
-Unforunately it currently doesn't seem to be very strict in terms of what is a "temporary" buff and will happily show _any_ buff you applied to the target, including raid buffs and other long lasting buffs such as <BlisteringScales /> (60+ mins) or <Timelessness /> (30+ mins) as well as <WowheadLink id={390386} kind="spell" icon="ability_evoker_furyoftheaspects">Fury of the Aspects</WowheadLink> (annoying since it would show on everyone).
+Unforunately it currently doesn't seem to be very strict in terms of what is a "temporary" buff and will happily show _any_ buff you applied to the target, including raid buffs and other long lasting buffs such as <BlisteringScales /> (60+ mins) or <Timelessness /> (30+ mins) as well as <Spell id={390386} /> (annoying since it would show on everyone).
 
 It's limited to two auras based on application time. No reordering occurs if you'd apply a third, shorter-lived aura which I'd assume is ok as long as longer-lived buffs like those above are actually filtered out.
 
-<div className="m-auto max-w-[75%] flex justify-center flex-col">
-  <img src="/static/images/nameplates-midnight/temporary-friendly-buff-2.jpg" alt="three auras applied to a friendly, two longer lasting, yet the most temporary one doesn't show" loading="lazy" />
-</div>
+<Figure src="/static/images/nameplates-midnight/temporary-friendly-buff-2.jpg" alt="three auras applied to a friendly, two longer lasting, yet the most temporary one doesn't show" className="max-w-[75%]" />
 
 #### Aura - Invalidate Unit
 The ability to visually indicate that a unit affected by an aura is now immune to damage, commonly indicated by changing the nameplate color.
@@ -604,9 +536,7 @@ After:
 ##### Implementation
 Straight forward - on certain auras, change the nameplate color to grey, or whatever you set it to.
 
-<div className="m-auto max-w-[75%] flex justify-center flex-col">
-  <video src="/static/images/nameplates-midnight/invalidate-unit.mp4" type="video/mp4" controls muted loop preload="none" />
-</div>
+<Video src="/static/images/nameplates-midnight/invalidate-unit.mp4" className="max-w-[75%]" />
 
 ##### Verdict & Suggestion
 Just a really useful quality of life feature. Nothing that is mandatory and most certainly another maintenance burden. Still, why not? At the lowest level, it's an accessibility feature, at the highest, DPS optimization.
@@ -631,9 +561,7 @@ After:
 ##### Implementation
 Probably by now the largest maintenance burden for Jundies is to tread the fine line of which unit to scale to what, under which circumstances. Naturally pairs extremely well with nameplate colors. Depicted is the commonly first pull of Halls of Atonement and immediately you can tell that Groundskeeper are less relevant than everything else.
 
-<div className="flex justify-self-center">
-  <img src="/static/images/nameplates-midnight/priority-based-scaling.jpg" alt="a quarter of jundies example image showing the leftmost shard area in Halls of Atonement" loading="lazy" />
-</div>
+<Figure src="/static/images/nameplates-midnight/priority-based-scaling.jpg" alt="a quarter of jundies example image showing the leftmost shard area in Halls of Atonement" />
 
 Similar to [health markers](#phase-indication), for each dungeon we collect a list of NPCs and their scaling factors:
 ```lua
@@ -668,9 +596,7 @@ Icing on the cake would be role-specific scaling. Sparingly used in our mod, but
 
 You've made it this far, here's a clip of our cat.
 
-<div className="max-w-[35%] flex justify-self-center not-prose">
-  <video src="/static/images/nameplates-midnight/dream-1.mp4" type="video/mp4" controls muted loop preload="none" />
-</div>
+<Video src="/static/images/nameplates-midnight/dream-1.mp4" className="max-w-[35%]" />
 
 ### Cast Bar
 #### Cast Bar - Target Name
@@ -687,18 +613,13 @@ After:
 ##### Verdict & Suggestion
 Generally speaking, works. Colors the target name by class color automatically. Does however not remove the realm name from the target if the unit is on another realm, leading to questionable behaviour:
 
-<figure className="m-auto max-w-[60%] md:max-w-[40%] flex justify-center flex-col">
-  <img src="/static/images/nameplates-midnight/cast-target-name.jpg" alt="image of an in-progress cast targeting a player from another realm, leading to a linebreak" loading="lazy" />
-  <figcaption className="text-center">
-      image taken from <a href="https://x.com/CartridgeBros/status/1978155161148096626">@CartridgeBros tweet</a>
-  </figcaption>
-</figure>
+<Figure src="/static/images/nameplates-midnight/cast-target-name.jpg" alt="image of an in-progress cast targeting a player from another realm, leading to a linebreak" className="max-w-[60%] md:max-w-[40%]">
+  image taken from <a href="https://x.com/CartridgeBros/status/1978155161148096626">@CartridgeBros tweet</a>
+</Figure>
 
 Apparently it also just doesn't work reliably - the target was myself and it worked fine with the next cast.
 
-<div className="flex justify-center">
-  <img src="/static/images/nameplates-midnight/target-name-failure.jpg" className="not-prose" alt="image of an in-progress cast targeting a player not displaying their target" loading="lazy" />
-</div>
+<Figure src="/static/images/nameplates-midnight/target-name-failure.jpg" alt="image of an in-progress cast targeting a player not displaying their target" />
 
 #### Cast Bar - Cast Name
 The ability to show the name of a spell being cast.
@@ -716,14 +637,10 @@ Works! Optionally allows showing the spell icon too, which is basically identica
 
 Minor nuisance: hiding the spell icon doesn't adjust the position of the cast name despite more space being available now. Makes it look misaligned.
 
-<div className="flex justify-center flex-col sm:flex-row gap-2 mb-4">
-  <div className="w-auto h-80 overflow-hidden">
-    <img className="not-prose object-cover h-full w-full" src="/static/images/nameplates-midnight/midnight-spell-icon-present.jpg" alt="Midnight nameplate options test cast bar with spell icon active" loading="lazy" />
-  </div>
-  <div className="w-auto h-80 overflow-hidden">
-    <img className="not-prose object-cover h-full w-full" src="/static/images/nameplates-midnight/midnight-spell-icon-absent.jpg" alt="Midnight nameplate options test cast bar with spell icon inactive" loading="lazy" />
-  </div>
-</div>
+<Gallery>
+  <Figure src="/static/images/nameplates-midnight/midnight-spell-icon-present.jpg" alt="Midnight nameplate options test cast bar with spell icon active" />
+  <Figure src="/static/images/nameplates-midnight/midnight-spell-icon-absent.jpg" alt="Midnight nameplate options test cast bar with spell icon inactive" />
+</Gallery>
 
 #### Cast Bar - Remaining Time
 The ability to show the remaining time until a cast finishes.
@@ -779,9 +696,7 @@ One of the more complex mods we supported. The Plater mod `Enemy Enhanced Castba
 
 All of this of course customizable with a simple color picker, courtesy of Platers mod setting presets.
 
-<div className="flex justify-center">
-  <img src="/static/images/nameplates-midnight/enhanced-cast-bar.jpg" alt="a description of the capabilities of the Enhanced Enemy Castbar mod including various cast bar states for illustrative purposes" loading="lazy" />
-</div>
+<Figure src="/static/images/nameplates-midnight/enhanced-cast-bar.jpg" alt="a description of the capabilities of the Enhanced Enemy Castbar mod including various cast bar states for illustrative purposes" />
 
 ##### Verdict
 👎 worse than before and an instantly visible downgrade. Note that I didn't use this mod myself, but [instead used a WeakAura tracking focus cast](https://wago.io/Ha6BllGze) instead and implemented the same "can interrupt past this point" logic there which I'll dearly miss.
@@ -805,9 +720,7 @@ After:
 ##### Implementation
 If an enemy is seen casting a spell on you, besides doing its regular interrupt checks, the mod will check whether the spell is in a hand-maintained list (thank you, Sense) of known reflectable spells and then lookup your <SpellReflection /> state. If available, it'll color the cast bar in a unique color for <SpellReflection /> specifically.
 
-<div className="flex justify-center">
-  <img src="/static/images/nameplates-midnight/spell-reflect.jpg" alt="a description of the capabilities of the Enhanced Enemy Castbar mod including various cast bar states for illustrative purposes" loading="lazy" />
-</div>
+<Figure src="/static/images/nameplates-midnight/spell-reflect.jpg" alt="a description of the capabilities of the Enhanced Enemy Castbar mod including various cast bar states for illustrative purposes" />
 
 ##### Verdict
 
@@ -821,10 +734,10 @@ Wait, wasn't there a note for <SpellBlock /> recently...
 
 I'm obviously not advocating for the removal of <SpellReflection /> but please, before you put out statements like the above, use some reflection yourself. A lot of other abilities need "a lot of specialized knowledge" - just to name a few:
 - <Zephyr />
-  - <WowheadLink id={1241694} kind="spell" icon="spell_shadow_carrionswarm">not everything that looks like AoE is actually AoE</WowheadLink> 
-  - <WowheadLink id={353312} kind="spell" icon="ability_paladin_artofwar">some things are AoE despite not looking like it</WowheadLink>
+  - <Spell id={1241694}>not everything that looks like AoE is actually AoE</Spell> 
+  - <Spell id={353312}>some things are AoE despite not looking like it</Spell>
 - <AntiMagicShell /> - deflect vs. absorb
-- <AntiMagicZone /> -  <WowheadLink id={438879} kind="spell" icon="inv_minespider2_cave">some abilities seem to be magical, but aren't</WowheadLink>
+- <AntiMagicZone /> -  <Spell id={438879}>some abilities seem to be magical, but aren't</Spell>
 - <SpellReflection /> - reflect / deflect / just damage reduction
 
 That's not an inherently bad thing. But if things aren't communicated clearly by the game - something that's promised to improve with Midnight and people like me will very closely watch - then people will reach to tooling like this, which will be sorely missed. 
@@ -832,9 +745,7 @@ That's not an inherently bad thing. But if things aren't communicated clearly by
 #### Cast Bar - Highlighting Important Casts
 The ability to put some kind of emphasis on a set of casts, either by spell id or name, that are deemed important for any reason.
 
-<div className="max-w-[35%] flex justify-self-center not-prose">
-  <video src="/static/images/nameplates-midnight/important-casts.mp4" type="video/mp4" controls muted loop preload="none" />
-</div>
+<Video src="/static/images/nameplates-midnight/important-casts.mp4" className="max-w-[35%]" />
 
 Before:
 - ❌ Retail Default Nameplates don't differentiate any casts
@@ -858,9 +769,7 @@ The ability to highlight a nameplate of a unit fixating the player in any way.
 
 This was also nicely pairable with nameplate scaling. Note the spawning mine being scaled to a much smaller size until it starts fixating me, where it'll get upscaled instead:
 
-<div className="flex justify-center">
-  <video src="/static/images/nameplates-midnight/fixate-scaling.mp4" type="video/mp4" controls muted loop preload="none" />
-</div>
+<Video src="/static/images/nameplates-midnight/fixate-scaling.mp4" />
 
 Before:
 - ❌ Retail Default Nameplates don't highlight fixates
@@ -898,14 +807,10 @@ After:
 
 Pretty straight forward. Any quest that requires you to do something with specific NPCs like collecting them or just hunting them down displays the corresponding quest progress: either an absolute number of missing criteria or a percentage of total done.
 
-<div className="flex justify-center flex-col sm:flex-row gap-2 mb-4">
-  <div className="w-auto h-80 overflow-hidden">
-    <img className="not-prose object-cover h-full w-full" src="/static/images/nameplates-midnight/quest-progress-default.jpg" alt="default nameplates showing... nothing" loading="lazy" />
-  </div>
-  <div className="w-auto h-80 overflow-hidden">
-    <img className="not-prose object-cover h-full w-full" src="/static/images/nameplates-midnight/quest-progress-plater.jpg" alt="Jundies Plater showing quest progress next to the plate" loading="lazy" />
-  </div>
-</div>
+<Gallery>
+  <Figure src="/static/images/nameplates-midnight/quest-progress-default.jpg" alt="default nameplates showing... nothing" />
+  <Figure src="/static/images/nameplates-midnight/quest-progress-plater.jpg" alt="Jundies Plater showing quest progress next to the plate" />
+</Gallery>
 
 ##### Verdict & Suggestion
 The default UI indicates quest progress via the tooltip which I've personally never considered to be great UX. Something more instantly visible would be nice, understanding that what the Plater mod does is very functional. Losing this isn't the end of the world, but please experiment in this area.
@@ -928,16 +833,14 @@ In 99.99% of the cases, just inconvenient and glaringly obvious in the rare case
 
 The most egregious case for this was in Brackenhide Hollow, the bridge towards the third boss directly after <WowheadLink kind="npc" id={186120}>Treemouth</WowheadLink>.
 
-<div className="flex gap-2 justify-center flex-col xl:flex-row">
-  <img src="/static/images/nameplates-midnight/hide-nameplate-retail-off.jpg"  className="xl:max-w-1/2 mt-0 mb-0" alt="significant amount of irrelevant nameplates visible" loading="lazy" />
-  <img src="/static/images/nameplates-midnight/hide-nameplate-retail-on.jpg" className="xl:max-w-1/2 mt-0"  alt="all irrelevant nameplates are hidden" loading="lazy" />
-</div>
+<Gallery>
+  <Figure src="/static/images/nameplates-midnight/hide-nameplate-retail-off.jpg" alt="significant amount of irrelevant nameplates visible" />
+  <Figure src="/static/images/nameplates-midnight/hide-nameplate-retail-on.jpg" alt="all irrelevant nameplates are hidden" />
+</Gallery>
 
 And of course, in Midnight:
 
-<div>
-  <video className="" src="/static/images/nameplates-midnight/hide-nameplate-midnight.mp4" type="video/mp4" controls muted loop preload="none" />
-</div>
+<Video src="/static/images/nameplates-midnight/hide-nameplate-midnight.mp4" />
 
 ##### Suggestion
 
@@ -959,14 +862,8 @@ After:
 
 Again, something very straight forward. Based on your class/spec and situationally, your talents too, a small marker will be present on nameplates indicating whether the unit is below the execute threshold.
 
-<div className="flex justify-center flex-col gap-2 mb-2">
-  <div className="flex justify-center">
-    <img src="/static/images/nameplates-midnight/plater-execute-options.jpg"  className="not-prose" alt="execute range settings in plater" loading="lazy" />
-  </div>
-  <div className="flex justify-center">
-    <img src="/static/images/nameplates-midnight/execute-indicator.jpg"  className="not-prose max-w-[80%]" alt="execute range indication in action on a nameplate" loading="lazy" />
-  </div>
-</div>
+<Figure src="/static/images/nameplates-midnight/plater-execute-options.jpg" alt="execute range settings in plater" />
+<Figure src="/static/images/nameplates-midnight/execute-indicator.jpg" alt="execute range indication in action on a nameplate" className="max-w-[80%]" />
 
 ##### Verdict & Suggestion
 Once again hard for me to judge as I don't play any execute specs. From what I've seen in from others, people seem to be on the fence for this too as some have turned it off. Falls for under the category of "nice to have", so why not? 
@@ -994,13 +891,10 @@ local hallsOfAtonement = {
 ```
 Using <WowheadLink kind="npc" id={164218}>Lord Chamberlain</WowheadLink> as an example, beginning the encounter the nameplate will have a marker similar to the execute indication at 70% health. Once you're past that, it'll show the 40% marker for the next intermission.
 
-<figure className="m-auto max-w-[75%]">
-  <img src="/static/images/nameplates-midnight/health-markers.jpg" className="not-prose" alt="an image of a nameplate with health markers" loading="lazy" />
-  <figcaption className="text-center">another example, <WowheadLink id={164929} kind="npc">Tirnenn Villagers</WowheadLink> becoming friendly at 20%</figcaption>
-</figure>
+<Figure src="/static/images/nameplates-midnight/health-markers.jpg" alt="an image of a nameplate with health markers" className="max-w-[75%]">another example, <WowheadLink id={164929} kind="npc">Tirnenn Villagers</WowheadLink> becoming friendly at 20%</Figure>
 
 ##### Verdict & Suggestion
-In the long run, probably ok to not have this anymore. Blizzard set a predecent with <WowheadLink kind="npc" id={242631}>Overcharged Sentinels</WowheadLink> in Eco-Dome Al'dani and their <WowheadLink kind="spell" id={1231234} icon="inv_enchant_essencearcanelarge">shield</WowheadLink> that there's easy tooling available on their end to communicate this behaviour. Here's to hoping this trend continues.
+In the long run, probably ok to not have this anymore. Blizzard set a predecent with <WowheadLink kind="npc" id={242631}>Overcharged Sentinels</WowheadLink> in Eco-Dome Al'dani and their <Spell id={1231234}>shield</Spell> that there's easy tooling available on their end to communicate this behaviour. Here's to hoping this trend continues.
 
 #### Energy Indication
 The ability to indicate upcoming energy-based encounter-like events on nameplates.
@@ -1018,15 +912,12 @@ After:
 
 Past a configurable threshold, 80 by default, the current energy will appear in the top left corner of the nameplate until it is depleted again.
 
-<figure className="flex justify-center flex-col max-w-[80%] justify-self-center">
-  <video src="/static/images/nameplates-midnight/energy.mp4" type="video/mp4" controls muted loop preload="none" />
-  <figcaption className="text-center"><WowheadLink id={186116} kind="npc">Gutshot</WowheadLink> will <WowheadLink id={384827} kind="spell" icon="ability_hunter_pet_hyena">Call Hyenas</WowheadLink> at full energy despite raising them from cub!<br />Some say it's the most painful way to die...</figcaption>
-</figure>
+<Video src="/static/images/nameplates-midnight/energy.mp4" className="max-w-[80%]"><WowheadLink id={186116} kind="npc">Gutshot</WowheadLink> will <Spell id={384827} /> at full energy despite raising them from cub!<br />Some say it's the most painful way to die...</Video>
 
 Doesn't need any particular maintenance since game APIs provide all relevant info.
 
 ##### Verdict & Suggestion
-Unfortunately energy as indicator of upcoming important abilities is only sparingly/inconsistenly used in dungeons outside of encounters. For example it would've been great on <WowheadLink id={206704} kind="npc">Ardent Paladins</WowheadLink> in Priory of the Sacred Flame for their <WowheadLink id={448791} kind="spell" icon="ability_bastion_paladin">Sacred Toll</WowheadLink> but for some reason, they _have_ mana yet never spend any. Not to mention you need to target them in order to see their state, so again, this feature ultimately just really is another accessibility tool.
+Unfortunately energy as indicator of upcoming important abilities is only sparingly/inconsistenly used in dungeons outside of encounters. For example it would've been great on <WowheadLink id={206704} kind="npc">Ardent Paladins</WowheadLink> in Priory of the Sacred Flame for their <Spell id={448791} /> but for some reason, they _have_ mana yet never spend any. Not to mention you need to target them in order to see their state, so again, this feature ultimately just really is another accessibility tool.
 
 #### Time To Death Estimation
 The ability to indicate on the nameplate how long a unit will live for.
@@ -1203,6 +1094,6 @@ Unfortunately, just as easy as Blizzard can hotfix stuff, they can also not do t
 
 I was in middle school when Patch 1.11 released in 2006. Servers were on fire for days, from what I recall due to the Scourge invasion events. It was the time of "never play on patch day". What is preventing a lack of upfront maintenance on the cooldown manager and nameplates, figuratively speaking, from becoming the new "never play on patch day" whenever a spec gets reworked or the new tier set introduces a new aura that is relevant to track?
 
-There's spells I've reported on the Liberation of Undermine PTR _over half a year ago_ (<Bombardments spaceless />, <MassEruption spaceless />) that _still_ are either not available for tracking or bugged in the cooldown manager in 12.0. You might also remember [Get a Glow up With Transmog Updates in Midnight](https://worldofwarcraft.blizzard.com/en-us/news/24223776), yet all of the UI showcased there remains to be seen. And I'd imagine the UI team, regardless of its size, is already _swamped_ with work.
+There's spells I've reported on the Liberation of Undermine PTR _over half a year ago_ (<Bombardments />, <MassEruption />) that _still_ are either not available for tracking or bugged in the cooldown manager in 12.0. You might also remember [Get a Glow up With Transmog Updates in Midnight](https://worldofwarcraft.blizzard.com/en-us/news/24223776), yet all of the UI showcased there remains to be seen. And I'd imagine the UI team, regardless of its size, is already _swamped_ with work.
 
 The community needs Blizzard to step up massively here. Replacing addons, and especially addons with as many customization features as this, with barebones replacements _can_ work, but only with a promise of rapid iteration - and we've not seen any of that. Remember the post banner? Let's hope we're on the way out of the tunnel, not into it.

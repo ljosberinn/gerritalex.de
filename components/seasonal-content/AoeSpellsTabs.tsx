@@ -6,7 +6,6 @@ import { WowheadIcon } from '../WowheadIcon';
 import { CustomLink } from '../CustomLink';
 import { ContentHeaderLink } from './ContentHeaderLink';
 import { Spells, type SpellsProps } from './Spells';
-import { filterStaleSpells } from './filterStaleSpells';
 import { useRestoreStateFromUrl } from './useRestoreStateFromUrl';
 import { type WowheadLinkProps } from '../WowheadLink';
 
@@ -198,7 +197,9 @@ function Dungeon({
 export function AoeSpellsTabs({ data, wowheadBranch }: AoeSpellsTabsProps) {
   const views = useMemo<DungeonView[]>(() => {
     const currentRotation = new Set(data['current-rotation']);
-    const spells = data.spells.filter((spell) => currentRotation.has(spell.source));
+    const spells = data.spells.filter(
+      (spell) => currentRotation.has(spell.source) && !spell.avoidable
+    );
 
     const grouped = spells.reduce<Record<string, Record<string, SpellsProps['spells']>>>(
       (acc, spell) => {
@@ -223,21 +224,16 @@ export function AoeSpellsTabs({ data, wowheadBranch }: AoeSpellsTabsProps) {
       .map((source) => {
         const sections = getSections(data.sources[source].encounters, grouped[source]);
 
-        // staleness is judged per dungeon so a rarely crawled one does not vanish entirely
-        const stillSeen = new Set(
-          filterStaleSpells(sections.flatMap((section) => grouped[source][section.groupKey]))
-        );
-
         const spellsBySection = sections.reduce<Record<string, SpellsProps['spells']>>(
           (acc, section) => {
-            acc[section.groupKey] = grouped[source][section.groupKey].filter((spell) => {
-              return !spell.avoidable && stillSeen.has(spell);
-            });
+            acc[section.groupKey] = grouped[source][section.groupKey];
 
             return acc;
           },
           {}
         );
+
+        console.log(spellsBySection);
 
         const total = Object.values(spellsBySection).reduce<number>((acc, spells) => {
           return acc + spells.length;

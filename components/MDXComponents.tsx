@@ -14,9 +14,16 @@ import * as WowheadLinks from './WowheadLinks';
 import clsx from 'clsx';
 import type { HTMLAttributes } from 'react';
 import { PatchCadence } from './PatchCadence';
+import { Spell, spellComponents } from './Spell';
+import { Figure } from './Figure';
+import { Video } from './Video';
+import { Gallery } from './Gallery';
 
 export const components: MDXComponents = {
   Image,
+  Figure,
+  Video,
+  Gallery,
   TOCInline,
   a: CustomLink,
   h2: ({ children, className, ...rest }: HTMLAttributes<HTMLHeadingElement>) => (
@@ -54,20 +61,8 @@ export const components: MDXComponents = {
   AoeSpells,
   WowheadSpecIcon,
   WowheadClassIcon,
-  ...Object.fromEntries(
-    Object.entries(WowheadLinks).map(([key, Component]) => {
-      return [
-        key,
-        (props) => {
-          return (
-            <>
-              <Component {...props} />
-              {props.spaceless ? '' : ' '}
-            </>
-          );
-        },
-      ];
-    })
-  ),
+  Spell,
+  ...spellComponents,
+  ...WowheadLinks,
   PatchCadence,
 };

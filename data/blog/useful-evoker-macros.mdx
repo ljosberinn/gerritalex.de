@@ -1,5 +1,5 @@
 ---
-lastmod: '2025-12-07'
+lastmod: '2026-11-18'
 title: Useful Evoker Macros
 date: '2025-07-02'
 tags: ['wow', 'evoker']
@@ -13,21 +13,21 @@ includeImageInPreview: true
 
 ## General
 
-Cast <WowheadLink kind="spell" id={351338} icon="ability_evoker_quell">Quell</WowheadLink> on your Focus when pressing Shift, otherwise your current target.
+Cast <Spell id={351338} /> on your Focus when pressing Shift, otherwise your current target.
 
 ```
 #showtooltip
 /cast [mod:shift, @focus] Quell; Quell
 ```
 
-Casts <WowheadLink kind="spell" id={365585} icon="ability_evoker_fontofmagic_green">Expunge</WowheadLink> on your mouseover target, otherwise the default behaviour: your target if you have one, otherwise yourself.
+Casts <Spell id={365585} /> on your mouseover target, otherwise the default behaviour: your target if you have one, otherwise yourself.
 
 ```
 #showtooltip
 /cast [@mouseover, help, nodead] [] Expunge
 ```
 
-Casts <WowheadLink kind="spell" id={374251} icon="ability_evoker_fontofmagic_red">Cauterizing Flame</WowheadLink> on your mouseover target, otherwise the default behaviour: your target if you have one, otherwise yourself.
+Casts <Spell id={374251} /> on your mouseover target, otherwise the default behaviour: your target if you have one, otherwise yourself.
 
 ```
 #showtooltip
@@ -41,7 +41,7 @@ Cast <DeepBreath /> / <BreathOfEons /> at your cursors position, removing the ne
 /cast [@cursor] !Deep Breath
 ```
 
-Use <WowheadLink kind="spell" id={369536} icon="ability_racial_soar">Soar</WowheadLink> where possible, otherwise summon a random favorite mount.
+Use <Spell id={369536} /> where possible, otherwise summon a random favorite mount.
 
 ```
 #showtooltip Soar
@@ -49,8 +49,8 @@ Use <WowheadLink kind="spell" id={369536} icon="ability_racial_soar">Soar</Wowhe
 /run C_MountJournal.SummonByID(0)
 ```
 
-Use <WowheadLink kind="spell" id={406732} icon="ability_evoker_stretchtime">Spatial Paradox</WowheadLink> if talented on a specific player if they're alive and present in the raid, otherwise autocast it.
-Use <WowheadLink kind="spell" id={374968} icon="ability_evoker_timespiral">Time Spiral</WowheadLink> if talented into that instead.
+Use <Spell id={406732} /> if talented on a specific player if they're alive and present in the raid, otherwise autocast it.
+Use <Spell id={374968} /> if talented into that instead.
 
 ```
 #showtooltip
@@ -58,8 +58,8 @@ Use <WowheadLink kind="spell" id={374968} icon="ability_evoker_timespiral">Time 
 /cast [known: Time Spiral] Time Spiral
 ```
 
-Cast <WowheadLink kind="spell" id={360806} icon="ability_xavius_dreamsimulacrum">Sleep Walk</WowheadLink> on your current target and ping your cursor position.
-If you're not talented into <WowheadLink kind="spell" id={360806} icon="ability_xavius_dreamsimulacrum">Sleep Walk</WowheadLink>, will only ping.
+Cast <Spell id={360806} /> on your current target and ping your cursor position.
+If you're not talented into <Spell id={360806} />, will only ping.
 
 ```
 #showtooltip
@@ -76,7 +76,7 @@ Cast <Rescue /> on your mouseover target, or the mentioned players, in order, un
 
 ## Scalecommander
 
-Picks the closest enemy and casts <WowheadLink kind="spell" id={356995} icon="ability_evoker_disintegrate">Disintegrate</WowheadLink> should you not have a target. Useful if your target dies between globals. Also stops casting <WowheadLink kind="spell" id={357210} icon="ability_evoker_deepbreath">Deep Breath</WowheadLink>.
+Picks the closest enemy and casts <Spell id={356995} /> should you not have a target. Useful if your target dies between globals. Also stops casting <Spell id={357210} />.
 
 ```
 #showtooltip
@@ -87,7 +87,7 @@ Picks the closest enemy and casts <WowheadLink kind="spell" id={356995} icon="ab
 
 ## Devastation
 
-Pick the closest enemy and cast <WowheadLink kind="spell" id={357211} icon="ability_evoker_pyre">Pyre</WowheadLink>. Useful if your current target dies between globals to not lose time between casts.
+Pick the closest enemy and cast <Spell id={357211} />. Useful if your current target dies between globals to not lose time between casts.
 
 ```
 #showtooltip
@@ -97,7 +97,7 @@ Pick the closest enemy and cast <WowheadLink kind="spell" id={357211} icon="abil
 
 ## Augmentation
 
-Automatically swap back into <WowheadLink kind="spell" id={403264} icon="ability_evoker_blackattunement">Black Attunement</WowheadLink> when casting <WowheadLink kind="spell" id={395160} icon="ability_evoker_eruption">Eruption</WowheadLink>. Also stops <WowheadLink kind="spell" id={403631} icon="ability_evoker_breathofeons">Breath of Eons</WowheadLink> if you're mid air as <WowheadSpecIcon spec="scalecommander">Scalecommander</WowheadSpecIcon>.
+Automatically swap back into <Spell id={403264} /> when casting <Spell id={395160} />. Also stops <Spell id={403631} /> if you're mid air as <WowheadSpecIcon spec="scalecommander">Scalecommander</WowheadSpecIcon>.
 
 ```
 #showtooltip Eruption
@@ -106,7 +106,7 @@ Automatically swap back into <WowheadLink kind="spell" id={403264} icon="ability
 /cast Eruption
 ```
 
-Automatically swap into <WowheadLink kind="spell" id={403265} icon="ability_evoker_bronzeattunement">Bronze Attunement</WowheadLink> when casting <WowheadLink kind="spell" id={358267} icon="ability_evoker_hover">Hover</WowheadLink>.
+Automatically swap into <Spell id={403265} /> when casting <Spell id={358267} />.
 
 ```
 #showtooltip Hover

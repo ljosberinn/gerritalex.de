@@ -1,7 +1,7 @@
 ---
+lastmod: '2026-11-18'
 title: WeakAura Patterns
 date: '2025-02-03'
-lastmod: '2025-02-03'
 tags: ['lua', 'wow']
 draft: false
 summary: 'WeakAuras patterns I often use'
@@ -290,7 +290,7 @@ For things like auras, talents, cast ids, anything that is immediately visible i
 But what about damage/healing ids? Debuffs on players in a dungeon, fleeting things you either can't look at directly or effectively not in the heat of the moment?
 The answer at this point is obvious: use [logs](https://www.warcraftlogs.com).
 
-Any spell icon is a link to wowhead, e.g. this <WowheadLink id={395160} icon="ability_evoker_eruption" kind="spell">Eruption</WowheadLink>.
+Any spell icon is a link to wowhead, e.g. this <Spell id={395160} />.
 The id is directly in the url: `395160`. This only leaves you with having to find a log but chances are, you're not the first one to use that spell or play the content it's used in so luckily that won't be an issue.
 
 For fringe cases like early alpha/beta/ptr cycles, you can always log target dummies in some capital yourself.

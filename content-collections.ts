@@ -12,6 +12,7 @@ import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypePrettyCode from 'rehype-pretty-code';
 import rehypePresetMinify from 'rehype-preset-minify';
+import rehypeMinifyWhitespace from 'rehype-minify-whitespace';
 import siteMetadata from './data/siteMetadata';
 import {
   rehypeSectionize,
@@ -49,6 +50,8 @@ async function compileMdx(source: string): Promise<{ mdx: string; toc: TocItem[]
         { theme: 'night-owl', keepBackground: false, defaultLang: { block: 'plaintext' } },
       ],
       rehypePresetMinify,
+      // Treats childless inline JSX (`<Comp /> text`) as empty and strips the whitespace after it.
+      [rehypeMinifyWhitespace, false],
     ],
   });
 

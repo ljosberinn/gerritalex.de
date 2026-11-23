@@ -1,0 +1,866 @@
+{
+  "1122": {
+    "name": "Summon Infernal",
+    "icon": "spell_shadow_summoninfernal"
+  },
+  "23920": {
+    "name": "Spell Reflection",
+    "icon": "ability_warrior_shieldreflection"
+  },
+  "42650": {
+    "name": "Army of the Dead",
+    "icon": "spell_deathknight_armyofthedead"
+  },
+  "48707": {
+    "name": "Anti-Magic Shell",
+    "icon": "spell_shadow_antimagicshell"
+  },
+  "111673": {
+    "name": "Control Undead",
+    "icon": "inv_misc_bone_skull_01"
+  },
+  "145629": {
+    "name": "Anti-Magic Zone",
+    "icon": "spell_deathknight_antimagiczone"
+  },
+  "192058": {
+    "name": "Capacitor Totem",
+    "icon": "spell_nature_brilliance"
+  },
+  "195072": {
+    "name": "Fel Rush",
+    "icon": "ability_demonhunter_felrush"
+  },
+  "198103": {
+    "name": "Earth Elemental",
+    "icon": "spell_nature_earthelemental_totem"
+  },
+  "199484": {
+    "name": "Psychic Link",
+    "icon": "ability_priest_psychiclink"
+  },
+  "263648": {
+    "name": "Soul Barrier",
+    "icon": "inv_soulbarrier"
+  },
+  "320341": {
+    "name": "Bulk Extraction",
+    "icon": "spell_shadow_shadesofdarkness"
+  },
+  "321792": {
+    "name": "Impending Catastrophe",
+    "icon": "ability_revendreth_warlock"
+  },
+  "321894": {
+    "name": "Dark Exile",
+    "icon": "spell_necro_deathlyecho"
+  },
+  "323149": {
+    "name": "Embrace Darkness",
+    "icon": "spell_shadow_rune"
+  },
+  "328212": {
+    "name": "Razorshard Ice",
+    "icon": "spell_hunter_icetrap"
+  },
+  "351338": {
+    "name": "Quell",
+    "icon": "ability_evoker_quell"
+  },
+  "353312": {
+    "name": "Purifying Burst",
+    "icon": "ability_paladin_artofwar"
+  },
+  "356995": {
+    "name": "Disintegrate",
+    "icon": "ability_evoker_disintegrate"
+  },
+  "357208": {
+    "name": "Fire Breath",
+    "icon": "ability_evoker_firebreath"
+  },
+  "357210": {
+    "name": "Deep Breath",
+    "icon": "ability_evoker_deepbreath"
+  },
+  "357211": {
+    "name": "Pyre",
+    "icon": "ability_evoker_pyre"
+  },
+  "358267": {
+    "name": "Hover",
+    "icon": "ability_evoker_hover"
+  },
+  "358385": {
+    "name": "Landslide",
+    "icon": "ability_earthen_pillar"
+  },
+  "358733": {
+    "name": "Glide",
+    "icon": "ability_racial_glide"
+  },
+  "360194": {
+    "name": "Deathmark",
+    "icon": "ability_rogue_deathmark"
+  },
+  "360806": {
+    "name": "Sleep Walk",
+    "icon": "ability_xavius_dreamsimulacrum"
+  },
+  "360827": {
+    "name": "Blistering Scales",
+    "icon": "ability_evoker_blisteringscales"
+  },
+  "360995": {
+    "name": "Verdant Embrace",
+    "icon": "ability_evoker_rescue"
+  },
+  "361021": {
+    "name": "Sense Power",
+    "icon": "ability_hunter_aspectoftheviper"
+  },
+  "361469": {
+    "name": "Living Flame",
+    "icon": "ability_evoker_livingflame"
+  },
+  "361500": {
+    "name": "Living Flame",
+    "icon": "ability_evoker_livingflame"
+  },
+  "362969": {
+    "name": "Azure Strike",
+    "icon": "ability_evoker_azurestrike"
+  },
+  "363916": {
+    "name": "Obsidian Scales",
+    "icon": "inv_artifact_dragonscales"
+  },
+  "365350": {
+    "name": "Arcane Surge",
+    "icon": "ability_mage_arcanesurge"
+  },
+  "365585": {
+    "name": "Expunge",
+    "icon": "ability_evoker_fontofmagic_green"
+  },
+  "367979": {
+    "name": "Emerald Blossom",
+    "icon": "ability_evoker_emeraldblossom"
+  },
+  "369459": {
+    "name": "Source of Magic",
+    "icon": "ability_evoker_blue_01"
+  },
+  "369536": {
+    "name": "Soar",
+    "icon": "ability_racial_soar"
+  },
+  "369909": {
+    "name": "Protracted Talons",
+    "icon": "ability_evoker_azurestrike"
+  },
+  "369939": {
+    "name": "Leaping Flames",
+    "icon": "ability_evoker_pupilofalexstraza"
+  },
+  "370553": {
+    "name": "Tip the Scales",
+    "icon": "ability_evoker_tipthescales"
+  },
+  "370665": {
+    "name": "Rescue",
+    "icon": "ability_evoker_flywithme"
+  },
+  "370781": {
+    "name": "Imminent Destruction",
+    "icon": "spell_burningbladeshaman_blazing_radiance"
+  },
+  "370839": {
+    "name": "Power Swell",
+    "icon": "ability_evoker_powernexus2"
+  },
+  "370845": {
+    "name": "Spellweaver's Dominance",
+    "icon": "spell_shaman_shockinglava"
+  },
+  "370889": {
+    "name": "Twin Guardian",
+    "icon": "inv_misc_volatileair"
+  },
+  "372048": {
+    "name": "Oppressing Roar",
+    "icon": "ability_evoker_oppressingroar"
+  },
+  "372245": {
+    "name": "Terror of the Skies",
+    "icon": "ability_evoker_terroroftheskies"
+  },
+  "374227": {
+    "name": "Zephyr",
+    "icon": "ability_evoker_hoverblack"
+  },
+  "374251": {
+    "name": "Cauterizing Flame",
+    "icon": "ability_evoker_fontofmagic_red"
+  },
+  "374346": {
+    "name": "Overawe",
+    "icon": "ability_evoker_oppressingroar2"
+  },
+  "374348": {
+    "name": "Renewing Blaze",
+    "icon": "ability_evoker_masterylifebinder_red"
+  },
+  "374968": {
+    "name": "Time Spiral",
+    "icon": "ability_evoker_timespiral"
+  },
+  "375087": {
+    "name": "Dragonrage",
+    "icon": "ability_evoker_dragonrage"
+  },
+  "375544": {
+    "name": "Inherent Resistance",
+    "icon": "inv_misc_rubysanctum1"
+  },
+  "375577": {
+    "name": "Fire Within",
+    "icon": "item_sparkofragnoros"
+  },
+  "375583": {
+    "name": "Ancient Flame",
+    "icon": "inv_elemental_mote_fire01"
+  },
+  "375777": {
+    "name": "Causality",
+    "icon": "spell_azerite_essence_16"
+  },
+  "375802": {
+    "name": "Burnout",
+    "icon": "spell_fire_soulburn"
+  },
+  "376166": {
+    "name": "Draconic Legacy",
+    "icon": "inv_helm_mail_dracthyrquest_b_02"
+  },
+  "384827": {
+    "name": "Call Hyenas",
+    "icon": "ability_hunter_pet_hyena"
+  },
+  "387103": {
+    "name": "Ruin",
+    "icon": "spell_shadow_shadowwordpain"
+  },
+  "387156": {
+    "name": "Ritual of Ruin",
+    "icon": "ability_mage_worldinflamesgreen"
+  },
+  "387158": {
+    "name": "Impending Ruin",
+    "icon": "ability_mage_worldinflamesgreen"
+  },
+  "387787": {
+    "name": "Regenerative Magic",
+    "icon": "spell_frost_manarecharge"
+  },
+  "390386": {
+    "name": "Fury of the Aspects",
+    "icon": "ability_evoker_furyoftheaspects"
+  },
+  "392268": {
+    "name": "Essence Burst",
+    "icon": "ability_evoker_essenceburst"
+  },
+  "392966": {
+    "name": "Spell Block",
+    "icon": "ability_warrior_shieldbreak"
+  },
+  "395152": {
+    "name": "Ebon Might",
+    "icon": "spell_sarkareth"
+  },
+  "395160": {
+    "name": "Eruption",
+    "icon": "ability_evoker_eruption"
+  },
+  "396043": {
+    "name": "Close as Clutchmates",
+    "icon": "ability_dragonriding_yearningforthesky01"
+  },
+  "396286": {
+    "name": "Upheaval",
+    "icon": "ability_evoker_upheaval"
+  },
+  "403208": {
+    "name": "Draconic Attunements",
+    "icon": "ability_evoker_draconicattunements"
+  },
+  "403264": {
+    "name": "Black Attunement",
+    "icon": "ability_evoker_blackattunement"
+  },
+  "403265": {
+    "name": "Bronze Attunement",
+    "icon": "ability_evoker_bronzeattunement"
+  },
+  "403631": {
+    "name": "Breath of Eons",
+    "icon": "ability_evoker_breathofeons"
+  },
+  "404195": {
+    "name": "Defy Fate",
+    "icon": "ability_evoker_defyfate"
+  },
+  "404908": {
+    "name": "Fate Mirror",
+    "icon": "trade_archaeology_highbornesoulmirror"
+  },
+  "404977": {
+    "name": "Time Skip",
+    "icon": "ability_evoker_timeskip"
+  },
+  "406043": {
+    "name": "Nourishing Sands",
+    "icon": "ability_evoker_nourishingsands"
+  },
+  "406380": {
+    "name": "Mastery: Timewalker",
+    "icon": "ability_evoker_masterytimewalker"
+  },
+  "406732": {
+    "name": "Spatial Paradox",
+    "icon": "ability_evoker_stretchtime"
+  },
+  "406907": {
+    "name": "Regenerative Chitin",
+    "icon": "inv12_ability_evoker_blisteringscalesinfinite"
+  },
+  "407243": {
+    "name": "Aspects' Favor",
+    "icon": "ability_evoker_aspectsfavor"
+  },
+  "407869": {
+    "name": "Anachronism",
+    "icon": "ability_evoker_essenceburst6"
+  },
+  "407876": {
+    "name": "Accretion",
+    "icon": "ability_evoker_accretion"
+  },
+  "408002": {
+    "name": "Tectonic Locus",
+    "icon": "6bf_explosive_shard"
+  },
+  "408005": {
+    "name": "Momentum Shift",
+    "icon": "ability_priest_voidshift"
+  },
+  "408083": {
+    "name": "Font of Magic",
+    "icon": "ability_evoker_fontofmagic"
+  },
+  "408233": {
+    "name": "Bestow Weyrnstone",
+    "icon": "ability_evoker_bestowweyrnstone"
+  },
+  "408775": {
+    "name": "Ignition Rush",
+    "icon": "spell_fire_immolation"
+  },
+  "409267": {
+    "name": "Motes of Possibility",
+    "icon": "ability_evoker_motesofpossibility"
+  },
+  "409311": {
+    "name": "Prescience",
+    "icon": "ability_evoker_prescience"
+  },
+  "409560": {
+    "name": "Temporal Wound",
+    "icon": "ability_evoker_breathofeons"
+  },
+  "409676": {
+    "name": "Chrono Ward",
+    "icon": "ability_evoker_bronze_01"
+  },
+  "410253": {
+    "name": "Perilous Fate",
+    "icon": "spell_shadow_lastingafflictions"
+  },
+  "410261": {
+    "name": "Inferno's Blessing",
+    "icon": "ability_evoker_infernosblessing"
+  },
+  "410352": {
+    "name": "Stretch Time",
+    "icon": "ability_evoker_timedilation"
+  },
+  "410643": {
+    "name": "Molten Blood",
+    "icon": "spell_shaman_spewlava"
+  },
+  "410685": {
+    "name": "Symbiotic Bloom",
+    "icon": "inv_10_herb_seed_magiccolor5"
+  },
+  "410687": {
+    "name": "Prolong Life",
+    "icon": "ability_evoker_reversion_green"
+  },
+  "410784": {
+    "name": "Echoing Strike",
+    "icon": "ability_evoker_echoingstrike"
+  },
+  "412710": {
+    "name": "Timelessness",
+    "icon": "ability_evoker_timelessness"
+  },
+  "412713": {
+    "name": "Interwoven Threads",
+    "icon": "inv_enchant_optionalreagent_01"
+  },
+  "412723": {
+    "name": "Tomorrow, Today",
+    "icon": "ability_evoker_rewind2"
+  },
+  "413984": {
+    "name": "Shifting Sands",
+    "icon": "ability_evoker_masterytimewalker"
+  },
+  "414969": {
+    "name": "Dream of Spring",
+    "icon": "ability_evoker_masterylifebinder"
+  },
+  "417234": {
+    "name": "Crashing Chaos",
+    "icon": "inv_infernalmount"
+  },
+  "422871": {
+    "name": "Evoker Devastation 10.2 Class Set 4pc",
+    "icon": "trade_engineering"
+  },
+  "424371": {
+    "name": "Storm's Vengeance",
+    "icon": "inv_offhand_1h_artifactdoomhammer_d_02"
+  },
+  "426404": {
+    "name": "Ebon Might",
+    "icon": "spell_sarkareth"
+  },
+  "427342": {
+    "name": "Defend",
+    "icon": "ability_defend"
+  },
+  "431442": {
+    "name": "Chrono Flame",
+    "icon": "inv_ability_chronowardenevoker_chronoflame"
+  },
+  "431615": {
+    "name": "Reverberations",
+    "icon": "ability_evoker_giftoftheaspects"
+  },
+  "431657": {
+    "name": "Primacy",
+    "icon": "inv_misc_pocketwatch_01"
+  },
+  "431695": {
+    "name": "Temporal Burst",
+    "icon": "ability_evoker_essenceburst5"
+  },
+  "431715": {
+    "name": "Nozdormu Adept",
+    "icon": "ability_evoker_aspectsfavorbronze"
+  },
+  "431840": {
+    "name": "Master of Destiny",
+    "icon": "ability_evoker_defyfate"
+  },
+  "431873": {
+    "name": "Temporality",
+    "icon": "ability_evoker_return"
+  },
+  "431874": {
+    "name": "Double-time",
+    "icon": "spell_holy_borrowedtime"
+  },
+  "431984": {
+    "name": "Time Convergence",
+    "icon": "ability_evoker_plotthefuture"
+  },
+  "432004": {
+    "name": "Golden Opportunity",
+    "icon": "achievement_faction_goldenlotus"
+  },
+  "432008": {
+    "name": "Motes of Acceleration",
+    "icon": "item_timemote_icon"
+  },
+  "433871": {
+    "name": "Maneuverability",
+    "icon": "ability_evoker_deepbreath"
+  },
+  "433874": {
+    "name": "Deep Breath",
+    "icon": "ability_evoker_deepbreath"
+  },
+  "434481": {
+    "name": "Bombardments",
+    "icon": "inv_ability_scalecommanderevoker_bombardments"
+  },
+  "436335": {
+    "name": "Mass Disintegrate",
+    "icon": "inv_1205_ability_evoker_massdisintegration"
+  },
+  "438588": {
+    "name": "Mass Eruption",
+    "icon": "ability_evoker_eruption"
+  },
+  "438879": {
+    "name": "Call of the Brood",
+    "icon": "inv_minespider2_cave"
+  },
+  "440043": {
+    "name": "Blackened Soul",
+    "icon": "spell_nzinsanity_chasedbyshadows"
+  },
+  "440045": {
+    "name": "Mark of Peroth'arn",
+    "icon": "70_inscription_vantus_rune_tomb"
+  },
+  "440055": {
+    "name": "Seeds of Their Demise",
+    "icon": "ability_warlock_moltencoregreen"
+  },
+  "441253": {
+    "name": "Nimble Flyer",
+    "icon": "ability_evoker_hover"
+  },
+  "441257": {
+    "name": "Slipstream",
+    "icon": "ability_dragonriding_barrelroll01"
+  },
+  "441705": {
+    "name": "Might of the Black Dragonflight",
+    "icon": "ability_evoker_blackattunementalt"
+  },
+  "442204": {
+    "name": "Breath of Eons",
+    "icon": "ability_evoker_breathofeons"
+  },
+  "444088": {
+    "name": "Consume Flame",
+    "icon": "inv_shadowflames_wave"
+  },
+  "444843": {
+    "name": "Conduit of Flame",
+    "icon": "ability_evoker_innatemagic5"
+  },
+  "445035": {
+    "name": "Splitstream",
+    "icon": "ability_rhyolith_lavapool"
+  },
+  "445468": {
+    "name": "Wither",
+    "icon": "inv_ability_hellcallerwarlock_wither"
+  },
+  "445958": {
+    "name": "Draconic Instincts",
+    "icon": "inv_misc_scales_basilliskorange"
+  },
+  "448791": {
+    "name": "Sacred Toll",
+    "icon": "ability_bastion_paladin"
+  },
+  "453096": {
+    "name": "Contagion",
+    "icon": "spell_shadow_creepingplague"
+  },
+  "454015": {
+    "name": "Tempest",
+    "icon": "inv_ability_stormcallershaman_tempest"
+  },
+  "454983": {
+    "name": "Arcane Reach",
+    "icon": "classicon_evoker"
+  },
+  "457025": {
+    "name": "Dimension Ripper",
+    "icon": "inv_artifact_dimensionalrift"
+  },
+  "457052": {
+    "name": "Deathstalker's Mark",
+    "icon": "inv_ability_deathstalkerrogue_deathstalkersmark"
+  },
+  "457666": {
+    "name": "Dawnthread Lining",
+    "icon": "inv_10_tailoring_embroiderythread_color1"
+  },
+  "457674": {
+    "name": "Duskthread Lining",
+    "icon": "inv_10_tailoring_embroiderythread_color4"
+  },
+  "459120": {
+    "name": "Rumbling Earth",
+    "icon": "ability_evoker_geomancy"
+  },
+  "459537": {
+    "name": "Imminent Destruction",
+    "icon": "spell_burningbladeshaman_blazing_radiance"
+  },
+  "459725": {
+    "name": "Molten Embers",
+    "icon": "ability_evoker_earthensky"
+  },
+  "460164": {
+    "name": "Foul Exhaust",
+    "icon": "inv_elemental_mote_shadow01"
+  },
+  "460181": {
+    "name": "Pay-Line",
+    "icon": "inv_10_fishing_dragonislescoins_gold"
+  },
+  "460444": {
+    "name": "High Roller!",
+    "icon": "spell_misc_emotionhappy"
+  },
+  "460603": {
+    "name": "Mechanical Breakdown",
+    "icon": "ability_siege_engineer_detonate"
+  },
+  "460873": {
+    "name": "Electric Blast",
+    "icon": "spell_shaman_staticshock"
+  },
+  "461390": {
+    "name": "Flame and Coin",
+    "icon": "ability_creature_cursed_01"
+  },
+  "461536": {
+    "name": "Rolling Rubbish",
+    "icon": "inv_misc_soccerball"
+  },
+  "464165": {
+    "name": "Incinerator",
+    "icon": "ability_ironmaidens_bombardment"
+  },
+  "464559": {
+    "name": "Electromagnetic Sorting",
+    "icon": "inv_10_engineering_manufacturedparts_mechanicalparts_color3"
+  },
+  "465232": {
+    "name": "Sonic Ba-Boom",
+    "icon": "inv_sonic_debuff"
+  },
+  "465388": {
+    "name": "Hot Hot Heat",
+    "icon": "spell_fire_felflamering_red"
+  },
+  "466419": {
+    "name": "Scatterblast Canisters",
+    "icon": "spell_mage_infernoblast"
+  },
+  "466489": {
+    "name": "Fused Canisters",
+    "icon": "inv_misc_blackironbomb"
+  },
+  "466578": {
+    "name": "Tick-Tock Canisters",
+    "icon": "inv_eng_bombstonestun"
+  },
+  "467117": {
+    "name": "Overdrive",
+    "icon": "spell_shaman_crashlightning"
+  },
+  "467135": {
+    "name": "Trash Compactor",
+    "icon": "spell_nature_unrelentingstorm"
+  },
+  "467297": {
+    "name": "Static Jolt",
+    "icon": "ability_thunderking_thunderstruck"
+  },
+  "468665": {
+    "name": "Elemental Calamity",
+    "icon": "spell_fire_masterofelements"
+  },
+  "469295": {
+    "name": "Giga Coils",
+    "icon": "inv_10_engineering_manufacturedparts_electricalparts_color1"
+  },
+  "469719": {
+    "name": "Uncontrolled Burn",
+    "icon": "ability_siege_engineer_detonate"
+  },
+  "469981": {
+    "name": "Kill-o-Block Barrier",
+    "icon": "spell_nature_lightningshield"
+  },
+  "472223": {
+    "name": "Galvanized Spite",
+    "icon": "inv_11_arenaboss_galvanizedspite"
+  },
+  "473650": {
+    "name": "Scrapbomb",
+    "icon": "inv_10_engineering2_boxofbombs_friendly_color1"
+  },
+  "473951": {
+    "name": "Static Charge",
+    "icon": "spell_shaman_staticshock"
+  },
+  "474447": {
+    "name": "Canister Detonation",
+    "icon": "inv_elemental_primal_shadow"
+  },
+  "474665": {
+    "name": "Coin Magnet",
+    "icon": "inv_ore_gold_nugget"
+  },
+  "1213688": {
+    "name": "Molten Phlegm",
+    "icon": "inv_11_arenaboss_jawsplosion"
+  },
+  "1214448": {
+    "name": "TOTAL DESTRUCTION!!!",
+    "icon": "ui_majorfactions_rocket"
+  },
+  "1214688": {
+    "name": "Pyrotechnics",
+    "icon": "inv_wildfirebomb"
+  },
+  "1215218": {
+    "name": "Bleeding Edge",
+    "icon": "ability_siege_engineer_pattern_recognition"
+  },
+  "1215689": {
+    "name": "Evoker Augmentation 11.1 Class Set 2pc",
+    "icon": "trade_engineering"
+  },
+  "1216406": {
+    "name": "Unstable Explosion",
+    "icon": "spell_shaman_improvedfirenova"
+  },
+  "1216411": {
+    "name": "Product Deployment",
+    "icon": "inv_10_engineering2_boxofbombs_friendly_color1"
+  },
+  "1218319": {
+    "name": "Voidsplosion",
+    "icon": "ability_priest_voidentropy"
+  },
+  "1218342": {
+    "name": "Unstable Shrapnel",
+    "icon": "ability_deathwing_shrapnel"
+  },
+  "1218706": {
+    "name": "Prototype Powercoil",
+    "icon": "ability_siege_engineer_magnetic_crush"
+  },
+  "1219236": {
+    "name": "Rockfall",
+    "icon": "ability_evoker_earthensky"
+  },
+  "1219333": {
+    "name": "Gallybux Finale Blast",
+    "icon": "spell_nature_lightningoverload"
+  },
+  "1219386": {
+    "name": "Scrap Rockets",
+    "icon": "ability_racial_rocketbarrage"
+  },
+  "1219480": {
+    "name": "Ascendance",
+    "icon": "8026697"
+  },
+  "1220643": {
+    "name": "Resilient Keystones",
+    "icon": "inv_relics_hourglass"
+  },
+  "1220769": {
+    "name": "Earthshaker Gaol",
+    "icon": "inv_elementalearth2"
+  },
+  "1231234": {
+    "name": "Protected Core",
+    "icon": "inv_enchant_essencearcanelarge"
+  },
+  "1236949": {
+    "name": "Disintegrate",
+    "icon": "ability_evoker_disintegrate"
+  },
+  "1236970": {
+    "name": "Pyre",
+    "icon": "ability_evoker_pyre"
+  },
+  "1241694": {
+    "name": "Locust Swarm",
+    "icon": "spell_shadow_carrionswarm"
+  },
+  "1245292": {
+    "name": "Destabilized",
+    "icon": "spell_shadow_blackplague"
+  },
+  "1249658": {
+    "name": "Breath of Sindragosa",
+    "icon": "spell_deathknight_breathofsindragosa"
+  },
+  "1250914": {
+    "name": "Clairvoyant",
+    "icon": "ability_evoker_masterylifebinder_bronze"
+  },
+  "1252613": {
+    "name": "Command Squadron",
+    "icon": "ability_evoker_pyre"
+  },
+  "1259173": {
+    "name": "Duplicate",
+    "icon": "inv12_apextalent_evoker_duplicate"
+  },
+  "1260484": {
+    "name": "Chronoboon",
+    "icon": "ability_evoker_tipthescales"
+  },
+  "1260568": {
+    "name": "Energy Cycles",
+    "icon": "ability_evoker_innatemagic4"
+  },
+  "1260647": {
+    "name": "Overclock",
+    "icon": "spell_holy_borrowedtime"
+  },
+  "1260745": {
+    "name": "Command Squadron",
+    "icon": "ability_dragonriding_dynamicflight01"
+  },
+  "1261448": {
+    "name": "Concentrated Power",
+    "icon": "inv_10_dungeonjewelry_dragon_trinket_1arcanemagical_blue"
+  },
+  "1261452": {
+    "name": "Refined Essence",
+    "icon": "ability_evoker_essenceburststacks"
+  },
+  "1263824": {
+    "name": "Consumption",
+    "icon": "inv_axe_2h_artifactmaw_d_01"
+  },
+  "1267206": {
+    "name": "Strike from Above",
+    "icon": "ability_racial_glide"
+  },
+  "1268881": {
+    "name": "Improved Defy Fate",
+    "icon": "ability_evoker_masterytimewalker"
+  },
+  "1296637": {
+    "name": "Evoker Augmentation 12.1 Class Set 2pc",
+    "icon": "trade_engineering"
+  },
+  "1296638": {
+    "name": "Evoker Augmentation 12.1 Class Set 4pc",
+    "icon": "trade_engineering"
+  },
+  "1297728": {
+    "name": "Magnified Fate",
+    "icon": "ability_evoker_masterylifebinder_black"
+  }
+}

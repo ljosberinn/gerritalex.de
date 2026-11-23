@@ -89,38 +89,87 @@ export function rehypeSectionize() {
   };
 }
 
-// Turns the first local image of a paragraph into a sized next/image `<Image>`
+type JsxAttribute = { type: string; name?: string; value?: unknown };
+
+function localImageFile(url: unknown): string | null {
+  if (typeof url !== 'string' || !url.startsWith('/')) {
+    return null;
+  }
+
+  const file = path.join(process.cwd(), 'public', url);
+
+  return existsSync(file) ? file : null;
+}
+
+function jsxAttribute(name: string, value: unknown): JsxAttribute {
+  return { type: 'mdxJsxAttribute', name, value };
+}
+
+// Sizes local images so they don't shift layout: markdown images become `<Image>`, `<Figure>` gains width/height
 export function remarkImgToJsx() {
   return async (tree: MdNode) => {
-    const paragraphs: MdNode[] = [];
+    const jobs: Promise<void>[] = [];
 
-    visit(tree, 'paragraph', (node: MdNode) => {
-      if (node.children?.some((child) => child.type === 'image')) {
-        paragraphs.push(node);
-      }
-    });
+    visit(tree, (node: MdNode, _index, parent: MdNode | undefined) => {
+      if (node.type === 'image') {
+        const file = localImageFile(node.url);
 
-    await Promise.all(
-      paragraphs.map(async (paragraph) => {
-        const image = paragraph.children!.find((child) => child.type === 'image')!;
-        const file = path.join(process.cwd(), 'public', image.url ?? '');
-
-        if (!image.url?.startsWith('/') || !existsSync(file)) {
+        if (!file) {
           return;
         }
 
-        const { width, height } = await sharp(file).metadata();
+        jobs.push(
+          sharp(file)
+            .metadata()
+            .then(({ width, height }) => {
+              const { alt, url } = node;
 
-        image.type = 'mdxJsxFlowElement';
-        image.name = 'Image';
-        image.attributes = [
-          { type: 'mdxJsxAttribute', name: 'alt', value: image.alt },
-          { type: 'mdxJsxAttribute', name: 'src', value: image.url },
-          { type: 'mdxJsxAttribute', name: 'width', value: width },
-          { type: 'mdxJsxAttribute', name: 'height', value: height },
-        ];
-        paragraph.type = 'div';
-      })
-    );
+              node.type = 'mdxJsxTextElement';
+              node.name = 'Image';
+              node.attributes = [
+                jsxAttribute('alt', alt),
+                jsxAttribute('src', url),
+                jsxAttribute('width', width),
+                jsxAttribute('height', height),
+              ];
+              node.children = [];
+
+              if (parent?.type === 'paragraph') {
+                parent.type = 'div';
+              }
+            })
+        );
+
+        return;
+      }
+
+      const isJsx = node.type === 'mdxJsxFlowElement' || node.type === 'mdxJsxTextElement';
+
+      if (!isJsx || node.name !== 'Figure') {
+        return;
+      }
+
+      const attributes = (node.attributes ?? []) as JsxAttribute[];
+
+      if (attributes.some((attribute) => attribute.name === 'width')) {
+        return;
+      }
+
+      const file = localImageFile(attributes.find((attribute) => attribute.name === 'src')?.value);
+
+      if (!file) {
+        return;
+      }
+
+      jobs.push(
+        sharp(file)
+          .metadata()
+          .then(({ width, height }) => {
+            attributes.push(jsxAttribute('width', width), jsxAttribute('height', height));
+          })
+      );
+    });
+
+    await Promise.all(jobs);
   };
 }
