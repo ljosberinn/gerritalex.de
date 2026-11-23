@@ -20,13 +20,24 @@ Where are we now, in the middle of Midnight Season 2?
 
 I don't usually start my posts with a reminder since you're on my site and all, but for the sake of a brief introduction: hi, I'm [Xephyris](https://raider.io/characters/eu/blackrock/Xephyris), I've been maining <AugmentationEvoker abbreviated /> ever since it released and always wanted a support-y spec in WoW. I mained tank before.
 
-Since then, I've achieved the top 0.1% Mythic+ title in all but two seasons as <AugmentationEvoker abbreviated />, the others as <DevastationEvoker abbreviated /> and Cutting Edge to HoF with no world rank lower than ~300, but also never higher than ~100. I've also been a long-time spec chatter in the Evoker discord community [Wyrmrest Temple](https://discord.gg/JcCFEcmSWD) where some of you may know me from.
+Since then, I've achieved the top 0.1% Mythic+ title in all seasons, most as <AugmentationEvoker abbreviated />, two as <DevastationEvoker abbreviated /> and Cutting Edge to HoF with no world rank lower than ~300, but also never higher than ~100. I've also been a long-time spec chatter in the Evoker discord community [Wyrmrest Temple](https://discord.gg/JcCFEcmSWD) where some of you may know me from.
 
 I believe I speak with some authority on the spec regarding how it functions and its pain points in both Mythic+ and raid environments, not from the topmost end, but also not a casual perspective. I don't coach people, but I log review every now and then and have players from RWF guilds in my DMs just as much players from guilds just stepping their toes into Mythic raiding.
 
 ## Table of Contents
 
 <TOCInline toHeading={3} toc={props.toc} exclude={['Table of Contents', 'Who Are You, Again?']} />
+
+## TLDR?
+
+- make <ShiftingSands /> follow <Prescience /> targeting logic and rework <DoubleTime /> so rng/variance of the spec gets reigned in
+- make <EbonMight /> scale down to a single target when only one player is affected to prevent additionally punishing DPS deaths when playing with <AugmentationEvoker abbreviated />
+- bring <InherentResistance /> and <DraconicLegacy /> to parity with <PreservationEvoker abbreviated /> and <DevastationEvoker abbreviated />
+- look into improving <Scalecommander /> essence economy
+- address stale talents that haven't seen tuning for years
+- fix <Zephyr /> range to bet at least 25y (currently 20) and make it more obvious/consistent what is AoE and what isn't
+- stay on top of the <SensePower /> maintenance list - we need an addon currently to make proper use of it
+- make it easier to evaluate an <AugmentationEvoker abbreviated /> player's actual throughput - consider changing the spec to provide exclusively flat damage or flat damage % buffs
 
 ## Midnight Season 1 Changes Fallout
 
@@ -53,7 +64,7 @@ frames.
 
 The former yields good enough results to be viable which is nice, definitely not something that could've been said last expansion. However, one targeting mechanism was not updated: that of <ShiftingSands />.
 
-Casting an Empower grants **your closest ally** (following generic buff rules preferring DPS specs) that isn't already affected by your <ShiftingSands /> its effect. It does not care, unlike <Prescience />, whether the target has cooldowns active.
+Casting an Empower applies <ShiftingSands /> to **your closest ally** that isn't already affected (following generic buff rules preferring DPS specs). It does not care, unlike <Prescience />, whether the target has cooldowns active.
 
 Such a solution is _somewhat_ fine for a raid setting in which everyone plays at roughly the same skill level and naturally scales well into competitive realms. It is however terrible for anything below that:
 
@@ -118,11 +129,11 @@ This aims to achieve three goals:
 In practice, I'd imagine a factor on this:
 
 - <EbonMight />s effect gets increased by the current crit chance at 50% rate, i.e. 30% crit means
-  15% increased Ebon Might value
+  15% increased <EbonMight /> value
 - <Prescience />s effect gets increased by 2x the crit chance _at cast time_, i.e. 30% crit means
   <Prescience /> goes from 3% base effect to `3*(1+2*0.3) = 4.8%`
 
-### Triple Punishment For Player Deaths in Dungeons
+### Extra Punishment For Player Deaths in Dungeons
 
 On key level 12 and above, you already get punished twice for a death:
 
@@ -131,7 +142,7 @@ On key level 12 and above, you already get punished twice for a death:
 
 However, when a DPS dies other than the <AugmentationEvoker />, you also lose ~50% of the buff damage <AugmentationEvoker abbreviated /> provides because <EbonMight /> does not adjust its scaling below 2 buff targets. Even when the DPS is quickly resurrected, you cannot necessarily reapply <EbonMight /> instantly depending when you casted it.
 
-Why? No other spec, especially no other _DPS_ spec, has this penalty. And even _with_ <EbonMight /> rescaling which is only reasonable, you still lost one of your <ShiftingSands /> and <Prescience /> and thus <FateMirror /> targets so even then, there's still some loss.
+Why? No other spec, especially no other _DPS_ spec, has this penalty. And even _with_ <EbonMight /> rescaling which is only reasonable, depending on the timing of the death, you definitely lost some <Prescience /> and thus <FateMirror /> value, and potentially also <ShiftingSands />.
 
 The solution is simple: have <EbonMight /> autoadjust even below 2 targets.
 
@@ -149,7 +160,7 @@ At the same time, <AugmentationEvoker /> repeatedly had its survivability nerfed
 
 ##### ...and how to solve it
 
-Some ideas were brought up before already: talent adjustments to <AspectsFavor /> and <MoltenBlood />. The latter wouldn't be very relevant for raid since it's yet another proactive defensive. And as much as I'd like to see changes to aforementioned dead talents, removing the penalties on <InherentResistance /> and <DraconicLegacy /> would already help.
+We'll get back to this further down when talking talents (especially <AspectsFavor /> and <MoltenBlood />), but removing the penalties on <InherentResistance /> and <DraconicLegacy /> would help.
 
 ### Half-Baked Set Design in 12.1
 
@@ -179,7 +190,7 @@ With 12.1.5, at least the first point was addressed, 9 weeks later. This still l
 
 > **Just untalent <Accretion />**...
 
-With the 2-set bonus reducing <Upheaval /> cooldown which also powers <ShiftingSands /> and <Accretion /> gating <RumblingEarth /> this is obviously not viable.
+With the 2-set bonus reducing <Upheaval /> cooldown which also powers <ShiftingSands /> and <Accretion /> gating <RumblingEarth /> this is obviously not reasonable.
 
 Very simple fix of making it fully extend and pandemic, yet here we are. Please think these more through.
 
@@ -192,11 +203,13 @@ Let's talk essence economy.
 <AugmentationEvoker /> has a similar problem, but experience varies heavily depending on the hero tree:
 - <Chronowarden /> has an essence overflow whenever you press <TipTheScales /> due to <TemporalBurst />
   - this effect is further amplified whenever combined with <TimeSkip /> and thus even more with <TomorrowToday />
-  - since <TemporalBurst /> affects <TipTheScales /> (more about that [directly below](#cancelauraing-is-optimal-for-chronowarden)) and <TemporalBurst /> as of 12.1.5 is also affected by <Timewalker />, it's active a considerable amount of time
+  - since <TemporalBurst /> affects <TipTheScales /> (more about that [further down](#cancelauraing-is-optimal-for-chronowarden)) and <TemporalBurst /> as of 12.1.5 is also affected by <Timewalker />, it's active a considerable amount of time
 - <Scalecommander /> can feel quite similar to <DevastationEvoker abbreviated />, except <AugmentationEvoker abbreviated /> has no <PowerSwell /> equivalent
   - you have less Haste inherently due to a lack of <TemporalBurst />, as Haste increases essence recovery speed
   - you could of course stack more Haste as we did in Season 1, but even at peak Haste of that season, you could end up in the Valley of Despair (press 8 <LivingFlame />, do not collect <EssenceBurst />, straight to jail)
   - currently, stacking more Haste is not very viable in this season since Mastery is so strong
+
+Regardless of stat distribution, <Scalecommander /> often battles with this problem. I'd love to see something like <PowerSwell /> for <AugmentationEvoker abbreviated />, our empowers _mostly_ desync naturally anyway so even in its scuffed current implementation (which really should just get addressed anyway), it could close the gap between the specs in terms of gameplay flow.
 
 ### Spec Talents and Lack of Diversity
 
@@ -225,7 +238,7 @@ It's so stale, the red talents we never pick have also not been picked in years,
 
 - <EmeraldBlossom /> does painfully little healing unless you have a <NourishingSands /> proc which is exceedingly unlikely in group content due to needing to last hit enemies which is extremely unlikely as <AugmentationEvoker abbreviated />
 - for <SymbioticBloom /> to activate, allies need to be close to also get affected
-- <SymbioticBloom /> does not reattribute in logs, so its impact is painful to work out - once you do actually go there you'll unfortunately find that its impact is irrelevant, in the low double digits of hps at best - it costing 2 points is also just not reasonable
+- <SymbioticBloom /> does not reattribute in logs, so its impact is painful to work out - once you do actually go there you'll unfortunately find that it is irrelevant, in the low double digits of hps at best - it costing 2 points is also just not reasonable
 
 The <ProlongLife /> / <DreamOfSpring /> choice node saw meme play in the DF S3 MDI for the start of Dawn of the Infinite: Murozond's Rise - never before, never after, as they're painfully costly and absurdly tuned.
 
@@ -247,7 +260,7 @@ Move it into the class tree and/or make it actually matter for <AugmentationEvok
 
 <SymbioticBloom />
 
-Make it baseline for <AugmentationEvoker abbreviated />s version of <EmeraldBlossom />. <EmeraldBlossom abbreviated /> is already basically never pressed, might aswell.
+Make it baseline for <AugmentationEvoker abbreviated />s version of <EmeraldBlossom /> which is already basically never pressed, might aswell.
 
 Absolute minimum: reduce it to a single-point talent. This would still be a cosmetic change of goodwill because you will still not see anyone play it.
 
@@ -255,11 +268,11 @@ Absolute minimum: reduce it to a single-point talent. This would still be a cosm
 
 Remove them and come up with interesting alternatives that compete with adjacent talents such as <FateMirror /> and <Anachronism /> that aren't massive DPS losses.
 
-I'll be blunt here: these talents feed into a spec fantasy - <AugmentationEvoker abbreviated /> as supporting healer - that never was adopted nor is viable in practice. Whenever you'd need better healing, you'd just add another healer in raid. Whenever you'd need better healing in keys, you either reroll the healer to a better spec, plan your defensives better, do a different pull, etc. - but you don't drop significant DPS for a vague HPS gain that may or may not be enough because it's stupidly hard to quantify.
+I'll be blunt here: these talents feed into a spec fantasy - <AugmentationEvoker abbreviated /> as supporting healer - that never was adopted nor viable in practice. Whenever you'd need better healing, you'd just add another healer in raid. Whenever you'd need better healing in keys, you either reroll the healer to a better spec, plan your defensives better, do a different pull, etc. - but you don't drop significant DPS for a vague HPS gain that may or may not be enough because it's stupidly hard to quantify.
 
 <AspectsFavor />
 
-There's a unique chance here to address [some later feedback](#survivability-issues-in-high-keys) when considering options for this talent. I'm thinking of a more player-focused approach rather than leaning into the now-gutted party-wide utility it originaly held. As a one pointer, it could become:
+There's a unique chance here to address [some earlier feedback](#survivability-issues-in-high-keys) when considering options for this talent. I'm thinking of a more player-focused approach rather than leaning into the now-gutted party-wide utility it originaly held. As a one pointer, it could become:
 
 ```
 Black Attunements is twice as effective on yourself.
@@ -279,7 +292,7 @@ In my opinion it's best to remove this talent entirely.
 
 <MoltenBlood />
 
-Many players have become enjoyers of <RegenerativeChitin /> and reasonably so, it's just really nice QoL that is not expensive to get. <MoltenBlood /> also had problematic use-cases in the past, being abused as external for other specs which - assuming here - by modern design decisions would not be an intended use. That of course could be solved by disallowing casting it on roles other than tanks.
+Many players have become enjoyers of <RegenerativeChitin /> and reasonably so, it's just really nice QoL that is not expensive to get. <MoltenBlood /> also had problematic use-cases in the past, being abused as external for other specs which by modern design decisions would not be an intended use. That of course could be solved by disallowing casting it on roles other than tanks.
 
 Absolute minimum: don't bind the scaling to spell power, but instead to max health of the target so it never gets forgotten again _and_ disallow casting it on non-tank roles, other than yourself:
 
@@ -289,7 +302,7 @@ When cast, Blistering Scales grants the target a shield that absorbs damage equa
 Can only be cast on yourself, or tank specializations.
 ```
 
-Note that this also ties in with solving some later mentioned survivability issues. In combination they'd likely be too strong, however I do particularily liking the idea of situationally giving up some damage in favor of surviving by having to cast <BlisteringScales /> on yourself.
+Note that this also ties in with solving aforementioned mentioned survivability issues. In combination they'd likely be too strong, however I do particularily liking the idea of situationally giving up some damage in favor of surviving by having to cast <BlisteringScales /> on yourself.
 
 ### Cancelauraing Is Optimal For Chronowarden
 
@@ -300,8 +313,6 @@ Pressing <TipTheScales /> triggers <TemporalBurst /> for <Chronowarden />.
 Thus, whenever you cannot combine <TipTheScales /> with <TimeSkip />, either because you simply don't have <TimeSkip /> or because it's on cooldown, it is optimal to instantly `/cancelaura Tip The Scales` (on a different keybind, e.g. <TimeSkip />!) to maximize the cooldown reduction on <TipTheScales />.
 
 This frankly quite stupid optimization has been a thing ever since we were graced with hero trees. It's been reported repeatedly. New players continuously trip over it. I refuse to believe this is intended. I also refuse to believe that literally nobody looked into addressing it. So why are we in this state still?
-
-The fix could be simple: <TemporalBurst /> is only granted once <TipTheScales /> is consumed.
 
 ### Zephyr and Intuitiveness
 
@@ -389,4 +400,3 @@ Nothing we can do here except wait and see what 12.2.5 holds or whenever the in-
 ##### ...and how to solve it
 
 This is going to be controversial and it would naturally take away some of the class fantasy, but my naive idea here is to "simply" have <AugmentationEvoker abbreviated /> only provide flat % damage increase as well as raw damage hits/procs such as e.g. <Bombardments /> or <FateMirror />. It also fixes synergy issues with other specs that (don't) scale well with mainstat for example, or specs that have no real cooldowns (<WowheadSpecIcon spec="bm-hunter">Beast Mastery Hunter</WowheadSpecIcon>, <WowheadSpecIcon spec="outlaw-rogue">Outlaw Rogue</WowheadSpecIcon>, <WowheadSpecIcon spec="fury-warrior">Fury Warrior</WowheadSpecIcon>). Clearly this entire reattribution thing hasn't been working out.
-
