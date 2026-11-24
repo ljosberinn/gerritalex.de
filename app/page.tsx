@@ -159,7 +159,7 @@ export default async function Page() {
         </ul>
       </div>
       {posts.length > MAX_DISPLAY && (
-        <div className="flex justify-end text-base leading-6 font-medium">
+        <div className="flex justify-end px-2 text-base leading-6 font-medium">
           <CustomLink
             href="/blog"
             className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"

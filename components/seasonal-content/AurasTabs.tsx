@@ -1,6 +1,6 @@
 'use client';
 
-import { Fragment, useCallback, useMemo, useState } from 'react';
+import { Fragment, useCallback, useState } from 'react';
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react';
 import { CustomLink } from '../CustomLink';
 import { WowheadIcon } from '../WowheadIcon';

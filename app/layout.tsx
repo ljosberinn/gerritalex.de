@@ -16,6 +16,9 @@ const space_grotesk = Space_Grotesk({
   variable: '--font-space-grotesk',
 });
 
+const railClassName =
+  'row-span-full row-start-1 hidden border-x border-x-(--pattern-fg) bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed 2xl:block';
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
   title: {
@@ -108,10 +111,16 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
       <body className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
         <ThemeProviders>
-          <div className="flex h-screen flex-col justify-between font-sans">
+          <div className="flex h-screen flex-col justify-between font-sans [--pattern-fg:var(--color-gray-950)]/5 dark:[--pattern-fg:var(--color-white)]/10">
             <SearchProvider searchDocumentsPath={siteMetadata.search.searchDocumentsPath}>
               <Header />
-              <main className="mb-auto">{children}</main>
+              <div className="grid flex-1 grid-cols-1 grid-rows-[1fr] md:grid-cols-[1fr_min(96rem,100%)_1fr]">
+                <div aria-hidden="true" className={`${railClassName} col-start-1`} />
+                <main className="col-start-1 row-start-1 flex flex-col space-y-6 p-6 md:col-start-2">
+                  {children}
+                </main>
+                <div aria-hidden="true" className={`${railClassName} col-start-3`} />
+              </div>
             </SearchProvider>
             <Footer />
           </div>

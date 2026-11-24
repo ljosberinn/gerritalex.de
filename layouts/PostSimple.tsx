@@ -68,7 +68,7 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
                     <CustomLink
                       href={`/${prev.path}`}
                       prefetch={prev.prefetch}
-                      className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                      className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 px-2"
                       aria-label={`Previous post: ${prev.title}`}
                     >
                       &larr; {prev.title}
@@ -80,7 +80,7 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
                     <CustomLink
                       href={`/${next.path}`}
                       prefetch={next.prefetch}
-                      className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                      className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 px-2"
                       aria-label={`Next post: ${next.title}`}
                     >
                       {next.title} &rarr;

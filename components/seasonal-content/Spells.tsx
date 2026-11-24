@@ -26,14 +26,25 @@ export type SpellsProps = {
 };
 
 export function Spells({ spells, wowheadBranch }: SpellsProps) {
+  const ordered = [
+    ...spells.filter((spell) => !spell.avoidable),
+    ...spells.filter((spell) => spell.avoidable),
+  ];
+
   return (
     <ul>
-      {spells.map((spell) => {
+      {ordered.map((spell) => {
         return (
-          <li key={spell.id}>
+          <li
+            key={spell.id}
+            className={
+              spell.avoidable ? 'opacity-50 transition-opacity hover:opacity-100' : undefined
+            }
+          >
             <WowheadLink branch={wowheadBranch} kind="spell" id={spell.id} icon={spell.icon}>
               {spell.name}
             </WowheadLink>
+            {spell.avoidable ? <span className="text-sm italic"> (avoidable)</span> : null}
             {spell.notes ? (
               <ul>
                 {spell.notes.map((note, i) => {

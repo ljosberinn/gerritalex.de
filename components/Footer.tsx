@@ -4,8 +4,8 @@ import { CustomLink } from './CustomLink';
 
 export function Footer() {
   return (
-    <footer className="mx-auto w-full max-w-4xl px-4 xl:max-w-7xl">
-      <div className="flex h-24 flex-col items-center justify-between py-2 md:h-auto md:flex-row">
+    <footer className="border-t border-t-(--pattern-fg)">
+      <div className="mx-auto flex h-24 w-full max-w-4xl flex-col items-center justify-between px-4 py-2 md:h-auto md:flex-row xl:max-w-7xl">
         <div className="flex items-center space-x-1">
           <CustomLink
             href={siteMetadata.siteRepo}

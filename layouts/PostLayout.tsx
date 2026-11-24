@@ -131,7 +131,7 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                         <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
                           Previous Article
                         </h2>
-                        <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
+                        <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 px-2">
                           <CustomLink href={`/${prev.path}`} prefetch={prev.prefetch}>
                             {prev.title}
                           </CustomLink>
@@ -143,7 +143,7 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                         <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
                           Next Article
                         </h2>
-                        <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
+                        <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 px-2">
                           <CustomLink href={`/${next.path}`} prefetch={next.prefetch}>
                             {next.title}
                           </CustomLink>
