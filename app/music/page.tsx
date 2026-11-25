@@ -1,40 +1,22 @@
 import { Fragment } from 'react';
 import data from '../../prebuild/music/data.json' with { type: 'json' };
+import lastfm from '../../prebuild/music/lastfm.json' with { type: 'json' };
 import { generatePageMetadata } from '../seo';
 import clsx from 'clsx';
-import { Image } from '../../components/Image';
 import concerts from '../../prebuild/music/concerts.json' with { type: 'json' };
 import { CustomLink } from '../../components/CustomLink';
+import { AlbumMosaic, type MosaicAlbum } from '../../components/AlbumMosaic';
+import { indexLibrary, playsFor } from '../../prebuild/music/plays';
 
-const filteredData = data
-  .filter((dataset) => dataset.visible === true)
-  .sort((a, b) => {
-    if (a.acquired === null && b.acquired === null) {
-      return 0;
-    }
+const TILE_TIERS: { span: MosaicAlbum['span']; share: number }[] = [
+  { span: 4, share: 0.01 },
+  { span: 3, share: 0.03 },
+  { span: 2, share: 0.1 },
+];
 
-    if (a.acquired === null) {
-      return -1;
-    }
+const basePath = process.env.BASE_PATH || '';
 
-    if (b.acquired === null) {
-      return 1;
-    }
-
-    const acquired = new Date(b.acquired).getTime() - new Date(a.acquired).getTime();
-
-    if (acquired !== 0) {
-      return acquired;
-    }
-
-    const artist = b.artist.localeCompare(a.artist);
-
-    if (artist !== 0) {
-      return artist;
-    }
-
-    return b.album.localeCompare(a.album);
-  });
+const filteredData = data.filter((dataset) => dataset.visible === true);
 
 const unacquiredAlbums = filteredData.filter((album) => album.acquired === null).length;
 
@@ -87,35 +69,139 @@ const readableGenresCombinedWithAnd = Object.entries(genresByOccurence)
   }, [])
   .join(' ');
 
-const byGenre = filteredData.reduce<Record<string, Set<Music>>>((acc, album) => {
-  if (!album.metadata) {
-    return acc;
+// most entries are MM-01-YYYY, some from 2025 DD-MM-YYYY, the newest ISO
+function parseAcquired(acquired: string): Date {
+  const iso = /^(\d{4})-(\d{2})-\d{2}$/.exec(acquired);
+
+  if (iso) {
+    return new Date(Date.UTC(Number(iso[1]), Number(iso[2]) - 1));
   }
 
-  for (let genre of album.metadata.genres) {
-    if (genre.includes('Black Metal') && genre !== 'Black Metal') {
-      genre = 'Black Metal';
-    } else if (
-      genre.includes('Rap') ||
-      genre.includes('Hip Hop') ||
-      genre.includes('Hip-Hop') ||
-      genre.includes('Deutschrap') ||
-      genre.includes('Trap')
-    ) {
-      genre = 'Rap';
-    }
+  const [first, second, year] = acquired.split('-').map(Number);
+  const month = second === 1 && first <= 12 ? first : second;
 
-    if (!(genre in acc)) {
-      acc[genre] = new Set();
-    }
+  return new Date(Date.UTC(year, month - 1));
+}
 
-    acc[genre].add(album);
+function formatAcquisition(acquired: string | null): string | null {
+  if (acquired === null) {
+    return null;
   }
 
-  return acc;
-}, {});
+  const since = parseAcquired(acquired).toLocaleDateString('en-US', {
+    month: 'short',
+    year: 'numeric',
+    timeZone: 'UTC',
+  });
 
-const byGenreOccurrence = Object.entries(byGenre).sort((a, b) => b[1].size - a[1].size);
+  return `Owned since ${since}`;
+}
+
+function formatRuntime(seconds: number | null | undefined): string | null {
+  if (!seconds || seconds <= 0) {
+    return null;
+  }
+
+  const minutes = Math.round(seconds / 60);
+
+  return minutes < 60 ? `${minutes} min` : `${Math.floor(minutes / 60)} h ${minutes % 60} min`;
+}
+
+function shuffle<T>(items: T[]): T[] {
+  const shuffled = [...items];
+
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+
+  return shuffled;
+}
+
+function formatListening(seconds: number, plays: number): string | null {
+  if (plays === 0) {
+    return null;
+  }
+
+  const time =
+    seconds < 3600
+      ? `${Math.max(1, Math.round(seconds / 60))} min`
+      : `${Math.round(seconds / 3600)} h`;
+
+  return `≈ ${time} listened · ${plays.toLocaleString('en-US')} ${plays === 1 ? 'play' : 'plays'}`;
+}
+
+type Album = (typeof filteredData)[number];
+
+// for releases whose Discogs tracklist count is unknown
+const ASSUMED_TRACK_COUNT = 9;
+
+function averageTrackLength(album: Album): number | null {
+  const runtime = album.metadata?.runtime;
+
+  if (!runtime || runtime <= 0) {
+    return null;
+  }
+
+  return runtime / (album.metadata?.tracks || ASSUMED_TRACK_COUNT);
+}
+
+const knownTrackLengths = filteredData
+  .map(averageTrackLength)
+  .filter((length) => length !== null)
+  .sort((a, b) => a - b);
+
+const medianTrackLength = knownTrackLengths[Math.floor(knownTrackLengths.length / 2)];
+
+const library = indexLibrary(lastfm);
+
+// last.fm counts every track scrobble as a play of its album, so plays × track length ≈ time listened
+const albumsWithListening = filteredData.map((album) => {
+  const plays = playsFor(album, library);
+
+  return { album, plays, listening: plays * (averageTrackLength(album) ?? medianTrackLength) };
+});
+
+const rankedByListening = albumsWithListening
+  .filter(({ listening }) => listening > 0)
+  .sort((a, b) => b.listening - a.listening);
+
+const spans = new Map<Album, MosaicAlbum['span']>();
+let rank = 0;
+
+for (const { span, share } of TILE_TIERS) {
+  const end = Math.min(rank + Math.round(filteredData.length * share), rankedByListening.length);
+
+  for (; rank < end; rank++) {
+    spans.set(rankedByListening[rank].album, span);
+  }
+}
+
+const mosaicAlbums: MosaicAlbum[] = shuffle(
+  albumsWithListening.map(({ album, plays, listening }) => {
+    const span = spans.get(album) ?? 1;
+
+    return {
+      key: `${album.id ?? `${album.artist} ${album.album}`}`,
+      artist: album.artist,
+      album: album.album,
+      year: album.metadata?.release.year || null,
+      styles: album.metadata?.genres.join(', ') ?? '',
+      runtime: formatRuntime(album.metadata?.runtime),
+      acquisition: formatAcquisition(album.acquired),
+      wanted: album.acquired === null,
+      listening: formatListening(listening, plays),
+      span,
+      image:
+        span > 1
+          ? `${basePath}/static/images/music/${album.id}-front.jpg`
+          : `${basePath}/static/images/music/thumbs/${album.id}-front.webp`,
+      discogs: album.id
+        ? `https://www.discogs.com/release/${album.id}`
+        : `https://www.discogs.com/search?${new URLSearchParams({ q: `${album.artist} ${album.album}` })}`,
+    };
+  })
+);
 
 const ignoredArtists = new Set(['The Rangers', 'The 58 Cajon Rollers', 'PiXie Meet', 'Shining']);
 
@@ -147,8 +233,6 @@ export const metadata = generatePageMetadata({
   description: `An exhaustive list of the ${filteredData.length - unacquiredAlbums} albums I physically own. The most common genres among these are ${readableGenresCombinedWithAnd}.`,
 });
 
-export type Music = (typeof data)[0];
-
 export default async function MusicPage() {
   return (
     <>
@@ -161,127 +245,13 @@ export default async function MusicPage() {
           Albums I own either on LP or CD as well as those that I plan on buying (faded out), but
           are usually hard to acquire. The most common genres among these{' '}
           {filteredData.length - unacquiredAlbums} albums are <b>{readableGenresCombinedWithAnd}</b>
-          . Beyond that, I enjoy <b>Vaporwave, Goth Rock and some Trance</b>. Ordered by acquisition
-          date, beginning with the latest.
+          . Beyond that, I enjoy <b>Vaporwave, Goth Rock and some Trance</b>. The more I've listened
+          to an album, the bigger its cover. Hover or tap a cover for details.
         </p>
 
-        {Object.entries(byGenreOccurrence).map(([, [genre, albums]]) => {
-          const albumsSortedAlphabeticallyByArtistAndAlbum = Array.from(albums).sort((a, b) => {
-            const aArtist = a.artist.toLowerCase();
-            const bArtist = b.artist.toLowerCase();
-
-            if (aArtist !== bArtist) {
-              return aArtist.localeCompare(bArtist);
-            }
-
-            const aAlbum = a.album.toLowerCase();
-            const bAlbum = b.album.toLowerCase();
-
-            return aAlbum.localeCompare(bAlbum);
-          });
-
-          const subgenres = albumsSortedAlphabeticallyByArtistAndAlbum.reduce<
-            Record<string, number>
-          >((acc, album) => {
-            if (album.metadata && album.metadata.genres.length > 0) {
-              for (const genre of album.metadata.genres) {
-                if (genre in acc) {
-                  acc[genre] += 1;
-                } else {
-                  acc[genre] = 1;
-                }
-              }
-            }
-
-            return acc;
-          }, {});
-
-          const topThreeOccurringSubgenres = Object.entries(subgenres)
-            .sort((a, b) => b[1] - a[1])
-            .slice(0, 3)
-            .map(([subgenre]) => subgenre)
-            .reduce<string[]>((acc, subgenre, index, arr) => {
-              if (index === 0) {
-                acc.push(subgenre);
-                return acc;
-              }
-
-              if (index !== arr.length - 1) {
-                acc.push(`, ${subgenre}`);
-                return acc;
-              }
-
-              acc.push(' and ' + subgenre);
-
-              return acc;
-            }, []);
-
-          return (
-            <section key={genre} className="mx-auto" aria-labelledby={`${genre}-title`}>
-              <div className={`p-8`}>
-                <h2
-                  id={`${genre}-title`}
-                  className="text-3xl font-black tracking-wide uppercase underline decoration-black/50 decoration-6 underline-offset-8 md:text-5xl md:decoration-10 2xl:text-7xl dark:decoration-white/50"
-                >
-                  {genre}
-                </h2>
-
-                {albumsSortedAlphabeticallyByArtistAndAlbum.length > 1 ? (
-                  <p className="mt-8 2xl:text-lg">
-                    {albumsSortedAlphabeticallyByArtistAndAlbum.length} releases
-                    {topThreeOccurringSubgenres.length > 1 ? (
-                      <>
-                        , spanning <b>{topThreeOccurringSubgenres.join('')}</b>.
-                      </>
-                    ) : (
-                      '.'
-                    )}
-                  </p>
-                ) : null}
-              </div>
-
-              <div className="mx-auto grid max-w-7xl grid-cols-[repeat(auto-fit,_minmax(120px,_120px))] gap-4 p-4 md:max-w-9/10 md:gap-6">
-                {albumsSortedAlphabeticallyByArtistAndAlbum.map((album) => {
-                  const classes = [
-                    'rounded-md border-2 transition ease-in-out hover:opacity-100 shadow-inner hover:shadow-none h-[120px] w-[120px] overflow-hidden object-cover border-slate-300 dark:border-slate-700 hover:border-1 hover:border-none',
-                  ];
-
-                  if (album.acquired === null) {
-                    classes.push('border-red-500 opacity-25');
-                  }
-
-                  const title = `${[album.artist, album.album].join(' - ')}${album.metadata?.release.year ? `, ${album.metadata.release.year}` : ''}`;
-
-                  return (
-                    <CustomLink
-                      href={
-                        album.id
-                          ? `https://www.discogs.com/release/${album.id}`
-                          : `https://www.discogs.com/search?q=${album.artist}+${album.album}`
-                      }
-                      key={album.id}
-                      className="opacity-80 hover:opacity-100"
-                    >
-                      {
-                        <Image
-                          title={title}
-                          alt={album.album}
-                          width={120}
-                          height={120}
-                          className={clsx(classes)}
-                          loading={'lazy'}
-                          src={`/static/images/music/thumbs/${album.id}-front.webp`}
-                        />
-                      }
-
-                      <span className="sr-only">{title}</span>
-                    </CustomLink>
-                  );
-                })}
-              </div>
-            </section>
-          );
-        })}
+        <div className="mx-auto max-w-7xl py-8 md:max-w-9/10 md:p-4">
+          <AlbumMosaic albums={mosaicAlbums} />
+        </div>
       </section>
       <section className="px-4">
         <h1 className="pb-6 text-3xl leading-9 font-bold tracking-tight text-gray-700 sm:text-4xl sm:leading-10 md:text-4xl md:leading-14 dark:text-gray-300">

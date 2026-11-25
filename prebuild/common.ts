@@ -13,6 +13,13 @@ export const discogsOptions: RequestInit = {
   },
 };
 
+export const lastFmOptions: RequestInit = {
+  method: 'GET',
+  headers: {
+    'User-Agent': 'XepherisPersonalWebsite/1.0 +https://gerritalex.de/music',
+  },
+};
+
 export const TMDB_IMAGE_BASE = 'https://image.tmdb.org/t/p/w220_and_h330_face';
 
 export type Nullable<T> = T | null;
