@@ -27,7 +27,7 @@ const filteredData = data
       return acquired;
     }
 
-    const artist = b.artist.localeCompare(b.artist);
+    const artist = b.artist.localeCompare(a.artist);
 
     if (artist !== 0) {
       return artist;

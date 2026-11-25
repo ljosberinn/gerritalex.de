@@ -8,6 +8,7 @@ import tagData from '../app/tag-data.json' with { type: 'json' };
 import { CustomLink } from '../components/CustomLink';
 import siteMetadata from '../data/siteMetadata';
 import { Tag } from '../components/Tag';
+import { Image } from '../components/Image';
 import clsx from 'clsx';
 
 interface PaginationProps {
@@ -17,45 +18,6 @@ interface PaginationProps {
 interface ListLayoutProps {
   posts: CoreContent<Blog>[];
   title: string;
-}
-
-function Pagination({ totalPages, currentPage }: PaginationProps) {
-  const pathname = usePathname();
-  const prevPage = currentPage - 1 > 0;
-  const nextPage = currentPage + 1 <= totalPages;
-
-  return (
-    <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-      <nav className="flex justify-between">
-        {!prevPage && (
-          <button className="cursor-auto disabled:opacity-50" disabled={!prevPage}>
-            Previous
-          </button>
-        )}
-        {prevPage && (
-          <CustomLink
-            href={currentPage - 1 === 1 ? `${pathname}/` : `${pathname}/?page=${currentPage - 1}`}
-            rel="prev"
-          >
-            Previous
-          </CustomLink>
-        )}
-        <span>
-          {currentPage} of {totalPages}
-        </span>
-        {!nextPage && (
-          <button className="cursor-auto disabled:opacity-50" disabled={!nextPage}>
-            Next
-          </button>
-        )}
-        {nextPage && (
-          <CustomLink href={`${pathname}/?page=${currentPage + 1}`} rel="next">
-            Next
-          </CustomLink>
-        )}
-      </nav>
-    </div>
-  );
 }
 
 export function ListLayoutWithTags({ posts, title }: ListLayoutProps) {
@@ -129,37 +91,18 @@ export function ListLayoutWithTags({ posts, title }: ListLayoutProps) {
                     key={path}
                     id={slug}
                     className={clsx(
-                      'relative py-5',
+                      'group relative overflow-hidden py-5',
                       includeImageInPreview
                         ? null
                         : 'opacity-80 transition-opacity duration-250 ease-in-out hover:opacity-100'
                     )}
                   >
-                    {includeImageInPreview ? (
-                      <style>
-                        {`
-                      #${slug}:before {
-                        content: "";
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        background-image: url(${image});
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        background-position: center;
-                        filter: grayscale(25%);
-                        opacity: 0.15;
-                        transition: opacity 0.25s ease-in-out;
-                      }
-                      
-                      #${slug}:hover:before {
-                        filter: grayscale(0%);
-                        opacity: 0.25;
-                      }
-                      `}
-                      </style>
+                    {includeImageInPreview && image ? (
+                      <Image
+                        src={image}
+                        alt=""
+                        className="pointer-events-none absolute top-1/2 left-1/2 min-h-full max-w-none min-w-full -translate-x-1/2 -translate-y-1/2 opacity-15 grayscale-25 transition-opacity duration-250 ease-in-out group-hover:opacity-25 group-hover:grayscale-0"
+                      />
                     ) : null}
                     <article className="relative mx-auto max-w-4xl px-2 xl:max-w-6xl">
                       <dl>

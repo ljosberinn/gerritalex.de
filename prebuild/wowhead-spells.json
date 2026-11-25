@@ -155,6 +155,10 @@
     "name": "Emerald Blossom",
     "icon": "ability_evoker_emeraldblossom"
   },
+  "369372": {
+    "name": "Firestorm",
+    "icon": "ability_evoker_firestorm"
+  },
   "369459": {
     "name": "Source of Magic",
     "icon": "ability_evoker_blue_01"
@@ -270,6 +274,10 @@
   "376166": {
     "name": "Draconic Legacy",
     "icon": "inv_helm_mail_dracthyrquest_b_02"
+  },
+  "376888": {
+    "name": "Tyranny",
+    "icon": "ability_evoker_dragonrage2"
   },
   "378441": {
     "name": "Time Stop",
@@ -414,6 +422,10 @@
   "409676": {
     "name": "Chrono Ward",
     "icon": "ability_evoker_bronze_01"
+  },
+  "409776": {
+    "name": "Obsidian Shards",
+    "icon": "inv_elemental_crystal_shadow"
   },
   "410253": {
     "name": "Perilous Fate",
@@ -570,6 +582,10 @@
   "441180": {
     "name": "Hardened Scales",
     "icon": "inv_10_skinning_scales_black"
+  },
+  "441245": {
+    "name": "Onslaught",
+    "icon": "spell_fire_soulburn"
   },
   "441253": {
     "name": "Nimble Flyer",
@@ -902,6 +918,10 @@
   "1271687": {
     "name": "Rising Fury",
     "icon": "inv12_apextalent_evoker_risingfury"
+  },
+  "1271799": {
+    "name": "Risen Fury",
+    "icon": "ability_evoker_oppressingroar2"
   },
   "1292321": {
     "name": "Unbound Flame",

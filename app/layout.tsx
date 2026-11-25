@@ -116,7 +116,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               <Header />
               <div className="grid flex-1 grid-cols-1 grid-rows-[1fr] md:grid-cols-[1fr_min(96rem,100%)_1fr]">
                 <div aria-hidden="true" className={`${railClassName} col-start-1`} />
-                <main className="col-start-1 row-start-1 flex flex-col space-y-6 p-6 md:col-start-2">
+                <main className="col-start-1 row-start-1 flex flex-col space-y-6 md:col-start-2">
                   {children}
                 </main>
                 <div aria-hidden="true" className={`${railClassName} col-start-3`} />

@@ -91,7 +91,7 @@ export function rehypeSectionize() {
 
 type JsxAttribute = { type: string; name?: string; value?: unknown };
 
-function localImageFile(url: unknown): string | null {
+export function localImageFile(url: unknown): string | null {
   if (typeof url !== 'string' || !url.startsWith('/')) {
     return null;
   }

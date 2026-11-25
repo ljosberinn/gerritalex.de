@@ -172,7 +172,7 @@ export default async function SeriesPage() {
         const series = sortByYearDesc(byState[state]);
 
         return (
-          <section key={state} className="mx-auto" aria-labelledby={`${state}-title`}>
+          <section key={state} aria-labelledby={`${state}-title`}>
             <div className={`p-8 ${stateColor[state]}`}>
               <h2
                 id={`${state}-title`}

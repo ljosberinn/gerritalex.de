@@ -130,20 +130,6 @@ async function structuredData(
   };
 }
 
-function titleWithUpdate(title: string, date: string, lastmod?: string) {
-  if (lastmod) {
-    const updated = new Date(lastmod);
-    const published = new Date(date);
-
-    if (updated.getTime() - published.getTime() > 1000 * 60 * 60 * 24) {
-      const [, month, day] = updated.toDateString().split(' ');
-      return `[Updated ${month} ${day.startsWith('0') ? day.slice(1) : day}] ${title}`;
-    }
-  }
-
-  return title;
-}
-
 const blogs = defineCollection({
   name: 'blogs',
   typeName: 'Blog',
@@ -171,7 +157,6 @@ const blogs = defineCollection({
 
     return {
       ...doc,
-      title: titleWithUpdate(doc.title, doc.date, doc.lastmod),
       mdx,
       toc,
       slug: doc._meta.path,

@@ -3,14 +3,25 @@ import { sortPosts, allCoreContent, formatDate } from '../lib/content';
 import { CustomLink } from '../components/CustomLink';
 import { RandomLyrics } from '../components/RandomLyrics.';
 import { Tag } from '../components/Tag';
+import { Image } from '../components/Image';
 import siteMetadata from '../data/siteMetadata';
+import { localImageFile } from '../lib/mdx-plugins';
 import clsx from 'clsx';
+import sharp from 'sharp';
+import type { CSSProperties } from 'react';
 
 const MAX_DISPLAY = 10;
 
 export default async function Page() {
   const sortedPosts = sortPosts(allBlogs);
   const posts = allCoreContent(sortedPosts);
+  const bannerWidths = await Promise.all(
+    posts.slice(0, MAX_DISPLAY).map(async ({ images, includeImageInPreview }) => {
+      const file = includeImageInPreview ? localImageFile(images?.[0]) : null;
+
+      return file ? (await sharp(file).metadata()).width : undefined;
+    })
+  );
 
   return (
     <>
@@ -32,55 +43,50 @@ export default async function Page() {
           {posts
             .slice(0, MAX_DISPLAY)
             .map(
-              ({
-                slug,
-                date,
-                title,
-                summary,
-                tags,
-                lastmod,
-                images,
-                includeImageInPreview,
-                prefetch,
-              }) => {
+              (
+                {
+                  slug,
+                  date,
+                  title,
+                  summary,
+                  tags,
+                  lastmod,
+                  images,
+                  includeImageInPreview,
+                  prefetch,
+                },
+                index
+              ) => {
                 const image = images?.[0];
+                const bannerWidth = bannerWidths[index];
 
                 return (
                   <li
                     key={slug}
                     id={slug}
                     className={clsx(
-                      'relative py-10',
+                      'group @container relative overflow-hidden py-10',
                       includeImageInPreview
                         ? null
                         : 'opacity-80 transition-opacity duration-250 ease-in-out hover:opacity-100'
                     )}
                   >
-                    {includeImageInPreview ? (
-                      <style>
-                        {`
-                      #${slug}:before {
-                        content: "";
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        background-image: url(${image});
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        background-position: center;
-                        filter: grayscale(25%);
-                        opacity: 0.15;
-                        transition: opacity 0.25s ease-in-out;
-                      }
-                      
-                      #${slug}:hover:before {
-                        filter: grayscale(0%);
-                        opacity: 0.25;
-                      }
-                      `}
-                      </style>
+                    {includeImageInPreview && image ? (
+                      <Image
+                        src={image}
+                        alt=""
+                        className={clsx(
+                          'pointer-events-none absolute top-1/2 left-1/2 min-h-full max-w-none min-w-full -translate-x-1/2 -translate-y-1/2 opacity-15 grayscale-25 transition-opacity duration-250 ease-in-out group-hover:opacity-25 group-hover:grayscale-0 xl:left-0 xl:w-full xl:translate-x-0 xl:object-cover',
+                          bannerWidth && 'blur-(--banner-blur)'
+                        )}
+                        style={
+                          bannerWidth
+                            ? ({
+                                '--banner-blur': `clamp(0px, (100cqw - ${bannerWidth}px) * 3 / ${bannerWidth}, 2px)`,
+                              } as CSSProperties)
+                            : undefined
+                        }
+                      />
                     ) : null}
                     <article className="relative mx-auto max-w-4xl px-2 xl:max-w-6xl">
                       <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
@@ -159,7 +165,7 @@ export default async function Page() {
         </ul>
       </div>
       {posts.length > MAX_DISPLAY && (
-        <div className="flex justify-end px-2 text-base leading-6 font-medium">
+        <div className="mb-2 flex justify-end px-2 text-base leading-6 font-medium">
           <CustomLink
             href="/blog"
             className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"

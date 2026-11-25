@@ -11,7 +11,7 @@ export function Footer() {
             href={siteMetadata.siteRepo}
             className="hover:text-primary-500 dark:hover:text-primary-500 text-gray-500 underline underline-offset-4 dark:text-gray-400"
           >
-            <span>View source</span>
+            <span>View Source</span>
           </CustomLink>
 
           <span className="px-1 text-gray-400 dark:text-gray-500">-</span>
