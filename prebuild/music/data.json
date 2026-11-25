@@ -11,7 +11,8 @@
       "release": {
         "year": 2011
       },
-      "runtime": 3244
+      "runtime": 3244,
+      "tracks": 9
     },
     "visible": true
   },
@@ -28,7 +29,8 @@
       "release": {
         "year": 2006
       },
-      "runtime": 3589
+      "runtime": 3589,
+      "tracks": 8
     }
   },
   {
@@ -44,7 +46,8 @@
       "release": {
         "year": 2010
       },
-      "runtime": 4408
+      "runtime": 4408,
+      "tracks": 10
     }
   },
   {
@@ -76,7 +79,8 @@
       "release": {
         "year": 2013
       },
-      "runtime": 2878
+      "runtime": 2878,
+      "tracks": 9
     }
   },
   {
@@ -93,7 +97,8 @@
       "release": {
         "year": 2009
       },
-      "runtime": 3505
+      "runtime": 3505,
+      "tracks": 13
     }
   },
   {
@@ -124,7 +129,8 @@
       "release": {
         "year": 2000
       },
-      "runtime": 2796
+      "runtime": 2796,
+      "tracks": 9
     },
     "visible": true
   },
@@ -140,7 +146,8 @@
       "release": {
         "year": 2001
       },
-      "runtime": 2657
+      "runtime": 2657,
+      "tracks": 8
     },
     "visible": true
   },
@@ -156,7 +163,8 @@
       "release": {
         "year": 2005
       },
-      "runtime": 2771
+      "runtime": 2771,
+      "tracks": 8
     },
     "visible": true
   },
@@ -172,7 +180,8 @@
       "release": {
         "year": 2011
       },
-      "runtime": 2913
+      "runtime": 2913,
+      "tracks": 8
     },
     "visible": true
   },
@@ -188,7 +197,8 @@
       "release": {
         "year": 2009
       },
-      "runtime": 5504
+      "runtime": 5504,
+      "tracks": 10
     },
     "visible": true
   },
@@ -220,7 +230,8 @@
       "release": {
         "year": 2017
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 14
     },
     "visible": true
   },
@@ -236,7 +247,8 @@
       "release": {
         "year": 2015
       },
-      "runtime": 2387
+      "runtime": 2387,
+      "tracks": 10
     },
     "visible": true
   },
@@ -253,7 +265,8 @@
       "release": {
         "year": 2012
       },
-      "runtime": 3095
+      "runtime": 3095,
+      "tracks": 11
     }
   },
   {
@@ -268,7 +281,8 @@
       "release": {
         "year": 2014
       },
-      "runtime": 2351
+      "runtime": 2351,
+      "tracks": 10
     },
     "visible": true
   },
@@ -284,7 +298,8 @@
       "release": {
         "year": 2014
       },
-      "runtime": 2435
+      "runtime": 2435,
+      "tracks": 7
     },
     "visible": true
   },
@@ -300,7 +315,8 @@
       "release": {
         "year": 2011
       },
-      "runtime": 3621
+      "runtime": 3621,
+      "tracks": 4
     },
     "visible": true
   },
@@ -317,7 +333,8 @@
       "release": {
         "year": 1999
       },
-      "runtime": 1619
+      "runtime": 1619,
+      "tracks": 4
     }
   },
   {
@@ -338,7 +355,8 @@
       "release": {
         "year": 2000
       },
-      "runtime": 2402
+      "runtime": 2402,
+      "tracks": 7
     },
     "visible": true
   },
@@ -361,7 +379,8 @@
       "release": {
         "year": 2013
       },
-      "runtime": 4191
+      "runtime": 4191,
+      "tracks": 15
     }
   },
   {
@@ -377,7 +396,8 @@
       "release": {
         "year": 2015
       },
-      "runtime": 2703
+      "runtime": 2703,
+      "tracks": 11
     },
     "visible": true
   },
@@ -393,7 +413,8 @@
       "release": {
         "year": 2010
       },
-      "runtime": 3136
+      "runtime": 3136,
+      "tracks": 8
     },
     "visible": true
   },
@@ -410,7 +431,8 @@
       "release": {
         "year": 1994
       },
-      "runtime": 2671
+      "runtime": 2671,
+      "tracks": 4
     },
     "visible": true
   },
@@ -426,7 +448,8 @@
       "release": {
         "year": 2017
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 12
     },
     "visible": true
   },
@@ -443,7 +466,8 @@
       "release": {
         "year": 2011
       },
-      "runtime": 1364
+      "runtime": 1364,
+      "tracks": 5
     }
   },
   {
@@ -458,7 +482,8 @@
       "release": {
         "year": 2011
       },
-      "runtime": 2909
+      "runtime": 2909,
+      "tracks": 13
     },
     "visible": true
   },
@@ -475,7 +500,8 @@
       "release": {
         "year": 2018
       },
-      "runtime": 2853
+      "runtime": 2853,
+      "tracks": 6
     }
   },
   {
@@ -491,7 +517,8 @@
       "release": {
         "year": 2013
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 12
     }
   },
   {
@@ -507,7 +534,8 @@
       "release": {
         "year": 2009
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 14
     }
   },
   {
@@ -522,7 +550,8 @@
       "release": {
         "year": 2016
       },
-      "runtime": 3274
+      "runtime": 3274,
+      "tracks": 5
     },
     "visible": true
   },
@@ -554,7 +583,8 @@
       "release": {
         "year": 2018
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 12
     },
     "visible": true
   },
@@ -577,7 +607,8 @@
       "release": {
         "year": 2006
       },
-      "runtime": 2531
+      "runtime": 2531,
+      "tracks": 10
     },
     "visible": true
   },
@@ -594,7 +625,8 @@
       "release": {
         "year": 2011
       },
-      "runtime": null
+      "runtime": 4319,
+      "tracks": 12
     }
   },
   {
@@ -610,7 +642,8 @@
       "release": {
         "year": 2006
       },
-      "runtime": 3146
+      "runtime": 3146,
+      "tracks": 13
     },
     "visible": true
   },
@@ -627,7 +660,8 @@
       "release": {
         "year": 2017
       },
-      "runtime": 3014
+      "runtime": 3014,
+      "tracks": 13
     }
   },
   {
@@ -642,7 +676,8 @@
       "release": {
         "year": 2016
       },
-      "runtime": 3252
+      "runtime": 3252,
+      "tracks": 16
     },
     "visible": true
   },
@@ -659,7 +694,8 @@
       "release": {
         "year": 2003
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 14
     }
   },
   {
@@ -674,7 +710,8 @@
       "release": {
         "year": 2010
       },
-      "runtime": 2727
+      "runtime": 2727,
+      "tracks": 6
     },
     "visible": true
   },
@@ -690,7 +727,8 @@
       "release": {
         "year": 2006
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 12
     },
     "visible": true
   },
@@ -726,7 +764,8 @@
       "release": {
         "year": 2023
       },
-      "runtime": 4176
+      "runtime": 4176,
+      "tracks": 9
     }
   },
   {
@@ -741,7 +780,8 @@
       "release": {
         "year": 2017
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 8
     },
     "visible": true
   },
@@ -757,7 +797,8 @@
       "release": {
         "year": 2016
       },
-      "runtime": 817
+      "runtime": 817,
+      "tracks": 2
     },
     "visible": true
   },
@@ -773,7 +814,8 @@
       "release": {
         "year": 2012
       },
-      "runtime": 4674
+      "runtime": 4674,
+      "tracks": 8
     },
     "visible": true
   },
@@ -789,7 +831,8 @@
       "release": {
         "year": 2009
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 14
     },
     "visible": true
   },
@@ -797,6 +840,9 @@
     "acquired": "05-01-2011",
     "artist": "Drowning the Light",
     "album": "Blood of the Ancients",
+    "lastfm": [
+      "The Blood of the Ancients"
+    ],
     "id": 2015942,
     "metadata": {
       "genres": [
@@ -805,7 +851,8 @@
       "release": {
         "year": 2009
       },
-      "runtime": 2457
+      "runtime": 2457,
+      "tracks": 9
     },
     "visible": true
   },
@@ -821,7 +868,8 @@
       "release": {
         "year": 2010
       },
-      "runtime": 2725
+      "runtime": 2725,
+      "tracks": 9
     },
     "visible": true
   },
@@ -837,7 +885,8 @@
       "release": {
         "year": 2005
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 10
     },
     "visible": true
   },
@@ -854,7 +903,8 @@
       "release": {
         "year": 2014
       },
-      "runtime": 2975
+      "runtime": 2975,
+      "tracks": 9
     }
   },
   {
@@ -869,7 +919,8 @@
       "release": {
         "year": 2005
       },
-      "runtime": 3297
+      "runtime": 3297,
+      "tracks": 7
     },
     "visible": true
   },
@@ -885,7 +936,8 @@
       "release": {
         "year": 2012
       },
-      "runtime": 3017
+      "runtime": 3017,
+      "tracks": 6
     },
     "visible": true
   },
@@ -901,7 +953,8 @@
       "release": {
         "year": 2014
       },
-      "runtime": 2168
+      "runtime": 2168,
+      "tracks": 10
     },
     "visible": true
   },
@@ -917,7 +970,8 @@
       "release": {
         "year": 2016
       },
-      "runtime": 2606
+      "runtime": 2606,
+      "tracks": 11
     },
     "visible": true
   },
@@ -934,7 +988,8 @@
       "release": {
         "year": 2004
       },
-      "runtime": 3006
+      "runtime": 3006,
+      "tracks": 11
     }
   },
   {
@@ -950,7 +1005,8 @@
       "release": {
         "year": 2013
       },
-      "runtime": 2206
+      "runtime": 2206,
+      "tracks": 9
     }
   },
   {
@@ -966,7 +1022,8 @@
       "release": {
         "year": 2012
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 12
     }
   },
   {
@@ -981,7 +1038,8 @@
       "release": {
         "year": 2015
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 6
     },
     "visible": true
   },
@@ -1003,7 +1061,8 @@
       "release": {
         "year": 2014
       },
-      "runtime": 2502
+      "runtime": 2502,
+      "tracks": 14
     },
     "visible": true
   },
@@ -1019,7 +1078,8 @@
       "release": {
         "year": 2019
       },
-      "runtime": 2238
+      "runtime": 2238,
+      "tracks": 12
     },
     "visible": true
   },
@@ -1035,7 +1095,8 @@
       "release": {
         "year": 2019
       },
-      "runtime": 4412
+      "runtime": 4412,
+      "tracks": 9
     },
     "visible": true
   },
@@ -1052,7 +1113,8 @@
       "release": {
         "year": 2011
       },
-      "runtime": 4130
+      "runtime": 4130,
+      "tracks": 13
     }
   },
   {
@@ -1068,7 +1130,8 @@
       "release": {
         "year": 2005
       },
-      "runtime": 3546
+      "runtime": 3546,
+      "tracks": 20
     }
   },
   {
@@ -1084,7 +1147,8 @@
       "release": {
         "year": 2007
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 14
     }
   },
   {
@@ -1115,7 +1179,8 @@
       "release": {
         "year": 2008
       },
-      "runtime": 2882
+      "runtime": 2882,
+      "tracks": 12
     },
     "visible": true
   },
@@ -1131,7 +1196,8 @@
       "release": {
         "year": 2013
       },
-      "runtime": 2763
+      "runtime": 2763,
+      "tracks": 8
     },
     "visible": true
   },
@@ -1148,7 +1214,8 @@
       "release": {
         "year": 2011
       },
-      "runtime": 2729
+      "runtime": 2729,
+      "tracks": 10
     }
   },
   {
@@ -1164,7 +1231,8 @@
       "release": {
         "year": 2002
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 11
     }
   },
   {
@@ -1180,7 +1248,8 @@
       "release": {
         "year": 2006
       },
-      "runtime": 3884
+      "runtime": 3884,
+      "tracks": 9
     }
   },
   {
@@ -1195,7 +1264,8 @@
       "release": {
         "year": 2004
       },
-      "runtime": 3544
+      "runtime": 3544,
+      "tracks": 7
     },
     "visible": true
   },
@@ -1211,7 +1281,8 @@
       "release": {
         "year": 2009
       },
-      "runtime": 3248
+      "runtime": 3248,
+      "tracks": 7
     },
     "visible": true
   },
@@ -1247,7 +1318,8 @@
       "release": {
         "year": 2008
       },
-      "runtime": 3036
+      "runtime": 3036,
+      "tracks": 13
     },
     "visible": true
   },
@@ -1264,7 +1336,8 @@
       "release": {
         "year": 2015
       },
-      "runtime": 2900
+      "runtime": 2900,
+      "tracks": 13
     }
   },
   {
@@ -1280,7 +1353,8 @@
       "release": {
         "year": 2011
       },
-      "runtime": 3052
+      "runtime": 3052,
+      "tracks": 13
     }
   },
   {
@@ -1296,7 +1370,8 @@
       "release": {
         "year": 2013
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 9
     },
     "visible": true
   },
@@ -1313,7 +1388,8 @@
       "release": {
         "year": 2008
       },
-      "runtime": null
+      "runtime": 3057,
+      "tracks": 12
     },
     "visible": true
   },
@@ -1329,7 +1405,8 @@
       "release": {
         "year": 2009
       },
-      "runtime": 2755
+      "runtime": 2755,
+      "tracks": 5
     },
     "visible": true
   },
@@ -1345,7 +1422,8 @@
       "release": {
         "year": 2006
       },
-      "runtime": 3132
+      "runtime": 3132,
+      "tracks": 6
     },
     "visible": true
   },
@@ -1361,7 +1439,8 @@
       "release": {
         "year": 2006
       },
-      "runtime": 3410
+      "runtime": 3410,
+      "tracks": 4
     },
     "visible": true
   },
@@ -1377,7 +1456,8 @@
       "release": {
         "year": 2014
       },
-      "runtime": 2524
+      "runtime": 2524,
+      "tracks": 13
     },
     "visible": true
   },
@@ -1394,7 +1474,8 @@
       "release": {
         "year": 2011
       },
-      "runtime": 1644
+      "runtime": 1644,
+      "tracks": 10
     }
   },
   {
@@ -1409,7 +1490,8 @@
       "release": {
         "year": 2016
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 11
     },
     "visible": true
   },
@@ -1425,7 +1507,8 @@
       "release": {
         "year": 2015
       },
-      "runtime": 2444
+      "runtime": 2444,
+      "tracks": 11
     },
     "visible": true
   },
@@ -1442,13 +1525,17 @@
       "release": {
         "year": 2010
       },
-      "runtime": 1136
+      "runtime": 1136,
+      "tracks": 8
     }
   },
   {
     "acquired": "08-01-2014",
     "artist": "Kollegah",
     "album": "Boss der Bosse",
+    "lastfm": [
+      "Boss der Bosse - Zuhältertape 2"
+    ],
     "id": 2631724,
     "metadata": {
       "genres": [
@@ -1457,7 +1544,8 @@
       "release": {
         "year": 2006
       },
-      "runtime": 3376
+      "runtime": 3376,
+      "tracks": 17
     },
     "visible": true
   },
@@ -1473,7 +1561,8 @@
       "release": {
         "year": 2011
       },
-      "runtime": 4151
+      "runtime": 4151,
+      "tracks": 18
     },
     "visible": true
   },
@@ -1489,7 +1578,8 @@
       "release": {
         "year": 2015
       },
-      "runtime": 3397
+      "runtime": 3397,
+      "tracks": 17
     },
     "visible": true
   },
@@ -1505,7 +1595,8 @@
       "release": {
         "year": 2017
       },
-      "runtime": 4150
+      "runtime": 4150,
+      "tracks": 18
     },
     "visible": true
   },
@@ -1521,7 +1612,8 @@
       "release": {
         "year": 2016
       },
-      "runtime": 4133
+      "runtime": 4133,
+      "tracks": 18
     },
     "visible": true
   },
@@ -1537,7 +1629,8 @@
       "release": {
         "year": 2010
       },
-      "runtime": 2118
+      "runtime": 2118,
+      "tracks": 6
     },
     "visible": true
   },
@@ -1545,6 +1638,10 @@
     "acquired": "11-01-2012",
     "artist": "Lana del Rey",
     "album": "Born to Die: Paradise Edition",
+    "lastfm": [
+      "Born to Die",
+      "Paradise"
+    ],
     "id": 3365117,
     "metadata": {
       "genres": [
@@ -1553,7 +1650,8 @@
       "release": {
         "year": 2012
       },
-      "runtime": 2976
+      "runtime": 2976,
+      "tracks": 12
     },
     "visible": true
   },
@@ -1569,7 +1667,8 @@
       "release": {
         "year": 2015
       },
-      "runtime": 3906
+      "runtime": 3906,
+      "tracks": 14
     },
     "visible": true
   },
@@ -1585,7 +1684,8 @@
       "release": {
         "year": 2017
       },
-      "runtime": 4325
+      "runtime": 4325,
+      "tracks": 16
     },
     "visible": true
   },
@@ -1601,7 +1701,8 @@
       "release": {
         "year": 2014
       },
-      "runtime": 3084
+      "runtime": 3084,
+      "tracks": 11
     },
     "visible": true
   },
@@ -1618,7 +1719,8 @@
       "release": {
         "year": 2012
       },
-      "runtime": 2636
+      "runtime": 2636,
+      "tracks": 9
     },
     "visible": true
   },
@@ -1634,7 +1736,8 @@
       "release": {
         "year": 1977
       },
-      "runtime": 2538
+      "runtime": 2538,
+      "tracks": 8
     },
     "visible": true
   },
@@ -1650,7 +1753,8 @@
       "release": {
         "year": 1988
       },
-      "runtime": 2441
+      "runtime": 2441,
+      "tracks": 8
     },
     "visible": true
   },
@@ -1666,7 +1770,8 @@
       "release": {
         "year": 1974
       },
-      "runtime": 2193
+      "runtime": 2193,
+      "tracks": 11
     },
     "visible": true
   },
@@ -1682,7 +1787,8 @@
       "release": {
         "year": 2012
       },
-      "runtime": 2501
+      "runtime": 2501,
+      "tracks": 10
     },
     "visible": true
   },
@@ -1698,7 +1804,8 @@
       "release": {
         "year": 1969
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 10
     },
     "visible": true
   },
@@ -1715,7 +1822,8 @@
       "release": {
         "year": 1968
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 10
     }
   },
   {
@@ -1730,7 +1838,8 @@
       "release": {
         "year": 1971
       },
-      "runtime": 2653
+      "runtime": 2653,
+      "tracks": 8
     },
     "visible": true
   },
@@ -1746,7 +1855,8 @@
       "release": {
         "year": 2001
       },
-      "runtime": 3162
+      "runtime": 3162,
+      "tracks": 10
     },
     "visible": true
   },
@@ -1762,7 +1872,8 @@
       "release": {
         "year": 2010
       },
-      "runtime": 2600
+      "runtime": 2600,
+      "tracks": 10
     },
     "visible": true
   },
@@ -1779,7 +1890,8 @@
       "release": {
         "year": 2008
       },
-      "runtime": 3738
+      "runtime": 3738,
+      "tracks": 7
     },
     "visible": true
   },
@@ -1796,7 +1908,8 @@
       "release": {
         "year": 2010
       },
-      "runtime": 2876
+      "runtime": 2876,
+      "tracks": 15
     }
   },
   {
@@ -1812,7 +1925,8 @@
       "release": {
         "year": 2000
       },
-      "runtime": 2271
+      "runtime": 2271,
+      "tracks": 12
     }
   },
   {
@@ -1828,7 +1942,8 @@
       "release": {
         "year": 2003
       },
-      "runtime": 2197
+      "runtime": 2197,
+      "tracks": 13
     }
   },
   {
@@ -1844,7 +1959,8 @@
       "release": {
         "year": 2007
       },
-      "runtime": 2603
+      "runtime": 2603,
+      "tracks": 12
     }
   },
   {
@@ -1860,7 +1976,8 @@
       "release": {
         "year": 2007
       },
-      "runtime": 3238
+      "runtime": 3238,
+      "tracks": 6
     },
     "visible": true
   },
@@ -1876,7 +1993,8 @@
       "release": {
         "year": 2011
       },
-      "runtime": 2453
+      "runtime": 2453,
+      "tracks": 10
     },
     "visible": true
   },
@@ -1892,7 +2010,8 @@
       "release": {
         "year": 2008
       },
-      "runtime": 2689
+      "runtime": 2689,
+      "tracks": 12
     },
     "visible": true
   },
@@ -1900,6 +2019,9 @@
     "acquired": "04-01-2010",
     "artist": "Lyrinx",
     "album": "Ending the Circle of Life",
+    "lastfm": [
+      "Only the Wind Remembers/Ending the Circle of Life"
+    ],
     "metadata": {
       "genres": [
         "Depressive Black Metal"
@@ -1907,7 +2029,8 @@
       "release": {
         "year": 2009
       },
-      "runtime": 2097
+      "runtime": 2097,
+      "tracks": 2
     },
     "id": 1736833,
     "visible": true
@@ -1925,7 +2048,8 @@
       "release": {
         "year": 2006
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 5
     },
     "visible": true
   },
@@ -1941,7 +2065,8 @@
       "release": {
         "year": 2006
       },
-      "runtime": 3514
+      "runtime": 3514,
+      "tracks": 14
     },
     "visible": true
   },
@@ -1957,7 +2082,8 @@
       "release": {
         "year": 2003
       },
-      "runtime": 3503
+      "runtime": 3503,
+      "tracks": 12
     },
     "visible": true
   },
@@ -1973,7 +2099,8 @@
       "release": {
         "year": 1999
       },
-      "runtime": 3817
+      "runtime": 3817,
+      "tracks": 13
     },
     "visible": true
   },
@@ -1989,7 +2116,8 @@
       "release": {
         "year": 2005
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 12
     },
     "visible": true
   },
@@ -2005,7 +2133,8 @@
       "release": {
         "year": 2001
       },
-      "runtime": 3890
+      "runtime": 3890,
+      "tracks": 12
     },
     "visible": true
   },
@@ -2022,7 +2151,8 @@
       "release": {
         "year": 2007
       },
-      "runtime": 2676
+      "runtime": 2676,
+      "tracks": 10
     }
   },
   {
@@ -2038,7 +2168,8 @@
       "release": {
         "year": 2007
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 16
     }
   },
   {
@@ -2053,7 +2184,8 @@
       "release": {
         "year": 2012
       },
-      "runtime": 4224
+      "runtime": 4224,
+      "tracks": 8
     },
     "visible": true
   },
@@ -2070,7 +2202,8 @@
       "release": {
         "year": 2015
       },
-      "runtime": null
+      "runtime": 4543,
+      "tracks": 11
     }
   },
   {
@@ -2085,7 +2218,8 @@
       "release": {
         "year": 2004
       },
-      "runtime": 2918
+      "runtime": 2918,
+      "tracks": 16
     },
     "visible": true
   },
@@ -2101,7 +2235,8 @@
       "release": {
         "year": 2015
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 15
     },
     "visible": true
   },
@@ -2117,7 +2252,8 @@
       "release": {
         "year": 1996
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 18
     },
     "visible": true
   },
@@ -2133,7 +2269,8 @@
       "release": {
         "year": 2007
       },
-      "runtime": 3748
+      "runtime": 3748,
+      "tracks": 14
     },
     "visible": true
   },
@@ -2149,7 +2286,8 @@
       "release": {
         "year": 2011
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 20
     },
     "visible": true
   },
@@ -2166,7 +2304,8 @@
       "release": {
         "year": 2015
       },
-      "runtime": null
+      "runtime": 3713,
+      "tracks": 20
     }
   },
   {
@@ -2181,7 +2320,8 @@
       "release": {
         "year": 1980
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 12
     },
     "visible": true
   },
@@ -2197,7 +2337,8 @@
       "release": {
         "year": 2020
       },
-      "runtime": 2809
+      "runtime": 2809,
+      "tracks": 11
     },
     "visible": true
   },
@@ -2205,6 +2346,11 @@
     "acquired": "08-01-2010",
     "artist": "Nachtmystium",
     "album": "Addicts: Black Meddle Pt. II",
+    "lastfm": [
+      "Addicts: Black Meddle Pt. 2",
+      "Addicts: Black Meddle Pt. II",
+      "Addicts: Black Meddle Part II"
+    ],
     "id": 2318025,
     "metadata": {
       "genres": [
@@ -2213,7 +2359,8 @@
       "release": {
         "year": 2010
       },
-      "runtime": 2881
+      "runtime": 2881,
+      "tracks": 10
     },
     "visible": true
   },
@@ -2221,6 +2368,10 @@
     "acquired": "10-01-2012",
     "artist": "Nachtmystium",
     "album": "Assassins - Black Meddle Part 1",
+    "lastfm": [
+      "Assassins: Black Meddle Pt. 1",
+      "Assassins: Black Meddle Pt. I"
+    ],
     "id": 1503328,
     "metadata": {
       "genres": [
@@ -2229,7 +2380,8 @@
       "release": {
         "year": 2008
       },
-      "runtime": 2708
+      "runtime": 2708,
+      "tracks": 10
     },
     "visible": true
   },
@@ -2247,7 +2399,8 @@
       "release": {
         "year": 2004
       },
-      "runtime": 2583
+      "runtime": 2583,
+      "tracks": 7
     }
   },
   {
@@ -2262,7 +2415,8 @@
       "release": {
         "year": 2009
       },
-      "runtime": 1000
+      "runtime": 1000,
+      "tracks": 4
     },
     "visible": true
   },
@@ -2278,7 +2432,8 @@
       "release": {
         "year": 2004
       },
-      "runtime": 1312
+      "runtime": 1312,
+      "tracks": 5
     },
     "visible": true
   },
@@ -2294,7 +2449,8 @@
       "release": {
         "year": 2006
       },
-      "runtime": 2572
+      "runtime": 2572,
+      "tracks": 10
     },
     "visible": true
   },
@@ -2310,7 +2466,8 @@
       "release": {
         "year": 2012
       },
-      "runtime": null
+      "runtime": 4076,
+      "tracks": 11
     },
     "visible": true
   },
@@ -2326,7 +2483,8 @@
       "release": {
         "year": 2014
       },
-      "runtime": 3284
+      "runtime": 3284,
+      "tracks": 9
     },
     "visible": true
   },
@@ -2342,7 +2500,8 @@
       "release": {
         "year": 2008
       },
-      "runtime": 1578
+      "runtime": 1578,
+      "tracks": 5
     },
     "visible": true
   },
@@ -2350,6 +2509,16 @@
     "acquired": "01-01-2012",
     "artist": "Nachtmytium / Murmur",
     "album": "I Wait In Hell / Shuttle I",
+    "lastfm": [
+      {
+        "artist": "Nachtmystium",
+        "album": "Nachtmystium/Murmur"
+      },
+      {
+        "artist": "Murmur",
+        "album": "Nachtmystium/Murmur"
+      }
+    ],
     "id": 3155322,
     "metadata": {
       "genres": [
@@ -2358,7 +2527,8 @@
       "release": {
         "year": 2011
       },
-      "runtime": 780
+      "runtime": 780,
+      "tracks": 2
     },
     "visible": true
   },
@@ -2374,7 +2544,8 @@
       "release": {
         "year": 1997
       },
-      "runtime": 3316
+      "runtime": 3316,
+      "tracks": 7
     },
     "visible": true
   },
@@ -2390,7 +2561,8 @@
       "release": {
         "year": 1996
       },
-      "runtime": 2261
+      "runtime": 2261,
+      "tracks": 3
     },
     "visible": true
   },
@@ -2407,7 +2579,8 @@
       "release": {
         "year": 1999
       },
-      "runtime": null
+      "runtime": 4166,
+      "tracks": 5
     },
     "visible": true
   },
@@ -2424,7 +2597,8 @@
       "release": {
         "year": 2010
       },
-      "runtime": null
+      "runtime": 8305,
+      "tracks": 9
     },
     "visible": true
   },
@@ -2440,7 +2614,8 @@
       "release": {
         "year": 2001
       },
-      "runtime": 3720
+      "runtime": 3720,
+      "tracks": 7
     },
     "visible": true
   },
@@ -2456,7 +2631,8 @@
       "release": {
         "year": 2009
       },
-      "runtime": 3963
+      "runtime": 3963,
+      "tracks": 5
     },
     "visible": true
   },
@@ -2472,7 +2648,8 @@
       "release": {
         "year": 2007
       },
-      "runtime": 4791
+      "runtime": 4791,
+      "tracks": 12
     },
     "visible": true
   },
@@ -2489,7 +2666,8 @@
       "release": {
         "year": 2011
       },
-      "runtime": 3486
+      "runtime": 3486,
+      "tracks": 8
     },
     "visible": true
   },
@@ -2505,7 +2683,8 @@
       "release": {
         "year": 2005
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 2
     },
     "visible": true
   },
@@ -2513,6 +2692,10 @@
     "acquired": "11-01-2010",
     "artist": "Nocte Obducta",
     "album": "Nektar - Teil 1: Zwölf Monde, eine Hand voll Träume",
+    "lastfm": [
+      "Nektar - Teil 1: Zwölf Monde, eine Hand voll Träume",
+      "Nektar Teil 1"
+    ],
     "id": 964750,
     "metadata": {
       "genres": [
@@ -2521,7 +2704,8 @@
       "release": {
         "year": 2004
       },
-      "runtime": 3085
+      "runtime": 3085,
+      "tracks": 5
     },
     "visible": true
   },
@@ -2529,6 +2713,10 @@
     "acquired": "06-01-2020",
     "artist": "Nocte Obducta",
     "album": "Stille - Das nagende Schweigen",
+    "lastfm": [
+      "Stille - Das nagende Schweigen",
+      "Stille"
+    ],
     "id": 1070708,
     "metadata": {
       "genres": [
@@ -2537,7 +2725,8 @@
       "release": {
         "year": 2003
       },
-      "runtime": 1917
+      "runtime": 1917,
+      "tracks": 5
     },
     "visible": true
   },
@@ -2554,7 +2743,8 @@
       "release": {
         "year": 2013
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 9
     }
   },
   {
@@ -2569,7 +2759,8 @@
       "release": {
         "year": 2011
       },
-      "runtime": 2411
+      "runtime": 2411,
+      "tracks": 8
     },
     "visible": true
   },
@@ -2577,6 +2768,9 @@
     "acquired": "10-01-2013",
     "artist": "Nokturnal Mortum",
     "album": "Voice of Steel",
+    "lastfm": [
+      "The Voice Of Steel"
+    ],
     "id": 2077031,
     "metadata": {
       "genres": [
@@ -2585,7 +2779,8 @@
       "release": {
         "year": 2009
       },
-      "runtime": 4181
+      "runtime": 4181,
+      "tracks": 8
     },
     "visible": true
   },
@@ -2601,7 +2796,8 @@
       "release": {
         "year": 2019
       },
-      "runtime": 2603
+      "runtime": 2603,
+      "tracks": 10
     },
     "visible": true
   },
@@ -2618,7 +2814,8 @@
       "release": {
         "year": 2008
       },
-      "runtime": 2610
+      "runtime": 2610,
+      "tracks": 4
     }
   },
   {
@@ -2633,7 +2830,8 @@
       "release": {
         "year": 2011
       },
-      "runtime": 3589
+      "runtime": 3589,
+      "tracks": 11
     },
     "visible": true
   },
@@ -2650,7 +2848,62 @@
       "release": {
         "year": 2009
       },
-      "runtime": 2342
+      "runtime": 2342,
+      "tracks": 10
+    }
+  },
+  {
+    "acquired": null,
+    "artist": "Peste Noire",
+    "album": "L'ordure à l'état pur",
+    "visible": true,
+    "id": 2944111,
+    "metadata": {
+      "genres": [
+        "Black Metal",
+        "Punk",
+        "Folk",
+        "Ska"
+      ],
+      "release": {
+        "year": 2011
+      },
+      "runtime": 3623,
+      "tracks": 5
+    }
+  },
+  {
+    "acquired": null,
+    "artist": "Peste Noire",
+    "album": "La Chaise-Dyable",
+    "visible": true,
+    "id": 6938698,
+    "metadata": {
+      "genres": [
+        "Black Metal"
+      ],
+      "release": {
+        "year": 2015
+      },
+      "runtime": null,
+      "tracks": 7
+    }
+  },
+  {
+    "acquired": null,
+    "artist": "Peste Noire",
+    "album": "Peste Noire",
+    "visible": true,
+    "id": 4674607,
+    "metadata": {
+      "genres": [
+        "Black Metal"
+      ],
+      "release": {
+        "year": 2013
+      },
+      "runtime": 2802,
+      "tracks": 8
     }
   },
   {
@@ -2677,7 +2930,8 @@
       "release": {
         "year": 2015
       },
-      "runtime": 2782
+      "runtime": 2782,
+      "tracks": 9
     },
     "visible": true
   },
@@ -2692,7 +2946,8 @@
       "release": {
         "year": 2020
       },
-      "runtime": 3599
+      "runtime": 3599,
+      "tracks": 15
     }
   },
   {
@@ -2707,7 +2962,8 @@
       "release": {
         "year": 2013
       },
-      "runtime": 3252
+      "runtime": 3252,
+      "tracks": 14
     },
     "visible": true
   },
@@ -2723,7 +2979,8 @@
       "release": {
         "year": 2016
       },
-      "runtime": 5291
+      "runtime": 5291,
+      "tracks": 24
     },
     "visible": true
   },
@@ -2739,7 +2996,8 @@
       "release": {
         "year": 2016
       },
-      "runtime": 3804
+      "runtime": 3804,
+      "tracks": 16
     },
     "visible": true
   },
@@ -2756,7 +3014,8 @@
       "release": {
         "year": 2013
       },
-      "runtime": 3924
+      "runtime": 3924,
+      "tracks": 16
     }
   },
   {
@@ -2771,7 +3030,8 @@
       "release": {
         "year": 2011
       },
-      "runtime": 17899
+      "runtime": 4660,
+      "tracks": 20
     },
     "visible": true
   },
@@ -2787,7 +3047,8 @@
       "release": {
         "year": 2016
       },
-      "runtime": 1684
+      "runtime": 1684,
+      "tracks": 6
     },
     "visible": true
   },
@@ -2804,7 +3065,8 @@
       "release": {
         "year": 2014
       },
-      "runtime": null
+      "runtime": 9936,
+      "tracks": 30
     },
     "visible": true
   },
@@ -2812,6 +3074,9 @@
     "acquired": "10-01-2012",
     "artist": "Rome",
     "album": "August Spies",
+    "lastfm": [
+      "August Spies (Promo)"
+    ],
     "id": 3496177,
     "metadata": {
       "genres": [
@@ -2820,7 +3085,8 @@
       "release": {
         "year": 2012
       },
-      "runtime": 202
+      "runtime": 202,
+      "tracks": 1
     },
     "visible": true
   },
@@ -2837,7 +3103,8 @@
       "release": {
         "year": 2010
       },
-      "runtime": 1068
+      "runtime": 1068,
+      "tracks": 6
     },
     "visible": true
   },
@@ -2854,7 +3121,8 @@
       "release": {
         "year": 2025
       },
-      "runtime": 2701
+      "runtime": 2701,
+      "tracks": 14
     }
   },
   {
@@ -2870,7 +3138,8 @@
       "release": {
         "year": 2007
       },
-      "runtime": 2580
+      "runtime": 2587,
+      "tracks": 12
     },
     "visible": true
   },
@@ -2888,13 +3157,25 @@
       "release": {
         "year": 2016
       },
-      "runtime": 1572
+      "runtime": 1572,
+      "tracks": 8
     }
   },
   {
     "acquired": "11-01-2011",
     "artist": "Rome",
     "album": "Die AEsthetik der Herrschaftsfreiheit",
+    "lastfm": [
+      "Die Æsthetik der Herrschaftsfreiheit - Band 1: Aufbruch or A Cross of Wheat",
+      "Die Æsthetik der Herrschaftsfreiheit - Band 2: Aufruhr or A Cross of Fire",
+      "Die Æsthetik der Herrschaftsfreiheit - Band 3: Aufgabe or A Cross of Flowers",
+      "Die Aesthetik Der Herrschaftsfreiheit - Band 1 (Aufbruch or A Cross of Wheat)",
+      "Die Aesthetik Der Herrschaftsfreiheit - Band 2 (Aufruhr or a Cross of Fire)",
+      "Die Aesthetik Der Herrschaftsfreiheit - Band 3 (Aufgabe or a Cross of Flowers)",
+      "Die Ästhetik der Herrschaftsfreiheit - Band 1: Aufbruch or A Cross of Wheat",
+      "Die Æsthetik der Herrschaftsfreiheit - Aufbruch or A Cross of Wheat",
+      "Die Æsthetik der Herrschaftsfreiheit"
+    ],
     "id": 3203145,
     "metadata": {
       "genres": [
@@ -2903,7 +3184,8 @@
       "release": {
         "year": 2011
       },
-      "runtime": null
+      "runtime": 9120,
+      "tracks": 36
     },
     "visible": true
   },
@@ -2919,7 +3201,8 @@
       "release": {
         "year": 2012
       },
-      "runtime": 887
+      "runtime": 887,
+      "tracks": 4
     },
     "visible": true
   },
@@ -2935,7 +3218,8 @@
       "release": {
         "year": 2009
       },
-      "runtime": null
+      "runtime": 2622,
+      "tracks": 12
     },
     "visible": true
   },
@@ -2951,7 +3235,8 @@
       "release": {
         "year": 2023
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 14
     },
     "visible": true
   },
@@ -2969,7 +3254,8 @@
       "release": {
         "year": 2018
       },
-      "runtime": 2526
+      "runtime": 2526,
+      "tracks": 9
     }
   },
   {
@@ -2985,7 +3271,8 @@
       "release": {
         "year": 2013
       },
-      "runtime": 2794
+      "runtime": 2794,
+      "tracks": 4
     },
     "visible": true
   },
@@ -3002,7 +3289,8 @@
       "release": {
         "year": 2022
       },
-      "runtime": 2276
+      "runtime": 2276,
+      "tracks": 11
     }
   },
   {
@@ -3017,7 +3305,8 @@
       "release": {
         "year": 2012
       },
-      "runtime": 2585
+      "runtime": 2585,
+      "tracks": 12
     },
     "visible": true
   },
@@ -3034,7 +3323,8 @@
       "release": {
         "year": 2021
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 12
     }
   },
   {
@@ -3049,7 +3339,8 @@
       "release": {
         "year": 2010
       },
-      "runtime": 1080
+      "runtime": 1080,
+      "tracks": 4
     },
     "visible": true
   },
@@ -3066,7 +3357,8 @@
       "release": {
         "year": 2019
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 12
     }
   },
   {
@@ -3081,7 +3373,8 @@
       "release": {
         "year": 2008
       },
-      "runtime": 2782
+      "runtime": 2781,
+      "tracks": 12
     },
     "visible": true
   },
@@ -3097,7 +3390,8 @@
       "release": {
         "year": 2006
       },
-      "runtime": 2672
+      "runtime": 2675,
+      "tracks": 12
     },
     "visible": true
   },
@@ -3113,7 +3407,8 @@
       "release": {
         "year": 2010
       },
-      "runtime": null
+      "runtime": 2632,
+      "tracks": 12
     },
     "visible": true
   },
@@ -3131,7 +3426,8 @@
       "release": {
         "year": 2011
       },
-      "runtime": 701
+      "runtime": 701,
+      "tracks": 2
     }
   },
   {
@@ -3147,7 +3443,8 @@
       "release": {
         "year": 2021
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 24
     }
   },
   {
@@ -3163,7 +3460,8 @@
       "release": {
         "year": 2025
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 10
     }
   },
   {
@@ -3178,7 +3476,8 @@
       "release": {
         "year": 2016
       },
-      "runtime": 2839
+      "runtime": 2839,
+      "tracks": 11
     },
     "visible": true
   },
@@ -3195,7 +3494,8 @@
       "release": {
         "year": 2025
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 10
     }
   },
   {
@@ -3211,7 +3511,8 @@
       "release": {
         "year": 2010
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 9
     }
   },
   {
@@ -3226,7 +3527,8 @@
       "release": {
         "year": 2012
       },
-      "runtime": 4016
+      "runtime": 4016,
+      "tracks": 8
     },
     "visible": true
   },
@@ -3242,7 +3544,8 @@
       "release": {
         "year": 2013
       },
-      "runtime": 2688
+      "runtime": 2688,
+      "tracks": 5
     },
     "visible": true
   },
@@ -3258,7 +3561,8 @@
       "release": {
         "year": 2013
       },
-      "runtime": 1728
+      "runtime": 1728,
+      "tracks": 3
     },
     "visible": true
   },
@@ -3275,7 +3579,8 @@
       "release": {
         "year": 2011
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 10
     }
   },
   {
@@ -3290,7 +3595,8 @@
       "release": {
         "year": 2010
       },
-      "runtime": 2631
+      "runtime": 2631,
+      "tracks": 8
     },
     "visible": true
   },
@@ -3309,7 +3615,8 @@
       "release": {
         "year": 2015
       },
-      "runtime": 3002
+      "runtime": 3002,
+      "tracks": 8
     }
   },
   {
@@ -3325,7 +3632,8 @@
       "release": {
         "year": 2008
       },
-      "runtime": 2862
+      "runtime": 2862,
+      "tracks": 12
     }
   },
   {
@@ -3341,7 +3649,8 @@
       "release": {
         "year": 2013
       },
-      "runtime": 5436
+      "runtime": 5436,
+      "tracks": 21
     }
   },
   {
@@ -3358,13 +3667,18 @@
       "release": {
         "year": 2012
       },
-      "runtime": 3059
+      "runtime": 3059,
+      "tracks": 7
     }
   },
   {
     "acquired": "07-01-2016",
     "artist": "Stick to Your Guns",
     "album": "Diamonds",
+    "lastfm": [
+      "Diamond",
+      "Diamond: Decade Edition"
+    ],
     "id": 8800955,
     "metadata": {
       "genres": [
@@ -3374,7 +3688,8 @@
       "release": {
         "year": 2012
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 14
     },
     "visible": true
   },
@@ -3390,7 +3705,8 @@
       "release": {
         "year": 2006
       },
-      "runtime": 4145
+      "runtime": 4145,
+      "tracks": 8
     },
     "visible": true
   },
@@ -3406,7 +3722,8 @@
       "release": {
         "year": 2004
       },
-      "runtime": 2729
+      "runtime": 2729,
+      "tracks": 9
     },
     "visible": true
   },
@@ -3422,7 +3739,8 @@
       "release": {
         "year": 2015
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 13
     },
     "visible": true
   },
@@ -3439,7 +3757,8 @@
       "release": {
         "year": 2012
       },
-      "runtime": 3104
+      "runtime": 3107,
+      "tracks": 12
     }
   },
   {
@@ -3455,7 +3774,8 @@
       "release": {
         "year": 2008
       },
-      "runtime": 1665
+      "runtime": 1665,
+      "tracks": 5
     },
     "visible": true
   },
@@ -3472,7 +3792,8 @@
       "release": {
         "year": 2011
       },
-      "runtime": 528
+      "runtime": 528,
+      "tracks": 2
     },
     "visible": true
   },
@@ -3489,7 +3810,8 @@
       "release": {
         "year": 2009
       },
-      "runtime": 970
+      "runtime": 970,
+      "tracks": 2
     },
     "visible": true
   },
@@ -3506,7 +3828,8 @@
       "release": {
         "year": 2013
       },
-      "runtime": 3895
+      "runtime": 3895,
+      "tracks": 7
     },
     "visible": true
   },
@@ -3523,7 +3846,8 @@
       "release": {
         "year": 2008
       },
-      "runtime": 459
+      "runtime": 459,
+      "tracks": 2
     },
     "visible": true
   },
@@ -3540,7 +3864,8 @@
       "release": {
         "year": 2011
       },
-      "runtime": 4428
+      "runtime": 4428,
+      "tracks": 11
     },
     "visible": true
   },
@@ -3557,7 +3882,8 @@
       "release": {
         "year": 2009
       },
-      "runtime": 3280
+      "runtime": 3280,
+      "tracks": 11
     },
     "visible": true
   },
@@ -3573,7 +3899,8 @@
       "release": {
         "year": 1978
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 15
     },
     "visible": true
   },
@@ -3589,7 +3916,8 @@
       "release": {
         "year": 1967
       },
-      "runtime": 2029
+      "runtime": 2029,
+      "tracks": 10
     },
     "visible": true
   },
@@ -3605,7 +3933,8 @@
       "release": {
         "year": 1967
       },
-      "runtime": 2605
+      "runtime": 2605,
+      "tracks": 11
     },
     "visible": true
   },
@@ -3621,7 +3950,8 @@
       "release": {
         "year": 2011
       },
-      "runtime": 2251
+      "runtime": 2251,
+      "tracks": 8
     },
     "visible": true
   },
@@ -3635,6 +3965,11 @@
     "acquired": "08-01-2013",
     "artist": "The Ruins of Beverast",
     "album": "Blood Vaults: The Blazing Gospel of Heinrich Kramer",
+    "lastfm": [
+      "Blood Vaults: The Blazing Gospel of Heinrich Kramer",
+      "Blood Vaults - The Blazing Gospel of Heinrich Kramer (Cryptae Sanguinum – Evangelium Flagrans Henrici Institoris)",
+      "Blood Vaults"
+    ],
     "id": 4889886,
     "metadata": {
       "genres": [
@@ -3644,7 +3979,8 @@
       "release": {
         "year": 2013
       },
-      "runtime": 4701
+      "runtime": 4701,
+      "tracks": 9
     },
     "visible": true
   },
@@ -3660,7 +3996,8 @@
       "release": {
         "year": 2011
       },
-      "runtime": 3187
+      "runtime": 3187,
+      "tracks": 6
     },
     "visible": true
   },
@@ -3677,7 +4014,8 @@
       "release": {
         "year": 2009
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 11
     },
     "visible": true
   },
@@ -3694,7 +4032,8 @@
       "release": {
         "year": 2006
       },
-      "runtime": 4791
+      "runtime": 4791,
+      "tracks": 7
     },
     "visible": true
   },
@@ -3702,6 +4041,10 @@
     "acquired": "08-08-2025",
     "artist": "The Ruins of Beverast",
     "album": "Unlock The Shrine",
+    "lastfm": [
+      "Unlock The Shrine",
+      "Unlock The Shrine - Reliquary Of The White Abyss"
+    ],
     "visible": true,
     "id": 845239,
     "metadata": {
@@ -3712,7 +4055,8 @@
       "release": {
         "year": 2004
       },
-      "runtime": 4221
+      "runtime": 4221,
+      "tracks": 12
     }
   },
   {
@@ -3728,7 +4072,8 @@
       "release": {
         "year": 2010
       },
-      "runtime": 3282
+      "runtime": 3282,
+      "tracks": 8
     }
   },
   {
@@ -3744,7 +4089,8 @@
       "release": {
         "year": 2005
       },
-      "runtime": 3101
+      "runtime": 3101,
+      "tracks": 12
     },
     "visible": true
   },
@@ -3761,7 +4107,8 @@
       "release": {
         "year": 2011
       },
-      "runtime": 1800
+      "runtime": 1800,
+      "tracks": 7
     },
     "visible": true
   },
@@ -3778,7 +4125,8 @@
       "release": {
         "year": 2008
       },
-      "runtime": 3037
+      "runtime": 3037,
+      "tracks": 11
     },
     "visible": true
   },
@@ -3795,7 +4143,8 @@
       "release": {
         "year": 2006
       },
-      "runtime": 3261
+      "runtime": 3261,
+      "tracks": 12
     },
     "visible": true
   },
@@ -3812,7 +4161,8 @@
       "release": {
         "year": 2015
       },
-      "runtime": 3392
+      "runtime": 3392,
+      "tracks": 10
     },
     "visible": true
   },
@@ -3830,7 +4180,8 @@
       "release": {
         "year": 2009
       },
-      "runtime": 2479
+      "runtime": 2479,
+      "tracks": 12
     }
   },
   {
@@ -3846,7 +4197,8 @@
       "release": {
         "year": 2010
       },
-      "runtime": null
+      "runtime": null,
+      "tracks": 22
     }
   },
   {
@@ -3862,7 +4214,8 @@
       "release": {
         "year": 2003
       },
-      "runtime": 4466
+      "runtime": 4466,
+      "tracks": 15
     }
   },
   {
@@ -3879,7 +4232,8 @@
       "release": {
         "year": 1999
       },
-      "runtime": 4443
+      "runtime": 4443,
+      "tracks": 15
     }
   },
   {
@@ -3894,7 +4248,8 @@
       "release": {
         "year": 2017
       },
-      "runtime": null
+      "runtime": 5988,
+      "tracks": 27
     },
     "visible": true
   },
@@ -3911,7 +4266,8 @@
       "release": {
         "year": 0
       },
-      "runtime": 2394
+      "runtime": 2394,
+      "tracks": 9
     }
   },
   {
@@ -3954,7 +4310,8 @@
       "release": {
         "year": 2007
       },
-      "runtime": 3779
+      "runtime": 3779,
+      "tracks": 6
     },
     "visible": true
   },
@@ -3971,7 +4328,8 @@
       "release": {
         "year": 2012
       },
-      "runtime": null
+      "runtime": 11340,
+      "tracks": 36
     },
     "visible": true
   },
@@ -3988,7 +4346,8 @@
       "release": {
         "year": 2009
       },
-      "runtime": 4135
+      "runtime": 4135,
+      "tracks": 19
     },
     "visible": true
   },
@@ -4005,7 +4364,8 @@
       "release": {
         "year": 2007
       },
-      "runtime": 4287
+      "runtime": 4287,
+      "tracks": 14
     }
   },
   {
@@ -4020,7 +4380,8 @@
       "release": {
         "year": 2009
       },
-      "runtime": 2153
+      "runtime": 2153,
+      "tracks": 8
     },
     "visible": true
   },
@@ -4036,7 +4397,8 @@
       "release": {
         "year": 2012
       },
-      "runtime": 2391
+      "runtime": 2391,
+      "tracks": 8
     },
     "visible": true
   },
@@ -4069,13 +4431,24 @@
       "release": {
         "year": 2010
       },
-      "runtime": null
+      "runtime": 7048,
+      "tracks": 36
     }
   },
   {
     "acquired": "06-01-2011",
     "artist": "Weird Fate / Membaris",
     "album": "Conspiracy",
+    "lastfm": [
+      {
+        "artist": "Weird Fate",
+        "album": "Conspiracy"
+      },
+      {
+        "artist": "Membaris",
+        "album": "Conspiracy"
+      }
+    ],
     "visible": true,
     "id": 3564178,
     "metadata": {
@@ -4085,7 +4458,8 @@
       "release": {
         "year": 2008
       },
-      "runtime": 2651
+      "runtime": 2651,
+      "tracks": 7
     }
   },
   {
@@ -4106,7 +4480,8 @@
       "release": {
         "year": 2007
       },
-      "runtime": 2781
+      "runtime": 2781,
+      "tracks": 4
     },
     "visible": true
   },
@@ -4124,7 +4499,8 @@
       "release": {
         "year": 2012
       },
-      "runtime": 3715
+      "runtime": 3715,
+      "tracks": 11
     }
   }
 ]

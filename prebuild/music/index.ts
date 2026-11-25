@@ -1,4 +1,5 @@
 import { doFetch, type Nullable, discogsOptions } from '../common.ts';
+import { normalizeName } from './plays.ts';
 import data from './data.json' with { type: 'json' };
 import { writeFile } from 'fs/promises';
 import { resolve } from 'path';
@@ -223,6 +224,70 @@ async function getDiscogsMainReleaseById(id: number) {
   );
 }
 
+type DiscogsTrack = {
+  type_: string;
+  title: string;
+  duration: string;
+  sub_tracks?: DiscogsTrack[];
+};
+
+// share of a disc's titles already seen on an earlier disc for it to count as a repeat
+const REPEATED_DISC_SHARE = 0.8;
+
+function parseDuration(duration: string): number | null {
+  const parts = duration.split(':').map(Number);
+
+  if (parts.length < 2 || parts.some(Number.isNaN)) {
+    return null;
+  }
+
+  return parts.reduce((total, part) => total * 60 + part, 0);
+}
+
+// Headings carry no audio (but sometimes a disc total as duration) and index tracks group their
+// parts as sub_tracks. Bundles such as 2xLP + CD repeat the album under a second heading.
+function summarizeTracklist(tracklist: DiscogsTrack[]): { tracks: number; runtime: number | null } {
+  const discs: DiscogsTrack[][] = [[]];
+
+  for (const track of tracklist) {
+    if (track.type_ === 'heading') {
+      discs.push([]);
+    } else if (track.type_ === 'index') {
+      discs.at(-1)!.push(...(track.sub_tracks ?? []));
+    } else if (track.type_ === 'track') {
+      discs.at(-1)!.push(track);
+    }
+  }
+
+  const seenTitles = new Set<string>();
+  const tracks: DiscogsTrack[] = [];
+
+  for (const disc of discs) {
+    const titles = disc.map((track) => normalizeName(track.title));
+    const repeated = titles.filter((title) => seenTitles.has(title)).length;
+
+    if (disc.length === 0 || repeated >= disc.length * REPEATED_DISC_SHARE) {
+      continue;
+    }
+
+    titles.forEach((title) => seenTitles.add(title));
+    tracks.push(...disc);
+  }
+
+  const durations = tracks.map((track) => parseDuration(track.duration));
+
+  return {
+    tracks: tracks.length,
+    runtime:
+      tracks.length > 0 && durations.every((duration) => duration !== null)
+        ? durations.reduce<number>((total, duration) => total + duration!, 0)
+        : null,
+  };
+}
+
+// stays under the authenticated limit of 60 requests per minute
+const BACKFILL_DELAY = 1100;
+
 async function establishId(dataset: (typeof data)[number]): Promise<Nullable<number>> {
   if (dataset.id) {
     return dataset.id;
@@ -265,6 +330,24 @@ export async function doDiscogsImport(): Promise<{ from: string; to: string }[]>
     }
 
     if (typeof dataset.metadata === 'object' && dataset.metadata !== null) {
+      if ('tracks' in dataset.metadata || !dataset.id) {
+        continue;
+      }
+
+      // entries imported before track counts were stored
+      const release = await getDiscogsMainReleaseById(dataset.id);
+      await new Promise((resolve) => setTimeout(resolve, BACKFILL_DELAY));
+
+      if (release === null || !Array.isArray(release.tracklist)) {
+        warn(`no tracklist for ${dataset.artist} - ${dataset.album}`);
+        continue;
+      }
+
+      const { tracks, runtime } = summarizeTracklist(release.tracklist);
+
+      // runtimes imported before this summed disc headings too
+      Object.assign(dataset.metadata, { tracks, runtime: runtime ?? dataset.metadata.runtime });
+
       continue;
     }
 
@@ -283,10 +366,7 @@ export async function doDiscogsImport(): Promise<{ from: string; to: string }[]>
 
     dataset.id = id;
 
-    const totalRuntimeInSeconds = mainReleaseData.tracklist.reduce((acc, track) => {
-      const [minutes, seconds] = track.duration.split(':');
-      return acc + Number.parseInt(minutes) * 60 + Number.parseInt(seconds);
-    }, 0);
+    const { tracks, runtime } = summarizeTracklist(mainReleaseData.tracklist);
 
     // @ts-expect-error this is fine
     dataset.metadata = {
@@ -294,7 +374,8 @@ export async function doDiscogsImport(): Promise<{ from: string; to: string }[]>
       release: {
         year: mainReleaseData.year,
       },
-      runtime: totalRuntimeInSeconds,
+      runtime,
+      tracks,
     };
 
     if (dataset.visible === undefined) {

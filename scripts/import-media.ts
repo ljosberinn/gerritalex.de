@@ -5,6 +5,7 @@ type ImageDownload = { from: string; to: string };
 
 const importers = {
   discogs: false,
+  lastfm: false,
   movies: false,
   series: true,
 };
@@ -60,6 +61,11 @@ if (enabled.series) {
 if (enabled.discogs) {
   const { doDiscogsImport } = await import('../prebuild/music/index.ts');
   promises.push(doDiscogsImport());
+}
+
+if (enabled.lastfm) {
+  const { doLastFmImport } = await import('../prebuild/music/lastfm.ts');
+  promises.push(doLastFmImport());
 }
 
 const images = (await Promise.all(promises)).flat();
