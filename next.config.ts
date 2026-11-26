@@ -101,6 +101,16 @@ const config: NextConfig = {
         destination: '/blog/midnight-s1-aoe',
         permanent: true,
       },
+      {
+        source: '/blog/midnight-s2-aoe',
+        destination: '/blog/midnight-s2-spells',
+        permanent: true,
+      },
+      {
+        source: '/blog/midnight-s2-debuffs',
+        destination: '/blog/midnight-s2-spells',
+        permanent: true,
+      },
     ];
   },
 };

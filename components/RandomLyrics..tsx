@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useSyncExternalStore } from 'react';
 import { CustomLink } from './CustomLink';
 
 const lyrics = [
@@ -74,14 +74,18 @@ const lyrics = [
   },
 ];
 
+const noopSubscribe = () => () => {};
+
 export function RandomLyrics() {
-  const [index, setIndex] = useState(-1);
+  // the server's pick would mismatch the client's, so render only once hydrated
+  const isClient = useSyncExternalStore(
+    noopSubscribe,
+    () => true,
+    () => false
+  );
+  const [index] = useState(() => Math.floor(Math.random() * lyrics.length));
 
-  useEffect(() => {
-    setIndex(Math.floor(Math.random() * lyrics.length));
-  }, []);
-
-  if (index === -1) {
+  if (!isClient) {
     return null;
   }
 

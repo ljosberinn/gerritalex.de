@@ -8,6 +8,7 @@ import { WowheadLink } from './WowheadLink';
 import { WowheadIcon } from './WowheadIcon';
 import { Auras } from './seasonal-content/Auras';
 import { AoeSpells } from './seasonal-content/AoeSpells';
+import { SeasonalSpells } from './seasonal-content/SeasonalSpells';
 import { WowheadSpecIcon } from './WowheadSpecIcon';
 import { WowheadClassIcon } from './WowheadClassIcon';
 import * as WowheadLinks from './WowheadLinks';
@@ -59,6 +60,7 @@ export const components: MDXComponents = {
   WowheadIcon,
   Auras,
   AoeSpells,
+  SeasonalSpells,
   WowheadSpecIcon,
   WowheadClassIcon,
   Spell,

@@ -1,9 +1,12 @@
 import { DetailedHTMLProps, Fragment, HTMLAttributes } from 'react';
 import { WowheadIcon, WowheadIconProps } from '../WowheadIcon';
 import { WowheadLinkProps, WowheadLink } from '../WowheadLink';
+import { SpellBadge } from './SpellBadge';
 
 export type SpellsProps = {
   wowheadBranch?: WowheadLinkProps['branch'];
+  /** Shows `avoidable` as a badge next to the others instead of the older "(avoidable)" text. */
+  badges?: boolean;
   spells: {
     id: number;
     type: string;
@@ -12,6 +15,9 @@ export type SpellsProps = {
     icon: string;
     avoidable?: boolean;
     phase?: string;
+    aoe?: boolean;
+    dispelType?: string;
+    interruptible?: boolean;
     notes?: (
       | string
       | [
@@ -25,7 +31,7 @@ export type SpellsProps = {
   }[];
 };
 
-export function Spells({ spells, wowheadBranch }: SpellsProps) {
+export function Spells({ spells, wowheadBranch, badges = false }: SpellsProps) {
   const ordered = [
     ...spells.filter((spell) => !spell.avoidable),
     ...spells.filter((spell) => spell.avoidable),
@@ -34,6 +40,13 @@ export function Spells({ spells, wowheadBranch }: SpellsProps) {
   return (
     <ul>
       {ordered.map((spell) => {
+        const kinds = [
+          spell.aoe ? 'aoe' : null,
+          spell.dispelType ?? null,
+          spell.interruptible ? 'interruptible' : null,
+          badges && spell.avoidable ? 'avoidable' : null,
+        ].filter((kind) => kind !== null);
+
         return (
           <li
             key={spell.id}
@@ -44,7 +57,16 @@ export function Spells({ spells, wowheadBranch }: SpellsProps) {
             <WowheadLink branch={wowheadBranch} kind="spell" id={spell.id} icon={spell.icon}>
               {spell.name}
             </WowheadLink>
-            {spell.avoidable ? <span className="text-sm italic"> (avoidable)</span> : null}
+            {kinds.length > 0 ? (
+              <span className="ml-2 inline-flex gap-1 align-middle">
+                {kinds.map((kind) => (
+                  <SpellBadge key={kind} kind={kind} />
+                ))}
+              </span>
+            ) : null}
+            {!badges && spell.avoidable ? (
+              <span className="text-sm italic"> (avoidable)</span>
+            ) : null}
             {spell.notes ? (
               <ul>
                 {spell.notes.map((note, i) => {
