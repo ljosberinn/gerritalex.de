@@ -3,7 +3,6 @@ import { AurasTabs, type AuraDataset } from './AurasTabs';
 
 const DATA_SOURCES = {
   'auras-mn-s1': () => import('../../prebuild/mn-s1-auras.json'),
-  'auras-mn-s2': () => import('../../prebuild/mn-s2-auras.json'),
   'auras-tww-s2': () => import('../../prebuild/tww-s2-auras.json'),
   'auras-tww-s3': () => import('../../prebuild/tww-s3-auras.json'),
 };

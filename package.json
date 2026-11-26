@@ -11,6 +11,7 @@
     "serve": "next start",
     "analyze": "next analyze",
     "lint": "eslint --fix app components/**/*.{ts,tsx} layouts/**/*.{ts,tsx}",
+    "test": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test \"components/**/*.test.ts\"",
     "prepare": "husky"
   },
   "engines": {

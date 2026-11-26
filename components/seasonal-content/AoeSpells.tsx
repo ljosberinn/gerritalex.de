@@ -3,7 +3,6 @@ import { AoeSpellsTabs, type AoeSpellsDataset } from './AoeSpellsTabs';
 
 const DATA_SOURCES = {
   'zephyr-mn-s1': () => import('../../prebuild/zephyr-mn-s1.json'),
-  'zephyr-mn-s2': () => import('../../prebuild/zephyr-mn-s2.json'),
   'zephyr-tww-s2': () => import('../../prebuild/zephyr-tww-s2.json'),
   'zephyr-tww-s3': () => import('../../prebuild/zephyr-tww-s3.json'),
 };
