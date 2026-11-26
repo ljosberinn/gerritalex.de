@@ -1,6 +1,6 @@
 'use client';
 
-import { Fragment, useEffect, useState } from 'react';
+import { Fragment, useSyncExternalStore } from 'react';
 import { useTheme } from 'next-themes';
 import {
   Menu,
@@ -43,11 +43,16 @@ function Moon() {
   );
 }
 
-export function ThemeSwitch() {
-  const [mounted, setMounted] = useState(false);
-  const { theme, setTheme, resolvedTheme } = useTheme();
+const noopSubscribe = () => () => {};
 
-  useEffect(() => setMounted(true), []);
+export function ThemeSwitch() {
+  // resolvedTheme is unknown on the server; render a placeholder until hydrated
+  const mounted = useSyncExternalStore(
+    noopSubscribe,
+    () => true,
+    () => false
+  );
+  const { theme, setTheme, resolvedTheme } = useTheme();
 
   const items = [
     { name: 'Light', icon: Sun, value: 'light' },
