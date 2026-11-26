@@ -5874,8 +5874,7 @@
       "icon": "ability_creature_disease_02",
       "source": "altar-of-fangs",
       "type": "ravi",
-      "aoe": true,
-      "avoidable": true
+      "aoe": true
     },
     {
       "id": 1307894,
