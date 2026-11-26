@@ -12,19 +12,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: SETUP - Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
-      - name: SETUP - Use Node.js 22.x
-        uses: actions/setup-node@v4
+      - name: SETUP - Use Node.js 24.x
+        uses: actions/setup-node@v7
         with:
-          node-version: 22.x
+          node-version: 24.x
           cache: npm
 
       - name: SETUP - Install dependencies
         run: npm ci --prefer-offline &> /dev/null
 
       - name: ANALYZE - Run TSC
-        run: tsc -p tsconfig.json --noEmit
+        run: npm run typecheck
 
       - name: ANALYZE - Run ESLint
         run: npm run lint
@@ -36,7 +36,7 @@ jobs:
     # on every branch that isnt master
     if: github.ref != 'refs/heads/master'
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v7
       - uses: amondnet/vercel-action@v25
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
@@ -50,7 +50,7 @@ jobs:
     needs: lint
     if: github.ref == 'refs/heads/master'
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v7
       - uses: amondnet/vercel-action@v25
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
