@@ -1397,6 +1397,27 @@
     "episodesSeen": 5
   },
   {
+    "title": "Mr. Robot",
+    "id": 62560,
+    "state": "finished",
+    "episodesSeen": 45,
+    "metadata": {
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "seasons": 4,
+      "tagline": "Control is an illusion.",
+      "release": {
+        "day": 24,
+        "month": 6,
+        "year": 2015
+      },
+      "episodes": 45
+    },
+    "favorite": true
+  },
+  {
     "title": "Murderbot",
     "id": 241554,
     "state": "finished",
