@@ -306,12 +306,13 @@
     "episodesSeen": 0,
     "metadata": {
       "genres": [
-        "Sci-Fi & Fantasy"
+        "Sci-Fi & Fantasy",
+        "Drama"
       ],
       "seasons": 1,
       "tagline": "Welcome to a future we no longer control.",
       "release": {
-        "day": 25,
+        "day": 24,
         "month": 11,
         "year": 2026
       },
@@ -1562,7 +1563,7 @@
         "month": 8,
         "year": 2021
       },
-      "episodes": 51
+      "episodes": 60
     },
     "favorite": false,
     "episodesSeen": 14,
@@ -1705,14 +1706,14 @@
         "Drama",
         "Mystery"
       ],
-      "seasons": 1,
-      "tagline": "Presume nothing.",
+      "seasons": 2,
+      "tagline": "New season. New case. New lies.",
       "release": {
         "day": 11,
         "month": 6,
         "year": 2024
       },
-      "episodes": 8
+      "episodes": 16
     },
     "favorite": false,
     "episodesSeen": 8,
@@ -2080,6 +2081,27 @@
     "state": "upcoming"
   },
   {
+    "title": "Sonnental",
+    "id": 332595,
+    "state": "upcoming",
+    "episodesSeen": 0,
+    "metadata": {
+      "genres": [
+        "Crime"
+      ],
+      "seasons": 1,
+      "tagline": "",
+      "release": {
+        "day": null,
+        "month": null,
+        "year": null
+      },
+      "episodes": 6
+    },
+    "favorite": false,
+    "imageMissing": true
+  },
+  {
     "title": "Squid Game",
     "id": 93405,
     "metadata": {
@@ -2152,7 +2174,7 @@
         "Sci-Fi & Fantasy",
         "Drama"
       ],
-      "seasons": 4,
+      "seasons": 5,
       "tagline": "Boldly go one step closer to where it all began.",
       "release": {
         "day": 5,
@@ -2588,7 +2610,7 @@
       "episodes": 24
     },
     "favorite": false,
-    "episodesSeen": 19,
+    "episodesSeen": 20,
     "state": "ongoing"
   },
   {
@@ -2775,7 +2797,7 @@
         "month": 1,
         "year": 2025
       },
-      "episodes": 30
+      "episodes": 40
     },
     "favorite": false,
     "episodesSeen": 0
@@ -2963,14 +2985,14 @@
         "Mystery",
         "Drama"
       ],
-      "seasons": 1,
-      "tagline": "",
+      "seasons": 2,
+      "tagline": "They are here.",
       "release": {
         "day": 21,
         "month": 3,
         "year": 2024
       },
-      "episodes": 16
+      "episodes": 14
     },
     "favorite": false,
     "episodesSeen": 8,
